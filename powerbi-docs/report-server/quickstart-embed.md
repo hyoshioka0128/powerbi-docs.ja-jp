@@ -29,7 +29,7 @@ ms.locfileid: "75762602"
 
 ## <a name="create-the-power-bi-report-url"></a>Power BI レポート URL の作成
 
-1. GitHub からサンプル [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) をダウンロードします。 **[Clone or download]\(複製またはダウンロード\)** を選択し、 **[Download ZIP]\(ZIP のダウンロード\)** を選択します。
+1. GitHub からサンプル [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) をダウンロードします。 **[Clone or download]\(クローンまたはダウンロード\)** を選択し、 **[Download ZIP]\(ZIP のダウンロード\)** を選択します。
 
     ![サンプル PBIX ファイルのダウンロード](media/quickstart-embed/quickstart_embed_14.png)
 
