@@ -194,7 +194,7 @@ Power BI Report Server での Power BI レポートから Excel へのエクス�
 
 #### <a name="azure-sql-managed-instance-support"></a>Azure SQL Managed Instance のサポート
 
-Power BI Report Server に使用されるデータベース カタログを、VM またはデータ センターのいずれかでホストされている Azure SQL マネージド インスタンス (MI) でホストできるようになりました。 サポートは、SQL MI への接続のためのデータベース資格情報の使用に制限されています。
+Power BI Report Server に使用されるデータベース カタログを、VM またはデータ センターのいずれかでホストされている Azure SQL Managed Instance (MI) でホストできるようになりました。 サポートは、SQL MI への接続のためのデータベース資格情報の使用に制限されています。
 
 #### <a name="power-bi-premium-dataset-support"></a>Power BI Premium データセットのサポート
 
