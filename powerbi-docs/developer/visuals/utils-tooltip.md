@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 67470ec405806f44fdb483e857d222ad4ff05a45
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 69650982bd3e71c235ffb09b00a99959bc02c231
+ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379170"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197635"
 ---
 # <a name="tooltip-utils"></a>ツールヒント ユーティリティ
 この記事では、ツールヒント ユーティリティのインストール、インポート、使用について説明します。 このユーティリティは、Power BI ビジュアルのツールヒントをカスタマイズするのに役立ちます。
@@ -29,7 +29,7 @@ ms.locfileid: "79379170"
 パッケージをインストールするには、現在のビジュアルを使用して、ディレクトリ内で次のコマンドを実行する必要があります。
 
 ```bash
-npm install powerbi-visuals-utils-colorutils --save
+npm install powerbi-visuals-utils-tooltiputils --save
 ```
 このコマンドを実行すると、パッケージがインストールされ、依存関係としてパッケージが ```package.json``` に追加されます
 

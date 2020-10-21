@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 35a62923ba69520c1197e7bb80114a22ec1d9a20
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: f239622d8b6012913298212790f7f9aa8c3115a5
+ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214083"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197658"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>ページ分割されたレポートでカスケード型パラメーターを使用する
 
@@ -128,7 +128,7 @@ ms.locfileid: "86214083"
 >
 > 一般に、ストアド プロシージャは、より優れたデザイン アプローチです。 その理由は、クエリ プランがキャッシュされて実行時間が短縮されるためと、必要に応じてより高度なロジックを開発することができるためです。 ただし、現在のところ、ゲートウェイ リレーショナル データソース、つまり SQL Server、Oracle、および Teradata ではサポートされていません。
 >
-> 最後に、効率的なデータ取得をサポートするために、適切なインデックスが存在することを常に確認してください。 そうしないと、レポート パラメーターの設定に時間がかかり、データベースが過負荷になる可能性があります。 SQL Server のインデックス作成の詳細については、「[SQL Server のインデックスのアーキテクチャとデザイン ガイド](/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017)」を参照してください。
+> 最後に、効率的なデータ取得をサポートするために、適切なインデックスが存在することを常に確認してください。 そうしないと、レポート パラメーターの設定に時間がかかり、データベースが過負荷になる可能性があります。 SQL Server のインデックス作成の詳細については、「[SQL Server のインデックスのアーキテクチャとデザイン ガイド](/sql/relational-databases/sql-server-index-design-guide)」を参照してください。
 
 ### <a name="filter-by-a-grouping-column"></a>グループ化列によるフィルター処理
 
@@ -220,7 +220,7 @@ GO
 > [!TIP]
 > レポート ユーザーによる制御を強化するようにこのデザインを改良できます。 独自のパターン マッチング値を定義させることができます。 たとえば、"red%" という検索値では、リセラーが "red" という文字で "_始まる_" 名前でフィルター処理されます。
 >
-> 詳細については、「[LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql?view=sql-server-ver15#using-the--wildcard-character)」を参照してください。
+> 詳細については、「[LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql#using-the--wildcard-character)」を参照してください。
 
 レポート ユーザーが独自のパターンを定義できるようにする方法を次に示します。
 

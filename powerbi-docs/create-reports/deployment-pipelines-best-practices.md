@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 09/15/2020
-ms.openlocfilehash: ea2fa0625ece88d8da2848dbe6a108d98a55a0d0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 01cb4c5de2863250f083320e7005c0d589a2da0b
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855561"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116479"
 ---
 # <a name="deployment-pipelines-best-practices"></a>デプロイ パイプラインのベスト プラクティス
 
@@ -103,7 +103,7 @@ Power BI サービスでデータセットのデータ ソースを編集する�
 
 ### <a name="version-control-for-pbix-files"></a>.pbix ファイルのバージョン管理
 
-レポートとデータセットのバージョン履歴を管理する場合は、[Power BI の OneDrive との自動同期](../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md)を使用します。 これにより、ファイルは常に最新バージョンで更新されます。 また、必要に応じて古いバージョンを取得することもできます。
+レポートとデータセットのバージョン履歴を管理する場合は、[Power BI の OneDrive との自動同期](../collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business.md)を使用します。 これにより、ファイルは常に最新バージョンで更新されます。 また、必要に応じて古いバージョンを取得することもできます。
 
 >[!NOTE]
 >OneDrive (または他のリポジトリ) との自動同期は、デプロイ パイプラインの開発ステージの .pbix ファイルでのみ使用してください。 デプロイ パイプラインのテスト ステージおよび運用ステージでは、.pbix ファイルを同期しないでください。 これにより、パイプライン全体でコンテンツをデプロイする際に問題が発生します。

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: ce0f22c17ed718d3e2ad4e4fa9d9514edd315583
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: 74fec4e7fae2fc8630592c435adb42b34c93ef43
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407433"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049363"
 ---
 # <a name="power-bi-visual-project-structure"></a>Power BI ビジュアル プロジェクトの構造
 
@@ -174,4 +174,4 @@ Power BI ビジュアル ツールでは、このファイルが Power BI ビジ
 
 * ビジュアル、ユーザー、および Power BI 間の相互作用を理解するには、「[Power BI ビジュアルの概念](./power-bi-visuals-concept.md)」を参照してください。
 
-* [ステップ バイ ステップ ガイド](./custom-visual-develop-tutorial.md)を使って、独自の Power BI ビジュアルをゼロから開発しましょう。
+* [ステップ バイ ステップ ガイド](./develop-circle-card.md)を使って、独自の Power BI ビジュアルをゼロから開発しましょう。

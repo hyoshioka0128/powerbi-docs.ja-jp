@@ -217,7 +217,7 @@
               href: service-aggregates.md
             - name: レポートの QR コードを作成する
               href: service-create-qr-code-for-report.md
-            - name: コンシューマーがビジュアルをカスタマイズできるようにする (プレビュー)
+            - name: ユーザーがビジュアルをカスタマイズできるようにする
               href: power-bi-personalize-visuals.md
             - name: レポートを Power BI Desktop にエクスポートする (プレビュー)
               href: service-export-to-pbix.md

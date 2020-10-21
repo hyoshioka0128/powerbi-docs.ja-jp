@@ -62,6 +62,8 @@
           items:
             - name: データ ソースに接続する
               href: desktop-data-sources.md
+            - name: 動的な M クエリ パラメーターを使用する
+              href: desktop-dynamic-m-query-parameters.md
             - name: SharePoint リスト上にレポートを作成する
               href: desktop-sharepoint-online-list.md
             - name: LinkedIn Sales Navigator に接続する

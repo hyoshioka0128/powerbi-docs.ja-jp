@@ -3,19 +3,19 @@ title: Power BI Premium (プレビュー) での XMLA エンドポイント接�
 description: Power BI Premium で XMLA エンドポイントを使用した接続のトラブルシューティングを行う方法について説明します。
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/28/2020
+ms.date: 10/14/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: bd2b8c4af1fc36fabc863aa1c67ed5af40265de2
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c8f0683e0789ec29577322424a4187a42ff5679f
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854083"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116571"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -79,7 +79,7 @@ Power BI が新しいデータセットをデータ ソースの資格情報に�
 
 処理のエラーを回避するには、次の図のように、 **[配置オプション]**  >  **[処理オプション]** を **[処理しない]** に設定します。 そうすると、Visual Studio はメタデータのみを配置します。 次に、データ ソースの資格情報を構成し、Power BI ユーザー インターフェイスでデータセットについて **[今すぐ更新]** をクリックします。 処理の問題のトラブルシューティングの詳細については、この記事の後半の「[データセットを更新する](#refreshing-a-dataset)」のセクションを参照してください。
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="[処理しない] オプション":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="モデル配置エラー":::
 
 ### <a name="new-project-from-an-existing-dataset"></a>既存のデータセットから新しいプロジェクト
 
@@ -128,13 +128,13 @@ XMLA エンドポイントを使用すると、表形式モデルおよび Power
 
 プロバイダーのデータ ソースに対して定義できる権限の借用の設定は、Power BI には関係ありません。 Power BI は、データセットの設定に基づく別のメカニズムを使用して、データ ソースの資格情報を管理します。 このため、プロバイダー データ ソースを作成する場合は、 **[サービス アカウント]** を必ず選択してください。
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="サービス アカウントの権限を借用":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="モデル配置エラー":::
 
 ### <a name="fine-grained-processing"></a>きめ細かい処理
 
 Power BI で、スケジュールされた更新またはオンデマンドの更新をトリガーするとき、通常、Power BI はデータセット全体を更新します。 多くの場合、選択して更新を実行する方が効率的です。 次のように SQL Server Management Studio (SSMS) で、またはサードパーティのツールまたはスクリプトを使用して、きめ細かい処理を実行できます。
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="SSMS でのテーブルの処理":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="モデル配置エラー":::
 
 ### <a name="overrides-in-refresh-tmsl-command"></a>Refresh TMSL コマンドでのオーバーライド
 

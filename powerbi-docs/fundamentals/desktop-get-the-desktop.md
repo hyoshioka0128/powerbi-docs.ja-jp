@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ec4bd8788d3c0421118a8e96287b36497683c4b2
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: d53e7a3205d8e1915f8dd0969fe35d5c32d25cf5
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136145"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256389"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktop の取得
 Power BI Desktop では、データを視覚化する高度なクエリ、モデル、レポートを作成できます。 Power BI Desktop を使うと、データ モデルを作成し、レポートを作成し、Power BI サービスに発行することで作業を共有することができます。 Power BI Desktop は無料でダウンロードできます。
@@ -80,7 +80,7 @@ Microsoft Store から Power BI Desktop をインストールするときは、�
 
 インストール パッケージを起動すると、Power BI Desktop がアプリケーションとしてインストールされ、デスクトップ上で実行されます。
 
-![セットアップ ウィザードを示す Power BI Desktop のインストールのスクリーンショット。](media/desktop-get-the-desktop/designer_gsg_install.png)
+![セットアップ ウィザードを示す Power BI Desktop のインストールのスクリーンショット。](media/desktop-get-the-desktop/desktop-install-01.png)
 
 > [!NOTE]
 > 同じコンピューターに Power BI Desktop のダウンロード (MSI) バージョン (非推奨) と Microsoft Store バージョンをインストールすること ("*サイド バイ サイド*" インストールとも呼ばれます) はサポートされていません。 手動で Power BI Desktop をアンインストールした後、Microsoft Store からダウンロードする必要があります。
@@ -89,7 +89,7 @@ Microsoft Store から Power BI Desktop をインストールするときは、�
 ## <a name="using-power-bi-desktop"></a>Power BI Desktop の使用
 Power BI Desktop を起動すると、ようこそ画面が表示されます。
 
-![ようこそ画面を示す Power BI Desktop のインストールのスクリーンショット。](media/desktop-get-the-desktop/getpbid_05.png)
+![ようこそ画面を示す Power BI Desktop のインストールのスクリーンショット。](media/desktop-get-the-desktop/desktop-splash-screen.png)
 
 Power BI Desktop を初めて使用する (つまり、インストールがアップグレードではない) 場合は、続行する前に、フォームの入力または Power BI サービスへのサインインを求められます。
 
