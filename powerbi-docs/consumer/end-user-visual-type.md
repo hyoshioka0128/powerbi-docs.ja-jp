@@ -1,21 +1,21 @@
 ---
-title: コンシューマー向け Power BI でのビジュアルの種類
+title: ビジネス ユーザー向け Power BI の視覚エフェクトの種類
 description: Power BI サービスでのビジュアルの種類
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/24/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: 05aab15b3807429c20b0ff72a7bfce21b3e25b12
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 6d2ded8060ebe663989fd4f91fc22e4163f60c93
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526883"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830632"
 ---
 # <a name="visual-types-in-power-bi"></a>Power BI でのビジュアルの種類
 
@@ -25,18 +25,20 @@ ms.locfileid: "91526883"
 
 このページで説明するビジュアルは、Power BI に組み込まれているものです。 これらは、最もよく目にするビジュアルの種類です。 このページでは、これらの組み込まれているビジュアルの概要について説明します。 これらのビジュアルについてのより詳しい情報については、[ビジュアル型に関する Power BI レポート "*デザイナー*" のドキュメント](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)を参照してください。
 
-Power BI に組み込まれていない視覚化は、"*カスタム ビジュアル*" と呼ばれます。 カスタム ビジュアルは、Microsoft AppSource などの外部 Web サイトから、または組織ストアなどの内部ソースから Power BI にインポートできます。 カスタム ビジュアルをインポートするには、レポートに対する編集アクセス許可が必要です。 このようなアドインの視覚化については、「[Power BI のビジュアル](../developer/visuals/power-bi-custom-visuals.md)」を参照してください。
+Power BI に組み込まれていない視覚化は、"*カスタム ビジュアル*" と呼ばれます。 カスタム ビジュアルは、Microsoft AppSource などの外部 Web サイトから、または組織ストアなどの内部ソースから Power BI にインポートできます。 カスタム ビジュアルをインポートするには、レポートに対する編集アクセス許可が必要です。 このようなアドインの視覚エフェクトについては、[Power BI のカスタムの視覚エフェクト](../developer/visuals/power-bi-custom-visuals.md)に関するページを参照してください。
 
 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Power BI で利用可能なビジュアルの一覧
 これらのビジュアルはすべて、Power BI のダッシュボードとレポートで見つけることができ、[Q&A で指定する](end-user-q-and-a.md)ことができます。 ビジュアルを操作する方法については、「[レポート、ダッシュボード、アプリでビジュアルを操作する](end-user-visualizations.md)」を参照してください。
 
-### <a name="area-charts-basic-layered-and-stacked"></a>面グラフ:基本 (階層) と積み上げ
+## <a name="a"></a>A
+### <a name="area-charts-basic-layered-and-stacked"></a>面グラフ: 基本 (階層) と積み上げ
 ![面グラフ](media/end-user-visual-type/basic-area-map-small.png)
 
 基本的な面グラフは、折れ線グラフに基づいており、軸と線の間の範囲が塗りつぶされます。 面グラフは、時間の経過に伴う変化の大きさを強調し、トレンドの合計値に注目させるために使用できます。 たとえば、時間の経過に伴う利益を表すデータを面グラフにプロットして、総利益を強調することができます。
 
+## <a name="b"></a>B
 ### <a name="bar-and-column-charts"></a>横棒グラフおよび縦棒グラフ
 ![縦棒グラフ](media/end-user-visual-type/pbi-nancy-viz-bar.png)
 
@@ -44,6 +46,7 @@ Power BI に組み込まれていない視覚化は、"*カスタム ビジュ�
 
 横棒グラフは、異なるカテゴリの特定の値を調べるときの標準的なグラフです。
 
+## <a name="c"></a>C
 ### <a name="cards-single-number"></a>カード:単一数値
 ![単一数値カード](media/end-user-visual-type/pbi-nancy-viz-card.png)
 
@@ -67,7 +70,7 @@ Power BI に組み込まれていない視覚化は、"*カスタム ビジュ�
 - あるメジャーが別のメジャーで定義されているターゲットを満たすかどうかを調べる場合
 - キャンバスのスペースを節約する場合
 
-
+## <a name="d"></a>D    
 ### <a name="decomposition-tree"></a>分解ツリー
 ![分解ツリー](media/end-user-visual-type/power-bi-decomposition.png)
 
@@ -78,6 +81,7 @@ Power BI に組み込まれていない視覚化は、"*カスタム ビジュ�
 
 ドーナツ グラフは円グラフと似ています。  どちらのグラフも全体とその一部との関係を表します。 唯一の違いは、中央が空白で、ラベルまたはアイコン用の領域を確保できることです。
 
+## <a name="f"></a>F
 ### <a name="funnel-charts"></a>じょうごグラフ
 ![じょうごグラフ](media/end-user-visual-type/pbi-nancy-viz-funnel.png)
 
@@ -86,7 +90,7 @@ Power BI に組み込まれていない視覚化は、"*カスタム ビジュ�
 たとえば、次のような段階にわたって顧客を追跡する販売のじょうごグラフがあります:潜在顧客 > 見込みのあるリード > 見込顧客 > 契約 > 契約の締結。 じょうごの形状は、追跡しているプロセスの正常性がひとめでわかります。
 じょうごの各段階は、全体のうちの割合を表します。 そして、ほとんどの場合、じょうごグラフの形は、最初の段階が最も大きく、それ以降の各段階はその前の段階よりも小さくなり、じょうごのような形になります。 洋ナシの形のじょうごグラフも役立ち、プロセスにおける問題を特定することができます。 ただし、通常は「インテーク」段階と呼ばれる最初の段階が最も大きくなります。
 
-
+## <a name="g"></a>G
 ### <a name="gauge-charts"></a>ゲージ グラフ
 ![ゲージ グラフ](media/end-user-visual-type/gauge-m.png)
 
@@ -100,6 +104,7 @@ Power BI に組み込まれていない視覚化は、"*カスタム ビジュ�
 - 1 つの測定基準の正常性を示す
 - ひとめでわかるように情報を表示する
 
+## <a name="k"></a>K
  ### <a name="key-influencers-chart"></a>主要なインフルエンサのグラフ
 ![主要なインフルエンサ](media/end-user-visual-type/power-bi-influencer.png)
 
@@ -116,11 +121,13 @@ KPI は、次のような場合に最適です。
 - 進行状況 (目標より進んでいるか遅れているか) を測定する
 - 目標までの距離 (どの程度進んで、または遅れているか) を測定する
 
+## <a name="l"></a>L
 ### <a name="line-charts"></a>折れ線グラフ
 ![折れ線グラフ](media/end-user-visual-type/pbi-nancy-viz-line.png)
 
 折れ線グラフでは、(通常は時間の経過に伴う) 一連の値すべての全体的な形を強調します。
 
+## <a name="m"></a>M
 ### <a name="maps-basic-maps"></a>マップ:基本マップ
 ![基本マップ](media/end-user-visual-type/pbi-nancy-viz-map.png)
 
@@ -146,6 +153,7 @@ ArcGIS マップと Power BI を組み合わせると、マッピングをマッ
 
 マトリックス ビジュアルは、階段状レイアウトをサポートするテーブル ビジュアル (後の「テーブル」を参照) の一種です。 多くの場合、レポート デザイナーは、ユーザーがマトリックスの 1 つまたは複数の要素 (行、列、セル) を選択してレポート ページ上の他のビジュアルをクロス強調表示できるようにするため、レポートやダッシュボードにマトリックスを組み込みます。  
 
+## <a name="p"></a>P
 ### <a name="pie-charts"></a>円グラフ
 ![円グラフ](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
@@ -154,8 +162,9 @@ ArcGIS マップと Power BI を組み合わせると、マッピングをマッ
 ### <a name="power-apps-visual"></a>Power Apps のビジュアル
 ![Power Apps のビジュアル](media/end-user-visual-type/power-bi-powerapps-visual.png)
 
-レポート デザイナーでは、パワー アプリを作成し、それを Power BI レポートに埋め込むことができます。 ユーザーは、Power BI レポート内でそのビジュアルを操作できます。 
+レポート デザイナーでは、パワー アプリを作成し、それを Power BI レポートに埋め込むことができます。 "*ビジネス ユーザー*" は、Power BI レポート内でその視覚エフェクトを操作できます。 
 
+## <a name="q"></a>Q
 ### <a name="qa-visual"></a>Q&A ビジュアル
 ![Q&A ビジュアル](media/end-user-visual-type/power-bi-q-and-a.png)
 
@@ -164,13 +173,14 @@ ArcGIS マップと Power BI を組み合わせると、マッピングをマッ
 
 詳細については、[Power BI の Q&A ビジュアル](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)に関するページを参照してください。
 
+## <a name="r"></a>R
 ### <a name="ribbon-chart"></a>リボン グラフ
 ![リボン グラフ](media/end-user-visual-type/power-bi-ribbon.png)
 
 リボン グラフでは、どのデータ カテゴリが最高ランク (最大値) かが示されます。 リボン グラフでは、ランクの変化を効果的に確認できます。各期間を対象に、最高位の範囲 (値) が常に一番上に表示されます。
 
+## <a name="s"></a>S
 ### <a name="scatter-bubble-and-dot-plot-charts"></a>散布図、バブル チャート、ドット プロット グラフ
-
 
 散布図には、必ず 2 つの値軸があり、横軸に沿って数値データの 1 つのセットが表示され、縦軸に沿って数値データのもう 1 つのセットが表示されます。 このグラフには x と y の数値が交差する位置に点が表示され、この 2 つの値が 1 つのデータ ポイントに結合されます。 これらのデータ ポイントは、データに応じて、横軸に沿って値が均等に分布したり、不均等に分布したりします。
 
@@ -202,12 +212,18 @@ ArcGIS マップと Power BI を組み合わせると、マッピングをマッ
 - データ テーブルで不要な非表示の列でフィルター処理する
 - 重要なビジュアルの隣にスライサーを配置することにより、レポートを絞り込む
 
+
+### <a name="smart-narrative"></a>スマート説明
+![スマート説明](media/end-user-visual-type/power-bi-smart-narrative.png)
+
+スマート説明を使用すると、傾向、重要な点を指摘し、説明とコンテキストを追加するテキストをレポートに追加できます。 このテキストは、ユーザーがデータを理解し、重要な調査結果をすばやく特定するために役立ちます。
+
 ### <a name="standalone-images"></a>スタンドアロン画像
 ![スタンドアロン画像](media/end-user-visual-type/pbi-nancy-viz-image.png)
 
 スタンドアロン画像は、レポートまたはダッシュボードに追加されたグラフィックです。 
 
-
+## <a name="t"></a>T
 ### <a name="tables"></a>テーブル
 ![テーブル グラフ](media/end-user-visual-type/table-type.png)
 
@@ -231,6 +247,7 @@ ArcGIS マップと Power BI を組み合わせると、マッピングをマッ
 - サイズと色分けを使用して属性を示す場合
 - パターン、外れ値、最も重要な要因、および例外を見分ける場合
 
+## <a name="w"></a>W
 ### <a name="waterfall-charts"></a>ウォーターフォール グラフ
 ![ウォーターフォール グラフ](media/end-user-visual-type/waterfall-small.png)
 

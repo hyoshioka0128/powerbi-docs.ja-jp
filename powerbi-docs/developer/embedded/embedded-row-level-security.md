@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: ea7eaf8f7fc36ee1b9dc987ee571dc29dc5b222f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 09489c3dbb33e1c5fb289cc1cc132eae0083a95f
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748910"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981737"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Power BI Embedded での行レベルのセキュリティ
 
@@ -195,7 +195,7 @@ REST API を呼び出す場合は、次の例のように各 ID の内部にカ�
 
 Power BI Embedded アプリケーションで CustomData() 機能の設定を開始するための手順は、次のとおりです。
 
-1. ご自身の Azure Analysis Services データベースを作成します。 次に、[SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) を介してご自身の Azure Analysis Services サーバーにサインインします。
+1. ご自身の Azure Analysis Services データベースを作成します。 次に、[SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) を介してご自身の Azure Analysis Services サーバーにサインインします。
 
     ![Azure Analysis Services データベースを作成する](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
@@ -217,7 +217,7 @@ Power BI Embedded アプリケーションで CustomData() 機能の設定を開
 
     ![ロールの作成 - 行フィルターの設定](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
-6. PBI レポートを構築し、それを専用の容量を持つワークスペースに発行します。
+6. PBI レポートを構築し、容量があるワークスペースにそれを発行します。
 
     ![PBI レポートのサンプル](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
@@ -261,7 +261,7 @@ Azure SQL で各ユーザーのビューを管理したり、マルチテナン�
 
 このような有効な ID の発行は、Azure SQL Server での RLS ルールに直接適用されます。 Power BI Embedded では、Azure SQL Server のデータのクエリを実行するときに、提供されたアクセス トークンが使用されます。 (アクセス トークンの提供対象である) ユーザーの UPN には、USER_NAME() SQL 関数の結果としてアクセスできます。
 
-トークン ベースの ID は、Azure SQL Database に接続されている専用容量での DirectQuery モデルに対してのみ動作します。これは、AAD 認証を許可するように構成されています ([Azure SQL Database に対する AAD 認証の詳細](/azure/sql-database/sql-database-manage-logins))。 トークン ベースの ID を使用するには、エンド ユーザーの OAuth2 資格情報を使用するように、データセットのデータ ソースを構成する必要があります。
+トークン ベースの ID は、Azure SQL Database に接続されている容量での DirectQuery モデルに対してのみ動作します。これは、AAD 認証を許可するように構成されています ([Azure SQL Database に対する AAD 認証の詳細](/azure/sql-database/sql-database-manage-logins))。 トークン ベースの ID を使用するには、エンド ユーザーの OAuth2 資格情報を使用するように、データセットのデータ ソースを構成する必要があります。
 
    ![Azure SQL Server を構成する](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -342,7 +342,7 @@ SQL Server Analysis Services (SSAS) オンプレミス ライブ接続データ 
 
 ### <a name="token-based-identity-limitations"></a>トークンベースの ID の制限
 
-* RLS は専用の容量がある場合にのみ使用できます。
+* RLS は、容量がある場合にのみ使用できます。
 * RLS は、オンプレミスの SQL Server では機能しません。
 
 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

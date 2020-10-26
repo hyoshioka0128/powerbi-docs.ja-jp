@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7439eff964340d3eba20b5d67d2aec992394505f
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 48e8788ca81365e1f46dbe6d3c4804c10f3f308a
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860097"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525503"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Power BI Desktop で AI 分析情報を使用する
 
@@ -199,13 +199,13 @@ Machine Learning モデルでは、デプロイされた Web サービスにこ�
 
 アクセス権があれば、どの Azure ML モデルでも、Power Query エディターから直接呼び出すことができます。 Azure ML モデルにアクセスするには、Power Query エディターで、 **[ホーム]** または **[列の追加]** リボンの **[Azure Machine Learning]** ボタンをクリックします。
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-06.png)
+![Power Query エディターの [Azure Machine Learning] ボタンを示すスクリーンショット。](media/desktop-ai-insights/ai-insights-06.png)
 
 アクセス権があるすべての Azure ML モデルが Power Query 関数としてここに一覧表示されます。 また、Azure ML モデルの入力パラメーターは、対応する Power Query 関数のパラメーターとして自動的にマップされます。
 
 Azure ML モデルを呼び出すには、選択したエンティティのいずれかの列を、ドロップダウン リストからの入力として指定します。 入力ダイアログの左側にある列アイコンを切り替えることにより、入力として使用する定数値を指定することもできます。
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-07.png)
+![選択できる Azure Machine Learning モデルを示すスクリーンショット。](media/desktop-ai-insights/ai-insights-07.png)
 
 **[OK]** を選択すると、Azure ML モデルの出力のプレビューが、エンティティ テーブルの新しい列として表示されます。 また、モデル呼び出しが、クエリに適用された手順として表示されます。
 

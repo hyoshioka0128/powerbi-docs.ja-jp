@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 84c33cfc1d9163ff631c11d285b5441dd301578e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 8dd6a33ab19e692d9dc04138d53b04e8e49da2bf
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748128"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049179"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>認定済みの Power BI ビジュアルを取得する
 
@@ -170,11 +170,9 @@ AppSource への配置は、時間がかかる可能性のあるプロセスで�
 
 ## <a name="next-steps"></a>次の手順
 
-* 独自の Power BI ビジュアルを作成し、それらを  [Microsoft AppSource](https://appsource.microsoft.com) に追加することに関心がある Web 開発者は、 [Power BI のビジュアルを開発する](custom-visual-develop-tutorial.md)ためのチュートリアルから始めてください。
+* Power BI の独自の視覚化を作成して  [Microsoft AppSource](https://appsource.microsoft.com) に追加することに関心がある Web 開発者は、 [Power BI の円形カード視覚化の開発](develop-circle-card.md)に関するチュートリアルから始めてください。
 
 * ビジュアルについて詳しくは、[認定済みのビジュアルに関してよく寄せられる質問](power-bi-custom-visuals-faq.md#certified-power-bi-visuals)に関する記事をご覧ください。
-
-* [Power BI のビジュアルを開発する](custom-visual-develop-tutorial.md)
 
 * [YouTube での Microsoft の Power BI ビジュアル プレイリスト](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
@@ -182,4 +180,4 @@ AppSource への配置は、時間がかかる可能性のあるプロセスで�
 
 * [Microsoft AppSource に Power BI ビジュアルを発行する](office-store.md)
 
-* 他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+* その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

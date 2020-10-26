@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4202d2c7e4c87f8085a04af9922cf7cc6c55fbfd
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 41ddc6e0c9a4f4f2c9b5687194e043bb1ef80bec
+ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860189"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928265"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Power BI モバイルの Windows アプリでのシングル サインオン
 
@@ -21,7 +21,7 @@ Power BI モバイルの Windows アプリでのシングル サインオン (SS
 
 Power BI Windows アプリは Azure Active Directory に統合されているため、プライマリ組織アカウントを使用して、ドメインに参加しているデバイスにサインインするだけでなく、Power BI サービスにもサインインすることができます。 Windows Phone 上で Power BI を表示している場合、Power BI に使用するアカウントが、デバイスの設定で職場または学校のアカウントとして構成されていることを確認してください。  
 
-SSO は、Windows Azure Active Directory で管理されている Windows デバイスに対してのみ有効です。
+SSO は、Azure Active Directory で管理されている Windows デバイスに対してのみ有効です。
 
 >[!NOTE]
 >**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)

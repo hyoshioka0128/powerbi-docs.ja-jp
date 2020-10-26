@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/08/2020
-ms.openlocfilehash: 893becbcfc7d58b04bbff2819baed4bbc829fe9d
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.date: 10/19/2020
+ms.openlocfilehash: 2a0490106d5954a57abea1dd5de61f26f2fe2377
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526676"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92257022"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Power BI のページ分割されたレポート:FAQ 
 
@@ -178,6 +178,12 @@ SaaS 埋め込み (Secure Embed のサポートを含む) は既に利用でき�
 ここでは、ページ分割されたレポート内の DateTime フィールドを操作する場合に注意すべき事項について説明します。
 
 - 現在、DateTime パラメーターに関連するグローバリゼーションの制限がいくつかあります。 Power BI サービス内のすべての DateTime パラメーターは、Power BI Report Builder での DataTime の設計方法に関係なく、米国形式 (MM/DD/YYYY) でフェッチされます。
+
+Power BI サービスでページ分割されたレポートを表示すると、セッションがタイムアウトになり、次の通知がユーザーに表示されることがあります。
+
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="[ページ分割されたレポート] の [容量の設定] タブ":::
+
+- セッションは、非アクティブな状態が 60 分続く場合、またはデバイスがロックされているか非アクティブである場合やレポートがブラウザーのアクティブなタブに表示されない場合はさらに早く、タイムアウトになります。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 6ad986308fb82f8191829d29654bb96b55d0fbd0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 091bdeb4eeb4c979ccf0e79476eb081895fae2e1
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272697"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049409"
 ---
 # <a name="use-the-supportsmultivisualselection-feature"></a>supportsMultiVisualSelection 機能を使用する
 
@@ -45,4 +45,4 @@ ms.locfileid: "83272697"
 
 Power BI の概念については、「[Power BI のビジュアル](power-bi-visuals-concept.md)」を参照してください。
 
-Power BI の開発を試すには、[Power BI のビジュアル開発](custom-visual-develop-tutorial.md)に関するチュートリアルをご覧ください。
+Power BI を開発してみるには、[Power BI の円形カードの開発](develop-circle-card.md)に関する記事を参照してください。

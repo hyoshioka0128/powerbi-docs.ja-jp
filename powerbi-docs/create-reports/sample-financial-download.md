@@ -2,26 +2,36 @@
 title: Power BI 用の Excel の財務サンプル ブックのダウンロード
 description: Power BI 用の Financial Sample のダウンロード
 author: maggiesMSFT
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: sample
-ms.date: 07/21/2020
+ms.date: 10/13/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 99d4b7a2fa51673688c3e673fddf67664f3231d9
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 46f6179edc63b0a865043674b22ffe88e813a3b4
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953078"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92255963"
 ---
 # <a name="download-the-financial-sample-excel-workbook-for-power-bi"></a>Power BI 用の Excel の財務サンプル ブックのダウンロード
-Power BI Desktop と Power BI サービスで試すデータが必要ですか。 サンプルの財務データが含まれる簡単な Excel ブックをダウンロードできます。[財務サンプル Excel ブック](https://go.microsoft.com/fwlink/?LinkID=521962)。
+Power BI サービスで試すデータが必要ですか。 サンプルの財務データが含まれるシンプルな Excel ブックをご用意しています。 このブックには、市場区分と国別に分類された売上と利益データのテーブルがあります。 
 
-このブックには、市場区分と国別に分類された売上と利益データのテーブルがあります。
+## <a name="download-it-directly"></a>直接ダウンロードする
 
-### <a name="next-steps"></a>次の手順
+直接ダウンロードすることができます。[財務サンプル Excel ブック](https://go.microsoft.com/fwlink/?LinkID=521962)。
+
+## <a name="get-the-sample-in-power-bi-desktop"></a>Power BI Desktop でサンプルを取得する
+
+Power BI Desktop からダウンロードすることもできます。 黄色のようこそ画面から、または空のキャンバスから **[Try a sample dataset]\(サンプル データセットを試す\)** を選択してください。
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="キャンバスでの [Try a sample dataset]\(サンプル データセットを試す\) のスクリーンショット。"::: 
+
+サンプル データセット ダイアログ ボックスからこのチュートリアルに移動してきた場合は、 **[データの読み込み]** を選択します。
+
+## <a name="next-steps"></a>次の手順
 
 この財務サンプル データを使用するチュートリアルを、次に 2 つ示します。
 

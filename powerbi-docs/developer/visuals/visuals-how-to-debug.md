@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 2978401c7ec949c8c8df7c813395b3d84db18b72
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f3a3551db1d7d995db0194ff7fa9b7141415c9eb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232651"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525549"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Power BI のビジュアルをデバッグする方法
 
@@ -78,7 +78,7 @@ public update(options: VisualUpdateOptions) {
 3. **例外で中断**アイコン (一時停止記号の付いた六角形) をクリックします。
 4. **[すべての例外で中断]** を選択します。
 
-![データ ロール フィールド](media/visuals-how-to-debug/how-to-debug-edge.png)
+![[すべての例外で中断] がオンの [デバッガー] タブを示すスクリーンショット。](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## <a name="chrome"></a>Chrome
 
@@ -87,7 +87,7 @@ public update(options: VisualUpdateOptions) {
 3. **例外で中断**アイコン (一時停止記号の付いた停止標識) をクリックします。
 4. **[Pause On Caught Exceptions]\(キャッチされた例外で一時停止\)** チェック ボックスをオンにします。
 
-![データ ロール フィールド](media/visuals-how-to-debug/how-to-debug-chrome.png)
+![[Pause On Caught Exceptions]\(キャッチされた例外で一時停止\) がオンの [ソース] タブを示すスクリーンショット。](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## <a name="next-steps"></a>次のステップ
 * [Power BI ビジュアルのトラブルシューティング](power-bi-custom-visuals-troubleshoot.md)

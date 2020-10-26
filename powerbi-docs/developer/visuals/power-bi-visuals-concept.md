@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: d5d075e3627ded01f7e47c1b073b60ff379bb506
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 94926ccf0fa214ca4c65808a7476842c22308359
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537644"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92048857"
 ---
 # <a name="power-bi-visuals-system-integration"></a>Power BI ビジュアルのシステム統合
 
@@ -130,5 +130,5 @@ Power BI ビジュアルのアクションとそれに続く更新は、次の 3
 
 視覚化の作成と Microsoft AppSource への追加に興味がある場合は 次の記事を参照してください。
 
-* [Power BI のビジュアルを開発する](./custom-visual-develop-tutorial.md)
+* [Power BI の円形カード視覚化の開発](./develop-circle-card.md)
 * [Power BI ビジュアルをパートナー センターに発行する](office-store.md)

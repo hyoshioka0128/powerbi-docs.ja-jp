@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2ae4223a6e156be3907bcad980df9446dbb64127
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c94990f3126191cf568c2cc20fb5db0c954a6424
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234629"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049455"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Power BI レポートでの視覚エフェクト
 
@@ -29,7 +29,7 @@ ms.locfileid: "85234629"
 
 ![各ビジュアルの種類のアイコンがあるペイン](media/power-bi-report-visualizations/power-bi-icons.png)
 
-その他の Power BI の視覚エフェクトは、[Microsoft AppSource コミュニティ サイト](https://appsource.microsoft.com)から入手できます。 AppSource では、Microsoft およびコミュニティによって提供される [Power BI の視覚エフェクト](../developer/visuals/custom-visual-develop-tutorial.md)を参照して[ダウンロード](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)できます。
+その他の Power BI の視覚エフェクトは、[Microsoft AppSource コミュニティ サイト](https://appsource.microsoft.com)から入手できます。 AppSource を使用すると、Microsoft とコミュニティによって提供される Power BI の視覚化を参照して[ダウンロード](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)することができます。
 
 Power BI を初めて使用する場合や、復習したい場合は、以下のリンクを使用して、Power BI 視覚エフェクトの基本を確認してください。  または、目次 (この記事の左側) を使用して役に立つ情報を見つけます。
 
@@ -39,7 +39,7 @@ Power BI を初めて使用する場合や、復習したい場合は、以下�
 
 ## <a name="upload-a-visualization-from-a-file-or-from-appsource"></a>ファイルまたは AppSource から視覚化をアップロードする
 
-自分で作成した視覚化、または [Microsoft AppSource コミュニティ サイト](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)で見つけた視覚化を追加します。 自分でカスタマイズする場合は、 ソース コードを調べ、[開発者ツール](../developer/visuals/custom-visual-develop-tutorial.md)を使用して新しい視覚化の種類を作成して、[コミュニティと共有](../developer/visuals/office-store.md)してください。 Power BI の視覚エフェクトの開発について詳しくは、[Power BI の視覚エフェクトの開発](../developer/visuals/custom-visual-develop-tutorial.md)に関する記事をご覧ください。
+自分で作成した視覚化、または [Microsoft AppSource コミュニティ サイト](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)で見つけた視覚化を追加します。 自分でカスタマイズする場合は、 ソース コードを調べ、[開発ツール](../developer/visuals/environment-setup.md)を使用して新しい視覚化の種類を作成し、[コミュニティと共有](../developer/visuals/office-store.md)します。 Power BI の視覚エフェクトの開発について詳しくは、[Power BI の視覚エフェクトの開発](../developer/visuals/develop-circle-card.md)に関する記事をご覧ください。
 
 ## <a name="personalize-your-visualization-pane"></a>[視覚化] ペインをカスタマイズする
 

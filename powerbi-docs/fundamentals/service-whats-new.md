@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: a36c377a7faf82e6aeb544859b72ac973305a3b3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 0f4b84067389e93de0e5c5c2b5008b08cd78151f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860166"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525204"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI サービスの新機能
 **Power BI サービス**の既知の問題と最近リリースされた機能については、このページをご確認ください。 関連する最新情報については、次の資料を参照してください。
@@ -80,7 +80,7 @@ ms.locfileid: "90860166"
 * 他ユーザーへの更新通知の送信。
 * Power BI Premium 容量向けの[テスト ツール](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/)。
 * [サービス可用性通知](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/)のパブリック プレビュー。
-* Power BI レポートの[新しい外観](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/)のパブリック プレビュー。
+* Power BI レポートの[新しい外観](https://powerbi.microsoft.com/blog/introducing-the-new-look-of-workspaces-in-the-power-bi-service/)のパブリック プレビュー。
 * 南アフリカの新しい Power BI リージョン。
 
 ### <a name="june-2019"></a>2019 年 6 月
@@ -312,7 +312,7 @@ ms.locfileid: "90860166"
 
 ***行レベルのセキュリティ (RLS)***
 
-* Azure Active Directory (AAD) グループ サポート:ユーザーは AAD グループ (セキュリティ グループと配信一覧) をロールに割り当てることができるようになりました。 大きなユーザー グループにロールを一度に割り当てる作業がこれで簡単になります。
+* Azure Active Directory (Azure AD) グループのサポート:ユーザーは、Azure AD グループ (セキュリティ グループ) をロールに割り当てることができるようになりました。 大きなユーザー グループにロールを一度に割り当てる作業がこれで簡単になります。
 * [RLS が適用されたデータで支援されたレポートで RLS ロールをテストする](../admin/service-admin-rls.md#validate-the-roles-within-power-bi-desktop):特定のロールとしてデータセットをテストできる機能を RLS プレビューに追加しました。 ユーザーがダッシュボードを使用する前に、ロールが予想どおり動作することを確認できます。
 * 直接のクエリに基づき、RLS を定義し、クラウド モデルに適用する:直接のクエリ データ ソースに対して RLS ルールを作成し、適用できるようになりました。
 
@@ -646,7 +646,7 @@ Power BI チームは、休暇中忙しく働いていました。 詳しくは�
 * 今週のサービス更新では、新しいレポートを作成するときに、複数のページ サイズから選択し、ページ サイズを定義できるようになりました。 この機能では、レポートの各ページのサイズと縦横比を制御します。
 * 画像とバブル チャートについて、視覚的な書式を追加しました。 縦横比をロックしながら画像のサイズを変更することで、画像のゆがみを回避できます。また、散布図のバブルを塗りつぶすかどうかを構成できます。
 * Power BI から、予備の電子メール アドレスに共有の招待を送信できるようになりました。 ダッシュボードを共有すると、元の電子メール アドレスと予備の電子メール アドレス (構成している場合) の両方に共有の招待のリンクが送信されます。
-* Power BI は、Dedicated on Multitenant (DonMT) Microsoft 365 アーキテクチャのユーザーを含め、すべてのユーザーが使用できます。 マルチテナント モードの共有サービスとして Power BI を使用することになります。 ほとんどの場合、単純な[セルフサービスサインアップ プロセス](https://powerbi.microsoft.com/)を実行するだけで Power BI に登録できます。職場の電子メール アドレスを入力し、名前とパスワードを入力するだけで始めることができます。 テナント管理者の場合、[この手順](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)に従ってユーザーにライセンスを割り当てることができます。
+* Power BI は、Dedicated on Multitenant (DonMT) Microsoft 365 アーキテクチャのユーザーを含め、すべてのユーザーが使用できます。 マルチテナント モードの共有サービスとして Power BI を使用することになります。 ほとんどの場合、単純な[セルフサービスサインアップ プロセス](https://powerbi.microsoft.com/)を実行するだけで Power BI に登録できます。職場の電子メール アドレスを入力し、名前とパスワードを入力するだけで始めることができます。 ライセンス管理者の場合、[この手順](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)に従ってユーザーにライセンスを割り当てることができます。
 * Azure 監査ログでは、Azure サブスクリプションの制御プレーン操作ログを確認できます。 Power BI Azure 監査ログ コンテンツ パックを使用すると、ログに含まれる豊富な情報を簡単に分析し、視覚化することができます。 コンテンツ パックからデータに接続し、すぐに使用できるダッシュボードとレポートでデータを分析できます。 詳細については、[ブログ](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/)と[オンライン ドキュメント](../connect-data/service-connect-to-services.md)をご覧ください。
 
 [私たちのブログをご覧ください](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/)。

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: c8daa87bca6fb5ed47899f804c0710f58b559ff1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d2e229dda05c1761fdaa5c7336c0eca5db538e46
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860235"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92026050"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -24,6 +24,20 @@ ms.locfileid: "90860235"
 
 >[!NOTE]
 >**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="october-2020"></a>2020 年 10 月
+### <a name="automatic-page-refresh-is-now-supported-windows"></a>ページの自動更新はサポートされています (Windows)
+
+現在、[ページの自動更新](../../create-reports/desktop-automatic-page-refresh.md)が構成されたレポート ページは、Windows デバイス用の Power BI アプリでも自動的に更新されます。 これは、通常のレポート ビューだけではありません。 ページの自動更新を使用すると、[プレゼンテーションやスライドショー](mobile-windows-10-app-presentation-mode.md#slideshows)もリアルタイムで更新され、常に最新のビジネス データと分析情報が確実に表示されます。
+
+### <a name="support-for-notch-displays-ios"></a>ノッチ ディスプレイのサポート (iOS)
+iPhone と iPad でのノッチ ディスプレイのサポートが追加され、レポートとダッシュボード用の画面領域が増えました。 
+
+## <a name="september-2020"></a>2020 年 9 月
+### <a name="power-bi-app-preview-for-hololens-2-is-out-in-the-stores"></a>HoloLens 2 用の Power BI アプリ (プレビュー) が、ストアにあります。
+
+HoloLens 2 用の Power BI アプリを使用すると、完全にイマーシブなエクスペリエンスを実現できます。 HoloLens 2 のハンド ジェスチャ システムを使用して、お気に入りのレポートやダッシュボードをツールベルトから取り出し、必要な場所にサイズを合わせて配置し、レポートのページで表示することもできます。 レポートとダッシュボードはアプリの使用中に更新されるため、データが変化すると、それらの変化がすぐに表示されます。 詳細については、[ドキュメント](mobile-hololens2-app.md)と[ブログ](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)を参照してください。
+
 
 ## <a name="august-2020"></a>2020 年 8 月
 ### <a name="weve-improved-how-you-navigate-to-your-content-ios-and-android"></a>コンテンツに移動する方法を改善しました (iOS および Android)

@@ -10,12 +10,12 @@ ms.date: 09/23/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: eecc36377ab79e4af4ea7882c24f4eb5a6e376c7
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 45d89fe7a224d56e710765e533a7c075c24b8a66
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524629"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981506"
 ---
 # <a name="power-bi-for-us-government-customers"></a>米国政府顧客向け Power BI
 
@@ -84,9 +84,9 @@ Power BI の認証、ID、管理は、Microsoft 365 サービスへの接続に�
 | Content Delivery Network (CDN) | **GCC**: gov.content.powerapps.us |
 | | **GCC High**: high.content.powerapps.us |
 | | **DoD**: mil.content.powerapps.us |
-| Microsoft 365 の統合 | **GCC**:[ワールドワイド エンドポイント](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) |
-| | **GCC High**:[US Government GCC High エンドポイント](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
-| | **DoD**:[US Government DOD エンドポイント](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
+| Microsoft 365 の統合 | **GCC**:[ワールドワイド エンドポイント](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
+| | **GCC High**:[US Government GCC High エンドポイント](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
+| | **DoD**:[US Government DOD エンドポイント](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | ポータル |**GCC**: *.powerbigov.us |
 | | **GCC-High**: *.high.powerbigov.us |
 | | **DoD**: *.mil.powerbigov.us |
@@ -107,7 +107,7 @@ Azure は複数のクラウドに分散されています。 既定では、ク�
 
 US Government クラウドの IP 範囲を取得するには、「[Azure IP 範囲とサービス タグ - US Government クラウド](https://www.microsoft.com/download/details.aspx?id=57063)」でファイルをダウンロードしてください。 範囲は Power BI と Power Query の両方に対して示されます。
 
-Microsoft Azure Government クラウド サービスの詳細については、[Azure Government のドキュメント](https://docs.microsoft.com/azure/azure-government/)を参照してください。
+Microsoft Azure Government クラウド サービスの詳細については、[Azure Government のドキュメント](/azure/azure-government/)を参照してください。
 
 SQL データベースのファイアウォールを設定するには、「[IP ファイアウォール規則の作成および管理](/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules)」を参照してください。
 
@@ -123,7 +123,6 @@ Government クラウドのお客様の要件に対応するため、Government �
 |[Power BI Web パーツを使用した SharePoint Online への埋め込み](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
 |[データドリブン アラートのための Power Automate との接続](../connect-data/power-bi-data-sources.md)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
 |[Teams での [Power BI] タブ](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
-|[容量メトリック](../admin/service-admin-premium-monitor-portal.md)|Q3 2020 |Q3 2020|Q3 2020|
 |[大規模なモデル](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
 |[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/service-dataflows-enhanced-compute-engine.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
 |[データフロー - 直接クエリ](../transform-model/service-dataflows-directquery.md) | Q4 2020 |Q4 2020|![利用不可](../media/no.png)|
@@ -131,6 +130,7 @@ Government クラウドのお客様の要件に対応するため、Government �
 |[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[テンプレート アプリ](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
+|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[QR コードの生成](../create-reports/service-create-qr-code-for-tile.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 
 <sup>1</sup> B2B コラボレーションは GCC で利用できますが、その環境でのライセンスを外部ユーザーに発行する必要があります。 商用クラウド ライセンスは GCC では無効です。 米国政府機関向け B2B コラボレーションの既知の制限に関する詳細については、「[Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)」(Azure Government とグローバル Azure の比較) を参照してください

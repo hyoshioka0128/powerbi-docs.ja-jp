@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
-ms.date: 06/01/2020
-ms.openlocfilehash: 521c705587c10c76dedb731aeae34221244f3a83
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.date: 10/15/2020
+ms.openlocfilehash: 3d25fe925b98dbdd74d61fd70320bd4275db35e3
+ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749186"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197773"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>サービス プリンシパルと証明書を使用した Power BI コンテンツの埋め込み
 
@@ -35,17 +35,48 @@ Azure AD での証明書の詳細については「[クライアント資格情�
 
 埋め込み分析でサービス プリンシパルと証明書を使用するには、次の手順を行います。
 
-1. 証明書を作成する。
+1. Azure AD アプリケーションを作成する
 
-2. Azure AD アプリケーションを作成する
+2. Azure AD セキュリティ グループを作成します。
 
-3. 証明書認証を設定する
+3. Power BI サービス管理者設定を有効にします。
 
-4. Azure Key Vault から証明書を取得する
+4. サービス プリンシパルを、ご利用のワークスペースに追加します。
 
-5. サービス プリンシパルと証明書を使用して認証する
+5. 証明書を作成する。
 
-## <a name="step-1---create-a-certificate"></a>手順 1 - 証明書を作成する
+6. 証明書認証を設定する
+
+7. Azure Key Vault から証明書を取得する
+
+8. サービス プリンシパルと証明書を使用して認証する
+
+## <a name="step-1---create-an-azure-ad-application"></a>手順 1 - Azure AD アプリケーションを作成する
+
+[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
+
+### <a name="creating-an-azure-ad-app-using-powershell"></a>PowerShell を使用した Azure AD アプリの作成
+
+このセクションには、[PowerShell](/powershell/azure/create-azure-service-principal-azureps) を使用して新しい Azure AD アプリを作成するためのサンプル スクリプトが含まれています。
+
+```powershell
+# The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
+
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
+
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
+```
+
+[!INCLUDE[service create steps two, three and four](../../includes/service-principal-create-steps.md)]
+
+## <a name="step-5---create-a-certificate"></a>手順 5 - 証明書を作成する
 
 信頼された "*証明機関*" から証明書を取得することも、証明書を自分で生成することもできます。
 
@@ -55,19 +86,19 @@ Azure AD での証明書の詳細については「[クライアント資格情�
 
 2. **Key Vaults** を検索し、 **[Key Vaults]** リンクをクリックします。
 
-    ![キー コンテナー](media/embed-service-principal-certificate/key-vault.png)
+    ![Azure portal のキー コンテナーへのリンクを示すスクリーンショット。](media/embed-service-principal-certificate/key-vault.png)
 
 3. 証明書の追加先とするキー コンテナーをクリックします。
 
-    ![Key Vault の選択](media/embed-service-principal-certificate/select-key-vault.png)
+    ![Azure portal でぼかされたキー コンテナーの一覧を示すスクリーンショット。](media/embed-service-principal-certificate/select-key-vault.png)
 
 4. **[証明書]** をクリックします。
 
-    ![[証明書] がコールアウトされた [キー コンテナー] ページを表示するスクリーンショット。](media/embed-service-principal-certificate/certificates.png)
+    ![[証明書] がコールアウトされた [キー コンテナー] ページを示すスクリーンショット。](media/embed-service-principal-certificate/certificates.png)
 
 5. **[生成/インポート]** をクリックします。
 
-    ![[生成/インポート] がコールアウトされた [証明書] ウィンドウを表示するスクリーンショット。](media/embed-service-principal-certificate/generate.png)
+    ![[生成/インポート] がコールアウトされた [証明書] ウィンドウを示すスクリーンショット。](media/embed-service-principal-certificate/generate.png)
 
 6. 次のように、 **[証明書フィールドの作成]** を構成します。
 
@@ -97,21 +128,17 @@ Azure AD での証明書の詳細については「[クライアント資格情�
 
 9. **[CER 形式でダウンロード]** をクリックします。 ダウンロードしたファイルには、公開キーが含まれています。
 
-    ![cer としてダウンロードする](media/embed-service-principal-certificate/download-cer.png)
+    ![[CER 形式でダウンロード] ボタンを示すスクリーンショット。](media/embed-service-principal-certificate/download-cer.png)
 
-## <a name="step-2---create-an-azure-ad-application"></a>手順 2 - Azure AD アプリケーションを作成する
-
-[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
-
-## <a name="step-3---set-up-certificate-authentication"></a>手順 3 - 証明書の認証を設定する
+## <a name="step-6---set-up-certificate-authentication"></a>手順 6 - 証明書の認証を設定する
 
 1. Azure AD アプリケーションで、 **[証明書とシークレット]** タブをクリックします。
 
-     ![アプリの [証明書とシークレット] ウィンドウを Azure portal で表示するスクリーンショット。](media/embed-service-principal/certificates-and-secrets.png)
+     ![Azure portal のアプリに対する [証明書とシークレット] ペインを示すスクリーンショット。](media/embed-service-principal/certificates-and-secrets.png)
 
-2. **[証明書のアップロード]** をクリックし、このチュートリアルの[最初の手順](#step-1---create-a-certificate)で作成およびダウンロードした *.cer* ファイルをアップロードします。 *.cer* ファイルには公開キーが含まれています。
+2. **[証明書のアップロード]** をクリックし、このチュートリアルの[最初の手順](#step-5---create-a-certificate)で作成およびダウンロードした *.cer* ファイルをアップロードします。 *.cer* ファイルには公開キーが含まれています。
 
-## <a name="step-4---get-the-certificate-from-azure-key-vault"></a>手順 4 - Azure Key Vault から証明書を取得する
+## <a name="step-7---get-the-certificate-from-azure-key-vault"></a>手順 7 - Azure Key Vault から証明書を取得する
 
 マネージド サービス ID (MSI) を使用して Azure Key Vault から証明書を取得します。 このプロセスでは、公開キーと秘密キーの両方を含む *.pfx* 証明書を取得する必要があります。
 
@@ -138,7 +165,7 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
 }
 ```
 
-## <a name="step-5---authenticate-using-service-principal-and-a-certificate"></a>手順 5 - サービス プリンシパルと証明書を使用して認証する
+## <a name="step-8---authenticate-using-service-principal-and-a-certificate"></a>手順 8 - サービス プリンシパルと証明書を使用して認証する
 
 サービス プリンシパルと、Azure Key Vault に格納されている証明書を使用してご自分のアプリを認証するには、Azure Key Vault に接続します。
 
@@ -181,11 +208,11 @@ public async Task<AuthenticationResult> DoAuthentication(){
 
 2. **[ツール]**  >  **[オプション]** の順にクリックします。
 
-     ![Visual Studio のオプション](media/embed-service-principal-certificate/visual-studio-options.png)
+     ![Visual Studio の [ツール] メニューの [オプション] ボタンを示すスクリーンショット。](media/embed-service-principal-certificate/visual-studio-options.png)
 
 3. **[アカウントの選択]** を検索し、 **[アカウントの選択]** をクリックします。
 
-    ![アカウントの選択](media/embed-service-principal-certificate/account-selection.png)
+    ![Visual Studio の [オプション] ウィンドウの [アカウントの選択] オプションを示すスクリーンショット。](media/embed-service-principal-certificate/account-selection.png)
 
 4. ご利用の Azure Key Vault へのアクセス権を持つアカウントを追加します。
 

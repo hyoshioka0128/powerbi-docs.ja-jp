@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 48255955f6611f4687ca6dd48cbb5ec9876daed7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: edf49ba9fa85ab2c46040fdac74691bea8b5b960
+ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224771"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928311"
 ---
 # <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Power BI Desktop で Google BigQuery データベースに接続する
 Power BI Desktop では、Google **BigQuery** データベースに接続し、Power BI Desktop の他のデータ ソースの場合と同様に基になっているデータを使用できます。
@@ -41,13 +41,28 @@ Google **BigQuery** コネクタには、いくつかの制限事項と考慮事
 
 * Google BigQuery コネクタは、Power BI Desktop と Power BI サービスにあります。 Power BI サービスでは、Power BI から Google BigQuery へのクラウド間接続を使用して、コネクタにアクセスできます。
 
-Power BI は、Google BigQuery の**請求書作成プロジェクト**で使用できます。 Power BI は既定で、ユーザに返されたリストの最初のプロジェクトを使用します。 Power BI で使用するときの請求書作成プロジェクトの動作をカスタマイズするには、次の手順に従います。
+* Power BI は、Google BigQuery の**請求書作成プロジェクト**で使用できます。 Power BI は既定で、ユーザに返されたリストの最初のプロジェクトを使用します。 
 
- * ソースの手順の基になる M で次のオプションを指定します。これは、Power BI Desktop で **Power Query エディター**を使用してカスタマイズできます。
+  Power BI で使用する場合の請求書作成プロジェクトの動作をカスタマイズするには、Source ステップの基となる M で次のオプションを指定します。これは、Power BI Desktop の **Power Query エディター**を使用してカスタマイズできます。
 
-    ```Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])```
+  ```
+  Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
+  ```
 
-## <a name="next-steps"></a>次のステップ
+  2020 年 9 月のリリース以降、[Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage) のサポートが有効になりました。 きめ細かいアクセス許可を使用すると、この機能に問題が発生する場合があります。 このシナリオでは、次のエラー メッセージが表示されることがあります。
+
+  `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
+
+  この問題を解決するには、Storage API のユーザー アクセス許可を調整します。 以下のストレージ API アクセス許可を割り当てます。
+
+  - `bigquery.readsessions.create` -BigQuery Storage API を介して新しい読み取りセッションを作成します。
+  - `bigquery.readsessions.getData` -BigQuery Storage API を介して読み取りセッションからデータを読み取ります。
+  - `bigquery.readsessions.update` -BigQuery Storage API を介して読み取りセッションを更新します。
+
+  通常、これらのアクセス許可は BigQuery.User ロールで提供されます。 詳細については、[Google BigQuery の事前定義ロールと権限](https://cloud.google.com/bigquery/docs/access-control)に関するページを参照してください。
+
+
+## <a name="next-steps"></a>次の手順
 Power BI Desktop を使用して接続できるデータの種類は他にもあります。 データ ソースの詳細については、次のリソースを参照してください。
 
 * [Power BI Desktop とは何ですか?](../fundamentals/desktop-what-is-desktop.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 7c90093fefb98c6b385328e8dd207760e3207cbf
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 32fb26faa42f0ce6128a4a4cc0e491f78f270d36
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746219"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982196"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Power BI を使用した埋め込み分析
 
@@ -82,9 +82,9 @@ Power BI Pro アカウントは、アプリケーションのマスター アカ
 開発者は Power BI Embedded を使用すると、ビジュアルと分析の開発ではなく、アプリケーションの中核的機能の構築に時間を費やすことができます。 また、顧客のレポートとダッシュボードの需要をすばやく満たし、完全に文書化された API と SDK に簡単に埋め込むことができます。 ナビゲーションが簡単なデータ探索をアプリで有効にすることで、ISV の顧客は、どのデバイスからでも迅速にデータ ドリブンの意思決定を下すことができるようになります。
 
 > [!IMPORTANT]
-> 埋め込みには Power BI サービスが必要ですが、顧客は Power BI アカウントを用意しなくてもアプリケーションの埋め込みコンテンツを表示できます。 
+> 埋め込みには Power BI サービスが必要ですが、顧客は Power BI アカウントを用意しなくてもアプリケーションの埋め込みコンテンツを表示できます。
 
-運用環境に移行する準備ができたら、ワークスペースを専用の容量に割り当てる必要があります。 Microsoft Azure の Power BI Embedded には、アプリケーションに使用できる[専用の容量](azure-pbie-create-capacity.md)が用意されています。
+運用環境に移行する準備ができたら、ワークスペースを容量に割り当てる必要があります。 アプリケーションで使用できるように、Microsoft Azure で [Power BI Embedded の容量を作成](azure-pbie-create-capacity.md)します。
 
 埋め込みの詳細については、[Power BI コンテンツの埋め込み方法](embed-sample-for-customers.md)に関するページを参照してください。
 

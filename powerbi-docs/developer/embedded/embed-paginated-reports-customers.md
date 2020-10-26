@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 771c41b896a6b886e8c72fa3d88ca8842e8ebffe
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 2c06464999192e71c2d398f41b7b96e8fa4a169b
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748841"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983484"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -34,7 +34,7 @@ ms.locfileid: "91748841"
 * [サービス プリンシパル (アプリ専用トークン)](embed-service-principal.md)
 * [Microsoft Azure](https://azure.microsoft.com/) サブスクリプション
 * 独自に設定された [Azure Active Directory テナント](create-an-azure-active-directory-tenant.md)
-* [ページ分割されたレポート](../../admin/service-admin-premium-workloads.md#paginated-reports)のワークロードが有効になっている、少なくとも A4 または P1 の[容量](#create-a-dedicated-capacity)
+* [ページ分割されたレポート](../../admin/service-admin-premium-workloads.md#paginated-reports)のワークロードが有効になっている、少なくとも A4 または P1 の[容量](#create-a-capacity)
 
 Azure サブスクリプションをお持ちでない場合は、始める前に[無料アカウントを作成](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)してください。
 
@@ -45,17 +45,17 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI 環境を設定する
 
-ページ分割されたレポートを埋め込むには、専用の容量にワークスペースを割り当て、ワークスペースにレポートをアップロードする必要があります。
+ページ分割されたレポートを埋め込むには、容量にワークスペースを割り当て、ワークスペースにレポートをアップロードする必要があります。
 
 ### <a name="create-an-app-workspace"></a>アプリ ワークスペースを作成する
 
 [サービス プリンシパル](embed-service-principal.md)を使用してアプリケーションにサインインしている場合は、[新しいワークスペース](../../collaborate-share/service-create-the-new-workspaces.md)を使用する必要があります。 "*サービス プリンシパル*" として、アプリケーションに関連するアプリ ワークスペースの管理者またはメンバーである必要もあります。
 
-### <a name="create-a-dedicated-capacity"></a>専用の容量を作成する
+### <a name="create-a-capacity"></a>容量を作成する
 
 ページ分割されたレポートを埋め込むためにインポートまたはアップロードする前に、レポートを含むワークスペースを、少なくとも A4 または P1 の容量に割り当てる必要があります。 選択できる容量には、次の 2 種類があります。
 * **Power BI Premium** - ページ分割されたレポートを埋め込むには、*P* SKU の容量が必要です。 Power BI コンテンツを埋め込む場合、このソリューションは "*Power BI 埋め込み*" と呼ばれます。 このサブスクリプションの詳細については、「[Power BI Premium とは](../../admin/service-premium-what-is.md)」を参照してください。
-* **Azure Power BI Embedded** - [Microsoft Azure portal](https://portal.azure.com) で専用の容量を購入できます。 このサブスクリプションは、*A* SKU を使用します。 ページ分割されたレポートを埋め込むには、少なくとも *A4* サブスクリプションが必要です。 Power BI Embedded 容量の作成方法の詳細については、「[Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)」 (Azure Portal で Power BI Embedded 容量を作成する) をご覧ください。
+* **Azure Power BI Embedded** - [Microsoft Azure portal](https://portal.azure.com) で容量を購入できます。 このサブスクリプションは、*A* SKU を使用します。 ページ分割されたレポートを埋め込むには、少なくとも *A4* サブスクリプションが必要です。 Power BI Embedded 容量の作成方法の詳細については、「[Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)」 (Azure Portal で Power BI Embedded 容量を作成する) をご覧ください。
 
 次の表は、各 SKU のリソースと制限を示しています。 ニーズに最適な容量を判断するには、[シナリオに応じてどの SKU を購入すればよいか](./embedded-faq.md#which-solution-should-i-choose)をまとめた表を参照してください。
 
@@ -66,11 +66,11 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 | P3/A6 | 32 | 16 | 100 | 16 |
 | | | | | |
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>専用の容量にアプリ ワークスペースを割り当てる
+### <a name="assign-an-app-workspace-to-a-capacity"></a>容量にアプリ ワークスペースを割り当てる
 
-専用の容量を作成すると、アプリ ワークスペースをその専用の容量に割り当てることができます。
+容量を作成した後、アプリ ワークスペースをその容量に割り当てることができます。
 
-[サービス プリンシパル](embed-service-principal.md)を使用して専用の容量をワークスペースに割り当てるには、[Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity) を使用します。 Power BI REST API の使用時は必ず[サービス プリンシパル オブジェクト ID](embed-service-principal.md) を使用してください。
+[サービス プリンシパル](embed-service-principal.md)を使用して容量をワークスペースに割り当てるには、[Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity) を使用します。 Power BI REST API の使用時は必ず[サービス プリンシパル オブジェクト ID](embed-service-principal.md) を使用してください。
 
 ### <a name="create-and-upload-your-paginated-reports"></a>ページ分割されたレポートを作成してアップロードする
 

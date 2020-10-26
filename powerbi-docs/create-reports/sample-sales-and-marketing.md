@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 6bd70657cecd12ebab7ac54f125e4c358b2cc4aa
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 95f9ebd689f06fcacde9819789e1240f2dd6c3d3
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349059"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92025981"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Power BI の売上およびマーケティングのサンプル:ツアーを開始する
 
@@ -24,17 +24,17 @@ VanArsdel 社には多くの競合他社が存在しますが、その業界に�
 
 ![売上およびマーケティングのサンプルのダッシュボード](media/sample-sales-and-marketing/sales1.png)
 
-このサンプルは、ビジネス用のデータ、レポート、ダッシュボードを用いて Power BI を使う方法について説明するシリーズの一部です。 匿名化された実際のデータを使用し、[obviEnce](http://www.obvience.com/) によって作成されています。 データは複数の形式 (コンテンツ パック、Power BI Desktop の .pbix ファイル、Excel ブック) で使用できます。 [Power BI 用のサンプル](sample-datasets.md)を参照してください。 
+このサンプルは、ビジネス用のデータ、レポート、ダッシュボードを用いて Power BI を使う方法について説明するシリーズの一部です。 匿名化された実際のデータを使用し、[obviEnce](http://www.obvience.com/) によって作成されています。 データは複数の形式 (製品内サンプル、Power BI Desktop の .pbix ファイル、Excel ブック) で使用できます。 [Power BI 用のサンプル](sample-datasets.md)を参照してください。 
 
-このチュートリアルでは、Power BI サービス内の売上およびマーケティングのサンプル コンテンツ パックを調べます。 Power BI Desktop とサービスのレポート エクスペリエンスは似ているので、Power BI Desktop 内のサンプルの .pbix ファイルを使用して作業することもできます。 
+このチュートリアルでは、Power BI サービス内の売上およびマーケティングのサンプルを調べます。 Power BI Desktop とサービスのレポート エクスペリエンスは似ているので、Power BI Desktop 内のサンプルの .pbix ファイルを使用して作業することもできます。 
 
 Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro ライセンスを持っていない場合は、Power BI サービス内で、マイ ワークスペースにサンプルを保存できます。 
 
 ## <a name="get-the-sample"></a>サンプルを入手する
 
-このサンプルを使用するには、事前にサンプルを[コンテンツ パック](#get-the-content-pack-for-this-sample)、[.pbix ファイル](#get-the-pbix-file-for-this-sample)、または [Excel ブック](#get-the-excel-workbook-for-this-sample)としてダウンロードしておく必要があります。
+このサンプルを使用するには、事前に[ダッシュボード、レポート、データセット](#get-the-sample-from-the-power-bi-service)、[.pbix ファイル](#get-the-pbix-file-for-this-sample)、または [Excel ブック](#get-the-excel-workbook-for-this-sample)をダウンロードしておく必要があります。
 
-### <a name="get-the-content-pack-for-this-sample"></a>このサンプルのコンテンツ パックを入手する
+### <a name="get-the-sample-from-the-power-bi-service"></a>Power BI サービスからサンプルを取得する
 
 1. Power BI サービス (app.powerbi.com) を開いてサインインし、サンプルを保存するワークスペースを開きます。
 
@@ -49,7 +49,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
   
    ![サンプルに接続](media/sample-sales-and-marketing/sales9.png)
    
-5. Power BI によってコンテンツ パックがインポートされ、新しいダッシュボード、レポート、およびデータセットが現在のワークスペースに追加されます。
+5. Power BI によってサンプルがインポートされ、新しいダッシュボード、レポート、データセットが現在のワークスペースに追加されます。
    
    ![売上およびマーケティングのサンプルのエントリ](media/sample-sales-and-marketing/sales11.png)
   

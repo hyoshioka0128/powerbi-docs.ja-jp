@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 63acae99f0abd4fc91f4ae51b33786a3e01093ea
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c05cb79d0996ad1819f0145193760ab16a031ffb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226005"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526722"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Power BI と Microsoft 365 でワークスペースを管理する
 
@@ -42,7 +42,7 @@ Microsoft 365 または [Power BI でのワークスペース](service-create-di
 
 1. Power BI サービスで、 **[ワークスペース]** の横にある矢印を選択し、目的のワークスペース名の横にある**その他のオプション** (...) を選択して、 **[このワークスペースを編集]** を選択します。
 
-   ![Power BI でのワークスペースの編集](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
+   ![[ワークスペース] が選択され、[詳細オプション] メニューから [このワークスペースを編集] が選択されている Power BI の [ホーム] を示すスクリーンショット。](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
    > [!NOTE]
    > ワークスペース管理者の場合は、 **[このワークスペースを編集]** のみが表示されます。
@@ -61,7 +61,7 @@ Microsoft 365 の Outlook でワークスペースの側面を直接編集する
 
 1. Power BI サービスで、 **[ワークスペース]** の横にある矢印を選択し、目的のワークスペース名の横にある**その他のオプション** (...) を選択して、 **[メンバー]** を選択します。
 
-   ![Power BI でのワークスペースの編集](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
+   ![[ワークスペース] が選択され、[詳細オプション] メニューから [メンバー] が選択されている Power BI の [ホーム] を示すスクリーンショット。](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
    これにより、Microsoft 365 の Outlook でワークスペースのグループ ビューが開きます。 会社のアカウントにサインインする必要があります。
 

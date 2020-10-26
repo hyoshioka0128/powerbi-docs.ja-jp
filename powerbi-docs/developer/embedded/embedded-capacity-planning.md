@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: 9158dfccecd42d13a133a49097b2f85cb3713f00
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 23f58c047eeb47fce24ad38ae54d8f4d7a1c57e7
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746748"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983047"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Power BI 埋め込み分析の容量計画
 
@@ -27,11 +27,11 @@ Power BI 埋め込み分析の展開に必要な容量の種類を計算する�
 * データの更新間隔
 * 予測が困難なその他の使用パターン
 
-この記事は、[Power BI 専用容量負荷の評価ツール](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/)を導入することによって、Power BI 埋め込み分析の容量計画を容易にすることを目的としています。これは、Power BI 埋め込み分析の容量 (*A*、*EM* または *P* の SKU) のロード テストを自動化するために作成されています。
+この記事は、[Power BI 容量負荷評価ツール](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/)を導入することによって、Power BI 埋め込み分析の容量計画を容易にすることを目的としています。これは、Power BI 埋め込み分析の容量 (*A*、*EM*、または *P* の SKU) のロード テストを自動化するために作成されています。
 
 ## <a name="planning-tool"></a>計画ツール
 
- [Power BI 専用容量負荷の評価ツール](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/)を使用すると、ご利用の容量で処理できるユーザー負荷の量を把握できます。 ここでは、PowerShell を使用して容量に対して自動化されたロード テストを作成し、テストするレポートと、シミュレートする同時実行ユーザー数を選択できます。
+ [Power BI 容量負荷評価ツール](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/)を使用すると、ご利用の容量で処理できるユーザー負荷の量を把握できます。 ここでは、PowerShell を使用して容量に対して自動化されたロード テストを作成し、テストするレポートと、シミュレートする同時実行ユーザー数を選択できます。
 
 このツールでは、サービスに対するツールの認証に必要なトークンの有効期限が切れるまで、(レポートのキャッシュによる非現実的なほど優れたパフォーマンスを回避するために) 新しいフィルター値を使用して各レポートを継続的にレンダリングすることにより、容量に対する負荷が生成されます。
 

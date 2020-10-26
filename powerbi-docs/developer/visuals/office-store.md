@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/14/2020
-ms.openlocfilehash: 891f4d57e1c2754f4c98916b2824ef2283d8298a
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 55661d8faa39d26d19d15696252cf46b74c84a50
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747967"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049432"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI ビジュアルをパートナー センターに発行する
 
-Power BI ビジュアルを作成した後、それを AppSource に発行することで、他のユーザーがそれを探して使用できるようにすることができます。 Power BI ビジュアルの作成の詳細については、[Power BI ビジュアルの開発](custom-visual-develop-tutorial.md)に関する記事を参照してください。
+Power BI ビジュアルを作成した後、それを AppSource に発行することで、他のユーザーがそれを探して使用できるようにすることができます。 Power BI の視覚化の作成について詳しくは、[Power BI の円形カード視覚化の開発](develop-circle-card.md)に関する記事を参照してください。
 
 ## <a name="what-is-appsource"></a>AppSource とは
 
@@ -119,7 +119,7 @@ AppSource に提出する前に、**pbiviz** ファイルと **pbix** ファイ�
 
 ## <a name="next-steps"></a>次の手順
 
-* [Power BI カスタム ビジュアルの開発](custom-visual-develop-tutorial.md)
+* [Power BI の円形カード視覚化の開発](develop-circle-card.md)
 
 * [Power BI での視覚化](../../visuals/power-bi-report-visualizations.md)  
 

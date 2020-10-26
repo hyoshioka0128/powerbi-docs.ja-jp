@@ -121,6 +121,8 @@
       items:
         - name: Power BI レポート
           items:
+            - name: サービスでレポートを作成する
+              href: service-report-create-new.md
             - name: ページの自動更新を有効にする
               href: desktop-automatic-page-refresh.md
             - name: パフォーマンス アナライザーを使用してレポート要素を確認する
@@ -205,8 +207,12 @@
               href: desktop-grouping-visuals.md
             - name: カスタム レポート テンプレート
               href: desktop-templates.md
-            - name: データセットからレポートを作成する
-              href: service-report-create-new.md
+            - name: レポート設定を変更する
+              href: power-bi-report-settings.md
+            - name: 他のユーザーのホーム ページでレポートをおすすめする
+              href: ../collaborate-share/service-featured-content.md
+            - name: コンシューマーがビジュアルをカスタマイズできるようにする (プレビュー)
+              href: power-bi-personalize-visuals.md
             - name: レポートの保存
               href: service-report-save.md
             - name: 編集ビューでレポートと対話する

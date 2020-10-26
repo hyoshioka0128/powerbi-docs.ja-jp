@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 2a0c326902063759d10f49f3c5d745c22f477ec2
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: a47af4b96e80508a6ea21de2d8d3e0b40f907d8d
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634805"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92025935"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Surface Hub と Windows 10 デバイスで、プレゼンテーション モードでレポートとダッシュボードを表示する
 Windows 10 デバイスと Surface Hub で、プレゼンテーション モードを使用し、レポートとダッシュボードを全画面表示できます。 プレゼンテーション モードは、会議やカンファレンスで、またはオフィスの専用プロジェクターで Power BI を表示する場合や、小さい画面上の領域を最大化するためだけにも役立ちます。
@@ -56,7 +56,7 @@ Power BI モバイル アプリで **[全画面表示]** アイコンをタッ�
 
 ## <a name="slideshows"></a>スライドショー
 
-スライドショーを再生して、自動的にプレゼンテーションを順番に表示することができます。 ページ、ブックマーク、またはページとブックマークの両方を順番に表示するようにスライドショーを設定できます。
+スライドショーを再生して、自動的にプレゼンテーションを順番に表示することができます。 ページ、ブックマーク、またはページとブックマークの両方を順番に表示するようにスライドショーを設定できます。 スライドショーの間に、[ページの自動更新](../../create-reports/desktop-automatic-page-refresh.md)が設定されているレポート ページは、構成どおりに自動的に更新され、最新のデータが常に表示されます。
 
 操作ツール バーの **[再生]** ボタンを選択すると、スライドショーが開始します。 コントローラーが表示され、スライドショーを一時停止したり、再生されている内容 (ページ、ブックマーク、またはページとブックマークの両方) を変更したりできます。
 

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 45f5ff81e8ab11c2082af7f570f02bd3671719c6
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 8730860a63d8d78dad7cfaafa11fb411ec8422fe
+ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634686"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862970"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Power BI のレポートとダッシュボードのテーブル
 
@@ -183,6 +183,8 @@ Power BI では、レポートまたはダッシュボードの列見出しが�
 * 列の書式設定を適用する場合、選択できる配置オプションは 1 列あたり 1 つのみです:**自動**、**左**、**中央**、**右**。 通常、列に含まれるのはテキストのみか、数値のみであり、混在することはありません。 列に数値とテキストの両方が含まれる場合、 **[自動]** ではテキストは左に、数値は右に配置されます。 この動作は、左から右に読む言語をサポートします。
 
 * テーブルのセルまたはヘッダー内のテキスト データに改行文字が含まれている場合、要素に関連付けられている書式指定ペイン カードで [右端で折り返す] オプションをオンにしない限り、これらの文字は無視されます。 
+
+* Power BI によって、最初の 20 列と最初の 50 行に基づいて最大セル サイズが計算されます。 これらのポイントを超えるセルは、適切なサイズに設定されていない可能性があります。
 
 
 ## <a name="next-steps"></a>次の手順

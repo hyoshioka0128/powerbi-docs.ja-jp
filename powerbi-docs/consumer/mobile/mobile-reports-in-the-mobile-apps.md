@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: bdea7bbadc9e974e6b71122775408f50cfe33de3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 47f1db75eb3923c1c4195a319323c3a37d17484e
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855957"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92026085"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリのレポートを調べる
 適用対象:
@@ -156,6 +156,25 @@ Power BI モバイル アプリでは、レポートの作成者が定義した�
 
 [Power BI サービスでのブックマークについてさらに学習してください](../end-user-bookmarks.md)。
 
+## <a name="refresh-your-data"></a>データを更新する
+
+最新のデータが表示されているかどうかわからない場合は、Power BI サービスからレポートに新しいデータを取得できます。
+
+* iOS デバイスと Android タブレットの場合は、レポート ページの上から下に少しプルダウンします。
+* Android フォンの場合は、[操作設定](mobile-app-interaction-settings.md)でのセットアップ方法に応じて、プルダウン アクションまたは更新ボタンを使用できます。
+* Windows デバイスの場合は、表示の右上にある最新の情報に更新ボタンを使用します。
+
+    [ページの自動更新](../../create-reports/desktop-automatic-page-refresh.md)機能があるレポート ページは、構成どおりに自動的に更新されます (Windows アプリのみ)。
+
+>[!NOTE]
+>上記の更新方法を使用しても、基になるデータセットは更新されません。 そうではなく、Power BI に存在している可能性がある新しいデータで、モバイル アプリに表示しているレポートが更新されます。
+
+### <a name="how-do-i-know-when-my-report-was-last-refreshed"></a>レポートが最後に更新された日時を確認する方法
+
+レポートが最後に更新された日時を確認するには、レポート ヘッダーをタップします。 レポートへのナビゲーション ツリーが表示され、それに最後に更新された日付と時刻が含まれます。 
+
+![モバイル アプリのレポート更新情報のスクリーンショット。](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-refresh-info.png)
+ 
 ## <a name="configure-your-experience-with-reports"></a>レポート使用時のエクスペリエンスを構成する
 Power BI モバイル アプリには、レポート エクスペリエンスを制御するための設定がいくつかあります。 現時点では、以下のことを構成できます。
 * **レポート ビジュアルの対話式操作**: シングルタップ操作またはダブルタップ操作のどちらを使用するかを選択できます。

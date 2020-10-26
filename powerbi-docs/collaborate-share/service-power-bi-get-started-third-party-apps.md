@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.cunstom: ''
 ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: d845cde571679355fd50560a154358885f981db0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9e83d8689564471365666f9b4adfe2c3b9d1c05e
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225500"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526745"
 ---
 # <a name="get-started-with-third-party-apps"></a>サードパーティのアプリの概要
 
@@ -58,4 +58,4 @@ Power BI では、Microsoft 以外の会社または個人によってビルド�
 
 3. アプリケーションのタイルをポイントし、 **(...)** ボタンをクリックして **[削除]** をクリックします。
 
-   ![行の](media/service-power-bi-get-started-third-party-apps/remove.png)
+   ![サードパーティのアクセス許可を取り消す [削除] オプションを示すスクリーンショット。](media/service-power-bi-get-started-third-party-apps/remove.png)

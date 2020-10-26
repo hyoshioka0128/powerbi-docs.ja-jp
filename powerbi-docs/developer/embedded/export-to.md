@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 07/13/2020
-ms.openlocfilehash: f024959c0d7e8bd0b51893a277161c67b5f4dfc6
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.date: 10/01/2020
+ms.openlocfilehash: f997547bb61bf203f7806dbe68d45beb29c6538b
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746127"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116456"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI レポートをファイルにエクスポートする (プレビュー)
 
@@ -52,11 +52,18 @@ API は非同期です。 [exportToFile](/rest/api/power-bi/reports/exporttofile
 
 ### <a name="bookmarks"></a>ブックマーク
 
- `exportToFile` API を使用すると、フィルターが適用された後のレポートを、プログラムから特定の状態でエクスポートできます。 これは、[ブックマーク](../../consumer/end-user-bookmarks.md)機能を使用して行われます。 ブックマークを使用してレポートをエクスポートするには、[bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks) を使用します。
+[ブックマーク](../../consumer/end-user-bookmarks.md)を使用すると、適用されているフィルターやレポートの視覚エフェクトの状態など、特定の構成のレポートを保存できます。 [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API を使用して、次の 2 つの方法でレポートのブックマークをプログラムでエクスポートできます。
 
- たとえば、ブックマークの `capturedBookmark.state` メソッドを使用すると、特定のユーザーがレポートに対して行った変更をキャプチャし、現在の状態でそれをエクスポートできます。
+* **既存のブックマークをエクスポートする**
 
-[個人用ブックマーク](../../consumer/end-user-bookmarks.md#personal-bookmarks)と[永続的フィルター](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/)はサポートされていません。
+    既存の[レポート ブックマーク](../../consumer/end-user-bookmarks.md#report-bookmarks)をエクスポートするには、[Bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks) を使用して取得できる一意の (大文字と小文字が区別される) 識別子である `name` プロパティを使用します。
+
+* **レポートの状態をエクスポートする**
+
+    レポートの現在の状態をエクスポートするには、`state` プロパティを使用します。 たとえば、ブックマークの `bookmarksManager.capture` メソッドを使用すると、特定のユーザーがレポートに対して行った変更をキャプチャし、`capturedBookmark.state` を使用して現在の状態でそれをエクスポートできます。
+
+>[!NOTE]
+>[個人用ブックマーク](../../consumer/end-user-bookmarks.md#personal-bookmarks)と[永続的フィルター](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/)はサポートされていません。
 
 ### <a name="authentication"></a>認証
 

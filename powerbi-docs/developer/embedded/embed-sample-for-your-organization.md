@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 7a93260aab9d8195478949ea8044378ea5cfae83
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 9a38533e76fec134d667ae4026258a2a3c07f410
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746403"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983116"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI コンテンツを埋め込む
 
@@ -375,13 +375,13 @@ function updateEmbedReport() {
 }
 ```
 
-## <a name="using-a-power-bi-premium-dedicated-capacity"></a>Power BI Premium 専用容量の使用
+## <a name="using-a-power-bi-premium-capacity"></a>Power BI Premium 容量の使用
 
-これでアプリケーションの開発が完了したため、専用の容量を持つワークスペースに戻ります。
+これでアプリケーションの開発が完了したため、容量を持つワークスペースに戻ります。
 
-### <a name="create-a-dedicated-capacity"></a>専用の容量を作成する
+### <a name="create-a-capacity"></a>容量を作成する
 
-専用の容量を作成することで、ワークスペースでコンテンツ専用のリソースを所有する利点が得られます。 ページ分割されたレポートの場合は、少なくとも P1 容量を使用してワークスペースをバックアップする必要があります。 [Power BI Premium](../../admin/service-premium-what-is.md) を使用して、専用の容量を作成できます。
+容量を作成することにより、ワークスペース内のコンテンツに対してリソースを持つことができます。 ページ分割されたレポートの場合は、少なくとも P1 容量を使用してワークスペースをバックアップする必要があります。 [Power BI Premium](../../admin/service-premium-what-is.md) を使用して、容量を作成できます。
 
 次の表は、[Microsoft 365](../../admin/service-admin-premium-purchase.md) で利用可能な Power BI Premium SKU の一覧です。
 
@@ -400,17 +400,17 @@ function updateEmbedReport() {
 > - Microsoft Office アプリで埋め込もうとしている場合は、EM SKU を使用して、無料の Power BI ライセンスでコンテンツにアクセスできます。 しかし、Powerbi.com または Power BI Mobile を使用する場合、無料の Power BI ライセンスでコンテンツにアクセスすることはできません。
 > - Powerbi.com または Power BI Mobile を使用して、Microsoft Office アプリで埋め込もうとしている場合は、無料の Power BI ライセンスでコンテンツにアクセスできます。
 
-### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>専用の容量にワークスペースを割り当てる
+### <a name="assign-a-workspace-to-a-capacity"></a>容量にワークスペースを割り当てる
 
-専用の容量を作成した後、ワークスペースをその専用の容量に割り当てることができます。 このプロセスを完了するには、次の手順に従います。
+容量を作成した後、ワークスペースをその容量に割り当てることができます。 このプロセスを完了するには、次の手順に従います。
 
 1. Power BI サービス内でワークスペースを展開し、コンテンツを埋め込むために使用しているワークスペースの省略記号を選択します。 次に、 **[Edit workspaces]\(ワークスペースの編集\)** を選択します。
 
     ![ワークスペースを編集する](media/embed-sample-for-your-organization/embed-sample-for-your-organization-036.png)
 
-2. **[詳細]** を展開し、 **[専用の容量]** を有効にします。 作成した専用の容量を選択します。 その後、 **[保存]** を選びます。
+2. **[詳細]** を展開し、 **[容量]** を有効にします。 作成した容量を選択します。 その後、 **[保存]** を選びます。
 
-    ![専用の容量を割り当てる](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
+    ![容量を割り当てる](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
 3. **[保存]** を選択すると、ワークスペース名の横にひし形が表示されます。
 

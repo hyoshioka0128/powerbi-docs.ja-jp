@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/12/2019
-ms.openlocfilehash: 99df7a301a1025d50c82c5cc7f5966325a6a6a6f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: dca16fd29dc89fc2e67ce1e8f5c6abfc0adcb9a6
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747530"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049294"
 ---
 # <a name="how-to-create-mobile-friendly-power-bi-visuals"></a>モバイル対応の Power BI ビジュアルを作成する方法
 モバイル消費は、Power BI において大きな役割があります。 その長所の 1 つは、いつでもどこでもデータに接続していられることです。
@@ -79,4 +79,4 @@ Power BI ビジュアルは、Power BI アプリをサポートするすべて�
 Windows、iOS、Android デバイスの最新モデルに対してテストする場合、開発者はこれらの品質面のほとんどを考慮する必要があります。
 
 ## <a name="next-steps"></a>次の手順
-作業を開始するには、次を参照してください: 「[チュートリアル: Power BI のビジュアルを開発する](./custom-visual-develop-tutorial.md)」。
+始めるには、[Power BI の円形カード視覚化の開発](./develop-circle-card.md)に関する記事を参照してください。

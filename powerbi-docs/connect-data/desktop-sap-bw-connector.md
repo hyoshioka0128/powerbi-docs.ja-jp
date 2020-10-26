@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db5c8b77851ccd35c5f8ccddf5e6587eb1383518
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1b3250124fa813f3da96e63455d483cf05f01cb6
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223026"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598831"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>Power BI Desktop で SAP Business Warehouse コネクタを使用する
 
@@ -147,19 +147,19 @@ Implementation 2.0 を使用するように既存のレポートを変更する�
 
     次の例のように、オプション レコードがクエリに既に含まれるかどうかを確認します。
 
-    ![クエリ スニペット](media/desktop-sap-bw-connector/sap_bw_9.png)
+    ![オプション レコードを含むプレーンテキスト クエリを示すスクリーンショット。](media/desktop-sap-bw-connector/sap_bw_9.png)
 
     その場合は、次に示すように、`Implementation` 2.0 オプションを追加し、`ScaleMeasures` オプションが存在する場合は削除します。
 
-    ![クエリ スニペット](media/desktop-sap-bw-connector/sap_bw_10.png)
+    ![新しく追加された値が Implementation = 2.0 であるプレーンテキスト クエリを示すスクリーンショット。](media/desktop-sap-bw-connector/sap_bw_10.png)
 
     クエリにオプション レコードがまだ含まれていない場合は、単に追加します。 次のオプションの場合:
 
-    ![クエリ スニペット](media/desktop-sap-bw-connector/sap_bw_11.png)
+    ![オプション レコードを含むプレーンテキスト クエリを示すスクリーンショットを追加。](media/desktop-sap-bw-connector/sap_bw_11.png)
 
     単に次のように変更します。
 
-    ![クエリ スニペット](media/desktop-sap-bw-connector/sap_bw_12.png)
+    ![新しく追加された値が Implementation = 2.0 である新しいオプションのプレーンテキスト クエリを示すスクリーンショット。](media/desktop-sap-bw-connector/sap_bw_12.png)
 
 SAP BW Connector の Implementation 2.0 がバージョン 1 と互換性を持つように、あらゆる作業が行われています。 ただし、使われている SAP BW MDX 実行モードの違いによる相違が存在する可能性があります。 何らかの不一致を解決するには、実行モードを切り替えてみてください。
 

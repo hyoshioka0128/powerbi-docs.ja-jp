@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 08/13/2020
+ms.date: 10/09/2020
 ms.author: mihart
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: cbf4c242ef1bc3fe304e162a49d2d971677f463d
-ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
+ms.openlocfilehash: 15345c8ca7249c3a6bf4018a322a8ce3d78b9de3
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88512910"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982106"
 ---
 # <a name="apps-in-power-bi"></a>Power BI のアプリ
 
@@ -35,7 +35,7 @@ ms.locfileid: "88512910"
 ## <a name="advantages-of-apps"></a>アプリの利点
 アプリは、"*デザイナー*" にとって、さまざまな種類のコンテンツを一度に共有するための簡単な方法です。 アプリの "*デザイナー*" は、ダッシュボードとレポートを作成し、それらをアプリにまとめます。 その後、"*デザイナー*" は、"*ビジネス ユーザー*" がアクセスできる場所にアプリを共有または発行します。 関連するダッシュボードとレポートはまとめられているため、Power BI サービス ([https://powerbi.com](https://powerbi.com)) とご利用のモバイル デバイスの両方でより簡単に検索してインストールできます。 アプリのインストール後は、さまざまなダッシュボードやレポートの名前を覚えておく必要がありません。ご利用のブラウザー内やモバイル デバイス上で 1 つのアプリにまとめて表示されるためです。
 
-アプリの作者が更新プログラムを公開するたびに、自動的に変更が反映されます。 作成者はデータの更新頻度も制御するため、最新の状態が維持されているかを気にする必要はありません。 
+アプリに関しては、アプリの作成者が更新プログラムをリリースするたびに、通知を受け取るか、変更が自動的に表示されます。 作成者はデータの更新頻度も制御するため、最新の状態が維持されているかを気にする必要はありません。 
 
 <!-- add conceptual art -->
 ## <a name="get-a-new-app"></a>新しいアプリを取得する
@@ -44,7 +44,7 @@ ms.locfileid: "88512910"
 ### <a name="find-and-install-apps-from-the-power-bi-apps-marketplace"></a>Power BI アプリ マーケットプレースでアプリを検索してインストールする
 アプリを検索する方法の 1 つは、Power BI **アプリ** の画面から **[アプリの取得]** を選択することです。 
 
-![[アプリの取得] アイコンが表示されているアプリの画面のスクリーンショット](./media/end-user-apps/power-bi-get-apps-icon.png)
+![[アプリの取得] アイコンが表示されているアプリの画面のスクリーンショット](./media/end-user-apps/power-bi-get-apps-button.png)
 
 インストールするアプリが見つかるまで、Power BI Apps Marketplace にあるアプリのリストを参照します。 社内の人だけが使用できる**組織のアプリ**から選択するか、またはすべての Power BI ユーザーがインストールできるように Microsoft およびコミュニティによって発行されている**テンプレート アプリ**を選択します。 
 
@@ -59,7 +59,7 @@ ms.locfileid: "88512910"
 
 ご使用のアプリは、 **[アプリ]** コンテンツ リストにまとめられます。 アプリを表示するには、 **[アプリ]** を選択します。 アプリの上にマウス カーソルを移動すると、最後に更新された日付と所有者が表示されます。 
 
-![Power BI のアプリ](./media/end-user-apps/power-bi-apps-red.png)
+![Power BI のアプリ](./media/end-user-apps/power-bi-apps.png)
 
 
 ## <a name="next-steps"></a>次の手順

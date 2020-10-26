@@ -1,27 +1,27 @@
 ---
 title: レポートの表示
-description: このトピックによれば、Power BI コンシューマーとエンドユーザーは Power BI レポートを開いて確認する必要がありました。
+description: このトピックでは、Power BI レポートを開いて表示する必要がある Power BI のビジネス ユーザーとエンド ユーザーについて説明します。
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/09/2020
 ms.author: mihart
-ms.openlocfilehash: d70bc80f7cea3fcff7a25446dd0f73a3c96ee461
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: dc352a44b5db14dc82fdcc48f0d1ddb350c5b3de
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527522"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983531"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-business-users"></a>"*ビジネス ユーザー*" 向け Power BI サービスでレポートを表示する
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-レポートは、ビジュアルで構成される 1 つまたは複数のページです。 レポートは、Power BI "*デザイナー*" によって作成され、["*ビジネス ユーザーと直接*"](end-user-shared-with-me.md)、または[アプリ](end-user-apps.md)の一部として共有されます。 レポートを開くには、Power BI Pro ライセンスを使用するか、レポートを Premium 専用容量に格納されているワークスペースの一部とする必要があります。
+レポートは、ビジュアルで構成される 1 つまたは複数のページです。 レポートは、Power BI "*デザイナー*" によって作成され、["*ビジネス ユーザーと直接*"](end-user-shared-with-me.md)、または[アプリ](end-user-apps.md)の一部として共有されます。 レポートを開くには、Power BI Pro ライセンスを使用するか、レポートを Premium 専用容量に格納されているワークスペースの一部とする必要があります。 [ライセンスとサブスクリプションについて確認する](end-user-license.md)
 
 レポートはさまざまな方法で開くことができますが、そのうちの [ホーム] から開く方法とダッシュボードから開く方法の 2 つを説明します。 
 
@@ -33,8 +33,8 @@ ms.locfileid: "91527522"
 
    ![レポートを指す矢印が表示されている Power BI サービスのホーム キャンバスを示すスクリーンショット。](./media/end-user-report-open/power-bi-home.png)
 
-### <a name="open-a-report-that-has-been-shared-with-you"></a>ユーザーと共有されているレポートを開く
-Power BI "*デザイナー*" では、メールのリンクを介して、または Power BI コンテンツに自動的に追加することにより、個々のレポートを直接共有できます。 この方法で共有されたレポートは、ナビゲーション ペインの **[自分と共有]** コンテナーとホーム キャンバスの **[自分と共有]** セクションに表示されます。
+### <a name="open-a-report-that-has-been-directly-shared-with-you"></a>自分と直接共有されているレポートを開く
+Power BI "*デザイナー*" では、メールのリンクを介して、または Power BI コンテンツに自動的に追加することにより、個々のレポートを直接共有できます。 この方法で共有されたレポートは、ナビゲーション ペインの **[自分と共有]** コンテナーおよびホーム キャンバスの **[自分と共有]** セクションに表示されます。
 
 1. Power BI サービス (app.powerbi.com) を開きます。
 
@@ -54,15 +54,15 @@ Power BI "*デザイナー*" では、メールのリンクを介して、また
 
    ![[レポート] ページのタブを示すスクリーン ショット。](./media/end-user-report-open/power-bi-report-open.png)
 
-6. 右側の **[フィルター]** ペインを展開します。 このレポート ページまたはレポート全体に適用されているフィルターが、ここに表示されます。
+6. 右側の **[フィルター]** ペインを展開します。 このレポート ページまたはレポート全体に適用されているフィルターが、ここに表示されます。 これらのフィルターを変更して、視覚エフェクトやレポートへの影響を確認できます。
 
    ![フィルターが展開されている Power BI サービス](./media/end-user-report-open/power-bi-filters.png)
 
-7. レポートのビジュアルの上にカーソルを置くと、いくつかのアイコンと**その他のオプション** (...) が表示されます。特定のビジュアルに適用されているフィルターを確認するには、[フィルター] アイコンを選択します。 ここでは、*Total units by month and manufacturer* (月別および製造元別の合計ユニット数) の折れ線グラフのフィルター アイコンを選択しています。
+7. 視覚エフェクトの操作メニューを表示します。 レポートの視覚エフェクトをポイントすると、その視覚エフェクトで実行できる操作が表示されます。 特定のビジュアルに適用されているフィルターを確認するには、[フィルター] アイコンを選択します。 ここでは、*Total units by month and manufacturer* (月別および製造元別の合計ユニット数) の折れ線グラフのフィルター アイコンを選択しています。
 
-   ![選択されたビジュアルのフィルターを示すスクリーンショット。](./media/end-user-report-open/power-bi-visual-filter.png)
+   ![選択されたビジュアルのフィルターを示すスクリーンショット。](./media/end-user-report-open/power-bi-visual-filters.png)
 
-6. これで、レポート ページ全体が表示されます。 ページの表示 (ズーム) を変更するには、右上隅にある [表示] ドロップダウンを選択し、 **[実際のサイズ]** を選択して、 **[幅に合わせる]** に切り替えます。
+6. レポート ページの表示を変更することもできます。 現在は、レポート ページ全体を表示しています。 ページの表示 (ズーム) を変更するには、右上隅にある **[ビュー]** ドロップダウンを選択し、 **[実際のサイズ]** を選択して、 **[幅に合わせる]** に切り替えます。 各ビュー オプションによってレポートの表示がどのように違うかに注意してください。
 
    ![ズームの変更](./media/end-user-report-open/power-bi-view-actual.png)
 
@@ -71,20 +71,23 @@ Power BI "*デザイナー*" では、メールのリンクを介して、また
 さまざまな方法でレポートを操作して分析情報を得て、ビジネス上の意思決定を行うことができます。  左側の目次を使用して、Power BI レポートに関するその他の記事を読むことができます。 
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>アプリの一部となっているレポートを開く
-仕事仲間や AppSource からアプリを受け取っている場合、そのアプリは [ホーム] とナビ ペインの **[アプリ]** コンテナーから利用できます。 [アプリ](end-user-apps.md)は、Power BI "*デザイナー*" によってまとめられたダッシュボードとレポートのコレクションです。
+同僚や AppSource からアプリを受け取った場合、それらのアプリは [ホーム] と、ナビゲーション ペインの **[アプリ]** および **[自分と共有]** コンテナーから利用できます。 [アプリ](end-user-apps.md)は、Power BI "*デザイナー*" によってまとめられたダッシュボードとレポートのコレクションです。
 
 ### <a name="prerequisites"></a>前提条件
+アプリを開くには、Power BI Pro ライセンスがあるか、またはアプリ ワークスペースが Power BI Premium 容量に格納されている必要があります。 [ライセンスとサブスクリプションについて確認する](end-user-license.md)    
+    
 先に進むには、売上およびマーケティング アプリをダウンロードしてください。
 1. ブラウザーで、appsource.microsoft.com に移動します。
-1. "Sales and Marketing" を検索し、**Microsoft sample - Sales & Marketing** を選択します。
+1. **[Power Platform]** のチェック ボックスをオンにします。
+1. "Sales & Marketing" を検索し、**Microsoft sample - Sales & Marketing** を選択します。 下にスクロールして検索結果を表示します。
 1. **[今すぐ入手する]**  >  **[続行]**  >  **[インストール]** を選択して、アプリ コンテナーにアプリをインストールします。 
 
-アプリ コンテナーまたはホームからアプリを開くことができます。
+**[アプリ]** コンテナーまたは **[ホーム]** からアプリを開くことができます。
 1. ナビ ペインから **[ホーム]** を選択して、[ホーム] に戻ります。
 
 7. **[マイ アプリ]** が表示されるまで下方向にスクロールします。
 
-   ![Power BI ホームの [マイ アプリ] セクションを示すスクリーンショット。](./media/end-user-report-open/power-bi-apps.png)
+   ![Power BI ホームの [マイ アプリ] セクションを示すスクリーンショット。](./media/end-user-report-open/power-bi-apps-new.png)
 
 8. 新しい "*営業およびマーケティング*" アプリを選択して開きます。 アプリでは、アプリ *デザイナー*によって設定されたオプションに基づき、ダッシュボードまたはレポートが開きます。 このアプリはダッシュボードに開かれます。  
 

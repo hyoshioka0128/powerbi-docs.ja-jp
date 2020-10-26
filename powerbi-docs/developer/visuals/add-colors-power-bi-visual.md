@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/27/2020
-ms.openlocfilehash: 3f3574545d82ac11c762b7011afdc49cbe855224
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3a68f3dedbef9e97b6c29d3a0923d43872a5f01a
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83141143"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92048811"
 ---
 # <a name="add-colors-to-your-power-bi-visuals"></a>Power BI ビジュアルへの色の追加
 
@@ -23,7 +23,7 @@ ms.locfileid: "83141143"
 この記事のサンプル コードでは、[SampleBarChart ビジュアル](https://github.com/microsoft/PowerBI-visuals-sampleBarChart)を変更します。
 ソース コードについては、[barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts) を参照してください。
 
-ビジュアルの作成を開始するには、[Power BI ビジュアルの開発](custom-visual-develop-tutorial.md)に関するページを参照してください。
+視覚化の作成を始めるには、[Power BI の円形カード視覚化の開発](develop-circle-card.md)に関する記事を参照してください。
 
 ## <a name="add-color-to-data-points"></a>データ ポイントへの色の追加
 

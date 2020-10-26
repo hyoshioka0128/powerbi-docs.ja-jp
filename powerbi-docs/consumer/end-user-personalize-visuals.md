@@ -1,20 +1,20 @@
 ---
-title: レポート内の視覚エフェクトをカスタマイズする (プレビュー)
+title: レポート内のビジュアルをカスタマイズする
 description: レポートを編集することなく、独自のビューを作成します。
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/13/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc682e867b65ba9da2b2eee87f52d7fd5d0961c
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 718363da3bd1f66de199db8d854d8d23d6de3eb5
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528129"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256757"
 ---
 # <a name="personalize-visuals-in-a-report"></a>レポート内のビジュアルをカスタマイズする
 
@@ -45,7 +45,7 @@ ms.locfileid: "91528129"
 - 最近の変更をクリアする
 
 > [!IMPORTANT]
-> 視覚エフェクトをカスタマイズする機能は、レポート *デザイナー*が有効にする必要があるプレビュー機能です。 **[Personalize this visual]\(この視覚エフェクトのカスタマイズ\)** ![[Personalize this visual]\(この視覚エフェクトのカスタマイズ\)](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) アイコンが表示されない場合、レポート デザイナーは現在のレポートに対してこの機能を有効にしていません。 
+> 視覚エフェクトをカスタマイズする機能は、レポート "*デザイナー*" で有効にする必要があります。 **[Personalize this visual]\(この視覚エフェクトのカスタマイズ\)** ![[Personalize this visual]\(この視覚エフェクトのカスタマイズ\)](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) アイコンが表示されない場合、レポート デザイナーは現在のレポートに対してこの機能を有効にしていません。 この機能を有効にするには、レポートの所有者または Power BI 管理者に確認してください。 レポートの所有者の連絡先情報を表示するには、Power BI のメニュー バーでレポートの名前を選択します。
 
 ## <a name="personalize-visuals-in-the-power-bi-service"></a>Power BI サービスでビジュアルをカスタマイズする
 
@@ -54,8 +54,6 @@ ms.locfileid: "91528129"
 1. Power BI サービスの読み取りビューでレポートを開きます。
 
 2. ビジュアルのメニュー バーにある **[Personalize this visual]\(このビジュアルのカスタマイズ\)** ![[Personalize this visual]\(このビジュアルのカスタマイズ\) アイコン](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) アイコンを選択します。 
-
-3. **[個人用設定]** のフィールドをクリアするには、 **[その他のオプション] (...)** を選択し、 **[フィールドの削除]** を選択します。
 
 ### <a name="change-the-visualization-type"></a>視覚化の種類の変更
 
@@ -72,6 +70,16 @@ ms.locfileid: "91528129"
 凡例を追加すると、カテゴリに基づいてビジュアルの色分けを設定できます。 この例では、会社名に基づいて色分けされています。 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="ビジュアルをカスタマイズする":::
+
+### <a name="change-the-placement-of-fields"></a>フィールドの配置を変更する
+
+ドラッグ アンド ドロップを使用して、同じ視覚エフェクト プロパティ内で、または異なる視覚エフェクト プロパティ間でも、フィールドの配置を変更できます。 たとえば、凡例内のフィールドを視覚エフェクトの軸にすばやく移動できます。
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="ビジュアルをカスタマイズする":::
+
+テーブルやマトリックスの列の順序をすばやく並べ替えることもできます。
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="ビジュアルをカスタマイズする":::
 
 ### <a name="compare-two-or-more-different-measures"></a>2 つ以上の異なるメジャーを比較する
 [+] アイコンを使用してビジュアルの複数のメジャーを追加することにより、異なるメジャーの値を比較対照することができます。 メジャーを削除するには、 **[その他のオプション] (...)** を選択し、 **[フィールドの削除]** を選択します。
@@ -113,7 +121,7 @@ ms.locfileid: "91528129"
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="ビジュアルをカスタマイズする":::
 
-## <a name="limitations-and-known-issues"></a>制限事項と既知の問題
+## <a name="limitations"></a>制限事項
 
 現在、この機能には注意すべきいくつかの制限事項があります。
 
@@ -121,12 +129,6 @@ ms.locfileid: "91528129"
 - ユーザー探索は自動的に保持されません。 変更をキャプチャするには、個人用ブックマークとしてビューを保存する必要があります。
 - この機能は、iOS と Android タブレット用の Power BI モバイルアプリ、および Power BI Windows アプリでサポートされています。スマートフォン用の Power BI モバイル アプリではサポートされていません。 ただし、Power BI サービスの使用中に個人用ブックマークに保存した視覚エフェクトの変更は、すべての Power BI モバイル アプリに適用されます。
 
-また、現在対処中のいくつかの既知の問題もあります。
-
-- 階層の追加はサポートされていません。個々の子項目を追加する必要があります。
-- 個人用ブックマークを使用すると、選択した順序によって、得られる結果が多少異なる場合があります。 不一致が発生する場合があるのは、レポートの完全な状態をキャプチャするのではなく、加えた変更のみキャプチャするためです。 回避策として、 **[既定値にリセット]** を選択した後、表示するブックマークを選択します。 
-
 ## <a name="next-steps"></a>次の手順
 [レポートのビジュアルを静的画像としてコピーする](../visuals/power-bi-visualization-copy-paste.md)    
 他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
-

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d12e64b98e2282e4446565ebd17a6222ba6276d2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 09ac807b6823c8d9e8c0b44ad941365eb3ffb766
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226662"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526446"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Power BI でアプリを発行する
 
@@ -135,7 +135,7 @@ Power BI で公式のパッケージ化コンテンツを作成し、*アプリ*
 アプリのナビゲーションにリンクを追加し、[コンテンツ領域] オプションを選択する際の留意点を次に示します。
 * 確実にリンクを埋め込むことができるようにします。 一部のサービスでは、Power BI などのサード パーティのサイトでコンテンツの埋め込みがブロックされます。
 * 他のワークスペースにレポートやダッシュボードなどの Power BI サービス コンテンツを埋め込むことはできません。 
-* オンプレミスのデプロイから、Power BI Report Server コンテンツを、そのネイティブの埋め込み URL コンテンツ経由で埋め込みます。 [Power BI Report Server URL の作成](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url)の手順に従って、URL を取得します。 標準の認証ルールが適用されるため、コンテンツを表示するには、オンプレミス サーバーへの VPN 接続が必要です。 
+* オンプレミスのデプロイから、Power BI Report Server コンテンツを、そのネイティブの埋め込み URL コンテンツ経由で埋め込みます。 [Power BI Report Server URL の作成](../report-server/quickstart-embed.md#create-the-power-bi-report-url)の手順に従って、URL を取得します。 標準の認証ルールが適用されるため、コンテンツを表示するには、オンプレミス サーバーへの VPN 接続が必要です。 
 * 埋め込まれたコンテンツの上部に、コンテンツが Power BI にないことを示すセキュリティ警告が表示されます。
 
 ## <a name="automatically-install-apps-for-end-users"></a>エンド ユーザーにアプリを自動的にインストールする
@@ -144,12 +144,12 @@ Power BI で公式のパッケージ化コンテンツを作成し、*アプリ*
 ### <a name="how-to-push-an-app-automatically-to-end-users"></a>エンド ユーザーにアプリを自動的にプッシュする方法
 管理者からアクセス許可が付与されると、**自動的にアプリをインストールできる**新しいオプションが表示されます。 チェックボックスをオンにして **[アプリの発行]** (または **[アプリを更新]** ) を選択すると、 **[アクセス]** タブのアプリの **[アクセス許可]** セクションに定義されているすべてのユーザーまたはグループにアプリがプッシュされます。
 
-![アプリのプッシュを有効にする](media/service-create-distribute-apps//power-bi-apps-access.png)
+![[アプリを自動的にインストールします] がオンの Power BI の [発行] オプションを示すスクリーンショット。](media/service-create-distribute-apps//power-bi-apps-access.png)
 
 ### <a name="how-users-get-the-apps-that-you-push-to-them"></a>ユーザーが自分に対してプッシュされたアプリを入手する方法
 プッシュされたアプリは、アプリ リストに自動的に表示されます。 これにより、組織の特定のユーザーやジョブ ロールが手元に置く必要のあるアプリを選別できます。
 
-![アプリのプッシュを有効にする](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![発行されたアプリが含まれている Power BI アプリを示すスクリーンショット。](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 ### <a name="considerations-for-automatically-installing-apps"></a>アプリの自動インストールに関する考慮事項
 エンド ユーザーにアプリをプッシュするときの注意事項を次に示します。
@@ -215,5 +215,5 @@ Power BI で公式のパッケージ化コンテンツを作成し、*アプリ*
 * [ワークスペースの作成](service-create-workspaces.md)
 * [Power BI にアプリをインストールし、使用する](../consumer/end-user-apps.md)
 * [外部サービス用の Power BI アプリ](../connect-data/service-connect-to-services.md)
-* [Power BI 管理ポータル](https://docs.microsoft.com/power-bi/service-admin-portal)
+* [Power BI 管理ポータル](../admin/service-admin-portal.md)
 * わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

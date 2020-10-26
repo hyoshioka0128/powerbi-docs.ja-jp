@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e56b03eeccc3140709fb458d4e42a9065a4da5d4
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 62a88a8267ae38b1dbfc0bbb0ee1d9020e7f9408
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538012"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049248"
 ---
 # <a name="visuals-in-power-bi"></a>Power BI のビジュアル
 
@@ -72,7 +72,7 @@ Power BI ビジュアルはパッケージであり、特定の目的を果た�
 
 Power BI ビジュアルをインポートするには、 *[視覚化]* ペインで **[カスタム ビジュアルのインポート]** をクリックし、 **[ファイルからインポートする]** を選択します。
 
-独自のビジュアルを作成して AppSource に追加することに関心がある Web 開発者の方は、[Power BI ビジュアルを開発](custom-visual-develop-tutorial.md)する方法と、[Power BI ビジュアルを AppSource に発行する](office-store.md)方法をご確認ください。
+独自の視覚化を作成して AppSource に追加することに関心がある Web 開発者の場合は、[Power BI の円形カード視覚化の開発](develop-circle-card.md)および [AppSource への Power BI の視覚化の発行](office-store.md)に関する記事で方法を学習できます。
 
 > [!WARNING]
 > Power BI ビジュアルには、セキュリティやプライバシーのリスクがあるコードが含まれる場合があります。 レポートにインポートする前に、作成者と Power BI ビジュアルのソースが信頼できることを確認してください。
@@ -80,7 +80,7 @@ Power BI ビジュアルをインポートするには、 *[視覚化]* ペイ�
 ## <a name="next-steps"></a>次の手順
 
 >[!div class="nextstepaction"]
->[Power BI のビジュアルを開発する](custom-visual-develop-tutorial.md)
+>[Power BI の円形カード視覚化を開発する](develop-circle-card.md)
 
 >[!div class="nextstepaction"]
 >[Power BI ビジュアル プロジェクトの構造](visual-project-structure.md)

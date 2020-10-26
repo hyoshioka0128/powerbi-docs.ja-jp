@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 6ba5cd95f3e8b788ca7ee8939dff6616c5610573
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 9af0edbe63841f6fb0e0de2e628784c89a5e44f1
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746633"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983369"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI コンテンツを埋め込む
 
@@ -401,16 +401,16 @@ JavaScript API を使用する完全なサンプルの場合、[Playground ツ�
 
 ## <a name="move-to-production"></a>運用開始
 
-これでアプリケーションの開発が完了したため、専用の容量を持つワークスペースに戻ります。 
+これでアプリケーションの開発が完了したため、容量を持つワークスペースに戻ります。
 
 > [!Important]
-> 運用を開始するには、専用の容量が必要です。 すべてのワークスペース (レポートまたはダッシュボードが含まれるワークスペースとデータセットが含まれるワークスペース) が容量に割り当てられている必要があります。
+> 運用を開始するには容量が必要です。 すべてのワークスペース (レポートまたはダッシュボードが含まれるワークスペースとデータセットが含まれるワークスペース) が容量に割り当てられている必要があります。
 
-### <a name="create-a-dedicated-capacity"></a>専用の容量を作成する
+### <a name="create-a-capacity"></a>容量を作成する
 
-専用の容量を作成することで、顧客専用のリソースを所有する利点が得られます。 選択できる容量には、次の 2 種類があります。
+容量を作成することで、お客様用のリソースを所有することができます。 選択できる容量には、次の 2 種類があります。
 * **Power BI Premium** - 2 つの SKU ファミリ (*EM* および *P*) で利用可能なテナントレベルの Office 365 サブスクリプションです。Power BI コンテンツを埋め込む場合、このソリューションは "*Power BI 埋め込み*" と呼ばれます。 このサブスクリプションの詳細については、「[Power BI Premium とは](../../admin/service-premium-what-is.md)」を参照してください。
-* **Azure Power BI Embedded** - [Microsoft Azure portal](https://portal.azure.com) で専用の容量を購入できます。 このサブスクリプションは、*A* SKU を使用します。 Power BI Embedded 容量の作成方法の詳細については、「[Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)」 (Azure Portal で Power BI Embedded 容量を作成する) をご覧ください。
+* **Azure Power BI Embedded** - [Microsoft Azure portal](https://portal.azure.com) で容量を購入できます。 このサブスクリプションは、*A* SKU を使用します。 Power BI Embedded 容量の作成方法の詳細については、「[Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)」 (Azure Portal で Power BI Embedded 容量を作成する) をご覧ください。
 > [!NOTE]
 > A SKU の場合、無料 Power BI ライセンスでは Power BI コンテンツにアクセスできません。
 
@@ -428,30 +428,30 @@ JavaScript API を使用する完全なサンプルの場合、[Playground ツ�
 
 ### <a name="development-testing"></a>開発テスト
 
-開発テストでは、Pro ライセンスで埋め込み試用版トークンを使用できます。 運用環境に埋め込むには、専用の容量を使用します。
+開発テストでは、Pro ライセンスで埋め込み試用版トークンを使用できます。 運用環境に埋め込むには、容量を使用します。
 
 Power BI サービス プリンシパルまたはマスター アカウントで生成できる埋め込み試用版トークンの数は制限されています。 [Available Features](/rest/api/power-bi/availablefeatures/getavailablefeatures) API を使用して、現在の埋め込みの使用率を確認します。 使用量は、サービス プリンシパルまたはマスター アカウントごとに表示されます。
 
-テスト中に埋め込みトークンが不足した場合は、Power BI Embedded または Premium の[容量](embedded-capacity.md)を購入する必要があります。 専用の容量で生成できる埋め込みトークンの数に制限はありません。
+テスト中に埋め込みトークンが不足した場合は、Power BI Embedded または Premium の[容量](embedded-capacity.md)を購入する必要があります。 容量で生成できる埋め込みトークンの数に制限はありません。
 
 
-### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>専用の容量にワークスペースを割り当てる
+### <a name="assign-a-workspace-to-a-capacity"></a>容量にワークスペースを割り当てる
 
-専用の容量を作成した後、ワークスペースをその専用の容量に割り当てることができます。
+容量を作成した後、ワークスペースをその容量に割り当てることができます。
 
-埋め込みコンテンツ (データセット、レポート、ダッシュボードを含む) に関連する Power BI リソースを含むすべてのワークスペースは、専用容量に割り当てられる必要があります。 たとえば、埋め込みレポートとそれにバインドされているデータセットが異なるワークスペースに存在する場合、両方のワークスペースを専用容量に割り当てる必要があります。
+埋め込みコンテンツ (データセット、レポート、ダッシュボードを含む) に関連する Power BI リソースを含むすべてのワークスペースは、容量に割り当てられている必要があります。 たとえば、埋め込みレポートとそれにバインドされているデータセットが異なるワークスペースに存在する場合、両方のワークスペースを容量に割り当てる必要があります。
 
-[サービス プリンシパル](embed-service-principal.md)を使用して専用の容量をワークスペースに割り当てるには、[Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity) を使用します。 Power BI REST API の使用時は必ず[サービス プリンシパル オブジェクト ID](embed-service-principal.md) を使用してください。
+[サービス プリンシパル](embed-service-principal.md)を使用して容量をワークスペースに割り当てるには、[Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity) を使用します。 Power BI REST API の使用時は必ず[サービス プリンシパル オブジェクト ID](embed-service-principal.md) を使用してください。
 
-以下の手順に従い、**マスター アカウント**を使用してワークスペースに専用容量を割り当てます。
+以下の手順に従い、**マスター アカウント**を使用してワークスペースに容量を割り当てます。
 
 1. **Power BI サービス**内でワークスペースを展開し、コンテンツを埋め込むために使用しているワークスペースの省略記号ボタンを選択します。 次に、 **[Edit workspaces]\(ワークスペースの編集\)** を選択します。
 
     ![ワークスペースの編集](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
 
-2. **[詳細]** を展開し、 **[専用の容量]** を有効にして、作成した専用の容量を選びます。 その後、 **[保存]** を選びます。
+2. **[詳細]** を展開し、 **[容量]** を有効にして、作成した容量を選択します。 その後、 **[保存]** を選びます。
 
-    ![専用の容量の割り当て](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+    ![容量を割り当てる](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
 3. **[保存]** を選択すると、ワークスペース名の横に**ひし形**が表示されます。
 

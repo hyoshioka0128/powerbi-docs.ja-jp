@@ -1,22 +1,22 @@
 ---
-title: Power BI "コンシューマー" とは
-description: コンシューマー (エンド ユーザーまたはビジネス ユーザーとも呼ばれます) 向けの Power BI の概要。
+title: Power BI の "ビジネス ユーザー" とは
+description: ビジネス ユーザー (エンド ユーザーまたはビジネス ユーザーとも呼ばれます) 向けの Power BI の概要。
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 05/22/2020
+ms.date: 10/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 74f6d14ed96e7e33929aafe315965c04b2f78863
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 7616d84ca93c336e606b3a96e7a362a1b57e6a96
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633977"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982060"
 ---
-# <a name="the-power-bi-service-for-consumers"></a>コンシューマー向けの Power BI サービス
+# <a name="the-power-bi-service-for-business-users"></a>ビジネス ユーザー向けの Power BI サービス
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
@@ -24,9 +24,9 @@ ms.locfileid: "91633977"
  
 あらゆる種類のレポート、スプレッドシート、グラフを含むメール、さらに印刷された配布資料が送信されます。 データが増えるにつれて、必要なものをすばやく見つけることが難しくなり、最新の情報を使用していないのではないかと心配になることがあるでしょう。  
  
-![図は、レポート、グラフ、電子メール、およびスプレッドシートの形式でデータを受信しているコンシューマーを示しています。](media/end-user-consumer/power-bi-consumer-pipes.png)
+![図は、レポート、グラフ、メール、およびスプレッドシートの形式でデータを受信しているビジネス ユーザーを示しています。](media/end-user-consumer/power-bi-consumer-pipes.png)
 
-## <a name="the-power-bi-service-for-consumers"></a>"*コンシューマー*" 向けの Power BI サービス
+## <a name="the-power-bi-service-for-business-users"></a>"*ビジネス ユーザー*" 向けの Power BI サービス
 
 Power BI によって仕事が簡単になり、同時にインパクトも増します。 データはすべてチャートとグラフになり、データが視覚化されます。 データの分析情報は、数字や語句から成る長い一覧や表ではなく、データの分析情報についてのストーリーを示す、"***美しく***"、カラフルで説得力のあるビジュアルです。 
 
@@ -38,15 +38,19 @@ Power BI によって仕事が簡単になり、同時にインパクトも増�
 
 コンテンツは静的ではないため、傾向、分析情報、およびその他のビジネス インテリジェンスを調べることができます。 コンテンツを細かく分けます。自分の言葉を使って質問することもできます。 または、自分から何もしなくても、データによって興味深い分析情報が見つかります。データが変更されるとアラートが送信され、設定したスケジュールに基づいてメールでレポートが送信されます。 任意のデバイスから、クラウドまたはオンプレミスのすべてのデータをいつでも使用できます。 これは、Power BI で実行できることのほんの始まりにしかすぎません。 
 
-## <a name="am-i-a-power-bi-consumer"></a>Power BI の "*コンシューマー*" かどうかの確認
+## <a name="am-i-a-power-bi-business-user"></a>Power BI "*ビジネス ユーザー*" とは
 
-Power BI をどのように操作するかは、ご自分の仕事上の役割により異なります。 エンドユーザーまたは "*コンシューマー*" の場合、同僚からコンテンツ (ダッシュボード、レポート、アプリ) を受け取ります。 Power BI のオンラインまたはモバイル バージョン (Power BI サービスと呼ばれます) で作業し、このコンテンツをレビューおよび操作してビジネス上の決定を行います。 
+Power BI をどのように操作するかは、ご自分の仕事上の役割により異なります。 コンシューマーまたは "*ビジネス ユーザー*" の場合、同僚からコンテンツ (ダッシュボード、レポート、アプリ) を受け取ります。 Power BI のオンラインまたはモバイル バージョン (Power BI サービスと呼ばれます) で作業し、このコンテンツをレビューおよび操作してビジネス上の決定を行います。 
    
-コンシューマーとして、Power BI の全機能にアクセスできるわけではありませんが、これは問題ありません。お客様の仕事は、ダッシュボードやレポートの作成ではないからです。 分析、監視、探索、意思決定のために Power BI サービスを使用します。 
+ビジネス ユーザーとして、Power BI の全機能にアクセスできるわけではありませんが、これは問題ありません。お客様の仕事は、ダッシュボードやレポートの作成ではないからです。 分析、監視、探索、意思決定のために Power BI サービスを使用します。 
 
-"Power BI Desktop" または "Desktop" という用語を聞いたことが間違いなくあるでしょう。これは、ダッシュボードおよびレポートをビルドし、お客様と共有する "*デザイナー*" によって使用されるスタンドアロン ツールです。  他の Power BI ツールがあるということを理解することは重要ですが、お客様がコンシューマーの場合、Power BI サービスのみでの作業となります。 
+"Power BI Desktop" または "Desktop" という用語を聞いたことが間違いなくあるでしょう。これは、ダッシュボードおよびレポートをビルドし、お客様と共有する "*デザイナー*" によって使用されるスタンドアロン ツールです。  他の Power BI ツールがあるということを理解することは重要ですが、お客様が "*ビジネス ユーザー*" の場合、Power BI サービスのみでの作業となります。 
 
-また、"*共有*" コンテンツを使用しているため、**Premium** 容量を使用している組織で作業する場合、**Free** ライセンスで十分です。 [お使いのライセンスの種類について](end-user-license.md)
+また、"*共有*" コンテンツを操作するため、次のいずれかが必要になります。
+- Power BI Pro ライセンス
+- 組織が Power BI Premium サブスクリプションを持っていて、コンテンツが Premium 容量から共有されていること。 
+
+ライセンスとサブスクリプションの詳細については、[ライセンスの種類の確認](end-user-license.md)に関するページを参照してください。
 
 
 ## <a name="safely-interact-with-content"></a>コンテンツを安全に操作する 
@@ -61,6 +65,6 @@ Power BI をどのように操作するかは、ご自分の仕事上の役割�
 
 ## <a name="next-steps"></a>次の手順
 
-[コンシューマー向けの Power BI サービスのツアーを見る](end-user-reading-view.md)    
-[コンシューマー向けの Power BI サービス トレーニング](/learn/paths/consume-data-with-power-bi/)    
-[Power BI "*コンシューマー*" の用語と概念](end-user-basic-concepts.md)
+[ビジネス ユーザー向けの Power BI サービスのツアーを開始する](end-user-reading-view.md)    
+[ビジネス ユーザー向けの Power BI サービス トレーニング](/learn/paths/consume-data-with-power-bi/)    
+[Power BI の "*ビジネス ユーザー*" の用語と概念](end-user-basic-concepts.md)

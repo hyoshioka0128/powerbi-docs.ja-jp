@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: c8cf0f4e896b8a44764d1c363c597182f55d30b3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1e5a4cf8c80d8123d39fd2ab76898abc0c439ad9
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276515"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049386"
 ---
 # <a name="use-the-supportskeyboardfocus-feature"></a>supportsKeyboardFocus 機能を使用する
 
@@ -52,4 +52,4 @@ ms.locfileid: "83276515"
 
 アクセシビリティ機能の詳細については、「[アクセシビリティ対応の Power BI レポートを設計する](../../create-reports/desktop-accessibility-creating-reports.md)」を参照してください。
 
-Power BI の開発を試すには、[Power BI のビジュアル開発](custom-visual-develop-tutorial.md)に関するチュートリアルをご覧ください。
+Power BI を開発してみるには、[Power BI の円形カード視覚化の開発](develop-circle-card.md)に関する記事を参照してください。

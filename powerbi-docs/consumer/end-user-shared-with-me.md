@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 10/5/2020
+ms.date: 10/09/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b6ccdf2e5caad141ef0c33ae70b9c2f2b604462
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 0e13a7bd273121429cd186c99ef8110b38e839fb
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780168"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983346"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>自分と共有されているダッシュボードとレポートを表示する
 
@@ -22,7 +22,7 @@ ms.locfileid: "91780168"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-同僚からダッシュボードまたはレポートを共有されると、 **[自分と共有]** コンテナーに表示されます。 同僚からアプリを共有されると、そのアプリは **[アプリ]** コンテナーに表示されます。   
+同僚からダッシュボードまたはレポートを共有されると、 **[自分と共有]** コンテナーに表示されます。 同僚からアプリを共有されると、そのアプリは **[アプリ]** コンテナーに表示され、アプリのレポートとダッシュボードが **[自分と共有]** コンテナーに表示されます。   
 
 ![[共有] アイコン](./media/end-user-shared-with-me/power-bi-shared-with-me.png)
 
@@ -41,6 +41,6 @@ Amanda による**自分と共有**コンテンツの一覧の説明と、一覧
 
 
 ## <a name="search-and-sort-shared-dashboards-and-reports"></a>共有されたダッシュボードとレポートを検索して並べ替える
-**[自分と共有]** コンテンツ リストが長くなった場合、必要なものを検索するためのオプションがいくつかあります。 検索フィールドを使用したり (1)、いずれかの列で並べ替えたり (2)、[フィルター] ペインを使用したりすることができます。 [フィルター] ペインを開くには、右上隅にある **[フィルター]** を選択します。    
+**[自分と共有]** コンテンツ リストが長くなった場合、必要なものを検索するためのオプションがいくつかあります。 検索フィールドを使用したり (1)、いずれかの列で並べ替えたり (2)、[フィルター] ペインを使用したりします。 [フィルター] ペインを開くには、右上隅にある **[フィルター]** を選択します。    
 
 ![ダッシュボードの所有者と検索](./media/end-user-shared-with-me/power-bi-filter.png)

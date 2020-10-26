@@ -1,5 +1,5 @@
 ---
-title: Power BI を使用してデータ インサイトを自動的に生成する
+title: データセットに関するデータの分析情報を自動的に生成する
 description: データセットとダッシュボード タイルに関する詳細情報を取得する方法を説明します。
 author: maggiesMSFT
 ms.reviewer: ''
@@ -8,38 +8,38 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 08/06/2019
+ms.date: 09/28/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5523c08b81a129bab70f1c087e8895dedf83621f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 79148389a697feb2a3d2e2cba0b919eb59632ff7
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221094"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524468"
 ---
-# <a name="generate-data-insights-automatically-with-power-bi"></a>Power BI を使用してデータ インサイトを自動的に生成する
+# <a name="generate-data-insights-on-your-dataset-automatically-with-power-bi"></a>Power BI を使用してデータセットに関するデータの分析情報を自動的に生成する
 新しいデータセットがあるが、どこから始めるべきかわからない場合。  ダッシュボードをすばやく構築する必要がある場合。  不足している情報を探したい場合。
 
-クイック インサイトを実行して、データに基づいて、興味のある対話型の視覚化を生成します。 クイック インサイトは、データセット全体に対して実行することも (クイック インサイト)、特定のダッシュボード タイルに対して実行することもできます (範囲指定のインサイト)。 インサイトに対してインサイトを実行することもできます。
+クイック分析情報を実行して、データに基づいて、興味のある対話型の視覚化を生成します。 この記事では、データセット全体に対してクイック分析情報を実行する方法について説明します (クイック分析情報)。 また、[特定のダッシュボード タイルに対してクイック分析情報](../consumer/end-user-insights.md)を実行することもできます (範囲付き分析情報)。 インサイトに対してインサイトを実行することもできます。
 
 > [!NOTE]
 > 分析情報は、DirectQuery では機能しません。Power BI にアップロードされたデータに限り機能します。
 > 
 
-インサイトの基となっているのは、Microsoft Research と共同開発して拡大を続けている[高度な分析アルゴリズムのセット](../consumer/end-user-insight-types.md)です。引き続きこれを使って、より多くの人が新しい直感的な方法でデータから詳細情報を見つけられるようにしていきます。
+Microsoft Research を使用して開発した[一連の高度な分析アルゴリズム](../consumer/end-user-insight-types.md)は現在も増え続けており、それに基づいて分析情報機能が構築されました。 Microsoft では、今後もこれらのアルゴリズムを使用し、より多くのユーザーが新しい直感的な方法でデータの分析情報を見つけられるように支援します。 [クイック分析情報のためにデータを最適化する方法についてはこちら](service-insights-optimize.md)を参照してください。
 
 ## <a name="run-quick-insights-on-a-dataset"></a>データセットへのクイック インサイトの実行
-Amanda がクイック インサイトをデータセットに対して実行し、フォーカス モードでインサイトを開き、インサイトの 1 つをダッシュボード上にタイルとして固定し、ダッシュボード タイルのインサイトを取得する様子をご覧ください。
+Amanda がデータセットに対してクイック分析情報を実行し、フォーカス モードで分析情報を開く動画をご覧ください。 Amanda は、分析情報をダッシュボードのタイルとしてピン留めし、ダッシュボード タイルの分析情報を取得しています。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
 次はあなたの番です。 [サプライヤー クオリティ分析サンプル](sample-supplier-quality.md)を使用して分析情報を試してみます。
 
-1. **[データセット]** タブから**その他のオプション** (...) を選び、 **[クイック分析情報を取得する]** を選びます。
+1. **[データセット]** タブから**その他のオプション** (...) を選び、**[クイック分析情報を取得する]** を選びます。
    
-    ![[データセット] タブ](media/service-insights/power-bi-ellipses.png)
+    ![データセット タブ](media/service-insights/power-bi-ellipses.png)
    
     ![省略記号メニュー](media/service-insights/power-bi-tab.png)
 2. Power BI は[さまざまなアルゴリズム](../consumer/end-user-insight-types.md)を使用して、データセット内の傾向を検索します。
@@ -61,7 +61,7 @@ Amanda がクイック インサイトをデータセットに対して実行し
 
 1. ダッシュボードに視覚化を追加するには、カードの上にポインターを移動してピン アイコンを選択します。
 
-2. カードをポイントし、**その他のオプション** (...) を選択し、 **[詳細情報の表示]** を選択します。 
+2. カードをポイントし、**その他のオプション** (...) を選択し、**[詳細情報の表示]** を選択します。 
 
     分析情報画面がフォーカス モードで開きます。
    
@@ -71,27 +71,17 @@ Amanda がクイック インサイトをデータセットに対して実行し
    * 視覚エフェクトをフィルター処理します。 **[フィルター]** ウィンドウがまだ開いていない場合、ウィンドウの右側にある矢印を選択して展開します。
 
        ![展開された分析情報フィルター メニュー](media/service-insights/power-bi-insights-filter-new.png)
-   * **[ビジュアルをピン留めする]** を選択し、分析情報カードをダッシュボードにピン留めします。
+   * **[ビジュアルをピン留めする]** を選択して、分析情報カードをダッシュボードにピン留めします。
    * カード自体で分析情報を実行します。カードは*範囲付き分析情報*と呼ばれることもあります。 右上隅にある電球アイコン ![[詳細情報の取得] アイコン](media/service-insights/power-bi-bulb-icon.png) または **[詳細情報の取得]** を選択します。
      
        ![分析情報の取得アイコン](media/service-insights/pbi-autoinsights-tile.png)
      
-     インサイトが左側に表示され、右側には、その単一の情報に含まれるデータのみに基づく新しいカードが表示されます。
+     分析情報は左側に表示されます。 その 1 つの分析情報のデータのみに基づいた新しいカードが右側に表示されます。
      
        ![詳細情報についての詳細情報](media/service-insights/power-bi-insights-on-insights-new.png)
 4. 元のインサイト キャンバスに戻るには、左上隅にある **[フォーカス モードの終了]** を選択します。
 
-## <a name="run-insights-on-a-dashboard-tile"></a>ダッシュボード タイルへのインサイトの実行
-データセット全体から情報を検索する代わりに、検索を絞り込み、単一のダッシュボード タイルの作成に使用するデータに範囲付き分析情報を実行します。 
-
-1. ダッシュボードを開きます。
-2. タイルの上にマウスを置きます。 **その他のオプション** (...) を選択し、 **[詳細情報の表示]** を選択します。 タイルが[フォーカス モード](../consumer/end-user-focus.md)で開き、インサイト カードが右側に表示されます。    
-   
-    ![フォーカス モード](media/service-insights/pbi-insights-tile.png)    
-3. 興味をそそる情報がありましたか? 詳細に確認するには、その分析情報カードを選択します。 選択した分析情報が左側に表示され、右側には、その単一の分析情報に含まれるデータのみに基づく新しい分析情報カードが表示されます。    
-4. 引き続きデータを掘り下げ、興味がある情報が見つかったら、右上隅から **[ビジュアルをピン留めする]** を選んで、それをダッシュボードにピン留めします。
-
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 - データセットを所有している場合は、[クイック分析情報用に最適化します](service-insights-optimize.md)。
 - 使用できるクイック分析情報の種類については[こちら](../consumer/end-user-insight-types.md)を参照してください。
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 0d52dd7df774dd834d0356e6de57b9c80beab801
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 41c7ba43d16b6d77ecf6324d3cd175dbbabc51a1
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747622"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983404"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -58,11 +58,11 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 >* アプリケーション シークレットを取得する
 >* **Report.ReadAll** (スコープ) をアプリに適用する。
 
-### <a name="create-a-dedicated-capacity"></a>専用の容量を作成する
+### <a name="create-a-capacity"></a>容量を作成する
 
-専用の容量を作成することで、アプリ ワークスペースでコンテンツ専用のリソースを所有する利点が得られます。 ページ分割されたレポートを使用する場合は、少なくとも P1 容量を使用してアプリ ワークスペースをバックアップする必要があります。 [Power BI Premium](../../admin/service-premium-what-is.md) を使用して、専用の容量を作成できます。
+容量を作成することにより、アプリ ワークスペース内のコンテンツに対してリソースを持つことができます。 ページ分割されたレポートを使用する場合は、少なくとも P1 容量を使用してアプリ ワークスペースをバックアップする必要があります。 [Power BI Premium](../../admin/service-premium-what-is.md) を使用して、容量を作成できます。
 
-次の表に、[Microsoft Office 365](../../admin/service-admin-premium-purchase.md) でページ分割されたレポート用の専用容量を作成するために使用できる Power BI Premium SKU の一覧を示します。
+次の表に、[Microsoft Office 365](../../admin/service-admin-premium-purchase.md) でページ分割されたレポート用の容量を作成するために使用できる Power BI Premium SKU の一覧を示します。
 
 | 容量ノード | 仮想コアの合計<br/>(バックエンド + フロント エンド) | バックエンドの仮想コア | フロント エンドの仮想コア | DirectQuery/ライブ接続の制限 |
 | --- | --- | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 
 ### <a name="enable-paginated-reports-workload"></a>ページ分割されたレポートのワークロードを有効にする
 
-専用容量で、ページ分割されたレポートのワークロードを有効にする必要があります。
+容量で、ページ分割されたレポートのワークロードを有効にする必要があります。
 
 1. [Power BI にサインインし、管理ポータル > [容量の設定]](https://app.powerbi.com/admin-portal/capacities) に移動します。
 
@@ -91,17 +91,17 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 
     ![ページ分割されたレポートのワークロード](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>専用の容量にアプリ ワークスペースを割り当てる
+### <a name="assign-an-app-workspace-to-a-capacity"></a>容量にアプリ ワークスペースを割り当てる
 
-専用の容量を作成した後、アプリ ワークスペースをその専用の容量に割り当てることができます。 このプロセスを完了するには、次の手順に従います。
+容量を作成した後、アプリ ワークスペースをその容量に割り当てることができます。 このプロセスを完了するには、次の手順に従います。
 
 1. Power BI サービス内でワークスペースを展開し、コンテンツを埋め込むために使用しているワークスペースの **[すべて表示]** を選択します。 次に、 **[ワークスペースの設定]** を選択します。
 
     ![ワークスペースを編集する](media/embed-paginated-reports-organization/workspace-settings.png)
 
-2. **[Premium]** を選択し、 **[専用の容量]** を有効にします。 作成した専用の容量を選択します。 その後、 **[保存]** を選びます。
+2. **[Premium]** を選択し、 **[容量]** を有効にします。 作成した容量を選択します。 その後、 **[保存]** を選びます。
 
-    ![専用の容量を割り当てる](media/embed-paginated-reports-organization/dedicated-capacity.png)
+    ![容量を割り当てる](media/embed-paginated-reports-organization/capacity.png)
 
 3. **[保存]** を選択した後、アプリ ワークスペース名の横にひし形が表示されます。
 

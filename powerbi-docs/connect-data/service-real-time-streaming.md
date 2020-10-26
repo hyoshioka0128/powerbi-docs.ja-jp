@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ec0c4cf9e719615489cbba5929f329e6f4f58826
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 8ec7b228f17fc87dcaac6ae5e278dd2c99ab036d
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634529"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116640"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Power BI のリアルタイム ストリーミング
 Power BI のリアルタイム ストリーミングを使用すると、リアルタイムでデータをストリーミングし、ダッシュボードを更新できます。 Power BI で作成された任意の視覚化やダッシュボードで、リアルタイムのデータや視覚化を表示し、更新できます。 ストリーミング データのデバイスおよびソースとしては、工場のセンサー、ソーシャル メディア ソース、サービス使用状況メトリック、またはその他の多くの時間依存データのコレクターや転送元が考えられます。
@@ -159,6 +159,9 @@ Power BI で利用し、視覚化できるリアルタイム ストリーミン�
 データ ストリームを作成すると、REST API URL エンドポイントが与えられます。これは *POST* 要求を利用し、作成した Power BI **ストリーミング データ** データセットにデータをプッシュすることで呼び出せます。
 
 *POST* 要求を行う際に、要求本文が Power BI ユーザー インターフェイスで提供されるサンプルの JSON と一致していることを確認する必要があります。 たとえば、配列で JSON オブジェクトをラップします。
+
+> [!WARNING]
+> Power BI サービス UI を使用して作成されたデータセットをストリーミングする場合、データセットの所有者は、**リソース キー**が含まれる URL を受け取ります。 このキーにより、Azure AD OAuth ベアラー トークンを使用することなく、要求元はデータセットへのデータのプッシュを承認されるため、この種類のデータセットとメソッドを使用するときは、URL に**シークレット キー**が含まれることの意味に注意してください。
 
 ### <a name="using-pubnub"></a>PubNub を使用する
 **PubNub** ストリーミングと Power BI を統合すると、待機時間の短い **PubNub** データ ストリームを使用し (あるいは新規作成し)、それを Power BI で使用できます。 **[PubNub]** を選択し、 **[次へ]** を選択すると、次のウィンドウが表示されます。

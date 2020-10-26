@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 38c14aa33504e7a3bb21cf68c6466a829d0653a7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 931c500cd2c2dbbf750eb3699ac5290a2977c21b
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238878"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526262"
 ---
 # <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Power BI Desktop で一般的なクエリ タスクを実行する
 
@@ -87,7 +87,7 @@ Power Query エディターでは、複数行の値を 1 つの値にグルー�
 
 各州の機関の数を調べてみましょう  (機関には、学区や他の教育機関 (地域のサービス地区など) が含まれる可能性があります)。 **[Agency ID - NCES Assigned \[District\] Latest available year]\(機関 ID - NCES によって割り当てられた <地区> の最新の使用可能な年\)** 列を選択し、リボンの **[変換]** タブまたは **[ホーム]** タブの **[グループ化]** ボタンを選択します  ( **[グループ化]** は両方のタブで使用できます)。
 
-![[グループ化] ダイアログ ボックス、Power Query エディター、Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
+![テーブル内の行をグループ化する方法を示すスクリーンショット。](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 
 **[グループ化]** ダイアログ ボックスが表示されます。 Power Query エディターで行がグループ化されると、 **[グループ化]** の結果が格納される新しい列が作成されます。 **Group By** 操作は、次の方法で調整できます。
 
@@ -98,7 +98,7 @@ Power Query エディターでは、複数行の値を 1 つの値にグルー�
 
 **[グループの追加]** または **[集計の追加]** を選択すると、 **[グループ化]** 操作にグループ化または集計を追加できます。 グループ化または集計を削除するには、行の右側にある省略記号アイコン ( **[...]** ) を選択し、 **[削除]** を選択します。 次に進み、既定値を使用して **[グループ化]** 操作を試して、何が起こるかを確認します。
 
-![[グループ化] ダイアログ ボックス、Power Query エディター、Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
+![[グループ化の追加] と [集計の追加] に引き出し線が付けられた [グループ化] ダイアログ ボックスを示すスクリーンショット。](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
 **[OK]** を選択すると、クエリによって **[グループ化]** 操作が実行され、結果が返されます。 驚きの結果です。オハイオ州、イリノイ州、テキサス州、カリフォルニア州には、それぞれ 1,000 を超える数の機関があります。
 

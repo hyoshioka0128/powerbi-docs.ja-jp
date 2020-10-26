@@ -10,11 +10,12 @@ ms.topic: how-to
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d7e1365ce1328e529d056a80b46230b97febc446
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 1fd5f4748ffd7a59095bfe34090d9494ff0a9134
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485670"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526768"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI サービスのレポートとダッシュボードを自分および他のユーザーがサブスクライブする
 
@@ -47,13 +48,13 @@ ms.locfileid: "85485670"
 ![サブスクライブ アイコンの選択](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. ダッシュボードまたはレポートを開きます。
-2. 上部のメニュー バーで **[受信登録する]** または封筒アイコン ![[受信登録する] アイコン](media/service-report-subscribe/power-bi-icon-envelope.png) を選択します。
+2. 上部のメニュー バーから、 **[サブスクリプション]** を選択するか、封筒アイコン :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false"::: を選択します。
    
     ![サブスクライブ アイコン](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. 黄色のスライダーを使うと、サブスクリプションのオン/オフを切り替えることができます。 スライダーを **[オフ]** にしても、サブスクリプションは削除されません。 サブスクリプションを削除するには、ごみ箱アイコンを選択します。
 
-2. メールは既に **[受信登録する]** ボックスにあります。 同じドメインの他のメール アドレスをサブスクリプションに追加することもできます。 レポートまたはダッシュボードが [Premium 容量](https://docs.microsoft.com/power-bi/service-premium-what-is)でホストされている場合は、使用しているドメイン内にあるかどうかにかかわらず、他の個別のメール アドレスとグループのエイリアスをサブスクライブすることができます。 レポートまたはダッシュボードが Premium 容量でホストされていない場合は、他の個別のものをサブスクライブすることはできますが、Power BI Pro のライセンスも必要になります。 詳細については、「[考慮事項とトラブルシューティング](#considerations-and-troubleshooting)」を参照してください。
+2. メールは既に **[受信登録する]** ボックスにあります。 同じドメインの他のメール アドレスをサブスクリプションに追加することもできます。 レポートまたはダッシュボードが [Premium 容量](../admin/service-premium-what-is.md)でホストされている場合は、使用しているドメイン内にあるかどうかにかかわらず、他の個別のメール アドレスとグループのエイリアスをサブスクライブすることができます。 レポートまたはダッシュボードが Premium 容量でホストされていない場合は、他の個別のものをサブスクライブすることはできますが、Power BI Pro のライセンスも必要になります。 詳細については、「[考慮事項とトラブルシューティング](#considerations-and-troubleshooting)」を参照してください。
 
 3. メールの **[件名]** と **[メッセージ]** の詳細を入力します。
 
@@ -130,7 +131,7 @@ Power BI 管理者は、Power BI 監査ログを使用して、サブスクリ�
 - レポート メールのサブスクリプションについては、データセットで RLS が使用されている場合、自分用のサブスクリプションを作成することができます。 行レベルのセキュリティ (RLS) を適用しているレポートに対して他のユーザーをサブスクライブすることはできません (ページ分割されたレポートを除く)。 セキュリティ コンテキストを使用して、他のユーザーをページ分割されたレポートにサブスクライブできます。 ページ分割されたレポートのサブスクライブの詳細については、[こちら](../consumer/paginated-reports-subscriptions.md)を参照してください。
 - レポート ページのサブスクリプションは、レポート ページの名前に関連付けられています。 レポート ページにサブスクライブしてから、名前を変更する場合は、サブスクリプションを再作成する必要があります。
 - 所属組織が Azure Active Directory 内の特定の設定を構成することで、Power BI でメール サブスクリプションを使用するための機能が制限される場合があります。 これらの制限には、リソースにアクセスするときの多要素認証や IP 範囲の制限が含まれますが、その限りではありません。
-- メール サブスクリプションでは、ほとんどの[カスタム ビジュアル](../developer/power-bi-custom-visuals.md)がサポートされていません。 例外は[認定](../developer/power-bi-custom-visuals-certified.md)されているカスタム ビジュアルです。
+- メール サブスクリプションでは、ほとんどの[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)がサポートされていません。 例外は[認定](../developer/visuals/power-bi-custom-visuals-certified.md)されているカスタム ビジュアルです。
 - メール サブスクリプションでは、この時点では、R を利用したカスタム ビジュアルはサポートされていません。
 - メール サブスクリプションは、レポートの既定のフィルターとスライサーの状態で送信されます。 サブスクライブした後に既定値を変更しても、メールには反映されません。 ページ分割されたレポートではこの機能がサポートされており、サブスクリプションごとに特定のパラメーター値を設定できます。
 - Analysis Services へのライブ接続を含むレポートがあり、データ更新後にサブスクリプションが実行するように設定したとします。 これは、Power BI サービスが Analysis Services インスタンスをポーリングして、オンプレミス モデルの変更を最初に検出したときに実行されます。  Power BI は、Analysis Services データ モデルの変更を 1 時間ごとにチェックして、サブスクリプションをいつ送信するかを決定します。

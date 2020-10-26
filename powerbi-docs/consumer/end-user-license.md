@@ -7,16 +7,16 @@ ms.service: powerbi
 ms.subservice: powerbi-consumer
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: bfa2faaa95c58541e44dd858f8d544d06d86ba25
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 2b0bde7aa193af831a95fc53d461f874a3c1d1d1
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527945"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830370"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>"*ビジネス ユーザー*" のライセンスとサブスクリプション
 
@@ -51,8 +51,16 @@ Premium では、コンテンツを表示する受信者に Pro ライセンス�
 Premium 容量の詳細については、「[Power BI Premium とは](../admin/service-premium-what-is.md)」をご覧ください。
 
 ## <a name="find-out-which-licenses-you-have"></a>使用しているライセンスを確認する
+アカウント情報を表示するには、プロファイル画像を選択します。 Zalan は無料ライセンスを使用しています。 
 
-自分に割り当てられているライセンスを確認するには、[自分の Microsoft **マイ アカウント** ページ](https://portal.office.com/account)にアクセスします。  **[サブスクリプション]** タブをクリックします。
+![プロファイル画像をクリックすると表示されるドロップダウンのスクリーンショット](media/end-user-license/power-bi-profiles.png)
+
+
+アカウントの詳細を表示するには、 **[アカウントを表示]** を選択します。 新しいブラウザー タブに [Microsoft の **[マイ アカウント]** ページ](https://portal.office.com/account)が開かれます。自分に割り当てられているライセンスを確認するには。  **[サブスクリプション]** タブをクリックします。
+
+![Microsoft 365 の [アカウント] ページのスクリーンショット。](media/end-user-license/power-bi-subscriptions.png)
+
+
 
 
 この最初のユーザー Pradtanna は Office 365 E5 を使用しています。これには、Power BI Pro ライセンスが含まれています。
@@ -95,7 +103,7 @@ Pro ユーザーは既に Zalan とワークスペースを共有しているこ
 
 |ライセンスの種類  |共有された容量 |専用 Premium 容量  |
 |---------|---------|---------|
-|**Free**     |  自分用のコンテンツを作成してそのコンテンツと対話する、個人用サンドボックスとして使用します。 Free ライセンスは、Power BI サービスを試すのに適した方法です。 他のユーザーのコンテンツを使用したり、自分のコンテンツを他のユーザーと共有したりすることはできません <sup>1</sup>     |   専用容量に割り当てられているコンテンツ、および他のユーザーから共有されているコンテンツを使用します。 Free ユーザーと Pro ユーザーは、Free ユーザーが Pro アカウントを持っていなくても共同作業を行うことができます。      |
+|**Free**     |  自分用のコンテンツを作成してそのコンテンツと対話する、個人用サンドボックスとして使用します。 Free ライセンスは、Power BI サービスを試すのに適した方法です。 他のユーザーのコンテンツを使用したり、自分のコンテンツを他のユーザーと共有したりすることはできません <sup>1</sup>     |   専用の Premium 容量に割り当てられているコンテンツ、および他のユーザーから共有されているコンテンツを使用します。 Free ユーザーと Pro ユーザーは、Free ユーザーが Pro アカウントを持っていなくても共同作業を行うことができます。      |
 |**Pro**     |  コンテンツを作成して共有することで、他の Pro ユーザーと共同作業します。        |  コンテンツを作成して共有することで、Free および Pro ユーザーと共同作業します。       |
 
 
@@ -125,7 +133,7 @@ Power BI Pro "*デザイナー*" は、いずれかのワークスペースで�
 
 - <sup>1</sup> Power BI サービスの Free ユーザー ライセンスは、**マイ ワークスペース**を用いた個人データの分析や視覚化を調べたり使用したりする場合に最適です。 スタンドアロンの Free ユーザーは同僚との共同作業に Power BI を使用していません。 Free ライセンスを持つスタンドアロンのユーザーは、他のユーザーから共有されているコンテンツを表示することも、自分のコンテンツを他の Power BI ユーザーと共有することもできません。
 
-    ![スタンドアロン ユーザーのイメージ](media/end-user-license/power-bi-free-license.jpg)
+
 
 ## <a name="next-steps"></a>次の手順
 

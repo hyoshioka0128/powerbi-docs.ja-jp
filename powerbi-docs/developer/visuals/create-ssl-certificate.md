@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 05/08/2020
-ms.openlocfilehash: 8eeca13acb1568a671618dca75d20cb7667b538b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f6f458d2fe82668074d7cfb046cb5a72afa35c38
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747553"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92048788"
 ---
 # <a name="create-an-ssl-certificate"></a>SSL 証明書を作成する
 
 この記事では Power BI ビジュアル用の Secure Sockets Layer (SSL) 証明書を生成してインストールする方法について説明します。
 
-Windows、macOS X、Linux の各手順を実行するには、Power BI Visual Tools **pbiviz** パッケージがインストールされている必要があります。 詳細については、[開発者環境の設定](./custom-visual-develop-tutorial.md#setting-up-the-developer-environment)に関するページをご覧ください。 
+Windows、macOS X、Linux の各手順を実行するには、Power BI Visual Tools **pbiviz** パッケージがインストールされている必要があります。 詳細については、「[Power BI の視覚化の開発用に環境をセットアップする](./environment-setup.md)」を参照してください。 
 
 ## <a name="create-a-certificate-on-windows"></a>Windows で証明書を作成する
 
@@ -31,7 +31,7 @@ pbiviz --install-cert
 
 Windows 7 の場合、`pbiviz` ツールを使用するには、コマンド ラインから OpenSSL ユーティリティを使用できるようにする必要があります。 OpenSSL をインストールするには、[OpenSSL](https://www.openssl.org) または [OpenSSL バイナリ](https://wiki.openssl.org/index.php/Binaries)にアクセスします。
 
-証明書をインストールする方法の詳細と手順については、[Windows 用の証明書の作成およびインストール](./custom-visual-develop-tutorial.md#windows)に関するページをご覧ください。
+証明書をインストールする方法の詳細と手順については、[Windows 用の証明書の作成およびインストール](./environment-setup.md#create-and-install-a-certificate)に関するページをご覧ください。
 
 ## <a name="create-a-certificate-on-macos-x"></a>macOS で証明書を作成する
 
@@ -58,7 +58,7 @@ OpenSSL ユーティリティをインストールしたら、次のコマンド
 pbiviz --install-cert
 ```
 
-詳細と手順については、[OS X 用の証明書の作成およびインストール](./custom-visual-develop-tutorial.md#osx)に関するページをご覧ください。
+詳細と手順については、「[証明書を作成してインストールする](./environment-setup.md#create-and-install-a-certificate)」の「OSX」タブを参照してください。
 
 ## <a name="create-a-certificate-on-linux"></a>Linux で証明書を作成する
 
@@ -199,6 +199,6 @@ PFX 証明書ファイルにパスフレーズが必要な場合は、次のよ�
     ```
 
 ## <a name="next-steps"></a>次の手順
-- [Power BI のビジュアルを開発する](custom-visual-develop-tutorial.md)
+- [Power BI の円形カード視覚化を開発する](develop-circle-card.md)
 - [Power BI ビジュアルのサンプル](samples.md)
 - [Power BI ビジュアルを AppSource に発行する](office-store.md)

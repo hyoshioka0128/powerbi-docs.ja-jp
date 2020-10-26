@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/17/2019
-ms.openlocfilehash: b6b56e57bdc7815b7db1afc3cde79831523c1129
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 076ad6549cb68660313dcd8da5ccf8eb1f8f26c7
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634253"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049156"
 ---
 # <a name="samples-of-power-bi-visuals"></a>Power BI ビジュアルのサンプル
 
@@ -73,4 +73,4 @@ WebGL では、Web コンテンツで OpenGL ES 2.0 に基づく API を使用�
 
 ## <a name="next-steps"></a>次の手順
 
-Power BI ビジュアルの作成を試すには、「[チュートリアル: Power BI のビジュアルを開発する](custom-visual-develop-tutorial.md)」。
+Power BI の視覚化を作成してみるには、[Power BI の円形カード視覚化の開発](develop-circle-card.md)に関する記事を参照してください。

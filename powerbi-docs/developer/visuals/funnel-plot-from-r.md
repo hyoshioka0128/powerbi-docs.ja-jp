@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: e0bdb5174c1392e1a2f81a101a62798f82e2b191
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 5df13baf295745f86c89ce75d2890ca2c13894ee
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747714"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049340"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>チュートリアル:R スクリプトから R ビジュアルにフィルター プロットを作成する
 この記事では、R ビジュアルで R スクリプトを使用してじょうごプロットを作成する方法を順を追って説明します。
@@ -49,7 +49,7 @@ ms.locfileid: "91747714"
 
 ## <a name="create-an-r-powered-visual-and-package-in-r-code"></a>R コードで R を利用したビジュアルとパッケージを作成する
 
-1. 開始する前に、必ず [PBIVIZ ツールをインストール](./custom-visual-develop-tutorial.md#installing-packages)してください。
+1. 開始する前に、必ず [PBIVIZ ツールをインストール](./environment-setup.md#install-pbiviz)してください。
 
 1. 次のコマンドを実行して、R を利用した新しいビジュアルを作成します。
 
@@ -274,7 +274,7 @@ ms.locfileid: "91747714"
 
 * 各 R ビジュアルでは、その入力テーブルに `unique` 演算子が適用されます。 複数の同一の行が削除されるのを防ぐには、一意の ID を持つ追加の入力フィールドを追加し、R コードでそれを無視することを検討してください。   
 
-* Power BI アカウントを持っている場合は、`pbiviz package` コマンドを使用して再パッケージ化するのではなく、Power BI サービスを使用してビジュアルを[即座に](./custom-visual-develop-tutorial.md)開発してください。
+* Power BI アカウントを持っている場合は、`pbiviz package` コマンドを使用して再パッケージ化するのではなく、Power BI サービスを使用してビジュアルを[即座に](./develop-circle-card.md)開発してください。
 
 ### <a name="html-widgets-gallery"></a>HTML ウィジェット ギャラリー
 次のビジュアルで使用するために、[ HTML ウィジェット ギャラリー](http://gallery.htmlwidgets.org/)でビジュアルを探索します。 作業を簡単にするために、20 を超える対話型の HTML ビジュアを含む[ビジュアル プロジェクト リポジトリ](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML)を作成し、その中から選択できるようにしました。
@@ -300,6 +300,6 @@ ms.locfileid: "91747714"
 
 ## <a name="next-steps"></a>次の手順
 
-詳細については、[Power BI ビジュアル](./custom-visual-develop-tutorial.md)および [R ビジュアル](../../visuals/service-r-visuals.md)に関するページの追加のチュートリアルを参照してください。
+詳細については、[Power BI の円形カード視覚化の開発](./develop-circle-card.md)および [R ビジュアル](../../visuals/service-r-visuals.md)に関する追加の Power BI チュートリアルを参照してください。
 
 [Office ストア (ギャラリー)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI) に対して[ビジュアルを開発して送信する](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/)方法を学習します。その他の例については、[R スクリプト ショーケース](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)を参照してください

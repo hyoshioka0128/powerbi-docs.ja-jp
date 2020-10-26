@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 65291c81ab1952599079ff93ed4ed19694657132
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 96d33351ba1f0d96cac71548854c94810cfdc692
+ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239090"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928288"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>R を使用した Power BI ビジュアルの作成
 Power BI Desktop では、*R* を使用してデータを視覚化できます。 [R](https://mran.revolutionanalytics.com/documents/what-is-r) は、統計コンピューティングおよびグラフィックス用の言語であり環境です。
@@ -129,6 +129,8 @@ Power BI Desktop での R ビジュアルには、以下の制限があります
 
 * データ サイズ: プロット作成で R ビジュアルが使用するデータは、150,000 行に制限されています。 150,000 を超える行が選択されている場合は、上位の 150,000 の行のみが使用され、メッセージがイメージに表示されます。
 
+* 出力サイズ:R ビジュアルの出力サイズの上限は 2 MB です。
+
 * 解決方法: R ビジュアルはすべて 72 DPI で表示されます。
 
 * デバイスのプロット:既定のデバイスへのプロットのみがサポートされています。 
@@ -147,7 +149,7 @@ Power BI Desktop での R ビジュアルには、以下の制限があります
 
 * RRO インストール: このリリースでは、32 ビット版の Power BI Desktop によって RRO インストールが自動的に識別されません。 **[オプションと設定]**  >  **[オプション]**  >  **[R スクリプト]** の順に選択して、R インストール ディレクトリへのパスを手動で入力する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Power BI での R の詳細については、次の記事を参照してください。
 
 * [Power BI Desktop での R スクリプトの実行](../connect-data/desktop-r-scripts.md)

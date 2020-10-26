@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 56825599a6b566a93f18e6fea16d995dc8bdda8f
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: 8565f6ef18192110688d01127129dcc19919cb0f
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020046"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256543"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktop のデータ ソース
 
@@ -185,19 +185,21 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Emigo Data Source
 * Entersoft Business Suite (ベータ)
 * FactSet Analytics
-* Palantir Foundry
-* Industrial App Store
+* Hexagon PPM Smart API
 * Intune データ ウェアハウス (ベータ)
 * Microsoft Graph Security (ベータ)
-* Power BI 用 Projectplace (ベータ)
 * Product Insights (ベータ)
 * Quick Base
 * TeamDesk (Beta)
 * Webtrends Analytics (ベータ)
 * Witivio (ベータ)
-* Zoho Creator (ベータ)
 * Workplace Analytics (ベータ)
-* Hexagon PPM Smart API
+* Zoho Creator (ベータ)
+* Palantir Foundry
+* Industrial App Store
+* Power BI 用 Projectplace
+* eWay-CRM (ベータ)
+* Spigit (ベータ)
 
 
 次の図は、 **[オンライン サービス]** の **[データの取得]** ウィンドウを示しています。
@@ -238,18 +240,26 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (ベータ)
 * Vena (ベータ)
-* Zucchetti HR Infinity (ベータ)
 * Vessel Insight (ベータ)
+* Zucchetti HR Infinity (ベータ)
 * 空のクエリ
 
 
 
 次の図は、 **[その他]** の **[データの取得]** ウィンドウを示しています。
 
-![その他のデータソース、[データの取得] ダイアログボックス、Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
+![Power BI Desktop のその他のデータ ソース](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > 現時点では、Azure Active Directory を使用して保護されているカスタム データ ソースに接続することはできません。
+
+### <a name="template-apps"></a>テンプレート アプリ
+
+**[データを取得]** ウィンドウの下部にある **[テンプレート アプリ]** リンクを選択すると、組織用のテンプレート アプリを見つけることができます。 
+
+![Power BI Desktop のその他のデータ ソースに対する [データを取得] ダイアログ ボックス](media/desktop-data-sources/data-sources-12.png)
+
+使用できるテンプレート アプリは、組織によって異なる場合があります。
 
 ## <a name="connecting-to-a-data-source"></a>データ ソースに接続する
 
@@ -273,25 +283,43 @@ URL またはリソースの接続情報を入力し、 **[OK]** を選択しま
 
 PBIDS ファイルは、特定の構造を持つ Power BI Desktop ファイルであり、Power BI データ ソース ファイルであることを識別するための .PBIDS 拡張子が付いています。
 
-PBIDS ファイルを作成すると、組織のレポート作成者の **[データの取得]** エクスペリエンスを効率化できます。 新しいレポート作成者が PBIDS ファイルを使用しやすいように、管理者はよく使用される接続用にこれらのファイルを作成することをお勧めします。
+PBIDS ファイルを作成すると、組織の新規または初級のレポート作成者に対する **[データの取得]** エクスペリエンスを効率化できます。 既存のレポートから PBIDS ファイルを作成すると、レポート作成の初心者でも同じデータから新しいレポートを簡単に作成できます。
 
-作成者が PBIDS ファイルを開くと、Power BI Desktop が開き、認証を受けてファイルに指定されているデータ ソースに接続することができる資格情報の入力がユーザーに求められます。 **[ナビゲーション]** ダイアログ ボックスが表示されると、ユーザーはモデルに読み込むデータ ソースからテーブルを選択する必要があります。 PBIDS ファイルで指定されていない場合、ユーザーは必要に応じてデータベースを選択します。
+作成者が PBIDS ファイルを開くと、Power BI Desktop が開き、認証を受けてファイルに指定されているデータ ソースに接続することができる資格情報の入力がユーザーに求められます。 **[ナビゲーション]** ダイアログ ボックスが表示されると、ユーザーはモデルに読み込むデータ ソースからテーブルを選択する必要があります。 PBIDS ファイルで指定されていない場合、ユーザーはデータベースと接続モードの選択も必要な場合があります。
 
 以降、ユーザーはビジュアルの構築を開始するか、 **[最近のソース]** に選択して新しいテーブル セットをモデルに読み込むことができるようになります。
 
 現在、PBIDS ファイルでは、1 つのファイルで 1 つのデータ ソースのみがサポートされています。 複数のデータ ソースを指定すると、エラーが発生します。
 
-PBIDS ファイルを作成するには、管理者が 1 つの接続に必要な入力を指定する必要があります。 また、接続モードを DirectQuery または Import と指定することもできます。 ファイルに **mode** がないか null の場合、ユーザーが Power BI Desktop でファイルを開くと、**DirectQuery** または **Import** を選択するよう求められます。
+
+### <a name="how-to-create-a-pbids-connection-file"></a>PBIDS 接続ファイルを作成する方法
+
+関心のあるデータに既に接続されている既存の Power BI Desktop (.PBIX) ファイルがある場合は、Power BI Desktop 内からこれらの接続ファイルをエクスポートするだけで済みます。 PBIDS ファイルは Desktop から自動的に生成できるので、これは推奨される方法です。 さらに、その場合でも、テキスト エディターでファイルを編集したり、手動で作成したりできます。 
+
+PBIDS ファイルを作成するには、 **[ファイル] > [オプションと設定] > [データ ソース設定]** を選択します。
+
+![[データ ソース設定] メニュー オプション](media/desktop-data-sources/data-sources-09.png)
+
+表示されるダイアログで、PBIDS としてエクスポートするデータ ソースを選択し、 **[Export PBIDS]\(PBIDS のエクスポート\)** を選択します。
+
+![[データ ソース設定] ダイアログ](media/desktop-data-sources/data-sources-10.png)
+
+**[Export PBIDS]\(PBIDS のエクスポート\)** ボタンを選択すると、Power BI Desktop によって PBIDS ファイルが生成されます。その名前を変更してディレクトリに保存し、他のユーザーと共有できます。 また、次の図に示すように、ファイルをテキスト エディターで開き、ファイル自体での接続モードの指定など、ファイルをさらに変更することもできます。 
+
+![テキスト エディターを使用して PBIDS ファイルを変更する](media/desktop-data-sources/data-sources-11.png)
+
+テキスト エディターで PBIDS ファイルを手動で作成する方がよい場合は、1 つの接続に必要な入力を指定し、PBIDS 拡張機能を付けてファイルを保存する必要があります。 必要に応じて、接続モードを DirectQuery または Import と指定することもできます。 ファイルに **mode** がないか null の場合、ユーザーが Power BI Desktop でファイルを開くと、**DirectQuery** または **Import** を選択するよう求められます。
+
 
 ### <a name="pbids-file-examples"></a>PBIDS ファイルの例
 
-このセクションでは、一般的に使用されるデータ ソースの例をいくつか示します。 ファイルの種類 PBIDS は、Power BI Desktop でもサポートされているデータ接続のみをサポートしますが、2 つの例外があります。ライブ接続と空のクエリ。
+このセクションでは、一般的に使用されるデータ ソースの例をいくつか示します。 ファイルの種類 PBIDS を使用すると、Power BI Desktop でもサポートされているデータ接続のみがサポートされますが、次の例外があります: Wiki URLS、ライブ接続、空のクエリ。
 
 PBIDS ファイルには、認証情報と、テーブルとスキーマの情報が含まれて "*いません*"。  
 
 次のコード スニペットは、PBIDS ファイルの一般的な例をいくつか示していますが、完全でも包括的でもありません。 その他のデータ ソースについては、[プロトコルおよびアドレス情報のデータ ソース参照 (DSR) 形式](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification)に関する記事を参照してください。
 
-これらの例は便宜上のものであり、網羅する目的はありません。また、DSR 形式のサポートされているすべてのコネクタが含まれているわけではありません。 管理者または組織は、これらの例をガイドとして使用して独自のデータ ソースを作成し、そこから独自のデータ ソース ファイルを作成およびサポートすることができます。
+接続ファイルを編集している場合、または手動で作成している場合、これらの例は便宜上のものであり、網羅を目的としたものではありません。また、DSR 形式のサポートされているすべてのコネクタが含まれているわけではありません。
 
 #### <a name="azure-as"></a>Azure AS
 

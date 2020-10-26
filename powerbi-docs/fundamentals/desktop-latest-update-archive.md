@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/30/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2464d95fd9d2cc7a5e3bb42479c1ba96bf5285a8
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: bab09647b324e9be8b1de6f27865511b4f2b1a02
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600542"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256341"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktop に対する以前の毎月の更新
 
@@ -37,6 +37,93 @@ ms.locfileid: "91600542"
 この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
 
 次のセクションでは、**Power BI Desktop** の以前の月の更新について説明します。
+
+
+## <a name="september-2020-update-2852840"></a>2020 年 9 月更新 (2.85.284.0)
+
+9 月の Power BI Desktop の更新プログラムは、秋の訪れや紅葉のようにクールで明快です。 
+
+今月新たに、Power BI Desktop の毎月のブログとビデオの更新プログラムに、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルと Power BI サービスの更新プログラムの詳細については、それぞれの新機能に関する記事をご覧ください。
+
+* [Power BI サービスの新機能](service-whats-new.md)
+* [Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+[ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得してください。 Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
+
+> [!IMPORTANT]
+> Power BI Desktop は、お客様のフィードバックと新機能を組み込み、月単位で更新およびリリースされます。 サポート対象の Power BI Desktop は、最新バージョンのみです。お客様が Power BI Desktop に関してサポートに問い合わせた場合、最新バージョンにアップグレードするように求められます。 最新バージョンの Power BI Desktop は、[Windows ストア](https://aka.ms/pbidesktopstore)から入手するか、またはサポートされているすべての言語を含む 1 つの実行可能ファイルとして[ダウンロード](https://www.microsoft.com/download/details.aspx?id=58494)してお使いのコンピューターにインストールできます。
+
+Power BI Desktop 更新プログラムの一覧にある各機能の横のリンクは、次のように解釈されます。
+
+* \[ブログ\]:ほとんどの機能は、毎月更新されるブログ記事内のセクションで説明されています。
+* \[ビデオ\]:一部の機能には、機能について説明するビデオの抜粋が用意されています。これは新しいブラウザー タブで再生されます。
+* \[記事\]:一部の機能には、詳細を記載する記事が用意されています。
+* 残りの機能は説明を必要としないため、記事やビデオは用意されていません。
+
+[Power BI の毎月の更新プログラムのビデオ](#power-bi-desktop-monthly-update-video)全体を視聴することもできます。
+
+> [!IMPORTANT]
+> 2021 年 1 月 31 日以降、Power BI Desktop は、Windows 7 ではサポートされなくなります。 その後、Power BI Desktop の最新リリースの場合のみ、Power BI Desktop は Windows 8 以降のバージョンの Windows でサポートされます。 
+
+以下の更新は、今月の Power BI Desktop の新しい機能です。
+
+### <a name="analytics"></a>分析
+* スマート物語 (プレビュー) [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=51)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#_Smart_narratives_(preview)) 
+* Q&A で算術演算がサポートされるようになりました [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=333)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#QA_arithmetic) 
+
+
+### <a name="reporting"></a>レポート
+* データ ポイントの四角形の選択 (追加のグラフ用) [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=370)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Data_point_rectangle_select) 
+* レイヤーの順序を維持するための一般的な視覚化オプションが追加されました [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=405)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Maintain_layer_order) 
+* 発行時のワークスペースの検索 [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=615)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Search_workspace) 
+* 積み上げ視覚化用の合計ラベル数 [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=630)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Total_labels_stacked) 
+* モバイル オーサリングの機能拡張 [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=786)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Mobile_authoring_enhancements) 
+
+
+### <a name="modeling"></a>モデリング
+* 拡張データセット メタデータの一般提供開始 [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1200)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Enhanced_Dataset_Metadata)
+* 通貨データ型の列を含む集計式のパフォーマンスの向上 [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1220)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Performance_improvements_to_agg)
+
+
+### <a name="data-connectivity"></a>データ接続
+* Azure Databricks [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1342)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Azure_Databricks)
+* MariaDB [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1365)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#MariaDB)
+* Hexagon PPM Smart API [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1386)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Hexagon_PPM_Smart)
+* データ接続に関するその他の更新 [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1411)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Other_data_connectivity)
+
+
+### <a name="visuals"></a>視覚化
+* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1228)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Visualizations)
+
+
+### <a name="template-apps"></a>テンプレート アプリ
+* マルチチャネル属性ダッシュボード [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Multichannel_Attribution_Dashboard) 
+* ワークスペース分析ダッシュボード [[ビデオ]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Workspace_Analytics_Dashboard) 
+
+
+これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/)に関するブログ投稿を参照してください。
+
+
+> [!NOTE]
+> [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
+次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
+
+> [!VIDEO https://www.youtube.com/embed/gPGy18Yo0Go]
+
+ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
+
+* 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
+* より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
+* 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
+* アーカイブされるのは英語版の Power BI Desktop のみです。
+
+次のリンクを選択して、この以前のバージョンをダウンロードします。 
+
+* [2020 年 9 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-09.exe)
+* [2020 年 9 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-09_x64.exe)
 
 
 

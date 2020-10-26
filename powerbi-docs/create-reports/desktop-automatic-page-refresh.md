@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f282db76417fb99f07d39bb9f684515dd1d312c0
-ms.sourcegitcommit: ae6559f40e1735d53654cbe9425add6e18171295
+ms.openlocfilehash: 3ffc865a4be18b8fa11dda2d94bc2c8892fc3000
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88764976"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116525"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Power BI でのページの自動更新
 
@@ -197,6 +197,9 @@ Power BI の "*ワークスペース*" は、容量内に存在します。 そ�
 *表の凡例 : *
 1. *FI: 固定間隔*
 2. *CD: 変更の検出*
+
+> [!WARNING]
+> データセットで有効にされていると、変更の検出メジャーによって、メジャーを計算して変更をポーリングするために、DirectQuery データ ソースへの接続が開かれます。 この接続は、Power BI で既に行われている低優先度の更新接続とは異なります。
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 
