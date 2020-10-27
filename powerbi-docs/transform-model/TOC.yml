@@ -43,6 +43,8 @@
           href: dataflows/dataflows-create.md
         - name: データフローの構成と使用
           href: dataflows/dataflows-configure-consume.md
+        - name: Power BI Premium データフロー ワークロードを構成する
+          href: dataflows/dataflows-premium-workload-configuration.md
         - name: データフローと Azure Data Lake Gen2
           href: dataflows/dataflows-azure-data-lake-storage-integration.md
         - name: データフローの Premium 機能
