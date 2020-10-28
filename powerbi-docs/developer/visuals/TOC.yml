@@ -134,8 +134,6 @@
               href: utils-test.md
             - name: ツールヒント ユーティリティ
               href: utils-tooltip.md
-            - name: データ ビュー ユーティリティ
-              href: utils-dataview.md
     - name: リソース
       items:
         - name: デベロッパー センター

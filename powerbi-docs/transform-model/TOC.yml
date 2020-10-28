@@ -99,8 +99,6 @@
           items:
             - name: データフローの作成と使用
               href: service-dataflows-create-use.md
-            - name: データフローの昇格または認定
-              href: service-dataflows-promote-certify.md
             - name: Power BI で DirectQuery とデータフローを使用する (プレビュー)
               href: service-dataflows-directquery.md
             - name: データフローで強化されたコンピューティング エンジンを使用する

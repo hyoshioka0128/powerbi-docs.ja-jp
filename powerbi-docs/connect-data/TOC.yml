@@ -42,7 +42,7 @@
           href: power-bi-data-sources.md
         - name: Power BI データ ソースの前提条件
           href: desktop-data-source-prerequisites.md
-        - name: Power BI Desktop での拡張データセット メタデータの使用 (プレビュー)
+        - name: Power BI Desktop での拡張データセット メタデータの使用
           href: desktop-enhanced-dataset-metadata.md
         - name: Power BI で多次元モデルを操作する
           href: desktop-default-member-multidimensional-models.md
@@ -184,12 +184,6 @@
               href: service-datasets-copy-reports.md
             - name: データセットの使用を制御する
               href: service-datasets-admin-across-workspaces.md
-        - name: データセットを推奨する
-          items:
-            - name: データセットを昇格させる
-              href: service-datasets-promote.md
-            - name: データセットを認定する
-              href: service-datasets-certify.md
         - name: データベースからデータを取得
           items:
             - name: Azure と Power BI
