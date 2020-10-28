@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fba37d9f73ea0f61d8a43dc46cd13a5835d4d2a9
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 01d1e48537b2d373be3897259f8ac6e97886f268
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525802"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680973"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Power BI への移行を準備する
 
@@ -79,7 +79,7 @@ Power BI 実装の初期段階で対処すべきいくつかの重要な項目�
 - Import モードや DirectQuery モードの使用、[Composite モデルでの 2 つのモードの組み合わせ](composite-model-guidance.md)など、[データセット モード](../connect-data/service-dataset-modes-understand.md)に関連する基本設定。
 - [データとアクセスの保護](../admin/service-admin-power-bi-security.md)。
 - [共有データセット](../connect-data/service-datasets-share.md)を使用した再利用性の実現。
-- [データ証明](../connect-data/service-datasets-certify.md)の適用による、権限のある信頼できるデータの使用の促進。
+- [データ証明](../collaborate-share/service-endorsement-overview.md)の適用による、権限のある信頼できるデータの使用の促進。
 - さまざまなユース ケースや事業単位に対する、Power BI レポート、Excel レポート、ページ分割されたレポートなどのさまざまな[レポートの種類](../create-reports/index.yml)の使用。
 - 一元化された BI 成果物とビジネス管理の BI 成果物を管理するための変更管理アプローチ。
 - コンシューマー、データ モデル作成者、レポート作成者、管理者向けのトレーニング計画。
@@ -123,7 +123,7 @@ Power BI 実装の初期段階で対処すべきいくつかの重要な項目�
 レガシ BI プラットフォームで既存のレポートのインベントリを準備することは、既に存在するものを理解するための重要な手順です。 この手順の結果は、移行工数レベルを評価するための入力となります。 インベントリの準備に関連するアクティビティには、次のものが含まれます。
 
 1. **レポートのインベントリ:** 移行の候補であるレポートとダッシュボードの一覧をコンパイルします。
-2. **データ ソースのインベントリ:** 既存のレポートによってアクセスされるすべてのデータ ソースの一覧をコンパイルします。 これには、エンタープライズ データ ソースと部門データ ソースおよび個人データ ソースの両方が含まれている必要があります。 このプロセスでは、これまで IT 部門に知られていなかったデータ ソース ("_シャドウ IT_" とも呼ばれる) が明らかになる可能性があります。
+2. **データ ソースのインベントリ:** 既存のレポートによってアクセスされるすべてのデータ ソースの一覧をコンパイルします。 これには、エンタープライズ データ ソースと部門データ ソースおよび個人データ ソースの両方が含まれている必要があります。 このプロセスでは、これまで IT 部門に知られていなかったデータ ソース (" _シャドウ IT_ " とも呼ばれる) が明らかになる可能性があります。
 3. **監査ログ:** レガシ BI プラットフォームの監査ログからデータを取得して、使用パターンを把握し、優先順位付けを支援します。 監査ログから取得する重要な情報は次のとおりです。
     - 各レポートが週、月、または四半期ごとに実行された平均回数。
     - 週、月、または四半期ごとのレポートあたりの平均コンシューマー数。

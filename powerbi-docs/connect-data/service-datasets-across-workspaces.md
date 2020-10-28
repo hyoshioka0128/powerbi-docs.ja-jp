@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e943324106148bdbff1edba36650d494fdd9db8c
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 23d520815c47c9ff9f1ec045ec67921141e8eb7a
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374271"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681157"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>ワークスペース全体のデータセットの概要
 
@@ -22,7 +22,7 @@ ms.locfileid: "91374271"
 
 ![共有データセットを選択する](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Power BI では、データセットの作成者は、[ビルド アクセス許可](service-datasets-build-permissions.md)を使用することで、自分のデータにアクセスできるユーザーを制御できます。 データセットの作成者は、他のユーザーがデータセットを見つけられるよう、データセットを "*認定*" または "*昇格*" することもできます。 そうすることで、レポートの作成者は、どのデータセットが高品質かつ正式であるかを把握し、それらのデータセットを Power BI 内のあらゆる作成場所で使用できます。 管理者には、[ワークスペース全体でデータセットの使用を制御する](service-datasets-admin-across-workspaces.md)ための新しいテナント設定が与えられます。
+Power BI では、データセットの作成者は、[ビルド アクセス許可](service-datasets-build-permissions.md)を使用することで、自分のデータにアクセスできるユーザーを制御できます。 データセットの作成者は、他のユーザーがデータセットを見つけられるよう、データセットを " *認定* " または " *昇格* " することもできます。 そうすることで、レポートの作成者は、どのデータセットが高品質かつ正式であるかを把握し、それらのデータセットを Power BI 内のあらゆる作成場所で使用できます。 管理者には、[ワークスペース全体でデータセットの使用を制御する](service-datasets-admin-across-workspaces.md)ための新しいテナント設定が与えられます。
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>データセット共有と新しいワークスペース エクスペリエンス
 
@@ -47,7 +47,7 @@ Power BI では、データセットの作成者は、[ビルド アクセス許
 
 ## <a name="promotion-and-certification"></a>推奨と認定
 
-データセットを作成する場合、他のユーザーに役立ててもらえるようなデータセットを作成したとき、[データセットを推奨する](service-datasets-promote.md)ことでデータセットを簡単に見つけてもらうことができます。 また、[データセットの認定](service-datasets-certify.md)を組織の専門家に依頼できます。
+データセットを作成する場合、他のユーザーに役立ててもらえるようなデータセットを作成したとき、[データセットを推奨する](../collaborate-share/service-endorse-content.md#promote-content)ことでデータセットを簡単に見つけてもらうことができます。 また、[データセットの認定](../collaborate-share/service-endorse-content.md#request-content-certification)を組織の専門家に依頼できます。
 
 ## <a name="licensing"></a>ライセンス
 
@@ -69,7 +69,8 @@ Power BI では、データセットの作成者は、[ビルド アクセス許
 
 ## <a name="next-steps"></a>次の手順
 
-- [データセットを推奨する](service-datasets-promote.md)
-- [データセットを認定する](service-datasets-certify.md)
+- [データセットを推奨する](../collaborate-share/service-endorse-content.md#promote-content)
+- [データセットを認定する](../collaborate-share/service-endorse-content.md#certify-content)
+- [データセットの認定を要求する](../collaborate-share/service-endorse-content.md#request-content-certification)
 - [ワークスペース全体でデータセットの使用を制御する](service-datasets-admin-across-workspaces.md)
 - わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

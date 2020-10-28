@@ -9,23 +9,23 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: efddfbdb70b2c20ad650eda6a16a5d7defb758e8
-ms.sourcegitcommit: fa0a1561aba2a392fb56e7030e1a0537806a9260
+ms.openlocfilehash: 20a81ed4675f6392f28a20f7b741d0c0ad1076eb
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811853"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680771"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Power BI Desktop でおすすめのテーブルを設定する (プレビュー)
 
-Excel のデータ型ギャラリーでは、ユーザーが Power BI データセットの "*おすすめのテーブル*" からのデータを検索することができます。 この記事では、データセットの*おすすめの*テーブルを設定する方法について説明します。 これらのタグを使用すると、ユーザーが Excel シートにエンタープライズ データを簡単に追加できるようになります。 おすすめのテーブルを設定して共有するための基本的な手順を次に示します。
+Excel のデータ型ギャラリーでは、ユーザーが Power BI データセットの " *おすすめのテーブル* " からのデータを検索することができます。 この記事では、データセットの *おすすめの* テーブルを設定する方法について説明します。 これらのタグを使用すると、ユーザーが Excel シートにエンタープライズ データを簡単に追加できるようになります。 おすすめのテーブルを設定して共有するための基本的な手順を次に示します。
 
 1. Power BI Desktop でデータセット内のおすすめのテーブルを識別します (この記事)。
 1. おすすめのテーブルを含むこれらのデータセットを、新しいワークスペースのいずれかに保存します。 レポート作成者は、これらのおすすめのテーブルを使用してレポートを作成できます。 
-1. 組織の残りの部分は、関連する更新可能なデータのために、これらのおすすめのテーブル (*Excel ではデータ型と呼ばれる*) に接続できます。 「[Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)](service-excel-featured-tables.md)」の記事では、Excel でこれらのおすすめのテーブルを使用する方法について説明します。
+1. 組織の残りの部分は、関連する更新可能なデータのために、これらのおすすめのテーブル ( *Excel ではデータ型と呼ばれる* ) に接続できます。 「[Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)](service-excel-featured-tables.md)」の記事では、Excel でこれらのおすすめのテーブルを使用する方法について説明します。
 
 > [!NOTE]
-> [Power BI でデータセットを昇格または認定](../connect-data/service-datasets-promote.md)することができます。 これは "*承認*" と呼ばれます。 Excel によって、データ型ギャラリーで承認されたデータセット内のテーブルの優先順位が設定されます。 Excel によって、最初に認定済みデータセットのおすすめのテーブルが一覧表示され、次に昇格されたデータセットのテーブルが一覧表示されます。 Excel によって、その後、承認されていないデータセットのおすすめのテーブルが一覧表示されます。 
+> [Power BI でデータセットを昇格または認定](../collaborate-share/service-endorse-content.md)することができます。 これは " *承認* " と呼ばれます。 Excel によって、データ型ギャラリーで承認されたデータセット内のテーブルの優先順位が設定されます。 Excel によって、最初に認定済みデータセットのおすすめのテーブルが一覧表示され、次に昇格されたデータセットのテーブルが一覧表示されます。 Excel によって、その後、承認されていないデータセットのおすすめのテーブルが一覧表示されます。 
 
 ## <a name="turn-on-the-featured-table-preview"></a>おすすめのテーブルのプレビューを有効にする
 

@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 23d207bb4f070c3c3a35f1e74dd281f012528c82
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: f9268409977b3aa78e1ebda6f1f6b2e732451455
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90964997"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681012"
 ---
 # <a name="deploy-to-power-bi"></a>Power BI への展開
 
-この記事では、Power BI に移行するときのコンテンツの展開、サポート、および監視に関係する**ステージ 5** について説明します。
+この記事では、Power BI に移行するときのコンテンツの展開、サポート、および監視に関係する **ステージ 5** について説明します。
 
 :::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-powerbi-stage-5.png" alt-text="Power BI への移行のステージを示す図。この記事では、ステージ 5 を重点的に説明します。":::
 
@@ -44,7 +44,7 @@ IT マネージド ソリューション、またはビジネスの生産性に�
 - **接続文字列とパラメーター:** 開発とテストでデータ ソースが異なる場合は、データセットの接続文字列を調整します。 [パラメーター化](../connect-data/service-parameters.md)を使用すれば、接続文字列を効果的に管理することができます。
 - **ワークスペースのコンテンツ:** データセットとレポートをテスト ワークスペースに発行し、ダッシュボードを作成します。
 - **アプリ:** テスト ワークスペースからのコンテンツを使用して[アプリ](../consumer/end-user-apps.md)を発行するのは、それが UAT プロセスの一部を形成する場合です。 通常、アプリのアクセス許可は、UAT に関与する少数のユーザーに制限されています。
-- **データ更新:** UAT がアクティブに実行されている期間のインポート データセットについては、[データセットの更新をスケジュール](../connect-data/refresh-scheduled-refresh.md)します。
+- **データ更新:** UAT がアクティブに実行されている期間のインポート データセットについては、 [データセットの更新をスケジュール](../connect-data/refresh-scheduled-refresh.md)します。
 - **セキュリティ:** [ワークスペース ロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)を更新または確認します。 ワークスペース アクセスのテストには、UAT に関与する少数のユーザーが含まれます。
 
 > [!NOTE]
@@ -73,27 +73,27 @@ IT マネージド ソリューション、またはビジネスの生産性に�
 
 デプロイ プロセス中には、Power BI 管理者と協力して、ソリューション全体をサポートするために必要であるその他の要件に対処することが必要な場合があります。次に例を示します。
 
-- **ゲートウェイのメンテナンス:** データ ゲートウェイに[新しいデータ ソース](../connect-data/service-gateway-data-sources.md)を登録することが必要になる場合があります。
+- **ゲートウェイのメンテナンス:** データ ゲートウェイに [新しいデータ ソース](../connect-data/service-gateway-data-sources.md)を登録することが必要になる場合があります。
 - **ゲートウェイのドライバーとコネクタ:** 新しい専用のデータ ソースを使用するには、ゲートウェイ クラスター内の各サーバーに新しいドライバーまたはカスタム コネクタをインストールすることが必要になる場合があります。
 - **新しい Premium 容量を作成する:** 既存の [Premium 容量](../admin/service-premium-capacity-manage.md)を使用できる場合があります。 または、新しい Premium 容量が保証されている場合もあります。 部門のワークロードを意図的に分離したい場合が、それに該当すると考えられます。
-- **Power BI データフローを設定する:** Power Query Online を使用すれば、[Power BI データフロー](../transform-model/service-dataflows-overview.md)にデータ準備アクティビティを一度設定することができます。 これは、さまざまな Power BI Desktop ファイル内でデータ準備作業がレプリケートされるのを回避するのに役立ちます。
-- **組織のビジュアルを新規に登録する:** AppSource から生成されていないカスタム ビジュアルについては、管理ポータルで[組織のビジュアル](../developer/visuals/power-bi-custom-visuals-organization.md)を登録することができます。
-- **おすすめのコンテンツを設定する:** Power BI サービス ホームページで[コンテンツをおすすめに登録する](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)ことができるユーザーを制御するテナント設定が存在します。
-- **秘密度ラベルを設定する:** すべての[秘密度ラベル](../admin/service-security-data-protection-overview.md)が Microsoft Information Protection に統合されています。
+- **Power BI データフローを設定する:** Power Query Online を使用すれば、 [Power BI データフロー](../transform-model/service-dataflows-overview.md)にデータ準備アクティビティを一度設定することができます。 これは、さまざまな Power BI Desktop ファイル内でデータ準備作業がレプリケートされるのを回避するのに役立ちます。
+- **組織のビジュアルを新規に登録する:** AppSource から生成されていないカスタム ビジュアルについては、管理ポータルで [組織のビジュアル](../developer/visuals/power-bi-custom-visuals-organization.md)を登録することができます。
+- **おすすめのコンテンツを設定する:** Power BI サービス ホームページで [コンテンツをおすすめに登録する](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)ことができるユーザーを制御するテナント設定が存在します。
+- **秘密度ラベルを設定する:** すべての [秘密度ラベル](../admin/service-security-data-protection-overview.md)が Microsoft Information Protection に統合されています。
 
 ### <a name="deploy-to-production-workspace"></a>運用環境のワークスペースに展開する
 
 運用ワークスペースへの展開中の主なアクティビティは、次のとおりです。
 
 - **変更管理:** 必要に応じて、標準的な変更管理手法を使用して、展開の承認を取得し、展開をユーザー全体に通知します。 運用展開が許可されている承認された変更管理期間が存在する場合があります。 通常は、これは IT マネージド コンテンツに適用することができ、セルフサービス コンテンツにはあまり適用されません。
-- **ロールバック計画**: 移行では、それが新しいソリューションの初めての移行であることが想定されます。 コンテンツが既に存在する場合は、必要になったときに、以前のバージョンに戻す計画を立てることが賢明です。 以前のバージョンの Power BI Desktop ファイル (SharePoint または OneDrive のバージョン管理を使用) がある場合に、これは効果を発揮します。
+- **ロールバック計画** : 移行では、それが新しいソリューションの初めての移行であることが想定されます。 コンテンツが既に存在する場合は、必要になったときに、以前のバージョンに戻す計画を立てることが賢明です。 以前のバージョンの Power BI Desktop ファイル (SharePoint または OneDrive のバージョン管理を使用) がある場合に、これは効果を発揮します。
 - **接続文字列とパラメーター:** テストと運用でデータ ソースが異なる場合は、データセットの接続文字列を調整します。 [パラメーター化](../connect-data/service-parameters.md)を使用すれば、この目的を効果的に達成できます。
-- **データ更新:** インポートされたデータセットについては、[データセットの更新をスケジュール](../connect-data/refresh-scheduled-refresh.md)します。
+- **データ更新:** インポートされたデータセットについては、 [データセットの更新をスケジュール](../connect-data/refresh-scheduled-refresh.md)します。
 - **ワークスペースのコンテンツ:** データセットとレポートを運用ワークスペースに発行し、ダッシュボードを作成します。 ご利用のコンテンツが Premium 容量のワークスペースに発行されている場合は、[配置パイプライン](../create-reports/deployment-pipelines-overview.md)によって、開発、テスト、運用の各ワークスペースに展開されるプロセスを簡略化することができます。
-- **アプリ:** アプリがコンテンツ配布戦略の一部である場合は、運用ワークスペースからのコンテンツを使用して[アプリ](../consumer/end-user-apps.md)を発行します。
-- **セキュリティ:** 自社のコンテンツ配布およびコラボレーションの戦略に基づいて、[ワークスペースのロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)を更新して確認します。
+- **アプリ:** アプリがコンテンツ配布戦略の一部である場合は、運用ワークスペースからのコンテンツを使用して [アプリ](../consumer/end-user-apps.md)を発行します。
+- **セキュリティ:** 自社のコンテンツ配布およびコラボレーションの戦略に基づいて、 [ワークスペースのロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)を更新して確認します。
 - **データセットの設定:** データセットごとに次のような設定を更新して確認します。
-  - [推奨](../connect-data/service-datasets-certify.md) (認定済みまたは昇格済みなど)
+  - [推奨](../collaborate-share/service-endorse-content.md) (認定済みまたは昇格済みなど)
   - ゲートウェイ接続またはデータ ソースの資格情報
   - スケジュールされている更新
   - [おすすめの Q&A 質問](../create-reports/service-q-and-a-create-featured-questions.md)
