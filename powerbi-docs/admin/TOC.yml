@@ -94,7 +94,7 @@
               href: service-security-data-protection-metrics-report.md
         - name: 行レベルのセキュリティ
           href: service-admin-rls.md
-        - name: データセットとデータフローの認定を設定する
+        - name: コンテンツの認定を有効にする
           href: service-admin-setup-certification.md
         - name: Intune でモバイル アプリを構成する
           href: service-admin-mobile-intune.md

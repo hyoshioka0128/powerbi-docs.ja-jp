@@ -16,6 +16,8 @@
           href: service-usage-metrics.md
         - name: 新しいワークスペースで使用状況を監視する
           href: service-modern-usage-metrics.md
+        - name: コンテンツの推奨
+          href: service-endorsement-overview.md
     - name: 攻略ガイド
       expanded: true
       items:
@@ -73,6 +75,8 @@
               href: service-url-filters.md
             - name: 自分や他のユーザーをサブスクライブする
               href: service-report-subscribe.md
+            - name: コンテンツを推奨する
+              href: service-endorse-content.md
             - name: ホームの機能コンテンツ
               href: service-featured-content.md
             - name: SharePoint Online にレポートを埋め込む
