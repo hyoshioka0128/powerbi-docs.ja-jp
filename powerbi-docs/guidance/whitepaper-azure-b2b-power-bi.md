@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: df6b3bd29089f37b11064216568523f442169794
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: cc4387c3c1c0f83347823bbc6b95beb437b235e9
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528392"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916891"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Azure Active Directory B2B を使用して外部ゲスト ユーザーに Power BI コンテンツを配布する
 
@@ -25,7 +25,7 @@ ms.locfileid: "91528392"
 **技術レビューアー:** Adam Wilson、Sheng Liu、Qian Liu、Sergei Gundorov、Jacob Grimm、Adam Saxton、Maya Shenhav、Nimrod Shalit、Elisabeth Olson
 
 > [!NOTE]
-> このホワイトペーパーを保存または印刷するには、ブラウザーから [ **印刷** ] を選択し、[ **PDF として保存**] を選択します。
+> このホワイトペーパーを保存または印刷するには、ブラウザーから [ **印刷** ] を選択し、[ **PDF として保存** ] を選択します。
 
 ## <a name="introduction"></a>はじめに
 
@@ -188,7 +188,7 @@ Contoso は、対戦相手と提携して、共有組立ラインに自動車を
 
 共有 Power BI テナントを確立するには、Azure Active Directory を作成する必要があり、その Active Directory 内のユーザーに対して少なくとも1つの Power BI Pro ユーザーアカウントを購入する必要があります。 このユーザーは、必要なユーザーを共有組織に招待します。 重要なのは、このシナリオでは、Contoso のユーザーが共有組織の Power BI 内で動作する場合、外部ユーザーとして扱われるということです。
 
-プロセスは、次のとおりです。
+このプロセスは次のとおりです。
 
 1. 共有組織は新しい Azure Active Directory として確立され、少なくとも1つのユーザーアカウントが新しい組織に作成されます。 そのユーザーには Power BI Pro ライセンスが割り当てられている必要があります。
 2. その後、このユーザーは Power BI のテナントを確立し、必要なユーザーを Contoso とパートナー組織から招待します。 また、ユーザーは Azure Analysis Services のような共有データ資産も確立します。 Contoso とパートナーのユーザーは、ゲストユーザーとして共有組織の Power BI にアクセスできます。 Power BI のコンテンツの編集と管理を許可されている場合は、外部ユーザーが Power BI ホームを使用したり、ワークスペースを使用したり、コンテンツをアップロードまたは編集したり、レポートを共有したりできます。 通常、共有されているすべての資産は、共有組織から格納およびアクセスされます。
@@ -244,7 +244,7 @@ Power BI の Azure AD B2B との統合により、Contoso はシームレスで�
 
     このアプローチでは、Contoso がゲストユーザーを Azure AD に事前に招待し、Power BI コンテンツをそれらに配布します。 Contoso は、Azure portal または PowerShell を使用して、ゲストユーザーを招待できます。 Azure portal からゲストユーザーを招待するには、次の手順を実行します。
 
-    - Contoso の Azure AD 管理者は **、新しいゲストユーザー > すべてのユーザー > ユーザーとグループに Azure portal > Azure Active Directory**に移動します。
+    - Contoso の Azure AD 管理者は **、新しいゲストユーザー > すべてのユーザー > ユーザーとグループに Azure portal > Azure Active Directory** に移動します。
 
     ![ゲスト ユーザー](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_15.png)
 
@@ -288,7 +288,7 @@ Power BI の Azure AD B2B との統合により、Contoso はシームレスで�
     Contoso の BI チームが BI ポータルと招待されたゲストユーザーを作成したので、ゲストユーザーにアプリへのアクセスを許可して発行することによって、ポータルをエンドユーザーに配布することができます。 Power BI、Contoso テナントに既に追加されているゲストユーザーの名前をオートコンプリートします。 この時点で、他のゲストユーザーへのアドホック招待を追加することもできます。
 
     > [!NOTE]
-    > セキュリティグループを使用して外部ユーザーのアプリへのアクセスを管理する場合は、計画された招待方法を使用して、アクセスする必要がある外部ユーザーに直接アプリリンクを共有します。 それ以外の場合、外部ユーザーはアプリ内からコンテンツをインストールまたは表示できない可能性があります。 _
+    > セキュリティグループを使用して外部ユーザーのアプリへのアクセスを管理する場合は、計画された招待方法を使用して、アクセスする必要がある外部ユーザーに直接アプリリンクを共有します。 それ以外の場合、外部ユーザーは app._ 内からコンテンツをインストールまたは表示できない可能性があります。
 
     ゲストユーザーは、アプリへのリンクを含む電子メールを受け取ります。
 
@@ -306,7 +306,7 @@ Power BI の Azure AD B2B との統合により、Contoso はシームレスで�
 
     その後、ゲストユーザーは、電子メールのリンクをクリックするかリンクをブックマークすることで、Contoso のアプリにアクセスできます。 Contoso では、ゲストユーザーが既に使用している既存のエクストラネットポータルにこのリンクを追加することで、ゲストユーザーの作業を容易にすることもできます。
 
-4. 次のステップ
+4. 次の手順
 
     Contoso は、Power BI アプリと Azure AD B2B を使用して、コードなしでサプライヤーの BI ポータルをすばやく作成できました。 これにより、標準化された分析を必要なすべてのサプライヤーに配布することが大幅に簡素化されました。
 
@@ -344,7 +344,7 @@ Contoso は、サプライヤーおよびパートナー組織からのゲスト
 
 外部ユーザーは、Power BI Premium 内でコンテンツを使用するときに、Power BI の "無料" のユーザーに提供される使用量のみにも影響します。
 
-Contoso では、更新頻度の増加、専用容量、大規模なモデルサイズなど、アプリの他の Power BI premium 機能を利用することもできます。
+Contoso では、更新率の増加、容量、大規模なモデルのサイズなど、アプリの他の Power BI premium 機能を利用することもできます。
 
 ![その他の機能](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
@@ -457,7 +457,7 @@ Power BI desktop ファイルをサービスにアップロードした後、Con
 Power BI は、オンプレミス[データゲートウェイ](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/)に対して直接、 [SQL Server Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)や[SQL Server](https://powerbi.microsoft.com/documentation/powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data/)などのオンプレミスデータソースを利用する Contoso の機能を提供します。 Power BI で使用するのと同じ資格情報を使用して、これらのデータソースにサインオンすることもできます。
 
 > [!NOTE]
-> Power BI テナントに接続するためにゲートウェイをインストールする場合は、テナント内に作成されたユーザーを使用する必要があります。 外部ユーザーはゲートウェイをインストールしてテナントに接続することはできません。 _
+> Power BI テナントに接続するためにゲートウェイをインストールする場合は、テナント内に作成されたユーザーを使用する必要があります。 外部ユーザーはゲートウェイをインストールして、tenant._ に接続することはできません
 
 外部ユーザーの場合、外部ユーザーは通常、オンプレミスの AD で認識されていないため、より複雑になる可能性があります。 Power BI は、「 [データソースの管理-Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)」で説明されているように、Contoso の管理者が外部ユーザー名を内部ユーザー名にマップできるようにすることで、この回避策を提供します。 たとえば、は [lucy@supplier1.com](mailto:lucy@supplier1.com) [lucy \_ supplier1 \_ com # EXT@contoso.com ](mailto:lucy_supplier1_com)にマップできます。
 
@@ -474,7 +474,7 @@ Contoso を使用すると、組織内でのコンテンツの投稿を外部ユ
 
 Power BI 管理ポータルでは、[外部のゲストユーザーがテナントの設定] の [組織] 設定 **でコンテンツを編集および管理できるように** します。 既定では、この設定は [無効] に設定されています。つまり、既定では、外部ユーザーは制限付きの読み取り専用のエクスペリエンスを利用できます。 この設定は、Azure AD で UserType が Guest に設定されているユーザーに適用されます。 次の表では、ユーザーの UserType に応じた動作と、設定の構成方法について説明します。
 
-| **Azure AD のユーザーの種類** | **外部のゲストユーザーがコンテンツ設定を編集および管理することを許可する** | **Behavior** |
+| **Azure AD のユーザーの種類** | **外部のゲストユーザーがコンテンツ設定を編集および管理することを許可する** | **動作** |
 | --- | --- | --- |
 | ゲスト | ユーザーに対して無効 (既定) | 項目ごとの消費専用ビュー。 ゲストユーザーに送信された URL を使用して表示するときに、レポート、ダッシュボード、およびアプリへの読み取り専用アクセスを許可します。 Power BI Mobile アプリは、ゲストユーザーに読み取り専用のビューを提供します。 |
 | ゲスト | ユーザーに対して有効 | 外部ユーザーは、一部の機能を使用できない場合でも、完全な Power BI エクスペリエンスにアクセスできます。 外部ユーザーは、テナント情報が含まれている Power BI サービスの URL を使用して Power BI にログインする必要があります。 ユーザーはホームエクスペリエンス、個人用ワークスペースを取得し、アクセス許可に基づいてコンテンツを参照、表示、作成できます。 </br></br> Power BI Mobile アプリは、ゲストユーザーに読み取り専用のビューを提供します。 |
@@ -490,8 +490,8 @@ Power BI 管理ポータルでは、次の図に設定が表示されます。
 
 これらのユーザーが Power BI にログインできるようにするには、テナントの URL を指定します。 テナントの URL を見つけるには、次の手順に従います。
 
-1. Power BI サービスの上部のメニューで、[ヘルプ (?] を選択し **ます。** ) をクリックし、  **Power BI について説明**します。
-2. [  **テナント URL**] の横にある値を探します。 これは、ゲストユーザーと共有できるテナント URL です。
+1. Power BI サービスの上部のメニューで、[ヘルプ (?] を選択し **ます。** ) をクリックし、  **Power BI について説明** します。
+2. [  **テナント URL** ] の横にある値を探します。 これは、ゲストユーザーと共有できるテナント URL です。
 
     ![テナントの URL](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
 
