@@ -79,6 +79,8 @@
               href: access-dataset-odata.md
             - name: PowerShell を使用してデータ ソース接続文字列を変更する
               href: connect-data-source-apis.md
+            - name: PowerShell を使用してデータソース接続文字列を変更する (2020 年 10 月前)
+              href: connect-data-source-apis-pre-oct-2020.md
             - name: スケジュールされた更新の構成
               href: configure-scheduled-refresh.md
             - name: レポートにコメントを追加する
