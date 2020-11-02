@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 23f1ab7fb7ae5e143084042699db708c0827114f
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 1afde236dd4fc9698efe4391cb2d9e095ade37a4
+ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668553"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92683369"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリのタイルを調べる
 適用対象:
@@ -35,7 +35,7 @@ ms.locfileid: "91668553"
    
     ![選択されている値が今年の売上と昨年の売上であることを示す、折れ線グラフのスクリーンショット。](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   "*たとえば、この折れ線グラフで選択されている値は、**今年**と**昨年**の **8 月の売上値**です。* "  
+   " *たとえば、この折れ線グラフで選択されている値は、 **今年** と **昨年** の **8 月の売上値** です。* "  
    
    円グラフでスライスをタップすると、円の上部にスライスの値を表示できます。  
    
@@ -87,7 +87,7 @@ ms.locfileid: "91668553"
 ## <a name="tiles-in-the-windows-10-mobile-app"></a>Windows 10 モバイル アプリのタイル
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 1. Windows 10 用の [Power BI モバイル アプリでダッシュボード](mobile-apps-view-dashboard.md)を開きます。
 2. タイルで垂直線の省略記号をタップします。 ここでは、次の操作を実行できます。 
@@ -96,7 +96,7 @@ ms.locfileid: "91668553"
    
     [タイルのスナップショットを共有](mobile-windows-10-phone-app-get-started.md)できます。
    
-    **[レポートを開く]** ![[レポートを開く] アイコン](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) をタップして、[基になっているレポートを表示](mobile-reports-in-the-mobile-apps.md)できます。
+    **[レポートを開く]** ![[レポートを開く] アイコン](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) をタップして、 [基になっているレポートを表示](mobile-reports-in-the-mobile-apps.md)できます。
    
     リンクがある場合は、[リンクを開きます](../../create-reports/service-dashboard-edit-tile.md#hyperlink)。 リンクにより、Power BI ダッシュボードや外部の URL に移動できます。
 3. **[タイルを展開]** ![[タイルを展開] アイコン](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png) をタップします。 タイルがフォーカス モードで開きます。このモードでは、タイルのデータを簡単に表示および調査できます。 このモードでは、次のことができます。
@@ -109,12 +109,12 @@ ms.locfileid: "91668553"
    
    ![Decor バーの値を示す横棒グラフのスクリーンショット。](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   "*この横棒グラフでは、 **Decor** バーの値はグラフの上部に表示されます。* "
+   " *この横棒グラフでは、 **Decor** バーの値はグラフの上部に表示されます。* "
    
-   **[全画面表示]** アイコン ![[全画面表示] アイコン](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) をタップすると、タイルが全画面表示モードで開き、ナビゲーション バーとメニュー バーは表示されません。
+   **[Switch to presentation mode]\(プレゼンテーション モードに切り替える\)** アイコン ![[Switch to presentation mode]\(プレゼンテーション モードに切り替える\) の画像](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) をタップして、ナビゲーション バーとメニュー バーを使用せずにタイルをプレゼンテーション モードで開きます。
    
    > [!NOTE]
-   > Windows 10 用 Power BI モバイル アプリでは、[ダッシュボードとレポートを全画面表示モードで表示する](mobile-windows-10-app-presentation-mode.md)こともできます。
+   > Windows 10 用 Power BI モバイル アプリでは、[ダッシュボードとレポートをプレゼンテーション モードで表示する](mobile-windows-10-app-presentation-mode.md)こともできます。
    > 
    > 
    
@@ -129,4 +129,4 @@ ms.locfileid: "91668553"
 
 ## <a name="next-steps"></a>次の手順
 * [Power BI とは?](../../fundamentals/power-bi-overview.md)
-* 疑問がある場合 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+* わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

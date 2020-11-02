@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/15/2020
+ms.date: 10/23/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 926334f5708914b30277ac0c855937dfb6b79bfb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 358d0575c2de3297614bfed0656d953945b2ed13
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233924"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92502158"
 ---
 # <a name="design-filters-in-power-bi-reports"></a>Power BI レポートでフィルターをデザインする
 
@@ -38,38 +38,16 @@ ms.locfileid: "85233924"
 
 ![ビジュアルのフィルターの一覧](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-## <a name="turn-on-new-filters-in-existing-reports"></a>既存のレポートで新しいフィルターを有効にする 
-
-新しいレポートでは、新しいフィルター エクスペリエンスが既定でオンになっています。 Power BI Desktop または Power BI サービスで既存のレポートに対して新しいエクスペリエンスを有効にすることができます。
-
-### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Power BI Desktop で既存のレポートに対して新しいフィルターを有効にする
-
-1. Power BI Desktop の既存のレポート内で、 **[ファイル]**  >  **[オプションと設定]**  >  **[オプション]** を選択します。
-2. ナビ ペインで、 **[現在のファイル]** の **[レポートの設定]** を選択します。
-3. **[エクスペリエンスのフィルター処理]** の下で、 **[このレポートに関して、更新されたフィルター ウィンドウを有効にし、ビジュアル ヘッダーにフィルターを表示する]** を選択します。
-
-### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>サービスで既存のレポートに対して新しいフィルターを有効にする
-
-Power BI サービスで **[新しい外観]** がオンになっている場合は ![[新しい外観] がオン](media/power-bi-report-filter/power-bi-new-look-on.png)、新しいフィルター エクスペリエンスが自動的にオンになります。 Power BI サービスの新しい外観の詳細については、[こちら](../consumer/service-new-look.md)を参照してください。
-
-新しい外観をオンにしていない場合でも、次の手順に従って新しいフィルター エクスペリエンスを確認できます。
-
-1. Power BI サービスで、ワークスペースのコンテンツ リストを開きます。
-2. 有効にするレポートを探し、 **[その他のオプションを表示 (...)]** を選択し、そのレポートの **[設定]** を選択します。
-
-    ![レポート設定](media/power-bi-report-filter/power-bi-filter-options.png)
-
-3. **[エクスペリエンスのフィルター処理]** の下で、 **[このレポートに関して、更新されたフィルター ウィンドウを有効にし、ビジュアル ヘッダーにフィルターを表示する]** を選択します。
-
-    ![更新されたフィルター ウィンドウを有効にする](media/power-bi-report-filter/power-bi-service-filter-enable.png)
+レポートで[レポート閲覧者がフィルターを使用する方法](../consumer/end-user-report-filter.md)に関するページを参照してください。
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>閲覧モードでビジュアルのフィルターを表示する
 
-閲覧モードでは、ビジュアルのフィルター アイコンにカーソルを合わせると、そのビジュアルに影響を与えているすべてのフィルターやスライサーなどを含むポップアップ フィルター リストが表示されます。 ポップアップ フィルター リストの書式設定は、[フィルター] ウィンドウの書式設定と同じです。 
+閲覧モードでは、ビジュアルのフィルター アイコンにカーソルを合わせると、そのビジュアルに影響を与えているすべてのフィルターやスライサーなどを含むポップアップ フィルター リストが表示されます。 ポップアップ フィルター リストの書式設定は、[フィルター] ウィンドウの書式設定と同じです。
 
 ![ビジュアルに影響を与えているフィルター](media/power-bi-report-filter/power-bi-filter-per-visual.png)
 
-このビューに表示されるフィルターの種類は次のとおりです。 
+このビューに表示されるフィルターの種類は次のとおりです。
+
 - 基本フィルター
 - スライサー
 - クロス強調表示 
@@ -80,6 +58,8 @@ Power BI サービスで **[新しい外観]** がオンになっている場合
 - 同期スライサー
 - 含める/除外するフィルター
 - URL を使って渡されるフィルター
+
+[閲覧モードでフィルターを操作する](../consumer/end-user-report-filter.md)方法に関するページを参照してください。
 
 ## <a name="build-the-filters-pane"></a>[フィルター] ペインを構築する
 
@@ -99,7 +79,7 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
 ![編集中に [フィルター] ウィンドウの表示と非表示を切り替える](media/power-bi-report-filter/power-bi-filter-hide.png)
 
-この設定では、Power BI Desktop の [フィルター] ウィンドウのみ非表示になります。 エンド ユーザーの [フィルター] ウィンドウを非表示にするには、代わりに、 **[フィルター]** の横にある、**目**のアイコンを選択します。
+この設定では、Power BI Desktop の [フィルター] ウィンドウのみ非表示になります。 エンド ユーザーの [フィルター] ウィンドウを非表示にするには、代わりに、 **[フィルター]** の横にある、 **目** のアイコンを選択します。
 
 ![目のアイコン](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
@@ -136,10 +116,10 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
 ### <a name="format-the-filters-pane-and-cards"></a>[フィルター] ウィンドウとカードを書式設定する
 
-1. レポート内で、レポート自体か背景 ("*壁紙*") をクリックしてから、 **[視覚化]** ウィンドウ内で **[書式]** を選択します。 
+1. レポート内で、レポート自体か背景 (" *壁紙* ") をクリックしてから、 **[視覚化]** ウィンドウ内で **[書式]** を選択します。 
     レポート ページや壁紙、また [フィルター] ウィンドウやフィルター カードを書式設定するためのオプションが表示されます。
 
-1. **[フィルター] ウィンドウ**を展開して背景、アイコン、左の境界線の色を設定し、レポート ページを完成させます。
+1. **[フィルター] ウィンドウ** を展開して背景、アイコン、左の境界線の色を設定し、レポート ページを完成させます。
 
     ![[フィルター] ウィンドウを展開する](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
@@ -234,7 +214,7 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 ![[フィルター] ウィンドウのアクセシビリティ](media/power-bi-report-filter/power-bi-filter-accessible.png)
 
 ## <a name="rename-filters"></a>フィルターの名前を変更する
-[フィルター] ウィンドウを編集している場合、タイトルを編集するには、そのタイトルをダブルクリックします。 名前の変更は、エンド ユーザーが理解しやすいようにフィルター カードを更新したいときに便利です。 フィルター カードの名前を変更しても、フィールド一覧のフィールドの表示名は "*変更されない*" ことに注意してください。 この操作では、フィルター カードで使用される表示名が変更されるだけです。
+[フィルター] ウィンドウを編集している場合、タイトルを編集するには、そのタイトルをダブルクリックします。 名前の変更は、エンド ユーザーが理解しやすいようにフィルター カードを更新したいときに便利です。 フィルター カードの名前を変更しても、フィールド一覧のフィールドの表示名は " *変更されない* " ことに注意してください。 この操作では、フィルター カードで使用される表示名が変更されるだけです。
 
 ![フィルターの名前を変更する](media/power-bi-report-filter/power-bi-filter-rename.png)
 
@@ -248,21 +228,29 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
 ![検索ボックスの書式を設定する](media/power-bi-report-filter/power-bi-filter-format-search.png)
 
-この [フィルター] ウィンドウ検索機能は、既定ではオンになりますが、[オプション] ダイアログのレポート設定で **[Enable search for Filters pane]\(フィルター ウィンドウの検索を有効にする\)** を選択することで、オンとオフを切り替えることができます。
+この [フィルター] ウィンドウ検索機能は、既定ではオンになりますが、 **[オプション]** ダイアログの **レポート** 設定で **[Enable search for Filters pane]\(フィルター ウィンドウの検索を有効にする\)** を選択することで、オンとオフを切り替えることができます。
 
 ![検索をオンまたはオフにする](media/power-bi-report-filter/power-bi-enable-search-filter.png)
 
 ## <a name="restrict-changes-to-filter-type"></a>フィルターの種類への変更を制限する
 
-レポート設定の **[エクスペリエンスのフィルター処理]** セクションには、ユーザーがフィルターの種類を変更できるかどうかを制御するオプションがあります。
+**レポート** 設定の **[エクスペリエンスのフィルター処理]** セクションには、ユーザーがフィルターの種類を変更できるかどうかを制御するオプションがあります。
 
 ![フィルターの種類の変更を制限する](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
-## <a name="apply-filters-button-preview"></a>フィルターの [適用] ボタン (プレビュー)
+## <a name="allow-saving-filters"></a>フィルターの保存を許可する
+
+既定では、レポートの閲覧者はレポートのフィルターを保存できます。 フィルターの保存を許可しないように選択できます。
+
+- また、 **[オプション]** ダイアログの **[レポート]** 設定で、 **[固定フィルター]** の下で **[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\)** を選択します。
+
+    :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
+
+## <a name="apply-filters-apply-button-preview"></a>フィルターの [適用] ボタン (プレビュー)
 
 [フィルター] ペインに 1 つの **[適用]** ボタンを追加して、自分とエンド ユーザーがすべてのフィルターの変更を一度に適用できるようにすることが可能です。 このボタンは、フィルターの変更の適用を保留したい場合に便利です。 レポートまたは視覚エフェクトに対するすべてのフィルターの変更を適用する準備ができたら、1 回待機するだけで済みます。
 
-:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="フィルターの [適用] ボタン":::
+:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
 
 ### <a name="turn-on-apply"></a>[適用] をオンにする
 
@@ -272,7 +260,7 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
 1. **[Add a single Apply button to the filter pane to apply changes at once]\(一度に変更を適用するための 1 つの [適用] ボタンをフィルターウィンドウに追加します\)** をオンにします。
 
-    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="フィルターの [適用] ボタンをオンにする":::
+    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
 
 ### <a name="format-the-apply-button"></a>[適用] ボタンを書式設定する
 
@@ -282,7 +270,7 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 - **[ヘッダー テキスト サイズ]** : テキスト サイズを制御します。
 - **[フォント ファミリ]** : フォントを制御します。
 
-    :::image type="content" source="media/power-bi-report-filter/format-apply-filter.gif" alt-text="フィルターの [適用] ボタンのテキストを書式設定する":::
+    :::image type="content" source="media/power-bi-report-filter/format-apply-filter.gif" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 

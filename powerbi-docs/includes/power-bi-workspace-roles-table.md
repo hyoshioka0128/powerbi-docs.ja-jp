@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 09/04/2020
+ms.date: 10/21/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 0bf9f1a6eb918e55ab3811b9c6fde2628bdd91ad
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 87c35df25a17090f1788abbeb979afab3ad9d6a9
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983742"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462225"
 ---
 |機能   | 管理者  | メンバー  | 共同作成者  | Viewer |
 |---|---|---|---|---|
@@ -31,6 +31,7 @@ ms.locfileid: "91983742"
 | ワークスペースへのレポートの公開と、コンテンツの削除。  |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | このワークスペース内のデータセットに基づいて、別のワークスペースにレポートを作成する。<sup>2</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | レポートをコピーする。<sup>3</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
+| データセットのアクセス許可を管理します。<sup>3</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | オンプレミス ゲートウェイを介してデータの更新をスケジュールする。<sup>4</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | ゲートウェイの接続設定を変更する。<sup>4</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | 項目の表示と操作。<sup>5</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |

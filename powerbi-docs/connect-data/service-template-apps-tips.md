@@ -8,21 +8,21 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: ff1fb59a59f72483bab5ec55c9b2cf9805f83b81
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d23062a5b8fe4a1a68be372865746a1a7d497c26
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860281"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349669"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Power BI でのテンプレート アプリの作成に関するヒント
 
 Power BI で[テンプレート アプリを作成する](service-template-apps-create.md)場合、その一部は、ワークスペースの作成のロジスティクス、そのテスト、および運用です。 しかし、他の重要な部分がレポートとダッシュボードの作成であることは明らかです。 作成プロセスは、4 つの主要なコンポーネントに分割できます。 これらのコンポーネントについて作業すれば、可能な限り最高のテンプレート アプリを作成できます。
 
-* **クエリ**では、データを[接続](desktop-connect-to-data.md)して[変換](../transform-model/desktop-query-overview.md)し、[パラメーター](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)を定義します。 
-* **データ モデル**では、[リレーションシップ](../transform-model/desktop-create-and-manage-relationships.md)、[メジャー](../transform-model/desktop-measures.md)、および Q&A の機能強化を作成します。  
+* **クエリ** では、データを [接続](desktop-connect-to-data.md)して [変換](../transform-model/desktop-query-overview.md)し、 [パラメーター](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)を定義します。 
+* **データ モデル** では、 [リレーションシップ](../transform-model/desktop-create-and-manage-relationships.md)、 [メジャー](../transform-model/desktop-measures.md)、および Q&A の機能強化を作成します。  
 * **[レポート ページ](../create-reports/desktop-report-view.md)** には、データに対する分析情報を提供するためのビジュアルとフィルターが含まれます。  
-* **[ダッシュボード](../consumer/end-user-dashboards.md)** と[タイル](../create-reports/service-dashboard-create.md)では、含まれている分析情報の概要が提供されます。
+* **[ダッシュボード](../consumer/end-user-dashboards.md)** と [タイル](../create-reports/service-dashboard-create.md)では、含まれている分析情報の概要が提供されます。
 * サンプル データにより、アプリはインストール直後に検出可能になります。
 
 既存の Power BI 機能など、各部分について精通しているかもしれません。 テンプレート アプリを構築するとき、各部分について考慮すべき追加事項があります。 詳細については、以下の各セクションを参照してください。
@@ -30,7 +30,7 @@ Power BI で[テンプレート アプリを作成する](service-template-apps-
 <a name="queries"></a>
 
 ## <a name="queries"></a>クエリ
-テンプレート アプリの場合、Power BI Desktop で開発されたクエリは、データ ソースへの接続とデータのインポートのために使用されます。 これらのクエリは一貫したスキーマを返すために必要とされ、スケジュールされたデータ更新のためにサポートされています (DirectQuery はサポートされていません)。
+テンプレート アプリの場合、Power BI Desktop で開発されたクエリは、データ ソースへの接続とデータのインポートのために使用されます。 これらのクエリは一貫したスキーマを返すために必要とされ、スケジュールされたデータ更新のためにサポートされています。
 
 ### <a name="connect-to-your-api"></a>API に接続する
 クエリの構築を始めるには、最初に、Power BI Desktop から API に接続する必要があります。

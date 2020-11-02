@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 0c1c113f100c3ae1db0902c90833c44788fa7ec6
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 330f844e9c97a3a59ff854ac14612c328b7cb9b6
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857705"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681002"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Power BI でユーザー アクティビティを追跡する
 
@@ -48,13 +48,13 @@ Power BI アクティビティ ログにアクセスするには、次の要件�
 
 ### <a name="activityevents-rest-api"></a>ActivityEvents REST API
 
-Power BI REST API に基づく管理アプリケーションを使用すると、アクティビティ イベントを BLOB ストアや SQL データベースにエクスポートすることができます。 その後、エクスポートされたデータの上にカスタムの使用状況レポートを作成できます。 **ActivityEvents** REST API の呼び出しでは、開始日と終了日を指定する必要があります。必要に応じて、アクティビティの種類やユーザー ID でアクティビティを選択するフィルターを指定します。 アクティビティ ログには大量のデータが含まれている可能性があるため、**ActivityEvents** API で現時点でサポートされているのは、要求あたり最大 1 日分のデータのダウンロードのみです。 つまり、次の例のように、開始日と終了日に同じ日付を指定する必要があります。 DateTime 値は UTC 形式で指定してください。
+Power BI REST API に基づく管理アプリケーションを使用すると、アクティビティ イベントを BLOB ストアや SQL データベースにエクスポートすることができます。 その後、エクスポートされたデータの上にカスタムの使用状況レポートを作成できます。 **ActivityEvents** REST API の呼び出しでは、開始日と終了日を指定する必要があります。必要に応じて、アクティビティの種類やユーザー ID でアクティビティを選択するフィルターを指定します。 アクティビティ ログには大量のデータが含まれている可能性があるため、 **ActivityEvents** API で現時点でサポートされているのは、要求あたり最大 1 日分のデータのダウンロードのみです。 つまり、次の例のように、開始日と終了日に同じ日付を指定する必要があります。 DateTime 値は UTC 形式で指定してください。
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-エントリの数が多いと、**ActivityEvents** API では、約 5,000 ‐ 10,000 のエントリと継続トークンのみが返されます。 継続トークンを使用して **ActivityEvents** API を再度呼び出してエントリの次のバッチを取得し、すべてのエントリを取得して継続トークンを受け取らなくなるまでこれを続けます。 次の例は、継続トークンの使用方法を示しています。
+エントリの数が多いと、 **ActivityEvents** API では、約 5,000 ‐ 10,000 のエントリと継続トークンのみが返されます。 継続トークンを使用して **ActivityEvents** API を再度呼び出してエントリの次のバッチを取得し、すべてのエントリを取得して継続トークンを受け取らなくなるまでこれを続けます。 次の例は、継続トークンの使用方法を示しています。
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
@@ -81,7 +81,7 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Get-PowerBIActivityEvent コマンドレット
 
-PowerShell の Power BI 管理コマンドレットを使用して、アクティビティ イベントをダウンロードします。 **Get-PowerBIActivityEvent** コマンドレットを使用すると、継続トークンが自動的に処理されます。 **Get-PowerBIActivityEvent** コマンドレットでは、**ActivityEvents** REST API と同じ制限がある StartDateTime と EndDateTime パラメーターを受け取ります。 つまり、一度に取得できるアクティビティ データは 1 日分だけなので、開始日と終了日で同じ日付値を参照する必要があります。
+PowerShell の Power BI 管理コマンドレットを使用して、アクティビティ イベントをダウンロードします。 **Get-PowerBIActivityEvent** コマンドレットを使用すると、継続トークンが自動的に処理されます。 **Get-PowerBIActivityEvent** コマンドレットでは、 **ActivityEvents** REST API と同じ制限がある StartDateTime と EndDateTime パラメーターを受け取ります。 つまり、一度に取得できるアクティビティ データは 1 日分だけなので、開始日と終了日で同じ日付値を参照する必要があります。
 
 次のスクリプトでは、すべての Power BI アクティビティをダウンロードする方法を示しています。 このコマンドでは、個々のアクティビティのプロパティに簡単にアクセスできるように、JSON の結果が .NET オブジェクトに変換されます。 これらの例は、イベントを見逃さないようにするための、1 日で可能な最小および最大のタイムスタンプを示しています。
 
@@ -97,7 +97,7 @@ $activities[0]
 
 ### <a name="filter-activity-data"></a>アクティビティ データのフィルター処理
 
-アクティビティの種類とユーザー ID でアクティビティ イベントをフィルター処理できます。 次のスクリプトでは、**ViewDashboard** アクティビティのイベント データのみをダウンロードする方法を示しています。 サポートされているパラメーターの追加情報については、コマンド `Get-Help Get-PowerBIActivityEvent` を使用します。
+アクティビティの種類とユーザー ID でアクティビティ イベントをフィルター処理できます。 次のスクリプトでは、 **ViewDashboard** アクティビティのイベント データのみをダウンロードする方法を示しています。 サポートされているパラメーターの追加情報については、コマンド `Get-Help Get-PowerBIActivityEvent` を使用します。
 
 ```powershell
 Login-PowerBI
@@ -136,7 +136,7 @@ $activities[0]
 
 Power BI 監査ログは、[Office 365 セキュリティ/コンプアライアンス センター](https://sip.protection.office.com/#/unifiedauditlog)を通して直接利用できます。 また、Power BI 管理ポータルからのリンクもあります。
 
-1. Power BI で、右上隅にある**歯車アイコン**を選択してから、 **[管理ポータル]** を選択します。
+1. Power BI で、右上隅にある **歯車アイコン** を選択してから、 **[管理ポータル]** を選択します。
 
    ![[管理ポータル] オプションが強調して示されている歯車ドロップダウン メニューのスクリーンショット。](media/service-admin-auditing/powerbi-admin.png)
 
@@ -310,6 +310,7 @@ Exchange Online に接続する方法の詳細については、「[リモート
 | データフローへのアクセス許可の削除に失敗しました             | FailedToRemoveDataflowPermissions           | 現在使用されていません                       |
 | Power BI のデータ フローの SAS トークンを生成しました             | GenerateDataflowSasToken                    |                                          |
 | Power BI の埋め込みトークンを生成しました                    | GenerateEmbedToken                          |                                          |
+| スクリーンショットの生成                       | GenerateScreenshot |                     |
 | Power BI にファイルをインポートしました                         | インポート                                      |                                          |
 | Power BI アプリをインストールしました                            | InstallApp                                  |                                          |
 | 容量にワークスペースを移行しました                  | MigrateWorkspaceIntoCapacity                |                                          |

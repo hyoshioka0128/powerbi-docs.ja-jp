@@ -1,53 +1,83 @@
 ---
-title: データセットからレポートを作成する
-description: データセットから Power BI レポートを作成します。
+title: 'Power BI サービスで Excel ファイルからレポートを作成する '
+description: Power BI サービスで Excel ファイルから Power BI レポートを作成する
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/25/2019
+ms.date: 10/14/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 74a0238d39d778641d1906271fd478463ee4a95a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d6a52fd72ab96541eee621d6be6cb50005f293e2
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218946"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462733"
 ---
-# <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>データセットをインポートして Power BI サービスでレポートを作成する
-[Power BI のレポート](../consumer/end-user-reports.md)を読んで、次は自分のレポートを作成しようと思われるでしょう。 レポートを作成するには、さまざまな方法があります。 この記事では、まず、Excel データセットから Power BI サービスに基本的なレポートを作成します。 レポートの作成の基本を理解したら、最後の「[次の手順](#next-steps)」でより高度なレポートに関するトピックを確認してください。  
+# <a name="create-a-report-from-an-excel-file-in-the-power-bi-service"></a>Power BI サービスで Excel ファイルからレポートを作成する
+[Power BI のレポート](../consumer/end-user-reports.md)を読んで、次は自分のレポートを作成しようと思われるでしょう。 レポートを作成するには、さまざまな方法があります。 この記事では、まず、Excel ファイルから Power BI サービスに基本的なレポートを作成します。 レポートの作成の基本を理解したら、最後の「[次の手順](#next-steps)」でより高度なレポートに関するトピックを確認してください。  
 
 ## <a name="prerequisites"></a>前提条件
-- [Power BI サービスにサインアップする](../fundamentals/service-self-service-signup-for-power-bi.md)。 Power BI Desktop を使用したレポート作成については、[Desktop のレポート ビュー](desktop-report-view.md)に関するページをご覧ください。 
-- [小売りの分析のサンプル Excel データセットをダウンロード](https://go.microsoft.com/fwlink/?LinkId=529778)し、それを OneDrive for Business またはローカルに保存します。
+- [Power BI サービスにサインアップする](../fundamentals/service-self-service-signup-for-power-bi.md)。 
+- [小売りの分析のサンプル Excel ファイルをダウンロード](https://go.microsoft.com/fwlink/?LinkId=529778)し、それを OneDrive for Business またはローカルに保存します。
 
-## <a name="import-the-dataset"></a>データセットをインポートする
-この方法でのレポート作成は、データセットと空白のレポート キャンバスから始まります。 小売りの分析のサンプル Excel データセットでも同じようにできます。
+## <a name="import-the-excel-file"></a>Excel ファイルをインポートする
+この方法でのレポート作成は、ファイルと空白のレポート キャンバスから始まります。 小売りの分析のサンプル Excel ファイルでも同じようにできます。
 
-1. Power BI サービスのワークスペースでレポートを作成するので、既存のワークスペースを選択するか、ワークスペースを作成します。
+1. ナビゲーション ペインで、 **[マイ ワークスペース]** を選択します。
    
-   ![ワークスペースのリスト](media/service-report-create-new/power-bi-workspaces2.png)
+   :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="[マイ ワークスペース] を選択するスクリーンショット。&quot;:::
 2. ナビ ペインの下部にある **[データの取得]** を選択します。
    
-   ![データの取得](media/service-report-create-new/power-bi-get-data3.png)
+   ![データを取得する](media/service-report-create-new/power-bi-get-data3.png)
 3. **[ファイル]** を選択し、小売りの分析のサンプルを保存した場所に移動します。
    
     ![[ファイル] の選択](media/service-report-create-new/power-bi-select-files.png)
 4. この演習では、 **[インポート]** を選択します。
    
    ![[インポート] の選択](media/service-report-create-new/power-bi-import.png)
-5. データセットをインポートしたら、 **[データセットの表示]** を選択します。
+5. **[Open (開く)]** を選択します。
+
+   Excel ファイルがインポートされると、ワークスペース リストに &quot; *データセット* " として一覧表示されます。
+
+1. データセットの横にある **[その他のオプション] (...)** を選択し、 **[レポートの作成]** を選択します。
    
-   ![[データセットの表示] の選択](media/service-report-create-new/power-bi-view-dataset.png)
-6. データセットを表示すると、実際にはレポート エディターが開きます。  空白のキャンバスとレポート編集ツールが表示されます。
+   :::image type="content" source="media/service-report-create-new/power-bi-dataset-create-report.png" alt-text="[マイ ワークスペース] を選択するスクリーンショット。&quot;:::
+2. ナビ ペインの下部にある **[データの取得]** を選択します。
    
-   ![レポート エディター](media/service-report-create-new/power-bi-blank-report.png)
+   ![データを取得する](media/service-report-create-new/power-bi-get-data3.png)
+3. **[ファイル]** を選択し、小売りの分析のサンプルを保存した場所に移動します。
+   
+    ![[ファイル] の選択](media/service-report-create-new/power-bi-select-files.png)
+4. この演習では、 **[インポート]** を選択します。
+   
+   ![[インポート] の選択](media/service-report-create-new/power-bi-import.png)
+5. **[Open (開く)]** を選択します。
+
+   Excel ファイルがインポートされると、ワークスペース リストに &quot; *データセット* ":::
+6. レポート エディターが開きます。 
+   
+   ![レポート エディターのスクリーンショット。](media/service-report-create-new/power-bi-blank-report.png)
 
 > [!TIP]
-> レポート編集キャンバスに慣れていない場合や、使い方を思い出す必要がある場合は、続行する前に[レポート エディターのツアーを実行](service-the-report-editor-take-a-tour.md)してください。 
+> ナビゲーション ウィンドウを非表示にするメニュー アイコンを選択すると、スペースが増えます。
 > 
+> :::image type="content" source="../media/power-bi-hide-navigation-pane.png" alt-text="[マイ ワークスペース] を選択するスクリーンショット。&quot;:::
+2. ナビ ペインの下部にある **[データの取得]** を選択します。
+   
+   ![データを取得する](media/service-report-create-new/power-bi-get-data3.png)
+3. **[ファイル]** を選択し、小売りの分析のサンプルを保存した場所に移動します。
+   
+    ![[ファイル] の選択](media/service-report-create-new/power-bi-select-files.png)
+4. この演習では、 **[インポート]** を選択します。
+   
+   ![[インポート] の選択](media/service-report-create-new/power-bi-import.png)
+5. **[Open (開く)]** を選択します。
+
+   Excel ファイルがインポートされると、ワークスペース リストに &quot; *データセット* ":::
+
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>レポートに放射状ゲージを追加する
 データセットがインポートされたので、質問への回答を始めましょう。  最高マーケティング責任者 (CMO) は、今年の売上目標にどれだけ近づいているかを知りたいと考えています。 ゲージは、このような種類の情報を表示するために[適した視覚化の選択肢](../visuals/power-bi-report-visualizations.md)です。
@@ -91,5 +121,6 @@ CMO に対して、その他いくつかの質問に応える必要がありま�
 
 ## <a name="next-steps"></a>次のステップ
 
-* [視覚化をダッシュボードにピン留めする](service-dashboard-pin-tile-from-report.md)方法の詳細   
+* [ダッシュボードに視覚エフェクトをピン留めする](service-dashboard-pin-tile-from-report.md)
+* [Power BI サービスのレポート設定を変更する](power-bi-report-settings.md)
 * 他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

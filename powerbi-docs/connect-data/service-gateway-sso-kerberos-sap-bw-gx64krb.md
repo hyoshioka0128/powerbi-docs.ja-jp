@@ -7,24 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/21/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9dc24d853ee363c75eca811d068288bc375b1f88
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 6fc8dba8e4cdcb8d8ff38c00f3e477902fe8234e
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374248"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349462"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>gx64krb5 を用いた SAP BW へのシングル サインオン (SSO) に Kerberos を使用する
 
 この記事では、gx64krb5 を使用して Power BI サービスから SSO を有効にするよう SAP BW データ ソースを構成する方法について説明します。
 
 > [!IMPORTANT]
-> SAP では現在、gx64krb5 をサポートしていません。結果として、Microsoft もそのサポートを停止しました。 既存の接続と新規の接続は 2020 年の終わりまで正しく機能しますが、2021 年からは機能しなくなります。 代わりに CommonCryptoLib を使用してください。 
+> SAP では現在、gx64krb5 をサポートしていません。結果として、Microsoft もそのサポートを停止しました。 既存の接続と新規の接続は 2020 年の終わりまで正しく機能しますが、2021 年 1 月 1 日からは機能しなくなります。 代わりに CommonCryptoLib を使用してください。 
 
 > [!NOTE]
-> [Kerberos SSO の構成](service-gateway-sso-kerberos.md)に関する記事の手順に加えて、この記事の手順を完了することにより、Power BI サービスの SAP BW アプリケーション サーバー ベースのレポートについて SSO ベースの更新を有効にすることができます。 ただし、SNC ライブラリとしては gx64krb5 ではなく CommonCryptoLib を使用することをお勧めします。 SAP では gx64krb5 がサポートされなくなったため、これをゲートウェイ用に構成するのに必要な手順は、CommonCryptoLib と比べてかなり複雑になっています。 CommonCryptoLib を使用して SSO を構成する方法については、[CommonCryptoLib を使用した SSO 用の SAP BW の構成](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md)に関するページを参照してください。 CommonCryptoLib "*または*" gx64krb5 を SNC ライブラリを使用してください。ただし、両方は使用しないでください。 両方のライブラリの構成手順を行わないでください。
+> [Kerberos SSO の構成](service-gateway-sso-kerberos.md)に関する記事の手順に加えて、この記事の手順を完了することにより、Power BI サービスの SAP BW アプリケーション サーバー ベースのレポートについて SSO ベースの更新を有効にすることができます。 ただし、SNC ライブラリとしては gx64krb5 ではなく CommonCryptoLib を使用することをお勧めします。 SAP では gx64krb5 がサポートされなくなったため、これをゲートウェイ用に構成するのに必要な手順は、CommonCryptoLib と比べてかなり複雑になっています。 CommonCryptoLib を使用して SSO を構成する方法については、[CommonCryptoLib を使用した SSO 用の SAP BW の構成](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md)に関するページを参照してください。 CommonCryptoLib " *または* " gx64krb5 を SNC ライブラリを使用してください。ただし、両方は使用しないでください。 両方のライブラリの構成手順を行わないでください。
 
 このガイドは広範囲に及んでいるため、説明されている手順の一部を既に完了している場合は、それらはスキップしてかまいません。 たとえば、gx64krb5 を使用して SSO 用に SAP BW サーバーを既に構成している場合があります。
 
@@ -43,16 +43,16 @@ ms.locfileid: "91374248"
 
     SAP BW サーバーで使用できるように gx64krb5.dll を構成する方法の詳細については、[SAP のドキュメント](https://launchpad.support.sap.com/#/notes/2115486)を参照してください (SAP S-User が必要)。
 
-1. クライアントおよびサーバー マシンで、**SNC_LIB** および **SNC_LIB_64** 環境変数を設定します。 
-    - gsskrb5.dll を使用する場合は、**SNC_LIB** 変数にその絶対パスを設定します。 
-    - gx64krb5.dll を使用する場合は、**SNC_LIB_64** 変数にその絶対パスを設定します。
+1. クライアントおよびサーバー マシンで、 **SNC_LIB** および **SNC_LIB_64** 環境変数を設定します。 
+    - gsskrb5.dll を使用する場合は、 **SNC_LIB** 変数にその絶対パスを設定します。 
+    - gx64krb5.dll を使用する場合は、 **SNC_LIB_64** 変数にその絶対パスを設定します。
 
 ## <a name="configure-an-sap-bw-service-user-and-enable-snc-communication-on-the-bw-server"></a>BW サーバー上で SAP BW サービス ユーザーを構成し、SNC 通信を有効にする
 
 gx64krb5 を用いて SNC 通信 (SSO など) 用に SAP BW サーバーをまだ構成していない場合は、このセクションを完了します。
 
 > [!NOTE]
-> このセクションでは、BW 用のサービス ユーザーを既に作成し、これに適切な SPN (つまり、*SAP/* で始まる名前) をバインドしていることを想定しています。
+> このセクションでは、BW 用のサービス ユーザーを既に作成し、これに適切な SPN (つまり、 *SAP/* で始まる名前) をバインドしていることを想定しています。
 
 1. サービス ユーザーに、SAP BW アプリケーション サーバーへのアクセス権を付与します。
 
@@ -66,7 +66,7 @@ gx64krb5 を用いて SNC 通信 (SSO など) 用に SAP BW サーバーをま�
 
 1. SAP BW サーバーのサービス ユーザーを、SAP BW サーバー マシンで SAP BW サーバー サービスを開始するユーザーとして設定します。
 
-    1. **[ファイル名を指定して実行]** を開き、「**Services.msc**」と入力します。 
+    1. **[ファイル名を指定して実行]** を開き、「 **Services.msc** 」と入力します。 
 
     1. SAP BW アプリケーション サーバー インスタンスに対応するサービスを見つけ、それを右クリックして、 **[プロパティ]** を選択します。
 
@@ -78,7 +78,7 @@ gx64krb5 を用いて SNC 通信 (SSO など) 用に SAP BW サーバーをま�
 
 1. SAP ログオンでサーバーにサインインし、RZ10 トランザクションを使用して次のプロファイル パラメーターを設定します。
 
-    1. **snc/identity/as** プロファイル パラメーターを "*p:&lt;作成した SAP BW サービス ユーザー&gt;* " に設定します。 たとえば、*p:BWServiceUser\@MYDOMAIN.COM* とします。 *p:* をサービス ユーザーの UPN の前に指定することに注意してください。対照的に、SNC ライブラリとして CommonCryptoLib を使用するときは、*p:CN =* を UPN の前に指定します。
+    1. **snc/identity/as** プロファイル パラメーターを " *p:&lt;作成した SAP BW サービス ユーザー&gt;* " に設定します。 たとえば、 *p:BWServiceUser\@MYDOMAIN.COM* とします。 *p:* をサービス ユーザーの UPN の前に指定することに注意してください。対照的に、SNC ライブラリとして CommonCryptoLib を使用するときは、 *p:CN =* を UPN の前に指定します。
 
     1. **snc/gssapi\_lib** プロファイル パラメーターを " *&lt;BW サーバーの gx64krb5.dll のパス&gt;* " に設定します。 SAP BW アプリケーション サーバーがアクセスできる場所にライブラリを配置します。
 
@@ -107,17 +107,17 @@ gx64krb5 を用いて SNC 通信 (SSO など) 用に SAP BW サーバーをま�
 
 1. SAP ログオンを使用して SAP BW サーバーにサインインします。 トランザクション SU01 を実行します。
 
-1. **[User]\(ユーザー\)** には、SSO 接続を有効にする SAP BW ユーザーを入力します。 SAP ログオン ウィンドウの左上付近にある**編集**アイコン (ペンのアイコン) を選択します。
+1. **[User]\(ユーザー\)** には、SSO 接続を有効にする SAP BW ユーザーを入力します。 SAP ログオン ウィンドウの左上付近にある **編集** アイコン (ペンのアイコン) を選択します。
 
     ![SAP BW [User maintenance]\(ユーザーの管理\) 画面](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. **[SNC]** タブを選びます。SNC 名の入力ボックスに、「*p:&lt;Active Directory ユーザー&gt;@&lt;ドメイン&gt;* 」と入力します。 SNC 名では、Active Directory ユーザーの UPN の前に *p:* を指定する必要があります。 UPN では大文字と小文字が区別されることに注意してください。
+1. **[SNC]** タブを選びます。SNC 名の入力ボックスに、「 *p:&lt;Active Directory ユーザー&gt;@&lt;ドメイン&gt;* 」と入力します。 SNC 名では、Active Directory ユーザーの UPN の前に *p:* を指定する必要があります。 UPN では大文字と小文字が区別されることに注意してください。
 
-   指定した Active Directory ユーザーは、SAP BW アプリケーション サーバーへの SSO アクセスを有効にする対象の個人または組織に属している必要があります。 たとえば、ユーザー testuser\@TESTDOMAIN.COM の SSO アクセスを有効にする場合は、「*p:testuser\@TESTDOMAIN.COM*」と入力します。
+   指定した Active Directory ユーザーは、SAP BW アプリケーション サーバーへの SSO アクセスを有効にする対象の個人または組織に属している必要があります。 たとえば、ユーザー testuser\@TESTDOMAIN.COM の SSO アクセスを有効にする場合は、「 *p:testuser\@TESTDOMAIN.COM* 」と入力します。
 
     ![SAP BW [Maintain Users]\(ユーザー管理\) 画面](media/service-gateway-sso-kerberos/maintain-users.png)
 
-1. 画面の左上付近にある**保存**アイコン (フロッピー ディスクの画像) を選択します。
+1. 画面の左上付近にある **保存** アイコン (フロッピー ディスクの画像) を選択します。
 
 ## <a name="test-sign-in-via-sso"></a>SSO 経由のサインインをテストする
 
@@ -137,7 +137,7 @@ SSO アクセスを有効にした Active Directory ユーザーとして、SSO 
 
 1. 新しい接続を右クリックして **[Properties]\(プロパティ\)** を選択し、 **[Network]\(ネットワーク\)** タブを選択します。 
 
-1. **[SNC Name]\(SNC 名\)** ボックスに、「*p:&lt;SAP BW サービス ユーザーの UPN&gt;* 」と入力します。 たとえば、*p:BWServiceUser\@MYDOMAIN.COM* とします。 **[OK]** を選択します。
+1. **[SNC Name]\(SNC 名\)** ボックスに、「 *p:&lt;SAP BW サービス ユーザーの UPN&gt;* 」と入力します。 たとえば、 *p:BWServiceUser\@MYDOMAIN.COM* とします。 **[OK]** を選択します。
 
     ![[System Entry Properties]\(システム エントリ プロパティ\) 画面](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
@@ -157,9 +157,9 @@ SSO アクセスを有効にした Active Directory ユーザーとして、SSO 
 
 1. データ ソース構成ウィンドウで、Power BI Desktop から SAP BW サーバーにサインインするときと同様に、SAP BW アプリケーション サーバーの **[ホスト名]** 、 **[システム番号]** 、 **[クライアント ID]** を入力します。
 
-1. **[SNC パートナー名]** フィールドに、「*p:&lt;SAP BW サービス ユーザーにマップした SPN&gt;* 」と入力します。 たとえば、SPN が SAP/BWServiceUser\@MYDOMAIN.COM の場合、 **[SNC パートナー名]** フィールドには「*p:SAP/BWServiceUser\@MYDOMAIN.COM*」と入力します。
+1. **[SNC パートナー名]** フィールドに、「 *p:&lt;SAP BW サービス ユーザーにマップした SPN&gt;* 」と入力します。 たとえば、SPN が SAP/BWServiceUser\@MYDOMAIN.COM の場合、 **[SNC パートナー名]** フィールドには「 *p:SAP/BWServiceUser\@MYDOMAIN.COM* 」と入力します。
 
-1. SNC ライブラリでは、**SNC\_LIB** または **SNC\_LIB\_64** を選択します。 ゲートウェイ コンピューターの **SNC\_LIB\_64** が gx64krb5.dll を指していることを確認します。 または、 **[カスタム]** オプションを選択し、ゲートウェイマシン上の gx64krb5.dll の絶対パスを指定することもできます。
+1. SNC ライブラリでは、 **SNC\_LIB** または **SNC\_LIB\_64** を選択します。 ゲートウェイ コンピューターの **SNC\_LIB\_64** が gx64krb5.dll を指していることを確認します。 または、 **[カスタム]** オプションを選択し、ゲートウェイマシン上の gx64krb5.dll の絶対パスを指定することもできます。
 
 1. **[DirectQuery クエリには Kerberos 経由で SSO を使用します]** を選択し、 **[適用]** を選択します。 テスト接続が成功しなかった場合は、前のセットアップおよび構成手順が正常に完了したことを確認します。
 
@@ -173,11 +173,11 @@ SSO アクセスを有効にした Active Directory ユーザーとして、SSO 
 
 * gx64krb5 の設定手順を実行すると、エラーが発生する。 たとえば、プロファイル パラメーターの変更した後に SAP BW サーバーが起動しないとします。 このようなエラーのトラブルシューティングを行うには、サーバー ログ (サーバー マシン上の …work\dev\_w0) を確認してください。 
 
-* サインオンの失敗が原因で SAP BW サービスを開始できない。 SAP BW "*開始*" ユーザーの設定時に間違ったパスワードを指定した可能性があります。 Active Directory 環境内のマシンで SAP BW サービス ユーザーとしてサインインして、パスワードを確認してください。
+* サインオンの失敗が原因で SAP BW サービスを開始できない。 SAP BW " *開始* " ユーザーの設定時に間違ったパスワードを指定した可能性があります。 Active Directory 環境内のマシンで SAP BW サービス ユーザーとしてサインインして、パスワードを確認してください。
 
 * 基になるデータ ソース (SQL Server など) の資格情報に関するエラーが発生してサーバーを起動できない場合は、サービス ユーザーに SAP BW データベースへのアクセス権が付与されていることを確認してください。
 
-* 次のメッセージが表示される: " *(GSS-API) 指定された対象は不明か、または到達できません*"。 このエラーは通常、間違った SNC 名が指定されていることを意味します。 クライアント アプリケーションのサービス ユーザーの UPN の前には、*p:CN=* ではなく、必ず *P:* だけを使用するようにしてください。
+* 次のメッセージが表示される: " *(GSS-API) 指定された対象は不明か、または到達できません* "。 このエラーは通常、間違った SNC 名が指定されていることを意味します。 クライアント アプリケーションのサービス ユーザーの UPN の前には、 *p:CN=* ではなく、必ず *P:* だけを使用するようにしてください。
 
 * 次のメッセージが表示される: " *(GSS-API) An invalid name was supplied ((GSS-API) 無効な名前が指定されました)* "。 サーバーの SNC ID プロファイル パラメーターの値が *p:* であることを確認してください。
 
@@ -191,15 +191,15 @@ SSO アクセスを有効にした Active Directory ユーザーとして、SSO 
 
 1. SAP BW トレースを有効にし、生成されたログ ファイルを確認します。 使用できる SAP BW トレースにはいくつかの種類があります (CPIC トレースなど)。
 
-   a. CPIC トレースを有効にするには、次の 2 つの環境変数を設定します。**CPIC\_TRACE** と **CPIC\_TRACE\_DIR** です。
+   a. CPIC トレースを有効にするには、次の 2 つの環境変数を設定します。 **CPIC\_TRACE** と **CPIC\_TRACE\_DIR** です。
 
       最初の変数はトレース レベルを設定し、2 番目の変数はトレース ファイルのディレクトリを設定します。 ディレクトリは、Authenticated Users グループのメンバーが書き込み可能な場所である必要があります。 
  
-    b. **CPIC\_TRACE** を *3* に、**CPIC\_TRACE\_DIR** をトレース ファイルの書き込み先にする任意のディレクトリに設定します。 例:
+    b. **CPIC\_TRACE** を *3* に、 **CPIC\_TRACE\_DIR** をトレース ファイルの書き込み先にする任意のディレクトリに設定します。 例:
 
       ![CPIC トレース](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
-    c. 問題を再現し、**CPIC\_TRACE\_DIR** にトレース ファイルが含まれていることを確認します。 
+    c. 問題を再現し、 **CPIC\_TRACE\_DIR** にトレース ファイルが含まれていることを確認します。 
     
     d. トレース ファイルの内容を調べて、ブロッキングの問題を特定します。 たとえば、gx64krb5.dll が正しく読み込まれていなかったり、Active Directory ユーザーが SSO 接続を開始すると想定していたユーザーとは異なっていることに気付く場合があります。
 

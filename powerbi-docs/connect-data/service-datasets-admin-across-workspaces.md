@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0caaf46956656c141992482ae39773d19e8fc550
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 6cc602b96207b1662f0738c0936ca816bbfd0a03
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374152"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681075"
 ---
 # <a name="control-the-use-of-datasets-across-workspaces"></a>ワークスペース全体でデータセットの使用を制御する
 
@@ -32,9 +32,9 @@ ms.locfileid: "91374152"
 
 ## <a name="provide-a-link-for-the-certification-process"></a>認証プロセスのリンクを提供する
 
-Power BI 管理者の場合、 **[承認]** 設定ページに**詳細情報**のリンクの URL を提供することができます。  このリンクで、認定プロセスについてのドキュメントに移動できます。 **詳細情報**のリンクの宛先を指定しない場合は、既定で[データセットの認定](service-datasets-certify.md)に関する記事が示されます。
+Power BI 管理者の場合、 **[承認]** 設定ページに **詳細情報** のリンクの URL を提供することができます。  詳細については、「[コンテンツの認定を有効にする](../admin/service-admin-setup-certification.md)」を参照してください。 このリンクで、認定プロセスについてのドキュメントに移動できます。 **詳細情報** のリンクの宛先を指定しない場合は、既定で「[コンテンツを承認する](../collaborate-share/service-endorse-content.md)」が示されます。
 
-![データセットの認定の詳細情報](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
+![データセットの認定の詳細情報](media/service-datasets-admin-across-workspaces/service-admin-certification-setup-dialog.png)
 
 ## <a name="next-steps"></a>次の手順
 

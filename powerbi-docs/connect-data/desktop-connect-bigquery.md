@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: edf49ba9fa85ab2c46040fdac74691bea8b5b960
-ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
+ms.openlocfilehash: 68698d51b074102a8d8e556101fcfaf6a39c2c62
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928311"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349416"
 ---
 # <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Power BI Desktop で Google BigQuery データベースに接続する
 Power BI Desktop では、Google **BigQuery** データベースに接続し、Power BI Desktop の他のデータ ソースの場合と同様に基になっているデータを使用できます。
@@ -32,7 +32,7 @@ Google **BigQuery** データベースに接続するには、Power BI Desktop �
 
 ![Google へのサインイン](media/desktop-connect-bigquery/connect_bigquery_02b.png)
 
-接続が正常に行われたら、 **[ナビゲーター]** ウィンドウが開き、サーバー上で使用可能なデータが表示されます。その中から 1 つまたは複数の要素を選択し、**Power BI Desktop** にインポートして使用することができます。
+接続が正常に行われたら、 **[ナビゲーター]** ウィンドウが開き、サーバー上で使用可能なデータが表示されます。その中から 1 つまたは複数の要素を選択し、 **Power BI Desktop** にインポートして使用することができます。
 
 ![Google BigQuery からのデータ](media/desktop-connect-bigquery/connect_bigquery_03.png)
 
@@ -41,15 +41,15 @@ Google **BigQuery** コネクタには、いくつかの制限事項と考慮事
 
 * Google BigQuery コネクタは、Power BI Desktop と Power BI サービスにあります。 Power BI サービスでは、Power BI から Google BigQuery へのクラウド間接続を使用して、コネクタにアクセスできます。
 
-* Power BI は、Google BigQuery の**請求書作成プロジェクト**で使用できます。 Power BI は既定で、ユーザに返されたリストの最初のプロジェクトを使用します。 
+* Power BI は、Google BigQuery の **請求書作成プロジェクト** で使用できます。 Power BI は既定で、ユーザに返されたリストの最初のプロジェクトを使用します。 
 
-  Power BI で使用する場合の請求書作成プロジェクトの動作をカスタマイズするには、Source ステップの基となる M で次のオプションを指定します。これは、Power BI Desktop の **Power Query エディター**を使用してカスタマイズできます。
+  Power BI で使用する場合の請求書作成プロジェクトの動作をカスタマイズするには、Source ステップの基となる M で次のオプションを指定します。これは、Power BI Desktop の **Power Query エディター** を使用してカスタマイズできます。
 
   ```
   Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
   ```
 
-  2020 年 9 月のリリース以降、[Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage) のサポートが有効になりました。 きめ細かいアクセス許可を使用すると、この機能に問題が発生する場合があります。 このシナリオでは、次のエラー メッセージが表示されることがあります。
+  2020 年 9 月のリリース以降、[Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage) のサポートが有効になりました。 この機能は既定で有効になっており、"UseStorageApi" という名称のオプションのブール型引数で制御されます。 きめ細かいアクセス許可を使用すると、この機能に問題が発生する場合があります。 このシナリオでは、次のエラー メッセージが表示されることがあります。
 
   `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
 
@@ -60,9 +60,17 @@ Google **BigQuery** コネクタには、いくつかの制限事項と考慮事
   - `bigquery.readsessions.update` -BigQuery Storage API を介して読み取りセッションを更新します。
 
   通常、これらのアクセス許可は BigQuery.User ロールで提供されます。 詳細については、[Google BigQuery の事前定義ロールと権限](https://cloud.google.com/bigquery/docs/access-control)に関するページを参照してください。
+  
+  上記の手順で問題が解決されない場合、あるいは Storage API のサポートを無効にする場合、クエリを次のように変更します。
+  ```
+  Source = GoogleBigQuery.Database([UseStorageApi=false])
+  ```
+  あるいは、課金プロジェクトを既に使用している場合、クエリを次のように変更します。
+  ```
+  Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here", UseStorageApi=false])
+  ```
 
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Power BI Desktop を使用して接続できるデータの種類は他にもあります。 データ ソースの詳細については、次のリソースを参照してください。
 
 * [Power BI Desktop とは何ですか?](../fundamentals/desktop-what-is-desktop.md)

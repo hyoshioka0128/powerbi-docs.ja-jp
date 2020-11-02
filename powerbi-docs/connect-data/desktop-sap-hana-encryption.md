@@ -7,18 +7,22 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/26/2019
+ms.date: 10/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 83e1725b7ce7d38a00d0564702977c3a8eef7c1d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9aaa89db53e22fcefe55a53ec7a5414a8835255b
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222889"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92501905"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>SAP HANA の暗号化を有効にする
 
-Power BI Desktop と Power BI サービスから SAP HANA サーバーへの接続を暗号化することをお勧めします。 HANA 暗号化は、OpenSSL と SAP の専用 CommonCryptoLib (旧称 sapcrypto) ライブラリの両方を使用して有効にすることができます。 SAP では CommonCryptoLib を使用することが推奨されていますが、基本的な暗号化機能はどちらのライブラリでも使用できます。
+Power BI Desktop と Power BI サービスから SAP HANA サーバーへの接続を暗号化することをお勧めします。 HANA 暗号化は、SAP の専用 CommonCryptoLib (旧称 sapcrypto) ライブラリを使用して有効にすることができます。 SAP は CommonCryptoLib の使用を推奨しています。
+
+> [!IMPORTANT]
+> SAP では現在、OpenSSL をサポートしていません。結果として、Microsoft もそのサポートを停止しました。 既存の接続と新規の接続は 2020 年の終わりまで正しく機能しますが、2021 年 1 月 1 日からは機能しなくなります。 代わりに CommonCryptoLib を使用してください。
 
 この記事では、OpenSSL を使用して暗号化を有効にする方法の概要を説明し、SAP ドキュメントの特定の領域を参照します。 コンテンツとリンクは定期的に更新されますが、包括的な指示とサポートについては、常に公式の SAP ドキュメントを参照してください。 OpenSSL ではなく CommonCryptoLib を使用して暗号化を設定する場合は、「[SAP HANA 2.0 で TLS/SSL を構成する方法](https://blogs.sap.com/2018/11/13/how-to-configure-tlsssl-in-sap-hana-2.0/)」を参照してください。OpenSSL から CommonCryptoLib に移行する手順については、[SAP Note 2093286](https://launchpad.support.sap.com/#/notes/2093286) を参照してください (s-user が必要です)。
 
@@ -39,7 +43,7 @@ HANA サーバーの X509 証明書署名要求を作成します。
 
 1. SSH を使用して、HANA サーバーが実行されている Linux マシンに \<sid\>adm として接続します。
 
-1. ホーム ディレクトリ _/__usr/sap/\<sid\>/home_ にアクセスします。
+1. ホーム ディレクトリ _/_ _usr/sap/\<sid\>/home_ にアクセスします。
 
 1. _.__ssl_ という名前の隠しディレクトリを作成します (存在しない場合)。
 

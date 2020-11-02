@@ -8,15 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 7624e51bf8c1ee49f2b7e7a0682e12b24bcdfa98
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: c43542bc6c2bb0699403062f68024f9718bbbb60
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748473"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92501951"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Power BI ビジュアル API の変更ログ
 このページには、API バージョンの簡単な概要が含まれています。 ここに記載されているバージョンは安定バージョンと見なされ、変更されません。
+
+
+## <a name="api-v340"></a>API v3.4.0
+  * `fetchMoreData` : 新しい `aggregateSegments` パラメーター (既定で true)、集計のない fetchMoreData をサポートするため
 
 ## <a name="api-v320"></a>API v3.2.0
   * **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)** のサポート
@@ -62,7 +66,7 @@ ms.locfileid: "91748473"
 * `proto` プロパティでは、dataView 内に非表示のメタデータまたはデータが格納されなくなりました。 `proto` を介してプロパティにアクセスするビジュアルは、この更新によって破損する可能性があります。
 
 ## <a name="api-v1130"></a>API v1.13.0
-* **[同期スライサー](./enable-sync-slicers.md)** をサポート。これは、PBI の現在のコード状態により、単一フィールド スライサーでのみ動作することに注意してください。[詳細](../../visuals/power-bi-visualization-slicers.md)。
+* **[同期スライサー](./enable-sync-slicers.md)** をサポート。これは、PBI の現在のコード状態により、単一フィールド スライサーでのみ動作することに注意してください。 [詳細](../../visuals/power-bi-visualization-slicers.md)。
 * アクセシビリティ:[ハイコントラストのサポート](./high-contrast-support.md) 
 * アクセシビリティ:"キーボード フォーカスを許可する" フラグ
 
@@ -104,7 +108,7 @@ ms.locfileid: "91748473"
 
 ## <a name="api-v120"></a>API v1.2.0
 * **colorPalette** を追加して、ビジュアルで使用する色を管理します。
-* **複数選択**をサポート。selectionManager は `SelectionId` の配列を受け入れることができます。
+* **複数選択** をサポート。selectionManager は `SelectionId` の配列を受け入れることができます。
 * R スクリプトを使用した **[R ビジュアル](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** をサポート
 
 ## <a name="api-v110"></a>API v1.1.0

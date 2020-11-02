@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 62c463972d4811bac0c5400da96a88264273a873
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 464fdce94b41c3dc413088da6395520fea32c601
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600268"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462639"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
@@ -89,7 +89,7 @@ Power BI 管理ポータルにアクセスするには、全体管理者また�
 
 ## <a name="control-usage-metrics"></a>利用状況の指標の制御
 
-使用状況メトリック レポートは、Power BI または全体管理者が、オンまたはオフにすることができる機能です。 管理者は、どのユーザーが利用状況の指標にアクセスできるかを細く制御できます。 これらは、組織内のすべてのユーザーに対して既定で**オン**になります。
+使用状況メトリック レポートは、Power BI または全体管理者が、オンまたはオフにすることができる機能です。 管理者は、どのユーザーが利用状況の指標にアクセスできるかを細く制御できます。 これらは、組織内のすべてのユーザーに対して既定で **オン** になります。
 
 管理者は、コンテンツ作成者が利用状況の指標内のユーザーごとのデータを参照できるかどうかも決定できます。 
 
@@ -130,7 +130,7 @@ Microsoft 365 管理センターで Power BI のユーザー、グループ、�
 
 Office 365 セキュリティ/コンプアライアンス センターで Power BI 監査ログを管理します。 **[監査ログ]** タブには、セキュリティ/コンプアライアンス センターへのリンクが含まれています。 詳細については、「[Power BI でユーザー アクティビティを追跡する](service-admin-auditing.md)」を参照してください。
 
-監査ログを使用するには、設定 [ **[内部アクティビティの監査とコンプライアンスのための監査ログの作成]** ](#create-audit-logs-for-internal-activity-auditing-and-compliance) を有効にします。
+監査ログを使用するには、設定 [ **[内部アクティビティの監査とコンプライアンスのための監査ログの作成]**](#create-audit-logs-for-internal-activity-auditing-and-compliance) を有効にします。
 
 ## <a name="tenant-settings"></a>テナント設定
 
@@ -139,26 +139,24 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 > [!NOTE]
 > Power BI ユーザー インターフェイスの機能の可用性を制御するテナント設定は、ガバナンス ポリシーを確立するのに役立ちますが、セキュリティ対策ではありません。 たとえば、 **[データのエクスポート]** 設定では、データセットに対する Power BI ユーザーの権限は制限されません。 データセットに対して読み取りアクセス権を持つユーザーは、このデータセットに対してクエリを実行する権限を持っていて、Power BI ユーザー インターフェイスの **[データのエクスポート]** 機能を使用せずに結果を永続化できる場合があります。
 
-次の図には、 **[テナント設定]** タブのいくつかの設定が示されています。
-
-![テナント設定](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
+後続のセクションでは、 **[テナント設定]** タブの設定について説明します。
 
 > [!NOTE]
 > 組織のすべてのユーザーに対して設定の変更が有効になるには、最大で 15 分かかることがあります。
 
-設定は、次の 3 つの状態のいずれかにできます。
+多くの設定は、次の 3 つの状態のいずれかにできます。
 
-* **組織全体に対して無効にする**:組織内の誰もこの機能を使用できません。
+* **組織全体に対して無効にする** :組織内の誰もこの機能を使用できません。
 
     ![すべて無効にする設定](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **組織全体に対して有効にする**:組織内の誰でもこの機能を使用できます。
+* **組織全体に対して有効にする** :組織内の誰でもこの機能を使用できます。
 
     ![すべて有効にする設定](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **組織のサブセットに対して有効にする**:組織内の特定のセキュリティ グループに、この機能の使用を許可します。
+* **組織のサブセットに対して有効にする** :組織内の特定のセキュリティ グループに、この機能の使用を許可します。
 
-    また、**特定のセキュリティ グループを除外**して、組織全体に対して機能を有効にすることもできます。
+    また、 **特定のセキュリティ グループを除外** して、組織全体に対して機能を有効にすることもできます。
 
     ![サブセットを有効にする設定](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
@@ -168,6 +166,12 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 次のいくつかのセクションでは、さまざまな種類のテナント設定の概要を示します。
 
+## <a name="tenant-wide-new-look-settings"></a>テナント全体の新しい外観の設定
+
+**[新しい外観]** オプションが無効になっているとき、この組織のユーザーは Power BI の新しい外観のオンとオフを切り替えることができます。 **[新しい外観]** オプションを有効にすると、この組織の " *すべて* " のユーザーに対して Power BI の新しい外観の最新コントロールが常に表示されます。 新しい外観をオフに切り替えることはできなくなります。 既定では、[新しい外観] オプションは有効になっています。
+
+:::image type="content" source="media/service-admin-portal/admin-portal-new-look-disable.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
+
 ## <a name="help-and-support-settings"></a>ヘルプとサポートの設定
 
 ### <a name="publish-get-help-information"></a>[ヘルプを表示] の情報を公開する
@@ -176,13 +180,13 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 管理者は、内部 URL を指定して、Power BI ヘルプ メニューおよびライセンス アップグレードのリンク先をオーバーライドできます。 カスタム URL が設定されている場合、組織内のユーザーは、既定のリンク先ではなく内部ヘルプおよびサポート リソースに移動します。 次のリソースのリンク先をカスタマイズできます。
 
-* **Learn**。 既定では、このヘルプ メニュー リンクは、[すべての Power BI ラーニング パスおよびモジュールの一覧](/learn/browse/?products=power-bi)を対象としています。 このリンクを内部トレーニング リソースに直接転送するには、**トレーニング ドキュメント**のカスタム URL を設定します。
+* **Learn** 。 既定では、このヘルプ メニュー リンクは、[すべての Power BI ラーニング パスおよびモジュールの一覧](/learn/browse/?products=power-bi)を対象としています。 このリンクを内部トレーニング リソースに直接転送するには、 **トレーニング ドキュメント** のカスタム URL を設定します。
 
-* **コミュニティ**。 ヘルプ メニューから、[Power BI コミュニティ](https://community.powerbi.com/)ではなく、内部フォーラムにユーザーを移動させるには、**ディスカッション フォーラム**のカスタム URL を設定します。
+* **コミュニティ** 。 ヘルプ メニューから、 [Power BI コミュニティ](https://community.powerbi.com/)ではなく、内部フォーラムにユーザーを移動させるには、 **ディスカッション フォーラム** のカスタム URL を設定します。
 
-* **ライセンス アップグレード**。 Power BI Free ライセンスを持つユーザーには、サービスを使用している間にアカウントを Power BI Pro にアップグレードする機会が示される場合があります。 **ライセンスの要求**の内部 URL を指定した場合、ユーザーは内部要求および購買フローにリダイレクトされ、セルフサービス購入が防止されます。 ユーザーがライセンスを購入できないようにするが、Power BI Pro の試用版を開始できるようにする場合は、「[ユーザーが Power BI Pro を試せるようにする](#allow-users-to-try-power-bi-pro)」を参照して、購入体験と試用体験を分けます。
+* **ライセンス アップグレード** 。 Power BI Free ライセンスを持つユーザーには、サービスを使用している間にアカウントを Power BI Pro にアップグレードする機会が示される場合があります。 **ライセンスの要求** の内部 URL を指定した場合、ユーザーは内部要求および購買フローにリダイレクトされ、セルフサービス購入が防止されます。 ユーザーがライセンスを購入できないようにするが、Power BI Pro の試用版を開始できるようにする場合は、「[ユーザーが Power BI Pro を試せるようにする](#allow-users-to-try-power-bi-pro)」を参照して、購入体験と試用体験を分けます。
 
-* **ヘルプの表示**。 ヘルプ メニューから、[Power BI サポート](https://powerbi.microsoft.com/support/)ではなく、内部ヘルプ デスクにユーザーを移動させるには、**ヘルプ デスク**のカスタム URL を設定します。
+* **ヘルプの表示** 。 ヘルプ メニューから、 [Power BI サポート](https://powerbi.microsoft.com/support/)ではなく、内部ヘルプ デスクにユーザーを移動させるには、 **ヘルプ デスク** のカスタム URL を設定します。
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>サービスの停止またはインシデントに関するメール通知を受け取る
 
@@ -218,7 +222,7 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 ワークスペースは、ユーザーがダッシュボード、レポート、およびその他のコンテンツで共同作業を行う場所です。 管理者は、 **[ワークスペースの作成 (新しいワークスペース エクスペリエンス)]** 設定を使用して、ワークスペースを作成できる組織内のユーザーを指定します。 管理者は、組織内の全員が新しいワークスペース エクスペリエンスのワークスペースを作成することを許可することも、誰も作成できないようにすることもできます。 特定のセキュリティ グループのメンバーに作成を限定することもできます。 [ワークスペース](../collaborate-share/service-new-workspaces.md)の詳細を参照してください。
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="新しいワークスペース エクスペリエンスを作成する":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
 
 Microsoft 365 グループに基づく従来のワークスペースについては、引き続き管理ポータルおよび Azure Active Directory で管理されます。
 
@@ -237,7 +241,7 @@ Microsoft 365 グループに基づく従来のワークスペースについて
 
 管理者は、ワークスペース間でデータセットを使用できる組織内のユーザーを制御できます。 この設定を有効にした場合でも、ユーザーは特定のデータセットで求められるビルド アクセス許可が必要になります。
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="新しいワークスペース エクスペリエンスを作成する":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
 
 詳細については、[ワークスペースをまたいだデータセットの概要](../connect-data/service-datasets-across-workspaces.md)に関する記事を参照してください。
 
@@ -403,7 +407,7 @@ Azure AD B2B ゲスト ユーザーは、組織内のコンテンツを編集お
 
 **[テナント設定]** の **[Allow connections to featured tables]\(おすすめのテーブルへの接続を許可\)** 設定を使用すると、組織内のどのユーザーが Excel データ型ギャラリーのおすすめのテーブルを使用できるかを Power BI 管理者が制御できるようになります。 
 
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="新しいワークスペース エクスペリエンスを作成する":::
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
 
 **[データのエクスポート]** 設定が **[無効]** に設定されている場合は、おすすめのテーブルへの接続も無効になります。
 
@@ -492,13 +496,13 @@ Azure Active Directory (Azure AD) に登録されている Web アプリは、�
 
 ### <a name="install-template-apps-listed-on-appsource"></a>AppSource にリストされているテンプレート アプリをインストールする
 
-組織内のユーザーは、[AppSource](https://appsource.microsoft.com)から**のみ**、テンプレートをダウンロードしてインストールできます。 AppSource からテンプレート アプリをインストールできる特定のユーザーまたはセキュリティ グループを制御します。
+組織内のユーザーは、 [AppSource](https://appsource.microsoft.com)から **のみ** 、テンプレートをダウンロードしてインストールできます。 AppSource からテンプレート アプリをインストールできる特定のユーザーまたはセキュリティ グループを制御します。
 
 ![テンプレート アプリ設定をインストールする](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
 
 ### <a name="install-template-apps-not-listed-on-appsource"></a>AppSource にリストされていないテンプレート アプリをインストールする
 
-**[AppSource](https://appsource.microsoft.com)にリストされていない**テンプレート アプリをダウンロードしてインストールできる組織内のユーザーを制御します。
+**[AppSource](https://appsource.microsoft.com)にリストされていない** テンプレート アプリをダウンロードしてインストールできる組織内のユーザーを制御します。
 
 ![AppSource 設定に含まれていないテンプレート アプリをインストールする](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
@@ -506,13 +510,13 @@ Azure Active Directory (Azure AD) に登録されている Web アプリは、�
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
-**[Power BI Premium]** タブでは、組織用に購入されたすべての Power BI Premium 容量 (EM または P SKU) を管理できます。 組織内のすべてのユーザーに **[Power BI Premium]** タブが表示されますが、そのタブにコンテンツが表示されるのは、ユーザーが、"*容量管理者*"、または割り当てのアクセス許可を持つユーザーとして割り当てられている場合のみです。 アクセス許可が何も割り当てられていないユーザーには、次のメッセージが表示されます。
+**[Power BI Premium]** タブでは、組織用に購入されたすべての Power BI Premium 容量 (EM または P SKU) を管理できます。 組織内のすべてのユーザーに **[Power BI Premium]** タブが表示されますが、そのタブにコンテンツが表示されるのは、ユーザーが、" *容量管理者* "、または割り当てのアクセス許可を持つユーザーとして割り当てられている場合のみです。 アクセス許可が何も割り当てられていないユーザーには、次のメッセージが表示されます。
 
 ![Premium の設定にアクセスできません](media/service-admin-portal/premium-settings-no-access.png)
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-**[Power BI Embedded]** タブを使用すると、顧客用に購入した Power BI Embedded (A SKU) の容量を表示できます。 Azure からは A SKU の購入のみ可能であるため、**Azure portal** から [Azure の埋め込み容量を管理](../developer/embedded/azure-pbie-create-capacity.md)します。
+**[Power BI Embedded]** タブを使用すると、顧客用に購入した Power BI Embedded (A SKU) の容量を表示できます。 Azure からは A SKU の購入のみ可能であるため、 **Azure portal** から [Azure の埋め込み容量を管理](../developer/embedded/azure-pbie-create-capacity.md)します。
 
 Power BI Embedded (A SKU) の設定を管理する方法について詳しくは、「[Azure の Power BI Embedded とは何か](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)」をご覧ください。
 
@@ -550,9 +554,9 @@ Power BI ビジュアルのテナント設定を含む Power BI ビジュアル�
 
 また、管理者はユーザーが、新しいワークスペース エクスペリエンスのワークスペースと従来のワークスペースを作成する機能を制御できます。 詳細については、この記事の「[ワークスペースの設定](#workspace-settings)」を参照してください。 
 
-**[ワークスペース]** タブのテーブルの列は、ワークスペースの [Power BI 管理者 Rest API](/rest/api/power-bi/admin) によって返されるプロパティに対応しています。 個人ワークスペースの種類は **PersonalGroup**、従来のワークスペースの種類は **Group**、新しいワークスペース エクスペリエンスのワークスペースの種類は **Workspace** です。 詳細については、[新しいワークスペースで作業を整理する](../collaborate-share/service-new-workspaces.md)方法に関する記事を参照してください。
+**[ワークスペース]** タブのテーブルの列は、ワークスペースの [Power BI 管理者 Rest API](/rest/api/power-bi/admin) によって返されるプロパティに対応しています。 個人ワークスペースの種類は **PersonalGroup** 、従来のワークスペースの種類は **Group** 、新しいワークスペース エクスペリエンスのワークスペースの種類は **Workspace** です。 詳細については、[新しいワークスペースで作業を整理する](../collaborate-share/service-new-workspaces.md)方法に関する記事を参照してください。
 
-**[ワークスペース]** タブに、ワークスペース別の*状態*が表示されます。 次の表は、各状態の意味に関する説明をまとめたものです。
+**[ワークスペース]** タブに、ワークスペース別の *状態* が表示されます。 次の表は、各状態の意味に関する説明をまとめたものです。
 
 |州  |説明  |
 |---------|---------|
@@ -571,11 +575,11 @@ Power BI ビジュアルのテナント設定を含む Power BI ビジュアル�
 
 ![カスタム ブランドのオプション](media/service-admin-portal/power-bi-custom-branding.png)
 
-* **ロゴのアップロード**: 最良の結果になるよう、.png、10 KB 以下、および 200 x 30 ピクセル以上として保存されるロゴをアップロードします。
+* **ロゴのアップロード** : 最良の結果になるよう、.png、10 KB 以下、および 200 x 30 ピクセル以上として保存されるロゴをアップロードします。
 
-* **カバー画像のアップロード**: 最良の結果になるよう、.jpg または .png、1 MB 以下、および 1920 x 160 ピクセル以上として保存されるカバー画像をアップロードします。
+* **カバー画像のアップロード** : 最良の結果になるよう、.jpg または .png、1 MB 以下、および 1920 x 160 ピクセル以上として保存されるカバー画像をアップロードします。
 
-* **テーマの色の選択**: 16 進数の番号、RGB、値で、または提供されたパレットから、テーマを選択できます。
+* **テーマの色の選択** : 16 進数の番号、RGB、値で、または提供されたパレットから、テーマを選択できます。
 
 
 詳細については、[組織向けのカスタム ブランド](https://aka.ms/orgBranding)に関する記事をご覧ください。
