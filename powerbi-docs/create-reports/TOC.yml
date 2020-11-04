@@ -85,6 +85,8 @@
           items:
             - name: Power BI でのレポート ビルダー
               href: ../paginated-reports/report-builder-power-bi.md
+            - name: ページ分割されたレポートのサンプル Power BI
+              href: ../paginated-reports/paginated-reports-samples.md
             - name: レポート デザイン ビュー内を移動する
               href: ../paginated-reports/paginated-reports-report-design-view.md
             - name: レポートの計画
