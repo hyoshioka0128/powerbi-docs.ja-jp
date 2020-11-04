@@ -9,14 +9,16 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 09/09/2020
-ms.openlocfilehash: 7b12f6f6db864fb7b6af4df0d1019dc2eeed2617
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 0816ba6f3ff606a73c835ac71af66655fd49acfd
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747484"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298062"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>Power BI のページ分割されたレポートの URL パラメーター
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 URL にパラメーターを追加することで、Power BI のページ分割されたレポートにコマンドを送信できます。 たとえば、特定のレポート パラメーター値セットを使用してレポートを表示しているとします。 定義済みの URL アクセス パラメーターを使用して、URL にこの情報をカプセル化します。 さらに、レンダリング フォーマットやレポート ツールバーの外観と雰囲気のパラメーターを埋め込んで Power BI のレポートの処理方法をカスタマイズします。 次に、この URL をメールまたは Web ページに直接貼り付けて、他のユーザーがブラウザーで同じ方法でレポートを使用できるようにします。 
 

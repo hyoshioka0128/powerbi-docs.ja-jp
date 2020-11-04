@@ -7,15 +7,15 @@ featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/25/2019
+ms.date: 10/28/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f98fb7a9d5a01c70eb8cef2a8d5befdbe919d796
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 72306a6269df91a75b750628e3534bf5891fe6b0
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219475"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916914"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>画像やビデオなどをダッシュボードに追加する
 
@@ -122,7 +122,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
 
 1. **[タイルの追加]** ウィンドウで、 **[カスタム ストリーミング データ]**  >  **[次へ]** の順に選択します。
 2. **[ストリーミング データセットの追加]** を選択します。
-3. Power BI API または PubNub を使用して、**新しいストリーミング データセット**を作成します。
+3. Power BI API または PubNub を使用して、 **新しいストリーミング データセット** を作成します。
 4. **[データセット名]** 、 **[サブスクリプション キー]** 、 **[チャネル名]** の各フィールドに入力します。 セキュリティで保護された接続の場合は、承認キーもあります。 PubNub のサンプル値を使って試してみることができます。
 5. **[次へ]** を選びます。
     データセットで使用できるフィールドと、データ型および JSON 形式が表示されます。
@@ -142,7 +142,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
 
 2. **[ストリーミング データセットの追加]** を選択します。
 
-3. Power BI API または PubNub を使用して、**新しいストリーミング データセット**を作成します。
+3. Power BI API または PubNub を使用して、 **新しいストリーミング データセット** を作成します。
 
 4. **[データセット名]** 、 **[サブスクリプション キー]** 、 **[チャネル名]** の各フィールドに入力します。 セキュリティで保護された接続の場合は、承認キーもあります。 PubNub のサンプル値を使って試してみることができます。
 
@@ -191,7 +191,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
    ![4 つのタイルがあるダッシュボード](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
 ### <a name="tips-for-embedding-web-content"></a>Web コンテンツを埋め込むためのヒント
-* iframe には、セキュリティで保護されたソースを使います。 iframe の埋め込みコードを入力したときにタイルが空白になった場合は、iframe ソースに *http* を使用していないことを確認します。 使用している場合は、*https* に変更します。
+* iframe には、セキュリティで保護されたソースを使います。 iframe の埋め込みコードを入力したときにタイルが空白になった場合は、iframe ソースに *http* を使用していないことを確認します。 使用している場合は、 *https* に変更します。
   
   ```html
   <iframe src="https://xyz.com">
@@ -229,7 +229,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
 ## <a name="edit-a-tile"></a>タイルを編集する
 既存のタイルに変更を加えるには:
 
-1. タイルの右上隅にマウス ポインターを移動し、**その他のオプション** (...) を選択します。
+1. タイルの右上隅にマウス ポインターを移動し、 **その他のオプション** (...) を選択します。
    
     ![タイルの省略記号の選択](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. **[詳細の編集]** を選択し、 **[タイルの詳細]** ウィンドウを表示して変更を加えます。
@@ -239,6 +239,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
 * ダッシュボードのタイルを移動しやすくするには、タイトルと省略可能なサブタイトルを追加します。
 * Web サイトからコンテンツを埋め込みたいが、コピーして貼り付けるための埋め込みコードが Web サイトで提供されていない場合は、embed.ly で埋め込みコードの生成に関するヘルプを参照してください。
+* 画像ファイルへのアクセスにセキュリティ資格情報が必要ないことを確認します。 たとえば、OneDrive と SharePoint では認証を必要とするため、そこに格納されている画像をこの方法でダッシュボードに追加することはできません。  
 
 ## <a name="next-steps"></a>次のステップ
 [Power BI デザイナーのダッシュボードのタイルの概要](service-dashboard-tiles.md)

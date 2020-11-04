@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/28/2020
-ms.openlocfilehash: aa4df6db3058ef3d6f8c399e1bf20f0edf17ebc8
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 217c1b571c01068d64283df0b25b5e56bbc8b956
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600501"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297214"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Power BI サービスでページ分割されたレポートのパラメーターを作成する
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 この記事では、Power BI サービスでページ分割されたレポートのパラメーターを作成する方法について説明します。  レポート パラメーターは、レポート データを選択し、レポートの体裁を変更する方法を提供します。 既定値や使用可能な値のリストを指定できます。 レポートの閲覧者は、選択内容を変更できます。 また、パラメーター テキスト ボックスに入力して、値を検索することもできます。 Power BI サービスにおけるパラメーターの操作方法を確認するには、[ページ分割されたレポートのパラメーターの表示](../consumer/paginated-reports-view-parameters.md)に関する記事を参照してください。  
 
@@ -38,7 +40,7 @@ ms.locfileid: "91600501"
   
 1.  ページ分割されたレポートを Power BI レポート ビルダーで開きます。
 
-1. **レポート データ** ペインで、**[パラメーター]** ノードを右クリックして **[パラメーターの追加]** を選択します。 **[レポート パラメーターのプロパティ]** ダイアログ ボックスが表示されます。  
+1. **レポート データ** ペインで、 **[パラメーター]** ノードを右クリックして **[パラメーターの追加]** を選択します。 **[レポート パラメーターのプロパティ]** ダイアログ ボックスが表示されます。  
   
 2.  **[名前]** にパラメーターの名前を入力するか、または既定の名前をそのまま使用します。  
   

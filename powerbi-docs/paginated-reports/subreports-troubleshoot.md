@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
 ms.date: 04/29/2020
-ms.openlocfilehash: 6a0e90036b759c409a9f5b3e994571c2a0eb510c
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 06d9b0fc60d9b44f98108cf46bc35c5de15316d6
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747507"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297979"
 ---
 # <a name="troubleshoot-subreports-in-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートでのサブレポートのトラブルシューティング
 
-ページ分割されたサブレポートの使用中に、予期しない結果が出る場合や、機能が期待どおりに動作しない場合があります。 この記事では、サブレポートの使用中に発生する一般的な問題の解決方法を説明します。 *サブレポート*は、ページ分割されたメインのレポート本文内に別のレポートを表示するレポート アイテムです。 背景については、「[Power BI のページ分割された レポートでのサブレポート](subreports.md)」をご覧ください。
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+ページ分割されたサブレポートの使用中に、予期しない結果が出る場合や、機能が期待どおりに動作しない場合があります。 この記事では、サブレポートの使用中に発生する一般的な問題の解決方法を説明します。 *サブレポート* は、ページ分割されたメインのレポート本文内に別のレポートを表示するレポート アイテムです。 背景については、「[Power BI のページ分割された レポートでのサブレポート](subreports.md)」をご覧ください。
 
 ## <a name="subreport-couldnt-be-found"></a>サブレポートが見つかりませんでした
 
@@ -130,4 +132,4 @@ Power BI を使用すると、同じワークスペースに同じ名前のレ�
 
 [ページ分割されたレポートを Power BI サービスで表示する](../consumer/paginated-reports-view-power-bi-service.md)
 
-他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

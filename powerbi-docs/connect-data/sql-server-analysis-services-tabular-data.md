@@ -4,18 +4,18 @@ description: Power BI の SQL Server Analysis Services ライブ データ。 �
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-author: Minewiskan
-ms.author: owend
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
-ms.openlocfilehash: c88c0d56d24f12edf30c2c79ddebb13fa941695a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2c32ceb1db154cd7647402593051e4230c75c07f
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238211"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916753"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Power BI の SQL Server Analysis Services ライブ データ
 
@@ -28,7 +28,7 @@ Power BI では、ライブ SQL Server Analysis Services サーバーに接続�
 
 ## <a name="to-connect-to-a-model-from-get-data"></a>[データの取得] からモデルに接続するには
 
-1. **マイ ワークスペース**で、 **[データの取得]** を選択します。 グループワーク スペースが利用可能である場合、グループワーク スペースに変更することもできます。
+1. **マイ ワークスペース** で、 **[データの取得]** を選択します。 グループワーク スペースが利用可能である場合、グループワーク スペースに変更することもできます。
 
    ![[データの取得] ボタンに接続する](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
@@ -44,7 +44,7 @@ Power BI では、ライブ SQL Server Analysis Services サーバーに接続�
 
 5. 接続するモデルを選択します。 表形式または多次元モデルのいずれかを選択できます。
 
-モデルに接続すると、Power BI サイトの**マイ ワークスペース/データセット**に表示されます。 グループ ワークスペースに切り替わると、データセットがグループ内に表示されます。
+モデルに接続すると、Power BI サイトの **マイ ワークスペース/データセット** に表示されます。 グループ ワークスペースに切り替わると、データセットがグループ内に表示されます。
 
 ![データセットへの接続](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 

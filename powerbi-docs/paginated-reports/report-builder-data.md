@@ -9,14 +9,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 08/04/2020
-ms.openlocfilehash: fe6ca733a5498c0e576ec30e6992ffbf26d54319
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: 97b93f23c8070af1b514032cea122b257097d664
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837591"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297950"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Power BI レポート ビルダーでのレポート データ
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 組織内の複数のデータ ソースからレポート データを取得できます。 Power BI レポート ビルダーでレポートをデザインする際の最初の手順は、基になるレポート データを表すデータ ソースとデータセットを作成することです。 各データ ソースには、データの接続情報が含まれます。 各データセットには、データとして使用するデータ ソースの一連のフィールドを定義するクエリ コマンドが含まれます。 各データセットのデータを視覚化するために、テーブル、マトリックス、グラフ、マップなどのデータ領域を追加します。 レポートの処理時に、データ ソースに対してクエリが実行され、各データ領域は、データセットのクエリ結果を表示するために、必要に応じて拡張されます。  
 
@@ -25,14 +27,14 @@ ms.locfileid: "87837591"
 
 ##  <a name="terms"></a><a name="BkMk_ReportDataTerms"></a> 用語  
   
-- **データ接続。** "*データ ソース*" とも呼ばれます。 データ接続には、接続の種類に依存する名前と接続のプロパティが含まれています。 意図的に、データ接続に資格情報は含まれていません。 データ接続では、外部データ ソースからどのデータを取得するかは指定されていません。 これを行うには、データセットを作成するときにクエリを指定します。  
+- **データ接続。** " *データ ソース* " とも呼ばれます。 データ接続には、接続の種類に依存する名前と接続のプロパティが含まれています。 意図的に、データ接続に資格情報は含まれていません。 データ接続では、外部データ ソースからどのデータを取得するかは指定されていません。 これを行うには、データセットを作成するときにクエリを指定します。  
   
 - **接続文字列:** 接続文字列は、データ ソースに接続するために必要な接続プロパティの文字列バージョンです。 接続プロパティは、データ接続の種類によって異なります。 
 
     > [!NOTE]
     > データ ソース接続文字列は式ベースにすることができません。
   
-- **埋め込みデータ ソース:** " *レポート固有のデータ ソース*" とも呼ばれます。 1 つのレポート内で定義され、そのレポートのみで使用されるデータ ソースです。  
+- **埋め込みデータ ソース:** " *レポート固有のデータ ソース* " とも呼ばれます。 1 つのレポート内で定義され、そのレポートのみで使用されるデータ ソースです。  
   
 - **資格情報:** 資格情報は、外部データにアクセスするために指定する必要がある認証情報です。  
   

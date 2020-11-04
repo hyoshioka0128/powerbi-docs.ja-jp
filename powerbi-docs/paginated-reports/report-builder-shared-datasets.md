@@ -7,14 +7,16 @@ ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d3955b8dde22863e7b0224d335b162846e0741d2
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 44f1c1280e176d99ab909402a77804074e7d8cbd
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216775"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298113"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Power BI 共有データセットを基づいて改ページ調整されたレポートを作成する
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] 
 
 Power BI Desktop で作成したデータセットは、Power BI レポート ビルダーの改ページ調整されたレポートのデータ ソースとして利用できます。 次のようなシナリオを考えてみましょう。Power BI Desktop で Power BI レポートを作成しました。 データ モデルの設計に多大な時間を費やしたので、多種多様なビジュアルを使った美しい Power BI レポートを作成することができました。 レポートのマトリックスには行が多数あり、全部を確認するにはスクロールが必要です。 レポートの読者からすると、印刷ができて、かつ、マトリックス内の行がすべて表示されるようなレポートが理想です。 Power BI の改ページ調整されたレポートなら、そのようなことが可能です。数ページに及ぶテーブルやマトリックスを、ページのヘッダーやフッターを含めて、設計どおりの完璧なレイアウトで印刷することができるのです。 これは、Power BI Desktop のレポートを補完するものです。 これらはまったく同じデータに基づいている必要があり、不一致があってはならないので、同じデータセットを使用します。
 
@@ -74,7 +76,7 @@ Power BI レポート内とレポート ビルダー内とでデータを同じ�
 1. Power BI Desktop で Power BI レポート (.pbix) を開きます。
 1. レポート内のテーブルに、改ページ調整されたレポートで必要なデータがすべて含まれていることを確認してください。 このテーブルでは、次の 2 つの要件を満たす必要があります。
     - マトリックスやその他のビジュアルではなく、フラット テーブルにする必要があります。 テーブルではない場合、ここでテーブルに変換し、それに続くパフォーマンス アナライザーの手順を完了し、再度変換して必要なビジュアルに戻します。
-    - 数値フィールドについては、"*定義済みのメジャー*" を使用する必要があります。 電卓シンボルが横に付いています。 メジャーの作成方法については[こちら](../transform-model/desktop-measures.md)をご覧ください。 
+    - 数値フィールドについては、" *定義済みのメジャー* " を使用する必要があります。 電卓シンボルが横に付いています。 メジャーの作成方法については[こちら](../transform-model/desktop-measures.md)をご覧ください。 
 
         ![[メジャー] アイコン](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
@@ -202,7 +204,7 @@ Power BI レポート内とレポート ビルダー内とでデータを同じ�
 
 余白とテーブルの列の幅を狭くしても、空白のページが残ってしまうことがあります。 なぜでしょうか。 原因は数学的な話です。 
 
-ページの余白として設定した値と、レポートの "*本体*" の幅の値を足した結果が、レポートの形式の幅よりも小さくなっている必要があります。
+ページの余白として設定した値と、レポートの " *本体* " の幅の値を足した結果が、レポートの形式の幅よりも小さくなっている必要があります。
 
 たとえば、レポートの形式が 8.5" x 11" で、横の余白をそれぞれ 0.75 に設定しているとします。 2 つの余白は合計 1.5" になるので、本体の幅は 7" インチ未満にする必要があります。
 

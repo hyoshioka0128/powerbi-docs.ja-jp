@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 10/19/2020
-ms.openlocfilehash: 2a0490106d5954a57abea1dd5de61f26f2fe2377
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 7cba43ff6339ce890ca2f4f1744282648eaf877b
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257022"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297887"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Power BI のページ分割されたレポート:FAQ 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 この記事では、ページ分割されたレポートについてよく寄せられる質問に答えます。 これらのレポートは、印刷や PDF 生成用に最適化されている、高度に書式設定されたピクセル単位で完璧な出力です。 これらは、複数のページにちょうど収まるように設定されているため "ページ分割された" と呼ばれます。 ページ分割されたレポートは、SQL Server Reporting Services の RDL レポート テクノロジに基づいています。 
 
@@ -72,9 +74,9 @@ Pro ライセンスがなくても、お使いのマイ ワークスペースが
 
 ページ分割されたレポートに対する各 Premium SKU の既定のメモリは次のとおりです。
 
-- **P1/A4**:20% (既定値)、10% (最小値)
-- **P2/A5**:20% (既定値)、5% (最小値)
-- **P3/A6**:20% (既定値)、2.5% (最小値)
+- **P1/A4** :20% (既定値)、10% (最小値)
+- **P2/A5** :20% (既定値)、5% (最小値)
+- **P3/A6** :20% (既定値)、2.5% (最小値)
 
 Power BI 管理者は、管理ポータルで、既定の最大メモリの割合を変更できます。 **[容量の設定]** タブの **[Power BI Premium]** の下にある **[ページ分割されたレポート]** ワークロード セクションを参照してください。
 
@@ -181,7 +183,7 @@ SaaS 埋め込み (Secure Embed のサポートを含む) は既に利用でき�
 
 Power BI サービスでページ分割されたレポートを表示すると、セッションがタイムアウトになり、次の通知がユーザーに表示されることがあります。
 
-:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="[ページ分割されたレポート] の [容量の設定] タブ":::
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="ページ分割されたレポート セッションの期限切れ通知":::
 
 - セッションは、非アクティブな状態が 60 分続く場合、またはデバイスがロックされているか非アクティブである場合やレポートがブラウザーのアクティブなタブに表示されない場合はさらに早く、タイムアウトになります。
 

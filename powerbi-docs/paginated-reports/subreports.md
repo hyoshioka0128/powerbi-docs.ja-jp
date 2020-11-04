@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: 9da6268e90e3f70797c2cfff19bb1d5c4b633e9a
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: d2cd4e9f5d6cb8872e266fabacb9f8a5a3e318cb
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746587"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298013"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Power BI のページ分割された レポートでのサブレポート
 
-*サブレポート*は、ページ分割されたメインのレポート本文内に別のページ分割されたレポートを表示する、ページ分割されたレポート アイテムです。 概念上、レポート内のサブレポートは Web ページ内のフレームとほぼ同じです。 これは、レポートをレポート内に埋め込むために使用します。 任意のレポートをサブレポートとして使用できます。 サブレポートとして表示されるレポートは、親レポートと同じ Premium ワークスペースに保存します。 親レポートからサブレポートにパラメーターを渡すようにも設定できます。 パラメーターを使用してサブレポートの各インスタンスのデータをフィルター処理することにより、サブレポートをデータ領域内で繰り返し使用することができます。  
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+*サブレポート* は、ページ分割されたメインのレポート本文内に別のページ分割されたレポートを表示する、ページ分割されたレポート アイテムです。 概念上、レポート内のサブレポートは Web ページ内のフレームとほぼ同じです。 これは、レポートをレポート内に埋め込むために使用します。 任意のレポートをサブレポートとして使用できます。 サブレポートとして表示されるレポートは、親レポートと同じ Premium ワークスペースに保存します。 親レポートからサブレポートにパラメーターを渡すようにも設定できます。 パラメーターを使用してサブレポートの各インスタンスのデータをフィルター処理することにより、サブレポートをデータ領域内で繰り返し使用することができます。  
   
  ![ページ分割されたレポート内のサブレポート](media/subreports/paginated-report-subreport.png "ページ分割されたレポートのサブレポート")  
   
@@ -33,7 +35,7 @@ Power BI レポート ビルダーは、コンピューター上のページ分�
 
 サインインすると Power BI レポート ビルダーの **[Power BI サービス]** オプションが、 **[ファイル]** メニューの **[開く]** および **[名前を付けて保存]** オプションとして表示されます。 レポートを保存するための **[Power BI サービス]** オプションを選択した場合は、Power BI レポート ビルダーと Power BI サービスの間にライブ接続が作成されます。 
 
-:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Power BI へのサインイン":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Power BI サービスから開く":::
 
 ## <a name="save-a-local-report-to-the-power-bi-service"></a>ローカル レポートを Power BI サービスに保存する
 
@@ -48,7 +50,7 @@ Power BI レポート ビルダーは、コンピューター上のページ分�
 
 3. **[名前を付けて保存]** ダイアログ ボックスで、ページ分割されたレポートを保存できる Power BI Premium ワークスペースを選択します。  Premium ワークスペースには、名前の横にダイヤモンド形のアイコン ![Premium のダイヤモンド形アイコン](media/subreports/report-builder-premium-diamond.png) が表示されます。
 
-    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Power BI へのサインイン":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Power BI サービスの [名前を付けて保存]":::
 
 4. **[保存]** を選択します。
 
@@ -58,7 +60,7 @@ Power BI レポート ビルダーは、コンピューター上のページ分�
 
 1. **[挿入]** のリボンで **[サブレポート]** ボタンを選択するか、レポート キャンバスを右クリックして、 **[挿入]**  >  **[サブレポート]** を選択します。
 
-    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Power BI へのサインイン":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="レポートにサブレポートを挿入する":::
 
     **[サブレポートのプロパティ]** ダイアログ ボックスが開きます。  
 
@@ -70,7 +72,7 @@ Power BI レポート ビルダーは、コンピューター上のページ分�
  親レポートからサブレポートにパラメーターを渡すには、サブレポートとして使用するレポートでレポート パラメーターを定義します。 親レポートにサブレポートを配置するときに、レポート パラメーターと、親レポートからサブレポート内のレポート パラメーターに渡す値を選択できます。  
   
 > [!NOTE]  
-> サブレポートから選択するパラメーターは、*クエリ* パラメーターではなく*レポート* パラメーターです。  
+> サブレポートから選択するパラメーターは、 *クエリ* パラメーターではなく *レポート* パラメーターです。  
   
  サブレポートは、レポート本文内またはデータ領域内に配置できます。 データ領域にサブレポートを配置する場合、同じサブレポートがグループのインスタンスまたはデータ領域の行ごとに配置されます。 グループまたは行からサブレポートに値を渡すことができます。 サブレポートの値のプロパティで、サブレポート パラメーターに渡す値を含むフィールド用のフィールド式を使用します。  
   
@@ -116,4 +118,4 @@ Power BI レポート ビルダーは、コンピューター上のページ分�
 
 [ページ分割されたレポートを Power BI サービスで表示する](../consumer/paginated-reports-view-power-bi-service.md)
 
-他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
