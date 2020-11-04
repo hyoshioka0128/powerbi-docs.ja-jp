@@ -9,16 +9,18 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: c26f9c8f219517e3039b62cdbc89af24ba1af288
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f103f29c61d1a4e4a5340d97598d80a86c708701
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239553"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298029"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Power BI のページ分割されたレポートの URL 内でレポート パラメーターを渡す 
 
-レポート パラメーターをページ分割されたレポート URL に含めることで、レポートに渡すことができます。 すべてのクエリ パラメーターには、対応するレポート パラメーターを含めることができます。 そのため、対応するレポート パラメーターを渡すことで、クエリ パラメーターをレポートに渡すことができます。 Power BI で URL 内のパラメーター名が認識されるには、名前の前に `rp:` を付ける必要があります。 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+レポート パラメーターをページ分割されたレポート URL に含めることで、レポートに渡すことができます。 すべてのクエリ パラメーターには、対応するレポート パラメーターを指定できます。 そのため、対応するレポート パラメーターを渡すことで、クエリ パラメーターをレポートに渡すことができます。 Power BI で URL 内のパラメーター名が認識されるには、名前の前に `rp:` を付ける必要があります。 
 
 レポート パラメーターは大文字と小文字が区別され、次の特殊文字が使用されます。 
 
@@ -28,9 +30,9 @@ ms.locfileid: "85239553"
 
 - 文字列の任意の部分にあるセミコロンは、文字 `%3A` で置き換えられます。
 
-ブラウザーによって、適切な URL エンコードが自動的に実行されます。 文字を手動でエンコードする必要はありません。 
+通常、適切な URL エンコードはブラウザーによって自動的に行われます。 文字を手動でエンコードする必要はありません。 
 
-URL 内でレポート パラメーターを設定するには、次の構文を使用します。 
+URL 内にレポート パラメーターを設定するには、次の構文を使用します。 
 
 ```
 rp:parameter=value
@@ -48,7 +50,7 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d
 https://app.powerbi.com/groups/me/apps/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0/rdlreports/b1d5e659-639e-41d0-b733-05d2bca9853c?rp:Salesperson=Tiggee&rp:State=Utah 
 ```
 
-パラメーターに null 値を渡すには、次の構文を使用します。 
+パラメーターに NULL 値を渡すには、次の構文を使用します。 
 
 ```
 parameter:isnull=true

@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.openlocfilehash: edda0fa0232430541af1fc1766fd5d8bc23c5e1c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 28058161672de9db0cac5093e652e1d551f6a80a
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221025"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297324"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>ページ分割されたレポートを Power BI サービスに発行する
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 この記事では、ページ分割されたレポートをローカル コンピューターからアップロードすることによって Power BI サービスに発行することについて学びます。 ワークスペースが Premium 容量である限り、ページ分割されたレポートをマイ ワークスペースまたは他のワークスペースにアップロードできます。 ワークスペース名の横にあるダイヤモンド形のアイコン ![Power BI Premium 容量のダイヤモンド形のアイコン](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) を探します。 
 
@@ -45,7 +47,7 @@ ms.locfileid: "85221025"
 
     まだ Power BI にサインインしていない場合は、ここでサインインするか、アカウントを作成する必要があります。 レポート ビルダーの右上隅にある **[サインイン]** を選択し、手順を完了します。
 
-2. 左側のワークスペースのリストで、その名前の横にあるダイヤモンド形のアイコン ![Power BI Premium 容量のダイヤモンド形のアイコン](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) が付いたワークスペースを選択します。 ボックスに**ファイル名**を入力して、 **[保存]** を選択します。 
+2. 左側のワークスペースのリストで、その名前の横にあるダイヤモンド形のアイコン ![Power BI Premium 容量のダイヤモンド形のアイコン](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) が付いたワークスペースを選択します。 ボックスに **ファイル名** を入力して、 **[保存]** を選択します。 
 
     ![Premium ワークスペースを選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
 
@@ -69,7 +71,7 @@ Power BI サービスから開始し、ページ分割されたレポートを�
 
 1. **[データを取得]** を選択します。
 
-    ![Power BI のデータの取得](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
+    ![Power BI でのデータ取得](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
 
 1. **[ファイル]** ボックスで、 **[取得]** を選択します。
 
@@ -109,7 +111,7 @@ Power BI サービスから開始し、ページ分割されたレポートを�
 
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [ページ分割されたレポートを Power BI サービスで表示する](../consumer/paginated-reports-view-power-bi-service.md)
 - [Power BI Premium のページ分割されたレポートとは](paginated-reports-report-builder-power-bi.md)

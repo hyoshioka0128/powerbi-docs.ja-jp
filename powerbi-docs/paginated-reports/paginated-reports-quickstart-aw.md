@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 778ce3c810cb0d59559940f489dfeda34f366fda
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: baccdcae82fb56b2f7f7a9d6cb4839e941e99bf0
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853979"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297531"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>チュートリアル:ページ分割されたレポートを作成して Power BI サービスにアップロードする
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 このチュートリアルでは、サンプルの Azure SQL データベースに接続します。 その後、Power BI レポート ビルダーのウィザードを使用して、複数のページにラップするテーブルを含むページ分割されたレポートを作成します。 次に、Power BI サービスで Premium 容量のワークスペースにページ分割されたレポートをアップロードします。
 
@@ -30,13 +32,13 @@ ms.locfileid: "90853979"
 > * 通貨の書式を設定します。
 > * Power BI サービスにレポートをアップロードします。
 
-Azure サブスクリプションをお持ちでない場合は、始める前に[無料アカウントを作成](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)してください。
+Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) を作成してください。
  
 ## <a name="prerequisites"></a>前提条件  
 
 ページ分割されたレポートを作成するための前提条件を次に示します。
 
-- [Microsoft ダウンロード センターから Power BI レポート ビルダー](https://aka.ms/pbireportbuilder)をインストールします。 
+- [Power BI レポート ビルダーは、Microsoft ダウンロード センターから](https://aka.ms/pbireportbuilder)インストールしてください。 
 
 - クイック スタート「[Azure portal で Azure SQL データベースを作成する](/azure/sql-database/sql-database-get-started-portal)」に従います。 **[概要]** タブの **[サーバー名]** ボックスの値をコピーして保存します。Azure で作成したパスワードとユーザー名を憶えておきます。
 
@@ -55,17 +57,17 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
   
 1.  左側のウィンドウで **[新しいレポート]** が選択されていることを確認し、右側のウィンドウで **[テーブルまたはマトリックス ウィザード]** を選択します。  
   
-4.  **[データセットの選択]** ページで、 **[データセットを作成する]**  >  **[次へ]** の順に選択します。  
+4.  **[データセットの選択]** ページで、 **[データセットを作成する]** > **[次へ]** の順に選択します。  
 
-    ![データセットの作成](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
+    ![データセットを作成する](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
 5.  **[データ ソースへの接続の選択]** ページで、 **[新規]** を選択します。 
 
     ![新しいデータ ソース](media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png)
   
-     **[データ ソースのプロパティ]** ダイアログ ボックスが開きます。  
+     **[データ ソースのプロパティ]** ダイアログ ボックスが表示されます。  
   
-6.  文字とアンダースコアを使用して、データ ソースに任意の名前を付けます。 このチュートリアルでは、 **[名前]** ボックスに「**MyAzureDataSource**」と入力します。  
+6.  文字とアンダースコアを使用して、データ ソースに任意の名前を付けます。 このチュートリアルでは、 **[名前]** ボックスに「 **MyAzureDataSource** 」と入力します。  
   
 7.  **[接続の種類の選択]** ボックスで、 **[Microsoft Azure SQL Database]** を選択します。  
   
@@ -75,11 +77,11 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 9. **Azure で:** Azure portal に戻り、 **[SQL データベース]** を選択します。
 
-1. この記事の「**前提条件**」セクションで示したクイック スタート「Azure portal で Azure SQL データベースを作成する」で作成した Azure SQL データベースを選択します。
+1. この記事の「 **前提条件** 」セクションで示したクイック スタート「Azure portal で Azure SQL データベースを作成する」で作成した Azure SQL データベースを選択します。
 
 1. **[概要]** タブで、 **[サーバー名]** ボックスの値をコピーします。
 
-2. **レポート ビルダーで**: **[接続プロパティ]** ダイアログ ボックスの **[サーバー名]** にコピーしたサーバー名を貼り付けます。 
+2. **レポート ビルダーで** : **[接続プロパティ]** ダイアログ ボックスの **[サーバー名]** にコピーしたサーバー名を貼り付けます。 
 
 1. **[サーバー ログオン]** で、 **[SQL Server 認証を使用する]** が選択されていることを確認し、サンプル データベース用に Azure で作成したユーザー名とパスワードを入力します。
 
@@ -87,7 +89,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
  
     ![データ ソース接続プロパティ](media/paginated-reports-quickstart-aw/power-bi-paginated-connection-properties.png)
 
-1. **[接続テスト]** を選択します。 **[テスト結果]** に "**接続テストに成功しました**" というメッセージが表示されます。
+1. **[接続テスト]** を選択します。 **[テスト結果]** に " **接続テストに成功しました** " というメッセージが表示されます。
 
 1. **[OK]**  >  **[OK]** の順に選択します。 
 
@@ -105,9 +107,9 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
   
 10. **[クエリのデザイン]** ページで、SalesLT を展開し、テーブルを展開して、次のテーブルを選択します。
 
-    - 住所
-    - 顧客
-    - Product
+    - Address
+    - Customer
+    - 製品
     - ProductCategory
     - SalesOrderDetail
     - SalesOrderHeader
@@ -118,7 +120,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
  
 1.  **[クエリの実行]** を選択します。 レポート ビルダーで **[クエリ結果]** が表示されます。 
  
-     ![クエリ結果](media/paginated-reports-quickstart-aw/power-bi-paginated-query-results.png)
+     ![Query results](media/paginated-reports-quickstart-aw/power-bi-paginated-query-results.png)
 
 18. **[次へ]** を選択します。 
 
@@ -165,7 +167,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 5. [グループ化] ウィンドウには、ウィザードで作成した 3 つの行グループが表示されています。 
 
     - CompanyName
-    - 販売注文
+    - Sales Order
     - 製品名
 
     このマトリックスには、列グループはありません。
@@ -176,7 +178,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 1. **[ホーム]** ツール バーで **[実行]** を選択します。
 
-   これで、値が表示されるようになります。 マトリックスには、デザイン ビューで表示されていたものよりはるかに多くの行があります。 レポート ビルダーでページが **[1**/**2?]** と表示されていることに注意してください。 レポート ビルダーでは可能な限り速やかにレポートが読み込まれるので、一度に読み込まれるのは数ページ分だけのデータです。 疑問符は、レポート ビルダーにすべてのデータがまだ読み込まれていないことを示します。
+   これで、値が表示されるようになります。 マトリックスには、デザイン ビューで表示されていたものよりはるかに多くの行があります。 レポート ビルダーでページが **[1** / **2?]** と表示されていることに注意してください。 レポート ビルダーでは可能な限り速やかにレポートが読み込まれるので、一度に読み込まれるのは数ページ分だけのデータです。 疑問符は、レポート ビルダーにすべてのデータがまだ読み込まれていないことを示します。
 
    ![レポートを実行する](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -202,9 +204,9 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
     ![ページの余白を設定する](media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png)
   
-### <a name="add-a-report-title"></a>レポートのタイトルを追加する  
+### <a name="add-a-report-title"></a>レポート タイトルの追加  
 
-1. ページの上部にある **[クリックしてタイトルを追加]** を選択し、「**Sales by Company**」と入力します。  
+1. ページの上部にある **[クリックしてタイトルを追加]** を選択し、「 **Sales by Company** 」と入力します。  
 
 2. タイトルのテキストを選択し、[プロパティ] ウィンドウの **[フォント]** で、 **[色]** を **[青]** に変更します。
   
@@ -214,7 +216,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 1. デザイン サーフェイス下端のフッターの右側に、[&ExecutionTime] と表示されています。 
 
-2. [レポート データ] ウィンドウで、[組み込みフィールド] フォルダーを展開します。 **[ページ番号]** を、フッター左側の [&ExecutionTime] と同じ高さにドラッグします。
+2. レポート データ ペインで [組み込みフィールド] フォルダーを展開します。 **[ページ番号]** を、フッター左側の [&ExecutionTime] と同じ高さにドラッグします。
 
 3. [&PageNumber] ボックスの右側をドラッグして、正方形にします。
 
@@ -248,7 +250,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
     ![通貨値を含むセルを選択する](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. **[ホーム]** タブでドル ( **$** ) の通貨記号を選択し、 **[プレースホルダーのスタイル]** の隣の矢印を選択して、 >  **[サンプルの値]** を選択します。
+2. **[ホーム]** タブでドル ( **$** ) の通貨記号を選択し、 **[プレースホルダーのスタイル]** の隣の矢印を選択して、 > **[サンプルの値]** を選択します。
  
     ![サンプルの値を表示する](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 
@@ -288,7 +290,7 @@ Power BI サービスにレポートを発行する前に、もう 1 つの書�
 
 1. Power BI サービス (`https://app.powerbi.com`) のナビ ペインで、 **[ワークスペース]**  >  **[ワークスペースの作成]** の順に選択します。
 
-2. ワークスペースに、「**Azure AW**」または他の一意名を付けます。 今のところ、メンバーはまだ自分だけです。 
+2. ワークスペースに、「 **Azure AW** 」または他の一意名を付けます。 今のところ、メンバーはまだ自分だけです。 
 
 3. **[詳細設定]** の横にある矢印を選択して、 **[専用の容量]** をオンにします。 
 
