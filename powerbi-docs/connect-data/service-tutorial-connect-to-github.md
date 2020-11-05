@@ -110,11 +110,11 @@ GitHub アカウントをまだ持っていない場合、このチュートリ�
 
 ## <a name="view-the-github-report"></a>GitHub のレポートを表示する 
 
-1. GitHub ダッシュボードで、棒グラフ **[Pull Requests by Month]\(月別のプル要求\)** を選択し、関連レポートを開きます。
+1. GitHub ダッシュボードで、棒グラフ **[Pull Requests by Month]\(月別のプルリクエスト\)** を選択し、関連レポートを開きます。
 
-    ![月別のプル要求の棒グラフ](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
+    ![月別のプルリクエストの棒グラフ](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
 
-2. **[Total pull requests by user]\(ユーザー別の合計プル要求数\)** グラフでユーザー名を選択します。 この例では、ほとんどの時間が 2 月に含まれていたことがわかります。
+2. **[Total pull requests by user]\(ユーザー別の合計プルリクエスト数\)** グラフでユーザー名を選択します。 この例では、ほとんどの時間が 2 月に含まれていたことがわかります。
 
     ![Power BI GitHub レポートの強調表示](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-cross-filter-total-prs.png)
 
