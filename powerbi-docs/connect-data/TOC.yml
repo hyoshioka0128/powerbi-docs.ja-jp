@@ -284,7 +284,7 @@
               href: service-gateway-personal-mode.md
             - name: ゲートウェイのデータ ソースの管理
               items:
-                - name: データ ソースを管理する
+                - name: ゲートウェイのデータ ソースの追加または削除
                   href: service-gateway-data-sources.md
                 - name: エンタープライズ データ ソースの管理 - Analysis Services
                   href: service-gateway-enterprise-manage-ssas.md
