@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f189ea2944f86a3caabfbc51ae5b2887bc7c89bb
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3a541c46f78c5e5cd25b47a94394a011fd61954f
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278609"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916546"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Power BI の最適化ガイド
 
@@ -26,7 +26,7 @@ ms.locfileid: "83278609"
 
 ## <a name="optimizing-the-data-model"></a>データ モデルの最適化
 
-データ モデルでは、視覚化エクスペリエンス全体がサポートされています。 データ モデルは、外部でホストされるか内部でホストされるかのいずれかであり、Power BI では "_データセット_" と呼ばれます。 選択肢を理解し、ご自分のソリューションに適したデータセットの種類を選択することが重要です。 次の 3 つのデータセット モードがあります:インポート、DirectQuery、複合。 詳細については、「[Power BI サービスのデータセット](../connect-data/service-datasets-understand.md)」と「[Power BI サービスのデータセット モード](../connect-data/service-dataset-modes-understand.md)」をご覧ください。
+データ モデルでは、視覚化エクスペリエンス全体がサポートされています。 データ モデルは、外部でホストされるか内部でホストされるかのいずれかであり、Power BI では " _データセット_ " と呼ばれます。 選択肢を理解し、ご自分のソリューションに適したデータセットの種類を選択することが重要です。 次の 3 つのデータセット モードがあります:インポート、DirectQuery、複合。 詳細については、「[Power BI サービスのデータセット](../connect-data/service-datasets-understand.md)」と「[Power BI サービスのデータセット モード](../connect-data/service-dataset-modes-understand.md)」をご覧ください。
 
 特定のデータセット モードのガイダンスについては、以下を参照してください。
 
@@ -83,7 +83,7 @@ Power BI のページ分割されたレポートのデザインを最適化す�
 
 ### <a name="capacity-settings"></a>容量の設定
 
-専用容量 (Power BI Premium (P SKU) または Power BI Embedded (A SKU、A4-A6) で利用可能) を使用する場合は、容量の設定を管理できます。 詳細については、「[Premium 容量を管理する](../admin/service-premium-capacity-manage.md)」を参照してください。 容量を最適化する方法のガイダンスについては、「[Premium 容量を最適化する](../admin/service-premium-capacity-optimize.md)」をご覧ください。
+容量 (Power BI Premium (P SKU) または Power BI Embedded (A SKU、A4-A6) で利用可能) を使用する場合は、容量の設定を管理できます。 詳細については、「[Premium 容量を管理する](../admin/service-premium-capacity-manage.md)」を参照してください。 容量を最適化する方法のガイダンスについては、「[Premium 容量を最適化する](../admin/service-premium-capacity-optimize.md)」をご覧ください。
 
 ### <a name="gateway-sizing"></a>ゲートウェイのサイズ設定
 

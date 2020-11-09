@@ -8,17 +8,26 @@ featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/19/2020
-ms.openlocfilehash: 16fcc18492b371accaaf3c447d7a88978051f8c3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/16/2020
+ms.openlocfilehash: 2c136f4d81a9cb1c1904c3a06b58271391c76c23
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859660"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297755"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Power BI Premium のページ分割されたレポートとは
 
-"*ページ分割されたレポート*" は、印刷または共有することを想定してデザインされています。 これらは、1 ページにちょうど収まるように設定されているため "*ページ分割された*" と呼ばれます。 テーブルが複数のページにまたがる場合でも、テーブルのすべてのデータが表示されます。 レポート ページのレイアウトを厳密に制御できるため、"*ピクセル単位で完璧*" と呼ばれることもあります。 Power BI レポート ビルダーは、ページ分割されたレポートを作成するためのスタンドアロン ツールです。 ページ分割されたレポートは、SQL Server Reporting Services の標準レポート形式である RDL レポート テクノロジに基づいています。 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+" *ページ分割されたレポート* " は、印刷または共有することを想定してデザインされています。 これらは、1 ページにちょうど収まるように設定されているため " *ページ分割された* " と呼ばれます。 テーブルが複数のページにまたがる場合でも、テーブルのすべてのデータが表示されます。 レポート ページのレイアウトを厳密に制御できるため、" *ピクセル単位で完璧* " と呼ばれることもあります。 Power BI Report Builder は、Power BI サービスのページ分割されたレポートを作成するためのスタンドアロン ツールです。 
+
+始める準備ができている場合は、次のクイック リンクをご利用ください。
+
+- [Microsoft ダウンロード センターから Power BI レポート ビルダーをインストールする](https://aka.ms/pbireportbuilder)
+- [チュートリアル: ページ分割されたレポートを作成する](paginated-reports-quickstart-aw.md)
+- [Power BI のページ分割されたレポートのサンプル](paginated-reports-samples.md)
+- Power BI Report Server 向けの Report Builder や SQL Server Reporting Services に関する情報をお探しですか。 代わりに「[Report Builder をインストールする - Power BI Report Server](../report-server/install-report-builder.md)」をご覧ください。
 
 ページ分割されたレポートには、多くのページが含まれる場合があります。 たとえば、このレポートは 563 ページです。 請求書ごとに 1 ページが使用されて、ヘッダーとフッターが繰り返されるように、各ページが正確にレイアウトされています。
 
@@ -58,7 +67,7 @@ ms.locfileid: "90859660"
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>マトリックス、グラフ、および自由形式レイアウトでページ分割されたレポートを作成する
 
-テーブル形式のレポートは、列ベースのデータで有効です。 クロス集計レポートやピボット テーブル レポートなどのマトリックス形式のレポートは、概要データに適しています。 グラフ形式のレポートはデータをグラフィカル形式で表示し、自由形式の "*リスト*" レポートは請求書などその他ほぼすべてのものを表示できます。 
+テーブル形式のレポートは、列ベースのデータで有効です。 クロス集計レポートやピボット テーブル レポートなどのマトリックス形式のレポートは、概要データに適しています。 グラフ形式のレポートはデータをグラフィカル形式で表示し、自由形式の " *リスト* " レポートは請求書などその他ほぼすべてのものを表示できます。 
   
 いずれかのレポート ビルダー ウィザードを使用して始めることができます。 テーブル、マトリックス、およびグラフのウィザードでは、埋め込みデータ ソース接続と埋め込みデータセットを作成する手順が示されます。 その後、フィールドをドラッグ アンド ドロップしてデータセット クエリを作成し、レイアウトとスタイルを選択して、レポートをカスタマイズします。  
   
@@ -72,7 +81,7 @@ ms.locfileid: "90859660"
 
 ## <a name="creating-a-report-definition"></a>レポート定義の作成
 
-ページ分割されたレポートを設計するとき、実際には "*レポート定義*" を作成します。 それにデータは含まれません。 それでは、データを取得する場所、取得するデータ、データを表示する方法を指定します。 レポートを実行すると、指定したレポート定義がレポート プロセッサによって取得されて、データが取得され、レポートのレイアウトと組み合わせることでレポートが生成されます。 レポート定義は、Power BI サービス `https://app.powerbi.com` のマイ ワークスペースまたは同僚と共有しているワークスペースにアップロードします。 レポート データ ソースがオンプレミスにある場合は、レポートをアップロードした後、ゲートウェイを経由するようにデータ ソース接続をリダイレクトします。 
+ページ分割されたレポートを設計するとき、実際には " *レポート定義* " を作成します。 それにデータは含まれません。 それでは、データを取得する場所、取得するデータ、データを表示する方法を指定します。 レポートを実行すると、指定したレポート定義がレポート プロセッサによって取得されて、データが取得され、レポートのレイアウトと組み合わせることでレポートが生成されます。 レポート定義は、Power BI サービス `https://app.powerbi.com` のマイ ワークスペースまたは同僚と共有しているワークスペースにアップロードします。 レポート データ ソースがオンプレミスにある場合は、レポートをアップロードした後、ゲートウェイを経由するようにデータ ソース接続をリダイレクトします。 
 
 ## <a name="view-your-paginated-report"></a>ページ分割されたレポートを表示する
 ページ分割されたレポートは、ブラウザーの Power BI サービスまたは Power BI モバイル アプリで表示します。 Power BI サービスから、HTML、MHTML、PDF、XML、CSV、TIFF、Word、Excel など、さまざまな形式にレポートをエクスポートできます。 他のユーザーと共有することもできます。  
@@ -98,5 +107,6 @@ Power BI サービスのページ分割されたレポートに対して自分�
 - [Microsoft ダウンロード センターから Power BI レポート ビルダーをインストールする](https://aka.ms/pbireportbuilder)
 - [チュートリアル: ページ分割されたレポートを作成する](paginated-reports-quickstart-aw.md)
 - [オンライン コース: Power BI のページ分割されたレポートの 1 日コース](../learning-catalog/paginated-reports-online-course.md)
+- [Power BI のページ分割されたレポートのサンプル](paginated-reports-samples.md)
 - [ページ分割されたレポートに直接データを入力する](paginated-reports-enter-data.md)
 - [チュートリアル: 顧客向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む](../developer/embedded/embed-paginated-reports-customers.md)

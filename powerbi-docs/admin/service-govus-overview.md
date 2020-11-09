@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2020
+ms.date: 10/30/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 45d89fe7a224d56e710765e533a7c075c24b8a66
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: fe4f9c54b45035cc22f2e582a75ba98d648c549d
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981506"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132369"
 ---
 # <a name="power-bi-for-us-government-customers"></a>米国政府顧客向け Power BI
 
@@ -38,7 +38,7 @@ Power BI US Government サブスクリプションを取得してユーザーに
 Microsoft 365 のデプロイ後に、Power BI Pro サブスクリプションを追加できます。 [米国政府組織の登録](service-govus-signup.md)に関するページの詳細なガイダンスに従って、Power BI Pro Government サービスを購入します。 Power BI を使用する必要があるすべてのユーザーに割り当てできる数のライセンスを購入した後、ライセンスを個々のユーザー アカウントに割り当てます。
 
 > [!IMPORTANT]
-> Power BI US Government は、"*無料*" ライセンスとして利用することはできません。 Government Community Cloud にアクセスするには、各ユーザーに *Pro* ライセンスが割り当てられている必要があります。 ユーザー アカウントに無料ライセンスが割り当てられている場合、そのユーザーは商用クラウドへのアクセスのみが許可されるため、認証とアクセスの問題が発生します。 Power BI Premium を購入している場合は、ユーザー アクセスを有効にするために Pro ライセンスを割り当てる必要はありません。  組織内のユーザーは、レポートが Premium 容量に発行されている限り、ユーザー間で共有されているレポートにアクセスできます。 ライセンスの種類の違いを確認するには、「[Power BI サービスのライセンスの種類別機能](../fundamentals/service-features-license-type.md)」を参照してください。
+> Power BI US Government は、" *無料* " ライセンスとして利用することはできません。 Government Community Cloud にアクセスするには、各ユーザーに *Pro* ライセンスが割り当てられている必要があります。 ユーザー アカウントに無料ライセンスが割り当てられている場合、そのユーザーは商用クラウドへのアクセスのみが許可されるため、認証とアクセスの問題が発生します。 Power BI Premium を購入している場合は、ユーザー アクセスを有効にするために Pro ライセンスを割り当てる必要はありません。  組織内のユーザーは、レポートが Premium 容量に発行されている限り、ユーザー間で共有されているレポートにアクセスできます。 ライセンスの種類の違いを確認するには、「[Power BI サービスのライセンスの種類別機能](../fundamentals/service-features-license-type.md)」を参照してください。
 >
 
 ## <a name="government-cloud-instances"></a>Government クラウドのインスタンス
@@ -74,25 +74,25 @@ Power BI の認証、ID、管理は、Microsoft 365 サービスへの接続に�
 
 |  目的 | 宛先 |
 | ---- | ----- |
-| バックエンド API | **GCC**: api.powerbigov.us |
-| | **GCC-High**: api.high.powerbigov.us |
-| | **DoD**: api.mil.powerbi.gov.us |
-| バックエンド API | **GCC**: *analysis.usgovcloudapi.net |
-| | **GCC High**: *.high.analysis.usgovcloudapi.net |
-| | **DoD**: *.mil.analysis.usgovcloudapi.net |
-| バックエンド API | **すべて**: *.pbidedicated.usgovcloudapi.net |
-| Content Delivery Network (CDN) | **GCC**: gov.content.powerapps.us |
-| | **GCC High**: high.content.powerapps.us |
-| | **DoD**: mil.content.powerapps.us |
-| Microsoft 365 の統合 | **GCC**:[ワールドワイド エンドポイント](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
-| | **GCC High**:[US Government GCC High エンドポイント](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
-| | **DoD**:[US Government DOD エンドポイント](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
-| ポータル |**GCC**: *.powerbigov.us |
-| | **GCC-High**: *.high.powerbigov.us |
-| | **DoD**: *.mil.powerbigov.us |
-| サービスの利用統計情報 | **すべて**: dc.services.visualstudio.us |
-| 情報メッセージ (省略可) | **すべて**: dynmsg.modpim.com |
-| NPS 調査 (省略可) | **すべて**: nps.onyx.azure.net |
+| バックエンド API | **GCC** : api.powerbigov.us |
+| | **GCC-High** : api.high.powerbigov.us |
+| | **DoD** : api.mil.powerbi.gov.us |
+| バックエンド API | **GCC** : *analysis.usgovcloudapi.net |
+| | **GCC High** : *.high.analysis.usgovcloudapi.net |
+| | **DoD** : *.mil.analysis.usgovcloudapi.net |
+| バックエンド API | **すべて** : *.pbidedicated.usgovcloudapi.net |
+| Content Delivery Network (CDN) | **GCC** : gov.content.powerapps.us |
+| | **GCC High** : high.content.powerapps.us |
+| | **DoD** : mil.content.powerapps.us |
+| Microsoft 365 の統合 | **GCC** : [ワールドワイド エンドポイント](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
+| | **GCC High** : [US Government GCC High エンドポイント](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
+| | **DoD** : [US Government DOD エンドポイント](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
+| ポータル |**GCC** : *.powerbigov.us |
+| | **GCC-High** : *.high.powerbigov.us |
+| | **DoD** : *.mil.powerbigov.us |
+| サービスの利用統計情報 | **すべて** : dc.services.visualstudio.us |
+| 情報メッセージ (省略可) | **すべて** : dynmsg.modpim.com |
+| NPS 調査 (省略可) | **すべて** : nps.onyx.azure.net |
 
 ## <a name="connect-government-and-global-azure-cloud-services"></a>行政機関向け Azure クラウド サービスとグローバルな Azure クラウド サービスに接続する
 
@@ -126,11 +126,11 @@ Government クラウドのお客様の要件に対応するため、Government �
 |[大規模なモデル](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
 |[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/service-dataflows-enhanced-compute-engine.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
 |[データフロー - 直接クエリ](../transform-model/service-dataflows-directquery.md) | Q4 2020 |Q4 2020|![利用不可](../media/no.png)|
-|[サービス中断の通知](service-premium-large-models.md)|Q4 2020 |Q4 2020|Q4 2020|
 |[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[テンプレート アプリ](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
+|[ストレージ持ち込み (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[QR コードの生成](../create-reports/service-create-qr-code-for-tile.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 
 <sup>1</sup> B2B コラボレーションは GCC で利用できますが、その環境でのライセンスを外部ユーザーに発行する必要があります。 商用クラウド ライセンスは GCC では無効です。 米国政府機関向け B2B コラボレーションの既知の制限に関する詳細については、「[Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)」(Azure Government とグローバル Azure の比較) を参照してください

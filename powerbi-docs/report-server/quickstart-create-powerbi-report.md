@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/24/2020
 ms.author: maggies
-ms.openlocfilehash: 73772b96929ffd91dc5a38634ab9a1a2e57286b1
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: b41ca7c8a85a544afea84e7f19a06f91dc85f376
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87251339"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045026"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI Report Server の Power BI レポートの作成
 Power BI サービス (https://powerbi.com) ) のクラウドで Power BI レポートを格納する場合と同じように、Power BI Report Server の Web ポータルでも Power BI レポートをオンプレミスで格納して管理することができます。 Power BI Desktop でレポートを作成および編集することができ、レポートを Web ポータルに公開することもできます。 その後、組織内のレポート閲覧者が、ブラウザーや、モバイル デバイスの Power BI モバイル アプリでレポートを表示できるようになります。
@@ -26,11 +26,11 @@ Power BI サービス (https://powerbi.com) ) のクラウドで Power BI レポ
 
 Power BI Desktop で Power BI レポートを既に作成している場合は、Power BI Report Server の Power BI レポートを作成する準備がほぼできています。 サーバーとアプリを常に同期させるため、Power BI レポート サーバー向けに最適化された Power BI Desktop のバージョンをインストールすることをお勧めします。同じコンピューターに Power BI Desktop の両方のバージョンを共存させることができます。
 
-1. レポート サーバーの Web ポータルで、**ダウンロード**の矢印、 **[Power BI Desktop]** の順に選択します。
+1. レポート サーバーの Web ポータルで、 **ダウンロード** の矢印、 **[Power BI Desktop]** の順に選択します。
 
     ![Web ポータルから Power BI Desktop をダウンロードする](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    あるいは、[Power BI Report Server](https://powerbi.microsoft.com/report-server/) ホーム ページに進み、 **[高度なダウンロード オプション]** を選択します。
+    あるいは、 [Power BI Report Server](https://powerbi.microsoft.com/report-server/) ホーム ページに進み、 **[高度なダウンロード オプション]** を選択します。
 
 2. ダウンロード センター ページで、 **[ダウンロード]** を選択します。
 
@@ -44,9 +44,9 @@ Power BI Desktop で Power BI レポートを既に作成している場合は�
 
 2. インストールの最後に、 **[Start Power BI Desktop now]** \(今すぐ Power BI Desktop を起動する\) をオンにします。
    
-    Power BI Desktop が自動的に起動し、すぐに使えます。 適切なバージョンでは、タイトル バーに **Power BI Desktop (2020 年 5 月)** と表示されます。
+    Power BI Desktop が自動的に起動し、すぐに使えます。 適切なバージョンでは、タイトル バーに **Power BI Desktop (2020 年 10 月)** と表示されます。
 
-    ![Power BI Desktop 2020 年 5 月](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
+    ![Power BI Desktop 2020 年 10 月](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
 
 3. Power BI Desktop に慣れていない場合は、[ようこそ] 画面のビデオをご覧になることをお勧めします。
    
@@ -58,7 +58,7 @@ Power BI Desktop で Power BI レポートを既に作成している場合は�
 1. [ようこそ] 画面で、 **[データの取得]** を選択します。
    
     または **[ホーム]** タブで **[データの取得]** を選択します。
-2. データ ソースを選びます (この例では **Analysis Services**)。
+2. データ ソースを選びます (この例では **Analysis Services** )。
    
     ![データ ソースの選択](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. **[サーバー]** を入力し、必要に応じて **[データベース]** も入力します。 **[ライブ接続]** が選択されていることを確認し、 **[OK]** をクリックします。
@@ -76,7 +76,7 @@ Power BI Desktop で Power BI レポートを既に作成している場合は�
 ![レポートのデザイン](media/quickstart-create-powerbi-report/report-server-create-funnel.png)
 
 1. **[視覚エフェクト]** で **[じょうごグラフ]** を選択します。
-2. カウントするフィールドを **[値]** にドラッグします。 それが数値フィールドでない場合、Power BI Desktop はそれを自動的に値の*カウント*にします。
+2. カウントするフィールドを **[値]** にドラッグします。 それが数値フィールドでない場合、Power BI Desktop はそれを自動的に値の *カウント* にします。
 3. フィールドを **[グループ]** のグループにドラッグします。
 
 詳細については、[Power BI レポートのデザイン](../create-reports/desktop-report-view.md)に関する記事を参照してください。

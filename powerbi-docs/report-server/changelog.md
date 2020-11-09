@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/08/2020
-ms.openlocfilehash: 3be821bfaad91ede2a7348e35c06850c81ddf1b4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/29/2020
+ms.openlocfilehash: 3173108abe6082c199cbf6ff1229ca57fde31064
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859246"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044781"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -21,6 +21,26 @@ ms.locfileid: "90859246"
 
 新機能の詳細については、「[Power BI レポート サーバーの新機能](whats-new.md)」を参照してください。 
 
+## <a name="october-2020"></a>2020 年 10 月
+- **Power BI Report Server**
+    - *バージョン:1.9.7604.41261 (ビルド 15.0.1104.239)、リリース日:2020 年 10 月 27 日*
+         - 機能
+            - Power BI Report Server で、拡張データセット メタデータのサポートが有効になりました。
+            - DirectQuery の Power BI レポートの接続を更新したり、最新の情報に更新したりできるようになりました (詳細については、[データ ソース接続文字列を変更する](./connect-data-source-apis.md)方法に関するページを参照してください)。
+        - セキュリティ更新プログラム
+        - バグの修正
+            - ユーザーが Power BI レポートでスケジュールを最新の情報に更新するように変更できない問題を解決しました。
+            - 資格情報の有効期限が切れたとき、レポートを管理しているユーザーが受け取る紛らわしいエラー メッセージを修正しました。
+            - 名前にピリオドが含まれるレポートのエクスポートで発生する問題を解決しました。
+            - Tablix のスクリーン リーダーの問題を解決しました。
+            - ログ ファイルが空になることがある問題を解決しました。
+            - [Power BI アカウントに接続] ダイアログが閉じない問題を解決しました
+            - 新しい HTML DOCTYPE を使用するように MHTML レンダラーを更新しました
+
+- **Power BI Desktop (Power BI Report Server 用に最適化)**
+   - *バージョン:2.86.961.0 (2020 年 10 月)、リリース日:2020 年 10 月 27 日* (新しいビルドと新しいバージョン)
+        - Power BI Report Server (2020 年 10 月) との接続に必要な変更が含まれます        
+   
 ## <a name="may-2020"></a>2020 年 5 月
 - **Power BI Report Server**
     - *バージョン:1.8.7485.35104 (ビルド 15.0.1103.234)、リリース日:2020 年 6 月 30 日*
@@ -103,7 +123,7 @@ ms.locfileid: "90859246"
     - *バージョン:1.6.7221.30698 (ビルド 15.0.1102.620)、リリース日:2019 年 10 月 9 日*
         - バグの修正
             - テキスト フィルターのカスタム ビジュアルの修正。
-            - ドロップ ダウン スライサーのパフォーマンスの修正。
+            - ドロップダウン スライサーのパフォーマンスの修正。
             - テレメトリからの PII の削除の修正。
           - URL を大文字と小文字を区別しないようにする修正。
           
@@ -177,7 +197,7 @@ ms.locfileid: "90859246"
                 - "ファイルまたはアセンブリ Microsoft.OData.Core.NetFX35.V7 を読み込むことができませんでした" というエラーで OData フィードのデータ更新が失敗する問題の修正
 
 - **Power BI Report Server**            
-    - "*バージョン 1.4.6969.7395 (ビルド 15.0.1102.235)、リリース日: 2019 年 1 月 30 日*"
+    - " *バージョン 1.4.6969.7395 (ビルド 15.0.1102.235)、リリース日: 2019 年 1 月 30 日* "
         - バグの修正
             - Power BI レポート
                 - 直接クエリを使う場合の基本資格情報に関する問題の修正
@@ -210,7 +230,7 @@ ms.locfileid: "90859246"
             - Power BI Mobile アプリ内でアイドル状態になると、ビジュアルによって問題が表示されます。
 
 - **Power BI Desktop (Power BI Report Server 用に最適化)**
-    - *バージョン:2.65.5313.1562 (2019 年 1 月)、リリース日:2019 年 1 月 30 日*"
+    - *バージョン:2.65.5313.1562 (2019 年 1 月)、リリース日:2019 年 1 月 30 日* "
         - Power BI Report Server のアンインストール後もショートカットとピン留めされたアイコンが残る
         - スタート メニューに Power BI Report Server をピン留めすると黒のアイコン上に黒のテキストが表示される問題の修正
 
@@ -225,7 +245,7 @@ ms.locfileid: "90859246"
 - **Power BI Report Server**
     - *バージョン 1.3.6816.37243 (ビルド 15.0.2.557)、リリース日:2018 年 8 月 30 日*
         - バグの修正
-            - PBI Report Server の以前のバージョンからサーバーをアップグレードしたときに、バインドのリダイレクトが更新されずに以下が表示された問題を修正しました。      
+            - PBI Report Server の以前のバージョンからサーバーをアップグレードしたときに、バインドのリダイレクトが更新されずに次のメッセージが表示された問題を修正しました。      
             *`
             Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
              `*

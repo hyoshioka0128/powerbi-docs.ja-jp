@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 533dba01bb975d774741643771415aaafa8f155c
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 94ffbb508fea27e8b80f137539b6120e4c094030
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092293"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916730"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Power BI のページ分割されたレポートの 1 日コース
 
@@ -105,7 +105,7 @@ ms.locfileid: "89092293"
 >
 > Power BI Desktop ファイルをワークスペースに発行するには、Power BI にサインインする必要があります。 この発行により、レポート データソースとして使用されるデータセットが作成されます。 データセットをレポート データソースとして使用する場合は、Power BI Pro ライセンスも Power BI Premium サブスクリプションも必要ありません。
 >
-> ラボ タスクによっては、自分のページ分割されたレポートをワークスペースに発行する必要があります。 ページ分割されたレポートを開くことができるのは、ページ分割されたレポート ワークロードが有効になっている[専用の容量](../admin/service-premium-what-is.md#dedicated-capacities)内のワークスペースに保存されている場合に限られます。 適切なワークスペースへのアクセス権を持っていない場合は、代わりに、レポート発行を実演するビデオを視聴できるリンクがラボで提供されます。
+> ラボ タスクによっては、自分のページ分割されたレポートをワークスペースに発行する必要があります。 ページ分割されたレポートを開くことができるのは、ページ分割されたレポート ワークロードが有効になっている[容量](../admin/service-premium-what-is.md#dedicated-capacities)内のワークスペースに保存されている場合に限られます。 適切なワークスペースへのアクセス権を持っていない場合は、代わりに、レポート発行を実演するビデオを視聴できるリンクがラボで提供されます。
 
 ## <a name="instructor-kit"></a>インストラクター キット
 

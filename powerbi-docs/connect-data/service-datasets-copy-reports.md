@@ -6,22 +6,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 10/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86c663e7b9ba035af6592dc10972d868344df7f7
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 4b9573d0a24efdbb4c0b5a4130f973a0dfac0f10
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633210"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132323"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>他のワークスペースからレポートをコピーする
 
 ワークスペースまたはアプリで気に入ったレポートを見つけたら、それをコピーし、別のワークスペースに保存できます。 これで、そのレポートのコピーを変更し、ビジュアルや他の要素を追加または削除することができるようになります。 データ モデルを作成する必要はありません。 既に作成されています。 また、一から始めるより、既存のレポートを変更するほうがずっと簡単です。 ただし、ワークスペースからアプリを作成する場合、レポートのコピーをアプリに発行できないことがあります。 詳細については、記事「ワークスペース全体でデータセットを使用する」の「[考慮事項と制限事項](service-datasets-across-workspaces.md#considerations-and-limitations)」を参照してください。
 
-> [!NOTE]
-> コピーを作成するには、元のレポートが Premium 容量内のワークスペースにある場合でも、Pro ライセンスが必要です。
+## <a name="prerequisites"></a>前提条件
+
+- レポートをコピーするには、元のレポートが Premium 容量内のワークスペースにある場合でも、Pro ライセンスが必要です。
+- レポートをコピーするには、あるいは別のワークスペース内のデータセットに基づいてレポートを作成するには、そのデータセットに対するビルドのアクセス許可が必要です。 元のワークスペース内のデータセットについては、管理者、メンバー、共同作成者のロールを持つユーザーに対して、そのワークスペース ロールを通じてビルドのアクセス許可が自動的に付与されます。 詳細については、「[新しいワークスペースのロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)」を参照してください。
 
 ## <a name="save-a-copy-of-a-report-in-a-workspace"></a>レポートのコピーをワークスペースに保存する
 
@@ -33,7 +35,7 @@ ms.locfileid: "91633210"
 
     ![レポートのコピーを作成する](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    **[コピーの保存]** アイコンが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、[ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。 ワークスペースにアクセスできる場合でも、データセットに対するビルド アクセス許可が必要です。
+    **[コピーの保存]** アイコンが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、 [ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。 ワークスペースにアクセスできる場合でも、データセットに対するビルド アクセス許可が必要です。
 
 3. **[このレポートのコピーを保存します]** で、レポートに名前を付けて保存先のワークスペースを選択します。
 
@@ -58,7 +60,7 @@ ms.locfileid: "91633210"
 
     ![レポートのコピーを保存する](media/service-datasets-copy-reports/power-bi-save-copy.png)
 
-    **[コピーの保存]** オプションが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、[ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。
+    **[コピーの保存]** オプションが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、 [ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。
 
 3. レポートに名前を付けて、 **[保存]** を選択します。
 
@@ -92,11 +94,11 @@ ms.locfileid: "91633210"
 
 ワークスペース内のレポートおよびそれに関連付けられている共有データセットが不要になったと判断する場合があります。
 
-1. レポートを削除します。 ワークスペース内のレポートの一覧で、**削除**アイコンを選択します。
+1. レポートを削除します。 ワークスペース内のレポートの一覧で、 **削除** アイコンを選択します。
 
     ![レポートの削除アイコン](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
 
-2. データセットの一覧で、共有データセットには**削除**アイコンがないことがわかります。 ページを最新の情報に更新するか、別のページに移動して戻ります。 データセットがなくなります。 そうでない場合は、 **[関連の表示]** を確認してください。 ワークスペース内の別のテーブルに関連している可能性があります。
+2. データセットの一覧で、共有データセットには **削除** アイコンがないことがわかります。 ページを最新の情報に更新するか、別のページに移動して戻ります。 データセットがなくなります。 そうでない場合は、 **[関連の表示]** を確認してください。 ワークスペース内の別のテーブルに関連している可能性があります。
 
     ![データセットと [関連の表示] オプションを表示する関連テーブルの確認のスクリーンショット。](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
 

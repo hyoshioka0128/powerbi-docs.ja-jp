@@ -6,71 +6,110 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 09/01/2020
+ms.date: 10/26/2020
 ms.author: maggies
-ms.openlocfilehash: 69aa11216624416f005dcb2e47d1b818204ae7ec
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 165d38c718377ff7e47442cdf0fe67173b610bd8
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286730"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044955"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - Power BI Report Server
 
 
-PowerShell を使用して必要な API を操作することにより、Power BI Report Server でホストされている Power BI レポートのデータ ソース接続文字列を変更できます。 
+Power BI Report Server の 2020 年 10 月リリースから、DirectQuery および最新の情報への更新のために Power BI レポートの接続を更新する機能が有効になります。
 
-> [!NOTE]
-> 現在、この機能は DirectQuery に対してのみ機能します。 インポートとデータ更新のサポートが予定されています。
+> [!IMPORTANT]
+> これは、以前のリリースでのこの設定方法に対する破壊的変更でもあります。 Power BI Report Server の 2020 年 10 月より前のバージョンを使用している場合は、「[PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - 2020 年 10 月より前の Power BI Report Server](connect-data-source-apis-pre-oct-2020.md)」を参照してください
 
-1. Power BI Report Server PowerShell コマンドレットをインストールします。 コマンドレットとインストール手順は [https://github.com/Microsoft/ReportingServicesTools](https://github.com/Microsoft/ReportingServicesTools) に記載されています。 
+## <a name="prerequisites"></a>前提条件:
+- [Power BI Report Server と Power BI Report Server 向けに最適化された Power BI Desktop](https://powerbi.microsoft.com/report-server/) の 2020 年 10 月リリースをダウンロードしてください。
+- **拡張データセット メタデータ** が有効になっている、Report Server 向けに最適化された Power BI Desktop の 2020 年 10 月リリースで保存されたレポート。
+- パラメーター化された接続を使用するレポート。 発行後に更新できるのは、パラメーター化された接続とデータベースを使用するレポートのみです。
+- この例では、Reporting Services PowerShell ツールを使用します。 新しい REST API を使用して、同じことを実現できます。
 
-    次のコマンドを使用して、[PowerShell ギャラリー](https://www.powershellgallery.com/packages/ReportingServicesTools/)から `ReportingServicesTools` モジュールを直接インストールします。
+## <a name="create-a-report-with-parameterized-connections"></a>パラメーター化された接続を使用してレポートを作成する
+    
+1. サーバーへの SQL Server 接続を作成します。 下の例では、localhost の ReportServer という名前のデータベースに接続し、ExecutionLog からデータをプルしています。
 
-    ```powershell
-    Install-Module ReportingServicesTools
+    :::image type="content" source="media/connect-data-source-apis/sql-server-connect-database.png" alt-text="SQL Server データベースに接続する":::
+
+    この時点での M クエリは次のようになります。
+
+    ```
+    let
+        Source = Sql.Database("localhost", "ReportServer"),
+        dbo_ExecutionLog3 = Source{[Schema="dbo",Item="ExecutionLog3"]}[Data]
+    in
+        dbo_ExecutionLog3
     ```
 
-2. PowerShell コマンドレットを使用して、Power BI ファイルの既存のデータ ソース情報を取得します。
+2. Power Query エディターのリボンで **[パラメーターの管理]** を選択します。
+
+    :::image type="content" source="media/connect-data-source-apis/power-query-manage-parameters.png" alt-text="[パラメーターの管理] を選択する":::
+
+1.  サーバー名とデータベース名のパラメーターを作成します。
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-parameters.png" alt-text="パラメーターの管理、サーバー名とデータベース名を設定する。":::
+
+
+3. 最初の接続のクエリを編集し、データベースとサーバー名をマップします。
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-map-database-server.png" alt-text="サーバーとデータベース名をマップする":::
+
+    クエリは次のようになります。
+
+    ```
+    let
+        Source = Sql.Database(ServerName, Databasename),
+        dbo_ExecutionLog3 = Source{[Schema="dbo",Item="ExecutionLog3"]}[Data]
+    in
+        dbo_ExecutionLog3
+    ```
+    
+    4. そのレポートをサーバーに発行します。 この例では、レポートの名前は executionlogparameter です。 次の図は、データソース管理ページの例です。
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-data-source-credentials.png" alt-text="データソース管理ページ。":::
+
+## <a name="update-parameters-using-the-powershell-tools"></a>PowerShell ツールを使用してパラメーターを更新する
+
+1. PowerShell を開き、[https://github.com/microsoft/ReportingServicesTools](https://github.com/microsoft/ReportingServicesTools) の説明に従って、最新の Reporting Services ツールをインストールします。
+    
+2.  レポートのパラメーターを取得するには、次の PowerShell 呼び出しを使用して、新しい REST DataModelParameters API を使用します。
 
     ```powershell
-    Get-RsRestItemDataSource -RsItem '/MyPbixReport'
+    Get-RsRestItemDataModelParameters '/executionlogparameter'
+
+        Name         Value
+        ----         -----
+        ServerName   localhost
+        Databasename ReportServer
     ```
 
-    Power BI レポートに含まれている最初のデータ ソースの情報を表示するには: 
+3. この呼び出しの結果を変数に保存します。
 
     ```powershell
-    $dataSources[0]
+    $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
     ```
 
-3. 必要に応じて、接続情報と資格情報を更新します。 接続文字列とデータ ソースを更新する際に保存された資格情報を使用する場合は、そのアカウントのパスワードを入力する必要があります。 
-
-    データ ソース接続文字列を更新するには:
+4. 変更する必要がある値で、この変数を更新します。
+5. この呼び出しの結果を変数に保存します。
 
     ```powershell
-    $dataSources[0].ConnectionString = 'data source=myCatalogServer;initial catalog=ReportServer;persist security info=False' 
+    $parameters[0].Value = 'myproductionserver'
+    $parameters[1].Value = 'myproductiondatabase'
     ```
 
-    データソースの資格情報の種類を変更するには:
+6. 更新された値でコマンドレット `Set-RsRestItemDataModelParameters` を使用してサーバーの値を更新できます。
 
     ```powershell
-    $dataSources[0].DataModelDataSource.AuthType = 'Integrated'
+    Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
     ```
 
-    データ ソースのユーザー名/パスワードを変更するには:
+7. パラメーターが更新されると、そのパラメーターにバインドされているすべてのデータ ソースがサーバーによって更新されます。 **[データ ソースの編集]** ダイアログ ボックスに戻ると、更新されたサーバーとデータベースに対して資格情報を設定できるはずです。
 
-    ```powershell
-    $dataSources[0].DataModelDataSource.Username = 'domain\user'
-    ```
-    ```powershell
-    $dataSources[0].DataModelDataSource.Secret = 'password'
-    ```
-
-4. 更新した資格情報を、サーバーに保存し直します。
-
-    ```powershell
-    Set-RsRestItemDataSource -RsItem '/MyPbixReport' -RsItemType 'PowerBIReport' -DataSources $dataSources
-    ```
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-executionlogparameter-dialog.png" alt-text="更新されたサーバーとデータベースに対して資格情報を設定する。":::
 
 ## <a name="next-steps"></a>次のステップ
 

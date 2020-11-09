@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: d97c1a4be226d81ca20ef2f31a1f535174cb6c5b
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 82237286fa4d6ac3713ca6674a541b7d59c20a49
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599120"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915902"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium のよく寄せられる質問
 
@@ -32,7 +32,7 @@ Power BI Premium は、以下を含む容量ベースのプランです。
 * 一貫性のある一連の機能を利用し、埋め込み分析の最新機能にアクセスできる 1 つの API サーフェス。
 
 **Power BI Premium は何を実行しますか?またどのような機能がありますか?**  
-Power BI Premium は、各組織専用に割り当てられている Power BI サービスの容量で構成されます。 この容量は、Microsoft が完全に管理している専用ハードウェアでサポートされています。 組織は専用の容量を幅広く適用するか、ユーザー数、ワークロードのニーズなどの要因に基づいて割り当てられたワークスペースに割り当てることができます。また、要件に変化に応じてスケールアップまたはスケールダウンすることができます。
+Power BI Premium は、各組織専用に割り当てられている Power BI サービスの容量で構成されます。 この容量は、Microsoft が完全に管理している専用ハードウェアでサポートされています。 組織は容量を幅広く適用するか、ユーザー数、ワークロードのニーズなどの要因に基づいて割り当てられたワークスペースに割り当てることができます。また、要件に変化に応じてスケールアップまたはスケールダウンすることができます。
 
 **Power BI Pro と Power BI Premium の違いは何ですか?**  
 Power BI Premium は容量ベースのライセンスですが、Power BI Pro はユーザーベースのライセンスです。 Power BI Pro は、レポートの公開や、ダッシュボードの共有のほか、ワークスペースで仕事仲間と共同作業したり、その他の関連アクティビティを行ったりするユーザーを対象としています。たとえば、次の作業を行うことができます。

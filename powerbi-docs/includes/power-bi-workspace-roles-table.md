@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 10/21/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 87c35df25a17090f1788abbeb979afab3ad9d6a9
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 3828a11f4b4447f6484e121fec84fb44d702c86a
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462225"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93136315"
 ---
 |機能   | 管理者  | メンバー  | 共同作成者  | Viewer |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ ms.locfileid: "92462225"
 | 他の管理者を含む、ユーザーの追加と削除。  |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | 共同作成者にこのワークスペースのアプリの更新を許可する  |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | メンバーやその他の下位のアクセス許可を持つユーザーの追加。  |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
-| アプリの発行とアクセス許可の変更 |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
+| アプリのアクセス許可を発行、発行取り消し、変更する |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | アプリを更新する。 |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |  許可されている場合 <sup>1</sup>  |   |
 | 項目を共有する、またはアプリを共有する。<sup>2</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | 他のユーザーに項目の再共有を許可する。<sup>2</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |

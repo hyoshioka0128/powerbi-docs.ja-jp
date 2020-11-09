@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 09/15/2020
-ms.openlocfilehash: 0a90c03c516b64e5a0a81c6a2bbdf0049d48b76f
-ms.sourcegitcommit: be0971576a3f1af7a064371c9cf27dd462dfca82
+ms.openlocfilehash: 929a79d7e940f729b90d0cdf6d3ebd905a621f6a
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92080256"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916822"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>配置パイプラインのトラブルシューティング
 
@@ -42,7 +42,7 @@ Power BI の配置パイプラインがどのようなものであるかを理�
 
 ### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>ワークスペースにパイプライン ステージ タグが表示されない理由
 
-デプロイ パイプラインには、パイプラインに割り当てられているワークスペースのパイプライン ステージ タグが表示されます。 "*開発*" および "*テスト*" ステージのタグは常に表示されます。 ただし、[パイプラインへのアクセス権](deployment-pipelines-process.md#user-with-pipeline-access)を持っている場合、または[ワークスペース管理者](deployment-pipelines-process.md#workspace-admin)である場合にのみ、"*運用環境*" タグが表示されます。
+デプロイ パイプラインには、パイプラインに割り当てられているワークスペースのパイプライン ステージ タグが表示されます。 " *開発* " および " *テスト* " ステージのタグは常に表示されます。 ただし、 [パイプラインへのアクセス権](deployment-pipelines-process.md#user-with-pipeline-access)を持っている場合、または [ワークスペース管理者](deployment-pipelines-process.md#workspace-admin)である場合にのみ、" *運用環境* " タグが表示されます。
 
 > [!div class="mx-imgBorder"]
 > ![運用環境パイプライン ワークスペースの運用環境タグのスクリーンショット。](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -55,7 +55,7 @@ Power BI の配置パイプラインがどのようなものであるかを理�
 
 ### <a name="what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline"></a>パイプラインのワークスペースには、どのような種類の容量を割り当てることができますか。
 
-パイプラインを機能させるには、配置パイプライン内のすべてのワークスペースが専用の容量内に存在する必要があります。 ただし、パイプライン内の異なるワークスペースに対して、異なる容量を使用できます。 また、同じパイプライン内の異なるワークスペースに対して、異なる容量の種類を使用することもできます。
+パイプラインを機能させるには、配置パイプライン内のすべてのワークスペースが容量内に存在する必要があります。 ただし、パイプライン内の異なるワークスペースに対して、異なる容量を使用できます。 また、同じパイプライン内の異なるワークスペースに対して、異なる容量の種類を使用することもできます。
 
 開発とテストでは、ユーザーごとの Pro Power BI アカウントと共に A または EM 容量を使用できます。
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/07/2020
 ms.author: davidi
-ms.openlocfilehash: 918b9a98d66a1c739421433d35f593dc74d19773
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: ae6047950256a783172ef871c2bd58dc15ff033a
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981483"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297594"
 ---
 # <a name="power-bi-data-sources"></a>Power BI データ ソース
 
@@ -64,6 +64,7 @@ ms.locfileid: "91981483"
 | Google Analytics | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Google BigQuery | はい | はい | はい | いいえ | いいえ | はい |
 | Hadoop ファイル (HDFS) | はい | いいえ | いいえ | いいえ | いいえ | いいえ |
+| Hive LLAP | はい | はい | はい | はい | いいえ | いいえ |
 | HDInsight 対話型クエリ | はい | はい | はい | いいえ | いいえ | いいえ |
 | IBM DB2 | はい | はい | はい | はい | いいえ | はい |
 | IBM Informix データベース | はい | はい | いいえ | はい | いいえ | いいえ |
@@ -109,8 +110,8 @@ ms.locfileid: "91981483"
 | Salesforce レポート | はい | はい | いいえ | いいえ | いいえ | はい |
 | SAP Business Warehouse メッセージ サーバー | はい | はい | はい | はい | はい | はい |
 | SAP Business Warehouse サーバー | はい | はい | はい | はい | はい | はい |
-| SAP HANA | はい | はい | はい | はい | はい | はい |
-| SharePoint フォルダー | はい | はい | いいえ | はい | いいえ <sup>4</sup> | Yes |
+| SAP HANA | はい | はい | はい | はい | はい | Yes |
+| SharePoint フォルダー | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | SharePoint リスト | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | SharePoint Online リスト | はい | はい | いいえ | はい | いいえ | はい |
 | Smartsheet | はい | はい | いいえ | いいえ | いいえ | はい |
@@ -125,11 +126,11 @@ ms.locfileid: "91981483"
 | Sybase | はい | はい | いいえ | はい | はい | はい |
 | TeamDesk | はい | はい | いいえ | はい | いいえ | いいえ |
 | Tenforce | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Teradata | はい | はい | はい | はい | はい | はい |
+| Teradata | はい | はい | はい | はい | はい | Yes |
 | テキスト/CSV | はい | はい | いいえ | はい | いいえ <sup>4</sup> | Yes |
 | Twilio | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | tyGraph | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Vertica | はい | はい | はい | はい | はい | はい |
+| Vertica | はい | はい | はい | はい | はい | Yes |
 | Web | はい | はい | いいえ | はい | はい <sup>6</sup> | Yes |
 | Webtrends | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Workforce Dimensions | はい | はい | いいえ | はい | いいえ | いいえ |

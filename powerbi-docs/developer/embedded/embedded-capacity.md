@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/17/2020
-ms.openlocfilehash: 762cc2d3d170f5418616da46806f8a445490ee8d
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 4102ed7307c9b7be40fb682befc4056094cbe6ad
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635219"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916937"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Power BI Embedded の分析の容量と SKU
 
-運用環境に移行する場合、Power BI Embedded 分析には、埋め込み Power BI コンテンツを公開するための専用容量 (*A*、*EM*、または *P* SKU) が必要です。
+運用環境に移行する場合、Power BI Embedded 分析には、埋め込み Power BI コンテンツを公開するための容量 ( *A* 、 *EM* 、または *P* SKU) が必要です。
 
 容量とは、排他的使用のために予約されたリソースの専用セットです。 これにより、ユーザーごとのライセンスを購入しなくても、ユーザーに対してダッシュボード、レポート、データセットを公開できます。 また、コンテンツに対して信頼性の高い、一貫性のあるパフォーマンスも提供されます。
 
@@ -54,11 +54,11 @@ Power BI Premium は SaaS 製品であり、ユーザーはモバイル アプ�
 
 ### <a name="power-bi-embedded-skus"></a>Power BI Embedded の SKU
 
-Power BI Embedded には、[*A* SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) が付属しています。
+Power BI Embedded には、 [*A* SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) が付属しています。
 
 ### <a name="power-bi-premium-skus"></a>Power BI Premium の SKU
 
-Power BI Premium には、*P* および *EM* の 2 つの SKU が用意されています。
+Power BI Premium には、 *P* および *EM* の 2 つの SKU が用意されています。
 * [*P* および *EM* SKU の違いを理解する](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
 * [Premium SKU を購入する](../../admin/service-admin-premium-purchase.md)
 
@@ -68,7 +68,7 @@ Power BI Premium には、*P* および *EM* の 2 つの SKU が用意されて
 
 この表では、カスタム アプリは、埋め込み分析を使用して作成された Web アプリを指します。 (JavaScript、.NET SDK、または REST API を使用して) カスタム Web アプリに開発者として埋め込む場合、UX を制御およびカスタマイズすることができます。 この機能は、Power BI サービスや Power BI モバイルなどの他の埋め込みオプションを使用する場合は使用できません。
 
-| 通信の種類 | Azure   | Office          |
+| シナリオ | Azure   | Office          |
 |----------|---------|-----------------|
 |          | (A SKU) | (P および EM SKU) |
 |[顧客向けに埋め込む](embed-sample-for-customers.md)</br>(アプリ所有データ)     |✔        |✔        |

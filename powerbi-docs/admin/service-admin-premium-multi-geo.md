@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/26/2019
+ms.date: 10/29/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 5d8841c35b2086f9a7e452cdcb4aa9a0fc4c16bd
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 899dc5092ac86e08d552758e74dfabd8b373f5c0
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599650"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044716"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premium の Multi-Geo のサポートを構成する
 
@@ -37,7 +37,7 @@ Multi-Geo は、Power BI Embedded でも使用できるようになりました�
 
 ## <a name="enable-and-configure"></a>有効化と構成
 
-新しい容量の場合、Multi-Geo を有効にするには、ドロップダウンから既定のリージョン以外のリージョンを選択します。  利用可能な容量ごとに、**米国中西部**など、現在配置されているリージョンが表示されます。
+新しい容量の場合、Multi-Geo を有効にするには、ドロップダウンから既定のリージョン以外のリージョンを選択します。  利用可能な容量ごとに、 **米国中西部** など、現在配置されているリージョンが表示されます。
 
 ![容量のサイズ: リージョンを選択します。 Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
 
@@ -90,14 +90,16 @@ Multi-Geo を有効にすると、次の項目は Premium リージョンに格�
 - ワークスペースが存在する現在の容量を削除します。  その結果、ワークスペースはホーム リージョンの共有容量に戻されます。
 - 個々のワークスペースを、ホーム テナントにある Premium 容量に戻します。
 
+大規模なストレージ形式のデータセットは、それが作成されたリージョンから移動しないでください。 大規模な形式のデータセットに基づくレポートを使用すると、データセットを読み込むことができず、" *モデルを読み込むことができません* " エラーが返されます。 大規模なストレージ形式のデータセットを元のリージョンに戻し、再び使用できるようにします。
+
 ## <a name="limitations-and-considerations"></a>制限と考慮事項
 
 - データ転送を開始する前に、リージョン間で開始されるすべての動作が、会社と政府のコンプライアンス要件をすべて満たしていることを確認してください。
 - リモート リージョンに格納されているキャッシュ クエリは、保存時はそのリージョン内に残ります。 ただし、転送中の他のデータは、複数の地域間を行き来する可能性があります。
 - Multi-Geo 環境でデータを別のリージョンに移行する場合、ソース データは、データが移行された元のリージョンに最大 30 日間残る可能性があります。 その間、エンド ユーザーはそのデータにアクセスできません。 30 日の期間中に、そのデータはこのリージョンから削除され、破棄されます。
 - インポートされたデータ モデルのクエリ テキストとクエリ結果のトラフィックは、ホーム リージョンを通過しません。 レポートのメタデータは引き続きリモート リージョンからのものであり、特定の DNS ルーティングの状態ではリージョンからトラフィックを受け取る可能性があります。 
-
 - [データフロー](../transform-model/service-dataflows-overview.md)の機能は、この時点では Multi-GEO でサポートされていません。
+- 大規模なストレージ形式のデータセットをそれが作成されたリージョンから移動すると、レポートでデータセットを読み込めなくなります。 大規模なストレージのデータセットを使用できるようにするには元のリージョンに戻します。 
 
 ## <a name="next-steps"></a>次のステップ
 

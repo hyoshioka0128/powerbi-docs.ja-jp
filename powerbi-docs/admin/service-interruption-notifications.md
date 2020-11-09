@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/25/2020
 ms.author: kfollis
-ms.openlocfilehash: 20fb1f117432d5c36bfe0c536bc0803871134c95
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 8b9c10c8b3faa87cfc19c3c1d8f87a36de0307dd
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981529"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916132"
 ---
 # <a name="service-interruption-notifications"></a>サービス中断の通知
 
@@ -21,16 +21,16 @@ ms.locfileid: "91981529"
 
 ![通知用電子メールの更新](media/service-interruption-notifications/refresh-notification-email.png)
 
-現時点では、次の_信頼性のシナリオ_について電子メールを送信しています。
+現時点では、次の _信頼性のシナリオ_ について電子メールを送信しています。
 
 - レポートを開くの信頼性
 - モデルの更新の信頼性
 - クエリの更新の信頼性
 
-通知は、レポートの表示、データセットの更新、クエリの実行などの操作で "_長い待ち時間_" が生じると送信されます。 インシデントが解決されると、フォローアップの電子メールを受信します。
+通知は、レポートの表示、データセットの更新、クエリの実行などの操作で " _長い待ち時間_ " が生じると送信されます。 インシデントが解決されると、フォローアップの電子メールを受信します。
 
 > [!NOTE]
-> 現在、この機能は Power BI Premium の専用容量に対してのみ使用できます。 共有や埋め込み容量には使用できません。
+> 現在、この機能は Power BI Premium の容量に対してのみ使用できます。 共有や埋め込み容量には使用できません。
 
 ## <a name="capacity-and-reliability-notifications"></a>容量と信頼性に関する通知
 

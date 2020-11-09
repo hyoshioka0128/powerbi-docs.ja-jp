@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 86ac6bebf6373f14ac343721a8594ee9f45b0e89
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 85622b457d1c2eda0af51e0c7190d2691c259a82
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746196"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916500"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Power BI Embedded に関してよく寄せられる質問
 
@@ -117,7 +117,7 @@ Power BI では、組織のアカウントでサインアップすることが�
 * [REST API](/rest/api/power-bi-embedded/) 
 * [PowerShell コマンドレット](/powershell/module/azurerm.powerbiembedded/)
 
-### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>PBI Embedded ソリューションでは、PBI Embedded 専用容量はどのような役割を果たしますか?
+### <a name="what-is-the-pbi-embedded-capacity-role-in-a-pbi-embedded-solution"></a>PBI Embedded ソリューションでは、PBI Embedded 容量はどのような役割を果たしますか?
 
 [ソリューションを運用に昇格させる](embed-sample-for-customers.md#move-to-production)には、アプリケーションで使う Power BI コンテンツ (ワークスペース) を、Power BI Embedded (A SKU) 容量に割り当てる必要があります。
 
@@ -160,7 +160,7 @@ var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAss
 
 ### <a name="what-object-id-is-the-service-principal-object-id"></a>サービス プリンシパル オブジェクト ID はどのようなオブジェクト ID ですか?
 
-登録済みアプリのメイン画面の "*オブジェクト ID*" が、アプリのオブジェクト ID です。
+登録済みアプリのメイン画面の " *オブジェクト ID* " が、アプリのオブジェクト ID です。
 
 *[ローカル ディレクトリでのマネージド アプリケーション] > [プロパティ]* セクションで示されているオブジェクト ID が、使用する必要のあるサービス プリンシパル オブジェクト ID です。 このオブジェクト ID は、操作に対するサービス プリンシパルを参照するため、またはサービス プリンシパル オブジェクト ID を変更するためのものです。 ワークスペースに対する管理者としてのサービス プリンシパルの割り当てなどです。
 
@@ -176,7 +176,7 @@ PowerBI.com を利用し、Power BI Embedded 容量のワークスペースの�
 
 ### <a name="what-content-pack-data-types-can-you-embed"></a>埋め込むことができるコンテンツ パック データの種類は何ですか?
 
-コンテンツ パック データセットから構築された**ダッシュボード**と**タイル**を埋め込むことは "*できません*"。 ただし、コンテンツ パック データセットから構築された**レポート**を埋め込むことは "*できます*"。
+コンテンツ パック データセットから構築された **ダッシュボード** と **タイル** を埋め込むことは " *できません* "。 ただし、コンテンツ パック データセットから構築された **レポート** を埋め込むことは " *できます* "。
 
 ### <a name="what-is-the-difference-between-using-row-level-security-rls-vs-javascript-filters"></a>行レベルセキュリティ (RLS) の使用とJavaScript のフィルターの違いは何ですか?
 
@@ -194,7 +194,7 @@ Power BI で[サービス プリンシパル](embed-service-principal.md)を使�
 
 サービス プリンシパルは、対象セキュリティ グループの Power BI テナントのすべての設定のアクセス許可を継承します。 アクセス許可を制限するには、サービス プリンシパル専用のセキュリティ グループを作成し、関連する有効な Power BI 設定の **[特定のセキュリティ グループを除く]** リストに追加します。
 
-このような状況は、新しいワークスペースに**管理者**としてサービス プリンシパルを追加するときに問題となります。 このタスクは [API](/rest/api/power-bi/groups/addgroupuser) または Power BI サービスを使用して管理できます。
+このような状況は、新しいワークスペースに **管理者** としてサービス プリンシパルを追加するときに問題となります。 このタスクは [API](/rest/api/power-bi/groups/addgroupuser) または Power BI サービスを使用して管理できます。
 
 ### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>アプリケーション ID とサービス プリンシパル オブジェクト ID はそれぞれどのような状況で使用しますか?
 
@@ -270,24 +270,24 @@ Power BI Embedded は[国内クラウド](embed-sample-for-customers-national-cl
 
 ### <a name="what-is-power-bi-workspace-collection"></a>Power BI ワークスペース コレクションとは何ですか?
 
-**Power BI ワークスペース コレクション** (**Power BI Embedded** バージョン 1) は、**Power BI ワークスペース コレクション** Azure リソースに基づくソリューションです。 このソリューションを利用すると、**Power BI ワークスペース コレクション** ソリューションの下にある Power BI コンテンツ、専用 API、および Power BI に対してアプリケーションを認証するワークスペース コレクション キーを使って、顧客向けの **Power BI Embedded** アプリケーションを作成できます。
+**Power BI ワークスペース コレクション** ( **Power BI Embedded** バージョン 1) は、 **Power BI ワークスペース コレクション** Azure リソースに基づくソリューションです。 このソリューションを利用すると、 **Power BI ワークスペース コレクション** ソリューションの下にある Power BI コンテンツ、専用 API、および Power BI に対してアプリケーションを認証するワークスペース コレクション キーを使って、顧客向けの **Power BI Embedded** アプリケーションを作成できます。
 
 ### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Power BI ワークスペース コレクションから Power BI Embedded に移行できますか?
 
-1. 移行ツールを使って、**Power BI ワークスペース コレクション**のコンテンツを Power BI に複製できます https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration 。
+1. 移行ツールを使って、 **Power BI ワークスペース コレクション** のコンテンツを Power BI に複製できます https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration 。
 
 2. Power BI のコンテンツを使用する **Power BI Embedded** アプリケーション POC から始めます。
 
-3. 運用する準備ができたら、**Power BI Embedded** の専用容量を購入し、その容量に Power BI のコンテンツ (ワークスペース) を割り当てます。
+3. 運用する準備ができたら、 **Power BI Embedded** の容量を購入し、その容量に Power BI のコンテンツ (ワークスペース) を割り当てます。
 
     > [!Note]
-    > **Power BI Embedded** ソリューションを使って開発を行いながら、並行して **Power BI ワークスペース コレクション**を使い続けることができます。 準備ができたら、顧客を新しい **Power BI Embedded** ソリューションに移動し、**Power BI ワークスペース コレクション** ソリューションの使用を終了します。
+    > **Power BI Embedded** ソリューションを使って開発を行いながら、並行して **Power BI ワークスペース コレクション** を使い続けることができます。 準備ができたら、顧客を新しい **Power BI Embedded** ソリューションに移動し、 **Power BI ワークスペース コレクション** ソリューションの使用を終了します。
 
 詳しくは、「[Power BI Embedded に Power BI ワークスペース コレクション コンテンツを移行する方法](./migrate-from-powerbi-embedded.md)」をご覧ください。
 
 ### <a name="is-power-bi-workspace-collection-on-a-deprecation-path"></a>Power BI ワークスペース コレクションは非推奨パス上にありますか?
 
-はい。ただし、**Power BI ワークスペース コレクション** ソリューションを既に使っているお客様は、非推奨になるまで引き続き使用できます。 お客様は、新しいワークスペース コレクション、および **Power BI ワークスペース コレクション** ソリューションをまだ使用する **Power BI Embedded** アプリケーションを作成することもできます。
+はい。ただし、 **Power BI ワークスペース コレクション** ソリューションを既に使っているお客様は、非推奨になるまで引き続き使用できます。 お客様は、新しいワークスペース コレクション、および **Power BI ワークスペース コレクション** ソリューションをまだ使用する **Power BI Embedded** アプリケーションを作成することもできます。
 
 ただし、これはどの **Power BI ワークスペース コレクション** ソリューションにも新しい機能が追加されないことも意味します。 お客様には、新しい **Power BI Embedded** ソリューションへの移行を計画することをお勧めします。
 
@@ -301,11 +301,11 @@ Power BI Embedded は[国内クラウド](embed-sample-for-customers-national-cl
 
 ### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>PBI ワークスペース コレクションから Power BI Embedded に移行しなければならないのはなぜですか?
 
-**Power BI Embedded** ソリューションには、**Power BI ワークスペース コレクション**では使用できない新機能がいくつかあります。
+**Power BI Embedded** ソリューションには、 **Power BI ワークスペース コレクション** では使用できない新機能がいくつかあります。
 
 次のような機能です。
 * PBI データ ソースはすべてサポートされています。 **Power BI ワークスペース コレクション** データ ソースは、2 つだけサポートされています。 
-* Q&A、更新、ブックマーク、ダッシュボードとタイルの埋め込み、カスタム メニューなどの新機能は、**Power BI Embedded** ソリューションでのみサポートされます。
+* Q&A、更新、ブックマーク、ダッシュボードとタイルの埋め込み、カスタム メニューなどの新機能は、 **Power BI Embedded** ソリューションでのみサポートされます。
 * 容量の課金モデル。
 
 ## <a name="embedding-setup-tool"></a>埋め込みセットアップ ツール
@@ -321,9 +321,9 @@ Power BI Embedded は[国内クラウド](embed-sample-for-customers-national-cl
 
 ### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>ダウンロードしたサンプル アプリのどのソリューションを選択するか
 
-**顧客向けの埋め込み**エクスペリエンスを使用している場合、*PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 その後、*PowerBI-Developer-Samples-master\App Owns Data* フォルダーを開き、*PowerBIEmbedded_AppOwnsData.sln* ファイルを実行します。
+**顧客向けの埋め込み** エクスペリエンスを使用している場合、 *PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 その後、 *PowerBI-Developer-Samples-master\App Owns Data* フォルダーを開き、 *PowerBIEmbedded_AppOwnsData.sln* ファイルを実行します。
 
-**組織向けの埋め込み**エクスペリエンスを使用している場合、*PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* フォルダーを開き、*pbi-saas-embed-report.sln* ファイルを実行します。
+**組織向けの埋め込み** エクスペリエンスを使用している場合、 *PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* フォルダーを開き、 *pbi-saas-embed-report.sln* ファイルを実行します。
 
 ### <a name="how-can-i-edit-my-registered-application"></a>登録済みアプリケーションを編集する方法
 

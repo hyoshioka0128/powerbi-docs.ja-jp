@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/27/2020
-ms.openlocfilehash: 288e511c38df0326d07fad87f5d239cd5b0cfec0
-ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
+ms.openlocfilehash: 07b3004553f62dbdd138d93bf1aba2c08287b9c6
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84126275"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044812"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Power BI レポート サーバーのサポート タイムライン
 
@@ -30,15 +30,10 @@ Power BI Report Server は、1 年間に何回かリリースされます。 セ
 
 | **バージョン** | **可用性日付** | **サポート終了日** |
 | --- | --- | --- |
-| 2017 年 6 月 |2017 年 6 月 12 日 |サポートされなくなった |
-| 2017 年 10 月 |2017 年 10 月 31 日 | サポートされなくなった |
-| 2018 年 3 月 | 2018 年 3 月 19 日 | サポートされなくなった |
-| 2018 年 8 月 | 2018 年 8 月 15 日 | サポートされなくなった |
-| 2019 年 1 月 | 2019 年 1 月 23 日 | サポートされなくなった |
-| 2019 年 5 月 | 2019 年 5 月 22 日 | サポートされなくなった |
-| 2019 年 9 月 | 2019 年 9 月 | 2020 年 9 月 
+| 2019 年 9 月 | 2019 年 9 月 | 2019 年 9 月以前のあらゆるバージョンのサポートが終了しています
 | 2020 年 1 月 | 2020 年 1 月 | 2021 年 1 月
 | 2020 年 5 月 | 2020 年 5 月 | 2021 年 5 月
+| 2020 年 10 月 | 2020 年 10 月 | 2021 年 10 月
 
 Power BI Report Server および Power BI Report Server 向けに最適化された Power BI Desktop をダウンロードするには、「[Power BI Report Server によるオンプレミスでのレポート作成](https://powerbi.microsoft.com/report-server/)」を参照してください。
 

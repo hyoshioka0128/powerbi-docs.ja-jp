@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ee123bed8940b52a66f3b0f860671a87210c261f
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 268594b54186ca319eca6a7577dcfaa17c066fd4
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86952687"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916109"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Power BI テナントの場所
 
@@ -28,7 +28,7 @@ Power BI テナントが配置される場所およびその場所を選択す�
 
 1. Power BI サービスの上部のメニューで、ヘルプ **[?]** を選択して、 **[Power BI について]** を選択します。
 
-1. **[データの保存先]** の隣の値を確認します。 それが、テナントが存在しているリージョンです。 ワークスペース用に別のリージョンで専用の容量を使用していない場合、その値はデータが格納されているリージョンでもあります。
+1. **[データの保存先]** の隣の値を確認します。 それが、テナントが存在しているリージョンです。 ワークスペース用に別のリージョンで容量を使用していない場合、その値はデータが格納されているリージョンでもあります。
 
     ![データ領域](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 

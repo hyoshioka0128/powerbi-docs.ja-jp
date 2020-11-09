@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/04/2020
+ms.date: 10/29/2020
 ms.author: maggies
-ms.openlocfilehash: cedabd613e177aa9a3645e80db38b74d799b8799
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 52d38fd0705a6f9335f0ddd965acb0d9f56d38ee
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861201"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045064"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI Report Server での Power BI レポート データ ソース
 Power BI レポートは、複数のデータ ソースに接続できます。 データの使い方に応じて、異なるデータ ソースを利用できます。 データをインポートすること、または DirectQuery を使うか SQL Server Analysis Services へのライブ接続を使ってデータのクエリを直接行うことができます。 一部のデータ ソースは、Power BI Report Server 用に最適化された Power BI Desktop では使用できますが、Power BI Report Server に発行するときはサポートされていません。
@@ -189,6 +189,8 @@ Power BI Report Server では、モデル更新のための認証方法として
 | Zendesk (ベータ) |いいえ |いいえ |いいえ |いいえ |
 
 ** Teradata での LDAP 認証の使用 (コマンド プロンプト コマンド 'setx PBI_EnableTeradataLdap true' を使用することで、Power BI Desktop で有効になる) は、モデルの更新ではサポートされていません。
+
+Power BI Report Server には、Web データの利用で制限事項があります。Web からのデータ ファイルのみ更新できます。 [ページ] または [例による] に基づくデータは更新できません。 この制限は、Web.BrowserContents と Web.Page で作成された M 式を更新できないためです。 Power BI Report Server は Web.Contents データ ソースのみを更新できます。
 
 ## <a name="list-of-supported-authentication-methods-for-directquery"></a>DirectQuery でサポートされている認証方法の一覧
 

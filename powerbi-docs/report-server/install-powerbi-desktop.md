@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 07/24/2020
-ms.openlocfilehash: d361430387d9c24b8b4ef0b673c50cf4cec5a24b
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 10/16/2020
+ms.openlocfilehash: 62add0b1268b06bb227bdc1b8ec2e4ae59358c57
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252604"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044753"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI レポート サーバー向けに最適化された Power BI Desktop のインストール
 
@@ -25,11 +25,11 @@ Power BI Report Server の Power BI レポートを作成するには、Power BI
 
 Power BI Report Server 向けに最適化された Power BI Desktop のバージョンが最新のものであることを確認するための最も簡単な方法は、レポート サーバーの Web ポータルから起動することです。
 
-1. レポート サーバーの Web ポータルで、**ダウンロード**の矢印、 **[Power BI Desktop]** の順に選択します。
+1. レポート サーバーの Web ポータルで、 **ダウンロード** の矢印、 **[Power BI Desktop]** の順に選択します。
 
     ![Web ポータルから Power BI Desktop をダウンロードする](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    あるいは、[Power BI Report Server](https://powerbi.microsoft.com/report-server/) ホーム ページに進み、 **[高度なダウンロード オプション]** を選択します。
+    あるいは、 [Power BI Report Server](https://powerbi.microsoft.com/report-server/) ホーム ページに進み、 **[高度なダウンロード オプション]** を選択します。
 
 2. ダウンロード センター ページで、言語を選択し、 **[ダウンロード]** を選択します。
 
@@ -45,9 +45,9 @@ Power BI Report Server 向けに最適化された Power BI Desktop のバージ
     Power BI Desktop が自動的に起動し、すぐに使えます。
 
 ## <a name="verify-youre-using-the-correct-version"></a>正しいバージョンを使用していることを確認する
-正しい Power BI Desktop を使用しているかどうかは、Power BI Desktop の起動画面またはタイトル バーを見れば容易に確認できます。 適切なバージョンでは、タイトル バーに **Power BI Desktop (2020 年 5 月)** と表示されます。 また、Power BI のロゴの色の表示も反転し、黄色の背景に黒の前景ではなく、黒の背景に黄色の前景となります。
+正しい Power BI Desktop を使用しているかどうかは、Power BI Desktop の起動画面またはタイトル バーを見れば容易に確認できます。 適切なバージョンでは、タイトル バーに **Power BI Desktop (2020 年 10 月)** と表示されます。 また、Power BI のロゴの色の表示も反転し、黄色の背景に黒の前景ではなく、黒の背景に黄色の前景となります。
 
-![Power BI Desktop 2020 年 5 月](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
+![Power BI Desktop 2020 年 10 月](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
 
 Power BI サービスの Power BI Desktop のバージョンの場合、タイトル バーに月と年は示されません。
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 4a38ca35e6955bc92f52492e657a9e00bad05ea3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c78be4dbd32d243dfaa392a1ac5ebd4d46c23d94
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857613"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916178"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Azure AD B2B で外部ゲスト ユーザーに Power BI コンテンツを配布する
 
@@ -33,7 +33,7 @@ Power BI を使用すると、Azure Active Directory Business-to-Business (Azure
 
 ## <a name="who-can-you-invite"></a>招待できるユーザー
 
-gmail.com、outlook.com、hotmail.com などの個人用メール アカウントを含め、ほとんどのメール アドレスは、ゲスト ユーザーの招待でサポートされています。 Azure AD B2B では、これらのアドレスは "*ソーシャル ID*" と呼ばれます。
+gmail.com、outlook.com、hotmail.com などの個人用メール アカウントを含め、ほとんどのメール アドレスは、ゲスト ユーザーの招待でサポートされています。 Azure AD B2B では、これらのアドレスは " *ソーシャル ID* " と呼ばれます。
 
 [米国政府向け Power BI](service-govus-overview.md) など、政府機関向けクラウドに関連付けられているユーザーを招待することはできません。
 
@@ -60,7 +60,7 @@ Azure portal で招待を送信するには、次の手順のようにします�
 
     ![[新しいゲスト ユーザー] オプションが強調された Azure portal のスクリーン ショット。](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
-1. **メール アドレス**と**個人的なメッセージ**を入力します。
+1. **メール アドレス** と **個人的なメッセージ** を入力します。
 
     ![電子メールとメッセージ フィールドが強調表示されている [新しいゲスト ユーザー] ダイアログのスクリーンショット。](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
@@ -92,7 +92,7 @@ Azure portal で招待を送信するには、次の手順のようにします�
 
 ### <a name="use-power-bi-premium"></a>Power BI Premium を使用する
 
-[Power BI Premium 容量](service-premium-what-is.md)にワークスペースを割り当てると、ゲスト ユーザーは Power BI Pro ライセンスなしでアプリを使用できるようになります。 Power BI Premium では、高いリフレッシュ レート、専用の容量、大規模なモデル サイズなどの他の機能をアプリで活用することもできます。
+[Power BI Premium 容量](service-premium-what-is.md)にワークスペースを割り当てると、ゲスト ユーザーは Power BI Pro ライセンスなしでアプリを使用できるようになります。 Power BI Premium を使用すると、高いリフレッシュ レートや大規模なモデル サイズなどの他の機能をアプリで活用することもできます。
 
 ![Power BI Premium でのゲスト ユーザー エクスペリエンスのダイアグラム。](media/service-admin-azure-ad-b2b/license-approach-1.png)
 

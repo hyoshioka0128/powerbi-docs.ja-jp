@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2020
+ms.date: 10/30/2020
 ms.author: kfollis
 ms.custom: MC
 ROBOTS: NOINDEX
 LocalizationGroup: Admin
-ms.openlocfilehash: 19933ccbf18003e293e823c2b1f201e953c7bde0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 68cd001995603fec3a64e4b2c79ee2216bfe9ac0
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854784"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132300"
 ---
 # <a name="power-bi-planned-maintenance"></a>Power BI の計画メンテナンス
 
@@ -38,8 +38,14 @@ Power BI サービスの計画メンテナンスは、お客様に信頼性の�
 * ローカルであれ OneDrive や SharePoint の場所からであれ、組織の視覚化を使用するレポートをアクティブに編集または発行していたお客様は、組織の視覚化ストアを介してその視覚化を再インポートするか、または更新された PBIX をダウンロードしてから、再発行する必要があります。 組織の視覚化の詳細については、「[組織の視覚化](organizational-visuals.md)」を参照してください。
 * [Excel で分析] 機能が使用された Excel ブックが更新されない場合は、接続文字列を更新するか、そのデータセットの ODC 接続を再ダウンロードする必要が生じることがあります。 詳細については、「[Excel で分析](../collaborate-share/service-analyze-in-excel.md#connect-to-power-bi-data)」を参照してください。
 * メンテナンスの完了時には、コンテンツに埋め込まれている Power BI へのリンクが接続されなくなる場合があります。 たとえば、SharePoint または Teams 内の埋め込みのリンクを使用すると、ユーザー エラーが発生する場合があります。 この問題を解決するには、Power BI で埋め込みのリンクを再生成して、それらが使用されている場所を更新する必要があります。 埋め込みのリンクの詳細については、「[SharePoint Online にレポート Web パーツを埋め込む](../collaborate-share/service-embed-report-spo.md)」と [Power BI による Microsoft Teams での共同作業](../collaborate-share/service-collaborate-microsoft-teams.md)に関する記事を参照してください。
+* メンテナンスより前に回収された使用データの一部は、メンテナンスの完了後は利用できません。 この使用データには次のものが含まれます。
+
+  * [Power BI アクティビティ ログ](service-admin-auditing.md#use-the-activity-log)。 ユーザーはメンテナンスより前のアクティビティ ログをダウンロードしてください。 [Office 365 監査ログ データ](service-admin-auditing.md#access-your-audit-logs)を使用し、同等のアクティビティ詳細を取得することもできます。
+  * [データ系列ビュー](../collaborate-share/service-data-lineage.md#explore-lineage-view)でカウントを表示する
+  * [データ保護メトリック レポート](service-security-data-protection-metrics-report.md)
+  * [使用状況メトリック (プレビュー)](../collaborate-share/service-modern-usage-metrics.md)
 
 ## <a name="next-steps"></a>次の手順
 
 * [サービス中断の通知を有効にする](service-interruption-notifications.md)
-* [メッセージ センターで今後の変更を追跡する](/microsoft-365/admin/manage/message-center?view=o365-worldwide)
+* [メッセージ センターで今後の変更を追跡する](/microsoft-365/admin/manage/message-center)
