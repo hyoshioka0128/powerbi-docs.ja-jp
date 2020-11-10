@@ -21,7 +21,7 @@
             - name: Power Query のバックグラウンド更新を無効にする
               href: power-query-background-refresh.md
             - name: データフローのベスト プラクティス
-              href: ../transform-model/service-dataflows-best-practices.md
+              href: ../transform-model/dataflows/dataflows-introduction-self-service.md
         - name: データ モデリング
           items:
             - name: スター スキーマとは

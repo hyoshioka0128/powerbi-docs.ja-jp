@@ -8,7 +8,7 @@
         - name: クエリ エディターの概要
           href: desktop-query-overview.md
         - name: データフローを使用したセルフサービスのデータ準備
-          href: service-dataflows-overview.md
+          href: ./dataflows/dataflows-introduction-self-service.md
     - name: チュートリアル
       expanded: true
       items:
@@ -98,39 +98,39 @@
         - name: セルフサービスのデータ作成
           items:
             - name: データフローの作成と使用
-              href: service-dataflows-create-use.md
+              href: ./dataflows/dataflows-create.md
             - name: Power BI で DirectQuery とデータフローを使用する (プレビュー)
-              href: service-dataflows-directquery.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: データフローで強化されたコンピューティング エンジンを使用する
-              href: service-dataflows-enhanced-compute-engine.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Power BI Premium での計算されたエンティティ
-              href: service-dataflows-computed-entities-premium.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: データフローを使用してのデータ ソースへの接続
-              href: service-dataflows-data-sources.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: オンプレミス データ ソースでのデータフローの使用
-              href: service-dataflows-on-premises-gateways.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: データフロー間でエンティティをリンクする
-              href: service-dataflows-linked-entities.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: データフローでの増分更新の使用
-              href: service-dataflows-incremental-refresh.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: データフロー用の開発者向けリソース
-              href: service-dataflows-developer-resources.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Power BI Desktop でデータフローに接続する
               href: desktop-connect-dataflows.md
             - name: データフローと Azure Data Lake の統合 (プレビュー)
-              href: service-dataflows-azure-data-lake-integration.md
+              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
             - name: データフロー ストレージ用の Azure Data Lake Storage Gen2 を接続する
-              href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
             - name: ワークスペース データフローの設定の構成 (プレビュー)
-              href: service-dataflows-configure-workspace-storage-settings.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: データフローとして CDM フォルダーを Power BI へ追加する (プレビュー)
-              href: service-dataflows-add-cdm-folder.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Power BI で Machine Learning を統合する
-              href: service-machine-learning-integration.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Power BI での Cognitive Services の使用
-              href: service-cognitive-services.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Power BI での自動化 された機械学習
-              href: service-machine-learning-automated.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
     - name: リファレンス
       items:
         - name: 数式エディターのショートカット
