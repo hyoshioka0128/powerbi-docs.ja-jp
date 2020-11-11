@@ -1,8 +1,8 @@
 ---
 title: Power BI での散布図、バブル チャート、およびドット プロット グラフ
 description: Power BI での散布図、ドット プロット グラフ、およびバブル チャート
-author: mihart
-ms.reviewer: amac
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 963bd77568db4390bca73a4ec4e9ce97ee616a58
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: b3b2dc8892b2b9b875621c6925c6f3c652da44c6
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632896"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412696"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Power BI での散布図、バブル チャート、およびドット プロット グラフ
 
@@ -31,7 +31,7 @@ ms.locfileid: "91632896"
 
 ### <a name="scatter-and-bubble-charts"></a>散布図およびバブル チャート
 
-散布図は、2 つの数値の間の関係を表します。 バブル チャートでは、データ ポイントがバブルに置き換えられます。バブルの "*サイズ*" は、3 つ目の追加データ ディメンションを表します。
+散布図は、2 つの数値の間の関係を表します。 バブル チャートでは、データ ポイントがバブルに置き換えられます。バブルの " *サイズ* " は、3 つ目の追加データ ディメンションを表します。
 
 ![サンプル バブル チャートのスクリーンショット。](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
@@ -76,9 +76,9 @@ ms.locfileid: "91632896"
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **小売の分析のサンプル PBIX ファイル**を探します。
+2. **小売の分析のサンプル PBIX ファイル** を探します。
 
-1. **小売の分析のサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **小売の分析のサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 
@@ -103,7 +103,7 @@ ms.locfileid: "91632896"
 
 1. **[District] \(地域)** を **[詳細]** から **[凡例]** にドラッグします。
 
-    Power BI によって表示された散布図では、Y 軸に**総売上差異 %** 、X 軸に**平方フィートあたりの売上高**がプロットされています。 データ ポイントの色は地区を表しています。
+    Power BI によって表示された散布図では、Y 軸に **総売上差異 %** 、X 軸に **平方フィートあたりの売上高** がプロットされています。 データ ポイントの色は地区を表しています。
 
     ![散布図のスクリーンショット。](media/power-bi-visualization-scatter/power-bi-scatter2.png)
 
@@ -135,13 +135,13 @@ ms.locfileid: "91632896"
     マーカーの図形をひし形、三角形、または正方形に変更します。 各線に別のマーカーの図形を使用すると、レポートの使用者は個々の線 (または領域) を区別するのが容易になります。
 
 1. [分析] ウィンドウ ![[分析] ウィンドウのアイコンのスクリーンショット。](media/power-bi-visualization-scatter/power-bi-analytics.png) を開き、視覚化に追加の情報を追加します。  
-    - 中央値線を追加します。 **[中央値線]**  >  **[追加]** の順に選択します。 既定では、Power BI によって*平方フィート単位の売上*の中央値線が追加されます。10 個のデータ ポイントがあり、両側に 5 つずつデータ ポイントがある中央値が作成されることがわかっているため、これはあまり役に立ちません。 代わりに、**メジャー**を*総売上差異 %* に切り替えます。  
+    - 中央値線を追加します。 **[中央値線]**  >  **[追加]** の順に選択します。 既定では、Power BI によって *平方フィート単位の売上* の中央値線が追加されます。10 個のデータ ポイントがあり、両側に 5 つずつデータ ポイントがある中央値が作成されることがわかっているため、これはあまり役に立ちません。 代わりに、 **メジャー** を *総売上差異 %* に切り替えます。  
 
         ![中央値が追加されたバブル チャートのスクリーンショット。](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
 
     - 対称網掛けを追加して、y 軸のメジャーと比較して x 軸のメジャーの値が高いポイントを示します。逆の場合も同様です。 [分析] ウィンドウで対称網掛けをオンにすると、Power BI によって、現在の軸の上限と下限に基づいて、散布図の背景が対称的に表示されます。 これは、特に x 軸と y 軸で異なる軸の範囲がある場合に、データ ポイントで優先する軸メジャーを識別するための非常に簡単な方法です。
 
-        a. **総売上差異 %** フィールドを**前年の粗利 (%)** に変更します
+        a. **総売上差異 %** フィールドを **前年の粗利 (%)** に変更します
 
         ![[詳細] で [Gross Margin Last Year percent] が選択されている画面のスクリーンショット。](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
 

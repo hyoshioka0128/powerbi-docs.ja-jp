@@ -1,21 +1,21 @@
 ---
 title: X 軸と Y 軸のプロパティのカスタマイズ
 description: X 軸と Y 軸のプロパティのカスタマイズ
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0da34397c1b707eeece6fdf127c2c4e96f5ab6a5
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: b327ca5f4c19638f4afe72abce763601e68fc943
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635679"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413156"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X 軸と Y 軸のプロパティをカスタマイズする
 
@@ -81,13 +81,13 @@ X 軸のラベルは、グラフの縦棒の下に表示されます。 現在�
 
 4. テキストの色、サイズ、フォントを設定します。
 
-    - **色**:黒を選択します
+    - **色** :黒を選択します
 
-    - **文字のサイズ**:「*14*」と入力します
+    - **文字のサイズ** :「 *14* 」と入力します
 
-    - **フォント ファミリ**: **[Arial Black]** を選択します
+    - **フォント ファミリ** : **[Arial Black]** を選択します
 
-    - **内側のパディング**: 「*40%* 」と入力します
+    - **内側のパディング** : 「 *40%* 」と入力します
 
         ![ラベルが斜めになったスクリーンショット](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-x.png)
     
@@ -107,17 +107,17 @@ X 軸のタイトルが **[オン]** になっている場合、X 軸のタイ�
 
     ![[タイトル] スライダー](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-title-on.png)
 
-    最初に、既定の X 軸のタイトルが視覚化に表示されていることに気付きます。  この例では、**FiscalMonth** です。
+    最初に、既定の X 軸のタイトルが視覚化に表示されていることに気付きます。  この例では、 **FiscalMonth** です。
 
    ![タイトルが下部に表示されているグラフ](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title.png)
 
 1. タイトルのテキストの色、サイズ、フォントを設定します。
 
-    - **タイトルの色**:オレンジ色を選択します
+    - **タイトルの色** :オレンジ色を選択します
 
-    - **軸のタイトル**:「*Fiscal Month*」(スペースを含む) と入力します
+    - **軸のタイトル** :「 *Fiscal Month* 」(スペースを含む) と入力します
 
-    - **タイトル テキストのサイズ**:「*18*」と入力します
+    - **タイトル テキストのサイズ** :「 *18* 」と入力します
 
     カスタマイズが完了すると、積み上げ縦棒グラフは次のようになります。
 
@@ -145,11 +145,11 @@ Y 軸のラベルは、既定では左側に表示されます。 現在、小�
 
 1. テキストの色、サイズ、フォントを設定します。
 
-    - **色**:黒を選択します
+    - **色** :黒を選択します
 
-    - **文字のサイズ**:「*10*」と入力します
+    - **文字のサイズ** :「 *10* 」と入力します
 
-    - **表示単位**: **[百万]** を選択します
+    - **表示単位** : **[百万]** を選択します
 
     ![Y 軸の書式設定後のグラフ](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-y.png)
 
@@ -159,9 +159,9 @@ Y 軸のタイトルが **[オン]** になっている場合、Y 軸のタイ�
 ### <a name="customize-the-gridlines"></a>グリッド線をカスタマイズする
 色とストロークを変更して、グリッド線が目立つようにします。
 
-- **色**:オレンジ色を選択します
+- **色** :オレンジ色を選択します
 
-- **ストローク**:「*2*」と入力します
+- **ストローク** :「 *2* 」と入力します
 
 これらのカスタマイズをすべて完了すると、棒グラフは次のように表示されるはずです。
 
@@ -200,7 +200,7 @@ Y 軸のタイトルが **[オン]** になっている場合、Y 軸のタイ�
 
    ![[セカンダリを表示] オプションのスクリーンショット。](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-secondary.png)
 
-1. (省略可能) 2 つの軸のフォントの色、サイズ、表示単位をカスタマイズします。 棒の軸または線の軸の**位置**を切り替えた場合、2 つの軸の左右が切り替わります。
+1. (省略可能) 2 つの軸のフォントの色、サイズ、表示単位をカスタマイズします。 棒の軸または線の軸の **位置** を切り替えた場合、2 つの軸の左右が切り替わります。
 
 ### <a name="add-titles-to-both-axes"></a>両方の軸にタイトルを追加する
 

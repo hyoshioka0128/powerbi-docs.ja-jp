@@ -1,8 +1,7 @@
 ---
 title: 分解ツリー
 description: チュートリアル:Power BI で分解ツリー ビジュアルを作成する
-author: mihart
-manager: kvivek
+author: msftrien
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b7aebef72952c75ed6ec406c6f3f9e888f047086
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 0a8bc86217dac8f0c2b70e300f08b1667ee63568
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632827"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413087"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Power BI で分解ツリー ビジュアルを作成して表示する
 
@@ -79,8 +78,8 @@ https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Report
 
 分析は、基本設定に応じて 2 つの方法で機能できます。 既定の動作は次のとおりです。
 
- - **高値**:使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最大値を取得するためにドリルインするものが決定されます。  
- - **低値**:使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最小値を取得するためにドリルインするものが決定されます。  
+ - **高値** :使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最大値を取得するためにドリルインするものが決定されます。  
+ - **低値** :使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最小値を取得するためにドリルインするものが決定されます。  
 
 受注残の例で **[高値]** を選択すると、結果は次のようになります。
 
@@ -90,13 +89,13 @@ https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Report
 
 電球の上にマウス ポインターを合わせると、ツールヒントが表示されます。 この例では、ツールヒントは、"[Product Type]\(製品の種類\) が [Patient Monitoring]\(患者の監視\) の場合、受注残の割合が最も高い" になります。
 
-**絶対的**ではなく**相対的**な AI 分割を検出するようにビジュアルを構成できます。 
+**絶対的** ではなく **相対的** な AI 分割を検出するようにビジュアルを構成できます。 
 
 相対モードでは、(列内の他のデータと比較したときに) 目立つ値が検索されます。 これを説明するために、例を見てみましょう。
 
 ![分解ツリーの絶対分割](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
 
-上のスクリーンショットでは、ビデ オゲームの [North America sales]\(北米での売上\) を調べています。 まず、ツリーを **[Publisher Name]\(発行元の名前\)** で分割し、次に [Nintendo] でドリルダウンします。 **[高値]** を選択すると、ツリーが展開され、 **[プラットフォーム] は [Nintendo] である**ことが表示されます。 Nintendo (発行元) は Nintendo コンソールのみを対象としているため、値は 1 つしか存在しません。したがって、それが高値であるのは当然です。
+上のスクリーンショットでは、ビデ オゲームの [North America sales]\(北米での売上\) を調べています。 まず、ツリーを **[Publisher Name]\(発行元の名前\)** で分割し、次に [Nintendo] でドリルダウンします。 **[高値]** を選択すると、ツリーが展開され、 **[プラットフォーム] は [Nintendo] である** ことが表示されます。 Nintendo (発行元) は Nintendo コンソールのみを対象としているため、値は 1 つしか存在しません。したがって、それが高値であるのは当然です。
 
 もっと興味深い分割は、同じ列の他の値と比較してどの値が相対的に大きいかを調べることです。 [分析の種類] を **[絶対]** から **[相対]** に変更すると、Nintendo に対して次の結果が得られます。![分解ツリーの相対分割](media/power-bi-visualization-decomposition-tree/tree-ai-relative.png)
 

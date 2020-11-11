@@ -1,29 +1,29 @@
 ---
 title: R スクリプトを使用して高度な分析とビジュアルを作成する
 description: Power BI Desktop で R スクリプトを使用して、高度な分析と高度な視覚エフェクトを作成する
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 91ca05a144166abbc903d42ba30a5c70b839987d
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 3b43d644a0bb7ecd2800b99d3ffb5d7c7d26bf96
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782820"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412098"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Power BI で R ビジュアルを作成して使用する
 
 [!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
 
-R ビジュアルは現在、**Power BI Desktop** でのみ作成でき、その後 Power BI サービスに発行できます。 R ビジュアルの作成の詳細については、「[R を使用した Power BI ビジュアルの作成](../create-reports/desktop-r-visuals.md)」を参照してください。
+R ビジュアルは現在、 **Power BI Desktop** でのみ作成でき、その後 Power BI サービスに発行できます。 R ビジュアルの作成の詳細については、「[R を使用した Power BI ビジュアルの作成](../create-reports/desktop-r-visuals.md)」を参照してください。
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Power BI サービスでの R ビジュアルの表示
-Power BI サービスでは、R スクリプトで作成したビジュアルの表示と操作がサポートされています。 R スクリプトで作成したビジュアルは一般的に *R ビジュアル*と呼ばれ、R の豊富な分析と視覚化の機能を使用した高度なデータ整形と予測などの分析に使用できます。
+Power BI サービスでは、R スクリプトで作成したビジュアルの表示と操作がサポートされています。 R スクリプトで作成したビジュアルは一般的に *R ビジュアル* と呼ばれ、R の豊富な分析と視覚化の機能を使用した高度なデータ整形と予測などの分析に使用できます。
 
 > [!NOTE]
 > [R プログラミング言語](https://www.r-project.org/)は、統計学者、データ科学者、ビジネス アナリストの間で最も広く使用されているプログラミング言語です。 R 言語には、7,000 を超えるアドオン パッケージを提供しているオープン ソース コミュニティや、広く利用されている R ユーザー グループがあります。 Power BI サービスに展開されている R のバージョンは *Microsoft R 3.4.4* です。
@@ -55,9 +55,9 @@ R ビジュアルは R スクリプトから作成されますが、R スクリ�
 
 このようなリスクが存在するのは主に作成の段階です。作成の段階では、スクリプトの作成者が自身のコンピューターでスクリプトを実行します。
 
-Power BI サービスには、ユーザーとサービスをセキュリティのリスクから保護するために*サンドボックス*技術が適用されます。
+Power BI サービスには、ユーザーとサービスをセキュリティのリスクから保護するために *サンドボックス* 技術が適用されます。
 
-この*サンドボックス* アプローチでは、Power BI サービスで実行する R スクリプトに一定の制限が適用され、インターネットへのアクセスや、R ビジュアルの作成に不要な他のリソースへのアクセスなどが制限されます。
+この *サンドボックス* アプローチでは、Power BI サービスで実行する R スクリプトに一定の制限が適用され、インターネットへのアクセスや、R ビジュアルの作成に不要な他のリソースへのアクセスなどが制限されます。
 
 ## <a name="r-scripts-error-experience"></a>R スクリプトのエラー エクスペリエンス
 R スクリプトでエラーが発生した場合、R ビジュアルはプロットされず、エラー メッセージが表示されます。 エラーの詳細については、次の図に示すように、キャンバス上の R ビジュアル エラーから **[詳細を確認する]** を選択します。
@@ -80,8 +80,8 @@ Power BI 無料版のユーザーは、Premium ワークスペースで共有さ
 |---------|---------|---------|---------|--------|
 |**ゲスト** (Power BI embedded)     |  サポートされています|  サポートされていません      | Premium/Azure 容量のみでサポートされている  | Premium/Azure 容量のみでサポートされている |
 |**アンマネージド テナント** (未確認のドメイン) | サポートされています | サポートされていません |  サポートされていません |サポートされている (B2B のシナリオ) |
-|無料ライセンスの**マネージド テナント**    |  サポートされています       |  サポートされていません       |    Premium 容量のみでサポートされている    | サポートされています |
-Pro ライセンスを持つ**マネージド テナント**     |   サポートされています      | サポートされています      | サポートされています    |サポートされています|
+|無料ライセンスの **マネージド テナント**    |  サポートされています       |  サポートされていません       |    Premium 容量のみでサポートされている    | サポートされています |
+Pro ライセンスを持つ **マネージド テナント**     |   サポートされています      | サポートされています      | サポートされています    |サポートされています|
 
 
 
@@ -121,9 +121,9 @@ powerbi_rEnableShowTextForCJKLanguages =  1
 ## <a name="overview-of-r-packages"></a>R パッケージの概要
 R パッケージは、適切に定義された形式で結合された R 関数、データ、およびコンパイル済みコードのコレクションです。 R のインストールには標準のパッケージ セットが付属しており、他のパッケージはダウンロードしてインストールできます。 インストールしたら、使用するセッションに R パッケージを読み込む必要があります。 無料の R パッケージの主要なソースは、CRAN ([Comprehensive R Archive Network](https://cran.r-project.org/web/packages/available_packages_by_name.html)) です。
 
-**Power BI Desktop** では、どのような種類の R パッケージでも制限なく使うことができます。 **Power BI Desktop** で使う R パッケージをユーザー自身がインストールできます (たとえば、[RStudio IDE](https://www.rstudio.com/) を使って)。
+**Power BI Desktop** では、どのような種類の R パッケージでも制限なく使うことができます。 **Power BI Desktop** で使う R パッケージをユーザー自身がインストールできます (たとえば、 [RStudio IDE](https://www.rstudio.com/) を使って)。
 
-**Power BI サービス**の R ビジュアルは、**この記事**の「[サポートされるパッケージ](../connect-data/service-r-packages-support.md)」セクションで示されているパッケージによってサポートされます。 サポートされるパッケージの一覧に目的のパッケージがない場合は、パッケージのサポートを要求できます。 サポートを要求する方法については、「[Power BI サービスの R パッケージ](../connect-data/service-r-packages-support.md)」を参照してください。
+**Power BI サービス** の R ビジュアルは、 **この記事** の「 [サポートされるパッケージ](../connect-data/service-r-packages-support.md)」セクションで示されているパッケージによってサポートされます。 サポートされるパッケージの一覧に目的のパッケージがない場合は、パッケージのサポートを要求できます。 サポートを要求する方法については、「[Power BI サービスの R パッケージ](../connect-data/service-r-packages-support.md)」を参照してください。
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>R パッケージの要件と制限事項
 R パッケージにはいくつかの要件と制限があります。

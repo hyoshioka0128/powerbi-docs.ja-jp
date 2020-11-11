@@ -1,20 +1,20 @@
 ---
 title: Power BI のドーナツ グラフ
 description: Power BI のドーナツ グラフ
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f76fe26f8b7d4f9e9c0cbe1ffe22c71d815a9307
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 24788b16718e1223bdd2040d42a67e4f175b8371
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239726"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413064"
 ---
 # <a name="create-and-use-doughnut-charts-in-power-bi"></a>Power BI でドーナツ グラフを作成して使用する
 
@@ -30,9 +30,9 @@ ms.locfileid: "85239726"
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **小売の分析のサンプル PBIX ファイル**を探します。
+2. **小売の分析のサンプル PBIX ファイル** を探します。
 
-1. **小売の分析のサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **小売の分析のサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 

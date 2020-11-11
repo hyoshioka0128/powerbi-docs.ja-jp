@@ -1,20 +1,20 @@
 ---
 title: Power BI のリボン グラフを使用する
 description: Power BI Desktop でリボン グラフを作成して使用します
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0e5687f9bb3f27af7bdfee28cd9753fbda4fa44f
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e89712dea5d9f932669141d8fe4129727166a342
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635771"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413133"
 ---
 # <a name="create-ribbon-charts-in-power-bi"></a>Power BI のリボン グラフを作成する
 
@@ -35,9 +35,9 @@ ms.locfileid: "91635771"
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **小売の分析のサンプル PBIX ファイル**を探します。
+2. **小売の分析のサンプル PBIX ファイル** を探します。
 
-1. **小売の分析のサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **小売の分析のサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "91635771"
 リボン グラフのこの書式設定オプションでは、次の項目を調整できます。
 
 * **[間隔]** では、リボン間の間隔を調整できます。 この数値は、列の最大の高さの割合になります。
-* **[系列の色を一致させる]** では、リボンの色を系列の色に合わせることができます。 **オフ**に設定した場合、リボンは灰色になります。
+* **[系列の色を一致させる]** では、リボンの色を系列の色に合わせることができます。 **オフ** に設定した場合、リボンは灰色になります。
 * **[透過性]** では、リボンの透明度が指定されます。初期設定は 30 です。
 * **[罫線]** では、リボンの上下に濃い色の罫線を引くことができます。 既定では、罫線はオフになっています。
 

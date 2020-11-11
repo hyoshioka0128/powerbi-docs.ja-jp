@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: eb9476b3f21d1149492982a8dcae3d8ce89e9629
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f84527a189be0f78f73470cbc475f45206dd8cf1
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748657"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412397"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>組織向けの埋め込みのときに Power BI アプリを自動インストールする
 
@@ -25,7 +25,7 @@ ms.locfileid: "91748657"
 
 ## <a name="embed-for-power-bi-users-user-owns-data"></a>Power BI ユーザー向けに埋め込む (ユーザーがデータを所有)
 
-ユーザーにアプリの自動インストールを許可するには、[アプリケーションの登録](register-app.md#register-with-the-power-bi-application-registration-tool)時に 'コンテンツの作成' アクセス許可をアプリケーションに付与するか、アプリを登録済みの場合は追加する必要があります。
+ユーザーにアプリの自動インストールを許可するには、[アプリケーションの登録](register-app.md#register-an-azure-ad-app)時に 'コンテンツの作成' アクセス許可をアプリケーションに付与するか、アプリを登録済みの場合は追加する必要があります。
 
 ![アプリのコンテンツ作成登録](media/embed-auto-install-app/register-app-create-content.png)
 

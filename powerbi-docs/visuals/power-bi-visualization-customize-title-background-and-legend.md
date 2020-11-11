@@ -1,21 +1,21 @@
 ---
 title: Power BI の視覚化の書式を設定する
 description: 視覚化タイトル、背景、および凡例のカスタマイズ
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 03/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ef9aec1bf01120c8c7e765fe3c59c23da40ceab
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0d19d7366dce571e2d89ba5cbc6ffbe936ec50e2
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235864"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93410994"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>視覚エフェクトのタイトル、背景、および凡例をカスタマイズする
 
@@ -45,7 +45,7 @@ ms.locfileid: "85235864"
 
 1. **小売りの分析のサンプル** レポートの **[新しいストア]** ページに移動します。
 
-1. "**開店月別、チェーン別の開店店舗数**" 集合縦棒グラフを選択します。
+1. " **開店月別、チェーン別の開店店舗数** " 集合縦棒グラフを選択します。
 
 1. **[視覚化]** ウィンドウで、ペイントローラー アイコンを選択して、形式オプションを表示します。
 
@@ -55,7 +55,7 @@ ms.locfileid: "85235864"
 
 1. **[タイトル]** スライダーを **[オン]** にします。
 
-1. タイトルを変更するには、 **[タイトル テキスト]** フィールドに「*月別の開店した店舗数*」と入力します。
+1. タイトルを変更するには、 **[タイトル テキスト]** フィールドに「 *月別の開店した店舗数* 」と入力します。
 
     ![タイトル テキストが入力された [形式] ウィンドウのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -68,7 +68,7 @@ ms.locfileid: "85235864"
     b. ドロップダウンを選択して、色ウィンドウを閉じます。
 
 
-1. テキスト サイズを **16 ポイント**に増やします。
+1. テキスト サイズを **16 ポイント** に増やします。
 
 1. 最後のカスタマイズとして、グラフのタイトルを視覚化の中央に配置します。
 
@@ -104,7 +104,7 @@ ms.locfileid: "85235864"
 
 ## <a name="customize-visualization-legends"></a>視覚エフェクトの凡例をカスタマイズする
 
-1. **[概要]** レポート ページを開き、"**年度別および地域マネージャー別の総売上差異**" グラフを選択します。
+1. **[概要]** レポート ページを開き、" **年度別および地域マネージャー別の総売上差異** " グラフを選択します。
 
 1. **[視覚化]** タブで、ペイント ローラー アイコンを選択して、[形式] ウィンドウを開きます。
 
@@ -118,7 +118,7 @@ ms.locfileid: "85235864"
 
 1. **[タイトル]** を **[オン]** に切り替えて、凡例にタイトルを追加します。
 
-1. *[凡例名]* フィールドに「**マネージャー**」と入力します。
+1. *[凡例名]* フィールドに「 **マネージャー** 」と入力します。
 
 1. **[色]** を黒に変更します。
 

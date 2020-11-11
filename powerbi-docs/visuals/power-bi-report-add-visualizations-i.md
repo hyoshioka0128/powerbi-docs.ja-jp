@@ -1,21 +1,21 @@
 ---
 title: パート 1、Power BI レポートへの視覚化の追加
 description: パート 1、Power BI レポートへの視覚化の追加
-author: mihart
-ms.reviewer: rien
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 439807717a91a22520969a85a3991b76f8115833
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3a2002c9f17428c84704d68f621cf18443252557
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232383"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411891"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-1"></a>Power BI レポートにビジュアルを追加する (パート 1)
 
@@ -31,9 +31,9 @@ ms.locfileid: "85232383"
 
 1. Power BI Desktop メニュー バーの左上のセクションで、 **[ファイル]**  >  **[開く]** を選択します
    
-2. **売上およびマーケティングのサンプル PBIX ファイル**を見つけます
+2. **売上およびマーケティングのサンプル PBIX ファイル** を見つけます
 
-1. **売上およびマーケティングのサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **売上およびマーケティングのサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 

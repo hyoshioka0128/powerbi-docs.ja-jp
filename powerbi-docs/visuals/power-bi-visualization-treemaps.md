@@ -1,20 +1,20 @@
 ---
 title: Power BI のツリーマップ
 description: Power BI のツリーマップ
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6331209d40defc4f97a2de670be207e86eaabfef
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3cc14a9b873d86b3e9d62655d41d152cb3348252
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237407"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411454"
 ---
 # <a name="treemaps-in-power-bi"></a>Power BI のツリーマップ
 
@@ -26,9 +26,9 @@ ms.locfileid: "85237407"
 
 ![カテゴリ別の製品の数と製造元ツリーマップのスクリーンショット。](media/power-bi-visualization-treemaps/pbi-nancy-viz-treemap.png)
 
-たとえば、売上を分析する場合、衣料カテゴリに対して次の最上位レベル ブランチが存在することがあります: **Urban** (都市部向け)、**Rural** (地方向け)、**Youth** (若者向け)、**Mix** (組み合わせ)。 Power BI により、カテゴリ内の衣料メーカー用の製造メーカーについては、カテゴリ四角形をリーフに分割されます。 これらは売上数に基づいてサイズが決まり、網掛け表示されます。
+たとえば、売上を分析する場合、衣料カテゴリに対して次の最上位レベル ブランチが存在することがあります: **Urban** (都市部向け)、 **Rural** (地方向け)、 **Youth** (若者向け)、 **Mix** (組み合わせ)。 Power BI により、カテゴリ内の衣料メーカー用の製造メーカーについては、カテゴリ四角形をリーフに分割されます。 これらは売上数に基づいてサイズが決まり、網掛け表示されます。
 
-上の **Urban** ブランチでは、**VanArsdel** の衣料の売上が多く、 **Natura** と **Fama** の売上はそれよりも少なく、 **Leo** の売上はわずかです。 そのため、このツリーマップの **Urban** ブランチは次のようになります。
+上の **Urban** ブランチでは、 **VanArsdel** の衣料の売上が多く、 **Natura** と **Fama** の売上はそれよりも少なく、 **Leo** の売上はわずかです。 そのため、このツリーマップの **Urban** ブランチは次のようになります。
 
 * 左上隅にある **VanArsdel** の四角形が最も大きい。
 
@@ -63,9 +63,9 @@ ms.locfileid: "85237407"
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **小売の分析のサンプル PBIX ファイル**を探します。
+2. **小売の分析のサンプル PBIX ファイル** を探します。
 
-1. **小売の分析のサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **小売の分析のサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 
@@ -111,9 +111,9 @@ ms.locfileid: "85237407"
 
 ## <a name="highlighting-and-cross-filtering"></a>強調表示とクロス フィルター処理
 
-ツリーマップ内の **[カテゴリ]** または **[詳細]** を強調表示すると、レポート ページ上の他の視覚エフェクトがクロス強調表示またはクロスフィルター処理されます。 先に進むには、このレポート ページにいくつかのビジュアルを追加するか、このレポートの他のページのいずれかにツリーマップをコピーします。 次の図では、ツリーマップが**概要**ページにコピーされました。 
+ツリーマップ内の **[カテゴリ]** または **[詳細]** を強調表示すると、レポート ページ上の他の視覚エフェクトがクロス強調表示またはクロスフィルター処理されます。 先に進むには、このレポート ページにいくつかのビジュアルを追加するか、このレポートの他のページのいずれかにツリーマップをコピーします。 次の図では、ツリーマップが **概要** ページにコピーされました。 
 
-1. ツリーマップ上で、 **[カテゴリ]** 、または **[カテゴリ]** 内の **[チェーン]** のいずれかを選択します。 これにより、ページ上の他の視覚化がクロス強調表示されます。 たとえば、 **[050-Shoes]** を選択すると、前年の靴の売上高が **16,352,432 ドル**で、そのうち**ファッション ディレクター** アカウントの売上高が **2,174,185 ドル**であったことが示されます。
+1. ツリーマップ上で、 **[カテゴリ]** 、または **[カテゴリ]** 内の **[チェーン]** のいずれかを選択します。 これにより、ページ上の他の視覚化がクロス強調表示されます。 たとえば、 **[050-Shoes]** を選択すると、前年の靴の売上高が **16,352,432 ドル** で、そのうち **ファッション ディレクター** アカウントの売上高が **2,174,185 ドル** であったことが示されます。
 
    ![クロス強調表示されている店舗売上の概要レポートのスクリーンショット。](media/power-bi-visualization-treemaps/treemaphiliting.png)
 

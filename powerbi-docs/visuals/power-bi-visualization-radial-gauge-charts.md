@@ -1,8 +1,8 @@
 ---
 title: Power BI の放射状ゲージ グラフ
 description: Power BI の放射状ゲージ グラフ
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 24f69255ae12400c23cd9ca506e5b103e14e7ffb
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: d7fcef8294d1e4ba4b3336d4a2456e0ccac787fb
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354894"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412328"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Power BI の放射状ゲージ グラフ
 
@@ -22,7 +23,7 @@ ms.locfileid: "85354894"
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-放射状ゲージ グラフには、1 つの円弧があり、目標または主要業績評価指標 (KPI) に向けた進行状況を測定した 1 つの値が表示されます。 線 (*指針*) によって目標 (ターゲット値) が示されます。 網掛け表示は、その目標への進行状況を示します。 円弧の内側の値は進行状況の値を示します。 Power BI では、考えられるすべての値は、最小値 (左端の値) から最大値 (右端の値) に向けて、円弧に沿って均等に割り振られます。
+放射状ゲージ グラフには、1 つの円弧があり、目標または主要業績評価指標 (KPI) に向けた進行状況を測定した 1 つの値が表示されます。 線 ( *指針* ) によって目標 (ターゲット値) が示されます。 網掛け表示は、その目標への進行状況を示します。 円弧の内側の値は進行状況の値を示します。 Power BI では、考えられるすべての値は、最小値 (左端の値) から最大値 (右端の値) に向けて、円弧に沿って均等に割り振られます。
 
 ![放射状ゲージのスクリーンショット。](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
@@ -49,9 +50,9 @@ ms.locfileid: "85354894"
 
 1. メニューバーの左上にある **[データを取得]**  >  **[Excel]** を選択します。
    
-2. **財務サンプルの Excel ファイル**のコピーを見つけます。
+2. **財務サンプルの Excel ファイル** のコピーを見つけます。
 
-1. **財務サンプルの Excel ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **財務サンプルの Excel ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. **[財務]** および **[Sheet1]** を選択します。
 
@@ -79,7 +80,7 @@ ms.locfileid: "85354894"
 
     ![ゲージ グラフのスクリーンショット。](media/power-bi-visualization-radial-gauge-charts/gauge-no-target.png)
 
-    **財務サンプル**をいつダウンロードしたかに応じて、これらの数字とは異なる数字が表示される場合があります。
+    **財務サンプル** をいつダウンロードしたかに応じて、これらの数字とは異なる数字が表示される場合があります。
 
     > [!TIP]
     > 既定では、Power BI は、現在の値 (この例では、 **[Average of Gross Sales]** ) がゲージの中間点に当たると仮定してゲージ グラフを生成します。 **[Average of Gross Sales]** が 182.76K ドルであるため、開始値 (最小値) は 0 に設定され、終了値 (最大値) は現在の値の 2 倍に設定されます。
@@ -90,7 +91,7 @@ ms.locfileid: "85354894"
 
 1. 集計を **[平均]** に変更します。
 
-   Power BI により、ターゲット値の **145.48K ドル**を示す指針が追加されます。
+   Power BI により、ターゲット値の **145.48K ドル** を示す指針が追加されます。
 
    ![[Average of COGS] が追加されたゲージ グラフのスクリーンショット。](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress-new.png)
 

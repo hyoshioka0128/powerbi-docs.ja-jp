@@ -1,7 +1,7 @@
 ---
 title: Power BI のレポートとダッシュボードでのテーブルの視覚化
 description: 列の幅の変更など、Power BI のレポートとダッシュボードでテーブルの視覚化を使うときのチュートリアルです。
-author: mihart
+author: msftrien
 ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8730860a63d8d78dad7cfaafa11fb411ec8422fe
-ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
+ms.openlocfilehash: 127e8b7033e60c70a4d541cfc4725e7340a514e6
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862970"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412880"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Power BI のレポートとダッシュボードのテーブル
 
@@ -24,7 +24,7 @@ ms.locfileid: "91862970"
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-テーブルは、関連性のあるデータが論理的な一連の行と列に格納されたグリッドです。 ヘッダーと合計行が含まれる場合もあります。 テーブルは、1 つのカテゴリの多くの値を調べるときの定量的な比較で役に立ちます。 たとえば、次のテーブルには、**カテゴリ**に対する 5 つの異なるメジャーが表示されています。
+テーブルは、関連性のあるデータが論理的な一連の行と列に格納されたグリッドです。 ヘッダーと合計行が含まれる場合もあります。 テーブルは、1 つのカテゴリの多くの値を調べるときの定量的な比較で役に立ちます。 たとえば、次のテーブルには、 **カテゴリ** に対する 5 つの異なるメジャーが表示されています。
 
 ![カテゴリに対して 5 つの異なるメジャーが表示されているテーブルのスクリーンショット。](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
@@ -46,9 +46,9 @@ ms.locfileid: "91862970"
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **小売の分析のサンプル PBIX ファイル**を探します。
+2. **小売の分析のサンプル PBIX ファイル** を探します。
 
-1. **小売の分析のサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **小売の分析のサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 
@@ -103,7 +103,7 @@ ms.locfileid: "91862970"
 
 ### <a name="conditional-formatting"></a>条件付き書式
 
-"*条件付き書式*" は書式設定の一種です。 Power BI では、 **[視覚化]** ペインの **[値]** ウェルに追加したいずれのフィールドにも、条件付き書式設定を適用できます。
+" *条件付き書式* " は書式設定の一種です。 Power BI では、 **[視覚化]** ペインの **[値]** ウェルに追加したいずれのフィールドにも、条件付き書式設定を適用できます。
 
 ![[視覚化] ウィンドウ](media/power-bi-visualization-tables/power-bi-table-values.png)
 
@@ -115,7 +115,7 @@ ms.locfileid: "91862970"
 
 1. 書式設定するフィールドを選択し、 **[背景色]** のスライダーを [オン] にします。 Power BI により、列の値に基づいてグラデーションが適用されます。 既定の色を変更するには、 **[詳細コントロール]** を選択します。
 
-    **[左右逆方向]** オプションをオンにした場合は、オプションの**中央**値も構成できます。
+    **[左右逆方向]** オプションをオンにした場合は、オプションの **中央** 値も構成できます。
 
     ![[バックグラウンドのカラー スケール] 画面](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "91862970"
 
     ![テーブルは同じだが、最後の列にバーが示されている](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-1. *条件付きアイコン*を使用して、テーブルに視覚的な合図を追加します。  **[条件付き書式]** カードで、ドロップダウンから **[This Year Sales]\(今年の売上\)** を選択します。 **[アイコン]** スライダーを **[オン]** にします。  アイコンをカスタマイズするには、 **[詳細コントロール]** を選択します。
+1. *条件付きアイコン* を使用して、テーブルに視覚的な合図を追加します。  **[条件付き書式]** カードで、ドロップダウンから **[This Year Sales]\(今年の売上\)** を選択します。 **[アイコン]** スライダーを **[オン]** にします。  アイコンをカスタマイズするには、 **[詳細コントロール]** を選択します。
 
     ![アイコンが追加されたテーブル](media/power-bi-visualization-tables/power-bi-table-icons.png)
 
@@ -180,7 +180,7 @@ Power BI では、レポートまたはダッシュボードの列見出しが�
 
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
 
-* 列の書式設定を適用する場合、選択できる配置オプションは 1 列あたり 1 つのみです:**自動**、**左**、**中央**、**右**。 通常、列に含まれるのはテキストのみか、数値のみであり、混在することはありません。 列に数値とテキストの両方が含まれる場合、 **[自動]** ではテキストは左に、数値は右に配置されます。 この動作は、左から右に読む言語をサポートします。
+* 列の書式設定を適用する場合、選択できる配置オプションは 1 列あたり 1 つのみです: **自動** 、 **左** 、 **中央** 、 **右** 。 通常、列に含まれるのはテキストのみか、数値のみであり、混在することはありません。 列に数値とテキストの両方が含まれる場合、 **[自動]** ではテキストは左に、数値は右に配置されます。 この動作は、左から右に読む言語をサポートします。
 
 * テーブルのセルまたはヘッダー内のテキスト データに改行文字が含まれている場合、要素に関連付けられている書式指定ペイン カードで [右端で折り返す] オプションをオンにしない限り、これらの文字は無視されます。 
 

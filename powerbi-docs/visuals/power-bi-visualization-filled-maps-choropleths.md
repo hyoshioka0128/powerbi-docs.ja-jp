@@ -1,8 +1,8 @@
 ---
 title: Power BI の塗り分け地図 (コロプレス)
 description: Power BI での塗り分け地図 (コロプレス) の作成に関するドキュメント
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 45069a4a575659d44e41f1010d9941f21caa1ad1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ce0adb6d5115ece1b228690c496d022f8dfc9e56
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861638"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412995"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Power BI で塗り分け地図 (コロプレス地図) を作成して使用する
 
@@ -28,7 +28,7 @@ ms.locfileid: "90861638"
 ![米国のマップ](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Bing への送信内容
-Power BI は Bing と統合されており、既定のマップ座標 (ジオコーディングと呼ばれるプロセス) を提供します。 Power BI サービスまたは Power BI Desktop でマップの視覚エフェクトを作成すると、(その視覚エフェクトの作成に使用された) **場所**、**緯度**、および**経度**バケットのデータが Bing に送信されます。
+Power BI は Bing と統合されており、既定のマップ座標 (ジオコーディングと呼ばれるプロセス) を提供します。 Power BI サービスまたは Power BI Desktop でマップの視覚エフェクトを作成すると、(その視覚エフェクトの作成に使用された) **場所** 、 **緯度** 、および **経度** バケットのデータが Bing に送信されます。
 
 ユーザーまたは管理者は、Bing がジオコーディングに使う URL へのアクセスを許可するように、ファイアウォールを更新することが必要な場合があります。  以下の URL です。
 - https://dev.virtualearth.net/REST/V1/Locations    
@@ -51,9 +51,9 @@ Bing に送信されているデータの詳細、およびジオコーディン
 このチュートリアルでは、[売上およびマーケティングのサンプル PBIX ファイル](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)を使います。
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **売上およびマーケティングのサンプル PBIX ファイル**を見つけます
+2. **売上およびマーケティングのサンプル PBIX ファイル** を見つけます
 
-1. **売上およびマーケティングのサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **売上およびマーケティングのサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 
@@ -113,7 +113,7 @@ Power BI では、塗り分け地図の外観に対する数多くのコント�
 
    ![センチメント ページに追加された塗り分け地図](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. 塗り分け地図で、1 つの州を選択します。  これで、ページ上の他の視覚化がクロス強調表示され、クロスフィルター処理されます。 たとえば**テキサス**を選択すると、カードがクロスフィルター処理され、横棒グラフがクロス強調表示されます。 ここから、センチメントが 75 であることがわかり、テキサスは中央地区 #23 内にあることがわかります。   
+5. 塗り分け地図で、1 つの州を選択します。  これで、ページ上の他の視覚化がクロス強調表示され、クロスフィルター処理されます。 たとえば **テキサス** を選択すると、カードがクロスフィルター処理され、横棒グラフがクロス強調表示されます。 ここから、センチメントが 75 であることがわかり、テキサスは中央地区 #23 内にあることがわかります。   
    ![テキサスが選択されています](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. [VanArsdel - 月別の感情] 折れ線グラフでデータ ポイントを選択します。 これにより、塗り分けマップがフィルター処理され、競合他社ではなく、VanArsdel のセンチメント データが表示されます。  
    ![新しい網掛け](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)

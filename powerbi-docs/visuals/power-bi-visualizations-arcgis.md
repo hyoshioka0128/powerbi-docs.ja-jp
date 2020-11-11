@@ -1,21 +1,21 @@
 ---
 title: 他のユーザーから共有された ArcGIS マップとの対話
 description: レポート コンシューマーとして読み取りビューで ArcGIS Map for Power BI ビジュアルを使用する
-author: mihart
+author: msftrien
 ms.reviewer: willt, lukasz
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 751d36489590b92c1e03804f100a711b44e028ff
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 7b81ecbc23418fec4bd264e5cb20126f871c7e52
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600294"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413121"
 ---
 # <a name="create-arcgis-maps-in-power-bi"></a>Power BI で ArcGIS マップを作成する
 
@@ -24,7 +24,7 @@ ms.locfileid: "91600294"
 > [!NOTE]
 > これらのビジュアルは、Power BI Desktop と Power BI サービスの両方で作成および表示できます。 この記事の手順と図は、Power BI Desktop のものです。
 
-この概要は、ArcGIS Maps for Power BI を作成するユーザーの視点で書かれています。 "_デザイナー_" が同僚と ArcGIS Maps for Power BI マップを共有すると、その同僚はマップを表示および操作できますが、変更を保存することはできません。 ArcGIS マップの表示方法の詳細については、「[ArcGIS Maps for Power BI マップの操作](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm)」を参照してください。
+この概要は、ArcGIS Maps for Power BI を作成するユーザーの視点で書かれています。 " _デザイナー_ " が同僚と ArcGIS Maps for Power BI マップを共有すると、その同僚はマップを表示および操作できますが、変更を保存することはできません。 ArcGIS マップの表示方法の詳細については、「[ArcGIS Maps for Power BI マップの操作](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm)」を参照してください。
 
 ArcGIS マップと Power BI を組み合わせると、マッピングをマップ上のポイントの表現を越える、まったく新しいレベルに引き上げることができます。 基本マップ、場所の種類、テーマ、記号のスタイル、および参照レイヤーから選択して、すばらしい有益なマップの視覚エフェクトを作成します。 空間分析を使用してマップ上で権限のあるデータのレイヤーを組み合わせることで、より深く理解できる視覚化されたデータを伝達します。 モバイル デバイスでは、ArcGIS Maps for Power BI マップを作成することはできませんが、表示して操作することはできます。
 
@@ -39,7 +39,7 @@ ArcGIS マップと Power BI を組み合わせると、マッピングをマッ
 ![ArcGIS を開いた画面](media/power-bi-visualizations-arcgis/arcgis-tutorial-01.png)
 
 > [!TIP]
-> 多くの例やユーザーの声を参照するには、[**Esri の ArcGIS Maps for Power BI に関するページ**](https://www.esri.com/powerbi)にアクセスしてください。 また、Esri の **[ArcGIS Maps for Power BI オンライン](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) ヘルプ**も参照してください。
+> 多くの例やユーザーの声を参照するには、 [**Esri の ArcGIS Maps for Power BI に関するページ**](https://www.esri.com/powerbi)にアクセスしてください。 また、Esri の **[ArcGIS Maps for Power BI オンライン](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) ヘルプ** も参照してください。
 
 ## <a name="user-consent"></a>ユーザーの同意
 
@@ -50,8 +50,8 @@ ArcGIS Maps for Power BI は Esri ([https://www.esri.com](https://www.esri.com/)
 このチュートリアルでは、Power BI Desktop と PBIX の[小売の分析のサンプル](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)を使用します。 また、Power BI サービスを使用して ArcGIS Maps for Power BI を作成することもできます。
 
 1. メニュー バーの左上にある **[ファイル]**  >  **[レポートを開く]** を選択します。
-2. ローカル コンピューターに保存されている**小売の分析のサンプル PBIX ファイル**を見つけます。
-3. **小売りの分析のサンプル**をレポート ビュー ![レポート ビュー アイコン](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png) で開きます。
+2. ローカル コンピューターに保存されている **小売の分析のサンプル PBIX ファイル** を見つけます。
+3. **小売りの分析のサンプル** をレポート ビュー ![レポート ビュー アイコン](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png) で開きます。
 4. 選択 ![新しいページの追加アイコン](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-02.png) を選択して、レポートに新しいページを追加します。
 
 ## <a name="create-an-arcgis-maps-for-power-bi-map-visualization"></a>ArcGIS Maps for Power BI マップの視覚エフェクトを作成する
@@ -81,7 +81,7 @@ ArcGIS Maps for Power BI は Esri ([https://www.esri.com](https://www.esri.com/)
 
 ## <a name="format-the-arcgis-maps-for-power-bi-visualization"></a>ArcGIS Maps for Power BI の視覚化の書式を設定する
 
-**Power BI の ArcGIS マップ**書式設定機能にアクセスするには、次の手順を実行します。
+**Power BI の ArcGIS マップ** 書式設定機能にアクセスするには、次の手順を実行します。
 
 1. [視覚化] ペインで **[書式]** タブをクリックして、書式設定オプションを表示します。
 
@@ -99,7 +99,7 @@ ArcGIS Maps for Power BI は Esri ([https://www.esri.com](https://www.esri.com/)
 マップの視覚化にデータを追加すると、マップ ツールが使用できるようになります。
 
 > [!NOTE]
-> このチュートリアルでは、**Standard** バージョンの ArcGIS Maps for Power BI で使用できる機能とオプションについてのみ説明します。 適切なライセンスを使って有効な [ArcGIS アカウント](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)にサインインすれば、より多くの機能にアクセスできます。
+> このチュートリアルでは、 **Standard** バージョンの ArcGIS Maps for Power BI で使用できる機能とオプションについてのみ説明します。 適切なライセンスを使って有効な [ArcGIS アカウント](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)にサインインすれば、より多くの機能にアクセスできます。
 
 マップ ツールを展開するには:
 
@@ -162,7 +162,7 @@ ArcGIS Maps for Power BI では、強力な geo 有効化テクノロジを使�
 
 #### <a name="customize-the-maps-symbology"></a>マップのシンボルをカスタマイズする
 
-ArcGIS Maps for Power BI では、[フィールド] ペインの値を使用して、マップ上での位置の表示方法がインテリジェントに決定されます。 **シンボル**機能を使用すると、既定のスタイルを変更して、ストーリーをよりわかりやすくすることができます。 別のマップ テーマを選択し、マップ上の場所を表すために使用する記号と色をカスタマイズすることもできます。 マップ視覚エフェクトの [フィールド] ペインに追加した値に応じて、さまざまなマップ テーマとスタイル設定オプションを使用できます。
+ArcGIS Maps for Power BI では、[フィールド] ペインの値を使用して、マップ上での位置の表示方法がインテリジェントに決定されます。 **シンボル** 機能を使用すると、既定のスタイルを変更して、ストーリーをよりわかりやすくすることができます。 別のマップ テーマを選択し、マップ上の場所を表すために使用する記号と色をカスタマイズすることもできます。 マップ視覚エフェクトの [フィールド] ペインに追加した値に応じて、さまざまなマップ テーマとスタイル設定オプションを使用できます。
 
 レイヤーのシンボルを変更するには、次の手順を実行します。
 
@@ -206,7 +206,7 @@ ArcGIS Maps for Power BI では、[フィールド] ペインの値を使用し�
 
 2. シンボルの設定を必要に応じて変更します。 シンボルの形状、色、透明度、輪郭の色、太さ、透明度を選択できます。 これらのオプションを変更するには、[シンボル サイズ] カテゴリを展開します。表示されるオプションは、データの性質と選択したマップ テーマに応じて変わります。
 
-    次の例では、マップのテーマが**サイズ**に設定され、いくつかの記号のスタイルで透過性、スタイル、サイズが調整されていることが示されています。
+    次の例では、マップのテーマが **サイズ** に設定され、いくつかの記号のスタイルで透過性、スタイル、サイズが調整されていることが示されています。
 
     ![マップのサイズとシンボル](media/power-bi-visualizations-arcgis/arcgis-tutorial-13.png)
 
@@ -238,8 +238,8 @@ ArcGIS Maps for Power BI には、マップ上の場所を選択するのに役�
     | --- | --- |
     | ![単一選択](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png) | **[単一選択]** —個々の場所をクリックするために使用できる単一選択ツールです。これが既定の選択ツールです。 Ctrl キーを押しながらクリックすると、複数の場所を選択できます。マップ上のデータの場所をクリックすると、それらが選択され、他の視覚化との対話がトリガーされます。ピンまたは参照レイヤー上の場所をクリックすると、そのツールヒントが表示されます。 |
     | ![ボックス選択](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png)  | **ボックス選択** —四角形のセレクターをドラッグして複数の場所を選択するか、個々の場所をクリックして場所を個別に選択できます。選択ツールと同様に、ピンまたは参照レイヤー上の場所をクリックすると、そのツールヒントが表示されます。ボックス選択ツールがアクティブな場合、マップをパンすることはできません。 |
-    | ![参照レイヤー選択アイコン](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png)  | **参照レイヤー選択** —マップに[参照レイヤー](https://doc.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm)を追加した場合は、このツールで参照レイヤー上のエリアをクリックすることにより、場所を選択できます。 参照上の区切られたエリア内の場所は、強調表示されます。マップの他のエリア内の場所は選択できません。このツールは、マップに 1 つ以上の参照レイヤーが含まれており、参照レイヤーが現在アクティブになっている場合にのみ表示されます。 |
-    | ![到達圏レイヤーから選択](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png)  | **到達圏レイヤーから選択** —マップに[到達圏](https://doc.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm)を追加した場合は、[到達圏レイヤーから選択] ツールを使用して、定義されたエリア内のデータの場所を選択できます。 |
+    | ![参照レイヤー選択アイコン](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png)  | **参照レイヤー選択** —マップに [参照レイヤー](https://doc.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm)を追加した場合は、このツールで参照レイヤー上のエリアをクリックすることにより、場所を選択できます。 参照上の区切られたエリア内の場所は、強調表示されます。マップの他のエリア内の場所は選択できません。このツールは、マップに 1 つ以上の参照レイヤーが含まれており、参照レイヤーが現在アクティブになっている場合にのみ表示されます。 |
+    | ![到達圏レイヤーから選択](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png)  | **到達圏レイヤーから選択** —マップに [到達圏](https://doc.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm)を追加した場合は、[到達圏レイヤーから選択] ツールを使用して、定義されたエリア内のデータの場所を選択できます。 |
     
 2. マップ上の 1 つまたは複数の場所を選択します。 一度に最大 250 のデータ ポイントを選択できます。
 
@@ -252,7 +252,7 @@ ArcGIS Maps for Power BI には、マップ上の場所を選択するのに役�
 場所をピン留めするには、次の手順を実行します。
 
 1. マップ ツールで **[検索]** ![検索アイコン](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png) ボタンをクリックして、[検索] ペインを開きます。
-2. 検索ボックスに、キーワードとして「**Pittsburgh international**」と入力します。
+2. 検索ボックスに、キーワードとして「 **Pittsburgh international** 」と入力します。
 
     キーワードには、住所、場所、または目的地を含めることができます。 入力中には、キーワードの類似性に基づいて、最近の類似した検索語や入力候補が表示されます。
 
@@ -263,7 +263,7 @@ ArcGIS Maps for Power BI には、マップ上の場所を選択するのに役�
 4. ピンの色を変更するには、マップ視覚エフェクトの **[書式]** ペインで **[検索]** カテゴリを展開し、新しい色を選択します。
 
 > [!NOTE]
-> **検索**機能は、以前 ArcGIS Maps for Power BI で使用できたピン機能に代わるものです。
+> **検索** 機能は、以前 ArcGIS Maps for Power BI で使用できたピン機能に代わるものです。
 
 詳細については、ArcGIS Maps for Power BI オンライン ヘルプの「[位置のピン止め](https://doc.arcgis.com/en/maps-for-powerbi/design/pin-locations.htm)」を参照してください。
 
@@ -284,13 +284,13 @@ ArcGIS Maps for Power BI の Standard アカウントには、米国に関する
 
 3. ギャラリーをスクロールし、マップに追加するレイヤーのサムネイルで **[追加]** をクリックします。
 
-    この例では、**2016 USA Average Household Income** レイヤーを見つけ、 **[追加]** をクリックします。
+    この例では、 **2016 USA Average Household Income** レイヤーを見つけ、 **[追加]** をクリックします。
     
     マップが更新され、新しいレイヤーが表示されます。
     
     ![人口統計レイヤー](media/power-bi-visualizations-arcgis/arcgis-tutorial-14.png)
     
-人口統計参照レイヤーは対話型です。エリアをクリックすると、詳細情報を含むツールヒントが表示されます。 また、 **[参照レイヤーを選択]** ツールを使用して、参照レイヤー上のエリア内にある[マップ上のエリアを選択](https://doc.arcgis.com/en/maps-for-powerbi/design/select-features-on-the-map.htm)することもできます。
+人口統計参照レイヤーは対話型です。エリアをクリックすると、詳細情報を含むツールヒントが表示されます。 また、 **[参照レイヤーを選択]** ツールを使用して、参照レイヤー上のエリア内にある [マップ上のエリアを選択](https://doc.arcgis.com/en/maps-for-powerbi/design/select-features-on-the-map.htm)することもできます。
 
 ##### <a name="add-a-reference-layer-from-arcgis"></a>ArcGIS から参照レイヤーを追加する
 
@@ -300,7 +300,7 @@ ArcGIS 参照レイヤーを追加するには、次の手順を実行します�
 
 1. [参照] ペインで、 **[ArcGIS]** タブをクリックします。
 
-2. 検索フィールドに「**USA Congressional districts**」と入力し、**Enter** キーを押します。
+2. 検索フィールドに「 **USA Congressional districts** 」と入力し、 **Enter** キーを押します。
 
     ギャラリーに、結果の候補がいくつか表示されます。
 
@@ -310,7 +310,7 @@ ArcGIS 参照レイヤーを追加するには、次の手順を実行します�
     
     ![参照レイヤー](media/power-bi-visualizations-arcgis/arcgis-tutorial-15.png)
     
-ArcGIS レイヤーは対話型です。エリアをクリックすると、詳細情報を含むツールヒントが表示されます。 また、 **[参照レイヤーを選択]** ツールを使用して、参照レイヤー上のエリア内にある[マップ上のエリアを選択](https://doc.arcgis.com/en/maps-for-powerbi/design/select-features-on-the-map.htm)することもできます。
+ArcGIS レイヤーは対話型です。エリアをクリックすると、詳細情報を含むツールヒントが表示されます。 また、 **[参照レイヤーを選択]** ツールを使用して、参照レイヤー上のエリア内にある [マップ上のエリアを選択](https://doc.arcgis.com/en/maps-for-powerbi/design/select-features-on-the-map.htm)することもできます。
 
 #### <a name="find-nearby-locations"></a>近くの場所を検索する
 
@@ -381,7 +381,7 @@ Power BI サービスでは、管理者はすべてのユーザーに対して A
 
 #### <a name="user-administrator-options"></a>ユーザー管理者のオプション
 
-Power BI Desktop では、組織に配置されているコンピューター全体で Power BI の ArcGIS マップを無効にするために**グループ ポリシー**を使用できます。
+Power BI Desktop では、組織に配置されているコンピューター全体で Power BI の ArcGIS マップを無効にするために **グループ ポリシー** を使用できます。
 
 | **属性** | **Value** |
 | --- | --- |

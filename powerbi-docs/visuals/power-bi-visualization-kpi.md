@@ -1,8 +1,8 @@
 ---
 title: 主要業績評価指標 (KPI) ビジュアル
 description: Power BI で主要業績評価指標 (KPI) ビジュアルを作成します
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 01/30/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 87e63358e2590bff1ebab6ce7816b558e72ac3e0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f272a760c016fa0d5fcfc9849eaa2a01fc77b9f9
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237655"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412868"
 ---
 # <a name="create-key-performance-indicator-kpi-visualizations"></a>主要業績評価指標 (KPI) ビジュアルを作成する
 
@@ -36,7 +36,7 @@ KPI は、次のような場合に最適です。
 
 ## <a name="kpi-requirements"></a>KPI の要件
 
-デザイナーは、特定のメジャーに対する KPI ビジュアルに基づきます。 KPI の目的は、定義済みのターゲットに対する現在の値とメトリックの状態を評価できるようにすることです。 KPI ビジュアルには、値に対して評価される "*基本*" メジャー、"*ターゲット*" となるメジャーまたは値、および "*しきい値*" または "*目標*" が必要です。
+デザイナーは、特定のメジャーに対する KPI ビジュアルに基づきます。 KPI の目的は、定義済みのターゲットに対する現在の値とメトリックの状態を評価できるようにすることです。 KPI ビジュアルには、値に対して評価される " *基本* " メジャー、" *ターゲット* " となるメジャーまたは値、および " *しきい値* " または " *目標* " が必要です。
 
 KPI データセットには KPI の目標値が含まれている必要があります。 データセットに目標値が含まれていない場合は、目標が含まれる Excel シートをデータ モデルまたは PBIX ファイルに追加することによって作成できます。
 
@@ -46,9 +46,9 @@ KPI データセットには KPI の目標値が含まれている必要があ�
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
 
-1. **小売の分析のサンプル PBIX ファイル**を探します。
+1. **小売の分析のサンプル PBIX ファイル** を探します。
 
-1. **小売りの分析のサンプルの .PBIX ファイル**をレポート ビューで開きます。 ![レポート ビューのアイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png)
+1. **小売りの分析のサンプルの .PBIX ファイル** をレポート ビューで開きます。 ![レポート ビューのアイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png)
 
 1. 新しいページを追加するには **+** を選択します。 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
 
@@ -66,7 +66,7 @@ KPI データセットには KPI の目標値が含まれている必要があ�
 1. ビジュアルの右上隅の省略記号を選択して、Power BI が列を **FiscalMonth** を基準として昇順に並べ替えたことを確認します。
 
     > [!IMPORTANT]
-    > ビジュアルを KPI に変換すると、並べ替えオプションは**なくなります**。 ここで正しく並べ替える必要があります。
+    > ビジュアルを KPI に変換すると、並べ替えオプションは **なくなります** 。 ここで正しく並べ替える必要があります。
 
     ![展開されて [昇順で並べ替え] と [FiscalMonth] が選択された状態の省略記号メニューのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-ascending-by-fiscal-month.png)
 
@@ -90,13 +90,13 @@ KPI データセットには KPI の目標値が含まれている必要があ�
 
     * **目標** - **[オン]** に設定すると、ビジュアルに目標、および目標からの距離がパーセンテージとして表示されます。
 
-    * **[色の設定] > [方向]** - 一部の KPI では高い値が "*良好な*" 値と見なされ、別の KPI では低い値が "*良好な*" 値と見なされます。 たとえば、前者の例としては収益があり、後者の例としては待機時間があります。 通常、収益では高い値が良好であり、待機時間の高い値は逆の意味です。 **[高いと良好]** を選び、必要に応じて色の設定を変更します。
+    * **[色の設定] > [方向]** - 一部の KPI では高い値が " *良好な* " 値と見なされ、別の KPI では低い値が " *良好な* " 値と見なされます。 たとえば、前者の例としては収益があり、後者の例としては待機時間があります。 通常、収益では高い値が良好であり、待機時間の高い値は逆の意味です。 **[高いと良好]** を選び、必要に応じて色の設定を変更します。
 
 KPI は Power BI サービスとモバイル デバイスでも使用できます。 これにより、ビジネスの核心部分に常につながっていることができます。
 
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
 
-KPI が上記のようにならない場合、**FiscalMonth** で並べ替えられていない可能性があります。 KPI には並べ替えオプションはありません。 お使いのビジュアルを KPI に変換する*前*に、最初から **FiscalMonth** で並べ替える必要があります。
+KPI が上記のようにならない場合、 **FiscalMonth** で並べ替えられていない可能性があります。 KPI には並べ替えオプションはありません。 お使いのビジュアルを KPI に変換する *前* に、最初から **FiscalMonth** で並べ替える必要があります。
 
 ## <a name="next-steps"></a>次の手順
 

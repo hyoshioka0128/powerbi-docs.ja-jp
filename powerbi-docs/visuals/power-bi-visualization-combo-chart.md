@@ -1,8 +1,8 @@
 ---
 title: Power BI での複合グラフ
 description: 複合グラフに関するこのチュートリアルでは、複合グラフを使用する状況と、Power BI サービスおよび Power BI Desktop.で複合グラフを作成する方法について説明します。
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 90c721f6c2f555bd632d6c8fff56d05994b1444b
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 89fdd0852db9560a6e2b0d43e03b9f89c61dd33e
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354779"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411569"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Power BI で複合グラフを作成して使用する
 
@@ -43,9 +44,9 @@ Power BI の複合グラフは、折れ線グラフと縦棒グラフを組み�
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **小売の分析のサンプル PBIX ファイル**を探します。
+2. **小売の分析のサンプル PBIX ファイル** を探します。
 
-1. **小売の分析のサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **小売の分析のサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 
@@ -86,7 +87,7 @@ Power BI の複合グラフは、折れ線グラフと縦棒グラフを組み�
 ## <a name="create-a-combo-chart-with-two-axes"></a>2 つの軸を持つ複合グラフを作成する
 このタスクでは、粗利と売上を比較します。
 
-1. **前年の粗利 (%)** を**会計年度**で追跡する新しい折れ線グラフを作成します。 省略記号を選択して、**月ごと**に**昇順**で並べ替えます。  
+1. **前年の粗利 (%)** を **会計年度** で追跡する新しい折れ線グラフを作成します。 省略記号を選択して、 **月ごと** に **昇順** で並べ替えます。  
 1 月の粗利 (%) は 35% で、4 月には最高値の 45% になり、7 月に下がって 8 月に再びピークに達しました。 前年と本年は同じ売上パターンになるでしょうか?
 
    ![売上の複合グラフの例](media/power-bi-visualization-combo-chart/combo1-new.png)

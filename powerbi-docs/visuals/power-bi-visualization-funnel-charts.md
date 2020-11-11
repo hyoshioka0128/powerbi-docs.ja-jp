@@ -1,8 +1,8 @@
 ---
 title: じょうごグラフ
 description: Power BI のじょうごグラフ
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b0680df9a75d42f637632916bfd648943ba7517b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2719127825dc94f1f1bd83fe4d36dc47dfc355f7
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235846"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412903"
 ---
 # <a name="create-and-use-funnel-charts"></a>じょうごグラフの作成と使用
 
@@ -61,9 +61,9 @@ ms.locfileid: "85235846"
 
 1. メニューバーの左上にある **[ファイル]**  >  **[開く]** を選択します。
    
-2. **営業案件の分析のサンプル PBIX ファイル**を探します。
+2. **営業案件の分析のサンプル PBIX ファイル** を探します。
 
-1. **営業案件の分析のサンプル PBIX ファイル**をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
+1. **営業案件の分析のサンプル PBIX ファイル** をレポート ビュー ![レポート ビュー アイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png) で開きます。
 
 1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 

@@ -1,20 +1,20 @@
 ---
 title: Power BI での視覚化の種類
 description: Power BI での視覚化の種類
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2ad8867117977cb7f53fbd295a2f560d65b0d76
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 24dce044cdd1c4eaef21f4d744ed672119241970
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600510"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412742"
 ---
 # <a name="visualization-types-in-power-bi"></a>Power BI での視覚化の種類
 ## <a name="power-bi-visualizations"></a>Power BI の視覚化
@@ -165,7 +165,7 @@ ms.locfileid: "91600510"
 ![R ビジュアル](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
 
 >[!TIP]
->R スクリプトで作成したビジュアルは一般的に "*R ビジュアル*" と呼ばれ、R の豊富な分析と視覚化の機能を使用した高度なデータ整形と予測などの分析に使用できます。R ビジュアルは、Power BI Desktop で作成でき、Power BI サービスに公開できます。   
+>R スクリプトで作成したビジュアルは一般的に " *R ビジュアル* " と呼ばれ、R の豊富な分析と視覚化の機能を使用した高度なデータ整形と予測などの分析に使用できます。R ビジュアルは、Power BI Desktop で作成でき、Power BI サービスに公開できます。   
 
 詳しくは、[Power BI の R ビジュアル](service-r-visuals.md)に関するページを参照してください。
 

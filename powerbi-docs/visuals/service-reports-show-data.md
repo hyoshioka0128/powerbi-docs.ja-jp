@@ -1,35 +1,36 @@
 ---
 title: Power BI ビジュアルの作成に使用されたデータを表示する
 description: このドキュメントでは、Power BI でビジュアルを作成するために使用されたデータを表示する方法、およびそのデータを .csv ファイルにエクスポートする方法について説明します。
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 12/4/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b74c0948ba8d22f1917f9750f86e899c8a99a904
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c3e996da62b71c008f4f7a5929cc8b91d38cc26e
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239376"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412788"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>視覚エフェクトの基になるデータを表示する
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 ## <a name="show-data"></a>データの表示
-Power BI のビジュアルは、データセットからのデータを使用して作成されます。 目に見えない部分を確認する場合は、ビジュアルの作成に使用されているデータを Power BI によって*表示*することができます。 **[データの表示]** を選択すると、ビジュアルの下 (または横に) データが表示されます。
+Power BI のビジュアルは、データセットからのデータを使用して作成されます。 目に見えない部分を確認する場合は、ビジュアルの作成に使用されているデータを Power BI によって *表示* することができます。 **[データの表示]** を選択すると、ビジュアルの下 (または横に) データが表示されます。
 
 また、ビジュアルの作成に使用されているデータを .xlsx ファイルまたは .csv ファイルとしてエクスポートして Excel で表示することもできます。 詳細については、「[Power BI ビジュアルからデータをエクスポートする](power-bi-visualization-export-data.md)」を参照してください。
 
 > [!NOTE]
-> [*データの表示*] と [*データのエクスポート*] は両方とも、Power BI サービスと Power BI Desktop で使用できます。 ただし、Power BI Desktop では、詳細を示すレイヤーが 1 つ追加されています。[[*レコードの表示*] にはデータセットからの実際の行が表示されます](../create-reports/desktop-see-data-see-records.md)。
+> [ *データの表示* ] と [ *データのエクスポート* ] は両方とも、Power BI サービスと Power BI Desktop で使用できます。 ただし、Power BI Desktop では、詳細を示すレイヤーが 1 つ追加されています。 [[ *レコードの表示* ] にはデータセットからの実際の行が表示されます](../create-reports/desktop-see-data-see-records.md)。
 > 
 > 
 
-## <a name="using-show-data"></a>"*データの表示*" の使用 
+## <a name="using-show-data"></a>" *データの表示* " の使用 
 1. Power BI Desktop でビジュアルを選択してアクティブにします。
 
 2. **[その他の操作]** (...) を選択し、 **[データの表示]** を選択します。 
