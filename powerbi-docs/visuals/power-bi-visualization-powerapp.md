@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.author: rien
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 78d9d59455a86c5499bc8b01deeacb331bbe7a8b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c46410caff373eb8474a4b687e834b822f2da8ac
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858924"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397532"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>チュートリアル:Power BI レポートに Power Apps ビジュアルを埋め込む
 
 このチュートリアルでは、Power Apps ビジュアルを使用して、サンプル Power BI レポートに埋め込まれる新しいアプリを作成します。 このアプリでは、そのレポート内の他のビジュアルとの対話が行われます。
 
-Power Apps サブスクリプションをお持ちでない場合は、開始する前に[無料アカウントを作成](https://web.powerapps.com/signup?redirect=marketing&email=)してください。
+Power Apps サブスクリプションをお持ちでない場合は、開始する前に[無料アカウントを作成](https://make.powerapps.com/signup?redirect=marketing&email=)してください。
 
 このチュートリアルで学習する内容は次のとおりです。
 > [!div class="checklist"]
@@ -59,7 +59,7 @@ Power Apps ビジュアルをレポートに追加すると、Power Apps と Pow
 
     ![新しいアプリの作成](media/power-bi-visualization-powerapp/power-bi-create-new-powerapp.png)
 
-    Power Apps Studio では、基本的なアプリが作成され、Power BI で選択したフィールドの 1 つが "*ギャラリー*" に表示されます。
+    Power Apps Studio では、基本的なアプリが作成され、Power BI で選択したフィールドの 1 つが " *ギャラリー* " に表示されます。
 
     ![Power Apps が開く](media/power-bi-visualization-powerapp/power-bi-power-app.png)
 

@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/07/2020
 ms.author: davidi
-ms.openlocfilehash: ae6047950256a783172ef871c2bd58dc15ff033a
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 3cce51ad577c700a0f9595a2b92694e5e1b61cc5
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297594"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397394"
 ---
 # <a name="power-bi-data-sources"></a>Power BI データ ソース
 
-この表には、DirectQuery やオンプレミス データ ゲートウェイに関する情報など、データセットに対して Power BI でサポートされているデータ ソースがまとめられています。 データフローの詳細については、「[Power BI データフロー用のデータ リソースに接続する](../transform-model/service-dataflows-data-sources.md)」を参照してください。
+この表には、DirectQuery やオンプレミス データ ゲートウェイに関する情報など、データセットに対して Power BI でサポートされているデータ ソースがまとめられています。 データフローの詳細については、「[Power BI データフロー用のデータ リソースに接続する](../transform-model/dataflows/dataflows-configure-consume.md)」を参照してください。
 
 | データ ソースの | デスクトップから接続する | サービスから接続し、更新する | DirectQuery / ライブ接続 | ゲートウェイ (サポートあり) | ゲートウェイ (必須) | Power BI データフロー |
 |---|---|---|---|---|---|---|---|
@@ -172,9 +172,6 @@ SSO オプションは、このデータ ソースを使うすべてのデータ
 - Spark
 - SQL Server
 - Teradata
-
-> [!Note]
-> Azure Multi-Factor Authentication (MFA) はサポートされていません。 DirectQuery で SSO を使用する必要があるユーザーは、MFA から除外する必要があります。
 
 ## <a name="next-steps"></a>次の手順
 

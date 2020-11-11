@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: f3f76bd7c422d07cb2b390c2aebd92a2d7fe4ef3
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 7d4a548ab24e8493cef340026642021a2f923ee1
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749048"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397417"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI Embedded に Power BI ワークスペース コレクション コンテンツを移行する方法
 
@@ -25,16 +25,16 @@ Power BI Embedded では、1 つの API サーフェスで一貫性のある一�
 現在の Power BI ワークスペース コレクションは、期間限定で引き続き利用できます。 マイクロソフト エンタープライズ契約を結ばれたお客様は、現在の契約が満了するまでご利用いただけます。ダイレクト チャネルまたは CSP チャネル経由で Power BI ワークスペース コレクションを入手されたお客様は、Power BI Embedded が一般提供されてから 1 年間ご利用いただけます。  この記事では、Power BI ワークスペース コレクションから新しい Power BI Embedded エクスペリエンスに移行するためのいくつかのガイダンスと、アプリケーションの変更について予想されることを説明します。
 
 > [!IMPORTANT]
-> 移行作業は Power BI Embedded に依存しますが、アプリケーションのユーザーが**埋め込みトークン**を使うときに Power BI に依存することはありません。 アプリケーションに埋め込まれたコンテンツを表示するために、Power BI にサインアップする必要はありません。 この埋め込み方法を使って、Power BI 以外の Embedded ユーザーにサービスを提供することができます。
+> 移行作業は Power BI Embedded に依存しますが、アプリケーションのユーザーが **埋め込みトークン** を使うときに Power BI に依存することはありません。 アプリケーションに埋め込まれたコンテンツを表示するために、Power BI にサインアップする必要はありません。 この埋め込み方法を使って、Power BI 以外の Embedded ユーザーにサービスを提供することができます。
 
 ![フローを埋め込む](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
 新しい Power BI Embedded への移行を始める前に、[埋め込み設定ツール](https://aka.ms/embedsetup)を使って新しい Power BI Embedded 環境を設定するチュートリアルを参照できます。
 
 適切なソリューションを選択します。
-* **顧客向けの埋め込み** - [アプリ所有データ](https://aka.ms/embedsetup/AppOwnsData) ソリューションに興味があるとき。 [顧客向けの埋め込み](embedding.md#embedding-for-your-customers)では、Power BI のアカウントがないユーザーのためにダッシュボードとレポートを埋め込むことができます。 
+* **顧客向けの埋め込み** - *アプリ所有データ* ソリューションに興味があるとき。 [顧客向けの埋め込み](embedding.md#embedding-for-your-customers)では、Power BI のアカウントがないユーザーのためにダッシュボードとレポートを埋め込むことができます。 
 
-* **組織向けの埋め込み** - [ユーザー所有データ](https://aka.ms/embedsetup/UserOwnsData) ソリューションに興味があるとき。 [組織向けの埋め込み](embedding.md#embedding-for-your-organization)を使って、Power BI サービスを拡張することができます。
+* **組織向けの埋め込み** - *ユーザー所有データ* ソリューションに興味があるとき。 [組織向けの埋め込み](embedding.md#embedding-for-your-organization)を使って、Power BI サービスを拡張することができます。
 
 ## <a name="prepare-for-the-migration"></a>移行の準備をする
 
@@ -66,7 +66,7 @@ Power BI ワークスペース コレクションから Power BI Embedded への
 
     これらのユーザーは、必要に応じて、ワークスペースに割り当てる必要があります。
 
-3. アプリケーション "*マスター*" ユーザー アカウント、または Embedded アカウント。
+3. アプリケーション " *マスター* " ユーザー アカウント、または Embedded アカウント。
 
     アプリケーション バックエンドにはこのアカウントの資格情報が格納され、Power BI REST API で使用する Azure AD トークンを取得するために使用されます。 このアカウントは、アプリケーションの埋め込みトークンを生成するために使用されます。 また、このアカウントは、埋め込むために作成されたワークスペースの管理者にする必要があります。
 
@@ -81,7 +81,7 @@ Azure AD 内でアプリケーションを登録し、特定のアクセス許�
 
 REST API の呼び出しを行うには、Azure AD にアプリケーションを登録する必要があります。 そのためには、Power BI アプリ登録ページだけでなく、Azure Portal に移動して追加構成を適用します。 詳しくは、「[Azure AD アプリを登録して Power BI コンテンツを埋め込む](register-app.md)」をご覧ください。
 
-アプリケーションの**マスター** アカウントを使用してアプリケーションを登録する必要があります。
+アプリケーションの **マスター** アカウントを使用してアプリケーションを登録する必要があります。
 
 ## <a name="create-workspaces-required"></a>ワークスペースを作成する (必須)
 
@@ -93,13 +93,13 @@ REST API の呼び出しを行うには、Azure AD にアプリケーション�
 Power BI 内でワークスペースを作成するには、Pro ライセンスを持つユーザーが必要です。 ワークスペースを作成する Power BI ユーザーは、既定でそのワークスペースの管理者になります。
 
 > [!NOTE]
-> アプリケーションの*マスター* アカウントは、ワークスペースの管理者である必要があります。
+> アプリケーションの *マスター* アカウントは、ワークスペースの管理者である必要があります。
 
 ## <a name="content-migration"></a>コンテンツの移行
 
 ワークスペース コレクションから Power BI Embedded へのコンテンツの移行は、現在のソリューションと並行して行うことができ、ダウンタイムを必要としません。
 
-Power BI ワークスペース コレクションから Power BI Embedded にコンテンツをコピーするときに役立つ**移行ツール**を利用できます。 これは特に、多くのコンテンツがある場合に役立ちます。 詳細については、「[Power BI Embedded 移行ツール](migrate-tool.md)」を参照してください。
+Power BI ワークスペース コレクションから Power BI Embedded にコンテンツをコピーするときに役立つ **移行ツール** を利用できます。 これは特に、多くのコンテンツがある場合に役立ちます。 詳細については、「[Power BI Embedded 移行ツール](migrate-tool.md)」を参照してください。
 
 コンテンツの移行は主に 2 つの API に依存します。
 
@@ -145,7 +145,7 @@ Power BI ワークスペース コレクションから Power BI Embedded にコ
 
 #### <a name="push-dataset--report"></a>プッシュ データセットとレポート
 
-.pbix のダウンロードでは*プッシュ API* データセットはサポートされません。 プッシュ API データセット データを PaaS から SaaS に移植することはできません。
+.pbix のダウンロードでは *プッシュ API* データセットはサポートされません。 プッシュ API データセット データを PaaS から SaaS に移植することはできません。
 
 **フロー**
 
@@ -168,12 +168,12 @@ Power BI ワークスペース コレクションから移行したコンテン�
 ## <a name="rebuild-your-application"></a>アプリケーションを再構築する
 
 1. powerbi.com 内のレポートの場所と Power BI REST API を使用するには、アプリケーションを変更する必要があります。
-2. アプリケーションの*マスター* アカウントを使用して、AuthN/AuthZ 認証を再構築します。 [埋め込みトークン](/rest/api/power-bi/embedtoken)を使用することで、このユーザーを他のユーザーの代理として機能させることができます。
+2. アプリケーションの *マスター* アカウントを使用して、AuthN/AuthZ 認証を再構築します。 [埋め込みトークン](/rest/api/power-bi/embedtoken)を使用することで、このユーザーを他のユーザーの代理として機能させることができます。
 3. Powerbi.com からレポートをアプリケーションに埋め込みます。
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>ユーザーを Power BI ユーザーにマップする
 
-アプリケーション内で管理するユーザーを、アプリケーション用の*マスター* Power BI 資格情報にマップします。 この Power BI *マスター* アカウントの資格情報はアプリケーション内に格納され、埋め込みトークンの作成に使用されます。
+アプリケーション内で管理するユーザーを、アプリケーション用の *マスター* Power BI 資格情報にマップします。 この Power BI *マスター* アカウントの資格情報はアプリケーション内に格納され、埋め込みトークンの作成に使用されます。
 
 ## <a name="what-to-do-when-you-are-ready-for-production"></a>運用環境の準備ができたときに実行する作業
 

@@ -9,16 +9,16 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c4cf0c4fbdde52181dbc5307a9d97d17344c7c26
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 3454a10269937d6e03151a64bba6695cc37fcd66
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632850"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396336"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium 容量でワークロードを構成する
 
-この記事では、Power BI Premium 容量に対するワークロードの構成と有効化について説明します。 既定では、容量は、Power BI のクエリの実行に関連付けられているワークロードのみをサポートします。 **[AI (Cognitive Services)](../transform-model/service-cognitive-services.md)** 、 **[データフロー](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** 、および **[ページ分割されたレポート](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** に対する追加のワークロードの有効化と構成を行うこともできます。
+この記事では、Power BI Premium 容量に対するワークロードの構成と有効化について説明します。 既定では、容量は、Power BI のクエリの実行に関連付けられているワークロードのみをサポートします。 **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)** 、 **[データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)** 、および **[ページ分割されたレポート](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** に対する追加のワークロードの有効化と構成を行うこともできます。
 
 ## <a name="default-memory-settings"></a>既定のメモリ設定
 
@@ -41,7 +41,7 @@ AI ワークロードを使用すると、Power BI で cognitive services と自
 |---------------------------------|----------------------------------------|
 | **最大メモリ (%)** | 容量のうち、AI プロセスが使用できるメモリの最大割合。 |
 | **Power BI Desktop からの使用を許可します** | この設定は将来使用するために予約されており、すべてのテナントに表示されるわけではありません。 |
-| **機械学習モデルの構築を許可します** | ビジネス アナリストが Power BI で直接機械学習モデルをトレーニング、検証、および呼び出すことができるかどうかを指定します。 詳細については、「[Power BI での自動 Machine Learning (プレビュー)](../transform-model/service-machine-learning-automated.md)」を参照してください。 |
+| **機械学習モデルの構築を許可します** | ビジネス アナリストが Power BI で直接機械学習モデルをトレーニング、検証、および呼び出すことができるかどうかを指定します。 詳細については、「[Power BI での自動 Machine Learning (プレビュー)](../transform-model/dataflows/dataflows-machine-learning-integration.md)」を参照してください。 |
 | **AI 要求に対して並列処理を有効にします** | AI 要求を並列で実行できるかどうかを指定します。 |
 |  |  |
 
@@ -209,7 +209,7 @@ Power BI のレポートでは、容量に対するクエリごとに、この�
 ## <a name="next-steps"></a>次の手順
 
 [Power BI Premium の容量の最適化](service-premium-capacity-optimize.md)
-[データフローを使用した Power BI でのセルフサービスのデータ準備](../transform-model/service-dataflows-overview.md)
+[データフローを使用した Power BI でのセルフサービスのデータ準備](../transform-model/dataflows/dataflows-introduction-self-service.md)
 [Power BI Premium のページ分割されたレポートとは](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 [Power BI Desktop でのページの自動更新 (プレビュー)](../create-reports/desktop-automatic-page-refresh.md)
 

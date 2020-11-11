@@ -10,12 +10,12 @@ ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 464fdce94b41c3dc413088da6395520fea32c601
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: eb7a2dfeb78e60c78b1b3f17306aec91a8a55330
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462639"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397026"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
@@ -222,7 +222,7 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 ワークスペースは、ユーザーがダッシュボード、レポート、およびその他のコンテンツで共同作業を行う場所です。 管理者は、 **[ワークスペースの作成 (新しいワークスペース エクスペリエンス)]** 設定を使用して、ワークスペースを作成できる組織内のユーザーを指定します。 管理者は、組織内の全員が新しいワークスペース エクスペリエンスのワークスペースを作成することを許可することも、誰も作成できないようにすることもできます。 特定のセキュリティ グループのメンバーに作成を限定することもできます。 [ワークスペース](../collaborate-share/service-new-workspaces.md)の詳細を参照してください。
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="新しいワークスペース エクスペリエンスを作成する":::
 
 Microsoft 365 グループに基づく従来のワークスペースについては、引き続き管理ポータルおよび Azure Active Directory で管理されます。
 
@@ -241,7 +241,7 @@ Microsoft 365 グループに基づく従来のワークスペースについて
 
 管理者は、ワークスペース間でデータセットを使用できる組織内のユーザーを制御できます。 この設定を有効にした場合でも、ユーザーは特定のデータセットで求められるビルド アクセス許可が必要になります。
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="ワークスペースをまたいでデータセットを使用":::
 
 詳細については、[ワークスペースをまたいだデータセットの概要](../connect-data/service-datasets-across-workspaces.md)に関する記事を参照してください。
 
@@ -407,7 +407,7 @@ Azure AD B2B ゲスト ユーザーは、組織内のコンテンツを編集お
 
 **[テナント設定]** の **[Allow connections to featured tables]\(おすすめのテーブルへの接続を許可\)** 設定を使用すると、組織内のどのユーザーが Excel データ型ギャラリーのおすすめのテーブルを使用できるかを Power BI 管理者が制御できるようになります。 
 
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="おすすめのテーブルへのすべての接続":::
 
 **[データのエクスポート]** 設定が **[無効]** に設定されている場合は、おすすめのテーブルへの接続も無効になります。
 
@@ -477,7 +477,7 @@ Azure Active Directory (Azure AD) に登録されている Web アプリは、�
 
 ### <a name="create-and-use-dataflows"></a>データフローの作成と使用
 
-組織内のユーザーはデータフローを作成して使用できます。 データフローの概要については、「[Power BI でのセルフサービスのデータ準備](../transform-model/service-dataflows-overview.md)」をご覧ください。 Premium 容量でのデータフローを有効にするには、「[ワークロードを構成する](service-admin-premium-workloads.md)」を参照してください。
+組織内のユーザーはデータフローを作成して使用できます。 データフローの概要については、「[Power BI でのセルフサービスのデータ準備](../transform-model/dataflows/dataflows-introduction-self-service.md)」をご覧ください。 Premium 容量でのデータフローを有効にするには、「[ワークロードを構成する](service-admin-premium-workloads.md)」を参照してください。
 
 > [!NOTE]
 > この設定は、組織全体に適用され、特定のグループに限定することはできません。
@@ -534,7 +534,7 @@ Power BI ビジュアルのテナント設定を含む Power BI ビジュアル�
 
 ### <a name="tenant-level-storage-preview"></a>テナントレベルのストレージ (プレビュー)
 
-既定では、Power BI で使用されるデータは、Power BI で利用可能な内部ストレージに保存されます。 データフローと Azure Data Lake Storage Gen2 (ADLS Gen2) を統合すると、組織の Azure Data Lake Storage Gen2 アカウントにデータフローを保存できます。 詳細については、「[データフローと Azure Data Lake の統合 (プレビュー)](../transform-model/service-dataflows-azure-data-lake-integration.md)」を参照してください。
+既定では、Power BI で使用されるデータは、Power BI で利用可能な内部ストレージに保存されます。 データフローと Azure Data Lake Storage Gen2 (ADLS Gen2) を統合すると、組織の Azure Data Lake Storage Gen2 アカウントにデータフローを保存できます。 詳細については、「[データフローと Azure Data Lake の統合 (プレビュー)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)」を参照してください。
 
 ### <a name="workspace-level-storage-permissions-preview"></a>ワークスペースレベルのストレージのアクセス許可 (プレビュー)
 

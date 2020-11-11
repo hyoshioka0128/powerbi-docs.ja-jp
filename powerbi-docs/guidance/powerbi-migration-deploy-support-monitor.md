@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f9268409977b3aa78e1ebda6f1f6b2e732451455
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 3e0bb00042b869061b7cb7cebf624e324db7e916
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681012"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396129"
 ---
 # <a name="deploy-to-power-bi"></a>Power BI への展開
 
@@ -76,7 +76,7 @@ IT マネージド ソリューション、またはビジネスの生産性に�
 - **ゲートウェイのメンテナンス:** データ ゲートウェイに [新しいデータ ソース](../connect-data/service-gateway-data-sources.md)を登録することが必要になる場合があります。
 - **ゲートウェイのドライバーとコネクタ:** 新しい専用のデータ ソースを使用するには、ゲートウェイ クラスター内の各サーバーに新しいドライバーまたはカスタム コネクタをインストールすることが必要になる場合があります。
 - **新しい Premium 容量を作成する:** 既存の [Premium 容量](../admin/service-premium-capacity-manage.md)を使用できる場合があります。 または、新しい Premium 容量が保証されている場合もあります。 部門のワークロードを意図的に分離したい場合が、それに該当すると考えられます。
-- **Power BI データフローを設定する:** Power Query Online を使用すれば、 [Power BI データフロー](../transform-model/service-dataflows-overview.md)にデータ準備アクティビティを一度設定することができます。 これは、さまざまな Power BI Desktop ファイル内でデータ準備作業がレプリケートされるのを回避するのに役立ちます。
+- **Power BI データフローを設定する:** Power Query Online を使用すれば、 [Power BI データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)にデータ準備アクティビティを一度設定することができます。 これは、さまざまな Power BI Desktop ファイル内でデータ準備作業がレプリケートされるのを回避するのに役立ちます。
 - **組織のビジュアルを新規に登録する:** AppSource から生成されていないカスタム ビジュアルについては、管理ポータルで [組織のビジュアル](../developer/visuals/power-bi-custom-visuals-organization.md)を登録することができます。
 - **おすすめのコンテンツを設定する:** Power BI サービス ホームページで [コンテンツをおすすめに登録する](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)ことができるユーザーを制御するテナント設定が存在します。
 - **秘密度ラベルを設定する:** すべての [秘密度ラベル](../admin/service-security-data-protection-overview.md)が Microsoft Information Protection に統合されています。

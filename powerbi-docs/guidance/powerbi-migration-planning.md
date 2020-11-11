@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 590e28c727cab88b008d7a05e7df22244e8dabf0
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: fd57d893a0c381c345364306e04d4897597b36f1
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803376"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396980"
 ---
-# <a name="plandeploymenttomigratetopowerbi"></a>Power BI に移行するためのデプロイを計画する
+# <a name="plan-deployment-to-migrate-to-power-bi"></a>Power BI に移行するためのデプロイを計画する
 
-この記事では、単一の Power BI ソリューションの移行計画に関係する**ステージ 2** について説明します。
+この記事では、単一の Power BI ソリューションの移行計画に関係する **ステージ 2** について説明します。
 
 :::image type="content" source="media/powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Power BI への移行のステージを示す画像。この記事では、ステージ 2 を重点的に説明します。":::
 
@@ -40,7 +40,7 @@ ms.locfileid: "88803376"
 
 最初に決定する事項の 1 つは、Power BI 製品の選択です。 これは、[Power BI サービス](../fundamentals/power-bi-service-overview.md)または [Power BI Report Server](../report-server/get-started.md) のどちらにするかという決定です。 コンテンツが公開されると、埋め込み、モバイル配信、電子メール サブスクリプションなど、多くの追加オプションが使用できるようになります。
 
-アーキテクチャに関する考慮事項の詳細については、ホワイトペーパー「[Power BI のエンタープライズ展開の計画](https://aka.ms/PBIEnterpriseDeploymentWP)」の**セクション 3** を参照してください。
+アーキテクチャに関する考慮事項の詳細については、ホワイトペーパー「 [Power BI のエンタープライズ展開の計画](https://aka.ms/PBIEnterpriseDeploymentWP)」の **セクション 3** を参照してください。
 
 > [!CAUTION]
 > ファイル システムに格納されている Power BI Desktop ファイルの使用に依存する場合は、それが最適な方法ではないことにご注意ください。 Power BI サービス (または Power BI Report Server) を使用することは、セキュリティ、コンテンツ配布、コラボレーションに関して大きな利点があります。 Power BI サービスでは、アクティビティを監査および監視する機能も使用できます。
@@ -75,7 +75,7 @@ ms.locfileid: "88803376"
 - コンシューマーがレポートをカスタマイズしたい場合、レポートの[コピーを保存](../connect-data/service-datasets-copy-reports.md)し、ニーズに合わせてカスタマイズできるか?
 
 > [!CAUTION]
-> "_コピーの保存_" 機能は便利な機能ですが、レポートにグラフィックやヘッダーまたはフッター メッセージが含まれている場合は注意して使用する必要があります。 ログ、アイコン、テキスト メッセージは、多くの場合、ブランド化の要件または規制コンプライアンスに関連するため、配信および配布の方法を慎重に制御することが重要です。 "_コピーの保存_" を使用し、元のグラフィックやヘッダーまたはフッター メッセージが新しい作成者によって変更されないままであれば、レポートの実際の作成者について混乱を招く可能性があります。 また、ブランド化の意味が薄れる可能性もあります。
+> " _コピーの保存_ " 機能は便利な機能ですが、レポートにグラフィックやヘッダーまたはフッター メッセージが含まれている場合は注意して使用する必要があります。 ログ、アイコン、テキスト メッセージは、多くの場合、ブランド化の要件または規制コンプライアンスに関連するため、配信および配布の方法を慎重に制御することが重要です。 " _コピーの保存_ " を使用し、元のグラフィックやヘッダーまたはフッター メッセージが新しい作成者によって変更されないままであれば、レポートの実際の作成者について混乱を招く可能性があります。 また、ブランド化の意味が薄れる可能性もあります。
 
 ## <a name="evaluate-needs-for-premium-capacity"></a>Premium 容量の必要性を評価する
 
@@ -96,7 +96,7 @@ ms.locfileid: "88803376"
 - 追加のニーズを満たすために、既存の共有データセットを新しいデータまたは測定値で増強する必要があるか?
 - どの[データ ストレージ モード](../transform-model/desktop-storage-mode.md)が最も適切であるか? オプションとしては、インポート、DirectQuery、複合、またはライブ接続があります。
 - クエリのパフォーマンスを強化するために[集計](../transform-model/desktop-aggregations.md)を使用する必要があるか?
-- [データフロー](../transform-model/service-dataflows-overview.md)の作成が有用であるか? それは、さまざまなデータセットのソースとして機能できるか?
+- [データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)の作成が有用であるか? それは、さまざまなデータセットのソースとして機能できるか?
 - 新しい[ゲートウェイ データ ソース](../connect-data/service-gateway-data-sources.md)を登録する必要はあるか?
 
 ## <a name="decide-where-original-content-will-be-stored"></a>元のコンテンツの格納場所を決定する

@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 48e8788ca81365e1f46dbe6d3c4804c10f3f308a
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 8de033c673d9d08833fdc5a935b92490db369104
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525503"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396750"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Power BI Desktop で AI 分析情報を使用する
 
-Power BI では、AI 分析情報を使用して、データ準備作業を強化するトレーニング済みの機械学習モデルのコレクションにアクセスできます。 AI 分析情報には **Power Query エディター**でアクセスし、関連する機能や関数には **Power Query エディター** の **[ホーム]** タブと **[列の追加]** タブからアクセスします。 
+Power BI では、AI 分析情報を使用して、データ準備作業を強化するトレーニング済みの機械学習モデルのコレクションにアクセスできます。 AI 分析情報には **Power Query エディター** でアクセスし、関連する機能や関数には **Power Query エディター** の **[ホーム]** タブと **[列の追加]** タブからアクセスします。 
 
 ![リボンでの AI 分析情報の場所](media/desktop-ai-insights/ai-insights-00.png)
 
@@ -67,13 +67,13 @@ Text Analytics では、最大 120 の言語が認識されます。 詳細に�
 
 #### <a name="extract-key-phrases"></a>キー フレーズ抽出
 
-**キー フレーズ抽出**関数では、非構造化テキストが評価され、テキスト フィールドごとにキー フレーズの一覧が返されます。 この関数では、入力としてテキスト フィールドが必要です。**カルチャ情報**も入力できます (省略可能)。
+**キー フレーズ抽出** 関数では、非構造化テキストが評価され、テキスト フィールドごとにキー フレーズの一覧が返されます。 この関数では、入力としてテキスト フィールドが必要です。 **カルチャ情報** も入力できます (省略可能)。
 
 キー フレーズ抽出は、指定したテキストのチャンクが大きいほど、効果的に機能します。 これは、テキストのブロックが小さいほどパフォーマンスが向上する感情分析とは反対です。 両方の操作から最良の結果を得るには、入力を適宜再構築することを検討してください。
 
 #### <a name="score-sentiment"></a>センチメントのスコア付け
 
-**センチメントのスコア付け**関数では、テキスト入力が評価され、0 (否定的) から 1 (肯定的) までのセンチメント スコアがドキュメントごとに返されます。 この関数は、ソーシャル メディア、顧客のレビュー、およびディスカッション フォーラムで肯定的および否定的なセンチメントを検出するのに役立ちます。
+**センチメントのスコア付け** 関数では、テキスト入力が評価され、0 (否定的) から 1 (肯定的) までのセンチメント スコアがドキュメントごとに返されます。 この関数は、ソーシャル メディア、顧客のレビュー、およびディスカッション フォーラムで肯定的および否定的なセンチメントを検出するのに役立ちます。
 
 Text Analytics では、機械学習分類アルゴリズムを使用して、0 ～ 1 のセンチメント スコアが生成されます。 センチメントは、スコアが 1 に近いほど肯定的、0 に近いほど否定的となります。 モデルは、センチメントが関連付けられている幅広いテキスト本文を使用して、事前にトレーニングされています。 現時点では、独自のトレーニング データを指定することはできません。 テキストの分析時、モデルでは、テキスト処理、品詞分析、語の配置、語の関連付けなど、さまざまな手法が組み合わされて使用されます。 アルゴリズムの詳細については、「[Introducing Text Analytics (テキスト分析の概要)](/archive/blogs/machinelearning/machine-learning-and-text-analytics)」を参照してください。
 
@@ -83,7 +83,7 @@ Text Analytics では、機械学習分類アルゴリズムを使用して、0 
 
 #### <a name="tag-images"></a>画像のタグ付け
 
-**画像のタグ付け**関数では、生き物、風景、アクションなどの 2,000 を超える認識可能なオブジェクトに基づいてタグが返されます。 タグがあいまいだったり、常識的なものでなかったりする場合は、既知の状況のコンテキストでタグの意味を明確にするための "*ヒント*" が表示されます。 タグは分類として編成されず、継承の階層は存在しません。 コンテンツのタグのコレクションは、完全な文の形式に整えられた、人が読解可能な言語として表示される画像の "*説明*" の基盤となります。
+**画像のタグ付け** 関数では、生き物、風景、アクションなどの 2,000 を超える認識可能なオブジェクトに基づいてタグが返されます。 タグがあいまいだったり、常識的なものでなかったりする場合は、既知の状況のコンテキストでタグの意味を明確にするための " *ヒント* " が表示されます。 タグは分類として編成されず、継承の階層は存在しません。 コンテンツのタグのコレクションは、完全な文の形式に整えられた、人が読解可能な言語として表示される画像の " *説明* " の基盤となります。
 
 イメージをアップロードするか、またはイメージの URL を指定すると、Computer Vision のアルゴリズムにより、そのイメージ内で識別されたオブジェクト、生物、およびアクションに基づいてタグが出力されます。 タグ付けの対象は、前景の人間などの主題だけではありません。セット (室内またはアウトドア)、家具、道具、植物、動物、アクセサリ、小物なども対象となります。
 
@@ -91,7 +91,7 @@ Text Analytics では、機械学習分類アルゴリズムを使用して、0 
 
 ### <a name="invoking-text-analytics-or-vision-functions-in-power-query"></a>Power Query で Text Analytics 関数または Vision 関数を呼び出す
 
-Text Analytics 関数または Vision 関数を使用してデータを強化するには、**Power Query エディター**を開きます。 この例では、テキストのセンチメントのスコア付けの手順を示します。 同じ手順を使用して、キーフレーズ抽出、言語検出、および画像のタグ付けを実行できます。
+Text Analytics 関数または Vision 関数を使用してデータを強化するには、 **Power Query エディター** を開きます。 この例では、テキストのセンチメントのスコア付けの手順を示します。 同じ手順を使用して、キーフレーズ抽出、言語検出、および画像のタグ付けを実行できます。
 
 **[ホーム]** または **[列の追加]** リボンで **[Text analytics]** ボタンを選択します。 サインインするように求められます。
 
@@ -158,7 +158,7 @@ Text Analytics を使用するときに留意が必要な注意事項と制限�
 
 この機能は、Power BI Desktop、Power BI データフロー、Power BI サービスの Power Query Online でサポートされています。
 
-データフローの詳細については、「[Self-service data prep in Power BI (Power BI でのセルフサービス データの準備)](service-dataflows-overview.md)」を参照してください。
+データフローの詳細については、「[Self-service data prep in Power BI (Power BI でのセルフサービス データの準備)](./dataflows/dataflows-introduction-self-service.md)」を参照してください。
 
 Azure Machine Learning の詳細については、以下の記事を参照してください。
 
@@ -167,10 +167,10 @@ Azure Machine Learning の詳細については、以下の記事を参照して
 
 ### <a name="granting-access-to-an-azure-ml-model"></a>Azure ML モデルへのアクセス権の付与
 
-Power BI から Azure ML モデルにアクセスするには、Azure サブスクリプションへの**読み取り**アクセス権が必要です。 さらに、以下を所有している必要があります。
+Power BI から Azure ML モデルにアクセスするには、Azure サブスクリプションへの **読み取り** アクセス権が必要です。 さらに、以下を所有している必要があります。
 
-- Machine Learning Studio (クラシック) モデルの場合は、Machine Learning Studio (クラシック) Web サービスへの**読み取り**アクセス権
-- Machine Learning モデルの場合は、Machine Learning ワークスペースへの**読み取り**アクセス権
+- Machine Learning Studio (クラシック) モデルの場合は、Machine Learning Studio (クラシック) Web サービスへの **読み取り** アクセス権
+- Machine Learning モデルの場合は、Machine Learning ワークスペースへの **読み取り** アクセス権
 
 このセクションでは、Azure ML service でホストされているモデルへのアクセス権を Power BI ユーザーに付与して、このモデルに Power Query 関数としてアクセスできるようにする手順を説明します。 詳細については、[RBAC および Azure portal を使用したアクセスの管理](/azure/role-based-access-control/role-assignments-portal)に関する記事を参照してください。
 
@@ -180,7 +180,7 @@ Power BI から Azure ML モデルにアクセスするには、Azure サブス�
 4. **[アクセス制御 (IAM)]** を選択し、 **[追加]** ボタンを選択します。
 5. ロールとして **[閲覧者]** を選択します。 Azure ML モデルへのアクセス権を付与する Power BI ユーザーを選択します。
 6. **[保存]** を選択する
-7. 上記の 3 から 6 の手順を繰り返し、特定の Machine Learning Studio (クラシック) Web サービスのユーザー、"*または*" モデルをホストしている Machine Learning ワークスペースのユーザーに **[閲覧者]** アクセス権を付与します。
+7. 上記の 3 から 6 の手順を繰り返し、特定の Machine Learning Studio (クラシック) Web サービスのユーザー、" *または* " モデルをホストしている Machine Learning ワークスペースのユーザーに **[閲覧者]** アクセス権を付与します。
 
 ### <a name="schema-discovery-for-machine-learning-models"></a>Machine Learning モデルのスキーマの検出
 
@@ -188,7 +188,7 @@ Power BI から Azure ML モデルにアクセスするには、Azure サブス�
 
 Machine Learning モデルでは、デプロイされた Web サービスにこのスキーマ ファイルを含める必要があります。 Web サービスのスキーマを自動的に生成するには、デプロイされたモデルのエントリ スクリプトで入力/出力のサンプルを指定する必要があります。 記事「[Azure Machine Learning を使用してモデルをデプロイする」のサブセクション「(省略可能) Swagger スキーマの自動生成」](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema)を参照してください。 このリンクには、スキーマ生成のステートメントを含む、エントリ スクリプトの例が含まれます。
 
-具体的には、エントリ スクリプト内の _@input\_schema_ 関数と _@output\_schema_ 関数によって、 _input\_sample_変数と _output\_sample_ 変数の入出力のサンプル形式が参照され、デプロイ時にこれらのサンプルを使用して Web サービス用の OpenAPI (Swagger) 仕様が生成されます。
+具体的には、エントリ スクリプト内の _@input\_schema_ 関数と _@output\_schema_ 関数によって、 _input\_sample_ 変数と _output\_sample_ 変数の入出力のサンプル形式が参照され、デプロイ時にこれらのサンプルを使用して Web サービス用の OpenAPI (Swagger) 仕様が生成されます。
 
 エントリ スクリプトの更新によるこれらのスキーマ生成は、Azure Machine Learning SDK を使用して自動機械学習エクスペリエンスにより作成されたモデルにも適用する必要があります。
 
@@ -225,7 +225,7 @@ Power BI Desktop の Azure ML には、次の考慮事項と制限事項が適�
 
 - [チュートリアル: Power BI での Machine Learning Studio (クラシック) モデルの呼び出し](../connect-data/service-tutorial-invoke-machine-learning-model.md)
 - [チュートリアル: Power BI での Cognitive Services の使用](../connect-data/service-tutorial-use-cognitive-services.md)
-- [Power BI の Cognitive Services](service-cognitive-services.md)
-- [Azure Machine Learning の Power BI への統合](service-machine-learning-integration.md)
+- [Power BI の Cognitive Services](./dataflows/dataflows-machine-learning-integration.md)
+- [Azure Machine Learning の Power BI への統合](./dataflows/dataflows-machine-learning-integration.md)
 - [アプリで Premium 容量を監視する](../admin/service-admin-premium-monitor-capacity.md)
 - [AI metrics in the Premium Capacity Metrics アプリの AI メトリック](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

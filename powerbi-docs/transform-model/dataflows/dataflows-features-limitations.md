@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b8811d9b869d4aa3592c9ed3531d067701b544a8
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 89de77e65d8eb675d9e80c3b2497f39af7c32d33
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91638367"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396589"
 ---
 # <a name="dataflows-limitations-and-considerations"></a>データフローの制限事項と考慮事項
 
@@ -24,12 +24,12 @@ ms.locfileid: "91638367"
 
 データフローを作成するとき、ユーザーは次の点に注意する必要があります。
 
-* データフローでの作成は、Power Query Online (PQO) 環境で行われます。[Power Query の制限事項](https://docs.microsoft.com/power-query/power-query-online-limits)に関する記事で説明されている制限事項を参照してください。
+* データフローでの作成は、Power Query Online (PQO) 環境で行われます。[Power Query の制限事項](/power-query/power-query-online-limits)に関する記事で説明されている制限事項を参照してください。
 データフローの作成は Power Query Online (PQO) 環境で行われるため、データフロー ワークロード構成に対して行われた更新は、更新にのみ反映され、作成エクスペリエンスには反映されません
 
 * データフローは所有者のみが変更できます
 
-* データフローは、"*マイ ワークスペース*" においては利用できません
+* データフローは、" *マイ ワークスペース* " においては利用できません
 
 * ゲートウェイ データ ソースを使用するデータフローにおいては、同じデータ ソースに対する複数の資格情報はサポートされません
 
@@ -37,20 +37,20 @@ ms.locfileid: "91638367"
 
 ## <a name="api-considerations"></a>API の考慮事項
 
-サポートされている Dataflows REST API の詳細については、[REST API のリファレンス](https://docs.microsoft.com/rest/api/power-bi/dataflows)を参照してください。 注意すべきいくつかの考慮事項を次に示します。
+サポートされている Dataflows REST API の詳細については、[REST API のリファレンス](/rest/api/power-bi/dataflows)を参照してください。 注意すべきいくつかの考慮事項を次に示します。
 
 * データフローをエクスポートおよびインポートすると、そのデータフローに新しい ID が割り当てられます
 
 * リンクされたエンティティが含まれるデータ フローをインポートしても、データフロー内の既存の参照は修正されません (これらのクエリは、データフローをインポートする前に手動で修正する必要があります)
 
-* もともとインポート API を使用して作成されたデータフローは、*CreateOrOverwrite* パラメーターを使用して上書きできます
+* もともとインポート API を使用して作成されたデータフローは、 *CreateOrOverwrite* パラメーターを使用して上書きできます
 
 ## <a name="dataflows-in-shared"></a>共有内のデータフロー
 
 共有容量内のデータフローには制限があります。
 
 * データフローを更新するときの共有でのタイムアウトは、エンティティごとに 2 時間、データフローごとに 3 時間です
-* リンクされたエンティティは、共有データフロー内に作成することはできませんが、クエリで "*読み込み有効*" プロパティが無効になっている限り、データフロー内に存在することができます
+* リンクされたエンティティは、共有データフロー内に作成することはできませんが、クエリで " *読み込み有効* " プロパティが無効になっている限り、データフロー内に存在することができます
 * 計算対象エンティティを共有データフロー内に作成することはできません
 * AutoML と Cognitive Services は、共有データフローでは使用できません
 * 増分更新は、共有データフローでは機能しません
@@ -75,7 +75,7 @@ Premium に存在するデータフローには、次の制限事項と考慮事
 
 * オンプレミスのデータ ソースからデータを取得する、通常のエンティティとリンクされたエンティティを結合することはできません
 
-* データフローで別のクエリ (クエリ *B*) の計算に (たとえばクエリ *A* などの) クエリが使用されている場合、クエリ *B* が計算エンティティになります。 計算エンティティは、オンプレミスのソースを参照できません。
+* データフローで別のクエリ (クエリ *B* ) の計算に (たとえばクエリ *A* などの) クエリが使用されている場合、クエリ *B* が計算エンティティになります。 計算エンティティは、オンプレミスのソースを参照できません。
 
 
 **コンピューティング エンジン:**
@@ -100,7 +100,7 @@ Premium に存在するデータフローには、次の制限事項と考慮事
 ## <a name="dataflow-usage-in-datasets"></a>データセットでのデータフローの使用
 
 * Power BI Desktop でデータセットを作成した後、それを Power BI サービスに発行する場合、データフローのデータ ソースに対して Power BI Desktop で使用されている資格情報が、データセットがサービスに発行されるときに使用される資格情報と同じであることを確認します。
-  1. それらの資格情報が同じでないと、データセットの更新時に "*キーが見つからない*" というエラーが発生します
+  1. それらの資格情報が同じでないと、データセットの更新時に " *キーが見つからない* " というエラーが発生します
 
 ## <a name="next-steps"></a>次のステップ
 データフローと Power BI の詳細については、以下の記事を参照してください。
@@ -111,4 +111,3 @@ Premium に存在するデータフローには、次の制限事項と考慮事
 * [Azure Data Lake Gen 2 を使用するようにデータフロー ストレージを構成する](dataflows-azure-data-lake-storage-integration.md)
 * [データフローの Premium 機能](dataflows-premium-features.md)
 * [データフローを使用した AI](dataflows-machine-learning-integration.md)
-

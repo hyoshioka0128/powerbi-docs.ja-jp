@@ -8,20 +8,21 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2020
 ms.author: v-pemyer
-ms.openlocfilehash: ad85ad56db907ca19af7dc14681eb34f8c2b9abc
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: 350d4889643556d4e1c6389580415ccba46b55d4
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85398350"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396639"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Power BI Desktop で日付テーブルを作成する
 
 この記事は、Power BI Desktop を操作するデータ モデラーを対象としています。 データ モデルで日付テーブルを作成する際に推奨される設計方法について説明します。
 
-データ分析式 (DAX) の[タイム インテリジェンス関数](/dax/time-intelligence-functions-dax) を使用するには、前提条件となるモデル要件があります。モデルには少なくとも 1 つの "_日付テーブル_" が必要です。 日付テーブルとは、次の要件を満たすテーブルです。
+データ分析式 (DAX) の [タイム インテリジェンス関数](/dax/time-intelligence-functions-dax) を使用するには、前提条件となるモデル要件があります。モデルには少なくとも 1 つの " _日付テーブル_ " が必要です。 日付テーブルとは、次の要件を満たすテーブルです。
 
 > [!div class="checklist"]
-> - "_日付列_" と呼ばれるデータ型 **date** (または **date/time** ) の列が必要です。
+> - " _日付列_ " と呼ばれるデータ型 **date** (または **date/time** ) の列が必要です。
 > - 日付列には一意の値が含まれている必要があります。
 > - 日付列に空白を含めることはできません。
 > - 日付列に欠落している日付があってはなりません。
@@ -59,7 +60,7 @@ Power Query を使用して日付テーブルを生成できます。 その方�
 - [Generating A Date Dimension Table In Power Query (Power Query を使用した日付ディメンション テーブルの生成)](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) (Chris Webb)
 
 > [!TIP]
-> 組織内にデータ ウェアハウスやその他の一貫した定義がない場合は、Power Query を使用して[データフロー](../transform-model/service-dataflows-overview.md)を発行することを検討します。 次に、すべてのデータ モデル管理者をデータフローに接続し、モデルに日付テーブルを追加します。 このデータフローは、組織内の時間に関する 1 つの信頼できる情報源になります。
+> 組織内にデータ ウェアハウスやその他の一貫した定義がない場合は、Power Query を使用して[データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)を発行することを検討します。 次に、すべてのデータ モデル管理者をデータフローに接続し、モデルに日付テーブルを追加します。 このデータフローは、組織内の時間に関する 1 つの信頼できる情報源になります。
 
 日付テーブルを生成する必要がある場合は、DAX を使用して実行することを検討してください。 場合によっては、より簡単と思われるかもしれません。 さらに、DAX には日付テーブルの作成と管理を簡素化する組み込みのインテリジェンスが組み込まれているため、より便利になる可能性があります。
 
@@ -67,8 +68,8 @@ Power Query を使用して日付テーブルを生成できます。 その方�
 
 [CALENDAR](/dax/calendar-function-dax) または [CALENDARAUTO](/dax/calendarauto-function-dax) DAX 関数を使用して計算テーブルを作成することで、モデルに日付テーブルを生成することができます。 各関数からは、日付の単一列のテーブルが返されます。 次に、計算された列を使用して計算テーブルを拡張し、日付間隔のフィルター処理とグループ化の要件をサポートできます。
 
-- 日付範囲を定義する場合は、**CALENDAR** 関数を使用します。 開始日と終了日の 2 つの値を渡します。 これらの値は、`MIN(Sales[OrderDate])` や `MAX(Sales[OrderDate])` などの他の DAX 関数で定義できます。
-- 日付範囲にモデルに保存されているすべての日付を自動的に含める場合は、**CALENDARAUTO** 関数を使用します。 年の最終月である 1 つの省略可能なパラメーターを渡すことができます (年が 12 月に終わる暦年の場合、値を渡す必要はありません)。 完全な年間の日付が返されること (これはマークされた日付テーブルの場合の要件です) が保証されるため、これは便利な関数です。 さらに、将来の年に備えたテーブルの拡張を管理する必要はありません。データの更新が完了すると、テーブルの再計算がトリガーされます。 新しい年の日付がモデルに読み込まれると、再計算により、テーブルの日付範囲が自動的に拡張されます。
+- 日付範囲を定義する場合は、 **CALENDAR** 関数を使用します。 開始日と終了日の 2 つの値を渡します。 これらの値は、`MIN(Sales[OrderDate])` や `MAX(Sales[OrderDate])` などの他の DAX 関数で定義できます。
+- 日付範囲にモデルに保存されているすべての日付を自動的に含める場合は、 **CALENDARAUTO** 関数を使用します。 年の最終月である 1 つの省略可能なパラメーターを渡すことができます (年が 12 月に終わる暦年の場合、値を渡す必要はありません)。 完全な年間の日付が返されること (これはマークされた日付テーブルの場合の要件です) が保証されるため、これは便利な関数です。 さらに、将来の年に備えたテーブルの拡張を管理する必要はありません。データの更新が完了すると、テーブルの再計算がトリガーされます。 新しい年の日付がモデルに読み込まれると、再計算により、テーブルの日付範囲が自動的に拡張されます。
 
 ## <a name="clone-with-dax"></a>DAX を使用して複製する
 
@@ -81,7 +82,7 @@ Power Query を使用して日付テーブルを生成できます。 その方�
 - [Power BI Desktop の自動の日付/時刻](../transform-model/desktop-auto-date-time.md)
 - [Power BI Desktop での自動の日付/時刻のガイダンス](auto-date-time.md)
 - [Power BI Desktop で日付テーブルを設定し、使用する](../transform-model/desktop-date-tables.md)
-- [Power BI でのセルフサービスのデータ準備](../transform-model/service-dataflows-overview.md)
+- [Power BI でのセルフサービスのデータ準備](../transform-model/dataflows/dataflows-introduction-self-service.md)
 - [CALENDAR 関数 (DAX)](/dax/calendar-function-dax)
 - [CALENDARAUTO 関数 (DAX)](/dax/calendarauto-function-dax)
 - わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

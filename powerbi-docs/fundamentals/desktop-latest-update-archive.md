@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: bab09647b324e9be8b1de6f27865511b4f2b1a02
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 01d7a433650eb8c74ace37b548ba8d7bf2c570ea
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256341"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396175"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktop に対する以前の毎月の更新
 
-この記事では、**Power BI Desktop** の以前の更新について説明します。 最新月のリリースについては、[**Power BI Desktop** の最新の更新](desktop-latest-update.md)を確認してください。
+この記事では、 **Power BI Desktop** の以前の更新について説明します。 最新月のリリースについては、 [**Power BI Desktop** の最新の更新](desktop-latest-update.md)を確認してください。
 
 [ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得します。 Windows 10 を実行している場合、Windows 10 の Microsoft Store から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
 
@@ -34,9 +34,9 @@ ms.locfileid: "92256341"
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
-次のセクションでは、**Power BI Desktop** の以前の月の更新について説明します。
+次のセクションでは、 **Power BI Desktop** の以前の月の更新について説明します。
 
 
 ## <a name="september-2020-update-2852840"></a>2020 年 9 月更新 (2.85.284.0)
@@ -418,7 +418,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 
 ### <a name="data-preparation"></a>データ準備
-* データフローでの DirectQuery  [[ビデオ]](https://youtu.be/JtuHIslowxk?t=1883)   [[記事]](../transform-model/service-dataflows-directquery.md)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
+* データフローでの DirectQuery  [[ビデオ]](https://youtu.be/JtuHIslowxk?t=1883)   [[記事]](../transform-model/dataflows/dataflows-configure-consume.md)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
 * Web by Example で既定でテーブルを自動的に提示する  [[ビデオ]](https://youtu.be/JtuHIslowxk?t=1916)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Web_by_example) 
 * クエリ診断の機能強化:プライバシー レベルのパーティション  [[ビデオ]](https://youtu.be/JtuHIslowxk?t=1931)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Query_Diag) 
 
@@ -548,8 +548,8 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 次のリンクを選択して、この以前のバージョンをダウンロードします。 
 
-* [2020 年 4 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04.exe)
-* [2020 年 4 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04_x64.exe)
+* [2020 年 4 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe)
+* [2020 年 4 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe)
 
 
 
@@ -861,7 +861,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -939,7 +939,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1000,7 +1000,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1063,7 +1063,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1128,7 +1128,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1199,7 +1199,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1264,7 +1264,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1336,7 +1336,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、3 月の **Power BI Desktop** の新しい機能です。
 
@@ -1405,7 +1405,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1472,7 +1472,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -1483,7 +1483,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * フィールド リスト アクセシビリティ サポート [[ビデオ]](https://youtu.be/AHNlkjRFdYI?t=464) [[記事]](../create-reports/desktop-report-view.md#copy-and-paste-between-reports) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
 * ページ上のオブジェクトにタブ順序を設定する [[ビデオ]](https://youtu.be/AHNlkjRFdYI?t=643) [[記事]](../create-reports/power-bi-reports-filters-and-highlighting.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
 * ボタン ビジュアルのヒント [[ビデオ]](https://youtu.be/AHNlkjRFdYI?t=884) [[記事]](../create-reports/desktop-accessibility-overview.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
-* *ビジュアル相互作用*アイコンの更新 [[ビデオ]](https://youtu.be/AHNlkjRFdYI?t=974) [[記事]](../create-reports/desktop-accessibility-overview.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
+* *ビジュアル相互作用* アイコンの更新 [[ビデオ]](https://youtu.be/AHNlkjRFdYI?t=974) [[記事]](../create-reports/desktop-accessibility-overview.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
 
 
 
@@ -2004,7 +2004,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある今月の **[最新の更新プログラム]** ビデオを、最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある今月の **[最新の更新プログラム]** ビデオを、最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、2018 年 2 月の **Power BI Desktop** の新しい機能です。
 
@@ -2036,8 +2036,8 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 * DirectQuery のパフォーマンスの向上 [[ビデオ]](https://youtu.be/KeVB5RwMzJo?t=32m24s) [[記事]](../connect-data/desktop-directquery-about.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf) 
 * 開く動作と保存のパフォーマンス向上 [[ビデオ]](https://youtu.be/KeVB5RwMzJo?t=33m40s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf) 
-* "*データのない項目を表示する*" の改善 [[ビデオ]](https://youtu.be/KeVB5RwMzJo?t=34m6s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
-* 今後予定されている **Power BI サービス**機能の永続的フィルター制御 [[ビデオ]](https://youtu.be/KeVB5RwMzJo?t=34m56s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
+* " *データのない項目を表示する* " の改善 [[ビデオ]](https://youtu.be/KeVB5RwMzJo?t=34m6s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
+* 今後予定されている **Power BI サービス** 機能の永続的フィルター制御 [[ビデオ]](https://youtu.be/KeVB5RwMzJo?t=34m56s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
 
 
 
@@ -2058,7 +2058,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 ## <a name="january-2018-update-2544970761"></a>2018 年 1 月更新 (2.54.4970.761)
 
-新年を迎えるとともに、**Power BI Desktop** の一連の更新をご提供しました。また、これらの更新を続けることが私たちの新年の抱負です。
+新年を迎えるとともに、 **Power BI Desktop** の一連の更新をご提供しました。また、これらの更新を続けることが私たちの新年の抱負です。
 
 各更新の横にあるリンクには、次の意味があります。
 
@@ -2067,7 +2067,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 * ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 * 最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある今月の **[最新の更新プログラム]** ビデオを、最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある今月の **[最新の更新プログラム]** ビデオを、最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、1 月の **Power BI Desktop** の新しい機能です。
 
@@ -2117,7 +2117,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 -   ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 -   最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、12 月の **Power BI Desktop** の新しい機能です。
 
@@ -2163,7 +2163,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 ## <a name="november-2017-update-2524921202"></a>2017 年 11 月の更新 (2.52.4921.202)
 
-11 月の更新には、**Power BI Desktop** の更新がすべて含まれています。 
+11 月の更新には、 **Power BI Desktop** の更新がすべて含まれています。 
 
 各更新の横にあるリンクには、次の意味があります。
 
@@ -2172,7 +2172,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 -   ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 -   最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、11 月の **Power BI Desktop** の新しい機能です。
 
@@ -2222,7 +2222,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 ## <a name="october-2017-update-2514885543"></a>2017 年 10 月の更新 (2.51.4885.543)
 
-10 月は、**Power BI Desktop** に対して、非常に強力で役に立つ更新が行われました。 
+10 月は、 **Power BI Desktop** に対して、非常に強力で役に立つ更新が行われました。 
 
 各更新の横にあるリンクには、次の意味があります。
 
@@ -2231,7 +2231,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 -   ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 -   最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の **Power BI Desktop** の新しい機能です。
 
@@ -2393,7 +2393,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 ### <a name="query-editing"></a>クエリの編集:
 
--   "*例から列を追加する*" の機能拡張 [[ビデオ]](https://youtu.be/4X96ow7FnSY?t=27m54s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#addColumnFromExamples)
+-   " *例から列を追加する* " の機能拡張 [[ビデオ]](https://youtu.be/4X96ow7FnSY?t=27m54s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#addColumnFromExamples)
 
 
 
@@ -2429,7 +2429,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 ### <a name="data-connectivity"></a>データ接続:
 
 -   カスタム データ コネクタのサポート [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=25m53s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#customConnectors)
--   オンプレミスおよびプッシュ ストリーミング データセットへの **Power BI サービス**のライブ接続 [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=26m42s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#liveConnect)
+-   オンプレミスおよびプッシュ ストリーミング データセットへの **Power BI サービス** のライブ接続 [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=26m42s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#liveConnect)
 -   Impala コネクタの一般提供開始 [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=27m20s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala)
 -   Amazon Redshift コネクタの一般提供開始 [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=27m20s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#redshift)
 -   SAP BW コネクタ - DirectQuery のサポート [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=27m45s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#sapBW)
@@ -2438,7 +2438,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 ### <a name="query-editing"></a>クエリの編集:
 
--   "*例から列を追加する*" の機能拡張 [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[記事]](../create-reports/desktop-add-column-from-example.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#addColumn)
+-   " *例から列を追加する* " の機能拡張 [[ビデオ]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[記事]](../create-reports/desktop-add-column-from-example.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#addColumn)
 
 
 
@@ -2478,7 +2478,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 ### <a name="data-connectivity"></a>データ接続:
 
--   ファイルの結合 - 例として "*First File*" を参照可能 [[ビデオ]](https://youtu.be/CKISVNHcHVA?t=21m30s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#combineFiles)
+-   ファイルの結合 - 例として " *First File* " を参照可能 [[ビデオ]](https://youtu.be/CKISVNHcHVA?t=21m30s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#combineFiles)
 -   新しいデータ コネクタ:
     -  Dynamics 365 for Customer Insights [[ビデオ]](https://youtu.be/CKISVNHcHVA?t=21m2s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#customerInsights)
 
@@ -2711,7 +2711,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 -   *関数オーサリング* エクスペリエンスの改善 [[ビデオ]](https://youtu.be/kERJ_WOLuLk?t=18m3s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#functionAuthoring)
 -   *パーセンテージ* データ型のサポート [[ビデオ]](https://youtu.be/kERJ_WOLuLk?t=18m36s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#percentage)
--   **ナビゲーター**と **[クエリの依存関係]** に **[最大化]** ボタンと **[復元]** ボタンが追加されました [[ビデオ]](https://youtu.be/kERJ_WOLuLk?t=19m16s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#maximize)
+-   **ナビゲーター** と **[クエリの依存関係]** に **[最大化]** ボタンと **[復元]** ボタンが追加されました [[ビデオ]](https://youtu.be/kERJ_WOLuLk?t=19m16s) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#maximize)
 
 
 > [!NOTE]
@@ -2817,12 +2817,12 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 -   関数呼び出し列の追加 [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   列の展開と集計 - *[読み込む]* 値のサポート [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   新しい変換 - テーブル列のリストへの変換 [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
--   キーボード操作 - ドロップダウン メニューの*スマート入力*のサポート [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   キーボード操作 - ドロップダウン メニューの *スマート入力* のサポート [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### <a name="other-improvements"></a>その他の改良
 
--   **Power BI コミュニティ**への製品内リンク [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[ビデオ]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
+-   **Power BI コミュニティ** への製品内リンク [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[ビデオ]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
 
 
 > [!NOTE]
@@ -2848,7 +2848,7 @@ Power BI Desktop の新機能を完全に利用できます。
 -   ほとんどの機能は、毎月更新される **[ブログ]** の投稿で説明されています。
 -   最後になりましたが、一部の機能は説明を必要としないため、記事やビデオは用意されていません。
 
-この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の**再生**アイコンをクリックします。
+この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 以下の更新は、今月の Power BI Desktop の新しい機能です。
 
@@ -3027,7 +3027,7 @@ Power BI Desktop の新機能を完全に利用できます。
 -   [スキーマの表示] 情報を使用したリレーショナル データベース コネクタの向上
 -   データ ソースの設定の強化 [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 -   高度な **[行のフィルター]** ダイアログ モード [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   **クエリ エディター**内の関数呼び出しのインラインの入力コントロール [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   **クエリ エディター** 内の関数呼び出しのインラインの入力コントロール [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 -   クエリ パラメーター: [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
     -   クエリからパラメーター (またはその逆) に変換する機能
     -   URL のパラメーター化と **Web** コネクタでのマルチパート URL のサポート
@@ -3167,10 +3167,10 @@ Power BI Desktop の新機能を完全に利用できます。
 -   マップの改良 - 緯度/経度のみを含むプロット マップ
 -   KPI 消費リリース サポート (ナビゲーション階層のサポートおよび SSAS MD の KPI 傾向など)
 -   SSAS 探索モード: **フィールド** ウィンドウでの **表示** フォルダーのサポート
--   リボンのレイアウト改良: **レポート ツール**のコンテキスト依存リボン タブ
+-   リボンのレイアウト改良: **レポート ツール** のコンテキスト依存リボン タブ
 -   新しい KPI ビジュアル
 -   保存時の表示ページと同じページでレポートを開く
--   フィールド ウィンドウ (**レポート** & **データ** ビュー) 内のテーブル コンテキスト メニューの **[クエリの編集]** オプション
+-   フィールド ウィンドウ ( **レポート** & **データ** ビュー) 内のテーブル コンテキスト メニューの **[クエリの編集]** オプション
 -   リボンから **[ページの複製]** を実行する
 
 
@@ -3196,8 +3196,8 @@ Power BI Desktop の新機能を完全に利用できます。
 -   SAP HANA - **フィールド** ラベルのサポート
 -   **[列の選択]** ビルダー内の列のアルファベッド順での並べ替え
 -   列の名前の変更/削除/並べ替えのパフォーマンス向上
--   **クエリ エディター**の仮想化プレビュー
--   **クエリ エディター**内のアンロード クエリの視覚インジケーター
+-   **クエリ エディター** の仮想化プレビュー
+-   **クエリ エディター** 内のアンロード クエリの視覚インジケーター
 -   ワンクリックでの割合変換
 
 これらの更新に関する詳細な情報については、 「[ブログの投稿](https://powerbi.microsoft.com/blog/power-bi-update-lots-of-new-authoring-features-and-a-new-power-bi-desktop-update/)」を参照して、これらの新機能のそれぞれについて詳しく知ることができます。
@@ -3290,7 +3290,7 @@ Power BI Desktop の新機能を完全に利用できます。
 -   [SSAS 多次元サポート - 階層のサポート](../connect-data/desktop-ssas-multidimensional.md)
 -   Stripe コネクタ
 -   Smartsheet コネクタ
--   **データの入力**: データを貼り付けるか入力して、テーブルを作成
+-   **データの入力** : データを貼り付けるか入力して、テーブルを作成
 -   DirectQuery の向上: T-SQL と SAP HANA のすべてのデータ型をサポートし、パフォーマンスが向上
 -   ODBC コネクタ: ユーザー/システム DSN を選択するためのサポート
 -   CSV コネクタ: [ソース] ダイアログで列区切り記号を指定するための機能
@@ -3521,13 +3521,13 @@ Power BI Desktop の新機能を完全に利用できます。
 
 この更新プログラムでは、次の機能が追加されました。
 
--   **新しいデータ コネクタ**: appFigures、Quickbooks Online、Zendesk、GitHub、Twilio、SweetIQ。
+-   **新しいデータ コネクタ** : appFigures、Quickbooks Online、Zendesk、GitHub、Twilio、SweetIQ。
 
--   **新しい変換**: テキスト列からの最初または最後の文字範囲の抽出、[クエリのマージ] ダイアログ ボックスで結合の種類を指定するオプション、[区切り文字で列を分割] ダイアログ ボックスで引用符のスタイルをカスタマイズする機能。
+-   **新しい変換** : テキスト列からの最初または最後の文字範囲の抽出、[クエリのマージ] ダイアログ ボックスで結合の種類を指定するオプション、[区切り文字で列を分割] ダイアログ ボックスで引用符のスタイルをカスタマイズする機能。
 
--   **レポート作成の改良**: 新しい視覚エフェクト (面グラフ、ウォーターフォール、ドーナツおよびマトリックス)、新しい視覚エフェクトの書式設定とカスタマイズのオプション (ラベル、タイトル、背景、凡例、色など)、レポートへのテキスト ボックスと画像の挿入、レポートとレポート テーブルでのハイパーリンクのサポート、元に戻す/やり直し操作。
+-   **レポート作成の改良** : 新しい視覚エフェクト (面グラフ、ウォーターフォール、ドーナツおよびマトリックス)、新しい視覚エフェクトの書式設定とカスタマイズのオプション (ラベル、タイトル、背景、凡例、色など)、レポートへのテキスト ボックスと画像の挿入、レポートとレポート テーブルでのハイパーリンクのサポート、元に戻す/やり直し操作。
 
--   Analysis Services 表形式モデル上での**直属の部下の探索**。
+-   Analysis Services 表形式モデル上での **直属の部下の探索** 。
 
 -   **データ モデリング:** 新しいデータ ビューとリレーションシップ ビュー。
 
@@ -3537,7 +3537,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 -   Exchange Connector における Exchange UPN の資格情報のサポート。
 
-これらすべての新機能だけでなく、**Power BI Desktop は 42 の異なる言語で使用可能になります。** [Microsoft の公式ダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=45331)から言語の完全な一覧を取得して、ご希望の言語をインストールしてください。
+これらすべての新機能だけでなく、 **Power BI Desktop は 42 の異なる言語で使用可能になります。** [Microsoft の公式ダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=45331)から言語の完全な一覧を取得して、ご希望の言語をインストールしてください。
 
 詳細については、次のビデオをご覧ください。
 
@@ -3563,7 +3563,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 -   **Excel ブック** コネクタの改良: 列の型の推定が改善され、データのプレビューの読み込みが高速化されました。
 
--   新しいテキスト列フィルター - "**で始まらない**" と "**で終わらない**"
+-   新しいテキスト列フィルター - " **で始まらない** " と " **で終わらない** "
 
 -   拡張された [プライバシー レベル] ダイアログ
 
@@ -3606,9 +3606,9 @@ Power BI Desktop の新機能を完全に利用できます。
 
 -   空白行の削除
 
--   **Group By** と**集計列**での中央値の操作が可能
+-   **Group By** と **集計列** での中央値の操作が可能
 
--   **DateTimeZone** 値の**ローカル時刻**への変換
+-   **DateTimeZone** 値の **ローカル時刻** への変換
 
 **パフォーマンスの向上**
 
@@ -3626,7 +3626,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 -   **Google アナリティクス** コネクタ
 
--   **クエリ ビューで日付をフィルター処理する**ための追加の演算子
+-   **クエリ ビューで日付をフィルター処理する** ための追加の演算子
 
 -   **モデルの自動リレーションシップ検出**
 
@@ -3634,7 +3634,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 -   **レポート ページの順序変更** (ドラッグ アンド ドロップ)
 
--   フィルター処理または変換を行わずにデータベース テーブルの入力の**パフォーマンス**が約 40 から 50% **向上**
+-   フィルター処理または変換を行わずにデータベース テーブルの入力の **パフォーマンス** が約 40 から 50% **向上**
 
 -   多数のバグの修正
 

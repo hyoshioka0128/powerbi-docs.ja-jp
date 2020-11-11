@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 6ff1f445172c553116148ffb212129b96f34b1da
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: cb8ac0ad558f15219829e9f32111cacf9f27eb25
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916017"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483744"
 ---
 # <a name="what-is-power-bi-premium"></a>Power BI Premium とは
 
@@ -96,7 +96,7 @@ Power BI Premium では、" *専用の容量* " が提供されます。 他の�
 
 ### <a name="capacity-workloads"></a>容量のワークロード
 
-容量のワークロードは、ユーザーが利用できるようにされているサービスです。 既定で、Premium 容量および Azure 容量によってサポートされるのは、Power BI クエリの実行に関連付けられるデータセット ワークロードのみです。 データセット ワークロードを無効にすることはできません。 [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/)、[データフロー](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)、および[ページ分割されたレポート](../paginated-reports/paginated-reports-save-to-power-bi-service.md)に対する追加のワークロードを有効にすることができます。 これらのワークロードは、Premium のサブスクリプションのみでサポートされます。 
+容量のワークロードは、ユーザーが利用できるようにされているサービスです。 既定で、Premium 容量および Azure 容量によってサポートされるのは、Power BI クエリの実行に関連付けられるデータセット ワークロードのみです。 データセット ワークロードを無効にすることはできません。 [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/)、[データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)、および[ページ分割されたレポート](../paginated-reports/paginated-reports-save-to-power-bi-service.md)に対する追加のワークロードを有効にすることができます。 これらのワークロードは、Premium のサブスクリプションのみでサポートされます。 
 
 各追加のワークロードでは、ワークロードで使用できる最大メモリを (使用可能な合計メモリの割合として) 構成できます。 最大メモリの既定値は、SKU によって決定されます。 使用する場合にのみそれらの追加のワークロードを有効にすることで、ご利用の容量の使用可能なリソースを最大限に活用することができます。 そして、メモリ設定を変更するのは、既定の設定では容量のリソース要件が満たされないことが判明した場合のみにしてください。 [管理ポータル](service-admin-portal.md)の **[容量の設定]** を使用するか、または [Capacities REST APIs](/rest/api/power-bi/capacities) を使用して、容量管理者は容量に対してワークロードを有効にしたり構成したりすることができます。  
 
@@ -235,7 +235,7 @@ Premium では、コンテンツを表示する受信者に Pro ライセンス�
 
 詳細については、[Power BI ライセンス](service-admin-licensing-organization.md)に関するページを参照してください。
 
-## <a name="analysis-services-in-power-bi-premium-preview"></a>Power BI Premium での Analysis Services (プレビュー)
+## <a name="analysis-services-in-power-bi-premium"></a>Power BI Premium での Analysis Services
 
 内部では、企業で実証済みの Microsoft **Analysis Services Vertipaq エンジン** によって Power BI Premium ワークスペースとデータセットが強化されます。 Analysis Services では、オープンスタンダードの XMLA プロトコルをサポートするクライアント ライブラリと API を介して、プログラミング機能やクライアント アプリケーションおよびツールがサポートされます。 既定では、Power BI Premium 容量データセット ワークロードでは、Microsoft およびサードパーティのクライアント アプリケーションおよびツールから **XMLA エンドポイント** を経由して行う " *読み取り専用* " 操作がサポートされています。 また、容量管理者は、エンドポイントを経由した " *読み取り/書き込み* " 操作を無効にすることも、許可することもできます。
 

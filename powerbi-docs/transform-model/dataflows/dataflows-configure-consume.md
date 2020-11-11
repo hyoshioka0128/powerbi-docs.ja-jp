@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cb68cdd0f7ca82c937b1a045055909582c0938d6
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 47b1647732c1977e6e8a3992b617e2a35c803c50
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91638056"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396395"
 ---
 # <a name="configure-and-consume-a-dataflow"></a>データフローの構成と使用
 
@@ -45,7 +45,7 @@ ms.locfileid: "91638056"
 * **[Endorsements]\(承認\):** データフローを認定または昇格するかどうかを定義できます。 
 
 ## <a name="refreshing-a-dataflow"></a>データセットの更新
-データフローは、相互に重なる構成要素として機能します。 *Raw Data* という名前のデータフローと、*Raw Data* データフローへのリンクされたエンティティが含まれる *Transformed Data* という名前のリンクされたエンティティがあるとします。 データフロー *Raw Data* に対するスケジュールされた更新がトリガーされると、完了時にそれを参照するデータフローがトリガーされます。 この機能により、更新のチェーン効果が作成され、データフローを手動でスケジュールする必要がなくなります。 リンクされたエンティティの更新を処理する場合は、次の点に注意する必要があります。
+データフローは、相互に重なる構成要素として機能します。 *Raw Data* という名前のデータフローと、 *Raw Data* データフローへのリンクされたエンティティが含まれる *Transformed Data* という名前のリンクされたエンティティがあるとします。 データフロー *Raw Data* に対するスケジュールされた更新がトリガーされると、完了時にそれを参照するデータフローがトリガーされます。 この機能により、更新のチェーン効果が作成され、データフローを手動でスケジュールする必要がなくなります。 リンクされたエンティティの更新を処理する場合は、次の点に注意する必要があります。
 
 * リンクされたエンティティは、同じワークスペース内に存在する場合にのみ、更新によってトリガーされます
 
@@ -59,7 +59,7 @@ ms.locfileid: "91638056"
 
 ![データフローの増分更新](media/dataflows-configure-consume/dataflow-created-entity.png)
 
-増分更新を設定すると、日付範囲を指定するパラメーターがデータフローに追加されます。 増分更新の設定方法の詳細については、[Power Query での増分更新](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)に関する記事を参照してください。
+増分更新を設定すると、日付範囲を指定するパラメーターがデータフローに追加されます。 増分更新の設定方法の詳細については、[Power Query での増分更新](/power-query/dataflows/incremental-refresh)に関する記事を参照してください。
 
 状況によっては、増分更新を設定しないようにする必要があります。
 

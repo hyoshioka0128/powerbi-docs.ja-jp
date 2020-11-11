@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 10/01/2020
-ms.openlocfilehash: f997547bb61bf203f7806dbe68d45beb29c6538b
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: b1d0a94e3dd0ae68231720bc69d2537568efd19f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116456"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396796"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI レポートをファイルにエクスポートする (プレビュー)
 
@@ -52,7 +52,7 @@ API は非同期です。 [exportToFile](/rest/api/power-bi/reports/exporttofile
 
 ### <a name="bookmarks"></a>ブックマーク
 
-[ブックマーク](../../consumer/end-user-bookmarks.md)を使用すると、適用されているフィルターやレポートの視覚エフェクトの状態など、特定の構成のレポートを保存できます。 [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API を使用して、次の 2 つの方法でレポートのブックマークをプログラムでエクスポートできます。
+[ブックマーク](../../consumer/end-user-bookmarks.md)を使用すると、適用されているフィルターやレポートの視覚エフェクトの状態など、特定の構成のレポートを保存できます。 [exportToFile](/rest/api/power-bi/reports/exporttofile) API を使用して、次の 2 つの方法でレポートのブックマークをプログラムでエクスポートできます。
 
 * **既存のブックマークをエクスポートする**
 

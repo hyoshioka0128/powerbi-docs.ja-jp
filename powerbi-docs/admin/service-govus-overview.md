@@ -10,12 +10,12 @@ ms.date: 10/30/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: fe4f9c54b45035cc22f2e582a75ba98d648c549d
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: c90d15c20b54a25ccea5865302753e0189359be2
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132369"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396106"
 ---
 # <a name="power-bi-for-us-government-customers"></a>米国政府顧客向け Power BI
 
@@ -124,8 +124,8 @@ Government クラウドのお客様の要件に対応するため、Government �
 |[データドリブン アラートのための Power Automate との接続](../connect-data/power-bi-data-sources.md)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
 |[Teams での [Power BI] タブ](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[大規模なモデル](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
-|[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/service-dataflows-enhanced-compute-engine.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
-|[データフロー - 直接クエリ](../transform-model/service-dataflows-directquery.md) | Q4 2020 |Q4 2020|![利用不可](../media/no.png)|
+|[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/dataflows/dataflows-premium-features.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
+|[データフロー - 直接クエリ](../transform-model/dataflows/dataflows-configure-consume.md) | Q4 2020 |Q4 2020|![利用不可](../media/no.png)|
 |[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[テンプレート アプリ](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|

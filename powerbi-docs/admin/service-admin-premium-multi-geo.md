@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 10/29/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 899dc5092ac86e08d552758e74dfabd8b373f5c0
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 93d982c684014430009a80112da841820e7b0fc9
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044716"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396394"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premium の Multi-Geo のサポートを構成する
 
@@ -98,7 +98,7 @@ Multi-Geo を有効にすると、次の項目は Premium リージョンに格�
 - リモート リージョンに格納されているキャッシュ クエリは、保存時はそのリージョン内に残ります。 ただし、転送中の他のデータは、複数の地域間を行き来する可能性があります。
 - Multi-Geo 環境でデータを別のリージョンに移行する場合、ソース データは、データが移行された元のリージョンに最大 30 日間残る可能性があります。 その間、エンド ユーザーはそのデータにアクセスできません。 30 日の期間中に、そのデータはこのリージョンから削除され、破棄されます。
 - インポートされたデータ モデルのクエリ テキストとクエリ結果のトラフィックは、ホーム リージョンを通過しません。 レポートのメタデータは引き続きリモート リージョンからのものであり、特定の DNS ルーティングの状態ではリージョンからトラフィックを受け取る可能性があります。 
-- [データフロー](../transform-model/service-dataflows-overview.md)の機能は、この時点では Multi-GEO でサポートされていません。
+- [データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)の機能は、この時点では Multi-GEO でサポートされていません。
 - 大規模なストレージ形式のデータセットをそれが作成されたリージョンから移動すると、レポートでデータセットを読み込めなくなります。 大規模なストレージのデータセットを使用できるようにするには元のリージョンに戻します。 
 
 ## <a name="next-steps"></a>次のステップ
@@ -107,4 +107,3 @@ Multi-Geo を有効にすると、次の項目は Premium リージョンに格�
 - [Power BI Embedded の容量に対する Multi-Geo](../developer/embedded/embedded-multi-geo.md)
 
 その他の質問 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
-

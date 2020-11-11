@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: 8b20ee4fbac3c4b22bd420e49df0bc1fbfd6e300
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 0743a7ac0d12cba8bbde54464a275a78f7c88eff
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746610"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396704"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Power BI アプリケーション用の Azure AD アクセス トークンを取得する
 
 この記事では、Power BI アプリケーションでユーザーを認証し、[Power BI REST API](/rest/api/power-bi/) で使うアクセス トークンを取得する方法について説明します。
 
-アプリで REST API を呼び出す前に、Azure Active Directory (Azure AD) の**認証アクセス トークン**を取得する必要があります。 アプリではトークンを使用し、Power BI のダッシュボード、タイル、レポートにアクセスします。 詳細については、「[OAuth 2.0 コード付与フローを使用して Azure Active Directory Web アプリケーションへアクセスを承認する](/azure/active-directory/develop/v1-protocols-oauth-code)」を参照してください。
+アプリで REST API を呼び出す前に、Azure Active Directory (Azure AD) の **認証アクセス トークン** を取得する必要があります。 アプリではトークンを使用し、Power BI のダッシュボード、タイル、レポートにアクセスします。 詳細については、「[OAuth 2.0 コード付与フローを使用して Azure Active Directory Web アプリケーションへアクセスを承認する](/azure/active-directory/develop/v1-protocols-oauth-code)」を参照してください。
 
 コンテンツの埋め込み方法により、アクセス トークンの取得方法が異なります。 この記事では、2 つの異なるアプローチを紹介します。
 
@@ -29,7 +29,7 @@ ms.locfileid: "91746610"
 
 ### <a name="get-an-azure-ad-authorization-code"></a>Azure AD 認証コードを取得する
 
-**アクセス トークン**を取得する最初の手順は、**Azure AD** から認証コードを取得することです。 次のプロパティを持つクエリ文字列を作成し、**Azure AD** にリダイレクトします。
+**アクセス トークン** を取得する最初の手順は、 **Azure AD** から認証コードを取得することです。 次のプロパティを持つクエリ文字列を作成し、 **Azure AD** にリダイレクトします。
 
 #### <a name="authorization-code-query-string"></a>承認コードのクエリ文字列
 
@@ -53,9 +53,9 @@ var @params = new NameValueCollection
 };
 ```
 
-クエリ文字列を構築した後、**Azure AD** にリダイレクトして**認証コード**を取得します。  **認証コード** クエリ文字列を構築し、**Azure AD** にリダイレクトするための完全な C# メソッドを以下に示します。 **認証コード**を取得したら、それを使用して**アクセス トークン**を取得します。
+クエリ文字列を構築した後、 **Azure AD** にリダイレクトして **認証コード** を取得します。  **認証コード** クエリ文字列を構築し、 **Azure AD** にリダイレクトするための完全な C# メソッドを以下に示します。 **認証コード** を取得したら、それを使用して **アクセス トークン** を取得します。
 
-redirect.aspx.cs 内で、[AuthenticationContext.AcquireTokenByAuthorizationCode](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) が呼び出され、トークンが生成されます。
+redirect.aspx.cs 内で、[AuthenticationContext.AcquireTokenByAuthorizationCode](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) が呼び出され、トークンが生成されます。
 
 #### <a name="get-authorization-code"></a>認証コードを取得する
 
@@ -97,9 +97,9 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### <a name="get-an-access-token-from-authorization-code"></a>認証コードからアクセス トークンを取得する
 
-**Azure AD** によって**認証コード**とともに Web アプリにリダイレクトされた後、それを使用してアクセス トークンを取得できます。 次に示す C# のサンプルは、リダイレクト ページと default.aspx ページの `Page_Load` イベントで使用できます。
+**Azure AD** によって **認証コード** とともに Web アプリにリダイレクトされた後、それを使用してアクセス トークンを取得できます。 次に示す C# のサンプルは、リダイレクト ページと default.aspx ページの `Page_Load` イベントで使用できます。
 
-**Microsoft.IdentityModel.Clients.ActiveDirectory** 名前空間は、[Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet パッケージから取得できます。
+**Microsoft.IdentityModel.Clients.ActiveDirectory** 名前空間は、 [Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet パッケージから取得できます。
 
 ```powershell
 Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -168,16 +168,16 @@ protected void Page_Load(object sender, EventArgs e)
 
 ### <a name="access-token-with-a-master-account"></a>アクセス トークンとマスター アカウント
 
-この手法では、Power BI Pro ユーザーである 1 つの*マスター* アカウントを使用します。 アカウント資格情報は、アプリケーションで保存されます。 アプリケーションは、これらの保存された資格情報を使用して Azure AD に対する認証を行います。 次に示すコード例は、[アプリ所有データ サンプル](https://github.com/guyinacube/PowerBI-Developer-Samples)のものです
+この手法では、Power BI Pro ユーザーである 1 つの *マスター* アカウントを使用します。 アカウント資格情報は、アプリケーションで保存されます。 アプリケーションは、これらの保存された資格情報を使用して Azure AD に対する認証を行います。 次に示すコード例は、[アプリ所有データ サンプル](https://github.com/guyinacube/PowerBI-Developer-Samples)のものです
 
 ### <a name="access-token-with-service-principal"></a>アクセス トークンとサービス プリンシパル
 
-この手法では、**アプリ専用**トークンである[サービス プリンシパル](embed-service-principal.md)を使用します。 アプリケーションは、サービス プリンシパルを使用して Azure AD に対する認証を行います。 次に示すコード例は、[アプリ所有データ サンプル](https://github.com/guyinacube/PowerBI-Developer-Samples)のものです
+この手法では、 **アプリ専用** トークンである [サービス プリンシパル](embed-service-principal.md)を使用します。 アプリケーションは、サービス プリンシパルを使用して Azure AD に対する認証を行います。 次に示すコード例は、[アプリ所有データ サンプル](https://github.com/guyinacube/PowerBI-Developer-Samples)のものです
 
 #### <a name="embedservicecs"></a>EmbedService.cs
 
 ```csharp
-var AuthorityURL  = "https://login.microsoftonline.com/common/"
+var AuthorityURL  = "https://login.microsoftonline.com/<TenantId>/"
 var ResourceURL  = "https://analysis.windows.net/powerbi/api"
 var authenticationContext = new AuthenticationContext(AuthorityUrl);
        AuthenticationResult authenticationResult = null;

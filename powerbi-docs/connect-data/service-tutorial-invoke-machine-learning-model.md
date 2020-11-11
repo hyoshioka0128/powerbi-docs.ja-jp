@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7e2019d3b554bc4e033c7aee36c41216ba910a9f
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 4124799f15bbccd7c82428d1290ae2ae6420311f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916845"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397118"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>チュートリアル:Power BI での Machine Learning Studio (クラシック) モデルの呼び出し (プレビュー)
 
@@ -180,4 +180,4 @@ Azure ML モデルを呼び出すには、選択したエンティティのい�
 - データフローを作成する
 - Azure ML モデルから得られた分析情報をデータフローに適用する
 
-Power BI と Azure Machine Learning の統合について詳しくは、「[Azure Machine Learning integration in Power BI (Preview) (Power BI と Azure Machine Learning の統合 (プレビュー))](../transform-model/service-machine-learning-integration.md)」をご覧ください。
+Power BI と Azure Machine Learning の統合について詳しくは、「[Azure Machine Learning integration in Power BI (Preview) (Power BI と Azure Machine Learning の統合 (プレビュー))](../transform-model/dataflows/dataflows-machine-learning-integration.md)」をご覧ください。

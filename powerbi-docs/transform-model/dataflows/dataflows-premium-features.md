@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ffd11a57267ef69aab7b999a29949c33163e52e8
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e052816cb3d633ba5c01d0331e00572a9b51a579
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91638409"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397302"
 ---
 # <a name="premium-features-of-dataflows"></a>データフローの Premium 機能
 
@@ -34,7 +34,7 @@ ms.locfileid: "91638409"
 
 Power BI の拡張コンピューティング エンジンにより、Power BI Premium サブスクライバーは自身の容量を使用してデータフローの使用を最適化できます。 拡張コンピューティング エンジンを使用すると、次のような利点があります。
 
-* 計算対象エンティティに対する、実行時間の長い ETL ステップ (*joins*、*distinct*、*filters*、*group by* の実行など) に必要な更新時間の大幅な短縮
+* 計算対象エンティティに対する、実行時間の長い ETL ステップ ( *joins* 、 *distinct* 、 *filters* 、 *group by* の実行など) に必要な更新時間の大幅な短縮
 * エンティティに対して DirectQuery クエリを実行する
 
 次に、拡張コンピューティング エンジンを有効にする方法と、よく寄せられる質問への回答について説明します。
@@ -48,12 +48,12 @@ Power BI の拡張コンピューティング エンジンにより、Power BI P
 > [!IMPORTANT]
 > 拡張コンピューティング エンジンは、A3 以上の Power BI 容量に対してのみ機能します。
 
-拡張コンピューティング エンジンをオンにしたら、**データフロー**に戻ります。複雑な演算 (同じ容量の既存のリンクされたエンティティから作成されたデータフローに対する *joins* や *group by* 演算など) を実行する計算対象エンティティのパフォーマンスが向上しているはずです。 
+拡張コンピューティング エンジンをオンにしたら、 **データフロー** に戻ります。複雑な演算 (同じ容量の既存のリンクされたエンティティから作成されたデータフローに対する *joins* や *group by* 演算など) を実行する計算対象エンティティのパフォーマンスが向上しているはずです。 
 
 コンピューティング エンジンを最大限に活用するには、次のように ETL ステージを 2 つの異なるデータフローに分割します。
 
-* **データフロー 1**: このデータフローでは、データ ソースから必要なすべてを取り込み、それをデータフロー 2 に配置するだけです。
-* **データフロー 2**: この 2 つ目のデータフローですべての ETL 操作が実行されますが、データフロー 1 が同じ容量にあり、それを参照していることを確認します。 また、コンピューティング エンジンが確実に使用されるように、他の演算を実行する前に、フォールドできる演算 (filter、group by、distinct、join) を確実に実行します。
+* **データフロー 1** : このデータフローでは、データ ソースから必要なすべてを取り込み、それをデータフロー 2 に配置するだけです。
+* **データフロー 2** : この 2 つ目のデータフローですべての ETL 操作が実行されますが、データフロー 1 が同じ容量にあり、それを参照していることを確認します。 また、コンピューティング エンジンが確実に使用されるように、他の演算を実行する前に、フォールドできる演算 (filter、group by、distinct、join) を確実に実行します。
 
 ### <a name="common-questions-and-answers"></a>一般的な質問と回答
 
@@ -100,7 +100,7 @@ DirectQuery を使用してデータフローに直接接続し、それによ�
 データフローに DirectQuery を使用するための前提条件もあります。
 
 * データフローが Power BI Premium が有効なワークスペース内に存在する必要があります
-* **コンピューティング エンジン**を有効にする必要があります
+* **コンピューティング エンジン** を有効にする必要があります
 
 ### <a name="enable-directquery-for-dataflows"></a>データフローに対して DirectQuery を有効にする
 
@@ -124,7 +124,7 @@ DirectQuery とデータフローには、いくつかの既知の制限事項�
 
 ## <a name="computed-entities"></a>計算対象エンティティ
 
-Power BI Premium サブスクリプションで**データフロー**を使用するときに、**ストレージ内計算**を実行できます。 これにより、既存のデータフローで計算を実行して、レポートの作成と分析に集中できる結果を返すことができます。
+Power BI Premium サブスクリプションで **データフロー** を使用するときに、 **ストレージ内計算** を実行できます。 これにより、既存のデータフローで計算を実行して、レポートの作成と分析に集中できる結果を返すことができます。
 
 ![計算対象エンティティ](media/dataflows-premium-features/computed-entity.png)
 
@@ -146,7 +146,7 @@ Power BI Premium サブスクリプションで使用する場合は、既存の
 
 ![増分更新](media/dataflows-premium-features/incremental-refresh.png)
 
-増分更新を設定すると、日付範囲を指定するパラメーターがデータフローに追加されます。 増分更新の設定方法の詳細については、[増分更新](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)に関する記事を参照してください。
+増分更新を設定すると、日付範囲を指定するパラメーターがデータフローに追加されます。 増分更新の設定方法の詳細については、[増分更新](/power-query/dataflows/incremental-refresh)に関する記事を参照してください。
 
 ### <a name="considerations-for-when-not-to-set-incremental-refresh"></a>増分更新を設定しない場合に関する考慮事項
 

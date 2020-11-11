@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f96fa15981de8d86007c6e1fa768f95a77921280
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 21d619c42648f90746af9961475bb531dc24d5ab
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680954"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396658"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Power BI に移行するための要件を収集する
 
@@ -74,7 +74,7 @@ ms.locfileid: "92680954"
 - **未解決の問題とバックログ項目:** 現時点で既知の問題、データ品質に関する既知の欠陥、将来のメンテナンス、または延期されるリクエストをバックログに追加します。
 
 > [!IMPORTANT]
-> データの再利用は、[共有データセット](../connect-data/service-datasets-share.md)を使って実現できます。これは、信頼性を示し、検出性を高めるために、必要に応じて[認定](../collaborate-share/service-endorse-content.md)できます。 [データフロー](../transform-model/service-dataflows-overview.md)を使用してデータ準備の再利用を実現し、複数のデータセット内の反復ロジックを減らすことができます。 また、データが取得される頻度が低くなるため、データフローによってソース システムの負荷を大幅に削減できます。複数のデータセットを使って、データフローからデータをインポートすることができます。
+> データの再利用は、[共有データセット](../connect-data/service-datasets-share.md)を使って実現できます。これは、信頼性を示し、検出性を高めるために、必要に応じて[認定](../collaborate-share/service-endorse-content.md)できます。 [データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)を使用してデータ準備の再利用を実現し、複数のデータセット内の反復ロジックを減らすことができます。 また、データが取得される頻度が低くなるため、データフローによってソース システムの負荷を大幅に削減できます。複数のデータセットを使って、データフローからデータをインポートすることができます。
 
 ## <a name="identify-improvement-opportunities"></a>改善の機会を特定する
 
