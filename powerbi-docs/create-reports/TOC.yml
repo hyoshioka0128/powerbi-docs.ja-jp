@@ -277,6 +277,8 @@
               href: ../visuals/power-bi-visualization-decomposition-tree.md
             - name: スマート物語
               href: ../visuals/power-bi-visualization-smart-narrative.md
+            - name: 異常検出
+              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: ドーナツ グラフ
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: 塗り分け地図 (コロプレス)
