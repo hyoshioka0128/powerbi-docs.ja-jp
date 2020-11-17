@@ -1,5 +1,5 @@
 ---
-title: Power BI Premium (プレビュー) での XMLA エンドポイント接続のトラブルシューティング
+title: Power BI での XMLA エンドポイント接続のトラブルシューティング
 description: Power BI Premium で XMLA エンドポイントを使用した接続のトラブルシューティングを行う方法について説明します。
 author: minewiskan
 ms.author: owend
@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/14/2020
+ms.date: 10/20/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: c8f0683e0789ec29577322424a4187a42ff5679f
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 5426c91f2ab0c4de1f9f2bc335ac21ea3a90c0e2
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116571"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483675"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -79,7 +79,7 @@ Power BI が新しいデータセットをデータ ソースの資格情報に�
 
 処理のエラーを回避するには、次の図のように、 **[配置オプション]**  >  **[処理オプション]** を **[処理しない]** に設定します。 そうすると、Visual Studio はメタデータのみを配置します。 次に、データ ソースの資格情報を構成し、Power BI ユーザー インターフェイスでデータセットについて **[今すぐ更新]** をクリックします。 処理の問題のトラブルシューティングの詳細については、この記事の後半の「[データセットを更新する](#refreshing-a-dataset)」のセクションを参照してください。
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="モデル配置エラー":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="[処理しない] オプション":::
 
 ### <a name="new-project-from-an-existing-dataset"></a>既存のデータセットから新しいプロジェクト
 
@@ -128,21 +128,21 @@ XMLA エンドポイントを使用すると、表形式モデルおよび Power
 
 プロバイダーのデータ ソースに対して定義できる権限の借用の設定は、Power BI には関係ありません。 Power BI は、データセットの設定に基づく別のメカニズムを使用して、データ ソースの資格情報を管理します。 このため、プロバイダー データ ソースを作成する場合は、 **[サービス アカウント]** を必ず選択してください。
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="モデル配置エラー":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="サービス アカウントの権限を借用":::
 
 ### <a name="fine-grained-processing"></a>きめ細かい処理
 
 Power BI で、スケジュールされた更新またはオンデマンドの更新をトリガーするとき、通常、Power BI はデータセット全体を更新します。 多くの場合、選択して更新を実行する方が効率的です。 次のように SQL Server Management Studio (SSMS) で、またはサードパーティのツールまたはスクリプトを使用して、きめ細かい処理を実行できます。
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="モデル配置エラー":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="SSMS でのテーブルの処理":::
 
 ### <a name="overrides-in-refresh-tmsl-command"></a>Refresh TMSL コマンドでのオーバーライド
 
-[Refresh コマンド (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) でのオーバーライドを使用すると、ユーザーは更新操作のために別のパーティション クエリ定義またはデータ ソース定義を選択できます。 現時点では、Power BI Premium では**オーバーライドはサポートされていません**。 エラー "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." (不一致バインドは Power BI Premium では許可されていません。詳細については、製品ドキュメントの「XMLA の読み取りおよび書き込みのサポート」を参照してください。) が 返されます。
+[Refresh コマンド (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) でのオーバーライドを使用すると、ユーザーは更新操作のために別のパーティション クエリ定義またはデータ ソース定義を選択できます。 現時点では、Power BI Premium では **オーバーライドはサポートされていません**。 エラー "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." (不一致バインドは Power BI Premium では許可されていません。詳細については、製品ドキュメントの「XMLA の読み取りおよび書き込みのサポート」を参照してください。) が 返されます。
 
 ## <a name="see-also"></a>関連項目
 
-[XMLA エンドポイントを使用したデータセット接続](service-premium-connect-tools.md)   
-[サービス プリンシパルを使用して Premium ワークスペースとデータセットのタスクを自動化する](service-premium-service-principal.md)   
-["Excel で分析" に関するトラブルシューティング](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)   
-[表形式モデル ソリューションのデプロイ](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)
+[XMLA エンドポイントを使用したデータセット接続](service-premium-connect-tools.md)  
+[サービス プリンシパルを使用して Premium ワークスペースとデータセットのタスクを自動化する](service-premium-service-principal.md)  
+[Excel で分析のトラブルシューティング](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+[表形式モデル ソリューションのデプロイ](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)

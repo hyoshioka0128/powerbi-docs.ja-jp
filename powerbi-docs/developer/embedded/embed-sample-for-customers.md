@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 9af0edbe63841f6fb0e0de2e628784c89a5e44f1
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 21f497a7c88134232a86afb9d16142719a6b711e
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983369"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483790"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI コンテンツを埋め込む
 
-**Azure の Power BI Embedded** または **Office での Power BI の埋め込み**を使用すると、アプリ所有データを使用して、レポート、ダッシュボード、またはタイルをアプリケーション内に埋め込むことができます。 **アプリ所有データ**がある場合、Power BI を埋め込み分析プラットフォームとして使用するアプリケーションが含まれます。 **ISV** または**開発者**は、完全に統合された対話型のアプリケーションにレポート、ダッシュボード、またはタイルを表示する Power BI コンテンツを作成できます。ユーザーに Power BI ライセンスは必要ありません。 このチュートリアルでは、Power BI .NET SDK と Power BI JavaScript API を使用して、アプリケーションにレポートを統合する方法を説明します。
+**Azure の Power BI Embedded** または **Office での Power BI の埋め込み** を使用すると、アプリ所有データを使用して、レポート、ダッシュボード、またはタイルをアプリケーション内に埋め込むことができます。 **アプリ所有データ** がある場合、Power BI を埋め込み分析プラットフォームとして使用するアプリケーションが含まれます。 **ISV** または **開発者** は、完全に統合された対話型のアプリケーションにレポート、ダッシュボード、またはタイルを表示する Power BI コンテンツを作成できます。ユーザーに Power BI ライセンスは必要ありません。 このチュートリアルでは、Power BI .NET SDK と Power BI JavaScript API を使用して、アプリケーションにレポートを統合する方法を説明します。
 
 ![Power BI 埋め込みレポート](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "91983369"
 
 アプリケーションへのレポート、ダッシュボード、タイルの埋め込みを開始する前に、使用している環境で Power BI での埋め込みが許可されていることを確認する必要があります。
 
-[埋め込みセットアップ ツール](https://aka.ms/embedsetup/AppOwnsData)を使うと、環境の作成とレポートの埋め込みを段階的に行うのに役立つサンプル アプリケーションをすぐに使い始めたり、ダウンロードしたりできます。
+[埋め込みセットアップ ツール](https://app.powerbi.com/embedsetup)を使うと、環境の作成とレポートの埋め込みを段階的に行うのに役立つサンプル アプリケーションをすぐに使い始めたり、ダウンロードしたりできます。
 
 ただし、手動で環境をセットアップする場合は、以下を続行できます。
 
@@ -74,7 +74,7 @@ Power BI Desktop を使用してレポートとデータセットを作成し、
 
    ![PBI デスクトップ レポート](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. **ワークスペース**に発行します。 このプロセスは、マスター アカウント (Power Pro ライセンス) を使用する場合とサービス プリンシパルを使用する場合で異なります。 マスター アカウントを使用する場合、Power BI Desktop からレポートを発行できます。  サービス プリンシパルを使用する場合、Power BI REST API を使用する必要があります。
+3. **ワークスペース** に発行します。 このプロセスは、マスター アカウント (Power Pro ライセンス) を使用する場合とサービス プリンシパルを使用する場合で異なります。 マスター アカウントを使用する場合、Power BI Desktop からレポートを発行できます。  サービス プリンシパルを使用する場合、Power BI REST API を使用する必要があります。
 
 ## <a name="embed-content-using-the-sample-application"></a>サンプル アプリケーションを使用してコンテンツを埋め込む
 
@@ -113,7 +113,7 @@ Power BI Desktop を使用してレポートとデータセットを作成し、
 
 この属性は AuthenticationTypes (マスター アカウントと[サービス プリンシパル](embed-service-principal.md)) の両方で必要です。
 
-**applicationId** 情報には、**Azure** の**アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
+**applicationId** 情報には、**Azure** の **アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
 
 **applicationId** を取得するには、次の手順に従います。
 
@@ -127,7 +127,7 @@ Power BI Desktop を使用してレポートとデータセットを作成し、
 
     ![アプリの選択](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-4. **アプリケーション ID** が GUID として一覧表示されます。 この**アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
+4. **アプリケーション ID** が GUID として一覧表示されます。 この **アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
 
     ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
@@ -198,7 +198,7 @@ Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
 
 5. **[新しいクライアント シークレット]** を選択します。
 
-6. **[説明]** ボックスに名前を入力し、期間を選択します。 次に、 **[保存]** を選択して、アプリケーションの**値**を取得します。 キーの値を保存した後で **[キー]** ウィンドウを閉じると、値フィールドは非表示としてのみ表示されます。 その時点では、キー値を取得することはできません。 キー値をなくした場合は、Azure portal で新しいものを作成します。
+6. **[説明]** ボックスに名前を入力し、期間を選択します。 次に、 **[保存]** を選択して、アプリケーションの **値** を取得します。 キーの値を保存した後で **[キー]** ウィンドウを閉じると、値フィールドは非表示としてのみ表示されます。 その時点では、キー値を取得することはできません。 キー値をなくした場合は、Azure portal で新しいものを作成します。
 
     ![キー値](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
 
@@ -206,7 +206,7 @@ Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
 
 この属性は、AuthenticationType が[サービス プリンシパル](embed-service-principal.md)の場合にのみ必要です。
 
-**テナント**情報には Azure テナント ID を入力します。 この情報は Power BI サービスにサインインしたときに [Azure AD 管理センター](/onedrive/find-your-office-365-tenant-id)から取得するか、PowerShell を使用して取得できます。
+**テナント** 情報には Azure テナント ID を入力します。 この情報は Power BI サービスにサインインしたときに [Azure AD 管理センター](/onedrive/find-your-office-365-tenant-id)から取得するか、PowerShell を使用して取得できます。
 
 ### <a name="run-the-application"></a>アプリケーションの実行
 
@@ -226,9 +226,9 @@ Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
 
 コンテンツを埋め込む手順は [Power BI REST API](/rest/api/power-bi/) で行いますが、この記事で説明するコード例は **.NET SDK** で作成されています。
 
-アプリケーション内で顧客向けの埋め込みを行うには、**Azure AD** からマスター アカウントまたは[サービス プリンシパル](embed-service-principal.md)の**アクセス トークン**を取得する必要があります。 [Power BI REST API](/rest/api/power-bi/) への呼び出しを行う前に、Power BI アプリケーションのための [Azure AD アクセス トークン](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data)を取得する必要があります。
+アプリケーション内で顧客向けの埋め込みを行うには、**Azure AD** からマスター アカウントまたは [サービス プリンシパル](embed-service-principal.md)の **アクセス トークン** を取得する必要があります。 [Power BI REST API](/rest/api/power-bi/) への呼び出しを行う前に、Power BI アプリケーションのための [Azure AD アクセス トークン](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data)を取得する必要があります。
 
-**アクセス トークン**を使用して Power BI Client を作成するには、[Power BI REST API](/rest/api/power-bi/) とやりとりするための Power BI クライアント オブジェクトを作成する必要があります。 **AccessToken** を ***Microsoft.Rest.TokenCredentials*** オブジェクトでラップして、Power BI クライアント オブジェクトを作成します。
+**アクセス トークン** を使用して Power BI Client を作成するには、[Power BI REST API](/rest/api/power-bi/) とやりとりするための Power BI クライアント オブジェクトを作成する必要があります。 **AccessToken** を *_Microsoft.Rest.TokenCredentials_* オブジェクトでラップして、Power BI クライアント オブジェクトを作成します。
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -250,7 +250,7 @@ Power BI クライアント オブジェクトを使って、埋め込むアイ�
 
 指定したワークスペースから最初のレポートを取得する方法のコード例を次に示します。
 
-*コンテンツ アイテムとしてレポート、ダッシュボード、タイルのいずれを埋め込む場合でも、それらを取得するサンプルは[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)の Services\EmbedService.cs ファイル内にあります。*
+"コンテンツ アイテムとしてレポート、ダッシュボード、タイルのいずれを埋め込む場合でも、それらを取得するサンプルは、[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)の Services\EmbedService.cs ファイル内にあります。"
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -443,9 +443,9 @@ Power BI サービス プリンシパルまたはマスター アカウントで
 
 [サービス プリンシパル](embed-service-principal.md)を使用して容量をワークスペースに割り当てるには、[Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity) を使用します。 Power BI REST API の使用時は必ず[サービス プリンシパル オブジェクト ID](embed-service-principal.md) を使用してください。
 
-以下の手順に従い、**マスター アカウント**を使用してワークスペースに容量を割り当てます。
+以下の手順に従い、**マスター アカウント** を使用してワークスペースに容量を割り当てます。
 
-1. **Power BI サービス**内でワークスペースを展開し、コンテンツを埋め込むために使用しているワークスペースの省略記号ボタンを選択します。 次に、 **[Edit workspaces]\(ワークスペースの編集\)** を選択します。
+1. **Power BI サービス** 内でワークスペースを展開し、コンテンツを埋め込むために使用しているワークスペースの省略記号ボタンを選択します。 次に、 **[Edit workspaces]\(ワークスペースの編集\)** を選択します。
 
     ![ワークスペースの編集](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
 
@@ -453,7 +453,7 @@ Power BI サービス プリンシパルまたはマスター アカウントで
 
     ![容量を割り当てる](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. **[保存]** を選択すると、ワークスペース名の横に**ひし形**が表示されます。
+3. **[保存]** を選択すると、ワークスペース名の横に **ひし形** が表示されます。
 
     ![容量に関連付けられたワークスペース](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 

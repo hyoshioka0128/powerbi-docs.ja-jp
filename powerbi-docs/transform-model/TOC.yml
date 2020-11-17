@@ -133,5 +133,7 @@
               href: ./dataflows/dataflows-machine-learning-integration.md
     - name: リファレンス
       items:
+        - name: Power BI Desktop のフィールド リストを使用する (プレビュー)
+          href: desktop-field-list.md
         - name: 数式エディターのショートカット
           href: desktop-formula-editor.md

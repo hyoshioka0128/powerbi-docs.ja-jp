@@ -2,19 +2,20 @@
 title: スマート説明のチュートリアル
 description: チュートリアル:Power BI でスマート説明の概要の視覚エフェクトを作成する
 author: aphilip94
-ms.reviewer: aphilip94
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 09/14/2020
+ms.date: 11/06/2020
 ms.author: anphil
+ms.custom: video
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4417d66b4afc3c3848667364bdca47150afdf04a
-ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
+ms.openlocfilehash: 92ebd3015296dc0b6a61f3b7dd2a8b0d163a4383
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862940"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397210"
 ---
 # <a name="create-smart-narrative-summaries-preview"></a>スマート説明の概要を作成する (プレビュー)
 
@@ -33,9 +34,12 @@ ms.locfileid: "91862940"
 >
 >![Power BI の [オプション] を示すスクリーンショット。 [Smart narrative visual]\(スマート説明の視覚化\) が選択されています。](media/power-bi-visualization-smart-narratives/2.png)
 
-このチュートリアルを続けるには、オンライン販売シナリオの[サンプル ファイル](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix)をダウンロードしてください。
+
 
 ## <a name="get-started"></a>はじめに 
+Watch Justyna でスマート説明の使用方法について説明します。その後、チュートリアルを使用してご自分で試してください。こちらがその動画です。  このチュートリアルを続けるには、オンライン販売シナリオの[サンプル ファイル](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix)をダウンロードしてください。
+
+> [!VIDEO https://youtu.be/01UrT-z37sw]
 
 **[視覚化]** ペインで、 **[Smart narrative]\(スマート説明\)** アイコンを選択して、概要を自動的に生成します。
 
@@ -95,9 +99,10 @@ ms.locfileid: "91862940"
 - 動的な値と条件付き書式設定 (データ バインドされたタイトルなど) の使用。
 - Azure Analysis Services、オンプレミスの AS
 - KPI、カード、複数行のカード、マップ、テーブル、マトリックス、R ビジュアルまたは Python ビジュアル、カスタムの視覚エフェクト 
-- 列が他の列によってグループ化されている視覚エフェクト、およびデータ グループ フィールドに基づいて作成された視覚エフェクトの概要 
+- 列が他の列によってグループ化されている視覚エフェクト、およびデータ グループ フィールドに基づいて作成された視覚エフェクトの概要 
 - 視覚エフェクトからのクロスフィルター処理
 - 動的な値の名前変更、または自動生成された動的な値の編集
 - QnA 演算や総計の割合などの実行中の計算を含む視覚エフェクトの概要 
+- [計算グループ](/analysis-services/tabular-models/calculation-groups)
    
 

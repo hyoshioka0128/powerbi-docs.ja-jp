@@ -1,19 +1,19 @@
 ---
 title: Power BI Q&A ビジュアルを使用する
 description: Power BI Q&A ビジュアルを設定する方法
-author: rien
+author: msftrien
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 22ce23b408f87c8c792f75a543fd0c29a9d13281
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 96773bc256ba8563147c7dc7c19e2558125b48fc
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232302"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412351"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Power BI Q&A のビジュアル化の概要
 
@@ -44,7 +44,7 @@ Q&A ビジュアルは、4 つのコア コンポーネントで構成されて�
 
 1. Power BI Desktop メニュー バーの左上のセクションで、 **[ファイル]**  >  **[開く]** の順に選択します
    
-2. **売上およびマーケティングのサンプル PBIX ファイル**のコピーを見つけます
+2. **売上およびマーケティングのサンプル PBIX ファイル** のコピーを見つけます
 
 1. レポート ビューでファイルを開きます ![レポート ビューのアイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
@@ -133,7 +133,7 @@ Q&A ビジュアル、質問フィールド、候補の表示方法を書式設�
 
 このビジュアルは、もはや Q&A ビジュアルではなく、標準の縦棒グラフです。 これはダッシュボードにピン留めできます。 レポートでは、このビジュアルは他の標準ビジュアルと同様に動作します。 [Visualizations]\(視覚エフェクト\) ペインには、Q&A ビジュアル アイコンの代わりに選択された [縦棒グラフ] アイコンが表示されることに注意してください。
 
-***Power BI サービス***を使用している場合は、この段階で、ピン アイコンを選択して、ビジュアルをダッシュボードにピン留めできます。 
+"*_Power BI サービス_*" を使用している場合は、ここでピン アイコンを選択して、ビジュアルをダッシュボードにピン留めできます。 
 
 
 ![ピン アイコンが枠で囲まれた Power BI サービス](media/power-bi-visualization-q-and-a/power-bi-pin.png)
@@ -155,5 +155,5 @@ Q&A ビジュアルは Office および Bing と統合され、認識されな�
 
 自然言語を統合するには、さまざまな方法があります。 詳細については、次の記事を参照してください。
 
-* [Q&A ツール](../natural-language/q-and-a-tooling-intro.md)
+[Q&A ツール](../natural-language/q-and-a-tooling-intro.md)
 * [Q&A ベスト プラクティス](../natural-language/q-and-a-best-practices.md)

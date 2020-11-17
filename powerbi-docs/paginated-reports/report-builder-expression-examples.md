@@ -1,19 +1,19 @@
 ---
 title: Power BI レポート ビルダーでの式の例
 description: 式は、Power BI Report Builder のページ分割されたレポートで、内容とレポートの外観を制御するためによく使われます。
-ms.date: 10/21/2019
+ms.date: 11/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 042221e3836aae72568df7eadaacfeeeac90d215
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 762949dcce178628d387cd8f88c60080f74c5bae
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297783"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397348"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Power BI レポート ビルダーでの式の例
 
@@ -180,7 +180,7 @@ ms.locfileid: "93297783"
   
      日付または数値のみを格納するテキスト ボックスに書式を適用する場合は、テキスト ボックス内で **Format** 関数を使用するのではなく、テキスト ボックスの Format プロパティを使用する必要があります。  
   
--   **Right** 、 **Len** 、 **InStr** の各関数は、サブストリングを返す場合に役立ちます。たとえば、 *DOMAIN*\\*username* の文字列からユーザー名だけを返します。 次の式では、\\User *というパラメーターで取得できる文字列のうち、円記号 (* ) より右側の部分のみが返されます。  
+-   **Right**、 **Len**、 **InStr** の各関数は、サブストリングを返す場合に役立ちます。たとえば、 *DOMAIN*\\*username* の文字列からユーザー名だけを返します。 次の式では、\\User *というパラメーターで取得できる文字列のうち、円記号 (* ) より右側の部分のみが返されます。  
   
     ```  
     =Right(Parameters!User.Value, Len(Parameters!User.Value) - InStr(Parameters!User.Value, "\"))  
@@ -205,7 +205,7 @@ ms.locfileid: "93297783"
   
     ```  
   
--   .NET Framework の `xref:System.Text.RegularExpressions` の **Regex** 関数は、既存の文字列の形式を変更するのに便利です (たとえば、電話番号の書式設定)。 次の式では、フィールドに含まれる、" **nnn** nnn *nnnn*- *" 形式の 10 桁の電話番号を、* -*Replace* 関数を使用して "( *nnn* ) *nnn*-*nnnn* " 形式に変更しています。  
+-   .NET Framework の `xref:System.Text.RegularExpressions` の **Regex** 関数は、既存の文字列の形式を変更するのに便利です (たとえば、電話番号の書式設定)。 次の式では、フィールドに含まれる、" **nnn** nnn *nnnn*- *" 形式の 10 桁の電話番号を、* -*Replace* 関数を使用して "(*nnn*) *nnn*-*nnnn*" 形式に変更しています。  
   
     ```  
     =System.Text.RegularExpressions.Regex.Replace(Fields!Phone.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")  
@@ -275,13 +275,13 @@ ms.locfileid: "93297783"
     =IIF(DateDiff("d",Fields!ImportantDate.Value, Now())>7,"Red","Blue")  
     ```  
   
--   `PhoneNumber` フィールドの値を調べて、 **null** (Visual Basic では **Nothing** ) の場合は "No Value" を返し、それ以外の場合は電話番号の値を返します。 この式を使用して、レポート アイテムに含まれるテキスト ボックスの値を制御できます。  
+-   `PhoneNumber` フィールドの値を調べて、**null** (Visual Basic では **Nothing**) の場合は "No Value" を返し、それ以外の場合は電話番号の値を返します。 この式を使用して、レポート アイテムに含まれるテキスト ボックスの値を制御できます。  
   
     ```  
     =IIF(Fields!PhoneNumber.Value Is Nothing,"No Value",Fields!PhoneNumber.Value)  
     ```  
   
--   `Department` フィールドの値を調べて、サブレポートの名前または **null** (Visual Basic では **Nothing** ) を返します。 この式は、条件付きドリルスルー サブレポートで使用できます。  
+-   `Department` フィールドの値を調べて、サブレポートの名前または **null** (Visual Basic では **Nothing**) を返します。 この式は、条件付きドリルスルー サブレポートで使用できます。  
   
     ```  
     =IIF(Fields!Department.Value = "Development", "EmployeeReport", Nothing)  
@@ -454,6 +454,9 @@ ms.locfileid: "93297783"
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
+> [!NOTE]
+>  Power BI のページ分割されたレポートは、 **[URL に移動する]** 式内での JavaScript の使用をサポートしていません。  
+  
 ##  <a name="report-data"></a><a name="ReportData"></a> レポート データ  
  式を使用して、レポートで使用するデータを操作できます。 パラメーターおよび他のレポート情報を参照できます。 レポートのデータを取得するために使用されるクエリを変更することもできます。  
   
@@ -495,7 +498,7 @@ ms.locfileid: "93297783"
     =IIF(Field!B.Value=0, 0, Field!A.Value / IIF(Field!B.Value =0, 1, Field!B.Value))  
     ```  
   
--   カスタム コード関数を使用して、式の値を返します。 次の例では、現在の値と前の値の差がパーセンテージで返されます。 これを使って、任意の 2 つの連続する値の差を計算でき、最初の比較 (前の値がない場合) のエッジ ケースと、前の値または現在の値のいずれかが **null** (Visual Basic では **Nothing** ) であるケースが処理されます。  
+-   カスタム コード関数を使用して、式の値を返します。 次の例では、現在の値と前の値の差がパーセンテージで返されます。 これを使って、任意の 2 つの連続する値の差を計算でき、最初の比較 (前の値がない場合) のエッジ ケースと、前の値または現在の値のいずれかが **null** (Visual Basic では **Nothing**) であるケースが処理されます。  
   
     ```  
     Public Function GetDeltaPercentage(ByVal PreviousValue, ByVal CurrentValue) As Object  

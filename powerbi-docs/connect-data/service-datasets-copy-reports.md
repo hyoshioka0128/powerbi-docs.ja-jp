@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4b9573d0a24efdbb4c0b5a4130f973a0dfac0f10
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: 4fcfe4038b8fa14b0c1640680aaf7657e92bb9bb
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132323"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397371"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>他のワークスペースからレポートをコピーする
 
@@ -35,7 +35,7 @@ ms.locfileid: "93132323"
 
     ![レポートのコピーを作成する](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    **[コピーの保存]** アイコンが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、 [ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。 ワークスペースにアクセスできる場合でも、データセットに対するビルド アクセス許可が必要です。
+    **[コピーの保存]** アイコンが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、[ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。 ワークスペースにアクセスできる場合でも、データセットに対するビルド アクセス許可が必要です。
 
 3. **[このレポートのコピーを保存します]** で、レポートに名前を付けて保存先のワークスペースを選択します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "93132323"
 
     ![レポートのコピーを保存する](media/service-datasets-copy-reports/power-bi-save-copy.png)
 
-    **[コピーの保存]** オプションが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、 [ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。
+    **[コピーの保存]** オプションが表示されるのは、レポートが新しいエクスペリエンス ワークスペース内にあり、[ビルド アクセス許可](service-datasets-build-permissions.md)を持っている場合のみです。
 
 3. レポートに名前を付けて、 **[保存]** を選択します。
 
@@ -94,7 +94,7 @@ ms.locfileid: "93132323"
 
 ワークスペース内のレポートおよびそれに関連付けられている共有データセットが不要になったと判断する場合があります。
 
-1. レポートを削除します。 ワークスペース内のレポートの一覧で、 **削除** アイコンを選択します。
+1. レポートを削除します。 ワークスペース内のレポートの一覧で、**削除** アイコンを選択します。
 
     ![レポートの削除アイコン](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
 

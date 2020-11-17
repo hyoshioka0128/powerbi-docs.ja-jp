@@ -1,21 +1,21 @@
 ---
 title: マップに関するヒントとテクニック (Bing マップの統合を含む)
 description: 'Power BI マップの視覚化、ビジュアル、場所、緯度と経度、Bing マップとの連動に関するヒントとテクニック。 '
-author: mihart
-ms.reviewer: rien
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0c28d95c5275f5778b1ae646b8e5fb65489eb072
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ec2e097dd829760c331ff8f045af00176b0c302b
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860120"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411868"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Power BI マップの視覚エフェクトに関するヒントとテクニック
 
@@ -53,13 +53,13 @@ Power BI サービスと Power BI Desktop は、マップのビジュアルを�
 Power BI Desktop では、データ フィールドに *データ カテゴリ* を設定しておくと、フィールドを正確にジオコーディングできます。 データ ビューで、目的の列を選択します。 リボンで **[モデリング]** タブを選択し、 **[データ カテゴリ]** を **[住所]** 、 **[市区町村]** 、 **[大陸]** 、 **[国/地域]** 、 **[市区郡]** 、 **[郵便番号]** 、 **[州]** 、または **[都道府県]** に設定します。 これらのデータのカテゴリは、Bing で日付を正しくエンコードするために役立ちます。 詳細については、「[Power BI Desktop でのデータ分類](../transform-model/desktop-data-categorization.md)」を参照してください。 SQL Server Analysis Services に接続中の場合、[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) を使用して Power BI 以外のデータ分類を設定する必要があります。
 
 **2.複数の場所列を使用します。**     
- マッピングのデータ カテゴリを設定するだけでは、Bing がユーザーの意図を正しく推測するためには不十分な場合もあります。 複数の国や地域に同じ名前の場所が存在するため、指定があいまいになることがあります。 たとえば、 ***サウサンプトン*** は、イングランド、ペンシルバニア、ニューヨークに存在します。
+ マッピングのデータ カテゴリを設定するだけでは、Bing がユーザーの意図を正しく推測するためには不十分な場合もあります。 複数の国や地域に同じ名前の場所が存在するため、指定があいまいになることがあります。 たとえば、*_Southampton_* は、England、Pennsylvania、New York に存在します。
 
 Power BI は Bing の[非構造化 URL テンプレート サービス](/bingmaps/rest-services/locations/find-a-location-by-address)を利用し、国の住所値セットに基づいて緯度と経度の座標を取得します。 データに十分な場所データが含まれない場合、列を追加し、適切に分類します。
 
  たとえば、[市区町村] 列しかない場合は、Bing のジオコーディングが困難になる可能性があります。 追加の地理列を追加して、場所が明確になるようにします。  場合によっては、場所列をもう 1 つデータセットに追加するだけで済みます。この例では都道府県です。 また、前述の 1. のように、適切に分類してください。
 
-各フィールドには 1 つの場所カテゴリのみがあることを確認してください。 たとえば、[市区町村] 場所フィールドには、**Southampton, New York** ではなく、**Southampton** が入力されている必要があります。  また、[住所] 場所フィールドには、**1 Microsoft Way, Redmond, WA** ではなく **1 Microsoft Way** が入力されている必要があります。
+各フィールドには 1 つの場所カテゴリのみがあることを確認してください。 たとえば、[市区町村] 場所フィールドには、**Southampton、New York** ではなく、Southampton が入力されている必要があります。  また、[住所] 場所フィールドには、**1 Microsoft Way, Redmond, WA** ではなく **1 Microsoft Way** が入力されている必要があります。
 
 **3.特定の緯度と経度の使用**
 
@@ -79,7 +79,7 @@ Power BI では、使っているデータセットに経度と緯度のフィ�
 ![緯度と経度](./media/power-bi-map-tips-and-tricks/pbi_latitude.png) 
 
 ## <a name="use-geo-hierarchies-so-you-can-drill-down-to-different-levels-of-location"></a>地理階層を使用し、場所のさまざまな "レベル" をドリルダウンする
-データセットに複数レベルの場所データが既にある場合、自分と同僚は Power BI を使用して*地理階層*を作成できます。 地理階層を作成するには、複数のフィールドを **[場所]** バケットにドラッグします。 このような操作で、フィールドは地理階層になります。 下の例では、次の地理フィールドが追加されています:国/地域、都道府県、市区町村。 Power BI では、自分と同僚がこの地理階層を使用してドリルアップ/ダウンすることができます。
+データセットに複数レベルの場所データが既にある場合、自分と同僚は Power BI を使用して *地理階層* を作成できます。 地理階層を作成するには、複数のフィールドを **[場所]** バケットにドラッグします。 このような操作で、フィールドは地理階層になります。 下の例では、次の地理フィールドが追加されています:国/地域、都道府県、市区町村。 Power BI では、自分と同僚がこの地理階層を使用してドリルアップ/ダウンすることができます。
 
   ![[場所] フィールド](./media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png)
 

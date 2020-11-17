@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 07/31/2020
-ms.openlocfilehash: 6f4f083f7ec36fff13624b6b0d28ffd810e0d62b
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: ae3f6b5f3026adf127b53dd07118fe05e4c06a00
+ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90964820"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348084"
 ---
 # <a name="share-directly-to-microsoft-teams-from-the-power-bi-service"></a>Power BI サービスから Microsoft Teams に直接共有する
 
@@ -43,7 +43,7 @@ Power BI と Microsoft Teams がどのように連携するかの背景とその
     
       ![視覚化のコンテキスト メニューの [Teams で共有] ボタンのスクリーンショット。](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
-1. **[Microsoft Teams で共有]** ダイアログ ボックスで、リンクの送信先のチャネルまたはユーザーを選択します。 必要に応じて、メッセージを入力できます。 先に Microsoft Teams へのサインインを求められる場合があります。
+1. **[Microsoft Teams で共有]** ダイアログ ボックスで、リンクの送信先のチームまたはチャネルを選択します。 必要に応じて、メッセージを入力できます。 先に Microsoft Teams へのサインインを求められる場合があります。
 
     ![情報とメッセージが表示された [Microsoft Teams で共有] ダイアログ ボックスのスクリーンショット。](media/service-share-report-teams/service-teams-share-to-teams-dialog.png)
 

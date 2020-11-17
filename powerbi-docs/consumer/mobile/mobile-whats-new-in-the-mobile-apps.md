@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 11/01/2020
 ms.author: painbar
-ms.openlocfilehash: d2e229dda05c1761fdaa5c7336c0eca5db538e46
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.openlocfilehash: 83a280b94a6db937133e0d7ab1e6d7ad64af06f4
+ms.sourcegitcommit: 29cafa1602efb56cfa8dbd0010dd04ad3fcdd02c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92026050"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93355936"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -23,7 +23,11 @@ ms.locfileid: "92026050"
 * [Power BI サービスの新機能](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="november-2020"></a>2020 年 11 月
+### <a name="maximize-the-view-with-full-screen-mode-android-tablets"></a>表示を全画面表示モードで最大化する (Android タブレット)
+Android タブレット用のモバイル アプリに新しいボタンが追加されました。このボタンを使用すると、アプリのヘッダーとフッターを削除して、コンテンツを表示するための領域を最大化できます。 画面の右上隅にある全画面表示のトグル ボタンをタップするだけで、モードを切り替えることができます。
 
 ## <a name="october-2020"></a>2020 年 10 月
 ### <a name="automatic-page-refresh-is-now-supported-windows"></a>ページの自動更新はサポートされています (Windows)
@@ -41,7 +45,7 @@ HoloLens 2 用の Power BI アプリを使用すると、完全にイマーシ�
 
 ## <a name="august-2020"></a>2020 年 8 月
 ### <a name="weve-improved-how-you-navigate-to-your-content-ios-and-android"></a>コンテンツに移動する方法を改善しました (iOS および Android)
-これで、レポート、ダッシュボード、アプリのヘッダー ドロップ ダウンから利用できる**新しいナビゲーション ツリー**を使用して、コンテンツをすばやく簡単に操作できるようになりました。 コンテンツの場所の階層をひとめで確認できます。また、コンテンツ階層内を簡単に移動したり、兄弟コンテンツに移動したり、ホーム ページにすばやく戻ったりすることもできます。 表示している項目がアプリの一部である場合、ツリーには、アプリのコンテンツ全体 (セクション、リンク、すべてのレポートとダッシュボード) が表示されます。 表示している項目がレポートの場合は、表示できるすべてのレポート ページの一覧も表示されます。 ページから別のページへの移動がとても簡単になりました。 ぜひお試しください。 
+これで、レポート、ダッシュボード、アプリのヘッダー ドロップ ダウンから利用できる **新しいナビゲーション ツリー** を使用して、コンテンツをすばやく簡単に操作できるようになりました。 コンテンツの場所の階層をひとめで確認できます。また、コンテンツ階層内を簡単に移動したり、兄弟コンテンツに移動したり、ホーム ページにすばやく戻ったりすることもできます。 表示している項目がアプリの一部である場合、ツリーには、アプリのコンテンツ全体 (セクション、リンク、すべてのレポートとダッシュボード) が表示されます。 表示している項目がレポートの場合は、表示できるすべてのレポート ページの一覧も表示されます。 ページから別のページへの移動がとても簡単になりました。 ぜひお試しください。 
 
 ![Power BI モバイル アプリのナビゲーション ツリーのスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree1.png)
 
@@ -491,7 +495,7 @@ Intune モバイル デバイス管理を利用した、条件付きアクセス
 
 #### <a name="auto-installed-apps"></a>自動インストール済みアプリ
 
-Power BI に一部のアプリをインストールする必要はまったくありません。 組織内の Power BI アプリ作成者は、ダッシュボードとレポートのコレクションを含む*アプリ* を作成することができます。 その後、アプリを発行し、Power BI サービスと Power BI モバイル アプリに自動的にインストールされるように設定できます。 アプリが自動的にインストールされるように設定している場合は、次のように **[アプリ]** メニューに自動的に表示されます。
+Power BI に一部のアプリをインストールする必要はまったくありません。 組織内の Power BI アプリ作成者は、ダッシュボードとレポートのコレクションを含む *アプリ* を作成することができます。 その後、アプリを発行し、Power BI サービスと Power BI モバイル アプリに自動的にインストールされるように設定できます。 アプリが自動的にインストールされるように設定している場合は、次のように **[アプリ]** メニューに自動的に表示されます。
 
 ![Power BI モバイル アプリの [アプリ]](./media/mobile-whats-new-in-the-mobile-apps/power-bi-apps-mobile-apps.png)
 
@@ -524,7 +528,7 @@ Power BI iOS モバイル アプリでプロキシ設定を使用できるよう
 **iOS での新しい Q&A エクスペリエンス (プレビュー)** 自分が問い合わせた質問の回答をただ受け取るのでなく、自然言語を使用して範囲指定したインサイトを取得できるようになりました。 お探しのものがよくわからない場合でも、Q&A によって目的のデータに関連する分析情報が事前に表示されます。 モバイル上で動作する新しい Q&A エクスペリエンスは、Microsoft Research チームとの共同開発によるものであり、弊社製品内の強力なテクノロジを紹介します。 チュートリアル「[iOS モバイル アプリでデータについて質問する](mobile-apps-ios-qna.md)」を試してみてください。
 
 ### <a name="responsive-visuals"></a>レスポンシブ ビジュアル
-**電話レポートおよびダッシュボード用のレスポンシブ ビジュアル** ダッシュ ボードまたはレポート内のビジュアルを*レスポンシブ*に設定することができます。これにより、ビジュアルは画面のサイズに関係なく、最大量のデータとインサイトを表示できるように動的に変化します。 [レスポンシブ ビジュアルに関するブログ](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)を参照してください。
+**電話レポートおよびダッシュボード用のレスポンシブ ビジュアル** ダッシュ ボードまたはレポート内のビジュアルを *レスポンシブ* に設定することができます。これにより、ビジュアルは画面のサイズに関係なく、最大量のデータとインサイトを表示できるように動的に変化します。 [レスポンシブ ビジュアルに関するブログ](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)を参照してください。
 
 ### <a name="june-2107"></a>2017 年 6 月
 #### <a name="all-devices"></a>すべてのデバイス
@@ -539,7 +543,7 @@ Power BI iOS モバイル アプリでプロキシ設定を使用できるよう
 Power BI コンテンツの編成については[ここ](mobile-apps-quickstart-view-dashboard-report.md)をご覧ください。
 
 #### <a name="ios-and-android-devices"></a>iOS および Android デバイス
-**Power BI レポート サーバーのプレビュー**Power BI のレポートをオンプレミスで作成して公開します。 次に、[iOS または Android のモバイル デバイスでこれらを表示し、対話します](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)。 
+**Power BI レポート サーバーのプレビュー** Power BI のレポートをオンプレミスで作成して公開します。 次に、[iOS または Android のモバイル デバイスでこれらを表示し、対話します](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)。 
 
 ### <a name="april-2017"></a>2017 年 4 月
 2017 年 4 月のモバイル アプリ機能まとめは[ここ](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/)をご覧ください。
@@ -547,10 +551,10 @@ Power BI コンテンツの編成については[ここ](mobile-apps-quickstart-
 #### <a name="all-devices"></a>すべてのデバイス
 **電話レポートの背景色** Power BI Desktop でレポートの背景色を定義すると、電話レポートの背景色が同じになります。 電話のレポート ページの最適化については[ここ](../../create-reports/desktop-create-phone-report.md)をご覧ください。
 
-**モバイルに最適な Power BI ビジュアルの作成** この[開発者ガイド](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md)には、モバイル デバイスできれいに表示され、問題なく動作する Power BI ビジュアルの作成に関するヒントがあります。
+**モバイルに最適な Power BI ビジュアルの作成** この [開発者ガイド](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md)には、モバイル デバイスできれいに表示され、問題なく動作する Power BI ビジュアルの作成に関するヒントがあります。
 
 #### <a name="ios-devices"></a>iOS デバイス
-**データに話しかける: 音声認識で質問する** 文字を入力する代わりに音声を認識させる方法で[データに問い合わせ](mobile-apps-ios-qna.md)できるようになりました。 
+**データに話しかける: 音声認識で質問する** 文字を入力する代わりに音声を認識させる方法で [データに問い合わせ](mobile-apps-ios-qna.md)できるようになりました。 
 
 ### <a name="march-2017"></a>2017 年 3 月
 「[Power BI mobile apps feature summary – March 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-2017/)」 (Power BI モバイル アプリの機能の概要 – 2017 年 3 月) をお読みください。
@@ -592,7 +596,7 @@ Q&A を使って自分の言葉でデータに関する質問をすると、Powe
 最大で 5 つの SQL Server Reporting Services (SSRS) サーバーに同時に接続できるようになりました。
 
 #### <a name="android-tablets"></a>Android タブレット
-Android タブレット用 **Power BI モバイル アプリ**がグローバルに使用できるようになりました。 [Android タブレットで Power BI](mobile-android-app-get-started.md) を利用してください。
+Android タブレット用 **Power BI モバイル アプリ** がグローバルに使用できるようになりました。 [Android タブレットで Power BI](mobile-android-app-get-started.md) を利用してください。
 
 #### <a name="ios-and-android-devices"></a>iOS および Android デバイス
 **ダッシュボードのタイル用の新しいメニュー** 基になるレポートへの移動、タイルの展開、アラートの管理など、すべてをダッシュボードのタイルのメニューから直接実行できます。 
@@ -667,7 +671,7 @@ Apple Watch のデータを Watch アプリから直接更新できるように�
 **リンク** タイルと視覚エフェクトの URL をクリックできるようになりました。ブラウザーで開くことができます。
 
 #### <a name="windows-devices"></a>Windows デバイス
-**地図を中心に配置**し、自分の近くのデータに集中的に取り組む
+**地図を中心に配置** し、自分の近くのデータに集中的に取り組む
 
 ### <a name="septemberoctober-2016"></a>2016 年 9、10 月
 [2016 年 10 月の Power BI モバイル アプリ機能の概要](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-october-2016/)をお読みください。
@@ -770,7 +774,7 @@ Power BI モバイル アプリの通知センターには、自分と共有さ�
 
 ### <a name="may-2016"></a>2016 年 5 月
 #### <a name="ios-devices-and-android-phones"></a>iOS デバイスと Android フォン
-* **QR コード** を**レポート**にも使用できるようになりました。 Power BI アプリでコードをスキャンして、関連するレポートに直接アクセスできます。ナビゲーションや検索は必要ありません。
+* **QR コード** を **レポート** にも使用できるようになりました。 Power BI アプリでコードをスキャンして、関連するレポートに直接アクセスできます。ナビゲーションや検索は必要ありません。
 * **データ管理が改善された** SQL Server 2016 Reporting Services:デバイスの読み込み時間が短縮され、データ消費量が削減されています。
 * **SQL Server 2016 テーマのモバイル レポート**:デバイスのモバイル レポートのテーマを参照してください。
 * **geo フィルタリング**:現在地でレポートをフィルターします。
@@ -784,12 +788,12 @@ Power BI モバイル アプリの通知センターには、自分と共有さ�
 #### <a name="android-mobile-app"></a>Android モバイル アプリ
 * Android フォンで **SQL Server 2016 [Reporting Services モバイル レポート](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)** が使用できるようになりました。
 * **レポート ギャラリー** レポート ギャラリーで直接、レポートを開きます。
-* **NTLM 認証**は、SQL Server 2016 Reporting Services のモバイル レポートをサポートします。
+* **NTLM 認証** は、SQL Server 2016 Reporting Services のモバイル レポートをサポートします。
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Windows 10 デバイス用の Power BI アプリ
 * **プレゼンテーション モード** Power BI アプリからプレゼンテーション モードで Power BI ダッシュボードとレポートを表示します。
 * Windows 10 デバイスで **SQL Server 2016 [Reporting Services モバイル レポート](mobile-app-windows-10-ssrs-kpis-mobile-reports.md)** が使用できるようになりました。
-* ダッシュボード タイルにマウスを移動すると、**データ ツールヒント**が表示されます。
+* ダッシュボード タイルにマウスを移動すると、**データ ツールヒント** が表示されます。
 
 ### <a name="march-2016"></a>2016 年 3 月
 [2016 年 3 月の Power BI モバイル アプリのブログ](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-march-2016/)をお読みください。
@@ -803,7 +807,7 @@ Power BI モバイル アプリの通知センターには、自分と共有さ�
 
 **レポート ギャラリー** レポート ギャラリーで直接、レポートを開きます。
 
-**オフラインの新しいデータ** 新しいバックグラウンド更新により、オンラインのときにキャッシュされたデータが自動的に更新されます。そのため[オフラインのときでも](mobile-apps-offline-data.md)最新のデータを使用できます。 
+**オフラインの新しいデータ** 新しいバックグラウンド更新により、オンラインのときにキャッシュされたデータが自動的に更新されます。そのため [オフラインのときでも](mobile-apps-offline-data.md)最新のデータを使用できます。 
 
 **Bing タイルと R タイル** フォーカス モードで Bing タイルと R タイルを開きます。
 
@@ -812,14 +816,14 @@ Power BI モバイル アプリの通知センターには、自分と共有さ�
 
 **レポートの表示** ダッシュボードでタイルからレポートを開きます。
 
-**オフラインの新しいデータ** 新しいバックグラウンド更新により、オンラインのときにキャッシュされたデータが自動的に更新されます。そのため[オフラインのときでも](mobile-apps-offline-data.md)最新のデータを使用できます。 
+**オフラインの新しいデータ** 新しいバックグラウンド更新により、オンラインのときにキャッシュされたデータが自動的に更新されます。そのため [オフラインのときでも](mobile-apps-offline-data.md)最新のデータを使用できます。 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Windows 10 デバイス用の Power BI アプリ
 **クイック アクセス** 新しい "最近の表示" リストとグローバル検索でダッシュボード、レポート、およびグループにすばやくアクセスして、必要なデータを検索できます。
 
 **Bing タイルと R タイル** フォーカス モードで Bing タイルと R タイルを開きます。
 
-**スタート画面のライブ タイル数の増加** ライブ タイルとして[複数の KPI と行カードをスタート画面にピン留め](mobile-pin-dashboard-start-screen-windows-10-phone-app.md)して、ひとめで重要なメトリックをすべて確認できます。
+**スタート画面のライブ タイル数の増加** ライブ タイルとして [複数の KPI と行カードをスタート画面にピン留め](mobile-pin-dashboard-start-screen-windows-10-phone-app.md)して、ひとめで重要なメトリックをすべて確認できます。
 
 **ピンチ操作で拡大/縮小** タブレット上で、ピンチ操作で拡大/縮小を使用して、より詳しくダッシュボードを調査できます。
 

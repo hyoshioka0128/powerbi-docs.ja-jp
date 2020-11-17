@@ -9,16 +9,16 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 9a38533e76fec134d667ae4026258a2a3c07f410
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: e4d1c625d86234c97305c705b2feeead8efacb61
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983116"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397279"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI コンテンツを埋め込む
 
-**Power BI** では、ユーザー所有データを使用して、レポート (Power BI またはページ分割された)、ダッシュボード、またはタイルをアプリケーションに埋め込むことができます。 **ユーザー所有データ**を使用すれば、アプリケーションで埋め込み分析を使用できるように Power BI サービスを拡張できます。 このチュートリアルでは、レポート (Power BI またはページ分割された) をアプリケーションに統合する方法を取り上げます。 Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けのアプリケーションに Power BI を埋め込みます。
+**Power BI** では、ユーザー所有データを使用して、レポート (Power BI またはページ分割された)、ダッシュボード、またはタイルをアプリケーションに埋め込むことができます。 **ユーザー所有データ** を使用すれば、アプリケーションで埋め込み分析を使用できるように Power BI サービスを拡張できます。 このチュートリアルでは、レポート (Power BI またはページ分割された) をアプリケーションに統合する方法を取り上げます。 Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けのアプリケーションに Power BI を埋め込みます。
 
 ![Power BI 埋め込みレポート](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
@@ -44,7 +44,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 アプリケーションへのレポート、ダッシュボード、タイルの埋め込みを開始する前に、使用している環境で Power BI での埋め込みが許可されていることを確認する必要があります。
 
-[埋め込みセットアップ ツール](https://aka.ms/embedsetup/UserOwnsData)を使うと、環境の作成とレポートの埋め込みを段階的に行うのに役立つサンプル アプリケーションをすぐに使い始めたり、ダウンロードしたりできます。 ページ分割されたレポートを埋め込む場合、作成したワークスペースに少なくとも P1 容量を割り当てる必要があります。
+[埋め込みセットアップ ツール](https://app.powerbi.com/embedsetup)を使うと、環境の作成とレポートの埋め込みを段階的に行うのに役立つサンプル アプリケーションをすぐに使い始めたり、ダウンロードしたりできます。 ページ分割されたレポートを埋め込む場合、作成したワークスペースに少なくとも P1 容量を割り当てる必要があります。
 
 手動で環境をセットアップする場合は、以下を続行できます。
 
@@ -52,9 +52,9 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 Azure Active Directory に[アプリケーションを登録する](register-app.md)と、アプリケーションは [Power BI REST API](/rest/api/power-bi/) にアクセスできるようになります。 アプリケーションを登録すると、アプリケーションの ID を設定し、Power BI REST リソースへのアクセス許可を指定することができます。
 
-**サーバー側の Web アプリケーション** アプリの登録を続行する必要があります。 アプリケーション シークレットを作成するには、サーバー側 Web アプリケーションを登録します。
-
-Azure でアプリケーションを作成した後、Azure でアプリケーションを開き、 *[認証]* に移動し、 *[リダイレクト URI]* で *[リダイレクト URI]* に「 **/Redirect**」を追加します。
+>[!NOTE]
+>独自のアプリケーションでは、 *[認証]* に移動して、 *[リダイレクト URI]* フィールドにリダイレクト アドレスを挿入する必要があります。
+リダイレクトの詳細については、「[リダイレクト URI (応答 URL) に関する制約と制限](https://docs.microsoft.com/azure/active-directory/develop/reply-url)」を参照してください。
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI 環境を設定する
 
@@ -113,7 +113,7 @@ Power BI Desktop を使用して、レポートとデータセットを作成す
 
 ### <a name="application-id"></a>アプリケーション ID
 
-**applicationId** 情報には、**Azure** の**アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
+**applicationId** 情報には、**Azure** の **アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
 
 **applicationId** を取得するには、次の手順に従います。
 
@@ -125,7 +125,7 @@ Power BI Desktop を使用して、レポートとデータセットを作成す
 
     ![アプリの選択](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. **アプリケーション ID** が GUID として一覧表示されます。 この**アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
+4. **アプリケーション ID** が GUID として一覧表示されます。 この **アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 

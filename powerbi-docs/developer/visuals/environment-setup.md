@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 09/02/2020
-ms.openlocfilehash: ca9c18cbd51737a5e4b05f3504c6ac2760006281
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 447f73601362c9ee205fe64119d0c251e7b4eb9a
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050860"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412282"
 ---
 # <a name="set-up-your-environment-for-developing-a-power-bi-visual"></a>Power BI の視覚化の開発用に環境をセットアップする
 
@@ -59,10 +59,10 @@ JavaScript を使用して記述された *pbiviz* ツールを使用して、*p
 
 # <a name="windows"></a>[Windows](#tab/windows)
 
-このプロセスでは、**証明書のインポート ウィザード**を起動する PowerShell コマンドの実行について説明します。 以下の手順のようにして、ウィザードで証明書を構成します。
+このプロセスでは、**証明書のインポート ウィザード** を起動する PowerShell コマンドの実行について説明します。 以下の手順のようにして、ウィザードで証明書を構成します。
 
 >[!IMPORTANT]
->この手順の間、PowerSell ウィンドウを閉じないでください。
+>この手順の間、PowerShell ウィンドウを閉じないでください。
 
 1. Windows PowerShell を開いて、次のコマンドを入力します。
 

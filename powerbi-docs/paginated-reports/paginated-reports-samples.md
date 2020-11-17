@@ -7,13 +7,13 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/01/2020
-ms.openlocfilehash: cf0e6a6e7cd40a5b8bb97560caf94b71c1b48e7a
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 11/10/2020
+ms.openlocfilehash: cfa4b46e521079802ec87b63d6323e01213625c3
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93324053"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483867"
 ---
 # <a name="sample-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートのサンプル
 
@@ -27,8 +27,25 @@ ms.locfileid: "93324053"
 - これらのレポートは、編集することなく、そのままオンラインで共有できます。 そのためには、Power BI Pro ライセンスが必要です。 [Power BI Pro の無料試用版ライセンス](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro)にサインアップしてください。
 - また、[Premium 容量](../admin/service-premium-what-is.md)の Power BI ワークスペースにアクセスする必要もあります。
 - これらのレポートを編集するには、Microsoft ダウンロード センターから [Power BI Report Builder をインストールする](https://aka.ms/pbireportbuilder)必要があります。
-- これで、GitHub から[これらのページ分割されたレポートのサンプルをダウンロードする](https://github.com/microsoft/Reporting-Services/tree/master/PaginatedReportSamples)準備ができました。 GitHub アカウントは必要ありません。 
+- これで、GitHub からこれらのページ分割されたレポートのサンプルをダウンロードする準備ができました。 GitHub アカウントは必要ありません。 
 
+## <a name="download-the-reports"></a>サンプルのダウンロード
+
+レポートを正常にダウンロードするには、リポジトリを zip ファイルとしてダウンロードしてから抽出する必要があります。 ページ分割されたレポートは .rdl ファイルです。
+
+1. [Reporting Services の GitHub リポジトリ](https://github.com/microsoft/Reporting-Services)を開きます。
+1. 緑色の **[コード]** ボタンの矢印、 **[Download ZIP]\(ZIP のダウンロード\)** の順に選択します。
+
+    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Power BI のページ分割されたサンプル レポートを含む GitHub リポジトリのスクリーンショット。":::
+    
+1. ファイルを開き、 **[Extract all]\(すべて抽出\)** を選択して、ファイルの場所を選択します。 既定では、フォルダー名は **Reporting-Services-master** です。
+1. **Reporting-Services-master** フォルダーを開いて、**PaginatedReportSamples** フォルダーを開きます。
+
+    >[!NOTE]
+    >**Reporting-Services-master** フォルダー内にある他のフォルダーをすべて削除できます。 その他の不要なサンプルが含まれています。
+
+1. .rdl ファイルを 1 つ選択して、Power BI レポート ビルダーで開きます。
+1. これで、[ページ分割されたレポートを Power BI サービスに発行](paginated-reports-save-to-power-bi-service.md)できるようになりました。
 
 ## <a name="invoice"></a>請求書
 

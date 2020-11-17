@@ -1,26 +1,26 @@
 ---
-title: レポートの色における書式設定に関するヒントとコツ
-description: Power BI のレポートにおける色の書式設定に関するヒントとコツ
-author: mihart
-ms.reviewer: ''
+title: レポートでの書式設定に関するヒントとコツ
+description: Power BI レポートでの書式設定に関するヒントとコツ
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2020
-ms.author: mihart
+ms.date: 10/29/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e896b3aeabc6a22c98563d0836984cd2d8a644de
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: bce798e07a3bdac0ba52f56e9ddf7eac72087924
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633839"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483956"
 ---
-# <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Power BI における色の書式設定に関するヒントとコツ
+# <a name="tips-and-tricks-for-formatting-in-reports"></a>レポートでの書式設定に関するヒントとコツ
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-Power BI は、ダッシュボードとレポートをカスタマイズするためのさまざまな方法を提供しています。 この記事では、Power BI の視覚化を、説得力のある興味をひくものにして、お客様のニーズに合わせてカスタマイズできる各種ヒントについて詳しく説明しています。
+Power BI には、レポートをカスタマイズするためのさまざまな方法が用意されています。 この記事では、Power BI の視覚化を、説得力のある興味をひくものにして、お客様のニーズに合わせてカスタマイズできる各種ヒントについて詳しく説明しています。
 
 ヒントには次のものがあります。 優れた別のヒントをお持ちですか。 成功しました。 そのヒントを是非マイクロソフトまでお送りください。この一覧への追加を検討させていただきます。
 
@@ -36,7 +36,7 @@ Power BI は、ダッシュボードとレポートをカスタマイズする�
 
 変更を加えるには、レポートに対する編集アクセス許可が必要です。 Power BI Desktop の **[レポート]** ビューでレポートを開きます。 Power BI サービスでは、次の図に示すように、レポートを開いてメニュー バーから **[編集]** を選択することを意味します。
 
-![[編集] メニューの場所](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
+![[編集] メニューの場所](media/service-tips-and-tricks-for-color-formatting/power-bi-editing-view.png)
 
 **[フィルター]** および **[視覚化]** ウィンドウがレポート キャンバスの右側に表示されたら、カスタマイズを開始できます。 ウィンドウが表示されない場合は、右上隅の矢印を選択してそれらを開きます。
 
@@ -99,7 +99,7 @@ Power BI は、ダッシュボードとレポートをカスタマイズする�
 ![青色の複数の網掛けが含まれている縦棒グラフ](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
 
 
-ご覧のように、販売されたユニット数では**生産性**と**エクストリーム**の方が多くなっていますが (棒が高い)、 **[市場シェア供給年度累計 %]** では**モデレーション**の方が多くなっています (色が濃い)。
+ご覧のように、販売されたユニット数では **生産性** と **エクストリーム** の方が多くなっていますが (棒が高い)、 **[市場シェア供給年度累計 %]** では **モデレーション** の方が多くなっています (色が濃い)。
 
 ### <a name="customize-the-colors-used-in-the-color-scale"></a>カラー スケールで使用する色をカスタマイズする
 また、値をこれらの色にマップする方法を変更することもできます。 次の図では、 **[最小]** と **[最大]** の色がオレンジ色と緑に、それぞれ設定されています。
@@ -143,7 +143,7 @@ Power BI は、ダッシュボードとレポートをカスタマイズする�
 ## <a name="how-to-undo-in-power-bi"></a>Power BI で元に戻す方法
 他の多くの Microsoft のサービスやソフトウェアと同様に、Power BI には、最後のコマンドを元に戻すための簡単な方法が備わっています。 たとえば、データ ポイントの色または一連のデータ ポイントを変更した場合に、それらが視覚化に表示されるときの色が好みでない場合があります。 そして、前にどの色だったか正確には思い出せないけれども、その色に戻したいことがあります。
 
-ご自身の直前の操作は、単に CTRL + Z と入力し**元に戻す**ことができます。
+ご自身の直前の操作は、単に CTRL + Z と入力し **元に戻す** ことができます。
 
 [書式設定] カードに対して行ったすべての変更を破棄するには、 **[既定値に戻す]** を選択します。
 

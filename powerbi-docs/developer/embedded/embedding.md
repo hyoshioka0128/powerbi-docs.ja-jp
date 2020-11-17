@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 32fb26faa42f0ce6128a4a4cc0e491f78f270d36
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 4dba33e2ae800198d4840139d43893a7dca77e4f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982196"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396819"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Power BI を使用した埋め込み分析
 
@@ -31,8 +31,8 @@ Power BI サービス (SaaS) と Azure (PaaS) の Power BI Embedded サービス
 
 適切なソリューションを選択します。
 
-* [組織向けの埋め込み](embedding.md#embedding-for-your-organization)を使って、Power BI サービスを拡張することができます。 これを行うには、[組織向けの埋め込み](https://aka.ms/embedsetup/UserOwnsData)ソリューションを実装します。
-* [顧客向けの埋め込み](embedding.md#embedding-for-your-customers)では、Power BI アカウントがないユーザーのためにダッシュボードとレポートを埋め込むことができます。 これを行うには、[顧客向けの埋め込み](https://aka.ms/embedsetup/AppOwnsData)ソリューションを実装します。
+* [組織向けの埋め込み](embedding.md#embedding-for-your-organization)を使って、Power BI サービスを拡張することができます。 これを行うには、[埋め込みセットアップ ツール](https://app.powerbi.com/embedsetup)で、"*組織向けに埋め込む*" ソリューションを実装します。
+* [顧客向けの埋め込み](embedding.md#embedding-for-your-customers)では、Power BI アカウントがないユーザーのためにダッシュボードとレポートを埋め込むことができます。 これを行うには、[埋め込みセットアップ ツール](https://app.powerbi.com/embedsetup)で、"*顧客向けの埋め込み*" ソリューションを実装します。
 
 ![PBIE サンプル](media/embedding/what-can-you-do-02.png)
 
@@ -45,13 +45,13 @@ Power BI コンテンツを埋め込む主なシナリオは 2 つあります�
 
 [Power BI REST API](/rest/api/power-bi/) は両方のシナリオに対応します。
 
-Power BI ライセンスのない顧客やユーザーの場合、同じ API を使用して、組織用と顧客用のダッシュボードやレポートをカスタム アプリケーションに埋め込むことができます。 顧客には、アプリケーションで管理されるデータが表示されます。 また、組織の Power BI ユーザーには、Power BI で直接か、埋め込みアプリケーションのコンテキストで*自分のデータ*を表示するための追加オプションが与えられます。 埋め込みのニーズに合わせて JavaScript や REST API を最大限に活用できます。
+Power BI ライセンスのない顧客やユーザーの場合、同じ API を使用して、組織用と顧客用のダッシュボードやレポートをカスタム アプリケーションに埋め込むことができます。 顧客には、アプリケーションで管理されるデータが表示されます。 また、組織の Power BI ユーザーには、Power BI で直接か、埋め込みアプリケーションのコンテキストで *自分のデータ* を表示するための追加オプションが与えられます。 埋め込みのニーズに合わせて JavaScript や REST API を最大限に活用できます。
 
 埋め込みのしくみを理解するには、[JavaScript 埋め込みサンプル](https://microsoft.github.io/PowerBI-JavaScript/demo/)をご覧ください。
 
 ## <a name="embedding-for-your-organization"></a>組織向けの埋め込み
 
-**組織向けの埋め込み**を使って、Power BI サービスを拡張することができます。 この種類の埋め込みでは、アプリケーションのユーザーがコンテンツを表示するには Power BI サービスにサインインする必要があります。 サインインした組織のユーザーは、自分が所有しているか、誰かが Power BI サービスで自分と共有しているダッシュボードとレポートにのみアクセスできます。
+**組織向けの埋め込み** を使って、Power BI サービスを拡張することができます。 この種類の埋め込みでは、アプリケーションのユーザーがコンテンツを表示するには Power BI サービスにサインインする必要があります。 サインインした組織のユーザーは、自分が所有しているか、誰かが Power BI サービスで自分と共有しているダッシュボードとレポートにのみアクセスできます。
 
 組織向けの埋め込みの例としては、[SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/)、[Microsoft Teams の統合 (管理者権限が必要です)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/)、[Microsoft Dynamics](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) などの内部のアプリケーションがあります。
 
@@ -59,11 +59,11 @@ Power BI ライセンスのない顧客やユーザーの場合、同じ API を
 
 編集や保存などのセルフサービス機能は、Power BI ユーザー向けの埋め込みの際に [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) を介して使用できます。
 
-[埋め込みセットアップ ツール](https://aka.ms/embedsetup/UserOwnsData)を利用してサンプル アプリケーションをダウンロードできます。このサンプル アプリケーションでは、組織向けのレポートを段階的に組み込むことができます。
+[埋め込みセットアップ ツール](https://app.powerbi.com/embedsetup)を利用してサンプル アプリケーションをダウンロードできます。このサンプル アプリケーションでは、組織向けのレポートを段階的に組み込むことができます。
 
 ## <a name="embedding-for-your-customers"></a>顧客向けの埋め込み
 
-**顧客向けの埋め込み**では、Power BI アカウントがないユーザーのためにダッシュボードとレポートを埋め込むことができます。 この種類の埋め込みは、*Power BI Embedded* とも呼ばれます。
+**顧客向けの埋め込み** では、Power BI アカウントがないユーザーのためにダッシュボードとレポートを埋め込むことができます。 この種類の埋め込みは、*Power BI Embedded* とも呼ばれます。
 
 [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) は **Microsoft Azure** サービスの 1 つです。独立系ソフトウェア ベンダー (ISV) と開発者はこのサービスを使用して、ビジュアル、レポート、ダッシュボードをアプリケーションに簡単に埋め込むことができます。 この埋め込みは、容量ベースの時間単位の課金モデルで行われます。
 
@@ -77,7 +77,7 @@ Power BI Embedded を使用する場合、顧客は Power BI について何も�
 
 Power BI Pro アカウントは、アプリケーションのマスター アカウントとして機能します (プロキシ アカウントと考えることができます)。 このアカウントを使用し、アプリケーションの Power BI ダッシュボードおよびレポートにアクセスできる埋め込みトークンを生成できます。
 
-[サービス プリンシパル](embed-service-principal.md)を使用すると、**アプリ専用**トークンを使用して、アプリケーションに Power BI コンテンツを埋め込むことができます。 また、アプリケーションの Power BI ダッシュボードおよびレポートにアクセスできる埋め込みトークンを生成できます。
+[サービス プリンシパル](embed-service-principal.md)を使用すると、**アプリ専用** トークンを使用して、アプリケーションに Power BI コンテンツを埋め込むことができます。 また、アプリケーションの Power BI ダッシュボードおよびレポートにアクセスできる埋め込みトークンを生成できます。
 
 開発者は Power BI Embedded を使用すると、ビジュアルと分析の開発ではなく、アプリケーションの中核的機能の構築に時間を費やすことができます。 また、顧客のレポートとダッシュボードの需要をすばやく満たし、完全に文書化された API と SDK に簡単に埋め込むことができます。 ナビゲーションが簡単なデータ探索をアプリで有効にすることで、ISV の顧客は、どのデバイスからでも迅速にデータ ドリブンの意思決定を下すことができるようになります。
 
