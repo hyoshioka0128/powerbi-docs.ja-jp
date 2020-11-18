@@ -99,6 +99,8 @@
           items:
             - name: データフローの作成と使用
               href: ./dataflows/dataflows-create.md
+            - name: データフローのベスト プラクティス
+              href: ./dataflows/dataflows-best-practices.md
             - name: Power BI で DirectQuery とデータフローを使用する (プレビュー)
               href: ./dataflows/dataflows-configure-consume.md
             - name: データフローで強化されたコンピューティング エンジンを使用する
