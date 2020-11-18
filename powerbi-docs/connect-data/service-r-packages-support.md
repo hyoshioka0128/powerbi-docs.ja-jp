@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dfb9a263b0e8fa1555cab9f0d2a0915c367fbd4c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2cd345baff9b03573773599f6026f0be48fdcab2
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235724"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718870"
 ---
 # <a name="create-visuals-by-using-r-packages-in-the-power-bi-service"></a>Power BI サービスで R パッケージを使用してビジュアルを作成する
 Power BI サービスでビジュアルを作成するには、強力な [R プログラミング言語](https://www.r-project.org/)を使用できます。 多くの R パッケージが Power BI サービスでサポートされています (また、常にサポート対象は増えています) が、一部のパッケージはサポートされていません。
@@ -23,7 +23,7 @@ Power BI サービスでビジュアルを作成するには、強力な [R プ�
 次のセクションでは、Power BI でサポートされる R パッケージとサポートされない R パッケージをアルファベット順の一覧で示します。 Power BI の R の詳細については、[R ビジュアル](../visuals/service-r-visuals.md)に関する記事を参照してください。
 
 ## <a name="request-support-for-a-new-r-package"></a>新しい R パッケージのサポートを要求する
-**Power BI サービス**のサポートされている R パッケージについては、後の「**サポートされるパッケージ**」をご覧ください。 一覧にない R パッケージのサポートを要求する場合は、要求を [Power BI Ideas](https://ideas.powerbi.com) に送信してください。
+**Power BI サービス** のサポートされている R パッケージについては、後の「**サポートされるパッケージ**」をご覧ください。 一覧にない R パッケージのサポートを要求する場合は、要求を [Power BI Ideas](https://ideas.powerbi.com) に送信してください。
 
 ## <a name="requirements-and-limitations-of-r-packages"></a>R パッケージの要件と制限事項
 R パッケージにはいくつかの要件と制限があります。
@@ -39,7 +39,7 @@ R パッケージにはいくつかの要件と制限があります。
 * 新しい R パッケージの組み込みに関する承認プロセスには、依存関係のツリーがあります。サービスにインストールするために必要な一部の依存関係はサポートできません。
 
 ## <a name="r-packages-that-are-supported-in-power-bi"></a>Power BI でサポートされる R パッケージ
-次の表では、Power BI サービスで**サポートされている** R パッケージを示します。
+次の表では、Power BI サービスで **サポートされている** R パッケージを示します。
 
 
 |        パッケージ        |   バージョン   |                                   リンク                                   |
@@ -192,7 +192,6 @@ R パッケージにはいくつかの要件と制限があります。
 |curl|3.2|https://cran.r-project.org/web/packages/curl/index.html|
 |CVST|0.2-1|https://cran.r-project.org/web/packages/CVST/index.html|
 |cvTools|0.3.2|https://cran.r-project.org/web/packages/cvTools/index.html|
-|d3heatmap|0.6.1.2|https://cran.r-project.org/web/packages/d3heatmap/index.html|
 |d3Network|0.5.2.1|https://cran.r-project.org/web/packages/d3Network/index.html|
 |d3r|0.8.0|https://cran.r-project.org/web/packages/d3r/index.html|
 |data.table|1.10.4-3|https://cran.r-project.org/web/packages/data.table/index.html|
@@ -976,7 +975,7 @@ R パッケージにはいくつかの要件と制限があります。
 
 
 ## <a name="r-scripts-that-are-not-supported-in-power-bi"></a>Power BI でサポートされていない R パッケージ
-次の表では、Power BI サービスで**サポートされていない** R パッケージを示します。
+次の表では、Power BI サービスで **サポートされていない** R パッケージを示します。
 
 | パッケージ | 要求日 | 理由 |
 | --- | --- | --- |

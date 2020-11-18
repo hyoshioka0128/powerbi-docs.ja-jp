@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/01/2020
+ms.date: 11/13/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: eb67336868bb3eb3cf4527660330219573b1553d
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: f38908645cdf7846d43f97485c7a2d3e9e2e9b7b
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91637975"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668099"
 ---
 # <a name="configuring-dataflow-storage-to-use-azure-data-lake-gen-2"></a>Azure Data Lake Gen 2 を使用するようにデータフロー ストレージを構成する 
 
@@ -50,7 +50,7 @@ ms.locfileid: "91637975"
 
 ## <a name="disabling-azure-data-lake-gen-2"></a>Azure Data Lake Gen 2 を無効にする
 
-**管理ポータル**の **[データフロー]** で、ユーザーがこの機能を使用するためのアクセスを無効にしたり、ワークスペース管理者が独自の Azure Storage を使用するのを禁止したりすることができます。
+**管理ポータル** の **[データフロー]** で、ユーザーがこの機能を使用するためのアクセスを無効にしたり、ワークスペース管理者が独自の Azure Storage を使用するのを禁止したりすることができます。
 
 ## <a name="next-steps"></a>次のステップ
 データフローと Power BI の詳細については、以下の記事を参照してください。
@@ -61,3 +61,4 @@ ms.locfileid: "91637975"
 * [データフローの Premium 機能](dataflows-premium-features.md)
 * [データフローでの AI の使用](dataflows-machine-learning-integration.md)
 * [データフローの制限事項と考慮事項](dataflows-features-limitations.md)
+* [データフローのベスト プラクティス](dataflows-best-practices.md)

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5834230a59f6473624e955827dad36cdd75c04e5
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 703e87847f2f6dfb24040cc6532052b17d39086c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397509"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668536"
 ---
 # <a name="ai-with-dataflows"></a>データフローを使用した AI
 
@@ -50,7 +50,7 @@ Power Query エディターの上部のリボン内で **[AI Insights]** ボタ�
 
 ![関数を選択する](media/service-cognitive-services/cognitive-services-04.png)
 
-**Cultureinfo** は、テキストの言語を指定する省略可能な入力です。 このフィールドには、ISO コードを指定します。 Cultureinfo の入力としては、列、または静的フィールドを使用します。 この例では、列全体で言語が英語 (en) として指定されています。 このフィールドを空白のままにすると、Power BI は、言語を自動的に検出してから、関数を適用します。 次に、 **[呼び出し]** を選択します。
+**Cultureinfo** は、テキストの言語を指定する省略可能な入力です。 このフィールドには、ISO コードを指定します。 Cultureinfo の入力としては、列、または静的フィールドを使用します。 この例では、列全体で言語が英語 (en) として指定されています。 このフィールドを空白のままにすると、Power BI は、言語を自動的に検出してから、関数を適用します。 次に、**[呼び出し]** を選択します。
 
 ![[呼び出し] の選択](media/service-cognitive-services/cognitive-services-05.png)
 
@@ -76,7 +76,7 @@ Text Analytics では、最大 120 の言語が認識されます。 詳細に�
 
 #### <a name="extract-key-phrases"></a>**キー フレーズ抽出**
 
-**キー フレーズ抽出** 関数では、非構造化テキストが評価され、テキスト フィールドごとにキー フレーズの一覧が返されます。 この関数では、テキスト フィールドを入力する必要があります。また、 **Cultureinfo** の省略可能な入力を受け入れることもできます。 (前述の「 **Power BI で Cognitive Services の使用を開始する** 」セクションを参照してください)。
+**キー フレーズ抽出** 関数では、非構造化テキストが評価され、テキスト フィールドごとにキー フレーズの一覧が返されます。 この関数では、テキスト フィールドを入力する必要があります。また、**Cultureinfo** の省略可能な入力を受け入れることもできます。 (前述の「**Power BI で Cognitive Services の使用を開始する**」セクションを参照してください)。
 
 キー フレーズ抽出は、指定したテキストのチャンクが大きいほど、効果的に機能します。 これは、テキストのブロックが小さいほどパフォーマンスが向上する感情分析とは反対です。 両方の操作から最良の結果を得るには、入力を適宜再構築することを検討してください。
 
@@ -112,7 +112,7 @@ Text Analytics では、機械学習分類アルゴリズムを使用して、0 
 
 データ アナリストは Power BI で AutoML を使用すると、Power BI スキルのみを使用して、シンプルなエクスペリエンスで機械学習モデルを構築できます。 ML モデルの作成の背後にあるほとんどのデータ サイエンスは Power BI で自動化されています。 これには、良好な品質のモデルを確実に作成できるガードレールがあり、ML モデルの作成に使用されたプロセスの可視性が提供されます。
 
-AutoML では、データフローのために **バイナリの予測** 、 **分類** 、 **回帰モデル** の作成がサポートされています。 これらは監視対象の機械学習技術の種類です。つまり、過去の観測の既知の結果から学習して、他の観測結果を予測します。 AutoML モデルをトレーニングするための入力データセットは、既知の結果を使用して **ラベル付け** されたレコードのセットです。
+AutoML では、データフローのために **バイナリの予測**、**分類**、**回帰モデル** の作成がサポートされています。 これらは監視対象の機械学習技術の種類です。つまり、過去の観測の既知の結果から学習して、他の観測結果を予測します。 AutoML モデルをトレーニングするための入力データセットは、既知の結果を使用して **ラベル付け** されたレコードのセットです。
 
 Power BI の AutoML では、[Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) の[自動 ML](/azure/machine-learning/service/concept-automated-ml) を統合して ML モデルが作成されます。 ただし、Power BI で AutoML を使用するために Azure サブスクリプションは必要ありません。 ML モデルのトレーニングとホストのプロセスは、Power BI サービスによって完全に管理されます。
 
@@ -188,7 +188,7 @@ AutoML モデルのトレーニング プロセスは、最適なパフォーマ
 
 #### <a name="automl-model-explainability"></a>AutoML モデルの説明可能性
 
-モデルのトレーニングが完了すると、AutoML によって入力機能とモデル出力の間のリレーションシップが分析されます。 これにより、各入力の特徴について、予約データのテスト データセットのモデル出力に対する変更の大きさが評価されます。 これは、" _特徴の重要度_ " と呼ばれます。 これは、トレーニングが完了すると、更新の一部として行われます。 そのため、更新には、ウィザードで構成されているトレーニング時間よりも長い時間がかかることがあります。
+モデルのトレーニングが完了すると、AutoML によって入力機能とモデル出力の間のリレーションシップが分析されます。 これにより、各入力の特徴について、予約データのテスト データセットのモデル出力に対する変更の大きさが評価されます。 これは、"_特徴の重要度_" と呼ばれます。 これは、トレーニングが完了すると、更新の一部として行われます。 そのため、更新には、ウィザードで構成されているトレーニング時間よりも長い時間がかかることがあります。
 
 ![特徴の重要度](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
 
@@ -200,7 +200,7 @@ AutoML では、グローバルな特徴の重要度と共に、検証中のモ�
 
 レポート内でモデルのパフォーマンスを説明するために使用されるグラフとメジャーは、モデルの種類によって異なります。 これらのパフォーマンス グラフとメジャーについては、以下のセクションで説明します。
 
-レポート内の追加ページには、データ サイエンスの観点からモデルに関する統計的なメジャー値が記載される場合があります。 たとえば、 **バイナリの予測** レポートには、モデルのゲイン グラフと ROC 曲線が含まれています。
+レポート内の追加ページには、データ サイエンスの観点からモデルに関する統計的なメジャー値が記載される場合があります。 たとえば、**バイナリの予測** レポートには、モデルのゲイン グラフと ROC 曲線が含まれています。
 
 このレポートには、モデルのトレーニング方法についての説明が記載された **[トレーニングの詳細]** ページと、各イテレーションの実行に対するモデルのパフォーマンスを説明するグラフも含まれています。
 
@@ -220,7 +220,7 @@ AutoML では、グローバルな特徴の重要度と共に、検証中のモ�
 
 ML モデルを適用するには、適用する先のエンティティの名前と、モデル出力用にこのエンティティに追加される列のプレフィックスを指定する必要があります。 列名の既定のプレフィックスはモデル名です。 _Apply_ 関数には、モデルの種類に固有の追加のパラメーターを含めることができます。
 
-ML モデルを適用すると、2 つの新しいデータフロー エンティティが作成されます。これには、出力エンティティでスコアが付けられる各行の予測と個別の説明が含まれています。 たとえば、 _OnlineShoppers_ エンティティに _PurchaseIntent_ モデルを適用すると、出力で **OnlineShoppers enriched PurchaseIntent** エンティティと **OnlineShoppers enriched PurchaseIntent explanations** エンティティが生成されます。 強化されたエンティティの各行に対して、 **Explanations** が入力の特徴に基づいて、強化された説明エンティティ内の複数の行に分割されます。 **ExplanationIndex** は、強化された説明エンティティの行を、強化されたエンティティの行にマップするのに役立ちます。
+ML モデルを適用すると、2 つの新しいデータフロー エンティティが作成されます。これには、出力エンティティでスコアが付けられる各行の予測と個別の説明が含まれています。 たとえば、_OnlineShoppers_ エンティティに _PurchaseIntent_ モデルを適用すると、出力で **OnlineShoppers enriched PurchaseIntent** エンティティと **OnlineShoppers enriched PurchaseIntent explanations** エンティティが生成されます。 強化されたエンティティの各行に対して、**Explanations** が入力の特徴に基づいて、強化された説明エンティティ内の複数の行に分割されます。 **ExplanationIndex** は、強化された説明エンティティの行を、強化されたエンティティの行にマップするのに役立ちます。
 
 ![クエリ エディター](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
@@ -230,11 +230,11 @@ PQO 関数ブラウザーの AI 分析情報を使用し、あらゆる Power BI
 
 モデルを適用すると、AutoML では、データフローが更新されるとすぐに予測が常に最新の状態に保たれます。
 
-Power BI レポートで ML モデルの分析情報と予測を使用するには、 **データフロー** コネクタを使用して Power BI Desktop から出力エンティティに接続します。
+Power BI レポートで ML モデルの分析情報と予測を使用するには、**データフロー** コネクタを使用して Power BI Desktop から出力エンティティに接続します。
 
 ### <a name="binary-prediction-models"></a>バイナリの予測モデル
 
-バイナリの予測モデル (より正式な呼び方では **二項分類** ) は、データセットを 2 つのグループに分類するために使用されます。 これらは、二元の結果を持つ可能性のあるイベントを予測するために使用されます。 たとえば、営業案件が転換されるかどうか、アカウントが解約されるかどうか、請求書が期日どおりに支払われるかどうか、トランザクションが不正かどうかなどです。
+バイナリの予測モデル (より正式な呼び方では **二項分類**) は、データセットを 2 つのグループに分類するために使用されます。 これらは、二元の結果を持つ可能性のあるイベントを予測するために使用されます。 たとえば、営業案件が転換されるかどうか、アカウントが解約されるかどうか、請求書が期日どおりに支払われるかどうか、トランザクションが不正かどうかなどです。
 
 バイナリの予測モデルの出力は確率スコアで、ターゲットの結果が達成される可能性が特定されます。
 
@@ -244,7 +244,7 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 - 結果のクラスごとに最低 20 行の履歴データが必要
 
-バイナリの予測モデルの作成プロセスは、前述のセクション「 **ML モデル入力の構成** 」で説明されているように、他の AutoML モデルと同じ手順に従います。 唯一の違いは、"モデルの選択" ステップで最も関心のあるターゲットの結果値を選択できることです。 モデルの検証結果を要約する、自動的に生成されるレポートで使用される結果に対してわかりやすいラベルを指定することもできます。
+バイナリの予測モデルの作成プロセスは、前述のセクション「**ML モデル入力の構成**」で説明されているように、他の AutoML モデルと同じ手順に従います。 唯一の違いは、"モデルの選択" ステップで最も関心のあるターゲットの結果値を選択できることです。 モデルの検証結果を要約する、自動的に生成されるレポートで使用される結果に対してわかりやすいラベルを指定することもできます。
 
 ![バイナリの予測ウィザード](media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png)
 
@@ -272,13 +272,13 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 ![予測の入力](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
 
-バイナリの予測モデルを適用すると、強化された出力エンティティに次の 4 つの出力列が追加されます。 **Outcome** 、 **PredictionScore** 、 **PredictionExplanation** 、および **ExplanationIndex** です。 エンティティ内の列名には、モデルの適用時に指定されるプレフィックスがあります。
+バイナリの予測モデルを適用すると、強化された出力エンティティに次の 4 つの出力列が追加されます。**Outcome**、**PredictionScore**、**PredictionExplanation**、および **ExplanationIndex** です。 エンティティ内の列名には、モデルの適用時に指定されるプレフィックスがあります。
 
 **PredictionScore** は確率を示すパーセントで、ターゲットの結果が達成される可能性を割り出します。
 
 **Outcome** 列には、予測結果ラベルが含まれています。 確率がしきい値を超えているレコードは、ターゲットの結果を達成できる可能性が高いと予測され、True としてラベル付けされます。 しきい値を下回っているレコードは、結果を達成する可能性が低いと予測され、False としてラベル付けされます。
 
-**PredictionExplanation** 列には、 **PredictionScore** に対して入力の特徴が与えた具体的な影響を示す説明が含まれています。
+**PredictionExplanation** 列には、**PredictionScore** に対して入力の特徴が与えた具体的な影響を示す説明が含まれています。
 
 ### <a name="classification-models"></a>分類モデル
 
@@ -294,7 +294,7 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 - 結果のクラスごとに最低 20 行の履歴データが必要
 
-分類モデルの作成プロセスは、前述のセクション「 **ML モデル入力の構成** 」で説明されているように、他の AutoML モデルと同じ手順に従います。
+分類モデルの作成プロセスは、前述のセクション「**ML モデル入力の構成**」で説明されているように、他の AutoML モデルと同じ手順に従います。
 
 #### <a name="classification-model-report"></a>分類モデル レポート
 
@@ -308,13 +308,13 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 レポート内のモデルの説明には、各クラスの上位の予測子も含まれています。
 
-分類モデル レポートには、この記事のセクション「 **AutoML モデル レポート** 」で前述したように、他の種類のモデルのページと同様の [トレーニングの詳細] ページも表示されます。
+分類モデル レポートには、この記事のセクション「**AutoML モデル レポート**」で前述したように、他の種類のモデルのページと同様の [トレーニングの詳細] ページも表示されます。
 
 #### <a name="applying-a-classification-model"></a>分類モデルの適用
 
 分類 ML モデルを適用するには、入力データと出力列名のプレフィックスを持つエンティティを指定する必要があります。
 
-分類モデルを適用すると、強化された出力エンティティに次の 5 つの出力列が追加されます。 **ClassificationScore** 、 **ClassificationResult** 、 **ClassificationExplanation** 、 **ClassProbabilities** 、 **ExplanationIndex** です。 エンティティ内の列名には、モデルの適用時に指定されるプレフィックスがあります。
+分類モデルを適用すると、強化された出力エンティティに次の 5 つの出力列が追加されます。**ClassificationScore**、**ClassificationResult**、**ClassificationExplanation**、**ClassProbabilities**、**ExplanationIndex** です。 エンティティ内の列名には、モデルの適用時に指定されるプレフィックスがあります。
 
 **ClassProbabilities** 列には、使用可能な各クラスのレコードの確率スコアの一覧が含まれています。
 
@@ -322,7 +322,7 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 **ClassificationResult** 列には、レコードに対して予測される可能性が最も高いクラスが含まれています。
 
-**ClassificationExplanation** 列には、 **ClassificationScore** に対して入力の特徴が与えた具体的な影響を示す説明が含まれています。
+**ClassificationExplanation** 列には、**ClassificationScore** に対して入力の特徴が与えた具体的な影響を示す説明が含まれています。
 
 ### <a name="regression-models"></a>回帰モデル
 
@@ -338,7 +338,7 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 - 回帰モデルには、少なくとも 100 行の履歴データが必要です
 
-回帰モデルの作成プロセスは、前述のセクション「 **ML モデル入力の構成** 」で説明されているように、他の AutoML モデルと同じ手順に従います。
+回帰モデルの作成プロセスは、前述のセクション「**ML モデル入力の構成**」で説明されているように、他の AutoML モデルと同じ手順に従います。
 
 #### <a name="regression-model-report"></a>回帰モデル レポート
 
@@ -350,7 +350,7 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 ![残余誤差グラフ](media/service-machine-learning-automated/automated-machine-learning-power-bi-18.png)
 
-回帰モデル レポートには、セクション「 **AutoML モデル レポート** 」で前述したように、他の種類のモデルのレポートと同様の [トレーニングの詳細] ページも表示されます。
+回帰モデル レポートには、セクション「**AutoML モデル レポート**」で前述したように、他の種類のモデルのレポートと同様の [トレーニングの詳細] ページも表示されます。
 
 #### <a name="applying-a-regression-model"></a>回帰モデルの適用
 
@@ -358,9 +358,9 @@ Power BI レポートで ML モデルの分析情報と予測を使用するに�
 
 ![回帰を適用する](media/service-machine-learning-automated/automated-machine-learning-power-bi-19.png)
 
-回帰モデルを適用すると、強化された出力エンティティに次の 3 つの出力列が追加されます。 **RegressionResult** 、 **RegressionExplanation** 、 **ExplanationIndex** です。 エンティティ内の列名には、モデルの適用時に指定されるプレフィックスがあります。
+回帰モデルを適用すると、強化された出力エンティティに次の 3 つの出力列が追加されます。**RegressionResult**、**RegressionExplanation**、**ExplanationIndex** です。 エンティティ内の列名には、モデルの適用時に指定されるプレフィックスがあります。
 
-**RegressionResult** 列には、入力フィールドに基づいて、レコードの予測値が格納されます。 **RegressionExplanation** 列には、 **RegressionResult** に対して入力の特徴が与えた具体的な影響を示す説明が含まれています。
+**RegressionResult** 列には、入力フィールドに基づいて、レコードの予測値が格納されます。 **RegressionExplanation** 列には、**RegressionResult** に対して入力の特徴が与えた具体的な影響を示す説明が含まれています。
 
 ## <a name="azure-machine-learning-integration-in-power-bi"></a>Azure Machine Learning の Power BI への統合
 
@@ -409,7 +409,7 @@ Azure ML service 上でホストされているモデルへのアクセス権を
 
 6. **[保存]** を選択します。
 
-7. 上記の 3 から 6 の手順を繰り返し、特定の Machine Learning Studio (クラシック) Web サービスのユーザー、 *または* モデルをホストしている Machine Learning ワークスペースのユーザーに **[閲覧者]** アクセス権を付与します。
+7. 上記の 3 から 6 の手順を繰り返し、特定の Machine Learning Studio (クラシック) Web サービスのユーザー、*または* モデルをホストしている Machine Learning ワークスペースのユーザーに **[閲覧者]** アクセス権を付与します。
 
 ### <a name="schema-discovery-for-machine-learning-models"></a>Machine Learning モデルのスキーマの検出
 
@@ -417,7 +417,7 @@ Azure ML service 上でホストされているモデルへのアクセス権を
 
 Machine Learning モデルでは、デプロイされた Web サービスにこのスキーマ ファイルを含める必要があります。 Web サービスのスキーマを自動的に生成するには、デプロイされたモデルのエントリ スクリプトで入力/出力のサンプルを指定する必要があります。 記事「[Azure Machine Learning を使用してモデルをデプロイする」のサブセクション「(省略可能) Swagger スキーマの自動生成」](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema)を参照してください。 このリンクには、スキーマ生成のステートメントを含む、エントリ スクリプトの例が含まれます。 
 
-具体的には、エントリ スクリプト内の *\@input_schema* 関数と *\@output_schema* 関数によって、 *input_sample* および *output_sample* 変数の入出力のサンプル形式が参照され、デプロイ時にこれらのサンプルを使用して Web サービス用の OpenAPI (Swagger) 仕様が生成されます。
+具体的には、エントリ スクリプト内の *\@input_schema* 関数と *\@output_schema* 関数によって、*input_sample* および *output_sample* 変数の入出力のサンプル形式が参照され、デプロイ時にこれらのサンプルを使用して Web サービス用の OpenAPI (Swagger) 仕様が生成されます。
 
 エントリ スクリプトの更新によるこれらのスキーマ生成は、Azure Machine Learning SDK を使用して自動機械学習エクスペリエンスにより作成されたモデルにも適用する必要があります。
 
@@ -434,7 +434,7 @@ Machine Learning モデルでは、デプロイされた Web サービスにこ�
 
 [ ![Power Query エディター](media/service-machine-learning-integration/machine-learning-integration-06.png) ](media/service-machine-learning-integration/machine-learning-integration-06.png#lightbox)
 
-リボン内で **[AI 分析情報]** ボタンを選択した後、ナビ ペインのメニューから " _Azure Machine Learning Models_ " フォルダーを選択します。 アクセス権があるすべての Azure ML モデルが Power Query 関数としてここに一覧表示されます。 また、Azure ML モデルの入力パラメーターは、対応する Power Query 関数のパラメーターとして自動的にマップされます。
+リボン内で **[AI 分析情報]** ボタンを選択した後、ナビ ペインのメニューから "_Azure Machine Learning Models_" フォルダーを選択します。 アクセス権があるすべての Azure ML モデルが Power Query 関数としてここに一覧表示されます。 また、Azure ML モデルの入力パラメーターは、対応する Power Query 関数のパラメーターとして自動的にマップされます。
 
 Azure ML モデルを呼び出すには、選択したエンティティのいずれかの列を、ドロップダウン リストからの入力として指定します。 入力ダイアログの左側にある列アイコンを切り替えることにより、入力として使用する定数値を指定することもできます。
 
@@ -466,3 +466,4 @@ Azure ML モデルを呼び出すには、選択したエンティティのい�
 * [Azure Data Lake Gen 2 を使用するようにデータフロー ストレージを構成する](dataflows-azure-data-lake-storage-integration.md)
 * [データフローの Premium 機能](dataflows-premium-features.md)
 * [データフローの制限事項と考慮事項](dataflows-features-limitations.md)
+* [データフローのベスト プラクティス](dataflows-best-practices.md)

@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 10b395cc14bf0aac97ead4b86c010109cfbc3703
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 5a75965bb236a1515274343e58668809f91cef7b
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91638252"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669203"
 ---
 # <a name="creating-a-dataflow"></a>データフローの作成
-**データフロー**は、Power BI サービス内のワークスペースで作成されて管理される "エンティティ" (エンティティはテーブルに似ています) のコレクションです。 **エンティティとテーブル**は、データベース内のテーブルと同様に、データを格納するために使用される一連のフィールドです。 データフローを作成したワークスペースから直接、データフロー内のエンティティとテーブルの追加と編集や、データ更新スケジュールの管理を行うことができます。
+**データフロー** は、Power BI サービス内のワークスペースで作成されて管理される "エンティティ" (エンティティはテーブルに似ています) のコレクションです。 **エンティティとテーブル** は、データベース内のテーブルと同様に、データを格納するために使用される一連のフィールドです。 データフローを作成したワークスペースから直接、データフロー内のエンティティとテーブルの追加と編集や、データ更新スケジュールの管理を行うことができます。
 
-データフローを作成するには、ブラウザーで Power BI サービスを起動し、次の画面のように、左側のナビ ペインから**ワークスペース**を選択します (データフローは、Power BI サービスの "*マイ ワークスペース*" では使用できません)。 新しいデータフローを作成するワークスペースを新しく作成することもできます。
+データフローを作成するには、ブラウザーで Power BI サービスを起動し、次の画面のように、左側のナビ ペインから **ワークスペース** を選択します (データフローは、Power BI サービスの "*マイ ワークスペース*" では使用できません)。 新しいデータフローを作成するワークスペースを新しく作成することもできます。
 ![データフローを開始する](media/dataflows-create/create-options.png)
 
 新しいデータフローを基にして作成または構築する方法は複数あります。
@@ -69,7 +69,7 @@ Power BI サービスのデータフロー作成ツールで **[エンティテ�
 
 ![計算対象エンティティの作成手順 1](media/dataflows-create/computed-entity-step-1.png)
 
-**[読み込みを有効にする]** をオンにすることで、そのソースが参照されたエンティティである新しいエンティティを作成します。 次の図のように、アイコンが**計算**アイコンに変化します。
+**[読み込みを有効にする]** をオンにすることで、そのソースが参照されたエンティティである新しいエンティティを作成します。 次の図のように、アイコンが **計算** アイコンに変化します。
 
 ![計算対象エンティティの作成手順 2](media/dataflows-create/computed-entity-step-2.png)
 
@@ -133,3 +133,4 @@ CDM フォルダーからデータフローを作成すると、Common Data Mode
 * [データフローの Premium 機能](dataflows-premium-features.md)
 * [データフローを使用した AI](dataflows-machine-learning-integration.md)
 * [データフローの制限事項と考慮事項](dataflows-features-limitations.md)
+* [データフローのベスト プラクティス](dataflows-best-practices.md)
