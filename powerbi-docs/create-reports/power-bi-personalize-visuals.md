@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 11/13/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4eae96dbdddae82a7f74f27c835874a19b04a69f
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 624da63259dcb09d0ebbb35079ef0d8e1340b04c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256838"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668513"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>ユーザーがレポート内のビジュアルをカスタマイズできるようにする
 
@@ -44,7 +44,7 @@ ms.locfileid: "92256838"
 
 ## <a name="use-perspectives-for-a-more-focused-view"></a>パースペクティブを使用してより焦点を絞ったビューにする
 
-ビジュアルをカスタマイズするために、**パースペクティブ**を使用して、より焦点を絞ったビューを提供するモデルのサブセットを選択できます。 サブセットを選択すると、大規模なデータ モデルを使用する場合に便利です。これにより、フィールドの管理可能なサブセットに集中でき、その大規模なモデル内のフィールドの完全なコレクションでレポート閲覧者に過剰な負担をかけることがなくなります。 
+ビジュアルをカスタマイズするために、**パースペクティブ** を使用して、より焦点を絞ったビューを提供するモデルのサブセットを選択できます。 サブセットを選択すると、大規模なデータ モデルを使用する場合に便利です。これにより、フィールドの管理可能なサブセットに集中でき、その大規模なモデル内のフィールドの完全なコレクションでレポート閲覧者に過剰な負担をかけることがなくなります。 
 
 ![ビジュアルのカスタマイズ](media/power-bi-personalize-visuals/power-bi-personalize-perspective-01.png)
 
@@ -96,23 +96,23 @@ Tabular Editor で、**Perspectives** フォルダーを右クリックして、
 
 ## <a name="enable-personalization-in-a-report"></a>レポートの個人用設定を有効化する
 
-この機能は Power BI Desktop または Power BI サービスのいずれかで有効にすることができます。
+この機能は Power BI Desktop または Power BI サービスのいずれかで有効にすることができます。 埋め込みレポートで有効にすることもできます。
 
 ### <a name="in-power-bi-desktop"></a>Power BI Desktop の場合
 
 Power BI Desktop でこの機能を有効にするには、 **[ファイル]**  >  **[オプションと設定]**  >  **[オプション]**  >  **[現在のファイル]**  >  **[レポート設定]** を選択します。 **[Personalize visuals]\(視覚エフェクトのカスタマイズ\)** が有効になっていることを確認します。
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="ビジュアルをカスタマイズする":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="レポートの個人用設定を有効化する":::
 
 ### <a name="in-the-power-bi-service"></a>Power BI サービスの場合
 
 代わりに、Power BI サービスでこの機能を有効にするには、レポートの **[設定]** にアクセスします。
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="ビジュアルをカスタマイズする":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Power BI サービスのレポート設定":::
 
 **[Personalize visuals]\(視覚エフェクトのカスタマイズ\)**  >  **[保存]** をオンにします。
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="ビジュアルをカスタマイズする":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="サービスの [ビジュアルのカスタマイズ] をオンにする":::
 
 ## <a name="turn-the-feature-on-or-off-at-a-page-or-visual-level"></a>ページまたは視覚化レベルで機能をオンまたはオフにする
 
@@ -122,7 +122,7 @@ Power BI Desktop でこの機能を有効にするには、 **[ファイル]**  
 
 [ページ] タブを選択 > **[視覚化]** ペインで **[書式]** を選択します。
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="ビジュアルをカスタマイズする":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="ページに対して [視覚エフェクトのカスタマイズ] を選択します。":::
  
 **[視覚エフェクトのカスタマイズ]**  >   **[オン]** または **[オフ]** にスライドします。
 
@@ -130,11 +130,11 @@ Power BI Desktop でこの機能を有効にするには、 **[ファイル]**  
 
 ビジュアルを選択し、 **[視覚化]** ペインで **[書式]** を選択し、 **[ビジュアル ヘッダー]** を展開します。
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="ビジュアルをカスタマイズする":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="[ビジュアル ヘッダー] を選択する":::
  
 **[視覚エフェクトのカスタマイズ]**  >   **[オン]** または **[オフ]** にスライドします。
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="ビジュアルをカスタマイズする":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="[視覚エフェクトのカスタマイズ] スライダーをオンまたはオフにする":::
 
 
 ## <a name="limitations"></a>制限事項
@@ -151,4 +151,4 @@ Power BI Desktop でこの機能を有効にするには、 **[ファイル]**  
 
 新しいビジュアルの個人用設定のエクスペリエンスを試してみてください。 この機能のフィードバックや、機能改善を続けていくための方法に関するご意見については、[Power BI のアイデア サイト](https://ideas.powerbi.com/forums/265200-power-bi)からお寄せください。 
 
-その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

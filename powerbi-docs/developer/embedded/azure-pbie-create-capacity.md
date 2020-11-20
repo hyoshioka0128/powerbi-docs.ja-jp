@@ -8,14 +8,14 @@ ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
-ms.custom: subject-armqs
+ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 0f7a6c72a393aa398996f7b4e818d6288b746583
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.openlocfilehash: 42dfe1a2032c7afe9eff354829fcc564e69e0d36
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92025958"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718939"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Azure Portal での Power BI Embedded 容量の作成
 
@@ -27,9 +27,9 @@ ms.locfileid: "92025958"
 
 * **Azure サブスクリプション:** [Azure 無料試用版](https://azure.microsoft.com/free/)にアクセスし、アカウントを作成してください。
 
-* **Azure Active Directory:** お使いのサブスクリプションは Azure Active Directory (Azure AD) テナントに関連付けられている必要があります。 また、***そのテナントのアカウントで Azure にサインインする必要があります***。 Microsoft アカウントはサポートされていません。 詳細については、「[認証とユーザーのアクセス許可](/azure/analysis-services/analysis-services-manage-users)」を参照してください。
+* **Azure Active Directory:** お使いのサブスクリプションは Azure Active Directory (Azure AD) テナントに関連付けられている必要があります。 また、"**_そのテナントのアカウントで Azure にサインインする必要があります_* _"。 Microsoft アカウントはサポートされていません。 詳細については、「[認証とユーザーのアクセス許可](/azure/analysis-services/analysis-services-manage-users)」を参照してください。
 
-* **Power BI テナント:** ご利用の Azure AD テナントの少なくとも 1 つのアカウントを Power BI に登録しておく必要があります。
+_ **Power BI テナント:** ご利用の Azure AD テナントの少なくとも 1 つのアカウントを Power BI に登録しておく必要があります。
 
 * **リソース グループ:** 既にあるリソース グループを使用するか、[新しく作成](/azure/azure-resource-manager/resource-group-overview)します。
 
