@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8565f6ef18192110688d01127129dcc19919cb0f
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 143d4a51a403563b337c753055fa56e9c25edc26
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256543"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94560036"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktop のデータ ソース
 
@@ -29,7 +29,7 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 ![[データの取得] ボタン、Power BI Desktop](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Power BI チームは Power BI Desktop や Power BI サービスで利用できるデータ ソースを継続的に拡張しています。 そのため、**ベータ**や**プレビュー**などのマークが付いた、未完成の早期バージョンのデータ ソースが頻繁に公開されています。 データ ソースに**ベータ**や**プレビュー**などのマークが付いている場合、サポートや機能が限定されています。運用環境では利用しないでください。 また、Power BI Desktop の**ベータ**または**プレビュー**とマークされているデータ ソースは、データ ソースが一般提供 (GA) になるまで、Power BI サービスまたは他の Microsoft サービスで使用できない可能性があります。
+> Power BI チームは Power BI Desktop や Power BI サービスで利用できるデータ ソースを継続的に拡張しています。 そのため、**ベータ** や **プレビュー** などのマークが付いた、未完成の早期バージョンのデータ ソースが頻繁に公開されています。 データ ソースに **ベータ** や **プレビュー** などのマークが付いている場合、サポートや機能が限定されています。運用環境では利用しないでください。 また、Power BI Desktop の **ベータ** または **プレビュー** とマークされているデータ ソースは、データ ソースが一般提供 (GA) になるまで、Power BI サービスまたは他の Microsoft サービスで使用できない可能性があります。
 
 > [!NOTE]
 > Power BI Desktop 用のデータ コネクタの多くには、認証に Internet Explorer 10 (またはそれ以降) が必要です。 
@@ -90,7 +90,6 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Snowflake
 * Essbase
 * AtScale キューブ
-* BI コネクタ 
 * Data Virtuality LDW (ベータ)
 * Denodo
 * Dremio
@@ -100,11 +99,13 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Jethro (ベータ)
 * Kyligence
 * Linkar PICK スタイル / MultiValue Databases (ベータ)
-* MarkLogic
 * MariaDB (ベータ)
+* MarkLogic
+* BI コネクタ
+* Actian (ベータ)
 
 > [!NOTE]
-> 一部のデータベース コネクタの場合、有効にするためには、 **[ファイル]、[オプションと設定]、[オプション]** の順に選択し、 **[プレビュー機能]** を選択し、コネクタを有効にする必要があります。 前途コネクタの一部が表示されず、その中に使用したいコネクタも含まれている場合は、 **[プレビュー機能]** を確認してください。 データ ソースに*ベータ*や*プレビュー*などのマークが付いている場合、サポートや機能が限定されていることにもご注意ください。運用環境では利用しないでください。
+> 一部のデータベース コネクタの場合、有効にするためには、 **[ファイル]、[オプションと設定]、[オプション]** の順に選択し、 **[プレビュー機能]** を選択し、コネクタを有効にする必要があります。 前途コネクタの一部が表示されず、その中に使用したいコネクタも含まれている場合は、 **[プレビュー機能]** を確認してください。 データ ソースに *ベータ* や *プレビュー* などのマークが付いている場合、サポートや機能が限定されていることにもご注意ください。運用環境では利用しないでください。
 
 次の図は、 **[データベース]** の **[データの取得]** ウィンドウを示しています。
 
@@ -141,8 +142,8 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Azure HDInsight Spark
 * HDInsight 対話型クエリ
 * Azure Cost Management
-* Azure Time Series Insights (ベータ)
 * Azure Databricks
+* Azure Time Series Insights (ベータ)
 
 
 次の図は、 **[Azure]** の **[データの取得]** ウィンドウを示しています。
@@ -185,21 +186,21 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Emigo Data Source
 * Entersoft Business Suite (ベータ)
 * FactSet Analytics
-* Hexagon PPM Smart API
+* Palantir Foundry
+* Industrial App Store
 * Intune データ ウェアハウス (ベータ)
 * Microsoft Graph Security (ベータ)
+* Power BI 用 Projectplace
 * Product Insights (ベータ)
 * Quick Base
+* Spigit (ベータ)
 * TeamDesk (Beta)
 * Webtrends Analytics (ベータ)
 * Witivio (ベータ)
 * Workplace Analytics (ベータ)
 * Zoho Creator (ベータ)
-* Palantir Foundry
-* Industrial App Store
-* Power BI 用 Projectplace
 * eWay-CRM (ベータ)
-* Spigit (ベータ)
+* Hexagon PPM Smart API
 
 
 次の図は、 **[オンライン サービス]** の **[データの取得]** ウィンドウを示しています。
@@ -217,7 +218,7 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Microsoft Exchange
 * Hadoop ファイル (HDFS)
 * Spark
-* Hive LLAP (ベータ)
+* Hive LLAP
 * R スクリプト
 * Python スクリプト
 * ODBC
@@ -242,6 +243,8 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Vena (ベータ)
 * Vessel Insight (ベータ)
 * Zucchetti HR Infinity (ベータ)
+* Anaplan Connector v1.0 (ベータ)
+* Starburst Enterprise Presto (ベータ)
 * 空のクエリ
 
 

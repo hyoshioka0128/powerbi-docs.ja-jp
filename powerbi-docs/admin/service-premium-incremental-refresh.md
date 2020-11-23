@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/22/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 0e55aa6fbfc1fadb529c6c321d7d97d3f48d569d
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 6ca4257f73837b68d76734ea503e8f83e0d5ba49
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599046"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512955"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Power BI での増分更新
 
@@ -27,6 +27,10 @@ Power BI の非常に大きいデータセットの増分更新には、次の�
 
 > [!NOTE]
 > 増分更新は、Power BI Pro、Premium および共有サブスクリプションとデータセットで行えます。
+
+> [!NOTE]
+> Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 Premium Gen2 では、自動スケールを有効にして更新の競合を回避することで、スケジュールされた更新を大幅に改善しています。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+
 
 ## <a name="configure-incremental-refresh"></a>増分更新を構成する
 
@@ -248,3 +252,14 @@ pollingExpression は、他の M クエリの簡易な M 式または名前と�
 
 [XMLA エンドポイントを使用したデータセット接続](service-premium-connect-tools.md)   
 [更新に関するトラブルシューティング シナリオ](../connect-data/refresh-troubleshooting-refresh-scenarios.md)
+
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

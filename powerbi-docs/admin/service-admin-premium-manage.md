@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8edc24e62524834e74fb8334875cc27a259207d1
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 5cce18c2ec4a24b06f4cf48d5fd2b542109d70c6
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916385"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512495"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Power BI Premium で容量を構成および管理する
 
@@ -25,6 +25,9 @@ Power BI Premium および Power BI Embedded の容量を管理する方法に�
 ![Power BI の容量設定画面](media/service-admin-premium-manage/premium-capacity-management.png)
 
 *容量* は Power BI Premium および Power BI Embedded サービスの中核となるものです。 これは、組織専用に予約されたリソースのセットです。 容量を持つことで、組織全体のユーザー用にユーザーごとのライセンスを購入しなくても、これらのユーザーに対してダッシュボード、レポート、データセットを公開できます。 また、それによって、容量内でホストされているコンテンツに対して信頼性の高い、一貫性のあるパフォーマンスも提供されます。 詳しくは、「[Power BI Premium - what is it?](service-premium-what-is.md)」 (Power BI Premium とは) を参照してください。
+
+> [!NOTE]
+> Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 
 ## <a name="manage-capacity"></a>容量の管理
 
@@ -40,7 +43,7 @@ Microsoft 365 で容量ノードを購入したら、Power BI 管理ポータル
 
 ### <a name="setting-up-a-new-capacity-power-bi-premium"></a>新しい容量の設定 (Power BI Premium)
 
-管理ポータルには、 *仮想コア* について、既に使用されている数と、まだ利用可能な数が表示されます。 仮想コアの合計数は、購入した Premium SKU に基づいています。 たとえば、P3 および P2 を購入すると、48 個のコア (P3 から 32 個、P2 から 16 個) を利用できます。
+管理ポータルには、*仮想コア* について、既に使用されている数と、まだ利用可能な数が表示されます。 仮想コアの合計数は、購入した Premium SKU に基づいています。 たとえば、P3 および P2 を購入すると、48 個のコア (P3 から 32 個、P2 から 16 個) を利用できます。
 
 ![Power BI Premium の使用済み仮想コアと利用可能な仮想コア](media/service-admin-premium-manage/admin-portal-v-cores.png)
 
@@ -103,7 +106,7 @@ Power BI 管理者とグローバル管理者は、Power BI Premium の容量を
 
 ### <a name="manage-user-permissions"></a>ユーザーのアクセス許可を管理する
 
-追加で容量管理者を割り当てることも、 *容量の割り当て* のアクセス許可を持つユーザーを割り当てることもできます。 割り当てのアクセス許可を持つユーザーは、ワークスペースの管理者である場合、容量にそのワークスペースを割り当てることができます。 また、個人の *マイ ワークスペース* を容量に割り当てることもできます。 割り当てのアクセス許可を持つユーザーには、管理ポータルへのアクセス権はありません。
+追加で容量管理者を割り当てることも、*容量の割り当て* のアクセス許可を持つユーザーを割り当てることもできます。 割り当てのアクセス許可を持つユーザーは、ワークスペースの管理者である場合、容量にそのワークスペースを割り当てることができます。 また、個人の *マイ ワークスペース* を容量に割り当てることもできます。 割り当てのアクセス許可を持つユーザーには、管理ポータルへのアクセス権はありません。
 
 > [!NOTE]
 > Power BI Embedded の場合、容量管理者は Microsoft Azure portal 内で定義されます。
@@ -172,3 +175,13 @@ Power BI 管理者ポータルの **[容量の設定]** タブでは、Power BI 
 [Premium 容量を管理する](service-premium-capacity-manage.md)
 
 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

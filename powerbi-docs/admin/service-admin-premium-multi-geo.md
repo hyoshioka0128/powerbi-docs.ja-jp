@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/29/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 93d982c684014430009a80112da841820e7b0fc9
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: b0132996be1ed70f228ce96d413c4925dc1a3e48
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396394"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512771"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premium の Multi-Geo のサポートを構成する
 
@@ -35,9 +35,12 @@ Multi-Geo は、Power BI Germany、21Vianet が運営する Power BI China、ま
 
 Multi-Geo は、Power BI Embedded でも使用できるようになりました。 詳細については、「[Power BI Embedded の Multi-Geo のサポート](../developer/embedded/embedded-multi-geo.md)」をご覧ください。
 
+> [!NOTE]
+> Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+
 ## <a name="enable-and-configure"></a>有効化と構成
 
-新しい容量の場合、Multi-Geo を有効にするには、ドロップダウンから既定のリージョン以外のリージョンを選択します。  利用可能な容量ごとに、 **米国中西部** など、現在配置されているリージョンが表示されます。
+新しい容量の場合、Multi-Geo を有効にするには、ドロップダウンから既定のリージョン以外のリージョンを選択します。  利用可能な容量ごとに、**米国中西部** など、現在配置されているリージョンが表示されます。
 
 ![容量のサイズ: リージョンを選択します。 Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
 
@@ -90,7 +93,7 @@ Multi-Geo を有効にすると、次の項目は Premium リージョンに格�
 - ワークスペースが存在する現在の容量を削除します。  その結果、ワークスペースはホーム リージョンの共有容量に戻されます。
 - 個々のワークスペースを、ホーム テナントにある Premium 容量に戻します。
 
-大規模なストレージ形式のデータセットは、それが作成されたリージョンから移動しないでください。 大規模な形式のデータセットに基づくレポートを使用すると、データセットを読み込むことができず、" *モデルを読み込むことができません* " エラーが返されます。 大規模なストレージ形式のデータセットを元のリージョンに戻し、再び使用できるようにします。
+大規模なストレージ形式のデータセットは、それが作成されたリージョンから移動しないでください。 大規模な形式のデータセットに基づくレポートを使用すると、データセットを読み込むことができず、"*モデルを読み込むことができません*" エラーが返されます。 大規模なストレージ形式のデータセットを元のリージョンに戻し、再び使用できるようにします。
 
 ## <a name="limitations-and-considerations"></a>制限と考慮事項
 
@@ -107,3 +110,13 @@ Multi-Geo を有効にすると、次の項目は Premium リージョンに格�
 - [Power BI Embedded の容量に対する Multi-Geo](../developer/embedded/embedded-multi-geo.md)
 
 その他の質問 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

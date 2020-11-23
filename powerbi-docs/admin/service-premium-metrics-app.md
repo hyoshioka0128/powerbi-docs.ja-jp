@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: b74c381bfddc638c1371d571492eedfc7cf82a65
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 50c10343487765f4f42c895ba605618b852415fd
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916408"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512242"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Power BI Premium Metrics アプリ
 
@@ -31,6 +31,8 @@ ms.locfileid: "92916408"
 > [!IMPORTANT]
 > Power BI Premium 容量のリソース使用率が高いために、パフォーマンスや信頼性の問題が発生している場合は、通知メールを受信して問題を特定し、解決することができます。 これは、過負荷容量のトラブルシューティングを行うための合理的な方法である可能性があります。 詳細については、「[容量と信頼性に関する通知](service-interruption-notifications.md#capacity-and-reliability-notifications)」を参照してください。
 
+> [!NOTE]
+> Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 特に、パフォーマンスとユーザーのエクスペリエンスを確保するために、管理者が監視する必要のあるメトリックを大幅に減らしています (CPU のみ)。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 
 
 ## <a name="premium-capacity-health-center"></a>Premium の [Capacity health center]\(容量正常性センター\)
@@ -47,7 +49,7 @@ ms.locfileid: "92916408"
 
 ## <a name="the-active-memory-metric"></a>アクティブ メモリ メトリック
 
-**アクティブ メモリ** メトリックは " *キャパシティ プランニング* " カテゴリに含まれています。これは、使用量に対する容量のリソース消費を評価するために適した正常性インジケーターであるため、必要に応じて容量を調整し、容量のスケールを計画することができます。 
+**アクティブ メモリ** メトリックは "*キャパシティ プランニング*" カテゴリに含まれています。これは、使用量に対する容量のリソース消費を評価するために適した正常性インジケーターであるため、必要に応じて容量を調整し、容量のスケールを計画することができます。 
 
 ![アクティブ メモリ KPI](media/service-premium-metrics-app/premium-metrics-app-02.png)
 
@@ -99,7 +101,7 @@ ms.locfileid: "92916408"
 
     ![グラフ b、1 時間単位の消費メモリ](media/service-premium-metrics-app/premium-metrics-app-05.png)     
 
-    **c.** **[Why datasets are in memory]\(データセットがメモリ内にある理由\)** のテーブルを参照して、メモリに読み込まれたデータセットの一覧を確認します。 *[Dataset Size (MB)]\(データセットのサイズ (MB)\)* で並べ替え、メモリを最も多く使用しているデータセットを強調表示します。 容量の操作は、" *対話型* " または " *バックグラウンド* " のいずれかに分類されます。 対話型の操作には、要求のレンダリング、ユーザーとのやりとりでの応答 (フィルター処理、Q&A クエリなど) などが含まれます。 合計クエリ数と合計更新数から、データセットに対して対話型 (クエリ) の負荷が高い操作またはバックグラウンド (更新) 操作が行われたかどうかがわかります。 可能な限り最適なユーザー エクスペリエンスを確保するために対話型の操作が常にバックグラウンド操作よりも優先されることを理解するのが重要です。 リソースが不足している場合は、バックグラウンド操作がキューに追加され、リソースが解放されると処理されます。 データセットの更新や AI 機能などのバックグラウンド操作は、Power BI サービスによってプロセスの途中で停止し、キューに追加される可能性があります。
+    **c.** **[Why datasets are in memory]\(データセットがメモリ内にある理由\)** のテーブルを参照して、メモリに読み込まれたデータセットの一覧を確認します。 *[Dataset Size (MB)]\(データセットのサイズ (MB)\)* で並べ替え、メモリを最も多く使用しているデータセットを強調表示します。 容量の操作は、"*対話型*" または "*バックグラウンド*" のいずれかに分類されます。 対話型の操作には、要求のレンダリング、ユーザーとのやりとりでの応答 (フィルター処理、Q&A クエリなど) などが含まれます。 合計クエリ数と合計更新数から、データセットに対して対話型 (クエリ) の負荷が高い操作またはバックグラウンド (更新) 操作が行われたかどうかがわかります。 可能な限り最適なユーザー エクスペリエンスを確保するために対話型の操作が常にバックグラウンド操作よりも優先されることを理解するのが重要です。 リソースが不足している場合は、バックグラウンド操作がキューに追加され、リソースが解放されると処理されます。 データセットの更新や AI 機能などのバックグラウンド操作は、Power BI サービスによってプロセスの途中で停止し、キューに追加される可能性があります。
     
     ![テーブル c、データセットの一覧](media/service-premium-metrics-app/premium-metrics-app-06.png)  
 
@@ -180,11 +182,11 @@ ms.locfileid: "92916408"
 
 ![長い待機時間の分布](media/service-premium-metrics-app/premium-metrics-app-12.png)
 
-待機時間が長い列をクリックすると、次の図に示すように、 **グラフ C** がフィルター処理され、その間に実行された実行時間の長いクエリの数が表示されます。
+待機時間が長い列をクリックすると、次の図に示すように、**グラフ C** がフィルター処理され、その間に実行された実行時間の長いクエリの数が表示されます。
 
 ![[Hourly long query counts]\(時間単位の長いクエリ数\)](media/service-premium-metrics-app/premium-metrics-app-13.png)
 
-さらに、 **グラフ D** もフィルター処理され、その選択した期間に長時間実行されていたクエリが表示されます。
+さらに、**グラフ D** もフィルター処理され、その選択した期間に長時間実行されていたクエリが表示されます。
 
 ![実行時間の長いクエリ](media/service-premium-metrics-app/premium-metrics-app-14.png)
 
@@ -213,7 +215,7 @@ ms.locfileid: "92916408"
 
 ![[High wait times]\(長い待機時間\) のテーブル](media/service-premium-metrics-app/premium-metrics-app-16.png)
 
-待機時間が長いデータセットを選択すると、 **グラフ B** はフィルター処理され、過去 7 日間のそのデータセットに対するクエリの待機時間の分布が表示されます。 次に、 **グラフ B** からいずれかの列を選択します。
+待機時間が長いデータセットを選択すると、**グラフ B** はフィルター処理され、過去 7 日間のそのデータセットに対するクエリの待機時間の分布が表示されます。 次に、**グラフ B** からいずれかの列を選択します。
 
 ![[Hourly high wait time distributions]\(時間単位の長い待機時間の分布\) グラフ](media/service-premium-metrics-app/premium-metrics-app-17.png)
 
@@ -271,17 +273,17 @@ ms.locfileid: "92916408"
 
     ![テーブル A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. **テーブル A** のデータセットを選択すると、 **グラフ B** はフィルター処理され、待機が発生したときが表示されます。
+    a. **テーブル A** のデータセットを選択すると、**グラフ B** はフィルター処理され、待機が発生したときが表示されます。
 
     ![グラフ B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
-    b. 次の手順で説明するように、 **グラフ C** はフィルター処理され、調整が表示されます。 
+    b. 次の手順で説明するように、**グラフ C** はフィルター処理され、調整が表示されます。 
 
 2. フィルター処理された **グラフ C** の結果を見てみましょう。データセットが待機していたときにメモリ不足の調整が発生したことがグラフに示されている場合は、メモリ不足の状態が原因でデータセットが待機していました。
 
     ![グラフ C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. 最後に、 **グラフ D** を確認します。これは、発生していた更新の種類 (スケジュールとオンデマンド) を示します。 同時に発生するオンデマンドの更新が、調整の原因となっている可能性があります。
+3. 最後に、**グラフ D** を確認します。これは、発生していた更新の種類 (スケジュールとオンデマンド) を示します。 同時に発生するオンデマンドの更新が、調整の原因となっている可能性があります。
 
     ![グラフ D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 
@@ -314,17 +316,17 @@ ms.locfileid: "92916408"
 
     ![テーブル A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. **テーブル A** のデータセットを選択すると、 **グラフ B** はフィルター処理され、待機が発生したときが表示されます。
+    a. **テーブル A** のデータセットを選択すると、**グラフ B** はフィルター処理され、待機が発生したときが表示されます。
 
     ![グラフ B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
-    b. 次の手順で説明するように、 **グラフ C** はフィルター処理され、調整が表示されます。 
+    b. 次の手順で説明するように、**グラフ C** はフィルター処理され、調整が表示されます。 
 
 2. フィルター処理された **グラフ C** の結果を見てみましょう。データセットが待機していたときに *最大同時実行数* が発生したことがグラフに示されている場合、使用可能な CPU が不足しているためデータセットは待機していました。
 
     ![グラフ C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. 最後に、 **グラフ D** を確認します。これは、発生していた更新の種類 (スケジュールとオンデマンド) を示します。 同時に発生するオンデマンドの更新が、調整の原因となっている可能性があります。
+3. 最後に、**グラフ D** を確認します。これは、発生していた更新の種類 (スケジュールとオンデマンド) を示します。 同時に発生するオンデマンドの更新が、調整の原因となっている可能性があります。
 
     ![グラフ D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 
@@ -348,3 +350,13 @@ ms.locfileid: "92916408"
 * [Power BI Embedded のよくあるご質問](../developer/embedded/embedded-faq.md)
 
 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

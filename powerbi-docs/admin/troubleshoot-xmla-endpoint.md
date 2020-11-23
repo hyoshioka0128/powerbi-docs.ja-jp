@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/20/2020
+ms.date: 11/16/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 5426c91f2ab0c4de1f9f2bc335ac21ea3a90c0e2
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 5100a2a693bbabacd5659c6e805031339d188555
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483675"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668122"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -139,6 +139,36 @@ Power BI で、スケジュールされた更新またはオンデマンドの�
 ### <a name="overrides-in-refresh-tmsl-command"></a>Refresh TMSL コマンドでのオーバーライド
 
 [Refresh コマンド (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) でのオーバーライドを使用すると、ユーザーは更新操作のために別のパーティション クエリ定義またはデータ ソース定義を選択できます。 現時点では、Power BI Premium では **オーバーライドはサポートされていません**。 エラー "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." (不一致バインドは Power BI Premium では許可されていません。詳細については、製品ドキュメントの「XMLA の読み取りおよび書き込みのサポート」を参照してください。) が 返されます。
+
+## <a name="errors-in-ssms---premium-gen-2"></a>SSMS のエラー - Premium Gen 2
+
+### <a name="query-execution"></a>クエリ実行
+
+[Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) 容量のワークスペースに接続されているとき、SQL Server Management Studio に次のエラーが表示されることがあります。
+
+```
+Executing the query ...
+Error -1052311437:
+```
+
+これは、SSMS v18.7.1 でインストールされたクライアント ライブラリでセッション トレーシングがサポートされていないために発生します。 これは今後リリースされる SSMS で解決されます。
+
+### <a name="refresh-operations"></a>更新操作
+
+v18.7.1 以前の SSMS を使用し、Premium Gen2 容量のデータセットで長時間 (1 分超) の更新操作を実行するとき、更新操作に成功したとしても、SSMS には次のようなエラーが表示されることがあります。
+
+```
+Executing the query ...
+Error -1052311437:
+The remote server returned an error: (400) Bad Request.
+
+Technical Details:
+RootActivityId: 3716c0f7-3d01-4595-8061-e6b2bd9f3428
+Date (UTC): 11/13/2020 7:57:16 PM
+Run complete
+```
+
+これは、更新要求の状態が間違って追跡記録されるというクライアント ライブラリの既知の問題によるものです。 これは今後リリースされる SSMS で解決されます。
 
 ## <a name="see-also"></a>関連項目
 

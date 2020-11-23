@@ -7,18 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 3454a10269937d6e03151a64bba6695cc37fcd66
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 36bbf9fcc8bcd74c46f15ebcf9bd04e86cc4a2c9
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396336"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512334"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium 容量でワークロードを構成する
 
 この記事では、Power BI Premium 容量に対するワークロードの構成と有効化について説明します。 既定では、容量は、Power BI のクエリの実行に関連付けられているワークロードのみをサポートします。 **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)** 、 **[データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)** 、および **[ページ分割されたレポート](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** に対する追加のワークロードの有効化と構成を行うこともできます。
+
+> [!NOTE]
+> Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 
 ## <a name="default-memory-settings"></a>既定のメモリ設定
 
@@ -31,7 +34,13 @@ ms.locfileid: "94396336"
 | **データフロー**         | 40% (既定値)、40% (最小値)  | 24% (既定値)、24% (最小値)  | 20% (既定値)、12% (最小値)  | 20% (既定値)、5% (最小値)  | 20% (既定値)、3% (最小値)  | 20% (既定値)、2% (最小値)   |
 | **ページ分割されたレポート** | サポートされていない               | サポートされていない               | サポートされていない               | 20% (既定値)、10% (最小値) | 20% (既定値)、5% (最小値)  | 20% (既定値)、2.5% (最小値) |
 
+> [!NOTE]
+> **Premium Gen2** は現在プレビュー段階であり、メモリ設定を変更する必要はありません。 Premium Gen2 のメモリは、基盤のシステムによって自動的に管理されます。 
+
+
 ## <a name="workload-settings"></a>ワークロードの設定
+
+以下のセクションでは、前の表で示したワークロードの設定について詳しく説明します。 
 
 ### <a name="ai-preview"></a>AI (プレビュー)
 
@@ -214,3 +223,13 @@ Power BI のレポートでは、容量に対するクエリごとに、この�
 [Power BI Desktop でのページの自動更新 (プレビュー)](../create-reports/desktop-automatic-page-refresh.md)
 
 他にわからないことがある場合は、 [Power BI コミュニティに質問する](https://community.powerbi.com/)
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

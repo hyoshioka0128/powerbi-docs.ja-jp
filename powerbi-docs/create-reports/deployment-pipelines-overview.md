@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/15/2020
-ms.openlocfilehash: 58d1adef9a9b2a8a4f818f94da2cb34e6529db83
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/21/2020
+ms.openlocfilehash: b0b8d61224a91cd069caf48a2d321979ac2d291d
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855497"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94513300"
 ---
 # <a name="introduction-to-deployment-pipelines"></a>デプロイ パイプラインの概要
 
 現代の組織にとって、分析は意思決定を行う上で必要不可欠な要素です。 Power BI を分析ツールとして使用することが増えたことで、より多くのデータを使用し、より魅力的に、そしてよりわかりやすいようにする必要性が出てきました。 ただし、これだけでなく、Power BI は常に利用可能で信頼性の高いものである必要があります。 これらの要件を満たすため、BI 作成者は効率的に共同作業を行う必要があります。
 
-デプロイ パイプライン ツールを使用すると、BI 作成者は組織のコンテンツのライフサイクルを管理できます。 これは、Premium 容量を持つ企業の作成者にとって効率的で再利用可能なツールです。 このツールを使用すると、ユーザーがコンテンツを使用する前に、作成者が Power BI コンテンツを開発してテストできます。 コンテンツの種類には、レポート、ダッシュボード、データセットが含まれます。
+デプロイ パイプライン ツールを使用すると、BI 作成者は組織のコンテンツのライフサイクルを管理できます。 これは、Premium 容量を持つ企業内の作成者にとって、効率的で再利用可能なツールです。 デプロイ パイプラインを使用すると、ユーザーがコンテンツを使用する前に、作成者が Power BI コンテンツを開発してテストできます。 コンテンツの種類には、レポート、ダッシュボード、データセットが含まれます。
 
 このツールは、次の 3 つのステージからなるパイプラインとして設計されています。
 

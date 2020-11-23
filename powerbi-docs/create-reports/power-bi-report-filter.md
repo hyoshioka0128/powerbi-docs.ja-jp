@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/23/2020
+ms.date: 11/11/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 358d0575c2de3297614bfed0656d953945b2ed13
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 653ab67828c055d2846a698bf12f14eec304a2bf
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502158"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94560119"
 ---
 # <a name="design-filters-in-power-bi-reports"></a>Power BI レポートでフィルターをデザインする
 
@@ -79,7 +79,7 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
 ![編集中に [フィルター] ウィンドウの表示と非表示を切り替える](media/power-bi-report-filter/power-bi-filter-hide.png)
 
-この設定では、Power BI Desktop の [フィルター] ウィンドウのみ非表示になります。 エンド ユーザーの [フィルター] ウィンドウを非表示にするには、代わりに、 **[フィルター]** の横にある、 **目** のアイコンを選択します。
+この設定では、Power BI Desktop の [フィルター] ウィンドウのみ非表示になります。 エンド ユーザーの [フィルター] ウィンドウを非表示にするには、代わりに、 **[フィルター]** の横にある、**目** のアイコンを選択します。
 
 ![目のアイコン](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
@@ -116,7 +116,7 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
 ### <a name="format-the-filters-pane-and-cards"></a>[フィルター] ウィンドウとカードを書式設定する
 
-1. レポート内で、レポート自体か背景 (" *壁紙* ") をクリックしてから、 **[視覚化]** ウィンドウ内で **[書式]** を選択します。 
+1. レポート内で、レポート自体か背景 ("*壁紙*") をクリックしてから、 **[視覚化]** ウィンドウ内で **[書式]** を選択します。 
     レポート ページや壁紙、また [フィルター] ウィンドウやフィルター カードを書式設定するためのオプションが表示されます。
 
 1. **[フィルター] ウィンドウ** を展開して背景、アイコン、左の境界線の色を設定し、レポート ページを完成させます。
@@ -214,7 +214,7 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 ![[フィルター] ウィンドウのアクセシビリティ](media/power-bi-report-filter/power-bi-filter-accessible.png)
 
 ## <a name="rename-filters"></a>フィルターの名前を変更する
-[フィルター] ウィンドウを編集している場合、タイトルを編集するには、そのタイトルをダブルクリックします。 名前の変更は、エンド ユーザーが理解しやすいようにフィルター カードを更新したいときに便利です。 フィルター カードの名前を変更しても、フィールド一覧のフィールドの表示名は " *変更されない* " ことに注意してください。 この操作では、フィルター カードで使用される表示名が変更されるだけです。
+[フィルター] ウィンドウを編集している場合、タイトルを編集するには、そのタイトルをダブルクリックします。 名前の変更は、エンド ユーザーが理解しやすいようにフィルター カードを更新したいときに便利です。 フィルター カードの名前を変更しても、フィールド一覧のフィールドの表示名は "*変更されない*" ことに注意してください。 この操作では、フィルター カードで使用される表示名が変更されるだけです。
 
 ![フィルターの名前を変更する](media/power-bi-report-filter/power-bi-filter-rename.png)
 
@@ -246,13 +246,13 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
     :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
 
-## <a name="apply-filters-apply-button-preview"></a>フィルターの [適用] ボタン (プレビュー)
+## <a name="apply-filters-button"></a>フィルターの [適用] ボタン
 
 [フィルター] ペインに 1 つの **[適用]** ボタンを追加して、自分とエンド ユーザーがすべてのフィルターの変更を一度に適用できるようにすることが可能です。 このボタンは、フィルターの変更の適用を保留したい場合に便利です。 レポートまたは視覚エフェクトに対するすべてのフィルターの変更を適用する準備ができたら、1 回待機するだけで済みます。
 
-:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
+:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="フィルターの [適用] ボタン":::
 
-### <a name="turn-on-apply"></a>[適用] をオンにする
+### <a name="turn-on-the-apply-button"></a>[適用] ボタンをオンにする
 
 この機能は、レポート レベルで設定できます。 ただし、この機能は既定ではオフになっています。
 
@@ -260,17 +260,18 @@ Power BI Desktop には、プレビュー中の新しいリボンがあります
 
 1. **[Add a single Apply button to the filter pane to apply changes at once]\(一度に変更を適用するための 1 つの [適用] ボタンをフィルターウィンドウに追加します\)** をオンにします。
 
-    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
+    :::image type="content" source="media/power-bi-report-filter/apply-all-filters.png" alt-text="フィルターの [適用] ボタンをオンにする":::
 
 ### <a name="format-the-apply-button"></a>[適用] ボタンを書式設定する
 
 現時点では、ボタンの **[適用]** テキストの書式設定の一部を制御できます。 **[書式]** ペインの **[フィルター ペイン]** セクションで、次のオプションを設定します。
 
+- **チェックボックスと色の適用** : 塗りつぶしの色を制御します。 
 - **[フォントとアイコンの色]** : テキストの色を制御します。
 - **[ヘッダー テキスト サイズ]** : テキスト サイズを制御します。
 - **[フォント ファミリ]** : フォントを制御します。
 
-    :::image type="content" source="media/power-bi-report-filter/format-apply-filter.gif" alt-text="[Don't allow end users to save filters on this report]\(このレポートでフィルターを保存することをエンド ユーザーに許可しない\) のスクリーンショット。":::
+    :::image type="content" source="media/power-bi-report-filter/format-apply-filter.gif" alt-text="フィルターの [適用] ボタンのテキストを書式設定する":::
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 

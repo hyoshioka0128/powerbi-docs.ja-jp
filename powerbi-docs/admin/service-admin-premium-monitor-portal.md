@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 3948cca3a7e274c22ac1ea5cc80773edd0d5e451
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: b6f6b819b5c31f655d0c0dc43d8852cb34b5a7a2
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599785"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512058"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>管理ポータルで容量を監視する
 
@@ -27,6 +27,8 @@ ms.locfileid: "91599785"
 > [!IMPORTANT]
 > Power BI Premium 容量のリソース使用率が高いために、パフォーマンスや信頼性の問題が発生している場合は、通知メールを受信して問題を特定し、解決することができます。 これは、過負荷容量のトラブルシューティングを行うための合理的な方法である可能性があります。 詳細については、「[容量と信頼性に関する通知](service-interruption-notifications.md#capacity-and-reliability-notifications)」を参照してください。
 
+> [!NOTE]
+> Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 
 ## <a name="system-metrics"></a>システム メトリック
 
@@ -124,3 +126,14 @@ Power BI Premium 容量を監視する方法について学習したので、容
 
 > [!div class="nextstepaction"]
 > [Power BI Premium の容量の最適化](service-premium-capacity-optimize.md)
+
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

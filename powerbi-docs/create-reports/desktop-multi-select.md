@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c1e6ec9c6f6195f69af67da4ffbf1d0428b0fc2
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 7fcda945c374ba5384bd936b94db67a3ccd3ace1
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257055"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94559806"
 ---
 # <a name="multi-select-data-elements-data-points-and-visuals-in-power-bi-desktop"></a>Power BI Desktop でデータ要素、データ ポイント、視覚エフェクトを複数選択する
 
@@ -26,7 +26,7 @@ Power BI Desktop では、ビジュアルのデータ ポイントをクリッ�
 
 ![1 つのデータ ポイントが選択されている](media/desktop-multi-select/multi-select_01.png)
 
-複数選択を利用すると、**Power BI Desktop** レポート ページで複数のデータ ポイントを選択し、ページのあらゆるビジュアルで結果を強調表示できます。 これは **and** ステートメントと等しい機能になります。"Idaho **and** Virginia の結果を強調表示する" のようなものです。 視覚エフェクトでデータ ポイントを複数選択するには、**Ctrl キーを押しながらクリック**して複数のデータ ポイントを選択します。 次の画像では、**複数のデータ ポイント**が選択されています (複数選択)。
+複数選択を利用すると、**Power BI Desktop** レポート ページで複数のデータ ポイントを選択し、ページのあらゆるビジュアルで結果を強調表示できます。 これは **and** ステートメントと等しい機能になります。"Idaho **and** Virginia の結果を強調表示する" のようなものです。 視覚エフェクトでデータ ポイントを複数選択するには、**Ctrl キーを押しながらクリック** して複数のデータ ポイントを選択します。 次の画像では、**複数のデータ ポイント** が選択されています (複数選択)。
 
 ![複数のデータ ポイントが選択されている](media/desktop-multi-select/multi-select_02.png)
 
@@ -56,7 +56,7 @@ Power BI Desktop では、ビジュアルのデータ ポイントをクリッ�
 
 視覚エフェクト内のデータ ポイントを複数選択する際には、いくつかの制限事項と考慮事項があります。
 
-* 折れ線グラフ、面グラフ、散布図、ツリーマップではなげなわ選択がサポートされます
+* 折れ線グラフ、面グラフ、散布図、ツリーマップ、マップでは、なげなわ選択がサポートされます
 * 一度に選択できるデータ ポイントの最大数は 300 個です
 * Power BI サービスでレポートを表示する場合、四角形の選択が有効になるのは、レポートを保存して発行したときになげなわ選択機能が有効になっていた場合のみです
 

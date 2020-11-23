@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: 21aa643c82887ec9beaca659d9e2e97a0f1cdcc9
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: ec9ef81a4a8f4da0ffdf651d08b307e13212635a
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599292"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512840"
 ---
 # <a name="optimizing-premium-capacities"></a>Premium 容量を最適化する
 
@@ -27,6 +27,11 @@ Premium 容量のパフォーマンスに関する問題が発生した場合、
 - 新しい Premium 容量を追加する
 
 最後は、テストの方法と Premium 容量のサイズ設定で、この記事を締めくくります。
+
+> [!NOTE]
+> Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+
+この記事で推奨されている推奨事項とベスト プラクティスを使用すると、各データセットの CPU 使用率とその他の Power BI の成果物が確実に最適化されます。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -67,7 +72,7 @@ Premium 容量が遅くなるには多くの理由が考えられます。 こ�
 
 Power BI Premium 容量メトリック アプリでは、アクティブなメモリは、過去 3 分間に使用中だったため削除できないレポートに与えられたメモリの総容量を示します。 更新の待機時間における急増は、大規模なデータセットやアクティブなデータセットと相関がある可能性があります。
 
-**平均実行時間に基づいた上位 5 位**のグラフでは、容量リソースを消費している上位 5 位のデータセット、ページ分割されたレポート、データフローが強調表示されます。 上位 5 位のリストにあるコンテンツは、調査の候補であり、最適化できる可能性があります。
+**平均実行時間に基づいた上位 5 位** のグラフでは、容量リソースを消費している上位 5 位のデータセット、ページ分割されたレポート、データフローが強調表示されます。 上位 5 位のリストにあるコンテンツは、調査の候補であり、最適化できる可能性があります。
 
 ### <a name="why-are-reports-slow"></a>レポートが遅いのはなぜですか。
 
@@ -112,7 +117,7 @@ Power BI Premium 容量メトリック アプリでは、アクティブなメ�
 
 これは発生する頻度が非常に低い場合、優先度の高い問題と見なさなくてよいかもしれません。 レポートのユーザーには、サービスがビジー状態である旨と、しばらくしてから再試行する必要がある旨が伝えられます。 これがあまりにも頻繁に発生する場合は、Premium 容量をスケールアップするか、コンテンツを別の容量に割り当てるかして、この問題を解決することができます。
 
-容量管理者 (および Power BI サービス管理者) は、**クエリの失敗**のメトリックを監視して、これが発生するタイミングを調べることができます。 システムのオーバーロードが発生した際はすべての操作をリセットして、容量を再起動することもできます。
+容量管理者 (および Power BI サービス管理者) は、**クエリの失敗** のメトリックを監視して、これが発生するタイミングを調べることができます。 システムのオーバーロードが発生した際はすべての操作をリセットして、容量を再起動することもできます。
 
 ### <a name="why-are-refreshes-not-starting-on-schedule"></a>更新がスケジュールどおりに開始されないのはなぜですか。
 
@@ -144,7 +149,7 @@ Power BI Premium 容量メトリック アプリでは、アクティブなメ�
 - 容量以外の理由。データソース システムの応答性、ネットワーク待ち時間、無効なアクセス許可、ゲートウェイのスループットなど。
 - データ ボリューム。下記で説明するように、増分更新を構成する正当な理由です。
 
-容量管理者 (および Power BI サービス管理者) は、経時的な比較のベンチマークを調べるために**平均更新時間 (分)** のメトリックを、また、スケジュールされた時刻と操作の開始との間における平均ラグを調べるために**更新の平均待機時間 (分)** のメトリックを監視できます。
+容量管理者 (および Power BI サービス管理者) は、経時的な比較のベンチマークを調べるために **平均更新時間 (分)** のメトリックを、また、スケジュールされた時刻と操作の開始との間における平均ラグを調べるために **更新の平均待機時間 (分)** のメトリックを監視できます。
 
 増分更新では、特にモデル テーブルが大きい場合に、データの更新時間を大幅に短縮できます。 増分更新には 4 つのメリットがあります。
 
@@ -162,7 +167,7 @@ Power BI Premium 容量メトリック アプリでは、アクティブなメ�
 - メモリの不足。Premium 容量に 1 つしかモデルがない場合でも、モデルのサイズが非常に大きいことがあります。
 - 容量以外の理由。データソース システムの切断、無効なアクセス許可、ゲートウェイ エラーなど。
 
-容量管理者 (および Power BI サービス管理者) は、**メモリ不足による更新の失敗**のメトリックを監視できます。
+容量管理者 (および Power BI サービス管理者) は、**メモリ不足による更新の失敗** のメトリックを監視できます。
 
 ## <a name="optimizing-models"></a>モデルの最適化
 
@@ -226,7 +231,7 @@ DirectQuery モデルの最適化の可能性を検討します。 このモデ�
 
 付け加えると、Azure Analysis Services データベースと SQL Server Analysis Services 表形式データベースでは、それらのモデルがメモリに完全に読み込まれる必要があるほか、クエリをサポートするためにはそれらが常にそこに保持される必要があることに注意するとよいかもしれません。 Power BI サービスと同様に、モデルが更新中にオンラインのままでなければならない場合は、更新に十分なメモリが必要になります。 Power BI サービスとは異なり、使用量に応じてモデルがメモリに自動的に出し入れされるという概念はありません。 そのため、Power BI Premium には、より効率的なアプローチが用意されており、メモリ使用量を抑えながらモデルのクエリを最大限に活用できます。
 
-## <a name="capacity-planning"></a>キャパシティ プランニング
+## <a name="capacity-planning"></a>容量計画
 
 Premium 容量のサイズによって、使用可能なメモリおよびプロセッサ リソースと、容量に課される制限が決まります。 複数の Premium 容量を作成することはワークロードを互いに分離するのに役立つため、Premium 容量の数も考慮事項です。 ストレージは容量ノードあたり 100 TB であることに注意してください。これは、どのワークロードでも十分すぎるでしょう。
 
@@ -258,13 +263,23 @@ Premium 容量のサイズと数を決定するのは難しい場合がありま
 
 より複雑なテストを生成するには、現実的なワークロードをシミュレートするロード テスト アプリケーションの開発を検討してください。 詳細については、ウェビナー「[Power BI のロード テスト アプリケーションと Visual Studio ロード テスト](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/)」を参照してください。
 
-## <a name="acknowledgements"></a>謝辞
+## <a name="acknowledgments"></a>謝辞
 
 この記事は、データ プラットフォーム MVP であり、[Bitwise Solutions](https://www.bitwisesolutions.com.au/) の独立 BI 専門家である Peter Myers によって執筆されました。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [Premium 容量のシナリオ](service-premium-capacity-scenarios.md)   
   
 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

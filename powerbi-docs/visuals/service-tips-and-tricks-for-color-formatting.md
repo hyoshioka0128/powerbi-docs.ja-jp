@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/29/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bce798e07a3bdac0ba52f56e9ddf7eac72087924
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 6f64db7be452cf5873a862f378f558bc4f177c56
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483956"
+ms.locfileid: "94513066"
 ---
 # <a name="tips-and-tricks-for-formatting-in-reports"></a>レポートでの書式設定に関するヒントとコツ
 
@@ -40,12 +40,12 @@ Power BI には、レポートをカスタマイズするためのさまざま�
 
 **[フィルター]** および **[視覚化]** ウィンドウがレポート キャンバスの右側に表示されたら、カスタマイズを開始できます。 ウィンドウが表示されない場合は、右上隅の矢印を選択してそれらを開きます。
 
-![編集ビューのレポート キャンバス](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![編集ビューのレポート キャンバス](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-filter.png)
 
 ## <a name="apply-a-theme"></a>テーマを適用する
 レポートのテーマでは、コーポレート カラーを使用したり、アイコン セットを変更したり、ビジュアルの新しい既定の形式を適用したりなど、デザインの変更をお使いのレポート全体に適用できます。 レポートのテーマを適用すると、お使いのレポートのすべてのビジュアルで、ご自身が選択したテーマの色と書式設定が使用されます。 詳細については、[レポートのテーマの使用](../create-reports/desktop-report-themes.md)に関するページを参照してください。
 
-![メニュー バーでテーマ アイコンを切り替える](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
+![メニュー バーでテーマ アイコンを切り替える](media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png)
 
 ここでは、売上とマーケティングのレポートに **[イノベーション]** のテーマが適用されています。
 
@@ -56,13 +56,13 @@ Power BI には、レポートをカスタマイズするためのさまざま�
 
 次の視覚エフェクトでは、製品区分別に販売されたユニット数がランク付けされています。 
 
-![データの色を灰色に変更する](media/service-tips-and-tricks-for-color-formatting/power-bi-data.png)
+![データの色を灰色に変更する](media/service-tips-and-tricks-for-color-formatting/power-bi-format.png)
 
 ここで、**Convenience** 区分を取り出して、この新しい区分のパフォーマンスを色を使用して示すものとします。 この手順を以下に示します。
 
 **[データの色]** カードを展開し、 **[すべて表示]** のスライダーをオンにします。 これにより、視覚化内の各データ要素の色が表示されます。 これで、任意のデータ ポイントを変更できるようになります。
 
-![[すべて表示] がオンになっている [書式] ペイン](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![[すべて表示] がオンになっている [書式] ペイン](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
 
 **Convenience** をオレンジ色に設定します。 
 
@@ -84,9 +84,9 @@ Power BI には、レポートをカスタマイズするためのさまざま�
 次のセクションでは、ある数値に基づいて色を決めるためのさまざまな方法を示します。
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>データ ポイントの色を 1 つの値に基づいて決める
-値に基づいて色を変更するには、アクティブにする視覚化を選択します。 ペイント ローラーのアイコンを選んで、[書式設定] ペインを開き、 **[データの色]** カードを開きます。 カードの上にマウス ポインターを置き、表示されている 3 つの縦向きドットを選択して、 **[条件付き書式設定]** を選択します。  
+値に基づいて色を変更するには、アクティブにする視覚化を選択します。 ペイント ローラーのアイコンを選択して [書式設定] ペインを開き、 **[データの色]** カードを開きます。 **[既定の色]** の下で、fx アイコンを選択します。  
 
-![3 つの縦向きドットをクリックして、条件付き書式オプションを選択する](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
+![3 つの縦向きドットをクリックして、条件付き書式オプションを選択する](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional.png)
 
 **[既定の色]** ウィンドウで、ドロップダウンを使って、条件付き書式に使用するフィールドを指定します。 この例では、 **[Sales fact]\(売上ファクト\)**  >  **[Total Units]\(合計ユニット数\)** フィールドの順に選択し、 **[最小値]** では明るい青色、 **[最大値]** では濃い青色を選びました。 
 

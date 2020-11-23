@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/03/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 3095cfbfd4ed1a965e0a54f1cee0907cb468170d
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 57b1de80112e68849d21e7c34570d9754eaf0058
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91598810"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512817"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Power BI Premium の大規模なモデル (プレビュー)
 
@@ -160,3 +160,14 @@ Power BI の大規模なモデルは、[Azure Premium ファイル ストレー�
 * [Power BI で独自の暗号化キーを使用する](service-encryption-byok.md)
 * [容量はどのように機能するのか](service-premium-what-is.md#how-capacities-function)
 * [増分更新](service-premium-incremental-refresh.md)。
+
+
+Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+* パフォーマンス
+* ユーザーごとのライセンス
+* より大きなスケール
+* メトリックの改善
+* 自動スケール
+* 管理オーバーヘッドの削減
+
+Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

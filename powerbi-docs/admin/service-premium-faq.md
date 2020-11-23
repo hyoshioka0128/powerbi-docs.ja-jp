@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 82237286fa4d6ac3713ca6674a541b7d59c20a49
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 41db895494c32918fedba7c27664354e45ae2f1c
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915902"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94511966"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium のよく寄せられる質問
 
@@ -30,6 +30,11 @@ Power BI Premium は、以下を含む容量ベースのプランです。
 * Power BI サービスにおける共有された容量よりも優れたスケールとパフォーマンス。
 * Power BI レポート サーバーでオンプレミスのビジネス インテリジェンス資産を保守する機能。
 * 一貫性のある一連の機能を利用し、埋め込み分析の最新機能にアクセスできる 1 つの API サーフェス。
+
+**Power BI Premium Generation 2 とは**
+
+最近、Power BI Premium から Power BI Premium の新しいバージョンである **Premium Gen2** がリリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+
 
 **Power BI Premium は何を実行しますか?またどのような機能がありますか?**  
 Power BI Premium は、各組織専用に割り当てられている Power BI サービスの容量で構成されます。 この容量は、Microsoft が完全に管理している専用ハードウェアでサポートされています。 組織は容量を幅広く適用するか、ユーザー数、ワークロードのニーズなどの要因に基づいて割り当てられたワークスペースに割り当てることができます。また、要件に変化に応じてスケールアップまたはスケールダウンすることができます。
@@ -59,7 +64,7 @@ Power BI Premium は容量ベースのライセンスですが、Power BI Pro �
 Power BI Premium は、仮想コア数に基づいて購入します。 価格については、[Power BI の価格のページ](https://powerbi.microsoft.com/pricing/)を参照してください。 ノードと v コアの詳細については、[Microsoft Power BI Premium のホワイトペーパー](https://aka.ms/pbipremiumwhitepaper)を参照してください。 また、この[計算ツール](https://powerbi.microsoft.com/calculator/)を使用して、必要な Premium 容量を見積もることができます。
 
 **"容量" どのような意味で使われていますか?**  
-容量は、Power BI Premium 容量管理ポータルを介して管理者によってプロビジョニングされた 1 つ以上のノードをグループ化したものです。 詳細については、[Microsoft Power BI Premium のホワイトペーパー](https://aka.ms/pbipremiumwhitepaper)を参照してください。
+容量とは、Power BI の使用についてお客様の組織に予約されているコンピューティング能力の量です。 これは、サービス管理者が Power BI Premium 管理ポータルの **[容量管理]** ページでプロビジョニングするものです。
 
 **Power BI Premium の請求方法を教えてください。**  
 Power BI Premium は、年間契約で毎月請求されます。

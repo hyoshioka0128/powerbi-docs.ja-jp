@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 94926ccf0fa214ca4c65808a7476842c22308359
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 8971c07b39de5b01b945218659fb8ead711c3f3c
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048857"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94511943"
 ---
 # <a name="power-bi-visuals-system-integration"></a>Power BI ビジュアルのシステム統合
 
@@ -92,7 +92,7 @@ Power BI ビジュアルのアクションとそれに続く更新は、次の 3
 
 * ユーザーがビジュアル プロパティを変更します (たとえば、ユーザーがツリーを展開し、ビジュアルの状態がビジュアル プロパティに保存されます)。
 
-    Power BI API を使用してビジュアルにプロパティ値を保存できます。 たとえば、ユーザーがビジュアルを操作し、ビジュアルのプロパティ値を保存または更新する必要がある場合、ビジュアルから `presistProperties` メソッドを呼び出すことができます。
+    Power BI API を使用して視覚エフェクトにプロパティ値を保存できます。 たとえば、ユーザーがビジュアルを操作し、ビジュアルのプロパティ値を保存または更新する必要がある場合、ビジュアルから `presistProperties` メソッドを呼び出すことができます。
 
 * ユーザーが URL を選択します。
 

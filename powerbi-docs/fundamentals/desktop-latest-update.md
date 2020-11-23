@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/13/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8670659ff44a0f0e14688a8a898704823f272891
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 34882258e9a3f05f08dd1340941b216f8679fc39
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92255997"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94560059"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktop の新機能
 
-## <a name="october-2020-update-2863210"></a>2020 年 10 月の更新 (2.86.321.0)
+## <a name="november-2020-update-2872610"></a>2020 年 11 月の更新 (2.87.261.0)
 
-10 月の Power BI Desktop の更新には非常に優れた機能が多数含まれており、数週間にわたっていろいろお試しいただけます。 
+11 月の Power BI Desktop の更新は、新機能や改善された機能がまとめて入った、盛りだくさんな内容となっています。 
 
 Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルと Power BI サービスの更新プログラムの詳細については、それぞれの新機能に関する記事をご覧ください。
 
@@ -47,48 +47,29 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 以下の更新は、今月の Power BI Desktop の新しい機能です。
 
 
-
 ### <a name="reporting"></a>レポート
-* キャンバスの透かし [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=17)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195557) 
-* 視覚エフェクトのカスタマイズの一般提供が開始 [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=115)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195558) [[記事]](../create-reports/power-bi-personalize-visuals.md)
-* ツリーマップでのデータ ポイントの四角形の選択 (プレビュー) [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=292)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195559)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* 新しいフィールド リスト (プレビュー) [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=15)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467053) 
+* 新しいモデル ビュー (プレビュー) [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=61)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467054) [[記事]](../create-reports/power-bi-personalize-visuals.md)
+* 一般公開を開始したすべてのフィルターの適用 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=98)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467055)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* ビジュアル ズーム スライダー [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=160)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467056)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* マップのビジュアルに拡張された、データ ポイントの四角形の選択 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=185)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467057)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* Web 接続に関する証明書失効の確認 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=292)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467058)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* ページ分割されたレポートの更新 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=292)   [[動画]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467059)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
 
 ### <a name="analytics"></a>分析
-* Q&A 視覚エフェクトからデータをエクスポートする [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=308)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270582) 
-
-
-### <a name="modeling"></a>モデリング
-* IF および SWITCH 関数のパフォーマンスの向上  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270584)
-
-
-### <a name="data-preparation"></a>データの準備
-* 動的 M クエリ パラメーター (プレビュー) [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=329)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665421)  [[記事]](../connect-data/desktop-dynamic-m-query-parameters.md)
-* Excel ファイルからのテーブルの自動検出 [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=615)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195566)
-* JSON ファイルからのテーブルの自動検出 [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=650)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665423)
+* 異常検出 (プレビュー) [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=199)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467061) 
+* Q&A で部分一致データ値のサポートを開始 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=438)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467062)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
 
 ### <a name="data-connectivity"></a>データ接続
-* Power Platform Dataflows コネクタのより広範な地理的サポート [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=675)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270590)
-* MariaDB で DirectQuery がサポートされるようになりました [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=694)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195570)
-* SharePoint Online リスト コネクタが更新されました [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=707)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270592)
-* 新しいデータ コネクタ - Spigit と eWay-CRM [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=736)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195572)
+* Hive LLAP コネクタの一般提供開始 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=461)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467064)
+* 新しいデータ コネクタ - Actian、Anaplan、Starburst Presto [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=487)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467065)
 
 
 ### <a name="visuals"></a>視覚化
-* 拡張管理者機能の一般提供が開始 [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=997)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270604)
-* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=1039)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195582)
+* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=688)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467072)
 
 
-### <a name="template-apps"></a>テンプレート アプリ
-* テンプレート アプリの簡略化されたインストール [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=1127)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270613) 
-* Power BI Desktop からテンプレート アプリを検索する [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=1164)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195591) 
-
-### <a name="other"></a>その他
-* Power BI Desktop で PBIDS にデータ ソースをエクスポートする [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=1255)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195594)  [[記事]](../connect-data/desktop-data-sources.md#how-to-create-a-pbids-connection-file)
-* Power BI のアイコンの更新 [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=1295)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270618) 
-* Power BI Desktop のスプラッシュ スクリーンを閉じる [[ビデオ]](https://youtu.be/LveNuQqV5xk?t=1313)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
-
-
-これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/)に関するブログ投稿を参照してください。
+これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/)に関するブログ投稿を参照してください。
 
 
 > [!NOTE]
@@ -98,7 +79,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 ### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
 次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
 
-> [!VIDEO https://www.youtube.com/embed/LveNuQqV5xk]
+> [!VIDEO https://www.youtube.com/embed/DT_tOas5YIo]
 
 ## <a name="more-videos"></a>他のビデオ
 

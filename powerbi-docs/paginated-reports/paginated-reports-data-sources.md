@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/27/2020
-ms.openlocfilehash: d6f436477a8226dec870d039c8fe10491456a325
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 11/12/2020
+ms.openlocfilehash: 263992e760afe01eb44f41b80c2297cbd4b34163
+ms.sourcegitcommit: 7ee9398b30ab4ba40459cbb97e129e7dc853c93c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298191"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575309"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートでサポートされるデータ ソース
 
@@ -27,7 +27,7 @@ ms.locfileid: "93298191"
 
 | データ ソース | 認証 | ノート |
 | --- | --- | --- |
-| Azure SQL データベース <br>Azure SQL Data Warehouse | 基本、シングル サインオン (SSO)、OAuth2 | Azure SQL DB でエンタープライズ ゲートウェイを使用できます。 ただし、このようなシナリオでは、SSO または oAuth2 を使用して認証を行うことはできません。   |
+| Azure SQL データベース <br>Azure SQL Data Warehouse | 基本、シングル サインオン (SSO)、OAuth2 | Azure SQL Database でエンタープライズ ゲートウェイを使用できます。 ただし、このようなシナリオでは、SSO または oAuth2 を使用して認証を行うことはできません。   |
 | Azure SQL Managed Instance | 基本 | パブリック エンドポイントまたはプライベート エンドポイント経由 (プライベート エンドポイントは、エンタープライズ ゲートウェイ経由でルーティングする必要があります)  |
 | Azure Analysis Services | SSO、OAuth2 | AAS ファイアウォールを無効にするか、BlackForest リージョンの IP 範囲をすべて許可するように構成する必要があります。 これは、BlackForest リージョンにのみ適用されます。  外部テナントからの SSO はサポートされていません。 |
 | Power BI データセット | SSO | Premium と Premium 以外の Power BI データセット。 読み取りのアクセス許可が必要 |
@@ -40,14 +40,14 @@ Azure SQL Database データ ソースについては、「[Azure SQL Database A
 
 ## <a name="other-data-sources"></a>その他のデータ ソース
 
-上記のネイティブでサポートされているデータ ソースに加えて、[Power BI データ ゲートウェイ](../connect-data/service-gateway-onprem.md)を介して次のデータ ソースにアクセスできます。
+上記のネイティブでサポートされているデータ ソースに加えて、[Power BI エンタープライズ ゲートウェイ](../connect-data/service-gateway-onprem.md)を介して次のデータ ソースにアクセスできます。
 
 - SQL Server
 - SQL Server Analysis Services
 - Oracle
 - Teradata
 
-ページ分割されたレポートでは、現在、Azure SQL Database と Azure Analysis Services には、Power BI データ ゲートウェイを介してアクセスできます。
+ページ分割されたレポートでは、現在、Azure Analysis Services には、Power BI エンタープライズ ゲートウェイを介してアクセスできます。
 
 ## <a name="azure-sql-database-authentication"></a>Azure SQL Database 認証
 
