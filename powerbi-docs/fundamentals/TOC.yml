@@ -39,7 +39,11 @@
               href: service-self-service-purchase-help.md
             - name: Power BI のサインアップに関するヘルプを表示する
               href: service-self-service-sign-up-help.md
-    - name: 攻略ガイド
+        - name: セキュリティ
+          items:
+            - name: セキュリティ ベースライン
+              href: security-baseline.md
+    - name: 操作方法ガイド
       items:
         - name: Power BI Desktop の取得
           href: desktop-get-the-desktop.md
