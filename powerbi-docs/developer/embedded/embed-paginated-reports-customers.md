@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 2c06464999192e71c2d398f41b7b96e8fa4a169b
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 58d1112dfccda798a32b2a3cb95d72c37b7a16ec
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983484"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668398"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
-**Azure の Power BI Embedded** または **Office での Power BI の埋め込み**を使用すると、アプリ所有データを使用して、ページ分割されたレポートをアプリケーション内に埋め込むことができます。 **アプリ所有データ**がある場合、Power BI を埋め込み分析プラットフォームとして使用するアプリケーションが含まれます。 **ISV** または**開発者**は、完全に統合された対話型のアプリケーションにページ分割されたレポートを表示する Power BI コンテンツを作成できます。ユーザーに Power BI ライセンスは必要ありません。 このチュートリアルでは、Power BI .NET SDK と Power BI JavaScript API を使用して、アプリケーションにページ分割されたレポートを統合する方法を説明します。
+**Azure の Power BI Embedded** または **Office での Power BI の埋め込み** を使用すると、アプリ所有データを使用して、ページ分割されたレポートをアプリケーション内に埋め込むことができます。 **アプリ所有データ** がある場合、Power BI を埋め込み分析プラットフォームとして使用するアプリケーションが含まれます。 **ISV** または **開発者** は、完全に統合された対話型のアプリケーションにページ分割されたレポートを表示する Power BI コンテンツを作成できます。ユーザーに Power BI ライセンスは必要ありません。 このチュートリアルでは、Power BI .NET SDK と Power BI JavaScript API を使用して、アプリケーションにページ分割されたレポートを統合する方法を説明します。
 
 ![Power BI 埋め込みレポート](media/embed-paginated-reports-for-customers/embedded-paginated-report.png)
 
@@ -39,7 +39,8 @@ ms.locfileid: "91983484"
 Azure サブスクリプションをお持ちでない場合は、始める前に[無料アカウントを作成](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)してください。
 
 > [!IMPORTANT]
-> * **サービス プリンシパル**を使用する必要があります。 マスター ユーザーはサポートされていません。
+> * **サービス プリンシパル** を使用する必要があります。 マスター ユーザーはサポートされていません。
+>* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) はサポートされていません。 PPU を使用してソリューションを試してみることはできますが、[運用に移行する](embed-sample-for-customers.md#move-to-production)ことはできません。
 > * シングル サインオン (SSO) を必要とするデータソースは、サポートされていません。 サポートされているデータセットとその認証方法の一覧については、「[Power BI のページ分割されたレポートでサポートされるデータ ソース](../../paginated-reports/paginated-reports-data-sources.md)」を参照してください。 
 > * Power BI データセットは、[データソース](../../connect-data/service-get-data.md)としてサポートされていません。
 
@@ -107,7 +108,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 ### <a name="application-id"></a>アプリケーション ID
 
-**applicationId** 情報には、**Azure** の**アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
+**applicationId** 情報には、**Azure** の **アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
 
 **applicationId** を取得するには、次の手順に従います。
 
@@ -121,7 +122,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
     ![スクリーンショットには、アプリケーション ID が必要なものとして選択されているアプリケーションの表示名が示されています。](media/embed-paginated-reports-for-customers/display-name.png)
 
-4. **アプリケーション ID** が GUID として一覧表示されます。 この**アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
+4. **アプリケーション ID** が GUID として一覧表示されます。 この **アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
 
     ![applicationId](media/embed-paginated-reports-for-customers/application-id.png)
 
@@ -177,13 +178,13 @@ Get-PowerBIworkspace -name "Paginated Report Embed" | Get-PowerBIReport
 
 5. **[新しいクライアント シークレット]** を選択します。
 
-6. **[説明]** ボックスに名前を入力し、期間を選択します。 次に、 **[保存]** を選択して、アプリケーションの**値**を取得します。 キーの値を保存した後で **[キー]** ウィンドウを閉じると、値フィールドは非表示としてのみ表示されます。 その時点では、キー値を取得することはできません。 キー値をなくした場合は、Azure portal で新しいものを作成します。
+6. **[説明]** ボックスに名前を入力し、期間を選択します。 次に、 **[保存]** を選択して、アプリケーションの **値** を取得します。 キーの値を保存した後で **[キー]** ウィンドウを閉じると、値フィールドは非表示としてのみ表示されます。 その時点では、キー値を取得することはできません。 キー値をなくした場合は、Azure portal で新しいものを作成します。
 
     ![キー値](media/embed-paginated-reports-for-customers/client-secret.png)
 
 ### <a name="tenant"></a>テナント
 
-**テナント**情報には azure テナント ID を入力します。 この情報は Power BI サービスにサインインしたときに [Azure AD 管理センター](/onedrive/find-your-office-365-tenant-id)から取得するか、PowerShell を使用して取得できます。
+**テナント** 情報には azure テナント ID を入力します。 この情報は Power BI サービスにサインインしたときに [Azure AD 管理センター](/onedrive/find-your-office-365-tenant-id)から取得するか、PowerShell を使用して取得できます。
 
 ### <a name="run-the-application"></a>アプリケーションの実行
 
@@ -205,7 +206,7 @@ Power BI のページ分割されたレポートを埋め込む手順は [Power 
 
 顧客向けの Power BI のページ分割されたレポートをアプリケーションに埋め込むには、[Power BI REST API](/rest/api/power-bi/) を呼び出す前に、**Azure AD** [サービス プリンシパル](embed-service-principal.md)を持ち、Power BI アプリケーションの [Azure AD アクセス トークン](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data)を取得する必要があります。
 
-**アクセス トークン**を使用して Power BI Client を作成するには、[Power BI REST API](/rest/api/power-bi/) とやり取りするための Power BI クライアント オブジェクトを作成する必要があります。 **AccessToken** を ***Microsoft.Rest.TokenCredentials*** オブジェクトでラップして、Power BI クライアント オブジェクトを作成します。
+**アクセス トークン** を使用して Power BI Client を作成するには、[Power BI REST API](/rest/api/power-bi/) とやり取りするための Power BI クライアント オブジェクトを作成する必要があります。 **AccessToken** を *_Microsoft.Rest.TokenCredentials_* オブジェクトでラップして、Power BI クライアント オブジェクトを作成します。
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -227,7 +228,7 @@ Power BI クライアント オブジェクトを使って、埋め込むアイ�
 
 指定したワークスペースから最初のレポートを取得する方法のコード例を次に示します。
 
-*コンテンツ アイテムとしてレポート、ダッシュボード、タイルのいずれを埋め込む場合でも、それらを取得するサンプルは[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)の Services\EmbedService.cs ファイル内にあります。*
+"コンテンツ アイテムとしてレポート、ダッシュボード、タイルのいずれを埋め込む場合でも、それらを取得するサンプルは、[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)の Services\EmbedService.cs ファイル内にあります。"
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -244,7 +245,7 @@ Report report = reports.Value.FirstOrDefault();
 
 JavaScript API から使うことができる埋め込みトークンを生成します。 Power BI のページ分割されたレポートを埋め込むための埋め込みトークンを作成するには、[Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API を使用します。
 
-埋め込みトークンを作成するサンプルは、[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)内の *Services\EmbedService.cs* ファイルにあります。
+埋め込みトークンを作成するサンプルは、[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)内の *Services\EmbedService.cs* ファイルにあります。
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;

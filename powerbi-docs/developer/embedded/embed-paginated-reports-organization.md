@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 41c7ba43d16b6d77ecf6324d3cd175dbbabc51a1
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 447fad076d9d171a2bdcb8e9f5aafe9c63555d79
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983404"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668674"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -23,7 +23,7 @@ ms.locfileid: "91983404"
 ページ分割されたレポートは、高品質な印刷のためにデザインされたレポートです。 通常、これらのレポートには大量のデータが含まれており、印刷されたページに合うようにレンダリングされます。
 Power BI でページ分割されたレポートがどのようにサポートされているかを理解するには、「[Power BI Premium のページ分割されたレポートとは](../../paginated-reports/paginated-reports-report-builder-power-bi.md)」をご覧ください。
 
-**ユーザー所有データ**を使用すれば、アプリケーションで埋め込み分析を使用できるように Power BI サービスを拡張できます。 このチュートリアルでは、ページ分割されたレポートをアプリケーションに統合する方法を示します。
+**ユーザー所有データ** を使用すれば、アプリケーションで埋め込み分析を使用できるように Power BI サービスを拡張できます。 このチュートリアルでは、ページ分割されたレポートをアプリケーションに統合する方法を示します。
 
 Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けのアプリケーションに Power BI を埋め込みます。
 
@@ -44,6 +44,9 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 * P1 以上の容量。 「[ページ分割されたレポートに必要な Premium 容量のサイズはどれくらいですか。](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)」をご覧ください。
 
 **Power BI Pro** にサインアップしていない場合は、[無料の試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してください。
+
+>[!NOTE]
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) はサポートされています。 ただし、PPU を使用している場合は、組織内の PPU ユーザーのみがソリューションにアクセスできるようになります。
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI 環境を設定する
 
@@ -133,7 +136,7 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 
 ### <a name="application-id"></a>アプリケーション ID
 
-**applicationId** 情報には、**Azure** の**アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
+**applicationId** 情報には、**Azure** の **アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
 
 **applicationId** を取得するには、次の手順に従います。
 
@@ -145,7 +148,7 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 
     ![アプリの選択](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. **アプリケーション ID** が GUID として一覧表示されます。 この**アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
+4. **アプリケーション ID** が GUID として一覧表示されます。 この **アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 

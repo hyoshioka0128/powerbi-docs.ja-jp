@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: 52e835f4ff0d3dc4cad13c2e3ecc77d254f3be9d
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: c8d756a80cf6d748f3ff33298b3a243f82197734
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412229"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668651"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD アプリケーションを登録して Power BI とともに使用する
 
@@ -235,7 +235,7 @@ Azure AD アプリのアクセス許可をプログラムで変更するには�
 
 # <a name="c"></a>[C#](#tab/CSharp)
 
-また、C# を使用して Azure AD アプリのアクセス許可を変更することもできます。 この方法は、プロセスの一部を自動化することを検討している場合に便利です。
+また、C# を使用して Azure AD アプリのアクセス許可を変更することもできます。 詳細については、[oAuth2PermissionGrant](https://docs.microsoft.com/graph/api/oauth2permissiongrant-get) API に関するページを参照してください。 この方法は、プロセスの一部を自動化することを検討している場合に便利です。
 
 HTTP 要求に関する詳細については、[[HTTP] タブ](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions)を参照してください。
 
@@ -267,6 +267,12 @@ currentState.createdServicePrincipal = await graphClient.ServicePrincipals
     .Request()
     .AddAsync(servicePrincipal);
 
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+
+// Use oAuth2PermissionGrant to change permissions
+var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
+               .Request()
+               .GetAsync();
 ```
 
 ---

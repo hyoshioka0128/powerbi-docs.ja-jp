@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/07/2020
+ms.date: 11/17/2020
 ms.author: davidi
-ms.openlocfilehash: 3cce51ad577c700a0f9595a2b92694e5e1b61cc5
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 11f9db0282cd0b302c5293ca59dd44c87dcdb955
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397394"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719054"
 ---
 # <a name="power-bi-data-sources"></a>Power BI データ ソース
 
@@ -62,7 +62,7 @@ ms.locfileid: "94397394"
 | Folder | はい | はい | いいえ | はい | はい | はい |
 | GitHub | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Google Analytics | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Google BigQuery | はい | はい | はい | いいえ | いいえ | はい |
+| Google BigQuery | はい | はい | はい | はい | いいえ | はい |
 | Hadoop ファイル (HDFS) | はい | いいえ | いいえ | いいえ | いいえ | いいえ |
 | Hive LLAP | はい | はい | はい | はい | いいえ | いいえ |
 | HDInsight 対話型クエリ | はい | はい | はい | いいえ | いいえ | いいえ |
@@ -148,7 +148,7 @@ ms.locfileid: "94397394"
 
 <sup>6</sup> .html、.xls、Access データベースに必要です
 
-<sup>7</sup> Power BI サービスでは、認証を必要とする OData フィードはサポートされていません。
+<sup>7</sup> Power BI service では汎用 OAuth2 がサポートされません。
 
 <sup>8</sup> Paxata は、Power BI Report Server 向けに最適化された Power BI Desktop のバージョンでサポートされています。 Power BI Report Server に発行された Power BI レポートではサポートされていません。 サポートされているデータ ソースの一覧については、「[Power BI Report Server での Power BI レポート データ ソース](../report-server/data-sources.md)」を参照してください。
 

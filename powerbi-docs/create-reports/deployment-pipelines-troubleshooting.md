@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/15/2020
-ms.openlocfilehash: 929a79d7e940f729b90d0cdf6d3ebd905a621f6a
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.date: 11/11/2020
+ms.openlocfilehash: 141364664b6608b252fc2be8620226ae8d9ce39b
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916822"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668628"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>配置パイプラインのトラブルシューティング
 
@@ -20,7 +20,7 @@ ms.locfileid: "92916822"
 
 ## <a name="general"></a>全般
 
-### <a name="whats-deployment-pipelines-in-power-bi"></a>Power BI の配置パイプラインとはどのようなものですか。
+### <a name="whats-deployment-pipelines-in-power-bi"></a>Power BI の配置パイプラインとはどのようなものですか?
 
 Power BI の配置パイプラインがどのようなものであるかを理解するには、[配置パイプラインの概要](deployment-pipelines-overview.md)に関するページを参照してください。
 
@@ -32,17 +32,17 @@ Power BI の配置パイプラインがどのようなものであるかを理�
 
 以下の条件が満たされていない場合は、配置パイプラインのボタンを表示することができません。
 
-* Power BI の [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)である
+* 次のいずれかの Premium ライセンスを持っている。
 
-* Premium 容量を持つ組織に属している
+    * Power BI [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)であり、Premium 容量を持つ組織に所属している。
 
-* ワークスペースは、1 つのパイプラインにのみ割り当てることができる
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md)。
 
-* 自分が新しいワークスペースの管理者である
+* [新しいワークスペース エクスペリエンス](../collaborate-share/service-create-the-new-workspaces.md)の管理者である。
 
-### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>ワークスペースにパイプライン ステージ タグが表示されない理由
+### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>ワークスペースにパイプライン ステージ タグが表示されないのはなぜですか?
 
-デプロイ パイプラインには、パイプラインに割り当てられているワークスペースのパイプライン ステージ タグが表示されます。 " *開発* " および " *テスト* " ステージのタグは常に表示されます。 ただし、 [パイプラインへのアクセス権](deployment-pipelines-process.md#user-with-pipeline-access)を持っている場合、または [ワークスペース管理者](deployment-pipelines-process.md#workspace-admin)である場合にのみ、" *運用環境* " タグが表示されます。
+デプロイ パイプラインには、パイプラインに割り当てられているワークスペースのパイプライン ステージ タグが表示されます。 "*開発*" および "*テスト*" ステージのタグは常に表示されます。 ただし、[パイプラインへのアクセス権](deployment-pipelines-process.md#user-with-pipeline-access)を持っている場合、または [ワークスペース管理者](deployment-pipelines-process.md#workspace-admin)である場合にのみ、"*運用環境*" タグが表示されます。
 
 > [!div class="mx-imgBorder"]
 > ![運用環境パイプライン ワークスペースの運用環境タグのスクリーンショット。](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -51,15 +51,24 @@ Power BI の配置パイプラインがどのようなものであるかを理�
 
 ### <a name="what-licenses-are-needed-to-work-with-deployment-pipelines"></a>配置パイプラインを操作するには、どのようなライセンスが必要ですか。
 
-配置パイプラインを使用するには、[Premium 容量](../admin/service-premium-what-is.md)を持つ [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)である必要があります。 詳細については、「[配置パイプラインへのアクセス](deployment-pipelines-get-started.md#accessing-deployment-pipelines)」を参照してください。
+配置パイプラインを使用するには、次のいずれかのライセンスを持っている必要があります。
+
+* [Premium 容量](../admin/service-premium-what-is.md)に存在するワークスペースを持つ [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md) ライセンス。
+
+* [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md)。
+
+詳細については、「[配置パイプラインへのアクセス](deployment-pipelines-get-started.md#accessing-deployment-pipelines)」を参照してください。
 
 ### <a name="what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline"></a>パイプラインのワークスペースには、どのような種類の容量を割り当てることができますか。
 
 パイプラインを機能させるには、配置パイプライン内のすべてのワークスペースが容量内に存在する必要があります。 ただし、パイプライン内の異なるワークスペースに対して、異なる容量を使用できます。 また、同じパイプライン内の異なるワークスペースに対して、異なる容量の種類を使用することもできます。
 
-開発とテストでは、ユーザーごとの Pro Power BI アカウントと共に A または EM 容量を使用できます。
+開発とテストでは、ユーザーごとの Pro Power BI アカウントと共に A または EM 容量を使用できます。 また、開発およびテストのステージで、各ユーザーに PPU を使用することもできます。
 
-運用ワークスペースの場合は、P 容量が必要です。 ISV が埋め込みアプリケーションを使用してコンテンツを配布する場合は、運用環境で A または EM 容量を使用することもできます。
+運用ワークスペースの場合は、P 容量が必要です。 ISV が埋め込みアプリケーションを使用してコンテンツを配布する場合は、運用環境で A または EM 容量を使用することもできます。 PPU は、運用ワークスペースでも使用できます。
+
+>[!NOTE]
+>PPU を使用してワークスペースを作成すると、他の PPU ユーザーのみがワークスペースにアクセスしてそのコンテンツを使用できるようになります。
 
 ## <a name="technical"></a>技術的な質問
 
@@ -87,7 +96,7 @@ Power BI の配置パイプラインがどのようなものであるかを理�
 
 |Error  |アクション  |
 |---------|---------|
-|[Premium 容量のアクセス許可](deployment-pipelines-process.md#creating-a-premium-capacity-workspace)がない。     |Premium 容量のアクセス許可を取得するには、容量管理者にワークスペースを容量に追加するように依頼するか、容量に対する割り当てアクセス許可を要求します。 ワークスペースが容量に追加されたら、再配置します。        |
+|[Premium 容量のアクセス許可](deployment-pipelines-process.md#creating-a-premium-capacity-workspace)がない。     |Premium 容量を持つ組織で働いている場合は、容量管理者にワークスペースを容量に追加するように依頼するか、容量に対する割り当てアクセス許可を要求します。 ワークスペースが容量に追加されたら、再配置します。</br></br>Premium 容量を持つ組織で働いていない場合は、[Premium Per User (PPU)](../admin/service-premium-per-user-faq.md) の購入を検討してください。        |
 |ワークスペースに対するアクセス許可がない。     |デプロイするには、ワークスペース メンバーになっている必要があります。 ワークスペース管理者に、適切なアクセス許可を付与するよう依頼します。         |
 |Power BI 管理者がワークスペースの作成を無効にしている。     |Power BI 管理者に連絡してサポートを依頼します。         |
 |ワークスペースが[新しいワークスペース エクスペリエンス](../collaborate-share/service-create-the-new-workspaces.md)でない。     |新しいワークスペース エクスペリエンスでコンテンツを作成します。 クラシック ワークスペースにコンテンツがある場合は、新しいワークスペース エクスペリエンスに[アップグレード](../collaborate-share/service-upgrade-workspaces.md)できます。         |
@@ -152,9 +161,9 @@ Multi-Geo はサポートされています。 異なる geo のステージ間�
 
 コンテンツは、空のステージにも、コンテンツを含むステージにも配置できます。 コンテンツは、[Premium 容量](../admin/service-premium-what-is.md)に存在する必要があります。
 
-* **空のステージへの配置** - ソース ワークスペースのメンバーまたは管理者であるすべての [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)。
+* **空のステージへの配置** - ソース ワークスペースのメンバーまたは管理者であるすべての [Pro](../admin/service-admin-purchasing-power-bi-pro.md) または [PPU](../admin/service-premium-per-user-faq.md) のユーザー。
 
-* **コンテンツがあるステージへの配置** - ソース配置ステージとターゲット配置ステージの両方でワークスペースのメンバーまたは管理者であるすべての [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)。
+* **コンテンツがあるステージへの配置** - ソースとターゲットの展開ステージの両方でワークスペースのメンバーまたは管理者であるすべての [Pro](../admin/service-admin-purchasing-power-bi-pro.md) または [PPU](../admin/service-premium-per-user-faq.md) のユーザー。
 
 * **データセットのオーバーライド** - 配置では、データセットが変更されなかった場合でも、ターゲット ステージに含まれる各データセットがオーバーライドされます。 ユーザーは、配置で指定されたすべてのターゲット ステージ データセットの所有者である必要があります。
 

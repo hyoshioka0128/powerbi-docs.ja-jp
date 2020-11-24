@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: painbar
-ms.openlocfilehash: 22f70e393987552276cc19b90c8b360b1a1a1d80
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 8e9205ca12efebbfa5c0338e2f501e59aed779e8
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049214"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718617"
 ---
 # <a name="power-bi-for-hololens-2-preview"></a>HoloLens 2 用の Power BI (プレビュー)
 HoloLens 2 用 Power BI アプリでは、Power BI のレポートとダッシュボードを物理的な環境に合わせて、3D のイマーシブなハンズフリー エクスペリエンスを作成できます。物理的な世界を移動しながら、必要なときに必要な場所で適切なデータを取得できます。
@@ -24,11 +24,13 @@ HoloLens 2 用 Power BI アプリでは、Power BI のレポートとダッシ�
 
 HoloLens 2 用 Power BI アプリは [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=526478) から入手できます。
 
+このアプリはシングル サインオンで動作します。つまり、HoloLens 2 デバイスに現在サインインしているユーザーの ID を使用して Power BI サービスの認証が行われます。
+
 HoloLens 2 デバイスにアプリをインストールする方法の[詳細を確認してください](/hololens/holographic-store-apps)。
 
 ## <a name="open-the-power-bi-app-on-your-hololens-2"></a>HoloLens 2 で Power BI アプリを開く
 
-**[スタート]** メニューを開き、Power BI アプリを選択します。 お気に入りのレポートとダッシュボードがすべて仮想ツールベルトに読み込まれた状態でアプリが開きます。それらはここから選択して表示することできます。
+**[スタート]** メニューを開き、Power BI アプリを選択します。 お気に入りのレポートとダッシュボードがすべて仮想ツールベルトに読み込まれた状態でアプリが開きます。それらはここから選択して表示できます。
 
 ## <a name="using-the-power-bi-app-for-hololens-2"></a>HoloLens 2 用 Power BI アプリを使用する
 

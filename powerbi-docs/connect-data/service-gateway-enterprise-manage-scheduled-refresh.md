@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 11/17/2020
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3f3dd39953ad382ab934bf87021123b949733fd
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bb61f752891205a0e8997592d522efb2022a562b
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237059"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719031"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>データ ソースの管理 - インポート/スケジュールされた更新
 
@@ -62,12 +62,11 @@ ms.locfileid: "85237059"
 
 ![ユーザーの表示](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
+> [!IMPORTANT]
+> 再パブリッシュ時、データ セットの所有者は再び、ゲートウェイと対応するデータ ソースにデータセットを関連付ける必要があります。 以前の関連付けは再パブリッシュ時に維持されません。 
+
 > [!WARNING]
 > データセットに複数のデータ ソースが含まれる場合、ゲートウェイで各データ ソースを追加する必要があります。 ゲートウェイに追加されていないデータ ソースがある場合、そのゲートウェイはスケジュールされた更新に更新可能なものとして表示されません。
-
-## <a name="limitations"></a>制限事項
-
-OAuth は、オンプレミスのデータ ゲートウェイでサポートされる認証方式ではありません。 OAuth を必要とするデータ ソースを追加することはできません。 データセットに OAuth を必要とするデータ ソースが含まれる場合、スケジュールされた更新にゲートウェイを使用できません。
 
 ## <a name="next-steps"></a>次のステップ
 

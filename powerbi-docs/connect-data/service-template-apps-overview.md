@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 432f05ed7efe8438d21a285b732ead08d93b8732
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 773f812ebaeabf02e9a21f09ac5a143d431fbeb0
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349393"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718916"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Power BI テンプレート アプリとは
 
@@ -111,7 +111,7 @@ Power BI テンプレート アプリを使用すると、Power BI Pro または
 |ファイルからのコンテンツ | PBIX ファイルのみが許可されます。 <br>非サポート: .rdl ファイル (改ページ調整されたレポート)、Excel ブック   |
 | データ ソース | クラウドのスケジュールされたデータ更新がサポートされているデータ ソースは許可されます。 <br>サポートされない:  <li>ライブ接続 (Azure AS なし)</li> <li>オンプレミスのデータ ソース (パーソナル ゲートウェイとエンタープライズ ゲートウェイはサポートされていません)</li> <li>リアルタイム (プッシュ データセットはサポートされていません)</li> <li>複合モデル</li></ul> |
 | データセット: クロスワークスペース | クロスワークスペースのデータセットは許可されません  |
-| クエリ パラメーター | 非サポート:"Any" 型のパラメーターまたはデータセットの "Binary" 型のブロック更新操作 |
+| クエリ パラメーター | 非サポート:型が "Any"、"Date"、または "Binary" のパラメーターでデータセットの更新操作がブロックされます |
 | Power BI ビジュアル | パブリックに使用可能な Power BI ビジュアルのみがサポートされます。 [組織の Power BI ビジュアル](../developer/visuals/power-bi-custom-visuals-organization.md)はサポートされません |
 | ソブリン クラウド | テンプレート アプリはソブリン クラウドでは使用できません |
 

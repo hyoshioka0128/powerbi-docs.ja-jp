@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 21f497a7c88134232a86afb9d16142719a6b711e
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: dab16218406a4b97c9e2aa01974380ba09dde003
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483790"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719008"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI コンテンツを埋め込む
 
@@ -35,6 +35,9 @@ ms.locfileid: "94483790"
 * 独自の [Azure Active Directory テナント](create-an-azure-active-directory-tenant.md)のセットアップが必要です。
 
 **Power BI Pro** にサインアップしていない場合は、[無料の試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してください。
+
+>[!NOTE]
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) はサポートされていません。 PPU は "*顧客向けに埋め込む*" ソリューションに利用できますが、[運用に移行する](embed-sample-for-customers.md#move-to-production)ことはできません。
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>埋め込み分析開発環境を設定する
 
@@ -340,9 +343,9 @@ var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
 
 var request = new GenerateTokenRequestV2()
 {
-    Datasets = datasetsRequestDetails ?? null,
-    Reports = reportsRequestDetails,
-    TargetWorkspaces = targetWSRequestdetials ?? null,
+    Datasets = datasets,
+    Reports = reports,
+    TargetWorkspaces = targetWorkspaces,
 };
 
 var token = client.GetClient().EmbedToken.GenerateToken(request);

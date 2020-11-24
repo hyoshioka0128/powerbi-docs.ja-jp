@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/01/2020
+ms.date: 11/13/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e052816cb3d633ba5c01d0331e00572a9b51a579
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: eb5b4b37e59a771d65917df5706a7ebbca488d21
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397302"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669088"
 ---
 # <a name="premium-features-of-dataflows"></a>データフローの Premium 機能
 
@@ -34,10 +34,10 @@ ms.locfileid: "94397302"
 
 Power BI の拡張コンピューティング エンジンにより、Power BI Premium サブスクライバーは自身の容量を使用してデータフローの使用を最適化できます。 拡張コンピューティング エンジンを使用すると、次のような利点があります。
 
-* 計算対象エンティティに対する、実行時間の長い ETL ステップ ( *joins* 、 *distinct* 、 *filters* 、 *group by* の実行など) に必要な更新時間の大幅な短縮
+* 計算対象エンティティに対する、実行時間の長い ETL ステップ (*joins*、*distinct*、*filters*、*group by* の実行など) に必要な更新時間の大幅な短縮
 * エンティティに対して DirectQuery クエリを実行する
 
-次に、拡張コンピューティング エンジンを有効にする方法と、よく寄せられる質問への回答について説明します。
+既定では、拡張コンピューティング エンジンは **[オン]** になっています。 拡張コンピューティング エンジンがオンになっていない場合、拡張コンピューティング エンジンを有効にする方法については、一般的な質問に対する回答と共に、次のセクションで説明します。
 
 ### <a name="using-the-enhanced-compute-engine"></a>拡張コンピューティング エンジンの使用
 
@@ -48,12 +48,12 @@ Power BI の拡張コンピューティング エンジンにより、Power BI P
 > [!IMPORTANT]
 > 拡張コンピューティング エンジンは、A3 以上の Power BI 容量に対してのみ機能します。
 
-拡張コンピューティング エンジンをオンにしたら、 **データフロー** に戻ります。複雑な演算 (同じ容量の既存のリンクされたエンティティから作成されたデータフローに対する *joins* や *group by* 演算など) を実行する計算対象エンティティのパフォーマンスが向上しているはずです。 
+拡張コンピューティング エンジンをオンにしたら、**データフロー** に戻ります。複雑な演算 (同じ容量の既存のリンクされたエンティティから作成されたデータフローに対する *joins* や *group by* 演算など) を実行する計算対象エンティティのパフォーマンスが向上しているはずです。 
 
 コンピューティング エンジンを最大限に活用するには、次のように ETL ステージを 2 つの異なるデータフローに分割します。
 
-* **データフロー 1** : このデータフローでは、データ ソースから必要なすべてを取り込み、それをデータフロー 2 に配置するだけです。
-* **データフロー 2** : この 2 つ目のデータフローですべての ETL 操作が実行されますが、データフロー 1 が同じ容量にあり、それを参照していることを確認します。 また、コンピューティング エンジンが確実に使用されるように、他の演算を実行する前に、フォールドできる演算 (filter、group by、distinct、join) を確実に実行します。
+* **データフロー 1**: このデータフローでは、データ ソースから必要なすべてを取り込み、それをデータフロー 2 に配置するだけです。
+* **データフロー 2**: この 2 つ目のデータフローですべての ETL 操作が実行されますが、データフロー 1 が同じ容量にあり、それを参照していることを確認します。 また、コンピューティング エンジンが確実に使用されるように、他の演算を実行する前に、フォールドできる演算 (filter、group by、distinct、join) を確実に実行します。
 
 ### <a name="common-questions-and-answers"></a>一般的な質問と回答
 
@@ -124,7 +124,7 @@ DirectQuery とデータフローには、いくつかの既知の制限事項�
 
 ## <a name="computed-entities"></a>計算対象エンティティ
 
-Power BI Premium サブスクリプションで **データフロー** を使用するときに、 **ストレージ内計算** を実行できます。 これにより、既存のデータフローで計算を実行して、レポートの作成と分析に集中できる結果を返すことができます。
+Power BI Premium サブスクリプションで **データフロー** を使用するときに、**ストレージ内計算** を実行できます。 これにより、既存のデータフローで計算を実行して、レポートの作成と分析に集中できる結果を返すことができます。
 
 ![計算対象エンティティ](media/dataflows-premium-features/computed-entity.png)
 
@@ -158,6 +158,8 @@ Power BI Premium サブスクリプションで使用する場合は、既存の
 ## <a name="next-steps"></a>次のステップ
 データフローと Power BI の詳細については、以下の記事を参照してください。
 
+* [データフローのベスト プラクティス](dataflows-best-practices.md)
+* [Power BI Premium データフロー ワークロードを構成する](dataflows-premium-workload-configuration.md)
 * [データフローとセルフサービスのデータ準備の概要](dataflows-introduction-self-service.md)
 * [データフローの作成](dataflows-create.md)
 * [データフローの構成と使用](dataflows-configure-consume.md)

@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/15/2020
-ms.openlocfilehash: 8f486d1f872aec8eaec096bf01d5d36a314c5cef
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 11/11/2020
+ms.openlocfilehash: ca588c50052ed4950b2f283ee8294098dd36a8ef
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855774"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669134"
 ---
 # <a name="get-started-with-deployment-pipelines"></a>デプロイ パイプラインの使用を開始する
 
@@ -23,11 +23,13 @@ ms.locfileid: "90855774"
 
 次の条件が満たされている場合、デプロイ パイプラインの機能にアクセスできます。
 
-* Power BI の [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)である
+* 次のいずれかの Premium ライセンスを持っている。
 
-* Premium 容量を持つ組織に属している
+    * Power BI [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)であり、Premium 容量を持つ組織に所属している。
 
-* [新しいワークスペース エクスペリエンス](../collaborate-share/service-create-the-new-workspaces.md)の管理者である
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md)。
+
+* [新しいワークスペース エクスペリエンス](../collaborate-share/service-create-the-new-workspaces.md)の管理者である。
 
 >[!NOTE]
 > また、既にパイプラインを作成している場合や、パイプラインが共有されている場合は、[デプロイ パイプライン] ボタンが表示されます。
@@ -60,7 +62,7 @@ ms.locfileid: "90855774"
 2. *[デプロイ パイプラインの作成]* ダイアログ ボックスで、パイプラインの名前と説明を入力し、 **[作成]** を選択します。
 
 >[!NOTE]
->ワークスペースが組織の Premium 容量に割り当てられていない場合は、[容量に割り当てる](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity)ように通知が表示されます。  
+>ワークスペースが組織の Premium 容量、またはご利用の PPU 容量に割り当てられていない場合は、[容量に割り当てる](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity)ように通知が表示されます。  
 
 ## <a name="step-2---assign-a-workspace-to-a-deployment-pipeline"></a>手順 2 - デプロイ パイプラインへのワークスペースの割り当て
 
@@ -87,7 +89,7 @@ ms.locfileid: "90855774"
 
 * このワークスペースが、他のパイプラインに割り当てられていないことを確認します。
 
-* ワークスペースは、 [premium 容量](../admin/service-premium-what-is.md)に存在する必要があります。
+* ワークスペースは、 [Premium 容量](../admin/service-premium-what-is.md)に存在する必要があります。
 
 * パイプライン ステージに [Power BI サンプル](../create-reports/sample-datasets.md)を含むワークスペースを割り当てることはできません。
 
@@ -124,7 +126,7 @@ ms.locfileid: "90855774"
 
 前のステージにデプロイすることもできます。たとえば、既存のワークスペースを運用ステージに割り当ててから、最初にテスト ステージにデプロイし、次に開発用のステージにデプロイします。
 
-前のステージへのデプロイは、前のステージのコンテンツが空の場合にのみ機能します。 前のステージにデプロイする場合、特定のアイテムを選択することはできません。 ステージ内のすべてのコンテンツがデプロイされます。
+前のステージへのデプロイは、前のステージが空の場合にのみ機能します。 前のステージにデプロイする場合、特定のアイテムを選択することはできません。 ステージ内のすべてのコンテンツがデプロイされます。
 
 [![テスト ステージまたは運用ステージのメニューから使用できる、前のステージへのデプロイ ボタンを示すスクリーンショット。](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 

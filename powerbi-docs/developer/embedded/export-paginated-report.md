@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 04/05/2020
-ms.openlocfilehash: d0d9472ef767a67b3b75be4c9eb5d6922d9cdf81
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 908aa715c31396485bcebfaa7227f3241cb02fb8
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045143"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668559"
 ---
 # <a name="export-paginated-report-to-file-preview"></a>ページ割り付けされたレポートをファイルにエクスポートする (プレビュー)
 
@@ -122,6 +122,8 @@ RLS の有効なユーザー名を指定する例を次に示します。
       }
 }
 ```
+## <a name="ppu-concurrent-requests"></a>PPU 同時要求数
+`exportToFile` API で [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) を使用すると、5 分間に 1 つの要求が許可されます。 5 分以内に複数の (1 を超える) 要求が発生すると、"*要求が多すぎる*" (429) エラーが発生します。
 
 ## <a name="code-examples"></a>コード例
 

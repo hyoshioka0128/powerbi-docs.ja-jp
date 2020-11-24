@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/22/2020
-ms.openlocfilehash: a364d3dd2d2175e4509d05f4c34eec31a1a371b6
-ms.sourcegitcommit: 37ec0e9e356b6d773d7d56133fb8ed6c06b65fd3
+ms.date: 10/21/2020
+ms.openlocfilehash: 6c1e4212cb991ff7eb3d0f8a5e336010499bcd1c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91024037"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668605"
 ---
 # <a name="understand-the-deployment-process"></a>デプロイ プロセスを理解する
 
@@ -38,6 +38,8 @@ ms.locfileid: "91024037"
 容量のアクセス許可がある場合は、配置先のステージにワークスペースのコンテンツがコピーされ、そのステージの新しいワークスペースが Premium 容量に作成されます。
 
 容量のアクセス許可を持っていない場合、ワークスペースは作成されますが、コンテンツはコピーされません。 容量管理者にワークスペースを容量に追加するように依頼するか、容量に対する割り当てアクセス許可を要求できます。 その後、ワークスペースが容量に割り当てられたら、このワークスペースにコンテンツを配置できます。
+
+[Premium Per User (PPU)](../admin/service-premium-per-user-faq.md) を使用している場合は、PPU に関連付けられている容量でワークスペースが自動的に作成されます。 このような場合、容量のアクセス許可は必要ありません。 ただし、PPU ユーザーによって作成されたワークスペースにアクセスできるのは、他の PPU ユーザーだけです。 また、このようなワークスペースで作成されたコンテンツにアクセスできるのは、PPU ユーザーだけです。
 
 ### <a name="workspace-and-content-ownership"></a>ワークスペースとコンテンツの所有権
 
@@ -67,7 +69,7 @@ ms.locfileid: "91024037"
 
 配置されたコンテンツが [Premium 容量](../admin/service-premium-what-is.md)に存在する限り、以下の条件を満たすユーザーは、既存のワークスペースを持つステージにコンテンツを配置できます。
 
-* ソース配置ステージとターゲット配置ステージの両方のワークスペースのメンバーである [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)。
+* ソースとターゲットの展開ステージの両方のワークスペースのメンバーである [Pro ライセンス](../admin/service-admin-purchasing-power-bi-pro.md)を持つユーザーまたは [PPU ユーザー](../admin/service-premium-per-user-faq.md)。
 
 * 配置しようとしているターゲット ワークスペース内のすべてのデータセットの所有者。
 
@@ -87,7 +89,7 @@ ms.locfileid: "91024037"
 
 配置パイプラインでは、以下の項目はサポートされていません。
 
-* .pbix 由来ではないデータセット
+* PBIX 由来ではないデータセット
 
 * サポートされていないデータセットに基づくレポート
 
