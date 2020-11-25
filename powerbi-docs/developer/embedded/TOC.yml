@@ -44,10 +44,10 @@
           href: embedded-faq.md
     - name: 操作方法
       items:
-        - name: サービス プリンシパルを使用して証明書を埋め込む
-          href: embed-service-principal-certificate.md
-        - name: サービス プリンシパルとアプリ シークレットを使用して埋め込む
+        - name: サービス プリンシパルを使用して埋め込む
           href: embed-service-principal.md
+        - name: サービス プリンシパルと証明書を使用して埋め込む
+          href: embed-service-principal-certificate.md
         - name: アプリからの埋め込み
           href: embed-from-apps.md
         - name: レポートをファイルにエクスポートする

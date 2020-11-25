@@ -20,6 +20,8 @@
           href: walkthrough-push-data-get-datasets.md
         - name: テーブルに行を追加する
           href: walkthrough-push-data-add-rows.md
+        - name: テンプレート アプリの構成を自動化する
+          href: ../template-apps/template-apps-auto-install-tutorial.md
     - name: 概念
       items:
         - name: リアルタイム データの自動保持ポリシー
@@ -32,10 +34,14 @@
               href: api-dataset-properties.md
             - name: データ モデルのバージョン管理
               href: api-data-model-versioning.md
+        - name: テンプレート アプリの自動構成
+          href: ../template-apps/template-apps-auto-install.md
     - name: 方法
       items:
         - name: 資格情報を構成する
           href: configure-credentials.md
+        - name: テンプレート アプリの構成を自動化する
+          href: ../template-apps/template-apps-auto-install.md
     - name: リファレンス
       items:
         - name: REST API
