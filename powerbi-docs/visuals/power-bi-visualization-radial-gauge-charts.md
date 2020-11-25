@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7fcef8294d1e4ba4b3336d4a2456e0ccac787fb
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: de9e2004d7802b5f3eb7684678984a84a077ce89
+ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412328"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94893731"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Power BI の放射状ゲージ グラフ
 
@@ -23,7 +23,7 @@ ms.locfileid: "93412328"
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-放射状ゲージ グラフには、1 つの円弧があり、目標または主要業績評価指標 (KPI) に向けた進行状況を測定した 1 つの値が表示されます。 線 ( *指針* ) によって目標 (ターゲット値) が示されます。 網掛け表示は、その目標への進行状況を示します。 円弧の内側の値は進行状況の値を示します。 Power BI では、考えられるすべての値は、最小値 (左端の値) から最大値 (右端の値) に向けて、円弧に沿って均等に割り振られます。
+放射状ゲージ グラフには、1 つの円弧があり、目標または主要業績評価指標 (KPI) に向けた進行状況を測定した 1 つの値が表示されます。 線 (*指針*) によって目標 (ターゲット値) が示されます。 網掛け表示は、その目標への進行状況を示します。 円弧の内側の値は進行状況の値を示します。 Power BI では、考えられるすべての値は、最小値 (左端の値) から最大値 (右端の値) に向けて、円弧に沿って均等に割り振られます。
 
 ![放射状ゲージのスクリーンショット。](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "93412328"
 
 ## <a name="prerequisites"></a>前提条件
 
-このチュートリアルでは、[財務サンプルの Excel ファイル](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)を使用します。
+このチュートリアルでは、[財務サンプルの Excel ファイル](https://go.microsoft.com/fwlink/?LinkID=521962)を使用します。
 
 1. メニューバーの左上にある **[データを取得]**  >  **[Excel]** を選択します。
    

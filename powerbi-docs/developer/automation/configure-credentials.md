@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: d2cd9786a635aed79f334706f53c21fe87e723a4
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: df5e82af012f4d85fd81399d6e31fde3b7539ce6
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748956"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95513828"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Power BI 用の資格情報をプログラムで構成する
 
 この記事の手順に従って、Power BI 用の資格情報をプログラムで構成します。
 
 >[!NOTE]
->* 呼び出し元のユーザーは、データセットの所有者であるかゲートウェイ管理者である必要があります。[サービス プリンシパル](../embedded/embed-service-principal-certificate.md)を使用することもできます。 たとえば、サービス プリンシパルをデータセットの所有者にすることができます。
+>* 呼び出し元のユーザーは、データセットの所有者であるかゲートウェイ管理者である必要があります。[サービス プリンシパル](../embedded/embed-service-principal.md)を使用することもできます。 たとえば、サービス プリンシパルをデータセットの所有者にすることができます。
 >* クラウド データ ソースとそれに対応する資格情報は、ユーザー レベルで管理されます。
 
 ## <a name="update-credentials-flow-for-data-sources"></a>データ ソースの資格情報フローを更新する
@@ -142,7 +142,7 @@ ms.locfileid: "91748956"
 
 ## <a name="credential-types"></a>資格情報の種類
 
-[Power BI Rest API](/rest/api/power-bi/) を使用して**エンタープライズ オンプレミス ゲートウェイ**で[データソースの作成](/rest/api/power-bi/gateways/createdatasource)または[データソースの更新](/rest/api/power-bi/gateways/updatedatasource)を呼び出すときは、ゲートウェイの公開キーを使用して資格情報の値を暗号化する必要があります。
+[Power BI Rest API](/rest/api/power-bi/) を使用して **エンタープライズ オンプレミス ゲートウェイ** で [データソースの作成](/rest/api/power-bi/gateways/createdatasource)または [データソースの更新](/rest/api/power-bi/gateways/updatedatasource)を呼び出すときは、ゲートウェイの公開キーを使用して資格情報の値を暗号化する必要があります。
 
 >[!NOTE]
 >.NET SDK v3 では、以下に示す .NET SDK v2 の例も実行できます。

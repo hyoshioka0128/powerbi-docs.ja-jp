@@ -10,18 +10,18 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 62a88a8267ae38b1dbfc0bbb0ee1d9020e7f9408
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 8ea72198ded59f3ce5dce1362ab9320fc119fac6
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049248"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95514411"
 ---
 # <a name="visuals-in-power-bi"></a>Power BI のビジュアル
 
 Power BI には、すぐに使用できる Power BI ビジュアルが多数用意されています。 それらのビジュアルは、[Power BI Desktop](https://powerbi.microsoft.com/desktop/) と [Power BI サービス](https://app.powerbi.com)の両方の [視覚化] ペインで使用可能であり、Power BI コンテンツの作成と編集に使用できます。
 
-![Power BI Desktop と Power BI サービスに表示されたときの Power BI の [視覚化] ウィンドウのスクリーンショット。](media/power-bi-custom-visuals/power-bi-visualizations.png)
+:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Power BI Desktop と Power BI サービスに表示されたときの Power BI の [視覚化] ウィンドウのスクリーンショット。":::
 
 その他多くの Power BI ビジュアルを Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) または Power BI から入手できます。 それらのビジュアルは、Microsoft および Microsoft パートナーによって作成され、AppSource 検証チームによってテストおよび検証されています。
 
@@ -29,7 +29,7 @@ Power BI には、すぐに使用できる Power BI ビジュアルが多数用�
 
 ## <a name="default-power-bi-visuals"></a>既定の Power BI ビジュアル
 
-*Power BI Desktop* および *Power BI サービス*の [視覚化] ペインから利用できる、すぐに使用できる Power BI ビジュアルです。
+*Power BI Desktop* および *Power BI サービス* の [視覚化] ペインから利用できる、すぐに使用できる Power BI ビジュアルです。
 
 [視覚化] ペインから Power BI ビジュアルのピン留めを外すには、ビジュアルを右クリックし、 **[ピン留めを外す]** を選択します。
 
