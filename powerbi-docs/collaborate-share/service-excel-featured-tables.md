@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/04/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 099e3aa11662232c5362895e93f0433620ce2ba9
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 42d7cae62084cf2cfbf6f10e49489d35e4557c85
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768904"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947049"
 ---
 # <a name="access-power-bi-featured-tables-in-excel-preview"></a>Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)
 
@@ -27,7 +27,7 @@ Power BI でデータセットを作成しますか? [Power BI Desktop でおす
 > 
 
 ## <a name="the-excel-data-types-gallery"></a>Excel のデータ型ギャラリー
-Power BI データセットのおすすめのテーブルは、Excel の**データ型**ギャラリーでは、 **[データ]** リボンに "*データ型*" として表示されます。
+Power BI データセットのおすすめのテーブルは、Excel の **データ型** ギャラリーでは、 **[データ]** リボンに "*データ型*" として表示されます。
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Excel の [データ] リボンのデータ型ギャラリーのスクリーンショット。":::
 
@@ -53,7 +53,7 @@ Excel によって高い信頼度で一致する行が検出された場合、�
 
 :::image type="content" source="media/service-excel-featured-tables/excel-linked-card-icon.png" alt-text="リンクされた項目のアイコンのスクリーンショット。":::
 
-一致する可能性のある行がセルに複数ある場合、そのセルに疑問符アイコンが表示され、 **[データ選択ウィザード]** ウィンドウが開きます。 次の例では、B3:B9 からの範囲を選択し、Power BI おすすめのテーブル **ストア**を選択しました。 セル B9 の "508 - Pasadena Lindseys" を除き、すべての行で一致がありました。 **[データ選択ウィザード]** には、使用できる 2 つの一致が表示されます。2 つの異なるテーブルで同じ値です。
+一致する可能性のある行がセルに複数ある場合、そのセルに疑問符アイコンが表示され、 **[データ選択ウィザード]** ウィンドウが開きます。 次の例では、B3:B9 からの範囲を選択し、Power BI おすすめのテーブル **ストア** を選択しました。 セル B9 の "508 - Pasadena Lindseys" を除き、すべての行で一致がありました。 **[データ選択ウィザード]** には、使用できる 2 つの一致が表示されます。2 つの異なるテーブルで同じ値です。
 
 :::image type="content" source="media/service-excel-featured-tables/excel-question-mark-featured-table.png" alt-text="Excel の [データ選択ウィザード] ウィンドウのスクリーンショット。":::
  
@@ -132,7 +132,7 @@ Power BI データセットに行レベルのセキュリティまたは Microso
 
 ## <a name="administrative-control"></a>管理制御
 
-Power BI 管理者は、Excel のデータ型ギャラリーでおすすめのテーブルを使用できる組織内のユーザーを制御できます。 詳細については、管理ポータルの記事の「[おすすめのテーブルの設定](../admin/service-admin-portal.md#featured-tables-settings)」をご覧ください。 
+Power BI 管理者は、Excel のデータ型ギャラリーでおすすめのテーブルを使用できる組織内のユーザーを制御できます。 詳細については、管理ポータルに関する記事の「[おすすめのテーブルへの接続を許可する](../admin/service-admin-portal.md#allow-connections-to-featured-tables)」を参照してください。 
  
 ### <a name="auditing"></a>監査
 
