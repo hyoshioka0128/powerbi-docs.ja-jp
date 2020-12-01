@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/12/2020
+ms.date: 11/20/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: d5879d6a8469b23f6e31e48345ac3ccb5f378cbb
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: fe1714fd0249bba429c705b70e9eb157bffae44b
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668214"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95012036"
 ---
 # <a name="what-is-power-bi-premium"></a>Power BI Premium とは
 
-Power BI Premium を使用すると、Premium でのみ利用可能な機能にアクセスできます。また、組織内の Power BI コンテンツのスケーリングとパフォーマンスが向上します。 Power BI Premium を使用すると、組織内のより多くのユーザーが Power BI を最大限に活用し、パフォーマンスと応答性を向上させることができます。 たとえば、Power BI Premium により、お客様とお客様のユーザーは以下を手に入れることができます。
+Power BI Premium を使用すると、Premium でのみ利用可能な機能にアクセスできます。また、組織内の Power BI コンテンツのスケーリングとパフォーマンスが向上します。 Power BI Premium を使用すると、組織内のより多くのユーザーが Power BI を最大限に活用し、パフォーマンスと応答性を向上させることができます。 たとえば、Power BI Premium を使用すると、お客様とお客様のユーザーは次の機能を手に入れることができます。
 
 > [!div class="checklist"]
 > * Power BI レポートのスケーリングとパフォーマンスの向上
@@ -50,16 +50,16 @@ Premium Gen2 では、次の更新または改善されたエクスペリエン�
     * メモリ制限の緩和
     * レポートの操作とスケジュールされた更新の完全な分離
 
-* 容量使用率の明確で正規化されたデータを使用して、**メトリックが改善** されました。これは、容量サイズや、分析操作実行中のシステムの負荷レベルなどではなく、容量で実行される分析操作の複雑さにのみ依存します。 改善されたメトリックにより、使用率分析、予算計画、配賦、およびアップグレードの必要性を組み込みレポートで明確に表示できます。 改善されたメトリックは、プレビュー期間を通して使用でき、拡張されます。 
+* 容量使用率の明確で正規化されたデータを使用して、**メトリックが改善** されました。これは、容量サイズ、分析操作実行中のシステムの負荷レベル、またはその他の要因などではなく、容量で実行される分析操作の複雑さにのみ依存します。 改善されたメトリックにより、使用率分析、予算計画、配賦、およびアップグレードの必要性を組み込みレポートで明確に表示できます。 改善されたメトリックは、プレビュー期間を通して使用でき、拡張されます。
 
-* **自動スケーリング** により、容量の負荷が制限を超えると 24 時間中に 1 仮想コアを一度に *自動的に追加* できるため、過負荷による速度低下を防ぐことができます。 アイドル時間が検出されると、仮想コアは自動的に削除されます。 追加の仮想コアは、従量課金制で Azure サブスクリプションに課金されます。 自動スケーリングは、プレビュー期間中に使用できるようになります。 
+* 容量の負荷が制限を超えると、**自動スケーリング** により 24 時間中に 1 回、1 仮想コアを "*自動的に追加*" できるため、過負荷による速度低下を防ぐことができます。 アイドル時間が検出されると、仮想コアは自動的に削除されます。 追加の仮想コアは、従量課金制で Azure サブスクリプションに課金されます。 自動スケーリングは、プレビュー期間中に使用できるようになります。 
 
-* 容量使用率レベルと負荷の増加に関する構成可能な事前の管理者通知を使用することで、**管理オーバーヘッドが大幅に削減** されます。
+* 容量使用率レベルと負荷の増加に関する構成可能な事前の管理者通知を使用することで、**管理オーバーヘッドが削減** されます。
 
 
 ### <a name="using-premium-gen2"></a>Premium Gen2 の使用
 
-Premium Gen2 の更新を利用するには、Premium Gen2 を有効にする必要があります。 Premium Gen2 を有効にするには、次の手順に従います。
+Premium Gen2 を有効にして、その更新を利用します。 Premium Gen2 を有効にするには、次の手順に従います。
 
 1. 管理ポータルで、 **[容量の設定]** に移動します。
 2. **[Power BI Premium]** を選択します。
@@ -78,10 +78,15 @@ Premium Gen2 の更新を利用するには、Premium Gen2 を有効にする必
 
 2.  特定のワークロードの Premium Gen2 容量設定は、管理ポータルの Premium Gen2 容量設定ページにまだ表示されません。 設定を変更するには、容量を元のバージョンの Premium に切り替え、設定を変更してから、再び Premium Gen2 を使用するように容量を設定します。 メモリ割り当ての設定は、Premium Gen2 容量に適用されません。
 
-3.  Premium Gen2 容量では現在、ADLS Gen2 データ ソースを使用したデータフローが機能しません。  
+3.  Premium Gen2 で XMLA を使用する場合は、最新バージョンの[データ モデリングおよび管理ツール](service-premium-connect-tools.md#data-modeling-and-management-tools)を使用していることを確認してください。 
 
-4.  Premium Gen2 で XMLA を使用する場合は、最新バージョンの[データ モデリングおよび管理ツール](service-premium-connect-tools.md#data-modeling-and-management-tools)を使用していることを確認してください。 
+4.  Premium Gen2 の Analysis Services の機能は、最新のクライアント ライブラリでのみサポートされています。 この要件をサポートするための依存ツールのリリース予定日は次のとおりです。
 
+    |ツール|最小バージョンが必要|リリース予定日|
+    |---|---|---|
+    |SQL Server Management Studio (SSMS)|18.8|2020 年 12 月 8 日|
+    |SQL Server Data Tools (SSDT)|2.9.15|一般提供 2020 年 11 月 30 日|
+    | AS PowerShell| 21.1.18229 より後|2020 年 11 月 26 日|
 
 ## <a name="subscriptions-and-licensing"></a>サブスクリプションとライセンス
 
@@ -92,7 +97,7 @@ Power BI Premium は、2 つの SKU (Stock Keeping Unit) ファミリで利用�
 - **EM** SKU (EM1 から EM3) - "_組織的な_" 埋め込み、年間契約が必要、1 か月単位での課金。 EM1 および EM2 SKU は、ボリューム ライセンス プランを通してのみ利用できます。 直接購入することはできません。
 
 ### <a name="updates-for-premium-gen2-preview"></a>Premium Gen2 (プレビュー) の更新
-Premium Gen2 は現在、**P** と **EM** SKU に対して完全にサポートされているプレビュー機能として提供されています。 **A** SKU 容量では、Premium Gen2 プレビューの更新で導入されるその他のすべてのベネフィットはまだ提供されていません。
+Premium Gen2 は現在、**P** と **EM** の SKU に対して完全にサポートされているプレビュー機能として提供されています。 **A** SKU 容量では、Premium Gen2 プレビューの更新で導入されるその他のすべてのベネフィットはまだ提供されていません。
 
 
 ### <a name="purchasing"></a>購入
@@ -101,12 +106,12 @@ Power BI Premium サブスクリプションは、Microsoft 365 管理センタ�
 
 #### <a name="power-bi-premium-per-user-preview"></a>Power BI Premium Per User (プレビュー)
 
-Power BI **Premium Per User** を使用することで、組織はユーザーごとに Premium 機能のライセンスを付与できます。 Premium Per User (PPU) には、Power BI Pro ライセンスのすべての機能が含まれるだけでなく、ページ分割されたレポート、AI、Premium サブスクライバーのみが利用できるその他の機能などの機能も追加されています。 Premium Per User は現在、プレビュー段階です。 機能の比較やプレビュー リリースに関するその他の情報など、Premium Per User の詳細については、「[Power BI Premium Per User に関する FAQ (プレビュー)](service-premium-per-user-faq.md)」を参照してください。 
+Power BI **Premium Per User** を使用することで、組織はユーザーごとに Premium 機能のライセンスを付与できます。 Premium Per User (PPU) には、Power BI Pro ライセンスのすべての機能が含まれており、ページ分割されたレポート、AI、Premium サブスクライバーのみが利用できるその他の機能などの機能が追加されています。 Premium Per User は現在、プレビュー段階です。 機能の比較やプレビュー リリースに関するその他の情報など、Premium Per User の詳細については、「[Power BI Premium Per User に関する FAQ (プレビュー)](service-premium-per-user-faq.md)」を参照してください。 
 
 
 ## <a name="reserved-capacities"></a>予約容量
 
-Power BI Premium では、"*予約容量*" が提供されます。 他の顧客と共有された計算リソース上でワークロードの分析処理が実行される共有された容量とは対照的に、予約容量は組織によって排他的に使用されます。 これは、ホストされるコンテンツに対して信頼性が高く一貫したパフォーマンスを提供する予約計算リソースを使用して隔離されます。 次の種類の Power BI コンテンツの処理は、予約容量ではなく共有容量に格納されることに注意してください。
+Power BI Premium では、"*予約容量*" が提供されます。 他の顧客と共有された計算リソース上でワークロードの分析処理が実行される共有された容量とは対照的に、予約容量は組織によって排他的に使用されます。 これは、ホストされるコンテンツに対して信頼性が高く一貫したパフォーマンスを提供する予約計算リソースを使用して隔離されます。 次の種類の Power BI コンテンツの処理は、予約容量ではなく共有容量に格納されることにご注意ください。
 
 * Excel ブック (データが最初に Power BI Desktop にインポートされる場合を除く)
 * [プッシュ データセット](/rest/api/power-bi/pushdatasets)

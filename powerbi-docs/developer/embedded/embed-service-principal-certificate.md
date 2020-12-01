@@ -3,29 +3,22 @@ title: サービス プリンシパルと証明書を使用した Power BI コ�
 description: Azure Active Directory アプリケーションのサービス プリンシパルと証明書を使用して、埋め込み分析を認証する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: nishalit
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
-ms.date: 10/15/2020
-ms.openlocfilehash: 3d25fe925b98dbdd74d61fd70320bd4275db35e3
-ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
+ms.date: 11/23/2020
+ms.openlocfilehash: 990e3787927cb483b37d7bc456a46201876fcbed
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197773"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95514426"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>サービス プリンシパルと証明書を使用した Power BI コンテンツの埋め込み
 
-[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
-
->[!NOTE]
->ご利用のバックエンド サービスは、秘密キーではなく、証明書を使用してセキュリティで保護することをお勧めします。 [秘密キーまたは証明書を使用して Azure AD からアクセス トークンを取得する方法の詳細を説明します](/azure/architecture/multitenant-identity/client-assertion)。
-
-## <a name="certificate-based-authentication"></a>証明書ベースの認証
-
-証明書ベースの認証では、Windows、Android、または iOS デバイス上のクライアント証明書、または [Azure Key Vault](/azure/key-vault/basic-concepts) に保持されているクライアント証明書を、Azure Active Directory (Azure AD) と共に使用して認証することができます。
+証明書ベースの認証では、Windows、Android、または iOS デバイス上のクライアント証明書、または [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) に保持されているクライアント証明書を、Azure Active Directory (Azure AD) と共に使用して認証することができます。
 
 この認証方法を使用すると、ローテーションまたは失効に対して、証明書を中央の場所から CA を使用して管理できます。
 
@@ -33,50 +26,24 @@ Azure AD での証明書の詳細については「[クライアント資格情�
 
 ## <a name="method"></a>メソッド
 
-埋め込み分析でサービス プリンシパルと証明書を使用するには、次の手順を行います。
+1. [サービス プリンシパルを使用してコンテンツを埋め込む](embed-service-principal.md)。
 
-1. Azure AD アプリケーションを作成する
+2. [証明書を作成する](embed-service-principal-certificate.md#step-2---create-a-certificate)。
 
-2. Azure AD セキュリティ グループを作成します。
+3. [証明書認証を設定する](embed-service-principal-certificate.md#step-3---set-up-certificate-authentication)。
 
-3. Power BI サービス管理者設定を有効にします。
+4. [Azure Key Vault から証明書を取得する](embed-service-principal-certificate.md#step-4---get-the-certificate-from-azure-key-vault)。
 
-4. サービス プリンシパルを、ご利用のワークスペースに追加します。
+5. [サービス プリンシパルと証明書を使用して認証する](embed-service-principal-certificate.md#step-5---authenticate-using-service-principal-and-a-certificate)。
 
-5. 証明書を作成する。
+## <a name="step-1---embed-your-content-with-service-principal"></a>手順 1 - サービス プリンシパルを使用してコンテンツを埋め込む
 
-6. 証明書認証を設定する
+サービス プリンシパルを使用してコンテンツを埋め込むには、「[サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み](embed-service-principal.md)」の指示に従います。
 
-7. Azure Key Vault から証明書を取得する
+>[!NOTE]
+>サービス プリンシパルを使用して埋め込んだコンテンツが既にある場合は、この手順をスキップして、[手順 2](embed-service-principal-certificate.md#step-2---create-a-certificate) に進みます。
 
-8. サービス プリンシパルと証明書を使用して認証する
-
-## <a name="step-1---create-an-azure-ad-application"></a>手順 1 - Azure AD アプリケーションを作成する
-
-[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
-
-### <a name="creating-an-azure-ad-app-using-powershell"></a>PowerShell を使用した Azure AD アプリの作成
-
-このセクションには、[PowerShell](/powershell/azure/create-azure-service-principal-azureps) を使用して新しい Azure AD アプリを作成するためのサンプル スクリプトが含まれています。
-
-```powershell
-# The app ID - $app.appid
-# The service principal object ID - $sp.objectId
-# The app key - $key.value
-
-# Sign in as a user that's allowed to create an app
-Connect-AzureAD
-
-# Create a new Azure AD web application
-$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
-
-# Creates a service principal
-$sp = New-AzureADServicePrincipal -AppId $app.AppId
-```
-
-[!INCLUDE[service create steps two, three and four](../../includes/service-principal-create-steps.md)]
-
-## <a name="step-5---create-a-certificate"></a>手順 5 - 証明書を作成する
+## <a name="step-2---create-a-certificate"></a>手順 2 - 証明書を作成する
 
 信頼された "*証明機関*" から証明書を取得することも、証明書を自分で生成することもできます。
 
@@ -130,15 +97,15 @@ $sp = New-AzureADServicePrincipal -AppId $app.AppId
 
     ![[CER 形式でダウンロード] ボタンを示すスクリーンショット。](media/embed-service-principal-certificate/download-cer.png)
 
-## <a name="step-6---set-up-certificate-authentication"></a>手順 6 - 証明書の認証を設定する
+## <a name="step-3---set-up-certificate-authentication"></a>手順 3 - 証明書の認証を設定する
 
 1. Azure AD アプリケーションで、 **[証明書とシークレット]** タブをクリックします。
 
      ![Azure portal のアプリに対する [証明書とシークレット] ペインを示すスクリーンショット。](media/embed-service-principal/certificates-and-secrets.png)
 
-2. **[証明書のアップロード]** をクリックし、このチュートリアルの[最初の手順](#step-5---create-a-certificate)で作成およびダウンロードした *.cer* ファイルをアップロードします。 *.cer* ファイルには公開キーが含まれています。
+2. **[証明書のアップロード]** をクリックし、このチュートリアルの [手順 2](#step-2---create-a-certificate) で作成およびダウンロードした *.cer* ファイルをアップロードします。 *.cer* ファイルには公開キーが含まれています。
 
-## <a name="step-7---get-the-certificate-from-azure-key-vault"></a>手順 7 - Azure Key Vault から証明書を取得する
+## <a name="step-4---get-the-certificate-from-azure-key-vault"></a>手順 4 - Azure Key Vault から証明書を取得する
 
 マネージド サービス ID (MSI) を使用して Azure Key Vault から証明書を取得します。 このプロセスでは、公開キーと秘密キーの両方を含む *.pfx* 証明書を取得する必要があります。
 
@@ -165,7 +132,7 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
 }
 ```
 
-## <a name="step-8---authenticate-using-service-principal-and-a-certificate"></a>手順 8 - サービス プリンシパルと証明書を使用して認証する
+## <a name="step-5---authenticate-using-service-principal-and-a-certificate"></a>手順 5 - サービス プリンシパルと証明書を使用して認証する
 
 サービス プリンシパルと、Azure Key Vault に格納されている証明書を使用してご自分のアプリを認証するには、Azure Key Vault に接続します。
 
@@ -216,14 +183,12 @@ public async Task<AuthenticationResult> DoAuthentication(){
 
 4. ご利用の Azure Key Vault へのアクセス権を持つアカウントを追加します。
 
-[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
-
 ## <a name="next-steps"></a>次の手順
 
 >[!div class="nextstepaction"]
 >[アプリを登録する](register-app.md)
 
->[!div class="nextstepaction"]
+> [!div class="nextstepaction"]
 >[顧客向けの Power BI Embedded](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
@@ -231,6 +196,3 @@ public async Task<AuthenticationResult> DoAuthentication(){
 
 >[!div class="nextstepaction"]
 >[サービス プリンシパルを使用するオンプレミス データ ゲートウェイを使用した行レベルのセキュリティ](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
->[!div class="nextstepaction"]
->[サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み](embed-service-principal.md)

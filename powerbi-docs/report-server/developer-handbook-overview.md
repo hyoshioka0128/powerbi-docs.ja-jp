@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.openlocfilehash: 1f7a04ca8920ef56e0e7de4efad47afa894e76d7
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d485c7ab7583d2604cd9da9e4c122c6cceeeb4fe
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861178"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95012005"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>開発者向けハンドブックの概要、Power BI レポート サーバー
 
@@ -42,7 +42,13 @@ Power BI レポート サーバーと対話する複数の API オプション�
 オープン ソースの [PowerShell ユーティリティ](https://github.com/Microsoft/ReportingServicesTools)を使用してレポート サーバーを管理することもできます。
 
 > [!NOTE]
-> 現在、PowerShell ユーティリティでは、Power BI Desktop ファイル (.pbix) はサポートされていません。
+> PowerShell ユーティリティでは、-RsRest* コマンドを使用した Power BI Desktop ファイル (.pbix) がサポートされています。
+
+Power BI Desktop ファイル (.pbix) をサポートする ReportingServicesTools PowerShell モジュール内のコマンドを検索するには、次のコマンドを実行します。
+
+```powershell
+Get-Command -Module ReportingServicesTools -Noun RsRest*
+```
 
 ## <a name="custom-extensions"></a>カスタム拡張機能
 

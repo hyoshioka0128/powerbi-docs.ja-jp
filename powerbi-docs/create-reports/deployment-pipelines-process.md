@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
 ms.date: 10/21/2020
-ms.openlocfilehash: 6c1e4212cb991ff7eb3d0f8a5e336010499bcd1c
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 5799b0367c903eea55357969a2d4383a5f4c0c7b
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668605"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95514334"
 ---
 # <a name="understand-the-deployment-process"></a>デプロイ プロセスを理解する
 
@@ -286,6 +286,8 @@ ms.locfileid: "94668605"
 * Power BI の[秘密度ラベル](../admin/service-security-sensitivity-label-overview.md)が付いているレポートやダッシュボードなどの Power BI 項目は、配置できません。
 
 * 1 回の配置で配置できる Power BI 項目の最大数は、300 個です。
+
+* 配置後の .PBIX ファイルのダウンロードはサポートされていません。
 
 * ワークスペースの制限事項の一覧については、「[ワークスペースの割り当ての制限事項](deployment-pipelines-get-started.md#workspace-assignment-limitations)」を参照してください。
 

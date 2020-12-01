@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 330f844e9c97a3a59ff854ac14612c328b7cb9b6
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 178b79ba4ae76288794f7bb67afba11c0595de7f
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681002"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95513851"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Power BI でユーザー アクティビティを追跡する
 
@@ -48,13 +48,13 @@ Power BI アクティビティ ログにアクセスするには、次の要件�
 
 ### <a name="activityevents-rest-api"></a>ActivityEvents REST API
 
-Power BI REST API に基づく管理アプリケーションを使用すると、アクティビティ イベントを BLOB ストアや SQL データベースにエクスポートすることができます。 その後、エクスポートされたデータの上にカスタムの使用状況レポートを作成できます。 **ActivityEvents** REST API の呼び出しでは、開始日と終了日を指定する必要があります。必要に応じて、アクティビティの種類やユーザー ID でアクティビティを選択するフィルターを指定します。 アクティビティ ログには大量のデータが含まれている可能性があるため、 **ActivityEvents** API で現時点でサポートされているのは、要求あたり最大 1 日分のデータのダウンロードのみです。 つまり、次の例のように、開始日と終了日に同じ日付を指定する必要があります。 DateTime 値は UTC 形式で指定してください。
+Power BI REST API に基づく管理アプリケーションを使用すると、アクティビティ イベントを BLOB ストアや SQL データベースにエクスポートすることができます。 その後、エクスポートされたデータの上にカスタムの使用状況レポートを作成できます。 **ActivityEvents** REST API の呼び出しでは、開始日と終了日を指定する必要があります。必要に応じて、アクティビティの種類やユーザー ID でアクティビティを選択するフィルターを指定します。 アクティビティ ログには大量のデータが含まれている可能性があるため、**ActivityEvents** API で現時点でサポートされているのは、要求あたり最大 1 日分のデータのダウンロードのみです。 つまり、次の例のように、開始日と終了日に同じ日付を指定する必要があります。 DateTime 値は UTC 形式で指定してください。
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-エントリの数が多いと、 **ActivityEvents** API では、約 5,000 ‐ 10,000 のエントリと継続トークンのみが返されます。 継続トークンを使用して **ActivityEvents** API を再度呼び出してエントリの次のバッチを取得し、すべてのエントリを取得して継続トークンを受け取らなくなるまでこれを続けます。 次の例は、継続トークンの使用方法を示しています。
+エントリの数が多いと、**ActivityEvents** API では、約 5,000 ‐ 10,000 のエントリと継続トークンのみが返されます。 継続トークンを使用して **ActivityEvents** API を再度呼び出してエントリの次のバッチを取得し、すべてのエントリを取得して継続トークンを受け取らなくなるまでこれを続けます。 次の例は、継続トークンの使用方法を示しています。
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
@@ -81,7 +81,7 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Get-PowerBIActivityEvent コマンドレット
 
-PowerShell の Power BI 管理コマンドレットを使用して、アクティビティ イベントをダウンロードします。 **Get-PowerBIActivityEvent** コマンドレットを使用すると、継続トークンが自動的に処理されます。 **Get-PowerBIActivityEvent** コマンドレットでは、 **ActivityEvents** REST API と同じ制限がある StartDateTime と EndDateTime パラメーターを受け取ります。 つまり、一度に取得できるアクティビティ データは 1 日分だけなので、開始日と終了日で同じ日付値を参照する必要があります。
+PowerShell の Power BI 管理コマンドレットを使用して、アクティビティ イベントをダウンロードします。 **Get-PowerBIActivityEvent** コマンドレットを使用すると、継続トークンが自動的に処理されます。 **Get-PowerBIActivityEvent** コマンドレットでは、**ActivityEvents** REST API と同じ制限がある StartDateTime と EndDateTime パラメーターを受け取ります。 つまり、一度に取得できるアクティビティ データは 1 日分だけなので、開始日と終了日で同じ日付値を参照する必要があります。
 
 次のスクリプトでは、すべての Power BI アクティビティをダウンロードする方法を示しています。 このコマンドでは、個々のアクティビティのプロパティに簡単にアクセスできるように、JSON の結果が .NET オブジェクトに変換されます。 これらの例は、イベントを見逃さないようにするための、1 日で可能な最小および最大のタイムスタンプを示しています。
 
@@ -97,7 +97,7 @@ $activities[0]
 
 ### <a name="filter-activity-data"></a>アクティビティ データのフィルター処理
 
-アクティビティの種類とユーザー ID でアクティビティ イベントをフィルター処理できます。 次のスクリプトでは、 **ViewDashboard** アクティビティのイベント データのみをダウンロードする方法を示しています。 サポートされているパラメーターの追加情報については、コマンド `Get-Help Get-PowerBIActivityEvent` を使用します。
+アクティビティの種類とユーザー ID でアクティビティ イベントをフィルター処理できます。 次のスクリプトでは、**ViewDashboard** アクティビティのイベント データのみをダウンロードする方法を示しています。 サポートされているパラメーターの追加情報については、コマンド `Get-Help Get-PowerBIActivityEvent` を使用します。
 
 ```powershell
 Login-PowerBI
@@ -276,6 +276,9 @@ Exchange Online に接続する方法の詳細については、「[リモート
 | Power BI Gateway の作成                          | CreateGateway                               |                                          |
 | Power BI グループを作成しました                            | CreateGroup                                 |                                          |
 | Power BI レポートを作成しました                           | CreateReport <sup>1</sup>                                |                                          |
+| Power BI テンプレート アプリ ワークスペースの作成 | CreateTemplateApp   |
+| Power BI テンプレート アプリのインストール チケットの作成 | CreateTemplateAppInstallTicket |
+| Power BI テンプレート アプリ パッケージの作成 | CreateTemplateAppPackage |
 | カスタム ビジュアルによる Azure AD アクセス トークンの要求                           | GenerateCustomVisualAADAccessToken                                |                                          |
 | カスタム ビジュアルによる Office Web Apps アクセス トークンの要求                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | 外部ストレージ アカウントにデータフローを移行しました     | DataflowMigratedToExternalStorageAccount    | 現在使用されていません                       |
@@ -294,6 +297,8 @@ Exchange Online に接続する方法の詳細については、「[リモート
 | Power BI Gateway の削除                          | DeleteGateway                               |                                          |
 | Power BI グループを削除しました                            | DeleteGroup                                 |                                          |
 | Power BI レポートを削除しました                           | DeleteReport                                |                                          |
+| Power BI テンプレート アプリ ワークスペースの削除 | DeleteTemplateApp |
+| Power BI テンプレート アプリ パッケージの削除 | DeleteTemplateAppPackage |
 | パイプライン ステージへの配置                           | DeployAlmPipeline                                |                                          |
 | Power BI データセットのデータ ソースを検出しました          | GetDatasources                              |                                          |
 | Power BI レポートのダウンロード                        | DownloadReport                              |                                          |
@@ -306,6 +311,7 @@ Exchange Online に接続する方法の詳細については、「[リモート
 | Power BI データフローをエクスポートしました                        | ExportDataflow                              |                                          |
 | Power BI レポートのビジュアル データをエクスポートしました              | ExportReport                                |                                          |
 | Power BI タイル データをエクスポートしました                       | ExportTile                                  |                                          |
+| Power BI テンプレート アプリ パッケージをワークスペースに抽出しました | ExtractTemplateAppPackage |
 | データフローのアクセス許可の追加に失敗しました                | FailedToAddDataflowPermissions              | 現在使用されていません                       |
 | データフローへのアクセス許可の削除に失敗しました             | FailedToRemoveDataflowPermissions           | 現在使用されていません                       |
 | Power BI のデータ フローの SAS トークンを生成しました             | GenerateDataflowSasToken                    |                                          |
@@ -313,10 +319,12 @@ Exchange Online に接続する方法の詳細については、「[リモート
 | スクリーンショットの生成                       | GenerateScreenshot |                     |
 | Power BI にファイルをインポートしました                         | インポート                                      |                                          |
 | Power BI アプリをインストールしました                            | InstallApp                                  |                                          |
+| Power BI テンプレート アプリをインストールしました | InstallTemplateApp |
 | 容量にワークスペースを移行しました                  | MigrateWorkspaceIntoCapacity                |                                          |
 | Power BI コメントを投稿しました                           | PostComment                                 |                                          |
 | Power BI ダッシュボードを出力しました                        | PrintDashboard                              |                                          |
 | Power BI レポート ページを出力しました                      | PrintReport                                 |                                          |
+| Power BI テンプレート アプリ パッケージをレベル上げしました | PromoteTemplateAppPackage |
 | Power BI レポートを Web に発行しました                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | おすすめのテーブルを発行または更新しました | UpdateFeaturedTables <sup>3</sup>   | |
 | Key Vault からの Power BI データフロー シークレットを受信しました  | ReceiveDataflowSecretFromKeyVault           |                                          |
@@ -348,6 +356,7 @@ Exchange Online に接続する方法の詳細については、「[リモート
 | 容量表示名を更新しました                     | UpdateCapacityDisplayName                   |                                          |
 | データフロー ストレージの割り当てのアクセス許可の更新   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | 配置パイプラインのアクセスの更新   | UpdateAlmPipelineAccess |                                          |
+| インストール済みの Power BI テンプレート アプリのパラメーターを更新しました | UpdateInstalledTemplateAppParameters |
 | 配置パイプラインの構成の更新   | SetConfigurationAlmPipeline |                                          |
 | 組織の Power BI 設定を更新しました          | UpdatedAdminFeatureSwitch                   |                                          |
 | Power BI アプリを更新しました                              | UpdateApp                                   |                                          |
@@ -358,6 +367,8 @@ Exchange Online に接続する方法の詳細については、「[リモート
 | Power BI フォルダーを更新しました                           | UpdateFolder                                |                                          |
 | Power BI フォルダーへのアクセスを更新しました                    | UpdateFolderAccess                          |                                          |
 | Power BI ゲートウェイ データ ソースの資格情報を更新しました  | UpdateDatasourceCredentials                 |                                          |
+| Power BI テンプレート アプリの設定を更新しました | UpdateTemplateAppSettings |
+| Power BI テンプレート アプリのテスト アクセス許可を更新しました | UpdateTemplateAppTestPackagePermissions |
 | Power BI ダッシュボードを参照しました                         | ViewDashboard                               |                                          |
 | Power BI データフローを参照しました                          | ViewDataflow                                |                                          |
 | Power BI レポートを参照しました                            | ViewReport                                  |                                          |

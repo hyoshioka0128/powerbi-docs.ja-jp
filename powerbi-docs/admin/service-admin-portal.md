@@ -10,12 +10,12 @@ ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 38df6680f2f4d0031ec26a1935e01c849c285909
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.openlocfilehash: 0abdaab48516b91624a0945d32c4f81ed024a468
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94719077"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947243"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
@@ -272,6 +272,16 @@ Microsoft 365 グループに基づく従来のワークスペースについて
 
 組織に外部ユーザーを招待するには、Azure Active Directory のゲスト招待元ロールも必要です。 この設定では、Power BI を通じて招待する機能のみが制御されます。 
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する
+
+Azure AD B2B ゲスト ユーザーは、組織内のコンテンツを編集および管理できます。 [詳細情報](service-admin-azure-ad-b2b.md)
+
+次の図は、[外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する] オプションを示しています。
+
+![外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+また、管理ポータルでは、組織に外部ユーザーを招待する権限を持つユーザーを制御することもできます。 詳細については、この記事の「[外部ユーザーとコンテンツを共有する](#export-and-sharing-settings)」を参照してください。
+
 ### <a name="publish-to-web"></a>Web に公開
 
 Power BI 管理者には、ユーザーが埋め込みコードを作成してレポートを Web に公開するためのオプションが、 **[Web に公開]** 設定により提供されます。 この機能により、レポートとそのデータを、Web 上のすべてのユーザーが利用できるようになります。 Web への公開の詳細については、[こちら](../collaborate-share/service-publish-to-web.md)を参照してください。
@@ -300,60 +310,73 @@ Power BI 管理者には、ユーザーが埋め込みコードを作成して�
 |管理ポータル内の **[埋め込みコード]**|状態には次のいずれかが反映されます。<br>* アクティブ<br>* サポートされていません<br>* ブロック|状態は **[無効]** と表示|状態には次のいずれかが反映されます。<br>* アクティブ<br>* サポートされていません<br>* ブロック<br><br>ユーザーがテナント設定に基づいて承認されていない場合、状態は **[侵害]** と表示されます。|
 |既存の公開済みレポート|すべて有効|すべて無効|すべてのユーザーに対して、レポートの表示が続行されます。|
 
-### <a name="export-data"></a>データのエクスポート
+### <a name="copy-and-paste-visuals"></a>ビジュアルのコピーと貼り付け
 
-組織内のユーザーは、タイルまたはビジュアル化からデータをエクスポートできます。 この設定を使用して、Excel での分析、.csv へのエクスポート、データセットのダウンロード (.pbix)、Power BI サービスのライブ接続機能を制御します。 タイルまたはビジュアルからデータをエクスポートする方法については[こちら](../visuals/power-bi-visualization-export-data.md)をご覧ください。
+組織内のユーザーは、タイルまたはレポート ビジュアルからビジュアルをコピーし、静的なイメージとして外部アプリケーションに貼り付けることができます。
 
->[!NOTE]
-> [Excel にエクスポート] 設定が導入される前は、この設定により、Excel ファイルへのデータのエクスポートも制御されていました。 詳細については、[「Excel にエクスポート」の注](#export-to-excel)を参照してください。
-
-![データ設定のエクスポート](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
-
-タイルからデータをエクスポートするためのオプションを次の図に示します。
-
-![タイルからデータをエクスポートする](media/service-admin-portal/powerbi-admin-export-data.png)
-
-> [!NOTE]
-> また、 **[データのエクスポート]** を無効にして、ユーザーが [[Excel で分析]](../collaborate-share/service-analyze-in-excel.md) 機能と、Power BI サービスのライブ接続を使用できないように設定することもできます。
+![ビジュアルのコピーと貼り付けの有効化スイッチのスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-copy-paste-visuals-setting.png)
 
 ### <a name="export-to-excel"></a>Excel にエクスポート
 
 組織内のユーザーは、視覚エフェクトのデータを Excel ファイルにエクスポートできます。
 
-![[Excel にエクスポート] 設定](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+![Excel にエクスポート設定のスクリーンショット](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
->[!IMPORTANT]
-> [Excel にエクスポート] 設定が導入される前は、Excel ファイルへのデータのエクスポートはデータ設定のエクスポートで制御されていました。 このため、[Excel にエクスポート] 設定の導入前に存在していたテナントでは、Power BI 管理者が [Excel にエクスポート] 設定を確認すると、 *[未適用の変更]* があることがわかります。 新しい設定を有効にするには、これらの変更を適用する必要があります。 それ以外の場合、Excel ファイルへのエクスポートは、[データ設定のエクスポート] によって引き続き制御されます。
+### <a name="export-to-csv"></a>.csv にエクスポート
+
+組織内のユーザーは、タイル、視覚化、またはページ分割されたレポートからデータを .csv ファイルにエクスポートできます。
+
+![.csv にエクスポート設定のスクリーンショット](media/service-admin-portal/powerbi-admin-portal-export-to-csv-setting.png)
+
+### <a name="download-reports"></a>レポートのダウンロード
+
+組織内のユーザーは、.pbix ファイルとページ分割されたレポートをダウンロードできます。
+
+![レポートのダウンロード設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-download-reports-setting.png)
+
+### <a name="allow-live-connections"></a>ライブ接続の許可
+
+組織内のユーザーは Power BI サービスの Live Connect を使用できます。 これには、"Excel で分析" が含まれます。
+
+![ライブ接続の許可設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>PowerPoint プレゼンテーションまたは PDF ドキュメントとしてレポートをエクスポート
 
-組織内のユーザーは、Power BI レポートを PowerPoint ファイルまたは PDF ドキュメントとしてエクスポートできます。 [詳細情報](../consumer/end-user-powerpoint.md)
+組織内のユーザーは、レポートを PowerPoint ファイルまたは PDF ドキュメントとしてエクスポートできます。
 
-**[PowerPoint プレゼンテーションまたは PDF ドキュメントとしてレポートをエクスポート]** 設定を有効にした場合のレポートの **[ファイル]** メニューを次の図に示します。
+![PowerPoint または PDF ドキュメントとしてレポートをエクスポートのスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-export-pptx-pdf-setting.png)
 
-![PowerPoint プレゼンテーションとしてレポートをエクスポート](media/service-admin-portal/powerbi-admin-powerpoint.png)
+### <a name="export-reports-as-mhtml-documents"></a>MHTML ドキュメントとしてレポートをエクスポート
+
+組織内のユーザーは、ページ分割されたレポートを MHTML ドキュメントとしてエクスポートできます。
+
+![MHTML にエクスポート設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-export-mhtml-setting.png)
+
+### <a name="export-reports-as-word-documents"></a>Word ドキュメントとしてレポートをエクスポート
+
+組織内のユーザーは、ページ分割されたレポートを Word ドキュメントとしてエクスポートできます。
+
+![Word にエクスポート設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-export-word-setting.png)
+
+### <a name="export-reports-as-xml-documents"></a>XML ドキュメントとしてレポートをエクスポート
+
+組織内のユーザーは、ページ分割されたレポートを XML ドキュメントとしてエクスポートできます。
+
+![XML にエクスポート設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-export-xml-setting.png)
+
+### <a name="export-reports-as-image-files-preview"></a>画像ファイルとしてレポートをエクスポート (プレビュー)
+
+組織内のユーザーは、ファイルにレポートをエクスポートする API を使用して、レポートを画像ファイルとしてエクスポートできます。
+
+![画像としてのエクスポート設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-export-as-image-setting.png)
 
 ### <a name="print-dashboards-and-reports"></a>ダッシュボードとレポートの印刷
 
-組織内のユーザーは、ダッシュボードとレポートを印刷できます。 [詳細情報](../consumer/end-user-print.md)
 
-ダッシュボードを印刷するためのオプションを次の図に示します。
+![ダッシュボードとレポートの印刷設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-print-dashboards-reports-setting.png)
 
-![ダッシュボードの印刷](media/service-admin-portal/powerbi-admin-print-dashboard.png)
-
-設定 **[ダッシュボードとレポートを印刷する]** を有効にした場合のレポートの **[ファイル]** メニューを次の図に示します。
-
-![レポートを印刷する](media/service-admin-portal/powerbi-admin-print-report.png)
-
-### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する
-
-Azure AD B2B ゲスト ユーザーは、組織内のコンテンツを編集および管理できます。 [詳細情報](service-admin-azure-ad-b2b.md)
-
-次の図は、[外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する] オプションを示しています。
-
-![外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
-
-また、管理ポータルでは、組織に外部ユーザーを招待する権限を持つユーザーを制御することもできます。 詳細については、この記事の「[外部ユーザーとコンテンツを共有する](#export-and-sharing-settings)」を参照してください。
+### <a name="certification"></a>認定資格
+この組織内のユーザーがデータセット、データフロー、レポート、およびアプリを認定できるようにします。 詳細については、「[コンテンツの認定を有効にする](service-admin-setup-certification.md)」を参照してください。
 
 ### <a name="email-subscriptions"></a>電子メール サブスクリプション
 組織内のユーザーは電子メール サブスクリプションを作成できます。 サブスクリプションの詳細は[こちら](../collaborate-share/service-publish-to-web.md)をご覧ください。
@@ -367,6 +390,25 @@ Azure AD B2B ゲスト ユーザーは、組織内のコンテンツを編集お
 最初は少数の推奨者から始めることをお勧めします。 組織全体がホームでコンテンツをお勧めできるようにすると、推奨されたすべてのコンテンツを追跡することが困難になる場合があります。 
 
 おすすめコンテンツを有効にした後は、管理ポータルでそれを管理することもできます。 ドメインのおすすめコンテンツの制御については、この記事の「[おすすめコンテンツを管理する](#manage-featured-content)」を参照してください。
+
+### <a name="allow-connections-to-featured-tables"></a>おすすめのテーブルへの接続を許可する
+
+この設定により、Power BI 管理者は、Excel のデータ型ギャラリーでおすすめのテーブルを使用できる組織内のユーザーを制御できます。 
+
+![おすすめテーブルへの接続を許可する設定のスクリーンショット。](media/service-admin-portal/powerbi-admin-portal-allow-connections-featured-tables-setting.png)
+
+>[!NOTE]
+>[[ライブ接続の許可]](#allow-live-connections) 設定が [無効] に設定されている場合は、おすすめのテーブルへの接続も無効になります。
+
+[Excel での Power BI のおすすめのテーブル](../collaborate-share/service-excel-featured-tables.md)について、詳細をご確認ください。
+
+### <a name="share-to-teams"></a>Teams で共有
+
+この設定を使用すると、組織は Power BI サービスに **[Teams で共有]** ボタンが表示されないようにすることができます。 無効に設定すると、ユーザーが Power BI サービスでレポートやダッシュボードを表示したとき、アクション バーまたはショート カットメニューの **[Teams で共有]** ボタンは表示されません。
+
+![Power BI 管理ポータルにある [Teams で共有] テナント設定のスクリーンショット。](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Teams での Power BI コンテンツの共有の詳細については、[こちら](../collaborate-share/service-share-report-teams.md)を参照してください。
 
 ## <a name="content-pack-and-app-settings"></a>コンテンツ パックとアプリの設定
 
@@ -388,12 +430,9 @@ Azure AD B2B ゲスト ユーザーは、組織内のコンテンツを編集お
 
 ## <a name="integration-settings"></a>統合の設定
 
-### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>オンプレミスのデータセットで [Excel で分析] を使用する
+### <a name="allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets"></a>オンプレミスのデータセットを使った "Excel で分析" と XMLA エンドポイントを許可する
 
-組織内のユーザーは、Excel を使用して、オンプレミスの Power BI データセットの表示および操作を行うことができます。 [詳細情報](../collaborate-share/service-analyze-in-excel.md)
-
-> [!NOTE]
-> また、 **[データのエクスポート]** を無効にして、ユーザーが **[Excel で分析]** 機能を使用することを防ぐこともできます。
+組織内のユーザーは、Excel を使用して、オンプレミスの Power BI データセットの表示および操作を行うことができます。 これにより、XMLA エンドポイントへの接続も許可されます。 [詳細情報](../collaborate-share/service-analyze-in-excel.md)
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>ArcGIS Maps for Power BI を使用する
 
@@ -402,24 +441,6 @@ Azure AD B2B ゲスト ユーザーは、組織内のコンテンツを編集お
 ### <a name="use-global-search-for-power-bi-preview"></a>Power BI でグローバル検索を使用する (プレビュー)
 
 組織のユーザーには、Azure Search に依存する外部の検索機能を使用できます。
-
-## <a name="featured-tables-settings"></a>おすすめのテーブルの設定
-
-**[テナント設定]** の **[Allow connections to featured tables]\(おすすめのテーブルへの接続を許可\)** 設定を使用すると、組織内のどのユーザーが Excel データ型ギャラリーのおすすめのテーブルを使用できるかを Power BI 管理者が制御できるようになります。 
-
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="おすすめのテーブルへのすべての接続":::
-
-**[データのエクスポート]** 設定が **[無効]** に設定されている場合は、おすすめのテーブルへの接続も無効になります。
-
-[Excel での Power BI のおすすめのテーブル](../collaborate-share/service-excel-featured-tables.md)について、詳細をご確認ください。
-
-## <a name="share-to-teams-tenant-setting"></a>[Teams で共有] テナント設定
-
-**[Teams で共有]** 設定は、Power BI 管理ポータルの **[テナント設定]** セクションにあります。 その設定を使用すると、組織は Power BI サービスに **[Teams で共有]** ボタンが表示されないようにすることができます。 無効に設定すると、ユーザーが Power BI サービスでレポートやダッシュボードを表示したとき、アクション バーまたはショート カットメニューの **[Teams で共有]** ボタンは表示されません。
-
-![Power BI 管理ポータルにある [Teams で共有] テナント設定のスクリーンショット。](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
-
-Teams での Power BI コンテンツの共有の詳細については、[こちら](../collaborate-share/service-share-report-teams.md)を参照してください。
 
 ## <a name="r-visuals-settings"></a>R ビジュアルの設定
 

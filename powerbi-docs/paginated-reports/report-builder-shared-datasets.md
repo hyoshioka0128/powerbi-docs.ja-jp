@@ -1,18 +1,18 @@
 ---
 title: Power BI 共有データセットを使用して改ページ調整されたレポートを作成する - Power BI Report Builder
 description: Power BI 共有データセットに基づいて、Power BI Report Builder で改ページ調整されたレポートを作成します。
-ms.date: 07/08/2020
+ms.date: 11/18/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 44f1c1280e176d99ab909402a77804074e7d8cbd
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 9b8e7ac37b42e74835cde120ad1465df586a8fe3
+ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298113"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94893708"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Power BI 共有データセットを基づいて改ページ調整されたレポートを作成する
 
@@ -76,7 +76,7 @@ Power BI レポート内とレポート ビルダー内とでデータを同じ�
 1. Power BI Desktop で Power BI レポート (.pbix) を開きます。
 1. レポート内のテーブルに、改ページ調整されたレポートで必要なデータがすべて含まれていることを確認してください。 このテーブルでは、次の 2 つの要件を満たす必要があります。
     - マトリックスやその他のビジュアルではなく、フラット テーブルにする必要があります。 テーブルではない場合、ここでテーブルに変換し、それに続くパフォーマンス アナライザーの手順を完了し、再度変換して必要なビジュアルに戻します。
-    - 数値フィールドについては、" *定義済みのメジャー* " を使用する必要があります。 電卓シンボルが横に付いています。 メジャーの作成方法については[こちら](../transform-model/desktop-measures.md)をご覧ください。 
+    - 数値フィールドについては、"*定義済みのメジャー*" を使用する必要があります。 電卓シンボルが横に付いています。 メジャーの作成方法については[こちら](../transform-model/desktop-measures.md)をご覧ください。 
 
         ![[メジャー] アイコン](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
@@ -204,7 +204,7 @@ Power BI レポート内とレポート ビルダー内とでデータを同じ�
 
 余白とテーブルの列の幅を狭くしても、空白のページが残ってしまうことがあります。 なぜでしょうか。 原因は数学的な話です。 
 
-ページの余白として設定した値と、レポートの " *本体* " の幅の値を足した結果が、レポートの形式の幅よりも小さくなっている必要があります。
+ページの余白として設定した値と、レポートの "*本体*" の幅の値を足した結果が、レポートの形式の幅よりも小さくなっている必要があります。
 
 たとえば、レポートの形式が 8.5" x 11" で、横の余白をそれぞれ 0.75 に設定しているとします。 2 つの余白は合計 1.5" になるので、本体の幅は 7" インチ未満にする必要があります。
 
@@ -222,6 +222,7 @@ Power BI レポート内とレポート ビルダー内とでデータを同じ�
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項 
 
 - Analysis Services に対するライブ接続を使用しているデータセットには、共有データセットではなく基になる Analysis Services 接続を使用すると、直接接続できます。
+- Power BI レポート ビルダーで DirectQuery を使用する Power BI データセットを使用する場合は、レポートにメジャーを表示する予定がない場合でも、データセットにメジャーを含める必要があります。 メジャーが含まれていないと、データセットで適切なデータ結果が返されません。
 - 推奨度が [昇格しました] または [認定済み] のデータセットは、使用可能なデータセットの一覧に表示されるものの、そのような推奨度を示すマークは付きません。 
 - "アプリ所有データ" シナリオでは、Power BI 共有データセットを基盤とし、ページ分割されたレポートを埋め込むことはできません。
 

@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/29/2020
-ms.openlocfilehash: 3173108abe6082c199cbf6ff1229ca57fde31064
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.date: 11/18/2020
+ms.openlocfilehash: 2989436c2a501447cab2d95e0ac1d3fad1fd99b6
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044781"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947026"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -23,6 +23,12 @@ ms.locfileid: "93044781"
 
 ## <a name="october-2020"></a>2020 年 10 月
 - **Power BI Report Server**
+    - *バージョン:1.9.7627.11028 (ビルド 15.0.1104.264)、リリース日:2020 年 11 月 18 日*
+        - バグの修正
+            - ユーザーがポータルを使用してサイト設定のフィールドを変更できない問題を修正しました。
+            - 'EnterData' データ ソースを使用している場合の Power BI レポートの更新に関する問題を修正しました。
+            - 拡張データセット メタデータを使用する一部のモデルの更新に関する問題を修正しました。
+            - 一部の Power BI レポートでレポート サーバーに発行できない問題を修正しました。
     - *バージョン:1.9.7604.41261 (ビルド 15.0.1104.239)、リリース日:2020 年 10 月 27 日*
          - 機能
             - Power BI Report Server で、拡張データセット メタデータのサポートが有効になりました。
@@ -197,7 +203,7 @@ ms.locfileid: "93044781"
                 - "ファイルまたはアセンブリ Microsoft.OData.Core.NetFX35.V7 を読み込むことができませんでした" というエラーで OData フィードのデータ更新が失敗する問題の修正
 
 - **Power BI Report Server**            
-    - " *バージョン 1.4.6969.7395 (ビルド 15.0.1102.235)、リリース日: 2019 年 1 月 30 日* "
+    - "*バージョン 1.4.6969.7395 (ビルド 15.0.1102.235)、リリース日: 2019 年 1 月 30 日*"
         - バグの修正
             - Power BI レポート
                 - 直接クエリを使う場合の基本資格情報に関する問題の修正
@@ -230,7 +236,7 @@ ms.locfileid: "93044781"
             - Power BI Mobile アプリ内でアイドル状態になると、ビジュアルによって問題が表示されます。
 
 - **Power BI Desktop (Power BI Report Server 用に最適化)**
-    - *バージョン:2.65.5313.1562 (2019 年 1 月)、リリース日:2019 年 1 月 30 日* "
+    - *バージョン:2.65.5313.1562 (2019 年 1 月)、リリース日:2019 年 1 月 30 日*"
         - Power BI Report Server のアンインストール後もショートカットとピン留めされたアイコンが残る
         - スタート メニューに Power BI Report Server をピン留めすると黒のアイコン上に黒のテキストが表示される問題の修正
 

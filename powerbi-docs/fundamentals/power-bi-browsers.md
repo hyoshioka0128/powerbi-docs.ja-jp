@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d218a0cfb66e57e6f52301f8c10bef5cfb137b4b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 340a4739065716e67f9fd1a7d7b78f875805f12b
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361867"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94946911"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Power BI のサポートされているブラウザー
 
-Power BI はこれらのサポートされているすべてのブラウザーで動作するように設計されていますが、選択したブラウザーによってパフォーマンスは異なります。 特に Internet Explorer を使用している場合は、パフォーマンスが低下する可能性があります。 パフォーマンスを向上させるには、Internet Explorer から Microsoft Edge などの最新のブラウザーに切り替えることを強くお勧めします。 Edge Chromium を使用すると、Microsoft Edge のパフォーマンスは引き続き向上することが期待されています。 それでも許容できないパフォーマンスが発生する場合は、サポートされている他の最新のブラウザーをテストして、Power BI ソリューションでより良い結果が得られるかどうかを確認します。
+Power BI はこれらのサポートされているすべてのブラウザーで動作するように設計されていますが、選択したブラウザーによってパフォーマンスは異なります。 特に Internet Explorer を使用している場合は、パフォーマンスが低下する可能性があります。 Internet Explorer から Microsoft Edge などの最新のブラウザーに切り替えることを強くお勧めします。 それでも許容できないパフォーマンスが発生する場合は、サポートされている他の最新のブラウザーをテストして、Power BI ソリューションでより良い結果が得られるかどうかを確認します。
 
 Power BI では、使用できるすべてのプラットフォームでこれらのブラウザーがサポートされます。
 
