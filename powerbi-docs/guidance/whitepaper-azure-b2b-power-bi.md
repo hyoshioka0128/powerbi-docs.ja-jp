@@ -2,19 +2,19 @@
 title: Azure Active Directory B2B を使用して外部ゲスト ユーザーに Power BI コンテンツを配布する
 description: Azure Active Directory B2B を使用して外部のゲストユーザーに Power BI を配布する方法について説明したホワイトペーパー
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: cc4387c3c1c0f83347823bbc6b95beb437b235e9
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 9bf2d1ab3b782d0fbb201e203aa9bb2f2df4079d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916891"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417096"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Azure Active Directory B2B を使用して外部ゲスト ユーザーに Power BI コンテンツを配布する
 
@@ -25,7 +25,7 @@ ms.locfileid: "92916891"
 **技術レビューアー:** Adam Wilson、Sheng Liu、Qian Liu、Sergei Gundorov、Jacob Grimm、Adam Saxton、Maya Shenhav、Nimrod Shalit、Elisabeth Olson
 
 > [!NOTE]
-> このホワイトペーパーを保存または印刷するには、ブラウザーから [ **印刷** ] を選択し、[ **PDF として保存** ] を選択します。
+> このホワイトペーパーを保存または印刷するには、ブラウザーから [ **印刷** ] を選択し、[ **PDF として保存**] を選択します。
 
 ## <a name="introduction"></a>はじめに
 
@@ -306,7 +306,7 @@ Power BI の Azure AD B2B との統合により、Contoso はシームレスで�
 
     その後、ゲストユーザーは、電子メールのリンクをクリックするかリンクをブックマークすることで、Contoso のアプリにアクセスできます。 Contoso では、ゲストユーザーが既に使用している既存のエクストラネットポータルにこのリンクを追加することで、ゲストユーザーの作業を容易にすることもできます。
 
-4. 次の手順
+4. 次のステップ
 
     Contoso は、Power BI アプリと Azure AD B2B を使用して、コードなしでサプライヤーの BI ポータルをすばやく作成できました。 これにより、標準化された分析を必要なすべてのサプライヤーに配布することが大幅に簡素化されました。
 
@@ -491,7 +491,7 @@ Power BI 管理ポータルでは、次の図に設定が表示されます。
 これらのユーザーが Power BI にログインできるようにするには、テナントの URL を指定します。 テナントの URL を見つけるには、次の手順に従います。
 
 1. Power BI サービスの上部のメニューで、[ヘルプ (?] を選択し **ます。** ) をクリックし、  **Power BI について説明** します。
-2. [  **テナント URL** ] の横にある値を探します。 これは、ゲストユーザーと共有できるテナント URL です。
+2. [  **テナント URL**] の横にある値を探します。 これは、ゲストユーザーと共有できるテナント URL です。
 
     ![テナントの URL](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
 

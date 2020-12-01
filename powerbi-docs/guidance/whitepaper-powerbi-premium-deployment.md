@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8d28146f5f4ee47697ada1d4663ae9899b660a9b
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 70584413a63f8566137b5e71cdd86011ac6c1acc
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916638"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416464"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Power BI Premium 容量のデプロイと管理
 
@@ -29,5 +29,5 @@ Power BI Premium のホワイトペーパーは、個別の記事で最新情報
 | [Premium 容量を最適化する](../admin/service-premium-capacity-optimize.md) | パフォーマンスの最適化のベストプラクティス、モデルの最適化、容量計画、およびテストアプローチ。 |
 | [Premium 容量のシナリオ](../admin/service-premium-capacity-scenarios.md) | 実際のシナリオにおける一般的な問題。これらの問題を特定し、解決することに重点を置いています。 |
 | [管理ポータルで容量を監視する](../admin/service-admin-premium-monitor-portal.md) | Power BI Premium 容量メトリックアプリで監視し、アプリに表示されるメトリックを解釈します。 |
-| [Power BI Premium のよく寄せられる質問](../admin/service-premium-faq.md) | 購入とライセンス、機能、および一般的なシナリオに関する質問への回答です。 |
+| [Power BI Premium のよくあるご質問](../admin/service-premium-faq.md) | 購入とライセンス、機能、および一般的なシナリオに関する質問への回答です。 |
 | | |
