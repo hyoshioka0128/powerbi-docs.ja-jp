@@ -5,22 +5,22 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: e4e65c26c9d1b5598ecf6b523649dc70722b7d79
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 35c118171ef5202e24e5997e321b698e3b137387
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634989"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396477"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Power BI で R を利用した Power BI ビジュアルを使用する
 
-**Power BI Desktop** および **Power BI サービス**では、R の知識がなく、R スクリプトを作成しなくても、R を利用した Power BI ビジュアルを使用できます。 これにより、自分で R を学習したりプログラミングを実行したりしなくても、R ビジュアルの分析や視覚機能に加え、R スクリプトを活用できます。
+**Power BI Desktop** および **Power BI サービス** では、R の知識がなく、R スクリプトを作成しなくても、R を利用した Power BI ビジュアルを使用できます。 これにより、自分で R を学習したりプログラミングを実行したりしなくても、R ビジュアルの分析や視覚機能に加え、R スクリプトを活用できます。
 
-R を利用した Power BI ビジュアルを使用するには、まず、使用したい R カスタム ビジュアルを、[**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) ギャラリーで Power BI 用の **Power BI ビジュアル**を選択してダウンロードします。
+R を利用した Power BI ビジュアルを使用するには、まず、使用したい R カスタム ビジュアルを、[**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) ギャラリーで Power BI 用の **Power BI ビジュアル** を選択してダウンロードします。
 
 ![R ビジュアル 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
@@ -42,14 +42,14 @@ R を利用した Power BI ビジュアルを使用するには、各ビジュ�
 
    ![R ビジュアル 2b](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2b.png)
 
-3. 関心のある**ビジュアル**をギャラリーから選択すると、ビジュアルに関する説明のページに移動します。 **[今すぐ入手する]** ボタンを選択してダウンロードします。
+3. 関心のある **ビジュアル** をギャラリーから選択すると、ビジュアルに関する説明のページに移動します。 **[今すぐ入手する]** ボタンを選択してダウンロードします。
 
    > [!NOTE]
-    > **Power BI Desktop** で作成している場合は、ローカル コンピューターに R をインストールしておく必要があります。 ただし、ユーザーが R を利用したビジュアルを **Power BI サービス**に表示したい場合は、R をローカルにインストールしておく必要はありません。
+    > **Power BI Desktop** で作成している場合は、ローカル コンピューターに R をインストールしておく必要があります。 ただし、ユーザーが R を利用したビジュアルを **Power BI サービス** に表示したい場合は、R をローカルにインストールしておく必要はありません。
 
    ![R ビジュアル 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   R は、R を利用した Power BI ビジュアルを **Power BI サービス**で使用するためにインストールする必要はありませんが、**Power BI Desktop** で使用する場合は、ローカル コンピューターにインストールする*必要があります*。 R は、次の場所からダウンロードできます。
+   R は、R を利用した Power BI ビジュアルを **Power BI サービス** で使用するためにインストールする必要はありませんが、**Power BI Desktop** で使用する場合は、ローカル コンピューターにインストールする *必要があります*。 R は、次の場所からダウンロードできます。
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
@@ -74,7 +74,7 @@ R を利用した Power BI ビジュアルを使用するには、各ビジュ�
 
     ![R ビジュアル 10](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_10.png)
 
-    他の **Power BI Desktop** ビジュアルと同様、その R を利用したビジュアルを含むこのレポートを **Power BI サービス**に発行し、他のユーザーと共有することができます。
+    他の **Power BI Desktop** ビジュアルと同様、その R を利用したビジュアルを含むこのレポートを **Power BI サービス** に発行し、他のユーザーと共有することができます。
 
     新しいビジュアルが頻繁に追加されるため、ライブラリはこまめに確認してください。
 
@@ -90,7 +90,7 @@ R を利用した Power BI ビジュアルを使用するには、各ビジュ�
 
 ## <a name="contribute-r-powered-power-bi-visuals"></a>R を利用した Power BI ビジュアルを投稿する
 
-レポートで使う作成したご自分用の R ビジュアルは、**Power BI ビジュアル ギャラリー**に投稿して世界に公開できます。 投稿は GitHub を通じて行われるため、その処理については次の場所で説明されています。
+レポートで使う作成したご自分用の R ビジュアルは、**Power BI ビジュアル ギャラリー** に投稿して世界に公開できます。 投稿は GitHub を通じて行われるため、その処理については次の場所で説明されています。
 
 * [R を利用した Power BI ビジュアル ギャラリーに投稿する](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 

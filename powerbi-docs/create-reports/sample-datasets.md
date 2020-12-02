@@ -2,20 +2,20 @@
 title: Power BI のサンプルを入手する
 description: Power BI のコンテンツ パック、アプリ、.pbix ファイル、Excel データセットのサンプル
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: a268247d13fdfe71e17e5c0a6fafeeb635b96984
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 2e14a81c6ae04048f85fae417b354a110436fc50
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953055"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396202"
 ---
 # <a name="get-samples-for-power-bi"></a>Power BI のサンプルを入手する
 Power BI を初めて試してみたくてもデータがない場合や、  または、Power BI の機能の一部を示すレポートを表示したいと思う場合があります。 そのような場合でもご利用いただけます。
@@ -245,7 +245,7 @@ ObviEnce は、Microsoft Business Intelligence に重点を置いた ISV およ�
 
 ### <a name="explore-excel-samples-inside-excel"></a>Excel 内で Excel のサンプルを調べる
 
-(省略可能) Excel ブックのデータが Power BI のデータセットやレポートにどのように変換されるのかを確認したい場合は、 Excel のサンプルを *Excel で*開いてワークシートを調べると、理解する役に立ちます。
+(省略可能) Excel ブックのデータが Power BI のデータセットやレポートにどのように変換されるのかを確認したい場合は、 Excel のサンプルを *Excel で* 開いてワークシートを調べると、理解する役に立ちます。
 
 - 最初にサンプル Excel ブックを開くと、2 つの警告が表示されることがあります。 1 つ目の警告は、ブックが保護ビューになっていることを示します。 **[編集を有効にする]** を選択してください。 2 つ目の警告は、ブックに外部データ接続があることを示します。 **[コンテンツの有効化]** を選択してください。
 - 各ブックには、複数の Power View シートが含まれています。 Excel で Power View シートを表示する場合、レジストリ キーのパッケージをダウンロードし、[Power View アドインを有効にする](https://support.office.com/article/flash-silverlight-and-shockwave-controls-blocked-in-microsoft-office-55738f12-a01d-420e-a533-7cef1ff6aeb1)必要があります。

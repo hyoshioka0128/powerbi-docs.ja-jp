@@ -2,18 +2,18 @@
 title: Power BI Q&A を使用してビジュアルを探索および作成する
 description: Power BI Q&A を使ってダッシュボードとレポートに新しい視覚化を作成する方法。
 author: maggiesMSFT
+ms.author: maggies
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/13/2019
-ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c1dc3da67cf6160360833e8702fdc492fa97b803
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 01ab8e63785680ea4fcd30cee170297f1cf1d674
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633494"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396132"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>Power BI Q&A を使用してデータを探索しビジュアルを作成する
 
@@ -59,7 +59,7 @@ Power BI サービス (app.powerbi.com) のダッシュボードには 1 つ以�
 
    ![Q&A。横棒グラフで表された州別の店舗数](media/power-bi-tutorial-q-and-a/power-bi-qna-stores-by-state-bar-chart.png)
 
-1. 質問を入力すると、Power BI によりダッシュボードにタイルがあるデータセットを使って最善の回答が検索されます。  すべてのタイルが *datasetA*のものである場合、回答は *datasetA*から取得されます。  タイルが *datasetA* と *datasetB* のものである場合、Q&A はそれら 2 つのデータセットで最適な回答を検索します。
+1. 質問を入力すると、Power BI によりダッシュボードにタイルがあるデータセットを使って最善の回答が検索されます。  すべてのタイルが *datasetA* のものである場合、回答は *datasetA* から取得されます。  タイルが *datasetA* と *datasetB* のものである場合、Q&A はそれら 2 つのデータセットで最適な回答を検索します。
 
    > [!TIP]
    > そのため *datasetA* からのタイルが 1 つしかない場合は、それをダッシュボードから削除すると、Q&A が *datasetA* にアクセスできなくなるのでご注意ください。

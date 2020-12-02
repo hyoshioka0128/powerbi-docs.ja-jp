@@ -2,19 +2,19 @@
 title: R を使用した Power BI ビジュアルの作成
 description: Power BI Desktop では、R エンジンを使用してデータを視覚化できます。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 11/04/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 96d33351ba1f0d96cac71548854c94810cfdc692
-ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
+ms.openlocfilehash: 0e86e99dd02f202a9bbce36ecb7b6eb9085a34f6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928288"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396339"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>R を使用した Power BI ビジュアルの作成
 Power BI Desktop では、*R* を使用してデータを視覚化できます。 [R](https://mran.revolutionanalytics.com/documents/what-is-r) は、統計コンピューティングおよびグラフィックス用の言語であり環境です。
@@ -54,7 +54,7 @@ R をインストールすると、Power BI Desktop によって自動的に有�
 
 3. **[視覚エフェクト]** ペインの **[値]** セクションで、他の Power BI Desktop ビジュアルの場合と同様に、ご自分の R スクリプトで使用する **[フィールド]** ペインからフィールドをドラッグします。 あるいは、 **[フィールド]** ペインでフィールドを直接選択することもできます。
     
-    ご自分の R スクリプトで使用できるのは、 **[値]** セクションに追加したフィールドだけです。 **R スクリプト エディター**で R スクリプトを処理しているときに、新しいフィールドを追加したり、 **[値]** セクションから不要なフィールドを削除したりできます。 Power BI Desktop では、追加または削除したフィールドが自動的に検出されます。
+    ご自分の R スクリプトで使用できるのは、 **[値]** セクションに追加したフィールドだけです。 **R スクリプト エディター** で R スクリプトを処理しているときに、新しいフィールドを追加したり、 **[値]** セクションから不要なフィールドを削除したりできます。 Power BI Desktop では、追加または削除したフィールドが自動的に検出されます。
    
    > [!NOTE]
    > R ビジュアルの既定の集計タイプは、 *[集計しない]* です。
@@ -64,11 +64,11 @@ R をインストールすると、Power BI Desktop によって自動的に有�
 4. これで、選択したデータを使用して、プロットを作成できます。 
 
     - フィールドを選択すると、**R スクリプト エディター** によって、エディター ペインの上部にあるグレー表示のセクション内の該当するフィールドに対してサポート R スクリプトのバインド コードが生成されます。
-    - フィールドを削除すると、**R スクリプト エディター**によってそのフィールドのサポート コードが自動的に削除されます。
+    - フィールドを削除すると、**R スクリプト エディター** によってそのフィールドのサポート コードが自動的に削除されます。
    
    次のイメージに示される例では、HP、gear、および drat の 3 つのフィールドが選択されました。 これらの選択の結果として、R スクリプト エディターでは、次のようにまとめられたバインド コードが生成されます。
    
-   * **データセット**と呼ばれるデータフレームを作成します。これは、ユーザーが選択したさまざまなフィールドで構成されます。
+   * **データセット** と呼ばれるデータフレームを作成します。これは、ユーザーが選択したさまざまなフィールドで構成されます。
    * 既定の集計は、 *[集計しない]* です。
    * テーブル ビジュアルと同様、フィールドはグループ化され、重複する行は一度だけ表示されます。
    

@@ -2,19 +2,19 @@
 title: Power BI の小売りの分析のサンプル:ツアーを開始する
 description: Power BI の小売りの分析のサンプル:ツアーを開始する
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/02/2019
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 373e5bfe3d52bf319ad68d766f268518a167012f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1a3a4bc467299f7baeb12ca68af1d2730d5839f0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349082"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395994"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Power BI の小売りの分析のサンプル:ツアーを開始する
 
@@ -75,7 +75,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
    ![[総売上差異 %] グラフ](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
 
-   **FD-01** 地区は **1 平方フィートあたりの売上**の平均が最も高く、FD-02 は昨年に比べて **[総売上差異]** が最も小さくなっています。 FD-03 と FD-04 は全体的に業績が最低です。
+   **FD-01** 地区は **1 平方フィートあたりの売上** の平均が最も高く、FD-02 は昨年に比べて **[総売上差異]** が最も小さくなっています。 FD-03 と FD-04 は全体的に業績が最低です。
 4. 個々のバブルまたは他のグラフをクリックすると、クロス強調表示が表示され、選択箇所による影響が明らかになります。
 5. ダッシュボードに戻るには、上部のナビ ペインから **[小売りの分析のサンプル]** を選びます。
 

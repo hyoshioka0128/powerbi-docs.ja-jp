@@ -1,21 +1,21 @@
 ---
 title: 米国の州政府および地方自治体向けの COVID-19 の追跡サンプル
 description: COVID-19 のパンデミックに対する米国の州および地域のデータを使用したサンプル レポートをダウンロードして変更します。
-author: LukaszPawlowski-MS
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: maggies
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 04/28/2020
-ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: aca7fc70bc70de553eee070ce5e1522b96c94880
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: e6f8e02efa7dc2e56a945aaffcf22d8497052404
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83277895"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396017"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>米国の州政府および地方自治体向けの COVID-19 の追跡サンプル
 
@@ -87,7 +87,7 @@ USAFacts データは、帰属を必要とする Creative Commons ライセン�
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-azure-blob.png" alt-text="[匿名] を選択":::
 
  
-3. **プライバシー レベルを無視**が表示されている場合は選択して、 **[保存]** を選択します。 
+3. **プライバシー レベルを無視** が表示されている場合は選択して、 **[保存]** を選択します。 
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-privacy-levels.png" alt-text="プライバシー レベルの選択":::
 

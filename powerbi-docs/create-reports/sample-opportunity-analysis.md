@@ -2,19 +2,19 @@
 title: Power BI の営業案件の分析のサンプル:ツアーを開始する
 description: Power BI の営業案件の分析のサンプル:ツアーを開始する
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/02/2019
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 93ad6136362f81c7dedf25cbe23e251fbb8ac92f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 63bbbedd24facfdd485f14b96eb608efc001dd55
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348967"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395810"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Power BI の営業案件の分析のサンプル:ツアーを開始する
 
@@ -96,7 +96,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 * 営業案件数の観点では、東部が最大の地域です。  
 * **[Opportunity Count by Region]\(地域別の営業案件数\)** 円グラフで、各地域を順番に選択して地域別のページをフィルター処理します。 各地域で、パートナーはより多くの大規模案件を追求していることに注目してください。   
 * **[Opportunity Count by Partner Driven and Opportunity Size]\(パートナー主導別の営業案件と営業案件サイズ\)** 縦棒グラフに、大規模案件のほとんどがパートナー主導であり、中小規模案件の多くがパートナー主導でないことが示されます。
-* **[営業段階別の営業案件数]** 横棒グラフで、各**営業段階**を順番に選択して地域別数の相違を確認します。 東部地域の営業案件数が最大ですが、ソリューション、提案、最終の営業段階では、この 3 つの地域すべてにおいて数が同等であることに注目してください。 この結果は、中部と西部の地域ではより高い割合で契約を獲得していることを意味します。
+* **[営業段階別の営業案件数]** 横棒グラフで、各 **営業段階** を順番に選択して地域別数の相違を確認します。 東部地域の営業案件数が最大ですが、ソリューション、提案、最終の営業段階では、この 3 つの地域すべてにおいて数が同等であることに注目してください。 この結果は、中部と西部の地域ではより高い割合で契約を獲得していることを意味します。
 
 ### <a name="revenue-analysis-page"></a>[Revenue Analysis]\(売上分析\) ページ
 このページでも同様にデータを観察しますが、数ではなく収益の分析観点を使用します。  

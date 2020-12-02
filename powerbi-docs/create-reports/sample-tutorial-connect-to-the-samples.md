@@ -2,25 +2,25 @@
 title: 小売りの分析のサンプルを探索する
 description: Power BI サービスと Power BI Desktop に小売りの分析のサンプルをインストールして探索する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 257385b42cb31c691c649abe4ea5ad5a88453f7c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 87296ca881550180ec62262def3aff44eead956b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349680"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395730"
 ---
 # <a name="explore-the-retail-analysis-sample"></a>小売りの分析のサンプルを探索する
 
 このチュートリアルでは、次の方法を紹介します。 
-- 小売りの分析のサンプル コンテンツ パックをインポートして Power BI サービスに追加し、コンテンツを開きます。 *コンテンツ パック*は、データセットにダッシュボードやレポートがバンドルされているタイプのサンプルです。 
+- 小売りの分析のサンプル コンテンツ パックをインポートして Power BI サービスに追加し、コンテンツを開きます。 *コンテンツ パック* は、データセットにダッシュボードやレポートがバンドルされているタイプのサンプルです。 
 - 小売りの分析のサンプルの .pbix ファイルを Power BI Desktop で開きます。
 
 背景情報の詳細については、「[Power BI 用のサンプル データセット](sample-datasets.md)」を参照してください。 その記事では、入手方法、保存場所、使用方法、各サンプルのストーリーなど、サンプルに関するすべてがわかります。 
@@ -110,7 +110,7 @@ Power BI サービスでレポートを編集する場合とは異なり、Power
 1. レポートエディターの詳細については、「[Power BI でのレポート エディターのツアー](service-the-report-editor-take-a-tour.md)」を参照してください。
 
 ## <a name="whats-in-your-report"></a>レポートには何が入っていますか?
-サンプルの .pbix ファイルをダウンロードすると、レポートだけでなく、*基になるデータセット*もダウンロードされます。 ファイルを開くと、Power BI Desktop では、データとそれに関連するクエリやリレーションシップが読み込まれます。 基になるデータやリレーションシップを表示できますが、クエリ エディターで基になるクエリを表示することはできません。
+サンプルの .pbix ファイルをダウンロードすると、レポートだけでなく、*基になるデータセット* もダウンロードされます。 ファイルを開くと、Power BI Desktop では、データとそれに関連するクエリやリレーションシップが読み込まれます。 基になるデータやリレーションシップを表示できますが、クエリ エディターで基になるクエリを表示することはできません。
 
 
 1. テーブル アイコン ![テーブル アイコン](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png) を選択し、[[データ ビュー]](../connect-data/desktop-data-view.md) に切り替えてください。

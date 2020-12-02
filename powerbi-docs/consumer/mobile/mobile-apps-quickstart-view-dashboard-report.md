@@ -2,18 +2,18 @@
 title: 'クイック スタート: モバイル アプリでダッシュボードとレポートを調べる'
 description: このクイック スタートでは、Power BI モバイル アプリでサンプルのダッシュボードとレポートを調べます。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
-ms.author: painbar
-ms.openlocfilehash: 52728d6cb2daa1bb2753454e8b19a7e06800d080
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 35a942826c76ed1c202bcc5a3450c65374402c46
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668507"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397558"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>クイック スタート: Power BI モバイル アプリでダッシュボードとレポートを調べる
 このクイックスタートでは、Power BI Mobile アプリのクイック ツアーを行い、サンプルのダッシュボードとレポートについて説明します。 iOS 用 Power BI アプリが表示されますが、他のデバイスでも簡単に理解することができます。
@@ -25,7 +25,7 @@ ms.locfileid: "91668507"
 | iPhone | iPad | Android | Windows 10 |
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ダッシュボードは、会社のライフ サイクルとプロセスへの入口です。 ビジネスの現在の状態を 1 つの場所から監視する概要が表示されます。 レポートは、データの対話型表示で、データから得られるさまざまな発見と分析情報を表す視覚エフェクトが含まれます。 
 

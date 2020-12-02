@@ -2,23 +2,23 @@
 title: Power BI Desktop でパフォーマンス アナライザーを使用してレポート要素のパフォーマンスを確認する
 description: リソースの使用状況と応答性に関して、ビジュアルとレポート要素がどのように動作しているかを確認します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/23/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 58cf8d2339663e4c02fda732fd4abd9c4c498576
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 6168a1fb8d64444b703c6acac21c3bac67c4219a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239105"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396500"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>パフォーマンス アナライザーを使用してレポート要素のパフォーマンスを確認する
 
-**Power BI Desktop** では、各レポート要素 (ビジュアルや DAX の数式など) がどのように動作しているかを確認できます。 **パフォーマンス アナライザー**を使用すると、ユーザーがレポートの各要素を操作したときに各要素がどのように動作するか、リソースの消費量が最も大きい (または最も小さい) のはパフォーマンスのどの側面かを測定するログを表示して記録できます。
+**Power BI Desktop** では、各レポート要素 (ビジュアルや DAX の数式など) がどのように動作しているかを確認できます。 **パフォーマンス アナライザー** を使用すると、ユーザーがレポートの各要素を操作したときに各要素がどのように動作するか、リソースの消費量が最も大きい (または最も小さい) のはパフォーマンスのどの側面かを測定するログを表示して記録できます。
 
 ![パフォーマンス アナライザー](media/desktop-performance-analyzer/performance-analyzer-01.png)
 

@@ -2,25 +2,25 @@
 title: Power BI で相対日付のスライサーまたはフィルターを使用する
 description: Power BI で相対的な日付範囲を制限するスライサーまたはフィルターを使う方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: rien
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5599c26524ba296b7cd201467c48f124b9843b4d
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 8d83a2b655c7a4dd788e34ce5744daaac0f73f63
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412834"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397443"
 ---
 # <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Power BI での相対日付のスライサーおよびフィルターの作成
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
-**相対日付スライサー** または **相対日付フィルター** では、データ モデルの任意の日付列に時間ベースのフィルターを適用することができます。 たとえば、 **相対日付スライサー** を使って、過去 30 日間 (または 1 か月、カレンダー月など) に発生した販売データのみを表示できます。 データを更新すると、相対期間によって適切な相対日付制約が自動的に適用されます。
+**相対日付スライサー** または **相対日付フィルター** では、データ モデルの任意の日付列に時間ベースのフィルターを適用することができます。 たとえば、**相対日付スライサー** を使って、過去 30 日間 (または 1 か月、カレンダー月など) に発生した販売データのみを表示できます。 データを更新すると、相対期間によって適切な相対日付制約が自動的に適用されます。
 
 ![相対日付スライサーを指す矢印を示すレポートのスクリーンショット。](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
@@ -28,7 +28,7 @@ Power BI を使用する同僚とレポートを共有するには、それぞ�
 
 ## <a name="create-the-relative-date-range-slicer"></a>相対日付範囲スライサーを作成する
 
-他のスライサーと同じように相対日付スライサーを使用できます。 レポートの **スライサー** ビジュアルを作成し、 **[フィールド]** 値の日付値を選択します。 次の図では、" *OrderDate* " フィールドが選択されています。
+他のスライサーと同じように相対日付スライサーを使用できます。 レポートの **スライサー** ビジュアルを作成し、 **[フィールド]** 値の日付値を選択します。 次の図では、"*OrderDate*" フィールドが選択されています。
 
 ![スライサー ビジュアル アイコンとフィールドを指す矢印を示す [視覚化] ウィンドウのスクリーンショット。](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
 
@@ -36,11 +36,11 @@ Power BI を使用する同僚とレポートを共有するには、それぞ�
 
 ![カラットの周りに呼び出しがあるスライサー ビジュアルと、相対を指す矢印のスクリーンショット。](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
-相対日付スライサーの場合は、" *相対* " を選びます。
+相対日付スライサーの場合は、"*相対*" を選びます。
 
 その後、設定を選択できます。
 
-" *相対日付スライサー* " の最初の設定には、次の選択肢があります。
+"*相対日付スライサー*" の最初の設定には、次の選択肢があります。
 
 ![最初の設定が呼び出されている相対構成オプションのスクリーンショット。](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
@@ -48,7 +48,7 @@ Power BI を使用する同僚とレポートを共有するには、それぞ�
 * 次へ
 * この
 
-" *相対日付スライサー* " の 2 番目 (真ん中) の設定では、数字を入力して、相対的な日付範囲を定義できます。
+"*相対日付スライサー*" の 2 番目 (真ん中) の設定では、数字を入力して、相対的な日付範囲を定義できます。
 
 ![2 番目の設定が呼び出されている相対構成オプションのスクリーンショット。](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04a.png)
 
@@ -64,14 +64,14 @@ Power BI を使用する同僚とレポートを共有するには、それぞ�
 * 年
 * 年 (暦)
 
-一覧から " **月** " を選択して、真ん中の設定で *2* と入力した場合、次のような状態になります。
+一覧から "**月**" を選択して、真ん中の設定で *2* と入力した場合、次のような状態になります。
 
 * 今日が 7 月 20 日の場合:
 
     - スライサーによって制約されるビジュアルに含まれているデータには、前の 2 か月間のデータが表示されます
     - 5 月 21 日から 7 月 20 日 (今日の日付) まで
 
-一方、" *月 (暦)* " を選択すると、制約されたビジュアルに、5 月 1 日から 6 月 30 日 (過去 2 カレンダー月) までのデータが表示されます。
+一方、"*月 (暦)* " を選択すると、制約されたビジュアルに、5 月 1 日から 6 月 30 日 (過去 2 カレンダー月) までのデータが表示されます。
 
 ## <a name="create-the-relative-date-range-filter"></a>相対日付範囲フィルターを作成する
 
@@ -89,7 +89,7 @@ Power BI を使用する同僚とレポートを共有するには、それぞ�
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 
-現在、 **相対日付範囲スライサー** とフィルターには次の制限事項と考慮事項が適用されています。
+現在、**相対日付範囲スライサー** とフィルターには次の制限事項と考慮事項が適用されています。
 
 * スライサーのフィールドのデータ型は、既定のテキストではなく日付である必要があります。 そうしないと、関連するオプションがスライサーに表示されません。
 * **Power BI** のデータ モデルには、タイム ゾーン情報が含まれていません。 モデルは時間を保存できますが、タイム ゾーンの指定はありません。

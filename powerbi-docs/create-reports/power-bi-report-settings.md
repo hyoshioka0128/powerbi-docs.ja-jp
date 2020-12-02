@@ -2,19 +2,19 @@
 title: Power BI レポートの設定を変更する
 description: Power BI サービスでレポートの設定を変更する
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: dd87501a6865b9ea450e3154ee2ac56e0710a067
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: dbb173c65ecfc5d1ca464387ed43ae615cdcbca1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92463083"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396178"
 ---
 # <a name="change-settings-for-power-bi-reports"></a>Power BI レポートの設定を変更する
 
@@ -43,7 +43,7 @@ Power BI Desktop および Power BI サービスのレポート設定を使用�
 1. **[ファイル]**  >  **[オプションと設定]**  >  **[オプション]** の順に選択します。
 1. **[現在のファイル]** の **[レポートの設定]** を選択します。
 
-    :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Power BI サービスでの [レポートの設定] ウィンドウのスクリーンショット":::
+    :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Power BI Desktop での [レポートの設定] ウィンドウのスクリーンショット":::
 
     この記事の残りの部分では、いくつかの特定のレポート設定に注目します。
 
@@ -51,7 +51,7 @@ Power BI Desktop および Power BI サービスのレポート設定を使用�
 
 1. レポートの読み取りビューで、 **[ファイル]**  >  **[設定]** の順に選択します。
 
-    :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="Power BI サービスでの [レポートの設定] ウィンドウのスクリーンショット":::
+    :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="[ファイル] メニューから [設定] までのスクリーンショット。":::
 
 1. **[設定]** ウィンドウに、このレポートに対して設定できるトグルが複数表示されます。 この記事の残りの部分では、それらのいくつかに注目します。
 
@@ -63,7 +63,7 @@ Power BI Desktop および Power BI サービスのレポート設定を使用�
 
 現在、Power BI サービス内で変更できるのは [ページ ウィンドウ] 設定のみです。 **[ページ ウィンドウ]** をオンに切り替えると、レポートの閲覧者にはレポート ページ タブが、読み取りビュー内のレポートの側部に沿ってではなく、下部に沿って表示されます。 編集ビューでは、レポート ページ タブは既にレポートの下部に配置されています。
 
-:::image type="content" source="media/power-bi-report-settings/report-settings-pages-pane.png" alt-text="Power BI サービスでの [レポートの設定] ウィンドウのスクリーンショット":::
+:::image type="content" source="media/power-bi-report-settings/report-settings-pages-pane.png" alt-text="[ページ ウィンドウ] の設定のスクリーンショット。":::
 
 ## <a name="control-filters"></a>フィルターを制御する
 
