@@ -2,19 +2,19 @@
 title: Power BI サブスクリプションを新しいローカル ドイツ リージョンに移行する
 description: Microsoft Cloud ドイツ (Microsoft Cloud Deutschland) の既存のお客様が Power BI ユーザーを新しいローカル ドイツ リージョンに移行する方法について説明します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/02/2020
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 978483407176b9902989b8feb0f41f577d4ed14f
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 7ce58c58934503e51531d204c02c976e244e57e5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668231"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96408482"
 ---
 # <a name="migrate-your-subscription-to-the-new-local-german-regions"></a>サブスクリプションを新しいローカル ドイツ リージョンに移行する
 

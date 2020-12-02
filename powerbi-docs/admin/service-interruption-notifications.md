@@ -2,18 +2,18 @@
 title: サービス中断の通知
 description: Power BI サービスの中断または停止が発生したときに、電子メール通知を受信する方法について学習します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2020
-ms.author: kfollis
-ms.openlocfilehash: 8b9c10c8b3faa87cfc19c3c1d8f87a36de0307dd
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: e5d8f43a8edb6dc05b58cb62836e98cf209c8b5c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916132"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407816"
 ---
 # <a name="service-interruption-notifications"></a>サービス中断の通知
 
@@ -27,7 +27,7 @@ ms.locfileid: "92916132"
 - モデルの更新の信頼性
 - クエリの更新の信頼性
 
-通知は、レポートの表示、データセットの更新、クエリの実行などの操作で " _長い待ち時間_ " が生じると送信されます。 インシデントが解決されると、フォローアップの電子メールを受信します。
+通知は、レポートの表示、データセットの更新、クエリの実行などの操作で "_長い待ち時間_" が生じると送信されます。 インシデントが解決されると、フォローアップの電子メールを受信します。
 
 > [!NOTE]
 > 現在、この機能は Power BI Premium の容量に対してのみ使用できます。 共有や埋め込み容量には使用できません。

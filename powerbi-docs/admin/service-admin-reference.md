@@ -2,19 +2,19 @@
 title: 管理者のための PowerShell コマンドレット、REST API、.NET クライアント ライブラリ
 description: スクリプトとプログラミング API を使って Power BI を管理する方法について説明します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c26d169a4c8ef876d1fe92e4967b07c982f510db
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 6afc49e0d2fe67c89d906d4715959892868b0027
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856877"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96408092"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-client-library-for-power-bi-administration"></a>Power BI 管理のための PowerShell コマンドレット、REST API、.NET クライアント ライブラリ
 Power BI では、管理者が PowerShell コマンドレットを使用して一般的なタスクのスクリプトを作成できます。 REST API も公開され、管理ソリューションを開発する .NET クライアント ライブラリが提供されています。 このトピックでは、コマンドレットの一覧と、それに対応する API と REST API エンドポイントを示します。 詳細については、次のトピックを参照してください。

@@ -2,20 +2,20 @@
 title: 新しいワークスペースを作成する - Power BI
 description: 組織に主要なメトリックを提供するために作成されたダッシュボード、レポート、およびページ分割されたレポートのコレクションである、新しいワークスペースを作成する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/04/2020
-ms.author: maggies
 ms.custom: contperfq1, contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: c75d4d911bb53ef0f9804996bbc1d78db3f787f5
-ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
+ms.openlocfilehash: 41f58d6561b76aa747f521b98477af3bc8492a8f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89511967"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407517"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Power BI で新しいワークスペースを作成する
 
@@ -36,7 +36,7 @@ ms.locfileid: "89511967"
    
      ![新しいワークスペース エクスペリエンスのスクリーンショット。](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     **[クラシックに戻す]** を選択した場合は、Microsoft 365 グループに基づいて[クラシック ワークスペースを作成](service-create-workspaces.md)します。
+     **[クラシックに戻す]** を選択した場合は、Microsoft 365 グループに基づいて [クラシック ワークスペースを作成](service-create-workspaces.md)します。
 
 2. ワークスペースに一意の名前を付けます。 名前が使用できない場合は、一意の名前になるように編集します。
    
@@ -44,11 +44,11 @@ ms.locfileid: "89511967"
    
 1. ワークスペースに対しては次のオプション項目を設定できます。
 
-    - **ワークスペースのイメージ**をアップロードします。 .png または .jpg 形式のファイルを使用できます。 ファイル サイズは 45 KB 未満にする必要があります。 
+    - **ワークスペースのイメージ** をアップロードします。 .png または .jpg 形式のファイルを使用できます。 ファイル サイズは 45 KB 未満にする必要があります。 
     - Microsoft 365 グループ ファイルの保存場所を使用するために、[ワークスペースの OneDrive を指定します](#set-a-workspace-onedrive)。    
     - [連絡先リストを追加します](#create-a-contact-list)。 既定では、ワークスペース管理者が連絡先になります。 
     - このワークスペースで[共同作成者にアプリの更新を許可します](#allow-contributors-to-update-the-app)
-    - **専用の容量**にワークスペースを割り当てるには、 **[Premium]** タブで **[専用の容量]** を選択します。
+    - **専用の容量** にワークスペースを割り当てるには、 **[Premium]** タブで **[専用の容量]** を選択します。
 
         ![専用容量のスクリーンショット。](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "89511967"
 
 Microsoft 365 グループ メンバーシップを使用してワークスペースにアクセスできるように構成されたユーザーまたはグループのアクセス許可は、Power BI では同期されません。 ベスト プラクティスは、ファイル ストレージをこの Microsoft 365 グループ設定で構成するのと同じ Microsoft 365 グループに、[ワークスペースへのアクセス権](#give-access-to-your-workspace)を付与することです。 次に、Microsoft 365 グループのメンバーシップを管理して、ワークスペースへのアクセスを管理します。 
 
-1. 新しい**ワークスペース OneDrive** の設定には、次の 2 つの方法のいずれかでアクセスします。
+1. 新しい **ワークスペース OneDrive** の設定には、次の 2 つの方法のいずれかでアクセスします。
 
     最初に作成するときに **[ワークスペースの作成]** ウィンドウで。
 

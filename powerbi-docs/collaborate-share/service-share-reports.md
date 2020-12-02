@@ -2,20 +2,20 @@
 title: Power BI レポートのフィルター処理と共有
 description: Power BI レポートをフィルター処理し、組織内の同僚と共有する方法を説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 01/29/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2988f02b8207eafe5155073af9acc60dcb0a81cf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0e086b6ab5ce3411697607bfbda25bb0b82c6dca
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225327"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406620"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Power BI レポートのフィルター処理と共有
 "*共有*" は、自分のダッシュボードおよびレポートに他のユーザーがアクセスできるようにするのによい方法です。 フィルター処理されたバージョンのレポートを共有したい場合は、どうすればよいでしょうか。 特定の都市または営業担当者または年のデータのみをレポートに表示したい場合があります。 この記事では、レポートをフィルター処理し、フィルター処理されたバージョンのレポートを共有する方法について説明します。 フィルター処理されたレポートを共有するには、[レポートの URL にクエリ パラメーターを追加する](service-url-filters.md)方法もあります。 いずれの場合でも、受信者が最初にレポートを開くときにレポートがフィルター処理されます。 レポートのフィルター選択は、クリアすることができます。

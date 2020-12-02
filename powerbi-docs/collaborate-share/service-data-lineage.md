@@ -2,19 +2,19 @@
 title: データ系列
 description: 最新のビジネス インテリジェンス (BI) プロジェクトでは、データ ソースから宛先へのデータ フローを理解することが、お客様の多くにとって重要な課題です。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
-ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 76dd059d59daed5916e9d28692ef018dd7465749
-ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
+ms.openlocfilehash: d2cd60a62d321910e280ebd8b38411b393d96bca
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94946980"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407402"
 ---
 # <a name="data-lineage"></a>データ系列
 最新のビジネス インテリジェンス (BI) プロジェクトでは、データ ソースから宛先へのデータ フローを理解することが課題となる可能性があります。 複数のデータ ソース、成果物、および依存関係にまたがる高度な分析プロジェクトを構築した場合、この課題はさらに大きくなります。 "このデータを変更すると、どうなりますか?"  または、"このレポートが最新の状態ではないのはなぜですか" などの質問に 答えるのは難しい場合があります。 そのような質問を理解するには、専門家のチームまたは詳細な調査が必要な場合があります。 私たちは、そのような質問への回答に役立つデータ系列ビューを設計しました。

@@ -6,16 +6,16 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 06/28/2020
-ms.openlocfilehash: 44e82a3f51af606d4e5cd6f70b13b9a8db4641fe
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: 6a1f8a69db20d44fc814c7e63e4ad13ed5fc955c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135892"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407379"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>SharePoint Online にレポート Web パーツを埋め込む
 
@@ -82,7 +82,7 @@ SharePoint Online にレポートを埋め込んだだけで、レポートを�
 > [!IMPORTANT]
 > Power BI サービスでレポートを表示できるユーザーを確認し、一覧に含まれないユーザーにアクセスを許可します。
 
-Power BI でレポートへのアクセスを許可するには 2 つの方法があります。 1 番目の方法は、Microsoft 365 グループを使用して SharePoint Online のチーム サイトを構築している場合、**Power BI サービス内のワークスペース**および **SharePoint ページ**のメンバーとしてユーザーを指定することです。 詳細については、[ワークスペースを管理する](service-manage-app-workspace-in-power-bi-and-office-365.md)方法に関するページを参照してください。
+Power BI でレポートへのアクセスを許可するには 2 つの方法があります。 1 番目の方法は、Microsoft 365 グループを使用して SharePoint Online のチーム サイトを構築している場合、**Power BI サービス内のワークスペース** および **SharePoint ページ** のメンバーとしてユーザーを指定することです。 詳細については、[ワークスペースを管理する](service-manage-app-workspace-in-power-bi-and-office-365.md)方法に関するページを参照してください。
 
 2 番目の方法は、アプリ内にレポートを埋め込んでユーザーと直接に共有することです。  
 
@@ -144,7 +144,7 @@ SharePoint Online 用の Power BI Web パーツに対して調整できる設定
 
 ## <a name="licensing"></a>ライセンス
 
-ユーザーが SharePoint 内でレポートを閲覧するには、**Power BI Pro ライセンス**を所有しているか、またはレポートのコンテンツが **[ Power BI Premium 容量 (EM または P SKU)](../admin/service-admin-premium-purchase.md)** 内のワークスペースに置かれている必要があります。
+ユーザーが SharePoint 内でレポートを閲覧するには、**Power BI Pro ライセンス** を所有しているか、またはレポートのコンテンツが **[ Power BI Premium 容量 (EM または P SKU)](../admin/service-admin-premium-purchase.md)** 内のワークスペースに置かれている必要があります。
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 

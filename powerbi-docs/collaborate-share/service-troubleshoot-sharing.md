@@ -2,19 +2,20 @@
 title: ダッシュボードとレポートの共有に関するトラブルシューティング
 description: 組織内の同僚や組織外のユーザーと Power BI のダッシュボードやレポートを共有する場合の問題を解決する方法。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
 ms.date: 06/23/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ef78847829ef292a16856a1597a53c95e7d20708
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 89d0ddbbcdd5caf47256fc85864590e55a1caa86
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85486750"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406667"
 ---
 # <a name="troubleshoot-sharing-dashboards-and-reports"></a>ダッシュボードとレポートの共有に関するトラブルシューティング
 

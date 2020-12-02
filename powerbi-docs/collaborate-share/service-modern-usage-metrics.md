@@ -6,16 +6,16 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 08/31/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c4f9d83d612d8f8d442fc5267be66a2a5cf288a2
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: c5690492d3a54ae244e0104d0134414f1b6d9c96
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116617"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407333"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>新しいワークスペース エクスペリエンスで使用状況メトリックを監視する (プレビュー)
 
@@ -105,7 +105,7 @@ ms.locfileid: "92116617"
 [利用状況の指標に関するレポート] データセットを引き継いで資格情報を更新するには、次の手順を実行します。
 
 1. [利用状況の指標に関するレポート] データセットを更新したいレポートが含まれているワークスペースを開きます。
-2. 上部の黒いヘッダー バーで、**設定**アイコンを選択し、 **[設定]** を選択します。
+2. 上部の黒いヘッダー バーで、**設定** アイコンを選択し、 **[設定]** を選択します。
 
     ![[設定] を選択する](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 
@@ -161,8 +161,8 @@ ms.locfileid: "92116617"
 
 レポートのデータを詳しく調べたり、基になるデータセットに対して独自のレポートを作成したりするには、いくつかのオプションがあります。
 
-- **Power BI サービスで[レポートのコピーを作成します](#create-a-copy-of-the-usage-report)。**   **[コピーの保存]** を使用して、利用状況の指標に関するレポートの個別のインスタンスを作成します。これは、特定のニーズに合わせてカスタマイズできます。
-- **新しいレポートを使用して[データセットに接続します](#create-a-new-usage-report-in-power-bi-desktop)。**   上記の「[利用状況の指標に関するレポートのデータセット](#usage-metrics-report-dataset)」セクションで説明したように、すべてのワークスペースについて、データセットの名前は [利用状況の指標に関するレポート] になります。 Power BI Desktop を使用して、基になるデータセットに基づくカスタムの利用状況の指標に関するレポートを作成することができます。
+- **Power BI サービスで [レポートのコピーを作成します](#create-a-copy-of-the-usage-report)。**   **[コピーの保存]** を使用して、利用状況の指標に関するレポートの個別のインスタンスを作成します。これは、特定のニーズに合わせてカスタマイズできます。
+- **新しいレポートを使用して [データセットに接続します](#create-a-new-usage-report-in-power-bi-desktop)。**   上記の「[利用状況の指標に関するレポートのデータセット](#usage-metrics-report-dataset)」セクションで説明したように、すべてのワークスペースについて、データセットの名前は [利用状況の指標に関するレポート] になります。 Power BI Desktop を使用して、基になるデータセットに基づくカスタムの利用状況の指標に関するレポートを作成することができます。
 - **[[Excel で分析] を使用します](#analyze-usage-data-in-excel)。**   Microsoft Excel 2010 SP1 以降のピボットテーブル、グラフ、スライサー機能を利用して、Power BI の利用状況データを分析することもできます。 [[Excel で分析]](service-analyze-in-excel.md) 機能に関する詳細をご覧ください。
 
 ### <a name="create-a-copy-of-the-usage-report"></a>利用状況レポートのコピーを作成する
@@ -351,7 +351,7 @@ Power BI は別個の国内クラウドで利用できます。 これらのク�
 
 1. [利用状況の指標に関するレポート] データセットをリセットしたいレポートが含まれているワークスペースを開きます。
 
-2. 上部の黒いヘッダー バーで、**設定**アイコンを選択し、 **[設定]** を選択します。
+2. 上部の黒いヘッダー バーで、**設定** アイコンを選択し、 **[設定]** を選択します。
 
     ![[設定] を選択する](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 

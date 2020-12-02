@@ -2,22 +2,22 @@
 title: クラシック ワークスペースで共同作業する
 description: ワークスペース内の Power BI Desktop ファイルに対して共同作業を行い、OneDrive for Business でのファイルの共有、Exchange での会話、予定表、およびタスクなどの Microsoft 365 サービスを使用する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 07/25/2019
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fdfe212825cc522aa7965f46d112ece4a1db35c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9017d5c938ec0382e2fb27b00e7fe08945e10a5b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226801"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407632"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>クラシック ワークスペースで共同作業する
-Power BI ワークスペースは、同僚とダッシュ ボード、レポート、データセットで共同作業して*アプリ*を作成するのに最適な場所です。 この記事では、オリジナルである*クラシック* ワークスペースについて説明します。  
+Power BI ワークスペースは、同僚とダッシュ ボード、レポート、データセットで共同作業して *アプリ* を作成するのに最適な場所です。 この記事では、オリジナルである *クラシック* ワークスペースについて説明します。  
 
 コラボレーションは Power BI のワークスペースだけで終わるわけではありません。 Power BI でいずれかのクラシック ワークスペースを作成すると、バックグラウンドで Microsoft 365 グループが自動的に作成されます。 Microsoft 365 では、OneDrive for Business でのファイルの共有、Exchange での会話、共有された予定表やタスクなど、その他のグループ サービスも提供されています。 詳細については、[Microsoft 365 のグループ](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)に関する記事をご覧ください。
 
@@ -44,7 +44,7 @@ Power BI Desktop ファイルを作成した後、ワークスペースにいる
 ## <a name="collaborate-in-microsoft-365"></a>Microsoft 365 で共同作業する
 Microsoft 365 で共同作業するには、まず Power BI のクラシック ワークスペースから作業を開始します。
 
-1. Power BI サービスで、 **[ワークスペース]** の横にある矢印を選択し、目的のワークスペース名の横にある**その他のオプション** (...) を選択します。 
+1. Power BI サービスで、 **[ワークスペース]** の横にある矢印を選択し、目的のワークスペース名の横にある **その他のオプション** (...) を選択します。 
    
    ![[ワークスペース] メニュー](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. このメニューから、いくつかの方法でグループと共同作業できます。 
@@ -55,7 +55,7 @@ Microsoft 365 で共同作業するには、まず Power BI のクラシック �
    Microsoft 365 で初めてグループ ワークスペースにアクセスする際は、しばらく時間がかかる場合があります。 15 ～ 30 分待ってからブラウザーを更新してください。
 
 ## <a name="have-a-group-conversation-in-microsoft-365"></a>Microsoft 365 のグループ会話を行う
-1. ワークスペース名の横から**その他のオプション** (...) \> **[会話]** の順に選択します。 
+1. ワークスペース名の横から **その他のオプション** (...) \> **[会話]** の順に選択します。 
    
     ![[会話] タブ](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -65,7 +65,7 @@ Microsoft 365 で共同作業するには、まず Power BI のクラシック �
 2. 詳細については、[Microsoft 365 の Outlook でのグループ会話](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22)に関するページをご覧ください。
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>グループ ワークスペースの予定表でのイベント スケジュール作成
-1. ワークスペース名の横から**その他のオプション** (...) \> **[予定表]** の順に選択します。 
+1. ワークスペース名の横から **その他のオプション** (...) \> **[予定表]** の順に選択します。 
    
    ![[予定表] タブ](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
