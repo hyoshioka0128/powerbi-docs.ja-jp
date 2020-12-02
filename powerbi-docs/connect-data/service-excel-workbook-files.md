@@ -2,19 +2,19 @@
 title: Excel ブック ファイルからデータを取得する
 description: Excel ブック ファイルから Power BI にデータを取り込む方法について説明します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 09/06/2019
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 870e3dbdc4b18422b0565834764b996d3f096ebf
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 0411cceb056d3471b3084a38916b83c815a0ae3b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264428"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410369"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Excel ブック ファイルからデータを取得する
 ![Excel アイコン](media/service-excel-workbook-files/excel_icon.png)
@@ -52,7 +52,7 @@ Power BI のために Excel ブックを準備する方法を学習するには�
 ## <a name="where-your-workbook-file-is-saved-makes-a-difference"></a>ブック ファイルの保存場所による違い
 **ローカル** - コンピューターのローカル ドライブまたは組織内の別の場所にブック ファイルを保存した場合、ファイルを Power BI に読み込むことができます。 実際はファイルがローカル ドライブに残ったままになるため、本当にファイル全体が Power BI にインポートされるわけではありません。 実際には、Power BI に新しいデータセットが作成され、ブックから取得したデータと (もしあれば) データ モデルがそのデータセットに読み込まれるという処理が発生しています。 ブックに Power View シートが含まれている場合、これらのシートは Power BI サイトの [レポート] の下に表示されます。 また、Excel 2016 には **[発行]** 機能があります ( **[ファイル]** メニューの下)。 **[発行]** を使用することは、Power BI で **[データの取得]、[ファイル]、[ローカル ファイル]** を順にクリックするのと事実上同じことです。しかし、ブックに定期的に変更を加えるのであれば、多くの場合 [発行] を使った方が Power BI のデータセットを簡単に更新できます。
 
-**OneDrive - ビジネス用** – OneDrive for Business を利用していて、Power BI にサインインするときと同じアカウントを使ってサインインした場合、Excel 内の作業内容と Power BI のデータセット、レポート、およびダッシュボードとを最も効果的に同期できます。Power BI と OneDrive はどちらもクラウドにあるため、Power BI は約 1 時間ごとに OneDrive 上のブック ファイルに*接続*します。 なんらかの変更が見つかった場合には、データセット、レポート、およびダッシュボードが Power BI で自動的に更新されます。 ローカル ドライブにブックを保存した場合と同様に、[発行] を使って Power BI のデータセットとレポートを直ちに更新することもできます。[発行] を実行しなかった場合には、Power BI で (通常 1 時間以内に) 自動的に同期が行われます。
+**OneDrive - ビジネス用** – OneDrive for Business を利用していて、Power BI にサインインするときと同じアカウントを使ってサインインした場合、Excel 内の作業内容と Power BI のデータセット、レポート、およびダッシュボードとを最も効果的に同期できます。Power BI と OneDrive はどちらもクラウドにあるため、Power BI は約 1 時間ごとに OneDrive 上のブック ファイルに *接続* します。 なんらかの変更が見つかった場合には、データセット、レポート、およびダッシュボードが Power BI で自動的に更新されます。 ローカル ドライブにブックを保存した場合と同様に、[発行] を使って Power BI のデータセットとレポートを直ちに更新することもできます。[発行] を実行しなかった場合には、Power BI で (通常 1 時間以内に) 自動的に同期が行われます。
 
 **OneDrive - 個人用** – 自身の OneDrive アカウントにブック ファイルを保存すると、OneDrive for Business の場合と同じメリットが多数得られます。 最も大きな違いは、([データの取得]、[ファイル]、[OneDrive - 個人用] の順に選択して) ファイルに初めて接続するときに、Microsoft アカウントを使って OneDrive にサインインする必要があるという点です (このアカウントは通常、Power BI へのサインインに使うものとは異なります)。 Microsoft アカウントを使って OneDrive にサインインするときは、[サインインしたままにする] オプションを必ず選択してください。 これにより、Power BI は、約 1 時間ごとにブック ファイルに接続して、Power BI のデータセットとレポートの同期を保つことができます。
 
@@ -111,7 +111,7 @@ Excel 2016 では、[発行] を選択して [アップロード] すること�
 ![[レポート] セクションのスクリーンショット。選択したレポートと Excel データが表示されています。](media/service-excel-workbook-files/excel_import_9.png)
 
 ## <a name="publish-from-excel-2016-to-your-power-bi-site"></a>Excel 2016 から Power BI サイトへの発行
-Excel 2016 で **Power BI へ発行する機能**を使うことは、ファイルのインポートと接続に Power BI で **[データの取得]** を使用するのと事実上同じことです。 ここでは詳しく説明しません。詳しくは「[Excel 2016 から Power BI へ発行する](service-publish-from-excel.md)」をご覧ください。
+Excel 2016 で **Power BI へ発行する機能** を使うことは、ファイルのインポートと接続に Power BI で **[データの取得]** を使用するのと事実上同じことです。 ここでは詳しく説明しません。詳しくは「[Excel 2016 から Power BI へ発行する](service-publish-from-excel.md)」をご覧ください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 ブック ファイルが大きすぎると考えられる場合は、 「[Power BI で表示する Excel ブックのサイズを減らす](reduce-the-size-of-an-excel-workbook.md)」をご覧ください。

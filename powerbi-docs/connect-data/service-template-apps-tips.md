@@ -2,25 +2,25 @@
 title: Power BI でのテンプレート アプリの作成に関するヒント
 description: テンプレート アプリをよくするためのクエリ、データ モデル、レポート、およびダッシュボードの作成に関するヒントです
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
-ms.openlocfilehash: 4530a6579a3109a2696c77a79a3a5a1c6b8092dd
-ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
+ms.openlocfilehash: bb48b92df81a49ee687376ee9f53428c10171b80
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348061"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410116"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Power BI でのテンプレート アプリの作成に関するヒント
 
 Power BI で[テンプレート アプリを作成する](service-template-apps-create.md)場合、その一部は、ワークスペースの作成のロジスティクス、そのテスト、および運用です。 しかし、他の重要な部分がレポートとダッシュボードの作成であることは明らかです。 作成プロセスは、4 つの主要なコンポーネントに分割できます。 これらのコンポーネントについて作業すれば、可能な限り最高のテンプレート アプリを作成できます。
 
-* **クエリ** では、データを [接続](desktop-connect-to-data.md)して [変換](../transform-model/desktop-query-overview.md)し、 [パラメーター](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)を定義します。 
-* **データ モデル** では、 [リレーションシップ](../transform-model/desktop-create-and-manage-relationships.md)、 [メジャー](../transform-model/desktop-measures.md)、および Q&A の機能強化を作成します。  
+* **クエリ** では、データを [接続](desktop-connect-to-data.md)して [変換](../transform-model/desktop-query-overview.md)し、[パラメーター](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)を定義します。 
+* **データ モデル** では、[リレーションシップ](../transform-model/desktop-create-and-manage-relationships.md)、[メジャー](../transform-model/desktop-measures.md)、および Q&A の機能強化を作成します。  
 * **[レポート ページ](../create-reports/desktop-report-view.md)** には、データに対する分析情報を提供するためのビジュアルとフィルターが含まれます。  
 * **[ダッシュボード](../consumer/end-user-dashboards.md)** と [タイル](../create-reports/service-dashboard-create.md)では、含まれている分析情報の概要が提供されます。
 * サンプル データにより、アプリはインストール直後に検出可能になります。

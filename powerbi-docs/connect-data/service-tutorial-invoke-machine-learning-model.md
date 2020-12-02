@@ -2,24 +2,24 @@
 title: チュートリアル:Power BI での Machine Learning Studio (クラシック) モデルの呼び出し (プレビュー)
 description: このチュートリアルでは、Power BI で Machine Learning Studio (クラシック) モデルを呼び出します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 03/12/2019
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4124799f15bbccd7c82428d1290ae2ae6420311f
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: c59e0fff95f611fbe84586af64db7a532285d72b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397118"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410208"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>チュートリアル:Power BI での Machine Learning Studio (クラシック) モデルの呼び出し (プレビュー)
 
-このチュートリアルでは、 **Azure Machine Learning Studio (クラシック)** モデルから得た分析情報を Power BI に取り込む方法を順を追って説明します。 このチュートリアルには、Power BI ユーザーに Azure ML モデルへのアクセス権を付与する、データフローを作成する、および Azure ML モデルから得られた分析情報をデータフローに適用するためのガイダンスが含まれています。 また、Azure ML モデルがまだない場合は、モデルを作成するためのクイック スタート ガイドも参照します。
+このチュートリアルでは、**Azure Machine Learning Studio (クラシック)** モデルから得た分析情報を Power BI に取り込む方法を順を追って説明します。 このチュートリアルには、Power BI ユーザーに Azure ML モデルへのアクセス権を付与する、データフローを作成する、および Azure ML モデルから得られた分析情報をデータフローに適用するためのガイダンスが含まれています。 また、Azure ML モデルがまだない場合は、モデルを作成するためのクイック スタート ガイドも参照します。
 
 このチュートリアルでは、以下の手順を行います。
 
@@ -87,13 +87,13 @@ Power BI から Azure ML モデルにアクセスするには、Azure サブス�
 
 ![データ ソースの選択](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_07.png)
 
-次の画面で、データ ソースに接続するように求められます。 Azure ML モデルの作成に使用したデータへのリンクを貼り付けます。 " _自動車価格_ " データを使用した場合は、次のリンクを **[File path or URL]\(ファイル パスまたは URL\)** ボックスに貼り付けて、 **[次へ]** を選択します。
+次の画面で、データ ソースに接続するように求められます。 Azure ML モデルの作成に使用したデータへのリンクを貼り付けます。 "_自動車価格_" データを使用した場合は、次のリンクを **[File path or URL]\(ファイル パスまたは URL\)** ボックスに貼り付けて、 **[次へ]** を選択します。
 
 `https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
 ![データ ソースに接続する](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
-Power Query エディターに、CSV ファイル内のデータのプレビューが表示されます。 コマンドのリボンから **[テーブルの変換]** を選択し、 **[先頭の行を見出しとして使用]** を選択します。  これにより、 _[昇格されたヘッダー数]_ クエリのステップが、右側の **[適用したステップ]** ウィンドウに追加されます。 右側のウィンドウを使用して、クエリ名を " _自動車価格_ " などのわかりやすい名前に変更することもできます。
+Power Query エディターに、CSV ファイル内のデータのプレビューが表示されます。 コマンドのリボンから **[テーブルの変換]** を選択し、 **[先頭の行を見出しとして使用]** を選択します。  これにより、 _[昇格されたヘッダー数]_ クエリのステップが、右側の **[適用したステップ]** ウィンドウに追加されます。 右側のウィンドウを使用して、クエリ名を "_自動車価格_" などのわかりやすい名前に変更することもできます。
 
 ![データのプレビューを表示する Power Query エディターのスクリーンショット。](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
@@ -103,12 +103,12 @@ Power Query エディターに、CSV ファイル内のデータのプレビュ�
 
 Text/CSV ソースのテーブル内の列は、すべてテキスト列として扱われます。  次は、数値の列を適切なデータ型に変更する必要があります。  これを行うには、Power Query 内で、列ヘッダーのデータ型のシンボルをクリックします。  各列を次の型に変更します。
 
-- **整数** :  symboling、normalized-losses、curb-weight、engine-size、horsepower、peak-rpm、city-mpg、highway-mpg、price
-- **10 進数** :  wheel-base、length、width、height、bore、stroke、compression-ratio
+- **整数**:  symboling、normalized-losses、curb-weight、engine-size、horsepower、peak-rpm、city-mpg、highway-mpg、price
+- **10 進数**:  wheel-base、length、width、height、bore、stroke、compression-ratio
 
 ![列の変更](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_11.png)
 
-**[完了]** を選択して Power Query エディターを閉じます。 これで、追加した " _自動車価格_ " データとエンティティの一覧が表示されます。 右上隅で **[保存]** を選択し、データフローの名前を指定したら、 **[保存]** を選択します。
+**[完了]** を選択して Power Query エディターを閉じます。 これで、追加した "_自動車価格_" データとエンティティの一覧が表示されます。 右上隅で **[保存]** を選択し、データフローの名前を指定したら、 **[保存]** を選択します。
 
 ![データフローの保存](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_12.png)
 
@@ -126,7 +126,7 @@ Text/CSV ソースのテーブル内の列は、すべてテキスト列とし�
 
 ## <a name="apply-insights-from-your-azure-ml-model"></a>Azure ML モデルから得られた分析情報を適用する
 
-" _自動車価格の予測_ " の Azure ML モデルにアクセスするために、予測価格を追加する " _自動車価格_ " エンティティを編集することができます。
+"_自動車価格の予測_" の Azure ML モデルにアクセスするために、予測価格を追加する "_自動車価格_" エンティティを編集することができます。
 
 ![エンティティの編集](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_15.png)
 
@@ -134,13 +134,13 @@ Text/CSV ソースのテーブル内の列は、すべてテキスト列とし�
 
 ![編集](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-リボン内で **[AI 分析情報]** ボタンを選択した後、ナビ ペインのメニューから " _Azure Machine Learning Models_ " フォルダーを選択します。
+リボン内で **[AI 分析情報]** ボタンを選択した後、ナビ ペインのメニューから "_Azure Machine Learning Models_" フォルダーを選択します。
 
 自分がアクセス権を持っている Azure ML モデルが、プレフィックス *AzureML* の付いた Power Query 関数として一覧表示されます。  _AutomobilePricePrediction_ モデルに対応する関数をクリックすると、モデルの Web サービスのパラメーターが関数のパラメーターとして一覧表示されます。
 
 Azure ML モデルを呼び出すには、選択したエンティティのいずれかの列を、ドロップダウン リストからの入力として指定します。 入力ダイアログの左側にある列アイコンを切り替えることにより、入力として使用する定数値を指定することもできます。 列名が関数のパラメーター名のいずれかと一致すると、その列が自動的に入力として提案されます。  列名が一致しない場合は、ドロップダウン リストから選択できます。
 
-" _自動車価格の予測_ " モデルの場合、入力パラメーターは次のようになります。
+"_自動車価格の予測_" モデルの場合、入力パラメーターは次のようになります。
 
 - make
 - body-style
@@ -156,11 +156,11 @@ Azure ML モデルを呼び出すには、選択したエンティティのい�
 
 **[呼び出し]** を選択すると、Azure ML モデルの出力のプレビューが、エンティティ テーブルの新しい列として表示されます。 また、モデルの呼び出しが、クエリに適用されたステップとして表示されます。
 
-モデルの出力は、出力列内のレコードとして表示されます。 列を展開すると、個々の出力パラメーターを別々の列内に生成できます。 この例では、自動車の予測価格を含む " _Scored Labels_ " だけが必要です。  そのため、それ以外の選択を解除して **[OK]** を選択します。
+モデルの出力は、出力列内のレコードとして表示されます。 列を展開すると、個々の出力パラメーターを別々の列内に生成できます。 この例では、自動車の予測価格を含む "_Scored Labels_" だけが必要です。  そのため、それ以外の選択を解除して **[OK]** を選択します。
 
 ![モデルの出力](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_18.png)
 
-結果の " *Scored Labels* " 列には、Azure ML モデルからの予測価格が含まれます。
+結果の "*Scored Labels*" 列には、Azure ML モデルからの予測価格が含まれます。
 
 ![Scored labels](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_19.png)
 

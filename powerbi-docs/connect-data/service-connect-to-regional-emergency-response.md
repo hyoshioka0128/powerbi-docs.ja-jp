@@ -2,18 +2,18 @@
 title: 地域的緊急応答ダッシュボードに接続する
 description: COVID-19 の地域的緊急応答用意思決定支援ダッシュボード テンプレート アプリを取得してインストールする方法、およびデータに接続する方法
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/24/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a6cb38d17a84ab41acda96f0564b12188c719254
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: b8cb2be15d084bba3fc2a70152165ce3b2909dab
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860741"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410553"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>地域的緊急応答ダッシュボードに接続する
 地域的緊急応答ダッシュボードは、[Microsoft Power Platform 地域的緊急応答ソリューション](/powerapps/sample-apps/regional-emergency-response/overview)のレポート コンポーネントです。 地域組織の管理者は、Power BI テナントのダッシュボードを表示して、効率的な意思決定を行うのに役立つ重要なデータとメトリックをすばやく確認することができます。
@@ -36,7 +36,7 @@ ms.locfileid: "90860741"
 
 1. アプリにアクセスするには、次のリンクをクリックします: [地域的緊急応答ダッシュボード テンプレート アプリ](https://appsource.microsoft.com/product/power-bi/powerapps_cxo.regional_response)
 
-1. アプリの [AppSource] ページで、[ **[今すぐ入手する]** ](https://appsource.microsoft.com/product/power-bi/powerapps_cxo.regional_response) を選択します。
+1. アプリの [AppSource] ページで、[ **[今すぐ入手する]**](https://appsource.microsoft.com/product/power-bi/powerapps_cxo.regional_response) を選択します。
 
     [![AppSource の地域的緊急応答ダッシュボード アプリ](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/product/power-bi/powerapps_cxo.regional_response)
 

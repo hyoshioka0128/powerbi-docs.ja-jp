@@ -2,19 +2,19 @@
 title: サインインした Power BI ユーザーを見つける
 description: ご自分が管理者であり、Power BI にサインインしたユーザーを確認したい場合は、Azure Active Directory アクセスと使用状況レポートを使用できます
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/25/2020
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: e278918fdcf19a8de5cd5af1995bbc050dd765ec
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 84d4b0ab295f003c34937084bd93dd6f27992c31
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374744"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409288"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>サインインした Power BI ユーザーを見つける
 

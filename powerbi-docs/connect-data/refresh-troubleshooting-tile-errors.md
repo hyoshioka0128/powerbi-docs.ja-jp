@@ -1,21 +1,21 @@
 ---
 title: タイルのエラーのトラブルシューティング
 description: Power BI のタイルの更新時に発生する一般的なエラー
-author: maggiesMSFT
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 12/06/2018
-ms.author: maggies
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 463275d98c72441264e5bae699d983eb34bb1058
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f82c6c97b954745e264fe213b5070a9a498de939
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320494"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410714"
 ---
 # <a name="troubleshooting-tile-errors"></a>タイルのエラーのトラブルシューティング
 次に、タイルで発生する可能性がある一般的なエラーとその説明を示します。

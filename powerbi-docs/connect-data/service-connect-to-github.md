@@ -2,18 +2,18 @@
 title: Power BI で GitHub に接続する
 description: Power BI 用 GitHub
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/19/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2e482c6efd60352721e1788a7929128af1b8cf89
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e92afdbad41f212ac93245583430ae44fe0abaf9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633632"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410645"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Power BI で GitHub に接続する
 この記事では、Power BI テンプレート アプリを使用して GitHub アカウントからデータをプルする手順について説明します。 このテンプレート アプリは、ダッシュボード、一連のレポート、およびデータセットを含むワークスペースを生成して、GitHub データの探索を可能にします。 Power BI 用の GitHub アプリは、投稿、問題、pull request、アクティブなユーザーなどに関するデータを含む、GitHub リポジトリ (リポジトリとも呼ばれます) の分析情報を示します。
@@ -35,7 +35,7 @@ ms.locfileid: "91633632"
 
 1. アプリにアクセスするには、次のリンクをクリックします: [GitHub テンプレート アプリ](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-1. アプリの [AppSource] ページで、[ **[今すぐ入手する]** ](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github) を選択します。
+1. アプリの [AppSource] ページで、[ **[今すぐ入手する]**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github) を選択します。
 
     [![AppSource の GitHub テンプレート アプリ](media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 

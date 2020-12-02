@@ -1,20 +1,20 @@
 ---
 title: データセットを共有する
 description: データセットの所有者として、データセットを作成し、他のユーザーが使用できるように共有することができます。 共有方法について説明します。
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: fd31c3b97eef80b0e4457fe6e61c1a8bf101db7b
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: c73c5b1b803b73742f6f13456b07a2060f5757e4
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252661"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410415"
 ---
 # <a name="share-a-dataset"></a>データセットを共有する
 

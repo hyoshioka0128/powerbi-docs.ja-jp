@@ -2,19 +2,19 @@
 title: データ ソースの管理 - Analysis Services
 description: オンプレミス データ ゲートウェイとそのゲートウェイに属しているデータ ソースを管理する方法。 これは Analysis Services での多次元および表形式モードの両方に当てはまります。
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 07/15/2019
-ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 521c1cbc60c6d616c06bde6b6826bb270d3ddba0
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 8cc8149d7b143dc0f100a8d7718343b9f668a294
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375306"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410346"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>データ ソースの管理 - Analysis Services
 
@@ -116,7 +116,7 @@ Active Directory 参照を実行するようにゲートウェイを構成する
 
 1. [最新のゲートウェイをダウンロードしてインストールします](/data-integration/gateway/service-gateway-install)。
 
-2. ゲートウェイで、オンプレミスのデータ ゲートウェイ サービスを、ローカル サービス アカウントではなくドメイン アカウントで実行するように変更します。 そうしないと、ランタイムに Active Directory 参照が正しく機能しません。 コンピューター上で[オンプレミス データ ゲートウェイ アプリ](/data-integration/gateway/service-gateway-app)に移動し、 **[サービス設定]**  >  **[サービス アカウントの変更]** の順に移動します。 新しいゲートウェイを作成しない場合は、同じコンピューター上でゲートウェイを復元する必要があるため、このゲートウェイの回復キーがあることを確認してください。 変更内容を有効にするには、ゲートウェイ サービスを再起動します。
+2. ゲートウェイで、オンプレミスのデータ ゲートウェイ サービスを、ローカル サービス アカウントではなくドメイン アカウントで実行するように変更します。 そうしないと、ランタイムに Active Directory 参照が正しく機能しません。 コンピューター上で [オンプレミス データ ゲートウェイ アプリ](/data-integration/gateway/service-gateway-app)に移動し、 **[サービス設定]**  >  **[サービス アカウントの変更]** の順に移動します。 新しいゲートウェイを作成しない場合は、同じコンピューター上でゲートウェイを復元する必要があるため、このゲートウェイの回復キーがあることを確認してください。 変更内容を有効にするには、ゲートウェイ サービスを再起動します。
 
 3. ゲートウェイのインストール フォルダー (*C:\Program Files\On-premises* data gateway) に移動し、管理者として書き込みアクセス許可があることを確認します。 *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* ファイルを開きます。
 

@@ -1,21 +1,21 @@
 ---
 title: Power BI での複合グラフ
 description: 複合グラフに関するこのチュートリアルでは、複合グラフを使用する状況と、Power BI サービスおよび Power BI Desktop.で複合グラフを作成する方法について説明します。
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89fdd0852db9560a6e2b0d43e03b9f89c61dd33e
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: f5731f8660fc27e6aef44878f5410819ce0c0eae
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411569"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409932"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Power BI で複合グラフを作成して使用する
 
@@ -87,7 +87,7 @@ Power BI の複合グラフは、折れ線グラフと縦棒グラフを組み�
 ## <a name="create-a-combo-chart-with-two-axes"></a>2 つの軸を持つ複合グラフを作成する
 このタスクでは、粗利と売上を比較します。
 
-1. **前年の粗利 (%)** を **会計年度** で追跡する新しい折れ線グラフを作成します。 省略記号を選択して、 **月ごと** に **昇順** で並べ替えます。  
+1. **前年の粗利 (%)** を **会計年度** で追跡する新しい折れ線グラフを作成します。 省略記号を選択して、**月ごと** に **昇順** で並べ替えます。  
 1 月の粗利 (%) は 35% で、4 月には最高値の 45% になり、7 月に下がって 8 月に再びピークに達しました。 前年と本年は同じ売上パターンになるでしょうか?
 
    ![売上の複合グラフの例](media/power-bi-visualization-combo-chart/combo1-new.png)

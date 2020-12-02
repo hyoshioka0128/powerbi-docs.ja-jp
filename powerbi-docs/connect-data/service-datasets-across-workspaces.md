@@ -1,20 +1,20 @@
 ---
 title: ワークスペース全体のデータセットの概要
 description: ワークスペースでのデータセットの共有と検出について説明します。 全組織内のユーザーは、各自のワークスペース内にあるデータセットに基づいてレポートを作成できます。
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 23d520815c47c9ff9f1ec045ec67921141e8eb7a
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 0569bf40728f0c1300ded9c9656cca639105e981
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681157"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410438"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>ワークスペース全体のデータセットの概要
 
@@ -22,7 +22,7 @@ ms.locfileid: "92681157"
 
 ![共有データセットを選択する](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Power BI では、データセットの作成者は、[ビルド アクセス許可](service-datasets-build-permissions.md)を使用することで、自分のデータにアクセスできるユーザーを制御できます。 データセットの作成者は、他のユーザーがデータセットを見つけられるよう、データセットを " *認定* " または " *昇格* " することもできます。 そうすることで、レポートの作成者は、どのデータセットが高品質かつ正式であるかを把握し、それらのデータセットを Power BI 内のあらゆる作成場所で使用できます。 管理者には、[ワークスペース全体でデータセットの使用を制御する](service-datasets-admin-across-workspaces.md)ための新しいテナント設定が与えられます。
+Power BI では、データセットの作成者は、[ビルド アクセス許可](service-datasets-build-permissions.md)を使用することで、自分のデータにアクセスできるユーザーを制御できます。 データセットの作成者は、他のユーザーがデータセットを見つけられるよう、データセットを "*認定*" または "*昇格*" することもできます。 そうすることで、レポートの作成者は、どのデータセットが高品質かつ正式であるかを把握し、それらのデータセットを Power BI 内のあらゆる作成場所で使用できます。 管理者には、[ワークスペース全体でデータセットの使用を制御する](service-datasets-admin-across-workspaces.md)ための新しいテナント設定が与えられます。
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>データセット共有と新しいワークスペース エクスペリエンス
 

@@ -1,20 +1,20 @@
 ---
 title: 基本的な面グラフ
 description: 基本的な面グラフです。
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/16/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4cc08398821d019d55475e0d4ed66a7633c49ca1
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 087aa281890d4b2702e6637bf3f1526ac331ea40
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411431"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409909"
 ---
 # <a name="create-and-use-basic-area-charts"></a>基本的な面グラフの作成と使用
 
@@ -72,7 +72,7 @@ ms.locfileid: "93411431"
 
 グラフ内の 1 つの特定の領域を強調表示するには、その領域または上部の境界を選びます。  他の視覚エフェクトの種類とは異なり、同じページに他の視覚エフェクトがある場合、基本的な面グラフを強調表示しても、レポート ページの他の視覚エフェクトはクロス フィルター処理されません。 ただし、面グラフは、レポート ページ上の他の視覚化によってトリガーされたクロス フィルター処理のターゲットになります。 
 
-1. 面グラフを選択し、 **New Store Analysis (新しい店舗の分析)** レポート ページにコピーしてみてください (Ctrl + C キーとCtrl + V キー)。
+1. 面グラフを選択し、**New Store Analysis (新しい店舗の分析)** レポート ページにコピーしてみてください (Ctrl + C キーとCtrl + V キー)。
 2. 面グラフの網掛けされた領域の 1 つを選択し、もう 1 つの網掛けされた領域を選択します。 ページのその他の視覚化には、何も影響がないことがわかります。
 1. 次に、要素を選択します。 面グラフの変化を確認してください。クロスフィルタリングされます。
 

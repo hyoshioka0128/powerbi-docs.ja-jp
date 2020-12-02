@@ -2,20 +2,20 @@
 title: ファイルから Power BI 用のデータを取得する
 description: Excel、Power BI Desktop、.csv ファイルから Power BI にデータを取得する方法について学習します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b7b886b5e0c21c77e0a5a6aca83fa0ae0751f435
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 7807968bad989895fa60df122c0e31ba4b823aa2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264105"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410162"
 ---
 # <a name="get-data-from-files-for-power-bi"></a>ファイルから Power BI 用のデータを取得する
 ![Excel、Power B I Desktop、および CSV アイコン](media/service-get-data-from-files/file_icons.png)
@@ -41,7 +41,7 @@ Power BI では、データセットは車のエンジンのようなもので�
 > 
 
 ## <a name="where-your-file-is-saved-makes-a-difference"></a>ファイルの保存場所による違い
-**ローカル** - コンピューターのローカル ドライブまたは組織内の別の場所にファイルを保存した場合、ファイルを Power BI に*インポート*できます。 実際はファイルがローカル ドライブに残ったままになるため、本当にファイル全体が Power BI にインポートされるわけではありません。 実際には、Power BI サイトに新しいデータセットが作成され、データ (場合によってはデータ モデル) がデータセットに読み込まれるという処理が発生しています。 ファイルにレポートが含まれている場合、これらのレポートは Power BI サイトの [レポート] に表示されます。
+**ローカル** - コンピューターのローカル ドライブまたは組織内の別の場所にファイルを保存した場合、ファイルを Power BI に *インポート* できます。 実際はファイルがローカル ドライブに残ったままになるため、本当にファイル全体が Power BI にインポートされるわけではありません。 実際には、Power BI サイトに新しいデータセットが作成され、データ (場合によってはデータ モデル) がデータセットに読み込まれるという処理が発生しています。 ファイルにレポートが含まれている場合、これらのレポートは Power BI サイトの [レポート] に表示されます。
 
 **OneDrive - ビジネス用** - OneDrive for Business を利用していて、Power BI にサインインするときと同じアカウントを使ってサインインした場合、Excel、Power BI Desktop、または .csv ファイル内の作業内容と Power BI のデータセット、レポート、およびダッシュボードとを最も効果的に同期できます。Power BI と OneDrive はどちらもクラウドにあるため、Power BI は約 1 時間ごとに OneDrive 上のファイルに接続します。 なんらかの変更が見つかった場合には、データセット、レポート、およびダッシュボードが Power BI で自動的に更新されます。
 

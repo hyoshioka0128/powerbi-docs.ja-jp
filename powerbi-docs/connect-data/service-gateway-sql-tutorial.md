@@ -2,19 +2,19 @@
 title: 'チュートリアル: SQL Server でオンプレミス データに接続する'
 description: データを更新する方法など、SQL Server をゲートウェイ データ ソースとして使用する方法について説明します。
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 07/15/2019
-ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ba518991145b727e141e1441f30ea73819bddb31
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83283510"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410277"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>オンプレミス SQL Server データベースからのデータを更新する
 
@@ -50,11 +50,11 @@ AdventureWorksDW サンプル データベースを使用して基本的な Powe
 
     ![SQL Server データベース](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
-    このチュートリアルでは**詳細設定オプション**は使用しませんが、SQL ステートメントを指定して [SQL Server フェールオーバー](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server)などの他のオプションを設定できることに注意してください。
+    このチュートリアルでは **詳細設定オプション** は使用しませんが、SQL ステートメントを指定して [SQL Server フェールオーバー](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server)などの他のオプションを設定できることに注意してください。
 
     ![SQL Server の詳細設定オプション](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
-3. **資格情報**を確認し、 **[接続]** を選択します。
+3. **資格情報** を確認し、 **[接続]** を選択します。
 
     > [!NOTE]
     > 認証できない場合は、必ず適切な認証方法を選択してデータベースへのアクセスを持つアカウントを使用するようにします。 テスト環境では、明示的なユーザー名とパスワードを指定してデータベース認証を使用することができます。 運用環境では、通常 Windows 認証を使用します。 「[更新に関するトラブルシューティング シナリオ](refresh-troubleshooting-refresh-scenarios.md)」を参照し、追加の支援についてデータベース管理者に問い合わせてください。
@@ -134,7 +134,7 @@ Power BI Desktop では、オンプレミス SQL Server データベースに直
 
 これで Power BI のデータセットをデータ ゲートウェイ経由でオンプレミスの SQL Server データベースに接続したので、次の手順を行い更新スケジュールを構成します。 スケジュールに基づいてデータセットを更新することで、レポートとダッシュボードに最新のデータが確実に表示されるようにすることができます。
 
-1. ナビゲーション ペインで、 **[マイ ワークスペース]** \> **[データセット]** の順に開きます。 **AdventureWorksProducts**データセットの省略記号 ( **. . .** ) を選択し、 **[更新のスケジュール設定]** を選択します。
+1. ナビゲーション ペインで、 **[マイ ワークスペース]** \> **[データセット]** の順に開きます。 **AdventureWorksProducts** データセットの省略記号 ( **. . .** ) を選択し、 **[更新のスケジュール設定]** を選択します。
 
     > [!NOTE]
     > 必ず、同じ名前のレポートの省略記号ではなく、**AdventureWorksProducts** データセットの省略記号を選択してください。 **AdventureWorksProducts** レポートのコンテキスト メニューには **[更新のスケジュール設定]** オプションは含まれていません。

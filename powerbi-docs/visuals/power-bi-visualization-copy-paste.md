@@ -1,20 +1,20 @@
 ---
 title: Power BI での視覚化のコピーと貼り付け
 description: Power BI での視覚化のコピーと貼り付け
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: maggie tsang
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/18/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd5fc361431268c37639a336923a4067176f1761
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: fda66910ac073421d4b17706dec70d6aa6e86499
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411063"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409886"
 ---
 # <a name="copy-and-paste-a-report-visualization"></a>レポートの視覚エフェクトをコピーして貼り付ける
 
@@ -30,7 +30,7 @@ Power BI レポートのビジュアルをレポート内のあるページか�
 
 視覚エフェクトをコピーして貼り付けるには、レポートの編集アクセス許可が必要です。 Power BI サービスでは、これはレポートを[編集ビュー](../consumer/end-user-reading-view.md)で開くことを意味します。 
 
-" *ダッシュボード* " の視覚エフェクトを、Power BI レポートやその他のダッシュボードにコピーして貼り付けることはできません。
+"*ダッシュボード*" の視覚エフェクトを、Power BI レポートやその他のダッシュボードにコピーして貼り付けることはできません。
 
 1. 少なくとも 1 つの視覚エフェクトが含まれるレポートを開きます。  
 
@@ -62,7 +62,7 @@ Power BI レポートまたはダッシュボードからイメージを共有�
 
     ![[クリップボードにコピー] オプションを含むダイアログ](media/power-bi-visualization-copy-paste/power-bi-copied.png)
 
-4. ビジュアルの準備ができたら、 **Ctrl + V** キーを使用して別のアプリケーションに貼り付けるか、右クリックして [貼り付け] を選択します。 以下のスクリーンショットでは、ビジュアルが Microsoft Word に貼り付けられています。 
+4. ビジュアルの準備ができたら、**Ctrl + V** キーを使用して別のアプリケーションに貼り付けるか、右クリックして [貼り付け] を選択します。 以下のスクリーンショットでは、ビジュアルが Microsoft Word に貼り付けられています。 
 
     ![Word に貼り付けられた視覚エフェクト](media/power-bi-visualization-copy-paste/power-bi-paste-word.png)
 
@@ -79,7 +79,7 @@ Power BI レポートまたはダッシュボードからイメージを共有�
     ![[クリップボードにコピー] オプションを含むダイアログ](media/power-bi-visualization-copy-paste/power-bi-copied.png)
 
 
-4. ビジュアルの準備ができたら、 **Ctrl + V** キーを使用して別のアプリケーションに貼り付けるか、右クリックして [貼り付け] を選択します。 次のスクリーンショットでは、ビジュアルがメールに貼り付けられています。
+4. ビジュアルの準備ができたら、**Ctrl + V** キーを使用して別のアプリケーションに貼り付けるか、右クリックして [貼り付け] を選択します。 次のスクリーンショットでは、ビジュアルがメールに貼り付けられています。
 
     ![Outlook に貼り付けられたビジュアル](media/power-bi-visualization-copy-paste/power-bi-copy-email.png)
 
@@ -111,7 +111,7 @@ Power BI レポートまたはダッシュボードからイメージを共有�
 
 #### <a name="disable-copy-as-an-image-for-a-group-of-users"></a>ユーザーのグループのイメージとしてのコピーを無効にする
 
-コンテンツを所有しているか、テナントの管理者である場合は、ビジュアルをコピーできるユーザーを制御できます。 この設定では、Power BI テナント内の、ユーザーがアクセスするすべてのコンテンツに対して、" *ビジュアルのイメージとしてのコピー* " を無効にします。
+コンテンツを所有しているか、テナントの管理者である場合は、ビジュアルをコピーできるユーザーを制御できます。 この設定では、Power BI テナント内の、ユーザーがアクセスするすべてのコンテンツに対して、"*ビジュアルのイメージとしてのコピー*" を無効にします。
   
 1. 管理ポータルに移動します。
 

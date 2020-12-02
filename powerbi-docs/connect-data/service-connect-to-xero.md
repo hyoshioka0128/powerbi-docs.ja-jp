@@ -2,18 +2,18 @@
 title: Power BI で Xero に接続する
 description: Power BI 用 Xero
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 03/06/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8ac9081e1cf7d6ec4ca53863c8111e56ae3ad68e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c942e399eb32fd7118d515f0d072972e3a820578
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231710"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410484"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Power BI で Xero に接続する
 Xero は、小規模な企業専用に設計された使いやすいオンライン会計ソフトウェアです。 この Power BI テンプレート アプリを使うと、Xero 財務をベースにした説得力のある視覚化を作成できます。 既定のダッシュボードには、現金持高、収益と経費、損益の傾向、債権回収までの日数、投資収益率など、小規模ビジネスで必要とされる多くのメトリックが組み込まれています。

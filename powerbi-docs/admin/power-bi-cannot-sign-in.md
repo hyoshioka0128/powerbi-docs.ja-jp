@@ -5,22 +5,22 @@ author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/25/2020
-ms.openlocfilehash: 00e1586b0b02167ee953ccd91237c71b0bb7c40d
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 2f6ed46060d9346342aa8469cf22072986f59aab
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374685"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409357"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Power BI のサインインに関する問題のトラブルシューティング
 
 この記事では、管理者が Power BI サインイン問題のためにサポートに連絡する方法について説明します。 Power BI ユーザーがサインインの問題に遭遇した場合、まず組織内のサポート チームと連携して取り組んでください。
 
-ただし、お客様が組織の**管理者**であるにもかかわらず、Power BI にサインインできない場合は、以下の手順に進みます。
+ただし、お客様が組織の **管理者** であるにもかかわらず、Power BI にサインインできない場合は、以下の手順に進みます。
 
 ## <a name="contact-microsoft-support"></a>Microsoft サポートに問い合わせる
 

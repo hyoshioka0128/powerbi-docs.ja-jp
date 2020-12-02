@@ -2,26 +2,26 @@
 title: OneDrive または SharePoint Online からデータセットを更新する
 description: OneDrive または SharePoint Online の Power BI Desktop ファイルから作成されたデータセットを更新する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
-ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e2144cc7460ea2eff84bbcc1e93f02c99d650b35
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 317b879e8e9d70019aa60b60a6586ac747dcc185
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216367"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410829"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>OneDrive または SharePoint Online に格納されているデータセットを更新する
 OneDrive または SharePoint Online から Power BI サービスへのファイルのインポートは、Power BI Desktop での作業と Power BI サービスとの同期を確実に維持するための優れた方法です。
 
 ## <a name="advantages-of-storing-a-power-bi-desktop-file-on-onedrive-or-sharepoint-online"></a>OneDrive または SharePoint Online に Power BI Desktop ファイルを保存することの利点
-Power BI Desktop ファイルを OneDrive または SharePoint Online に保存すると、ファイルのモデルに読み込んだすべてのデータがデータセットにインポートされます。 そのファイルに作成したすべてのレポートは、Power BI サービスの**レポート**に読み込まれます。 たとえば、OneDrive または SharePoint Online 上のファイルに変更を加えるとします。 これらの変更には、新しいメジャーの追加、列名の変更、視覚化の編集を含めることができます。 ファイルを保存すると、通常は約 1 時間内に Power BI サービスもそれらの変更と同期します。
+Power BI Desktop ファイルを OneDrive または SharePoint Online に保存すると、ファイルのモデルに読み込んだすべてのデータがデータセットにインポートされます。 そのファイルに作成したすべてのレポートは、Power BI サービスの **レポート** に読み込まれます。 たとえば、OneDrive または SharePoint Online 上のファイルに変更を加えるとします。 これらの変更には、新しいメジャーの追加、列名の変更、視覚化の編集を含めることができます。 ファイルを保存すると、通常は約 1 時間内に Power BI サービスもそれらの変更と同期します。
 
 **[ホーム]** リボンの **[更新]** を選択して、1 回限りの手動更新を Power BI Desktop で実行することができます。 **[更新]** を選択すると、ファイルのモデルが、元のデータ ソースの更新されたデータで最新に更新されます。 この種の更新は、完全に Power BI Desktop アプリケーション自体から行われます。 Power BI での手動またはスケジュールされた更新とは異なるため、違いを理解することが重要です。
 
@@ -68,7 +68,7 @@ Microsoft 資格情報を変更した場合は、OneDrive のファイルと Pow
 スケジュールされた更新を設定する方法について詳しくは、「[スケジュールされた更新の構成](refresh-scheduled-refresh.md)」をご覧ください。
 
 ## <a name="when-things-go-wrong"></a>問題が発生した場合
-問題が発生した場合は通常、Power BI がデータ ソースにサインインできないことが原因です。 データセットがオンプレミスのデータ ソースに接続しようとしたが、ゲートウェイがオフラインである場合も、問題が発生することがあります。 こうした問題を回避するために、Power BI がデータ ソースにサインインできることを確認してください。 **データ ソースの資格情報**でデータ ソースへのサインインを試してみてください。 データ ソースへのサインインに使用するパスワードが変更されたり、Power BI がデータ ソースからサインアウトされたりすることがあります。
+問題が発生した場合は通常、Power BI がデータ ソースにサインインできないことが原因です。 データセットがオンプレミスのデータ ソースに接続しようとしたが、ゲートウェイがオフラインである場合も、問題が発生することがあります。 こうした問題を回避するために、Power BI がデータ ソースにサインインできることを確認してください。 **データ ソースの資格情報** でデータ ソースへのサインインを試してみてください。 データ ソースへのサインインに使用するパスワードが変更されたり、Power BI がデータ ソースからサインアウトされたりすることがあります。
 
 OneDrive 上の Power BI Desktop ファイルに変更を保存して、1 時間ほど経過してもその変更内容が Power BI に表示されない場合、Power BI が OneDrive に接続できないことが原因である可能性があります。 OneDrive 上のファイルにもう一度接続してみてください。 サインインを求められた場合は、必ず **[サインアウトしない]** を選択します。 Power BI が OneDrive に接続してファイルと同期できなかったため、もう一度ファイルをインポートする必要があります。
 

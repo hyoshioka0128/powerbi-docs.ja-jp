@@ -2,31 +2,31 @@
 title: Power BI Desktop ファイルからデータを取得する
 description: Power BI Desktkop から Power BI にデータとレポートを取得する方法について学習します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3022c43f4c1af3098b24148ccb0bdadf6e0da521
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: e89f45d302216af8193029cb613b4e7a54365b8d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87363987"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410392"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Power BI Desktop ファイルからデータを取得する
 ![Power BI Desktop ファイル アイコン](media/service-desktop-files/pbid_file_icon.png)
 
 **Power BI Desktop** には、ビジネス インテリジェンスやレポートを容易にする機能があります。 多くの異なるデータ ソースへの接続、データのクエリと変換、データのモデル化、強力で動的なレポートの作成など、どのようなビジネス インテリジェンス タスクであっても、**Power BI Desktop** を利用すれば直感的にすばやく実行できます。 **Power BI Desktop** にまだ慣れていないユーザーは、まず「[Power BI Desktop の概要](../fundamentals/desktop-getting-started.md)」をお読みください。
 
-データを **Power BI Desktop** に取り込み、レポートをいくつか作成した後は、保存されているファイルを **Power BI サービス**に取得します。
+データを **Power BI Desktop** に取り込み、レポートをいくつか作成した後は、保存されているファイルを **Power BI サービス** に取得します。
 
 ## <a name="where-your-file-is-saved-makes-a-difference"></a>ファイルの保存場所による違い
-**ローカル** - コンピューターのローカル ドライブまたは組織内の別の場所にファイルを保存した場合、ファイルを Power BI に*インポート*できます。また、Power BI Desktop から*発行*して、データとレポートを Power BI に読み込むこともできます。 実際はファイルがローカル ドライブに残ったままになるため、本当にファイル全体が Power BI に移動されるわけではありません。 実際には、Power BI で新しいデータセットが作成され、Power BI Desktop ファイルから取得したデータとデータ モデルがそのデータセットに読み込まれるという処理が発生しています。 ファイルにレポートが含まれている場合、これらのレポートは Power BI サイトの [レポート] に表示されます。
+**ローカル** - コンピューターのローカル ドライブまたは組織内の別の場所にファイルを保存した場合、ファイルを Power BI に *インポート* できます。また、Power BI Desktop から *発行* して、データとレポートを Power BI に読み込むこともできます。 実際はファイルがローカル ドライブに残ったままになるため、本当にファイル全体が Power BI に移動されるわけではありません。 実際には、Power BI で新しいデータセットが作成され、Power BI Desktop ファイルから取得したデータとデータ モデルがそのデータセットに読み込まれるという処理が発生しています。 ファイルにレポートが含まれている場合、これらのレポートは Power BI サイトの [レポート] に表示されます。
 
-**OneDrive - ビジネス用** - OneDrive for Business を利用していて、Power BI にサインインするときと同じアカウントを使ってサインインした場合、Power BI Desktop 内の作業内容と Power BI のデータセット、レポート、およびダッシュボードとを最も効果的に同期できます。Power BI と OneDrive はどちらもクラウドにあるため、Power BI は約 1 時間ごとに OneDrive 上のファイルに*接続*します。 なんらかの変更が見つかった場合には、データセット、レポート、およびダッシュボードが Power BI で自動的に更新されます。
+**OneDrive - ビジネス用** - OneDrive for Business を利用していて、Power BI にサインインするときと同じアカウントを使ってサインインした場合、Power BI Desktop 内の作業内容と Power BI のデータセット、レポート、およびダッシュボードとを最も効果的に同期できます。Power BI と OneDrive はどちらもクラウドにあるため、Power BI は約 1 時間ごとに OneDrive 上のファイルに *接続* します。 なんらかの変更が見つかった場合には、データセット、レポート、およびダッシュボードが Power BI で自動的に更新されます。
 
 **OneDrive - 個人用** – OneDrive アカウントにファイルを保存すると、OneDrive for Business の場合と同じメリットが多数得られます。 最も大きな違いは、([データの取得]、[ファイル]、[OneDrive - 個人用] の順に選択して) ファイルに初めて接続するときに、Microsoft アカウントを使って OneDrive にサインインする必要があるという点です (このアカウントは通常、Power BI へのサインインに使うものとは異なります)。 Microsoft アカウントを使って OneDrive にサインインするときは、[サインインしたままにする] オプションを必ず選択してください。 これにより、Power BI は、約 1 時間ごとにファイルに接続して、Power BI のデータセットの同期を保つことができます。
 
