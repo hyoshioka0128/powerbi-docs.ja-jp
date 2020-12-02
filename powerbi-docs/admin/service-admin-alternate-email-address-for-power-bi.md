@@ -1,20 +1,20 @@
 ---
 title: 代替メール アドレスの使用
 description: 代替メール アドレスの使用
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/23/2019
-ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 0cc691e8987bf45f6c3028a5006955db1da72b0b
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: b03ecff1bcb74789adfea640c0279b568a09ffc7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88638798"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409081"
 ---
 # <a name="use-an-alternate-email-address"></a>代替メール アドレスの使用
 
@@ -63,7 +63,7 @@ Power BI では、次の順序で使用するメール アドレスが選択さ�
 
 1. Azure AD テナントのユーザー オブジェクトにメール属性が存在する場合、Power BI はそのメール属性をメール アドレスに使います。
 
-1. UPN メールが **\*.onmicrosoft.com** ドメイン メール アドレス ("\@" 記号の後の情報) では*ない* 場合、Power BI ではそのメール属性をメール アドレスに使用します。
+1. UPN メールが **\*.onmicrosoft.com** ドメイン メール アドレス ("\@" 記号の後の情報) では *ない* 場合、Power BI ではそのメール属性をメール アドレスに使用します。
 
 1. Azure AD ユーザー オブジェクトに "*他のメール アドレス*" 配列属性が存在する場合、Power BI では、そのリストの最初のメール (この属性にはメールのリストが存在する可能性があるため) が使われます。
 

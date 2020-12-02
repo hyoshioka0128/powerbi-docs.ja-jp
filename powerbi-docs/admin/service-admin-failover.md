@@ -2,19 +2,19 @@
 title: Power BI の高可用性、フェールオーバー、およびディザスター リカバリーに関する FAQ
 description: Power BI サービスでユーザーに高可用性、ビジネス継続性およびディザスター リカバリーがどのように提供されるかを理解します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c83565582a47c75e4f55e516afe3be0d9fbe7847
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: ff41f702edc605ee346aa10a759e633377597504
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374225"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96408966"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI の高可用性、フェールオーバー、およびディザスター リカバリーに関する FAQ
 
@@ -28,7 +28,7 @@ Power BI は、フル マネージドのサービスとしてのソフトウェ�
 
 Power BI では、ビジネス継続性を保証するために Azure データセンター (リージョンともいう) 内の各コンポーネントの複数のインスタンスを保持します。 サービスが停止したか、問題が発生し、Power BI がリージョンでアクセス不可または操作不能となった場合、Power BI ではバックアップ インスタンスに対するそのリージョン内のすべてのコンポーネントが失敗します。 フェールオーバーによって、可用性と運用性は ([Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location) に示されているように、通常は同じ地理的場所内の) 新しいリージョンの Power BI サービス インスタンスに復元されます。
 
-フェールオーバーされた Power BI サービスのインスタンスでサポートされるのは、_読み取り操作_のみです。つまり、フェールオーバー中は、更新、レポートの発行操作、ダッシュボードまたはレポートの変更、および Power BI メタデータの変更が必要となるその他の操作 (レポートへのコメントの挿入など) はサポートされません。  (オンプレミス データ ソースに対する DirectQuery と Live Connect に基づいていない) ダッシュボードやレポートの表示などの読み取り操作は、引き続き正常に機能します。
+フェールオーバーされた Power BI サービスのインスタンスでサポートされるのは、_読み取り操作_ のみです。つまり、フェールオーバー中は、更新、レポートの発行操作、ダッシュボードまたはレポートの変更、および Power BI メタデータの変更が必要となるその他の操作 (レポートへのコメントの挿入など) はサポートされません。  (オンプレミス データ ソースに対する DirectQuery と Live Connect に基づいていない) ダッシュボードやレポートの表示などの読み取り操作は、引き続き正常に機能します。
 
 ## <a name="how-are-backup-instances-kept-in-sync-with-my-data"></a>バックアップ インスタンスとデータとの同期はどのように保持されますか。
 

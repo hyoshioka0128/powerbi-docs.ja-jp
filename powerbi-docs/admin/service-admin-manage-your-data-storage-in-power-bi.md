@@ -2,20 +2,20 @@
 title: ワークスペースでデータ ストレージを管理する
 description: レポートおよびデータセットを引き続き確実に発行できるように、個々のユーザーまたはワークスペース内のデータ記憶域を管理する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 07/27/2020
-ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: eb59359497dec351c960ce0c6a3ce11b4f6eab0d
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: ccf9cc65cc5dc18d72ced490b18683a6a1af32ff
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252109"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96408713"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Power BI ワークスペースでデータ ストレージを管理する
 
@@ -64,7 +64,7 @@ Power BI アカウントで使用しているデータ記憶域を確認して�
    
     データセットとレポートは、2 つのタブに分かれています。
    
-    **自分の所有**自分の Power BI アカウントに、Salesforce や Dynamics CRM などのサービス データセットを含む、これらのレポートやデータセットをアップロードしています。  
+    **自分の所有** 自分の Power BI アカウントに、Salesforce や Dynamics CRM などのサービス データセットを含む、これらのレポートやデータセットをアップロードしています。  
 
     **他のユーザーの所有:** 他のユーザーから共有を受けたレポートやデータセットです。
 1. データセットやレポートを削除するには、ごみ箱のアイコン ![ごみ箱のアイコン](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).

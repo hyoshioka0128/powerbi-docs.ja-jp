@@ -1,21 +1,21 @@
 ---
 title: Power BI での行レベルのセキュリティ (RLS)
 description: Power BI サービス内にインポートしたデータセットと DirectQuery の行レベルのセキュリティを構成する方法。
-author: kfollis
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.author: kfollis
 ms.date: 09/17/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 590909ac01240a84a4401c74a63dcf66c99dacfd
-ms.sourcegitcommit: fa0a1561aba2a392fb56e7030e1a0537806a9260
+ms.openlocfilehash: f1358cbafa08c0dbb3790322c414d7a746386f0f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811728"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96408575"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Power BI での行レベルのセキュリティ (RLS)
 
@@ -74,7 +74,7 @@ Power BI Desktop 内でのみ、役割を作成または変更できます。
 
 役割をテストすることで、定義した役割が正しく動作することを検証することができます。
 
-1. ロールの横にある**その他のオプション** (...) を選択します。
+1. ロールの横にある **その他のオプション** (...) を選択します。
 2. **[ロールとしてデータをテスト]** を選択します。
 
 ![ロールとしてテスト](media/service-admin-rls/rls-test-role.png)

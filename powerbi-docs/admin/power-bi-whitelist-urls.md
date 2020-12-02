@@ -5,29 +5,29 @@ author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.custom: seodec18
-ms.openlocfilehash: e4aec179b298c5a8ca52cf73ac5fdceed7e8602a
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 433b3d53ccb653e1a945a83176ab9ebc19ccac5d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857682"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409242"
 ---
 # <a name="add-power-bi-urls-to-your-allow-list"></a>Power BI URL を許可リストに追加する
 [//]: # "suparnap、miwehnia、natham はこのリストを維持するための連絡先です"
 
 Power BI サービスではインターネットへの接続が必要です。 Power BI サービスを使用するお客様は、この記事の表に記載されているエンドポイントに接続できる必要があります。
 
-Power BI のサービスを使用するには、次の表で**必須**とマークされているエンドポイントと、リンク先のサイトで**必須**とマークされているすべてのエンドポイントに接続できる必要があります。 外部サイトへのリンクが特定のセクションを参照している場合は、そのセクション内のエンドポイントを確認するだけでかまいません。
+Power BI のサービスを使用するには、次の表で **必須** とマークされているエンドポイントと、リンク先のサイトで **必須** とマークされているすべてのエンドポイントに接続できる必要があります。 外部サイトへのリンクが特定のセクションを参照している場合は、そのセクション内のエンドポイントを確認するだけでかまいません。
 
-**オプション**とマークされているエンドポイントも、特定の機能を動作させるために許可リストに登録できます。
+**オプション** とマークされているエンドポイントも、特定の機能を動作させるために許可リストに登録できます。
 
 Power BI のサービスで必要なことは、リストに記載されているエンドポイントのために TCP ポート 443 を開いておくことだけです。
 
-ワイルドカード (*) は、ルート ドメインの下のすべてのレベルを表し、情報を利用できない場合には "該当なし" としています。 **ターゲット**列には、ドメイン名と、追加のエンドポイント情報を含む外部サイトへのリンクが示されます。
+ワイルドカード (*) は、ルート ドメインの下のすべてのレベルを表し、情報を利用できない場合には "該当なし" としています。 **ターゲット** 列には、ドメイン名と、追加のエンドポイント情報を含む外部サイトへのリンクが示されます。
 
 >[!Important]
 >次の表の情報は、Power BI Germany、21Vianet によって運営される Power BI China、または米国政府向け Power BI には適用されません。 クラウド サービス間の通信の詳細については、「[行政機関向け Azure クラウド サービスとグローバルな Azure クラウド サービスに接続する](service-govus-overview.md#connect-government-and-global-azure-cloud-services)」を参照してください。

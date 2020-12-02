@@ -2,20 +2,20 @@
 title: Power BI 管理とは
 description: Power BI の管理に使用される管理者ロール、タスク、ツールについて説明します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
 ms.date: 09/25/2020
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: bd003bd8662a60a67b2bc13f228d165859b38e5c
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: ee87f104d2e52378bef849fe3efc4fc0cd198bd1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374662"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409196"
 ---
 # <a name="what-is-power-bi-administration"></a>Power BI 管理とは
 
