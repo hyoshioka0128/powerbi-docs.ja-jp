@@ -2,19 +2,19 @@
 title: ワークスペースの "新しい外観" を選択する (プレビュー)
 description: ワークスペースには、Power BI サービスの新しい外観と一致する新しい外観があります。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: nikhilga
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 04/15/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 44644c23cbfd61aeb07f7688352ac905bde75a0f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bdc1de71a7d3b880cbdf198591e2270bcaf75587
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225190"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406229"
 ---
 # <a name="opt-in-to-the-workspace-new-look-preview"></a>ワークスペースの "新しい外観" を選択する (プレビュー)
 
@@ -31,7 +31,7 @@ ms.locfileid: "85225190"
 |  ![1 番](media/service-workspaces-new-look/circle-one.png)  | **データの取得**: ワークスペースにコンテンツを簡単に追加できます。 データへの接続、ファイルを開く操作、レポートやダッシュボードの作成などを実行するには、 **[+ 新規]** を選択します。  |
 | ![2 番](media/service-workspaces-new-look/circle-two.png)  | **ビューの切り替え**: データフロー、データセット、レポート、ダッシュボードの間の接続と、それらから他のデータ ソースへの接続を表示するには、 **[リスト]** ビューと **[系列]** ビューを切り替えます。 |
 | ![3 番](media/service-workspaces-new-look/circle-three.png) | **ワークスペース内の検索**: 新しい検索ボックスで、ワークスペース内のすべてのコンテンツを検索します。  |
-| ![4 番](media/service-workspaces-new-look/circle-four.png)  | **リストとタブ**: ワークスペース内のすべてのコンテンツが、SharePoint のように、ダッシュボード、レポート、データセットなどの単純なリストに入っています。 空かもしれない**ダッシュボード** タブでワークスペースを開いたり、コンテンツの場所を心配したりする必要がなくなります。 新しいタブの順序は次のとおりです。 <br>**[すべて]** : ワークスペース内のすべてのコンテンツ (ダッシュボード、レポート、ブック、ページ分割されたレポート、データセット、データフロー) を表示します。 <br>**Content**: ワークスペース内で使用するために作成されたすべてのコンテンツ (ダッシュボード、レポート、ブック、ページ分割されたレポート) を収集します。 <br>**データセット + データフロー**: データ管理を簡単にするために、ワークスペース内のすべてのデータセットとデータフローを収集します。 |
+| ![4 番](media/service-workspaces-new-look/circle-four.png)  | **リストとタブ**: ワークスペース内のすべてのコンテンツが、SharePoint のように、ダッシュボード、レポート、データセットなどの単純なリストに入っています。 空かもしれない **ダッシュボード** タブでワークスペースを開いたり、コンテンツの場所を心配したりする必要がなくなります。 新しいタブの順序は次のとおりです。 <br>**[すべて]** : ワークスペース内のすべてのコンテンツ (ダッシュボード、レポート、ブック、ページ分割されたレポート、データセット、データフロー) を表示します。 <br>**Content**: ワークスペース内で使用するために作成されたすべてのコンテンツ (ダッシュボード、レポート、ブック、ページ分割されたレポート) を収集します。 <br>**データセット + データフロー**: データ管理を簡単にするために、ワークスペース内のすべてのデータセットとデータフローを収集します。 |
 | ![5 番](media/service-workspaces-new-look/circle-five.png) | **フィルター**: 成果物が何百もあるワークスペースでは、[フィルター] ウィンドウでコンテンツをフィルター処理できます。 フィルターが適用されると、コンテンツ リストの上部にフィルターが表示されます。 |
 
 **クイック アクション**: リスト内のコンテンツにマウス ポインターを合わせると、その項目に対して最も一般的な操作が表示されます。また、 **[その他のオプション]** (...) メニューで利用できるその他のアクションも表示されます。
@@ -44,7 +44,7 @@ Power BI サービスのすべてのユーザーは、新しい外観を選択�
 
 ![新しい外観を選択する](media/service-workspaces-new-look/power-bi-new-look-off.png)
 
-以前の外観に戻す必要がある場合は、![[新しい外観をオンにする]](media/service-workspaces-new-look/power-bi-new-look-toggle-on.png) をスライドして**オフ**に戻すだけです。 表示されない場合は、右上隅にある省略記号メニューを選択します。
+以前の外観に戻す必要がある場合は、![[新しい外観をオンにする]](media/service-workspaces-new-look/power-bi-new-look-toggle-on.png) をスライドして **オフ** に戻すだけです。 表示されない場合は、右上隅にある省略記号メニューを選択します。
 
 ![新しい外観を選択解除する](media/service-workspaces-new-look/power-bi-new-look-on.png)
 

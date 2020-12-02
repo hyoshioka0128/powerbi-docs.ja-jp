@@ -2,19 +2,19 @@
 title: Power BI Desktop で Impala データベースに接続する
 description: Power BI Desktop で Impala データベースに簡単に接続して使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 41d65bd78ecbc2c918b2da41e26b307cec38c7a1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 88b31cfc63369838eff0beb50e4512adfa667ad7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224452"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405861"
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Power BI Desktop で Impala データベースに接続する
 Power BI Desktop では、**Impala** データベースに接続し、Power BI Desktop の他のデータ ソースの場合と同様に、基になっているデータを使用できます。
@@ -28,7 +28,7 @@ Power BI Desktop では、**Impala** データベースに接続し、Power BI D
 
     ![データの取得](media/desktop-connect-impala/connect_impala_2.png)
 
-3. 表示された **[Impala]** ウィンドウで、ボックスに Impala サーバーの名前を入力するか、貼り付けます。 **[OK]** を選択します。 Power BI にデータを直接**インポート**したり、**DirectQuery** を使用したりできます。 詳しくは、[DirectQuery の使用](desktop-use-directquery.md)に関する記事をご覧ください。
+3. 表示された **[Impala]** ウィンドウで、ボックスに Impala サーバーの名前を入力するか、貼り付けます。 **[OK]** を選択します。 Power BI にデータを直接 **インポート** したり、**DirectQuery** を使用したりできます。 詳しくは、[DirectQuery の使用](desktop-use-directquery.md)に関する記事をご覧ください。
 
     ![Impala ウィンドウ](media/desktop-connect-impala/connect_impala_3a.png)
 

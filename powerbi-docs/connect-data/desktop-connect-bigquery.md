@@ -2,19 +2,19 @@
 title: Power BI Desktop で Google BigQuery データベースに接続する
 description: Power BI Desktop で Google BigQuery に簡単に接続して使用します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 68698d51b074102a8d8e556101fcfaf6a39c2c62
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 7cffba9178d4eec0bfd468040b7551768aab7f1d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349416"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405884"
 ---
 # <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Power BI Desktop で Google BigQuery データベースに接続する
 Power BI Desktop では、Google **BigQuery** データベースに接続し、Power BI Desktop の他のデータ ソースの場合と同様に基になっているデータを使用できます。
@@ -32,7 +32,7 @@ Google **BigQuery** データベースに接続するには、Power BI Desktop �
 
 ![Google へのサインイン](media/desktop-connect-bigquery/connect_bigquery_02b.png)
 
-接続が正常に行われたら、 **[ナビゲーター]** ウィンドウが開き、サーバー上で使用可能なデータが表示されます。その中から 1 つまたは複数の要素を選択し、 **Power BI Desktop** にインポートして使用することができます。
+接続が正常に行われたら、 **[ナビゲーター]** ウィンドウが開き、サーバー上で使用可能なデータが表示されます。その中から 1 つまたは複数の要素を選択し、**Power BI Desktop** にインポートして使用することができます。
 
 ![Google BigQuery からのデータ](media/desktop-connect-bigquery/connect_bigquery_03.png)
 

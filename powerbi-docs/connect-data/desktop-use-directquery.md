@@ -2,19 +2,19 @@
 title: Power BI Desktop の DirectQuery
 description: Power BI Desktop の DirectQuery (ライブ接続とも呼ばれます) を使用します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/28/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b31ddb3e3881f9002affcae9106b9e14bf85a964
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 4619219705a80b53883a9b0578791a60a853125e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092316"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404228"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Power BI Desktop の DirectQuery
 *Power BI Desktop* では、データ ソースに接続するときに、常にデータのコピーを Power BI Desktop にインポートすることができます。 データ ソースによっては、代替手法を利用できます。DirectQuery を使用して、データ ソースに直接接続します。
@@ -47,7 +47,7 @@ DirectQuery を使用する利点をいくつか以下に示します。
 ## <a name="limitations-of-directquery"></a>DirectQuery の制限
 現在、DirectQuery の使用には、いくつかの制限があります。
 
-- **クエリ エディター**のクエリが複雑すぎると、エラーが発生します。 エラーを解決するには、問題となるステップを**クエリ エディター**で削除するか、DirectQuery を使用する代わりにデータを "*インポート*" します。 SAP Business Warehouse のような多次元ソースの場合、**クエリ エディター**はありません。
+- **クエリ エディター** のクエリが複雑すぎると、エラーが発生します。 エラーを解決するには、問題となるステップを **クエリ エディター** で削除するか、DirectQuery を使用する代わりにデータを "*インポート*" します。 SAP Business Warehouse のような多次元ソースの場合、**クエリ エディター** はありません。
 
 - タイム インテリジェンス機能は DirectQuery では利用できません。 たとえば、データ列 (年度、四半期、月、日など) の特殊な処理は、DirectQuery モードではサポートされていません。
 
@@ -79,7 +79,7 @@ DirectQuery を使用する場合は、次の 3 つの点を考慮してくだ�
 
     DirectQuery ソースで実装されたユーザーごとのセキュリティが必要なお客様は、RLS を使用するか、ソースに対する Kerberos 制約付き認証を構成する必要があります。 Kerberos はすべてのソースで使用できるわけではありません。 [RLS についての詳細情報](../admin/service-admin-rls.md)。 [DirectQuery についての詳細情報](service-gateway-sso-kerberos.md)。
 
-- **サポートされている機能**:Power BI Desktop の一部の機能は DirectQuery モードでサポートされていないか、制限があります。 また、Power BI サービスの一部の機能 (*クイック分析情報*など) は、DirectQuery を使用するデータセットでは利用できません DirectQuery を使用するかどうかを決定するときは、これらの機能の制限事項を考慮する必要があります。
+- **サポートされている機能**:Power BI Desktop の一部の機能は DirectQuery モードでサポートされていないか、制限があります。 また、Power BI サービスの一部の機能 (*クイック分析情報* など) は、DirectQuery を使用するデータセットでは利用できません DirectQuery を使用するかどうかを決定するときは、これらの機能の制限事項を考慮する必要があります。
 
 > [!NOTE]
 > Azure SQL Database とプライベート IP アドレスで DirectQuery を使用する場合は、オンプレミスのゲートウェイが必要です。 
@@ -87,7 +87,7 @@ DirectQuery を使用する場合は、次の 3 つの点を考慮してくだ�
 ## <a name="publish-to-the-power-bi-service"></a>Power BI サービスに公開する
 DirectQuery を使用して作成されたレポートを、Power BI サービスに発行できます。
 
-使用されたデータ ソースで**オンプレミス データ ゲートウェイ**が必要でない場合 (**Azure SQL Database**、**Azure SQL Data Warehouse**、または **Redshift**) は、発行されたレポートが Power BI サービスで表示される前に資格情報を入力する必要があります。 資格情報を入力するには、これらの手順に従います。
+使用されたデータ ソースで **オンプレミス データ ゲートウェイ** が必要でない場合 (**Azure SQL Database**、**Azure SQL Data Warehouse**、または **Redshift**) は、発行されたレポートが Power BI サービスで表示される前に資格情報を入力する必要があります。 資格情報を入力するには、これらの手順に従います。
 
 1. [Power BI](https://www.powerbi.com/) にサインインします。
 2. Power BI サービスで、 **[設定]** 歯車アイコンを選択し、 **[設定]** メニュー項目を選びます。
@@ -98,7 +98,7 @@ DirectQuery を使用して作成されたレポートを、Power BI サービ�
 
 4. 資格情報を追加します。 そうしないと、発行されたレポートを開いたとき、または DirectQuery 接続で作成されたデータセットを探索したときにエラーが発生します。
 
-DirectQuery を使用する **Azure SQL Database**、**Azure SQL Data Warehouse**、**Redshift**、または **Snowflake Data Warehouse** 以外のデータ ソースのデータ接続を行うには、**オンプレミス データ ゲートウェイ**をインストールし、データ ソースを登録します。 詳細については、「[オンプレミス データ ゲートウェイとは](service-gateway-onprem.md)」を参照してください
+DirectQuery を使用する **Azure SQL Database**、**Azure SQL Data Warehouse**、**Redshift**、または **Snowflake Data Warehouse** 以外のデータ ソースのデータ接続を行うには、**オンプレミス データ ゲートウェイ** をインストールし、データ ソースを登録します。 詳細については、「[オンプレミス データ ゲートウェイとは](service-gateway-onprem.md)」を参照してください
 
 ## <a name="next-steps"></a>次の手順
 DirectQuery の詳細については、次のリソースを参照してください。

@@ -2,19 +2,19 @@
 title: チュートリアル:Power BI Desktop で Excel と OData フィードのデータを結合する
 description: チュートリアル:Excel と OData フィードのデータを結合します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 01/17/2020
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 0401fecc91aef03c0b9e0767bfb241cd701ff50b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 391c8fef1e95aa39ff6dfcd8aab8088f692504e7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853749"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404918"
 ---
 # <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>チュートリアル:Excel と OData フィードの売上データを分析する
 
@@ -172,7 +172,7 @@ Power Query エディターの左側にある **[クエリ]** の一覧で各ク
 ![製品クエリの適用したステップ](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/products-query-applied-steps.png) &nbsp;&nbsp; ![注文クエリの適用したステップ](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/orders-query-applied-steps.png)
 
 >[!TIP]
->[適用したステップ] の基礎は、[M 言語](/powerquery-m/power-query-m-reference)とも呼ばれる *Power Query 言語*で記述された数式です。 数式を表示および編集するには、リボンの **[ホーム]** タブの **[クエリ]** グループで **[詳細エディター]** を選択します。
+>[適用したステップ] の基礎は、[M 言語](/powerquery-m/power-query-m-reference)とも呼ばれる *Power Query 言語* で記述された数式です。 数式を表示および編集するには、リボンの **[ホーム]** タブの **[クエリ]** グループで **[詳細エディター]** を選択します。
 
 ## <a name="import-the-transformed-queries"></a>変換されたクエリをインポートする
 
@@ -257,7 +257,7 @@ Power BI Desktop では、相互に強調表示し、互いにフィルターを
 
 クエリ間のリレーションシップのため、ある視覚エフェクトと対話すると、そのページ上の他のすべての視覚エフェクトに反映されます。
 
-マップ視覚エフェクトで、**カナダ**の中央にある円を選びます。 他の 2 つの視覚エフェクトがフィルター処理され、カナダの明細金額と注文数量が強調表示されます。
+マップ視覚エフェクトで、**カナダ** の中央にある円を選びます。 他の 2 つの視覚エフェクトがフィルター処理され、カナダの明細金額と注文数量が強調表示されます。
 
 ![カナダについてフィルター処理された売上データ](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/sales-data-filtered-for-canada.png)
 

@@ -2,21 +2,22 @@
 title: Power BI Desktop でのサインインに関する問題のトラブルシューティング
 description: Power BI Desktop へのサインインに関する一般的な問題の解決策
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 03/05/2020
-ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: e1358cb8cbe37e0b44cd6a60069ad9ec707d12d8
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 4a825c2e3bcfdbe637c59fde9c33dc23ad326b0e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485509"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404413"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Power BI Desktop のサインインに関するトラブルシューティング
-**Power BI Desktop** にサインインしようとして、エラーになる場合があります。 サインインの問題には 2 つの主な理由があります。**プロキシ認証エラー**と**非 HTTPS URL リダイレクト エラー**です。 
+**Power BI Desktop** にサインインしようとして、エラーになる場合があります。 サインインの問題には 2 つの主な理由があります。**プロキシ認証エラー** と **非 HTTPS URL リダイレクト エラー** です。 
 
 サインインに関する問題の原因がどちらであるかを特定するには、最初に管理者に連絡し、問題の原因を判別できるように診断情報を提供します。 サインインの問題に関連する問題をトレースすることで、管理者は次のエラーのどちらが該当するかを特定できます。 
 
@@ -101,8 +102,8 @@ Power BI Desktop によって発行された Web 要求では、Web プロキシ
 
 クライアントに対してこの機能を有効にするときは、常に次の推奨事項に従う必要があります。
 
-* Active Directory ネットワークに参加しているプロキシ サーバーのみがクライアントによって使用されるように、プロキシ サーバーの認証方式として**ネゴシエーション**のみを使用します。 
-* この機能を使用するクライアントでは **NTLM フォールバック**を使用しないでください。
+* Active Directory ネットワークに参加しているプロキシ サーバーのみがクライアントによって使用されるように、プロキシ サーバーの認証方式として **ネゴシエーション** のみを使用します。 
+* この機能を使用するクライアントでは **NTLM フォールバック** を使用しないでください。
 * この機能が有効になっていて、このセクションで推奨されているとおりに構成されている場合に、ユーザーがプロキシによるネットワークを使用していなければ、プロキシ サーバーに接続して既定のシステム資格情報を使用しようとするプロセスは使用されません。
 
 

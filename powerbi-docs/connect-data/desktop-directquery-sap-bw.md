@@ -2,28 +2,28 @@
 title: Power BI での DirectQuery と SAP Business Warehouse (BW)
 description: SAP Business Warehouse (BW) で DirectQuery を使用する場合の考慮事項
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/28/2018
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b7cc8a159139cc53a0e243134b31305dff95812d
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 06824a11c2c186dd9ac199e8e9b8155d618b3a0d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216438"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405240"
 ---
 # <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Power BI で DirectQuery を使用して SAP Business Warehouse に接続する
 **SAP Business Warehouse (BW)** データ ソースへは、**DirectQuery** を使用して直接接続することが可能です。 SAP BW は OLAP/多次元的な性質があるため、SAP BW での DirectQuery と SQL Server などのリレーショナル ソース間では多数の重要な違いがあります。 これらの相違点は次のとおりです。
 
-* リレーショナル ソースを使用する **DirectQuery** では、フィールド リストで使用できるデータを論理的に定義する ( **[データの取得]** または **[クエリ エディター]** ダイアログで定義される) 一連のクエリがあります。 これは、SAP BW などの OLAP ソースに接続するときには*該当しません*。 代わりに、 **[データの取得]** を使用して SAP サーバーに接続する場合、インフォキューブまたは BEx クエリのみが選択されます。 すると、選択されたインフォキューブ/BEx クエリのすべての主要な指標とディメンションがフィールド リストで使用できるようになります。   
+* リレーショナル ソースを使用する **DirectQuery** では、フィールド リストで使用できるデータを論理的に定義する ( **[データの取得]** または **[クエリ エディター]** ダイアログで定義される) 一連のクエリがあります。 これは、SAP BW などの OLAP ソースに接続するときには *該当しません*。 代わりに、 **[データの取得]** を使用して SAP サーバーに接続する場合、インフォキューブまたは BEx クエリのみが選択されます。 すると、選択されたインフォキューブ/BEx クエリのすべての主要な指標とディメンションがフィールド リストで使用できるようになります。   
 * 同様に、SAP BW に接続する場合には、 **[クエリ エディター]** はありません。 (サーバー名などの) データ ソースの設定は、 **[クエリを編集]、[データ ソース設定]** を選択して変更できます。 任意のパラメーターの設定は、 **[クエリを編集]、[パラメーターの管理]** の順に選択して変更できます。
 * OLAP ソースには、DirectQuery に対する通常の制限のみでなく、他にも、その固有の性質ゆえに (モデリングと視覚エフェクトの両方に) 制限が適用されます。 これらの制限については、この記事の後半で説明します。
 
-また、Power BI ではサポートされない SAP BW の機能が多数あり、SAP BW へのパブリック インターフェイスの性質のため、Power BI で表示される結果が SAP ツールを使用した場合の結果と一致しない重要なケースがあることを理解しておくことが*非常に重要*です。 これらの制限については、この記事の後半で説明します。 これらの制限と動作の違いには慎重になり、SAP のパブリック インターフェイスによって返される Power BI に表示される結果が、正しく解釈されることを確認する必要があります。  
+また、Power BI ではサポートされない SAP BW の機能が多数あり、SAP BW へのパブリック インターフェイスの性質のため、Power BI で表示される結果が SAP ツールを使用した場合の結果と一致しない重要なケースがあることを理解しておくことが *非常に重要* です。 これらの制限については、この記事の後半で説明します。 これらの制限と動作の違いには慎重になり、SAP のパブリック インターフェイスによって返される Power BI に表示される結果が、正しく解釈されることを確認する必要があります。  
 
 > [!NOTE]
 > SAP BW で DirectQuery を使う機能は、Power BI Desktop の 2018 年 3 月の更新までプレビューでした。 プレビュー期間中のフィードバックや改善提案を基に、そのプレビュー バージョンを使って作成されるレポートに影響を与える変更が行われました。 SAP BW での DirectQuery が一般公開 (GA) されたことで、GA 前バージョンで作成された、SAP BW での DirectQuery を使う既存の (プレビュー ベースの) レポートをすべて破棄する "*必要があります*"。 SAP BW での DirectQuery の GA 前バージョンで作成されたレポートでは、更新を呼び出すと、基になっている SAP BW キューブに変更のあるメタデータを更新しようとするため、エラーが発生します。 このようなレポートは、SAP BW での DirectQuery の GA バージョンを使って、空のレポートから作り直してください。 

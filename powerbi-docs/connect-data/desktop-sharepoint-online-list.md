@@ -2,19 +2,19 @@
 title: SharePoint リスト上にレポートを作成する
 description: このチュートリアルでは、ご利用の SharePoint リスト データを Power BI レポートに変換する方法について説明します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6bcd67d41f2c04cedd7c66eb5989f2a6919b030
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 5347405c13f71fa0932c48eb218618b28a9f03c8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91598648"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404527"
 ---
 # <a name="create-a-report-on-a-sharepoint-list"></a>SharePoint リスト上にレポートを作成する
 
@@ -60,7 +60,7 @@ SharePoint Online のリストは、設定するのが簡単であることに�
 
 1. 左側で、 **[データ]** アイコンを選択して、SharePoint リストのデータが読み込まれたことを確認します。
 
-2. 数値が含まれているリスト列に、右側の **[フィールド] ペイン**にある [合計] または [シグマ] アイコンが表示されていることを確認します。  そうでない場合は、テーブル ビューで列ヘッダーを選択し、 **[モデリング]** タブを選択してから、データに応じて **[データ型]** を **[10 進数]** または **[整数]** に変更します。  自分の変更の確認を求めるメッセージが表示されたら、 **[はい]** を選択します。  使用する数値が通貨などの特殊な形式である場合は、 **[形式]** を設定して選択することもできます。
+2. 数値が含まれているリスト列に、右側の **[フィールド] ペイン** にある [合計] または [シグマ] アイコンが表示されていることを確認します。  そうでない場合は、テーブル ビューで列ヘッダーを選択し、 **[モデリング]** タブを選択してから、データに応じて **[データ型]** を **[10 進数]** または **[整数]** に変更します。  自分の変更の確認を求めるメッセージが表示されたら、 **[はい]** を選択します。  使用する数値が通貨などの特殊な形式である場合は、 **[形式]** を設定して選択することもできます。
 
    この手順のビデオをご覧ください。
    <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=204" frameborder="0" allowfullscreen></iframe>

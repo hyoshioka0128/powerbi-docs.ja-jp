@@ -2,23 +2,23 @@
 title: Power BI Desktop で OData フィードに接続する
 description: Power BI Desktop で OData フィードに簡単に接続して使用します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9e10d694940bda465e68f54370d87aab15b628ee
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 5c7d9464e8d14354ba893dd80d11a46b8ea170cc
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216495"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405838"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>Power BI Desktop で OData フィードに接続する
-Power BI Desktop では、**OData フィード**に接続し、Power BI Desktop の他のデータ ソースと同じように基になっているデータを使用できます。
+Power BI Desktop では、**OData フィード** に接続し、Power BI Desktop の他のデータ ソースと同じように基になっているデータを使用できます。
 
 OData フィードに接続するには、Power BI Desktop の **[ホーム]** リボンから **[データの取得]、[OData フィード]** の順に選択します。
 

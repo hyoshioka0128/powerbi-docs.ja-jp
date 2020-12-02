@@ -2,19 +2,19 @@
 title: Power BI Desktop で Snowflake Computing ウェアハウスに接続する
 description: Power BI Desktop で Snowflake Computing ウェアハウスに簡単に接続して使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d6de937f4be3c503c146c31a32c56b67ee97a8c4
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 115fba44c69fceb3a4f309cd92358ef5bc2eff42
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214794"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405746"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Power BI Desktop で Snowflake Computing ウェアハウスに接続する
 Power BI Desktop では、**Snowflake** Computing ウェアハウスに接続し、Power BI Desktop の他のデータ ソースの場合と同様に基になっているデータを使用できます。 
@@ -24,7 +24,7 @@ Power BI Desktop では、**Snowflake** Computing ウェアハウスに接続し
 
 ![Snowflake データベースの選択を示す、[データの取得] ダイアログのスクリーンショット。](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
-表示された **[Snowflake]** ウィンドウ内のボックスに Snowflake Computing ウェアハウスの名前を入力するか、貼り付け、 **[OK]** をクリックします。 Power BI にデータを直接**インポート**したり、**DirectQuery** を使用したりできます。 詳しくは、「[Power BI Desktop の DirectQuery](desktop-use-directquery.md)」をご覧ください。 AAD SSO は DirectQuery にのみ対応していることにご注意ください。
+表示された **[Snowflake]** ウィンドウ内のボックスに Snowflake Computing ウェアハウスの名前を入力するか、貼り付け、 **[OK]** をクリックします。 Power BI にデータを直接 **インポート** したり、**DirectQuery** を使用したりできます。 詳しくは、「[Power BI Desktop の DirectQuery](desktop-use-directquery.md)」をご覧ください。 AAD SSO は DirectQuery にのみ対応していることにご注意ください。
 
 ![[インポート] ラジオ ボタンが選択されていることを示す、[Snowflake] ダイアログのスクリーンショット。](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
@@ -46,7 +46,7 @@ Microsoft アカウント オプションを使用する場合、Snowflake 側�
 
 ![ODBC エラー 28000 により発生した接続エラー。](media/desktop-connect-snowflake/connect-snowflake-5.png)
 
-選択したテーブルを**読み込んで**、テーブル全体を **Power BI Desktop** に取り込むことができます。またはクエリを**編集**して**クエリ エディター**を開き、使用するデータのセットをフィルターし、絞り込んでから、その絞り込んだデータのセットを **Power BI Desktop** に取り込むこともできます。
+選択したテーブルを **読み込んで**、テーブル全体を **Power BI Desktop** に取り込むことができます。またはクエリを **編集** して **クエリ エディター** を開き、使用するデータのセットをフィルターし、絞り込んでから、その絞り込んだデータのセットを **Power BI Desktop** に取り込むこともできます。
 
 ## <a name="next-steps"></a>次の手順
 Power BI Desktop を使用して接続できるデータの種類は他にもあります。 データ ソースの詳細については、次のリソースを参照してください。

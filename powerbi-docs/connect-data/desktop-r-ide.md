@@ -2,20 +2,20 @@
 title: Power BI で外部 R IDE を使用する
 description: 外部の IDE を起動し、Power BI で使用できます
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 58e23ecca37b9019ed007c60fe7aaa7e6b4d4515
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 21b46a0c7637509fa54c3d7ed2b5551cde05f784
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216413"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404872"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Power BI で外部 R IDE を使用する
 **Power BI Desktop** では、外部の R IDE (統合開発環境) を使用して R スクリプトを作成および調整した後、Power BI でそのスクリプトを使用できます。
@@ -43,7 +43,7 @@ ms.locfileid: "86216413"
 
 既定で、**Power BI Desktop** は、**R Studio** がローカル コンピューターにインストールされている場合、外部 R IDE としてそれを起動します。**R Studio** がインストールされておらず、**R Tools for Visual Studio** を含む **Visual Studio 2015** がある場合は、代わりにそれが起動されます。 どちらの R IDE もインストールされていない場合は、 **.R** ファイルに関連付けられたアプリケーションが起動します。
 
-**.R** ファイルの関連付けが存在しない場合、 **[オプション]** ダイアログの *[優先する R IDE を参照します]* セクションで、カスタム IDE へのパスを指定できます。 **Power BI Desktop** の **R IDE の起動**矢印アイコンの横にある **[設定]** 歯車アイコンを選択して、別の R IDE を起動することもできます。
+**.R** ファイルの関連付けが存在しない場合、 **[オプション]** ダイアログの *[優先する R IDE を参照します]* セクションで、カスタム IDE へのパスを指定できます。 **Power BI Desktop** の **R IDE の起動** 矢印アイコンの横にある **[設定]** 歯車アイコンを選択して、別の R IDE を起動することもできます。
 
 ## <a name="launch-an-r-ide-from-power-bi-desktop"></a>Power BI Desktop から R IDE を起動する
 **Power BI Desktop** から R IDE を起動するには、次の手順を実行します。
@@ -74,7 +74,7 @@ ms.locfileid: "86216413"
    > スクリプトを実行した後で **Power BI Desktop** からデータをインポートするために、**Power BI Desktop** はスクリプトの最初の 3 行を追加します。
    > 
    > 
-7. **Power BI Desktop** の **[R スクリプト エディター]** ウィンドウで作成したスクリプトは、R IDE の 4 行目以降に表示されます。 この状態になれば、R IDE で R スクリプトを作成できます。 R IDE で R スクリプトが完成した後は、それをコピーし、**Power BI Desktop** の **[R スクリプト エディター]** ウィンドウに貼り付けて戻す必要があります。ただし、**Power BI Desktop** が自動的に生成したスクリプトの先頭 3 行は*除外する*必要があります。 スクリプトの先頭の 3 行は、**Power BI Desktop** にコピーしないでください。これらの行は、**Power BI Desktop** から R IDE にデータをインポートするためだけに使用されたものです。
+7. **Power BI Desktop** の **[R スクリプト エディター]** ウィンドウで作成したスクリプトは、R IDE の 4 行目以降に表示されます。 この状態になれば、R IDE で R スクリプトを作成できます。 R IDE で R スクリプトが完成した後は、それをコピーし、**Power BI Desktop** の **[R スクリプト エディター]** ウィンドウに貼り付けて戻す必要があります。ただし、**Power BI Desktop** が自動的に生成したスクリプトの先頭 3 行は *除外する* 必要があります。 スクリプトの先頭の 3 行は、**Power BI Desktop** にコピーしないでください。これらの行は、**Power BI Desktop** から R IDE にデータをインポートするためだけに使用されたものです。
 
 ### <a name="known-limitations"></a>既知の制限事項
 Power BI Desktop から直接 R IDE を起動するには、いくつかの制限があります。

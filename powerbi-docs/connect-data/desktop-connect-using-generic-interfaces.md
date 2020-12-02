@@ -2,28 +2,28 @@
 title: Power BI Desktop でジェネリック インターフェイスを使用してデータに接続する
 description: Power BI Desktop でジェネリック インターフェイスを使用して異なるデータ ソースに接続する方法を説明します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 106b2e4f9b829190cff8269342c3239429b41f24
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: b7e0ec270ad70be91d5aea598148e69e88df09f9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214739"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405562"
 ---
 # <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Power BI Desktop のジェネリック インターフェイスを使用してデータに接続する 
 
-**Power BI Desktop** では、 **[データの取得]** ウィンドウに表示されるように、**Access データベース**から **Zendesk** まで広範にカバーする組み込みデータ接続を使用して、さまざまな異なるデータ ソースに接続できます。 また、**Power BI Desktop** に組み込まれているジェネリック インターフェイス (**ODBC** や **REST API** など) を使うことで、"*その他*" のあらゆる種類のデータ ソースに接続でき、接続オプションの範囲が大きく広がります。
+**Power BI Desktop** では、 **[データの取得]** ウィンドウに表示されるように、**Access データベース** から **Zendesk** まで広範にカバーする組み込みデータ接続を使用して、さまざまな異なるデータ ソースに接続できます。 また、**Power BI Desktop** に組み込まれているジェネリック インターフェイス (**ODBC** や **REST API** など) を使うことで、"*その他*" のあらゆる種類のデータ ソースに接続でき、接続オプションの範囲が大きく広がります。
 
 ![ODBC の選択を示す、[データの取得] ダイアログのスクリーンショット。](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
 ## <a name="power-bi-desktop-data-interfaces"></a>Power BI Desktop のデータ インターフェイス
-**Power BI Desktop** に含まれる、特定のデータ ソースに接続するために作成されたデータ コネクタのコレクションは増え続けています。 たとえば、**SharePoint リスト**のデータ コネクタは、**SharePoint リスト**向けに設計された接続シーケンスの間に特定のフィールドとサポート情報を提供します。 **[データの取得] > [その他]** を選択すると表示されるウィンドウの他のデータ ソースについても同様です (上図を参照)。
+**Power BI Desktop** に含まれる、特定のデータ ソースに接続するために作成されたデータ コネクタのコレクションは増え続けています。 たとえば、**SharePoint リスト** のデータ コネクタは、**SharePoint リスト** 向けに設計された接続シーケンスの間に特定のフィールドとサポート情報を提供します。 **[データの取得] > [その他]** を選択すると表示されるウィンドウの他のデータ ソースについても同様です (上図を参照)。
 
 さらに、**Power BI Desktop** では、以下のジェネリック データ インターフェイスのいずれかを使うことで、 **[データの取得]** の一覧には示されていないデータ ソースにも接続できます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "86214739"
 **Power BI Desktop** で使いたいデータ ソースが見つからない場合は、 Power BI チームの[アイデアと要求の一覧](https://ideas.powerbi.com/)に自分のアイデアを提出してください。
 
 ## <a name="data-sources-accessible-through-odbc"></a>ODBC でアクセスできるデータ ソース
-**Power BI Desktop** の **ODBC** コネクタを使うと、**データ ソース名 (DSN)** または*接続文字列*を指定するだけで、任意のサードパーティ製 ODBC ドライバーから簡単にデータをインポートできます。 必要であれば、ODBC ドライバーに対して SQL ステートメントを実行することもできます。
+**Power BI Desktop** の **ODBC** コネクタを使うと、**データ ソース名 (DSN)** または *接続文字列* を指定するだけで、任意のサードパーティ製 ODBC ドライバーから簡単にデータをインポートできます。 必要であれば、ODBC ドライバーに対して SQL ステートメントを実行することもできます。
 
 ![DSN と詳細設定オプションを示す、ODBC コネクタ ダイアログのスクリーンショット。](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "86214739"
 | ODBC |Progress OpenEdge |[Progress OpenEdge ODBC ドライバーのブログ投稿](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>OLE DB でアクセスできるデータ ソース
-**Power BI Desktop** の **OLE DB** コネクタを使うと、*接続文字列*を指定するだけで、任意のサードパーティ製 OLE DB ドライバーから簡単にデータをインポートできます。 必要であれば、OLE DB ドライバーに対して SQL ステートメントを実行することもできます。
+**Power BI Desktop** の **OLE DB** コネクタを使うと、*接続文字列* を指定するだけで、任意のサードパーティ製 OLE DB ドライバーから簡単にデータをインポートできます。 必要であれば、OLE DB ドライバーに対して SQL ステートメントを実行することもできます。
 
 ![接続文字列と詳細設定オプションを示す、OLE DB コネクタ ダイアログのスクリーンショット。](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_3.png)
 
@@ -94,7 +94,7 @@ ms.locfileid: "86214739"
 | REST API |Couchbase DB |[Couchbase REST API の情報](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 
 ## <a name="data-sources-accessible-through-r-script"></a>R スクリプトでアクセスできるデータ ソース
-**R スクリプト**を使ってデータ ソースにアクセスし、**Power BI Desktop** でそのデータを使うことができます。
+**R スクリプト** を使ってデータ ソースにアクセスし、**Power BI Desktop** でそのデータを使うことができます。
 
 ![実行スクリプトを示す、[R スクリプト] ダイアログのスクリーンショット。](media/desktop-connect-using-generic-interfaces/r-scripts-2.png)
 

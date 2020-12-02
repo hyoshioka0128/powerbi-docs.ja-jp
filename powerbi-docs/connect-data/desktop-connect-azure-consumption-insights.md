@@ -2,20 +2,20 @@
 title: Power BI Desktop で Azure Consumption Insights データに接続する
 description: Power BI Desktop を使用して、Azure に簡単に接続し、使用状況を把握できます
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/14/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7d036af591ae9c5fc44370085480c9266e328745
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: d400684358e5992d9c29e2c5838ca777e3695cf5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632597"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406091"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Power BI Desktop で Azure Consumption Insights データに接続する
 
@@ -44,7 +44,7 @@ Azure Consumption Insights を使用すると、Azure Enterprise Agreement 請�
 
    ![[Microsoft Azure Consumption Insights] ダイアログ ボックスのスクリーンショット。 [接続] を選択します。](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
-   表示されるダイアログで、ご自分の **Azure の登録番号**を入力します。
+   表示されるダイアログで、ご自分の **Azure の登録番号** を入力します。
 
    ![Azure 登録番号を入力するダイアログのスクリーンショット。](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
@@ -54,7 +54,7 @@ Azure Consumption Insights を使用すると、Azure Enterprise Agreement 請�
 
    このコネクタ バージョンでサポートされるのは、 https://ea.azure.com からのエンタープライズ登録のみです。 現在、中国での登録はサポートされていません。
 
-   次に、接続するための*アクセス キー*を指定します。
+   次に、接続するための *アクセス キー* を指定します。
 
    ![アクセス キーを入力し、Microsoft Azure Consumption Insights に接続するためのダイアログのスクリーンショット。](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
@@ -96,7 +96,7 @@ Azure Consumption Insights を使用すると、Azure Enterprise Agreement 請�
 ## <a name="using-azure-consumption-insights"></a>Azure Consumption Insights の使用
 **Azure Consumption Insights** コネクタを使用するには、Azure portal のエンタープライズ機能にアクセスします。
 
-**Azure Consumption Insights** コネクタを使用して正常にデータを読み込んだら、**クエリ エディター**を使用して独自のカスタム メジャーと列を作成することができます。 また、**Power BI サービス**で共有できるビジュアル、レポート、およびダッシュボードを作成できます。
+**Azure Consumption Insights** コネクタを使用して正常にデータを読み込んだら、**クエリ エディター** を使用して独自のカスタム メジャーと列を作成することができます。 また、**Power BI サービス** で共有できるビジュアル、レポート、およびダッシュボードを作成できます。
 
 空のクエリを使用すると、Azure カスタム クエリ コレクションのサンプルを取得できます。 これを取得するには、次の 2 つの方法があります。 
 
@@ -105,12 +105,12 @@ Azure Consumption Insights を使用すると、Azure Enterprise Agreement 請�
 1. **[ホーム]** リボンを選択します 
 2. **[データの取得]**  >  **[空のクエリ]** を選択します 
 
-または、**クエリ エディター**の場合: 
+または、**クエリ エディター** の場合: 
 
 1. 左側の **[クエリ]** ウィンドウを右クリックします 
 2. 表示されるメニューから **[新しいクエリ] > [空のクエリ]** の順に選択します
 
-**数式バー**に、 *= MicrosoftAzureConsumptionInsights.Contents* と入力します。
+**数式バー** に、 *= MicrosoftAzureConsumptionInsights.Contents* と入力します。
 
 次の図は、表示されるサンプル コレクションを示しています。
 
@@ -127,7 +127,7 @@ Azure Consumption Insights を使用すると、Azure Enterprise Agreement 請�
 
 一部の顧客は、"*Azure Enterprise Connector (ベータ)* " を使用してビジュアルを作成しています。 これは、最終的に、**Azure Consumption Insights** コネクタに置き換えられます。 新しいコネクタには、次のような機能と拡張機能が用意されています。
 
-* *残高集計*および *Marketplace での購入*で使用可能な追加のデータ ソース
+* *残高集計* および *Marketplace での購入* で使用可能な追加のデータ ソース
 * *startBillingDataWindow* や *endBillingDataWindow* などの、新しい拡張パラメーター
 * パフォーマンスと応答性の向上
 
@@ -137,7 +137,7 @@ Azure Consumption Insights を使用すると、Azure Enterprise Agreement 請�
 最初の手順では、この記事の前の方で詳細を説明した **Azure Consumption Insights** コネクタを使用します。 この手順では、**Power BI Desktop** の **[ホーム]** リボンから **[データの取得]、[空のクエリ]** の順に選択します。
 
 ### <a name="step-2-create-a-query-in-advanced-editor"></a>手順 2:詳細エディターでクエリを作成する
-**クエリ エディター**で、 **[ホーム]** リボンの **[クエリ]** セクションから **[詳細エディター]** を選択します。 表示された **[詳細エディター]** ウィンドウで、次のクエリを入力します。
+**クエリ エディター** で、 **[ホーム]** リボンの **[クエリ]** セクションから **[詳細エディター]** を選択します。 表示された **[詳細エディター]** ウィンドウで、次のクエリを入力します。
 
 ```console
 let    

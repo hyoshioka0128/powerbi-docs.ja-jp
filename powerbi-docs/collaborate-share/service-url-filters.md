@@ -6,16 +6,16 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 07/16/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 5d5647216caee4eae648d0be0ebf3f453cd17d71
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 7015eb1298649534a6e93cb9d6671250c6c77b94
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633003"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406367"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>URL のクエリ文字列パラメーターを使用してレポートをフィルター処理する
 
@@ -39,16 +39,16 @@ Power BI Desktop で作業しているとします。 他の Power BI レポー�
 
 ![URL とフィルターのスクリーンショット。](media/service-url-filters/power-bi-filter-urls7b.png)
 
-* **テーブル**と**フィールド**の名前では大文字と小文字が区別されますが、**値**では区別されません。
+* **テーブル** と **フィールド** の名前では大文字と小文字が区別されますが、**値** では区別されません。
 * レポート ビューに表示されないフィールドをフィルター処理することもできます。
 
 ### <a name="field-types"></a>フィールドの型
 
 フィールドの型は、数値、日付時刻、または文字にすることができます。使用する型は、データセットに設定されている型と一致する必要があります。  たとえば、日付として設定されているデータセット列で日付時刻値や数値を検索する場合、"文字列" 型のテーブル列を指定しても動作しません (Table/StringColumn eq 1 など)。
 
-* **文字列**は単一引用符で囲む必要があります (例: 'manager name')。
-* **数値**には特別な書式設定は必要ありません。 詳細については、この記事の「[数値データ型](#numeric-data-types)」を参照してください。
-* **日付と時刻**については、この記事の「[日付データ型](#date-data-types)」を参照してください。 
+* **文字列** は単一引用符で囲む必要があります (例: 'manager name')。
+* **数値** には特別な書式設定は必要ありません。 詳細については、この記事の「[数値データ型](#numeric-data-types)」を参照してください。
+* **日付と時刻** については、この記事の「[日付データ型](#date-data-types)」を参照してください。 
 
 以下では構文についてさらに詳しく説明します。  
 
@@ -172,17 +172,17 @@ URL フィルターでは、単一引用符 (') を除く、フィールド値�
 
 - `?filter=Table/Name eq 'Lee''s Summit'` は次のようになります。
 
-    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Name is O'Brien":::
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Lee's Summit":::
 
 - `in` 演算子もこのエスケープをサポートしています。`?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` は次のようになります。
 
-    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Name is O'Brien":::
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lee's Summit or O'Brien":::
 
 ## <a name="use-dax-to-filter-on-multiple-values"></a>DAX を使用して複数の値をフィルター処理する
 
 複数のフィールドにフィルターを適用するもう 1 つの方法は、2 つのフィールドを 1 つの値に連結する計算列を作成することです。 その後は、その値に対してフィルターを適用できます。
 
-たとえば、[Territory] および [Chain] という 2 つのフィールドがあるとします。 Power BI Desktop で、TerritoryChain という名前の[新しい計算列 (フィールド) を作成](../transform-model/desktop-tutorial-create-calculated-columns.md)します。 **フィールド**名にスペースが含まれてはならないことに注意してください。 その列に DAX 式は次のようになります。
+たとえば、[Territory] および [Chain] という 2 つのフィールドがあるとします。 Power BI Desktop で、TerritoryChain という名前の[新しい計算列 (フィールド) を作成](../transform-model/desktop-tutorial-create-calculated-columns.md)します。 **フィールド** 名にスペースが含まれてはならないことに注意してください。 その列に DAX 式は次のようになります。
 
 TerritoryChain = [Territory] & " - " & [Chain]
 

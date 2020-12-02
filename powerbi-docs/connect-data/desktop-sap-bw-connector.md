@@ -2,19 +2,19 @@
 title: Power BI Desktop で SAP Business Warehouse (BW) Connector を使用する
 description: Power BI Desktop で SAP BW Connector を使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/13/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b3250124fa813f3da96e63455d483cf05f01cb6
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 1808638ad0ccaa2adc57d56bf1677dea0ca24440
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91598831"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404665"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>Power BI Desktop で SAP Business Warehouse コネクタを使用する
 
@@ -22,7 +22,7 @@ Power BI Desktop で、*SAP BusinessWarehouse (BW)* のデータにアクセス�
 
 SAP のお客様が既存の SAP BW システムに Power BI を接続することで得られる利点については、[Power BI と SAP BW に関するホワイトペーパー](https://aka.ms/powerbiandsapbw)を参照してください。 DirectQuery と SAP BW を使用する方法については、「[DirectQuery と SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)」を参照してください。
 
-2018 年 6 月リリース以降の Power BI Desktop で、2018 年 10 月に一般公開された *SAP BW コネクタ*をパフォーマンスと機能が大幅に向上された実装で使うことができます。 Microsoft は、SAP BW Connector の "*Implementation 2.0*" を開発しました。 SAP BW Connector のバージョン 1 または Implementation 2.0 SAP Connector のいずれかを選択します。 以下のセクションでは、各バージョンのインストールについて順番に説明します。 Power BI Desktop から SAP BW に接続するときは、どちらか一方または両方のコネクタを選ぶことができます。
+2018 年 6 月リリース以降の Power BI Desktop で、2018 年 10 月に一般公開された *SAP BW コネクタ* をパフォーマンスと機能が大幅に向上された実装で使うことができます。 Microsoft は、SAP BW Connector の "*Implementation 2.0*" を開発しました。 SAP BW Connector のバージョン 1 または Implementation 2.0 SAP Connector のいずれかを選択します。 以下のセクションでは、各バージョンのインストールについて順番に説明します。 Power BI Desktop から SAP BW に接続するときは、どちらか一方または両方のコネクタを選ぶことができます。
 
 可能な場合は常に Implementation 2.0 SAP Connector を使用することをお勧めします。
 
@@ -65,7 +65,7 @@ SAP BW Connector とその DirectQuery での使用方法の詳細について�
 
 ![SAP サーバーの接続設定](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
-また、 **[詳細設定オプション]** として、**言語コード**と、指定したサーバーに対して実行するカスタム **MDX ステートメント**の 2 つを指定できます。
+また、 **[詳細設定オプション]** として、**言語コード** と、指定したサーバーに対して実行するカスタム **MDX ステートメント** の 2 つを指定できます。
 
 ![追加の接続情報](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
@@ -79,14 +79,14 @@ MDX ステートメントを指定しない場合、接続設定には、サー�
 
 * **[Display Only selected items]\(選択した項目のみを表示する\)** 。 既定では、 **[ナビゲーター]** にすべての項目が表示されます。  このオプションは、選択した項目の最終セットを確認するのに役立ちます。 選択した項目を表示するには、[プレビュー] 領域の列名を選択する方法もあります。
 * **[データ プレビューを有効にします]** 。 この値は既定値です。 データのプレビューを表示します。 データ プレビューを無効にすると、プレビューのためのデータが必要なくなるため、サーバー呼び出しの回数が減ります。
-* **[技術名]** 。 SAP BW はキューブ内のオブジェクトの*技術名*の概念をサポートしています。 技術名を使うと、キューブの所有者がキューブ内のオブジェクトの*物理名*だけでなく、*フレンドリ名*も公開できます。
+* **[技術名]** 。 SAP BW はキューブ内のオブジェクトの *技術名* の概念をサポートしています。 技術名を使うと、キューブの所有者がキューブ内のオブジェクトの *物理名* だけでなく、*フレンドリ名* も公開できます。
 
 ![[ナビゲーター] ウィンドウ](media/desktop-sap-bw-connector/sap_bw_6.png)
 
 必要なオブジェクトをすべて選択したら、次のいずれかのオプションを選択して、次に行う操作を決定できます。
 
-* **[読み込み]** を選択して、出力テーブルの行セット全体を Power BI Desktop データ モデルに読み込みます。 **レポート** ビューが開きます。 データのビジュアル化またはさらなる変更を開始するには、**データ**または**リレーションシップ** ビューを使用します。
-* **[編集]** を選択して**クエリ エディター**を開きます。 行のセット全体が Power BI Desktop データ モデルに取り込まれる前に、追加のデータ変換およびフィルター手順を指定します。
+* **[読み込み]** を選択して、出力テーブルの行セット全体を Power BI Desktop データ モデルに読み込みます。 **レポート** ビューが開きます。 データのビジュアル化またはさらなる変更を開始するには、**データ** または **リレーションシップ** ビューを使用します。
+* **[編集]** を選択して **クエリ エディター** を開きます。 行のセット全体が Power BI Desktop データ モデルに取り込まれる前に、追加のデータ変換およびフィルター手順を指定します。
 
 Power BI Desktop では SAP BW のキューブから情報をインポートするだけでなく、他のさまざまなデータ ソースからもデータをインポートし、1 つのレポートにまとめることができます。 この機能により、SAP BW のデータに加えて、レポートや分析の際のさまざまな興味深いシナリオが得られます。
 
@@ -143,7 +143,7 @@ Implementation 2.0 を使用するように既存のレポートを変更する�
 
 1. クエリを右クリックし、 **[詳細エディター]** を選びます。
 
-1. **詳細エディター**で、`SapBusinessWarehouse.Cubes` の呼び出しを次のように変更します。
+1. **詳細エディター** で、`SapBusinessWarehouse.Cubes` の呼び出しを次のように変更します。
 
     次の例のように、オプション レコードがクエリに既に含まれるかどうかを確認します。
 

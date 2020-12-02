@@ -2,20 +2,20 @@
 title: チュートリアル:Web ページからのデータのインポートと分析
 description: チュートリアル:Power BI Desktop を使用して Web ページからデータをインポートおよび分析する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 01/13/2020
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 2a8c27029a494898849cab39c8bf843d3afc09a0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d407da8e11473180f21e62c94f0ab440050beedc
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853244"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404826"
 ---
 # <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>チュートリアル:Power BI Desktop を使用して Web ページのデータを分析する
 
@@ -56,7 +56,7 @@ Web 接続の確立には基本認証のみが使用されます。 Web コネ�
 
 1. **[ナビゲーター]** の一覧で **Results[edit]** テーブルを選択し、 **[データの変換]** を選択します。
 
-   テーブルのプレビューが **Power Query エディター**で開きます。ここで、変換を適用してデータをクリーンアップできます。
+   テーブルのプレビューが **Power Query エディター** で開きます。ここで、変換を適用してデータをクリーンアップできます。
 
    ![Power Query エディター](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
 
@@ -134,7 +134,7 @@ Web 接続の確立には基本認証のみが使用されます。 Web コネ�
 
    ![閉じて適用](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
 
-クエリが Power BI Desktop の*レポート* ビューに読み込まれて、 **[フィールド]** ペインに表示されます。
+クエリが Power BI Desktop の *レポート* ビューに読み込まれて、 **[フィールド]** ペインに表示されます。
 
    ![[フィールド] ウィンドウ](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 
@@ -147,7 +147,7 @@ Web 接続の確立には基本認証のみが使用されます。 Web コネ�
 
 データに基づいて視覚エフェクトを作成するには:
 
-1. **[フィールド]** ウィンドウで **Country** フィールドを選ぶか、フィールドをレポート キャンバスにドラッグします。 Power BI Desktop がデータを国名として認識し、自動的に**マップ**視覚エフェクトを作成します。
+1. **[フィールド]** ウィンドウで **Country** フィールドを選ぶか、フィールドをレポート キャンバスにドラッグします。 Power BI Desktop がデータを国名として認識し、自動的に **マップ** 視覚エフェクトを作成します。
 
    ![マップの視覚エフェクト](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png)
 

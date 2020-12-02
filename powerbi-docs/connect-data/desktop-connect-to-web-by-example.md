@@ -2,25 +2,25 @@
 title: Power BI Desktop の例を指定して Web ページからデータを抽出する
 description: プルするデータの例を指定して Web ページからデータを抽出する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/21/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 716439417a0e9cc57188c544f984f4936a424a47
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 95d3de9adbe8ea1111af5094f2c1993ee189fcdd
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632459"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405608"
 ---
 # <a name="get-webpage-data-by-providing-examples"></a>例を提供して Web ページ データを取得する
 
 Web ページからのデータ取得を利用すると、ユーザーは Web ページからデータを簡単に抽出し、そのデータを *Power BI Desktop* にインポートすることができます。 ただし、多くの場合、Web ページ上のデータは、抽出が容易な整理されたテーブル形式ではありません。 データが構造化されていて、一貫性がある場合でも、そのようなページからデータを取得することは困難です。
 
-解決策はあります。 "*例を指定して Web からデータを取得する*" 機能を使用すると、基本的には、コネクタ ダイアログで 1 つ以上の例を指定して、抽出するデータを Power BI Desktop に示すことができます。 Power BI Desktop により、ページ上で例と一致する他のデータが収集されます。 この解決策を利用すると、テーブルで見つかったデータ*だけでなく*、その他のテーブル以外のデータなど、Web ページからあらゆる種類のデータを抽出できます。
+解決策はあります。 "*例を指定して Web からデータを取得する*" 機能を使用すると、基本的には、コネクタ ダイアログで 1 つ以上の例を指定して、抽出するデータを Power BI Desktop に示すことができます。 Power BI Desktop により、ページ上で例と一致する他のデータが収集されます。 この解決策を利用すると、テーブルで見つかったデータ *だけでなく*、その他のテーブル以外のデータなど、Web ページからあらゆる種類のデータを抽出できます。
 
 ![例を指定して Web からデータを取得する](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
@@ -48,7 +48,7 @@ https://www.microsoft.com/store/top-paid/games/xbox?category=classics
 
 **[例を使用してテーブルを追加]** を選択すると、Web ページのコンテンツをプレビューできる対話型ウィンドウが表示されます。 抽出するデータのサンプル値を入力します。
 
-この例では、ページ上のゲームごとに*名前*と*価格*を抽出します。 ページから各列の例をいくつか指定することで、それを行うことができます。 例を入力すると、*Power Query* により、スマート データ抽出アルゴリズムを使用して、入力した例のパターンに適合するデータが抽出されます。
+この例では、ページ上のゲームごとに *名前* と *価格* を抽出します。 ページから各列の例をいくつか指定することで、それを行うことができます。 例を入力すると、*Power Query* により、スマート データ抽出アルゴリズムを使用して、入力した例のパターンに適合するデータが抽出されます。
 
 ![インターネットのデータが表示されているスクリーンショット。](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 

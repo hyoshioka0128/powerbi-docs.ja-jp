@@ -2,19 +2,19 @@
 title: Power BI Desktop でのデータ型
 description: Power BI Desktop でのデータ型
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: reference
 ms.date: 05/06/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 40f85c40abd543e4f90a1f571ce648bfc4af7d9e
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 5376bcf589c2193b408b705b814be69145ac52fe
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216468"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405470"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Power BI Desktop でのデータ型
 この記事では、Power BI Desktop と Data Analysis Expressions (DAX) でサポートされるデータ型について説明します。 

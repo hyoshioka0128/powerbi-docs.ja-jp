@@ -2,22 +2,23 @@
 title: Power BI Desktop の起動時の問題を解決する
 description: Power BI Desktop の起動時の問題を解決する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 01/14/2020
-ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: ba59a08ee1b50e44af71312a25d77fb67c8fca2d
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 8d33973f1a11050d104399c98866fdae0ffb1f8a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485440"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404895"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Power BI Desktop の起動に関するトラブルシューティング
 
-Power BI Desktop では、以前のバージョンの *Power BI オンプレミス データ ゲートウェイ*をインストールして実行していたユーザーが Power BI Desktop を開くことができないことがあります。これは、Power BI オンプレミス データ ゲートウェイによってローカル コンピューター上の名前付きパイプに設定された管理ポリシー制限が原因で発生します。
+Power BI Desktop では、以前のバージョンの *Power BI オンプレミス データ ゲートウェイ* をインストールして実行していたユーザーが Power BI Desktop を開くことができないことがあります。これは、Power BI オンプレミス データ ゲートウェイによってローカル コンピューター上の名前付きパイプに設定された管理ポリシー制限が原因で発生します。
 
 ## <a name="resolve-issues-with-the-on-premises-data-gateway-and-power-bi-desktop"></a>オンプレミス データ ゲートウェイと Power BI Desktop での問題を解決する
 
