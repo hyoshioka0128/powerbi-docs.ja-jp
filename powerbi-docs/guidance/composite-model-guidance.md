@@ -2,18 +2,18 @@
 title: Power BI Desktop の複合モデルのガイダンス
 description: 複合モデルの開発に関するガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/24/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 840e4dc92164de2ebfd1bdef6bee941124f6e906
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: 53c0af04a76d4cf8cfacd49002434ecbc246fbe8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136214"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96394384"
 ---
 # <a name="composite-model-guidance-in-power-bi-desktop"></a>Power BI Desktop の複合モデルのガイダンス
 
@@ -54,14 +54,14 @@ ms.locfileid: "91136214"
 Power BI で複合モデルにクエリを実行する場合は、いくつかのシナリオが考えられます。
 
 - **インポート テーブルまたはデュアル テーブルに対してのみクエリを実行する**:すべてのデータは、モデル キャッシュから取得されます。 可能な限り最速のパフォーマンスを達成できます。 このシナリオは、フィルターまたはスライサー ビジュアルによってクエリが行われるディメンション型テーブルの場合に一般的です。
-- **同じソースのデュアル テーブルまたは DirectQuery テーブルに対してクエリを実行する**:1 つ以上のネイティブ クエリを DirectQuery ソースに送信することで、すべてのデータを取得します。 特にソース テーブルに適切なインデックスが存在する場合に、最速のパフォーマンスを達成できます。 このシナリオは、デュアル ディメンション型テーブルと DirectQuery ファクト型テーブルを関連付けるクエリの場合に一般的です。 これらのクエリは "_アイランド内_" なので、1 対 1 または 1 対多の関係はすべて[標準リレーションシップ](../transform-model/desktop-relationships-understand.md#regular-relationships)として評価されます。
+- **同じソースのデュアル テーブルまたは DirectQuery テーブルに対してクエリを実行する**:1 つ以上のネイティブ クエリを DirectQuery ソースに送信することで、すべてのデータを取得します。 特にソース テーブルに適切なインデックスが存在する場合に、最速のパフォーマンスを達成できます。 このシナリオは、デュアル ディメンション型テーブルと DirectQuery ファクト型テーブルを関連付けるクエリの場合に一般的です。 これらのクエリは "_アイランド内_" なので、1 対 1 または 1 対多の関係はすべて [標準リレーションシップ](../transform-model/desktop-relationships-understand.md#regular-relationships)として評価されます。
 - **他のすべてのクエリ**:これらのクエリには、アイランド間のリレーションシップが含まれます。 これは、インポート テーブルが DirectQuery テーブルと関係しているか、デュアル テーブルが異なるソースの DirectQuery テーブルと関係している (この場合はインポート テーブルとして動作します) ためです。 すべてのリレーションシップは[制限付きリレーションシップ](../transform-model/desktop-relationships-understand.md#limited-relationships)として評価されます。 また、非 DirectQuery テーブルに適用されるグループ化は、仮想テーブルとして DirectQuery ソースに送信される必要があることも意味します。 この場合、特に大規模なグループ化セットの場合、ネイティブ クエリは非効率的です。 また、ネイティブ クエリでは機密データが公開される可能性があります。
 
 まとめると、推奨事項は次のとおりです。
 
 - 複合モデルが適切なソリューションであることを慎重に検討します。異なるデータ ソースをモデルレベルで統合できますが、結果として設計が複雑になるという影響もあります
 - テーブルが大量のデータを格納するファクト型テーブルである場合、または準リアルタイムの結果を提供する必要がある場合は、ストレージ モードを **DirectQuery** に設定します
-- テーブルがディメンション型テーブルの場合は、ストレージ モードを**デュアル**に設定します。これにより、同じソースに基づく **DirectQuery** ファクト型テーブルと共にクエリが実行されます
+- テーブルがディメンション型テーブルの場合は、ストレージ モードを **デュアル** に設定します。これにより、同じソースに基づく **DirectQuery** ファクト型テーブルと共にクエリが実行されます
 - デュアル テーブル (および依存するすべての計算テーブル) のモデル キャッシュとソース データベースとの同期を維持するように、適切な更新頻度を構成します
 - データ ソース (モデル キャッシュを含む) 間のデータの整合性を確保します。関連する列の値が一致しない場合は、制限付きリレーションシップによって行が削除されます
 - 効率的な結合、フィルター処理、グループ化のために適切なインデックスを使用して DirectQuery データ ソースを最適化します

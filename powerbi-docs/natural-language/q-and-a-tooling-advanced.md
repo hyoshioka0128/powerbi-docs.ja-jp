@@ -2,17 +2,17 @@
 title: Power BI Desktop で Q&A の言語スキーマを編集し、言い回しを追加する
 description: Power BI Desktop を使って、Power BI の Q&A で使われる言語スキーマを編集する方法です。
 author: mohaali
+ms.author: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 10/18/2019
-ms.author: mohaali
-ms.openlocfilehash: 9499dd99d89619d096d86ac676c54ebb214c3a55
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: ce01fc6c4dc34c614ac024240855301b3fb66968
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841850"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393671"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Power BI Desktop で Q&A の言語スキーマを編集し、言い回しを追加する 
 データに関する質問に、一般的な語句と自然言語を使用するのは効果的です。 データが回答になる場合にはさらに効果的です。 Power BI の Q&A に質問すると、Q&A は質問にできるだけ正しく回答します。 しかし、さらに優れた Q&A 相互作用のために、回答を改善できます。 1 つの方法は、言語スキーマを編集することです。 
@@ -114,7 +114,7 @@ Power BI によって、モデルの構造と、列名に基づく推定を基�
     例: 生まれる、爆発する、貪る、取り出す
 - "*形容詞*" は、名詞を変更する説明的な単語です。 
     例: 強力な、魅力的な、金色の、盗まれた
-- *前置詞*は、名詞の前にあって、名詞をその前にある名詞、動詞、形容詞に関連付けるために使われる単語です (例: の、に、の近く、から)
+- *前置詞* は、名詞の前にあって、名詞をその前にある名詞、動詞、形容詞に関連付けるために使われる単語です (例: の、に、の近く、から)
 -  "*属性*" は、何かの品質または機能です。
 -  "*名前*" は、人、動物、場所、物が認識または参照される単語または単語のセットです。   
 

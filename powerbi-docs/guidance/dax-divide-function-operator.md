@@ -2,24 +2,24 @@
 title: DAX:DIVIDE 関数と除算演算子 (/)
 description: DAX DIVIDE 関数を使用する場合のガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 7266861304692a1c70f80e3cf9ed3f1fea60f750
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: ece1c0d939ef521b20142acb753de7b7554e870a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965490"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96394131"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX:DIVIDE 関数と除算演算子 (/)
 
 データ モデラーとして、分子を分母で除算する DAX 式を記述する場合に、[DIVIDE](/dax/divide-function-dax) 関数または除算演算子 (/ - スラッシュ) を使用することを選択できます。
 
-DIVIDE 関数を使用する場合は、分子と分母の式で渡す必要があります。 必要に応じて、_別の結果_を表す値を渡すこともできます。
+DIVIDE 関数を使用する場合は、分子と分母の式で渡す必要があります。 必要に応じて、_別の結果_ を表す値を渡すこともできます。
 
 ```dax
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
@@ -54,7 +54,7 @@ DIVIDE([Profit], [Sales])
 
 ## <a name="recommendations"></a>推奨事項
 
-分母がゼロまたは空白を返す_可能性がある_式である場合は常に、DIVIDE 関数を使用することをお勧めします。
+分母がゼロまたは空白を返す _可能性がある_ 式である場合は常に、DIVIDE 関数を使用することをお勧めします。
 
 分母が定数値の場合は、除算演算子を使用することをお勧めします。 この場合、除算は成功することが保証され、不要なテストを回避するため、式のパフォーマンスが向上します。
 

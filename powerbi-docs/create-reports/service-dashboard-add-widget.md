@@ -2,20 +2,20 @@
 title: 画像やビデオなどをダッシュボードに追加する
 description: '[タイルの追加] ウィジェットを使用して画像、ビデオ、テキスト ボックス、Web コード、ストリーミング データ タイルをダッシュボードに追加する方法に関するドキュメント。'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/28/2020
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 72306a6269df91a75b750628e3534bf5891fe6b0
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 27c5dba205ee396a2415259163e5dbfb8df11037
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916914"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395442"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>画像やビデオなどをダッシュボードに追加する
 
@@ -122,7 +122,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
 
 1. **[タイルの追加]** ウィンドウで、 **[カスタム ストリーミング データ]**  >  **[次へ]** の順に選択します。
 2. **[ストリーミング データセットの追加]** を選択します。
-3. Power BI API または PubNub を使用して、 **新しいストリーミング データセット** を作成します。
+3. Power BI API または PubNub を使用して、**新しいストリーミング データセット** を作成します。
 4. **[データセット名]** 、 **[サブスクリプション キー]** 、 **[チャネル名]** の各フィールドに入力します。 セキュリティで保護された接続の場合は、承認キーもあります。 PubNub のサンプル値を使って試してみることができます。
 5. **[次へ]** を選びます。
     データセットで使用できるフィールドと、データ型および JSON 形式が表示されます。
@@ -142,7 +142,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
 
 2. **[ストリーミング データセットの追加]** を選択します。
 
-3. Power BI API または PubNub を使用して、 **新しいストリーミング データセット** を作成します。
+3. Power BI API または PubNub を使用して、**新しいストリーミング データセット** を作成します。
 
 4. **[データセット名]** 、 **[サブスクリプション キー]** 、 **[チャネル名]** の各フィールドに入力します。 セキュリティで保護された接続の場合は、承認キーもあります。 PubNub のサンプル値を使って試してみることができます。
 
@@ -191,7 +191,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
    ![4 つのタイルがあるダッシュボード](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
 ### <a name="tips-for-embedding-web-content"></a>Web コンテンツを埋め込むためのヒント
-* iframe には、セキュリティで保護されたソースを使います。 iframe の埋め込みコードを入力したときにタイルが空白になった場合は、iframe ソースに *http* を使用していないことを確認します。 使用している場合は、 *https* に変更します。
+* iframe には、セキュリティで保護されたソースを使います。 iframe の埋め込みコードを入力したときにタイルが空白になった場合は、iframe ソースに *http* を使用していないことを確認します。 使用している場合は、*https* に変更します。
   
   ```html
   <iframe src="https://xyz.com">
@@ -229,7 +229,7 @@ PubNub を使用して、Twitter フィードやセンサー データなどの�
 ## <a name="edit-a-tile"></a>タイルを編集する
 既存のタイルに変更を加えるには:
 
-1. タイルの右上隅にマウス ポインターを移動し、 **その他のオプション** (...) を選択します。
+1. タイルの右上隅にマウス ポインターを移動し、**その他のオプション** (...) を選択します。
    
     ![タイルの省略記号の選択](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. **[詳細の編集]** を選択し、 **[タイルの詳細]** ウィンドウを表示して変更を加えます。

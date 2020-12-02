@@ -2,19 +2,19 @@
 title: Power BI サービスの新機能
 description: Power BI サービスの新機能
 author: NikhilGaekwad-MSFT
+ms.author: nikhilga
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/14/2020
-ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 3052119ed4abd4e752ab14a5eb9a2087148f4997
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 71ed2610ea77900fe51542b2257f4795f201694f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397072"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96394959"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI サービスの新機能
 **Power BI サービス** の既知の問題と最近リリースされた機能については、このページをご確認ください。 関連する最新情報については、次の資料を参照してください。

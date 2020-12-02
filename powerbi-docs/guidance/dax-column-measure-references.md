@@ -2,18 +2,18 @@
 title: DAX:列参照とメジャー参照
 description: DAX 式でのメジャーの列の参照に関するガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/18/2019
-ms.author: v-pemyer
-ms.openlocfilehash: d3a7c39d659dacb8a44728518e239cd481ba951d
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: 861fd2d5c3d511358b508c7a0d6f7e96472e5aaf
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965236"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96394246"
 ---
 # <a name="dax-column-and-measure-references"></a>DAX:列参照とメジャー参照
 
@@ -23,7 +23,7 @@ ms.locfileid: "90965236"
 
 列はテーブルレベル オブジェクトであり、列名はテーブル内で一意である必要があります。 そのため、同じ列名がモデル内で複数回使用され、これによって異なるテーブルに属する可能性があります。 もう 1 つルールがあります。列名は、同じテーブル内に存在するメジャー名または階層名と同じ名前にすることはできません。
 
-一般に、DAX では、列への_完全修飾_参照を使用することが強制されません。 完全修飾参照は、列名の前にテーブル名が付いていることを意味します。
+一般に、DAX では、列への _完全修飾_ 参照を使用することが強制されません。 完全修飾参照は、列名の前にテーブル名が付いていることを意味します。
 
 列名参照のみを使用した計算列の定義の例を次に示します。 **Sales** 列と **Cost** 列は、両方とも **Orders** という名前のテーブルに属しています。
 
@@ -43,7 +43,7 @@ Profit = Orders[Sales] - Orders[Cost]
 
 ## <a name="measures"></a>メジャー
 
-メジャーは、モデルレベル オブジェクトです。 このため、メジャー名はモデル内で一意である必要があります。 ただし、 **[フィールド]** ウィンドウでは、1 つのモデル テーブルに関連付けられている各メジャーがレポート作成者に表示されます。 この関連付けは、見栄えの理由から設定されており、メジャーの**ホーム テーブル** プロパティを設定することで構成できます。 詳細については、[Power BI Desktop のメジャー (メジャーを整理する)](../transform-model/desktop-measures.md#organizing-your-measures) に関するページを参照してください。
+メジャーは、モデルレベル オブジェクトです。 このため、メジャー名はモデル内で一意である必要があります。 ただし、 **[フィールド]** ウィンドウでは、1 つのモデル テーブルに関連付けられている各メジャーがレポート作成者に表示されます。 この関連付けは、見栄えの理由から設定されており、メジャーの **ホーム テーブル** プロパティを設定することで構成できます。 詳細については、[Power BI Desktop のメジャー (メジャーを整理する)](../transform-model/desktop-measures.md#organizing-your-measures) に関するページを参照してください。
 
 式で完全修飾メジャーを使用することは可能です。 DAX intellisense であっても、提案が提供されます。 ただし、これは必須ではなく、推奨される方法でもありません。 メジャーのホーム テーブルを変更する場合は、それに対する完全修飾メジャー参照を使用するすべての式が中断されます。 次に、分割された各数式を編集して、メジャー参照を削除 (または更新) する必要があります。
 

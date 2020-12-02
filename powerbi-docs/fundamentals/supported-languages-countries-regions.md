@@ -1,20 +1,20 @@
 ---
 title: Power BI でサポートされる言語と国または地域
 description: Power BI サービス、Power BI Desktop、および Power BI ドキュメントでサポートされている言語と国/地域の一覧を示します。
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/23/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: da1ec0ec3a10adbd9771e13a97bcb17dcdf73273
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 9bd968676e2e9413c0d366cc22980e0a6355e4f9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216909"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395028"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI でサポートされる言語と国または地域
 
@@ -93,7 +93,7 @@ Power BI では、コンピューターの言語設定を基に言語を検出�
 1. ブラウザー ウィンドウの右上隅にある **[ツール]** ボタンをクリックします。
    
    ![[ツール] ボタンを表示している Internet Explorer のスクリーンショット。](media/supported-languages-countries-regions/languages1.png)
-2. **インターネット オプション**をクリックします。
+2. **インターネット オプション** をクリックします。
 3. [インターネット オプション] ダイアログの [全般] タブの [デザイン] の下の、 **[言語]** ボタンをクリックします。
 
 #### <a name="google-chrome-version-42"></a>Google Chrome (バージョン 42)
