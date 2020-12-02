@@ -2,19 +2,19 @@
 title: ダッシュボード、レポート、ワークスペース、レポートのページ、データセットの名前を変更する
 description: Power BI サービスのほとんどすべてのものの名前を変更します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/01/2018
-ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d37dfece5c7f181ddf55b58ea461e48fdd090d11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fc120b832fda05d822e57ace56b15fbd773a53ad
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218748"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388036"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Power BI サービスのほとんどすべてのものの名前を変更する
 この記事では、Power BI サービスのダッシュボード、レポート、レポートのページ、ブック、データセット、アプリ、ワークスペースの名前を変更する方法について説明します。
@@ -60,7 +60,7 @@ ms.locfileid: "85218748"
 管理者アクセス許可を持つユーザーはワークスペースの名前を変更できます。
 
 1. 名前を変更するワークスペースに移動します。
-2. 右上隅の**その他のオプション** (...) を選び、 **[ワークスペースの編集]** を選びます。 このオプションが表示されない場合は、このワークスペースの名前を変更するアクセス許可がありません。 
+2. 右上隅の **その他のオプション** (...) を選び、 **[ワークスペースの編集]** を選びます。 このオプションが表示されない場合は、このワークスペースの名前を変更するアクセス許可がありません。 
    
     ![[ワークスペースの編集] の選択](media/service-rename/power-bi-edit-workspace.png)
 3. 新しいワークスペース名を入力し、 **[保存]** を選びます。
@@ -84,6 +84,6 @@ Power BI レポートのページの名前を変更するには、  1 回クリ�
 
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
 * 名前を変更しようとするアイテムが自分と共有されている場合、またはコンテンツ パックの一部である場合は、歯車アイコンは表示されず、[設定] にはアクセスできません。
-* **[データセット]** タブに**その他のオプション** (...) が表示されていない場合は、ブラウザーのウィンドウを広げます。
+* **[データセット]** タブに **その他のオプション** (...) が表示されていない場合は、ブラウザーのウィンドウを広げます。
 
 他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

@@ -2,19 +2,19 @@
 title: Power BI サービスのレポート
 description: ビジネス ユーザー向けの Power BI サービスのレポート
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 4ee852e18056fc6db0288066f5b2074eba784487
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 152d3ee87afe93fdfbe19060a42f013ec83f2d2a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983451"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389729"
 ---
 # <a name="reports-in-power-bi"></a>Power BI のレポート
 
@@ -22,7 +22,7 @@ ms.locfileid: "91983451"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Power BI レポートはデータセットのマルチパースペクティブ表示です。データセットからのさまざまな結果や分析情報がビジュアルによって表されます。  レポートでは、単一のビジュアルを使用することも、各ページでさまざまなビジュアルを使用することもできます。 職務に応じて、レポートを*デザイン*する人になる場合があります。 また、レポートを "*使用*" する "*ビジネス ユーザー*" になる場合もあります。 この記事は、"*ビジネス ユーザー*" を対象としています。
+Power BI レポートはデータセットのマルチパースペクティブ表示です。データセットからのさまざまな結果や分析情報がビジュアルによって表されます。  レポートでは、単一のビジュアルを使用することも、各ページでさまざまなビジュアルを使用することもできます。 職務に応じて、レポートを *デザイン* する人になる場合があります。 また、レポートを "*使用*" する "*ビジネス ユーザー*" になる場合もあります。 この記事は、"*ビジネス ユーザー*" を対象としています。
 
 ## <a name="the-parts-of-a-report"></a>レポートのパーツ
 
@@ -72,7 +72,7 @@ Power BI は、1 つのデータセットに基づいてレポートを作成し
 
 ## <a name="report-designers-and-report-users"></a>レポート デザイナーとレポート ユーザー
 
-自分の役割に応じて、自分で使用するためや同僚と共有するためにレポートを作成する*デザイナー*になる場合があります。 レポートを作成して共有する方法を覚えておく必要があります。
+自分の役割に応じて、自分で使用するためや同僚と共有するためにレポートを作成する *デザイナー* になる場合があります。 レポートを作成して共有する方法を覚えておく必要があります。
 
 また、他のユーザーからレポートを受け取る "*ビジネス ユーザー*" になる場合もあります。 レポートを理解し、処理する方法を知る必要があります。 レポート "*ビジネス ユーザー*" の場合、次のリンクが役立ちます。
 

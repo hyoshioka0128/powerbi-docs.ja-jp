@@ -2,21 +2,21 @@
 title: データセットに関するデータの分析情報を自動的に生成する
 description: データセットとダッシュボード タイルに関する詳細情報を取得する方法を説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/28/2020
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 79148389a697feb2a3d2e2cba0b919eb59632ff7
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 8db804ec3afe4b752ab6f5f8546782cac7135055
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524468"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388473"
 ---
 # <a name="generate-data-insights-on-your-dataset-automatically-with-power-bi"></a>Power BI を使用してデータセットに関するデータの分析情報を自動的に生成する
 新しいデータセットがあるが、どこから始めるべきかわからない場合。  ダッシュボードをすばやく構築する必要がある場合。  不足している情報を探したい場合。
@@ -37,7 +37,7 @@ Amanda がデータセットに対してクイック分析情報を実行し、�
 
 次はあなたの番です。 [サプライヤー クオリティ分析サンプル](sample-supplier-quality.md)を使用して分析情報を試してみます。
 
-1. **[データセット]** タブから**その他のオプション** (...) を選び、**[クイック分析情報を取得する]** を選びます。
+1. **[データセット]** タブから **その他のオプション** (...) を選び、**[クイック分析情報を取得する]** を選びます。
    
     ![データセット タブ](media/service-insights/power-bi-ellipses.png)
    
@@ -72,7 +72,7 @@ Amanda がデータセットに対してクイック分析情報を実行し、�
 
        ![展開された分析情報フィルター メニュー](media/service-insights/power-bi-insights-filter-new.png)
    * **[ビジュアルをピン留めする]** を選択して、分析情報カードをダッシュボードにピン留めします。
-   * カード自体で分析情報を実行します。カードは*範囲付き分析情報*と呼ばれることもあります。 右上隅にある電球アイコン ![[詳細情報の取得] アイコン](media/service-insights/power-bi-bulb-icon.png) または **[詳細情報の取得]** を選択します。
+   * カード自体で分析情報を実行します。カードは *範囲付き分析情報* と呼ばれることもあります。 右上隅にある電球アイコン ![[詳細情報の取得] アイコン](media/service-insights/power-bi-bulb-icon.png) または **[詳細情報の取得]** を選択します。
      
        ![分析情報の取得アイコン](media/service-insights/pbi-autoinsights-tile.png)
      

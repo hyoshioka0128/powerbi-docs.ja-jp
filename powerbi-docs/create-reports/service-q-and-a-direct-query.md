@@ -2,23 +2,23 @@
 title: Power BI でライブ接続で Q&A を使用する
 description: Analysis Services データおよびオンプレミス データ ゲートウェイへのライブ接続で Power BI Q&A の自然言語クエリを使用するためのドキュメント。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/29/2020
-ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 8137fa6bb10e20992547746bc6e91e001767c679
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4e64121fdac63abe22d77818a0f91a860cac316f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218863"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388151"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Power BI で Q&A のライブ接続を有効にする
 
-データセットを Power BI にインポートしたり、データセットへの*ライブ接続*を作成したりできます。 ライブ接続のデータセットは多くの場合、オンプレミスです。 その場合、[ゲートウェイ](../connect-data/service-gateway-onprem.md)を利用してライブ接続を管理します。 データと問い合わせがライブ クエリを利用して送受信されます。
+データセットを Power BI にインポートしたり、データセットへの *ライブ接続* を作成したりできます。 ライブ接続のデータセットは多くの場合、オンプレミスです。 その場合、[ゲートウェイ](../connect-data/service-gateway-onprem.md)を利用してライブ接続を管理します。 データと問い合わせがライブ クエリを利用して送受信されます。
 
 > [!NOTE]
 > ライブ接続では、ゲートウェイを必要としない、Azure Analysis Services データセットもサポートされています。

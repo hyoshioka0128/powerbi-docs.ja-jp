@@ -2,19 +2,19 @@
 title: Power BI でのレポートへのフィルターの追加
 description: Power BI でレポートにページ フィルター、視覚化フィルター、またはレポート フィルターを追加する
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/20/2019
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: bf81ec873b822fbb1604378aa508b3ffeb408511
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 113370dd6b3aa19546f1facada6abc07c12b9d1a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635840"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389117"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Power BI でのレポートへのフィルターの追加
 
@@ -31,7 +31,7 @@ Power BI には、手動と自動からドリルスルーとパススルーま�
 ## <a name="filters-in-editing-view-or-reading-view"></a>編集ビューまたは読み取りビューでのフィルター
 レポートの操作は、読み取りビューと編集ビューの 2 種類のビューで行うことができます。 使用できるフィルター処理機能は、どのビューを使用しているかによって異なります。 詳しくは、「[Power BI レポートのフィルターと強調表示について](power-bi-reports-filters-and-highlighting.md)」をご覧ください。
 
-この記事では、レポートの**編集ビュー**でフィルターを作成する方法について説明します。  読み取りビューでのフィルターについて詳しくは、[レポートの読み取りビューのフィルターとの対話](../consumer/end-user-report-filter.md)に関する記事をご覧ください。
+この記事では、レポートの **編集ビュー** でフィルターを作成する方法について説明します。  読み取りビューでのフィルターについて詳しくは、[レポートの読み取りビューのフィルターとの対話](../consumer/end-user-report-filter.md)に関する記事をご覧ください。
 
 フィルターは "*永続的*" であるため、ユーザーがレポートから離れても、Power BI によってフィルター、スライサー、ユーザーが行ったその他のデータ ビューの変更は保持されます。 そのため、レポートに戻ったとき、前回終了したところから再開できます。 フィルターの変更を残さない場合は、上部のメニュー バーから **[既定値にリセット]** を選択します。
 
@@ -48,7 +48,7 @@ Desktop と Power BI サービスのどちらを使用しているかに関係�
 ビジュアル レベル フィルターは、2 つの方法で特定のビジュアルに追加できます。 
 
 * 視覚エフェクトによって既に使われているフィールドにフィルターを追加します。
-* 視覚エフェクトによってまだ使われていないフィールドを識別し、そのフィールドを**ビジュアル レベル フィルター** バケットに直接追加します。
+* 視覚エフェクトによってまだ使われていないフィールドを識別し、そのフィールドを **ビジュアル レベル フィルター** バケットに直接追加します。
 
 
 ところで、この手順では小売りの分析サンプルを使用するので、よろしければダウンロードして同じように操作してみてください。 [小売りの分析のサンプル](sample-retail-analysis.md#get-the-content-pack-for-this-sample) コンテンツ パックをダウンロードします。
@@ -71,7 +71,7 @@ Desktop と Power BI サービスのどちらを使用しているかに関係�
      
     ![フィルターを展開する矢印](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
     
-    フィルター処理コントロールとして**基本**、**高度**、または**上位 N** を設定します。 この例では、基本フィルターで **cha** を検索し、これら 5 つのストアを選択します。
+    フィルター処理コントロールとして **基本**、**高度**、または **上位 N** を設定します。 この例では、基本フィルターで **cha** を検索し、これら 5 つのストアを選択します。
      
     ![基本フィルターでの検索](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
@@ -112,7 +112,7 @@ Desktop と Power BI サービスのどちらを使用しているかに関係�
    ![レポートの編集ボタン](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. 視覚化およびフィルター ウィンドウとフィールド ウィンドウがまだ開いていない場合は開きます。
 3. [フィールド] ウィンドウで新しいページ レベル フィルターとして追加するフィールドを選び、 **[ページ レベル フィルター]** 領域までドラッグします。  
-4. フィルターを適用する値を選び、フィルター処理コントロールとして**基本**または**高度**を設定します。
+4. フィルターを適用する値を選び、フィルター処理コントロールとして **基本** または **高度** を設定します。
    
    ページ上のすべての視覚化が、変更を反映するように再描画されます。
    

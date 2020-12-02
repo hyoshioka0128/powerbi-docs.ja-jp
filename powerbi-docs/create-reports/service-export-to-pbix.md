@@ -2,19 +2,19 @@
 title: Power BI サービスから Power BI Desktop にレポートをダウンロードする (プレビュー)
 description: Power BI サービスから Power BI Desktop ファイルへのレポートのダウンロード
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/14/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: cd9295e26de50714a15afb672814893317fb8e3b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c83b7d1e52a0d443c52348bec91f935e288830d4
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861408"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388680"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Power BI サービスから Power BI Desktop にレポートをダウンロードする (プレビュー)
       
@@ -51,7 +51,7 @@ Power BI Desktop では、ローカル コンピューターから Power BI サ�
 Power BI サービスから .pbix ファイルをダウンロードすることに関しては、重要な考慮事項と制限事項がいくつかあります。
 
 * ファイルをダウンロードするには、レポートの編集アクセス権限が必要です。
-* レポートが Power BI Desktop を使用して作成され、Power BI サービスに*発行*されているか、.pbix ファイルが Power BI サービスに*アップロード*されている必要があります。
+* レポートが Power BI Desktop を使用して作成され、Power BI サービスに *発行* されているか、.pbix ファイルが Power BI サービスに *アップロード* されている必要があります。
 * レポートは、2016 年 11 月 23 日以降に更新または発行されている必要があります。 それ以前に発行されたレポートはダウンロードできません。
 * この機能は、Power BI サービスでもともと作成されたレポートやコンテンツ パックには使用できません。
 * ダウンロードしたファイルを開くときは常に最新バージョンの Power BI Desktop を使用してください。 最新バージョンではない Power BI Desktop では、ダウンロードした .pbix ファイルを開くことができない場合があります。

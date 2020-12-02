@@ -2,29 +2,29 @@
 title: プレビュー機能のオプトイン
 description: プレビュー段階の Power BI の機能を有効および無効にする方法です。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: a19be2d22802734964d96a93857f77e13c6c05c4
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: c650b7ea282d928af512ce7948902bc4fd72613f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90764244"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389968"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Power BI サービスのプレビュー機能のオプトイン
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 ## <a name="what-are-preview-features"></a>*プレビュー機能* とは
-Power BI サービスの機能向上を行ったときは、新しい機能を*プレビュー機能*としてリリースします。 プレビュー機能を有効および無効にして、試すことができます。
+Power BI サービスの機能向上を行ったときは、新しい機能を *プレビュー機能* としてリリースします。 プレビュー機能を有効および無効にして、試すことができます。
 
-一部のプレビュー機能は、ご利用の Power BI ダッシュボード、ホーム、またはレポート自体から切り替えることができます。 **新しい外観**プレビュー機能は、[ホーム]、レポート、ダッシュボードの上に表示される Power BI メニュー バーからオンとオフを切り替えることができます。 
+一部のプレビュー機能は、ご利用の Power BI ダッシュボード、ホーム、またはレポート自体から切り替えることができます。 **新しい外観** プレビュー機能は、[ホーム]、レポート、ダッシュボードの上に表示される Power BI メニュー バーからオンとオフを切り替えることができます。 
 
    ![新しい外観の切り替え](./media/end-user-preview-features/power-bi-toggle.png)
 

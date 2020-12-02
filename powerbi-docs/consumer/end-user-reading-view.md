@@ -1,31 +1,31 @@
 ---
 title: Power BI サービスにおける Power BI のコンシューマーの機能
-description: このクイックスタートでは、**コンシューマー**が Power BI、アプリ、レポート、ダッシュボードについて学習します。
+description: このクイックスタートでは、**コンシューマー** が Power BI、アプリ、レポート、ダッシュボードについて学習します。
+author: mihart
+ms.author: mihart
 services: powerbi
 documentationcenter: ''
-author: mihart
 ms.reviewer: mihart
 editor: ''
 tags: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/30/2020
-ms.author: mihart
-ms.openlocfilehash: fbff6f202d6bdd3a4bffc031f23399869f08bc5c
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: ff5ffe959372952841cc41d92624b27f2d958f62
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780542"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96390175"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-business-users"></a>クイックスタート: "*ビジネス ユーザー*" 向けの Power BI の機能について学習する
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-このクイック スタートでは、Power BI と対話してデータ駆動型のビジネスの分析情報を発見する方法について説明します。 この記事の意図は、詳細な情報を提供することではなく、Power BI の**ビジネス ユーザー**が使用できるアクションの多くを簡単に説明することです。
+このクイック スタートでは、Power BI と対話してデータ駆動型のビジネスの分析情報を発見する方法について説明します。 この記事の意図は、詳細な情報を提供することではなく、Power BI の **ビジネス ユーザー** が使用できるアクションの多くを簡単に説明することです。
 
 Power BI にサインアップしていない場合は、[無料の試用版にサインアップ](https://app.powerbi.com/signupredirect?pbi_source=web)してください。
 
@@ -54,7 +54,7 @@ Power BI で "コンテンツ" という用語を使用するときは、レポ�
 
 ###  <a name="apps"></a>Apps
 
-*アプリ*とは、関連するダッシュ ボードとレポートがすべて 1 か所にまとめられた Power BI のコンテンツの種類です。 アプリでは、1 つ以上のダッシュ ボードと 1 つ以上のレポートをすべてまとめることができます。 アプリは、アプリを配布して "*ビジネス ユーザー*" と共有する Power BI "*デザイナー*" によって作成されます。 
+*アプリ* とは、関連するダッシュ ボードとレポートがすべて 1 か所にまとめられた Power BI のコンテンツの種類です。 アプリでは、1 つ以上のダッシュ ボードと 1 つ以上のレポートをすべてまとめることができます。 アプリは、アプリを配布して "*ビジネス ユーザー*" と共有する Power BI "*デザイナー*" によって作成されます。 
 
 アプリを表示する方法の 1 つは、ナビ ペインから **[アプリ]** を選択し、開くアプリを選択することです。
 
@@ -132,7 +132,7 @@ Power BI のダッシュボードは、視覚エフェクトを使ってスト�
 
 ![[お気に入り] が選択され、赤で囲まれている [ホーム] のスクリーンショット。](./media/end-user-reading-view/power-bi-list-favorite.png)
 
-メニュー バーで利用可能な他の操作を確認します。  この記事ではすべてについては説明しませんが、他の記事で説明されています。  詳細については、Power BI の目次または**検索**フィールドを使用して参照してください。 
+メニュー バーで利用可能な他の操作を確認します。  この記事ではすべてについては説明しませんが、他の記事で説明されています。  詳細については、Power BI の目次または **検索** フィールドを使用して参照してください。 
 
 詳細については、[お気に入りとおすすめ](end-user-favorite.md)に関するページを参照してください
 
@@ -187,7 +187,7 @@ Easily navigate between the visualizations on the report page.
 詳細については、[ビジュアルの並べ替え](end-user-search-sort.md)に関するページを参照してください
 
 ### <a name="show-the-data-used-to-create-a-visualization"></a>視覚化の作成に使用されたデータを表示する
-Power BI のビジュアルは、基礎データセットからのデータを使用して作成されます。 目に見えない部分を確認する場合は、ビジュアルの作成に使用されているデータを Power BI によって*表示*することができます。 **[テーブルとして表示]** を選択すると、Power BI により視覚エフェクトの下 (または横に) データが表示されます。
+Power BI のビジュアルは、基礎データセットからのデータを使用して作成されます。 目に見えない部分を確認する場合は、ビジュアルの作成に使用されているデータを Power BI によって *表示* することができます。 **[テーブルとして表示]** を選択すると、Power BI により視覚エフェクトの下 (または横に) データが表示されます。
 
 視覚エフェクトをアクティブにし、 **[その他のオプション]** (...) を選択して、 **[テーブルとして表示]** を選択します。
    

@@ -2,19 +2,19 @@
 title: チュートリアル:Excel ブックから Power BI サービス、Teams へ
 description: この記事では、Excel ブックから、Power BI サービスで魅力的なレポートをすばやく作成し、Teams で共有する方法を示します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
 ms.date: 07/30/2020
-ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ccf8b5fa8f1c4d18a25767ff11f035304b339de0
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: 99f562ee315a74c9de6765308272e5e33153c4f0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478132"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388864"
 ---
 # <a name="tutorial-from-excel-workbook-to-a-report-in-the-power-bi-service-to-microsoft-teams"></a>チュートリアル:Excel ブックから Power BI サービスのレポート、Microsoft Teams へ
 あなたの上司は、最新の売上と利益の数値に関するレポートを今日中に見たいと考えています。 しかし、最新のデータはさまざまなサードパーティ システムと、あなたのノート PC 上のファイルにあります。 以前なら、ビジュアルとレポート書式を作成するのに何時間もかかって、次第に不安になったことでしょう。
@@ -128,7 +128,7 @@ Power BI サービスは、多くのデータ ソースに接続できます。�
    
    Power BI によって、集合縦棒グラフが作成されます。 
 
-2. **[視覚化]** メニューで、アイコンのいずれかを選択すると、グラフの種類を変更できます。 たとえば、**積み上げ縦棒グラフ**に変更します。 
+2. **[視覚化]** メニューで、アイコンのいずれかを選択すると、グラフの種類を変更できます。 たとえば、**積み上げ縦棒グラフ** に変更します。 
 
    ![レポート エディターでの積み上げ縦棒グラフのスクリーンショット。](media/service-from-excel-to-stunning-report/power-bi-stacked-column.png)
 
