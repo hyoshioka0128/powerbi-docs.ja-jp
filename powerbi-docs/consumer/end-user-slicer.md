@@ -2,19 +2,19 @@
 title: Power BI サービスのスライサーの使用
 description: Power BI スライサーはフィルターの代わりになる手段であり、レポートの他の視覚化に表示されるデータセットの一部を絞り込むことができます。
 author: mihart
+ms.author: mihart
 ms.reviewer: v-thepet
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/06/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 291da6ec949dd6cfb83f26be573e592e1141e99a
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 4ce1105ec646b926e1fabf896ea450029d231131
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412144"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399076"
 ---
 # <a name="slicers-in-the-power-bi-service"></a>Power BI サービスのスライサー
 
@@ -26,7 +26,7 @@ ms.locfileid: "93412144"
 
 
 ## <a name="how-to-use-slicers"></a>スライサーの使用方法
-レポートを作成するときに、" *デザイナー* " はスライサーを追加します。これによりストーリーを伝え易くなり、データを探索するためのツールが提供されます。
+レポートを作成するときに、"*デザイナー*" はスライサーを追加します。これによりストーリーを伝え易くなり、データを探索するためのツールが提供されます。
 
 ### <a name="numeric-range-slicer"></a>数値範囲のスライサー
  数値範囲スライサーを使用すると、リージョン、在庫数、注文日ごとの総売上高などの定量的なデータを調べることができます。 範囲を選択するには、ハンドルを使用します。 
@@ -35,7 +35,7 @@ ms.locfileid: "93412144"
 
 ### <a name="basic-vertical-checkbox-slicer"></a>基本的な垂直チェックボックス スライサー
 
-基本的なチェックボックス スライサーで、1 つまたは複数のチェックボックスをオンにすると、ページ上の他のビジュアルへの影響が表示されます。 複数選択するには、CTRL キーを押しながら選択します。 レポート " *デザイナー* " は、一度に 1 つの値しか選択できないようにスライサーを設定する場合があります。 
+基本的なチェックボックス スライサーで、1 つまたは複数のチェックボックスをオンにすると、ページ上の他のビジュアルへの影響が表示されます。 複数選択するには、CTRL キーを押しながら選択します。 レポート "*デザイナー*" は、一度に 1 つの値しか選択できないようにスライサーを設定する場合があります。 
 
 ![基本的な垂直スライサー](media/end-user-slicer/power-bi-basic.png)
 

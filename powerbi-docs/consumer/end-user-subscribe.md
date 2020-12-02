@@ -6,16 +6,16 @@ ms.author: mihart
 ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/06/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e6ab41b7a9330ff1c99bb0dcc963608485cc3f94
-ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
+ms.openlocfilehash: 3ecd7e5c231be74e69cb2c6074f08794beec547f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830624"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96398892"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Power BI サービスでレポートまたはダッシュボードをサブスクライブする 
 
@@ -33,7 +33,7 @@ ms.locfileid: "91830624"
 
 
 ## <a name="requirements"></a>要件
-ご自身のサブスクリプションを**作成**するには、特定の種類の[ライセンス](end-user-license.md)が必要です。 サブスクリプションを作成できない場合は、Power BI 管理者または IT ヘルプ デスクに問い合わせてください。 **他のユーザーをサブスクライブ**する機能は、ダッシュボードまたはレポートの所有者のみが使用できます。 ページ分割されたレポートのサブスクライブの場合、若干異なります。 詳細については、「[Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)」(Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする) を参照してください。 
+ご自身のサブスクリプションを **作成** するには、特定の種類の [ライセンス](end-user-license.md)が必要です。 サブスクリプションを作成できない場合は、Power BI 管理者または IT ヘルプ デスクに問い合わせてください。 **他のユーザーをサブスクライブ** する機能は、ダッシュボードまたはレポートの所有者のみが使用できます。 ページ分割されたレポートのサブスクライブの場合、若干異なります。 詳細については、「[Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)」(Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする) を参照してください。 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>ダッシュボードまたはレポート ページをサブスクライブする
 ダッシュボードとレポートのどちらをサブスクライブする場合でも、そのプロセスは似ています。 同じボタンで、Power BI サービスのダッシュボードとレポートをサブスクライブすることができます。

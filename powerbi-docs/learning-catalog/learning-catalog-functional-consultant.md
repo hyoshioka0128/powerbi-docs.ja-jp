@@ -2,16 +2,16 @@
 title: アプリケーションの機能コンサルタント向けラーニング カタログ
 description: 最も基本的なものから最も高度なものまで、ビジネス ドメインの実装エキスパート向けの Power Apps のトレーニング オプションをすべて紹介します。
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
-ms.openlocfilehash: d31cdab393535609e8e12de97b2b784f55a3d9a2
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: e891bccd4840d67a400943a84f024c433f75af1a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749209"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96398317"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>アプリケーションの機能コンサルタント向けラーニング カタログ
 

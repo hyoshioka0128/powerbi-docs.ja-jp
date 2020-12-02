@@ -2,20 +2,20 @@
 title: パートナーのプリセールス ラーニング カタログ
 description: 最も基本的なものから最も高度なものまで、購入前エキスパート向けの Power Apps のトレーニング オプションをすべて紹介します。
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
-ms.openlocfilehash: bdc42b263e274983e5bcf85dde4d733c94d5d82d
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 8364e0a795aff5821d67b314b569bb0292c80ea3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747691"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96398271"
 ---
 # <a name="partner-pre-sales-learning-catalog"></a>パートナーのプリセールス ラーニング カタログ
 
-顧客に対して主要な機能を実証する責任はありますか。 
+顧客に対して主要な機能を実証する責任はありますか。 
 
 次のカタログは、コア知識から特定のドメインへと、また最も基本的なものから最も高度なものへと分類されています。 コンテンツが複数の形式で存在する場合は、お客様のニーズに最も合ったトレーニング形式を選択できるように、お知らせいたします。
 

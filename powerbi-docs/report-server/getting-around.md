@@ -2,18 +2,18 @@
 title: Power BI Report Server の Web ポータルでコンテンツを管理する
 description: Power BI Report Server の Web ポータルでコンテンツを管理する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 05/24/2018
-ms.author: maggies
-ms.openlocfilehash: a42ffc2610021ec1f9b77fb5e950253ff8196e61
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: f802a190d2175deaa3431b7377bc3847bf0e8d25
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858786"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397742"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Web ポータルでコンテンツを管理する 
 Power BI レポート サーバー Web ポータルは、Power BI レポート、モバイル レポート、およびページ分割されたレポート、および KPI を表示、格納、および管理するためのオンプレミスの場所です。
@@ -23,7 +23,7 @@ Power BI レポート サーバー Web ポータルは、Power BI レポート�
 どの最新ブラウザーでも Web ポータルを表示できます。 Web ポータルでは、レポートと KPI がフォルダーに整理されて表示され、それらをお気に入りとしてマークすることができます。 ポータルには Excel ブックを格納することもできます。 Web ポータルからレポートを作成するために必要なツールを起動できます。
 
 * Power BI Desktop で作成された **Power BI レポート**: それらを Web ポータルおよび Power BI モバイル アプリで表示します。
-* Report Builder で作成された**ページ分割されたレポート**: 印刷用に最適化された現代的な外観の固定レイアウトのドキュメント。
+* Report Builder で作成された **ページ分割されたレポート**: 印刷用に最適化された現代的な外観の固定レイアウトのドキュメント。
 * **KPI**: Web ポータルで正常に作成されました。
 
 Web ポータルでは、レポート サーバー フォルダーを参照したり、特定のレポートを検索したりできます。 レポートとその全般的なプロパティを表示し、レポート履歴でキャプチャされているレポートの過去のコピーを表示できます。 アクセス許可に応じて、電子メールの受信トレイ フォルダーまたはファイル システム上の共有フォルダーに配信するためのレポートをサブスクライブできる必要もあります。
@@ -55,7 +55,7 @@ Web ポータル アプリケーションはブラウザーで実行されます
 ## <a name="manage-items-in-the-web-portal"></a>Web ポータルで項目を管理する
 Power BI レポート サーバーでは、Web ポータルに格納する項目を細かく制御することができます。 たとえば、個々のページ分割されたレポートのサブスクリプション、キャッシュ、スナップショット、およびセキュリティを設定することができます。
 
-1. 項目の右上隅にある**その他のオプション** (...) を選択し、 **[管理]** を選択します。
+1. 項目の右上隅にある **その他のオプション** (...) を選択し、 **[管理]** を選択します。
    
     ![[管理] を選択](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. プロパティまたは設定するその他の機能を選択します。

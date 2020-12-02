@@ -2,20 +2,20 @@
 title: レポート全体を PowerPoint にエクスポートする
 description: Power BI レポートを PowerPoint にエクスポートする方法について説明します。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.custom: contperfq4
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 61c084dca6d80a5e609f642ed6fc6894bef9e63c
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: a01b140f368ec04111f1273e3afb57ff8e6a8aee
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527443"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399743"
 ---
 # <a name="export-reports-to-powerpoint"></a>レポートを PowerPoint にエクスポートする
 
@@ -29,14 +29,14 @@ Power BI サービス (app.powerbi.com) では、レポートを Microsoft Power
 * レポートに追加したフィルターとスライサーの設定は保持されます。
 * PowerPoint に、Power BI レポートに戻るリンクが作成されます。
 
-**Power BI レポート**は、**PowerPoint** に短時間でエクスポートできます。 次のセクションで説明する手順に従います。
+**Power BI レポート** は、**PowerPoint** に短時間でエクスポートできます。 次のセクションで説明する手順に従います。
 
 Power BI サービスから一度に 1 つのビジュアルをコピーし、PowerPoint (または貼り付けをサポートする他の任意のプログラム) に貼り付けることもできます。 **[イメージとしてコピー]** アイコンを選択して、ビジュアルをクリップボードにコピーします。 次に、PowerPoint を開き、ビジュアルを貼り付けます。 詳細については、[静的画像としてのビジュアルのコピー](../visuals/power-bi-visualization-copy-paste.md)に関するページをご覧ください。
 
 ![[イメージとしてコピー] アイコンを選択する](media/end-user-powerpoint/power-bi-copy.png)
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Power BI レポートを PowerPoint にエクスポートする
-**Power BI サービス**で、キャンバスに表示するレポートを選択します。 レポートは、 **[ホーム]** 、 **[アプリ]** 、またはナビゲーション ウィンドウの他の任意のコンテナーから選択することもできます。
+**Power BI サービス** で、キャンバスに表示するレポートを選択します。 レポートは、 **[ホーム]** 、 **[アプリ]** 、またはナビゲーション ウィンドウの他の任意のコンテナーから選択することもできます。
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -44,7 +44,7 @@ PowerPoint にエクスポートするレポートがキャンバスに表示さ
 
 ![メニュー バーから [エクスポート] を選択する](media/end-user-powerpoint/power-bi-export.png)
 
-表示されるポップアップには、 **[現在の値]** または **[既定値]** を選択するオプションがあります。 **[現在の値]** では現在の状態でレポートがエクスポートされ、スライサーとフィルターの値に対して行ったアクティブな変更が含まれます。  ほとんどのユーザーは、このオプションを選択します。 スクロールしている場合、 **[現在の値]** にはビジュアルのスクロール状態は含まれず、代わりにデータの先頭部分がエクスポートされます。 または、 **[既定値]** を選択すると、レポートは*デザイナー*が共有した元の状態でエクスポートされ、元の状態に対して行った変更は反映されません。
+表示されるポップアップには、 **[現在の値]** または **[既定値]** を選択するオプションがあります。 **[現在の値]** では現在の状態でレポートがエクスポートされ、スライサーとフィルターの値に対して行ったアクティブな変更が含まれます。  ほとんどのユーザーは、このオプションを選択します。 スクロールしている場合、 **[現在の値]** にはビジュアルのスクロール状態は含まれず、代わりにデータの先頭部分がエクスポートされます。 または、 **[既定値]** を選択すると、レポートは *デザイナー* が共有した元の状態でエクスポートされ、元の状態に対して行った変更は反映されません。
 
 ![エクスポートするものを選択する](media/end-user-powerpoint/power-bi-current-values.png)
  

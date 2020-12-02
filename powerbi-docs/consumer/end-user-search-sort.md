@@ -2,20 +2,20 @@
 title: グローバル検索を使用してコンテンツを検索する
 description: Power BI サービスでのコンテンツの検索、発見、ナビゲーションに関するドキュメント
 author: mihart
+ms.author: mihart
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1fbfa8a85ada8512aff54526407799a00fbfa891
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: b2fac346b9c75df8b3a6b8faa1f158745ff307a7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780279"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399122"
 ---
 # <a name="navigation-for-power-bi-business-users-global-search"></a>Power BI ビジネス ユーザー向けのナビゲーション: グローバル検索
 
@@ -56,7 +56,7 @@ Power BI サービスを初めて使用する場合は、いくつかのコン�
 並べ替えることができるのは一部の列に限られます。 列見出しの上にカーソルを合わせると、並べ替えることができる列を確認できます。
 
 ## <a name="filtering-content-lists"></a>コンテンツ一覧のフィルター処理
-コンテンツをすばやく検索するもう 1 つの方法は、コンテンツ リストの**フィルター**を使用することです。 右上隅にある **[フィルター]** を選択して、フィルターを表示します。 使用できるフィルターは、Power BI サービス内の場所によって異なります。  次の例は **[最近]** コンテンツ リストのものです。  コンテンツの種類によって一覧をフィルター処理できます。  **[自分と共有]** コンテンツ リストで使用できる **[フィルター]** には、所有者とコンテンツの種類が含まれます。
+コンテンツをすばやく検索するもう 1 つの方法は、コンテンツ リストの **フィルター** を使用することです。 右上隅にある **[フィルター]** を選択して、フィルターを表示します。 使用できるフィルターは、Power BI サービス内の場所によって異なります。  次の例は **[最近]** コンテンツ リストのものです。  コンテンツの種類によって一覧をフィルター処理できます。  **[自分と共有]** コンテンツ リストで使用できる **[フィルター]** には、所有者とコンテンツの種類が含まれます。
 
 ![コンテンツ リストでのフィルターのスクリーンショット。](./media/end-user-search-sort/power-bi-sort-filters.png)
 

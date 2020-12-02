@@ -1,21 +1,21 @@
 ---
 title: 他のユーザーから共有された ArcGIS マップとの対話
 description: レポート コンシューマーとして読み取りビューで ArcGIS Map for Power BI ビジュアルを使用する
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: willt, lukasz
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7b81ecbc23418fec4bd264e5cb20126f871c7e52
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 33065a518f99cf7be6c8ea494088440e7ab45474
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413121"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397949"
 ---
 # <a name="create-arcgis-maps-in-power-bi"></a>Power BI で ArcGIS マップを作成する
 
@@ -24,7 +24,7 @@ ms.locfileid: "93413121"
 > [!NOTE]
 > これらのビジュアルは、Power BI Desktop と Power BI サービスの両方で作成および表示できます。 この記事の手順と図は、Power BI Desktop のものです。
 
-この概要は、ArcGIS Maps for Power BI を作成するユーザーの視点で書かれています。 " _デザイナー_ " が同僚と ArcGIS Maps for Power BI マップを共有すると、その同僚はマップを表示および操作できますが、変更を保存することはできません。 ArcGIS マップの表示方法の詳細については、「[ArcGIS Maps for Power BI マップの操作](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm)」を参照してください。
+この概要は、ArcGIS Maps for Power BI を作成するユーザーの視点で書かれています。 "_デザイナー_" が同僚と ArcGIS Maps for Power BI マップを共有すると、その同僚はマップを表示および操作できますが、変更を保存することはできません。 ArcGIS マップの表示方法の詳細については、「[ArcGIS Maps for Power BI マップの操作](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm)」を参照してください。
 
 ArcGIS マップと Power BI を組み合わせると、マッピングをマップ上のポイントの表現を越える、まったく新しいレベルに引き上げることができます。 基本マップ、場所の種類、テーマ、記号のスタイル、および参照レイヤーから選択して、すばらしい有益なマップの視覚エフェクトを作成します。 空間分析を使用してマップ上で権限のあるデータのレイヤーを組み合わせることで、より深く理解できる視覚化されたデータを伝達します。 モバイル デバイスでは、ArcGIS Maps for Power BI マップを作成することはできませんが、表示して操作することはできます。
 
@@ -39,7 +39,7 @@ ArcGIS マップと Power BI を組み合わせると、マッピングをマッ
 ![ArcGIS を開いた画面](media/power-bi-visualizations-arcgis/arcgis-tutorial-01.png)
 
 > [!TIP]
-> 多くの例やユーザーの声を参照するには、 [**Esri の ArcGIS Maps for Power BI に関するページ**](https://www.esri.com/powerbi)にアクセスしてください。 また、Esri の **[ArcGIS Maps for Power BI オンライン](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) ヘルプ** も参照してください。
+> 多くの例やユーザーの声を参照するには、[**Esri の ArcGIS Maps for Power BI に関するページ**](https://www.esri.com/powerbi)にアクセスしてください。 また、Esri の **[ArcGIS Maps for Power BI オンライン](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) ヘルプ** も参照してください。
 
 ## <a name="user-consent"></a>ユーザーの同意
 
@@ -99,7 +99,7 @@ ArcGIS Maps for Power BI は Esri ([https://www.esri.com](https://www.esri.com/)
 マップの視覚化にデータを追加すると、マップ ツールが使用できるようになります。
 
 > [!NOTE]
-> このチュートリアルでは、 **Standard** バージョンの ArcGIS Maps for Power BI で使用できる機能とオプションについてのみ説明します。 適切なライセンスを使って有効な [ArcGIS アカウント](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)にサインインすれば、より多くの機能にアクセスできます。
+> このチュートリアルでは、**Standard** バージョンの ArcGIS Maps for Power BI で使用できる機能とオプションについてのみ説明します。 適切なライセンスを使って有効な [ArcGIS アカウント](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)にサインインすれば、より多くの機能にアクセスできます。
 
 マップ ツールを展開するには:
 
@@ -252,7 +252,7 @@ ArcGIS Maps for Power BI には、マップ上の場所を選択するのに役�
 場所をピン留めするには、次の手順を実行します。
 
 1. マップ ツールで **[検索]** ![検索アイコン](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png) ボタンをクリックして、[検索] ペインを開きます。
-2. 検索ボックスに、キーワードとして「 **Pittsburgh international** 」と入力します。
+2. 検索ボックスに、キーワードとして「**Pittsburgh international**」と入力します。
 
     キーワードには、住所、場所、または目的地を含めることができます。 入力中には、キーワードの類似性に基づいて、最近の類似した検索語や入力候補が表示されます。
 
@@ -284,7 +284,7 @@ ArcGIS Maps for Power BI の Standard アカウントには、米国に関する
 
 3. ギャラリーをスクロールし、マップに追加するレイヤーのサムネイルで **[追加]** をクリックします。
 
-    この例では、 **2016 USA Average Household Income** レイヤーを見つけ、 **[追加]** をクリックします。
+    この例では、**2016 USA Average Household Income** レイヤーを見つけ、 **[追加]** をクリックします。
     
     マップが更新され、新しいレイヤーが表示されます。
     
@@ -300,7 +300,7 @@ ArcGIS 参照レイヤーを追加するには、次の手順を実行します�
 
 1. [参照] ペインで、 **[ArcGIS]** タブをクリックします。
 
-2. 検索フィールドに「 **USA Congressional districts** 」と入力し、 **Enter** キーを押します。
+2. 検索フィールドに「**USA Congressional districts**」と入力し、**Enter** キーを押します。
 
     ギャラリーに、結果の候補がいくつか表示されます。
 

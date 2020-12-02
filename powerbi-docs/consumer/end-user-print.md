@@ -2,20 +2,20 @@
 title: Power BI サービスから印刷する
 description: Power BI サービスからダッシュボード、タイル、またはレポート ページを印刷します。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/19/2020
-ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 600b8d1447d50a1647097d94df9077299f00cccf
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d861bbc32584ccbc95d7bcc13701938f671f0c73
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860416"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399559"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Power BI サービスから印刷する
 
@@ -60,7 +60,7 @@ Power BI から印刷すると、ブラウザーによって [印刷] ウィン�
 ## <a name="print-a-dashboard-tile"></a>ダッシュボード タイルの印刷
 1. 上部メニュー バーの全画面表示アイコン ![全画面表示アイコン](./media/end-user-print/power-bi-full-screen.png) を選択すると、ダッシュボードが[全画面表示モード](end-user-focus.md)で開きます。
 
-3. カーソルを置いて**その他のオプション** (...) を表示し、 **[フォーカス モードで開く]** かフォーカス アイコン ![フォーカス アイコン](./media/end-user-print/power-bi-focus-icon.png) を選択すると、[タイルがフォーカス モードで開きます](end-user-focus.md)。
+3. カーソルを置いて **その他のオプション** (...) を表示し、 **[フォーカス モードで開く]** かフォーカス アイコン ![フォーカス アイコン](./media/end-user-print/power-bi-focus-icon.png) を選択すると、[タイルがフォーカス モードで開きます](end-user-focus.md)。
    
     ![省略記号メニュー](./media/end-user-print/power-bi-focus-tile.png)
 

@@ -2,19 +2,19 @@
 title: レポートの視覚エフェクトの作成に使用されたデータを表示する
 description: このドキュメントでは、Power BI のビジネス ユーザーがレポートの視覚エフェクトの作成に使用されたデータを "表示" する方法について説明します。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/6/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 737fe43a7a94ef5738676792e1e903564d29e4bb
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 3ab587e3467f929ac7b318c2225b4f734a70e1a2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780227"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399099"
 ---
 # <a name="show-data-with-power-bi-reports"></a>Power BI レポートでデータを表示する
 
@@ -22,7 +22,7 @@ ms.locfileid: "91780227"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Power BI のビジュアルは、基礎データセットからのデータを使用して作成されます。 バックグラウンドの動作に関心がある場合は、レポートでビジュアルの作成に使用されているデータを Power BI サービスで*表示*することができます。 **[Show as a table]\(テーブルとして表示\)** を選択すると、Power BI によりビジュアルの下 (または横に) データが表示されます。
+Power BI のビジュアルは、基礎データセットからのデータを使用して作成されます。 バックグラウンドの動作に関心がある場合は、レポートでビジュアルの作成に使用されているデータを Power BI サービスで *表示* することができます。 **[Show as a table]\(テーブルとして表示\)** を選択すると、Power BI によりビジュアルの下 (または横に) データが表示されます。
 
 ダッシュボードで、基になるデータを表示するには [[Excel にエクスポート]](end-user-export.md) を使用します
 

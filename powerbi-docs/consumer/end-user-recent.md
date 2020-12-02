@@ -2,26 +2,26 @@
 title: Power BI サービスで最近表示したコンテンツを表示する
 description: Power BI の最近のドキュメント
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/24/2020
-ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 39904a0fc577ca11ae73c5bb9840232b4345e47b
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: e11b1823c45e681d6a555bd5a4a9a751704419b2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527355"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399237"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>Power BI サービスの "**最近**" のコンテンツ
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-**最近**のコンテンツには、Power BI サービスで最近表示した項目が含まれます。 これには、ダッシュボード、レポート、アプリ、ブックなどがあります。 ナビゲーション バーから **[最近]** を選択すると、Power BI によって、このコンテンツが日付別に降順で表示されます。  並べ替え順序を変更するには、見出しの 1 つを選択し、[昇順] または [降順] を選択します。
+**最近** のコンテンツには、Power BI サービスで最近表示した項目が含まれます。 これには、ダッシュボード、レポート、アプリ、ブックなどがあります。 ナビゲーション バーから **[最近]** を選択すると、Power BI によって、このコンテンツが日付別に降順で表示されます。  並べ替え順序を変更するには、見出しの 1 つを選択し、[昇順] または [降順] を選択します。
 
 
 ![最近のコンテンツ ウィンドウ](./media/end-user-recent/power-bi-recents.png)
