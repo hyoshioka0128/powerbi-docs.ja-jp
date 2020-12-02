@@ -1,26 +1,26 @@
 ---
 title: チュートリアル:Power BI を使用して GitHub リポジトリに接続する
 description: このチュートリアルでは、Power BI で GitHub サービスの実際のデータに接続します。Power BI でダッシュボードとレポートが自動的に作成されます。
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: SarinaJoan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 10/30/2020
-ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 805b7805d932468e973805d9496a5b25d4391fdd
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: d8b6277c64f2f6c55f1ab622d129556fdfc4c600
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132622"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401629"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>チュートリアル:Power BI を使用して GitHub リポジトリに接続する
 このチュートリアルでは、実際のデータに接続します。GitHub サービスにある Power BI コンテンツ パブリック リポジトリです。 Power BI によってダッシュボード、レポートがデータと共に自動的に生成されます。 次のような質問に対する回答が表示されます。Power BI のパブリック リポジトリに寄稿しているユーザーの数、 最も寄稿が多いユーザーは誰か、 最も寄稿が多いのは何曜日か、 その他の質問もあります。 
 
-自分のプライベートまたはパブリック GitHub リポジトリにも接続できます。 「 [Power BI で GitHub に接続する](service-connect-to-github.md)」という記事では、Power BI の " *テンプレート アプリ* " を使用してリポジトリに接続する方法について説明しています。
+自分のプライベートまたはパブリック GitHub リポジトリにも接続できます。 「[Power BI で GitHub に接続する](service-connect-to-github.md)」という記事では、Power BI の "*テンプレート アプリ*" を使用してリポジトリに接続する方法について説明しています。
 
 ![Power BI での GitHub レポート](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
@@ -46,11 +46,11 @@ GitHub アカウントをまだ持っていない場合、このチュートリ�
 
 ## <a name="how-to-connect"></a>接続する方法
 1. Power BI サービスにサインインします (`https://app.powerbi.com`)。 
-2. ナビ ペインで **[アプリ]** を選んでから、 **[アプリの取得]** を選びます。
+2. ナビ ペインで **[アプリ]** を選んでから、**[アプリの取得]** を選びます。
    
    ![Power BI のアプリの取得](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. **[アプリ]** を選び、検索ボックスに「 **GitHub** 」と入力して、 **[今すぐ入手する]** を選びます。
+3. **[アプリ]** を選び、検索ボックスに「**GitHub**」と入力して、**[今すぐ入手する]** を選びます。
    
    ![Power BI での GitHub の入手](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
@@ -60,7 +60,7 @@ GitHub アカウントをまだ持っていない場合、このチュートリ�
 
     ![新しいアプリを開始する](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
 
-7. リポジトリの名前とリポジトリの所有者を入力します。 このリポジトリの URL は https://github.com/MicrosoftDocs/powerbi-docs なので、 **[リポジトリ所有者]** は「 **MicrosoftDocs** 」、 **[リポジトリ]** は「 **powerbi-docs** 」です。 
+7. リポジトリの名前とリポジトリの所有者を入力します。 このリポジトリの URL は https://github.com/MicrosoftDocs/powerbi-docs なので、**[リポジトリ所有者]** は「**MicrosoftDocs**」、**[リポジトリ]** は「**powerbi-docs**」です。 
    
     ![Power BI での GitHub リポジトリ名](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
@@ -77,7 +77,7 @@ GitHub アカウントをまだ持っていない場合、このチュートリ�
 
     ![ナビ ペインのアプリ](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-10. ダッシュボード名の横にある **その他のオプション** (...) を選択し、 **[名前の変更]** を選択し、「 **GitHub dashboard** 」と入力します。
+10. ダッシュボード名の横にある **その他のオプション** (...) を選択し、**[名前の変更]** を選択し、「**GitHub dashboard**」と入力します。
  
     ![Power BI の GitHub タイル](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
@@ -95,20 +95,20 @@ GitHub アカウントをまだ持っていない場合、このチュートリ�
 
 ## <a name="ask-a-question"></a>質問をする
 
-1. **[データについて質問する]** にカーソルを置きます。 Power BI から、 **[Questions to get your started]\(開始するための質問\)** が提供されます。 
+1. **[データについて質問する]** にカーソルを置きます。 Power BI から、**[Questions to get your started]\(開始するための質問\)** が提供されます。 
 
 1. **[how many users are there]\(ユーザーの数\)** を選択します。
  
     ![ユーザーの数](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
 
-13. **[how many]** と **[users are there]** の間に「 **pull requests per** 」と入力します。 
+13. **[how many]** と **[users are there]** の間に「**pull requests per**」と入力します。 
 
      Power BI によって、ユーザーあたりの pull request 数を示す棒グラフが作成されます。
 
     ![ユーザーあたりの pull request 数](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
 
 
-13. ピンを選択してダッシュボードにそれをピン留めし、 **[Q&A の終了]** をクリックします。
+13. ピンを選択してダッシュボードにそれをピン留めし、**[Q&A の終了]** をクリックします。
 
 ## <a name="view-the-github-report"></a>GitHub のレポートを表示する 
 
@@ -124,14 +124,14 @@ GitHub アカウントをまだ持っていない場合、このチュートリ�
  
     ![Power BI GitHub レポートのパンチ カード](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-    明らかに、ユーザーが作業をチェックインする " *コミット* " が最も多いのは、火曜日の午後 3 時です。
+    明らかに、ユーザーが作業をチェックインする "*コミット*" が最も多いのは、火曜日の午後 3 時です。
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
 チュートリアルはこれで終わりなので、GitHub アプリを削除できます。 
 
 1. ナビ ペインで **[アプリ]** を選択します。
-2. GitHub のタイルをポイントし、 **[削除]** ごみ箱を選びます。
+2. GitHub のタイルをポイントし、**[削除]** ごみ箱を選びます。
 
     ![GitHub アプリを削除する](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)
 

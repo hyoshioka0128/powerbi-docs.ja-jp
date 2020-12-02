@@ -2,20 +2,20 @@
 title: ダッシュボードとレポートにコメントを追加する
 description: このドキュメントでは、ダッシュボード、レポート、またはビジュアルにコメントを追加する方法と、コメントを使用して共同作業者と会話する方法を示します。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/25/2020
-ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6f7e640669b53d67a635083d3ae48e23720c9e61
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: ee053fe000ad85b768ce3d451984f987e3c79e6f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375101"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400755"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>ダッシュボードまたはレポートにコメントを追加する
 
@@ -23,7 +23,7 @@ ms.locfileid: "91375101"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-個人のコメントを追加するか、同僚とダッシュボードまたはレポートに関する会話を開始します。 **コメント**機能は、"*ビジネス ユーザー*" が他のユーザーと共同作業するための方法の 1 つにすぎません。 
+個人のコメントを追加するか、同僚とダッシュボードまたはレポートに関する会話を開始します。 **コメント** 機能は、"*ビジネス ユーザー*" が他のユーザーと共同作業するための方法の 1 つにすぎません。 
 
 ![コメントのビデオ](media/end-user-comment/comment.gif)
 
@@ -96,7 +96,7 @@ ms.locfileid: "91375101"
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>@ 記号を使用して同僚の注目を得る
 ダッシュボード、レポート、タイル、ビジュアル コメントのいずれを作成する場合でも、"\@" 記号を使用して同僚の注目を集めることができます。  "\@" 記号を入力すると、Power BI では、組織のユーザーを検索および選択できるドロップダウンが開かれます。 "\@" 記号が前につく検証済みのすべての名前は、青のフォントで表示されます。 @mentioned された個人は、受信トレイにすぐに電子メールが届きます。Power BI Mobile アプリを使用している場合は、デバイスでプッシュ通知を受信します。 通知から直接コメントを開いたり、データを表示したり、それに応じて応答したりすることができます。
 
-これは、視覚エフェクトの*デザイナー*と行っている会話です。 @ 記号を使用して、確実にコメントを見ることができるようにしています。 通知を受け取り、このダッシュボードと関連する会話を開くためのリンクを選択します。  
+これは、視覚エフェクトの *デザイナー* と行っている会話です。 @ 記号を使用して、確実にコメントを見ることができるようにしています。 通知を受け取り、このダッシュボードと関連する会話を開くためのリンクを選択します。  
 
 ![コメントのメンションを追加する](media/end-user-comment/power-bi-comment-conversation.png)  
 

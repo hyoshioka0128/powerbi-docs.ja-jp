@@ -2,20 +2,20 @@
 title: Power BI のエンド ユーザーからよく寄せられる質問
 description: Power BI サービスおよび Power BI モバイル アプリに関してよく寄せられる質問と回答の一覧をご覧ください。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 09/02/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: c604bec5213b14f91e514c9a1552acb99ac5d0aa
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: b872c42a9e8551b0750899632deb763a6446656f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916799"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400387"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Power BI に関してよく寄せられる質問
 
@@ -28,16 +28,16 @@ ms.locfileid: "92916799"
 
 Power BI サービスはクラウド ベースのビジネス分析サービスで、これを使えばだれでもデータの視覚化と分析の速度と効率を向上させ、理解を深めることができます。 使いやすいダッシュボード、対話形式のレポート、説得力のある視覚エフェクトによってデータを生き生きしたものにし、ユーザーがクラウド ベースまたはオンプレミスの広範囲にわたるデータを活用できるようにします。 [Power BI](../fundamentals/power-bi-overview.md) について、詳細を確認してください。
 
-## <a name="what-is-a-power-bi-business-user"></a>Power BI " *ビジネス ユーザー* " とは何ですか?
+## <a name="what-is-a-power-bi-business-user"></a>Power BI "*ビジネス ユーザー*" とは何ですか?
 
-Power BI をどのように操作するかは、ご自分の仕事上の役割により異なります。 エンド ユーザーまたは " *ビジネス ユーザー* " の場合、同僚からコンテンツ (ダッシュボード、レポート、アプリ) を受け取ります。 Power BI のオンラインまたはモバイル バージョン (Power BI サービスと呼ばれます) で作業し、このコンテンツをレビューおよび操作してビジネス上の決定を行います。  詳細については、[ビジネス ユーザー向けの Power BI](index.yml) に関するページを参照してください。
+Power BI をどのように操作するかは、ご自分の仕事上の役割により異なります。 エンド ユーザーまたは "*ビジネス ユーザー*" の場合、同僚からコンテンツ (ダッシュボード、レポート、アプリ) を受け取ります。 Power BI のオンラインまたはモバイル バージョン (Power BI サービスと呼ばれます) で作業し、このコンテンツをレビューおよび操作してビジネス上の決定を行います。  詳細については、[ビジネス ユーザー向けの Power BI](index.yml) に関するページを参照してください。
 
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Power BI Pro と Power BI Premium の違いは何ですか?
 
 Power BI Pro は、Power BI サービスのすべてのコンテンツと機能へのアクセスを許可する個別のユーザー ライセンスです。 他の Pro ユーザーとコンテンツを共有して、共同作業することもできます。 Pro ユーザーだけが、他のワークスペースへのコンテンツの発行、ダッシュボードの共有、ダッシュボードとレポートの登録を行うことができます。 
 
-Power BI Premium では、容量を提供して、より一貫したパフォーマンスを実現します。 また、Power BI でより大規模なデータ ボリュームもサポートします。 個々のユーザーについては、Premium では Pro ユーザーがコンテンツを広範囲に配布できます。コンテンツを表示する受信者にユーザーごとの Pro ライセンスは必要ありません。 つまり、" *ビジネス ユーザー* " は、同僚と共同作業したり、彼らと共有されているダッシュボード、レポート、およびアプリを表示したり、操作したりできます。 
+Power BI Premium では、容量を提供して、より一貫したパフォーマンスを実現します。 また、Power BI でより大規模なデータ ボリュームもサポートします。 個々のユーザーについては、Premium では Pro ユーザーがコンテンツを広範囲に配布できます。コンテンツを表示する受信者にユーザーごとの Pro ライセンスは必要ありません。 つまり、"*ビジネス ユーザー*" は、同僚と共同作業したり、彼らと共有されているダッシュボード、レポート、およびアプリを表示したり、操作したりできます。 
 
 詳細については、[自分が所有するライセンスの種類](end-user-license.md)に関するページを参照してください。
 
@@ -47,9 +47,9 @@ Power BI Premium に関連する質問については、「[Power BI Premium FAQ
 
 ## <a name="what-is-power-bi-desktop"></a>Power BI Desktop とは何ですか?
 
-Power BI Desktop は無償のアプリケーションで、各自のコンピューターに直接インストールできます。 Power BI Desktop は、Power BI サービスと連携して動作します。  データ サイエンティスト、レポート デザイナー、管理者、および開発者は、Power BI Desktop を操作してレポートを作成し、お客様のような Power BI サービスの " *ビジネス ユーザー* " が利用できるようにします。 [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) について、詳細を確認してください。
+Power BI Desktop は無償のアプリケーションで、各自のコンピューターに直接インストールできます。 Power BI Desktop は、Power BI サービスと連携して動作します。  データ サイエンティスト、レポート デザイナー、管理者、および開発者は、Power BI Desktop を操作してレポートを作成し、お客様のような Power BI サービスの "*ビジネス ユーザー*" が利用できるようにします。 [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) について、詳細を確認してください。
 
-## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>" *ビジネス ユーザー* " として Power BI サービスを使用するには何が必要ですか?
+## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>"*ビジネス ユーザー*" として Power BI サービスを使用するには何が必要ですか?
 
 お客様の会社が Power BI ライセンスまたは Premium 容量アカウントを購入している場合、お客様が必要とするのは Web ブラウザーと資格情報だけです。 ログインするには、職場の電子メール アドレスと、パスワード (Power BI 管理者によって設定されます) を使用します。  
 
@@ -84,7 +84,7 @@ Power BI モバイル アプリはそれぞれ該当するストアから無料�
 * [Power BI ブログ](https://powerbi.microsoft.com/blog/)
 * [Web セミナー](../fundamentals/webinars.md)
 * [YouTube チャンネル](https://www.youtube.com/user/mspowerbi)の概要ビデオ
-* [" *ビジネス ユーザー* " としての Power BI の使用開始](index.yml)に関する記事
+* ["*ビジネス ユーザー*" としての Power BI の使用開始](index.yml)に関する記事
 * [コミュニティに参加](https://community.powerbi.com/)して質問する
 * 他の推奨事項については、「[ヘルプを取得するための 10 のヒント](../fundamentals/service-tips-for-finding-help.md)」をご覧ください。
 

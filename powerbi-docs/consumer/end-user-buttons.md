@@ -2,19 +2,19 @@
 title: Power BI サービスのボタンのしくみについて説明します
 description: レポート内での移動、ドリルスルー、レポート間ドリルスルーなど、さまざまなアクションを起動する目的でボタンを利用できます。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/10/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: f0ddbbbce93a14c3468eacca130163758ca85c45
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 450c14d05f9a7855d51d7aa2f073e48a0b016013
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982162"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400962"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Power BI サービスのボタン
 同僚から受け取ったレポートでボタンに気付き、その使い方を知りたいと思うことがあります。 単語が含まれているものもあれば、矢印やグラフィックスが含まれているものもあります。ドロップダウン メニューまで含まれているものもあります。 この記事では、ボタンを見分け、その使い方を理解する方法について説明します。
@@ -28,7 +28,7 @@ ms.locfileid: "91982162"
 ### <a name="back-buttons"></a>[戻る] ボタン 
 [戻る] ボタンには矢印アイコンが含まれることがあります。これを選択すると、Power BI は前のページに戻ります。  [戻る] ボタンはドリルスルーでよく使用されます。 ドリルスルーで使用されている [戻る] ボタンの例を次に示します。
 
-1. ユーザーが横棒グラフの **[Word]** を選択し、**マーケット バスケット分析**までドリルスルーしています。
+1. ユーザーが横棒グラフの **[Word]** を選択し、**マーケット バスケット分析** までドリルスルーしています。
 
     ![[ドリルスルー] ボタンのスクリーンショット。](media/end-user-buttons/power-bi-drillthrough.png)
 
@@ -36,7 +36,7 @@ ms.locfileid: "91982162"
 
     ![[戻る] ボタンのスクリーンショット。](media/end-user-buttons/power-bi-back.png)
 
-    これで**マーケット バスケット分析**レポート ページが表示されました。**Word** 用にフィルター処理されています。 前のページに戻るには、[戻る] ボタンを選択して **[Go back]\(戻る\)** をクリックします。 
+    これで **マーケット バスケット分析** レポート ページが表示されました。**Word** 用にフィルター処理されています。 前のページに戻るには、[戻る] ボタンを選択して **[Go back]\(戻る\)** をクリックします。 
 
 ## <a name="bookmark-buttons"></a>[ブックマーク] ボタン
 レポートの "*デザイナー*" は、レポートにブックマークを含めることがよくあります。 右上隅から **[ブックマーク]** を選択することでレポート ブックマークの一覧を表示できます。 レポートのデザイン時にブックマーク "*ボタン*" を追加するとき、それは、そのブックマークに関連付けられている特定のレポート ページに移動する代替手段にすぎません。 ページには、ブックマークによってキャプチャされるフィルターや設定が適用されます。 [Power BI のブックマークについて詳しくはこちらをご覧ください](end-user-bookmarks.md)。 

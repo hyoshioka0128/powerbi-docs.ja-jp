@@ -1,21 +1,21 @@
 ---
 title: Power BI ビジネス ユーザー向け用語集
 description: Power BI には、多くの新しい用語と、使い慣れた用語の新しい使い方が導入されています。 用語集を使用すると、Power BI サービスの用語に慣れることができます。
-services: power-bi
 author: mihart
+ms.author: mihart
+services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: reference
 ms.date: 11/21/2020
 ms.custom: contperfq1
-ms.author: mihart
-ms.openlocfilehash: c2da54406a01d5216355b8e0abc30ea63a6b2f5e
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 197ebcd029dbe6a6e87b1858da8f35325772237e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514265"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400019"
 ---
 # <a name="glossary-for-business-users-of-the-power-bi-service"></a>Power BI サービスのビジネス ユーザー向け用語集    
 Power BI サービスでは、使い慣れていない、あるいは混乱を招くような用語が導入される場合があります。 用語集は用語を検索する最適な場所であり、ブックマークを付けることもできます。 Power BI サービスを構成する構成要素について学習するために最適なリソースとして、[基本的な概念](end-user-basic-concepts.md)もあります。 基本的な概念では、Power BI の *各部分* の概要と、それらの関係が示されます。
