@@ -2,18 +2,18 @@
 title: Power BI テンプレート アプリの更新、削除、および抽出
 description: テンプレート アプリの更新、削除、および抽出の方法。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
-ms.openlocfilehash: c5bed13799824a0222b2961595108536f66133ee
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 2eb4df96db51ccbf3308315130fdaa2de85df240
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634943"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392130"
 ---
 # <a name="update-delete-and-extract-template-app"></a>テンプレート アプリの更新、削除、および抽出
 
@@ -46,7 +46,7 @@ Power BI Desktop で変更を加えた場合は、ステップ (1) から開始�
 
    これでリンクはライブになります。 **実稼働前ステージの [アプリの昇格] ボタンが淡色表示になっていることにご注目ください**。これには、Cloud Partner Portal で新しいアプリ バージョンを検証し、承認する前に、現在のアプリ バージョンへの有効な実稼働リンクを誤って上書きすることを防ぐ目的があります。
 
-1. [Power BI アプリ オファーの更新](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer)に関する記事の手順に従って、Cloud パートナー ポータル (CPP) にリンクを再度送信します。 Cloud パートナー ポータルで、オファーをもう一度**公開**し、検証し、承認する必要があります。
+1. [Power BI アプリ オファーの更新](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer)に関する記事の手順に従って、Cloud パートナー ポータル (CPP) にリンクを再度送信します。 Cloud パートナー ポータルで、オファーをもう一度 **公開** し、検証し、承認する必要があります。
 
    オファーが承認されると、[アプリの昇格] ボタンが再び有効になります。 
 1. 実稼働ステージにアプリを昇格させます。

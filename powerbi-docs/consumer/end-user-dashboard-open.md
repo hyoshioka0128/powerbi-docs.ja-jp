@@ -2,19 +2,19 @@
 title: Power BI ダッシュボードの表示
 description: ダッシュボードは Power BI サービスの主要な機能です。ダッシュボードを開いて表示する方法について説明します。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/27/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f447856ac387bdabdbd29e1d1ebf47caef22677a
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 7e431b6a94b7cd881adba27597aa9cbfa6a54425
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633954"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391210"
 ---
 # <a name="view-a-dashboard"></a>ダッシュボードの表示
 
@@ -45,7 +45,7 @@ Power BI Pro または Premium ライセンスは、ダッシュボードの共�
 - **[お気に入り]** : [お気に入りとしてダッシュボードを設定](end-user-favorite.md)した場合
 - **[最近]** : ダッシュボードに最近アクセスした場合
 - **[アプリ]** : ほとんどのアプリにはダッシュボードとレポートの両方が含まれています
-- **[自分と共有]** : 同僚が[自分とダッシュボードを共有した場合](end-user-shared-with-me.md)
+- **[自分と共有]** : 同僚が [自分とダッシュボードを共有した場合](end-user-shared-with-me.md)
 - **[マイ ワークスペース]** : [Power BI サンプル](../create-reports/sample-datasets.md)のいずれかをダウンロードした場合
 
 

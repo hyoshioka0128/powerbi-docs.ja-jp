@@ -2,19 +2,19 @@
 title: オンプレミス データ ゲートウェイの詳細
 description: この記事では、オンプレミス ゲートウェイについて詳しく取り上げます。 Analysis Services の使用時にこのサービスが Azure Active Directory やローカルの Active Directory と連動するしくみについて説明します。
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 07/15/2019
-ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 34cf796db212112baa8083f5b4cbf1796b465cba
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0964ad3e391c8e066c31ea7bb53f67e97f254422
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237562"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392359"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>オンプレミス データ ゲートウェイの詳細
 

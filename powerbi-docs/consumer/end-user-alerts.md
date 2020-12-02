@@ -2,20 +2,20 @@
 title: 'チュートリアル: Power BI サービス ダッシュボードでデータ アラートを設定する'
 description: このチュートリアルでは、Microsoft Power BI サービスで設定した制限を超えてダッシュボード内のデータが変更された場合に通知されるように、アラートを設定する方法について説明します。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/05/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 22d9baaf50ce32c4a9d3644cff455b474bdd1549
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: be3ed6d8a836b626ba26e5e9acce7f0f2df3c6ea
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525329"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391992"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>チュートリアル:Power BI ダッシュボードでアラートを設定する
 
@@ -28,7 +28,7 @@ ms.locfileid: "91525329"
 ![タイル、カード、KPI](media/end-user-alerts/card-gauge-kpi.png)
 
 アラートは次のダッシュボード上で作成できます。
-- 作成し、**マイ ワークスペース**に保存したダッシュボード。
+- 作成し、**マイ ワークスペース** に保存したダッシュボード。
 - [Premium 容量](end-user-license.md)で共有しているダッシュボード。 
 - Power BI Pro ライセンスを持っている場合、アクセスできる任意のワークスペースにあるダッシュボード。    
 
@@ -105,7 +105,7 @@ Power BI にサインアップしていない場合は、[無料の試用版に�
 1. 電子メールを送信するようにアラートを設定した場合は、次のようなメールを受信します。 これは、 **[センチメント]** カードに設定したアラートです。
    
    ![アラート メール](media/end-user-alerts/power-bi-email.png)
-2. Power BI からは**通知センター**にメッセージも追加されます。
+2. Power BI からは **通知センター** にメッセージも追加されます。
    
    ![Power BI サービスの通知アイコン](media/end-user-alerts/power-bi-task.png)
 3. アラートの詳細を見るには通知センターを開きます。

@@ -2,24 +2,24 @@
 title: チュートリアル:Power BI で機械学習モデルを構築する
 description: このチュートリアルでは、Power BI で Machine Learning モデルを構築します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 08/03/2020
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 49f1b46e89fd05d05928de631b0ea42832801a05
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 31b56f4888393c12f94eb4e6d8f819d992a04029
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397233"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392337"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>チュートリアル:Power BI で機械学習モデルを構築する
 
-このチュートリアルの記事では、 **自動機械学習** を使用して、Power BI でバイナリの予測モデルを作成して適用します。 このチュートリアルには、Power BI データフローを作成し、データフローで定義されているエンティティを使用して機械学習モデルを Power BI で直接トレーニングおよび検証するためのガイダンスが含まれています。 また、そのモデルを使用して新しいデータをスコア付けし、予測を生成します。
+このチュートリアルの記事では、**自動機械学習** を使用して、Power BI でバイナリの予測モデルを作成して適用します。 このチュートリアルには、Power BI データフローを作成し、データフローで定義されているエンティティを使用して機械学習モデルを Power BI で直接トレーニングおよび検証するためのガイダンスが含まれています。 また、そのモデルを使用して新しいデータをスコア付けし、予測を生成します。
 
 まず、バイナリの予測機械学習モデルを作成して、オンライン セッション属性のセットに基づいてオンラインの買い物客の購入意図を予測します。 この演習には、ベンチマーク機械学習データセットが使用されます。 モデルのトレーニングが完了すると、モデルの結果を説明する検証レポートが Power BI によって自動的に生成されます。 この検証レポートを確認し、スコア付けのためにモデルをデータに適用できます。
 
@@ -145,13 +145,13 @@ Power Query エディターに、CSV ファイル内のデータのプレビュ�
 
 プロンプトが表示されたら、データフローを **[更新]** して、モデルの結果をプレビューする必要があります。
 
-モデルを適用すると、 **enriched <モデル名>** と **enriched <モデル名> descriptions** のサフィックスが付いた 2 つの新しいエンティティが作成されます。 この例では、モデルを **Online Visitors** エンティティに適用すると、モデルからの予測出力が含まれる **Online Visitors enriched Purchase Intent Prediction** と、予測の上位レコード固有のインフルエンサーが含まれる **Online Visitors enriched Purchase Intent Prediction explanations** が作成されます。 
+モデルを適用すると、**enriched <モデル名>** と **enriched <モデル名> descriptions** のサフィックスが付いた 2 つの新しいエンティティが作成されます。 この例では、モデルを **Online Visitors** エンティティに適用すると、モデルからの予測出力が含まれる **Online Visitors enriched Purchase Intent Prediction** と、予測の上位レコード固有のインフルエンサーが含まれる **Online Visitors enriched Purchase Intent Prediction explanations** が作成されます。 
 
 バイナリの予測モデルを適用すると、予測された結果、確率スコア、予測の上位レコード固有のインフルエンサー、および説明インデックス用の 4 つの列が追加されます。それぞれの列には、指定した列名がプレフィックスとして付けられます。  
 
 ![結果の 3 列](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-20.png)
 
-データフローの更新が完了したら、 **Online Visitors enriched Purchase Intent Prediction** エンティティを選択して結果を確認できます。
+データフローの更新が完了したら、**Online Visitors enriched Purchase Intent Prediction** エンティティを選択して結果を確認できます。
 
 ![結果を表示する](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-21.png)
 
@@ -177,7 +177,7 @@ AutoML モデルを呼び出すには、選択したエンティティのいず�
 
 ## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>モデルのスコア付けされた出力を Power BI レポートで使用する
 
-機械学習モデルからのスコア付けされた出力を使用するには、データフロー コネクタを使用して、Power BI デスクトップからデータフローに接続できます。 これで、 **Online Visitors enriched Purchase Intent Prediction** エンティティを使用して、モデルの予測を Power BI のレポートに組み込むことができるようになりました。
+機械学習モデルからのスコア付けされた出力を使用するには、データフロー コネクタを使用して、Power BI デスクトップからデータフローに接続できます。 これで、**Online Visitors enriched Purchase Intent Prediction** エンティティを使用して、モデルの予測を Power BI のレポートに組み込むことができるようになりました。
 
 ## <a name="next-steps"></a>次の手順
 

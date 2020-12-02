@@ -2,19 +2,19 @@
 title: レポートでのグラフの並べ替え方法の変更
 description: Power BI レポートでのグラフの並べ替え方法の変更
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/25/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6147bc0ee725eb7adc7e1edb637a22bb7dc66558
-ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
+ms.openlocfilehash: 44bdb454bbe22082a20182002e817fead561d8da
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89040325"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391417"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI レポートでのグラフの並べ替え方法の変更
 
@@ -70,7 +70,7 @@ Shift キーを押しながら同じ列をもう一度クリックすると、�
 
 ![永続的な並べ替え](media/end-user-change-sort/power-bi-reset.png)
 
-ただし、 **[既定値にリセット]** ボタンが淡色表示になっている場合は、ユーザーの変更を保存する (永続化する) 機能がレポートの*デザイナー*によって無効にされています。
+ただし、 **[既定値にリセット]** ボタンが淡色表示になっている場合は、ユーザーの変更を保存する (永続化する) 機能がレポートの *デザイナー* によって無効にされています。
 
 <a name="other"></a>
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
