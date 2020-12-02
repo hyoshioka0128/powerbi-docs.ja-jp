@@ -2,20 +2,20 @@
 title: 'エラー: Excel ブックにデータが見つかりませんでした'
 description: 'エラー: Excel ブックにデータが見つかりませんでした'
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
+ms.subservice: powerbi-admin
+ms.topic: troubleshooting
 ms.date: 04/30/2019
-ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5daf16cbd557be14f8b30900aabd560160d27736
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 6e78dba3e6a18544f68fae4b737a7840d1fa2724
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222307"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403791"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>エラー: Excel ブックにデータが見つかりませんでした
 
@@ -37,7 +37,7 @@ Power BI に Excel ブックをインポートするとき、次のエラーが�
 
 ## <a name="details"></a>詳細
 ### <a name="cause"></a>原因
-Excel では、特定のセルの範囲から**テーブル**を作成できます。これにより、並べ替え、フィルター処理、およびデータの書式設定が簡単になります。
+Excel では、特定のセルの範囲から **テーブル** を作成できます。これにより、並べ替え、フィルター処理、およびデータの書式設定が簡単になります。
 
 Excel ブックをインポートするとき、Power BI はそれらのテーブルを検索してデータセットにインポートします。テーブルが見つからない場合は、このエラー メッセージが表示されます。
 

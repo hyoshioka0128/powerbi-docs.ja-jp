@@ -2,19 +2,19 @@
 title: Power BI のリアルタイム ストリーミング
 description: Power BI でデータをリアルタイムでストリーミングし、視覚化する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 07/16/2020
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6543f1246a3462f02aaae7d22b11ba35d3725c01
-ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
+ms.openlocfilehash: 322ad95c561be6ca4c6a89df08404137545c1756
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95012060"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401974"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Power BI のリアルタイム ストリーミング
 Power BI のリアルタイム ストリーミングを使用すると、リアルタイムでデータをストリーミングし、ダッシュボードを更新できます。 Power BI で作成された任意の視覚化やダッシュボードで、リアルタイムのデータや視覚化を表示し、更新できます。 ストリーミング データのデバイスおよびソースとしては、工場のセンサー、ソーシャル メディア ソース、サービス使用状況メトリック、またはその他の多くの時間依存データのコレクターや転送元が考えられます。

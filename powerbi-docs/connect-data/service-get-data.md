@@ -2,19 +2,19 @@
 title: Power BI のデータ ソース
 description: Power BI のデータ ソース
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 08/29/2019
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: bd3ab4a1c6f702ad866211339a3d3a386c4981fa
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 427fb322a9f9226bd85da2ae1fc0657c77ca1cf5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264422"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96402227"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Power BI サービスのデータ ソース
 データは Power BI の中核です。 たとえば、データを探索しているとしましょう。 グラフとダッシュボードを作成するか、**Q&A** で質問をすることでこれを行えます。 表示される視覚化と回答は、データセットから基になるデータを取得しています。 しかし、そのデータセットはどこから得られるでしょうか。 それはデータ ソースから得られます。
@@ -86,9 +86,9 @@ Power BI では数百の異なるデータ ソースを使用できます。 デ
 ## <a name="some-more-details"></a>詳細
 Power BI で使用される用語データセットおよびデータソースが表示されます。 多くの場合、これらは同義語として使用されます。 しかし、これらは関連性はありますが、2 つの異なる事柄です。
 
-**[データの取得]** を使用すると、Power BI で**データセット**が自動的に作成されます。 **[データの取得]** を使用して、コンテンツ パックやファイルに接続してデータをインポートしたり、ライブ データ ソースに接続したりします。 データセットには、データ ソースとデータ ソースの資格情報に関する情報が含まれています。 多くの場合、データ ソースからコピーされたデータのサブセットも含まれます。 レポートやダッシュボードで視覚化を作成する場合、たいていはデータセット内のデータを調べます。
+**[データの取得]** を使用すると、Power BI で **データセット** が自動的に作成されます。 **[データの取得]** を使用して、コンテンツ パックやファイルに接続してデータをインポートしたり、ライブ データ ソースに接続したりします。 データセットには、データ ソースとデータ ソースの資格情報に関する情報が含まれています。 多くの場合、データ ソースからコピーされたデータのサブセットも含まれます。 レポートやダッシュボードで視覚化を作成する場合、たいていはデータセット内のデータを調べます。
 
-**データ ソース**とは、データセット内のデータの取得元のことです。 データの取得元には、たとえば次のものがあります。
+**データ ソース** とは、データセット内のデータの取得元のことです。 データの取得元には、たとえば次のものがあります。
 
 * Google Analytics や QuickBooks のようなオンライン サービス
 * Azure SQL Database のようなクラウド内のデータベース

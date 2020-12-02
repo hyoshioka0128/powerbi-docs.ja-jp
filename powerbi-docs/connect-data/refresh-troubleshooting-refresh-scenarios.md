@@ -2,19 +2,19 @@
 title: 更新に関するトラブルシューティング シナリオ
 description: 更新に関するトラブルシューティング シナリオ
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
+ms.subservice: pbi-data-sources
+ms.topic: troubleshooting
 ms.date: 05/28/2020
-ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: a92314891b4738fc5da735adc361e5c215e83351
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7f8193971176a738b46f628e11736ac6016ec83e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222221"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403768"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>更新に関するトラブルシューティング シナリオ
 
@@ -70,11 +70,11 @@ AAD OAuth を使用するデータ ソースには、**Microsoft Dynamics CRM On
 
 Microsoft は、データの読み込みプロセスでトークンが更新され、続行されるソリューションを研究しています。 ただし、Dynamics CRM Online または SharePoint Online (あるいはその他の AAD OAuth データ ソース) インスタンスが非常に大きく、2 時間のデータ読み込みしきい値に達するようであれば、Power BI サービスでもデータ読み込みタイムアウトが発生する場合があります。
 
-また、更新が正常に動作するように、AAD OAuth を使って **SharePoint Online** データ ソースに接続するときは、**Power BI サービス**へのサインインに使ったものと同じアカウントを使う必要があることにも注意してください。
+また、更新が正常に動作するように、AAD OAuth を使って **SharePoint Online** データ ソースに接続するときは、**Power BI サービス** へのサインインに使ったものと同じアカウントを使う必要があることにも注意してください。
 
 ## <a name="uncompressed-data-limits-for-refresh"></a>更新の際に適用される非圧縮データの制限
 
-**Power BI サービス**にインポートできるデータセットの最大サイズは 1 GB です。 このデータセットは圧縮されており、その圧縮率は、高いパフォーマンスを実現するためにかなり高くなっています。 また、共有された容量では、更新中に処理される非圧縮データ量が 10 GB に制限されます。 この制限は、圧縮を考慮しているため、1 GB をかなり上回っています。 Power BI Premium のデータセットには、この制限は適用されません。 この理由により Power BI サービスでの更新が失敗した場合は、Power BI にインポートするデータの量を減らしたうえで、もう一度やり直してください。
+**Power BI サービス** にインポートできるデータセットの最大サイズは 1 GB です。 このデータセットは圧縮されており、その圧縮率は、高いパフォーマンスを実現するためにかなり高くなっています。 また、共有された容量では、更新中に処理される非圧縮データ量が 10 GB に制限されます。 この制限は、圧縮を考慮しているため、1 GB をかなり上回っています。 Power BI Premium のデータセットには、この制限は適用されません。 この理由により Power BI サービスでの更新が失敗した場合は、Power BI にインポートするデータの量を減らしたうえで、もう一度やり直してください。
 
 ## <a name="scheduled-refresh-timeout"></a>スケジュールされた更新のタイムアウト
 

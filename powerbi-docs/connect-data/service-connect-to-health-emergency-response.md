@@ -2,18 +2,18 @@
 title: 病院の緊急時対応の意思決定支援ダッシュボードに接続する
 description: COVID-19 の医療緊急用意思決定支援ダッシュボード テンプレート アプリを取得してインストールする方法、およびデータに接続する方法
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/13/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4455a8da0af7ff928b81baf83245e66cdee578ea
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 823c8429c95a0b4d858540b2cf1183ca1c7caac7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854232"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403147"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>病院の緊急時対応の意思決定支援ダッシュボードに接続する
 病院の緊急時対応の意思決定支援ダッシュボード テンプレート アプリは、[医療緊急時対応用 Microsoft Power Platform](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/) のレポート コンポーネントです。 ダッシュボードでは、非常事態担当マネージャーに対して、タイムリーに適切な意思決定を行うのに役立つヘルス システム全体の集計データが表示されます。
@@ -34,7 +34,7 @@ ms.locfileid: "90854232"
 
 1. アプリにアクセスするには、次のリンクをクリックします: [病院の緊急時対応の意思決定支援ダッシュボード テンプレート アプリ](https://aka.ms/AppSource_Hospital_offer)
 
-1. アプリの [AppSource] ページで、[ **[今すぐ入手する]** ](https://aka.ms/AppSource_Hospital_offer) を選択します。
+1. アプリの [AppSource] ページで、[ **[今すぐ入手する]**](https://aka.ms/AppSource_Hospital_offer) を選択します。
 
     [![AppSource の病院の緊急時対応の意思決定支援ダッシュボード アプリ](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://aka.ms/AppSource_Hospital_offer)
 

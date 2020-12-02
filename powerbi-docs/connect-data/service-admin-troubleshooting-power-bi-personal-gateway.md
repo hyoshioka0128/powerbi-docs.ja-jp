@@ -2,19 +2,19 @@
 title: Power BI ゲートウェイ (個人用モード) のトラブルシューティング
 description: Power BI ゲートウェイ (個人用モード) のトラブルシューティング
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 5/06/2019
-ms.author: arthii
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 9c5e241cee86b9f7ea21607128f5c32099dd0415
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: caac528c707066a8d49072eee647737f43953a15
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861500"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403814"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Power BI ゲートウェイ (個人用モード) のトラブルシューティング
 
@@ -120,9 +120,9 @@ ms.locfileid: "90861500"
    ![更新履歴の情報](media/service-admin-troubleshooting-power-bi-personal-gateway/refresh-history.png)
 
 ### <a name="event-logs"></a>イベント ログ
-一部のイベント ログでは情報を提供されることがあります。 最初の 2 つのイベントである **Data Management Gateway** と **PowerBIGateway**は、コンピューター上の管理者に対して表示されます。 管理者ではないユーザーがデータ ゲートウェイ (個人用モード) を使用している場合は、 **[アプリケーション]** ログ内にログ エントリが表示されます。
+一部のイベント ログでは情報を提供されることがあります。 最初の 2 つのイベントである **Data Management Gateway** と **PowerBIGateway** は、コンピューター上の管理者に対して表示されます。 管理者ではないユーザーがデータ ゲートウェイ (個人用モード) を使用している場合は、 **[アプリケーション]** ログ内にログ エントリが表示されます。
 
-**Data Management Gateway** と **PowerBIGateway** ログは、 **アプリケーションとサービス ログ**の下に表示されます。
+**Data Management Gateway** と **PowerBIGateway** ログは、 **アプリケーションとサービス ログ** の下に表示されます。
 
 ![Data Management Gateway と PowerBIGateway のログ](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 

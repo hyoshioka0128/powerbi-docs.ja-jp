@@ -2,18 +2,18 @@
 title: 危機管理コミュニケーション プレゼンス レポートに接続する
 description: COVID-19 危機管理コミュニケーション プレゼンス レポート テンプレート アプリを取得してインストールする方法、およびデータに接続する方法
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 97501fe6e5a3e12e1b6773ce1b3fd67b503bf0f1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 7cce4f9e78fce27fedf795a4a0016593580f061a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860304"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403170"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>危機管理コミュニケーション プレゼンス レポートに接続する
 
@@ -37,7 +37,7 @@ ms.locfileid: "90860304"
 
 1. アプリにアクセスするには、次のリンクをクリックします: [危機管理コミュニケーション プレゼンス レポート テンプレート アプリ](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms)
 
-1. アプリの [AppSource] ページで、[ **[今すぐ入手する]** ](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms) を選択します。
+1. アプリの [AppSource] ページで、[ **[今すぐ入手する]**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms) を選択します。
 
     [![AppSource の危機管理コミュニケーション プレゼンス レポート アプリ](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms)
 

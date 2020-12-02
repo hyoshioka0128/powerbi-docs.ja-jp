@@ -1,20 +1,20 @@
 ---
 title: Power BI で Azure Search に接続する
 description: Power BI 用 Azure Search
-author: SarinaJoan
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 08/29/2019
-ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 11389b5986d0dd627b0077808a74db5ab2769a65
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 5c2c5d3b6382fdb85125a71829d62624dab31e83
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216302"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403377"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Power BI で Azure Search に接続する
 Azure Search のトラフィック分析を使うと、Azure Search サービスへのトラフィックを監視し、把握できます。 Power BI 用の Azure Search コンテンツ パックは、過去 30 日間の検索、インデックス作成、サービス統計情報、待機時間など、検索データの詳細な洞察を提供します。 詳細については、[Azure のブログ投稿](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/)をご覧ください。

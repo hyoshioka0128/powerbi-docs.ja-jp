@@ -2,19 +2,19 @@
 title: スケジュールされた更新の構成
 description: ここでは、ゲートウェイを選択して、スケジュールされた更新を構成する手順を説明します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 06/06/2019
-ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: c3846ba2e9a9fe083b6a3833237ffbc26b04842a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9298171a98837a6e8dd16cc89865770e7d88c8c2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235803"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403906"
 ---
 # <a name="configure-scheduled-refresh"></a>スケジュールされた更新の構成
 
@@ -80,7 +80,7 @@ ms.locfileid: "85235803"
 ![[スケジュールされている更新] ダイアログ ボックス](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
 > [!NOTE]
-> 2 か月間操作が行われなかった場合、データセットに対するスケジュールされた更新は一時停止されます。 データセットに基づいて作成されたダッシュボードまたはレポートにアクセスするユーザーがいない場合、そのデータセットは非アクティブと見なされます。 その時点で、データセットの所有者には、スケジュールされた更新が一時停止されたことを示す電子メールが送信されます。 データセットの更新スケジュールが**無効**として表示されます。 データセットに基づいて作成されたダッシュボードまたはレポートに再度アクセスするだけで、スケジュールされた更新は再開されます。"
+> 2 か月間操作が行われなかった場合、データセットに対するスケジュールされた更新は一時停止されます。 データセットに基づいて作成されたダッシュボードまたはレポートにアクセスするユーザーがいない場合、そのデータセットは非アクティブと見なされます。 その時点で、データセットの所有者には、スケジュールされた更新が一時停止されたことを示す電子メールが送信されます。 データセットの更新スケジュールが **無効** として表示されます。 データセットに基づいて作成されたダッシュボードまたはレポートに再度アクセスするだけで、スケジュールされた更新は再開されます。"
 
 ## <a name="whats-supported"></a>サポート対象
 

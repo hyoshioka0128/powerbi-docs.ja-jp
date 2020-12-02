@@ -2,19 +2,19 @@
 title: データ ソースの管理 - Oracle
 description: オンプレミス データ ゲートウェイとそのゲートウェイに属する Oracle データ ソースを管理する方法。
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 07/15/2019
-ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1a35cc875b0da1f75b1946d52db0aaf177f1a5e2
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 0fdf34841b06fcbb4ad2eab8af5945214ac45932
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747990"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96402319"
 ---
 # <a name="manage-your-data-source---oracle"></a>データ ソースの管理 - Oracle
 
@@ -35,7 +35,7 @@ ms.locfileid: "91747990"
 > [!NOTE]
 > お使いの Oracle サーバーと互換性のある Oracle Data Access Client (ODAC) のバージョンを選択します。 たとえば、ODAC 12.x では、必ずしも Oracle Server バージョン 9 をサポートしていません。
 > Oracle クライアント用の Windows インストーラーを選択します。
-> Oracle クライアントのセットアップ中に、セットアップ ウィザードの該当するチェック ボックスをオンにすることで、*コンピューター全体のレベルで ODP.NET および/または Oracle Providers for ASP.NET の構成*を有効にする必要があります。 Oracle クライアント ウィザードの一部のバージョンでは、既定でチェックボックスがオンになっていますが、他のバージョンではそうなっていません。 Power BI が Oracle データベースに接続できるように、チェックボックスがオンになっていることを確認してください。
+> Oracle クライアントのセットアップ中に、セットアップ ウィザードの該当するチェック ボックスをオンにすることで、*コンピューター全体のレベルで ODP.NET および/または Oracle Providers for ASP.NET の構成* を有効にする必要があります。 Oracle クライアント ウィザードの一部のバージョンでは、既定でチェックボックスがオンになっていますが、他のバージョンではそうなっていません。 Power BI が Oracle データベースに接続できるように、チェックボックスがオンになっていることを確認してください。
  
 クライアントがインストールされ、ODAC が適切に構成されたら、PowerBI Desktop またはその他のテスト クライアントを使用して、ゲートウェイ上で正しいインストールと構成を確認することをお勧めします。
 
