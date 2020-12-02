@@ -2,22 +2,22 @@
 title: Power BI Desktop で Power Platform データフローによって作成されたデータに接続する
 description: Power BI Desktop でデータフローに簡単に接続して使用します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 24635df4a07f0f73a701fcb9d30b5db3ef678666
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 5d9f477c8b058dbe9a71eec1307b4a32863307a1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668461"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392958"
 ---
 # <a name="connect-to-data-created-by-power-platform-dataflows-in-power-bi-desktop"></a>Power BI Desktop で Power Platform データフローによって作成されたデータに接続する
-**Power BI Desktop** では、Power BI Desktop の他のデータ ソースと同様に、**Power Platform データフロー**によって作成されたデータに接続できます。
+**Power BI Desktop** では、Power BI Desktop の他のデータ ソースと同様に、**Power Platform データフロー** によって作成されたデータに接続できます。
 
 ![データフローへの接続](media/desktop-connect-dataflows/connect-dataflows_01.png)
 
@@ -25,7 +25,7 @@ ms.locfileid: "91668461"
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 
-**Power Platform データフロー コネクタ**を使用するには、最新バージョンの **Power BI Desktop** を実行している必要があります。 最新バージョンを確保するために、いつでも [Power BI Desktop をダウンロード](../fundamentals/desktop-get-the-desktop.md)し、コンピューターにインストールできます。  
+**Power Platform データフロー コネクタ** を使用するには、最新バージョンの **Power BI Desktop** を実行している必要があります。 最新バージョンを確保するために、いつでも [Power BI Desktop をダウンロード](../fundamentals/desktop-get-the-desktop.md)し、コンピューターにインストールできます。  
 
 > [!NOTE]
 > 以前のバージョンの Power Platform データフロー コネクタでは、.MEZ ファイルをダウンロードしてフォルダーに配置する必要がありました。 最新バージョンの **Power BI Desktop** には Power Platform データフロー コネクタが含まれているため、このファイルは不要であり、付属のバージョンのコネクタとの競合の原因になる可能性があります。 この .MEZ ファイルをフォルダーに手動で配置した場合は、ダウンロードした .MEZ ファイルを **Documents > Power BI Desktop > カスタム コネクタ** フォルダーから削除して、競合を回避する "*必要があります*"。 

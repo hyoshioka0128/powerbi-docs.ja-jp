@@ -2,19 +2,19 @@
 title: Power BI でレポートのパフォーマンスを監視する
 description: Power BI でレポートのパフォーマンスを監視する方法についてのガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/16/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 3c76fed8f5533ad339904c4f8251a7404270a0ae
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: bd700ae7c6c175f4e9cf7841ce308a275ba9babb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216603"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393040"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Power BI でレポートのパフォーマンスを監視する
 
@@ -77,7 +77,7 @@ SQL Server プロファイラーを使用する利点は、SQL Server (リレー
 
 ## <a name="monitor-premium-metrics"></a>Premium Metrics を監視する
 
-Power BI Premium 容量では、**Power BI Premium Metrics アプリ**を使用して、Power BI Premium サブスクリプションの正常性と容量を監視することができます。 詳細については、「[Power BI Premium Metrics アプリ](../admin/service-premium-metrics-app.md)」をご覧ください。
+Power BI Premium 容量では、**Power BI Premium Metrics アプリ** を使用して、Power BI Premium サブスクリプションの正常性と容量を監視することができます。 詳細については、「[Power BI Premium Metrics アプリ](../admin/service-premium-metrics-app.md)」をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 

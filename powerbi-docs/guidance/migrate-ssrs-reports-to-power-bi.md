@@ -1,19 +1,19 @@
 ---
 title: SQL Server Reporting Services レポートを Power BI に移行する
 description: SQL Server Reporting Services (SSRS) のレポートを Power BI に移行するためのガイダンスです。
-author: peter-myers
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/03/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 06bff0a199db9955f11487a05ba78268bb8a942d
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: f1b9b710c9f9e4ade80866026f728ddbe3ae6971
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561595"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393188"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services レポートを Power BI に移行する
 
@@ -62,8 +62,8 @@ Power BI Report Server から移行することもできます。
 
 * [サポートされていないデータ ソース](../paginated-reports/paginated-reports-data-sources.md)および[サポートされていないレポート機能](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi)をチェックする
 * "_共有_" リソースを "_埋め込み_" リソースに変換する
-  * 共有**データ ソース**は埋め込みデータ ソースになります
-  * 共有**データセット**は埋め込みデータセットになります
+  * 共有 **データ ソース** は埋め込みデータ ソースになります
+  * 共有 **データセット** は埋め込みデータセットになります
 * (チェックに合格した) レポートを、ページ分割されたレポートとして、指定した Power BI ワークスペース (Premium 容量上) に発行する
 
 既存のレポートが変更または削除されることはありません。 ツールが完了すると、完了したすべてのアクションの概要 (成功または失敗) が出力されます。
@@ -106,7 +106,7 @@ SSRS サーバーから Power BI に移行できるのは、RDL レポートの�
 
 RDL レポートで "_オンプレミスのデータ ソース_" からデータを取得する必要がある場合は、シングル サインオン (SSO) を使用できません。 現在のところ、これらのソースからのすべてのデータ取得は、"_ゲートウェイ データ ソース ユーザー アカウント_" のセキュリティ コンテキストを使用して行われています。 SQL Server Analysis Services (SSAS) でユーザーごとに行レベルのセキュリティ (RLS) を適用することはできません。
 
-通常、Power BI のページ分割されたレポートは、**印刷**または **PDF 生成**に対して最適化されています。 Power BI レポートは、**探索と対話性**に最適化されています。 詳細については、「[どのようなときに Power BI のページ分割されたレポートを使用するか](report-paginated-or-power-bi.md)」を参照してください。
+通常、Power BI のページ分割されたレポートは、**印刷** または **PDF 生成** に対して最適化されています。 Power BI レポートは、**探索と対話性** に最適化されています。 詳細については、「[どのようなときに Power BI のページ分割されたレポートを使用するか](report-paginated-or-power-bi.md)」を参照してください。
 
 ### <a name="prepare"></a>準備
 

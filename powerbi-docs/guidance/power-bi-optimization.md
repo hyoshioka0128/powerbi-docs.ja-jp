@@ -2,18 +2,18 @@
 title: Power BI の最適化ガイド
 description: Power BI の最適化ガイドです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/16/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 3a541c46f78c5e5cd25b47a94394a011fd61954f
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: d55696756f6dca6b70b23b82ccab30c08cc79ec7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916546"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392935"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Power BI の最適化ガイド
 
@@ -26,7 +26,7 @@ ms.locfileid: "92916546"
 
 ## <a name="optimizing-the-data-model"></a>データ モデルの最適化
 
-データ モデルでは、視覚化エクスペリエンス全体がサポートされています。 データ モデルは、外部でホストされるか内部でホストされるかのいずれかであり、Power BI では " _データセット_ " と呼ばれます。 選択肢を理解し、ご自分のソリューションに適したデータセットの種類を選択することが重要です。 次の 3 つのデータセット モードがあります:インポート、DirectQuery、複合。 詳細については、「[Power BI サービスのデータセット](../connect-data/service-datasets-understand.md)」と「[Power BI サービスのデータセット モード](../connect-data/service-dataset-modes-understand.md)」をご覧ください。
+データ モデルでは、視覚化エクスペリエンス全体がサポートされています。 データ モデルは、外部でホストされるか内部でホストされるかのいずれかであり、Power BI では "_データセット_" と呼ばれます。 選択肢を理解し、ご自分のソリューションに適したデータセットの種類を選択することが重要です。 次の 3 つのデータセット モードがあります:インポート、DirectQuery、複合。 詳細については、「[Power BI サービスのデータセット](../connect-data/service-datasets-understand.md)」と「[Power BI サービスのデータセット モード](../connect-data/service-dataset-modes-understand.md)」をご覧ください。
 
 特定のデータセット モードのガイダンスについては、以下を参照してください。
 

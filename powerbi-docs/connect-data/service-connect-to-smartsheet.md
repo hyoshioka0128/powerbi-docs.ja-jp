@@ -2,19 +2,19 @@
 title: Power BI で Smartsheet に接続する
 description: Power BI 用 Smartsheet
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a1cf9c96b976acbfd9a5cefe4d413b4aa0fac9bf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 446c9dd1af2322cca164762ae212ba247b8916ba
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236276"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392912"
 ---
 # <a name="connect-to-smartsheet-with-power-bi"></a>Power BI で Smartsheet に接続する
 この記事では、Power BI テンプレート アプリを使用して Smartsheet アカウントからデータをプルする手順について説明します。 Smartsheet は、コラボレーションとファイル共有に簡単なプラットフォームを提供しています。 Power BI 用 Smartsheet テンプレート アプリは、Smartsheet アカウントの概要を示すダッシュボード、レポート、データセットを提供します。 また、[Power BI Desktop](desktop-connect-to-data.md) を使用して、ご使用のアカウントでそれぞれのシートに直接接続することもできます。 
