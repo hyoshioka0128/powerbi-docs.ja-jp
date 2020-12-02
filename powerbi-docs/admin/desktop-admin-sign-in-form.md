@@ -2,18 +2,18 @@
 title: 管理者が Power BI Desktop のサインイン フォームを管理する方法
 description: Power BI Desktop を開いたときの最初のサインイン フォームを管理する方法について説明します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 04/15/2019
-ms.author: davidi
-ms.openlocfilehash: 44add6bf76e5bc4445df08a76859e05c8fa1638d
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 633d71326009881b22b7b7d235316b4ebe5c132f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86160872"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386883"
 ---
 # <a name="administrators-manage-the-power-bi-desktop-sign-in-form"></a>管理者:Power BI Desktop のサインイン フォームを管理する
 Power BI Desktop を初めて起動したときは、サインイン フォームが表示されます。 情報を入力するか、Power BI にサインインして続行できます。 管理者は、レジストリ キーを使ってこのフォームを管理します。 

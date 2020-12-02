@@ -2,20 +2,20 @@
 title: レポート エディターのツアー
 description: Power BI Desktop と Power BI サービスで、レポート エディターは、エンド ユーザーに表示されるレポートをデザインするための場所です。 これは 2 つの環境で同様になります。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 08/14/2019
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 56a181da60e2a20c08a8c03dd826276d350ec81f
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 26a98609481ce45a6e432c8006d80f9becdd9f3b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635196"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387783"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Power BI でのレポート エディターのツアー
 
@@ -54,26 +54,26 @@ Power BI のレポート エディターは、次のいくつかのメイン セ
 
 ![Power BI レポート エディター](media/service-the-report-editor-take-a-tour/power-bi-report-editor-panes.png)
 
-**フィルター ウィンドウ**には、ビジュアル、ページ、またはすべてのページのフィルターが表示されます。 この場合、ページ レベルのフィルターはありますが、ビジュアル レベルのフィルターはありません。
+**フィルター ウィンドウ** には、ビジュアル、ページ、またはすべてのページのフィルターが表示されます。 この場合、ページ レベルのフィルターはありますが、ビジュアル レベルのフィルターはありません。
 
-**視覚化ウィンドウの上部**では、使用中のビジュアルの種類が識別されます。 この例では、集合縦棒グラフです。 
+**視覚化ウィンドウの上部** では、使用中のビジュアルの種類が識別されます。 この例では、集合縦棒グラフです。 
 
-**視覚化ウィンドウの下部**には、タブが 3 つ備わっています。
+**視覚化ウィンドウの下部** には、タブが 3 つ備わっています。
 
-![視覚化のフィールド](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **フィールド**では、ビジュアルのフィールドが表示されます。 詳細をすべて表示するには、下にスクロールする必要がある場合があります。 このグラフでは、StoreNumberName と "今年の売上" を使用しています。
+![視覚化のフィールド](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **フィールド** では、ビジュアルのフィールドが表示されます。 詳細をすべて表示するには、下にスクロールする必要がある場合があります。 このグラフでは、StoreNumberName と "今年の売上" を使用しています。
 
 ![ペイント ローラー アイコン](media/service-the-report-editor-take-a-tour/power-bi-paint-roller.png) **書式** 選択した視覚化の書式ペインを表示するには、ペイント ローラーのアイコンを選択します。
 
 ![拡大鏡アイコン](media/service-the-report-editor-take-a-tour/power-bi-magnifying-glass.png) **分析** 分析ペインを表示するには、拡大鏡アイコンを選択します。
 
-**フィールド ウィンドウ**には、データ モデルで利用できるすべてのテーブルが一覧表示されます。 テーブルを展開すると、そのテーブル内のフィールドが表示されます。 黄色のチェック マークは、そのテーブルの少なくとも 1 つのフィールドが視覚化にあることを示します。
+**フィールド ウィンドウ** には、データ モデルで利用できるすべてのテーブルが一覧表示されます。 テーブルを展開すると、そのテーブル内のフィールドが表示されます。 黄色のチェック マークは、そのテーブルの少なくとも 1 つのフィールドが視覚化にあることを示します。
 
 各ウィンドウの詳細について読み続けてください。
 
 ## <a name="3-the-filters-pane"></a>3.フィルター ウィンドウ
 フィルター ウィンドウを使うと、ページ、レポート、ドリルスルーおよびビジュアルの各レベルでレポートの固定フィルターの閲覧、設定、変更ができます。 そうです。ビジュアルの要素を選ぶか、スライサーのようなツールを使うと、レポート ページとビジュアルに対してアドホック フィルター処理を行うことができます。 フィルター ウィンドウのフィルター処理には、フィルターの状態はレポートと共に保存されるという利点があります。 
 
-フィルター ウィンドウには、もう 1 つ強力な機能があります。これにより、*ご利用のレポート内のビジュアルのいずれかにまだない*フィールドを使ってフィルター処理することができます。 説明しましょう。 視覚化を作成すると、Power BI によって、視覚化のすべてのフィールドがフィルター ウィンドウのビジュアル レベル フィルター領域に自動的に追加されます。 視覚化で現在使用されていないフィールドを使うビジュアル フィルター、ページ フィルター、ドリルスルー フィルター、またはレポート フィルターを設定する場合は、フィルター バケットの 1 つにそれをドラッグするだけです。
+フィルター ウィンドウには、もう 1 つ強力な機能があります。これにより、*ご利用のレポート内のビジュアルのいずれかにまだない* フィールドを使ってフィルター処理することができます。 説明しましょう。 視覚化を作成すると、Power BI によって、視覚化のすべてのフィールドがフィルター ウィンドウのビジュアル レベル フィルター領域に自動的に追加されます。 視覚化で現在使用されていないフィールドを使うビジュアル フィルター、ページ フィルター、ドリルスルー フィルター、またはレポート フィルターを設定する場合は、フィルター バケットの 1 つにそれをドラッグするだけです。
 
 新しいフィルター エクスペリエンスでは、より高い柔軟性が提供されます。 たとえば、それ自体がレポートのように見えるように、フィルターを書式設定できます。 また、フィルターをロックしたり、それをレポート コンシューマーから非表示にしたりもできます。 
 
@@ -95,7 +95,7 @@ Power BI のレポート エディターは、次のいくつかのメイン セ
 
 ![視覚化ウィンドウの下部](media/service-the-report-editor-take-a-tour/power-bi-visualization-field-manager.png)
 
-このウィンドウにあるバケット (*ウェル*と呼ばれることもあります) は、どの種類の視覚化を選択したかによって異なります。  たとえば、横棒グラフを選択した場合は、軸、凡例、値が表示されます。 フィールドを選択するか、キャンバス上にドラッグすると、Power BI によってそのフィールドがバケットのいずれかに追加されます。  フィールドの一覧からバケットにフィールドを直接ドラッグすることもできます。  いくつかのバケットは、特定の種類のデータにしか使用できません。  たとえば、 **値** は数値以外のフィールドを受け付けません。 つまり、**カテゴリ** フィールドを**値**バケットにドラッグすると、Power BI によってそれは**カテゴリの数**に変更されます。
+このウィンドウにあるバケット (*ウェル* と呼ばれることもあります) は、どの種類の視覚化を選択したかによって異なります。  たとえば、横棒グラフを選択した場合は、軸、凡例、値が表示されます。 フィールドを選択するか、キャンバス上にドラッグすると、Power BI によってそのフィールドがバケットのいずれかに追加されます。  フィールドの一覧からバケットにフィールドを直接ドラッグすることもできます。  いくつかのバケットは、特定の種類のデータにしか使用できません。  たとえば、 **値** は数値以外のフィールドを受け付けません。 つまり、**カテゴリ** フィールドを **値** バケットにドラッグすると、Power BI によってそれは **カテゴリの数** に変更されます。
 
 詳細については、「[Power BI レポートへの視覚化の追加](../visuals/power-bi-report-add-visualizations-i.md)」を参照してください。
 
@@ -149,7 +149,7 @@ Power BI では、レポート内のフィールドの種類を示すために�
 |![KPI アイコン](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      KPI: 測定可能な目標に対する進捗状況を視覚的に伝える方法の 1 つです。 主要業績評価指標 (KPI) ビジュアルに関する詳細については、[こちら](../visuals/power-bi-visualization-kpi.md)を参照してください |
 |![階層アイコン](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  フィールドの階層: 矢印を選択し、階層を構成するフィールドを表示します。  詳細については、YouTube で[階層の作成と使用](https://www.youtube.com/watch?v=q8WDUAiTGeU)についてのこの Power BI ビデオをご覧ください。 |
 |![Geo データ](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Geo データ: これらの場所フィールドは、地図の視覚化を作成するために使用できます。 |
-| ![ID フィールド](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | ID フィールド: このアイコンのフィールドは、*一意のフィールド*であり、重複するものがあっても、すべての値が表示されるように設定されています。 たとえば、データに 'Robin Smith' という名前のユーザーのためのレコードが 2 つあったとしても、それぞれが一意として扱われます。 これらは合算されることはありません。   |
+| ![ID フィールド](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | ID フィールド: このアイコンのフィールドは、*一意のフィールド* であり、重複するものがあっても、すべての値が表示されるように設定されています。 たとえば、データに 'Robin Smith' という名前のユーザーのためのレコードが 2 つあったとしても、それぞれが一意として扱われます。 これらは合算されることはありません。   |
 |![パラメーター](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | パラメーター: 1 つまたは複数のパラメーター値に応じて、レポートおよびデータ モデルの一部 (クエリ フィルター、データ ソース参照、メジャー定義など) にするパラメーターを設定します。 詳細については、この Power BI の[クエリ パラメーター](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)に関するブログ投稿を参照してください。 |
 | ![カレンダー](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | 組み込みの日付テーブルを含むカレンダー日付フィールド |
 

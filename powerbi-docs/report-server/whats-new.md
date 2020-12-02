@@ -9,11 +9,11 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/30/2020
 ms.openlocfilehash: 14b629eed17eca2d1e016913dcfffb5858d4ddc3
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132415"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96120765"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI レポート サーバーの新機能
 
@@ -37,7 +37,7 @@ Power BI Report Server 用に最適化された Power BI Desktop のリボンは
 
 **階層スライサー**
 
-" *階層スライサー* " と呼ばれるものを作成して、単一のスライサーで複数の関連するフィールドのフィルター処理を行うことができます。 それが一般提供されるようになり、追加された機能を利用できます。
+"*階層スライサー*" と呼ばれるものを作成して、単一のスライサーで複数の関連するフィールドのフィルター処理を行うことができます。 それが一般提供されるようになり、追加された機能を利用できます。
 
 - 展開/折りたたみアイコンの新しいオプション。
 - アイコンがフォント サイズに合わせて拡大縮小されるようになりました。
@@ -230,11 +230,11 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 
 **レポート**
 
-" *テーブル列またはマトリックス値をカスタム URL として設定する* "
+"*テーブル列またはマトリックス値をカスタム URL として設定する*"
 
 テーブル列またはマトリックス値をカスタム URL として設定することができます。 この新しいオプションは、書式設定ペインの条件付き書式カードの下にあります。
 
-" *KPI ビジュアルの書式設定* "
+"*KPI ビジュアルの書式設定*"
 
 今月のリリースで、KPI に新しい書式設定オプションが追加されました。
 
@@ -251,13 +251,13 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 - 良好/不良/どちらでもない状態の色
 - 日付のフォントの色
 
-" *フィルター ペインのエクスペリエンスの更新* "
+"*フィルター ペインのエクスペリエンスの更新*"
 
 [前回のリリース](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/#filterPane)からの新しいフィルター エクスペリエンスの一般提供の一環として、現在のレポートを新しいペインに移行するプロセスが合理化されました。 Power BI Report Server を初めて開くと、フィルター ペインの自動更新ダイアログが表示されます。 これらの更新には、レポートを新しいエクスペリエンスに移行する必要がある場合の Report Server のバナーも含まれています。
 
 **分析**
 
-" *ボタンの条件付き書式設定* "
+"*ボタンの条件付き書式設定*"
 
 条件付き書式設定に関する次の更新は、すべてボタンに関連しています。 次のプロパティの書式設定を動的に設定できるようになりました。
 
@@ -268,7 +268,7 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 - [塗りつぶしの色]
 - ボタンのツールヒント (アクション カードの下)
 
-" *分析情報の分析の追加読み込み* "
+"*分析情報の分析の追加読み込み*"
 
 分析機能を実行してデータの分析情報 (増加の説明など) を見つける場合、適切なタイミングで分析情報を表示するために、機械学習モデルは設定された期間だけ実行されます。 分析対象のデータが多い場合は、最初のタイムアウト後も分析の実行を継続するように選択できるようになりました。
 
@@ -278,7 +278,7 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 
 **データ準備**
 
-" *データ プロファイルの機能強化* "
+"*データ プロファイルの機能強化*"
 
 今月は、Power Query エディター内のデータ プロファイル機能に、次のようないくつかの大幅な機能強化が導入されます。
 
@@ -288,13 +288,13 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 - 日付/日時:年、月、日、年の通算週、曜日、午前/午後、1 日のうちの時刻。
 - さらに、その他のデータ型 (たとえば、論理 True/False)。
 
-" *フィルター オプション* "
+"*フィルター オプション*"
 
 [列のプロファイル] の分布ペイン内では、既にいくつかの型固有のグループ化条件を活用できました。 今回は、グループ化条件が適用されたときに、分布チャートの各値の吹き出し内からフィルター処理を行うこともできるようになりました。 たとえば、日付/日時列の [Data Profiles]\(データのプロファイル\) ペインから、指定した月に含まれるすべての値を除外できます。
 
 **その他**
 
-" *新しいファイル形式: .pbids* "
+"*新しいファイル形式: .pbids*"
 
 今月は、組織のレポート作成者の [データの取得] エクスペリエンスを合理化する、新しいファイル形式: .pbids がリリースされます。 管理者は、よく使用される接続用にこれらのファイルを作成することをお勧めします。
 
@@ -302,7 +302,7 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 
 詳細と例については、記事「Power BI Desktop のデータ ソース」の「[.pbids ファイルを使用したデータの取得](../connect-data/desktop-data-sources.md#using-pbids-files-to-get-data)」セクションを参照してください。
 
-" *モデリング操作のパフォーマンスの向上* "
+"*モデリング操作のパフォーマンスの向上*"
 
 Analysis Services エンジンのパフォーマンスが向上し、メジャーや計算列の追加、リレーションシップの作成などのモデリング操作が高速化されました。 実際の向上率はモデルによって異なりますが、一部のお客様の場合は、ファイルのオープンやメジャーの追加などの操作に関して 20 倍のパフォーマンス向上が確認されました。
 
@@ -332,7 +332,7 @@ Azure Active Directory アプリケーション プロキシによって、Web �
 
 #### <a name="custom-headers"></a>カスタム ヘッダー
 
-指定した正規表現パターンに一致するすべての URL のヘッダー値を設定します。 ユーザーは、有効な XML でカスタム ヘッダー値を更新し、選択された要求 URL のヘッダー値を設定できます。 管理者は、この XML に任意の数のヘッダーを追加できます。 詳細については、Reporting Services の **[サーバーのプロパティ] の [詳細設定] ページ** に関する記事の「 [CustomHeaders](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders)」を参照してください。
+指定した正規表現パターンに一致するすべての URL のヘッダー値を設定します。 ユーザーは、有効な XML でカスタム ヘッダー値を更新し、選択された要求 URL のヘッダー値を設定できます。 管理者は、この XML に任意の数のヘッダーを追加できます。 詳細については、Reporting Services の **[サーバーのプロパティ] の [詳細設定] ページ** に関する記事の「[CustomHeaders](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders)」を参照してください。
 
 #### <a name="transparent-database-encryption"></a>Transparent Database Encryption
 
@@ -473,7 +473,7 @@ Power BI レポートは対話式です。 レポートの現在の状態が反�
 
 #### <a name="improved-security-features"></a>改善されたセキュリティ機能
 
-**RestrictedResourceMimeTypeForUpload** 。管理者はこれを利用し、text/html のように、禁止する MIME の種類をコンマ区切りの一覧で指定できます。
+**RestrictedResourceMimeTypeForUpload**。管理者はこれを利用し、text/html のように、禁止する MIME の種類をコンマ区切りの一覧で指定できます。
 
 ## <a name="january-2019"></a>2019 年 1 月
 
@@ -487,7 +487,7 @@ Power BI レポートでは、次の機能がサポートされています。
 
 [**スマート配置ガイド**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) レポートのページ上でオブジェクトを移動するときにスマート配置ガイドが表示され (PowerPoint で表示されるように)、ページ上で行うあらゆる配置が楽に行えます。 ページ上で何かをドラッグまたはサイズ変更するたびに、スマート ガイドが表示されます。 オブジェクトを別のオブジェクトの近くに移動する場合、移動するオブジェクトは他方のオブジェクトと揃えられた位置に配置されます。
 
-**アクセシビリティ機能** 一覧されるアクセシビリティ機能が多すぎます: たとえば、 [フィールド一覧ペインのアクセシビリティ サポート](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)。 フィールド一覧ペインには、完全にアクセスできます。 キーボードとスクリーン リーダーを使用するだけで、ウィンドウ内を移動することができ、さらにコンテキスト メニューを使用することで、ご利用のレポート ページにフィールドを追加できます。
+**アクセシビリティ機能** 一覧されるアクセシビリティ機能が多すぎます: たとえば、[フィールド一覧ペインのアクセシビリティ サポート](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)。 フィールド一覧ペインには、完全にアクセスできます。 キーボードとスクリーン リーダーを使用するだけで、ウィンドウ内を移動することができ、さらにコンテキスト メニューを使用することで、ご利用のレポート ページにフィールドを追加できます。
 
 #### <a name="power-bi-visuals"></a>Power BI ビジュアル
 
@@ -536,7 +536,7 @@ Power BI レポートでは、次の機能がサポートされています。
 
 #### <a name="conditional-formatting-by-values"></a>値による条件付き書式設定
 
-条件付き書式設定の新しい種類として、 **フィールド値に基づく書式設定** というものもあります。 フィールド値に基づく書式設定では、16 進コードまたは名前で色を指定し、その色を背景またはフォントの色に適用するメジャーまたは列を使用することができます。
+条件付き書式設定の新しい種類として、**フィールド値に基づく書式設定** というものもあります。 フィールド値に基づく書式設定では、16 進コードまたは名前で色を指定し、その色を背景またはフォントの色に適用するメジャーまたは列を使用することができます。
 
 #### <a name="report-page-tooltips"></a>レポート ページのヒント
 
@@ -694,7 +694,7 @@ IT 管理者は、組織の MDM ツールを使用し、レポート サーバ�
 
 #### <a name="export-to-accessible-pdf"></a>アクセス可能な PDF へのエクスポート
 
-ページ分割された (RDL) レポートを PDF にエクスポートする際に、アクセス可能な/タグ付けされた PDF ファイルを取得できるようになりました。 サイズは大きくなりますが、スクリーン リーダーやその他の支援技術による読み取りや移動が容易になります。 アクセス可能な PDF を有効にするには、 **AccessiblePDF** デバイス情報の設定を **True** に指定します。 「[PDF デバイス情報の設定](/sql/reporting-services/pdf-device-information-settings)」と「[デバイス情報設定の変更](/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings)」を参照してください。
+ページ分割された (RDL) レポートを PDF にエクスポートする際に、アクセス可能な/タグ付けされた PDF ファイルを取得できるようになりました。 サイズは大きくなりますが、スクリーン リーダーやその他の支援技術による読み取りや移動が容易になります。 アクセス可能な PDF を有効にするには、**AccessiblePDF** デバイス情報の設定を **True** に指定します。 「[PDF デバイス情報の設定](/sql/reporting-services/pdf-device-information-settings)」と「[デバイス情報設定の変更](/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings)」を参照してください。
 
 ### <a name="other-improvements"></a>その他の改良
 
@@ -715,7 +715,7 @@ Power BI Report Server では、スケジュールされたデータ更新をセ
 
 ### <a name="editing-power-bi-reports-from-the-server"></a>サーバーからの Power BI レポートの編集
 
-サーバーから Power BI レポート (.pbix) ファイルを開いて編集できますが、取得されるのはアップロードした元のファイルです。 **サーバーによってデータが更新されている場合、ファイルを初めて開いたときには、データは更新されません** 。 変更を反映するには、手動でローカルにファイルを更新する必要があります。
+サーバーから Power BI レポート (.pbix) ファイルを開いて編集できますが、取得されるのはアップロードした元のファイルです。 **サーバーによってデータが更新されている場合、ファイルを初めて開いたときには、データは更新されません**。 変更を反映するには、手動でローカルにファイルを更新する必要があります。
 
 ### <a name="large-file-uploaddownload"></a>大きいファイルのアップロード/ダウンロード
 
@@ -775,7 +775,7 @@ Excel と Power BI には、業界で他に類を見ないツール ポートフ
 
 ### <a name="support-for-new-table-and-matrix-visuals"></a>新しいテーブルとマトリックス ビジュアルのサポート
 
-Power BI Report Server は、Power BI の新しいテーブル ビジュアルとマトリックス ビジュアルをサポートするようになりました。 これらのビジュアルでレポートを作成するには、2017 年 10 月リリース向けに更新された Power BI Desktop リリースが必要です。 Power BI Desktop (2017 年 6 月) リリースと並列インストールすることはできません。 Power BI Desktop の最新バージョンについては、 [Power BI Report Server のダウンロード ページ](https://powerbi.microsoft.com/report-server/)で、 **[ダウンロードの詳細オプション]** を選んでください。
+Power BI Report Server は、Power BI の新しいテーブル ビジュアルとマトリックス ビジュアルをサポートするようになりました。 これらのビジュアルでレポートを作成するには、2017 年 10 月リリース向けに更新された Power BI Desktop リリースが必要です。 Power BI Desktop (2017 年 6 月) リリースと並列インストールすることはできません。 Power BI Desktop の最新バージョンについては、[Power BI Report Server のダウンロード ページ](https://powerbi.microsoft.com/report-server/)で、 **[ダウンロードの詳細オプション]** を選んでください。
 
 ## <a name="june-2017"></a>2017 年 6 月
 
@@ -786,7 +786,7 @@ Power BI Report Server は、Power BI の新しいテーブル ビジュアル�
 - Power BI レポート サーバー プレビューが利用可能
 - Power BI レポートをオンプレミスで公開する機能
   - Power BI ビジュアルのサポート
-  - サポートされるのは * *Analysis Services のライブ接続* のみです。今後、さらに多くのデータ ソースがサポートされる予定です。
+  - サポートされるのは **Analysis Services のライブ接続* のみです。今後、さらに多くのデータ ソースがサポートされる予定です。
   - Power BI レポート サーバーでホストされている Power BI レポートを表示するように Power BI モバイル アプリを更新
 - レポートにコメントを含めてコラボレーションを強化
 

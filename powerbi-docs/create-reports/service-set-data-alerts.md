@@ -2,20 +2,20 @@
 title: Power BI サービスでデータ アラートを設定する
 description: Microsoft Power BI サービスで設定した制限を超えてダッシュボード内のデータが変更された場合に通知されるように、アラートを設定する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/02/2020
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 55d196a9b041f52632300f6e10c00d753ca02a14
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: cce9e351d468289b37f000159f846a5b2942b36a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635081"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387737"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Power BI サービスのデータ アラート
 
@@ -52,7 +52,7 @@ Amanda がダッシュボードのタイルにいくつかのアラートを追�
 
    ![アラート管理ウィンドウ、しきい値の設定](media/service-set-data-alerts/power-bi-set-alert-details.png)
 
-    アラートは**通知センター**に表示されます。 このチェック ボックスをオンにした場合は、Power BI によってアラートに関するメールも送信されます。
+    アラートは **通知センター** に表示されます。 このチェック ボックスをオンにした場合は、Power BI によってアラートに関するメールも送信されます。
 
 1. **[保存して閉じる]** を選びます。
 
@@ -60,17 +60,17 @@ Amanda がダッシュボードのタイルにいくつかのアラートを追�
 
 追跡対象データが設定したしきい値のいずれかに達した場合は、いくつかの処理が行われます。 最初に、Power BI によって、最後のアラートから 1 時間以上または 24 時間以上 (選択したオプションによって異なる) 経過しているかどうかが確認されます。 データがしきい値を超えている場合は、アラートを受け取ります。
 
-次に、Power BI によって**通知センター**にアラートが送信され、さらにオプションで電子メールでもアラートが送信されます。 各アラートにはデータへの直接リンクが含まれています。 リンクを選択して関連するタイルを表示し、調査、共有、詳細の確認を行うことができます。  
+次に、Power BI によって **通知センター** にアラートが送信され、さらにオプションで電子メールでもアラートが送信されます。 各アラートにはデータへの直接リンクが含まれています。 リンクを選択して関連するタイルを表示し、調査、共有、詳細の確認を行うことができます。  
 
 * 電子メールを送信するようにアラートを設定した場合は、次のようなメールを受信します。
 
    ![アラート メール](media/service-set-data-alerts/powerbi-alerts-email.png)
 
-* Power BI は、メッセージを**通知センター**に追加し、新しいアラート アイコンを該当するタイルに追加します。
+* Power BI は、メッセージを **通知センター** に追加し、新しいアラート アイコンを該当するタイルに追加します。
 
    ![Power BI サービスの通知アイコン](media/service-set-data-alerts/powerbi-alert-notifications.png)
 
-* **通知センター**にアラートの詳細が表示されます。
+* **通知センター** にアラートの詳細が表示されます。
 
     ![アラートを読む](media/service-set-data-alerts/powerbi-alert-notification.png)
 

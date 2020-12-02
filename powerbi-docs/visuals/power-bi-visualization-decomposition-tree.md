@@ -1,20 +1,20 @@
 ---
 title: 分解ツリー
 description: チュートリアル:Power BI で分解ツリー ビジュアルを作成する
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0a8bc86217dac8f0c2b70e300f08b1667ee63568
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: fd4f984be74c0408eae5c476fa30994de55961a0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413087"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386368"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Power BI で分解ツリー ビジュアルを作成して表示する
 
@@ -78,8 +78,8 @@ https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Report
 
 分析は、基本設定に応じて 2 つの方法で機能できます。 既定の動作は次のとおりです。
 
- - **高値** :使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最大値を取得するためにドリルインするものが決定されます。  
- - **低値** :使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最小値を取得するためにドリルインするものが決定されます。  
+ - **高値**:使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最大値を取得するためにドリルインするものが決定されます。  
+ - **低値**:使用可能なすべてのフィールドが考慮され、分析対象のメジャーの最小値を取得するためにドリルインするものが決定されます。  
 
 受注残の例で **[高値]** を選択すると、結果は次のようになります。
 

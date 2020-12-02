@@ -2,18 +2,18 @@
 title: 管理の概要、Power BI Report Server
 description: この記事では、Power BI Report Server の管理の概要について説明します。Power BI Report Server は、Power BI レポート、モバイル レポート、およびページ分割されたレポートを格納および管理するためのオンプレミスの場所です。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.author: maggies
-ms.openlocfilehash: 172bc4cb677ffb4df5719e3c77f12ad10160c247
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: a1c8e11fbf3b157a0d9fc1a897347875b82226fa
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861270"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387260"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>管理の概要、Power BI Report Server
 この記事では、Power BI Report Server の管理の概要について説明します。Power BI Report Server は、Power BI レポート、モバイル レポート、およびページ分割されたレポートを格納および管理するためのオンプレミスの場所です。 この記事では、Power BI Report Server の計画、展開、管理の概念について説明します。また、詳細情報へのリンクが用意されています。

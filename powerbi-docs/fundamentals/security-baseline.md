@@ -1,18 +1,19 @@
 ---
 title: Power BI 用の Azure セキュリティ ベースライン
 description: Power BI セキュリティ ベースラインでは、Azure セキュリティ ベンチマークで指定されているセキュリティに関する推奨事項を実装するための手順を記載したガイダンスおよびリソースを提供しています。
-author: msmbaldwin
-ms.service: security
+author: mbaldwin
+ms.author: margoc
+ms.service: powerbi
+ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
-ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: b0eb2906463efa95615fa76f3f7dda2a91ef126a
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 9e7aefba7a2e47fbf5249feaab3ac56057ac867c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95550446"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386265"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Power BI 用の Azure セキュリティ ベースライン
 
@@ -42,7 +43,7 @@ Power BI を Azure セキュリティ ベンチマークに完全にマップす
 
 **ガイダンス**: Power BI は、Azure の既定の ID およびアクセス管理サービスである Azure Active Directory (Azure AD) と統合されています。 組織の ID およびアクセス管理を管理するには、Azure AD を標準化する必要があります。
 
-Azure AD を保護することは、組織のクラウド セキュリティ プラクティスの中で高い優先順位を持つ必要があります。 Azure AD からは、Microsoft のベスト プラクティスの推奨事項を基準にして ID のセキュリティ体制を評価するのに役立つ ID セキュリティ スコアが提供されます。 スコアを使用して、構成がベスト プラクティスの推奨事項とどの程度一致しているかを測定し、セキュリティ体制を強化します。
+Azure AD を保護することは、組織のクラウド セキュリティ プラクティスの中で高い優先順位を持つ必要があります。 Azure AD では、Microsoft のベスト プラクティスの推奨事項を基準にした、お客様の ID セキュリティ体制を評価するために役立つ ID セキュリティ スコアが提供されます。 スコアを使用して、構成がベスト プラクティスの推奨事項とどの程度一致しているかを測定し、セキュリティ体制を強化します。
 
 注意:Azure AD では外部 ID がサポートされています。これにより、Microsoft アカウントを持たないユーザーは、自分の外部 ID を使用して自分のアプリケーションおよびリソースにサインインすることができます。
 
@@ -52,7 +53,7 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 - [アプリケーションに外部 ID プロバイダーを使用する](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers)
 
-- [Azure Active Directory での ID セキュリティ スコアとは](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
+- [Azure Active Directory の ID セキュリティ スコアとは](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -70,9 +71,9 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 ### <a name="im-3-use-azure-ad-single-sign-on-sso-for-application-access"></a>IM-3:アプリケーションのアクセスに Azure AD シングル サインオン (SSO) を使用する
 
-**ガイダンス**: Power BI では Azure Active Directory を使用して、Azure リソース、クラウド アプリケーション、およびオンプレミスのアプリケーションに ID を付与し、アクセス管理を実現します。 これには、従業員などのエンタープライズ ID や、パートナー、ベンダー、サプライヤーなどの外部 ID も含まれます。 これにより、オンプレミスおよびクラウド内の組織のデータとリソースへのアクセスを管理し、セキュリティで保護するためのシングルサインオン (SSO) が可能になります。 すべてのユーザー、アプリケーション、およびデバイスを Azure AD に接続することで、シームレスで安全なアクセス、より高い可視性、より細かな制御を実現することができます。
+**ガイダンス**: Power BI では Azure Active Directory を使用して、Azure リソース、クラウド アプリケーション、およびオンプレミスのアプリケーションに ID を付与し、アクセス管理を実現します。 これには、従業員などのエンタープライズ ID や、パートナー、ベンダー、サプライヤーなどの外部 ID も含まれます。 これにより、オンプレミスおよびクラウド内の組織のデータとリソースへのアクセスを管理し、セキュリティで保護するためのシングルサインオン (SSO) が可能になります。 すべてのユーザー、アプリケーション、デバイスを Azure AD に接続することで、シームレスで安全なアクセスを実現し、可視性と制御性を高めることができます。
 
-- [Azure AD を使用したアプリケーション SSO について](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Azure AD を使用したアプリケーションの SSO について理解する](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -81,7 +82,7 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 ### <a name="im-4-use-strong-authentication-controls-for-all-azure-active-directory-based-access"></a>IM-4:すべての Azure Active Directory ベースのアクセスに強力な認証制御を使用する
 
 **ガイダンス**: Power BI は、Multi-Factor Authentication (MFA) を介した強力な認証制御および強力なパスワードなしの手法をサポートする Azure AD に統合されています。
-- 多要素認証 - Azure AD MFA を有効にします。MFA セットアップでのベスト プラクティスについては Azure Security Center ID およびアクセス管理の推奨事項に従います。 MFA は、サインイン条件とリスク要因に基づいて、すべてのユーザー、選択したユーザー、またはユーザーごとのレベルに適用できます。
+- 多要素認証 - Azure AD MFA を有効にします。MFA セットアップでのベスト プラクティスについては Azure Security Center ID およびアクセス管理の推奨事項に従います。 MFA は、サインインの条件とリスク要因に基づいて、すべてのユーザー、選択されたユーザー、またはユーザー単位のレベルで適用できます。
 - パスワードなし認証 – 次の 3 つのパスワードなし認証オプションを使用できます。Windows Hello for Business、Microsoft Authenticator アプリ、およびスマート カードなどのオンプレミスの認証方法。
 
 管理者と特権ユーザーに対して最高レベルの強力な認証を使用するようにし、他のユーザーに対して適切な強力な認証ポリシーをロールアウトします。
@@ -110,7 +111,7 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 **ガイダンス**: Power BI では、Azure AD 条件付きアクセスがサポートされています。これを使用すれば、ユーザー定義の条件 (特定の IP 範囲からのユーザー ログインでは MFA を使用してログインする必要がある、など) に基づいて、よりきめ細かいアクセス制御を行うことができます。 さまざまなユース ケースに対してきめ細かな認証セッション管理ポリシーを使用することもできます。
 
-- [Azure 条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Azure での条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
 
 - [一般的な条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
 
@@ -503,7 +504,7 @@ Power BI アクティビティ ログ:
 
 ### <a name="ir-3-detection-and-analysis--create-incidents-based-on-high-quality-alerts"></a>IR-3: 検出と分析 – 高品質のアラートに基づいてインシデントを作成する
 
-**ガイダンス**: 高品質のアラートの作成およびアラートの品質の測定を行うためのプロセスを用意します。 これにより、過去のインシデントから教訓を学び、アナリストに対するアラートに優先順位を付けることができるので、擬陽性に時間を無駄にすることがありません。
+**ガイダンス**:高品質のアラートを作成し、アラートの品質を測定するプロセスがあることを確認します。 これにより、過去のインシデントから教訓を学び、アナリストに対するアラートに優先順位を付けることができるので、擬陽性に時間を無駄にすることがありません。
 
 Microsoft Cloud App Security で Power BI に関連するアラートを監視します。 高品質のアラートは、過去のインシデントからの経験と、検証済みのコミュニティ ソースと、さまざまな信号ソースを融合して相互に関連付けることでアラートを生成およびクリーンアップするように設計されたツールに基づいて構築できます。
 
@@ -768,7 +769,7 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 ### <a name="gs-7-define-logging-and-threat-response-strategy"></a>GS-7: ログ記録と脅威対応戦略を定義する
 
-**ガイダンス**:コンプライアンス要件を満たしながら脅威を迅速に検出して修復するための、ログ記録と脅威対応戦略を確立します。 アナリストが統合や手動の手順ではなく脅威に集中することができるように、高品質のアラートおよびシームレスなエクスペリエンスを彼らに提供することを優先してください。 
+**ガイダンス**:コンプライアンス要件を満たしながら脅威を迅速に検出して修復するための、ログ記録と脅威対応戦略を確立します。 アナリストが、統合や手動による手順ではなく、脅威の対応に集中できるように、質の高いアラートとシームレスなエクスペリエンスを提供することを優先してください。 
 
 この戦略には、次の要素に関する文書化されたガイダンス、ポリシー、標準が含まれている必要があります。 
 

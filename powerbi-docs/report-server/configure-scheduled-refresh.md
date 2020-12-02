@@ -1,19 +1,19 @@
 ---
 title: Power BI レポートのスケジュールされた更新を構成する方法
 description: Power BI レポートのデータを更新するには、スケジュールされた更新計画を作成する必要があります。
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 06/10/2020
-ms.author: davidi
-ms.openlocfilehash: 7bc3b77a8badafe1c9660af347a74214176690ac
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 95119cf6ebebbf527245f5b75f0da541c1f87aef
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859039"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386322"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Power BI レポートのスケジュールされた更新を構成する方法
 Power BI Report Server で Power BI レポートのデータを更新するには、スケジュールされた更新計画を作成する必要があります。 この計画は、Report Server 上の Power BI レポートの *[管理]* 領域で作成します。
@@ -23,7 +23,7 @@ Power BI Report Server で Power BI レポートのデータを更新するに�
 ## <a name="configure-data-source-credentials"></a>データ ソースの資格情報を構成する
 スケジュールされた更新計画を作成するには、必要なアクセス許可が必要です。 アクセス許可は、Report Server のロール定義で定義されています。 詳細については、SQL Server Reporting Services のドキュメントの「[ロールの定義 - 定義済みロール](/sql/reporting-services/security/role-definitions-predefined-roles)」を参照してください。
 
-スケジュールされたデータ更新計画を作成する前に、Power BI レポートで使われている**各データ ソース**の資格情報を設定する必要があります。
+スケジュールされたデータ更新計画を作成する前に、Power BI レポートで使われている **各データ ソース** の資格情報を設定する必要があります。
 
 1. Web ポータルで、Power BI レポートを右クリックして、 **[管理]** を選びます。
    

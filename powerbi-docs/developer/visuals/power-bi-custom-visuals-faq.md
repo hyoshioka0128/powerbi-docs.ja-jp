@@ -5,16 +5,16 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
+ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/30/2020
-ms.openlocfilehash: 10790ef963a11fd78c41a28b54e7d177bd96a157
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f38aaf9ea5bcb62cabae6ce2b7aca99f97c75960
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747921"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386437"
 ---
 # <a name="power-bi-visuals-faq"></a>Power BI ビジュアルに関する FAQ
 
@@ -24,7 +24,7 @@ ms.locfileid: "91747921"
 
 ### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>管理者が組織の Power BI ビジュアルを管理するにはどうすればよいですか?
 
-管理ポータルの *[組織のビジュアル]* タブから、管理者は[企業内のすべての組織の Power BI ビジュアルを管理](../../admin/organizational-visuals.md#organizational-visuals)および確認できます。 たとえば、Power BI ビジュアルの追加、無効化、有効化、削除などです。
+管理ポータルの *[組織のビジュアル]* タブから、管理者は [企業内のすべての組織の Power BI ビジュアルを管理](../../admin/organizational-visuals.md#organizational-visuals)および確認できます。 たとえば、Power BI ビジュアルの追加、無効化、有効化、削除などです。
 
 組織内のユーザーは、Power BI Desktop またはサービスから Power BI ビジュアルを簡単に見つけて直接レポートにインポートすることができます。
 

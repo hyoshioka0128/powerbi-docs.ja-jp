@@ -1,21 +1,21 @@
 ---
 title: レポート内のビジュアルの相互作用を変更します。
 description: Microsoft Power BI サービスレポートと Power BI Desktop レポートにビジュアルの相互作用を設定する方法を説明します。
-author: mihart
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 02/04/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 3646518cdf9575d73ccfc39a859b9c7211db8678
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0070e8e997178a07c93bef4b80403f55aff9ae1d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218679"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387622"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Power BI レポート内でのビジュアルの相互作用を変更する
 レポートの編集アクセス許可が与えられている場合、 **[ビジュアル対話]** を使い、レポート ページの視覚エフェクトの相互作用を変更できます。 
@@ -25,7 +25,7 @@ ms.locfileid: "85218679"
 たとえば、マップの視覚化で州を選択した時に、その州の縦棒グラフを強調表示し、その 1 つの州に当てはまるデータのみを表示するように折れ線グラフをフィルター処理できます。
 「[フィルター処理と強調表示について](power-bi-reports-filters-and-highlighting.md)」を参照してください。 また、視覚エフェクトが[詳細表示](../consumer/end-user-drill.md)に対応している場合、既定では、ある視覚エフェクトに詳細表示を適用してもレポート ページの他の視覚エフェクトは変更されません。 ただし、このような既定の動作はいずれもオーバーライドできます。また、相互作用は視覚エフェクトごとに設定できます。
 
-この記事では、Power BI Desktop で**ビジュアル対話**を使用する方法について説明します。 プロセスは、Power BI サービスの[編集ビュー](service-interact-with-a-report-in-editing-view.md)と同じです。 読み取りビューにのみアクセスできる場合、または他のユーザーとレポートを共有している場合、ビジュアル対話の設定を変更することはできません。
+この記事では、Power BI Desktop で **ビジュアル対話** を使用する方法について説明します。 プロセスは、Power BI サービスの[編集ビュー](service-interact-with-a-report-in-editing-view.md)と同じです。 読み取りビューにのみアクセスできる場合、または他のユーザーとレポートを共有している場合、ビジュアル対話の設定を変更することはできません。
 
 "*クロスフィルター処理*" と "*クロス強調表示*" という用語は、ここで説明する動作を、 **[フィルター]** ウィンドウで視覚化の "*フィルター処理*" と "*強調表示*" を使用した場合に起こる動作と区別するために使用されています。  
 
@@ -61,13 +61,13 @@ ms.locfileid: "85218679"
 レポート ページ上の各視覚化を一度に 1 つずつ選択して、視覚化の対話について理解を深めます。  データ ポイント、バー、または図形を選択し、他の視覚化に対する影響を観察します。 確認した動作が望ましいものでない場合は、対話を変更できます。 これらの変更はレポートと共に保存されるため、ユーザーとレポート コンシューマーのビジュアル対話エクスペリエンスは同じになります。
 
 
-まず、視覚化を選択してアクティブにします。  ページ上の他のすべての視覚化に相互作用アイコンが表示されていることに注目してください。 太字のアイコンが現在適用されているものです。 次に、**選択した視覚化**が他の視覚化にどのような影響を与えるかを決定します。  また、必要に応じて、レポート ページの他のすべての視覚エフェクトに対して繰り返します。
+まず、視覚化を選択してアクティブにします。  ページ上の他のすべての視覚化に相互作用アイコンが表示されていることに注目してください。 太字のアイコンが現在適用されているものです。 次に、**選択した視覚化** が他の視覚化にどのような影響を与えるかを決定します。  また、必要に応じて、レポート ページの他のすべての視覚エフェクトに対して繰り返します。
 
 選択した視覚化が次の条件の場合:
    
    * ページ上の他の視覚化のいずれかをフィルター処理するために使う場合、その視覚化 ![フィルター アイコン](media/service-reports-visual-interactions/power-bi-filter-icon.png) の右上隅にある **フィルター** アイコンを選択します。
-   * ページ上の他の視覚化のいずれかをクロス強調表示するために使う場合、**強調表示**アイコン ![強調表示アイコン](media/service-reports-visual-interactions/power-bi-highlight-icon.png) を選択します。
-   * ページ上の他の視覚化のいずれにも影響しない場合、**影響なし**アイコン ![影響なしアイコン](media/service-reports-visual-interactions/power-bi-no-impact.png) を選択します。
+   * ページ上の他の視覚化のいずれかをクロス強調表示するために使う場合、**強調表示** アイコン ![強調表示アイコン](media/service-reports-visual-interactions/power-bi-highlight-icon.png) を選択します。
+   * ページ上の他の視覚化のいずれにも影響しない場合、**影響なし** アイコン ![影響なしアイコン](media/service-reports-visual-interactions/power-bi-no-impact.png) を選択します。
 
 ## <a name="change-the-interactions-of-drillable-visualizations"></a>ドリル可能な視覚化の対話を変更する
 [Power BI の特定の視覚化をドリルダウンできます](../consumer/end-user-drill.md)。 既定では、視覚化をドリルダウンしても、レポート ページ上の他の視覚化には影響しません。 ただし、その動作を変更できます。 
