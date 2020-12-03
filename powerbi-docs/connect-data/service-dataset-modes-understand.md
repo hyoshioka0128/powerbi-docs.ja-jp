@@ -1,20 +1,20 @@
 ---
 title: Power BI サービスのデータセット モード
 description: Power BI サービス データセット モードの概要:インポート、DirectQuery、複合。
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 4ec73f3dd09d1c83b07d1419256cd627a71ae2d4
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.date: 12/01/2020
+ms.openlocfilehash: 5b4c32296c7121fa3d161461af7e86caba617ee1
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83332845"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501951"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Power BI サービスのデータセット モード
 
@@ -91,7 +91,7 @@ Power BI サービス リソースの観点から見ると、DirectQuery モデ�
 
 ## <a name="composite-mode"></a>複合モード
 
-_複合_モードでは、インポート モードと DirectQuery モードを混在させることや、複数の DirectQuery データ ソースを統合することができます。 複合モードで開発されたモデルでは、各モデル テーブルのストレージ モードの構成がサポートされます。 このモードでは、(DAX を使って定義された) 計算テーブルもサポートされます。
+_複合_ モードでは、インポート モードと DirectQuery モードを混在させることや、複数の DirectQuery データ ソースを統合することができます。 複合モードで開発されたモデルでは、各モデル テーブルのストレージ モードの構成がサポートされます。 このモードでは、(DAX を使って定義された) 計算テーブルもサポートされます。
 
 テーブル ストレージ モードは、インポート、DirectQuery、またはデュアルとして構成できます。 デュアル ストレージ モードとして構成されたテーブルはインポートでもあり、DirectQuery でもあります。この設定により、Power BI サービスでは、クエリごとに最も効率的なモードの使用を決定できます。
 
@@ -102,8 +102,6 @@ _複合_モードでは、インポート モードと DirectQuery モードを�
 複合モデルを開発するデータ モデラーは、インポート モードまたはデュアル ストレージ モードのディメンション型テーブルと、DirectQuery モードでのファクト型テーブルを構成する可能性があります。 モデル テーブル ロールの詳細については、「[スター スキーマと Power BI での重要性を理解する](../guidance/star-schema.md)」を参照してください。
 
 たとえば、デュアル モードの **Product** ディメンション型テーブルと、DirectQuery モードの **Sales** ファクト型テーブルがあるモデルを考えます。 **Product** テーブルに対しては、メモリ内から効率的かつ迅速にクエリを実行し、レポート スライサーを表示できます。 **Sales** テーブルに対しては、関連する **Product** テーブルを使用して DirectQuery モードでクエリを実行することもできます。 後者のクエリでは、**Product** テーブルと **Sales** テーブルを結合し、スライサー値でフィルター処理する 1 つの効率的なネイティブ SQL クエリを生成できます。
-
-一般に、複合モデルでは、各テーブルの構成方法に応じて、インポートと DirectQuery に関連する長所と短所があります。
 
 詳細については、「[Power BI Desktop で複合モデルを使用する](../transform-model/desktop-composite-models.md)」を参照してください。
 

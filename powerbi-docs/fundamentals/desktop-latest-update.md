@@ -2,19 +2,19 @@
 title: Power BI Desktop の最新の更新プログラムの新機能
 description: この記事では、Power BI Desktop の毎月の最新更新プログラムについて詳しく説明します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 34882258e9a3f05f08dd1340941b216f8679fc39
-ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
+ms.openlocfilehash: f2eacca4571b8d00c8fc7e5ca5c6ef7935afaf29
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94560059"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419500"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktop の新機能
 

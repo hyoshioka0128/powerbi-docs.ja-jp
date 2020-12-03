@@ -2,18 +2,18 @@
 title: Power BI Desktop でのクエリ フォールディングのガイダンス
 description: Power BI Desktop で Power Query のクエリ フォールディングを実現するためのガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 11/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 271ccd9abcba8fe75f0ad66a88cb970584855a35
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 5e2ec32f3eeaff224256f0a84d2a5c23d3e882a5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149173"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419316"
 ---
 # <a name="query-folding-guidance-in-power-bi-desktop"></a>Power BI Desktop でのクエリ フォールディングのガイダンス
 
@@ -25,7 +25,7 @@ ms.locfileid: "83149173"
 
 クエリ フォールディングのガイダンスは、モデル モードによって異なります。
 
-**DirectQuery** テーブルと**デュアル** ストレージ モードのテーブルの場合、Power Query クエリでクエリ フォールディングが実現される必要があります。
+**DirectQuery** テーブルと **デュアル** ストレージ モードのテーブルの場合、Power Query クエリでクエリ フォールディングが実現される必要があります。
 
 **インポート** テーブルの場合は、クエリ フォールディングを実現できる可能性があります。 クエリがリレーショナル ソースに基づいていて、単一の SELECT ステートメントを作成できる場合は、クエリ フォールディングを確実に発生させるようにすることで、"_データ更新の最高のパフォーマンス_" を達成できます。 変換を処理するために依然として Power Query マッシュアップ エンジンが必要な場合、大規模なデータセットの場合は特に、必要な作業を最小限に抑える必要があります。
 

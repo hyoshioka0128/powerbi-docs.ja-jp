@@ -2,18 +2,18 @@
 title: Power BI に移行するためのデプロイを計画する
 description: Power BI に移行する場合のデプロイ計画に関するガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: fd57d893a0c381c345364306e04d4897597b36f1
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: f161819b6e26c197bacc5534b5abfb426d612624
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396980"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419224"
 ---
 # <a name="plan-deployment-to-migrate-to-power-bi"></a>Power BI に移行するためのデプロイを計画する
 
@@ -40,7 +40,7 @@ ms.locfileid: "94396980"
 
 最初に決定する事項の 1 つは、Power BI 製品の選択です。 これは、[Power BI サービス](../fundamentals/power-bi-service-overview.md)または [Power BI Report Server](../report-server/get-started.md) のどちらにするかという決定です。 コンテンツが公開されると、埋め込み、モバイル配信、電子メール サブスクリプションなど、多くの追加オプションが使用できるようになります。
 
-アーキテクチャに関する考慮事項の詳細については、ホワイトペーパー「 [Power BI のエンタープライズ展開の計画](https://aka.ms/PBIEnterpriseDeploymentWP)」の **セクション 3** を参照してください。
+アーキテクチャに関する考慮事項の詳細については、ホワイトペーパー「[Power BI のエンタープライズ展開の計画](https://aka.ms/PBIEnterpriseDeploymentWP)」の **セクション 3** を参照してください。
 
 > [!CAUTION]
 > ファイル システムに格納されている Power BI Desktop ファイルの使用に依存する場合は、それが最適な方法ではないことにご注意ください。 Power BI サービス (または Power BI Report Server) を使用することは、セキュリティ、コンテンツ配布、コラボレーションに関して大きな利点があります。 Power BI サービスでは、アクティビティを監査および監視する機能も使用できます。
@@ -75,7 +75,7 @@ ms.locfileid: "94396980"
 - コンシューマーがレポートをカスタマイズしたい場合、レポートの[コピーを保存](../connect-data/service-datasets-copy-reports.md)し、ニーズに合わせてカスタマイズできるか?
 
 > [!CAUTION]
-> " _コピーの保存_ " 機能は便利な機能ですが、レポートにグラフィックやヘッダーまたはフッター メッセージが含まれている場合は注意して使用する必要があります。 ログ、アイコン、テキスト メッセージは、多くの場合、ブランド化の要件または規制コンプライアンスに関連するため、配信および配布の方法を慎重に制御することが重要です。 " _コピーの保存_ " を使用し、元のグラフィックやヘッダーまたはフッター メッセージが新しい作成者によって変更されないままであれば、レポートの実際の作成者について混乱を招く可能性があります。 また、ブランド化の意味が薄れる可能性もあります。
+> "_コピーの保存_" 機能は便利な機能ですが、レポートにグラフィックやヘッダーまたはフッター メッセージが含まれている場合は注意して使用する必要があります。 ログ、アイコン、テキスト メッセージは、多くの場合、ブランド化の要件または規制コンプライアンスに関連するため、配信および配布の方法を慎重に制御することが重要です。 "_コピーの保存_" を使用し、元のグラフィックやヘッダーまたはフッター メッセージが新しい作成者によって変更されないままであれば、レポートの実際の作成者について混乱を招く可能性があります。 また、ブランド化の意味が薄れる可能性もあります。
 
 ## <a name="evaluate-needs-for-premium-capacity"></a>Premium 容量の必要性を評価する
 

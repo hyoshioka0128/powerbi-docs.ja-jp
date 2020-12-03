@@ -74,6 +74,8 @@
               href: mobile-apps-scan-barcode-iphone.md
             - name: 対話設定を構成する
               href: mobile-app-interaction-settings.md
+            - name: ダーク モード
+              href: mobile-apps-dark-mode.md
             - name: モバイル デバイス管理を使用して構成する
               href: mobile-app-configuration.md
         - name: iOS
@@ -86,8 +88,6 @@
               href: mobile-apps-iOS-siri-Shortcuts.md
             - name: iOS デバイスの検索の統合
               href: mobile-apps-iOS-search-integration.md
-            - name: ダーク モード
-              href: mobile-apps-dark-mode.md
             - name: Power BI Apple Watch アプリ
               href: mobile-apple-watch.md
         - name: Android デバイス

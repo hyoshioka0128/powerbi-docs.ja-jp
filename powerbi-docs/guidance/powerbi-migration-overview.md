@@ -2,18 +2,18 @@
 title: Power BI の移行の概要
 description: 別のサードパーティ製 BI ツールから Power BI への移行を計画して実施する方法について説明します。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: aa17e6293a4bd946b1d6b7acad45623fa2393c57
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 8f8e58f61d2baa66cd0baf351857656588cfbe9f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803522"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419247"
 ---
 # <a name="power-bi-migration-overview"></a>Power BI の移行の概要
 
@@ -95,8 +95,8 @@ Power BI 移行シリーズには次のような記事があります。
 生産的で健全なデータ カルチャを実現することは、多くの組織の主要な目標です。 Power BI は、この目標を促進するための優れたツールです。 Power BI への移行を検討する主な理由には、次の 3 つがあります。
 
 - セルフサービスの BI ユーザー コミュニティを強化する新機能を導入することにより、**管理されたセルフサービスの BI を有効にします**。 Power BI を使用すると、情報や意思決定をより幅広く利用できるようになる一方で、見つけることが困難な場合がある専門家のスキルへの依存を減らすことができます。
-- 既存の BI ツールでは対処できない要件を満たすために、**エンタープライズ BI の提供を合理化**しながら、複雑さのレベルを下げ、所有コストを削減し、現在使用されている複数の BI ツールを標準化します。
-- より少ないリソース、時間、人員による生産性の向上という**経済的な圧力に対処します**。
+- 既存の BI ツールでは対処できない要件を満たすために、**エンタープライズ BI の提供を合理化** しながら、複雑さのレベルを下げ、所有コストを削減し、現在使用されている複数の BI ツールを標準化します。
+- より少ないリソース、時間、人員による生産性の向上という **経済的な圧力に対処します**。
 
 ## <a name="achieve-power-bi-migration-success"></a>Power BI の移行を成功させる
 
