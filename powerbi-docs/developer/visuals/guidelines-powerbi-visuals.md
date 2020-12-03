@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
+ms.topic: conceptual
 ms.date: 08/12/2020
-ms.openlocfilehash: 6e9da6e16d32f0093bc0e4be35415f1a23f7fa41
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 427fba66b34fefb0b7ca9d70a29b08ebe7d743cb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748566"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416142"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI ビジュアルのガイドライン
 他のユーザーが検出して使用できるようにご自分の Power BI ビジュアルを Microsoft AppSource に[発行](office-store.md)する前に、ユーザー向けに優れたエクスペリエンスを作成するためのガイドラインに従っていることを確認してください。
@@ -26,7 +26,7 @@ ms.locfileid: "91748566"
 
 ### <a name="what-is-a-power-bi-visual-with-iap-features"></a>IAP 機能のある Power BI ビジュアルとは
 
-IAP Power BI ビジュアルは、*無料の機能*を提供する*無料*のビジュアルです。 これには、追加料金が適用される場合がある、いくつかの高度な機能も用意されています。 開発者は、Power BI ビジュアルの説明で、操作のために追加購入が必要となる機能についてユーザーに通知する必要があります。 現在、Microsoft は、アプリおよびアドインの購入をサポートするためのネイティブ API を提供していません。
+IAP Power BI ビジュアルは、*無料の機能* を提供する *無料* のビジュアルです。 これには、追加料金が適用される場合がある、いくつかの高度な機能も用意されています。 開発者は、Power BI ビジュアルの説明で、操作のために追加購入が必要となる機能についてユーザーに通知する必要があります。 現在、Microsoft は、アプリおよびアドインの購入をサポートするためのネイティブ API を提供していません。
 
 開発者は、これらの購入に対し、任意のサードパーティ製の支払いシステムを使うことができます。 詳細については、[ストアのポリシー](/legal/marketplace/certification-policies#11002-displaying-ads)に関する記事をご覧ください。
 
@@ -41,7 +41,7 @@ IAP Power BI ビジュアルは、*無料の機能*を提供する*無料*のビ
 透かしを使用すると、購入前に、Power BI ビジュアルのすべての機能を紹介することができます。 
 
 * 透かしは、有効なライセンスなしに使用される有料の機能でのみ使用できます。
-* *無料*の価格タグが付いた Power BI ビジュアルに、透かしを使用することはできません。
+* *無料* の価格タグが付いた Power BI ビジュアルに、透かしを使用することはできません。
 * ユーザーが無料の機能を使用している場合、IAP ビジュアルで透かしを使用することはできません。 
 
 ### <a name="pop-up-window"></a>ポップアップ ウィンドウ
@@ -70,7 +70,7 @@ Power BI ビジュアルが検証されて承認されたら、IAP Power BI ビ�
 > * この記事での Microsoft の商用ロゴの使用は例としてのみとなっています。 ご利用の Power BI ビジュアルでは独自の商用ロゴを使用します。
 
 > [!IMPORTANT]
-> 商用ロゴは "*編集*" モードでのみ使用できます。 商用ロゴはビュー モードでは表示*できません*。
+> 商用ロゴは "*編集*" モードでのみ使用できます。 商用ロゴはビュー モードでは表示 *できません*。
 
 ### <a name="commercial-logo-type"></a>商用ロゴの種類
 

@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリでデータ アラートを設定する
 description: ユーザーが設定した制限を超えてダッシュボードのデータが変化したときにユーザーに通知するように、Power BI モバイル アプリでアラートを設定する方法を説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/11/2019
-ms.author: painbar
-ms.openlocfilehash: 71fb659ba102e139c7a1679b0c58c07c47a38bf0
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 4e9820b8ebff411434d9d6c408f36a36a644ea9d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668668"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418005"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリでデータ アラートを設定する
 適用対象:
@@ -105,7 +105,7 @@ Power BI モバイル アプリでは個別のアラートを管理でき、[Pow
 ## <a name="data-alerts-on-a-windows-device"></a>Windows デバイスでのデータ アラート
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ### <a name="set-data-alerts-on-a-windows-device"></a>Windows デバイスでデータ アラートを設定する
 1. ダッシュボード内の数値タイルまたはゲージ タイルをタップして開きます。  
@@ -156,7 +156,7 @@ Power BI モバイル アプリでは個別のアラートを管理でき、[Pow
 3. Power BI により、[通知センター](mobile-apps-notification-center.md)にメッセージが追加され、タイトル バーのベル アイコン :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: (iOS と Android の場合) または![グローバル ナビゲーション ボタン](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10 デバイスの場合) に、黄色い点が追加されます。
 
 
-4. ベル アイコン :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: またはグローバル ナビゲーション ボタン ![グローバル ナビゲーション ボタン](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) をタップして、[**通知センター**を開き](mobile-apps-notification-center.md)、アラートの詳細を表示します。
+4. ベル アイコン :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: またはグローバル ナビゲーション ボタン ![グローバル ナビゲーション ボタン](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) をタップして、[**通知センター** を開き](mobile-apps-notification-center.md)、アラートの詳細を表示します。
    
      
 

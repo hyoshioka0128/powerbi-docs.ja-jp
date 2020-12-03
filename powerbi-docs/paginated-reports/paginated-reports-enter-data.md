@@ -2,18 +2,18 @@
 title: レポート ビルダーでページ分割されたレポートにデータを直接入力する
 description: この記事では、レポート ビルダーでページ分割されたレポートにデータを直接入力する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 07/10/2020
-ms.author: maggies
-ms.openlocfilehash: 05da5fa050fc92ebae320af9e07fe6505b5790f4
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 5719a5d6e8f559f1dba9f87bc9937ed925195072
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297964"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418212"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>レポート ビルダーでページ分割されたレポートにデータを直接入力する - Power BI
 

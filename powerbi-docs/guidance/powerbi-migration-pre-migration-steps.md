@@ -2,18 +2,18 @@
 title: Power BI への移行を準備する
 description: Power BI に移行する場合の移行前の手順に関するガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 01d1e48537b2d373be3897259f8ac6e97886f268
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 33bee844aced23973bd033cf0d9ae9d8caa4d267
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680973"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418580"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Power BI への移行を準備する
 
@@ -123,7 +123,7 @@ Power BI 実装の初期段階で対処すべきいくつかの重要な項目�
 レガシ BI プラットフォームで既存のレポートのインベントリを準備することは、既に存在するものを理解するための重要な手順です。 この手順の結果は、移行工数レベルを評価するための入力となります。 インベントリの準備に関連するアクティビティには、次のものが含まれます。
 
 1. **レポートのインベントリ:** 移行の候補であるレポートとダッシュボードの一覧をコンパイルします。
-2. **データ ソースのインベントリ:** 既存のレポートによってアクセスされるすべてのデータ ソースの一覧をコンパイルします。 これには、エンタープライズ データ ソースと部門データ ソースおよび個人データ ソースの両方が含まれている必要があります。 このプロセスでは、これまで IT 部門に知られていなかったデータ ソース (" _シャドウ IT_ " とも呼ばれる) が明らかになる可能性があります。
+2. **データ ソースのインベントリ:** 既存のレポートによってアクセスされるすべてのデータ ソースの一覧をコンパイルします。 これには、エンタープライズ データ ソースと部門データ ソースおよび個人データ ソースの両方が含まれている必要があります。 このプロセスでは、これまで IT 部門に知られていなかったデータ ソース ("_シャドウ IT_" とも呼ばれる) が明らかになる可能性があります。
 3. **監査ログ:** レガシ BI プラットフォームの監査ログからデータを取得して、使用パターンを把握し、優先順位付けを支援します。 監査ログから取得する重要な情報は次のとおりです。
     - 各レポートが週、月、または四半期ごとに実行された平均回数。
     - 週、月、または四半期ごとのレポートあたりの平均コンシューマー数。

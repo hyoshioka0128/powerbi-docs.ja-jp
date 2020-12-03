@@ -2,19 +2,19 @@
 title: Power BI Desktop で一般的なクエリ タスクを実行する
 description: Power BI Desktop で一般的なクエリ タスクを実行する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/09/2020
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 931c500cd2c2dbbf750eb3699ac5290a2977c21b
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 2346118350ca589a25635db9da976fa917e3ff7b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526262"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415958"
 ---
 # <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Power BI Desktop で一般的なクエリ タスクを実行する
 
@@ -144,11 +144,11 @@ Power Query エディターによって生成される手順を編集できま�
 
 ![[数式バー] オプション、Power Query エディター、Power BI Desktop](media/desktop-common-query-tasks/queryformulas_formulabar.png)
 
-Power Query エディターには、各クエリに適用されているすべてのステップが、表示や変更が可能なテキストとして保持されます。 **詳細エディター**を使用して、任意のクエリのテキストを表示または変更できます。 **[表示]** 、 **[詳細エディター]** の順に選択します。
+Power Query エディターには、各クエリに適用されているすべてのステップが、表示や変更が可能なテキストとして保持されます。 **詳細エディター** を使用して、任意のクエリのテキストを表示または変更できます。 **[表示]** 、 **[詳細エディター]** の順に選択します。
 
 ![[詳細エディター] コマンド、Power Query エディター、Power BI Desktop](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-**USA\_StudentEnrollment** クエリに関連付けられたクエリ手順が表示されている、**詳細設定エディター**をここに示します。 これらの手順は、しばしば「*M*」と呼ばれる Power Query 数式言語で作成されています。詳細については、「[Power Query 数式の詳細について](https://support.office.com/article/learn-about-power-query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f)」を参照してください。 言語仕様そのものを確認するには、「[Power Query M 言語仕様](/powerquery-m/power-query-m-language-specification)」を参照してください。
+**USA\_StudentEnrollment** クエリに関連付けられたクエリ手順が表示されている、**詳細設定エディター** をここに示します。 これらの手順は、しばしば「*M*」と呼ばれる Power Query 数式言語で作成されています。詳細については、「[Power Query 数式の詳細について](https://support.office.com/article/learn-about-power-query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f)」を参照してください。 言語仕様そのものを確認するには、「[Power Query M 言語仕様](/powerquery-m/power-query-m-language-specification)」を参照してください。
 
 ![[詳細エディター] ダイアログ ボックス、Power Query エディター、Power BI Desktop](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

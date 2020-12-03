@@ -1,23 +1,23 @@
 ---
 title: Power BI サービスとは何ですか?
 description: Power BI サービスの概要と、Power BI の他の部分にどのように適合するかを説明します。
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 featuredvideoid: B2vd4MQrz4M
 ms.topic: overview
 ms.date: 09/05/2019
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 818c101ae62c9c9a0fbd755dfa996aec10f3e3e5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 02c274ab3e07c37797e5433aeb01a787934800fd
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361890"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416694"
 ---
 # <a name="what-is-the-power-bi-service"></a>Power BI サービスとは何ですか?
-**Power BI** は、ソフトウェア サービス、アプリ、コネクタのコレクションで、これらを連携させることで、ユーザーおよびユーザーのビジネスに最も効率的な方法でビジネスの分析情報を作成、共有、および使用できるようにします。 Microsoft Power BI *サービス* (app.powerbi.com) は、Power BI オンラインとも呼ばれ、Power BI の SaaS (*サービスとしてのソフトウェア*) の一部です。 Power BI サービスでは、*ダッシュボード*を使うと、ビジネスの実情を正確に把握することができます。 ダッシュボードには*タイル*が表示され、それを選択して*レポート*を開くと、さらに調査することができます。 ダッシュボードとレポートは、すべての関連データを 1 か所にまとめた*データセット*に接続されます。 
+**Power BI** は、ソフトウェア サービス、アプリ、コネクタのコレクションで、これらを連携させることで、ユーザーおよびユーザーのビジネスに最も効率的な方法でビジネスの分析情報を作成、共有、および使用できるようにします。 Microsoft Power BI *サービス* (app.powerbi.com) は、Power BI オンラインとも呼ばれ、Power BI の SaaS (*サービスとしてのソフトウェア*) の一部です。 Power BI サービスでは、*ダッシュボード* を使うと、ビジネスの実情を正確に把握することができます。 ダッシュボードには *タイル* が表示され、それを選択して *レポート* を開くと、さらに調査することができます。 ダッシュボードとレポートは、すべての関連データを 1 か所にまとめた *データセット* に接続されます。 
 
 Power BI を構成する要素を理解するうえで助けが必要ですか? 「[Power BI サービスのデザイナー向けの基本的な概念](service-basic-concepts.md)」を参照してください。 または、[YouTube の再生リスト](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP)を参照してください。 使い始める場合は、次のビデオ「*Power BI サービスの概要*」が役に立ちます。
 
@@ -25,7 +25,7 @@ Power BI を構成する要素を理解するうえで助けが必要ですか? 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-Power BI のその他の主要なコンポーネントは、Windows デスクトップ アプリケーション **Power BI Desktop** と、Windows、iOS、および Android デバイス用の Power BI **モバイル アプリ**です。 あなたと同僚は、これら 3 つの要素 (Power BI Desktop、サービス、モバイル アプリ) を使用して、ビジネスの分析情報を作成、共有、使用できます。 概要については、「[Power BI とは?](power-bi-overview.md)」をご覧ください。
+Power BI のその他の主要なコンポーネントは、Windows デスクトップ アプリケーション **Power BI Desktop** と、Windows、iOS、および Android デバイス用の Power BI **モバイル アプリ** です。 あなたと同僚は、これら 3 つの要素 (Power BI Desktop、サービス、モバイル アプリ) を使用して、ビジネスの分析情報を作成、共有、使用できます。 概要については、「[Power BI とは?](power-bi-overview.md)」をご覧ください。
 
 ## <a name="creating-reports-in-the-service"></a>サービスでレポートを作成する
 一般的な Power BI ワークフローでは、まず Power BI Desktop でレポートを作成してから、Power BI サービスに発行します。  

@@ -2,22 +2,22 @@
 title: Power BI に移行するコンテンツを作成する
 description: Power BI に移行するときのコンテンツの作成と検証に関するガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: a12a320b061967e9201e3513e504277a9df586b4
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 03a55f2f414ca8af7ca86f51dcafb0258efc88b7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803503"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418603"
 ---
-# <a name="createcontenttomigratetopowerbi"></a>Power BI に移行するコンテンツを作成する
+# <a name="create-content-to-migrate-to-power-bi"></a>Power BI に移行するコンテンツを作成する
 
-この記事では、Power BI に移行するときのコンテンツの作成と検証に関係する**ステージ 4** について説明します。
+この記事では、Power BI に移行するときのコンテンツの作成と検証に関係する **ステージ 4** について説明します。
 
 :::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-powerbi-stage-4.png" alt-text="Power BI への移行のステージを示す図。この記事では、ステージ 4 を重点的に説明します。":::
 

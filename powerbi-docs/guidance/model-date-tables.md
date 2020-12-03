@@ -2,27 +2,27 @@
 title: Power BI Desktop で日付テーブルを作成する
 description: Power BI Desktop で日付テーブルを作成するための手法とガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 350d4889643556d4e1c6389580415ccba46b55d4
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 9040fb54e51dfeecad853e5ba980f423ab48e908
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396639"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417844"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Power BI Desktop で日付テーブルを作成する
 
 この記事は、Power BI Desktop を操作するデータ モデラーを対象としています。 データ モデルで日付テーブルを作成する際に推奨される設計方法について説明します。
 
-データ分析式 (DAX) の [タイム インテリジェンス関数](/dax/time-intelligence-functions-dax) を使用するには、前提条件となるモデル要件があります。モデルには少なくとも 1 つの " _日付テーブル_ " が必要です。 日付テーブルとは、次の要件を満たすテーブルです。
+データ分析式 (DAX) の [タイム インテリジェンス関数](/dax/time-intelligence-functions-dax) を使用するには、前提条件となるモデル要件があります。モデルには少なくとも 1 つの "_日付テーブル_" が必要です。 日付テーブルとは、次の要件を満たすテーブルです。
 
 > [!div class="checklist"]
-> - " _日付列_ " と呼ばれるデータ型 **date** (または **date/time** ) の列が必要です。
+> - "_日付列_" と呼ばれるデータ型 **date** (または **date/time** ) の列が必要です。
 > - 日付列には一意の値が含まれている必要があります。
 > - 日付列に空白を含めることはできません。
 > - 日付列に欠落している日付があってはなりません。
@@ -68,8 +68,8 @@ Power Query を使用して日付テーブルを生成できます。 その方�
 
 [CALENDAR](/dax/calendar-function-dax) または [CALENDARAUTO](/dax/calendarauto-function-dax) DAX 関数を使用して計算テーブルを作成することで、モデルに日付テーブルを生成することができます。 各関数からは、日付の単一列のテーブルが返されます。 次に、計算された列を使用して計算テーブルを拡張し、日付間隔のフィルター処理とグループ化の要件をサポートできます。
 
-- 日付範囲を定義する場合は、 **CALENDAR** 関数を使用します。 開始日と終了日の 2 つの値を渡します。 これらの値は、`MIN(Sales[OrderDate])` や `MAX(Sales[OrderDate])` などの他の DAX 関数で定義できます。
-- 日付範囲にモデルに保存されているすべての日付を自動的に含める場合は、 **CALENDARAUTO** 関数を使用します。 年の最終月である 1 つの省略可能なパラメーターを渡すことができます (年が 12 月に終わる暦年の場合、値を渡す必要はありません)。 完全な年間の日付が返されること (これはマークされた日付テーブルの場合の要件です) が保証されるため、これは便利な関数です。 さらに、将来の年に備えたテーブルの拡張を管理する必要はありません。データの更新が完了すると、テーブルの再計算がトリガーされます。 新しい年の日付がモデルに読み込まれると、再計算により、テーブルの日付範囲が自動的に拡張されます。
+- 日付範囲を定義する場合は、**CALENDAR** 関数を使用します。 開始日と終了日の 2 つの値を渡します。 これらの値は、`MIN(Sales[OrderDate])` や `MAX(Sales[OrderDate])` などの他の DAX 関数で定義できます。
+- 日付範囲にモデルに保存されているすべての日付を自動的に含める場合は、**CALENDARAUTO** 関数を使用します。 年の最終月である 1 つの省略可能なパラメーターを渡すことができます (年が 12 月に終わる暦年の場合、値を渡す必要はありません)。 完全な年間の日付が返されること (これはマークされた日付テーブルの場合の要件です) が保証されるため、これは便利な関数です。 さらに、将来の年に備えたテーブルの拡張を管理する必要はありません。データの更新が完了すると、テーブルの再計算がトリガーされます。 新しい年の日付がモデルに読み込まれると、再計算により、テーブルの日付範囲が自動的に拡張されます。
 
 ## <a name="clone-with-dax"></a>DAX を使用して複製する
 

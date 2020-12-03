@@ -2,20 +2,20 @@
 title: レポートのテキスト ボックスへのハイパーリンクの追加
 description: Power BI Desktop と Power BI サービスでテキスト ボックスにハイパーリンクを追加する
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/25/2019
-ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2960bb75e408011cbdf6b05117ac7f6073517f9b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 235a1c0523eff09b0d43be3220b0165eba4dbed6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238139"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417499"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>レポートのテキスト ボックスへのハイパーリンクの追加
 Power BI Desktop または Power BI サービスでレポートにテキスト ボックスを追加できます。 テキスト ボックスをレポートからダッシュボードにピン留めしたり、ダッシュボードに直接追加したりすることができます。 ハイパーリンクは、テキスト ボックスの配置場所にかかわらず、常に追加することができます。 この記事では、レポートのテキスト ボックスにハイパーリンクを追加する方法について説明します。 

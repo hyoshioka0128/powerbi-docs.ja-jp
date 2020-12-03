@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリからダッシュボードまたはレポートを共有する
 description: Power BI モバイル アプリからリンクを共有することにより、ダッシュボードやレポートを見るよう他のユーザーを招待します。 ここでは、その方法について説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 5656e4b708cb52519b6dee25a8142b3c49af6532
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 0d0d4eea96c612f60f288ab9dd30e062c418c921
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668438"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417821"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Power BI モバイル アプリからダッシュボードまたはレポートを共有する
 適用対象:
@@ -23,7 +23,7 @@ ms.locfileid: "91668438"
 | iPhone |iPad |Android フォン |Android タブレット |Windows 10 デバイス |
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 [Power BI Pro ライセンス](../../fundamentals/service-features-license-type.md)があると、Power BI モバイル アプリからリンクを共有することにより、ダッシュボードやレポートを見るよう他のユーザーを招待できます。 同じ組織に属しているかどうか、会社のメール アカウントを持っているかどうかに関係なく、どのようなユーザーとでも共有できます。 ただし、他のユーザーも Power BI Pro ライセンスを持っているか、またはコンテンツを [Premium 容量](../../admin/service-premium-what-is.md)に格納する必要があります。
 
@@ -61,7 +61,7 @@ iOS および Android デバイス用 Power BI モバイル アプリから、[�
  
 2. ダッシュボードの招待状に添える電子メール アドレスとメッセージを入力します。 入力しない場合、Power BI によって既定のメッセージが送信されます。 再共有を許可するには、 **[受信者にこのダッシュボードの共有を許可する]** をオンのままにします。 再共有が許可された場合、仕事仲間は、ブラウザーまたはモバイル アプリのいずれかを使って、組織内の他者にメールで招待状を転送できます。
    
-3. 右上隅にある **送信**アイコン :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png" border="false"::: をタップしてメールを送信します。
+3. 右上隅にある **送信** アイコン :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png" border="false"::: をタップしてメールを送信します。
    
     受信者は、ダッシュボードまたはレポートへの直接のリンクを含むメール招待状を受け取ります。 招待状は 1 か月後に期限が切れます。 受信者が Power BI サービスまたは Power BI モバイル アプリでそれを開くと、受信者の Power BI アカウントの **[自分と共有]** セクションに追加されます。 [自分と共有] セクションにアクセスするには:
    * Power BI モバイル アプリの場合、ナビゲーション バーの **[その他のオプション]** (...) をタップし、![[自分と共有]](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **[自分と共有]** を選択します。
@@ -90,7 +90,7 @@ iOS および Android デバイス用 Power BI モバイル アプリから、[�
 
 2. 招待状に添える電子メール アドレスとメッセージを入力します。 入力しない場合、Power BI によって既定のメッセージが送信されます。 再共有を許可するには、 **[受信者にこのダッシュボードの共有を許可する]** をオンのままにします。 再共有が許可された場合、仕事仲間は、ブラウザーまたはモバイル アプリのいずれかを使って、組織内の他者と共有できます。
    
-3. **送信**アイコン :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png" border="false"::: をタップします。
+3. **送信** アイコン :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png" border="false"::: をタップします。
    
     受信者は、ダッシュボードまたはレポートへの直接のリンクを含むメール招待状を受け取ります。 招待状は 1 か月後に期限が切れます。 受信者が Power BI サービスまたは Power BI モバイル アプリでそれを開くと、受信者の Power BI アカウントの **[自分と共有]** セクションに追加されます。 [自分と共有] セクションにアクセスするには:
    

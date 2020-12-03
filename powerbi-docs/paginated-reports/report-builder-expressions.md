@@ -1,19 +1,19 @@
 ---
 title: Power BI レポート ビルダーでの式
 description: 式は、Power BI Report Builder のページ分割されたレポート全体で、データの取得、計算、表示、グループ化、並べ替え、フィルター処理、パラメーター化、および書式設定を行うために広く使用されます。
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: 7dbda608fcab3457a45c4ad93abf7143a19abcd1
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 24f9348bf23c8e5748121f6967fe7c826984adb9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298184"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416349"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Power BI レポート ビルダーでの式
 
@@ -38,7 +38,7 @@ ms.locfileid: "93298184"
   
  式を使用すると、多くのレポート アイテム プロパティの値を指定できます。 最も一般的なプロパティは、テキスト ボックスとプレースホルダーのテキストの値です。 通常、テキスト ボックスに 1 つの式しか含まれていない場合、その式がテキスト ボックス プロパティの値となります。 テキスト ボックスに複数の式が含まれている場合は、各式がテキスト ボックス内のプレースホルダー テキストの値となります。  
   
- 既定では、式はレポート デザイン画面上に "単純な式" または " *複雑な式* " として表示されます。  
+ 既定では、式はレポート デザイン画面上に "単純な式" または "*複雑な式*" として表示されます。  
   
 -   **単純** 組み込みコレクション (データセット フィールド、パラメーター、または組み込みフィールドなど) 内の 1 つのアイテムへの参照を含む単純式です。 デザイン画面では、単純式は角かっこ内に表示されます。 たとえば、 `[FieldName]` は基となる式 `=Fields!FieldName.Value`に対応します。 単純式は、レポート レイアウトを作成し、[レポート データ] ペインからデザイン画面にアイテムをドラッグする際に自動的に作成されます。 さまざまな組み込みコレクションを表す記号の詳細については、「 [単純式でのプレフィックス記号について](#DisplayText)」を参照してください。  
   

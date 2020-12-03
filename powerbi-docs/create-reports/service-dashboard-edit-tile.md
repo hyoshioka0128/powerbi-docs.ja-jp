@@ -2,25 +2,25 @@
 title: ダッシュボードのタイルを編集する
 description: このチュートリアルでは、タイルを作成し、ダッシュボードにピン留めする方法から、サイズの変更、移動、名前の変更、ピン留、消去、ハイパーリンクの追加など、ダッシュボード タイルを編集する方法までを説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/02/2018
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fd6117e3f5de4e8e82535c2594eec53d71117301
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4e217b0e75e8d2fadd2eff927ba3ef3c04e40e27
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219369"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417430"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>ダッシュボードのタイルを編集または削除する
 
 ## <a name="dashboard-owners-versus-dashboard-consumers"></a>ダッシュボードの "*所有者*" とダッシュボードの "*コンシューマー*"
-ダッシュボードを作成または所有する場合は、ダッシュボード上のタイルの外観や既定の動作を変更するためのオプションが多数用意されています。 以下に説明する設定および手法を用いることにより、仕事仲間にとって " *使いやすい*" ダッシュボードを設計することができます。  タイルを開いたときに開かれるのは、基になるレポート、カスタム URL、別のダッシュボードのどれでしょうか? [ビデオまたはストリーミング データを表示するタイルを追加](service-dashboard-add-widget.md)する場合もあるのではないでしょうか? さらに、[対話型のスライサーを持つタイルを作成](service-dashboard-pin-live-tile-from-report.md)することも必要になるかもしれません。 *作成者*には多くのオプションがあります。 
+ダッシュボードを作成または所有する場合は、ダッシュボード上のタイルの外観や既定の動作を変更するためのオプションが多数用意されています。 以下に説明する設定および手法を用いることにより、仕事仲間にとって " *使いやすい*" ダッシュボードを設計することができます。  タイルを開いたときに開かれるのは、基になるレポート、カスタム URL、別のダッシュボードのどれでしょうか? [ビデオまたはストリーミング データを表示するタイルを追加](service-dashboard-add-widget.md)する場合もあるのではないでしょうか? さらに、[対話型のスライサーを持つタイルを作成](service-dashboard-pin-live-tile-from-report.md)することも必要になるかもしれません。 *作成者* には多くのオプションがあります。 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 

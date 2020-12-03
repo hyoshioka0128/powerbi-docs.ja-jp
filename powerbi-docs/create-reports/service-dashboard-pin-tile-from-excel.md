@@ -2,20 +2,20 @@
 title: Excel から Power BI ダッシュボードにタイルをピン留めする方法
 description: OneDrive for Business 上の Excel から Power BI ダッシュボードにタイルをピン留めします。 範囲、グラフ、テーブルのピン留め
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/02/2018
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2e47a09437bacfc905258bd6e23e82ff5554225
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b62a780bc504c0b2fc90aa368d8dc30ac745867e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219300"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417407"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Excel から Power BI ダッシュボードにタイルをピン留めする
 Excel ブックからタイルをピン留めするには、その前にブックを Power BI サービス (app.powerbi.com) に接続する必要があります。 ブックを接続すると、基本的に、そのブックのリンクされた読み取り専用バージョンが Power BI サービスに取り込まれて、範囲をダッシュボードにピン留めできるようになります。 ワークシート全体をダッシュボードにピン留めすることもできます。  

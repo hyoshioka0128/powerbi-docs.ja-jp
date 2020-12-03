@@ -1,21 +1,21 @@
 ---
 title: Power BI の塗り分け地図 (コロプレス)
 description: Power BI での塗り分け地図 (コロプレス) の作成に関するドキュメント
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/05/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ce0adb6d5115ece1b228690c496d022f8dfc9e56
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 748e13a509bc3689122c8622f9ce26536f850a68
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412995"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418327"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Power BI で塗り分け地図 (コロプレス地図) を作成して使用する
 
@@ -28,7 +28,7 @@ ms.locfileid: "93412995"
 ![米国のマップ](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Bing への送信内容
-Power BI は Bing と統合されており、既定のマップ座標 (ジオコーディングと呼ばれるプロセス) を提供します。 Power BI サービスまたは Power BI Desktop でマップの視覚エフェクトを作成すると、(その視覚エフェクトの作成に使用された) **場所** 、 **緯度** 、および **経度** バケットのデータが Bing に送信されます。
+Power BI は Bing と統合されており、既定のマップ座標 (ジオコーディングと呼ばれるプロセス) を提供します。 Power BI サービスまたは Power BI Desktop でマップの視覚エフェクトを作成すると、(その視覚エフェクトの作成に使用された) **場所**、**緯度**、および **経度** バケットのデータが Bing に送信されます。
 
 ユーザーまたは管理者は、Bing がジオコーディングに使う URL へのアクセスを許可するように、ファイアウォールを更新することが必要な場合があります。  以下の URL です。
 - https://dev.virtualearth.net/REST/V1/Locations    

@@ -1,21 +1,21 @@
 ---
 title: Power BI での散布図、バブル チャート、およびドット プロット グラフ
 description: Power BI での散布図、ドット プロット グラフ、およびバブル チャート
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/21/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b3b2dc8892b2b9b875621c6925c6f3c652da44c6
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 4fe8d7c4333c6c540a70c33fdd3e5f4747d347da
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412696"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418856"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Power BI での散布図、バブル チャート、およびドット プロット グラフ
 
@@ -31,7 +31,7 @@ ms.locfileid: "93412696"
 
 ### <a name="scatter-and-bubble-charts"></a>散布図およびバブル チャート
 
-散布図は、2 つの数値の間の関係を表します。 バブル チャートでは、データ ポイントがバブルに置き換えられます。バブルの " *サイズ* " は、3 つ目の追加データ ディメンションを表します。
+散布図は、2 つの数値の間の関係を表します。 バブル チャートでは、データ ポイントがバブルに置き換えられます。バブルの "*サイズ*" は、3 つ目の追加データ ディメンションを表します。
 
 ![サンプル バブル チャートのスクリーンショット。](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
@@ -135,7 +135,7 @@ ms.locfileid: "93412696"
     マーカーの図形をひし形、三角形、または正方形に変更します。 各線に別のマーカーの図形を使用すると、レポートの使用者は個々の線 (または領域) を区別するのが容易になります。
 
 1. [分析] ウィンドウ ![[分析] ウィンドウのアイコンのスクリーンショット。](media/power-bi-visualization-scatter/power-bi-analytics.png) を開き、視覚化に追加の情報を追加します。  
-    - 中央値線を追加します。 **[中央値線]**  >  **[追加]** の順に選択します。 既定では、Power BI によって *平方フィート単位の売上* の中央値線が追加されます。10 個のデータ ポイントがあり、両側に 5 つずつデータ ポイントがある中央値が作成されることがわかっているため、これはあまり役に立ちません。 代わりに、 **メジャー** を *総売上差異 %* に切り替えます。  
+    - 中央値線を追加します。 **[中央値線]**  >  **[追加]** の順に選択します。 既定では、Power BI によって *平方フィート単位の売上* の中央値線が追加されます。10 個のデータ ポイントがあり、両側に 5 つずつデータ ポイントがある中央値が作成されることがわかっているため、これはあまり役に立ちません。 代わりに、**メジャー** を *総売上差異 %* に切り替えます。  
 
         ![中央値が追加されたバブル チャートのスクリーンショット。](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
 

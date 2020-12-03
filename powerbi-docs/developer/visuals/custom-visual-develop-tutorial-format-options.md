@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
+ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: 2a557f1e84e8102df6b22121c7f0b79d761ce49e
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: ec3ba601eb6cd5db4fbc19298d76ce0cd7346f53
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739324"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418741"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>チュートリアル:Power BI ビジュアルへの書式設定オプションの追加
 
@@ -27,7 +27,7 @@ ms.locfileid: "84739324"
 
 ## <a name="adding-formatting-options"></a>書式設定オプションの追加
 
-1. **Power BI** で**書式ページ**を選択します。
+1. **Power BI** で **書式ページ** を選択します。
 
     次のメッセージが表示されます - "*このビジュアルに対して書式設定オプションは使用できません*"。
 
@@ -100,7 +100,7 @@ ms.locfileid: "84739324"
 
 3. **capabilities.json** ファイルを保存します。
 
-4. **src** フォルダーの内部から**エクスプローラー ウィンドウ**に入り、**settings.ts** を選択します。 *このファイルには、スターターのビジュアルに関する設定が記述されています*。
+4. **src** フォルダーの内部から **エクスプローラー ウィンドウ** に入り、**settings.ts** を選択します。 *このファイルには、スターターのビジュアルに関する設定が記述されています*。
 
 5. **settings.ts** ファイルで、2 つのクラスを次のコードに置き換えます。
 
@@ -168,7 +168,7 @@ ms.locfileid: "84739324"
 
     ![Radius 変数](media/custom-visual-develop-tutorial-format-options/radius.png)
 
-11. **circle の要素**で、**fill の style** に渡される値を次の式に変更します。
+11. **circle の要素** で、**fill の style** に渡される値を次の式に変更します。
 
     ```typescript
     this.visualSettings.circle.circleColor
@@ -176,7 +176,7 @@ ms.locfileid: "84739324"
 
     ![circle の要素の fill](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
 
-12. **circle の要素**で、**stroke-width の style** に渡される値を次の式に変更します。
+12. **circle の要素** で、**stroke-width の style** に渡される値を次の式に変更します。
 
     ```typescript
     this.visualSettings.circle.circleThickness
@@ -194,7 +194,7 @@ ms.locfileid: "84739324"
 
 15. **Power BI** のビジュアルの上に表示されるツールバーで、 **[自動再読み込みの切り替え]** を選択します。
 
-16. **ビジュアルの書式**オプションで、 **[Circle]** を展開します。
+16. **ビジュアルの書式** オプションで、 **[Circle]** を展開します。
 
     ![Circle の書式](media/custom-visual-develop-tutorial-format-options/circle-format.png)
 
@@ -263,11 +263,11 @@ Power BI Desktop レポートを開き、カスタム ビジュアル Circle Car
 
 1. **Power BI Desktop** を開き、任意の "*サンプルのデータセット*" を使用して新しいレポートを作成します。
 
-2. **_[視覚化]_** ウィンドウで**省略記号**を選択し、ファイルから **[インポート]** を選択します。
+2. **_[視覚化]_** ウィンドウで **省略記号** を選択し、ファイルから **[インポート]** を選択します。
 
     ![デスクトップにカスタム ビジュアルを追加する](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
-3. **インポート ウィンドウ**で、 **[インポート]** を選択します。
+3. **インポート ウィンドウ** で、 **[インポート]** を選択します。
 
 4. 開いたウィンドウで、プロジェクトのディレクトリの **dist** フォルダーに移動します。
 

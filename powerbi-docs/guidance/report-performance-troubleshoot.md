@@ -2,18 +2,18 @@
 title: Power BI でのレポートのパフォーマンスのトラブルシューティング
 description: Power BI でレポートのパフォーマンスが遅い場合に診断するためのトラブルシューティング ガイドです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: troubleshooting
 ms.date: 04/15/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 2c7ba0ce8e41281e89e2bb31f9bc6db751b95dad
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 97af45ea90db1f0ccd2fdab7eba67ec91e580983
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485969"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417867"
 ---
 # <a name="troubleshoot-report-performance-in-power-bi"></a>Power BI でのレポートのパフォーマンスのトラブルシューティング
 
@@ -44,7 +44,7 @@ ms.locfileid: "85485969"
 
 ### <a name="premium-capacity"></a>Premium 容量
 
-レポートが Premium 容量でホストされている場合は、**Power BI Premium Metrics アプリ**を使用して、レポート ホスティング容量が頻繁に容量リソースを超えているかどうかを判断します。 CPU については、80% を頻繁に超える場合です。 メモリについては、[アクティブ メモリ メトリック](../admin/service-premium-metrics-app.md#the-active-memory-metric)が 50 を超える場合です。 リソースに負荷がかかっているときは、[容量の管理やスケーリング](../admin/service-admin-premium-manage.md) (フローチャート ターミネータ 1) が必要になる場合があります。 十分なリソースがある場合は、通常のレポートの使用状況において容量のアクティビティを調査します (フローチャート ターミネータ 2)。
+レポートが Premium 容量でホストされている場合は、**Power BI Premium Metrics アプリ** を使用して、レポート ホスティング容量が頻繁に容量リソースを超えているかどうかを判断します。 CPU については、80% を頻繁に超える場合です。 メモリについては、[アクティブ メモリ メトリック](../admin/service-premium-metrics-app.md#the-active-memory-metric)が 50 を超える場合です。 リソースに負荷がかかっているときは、[容量の管理やスケーリング](../admin/service-admin-premium-manage.md) (フローチャート ターミネータ 1) が必要になる場合があります。 十分なリソースがある場合は、通常のレポートの使用状況において容量のアクティビティを調査します (フローチャート ターミネータ 2)。
 
 ### <a name="shared-capacity"></a>共有された容量
 

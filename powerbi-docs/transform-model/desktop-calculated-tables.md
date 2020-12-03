@@ -2,22 +2,22 @@
 title: Power BI Desktop で計算テーブルを使用する
 description: Power BI Desktop の計算テーブル
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8c22b040a1767d616ce1f4d0e4e7fa26e55bfe19
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: de919d5dc72ec4c9f1939d844a1cd287728f1ac8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214310"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415912"
 ---
 # <a name="create-calculated-tables-in-power-bi-desktop"></a>Power BI Desktop で計算テーブルを作成する
-ほとんどの場合、外部データ ソースからモデルにデータをインポートしてテーブルを作成します。 しかし、*計算テーブル*を使用すると、モデルに既に読み込まれているデータに基づいて新しいテーブルを追加できます。 値のクエリを実行してデータ ソースから新しいテーブルの列に値を読み込む代わりに、[Data Analysis Expressions (DAX)](/dax/index) 数式を作成してテーブルの値を定義します。
+ほとんどの場合、外部データ ソースからモデルにデータをインポートしてテーブルを作成します。 しかし、*計算テーブル* を使用すると、モデルに既に読み込まれているデータに基づいて新しいテーブルを追加できます。 値のクエリを実行してデータ ソースから新しいテーブルの列に値を読み込む代わりに、[Data Analysis Expressions (DAX)](/dax/index) 数式を作成してテーブルの値を定義します。
 
 DAX は、Power BI Desktop などのリレーショナル データを扱うための数式言語です。 DAX は 200 以上の関数、演算子、およびコンストラクトを含むライブラリを提供しているため、数式を作成する際の柔軟性が非常に高く、データ分析に必要なほとんどすべての計算結果を得ることができます。 計算テーブルは、計算の途中経過に最適です。必要なデータは、その場で計算されたりクエリの一部として計算されたりするのではなく、モデルの一部として格納されます。 たとえば、2 つの既存のテーブルの "*和集合*" または "*クロス結合*" を選択できます。
 
@@ -27,7 +27,7 @@ DAX は、Power BI Desktop などのリレーショナル データを扱うた�
 
 Power BI Desktop のレポート ビューまたはデータ ビューの **[新しいテーブル]** 機能を使用して計算テーブルを作成します。
 
-たとえば、あなたは人事担当マネージャーで、**北西部の従業員**のテーブルと、**南西部の従業員**という別のテーブルを持っているとします。 あたなは、2 つのテーブルを結合して、**西部地域の従業員**という 1 つのテーブルにしたいと考えています。
+たとえば、あなたは人事担当マネージャーで、**北西部の従業員** のテーブルと、**南西部の従業員** という別のテーブルを持っているとします。 あたなは、2 つのテーブルを結合して、**西部地域の従業員** という 1 つのテーブルにしたいと考えています。
 
 **北西部の従業員**
 
@@ -47,7 +47,7 @@ Power BI Desktop のレポート ビューまたはデータ ビューで、 **[
 Western Region Employees = UNION('Northwest Employees', 'Southwest Employees')
 ```
 
-**西部地域の従業員**という名前の新しいテーブルが作成され、 **[フィールド]** ペイン内の他のテーブルと同様に表示されます。 他のテーブルと同様に、他のテーブルとのリレーションシップを作成したり、メジャーや計算列を追加したり、フィールドをレポートに追加したりすることができます。
+**西部地域の従業員** という名前の新しいテーブルが作成され、 **[フィールド]** ペイン内の他のテーブルと同様に表示されます。 他のテーブルと同様に、他のテーブルとのリレーションシップを作成したり、メジャーや計算列を追加したり、フィールドをレポートに追加したりすることができます。
 
  ![新しい計算テーブル](media/desktop-calculated-tables/calctables_westregionempl.png)
 

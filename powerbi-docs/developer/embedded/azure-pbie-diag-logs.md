@@ -4,15 +4,16 @@ description: Azure の Power BI Embedded サービスの診断ログの設定に
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
-ms.service: power-bi-embedded
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: cc64338ed40fcdc6433fdcf231004b4946335c72
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 4ab6a0d6135fcd2428df03e84596eebf6bba6704
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748795"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417361"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Azure の Power BI Embedded の診断ログ
 
@@ -38,10 +39,10 @@ ms.locfileid: "91748795"
 
     * **ストレージ アカウントへのアーカイブ** - このオプションを使用するには、既存のストレージ アカウントに接続する必要があります。 「[ストレージ アカウントを作成する](/azure/storage/common/storage-create-storage-account)」に記載されている手順に従ってストレージ アカウントを作成します。 次に、ポータルのこのページに戻ってきて、ストレージ アカウントを選択します。 新しく作成したストレージ アカウントがドロップダウン メニューに表示されるまでには、数分かかる場合があります。 ログ ファイルのストレージは JSON 形式です。
     * **イベント ハブへのストリーム** - このオプションを使用するには、既存のイベント ハブの名前空間とイベント ハブに接続する必要があります。 詳細については、「[Azure Portal を使用して Event Hubs 名前空間とイベント ハブを作成する](/azure/event-hubs/event-hubs-create)」をご覧ください。
-    * **Log Analytics への送信** - このオプションを使用するには、既存のワークスペースを使用するか、ポータルで[新しいワークスペースを作成する](/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace)ための手順に従って、新しいLog Analytics ワークスペースを作成します。 これは、組み込みの分析、ダッシュボード、通知の機能を備えている [Azure Log Analytics](/azure/log-analytics/log-analytics-overview) を活用します。 Log Analytics を使用して、他のリソースからのより多くのデータに接続し、アプリケーションのリソースすべてにわたるデータを 1 つの完全なビューにまとめます。 また、[1 回のクリックで Power BI](/azure/log-analytics/log-analytics-powerbi) に接続することもできます。
+    * **Log Analytics への送信** - このオプションを使用するには、既存のワークスペースを使用するか、ポータルで [新しいワークスペースを作成する](/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace)ための手順に従って、新しいLog Analytics ワークスペースを作成します。 これは、組み込みの分析、ダッシュボード、通知の機能を備えている [Azure Log Analytics](/azure/log-analytics/log-analytics-overview) を活用します。 Log Analytics を使用して、他のリソースからのより多くのデータに接続し、アプリケーションのリソースすべてにわたるデータを 1 つの完全なビューにまとめます。 また、[1 回のクリックで Power BI](/azure/log-analytics/log-analytics-powerbi) に接続することもできます。
     Log Analytics でのログの表示について詳しくは、[Log Analytics でのログの表示](/azure/log-analytics/log-analytics-activity)に関するページをご覧ください。
-    * **エンジン** - このオプションを選択して、以下で一覧表示されている一連の[エンジンのイベント](#whats-logged)をログに記録します。
-    * **AllMetrics** - このオプションを選択して、詳細データを[メトリック](/azure/analysis-services/analysis-services-monitor#server-metrics)に保存します。 ストレージ アカウントにアーカイブする場合、診断ログのリテンション期間を選択できます。 リテンション期間が過ぎると、ログは自動的に削除されます。
+    * **エンジン** - このオプションを選択して、以下で一覧表示されている一連の [エンジンのイベント](#whats-logged)をログに記録します。
+    * **AllMetrics** - このオプションを選択して、詳細データを [メトリック](/azure/analysis-services/analysis-services-monitor#server-metrics)に保存します。 ストレージ アカウントにアーカイブする場合、診断ログのリテンション期間を選択できます。 リテンション期間が過ぎると、ログは自動的に削除されます。
 
 3. **[保存]** を選択します。
 

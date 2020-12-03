@@ -2,18 +2,18 @@
 title: レポート ページのドリルスルーの使用
 description: レポート ページのドリルスルーを使用するためのガイド
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 11/28/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 853f6d7f5cd6696be55edeea101bc0ca51922ad3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4aa7c3992183dad6fad30e31e31e935fbaa29c32
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278079"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418488"
 ---
 # <a name="use-report-page-drillthrough"></a>レポート ページのドリルスルーの使用
 
@@ -59,7 +59,7 @@ ms.locfileid: "83278079"
 - **その他の機能:** ドリルスルー ページはレポート ページのようなものです。 スライサーやフィルターなど、追加の対話機能で機能強化することもできます。
 - **空白:** 空白を表示するようなビジュアルは追加しないでください。追加すると、ドリルスルー フィルターが適用されたとき、エラーが表示されます。
 - **ページの表示:** ドリルスルー ページを非表示にすることを検討してください。 ドリルスルー ページが表示されている状態を維持することにする場合、以前に設定したドリルスルー フィルターをユーザーが消去するためのボタンを追加してください。 [ブックマーク](../create-reports/desktop-bookmarks.md)をボタンに割り当てます。 ブックマークはすべてのフィルターを削除するように設定してください。
-- **戻るボタン:** ドリルスルー フィルターを割り当てると、戻る[ボタン](../create-reports/desktop-buttons.md)が自動的に追加されます。 このボタンを残しておくことをお勧めします。 そうすることで、レポート ユーザーはソース ページに簡単に戻ることができます。
+- **戻るボタン:** ドリルスルー フィルターを割り当てると、戻る [ボタン](../create-reports/desktop-buttons.md)が自動的に追加されます。 このボタンを残しておくことをお勧めします。 そうすることで、レポート ユーザーはソース ページに簡単に戻ることができます。
 - **気付いてもらう:** ドリルスルー ページに気付いてもらうために、ビジュアル ヘッダー アイコン テキストを設定するか、テキスト ボックスに指示を追加します。 オーバーレイをデザインすることもできます。詳細は[こちらのブログ投稿](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/)にあります。
 
 > [!TIP]

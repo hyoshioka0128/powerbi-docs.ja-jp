@@ -2,18 +2,18 @@
 title: リモートでレポート サーバーへのモバイル アプリのアクセスを構成する
 description: レポート サーバー用にリモートでモバイル アプリを構成する方法を説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/07/2019
-ms.author: painbar
-ms.openlocfilehash: d5f55c005f34bc1e3aa9ab5351b816616f4f7664
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: c83ce0735e31e65a813723ce411281821680628d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668346"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418097"
 ---
 # <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>リモートでレポート サーバーへの Power BI モバイル アプリのアクセスを構成する
 

@@ -2,18 +2,18 @@
 title: ページ分割されたレポートを印刷するときに空白のページを表示しない
 description: ページ分割されたレポートを印刷するときに空白のページが発生しないようにデザインするためのガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 349459b95a815a52665e50687554f81f90a9c81b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0fa886973105bdb4bc8a35f145168c1775ca12cb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920830"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418465"
 ---
 # <a name="avoid-blank-pages-when-printing-paginated-reports"></a>ページ分割されたレポートを印刷するときに空白のページを表示しない
 
@@ -23,10 +23,10 @@ ms.locfileid: "78920830"
 
 ページの向き、サイズ、および余白は、レポートの [ページ サイズ] のプロパティによって決まります。 これらのレポートのプロパティには、次の方法でアクセスします。
 
-- レポートの**プロパティ ページ**を使用する。レポート キャンバスの外側にある暗い灰色の領域を右クリックし、 _[レポートのプロパティ]_ を選択します。
+- レポートの **プロパティ ページ** を使用する。レポート キャンバスの外側にある暗い灰色の領域を右クリックし、 _[レポートのプロパティ]_ を選択します。
 - [ **[プロパティ]** ペイン](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane)を使用する。レポート キャンバスの外側にある暗い灰色の領域をクリックし、レポート オブジェクトを選択します。 **[プロパティ]** ペインが開くことを確認します。
 
-レポートの**プロパティ ページ**の **[ページの設定]** ページには、ページ設定のプロパティを表示して更新するためのわかりやすいインターフェイスが表示されます。
+レポートの **プロパティ ページ** の **[ページの設定]** ページには、ページ設定のプロパティを表示して更新するためのわかりやすいインターフェイスが表示されます。
 
 ![[レポートのプロパティ] ウィンドウを示している図。[ページ設定] ページが強調表示されている。](media/report-paginated-blank-page/report-page-setup-properties.png)
 

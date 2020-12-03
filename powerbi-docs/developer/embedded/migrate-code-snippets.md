@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 5c916d38ba71e143b4b85f39c8f7e427bfb0c626
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9ed021ce95fd1e978916c188c93ca77fa88ccdb6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240057"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416510"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Power BI ワークスペース コレクションからコンテンツを移行するためのコード スニペット
 
 ここでは、コンテンツの移行に必要な基本処理のコード スニペットを紹介します。 各レポートの種類に関連するフローについては、「[Power BI Embedded に Power BI ワークスペース コレクション コンテンツを移行する方法](migrate-from-powerbi-embedded.md#content-migration)」をご覧ください。
 
-Power BI Embedded (PaaS) から Power BI サービス (SaaS) にコンテンツをコピーする際に役立つ**移行ツール**を使用することができます。 これは特に、多くのコンテンツがある場合に役立ちます。 詳細については、「[Power BI Embedded 移行ツール](migrate-tool.md)」を参照してください。
+Power BI Embedded (PaaS) から Power BI サービス (SaaS) にコンテンツをコピーする際に役立つ **移行ツール** を使用することができます。 これは特に、多くのコンテンツがある場合に役立ちます。 詳細については、「[Power BI Embedded 移行ツール](migrate-tool.md)」を参照してください。
 
 以下のコードは、C# と [Power BI .NET SDK](https://www.nuget.org/profiles/powerbi) を使用している例です。
 

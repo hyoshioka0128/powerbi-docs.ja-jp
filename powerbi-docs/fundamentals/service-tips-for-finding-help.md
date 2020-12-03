@@ -1,20 +1,20 @@
 ---
 title: Power BI の質問のヘルプを得るための 10 のヒント
 description: ここでは、Power BI のしくみについて質問がある場合に、ヘルプを得るための 10 の方法を紹介します。
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f5cb17187770c8c0b37c48a495c6844c462e83ec
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 0ef9371b54fed4188b80bbb761cf61f3805a8eab
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525623"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416579"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>Power BI の質問のヘルプを得るための 10 のヒント
 Power BI に関する疑問に対する答えを、必要なときに (つまり、"ジャストインタイム" で) 得られないために、Power BI を使用しながらイライラしたり、苦労したりしていませんか。 

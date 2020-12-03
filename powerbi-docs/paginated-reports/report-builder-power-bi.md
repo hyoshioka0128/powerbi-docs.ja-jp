@@ -1,20 +1,20 @@
 ---
 title: Power BI レポート ビルダー
 description: Power BI Report Builder は、ページ分割されたレポートを作成するためのツールです。
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: 6a0a72015a66abc9425dc467703a5044ea0c8116
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 32d42ee139ceb03326b99d88e6033475ed2a4cc7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297854"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416253"
 ---
 # <a name="power-bi-report-builder"></a>Power BI レポート ビルダー
 
@@ -32,9 +32,9 @@ Power BI Report Builder は、Power BI サービスに発行できるページ�
 
 ##  <a name="jump-start-report-creation"></a><a name="JumpStartReptCreation"></a> レポート作成のジャンプスタート  
  
--   **テーブル、マトリックス、またはグラフ ウィザードから開始します** 。 データ ソース接続を作成し、フィールドをドラッグ アンド ドロップしてデータセット クエリを作成し、レイアウトとスタイルを選択して、レポートをカスタマイズします。  
+-   **テーブル、マトリックス、またはグラフ ウィザードから開始します**。 データ ソース接続を作成し、フィールドをドラッグ アンド ドロップしてデータセット クエリを作成し、レイアウトとスタイルを選択して、レポートをカスタマイズします。  
   
--   **マップ ウィザードを使用して開始します** 。地図や幾何図形を背景として集計データを表示するレポートを作成します。 マップ データには、Transact-SQL クエリまたは Environmental Systems Research Institute, Inc.(ESRI) シェープファイルの空間データを使用できます。 Microsoft Bing マップ タイルの背景を追加することもできます。  
+-   **マップ ウィザードを使用して開始します**。地図や幾何図形を背景として集計データを表示するレポートを作成します。 マップ データには、Transact-SQL クエリまたは Environmental Systems Research Institute, Inc.(ESRI) シェープファイルの空間データを使用できます。 Microsoft Bing マップ タイルの背景を追加することもできます。  
 
 ##  <a name="design-your-report"></a><a name="DesignRept"></a> レポートをデザインする  
   
@@ -56,7 +56,7 @@ Power BI Report Builder は、Power BI サービスに発行できるページ�
   
 -   コンピューターまたはレポート サーバーに **レポートの定義を保存** して、レポートの管理と他のユーザーとの共有を実行できます。  
   
--   レポートを開くとき、またはレポートを開いた後で **表示形式を選択します** 。 Web 指向、ページ指向、およびデスクトップ アプリケーション形式を選択できます。 形式には、MHTML、PDF、XML、CSV、Word、および Excel が含まれます。  
+-   レポートを開くとき、またはレポートを開いた後で **表示形式を選択します**。 Web 指向、ページ指向、およびデスクトップ アプリケーション形式を選択できます。 形式には、MHTML、PDF、XML、CSV、Word、および Excel が含まれます。  
   
 -   **サブスクリプションを設定します。** Power BI サービスにレポートを発行した後、レポートを特定の時刻に実行し、電子メール サブスクリプションとして送信するように構成できます。  
 

@@ -2,23 +2,23 @@
 title: Power BI デザイナーのダッシュボードの概要
 description: ダッシュボードは、Power BI サービスの主要な機能です。 これでは、ストーリーをしばしばキャンバスと呼ばれる 1 つのページで視覚化します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/19/2019
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a9aa24145fc07841bc14980cb2ba02a4b45400a2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 092ce10b527c6160cb27de5e3de0ed5852219f6a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238348"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417292"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Power BI デザイナーのダッシュボードの概要
 
-Power BI の*ダッシュボード*は、ストーリーをしばしばキャンバスと呼ばれる 1 つのページで視覚化します。 これは 1 ページに限られているため、適切に設計されたダッシュボードには、そのストーリーの最も重要な要素のみが含まれます。 リーダーは、その詳細を関連レポートで表示できます。
+Power BI の *ダッシュボード* は、ストーリーをしばしばキャンバスと呼ばれる 1 つのページで視覚化します。 これは 1 ページに限られているため、適切に設計されたダッシュボードには、そのストーリーの最も重要な要素のみが含まれます。 リーダーは、その詳細を関連レポートで表示できます。
 
 ![ダッシュボード](media/service-dashboards/power-bi-dashboard2.png)
 
@@ -26,7 +26,7 @@ Power BI の*ダッシュボード*は、ストーリーをしばしばキャン
 
 ## <a name="dashboard-basics"></a>ダッシュボードの基礎 
 
-ダッシュボードに表示される視覚化は、*タイル*と呼ばれます。 タイルはレポートからダッシュボードに*ピン留め*します。 Power BI を初めて使うときは、「[Power BI サービスのデザイナー向けの基本的な概念](../fundamentals/service-basic-concepts.md)」を読むと基礎がよくわかります。
+ダッシュボードに表示される視覚化は、*タイル* と呼ばれます。 タイルはレポートからダッシュボードに *ピン留め* します。 Power BI を初めて使うときは、「[Power BI サービスのデザイナー向けの基本的な概念](../fundamentals/service-basic-concepts.md)」を読むと基礎がよくわかります。
 
 ダッシュボード上の視覚エフェクトはレポートから生成され、各レポートは 1 つのデータセットが基になっています。 ダッシュボードは基になっているレポートとデータセットへの入り口と考えることもできます。 視覚化を選ぶと、その作成に使われたレポート (およびデータセット) に行き着きます。
 

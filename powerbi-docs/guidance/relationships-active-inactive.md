@@ -2,18 +2,18 @@
 title: アクティブなリレーションシップと非アクティブなリレーションシップのガイダンス
 description: アクティブまたは非アクティブなモデル リレーションシップを使用するためのガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
-ms.openlocfilehash: df9405dcf65eb39095f711edbcaf2a35e4a1f6aa
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: 9fcded0f898f450b5de43686effa115f6163ae21
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136237"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417890"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>アクティブなリレーションシップと非アクティブなリレーションシップのガイダンス
 
@@ -31,7 +31,7 @@ ms.locfileid: "91136237"
 
 ![2 つのテーブルを含むモデルを示す図:Flight と Airport。 リレーションシップの設計については、次の段落で説明します。](media/relationships-active-inactive/flight-model-1.png)
 
-**Flight** テーブルと **Airport** テーブルの間には、2 つのモデル リレーションシップがあります。 **Flight** テーブルでは、**DepartureAirport** 列と **ArrivalAirport** 列が **Airport** テーブルの **Airport** 列に関連付けられています。 スター スキーマ設計では、**Airport** テーブルは[多様ディメンション](star-schema.md#role-playing-dimensions)として説明されます。 このモデルの場合、2 つのロールは "_出発空港_" と "_到着空港_" です。
+**Flight** テーブルと **Airport** テーブルの間には、2 つのモデル リレーションシップがあります。 **Flight** テーブルでは、**DepartureAirport** 列と **ArrivalAirport** 列が **Airport** テーブルの **Airport** 列に関連付けられています。 スター スキーマ設計では、**Airport** テーブルは [多様ディメンション](star-schema.md#role-playing-dimensions)として説明されます。 このモデルの場合、2 つのロールは "_出発空港_" と "_到着空港_" です。
 
 この設計は、リレーショナル スター スキーマ設計では適切に機能しますが、Power BI モデルには適していません。 モデル リレーションシップはフィルター伝達のパスであり、これらのパスは決定論的である必要があるためです。 このため、2 つのテーブル間に複数のアクティブなリレーションシップがあるモデルは使用できません。 したがって、この例で説明しているように、一方のリレーションシップはアクティブであり、(破線で表される) もう一方のリレーションシップは非アクティブです。 具体的には、**ArrivalAirport** 列へのリレーションシップがアクティブです。 つまり、**Airport** テーブルに適用されたフィルターは、自動的に **Flight** テーブルの **ArrivalAirport** 列に伝達されます。
 

@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリで注釈を付けて共有する
 description: 'iOS および Android 用 Microsoft Power BI モバイル アプリから、タイル、レポート、および視覚エフェクトの注釈付けや共有を行う方法を説明します。 '
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 58a282116a672f33c0e05e7a3e6532ede316b3d3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: af8cb247d2a931ac9fb7aa54fc37f9f4dcde74ae
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239330"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416625"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Power BI モバイル アプリでタイル、レポート、ビジュアルに注釈を付けて共有する
 適用対象:

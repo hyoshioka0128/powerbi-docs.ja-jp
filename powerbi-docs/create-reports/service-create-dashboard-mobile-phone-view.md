@@ -2,19 +2,19 @@
 title: 携帯電話用にダッシュボードを最適化する - Power BI
 description: 携帯電話での表示専用に Power BI サービスでダッシュボードのカスタマイズしたビューを作成する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/18/2019
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: bc1c9987205e86ee9a123bf8ba9afd567c59ff52
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: b0bf14ec5229aae40ee4e3f43c65b6bef4a505ba
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264720"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417476"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>携帯電話用にダッシュボードを最適化する - Power BI 
 スマートフォンの縦モードでダッシュボードを開くと、ダッシュボードのタイルがすべて同じサイズで並んで表示されることに気付くでしょう。 Power BI サービスでは、ダッシュボードのカスタマイズされたビュー (特にスマートフォンの縦モード用) を作成できます。 スマートフォンのビューを作成した場合でも、電話を横向きにすると、サービスにレイアウトされているダッシュボードが表示されます。

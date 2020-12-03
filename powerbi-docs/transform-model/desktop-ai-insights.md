@@ -2,19 +2,19 @@
 title: Power BI Desktop で AI 分析情報に接続する
 description: Power BI Desktop で AI 分析情報に簡単に接続してデータを使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8de033c673d9d08833fdc5a935b92490db369104
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: a3654bc77ebdbd41ef608378157bf0d24bb94c88
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396750"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416119"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Power BI Desktop で AI 分析情報を使用する
 
@@ -67,7 +67,7 @@ Text Analytics では、最大 120 の言語が認識されます。 詳細に�
 
 #### <a name="extract-key-phrases"></a>キー フレーズ抽出
 
-**キー フレーズ抽出** 関数では、非構造化テキストが評価され、テキスト フィールドごとにキー フレーズの一覧が返されます。 この関数では、入力としてテキスト フィールドが必要です。 **カルチャ情報** も入力できます (省略可能)。
+**キー フレーズ抽出** 関数では、非構造化テキストが評価され、テキスト フィールドごとにキー フレーズの一覧が返されます。 この関数では、入力としてテキスト フィールドが必要です。**カルチャ情報** も入力できます (省略可能)。
 
 キー フレーズ抽出は、指定したテキストのチャンクが大きいほど、効果的に機能します。 これは、テキストのブロックが小さいほどパフォーマンスが向上する感情分析とは反対です。 両方の操作から最良の結果を得るには、入力を適宜再構築することを検討してください。
 
@@ -83,7 +83,7 @@ Text Analytics では、機械学習分類アルゴリズムを使用して、0 
 
 #### <a name="tag-images"></a>画像のタグ付け
 
-**画像のタグ付け** 関数では、生き物、風景、アクションなどの 2,000 を超える認識可能なオブジェクトに基づいてタグが返されます。 タグがあいまいだったり、常識的なものでなかったりする場合は、既知の状況のコンテキストでタグの意味を明確にするための " *ヒント* " が表示されます。 タグは分類として編成されず、継承の階層は存在しません。 コンテンツのタグのコレクションは、完全な文の形式に整えられた、人が読解可能な言語として表示される画像の " *説明* " の基盤となります。
+**画像のタグ付け** 関数では、生き物、風景、アクションなどの 2,000 を超える認識可能なオブジェクトに基づいてタグが返されます。 タグがあいまいだったり、常識的なものでなかったりする場合は、既知の状況のコンテキストでタグの意味を明確にするための "*ヒント*" が表示されます。 タグは分類として編成されず、継承の階層は存在しません。 コンテンツのタグのコレクションは、完全な文の形式に整えられた、人が読解可能な言語として表示される画像の "*説明*" の基盤となります。
 
 イメージをアップロードするか、またはイメージの URL を指定すると、Computer Vision のアルゴリズムにより、そのイメージ内で識別されたオブジェクト、生物、およびアクションに基づいてタグが出力されます。 タグ付けの対象は、前景の人間などの主題だけではありません。セット (室内またはアウトドア)、家具、道具、植物、動物、アクセサリ、小物なども対象となります。
 
@@ -91,7 +91,7 @@ Text Analytics では、機械学習分類アルゴリズムを使用して、0 
 
 ### <a name="invoking-text-analytics-or-vision-functions-in-power-query"></a>Power Query で Text Analytics 関数または Vision 関数を呼び出す
 
-Text Analytics 関数または Vision 関数を使用してデータを強化するには、 **Power Query エディター** を開きます。 この例では、テキストのセンチメントのスコア付けの手順を示します。 同じ手順を使用して、キーフレーズ抽出、言語検出、および画像のタグ付けを実行できます。
+Text Analytics 関数または Vision 関数を使用してデータを強化するには、**Power Query エディター** を開きます。 この例では、テキストのセンチメントのスコア付けの手順を示します。 同じ手順を使用して、キーフレーズ抽出、言語検出、および画像のタグ付けを実行できます。
 
 **[ホーム]** または **[列の追加]** リボンで **[Text analytics]** ボタンを選択します。 サインインするように求められます。
 
@@ -180,7 +180,7 @@ Power BI から Azure ML モデルにアクセスするには、Azure サブス�
 4. **[アクセス制御 (IAM)]** を選択し、 **[追加]** ボタンを選択します。
 5. ロールとして **[閲覧者]** を選択します。 Azure ML モデルへのアクセス権を付与する Power BI ユーザーを選択します。
 6. **[保存]** を選択する
-7. 上記の 3 から 6 の手順を繰り返し、特定の Machine Learning Studio (クラシック) Web サービスのユーザー、" *または* " モデルをホストしている Machine Learning ワークスペースのユーザーに **[閲覧者]** アクセス権を付与します。
+7. 上記の 3 から 6 の手順を繰り返し、特定の Machine Learning Studio (クラシック) Web サービスのユーザー、"*または*" モデルをホストしている Machine Learning ワークスペースのユーザーに **[閲覧者]** アクセス権を付与します。
 
 ### <a name="schema-discovery-for-machine-learning-models"></a>Machine Learning モデルのスキーマの検出
 

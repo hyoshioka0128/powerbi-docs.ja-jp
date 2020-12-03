@@ -2,18 +2,18 @@
 title: チュートリアル:VM での Power BI Report Server の探索
 description: このチュートリアルでは、Power BI Report Server が既にインストールされている仮想マシンを作成し、Web ポータルを探索します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
-ms.author: maggies
-ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 85fcd6249a833c35cb98fca6abf2881ab1a4bf7e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79207024"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418419"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>チュートリアル:VM で Power BI Report Server Web ポータルを探索する
 このチュートリアルでは、Power BI Report Server が既にインストールされている Azure 仮想マシンを作成するので、サンプルの Power BI とページ分割されたレポートの表示、編集、および管理と、KPI を体験できます。
@@ -61,7 +61,7 @@ Power BI チームが作成した、Power BI Report Server が既にインスト
 
 8. **手順 2 の [設定]** では既定値のままにして **[OK]** を選択します。
  
-    **SQL ストレージ アカウント**と**診断ストレージ アカウント**の値も一意である必要があります。 チュートリアルを複数回実行する場合は、異なる名前を付ける必要があります。
+    **SQL ストレージ アカウント** と **診断ストレージ アカウント** の値も一意である必要があります。 チュートリアルを複数回実行する場合は、異なる名前を付ける必要があります。
 
 9. **手順 3 の [概要]** で、選択した内容を確認し > **[OK]** を選択します。
 
@@ -89,7 +89,7 @@ Power BI チームが作成した、Power BI Report Server が既にインスト
 
 6. VM 用に作成した名前とパスワードを入力し、 **[OK]** を選択します。
 
-7. 次のダイアログ ボックスに、**リモート コンピューターの ID を特定できない**というメッセージが表示されます。 **[はい]** を選択します。
+7. 次のダイアログ ボックスに、**リモート コンピューターの ID を特定できない** というメッセージが表示されます。 **[はい]** を選択します。
 
    すると、新しい VM が開きます。
 
@@ -188,7 +188,7 @@ Web ポータルで Power BI レポートを表示して操作し、Web ポー�
 
 ### <a name="manage-a-paginated-report"></a>ページ分割されたレポートを管理する
 
-1. Web ポータルの **[ページ分割されたレポート]** で、 **[Sales Order]** の横の**その他のオプション (...)**  >  **[管理]** を順に選択します。
+1. Web ポータルの **[ページ分割されたレポート]** で、 **[Sales Order]** の横の **その他のオプション (...)**  >  **[管理]** を順に選択します。
 
 1. **[パラメーター]** を選択し、**SalesOrderNumber** の既定値を「**SO50689**」に変更し >  **[適用]** を選択します。
 
@@ -218,7 +218,7 @@ Web ポータルで Power BI レポートを表示して操作し、Web ポー�
 
 レポート ビルダーでページ分割されたレポートを編集できます。また、レポート ビルダーはブラウザーから直接起動することができます。
 
-1. Web ポータルで、 **[Sales Order]** の横の**その他のオプション (...)**  >  **[レポート ビルダーで編集]** を順に選択します。
+1. Web ポータルで、 **[Sales Order]** の横の **その他のオプション (...)**  >  **[レポート ビルダーで編集]** を順に選択します。
 
 1. **[許可]** を選択すると、この Web サイトで、このコンピューター上のプログラムを開くことができるようになります。
 

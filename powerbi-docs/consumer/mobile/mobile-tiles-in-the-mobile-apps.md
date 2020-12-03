@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリのタイルを調べる
 description: タイルは、データのライブ スナップショットであり、ダッシュボードにピン留めされます。 Power BI モバイル アプリでタイルを操作する方法について説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 1afde236dd4fc9698efe4391cb2d9e095ade37a4
-ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
+ms.openlocfilehash: 74823845c73f02468d012c4518cdf111e84824c9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683369"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417936"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリのタイルを調べる
 適用対象:
@@ -35,7 +35,7 @@ ms.locfileid: "92683369"
    
     ![選択されている値が今年の売上と昨年の売上であることを示す、折れ線グラフのスクリーンショット。](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   " *たとえば、この折れ線グラフで選択されている値は、 **今年** と **昨年** の **8 月の売上値** です。* "  
+   "*たとえば、この折れ線グラフで選択されている値は、**今年** と **昨年** の **8 月の売上値** です。* "  
    
    円グラフでスライスをタップすると、円の上部にスライスの値を表示できます。  
    
@@ -96,7 +96,7 @@ ms.locfileid: "92683369"
    
     [タイルのスナップショットを共有](mobile-windows-10-phone-app-get-started.md)できます。
    
-    **[レポートを開く]** ![[レポートを開く] アイコン](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) をタップして、 [基になっているレポートを表示](mobile-reports-in-the-mobile-apps.md)できます。
+    **[レポートを開く]** ![[レポートを開く] アイコン](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) をタップして、[基になっているレポートを表示](mobile-reports-in-the-mobile-apps.md)できます。
    
     リンクがある場合は、[リンクを開きます](../../create-reports/service-dashboard-edit-tile.md#hyperlink)。 リンクにより、Power BI ダッシュボードや外部の URL に移動できます。
 3. **[タイルを展開]** ![[タイルを展開] アイコン](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png) をタップします。 タイルがフォーカス モードで開きます。このモードでは、タイルのデータを簡単に表示および調査できます。 このモードでは、次のことができます。
@@ -109,7 +109,7 @@ ms.locfileid: "92683369"
    
    ![Decor バーの値を示す横棒グラフのスクリーンショット。](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   " *この横棒グラフでは、 **Decor** バーの値はグラフの上部に表示されます。* "
+   "*この横棒グラフでは、 **Decor** バーの値はグラフの上部に表示されます。* "
    
    **[Switch to presentation mode]\(プレゼンテーション モードに切り替える\)** アイコン ![[Switch to presentation mode]\(プレゼンテーション モードに切り替える\) の画像](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) をタップして、ナビゲーション バーとメニュー バーを使用せずにタイルをプレゼンテーション モードで開きます。
    

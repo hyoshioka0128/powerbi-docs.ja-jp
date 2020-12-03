@@ -2,20 +2,20 @@
 title: 個人として Power BI にサインアップする
 description: Power BI サービスにサインアップして、データ分析および視覚化のニーズに合わせて Power BI の使用を開始する方法について説明します。
 author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: db77d7f94665df7711f7b49dd2cc6d10a7c694df
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 4aa768aa6c041f4653a0bd7bf1ef873b3bc4a63b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216613"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416648"
 ---
 # <a name="sign-up-for-the-power-bi-service-as-an-individual"></a>個人として Power BI にサインアップする
 
@@ -29,7 +29,7 @@ Power BI は、統合されたセルフサービスおよびエンタープラ�
 これら 3 つの要素 (Descktop、サービス、モバイル アプリ) は、ユーザーが自身、またはそのロールに最適な方法でビジネスの分析情報を作成、共有、および使用できるように設計されています。
 
 ## <a name="signing-up-for-the-power-bi-service"></a>Power BI サービスへのサインアップ
-この記事では、個人として **Power BI サービス**にサインアップする手順について説明します。 Power BI Desktop のダウンロードおよびモバイル アプリのインストールに関するヘルプ情報については、次の記事を参照してください。
+この記事では、個人として **Power BI サービス** にサインアップする手順について説明します。 Power BI Desktop のダウンロードおよびモバイル アプリのインストールに関するヘルプ情報については、次の記事を参照してください。
 - [Power BI Desktop (これも完全に無料でダウンロードできます)](desktop-get-the-desktop.md)    
 - [Power BI モバイル アプリ (これも完全に無料でダウンロードできます)](../consumer/mobile/mobile-apps-for-mobile-devices.md)
 
@@ -46,7 +46,7 @@ Power BI は、統合されたセルフサービスおよびエンタープラ�
 Power BI アカウントには、以下の手順でサインアップします。 このプロセスが完了すると、Power BI Free ライセンスが与えられます。このライセンスの下で、マイ ワークスペースを使って自分で Power BI サービスを試用したり、Power BI Premium 容量に割り当てられた Power BI ワークスペースのコンテンツを利用したり、Power BI Pro の個人向け試用版を開始したりすることができます。 詳細については、「[Power BI features by license type](service-features-license-type.md)」 (Power BI のライセンスの種類別機能) を参照してください。 
 
 サインアップの正確な手順は、組織や、プロセスを開始するためにクリックする内容によって異なります。 このため、以下に示す画面がすべて表示されるとは限りません。 個人として Power BI サービスにサインアップするにはさまざまな方法があり、この記事の手順は、最も一般的な 2 つのサインアップ方法に適用されます。
-- **[無料で試す]** または **[無料で開始する]** ボタン<sup>1</sup> を選択します。     
+- **[無料で試す]** または **[無料で開始する]** ボタン <sup>1</sup> を選択します。     
 - Power BI ダッシュボード、レポート、またはアプリへのリンクを含む電子メールが送られてきます。 Power BI アカウントにまだサインインしていません。
 
     <sup>1</sup> **[無料で試す]** ボタンは、powerbi.microsoft.com、関連する Microsoft 製品、ドキュメントおよびマーケティング記事で表示されます。

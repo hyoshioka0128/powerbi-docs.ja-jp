@@ -1,18 +1,19 @@
 ---
 title: セルフサービスでの Power BI Pro の購入に関するヘルプ
 description: セルフサービスでの購入が無効な場合の対処方法。 Power BI サービスの Power BI Pro を購入できません。
-services: powerbi
 author: mihart
 ms.author: mihart
+services: powerbi
 ms.topic: conceptual
 ms.service: powerbi
+ms.subservice: pbi-fundamentals
 ms.date: 07/09/2020
-ms.openlocfilehash: e0656dae18cc62322ebc54235e08133d4cc2cafb
-ms.sourcegitcommit: 01b5fb05f723eab2557e0e420bfde23197987a96
+ms.openlocfilehash: 0c53c452ac1798656641b4cb5686c7d85213dd99
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86301394"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416602"
 ---
 # <a name="what-to-do-if-purchasing-power-bi-pro-is-disabled"></a>Power BI Pro の購入が無効になっている場合の対処方法
 

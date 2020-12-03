@@ -1,19 +1,19 @@
 ---
 title: Power BI とは?
 description: Power BI の概要と、さまざまなパーツ (Power BI Desktop、Power BI サービス、Power BI モバイル、Report Server、および Power BI Embedded) がどのように組み合わさっているか。
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: overview
 ms.date: 09/23/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2c793cf0b7af6f6a7fdbc6196052ac357b6ddd12
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: acbd0761b481ec4884ab94d50de219a2d753b574
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375341"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416533"
 ---
 # <a name="what-is-power-bi"></a>Power BI とは?
 **Power BI** はソフトウェア サービス、アプリ、コネクタのコレクションで、これらを組み合わせることで、関連性のないデータ ソースから、まとまりがあり、実体験的な対話型洞察を得ることができます。 Excel スプレッドシートや、クラウド ベースとオンプレミスのハイブリッド データ ウェアハウスのコレクションなど、さまざまなデータを使えます。 Power BI を使うと、ご利用のデータ ソースへの接続、重要事項の視覚化と検出、必要に応じた任意のユーザーまたはすべてのユーザーとの共有を、簡単に実行できます。
@@ -21,7 +21,7 @@ ms.locfileid: "91375341"
 ## <a name="the-parts-of-power-bi"></a>Power BI の構成要素
 Power BI は、次の 3 つの基本的なものを始めとして、すべてが連携して機能する複数の要素で構成されています。 
 - **Power BI Desktop** と呼ばれる Windows デスクトップ アプリケーション
-- **Power BI サービス**と呼ばれるオンラインの SaaS (*サービスとしてのソフトウェア*) サービス 
+- **Power BI サービス** と呼ばれるオンラインの SaaS (*サービスとしてのソフトウェア*) サービス 
 - Windows、iOS、Android デバイス向けの Power BI **モバイル アプリ**
 
 ![Power BI Desktop、サービス、およびモバイルの統合を示す図のスクリーンショット。](media/power-bi-overview/power-bi-overview-blocks.png)
@@ -36,7 +36,7 @@ Power BI は、次の 3 つの基本的なものを始めとして、すべて�
 ## <a name="how-power-bi-matches-your-role"></a>Power BI とロールの対応
 Power BI の使用方法は、プロジェクトまたはチームにおけるユーザーのロールによって異なる場合があります。 ロールが異なれば Power BI の使用方法も異なる可能性があります。
 
-たとえば、あなたはレポートとダッシュボードを表示するために、**Power BI サービス**を主に使うことができます。 大量の計算を行ったりビジネス レポートを作成する同僚は、レポートを作成し、そのレポートをあなたが参照する Power BI サービスに発行するために、**Power BI Desktop** または **Power BI Report Builder** を重点的に使うことができます。 営業担当の別の同僚は、売上ノルマの達成状況の観察や、新しい潜在顧客の詳細を確認するために、**Power BI のスマートフォン アプリ**を主に使うことができます。
+たとえば、あなたはレポートとダッシュボードを表示するために、**Power BI サービス** を主に使うことができます。 大量の計算を行ったりビジネス レポートを作成する同僚は、レポートを作成し、そのレポートをあなたが参照する Power BI サービスに発行するために、**Power BI Desktop** または **Power BI Report Builder** を重点的に使うことができます。 営業担当の別の同僚は、売上ノルマの達成状況の観察や、新しい潜在顧客の詳細を確認するために、**Power BI のスマートフォン アプリ** を主に使うことができます。
 
 開発者であれば、Power BI API を使用してデータをデータセットにプッシュしたり、ダッシュボードとレポートをカスタム アプリケーションに埋め込んだりする可能性があります。 新しいビジュアルのアイデアがあれば、 それを自分で作成して、他のユーザーと共有できます。  
 

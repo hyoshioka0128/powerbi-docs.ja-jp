@@ -2,18 +2,18 @@
 title: Power BI Desktop のモデルからレポートを分離する
 description: Power BI Desktop のモデルからレポートを分離するためのガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 04/11/2020
-ms.author: v-pemyer
-ms.openlocfilehash: f2b9ee2093889fc9a60d621ad09b3b52d2e90474
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: a45299015883615b4773fe5db1c9864e01a47c4b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525940"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418362"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Power BI Desktop のモデルからレポートを分離する
 
@@ -37,7 +37,7 @@ ms.locfileid: "91525940"
 - データ モデルの作成者とレポートの作成者が異なる。
 - 現在、または将来、モデルが複数のレポートのソースになることがわかっている。
 
-:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="1 つのファイルには、同じユーザーによって開発されたモデルとレポートが含まれています。" border="true":::
+:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="3 つの PBIX ファイルがあります。1 つ目には、モデルのみが含まれます。他の 2 つにはレポートのみが含まれ、Power BI サービスでホストされているモデルにライブ接続します。レポートは、さまざまなユーザーによって開発されています。" border="true":::
 
 データ モデルの作成者は、引き続き Power BI Desktop のレポート作成エクスペリエンスを使用して、モデル設計をテストおよび検証できます。 ただし、ファイルを Power BI サービスに発行した直後に、ワークスペースからレポートを削除する必要があります。 また、データセットを再発行して上書きするたびに、レポートを削除しておく必要があります。
 

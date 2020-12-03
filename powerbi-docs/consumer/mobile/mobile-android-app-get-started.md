@@ -2,18 +2,18 @@
 title: Android デバイスでの Power BI モバイル アプリの概要
 description: Microsoft Power BI 用 Android モバイル アプリで、Power BI をどこでも使用できるようにし、オンプレミスやクラウドのビジネス情報にモバイルでアクセスできるようにする方法について説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
-ms.author: painbar
-ms.openlocfilehash: 941bd2adc63a06089ddf4fb79752557b8c688f71
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d731651e85f8468038089f5d88e3e418f1a3c868
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856808"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417775"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Android デバイスでの Power BI モバイル アプリの概要
 Microsoft Power BI 用 Android アプリは、Power BI、Power BI レポート サーバー、および Reporting Services のモバイル BI エクスペリエンスを提供します。 タッチ入力対応のモバイル アクセスでどこからでもオンプレミスやクラウド内の自社のダッシュボードを簡単に表示したり、そこでやり取りしたりできます。 ダッシュボードでデータを探索し、電子メールやテキスト メッセージで同僚と共有できます。 

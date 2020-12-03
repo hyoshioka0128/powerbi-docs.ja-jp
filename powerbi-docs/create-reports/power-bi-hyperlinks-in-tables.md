@@ -2,20 +2,20 @@
 title: テーブルまたはマトリックスにハイパーリンク (URL) を追加する
 description: このトピックでは、テーブルにハイパーリンク (URL) を追加する方法について説明します。 Power BI Desktop を使用して、データセットにハイパーリンク (URL) を追加します。 これで、Power BI Desktop または Power BI サービスでレポートのテーブルとマトリックスにそのハイパーリンクを追加できるようになります。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/15/2020
-ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 824dc74d2461f9bbf6350694a48b00a327f3f13d
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: c60c5824f20edd6d596d23fed56f8cdfaa19a01a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116594"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418051"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>テーブルまたはマトリックスにハイパーリンク (URL) を追加する
 このトピックでは、テーブルにハイパーリンク (URL) を追加する方法について説明します。 Power BI Desktop を使用して、データセットにハイパーリンク (URL) を追加します。 Power BI Desktop または Power BI サービスでレポートのテーブルとマトリックスにそのハイパーリンクを追加できます。 これで、URL またはリンク アイコンを表示することや、別の列をリンク テキストとして書式を設定できるようになります。
@@ -141,7 +141,7 @@ URL は、次のいずれかで始まる必要があります。
 - telnet
 
 Q: カスタム URL を、テーブルまたはマトリックス内のハイパーリンクとして使用できますか。    
-A:いいえ。 リンク アイコンを使用できます。 ハイパーリンク用のカスタム テキストが必要で、URL の一覧が短い場合には、代わりにテキスト ボックスを使うことができます。
+A: いいえ。 リンク アイコンを使用できます。 ハイパーリンク用のカスタム テキストが必要で、URL の一覧が短い場合には、代わりにテキスト ボックスを使うことができます。
 
 
 ## <a name="next-steps"></a>次の手順

@@ -2,19 +2,19 @@
 title: Power BI Desktop で集計を使用および管理する
 description: Power BI Desktop で集計を使用して、ビッグデータに対して対話型の分析を実行します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 02/14/2020
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3ffa26c0999857df1b249d2866eb5f327e600a82
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: a6adf2136cbff1df6e673de16fd1673127df0192
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600334"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416303"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Power BI Desktop で集計を使用する
 
@@ -63,10 +63,10 @@ Power BI の "*集計*" では、テーブルのサイズを縮小できるた�
 
 **[集計の管理]** ダイアログでは、次の重要な検証が適用されます。
 
-- **[詳細列]** には、カウントとテーブル行数のカウントの**概要**関数を除き、 **[集計列]** と同じデータ型がある必要があります。 カウントおよびテーブル行数のカウントは、整数の集計列でのみ使用でき、一致するデータ型は必要ありません。
-- 3 つ以上のテーブルをカバーするチェーン集計は許可されていません。 たとえば、**テーブル A** の集計では、**テーブル C** を参照する集計を含む**テーブル B** を参照することはできません。
-- 2 つのエントリで同じ**概要**関数を使用し、同じ**詳細テーブル**と**詳細列**を参照する重複した集計は許可されません。
-- **詳細テーブル**では、インポートではなく、DirectQuery ストレージ モードを使用する必要があります。
+- **[詳細列]** には、カウントとテーブル行数のカウントの **概要** 関数を除き、 **[集計列]** と同じデータ型がある必要があります。 カウントおよびテーブル行数のカウントは、整数の集計列でのみ使用でき、一致するデータ型は必要ありません。
+- 3 つ以上のテーブルをカバーするチェーン集計は許可されていません。 たとえば、**テーブル A** の集計では、**テーブル C** を参照する集計を含む **テーブル B** を参照することはできません。
+- 2 つのエントリで同じ **概要** 関数を使用し、同じ **詳細テーブル** と **詳細列** を参照する重複した集計は許可されません。
+- **詳細テーブル** では、インポートではなく、DirectQuery ストレージ モードを使用する必要があります。
 - 非アクティブなリレーションシップによって使用される外部キー列によるグループ化と、集計ヒットの USERELATIONSHIP 関数への依存はサポートされていません。
 
 検証のほとんどは、次の図のように、ドロップダウンの値を無効にして、ツールヒントの説明テキストを表示することで適用されます。
@@ -174,7 +174,7 @@ Power BI の "*集計*" では、テーブルのサイズを縮小できるた�
 
 ![複雑な集計クエリ](media/desktop-aggregations/aggregations-code_04.jpg)
 
-COUNTROWS 関数は集計を利用できます。 **Sales** テーブル用に定義された**テーブル行数のカウント**の集計があるため、次のクエリでは集計にヒットします。
+COUNTROWS 関数は集計を利用できます。 **Sales** テーブル用に定義された **テーブル行数のカウント** の集計があるため、次のクエリでは集計にヒットします。
 
 ![COUNTROWS 集計クエリ](media/desktop-aggregations/aggregations-code_05.jpg)
 
@@ -216,11 +216,11 @@ GroupBy 列に基づく集計では、**GroupBy** エントリを省略するこ
 
 ### <a name="groupby-aggregation-query-example"></a>GroupBy 集計クエリの例
 
-**Activity Date** 列が集計テーブルの対象であるため、次のクエリでは集計にヒットします。 COUNTROWS 関数では、**テーブル行数のカウント**の集計が使用されます。
+**Activity Date** 列が集計テーブルの対象であるため、次のクエリでは集計にヒットします。 COUNTROWS 関数では、**テーブル行数のカウント** の集計が使用されます。
 
 ![正常な GroupBy 集計クエリ](media/desktop-aggregations/aggregations-code_08.jpg)
 
-ファクト テーブルにフィルター属性が含まれているモデルには特に、**テーブル行数のカウント**の集計を使用することをお勧めします。 Power BI では、ユーザーによって明示的に要求されていない場合に、COUNTROWS を使用してデータセットにクエリを送信することができます。 たとえば、[フィルター] ダイアログには、各値の行数が表示されます。
+ファクト テーブルにフィルター属性が含まれているモデルには特に、**テーブル行数のカウント** の集計を使用することをお勧めします。 Power BI では、ユーザーによって明示的に要求されていない場合に、COUNTROWS を使用してデータセットにクエリを送信することができます。 たとえば、[フィルター] ダイアログには、各値の行数が表示されます。
 
 ![[フィルター] ダイアログ](media/desktop-aggregations/aggregations-12.png)
 

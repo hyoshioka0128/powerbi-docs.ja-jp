@@ -1,23 +1,23 @@
 ---
 title: チュートリアル:Power BI サービスでの作成の概要
 description: Power BI オンライン サービスの概要 (app.powerbi.com)
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 07/08/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: eeda30e5a075166af3718084c2c9f7737f876cbe
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 4e74bec243faad281c457caaa15a6edacf2b10cb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861109"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417131"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>チュートリアル:Power BI サービスでの作成の概要
-このチュートリアルでは、*Power BI サービス*の一部の機能について説明します。 ここでは、データに接続し、レポートとダッシュボードを作成して、データに関する質問をします。 Power BI サービスでは、さらに多くのことを行うことができます。このチュートリアルは、単にみなさんの興味をかき立てることを目的としています。 Power BI サービスと他の Power BI 製品の関係を理解するため、「[Power BI とは?](power-bi-overview.md)」を読むことをお勧めします。
+このチュートリアルでは、*Power BI サービス* の一部の機能について説明します。 ここでは、データに接続し、レポートとダッシュボードを作成して、データに関する質問をします。 Power BI サービスでは、さらに多くのことを行うことができます。このチュートリアルは、単にみなさんの興味をかき立てることを目的としています。 Power BI サービスと他の Power BI 製品の関係を理解するため、「[Power BI とは?](power-bi-overview.md)」を読むことをお勧めします。
 
 レポートの作成者ではなく "*閲覧者*" の場合は 出発点として「[Power BI サービス内の移動](../consumer/end-user-experience.md)」をお勧めします。
 
@@ -82,7 +82,7 @@ Power BI レポートを作成するときには、多くの場合、Power BI De
 
     :::image type="content" source="media/service-get-started/power-bi-service-reading-view.png" alt-text="[読み取りビュー] オプションのスクリーンショット。":::
 
-    編集ビューでは、レポートを変更できます。これは、あなたがレポートの "*所有者*" であり、"*作成者*" であるためです。 同僚とレポートを共有すると、多くの場合、その相手は読み取りビューでのみレポートを操作できます。 このようなユーザーは、**マイ ワークスペース**のレポートの "*コンシューマー*" です。 
+    編集ビューでは、レポートを変更できます。これは、あなたがレポートの "*所有者*" であり、"*作成者*" であるためです。 同僚とレポートを共有すると、多くの場合、その相手は読み取りビューでのみレポートを操作できます。 このようなユーザーは、**マイ ワークスペース** のレポートの "*コンシューマー*" です。 
 
 ## <a name="step-2-create-a-chart-in-a-report"></a>手順 2:レポートにグラフを作成する
 データに接続したので、探索を開始します。 興味深いものが見つかったら、それをレポート キャンバスに保存できます。 次に、それをダッシュボードに固定して監視し、時間の経過と共にどのように変化するかを確認できます。 ただし、最初に行うことがあります。
@@ -100,7 +100,7 @@ Power BI レポートを作成するときには、多くの場合、Power BI De
 
     :::image type="content" source="media/service-get-started/power-bi-sigma-fields.png" alt-text="シグマ記号が表示されたフィールド。":::
 
-2. このデータを表示する方法を切り替えましょう。 折れ線グラフは、値を時間の経過と共に表示する場合に適したビジュアルです。 **[視覚化]** ペインで**折れ線グラフ** アイコンを選択します。
+2. このデータを表示する方法を切り替えましょう。 折れ線グラフは、値を時間の経過と共に表示する場合に適したビジュアルです。 **[視覚化]** ペインで **折れ線グラフ** アイコンを選択します。
    
    :::image type="content" source="media/service-get-started/power-bi-service-select-line-chart.png" alt-text="折れ線グラフが選択されているレポート エディターのスクリーンショット。":::
 
@@ -112,7 +112,7 @@ Power BI レポートを作成するときには、多くの場合、Power BI De
 
     これで、読み取りビューでレポートが表示されるようになります。 
 
-6. **ピン留め**アイコンをもう一度選択します。
+6. **ピン留め** アイコンをもう一度選択します。
  
 5. たとえば、 **[新しいダッシュボード]** を選択し、「*財務サンプル ダッシュボード*」という名前を付けます。 
    
@@ -153,13 +153,13 @@ Power BI レポートを作成するときには、多くの場合、Power BI De
     :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Q&A キャンバスのスクリーンショット。":::
 
     > [!NOTE]
-    > 提案が表示されない場合は、**新しい Q&A エクスペリエンス**をオンにします。
+    > 提案が表示されない場合は、**新しい Q&A エクスペリエンス** をオンにします。
 
     :::image type="content" source="media/service-get-started/power-bi-new-qna-experience.png" alt-text="新しい Q&A エクスペリエンスを有効にするスクリーンショット。":::
 
 1. 提案によっては 1 つの値が返されます。 たとえば、 **[what is the average cog]\(平均売上原価はいくらですか\)** を選択します。
 
-    Q&A によって回答が検索され、*カード*視覚エフェクトの形式で表示されます。
+    Q&A によって回答が検索され、*カード* 視覚エフェクトの形式で表示されます。
 
 3. **[ビジュアルをピン留めする]** を選択し、その視覚化を財務サンプル ダッシュボードにピン留めします。
 

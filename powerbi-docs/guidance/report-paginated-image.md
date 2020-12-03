@@ -2,18 +2,18 @@
 title: ページ分割されたレポートでの画像の使用に関するガイダンス
 description: Power BI のページ分割されたレポートでの画像の使用に関するガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/16/2020
-ms.author: v-pemyer
-ms.openlocfilehash: d2f3f36911c72df1b95ceb5bd90043870559cc62
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ccb61899337e5585d03d9297fbe8f8a5decc612e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920706"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418396"
 ---
 # <a name="image-use-guidance-for-paginated-reports"></a>ページ分割されたレポートでの画像の使用に関するガイダンス
 
@@ -47,7 +47,7 @@ ms.locfileid: "78920706"
 - **データベース ストレージを使用する**:リレーショナル データベースに画像データを格納する場合、特にその画像が大きすぎない場合は、データベース テーブルから直接画像データを取得することが理にかなっています。
 - **ふさわしい背景画像**:背景画像を使用する場合、レポート ユーザーがご自分のレポート データで気が散ることがないようにする必要があります。 
 
-    また、必ず_透かしスタイルの画像_を使用してください。 一般に、透かしスタイルの画像の背景は透明です (またはレポートで使用されている背景と同じ色です)。 薄い色も使用されます。 透かしスタイルの画像の一般例は、会社のロゴや、"下書き" や "社外秘" などの機密ラベルです。
+    また、必ず _透かしスタイルの画像_ を使用してください。 一般に、透かしスタイルの画像の背景は透明です (またはレポートで使用されている背景と同じ色です)。 薄い色も使用されます。 透かしスタイルの画像の一般例は、会社のロゴや、"下書き" や "社外秘" などの機密ラベルです。
 
 ## <a name="next-steps"></a>次の手順
 

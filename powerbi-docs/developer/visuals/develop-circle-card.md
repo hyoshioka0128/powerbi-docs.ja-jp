@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
+ms.topic: tutorial
 ms.date: 09/02/2020
-ms.openlocfilehash: 6c4b39fff9513143c946cc2e92294ae4cbe81427
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: ff73c07fb08e80938fae34c19205885722c33672
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397463"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418718"
 ---
 # <a name="tutorial-develop-a-power-bi-circle-card-visual"></a>チュートリアル:Power BI の円形カード視覚化を開発する
 
@@ -39,7 +39,7 @@ Power BI の独自の視覚化の開発を始める前に、このセクショ�
 
 * Power BI の視覚化を開発できる状態の環境。 [Power BI の視覚化の開発用に環境をセットアップします](environment-setup.md)。
 
-* このチュートリアルでは、 **US Sales Analysis** レポートを使用します。 このレポートを[ダウンロード](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix)して Power BI サービスにアップロードしても、独自のレポートを使用してもかまいません。 Power BI サービスおよびファイルのアップロードの詳細については、[Power BI サービスでの作成の概要](../../fundamentals/service-get-started.md)に関するチュートリアルを参照してください。
+* このチュートリアルでは、**US Sales Analysis** レポートを使用します。 このレポートを[ダウンロード](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix)して Power BI サービスにアップロードしても、独自のレポートを使用してもかまいません。 Power BI サービスおよびファイルのアップロードの詳細については、[Power BI サービスでの作成の概要](../../fundamentals/service-get-started.md)に関するチュートリアルを参照してください。
 
 ## <a name="create-a-development-project"></a>開発プロジェクトを作成する
 
@@ -69,14 +69,14 @@ Power BI の独自の視覚化の開発を始める前に、このセクショ�
 
 ## <a name="view-the-circle-card-in-power-bi-service"></a>Power BI サービスで円形カードを表示する
 
-Power BI サービスで円形カード視覚化をテストするため、 **US Sales Analysis** レポートを使用します。 このレポートを[ダウンロード](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix)して、Power BI サービスにアップロードできます。
+Power BI サービスで円形カード視覚化をテストするため、**US Sales Analysis** レポートを使用します。 このレポートを[ダウンロード](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix)して、Power BI サービスにアップロードできます。
 
 また、独自のレポートを使用して、円形カード視覚化をテストすることもできます。
 
 >[!NOTE]
 >続ける前に、[視覚化開発者の設定を有効にしてある](environment-setup.md#set-up-power-bi-service-for-developing-a-visual)ことを確認してください。
 
-1. [PowerBI.com](https://powerbi.microsoft.com/) にサインインし、 **US Sales Analysis** レポートを開きます。
+1. [PowerBI.com](https://powerbi.microsoft.com/) にサインインし、**US Sales Analysis** レポートを開きます。
 
 2. **[その他のオプション]**  >  **[編集]** を選択します。
 
@@ -107,7 +107,7 @@ Power BI サービスで円形カード視覚化をテストするため、 **US
     >
     >![接続エラーが表示されている新しい視覚化のスクリーンショット。](media/develop-circle-card/connection-error.png)
 
-6. 新しい視覚化が選択されている状態で、 **[フィールド]** ペインに移動し、 **Sales** を選択して、 **Quantity** を選択します。
+6. 新しい視覚化が選択されている状態で、 **[フィールド]** ペインに移動し、**Sales** を選択して、**Quantity** を選択します。
 
     >[!div class="mx-imgBorder"]
     >![Power BI サービスでの、US Sales Analysis レポートの Sales テーブルの Quantity フィールドのスクリーンショット。](media/develop-circle-card/fields-sales-quantity.png)
@@ -126,11 +126,11 @@ Power BI サービスで円形カード視覚化をテストするため、 **US
 
 ### <a name="modify-the-visuals-file"></a>視覚化のファイルを変更する
 
-いくつかのコード行を削除して追加することにより、 **visual.ts** ファイルを設定します。
+いくつかのコード行を削除して追加することにより、**visual.ts** ファイルを設定します。
 
 1. VS Code でプロジェクトを開きます ( **[ファイル]**  >  **[フォルダーを開く]** )。
 
-2. **[エクスプローラー] ペイン** で **[src]** フォルダーを展開して、 **visual.ts** ファイルを選択します。
+2. **[エクスプローラー] ペイン** で **[src]** フォルダーを展開して、**visual.ts** ファイルを選択します。
 
     >[!div class="mx-imgBorder"]
     >![VS Code での visual.ts ファイルへのアクセスのスクリーンショット。](media/develop-circle-card/visual-file.png)
@@ -151,7 +151,7 @@ Power BI サービスで円形カード視覚化をテストするため、 **US
 
     * *update* メソッド内のすべてのコード行。
 
-    * *update* メソッドより下のある、 *parseSettings* メソッドと *enumerateObjectInstances* メソッドを含む残りのすべてのコード行。
+    * *update* メソッドより下のある、*parseSettings* メソッドと *enumerateObjectInstances* メソッドを含む残りのすべてのコード行。
 
 4. import セクションの最後に次のコード行を追加します。
 
@@ -194,7 +194,7 @@ D3 スケーラブル ベクター グラフィックス (SVG) を追加しま�
 
 1. VS Code で **visual.ts** を開きます。
 
-2. 次のコードを " *コンストラクター* "に追加します。
+2. 次のコードを "*コンストラクター* "に追加します。
 
     ```typescript
     this.svg = d3.select(options.element)
@@ -390,7 +390,7 @@ capabilities ファイルから不要なコード行を削除します。
 
 視覚化に新しく追加した要素が表示されることを確認します。
 
-1. Power BI サービスで、 *Power BI US Sales Analysis* レポートを開きます。 別のレポートを使用して円形カード視覚化を開発している場合は、そのレポートに移動します。
+1. Power BI サービスで、*Power BI US Sales Analysis* レポートを開きます。 別のレポートを使用して円形カード視覚化を開発している場合は、そのレポートに移動します。
 
 2. 視覚化が円の形になっていることを確認します。
 
@@ -427,7 +427,7 @@ capabilities ファイルから不要なコード行を削除します。
 
 * **データ ロールの定義**
 
-    *measure* 型の単一のデータ ロールで *dataRoles* 配列を定義します。 このデータ ロールは *measure* と呼ばれ、 *Measure* と表示されます。 それを使用して、メジャー フィールドまたは集計されたフィールドのどちらかを渡すことができます。
+    *measure* 型の単一のデータ ロールで *dataRoles* 配列を定義します。 このデータ ロールは *measure* と呼ばれ、*Measure* と表示されます。 それを使用して、メジャー フィールドまたは集計されたフィールドのどちらかを渡すことができます。
 
     1. VS Code で **capabilities.json** ファイルを開きます。
 
@@ -472,7 +472,7 @@ capabilities ファイルから不要なコード行を削除します。
 
 円形カード視覚化に *measure* フィールドが表示されることを確認し、 *[Dataview の表示]* オプションを使用して行った変更を確認します。 
 
-1. Power BI サービスで、 *Power BI US Sales Analysis* レポートを開きます。 別のレポートを使用して円形カード視覚化を開発している場合は、そのレポートに移動します。
+1. Power BI サービスで、*Power BI US Sales Analysis* レポートを開きます。 別のレポートを使用して円形カード視覚化を開発している場合は、そのレポートに移動します。
 
 2. 円形カード視覚化を *Measure* というタイトルのフィールドで構成できることに注意してください。 **[フィールド]** ペインから *Measure* フィールドに要素をドラッグ アンド ドロップできます。
 
@@ -487,17 +487,17 @@ capabilities ファイルから不要なコード行を削除します。
     >[!div class="mx-imgBorder"]
     >![円形カードのフローティング ツール バーにある [Dataview の表示] ボタンのスクリーンショット。](media/develop-circle-card/show-dataview.png)
 
-4. 3 つの点を選択して表示を展開し、 **single** を選択して value を表示します。
+4. 3 つの点を選択して表示を展開し、**single** を選択して value を表示します。
 
     >[!div class="mx-imgBorder"]
     >![円形カードの [Dataview の表示] オプションで表示される value の値のスクリーンショット。](media/develop-circle-card/value.png)
 
-5. **metadata** を展開し、 **columns** 配列を展開して、 **format** と **displayName** の値を確認します。
+5. **metadata** を展開し、**columns** 配列を展開して、**format** と **displayName** の値を確認します。
 
     >[!div class="mx-imgBorder"]
     >![円形カードの [Dataview の表示] オプションで表示される format と displayName の値のスクリーンショット。](media/develop-circle-card/colunms.png)
 
-6. もう一度ビジュアルに切り替えて、ビジュアルの上に表示されるツールバーで、 **[Dataview の表示]** を選択します。
+6. もう一度ビジュアルに切り替えて、ビジュアルの上に表示されるツールバーで、**[Dataview の表示]** を選択します。
 
 ### <a name="configure-the-visual-to-consume-data"></a>データを使用するように視覚化を構成する
 
@@ -513,7 +513,7 @@ capabilities ファイルから不要なコード行を削除します。
 
 3. *update* メソッドで次のようにします。
 
-    * 最初のステートメントとして次のステートメントを追加します。 このステートメントにより、簡単にアクセスできるように *dataView* が変数に割り当てられ、 *dataView* オブジェクトを参照するように変数が宣言されます。
+    * 最初のステートメントとして次のステートメントを追加します。 このステートメントにより、簡単にアクセスできるように *dataView* が変数に割り当てられ、*dataView* オブジェクトを参照するように変数が宣言されます。
 
         ```typescript
         let dataView: DataView = options.dataViews[0];

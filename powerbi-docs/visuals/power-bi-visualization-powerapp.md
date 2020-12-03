@@ -2,20 +2,20 @@
 title: Power BI レポートに新しいパワー アプリを埋め込む
 description: 同じデータ ソースを使用し、他のレポート項目のようにフィルター処理できるアプリを埋め込みます
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: tapan maniar
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c46410caff373eb8474a4b687e834b822f2da8ac
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 1c4086d6ab71bd96ba7ac6c6985161d28a4dcb8b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397532"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418879"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>チュートリアル:Power BI レポートに Power Apps ビジュアルを埋め込む
 
@@ -59,7 +59,7 @@ Power Apps ビジュアルをレポートに追加すると、Power Apps と Pow
 
     ![新しいアプリの作成](media/power-bi-visualization-powerapp/power-bi-create-new-powerapp.png)
 
-    Power Apps Studio では、基本的なアプリが作成され、Power BI で選択したフィールドの 1 つが " *ギャラリー* " に表示されます。
+    Power Apps Studio では、基本的なアプリが作成され、Power BI で選択したフィールドの 1 つが "*ギャラリー*" に表示されます。
 
     ![Power Apps が開く](media/power-bi-visualization-powerapp/power-bi-power-app.png)
 
