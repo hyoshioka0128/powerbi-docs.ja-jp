@@ -2,18 +2,18 @@
 title: HoloLens の Power BI (第 1 世代)
 description: 仮想世界に専念した状態で、または使用環境のコンテキストで、Power BI for Mixed Reality アプリ (プレビュー) でダッシュボードとレポートを表示します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/22/2020
-ms.author: painbar
-ms.openlocfilehash: b0288bf3980ac54b960160f011531f3667d8edff
-ms.sourcegitcommit: b3d32b8a4ce26fba7fdb5f1c5954d2b2e426503c
+ms.openlocfilehash: c832217363f726e3eff469238fe9b3f29025837c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005516"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415360"
 ---
 # <a name="power-bi-for-hololens-1st-gen"></a>HoloLens の Power BI (第 1 世代)
 仮想世界に専念した状態で Power BI for HoloLens アプリでダッシュボードとレポートを表示するか、使用環境のコンテキストで特定の場所にダッシュボードとレポートを配置します。 
@@ -47,7 +47,7 @@ Windows クラシック ビューからホログラフィック ビューにダ�
 
 **ホログラフィック ビューに切り替える**
 
-Windows クラシック ビューで項目をピン留めしたら、**全画面表示**アイコン ![全画面表示アイコン](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) をエア タップして、ホログラフィック ビューに切り替えます。 
+Windows クラシック ビューで項目をピン留めしたら、**全画面表示** アイコン ![全画面表示アイコン](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) をエア タップして、ホログラフィック ビューに切り替えます。 
 
 
 ## <a name="holographic-view-basics"></a>ホログラフィック ビューの基本

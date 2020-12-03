@@ -2,19 +2,19 @@
 title: Power BI Desktop でのヒントのカスタマイズ
 description: ドラッグ アンド ドロップでビジュアル用カスタム ヒントを作成
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/15/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a21bccb78df5ba84d3e9a7dc07d9d392c74c0153
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 18658937d1e53340f4bdd5075479bd2926f295bd
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231959"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414210"
 ---
 # <a name="customize-tooltips-in-power-bi-desktop"></a>Power BI Desktop でヒントをカスタマイズする
 
@@ -36,7 +36,7 @@ ms.locfileid: "85231959"
 
 ## <a name="customizing-tooltips-with-aggregation-or-quick-measures"></a>集計またはクイック メジャーでのヒントのカスタマイズ
 
-集計関数または*クイック メジャー*を選択することで、ヒントをさらにカスタマイズできます。 **[ヒント]** バケット内のフィールドの横にある矢印を選択します。 次に、使用可能なオプションから選択します。
+集計関数または *クイック メジャー* を選択することで、ヒントをさらにカスタマイズできます。 **[ヒント]** バケット内のフィールドの横にある矢印を選択します。 次に、使用可能なオプションから選択します。
 
 ![クイック メジャーでのヒント](media/desktop-custom-tooltips/custom-tooltips-4.png)
 

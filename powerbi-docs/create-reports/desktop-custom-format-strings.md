@@ -2,19 +2,19 @@
 title: Power BI Desktop でカスタム書式設定文字列を使用する
 description: Power BI Desktop で書式設定文字列をカスタマイズする方法を説明します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/11/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d4036bb6a2fdc8db7c251a39f5527c54ae1c578b
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: b4c4577dda72e0f8badf2422cd6365187b8ab285
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600574"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414256"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Power BI Desktop でカスタム書式設定文字列を使用する
 
@@ -41,7 +41,7 @@ ms.locfileid: "91600574"
 次の表では、Power BI でサポートされている構文を定義します。
 
 
-次の表では、サポートされている**日付記号**を示します。
+次の表では、サポートされている **日付記号** を示します。
 
 | **記号** | **範囲** |
 | --- | --- |
@@ -54,7 +54,7 @@ ms.locfileid: "91600574"
 | _yy_ | 00 - 99 (年の最後の 2 桁) |
 | _yyyy_ | 100 - 9999 (3 桁または 4 桁の年) |
 
-次の表では、サポートされている**時刻記号**を示します。
+次の表では、サポートされている **時刻記号** を示します。
 
 | **記号** | **範囲** |
 | --- | --- |
@@ -81,7 +81,7 @@ ms.locfileid: "91600574"
 | **0** | &quot;Zero&quot; | &quot;&quot; | &quot;&quot; | 0.00 |
 | **1.234** | 1.23 | 1.23 | 1.23 | 1.23 |
 
-次の表では、定義済みの**名前付きの日付と時刻の書式設定**を示します。
+次の表では、定義済みの **名前付きの日付と時刻の書式設定** を示します。
 
 | **書式設定名** | **説明** |
 | --- | --- |
@@ -93,7 +93,7 @@ ms.locfileid: "91600574"
 
 名前付きの数値書式設定
 
-次の表では、定義済みの**名前付きの数値の書式設定**を示します。
+次の表では、定義済みの **名前付きの数値の書式設定** を示します。
 
 | **書式設定名** | **説明** |
 | --- | --- |
@@ -106,7 +106,7 @@ ms.locfileid: "91600574"
 
 
 
-次の表では、**ユーザー定義の日付/時刻書式設定**を作成するために使用できる文字を示します。
+次の表では、**ユーザー定義の日付/時刻書式設定** を作成するために使用できる文字を示します。
 
 | **文字** | **説明** |
 | --- | --- |
@@ -130,7 +130,7 @@ ms.locfileid: "91600574"
 | ss | 先頭に 0 を付けて数値で秒を表示します (00 – 59)。 |
 | AM/PM | 12 時間制を使用し、正午より前の時刻には大文字の AM を表示します。正午から午後11:59 までの時刻には、大文字の PM を表示します。 |
 
-次の表では、**ユーザー定義の数値書式設定**を作成するために使用できる文字を示します。
+次の表では、**ユーザー定義の数値書式設定** を作成するために使用できる文字を示します。
 
 | **文字** | **説明** |
 | --- | --- |

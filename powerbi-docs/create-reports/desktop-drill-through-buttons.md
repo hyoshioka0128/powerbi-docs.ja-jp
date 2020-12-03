@@ -2,19 +2,19 @@
 title: Power BI でドリルスルー ボタンを作成する
 description: Power BI レポートにドリルスルー ボタンを追加すると、レポートがアプリのように動作して、ユーザーとの連携を深めることができます。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: a6de32e93b79b45d700ad5de1607f580dff836cf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0ba9b6f86c2c66b01d5002df30bb23c0de1bc889
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239254"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414371"
 ---
 # <a name="create-a-drill-through-button-in-power-bi"></a>Power BI でドリルスルー ボタンを作成する
 
@@ -32,7 +32,7 @@ Power BI で "*ドリルスルー*" ボタンを作成することができま�
 
 ## <a name="set-up-a-drill-through-button"></a>ドリルスルー ボタンを設定する
 
-ドリルスルー ボタンを設定するには、まず、レポート内に[有効なドリルスルー ページを設定する](desktop-drillthrough.md)必要があります。 次に、アクションの種類として**ドリルスルー**を含むボタンを作成し、 **[Destination]\(送信先\)** としてドリルスルー ページを選択する必要があります。
+ドリルスルー ボタンを設定するには、まず、レポート内に[有効なドリルスルー ページを設定する](desktop-drillthrough.md)必要があります。 次に、アクションの種類として **ドリルスルー** を含むボタンを作成し、 **[Destination]\(送信先\)** としてドリルスルー ページを選択する必要があります。
 
 ドリルスルー ボタンには 2 つの状態 (有効と無効) があるため、2 つのツールヒント オプションが表示されます。
 
@@ -145,19 +145,19 @@ String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0, "See product d
 
 ここでは、ボタンのドリルスルー先を条件にする場合のシナリオをいくつか示します。
 
-- **複数の条件が満たされている場合**は、ページへのドリルスルーを有効にするだけです。 それ以外の場合、ボタンは無効になります。
+- **複数の条件が満たされている場合** は、ページへのドリルスルーを有効にするだけです。 それ以外の場合、ボタンは無効になります。
 
     たとえば、ユーザーが 1 つの製品 "*および*" 1 軒の店を選択してから、マーケットの詳細ページにドリルスルーできるようにします。 それ以外の場合、ボタンは無効になります。
 
     :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-store.png" alt-text="製品と店舗を選択する":::
  
-- ユーザーの選択に基づいて、ボタンで**複数のドリルスルー先をサポートする**ようにします。
+- ユーザーの選択に基づいて、ボタンで **複数のドリルスルー先をサポートする** ようにします。
 
     たとえば、ユーザーがドリルスルーできる複数のターゲット (マーケットの詳細と店舗の詳細) があるとします。 ドリルスルー先に対してボタンが有効になる前に、その特定のドリルスルー先を選択させることができます。
 
     :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-destination.png" alt-text="製品とターゲットを選択する":::
  
-- 複数のドリルスルー先と、ボタンを無効にする特定の条件の両方をサポートする興味深い**ハイブリッド シナリオのケース**がある場合もあります。 これら 3 つのオプションの詳細をお読みください。
+- 複数のドリルスルー先と、ボタンを無効にする特定の条件の両方をサポートする興味深い **ハイブリッド シナリオのケース** がある場合もあります。 これら 3 つのオプションの詳細をお読みください。
 
 ### <a name="disable-the-button-until-multiple-conditions-are-met"></a>複数の条件が満たされるまでボタンを無効にする
 

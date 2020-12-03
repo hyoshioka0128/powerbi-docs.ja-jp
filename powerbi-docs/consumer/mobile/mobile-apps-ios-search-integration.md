@@ -2,18 +2,18 @@
 title: iOS デバイスの検索と Power BI の統合
 description: デバイスの検索 (Spotlight) を使用して必要なコンテンツを検索し、アクセスします
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: f3832e3fa452c68e30852c476a5149ff7bc5e470
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c289395e5d5529c7951b9102722999dfe22d699e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232890"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414578"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>iOS デバイスの検索 (Spotlight) と Power BI Mobile iOS アプリの統合 (プレビュー)
 iOS デバイスの検索を使用して必要なコンテンツを検索し、アクセスします。
@@ -24,9 +24,9 @@ iOS デバイスの検索 (Spotlight) を使用して特定のコンテンツを
 
 デバイスの検索を使用して項目を検索するには:
 
-1. **ホーム**画面の中央から下にスワイプして、デバイスの検索を表示します。
+1. **ホーム** 画面の中央から下にスワイプして、デバイスの検索を表示します。
 
-2. **検索**フィールドをタップし、探しているテキストを入力します。
+2. **検索** フィールドをタップし、探しているテキストを入力します。
  
    検索結果には、次の種類の Power BI 項目が含まれます。
 

@@ -1,20 +1,20 @@
 ---
 title: "\"新しい外観\": アクションの新しい場所"
 description: Power BI サービス (app.powerbi.com) の外観が新しくなり、多くのアクションの場所が変わりました。 この記事には、以前の場所と新しい場所の対応表を記載しています。
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: maggies
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 572943a437ebf0380b254e8b659699d676e9001f
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 1c16405ff211620580f739facda8556e81774935
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462167"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415130"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>"新しい外観": アクションの新しい場所
 

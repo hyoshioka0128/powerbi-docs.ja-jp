@@ -2,19 +2,19 @@
 title: Power BI 用の Excel の財務サンプル ブックのダウンロード
 description: Power BI 用の Financial Sample のダウンロード
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: sample
 ms.date: 10/13/2020
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 46f6179edc63b0a865043674b22ffe88e813a3b4
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: fdad1975c35591267c9fa22b1d5c84dc9892be74
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92255963"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414946"
 ---
 # <a name="download-the-financial-sample-excel-workbook-for-power-bi"></a>Power BI 用の Excel の財務サンプル ブックのダウンロード
 Power BI サービスで試すデータが必要ですか。 サンプルの財務データが含まれるシンプルな Excel ブックをご用意しています。 このブックには、市場区分と国別に分類された売上と利益データのテーブルがあります。 

@@ -2,25 +2,25 @@
 title: 'チュートリアル: Power BI Desktop で計算列を作成する'
 description: 'チュートリアル: Power BI Desktop で計算列を作成する'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: tutorial
 ms.date: 11/26/2019
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: e5394a9ac7b7dbfc9edcfac53ea87d061e306a47
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: ef84c2e5b8fb094206199129c0f25bd5fcb219eb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565835"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413865"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>チュートリアル: Power BI Desktop で計算列を作成する
 
 分析しているデータに、必要とする結果の取得に必要な特定のフィールドが含まれていない場合があります。 ここで、"*計算列*" が登場します。 計算列では、Data Analysis Expressions (DAX) 式を使用して列の値を定義して、異なる 2 つの列のテキスト値をまとめたり、他の値から数値を計算したりできます。 たとえば、データに **[都道府県]** フィールドと **[市区町村]** フィールドがあるときに、その両方 (例: "東京都新宿区") を含む **[場所]** フィールドが必要であるとします。 これこそまさに計算列の目的です。
 
-計算列は、どちらも DAX 式に基づいているという点で[メジャー](desktop-tutorial-create-measures.md)に似ていますが、使用方法は異なります。 多くの場合、メジャーは、グラフの**値**の領域で使用され、他のフィールドに基づいて結果を計算します。 計算列は、グラフの行、軸、凡例、およびグループの領域で、新しい**フィールド**として使用されます。
+計算列は、どちらも DAX 式に基づいているという点で[メジャー](desktop-tutorial-create-measures.md)に似ていますが、使用方法は異なります。 多くの場合、メジャーは、グラフの **値** の領域で使用され、他のフィールドに基づいて結果を計算します。 計算列は、グラフの行、軸、凡例、およびグループの領域で、新しい **フィールド** として使用されます。
 
 このチュートリアルでは、計算列とは何かを理解した後、計算列を作成して Power BI Desktop でレポートをグラフ化するために使用する手順を紹介します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "83565835"
 
    ![ProductCategory を選択](media/desktop-tutorial-create-calculated-columns/create5.png)
 
-4. 必要なのは **ProductCategory** テーブル内の **ProductCategory** 列です。 **ProductCategory[ProductCategory]** を選択し、**Enter**キーを押した後、右丸かっこを入力します。
+4. 必要なのは **ProductCategory** テーブル内の **ProductCategory** 列です。 **ProductCategory[ProductCategory]** を選択し、**Enter** キーを押した後、右丸かっこを入力します。
 
     > [!TIP]
     > 最も多く発生する構文エラーは、右丸かっこの入力漏れか入力位置の間違いですが、Power BI Desktop が右丸かっこを追加してくれる場合があります。
@@ -101,7 +101,7 @@ Contoso Sales のサンプルには、アクティブな店舗と非アクティ
 
 1. **Stores** テーブルに新しい計算列を作成し、数式バーで **Active StoreName** という名前を付けます。
 
-2. **=** の後ろに、**IF**と入力することから始めます。 追加できる項目が候補リストに表示されます。 **[IF]** を選択します。
+2. **=** の後ろに、**IF** と入力することから始めます。 追加できる項目が候補リストに表示されます。 **[IF]** を選択します。
 
     ![IF を選択](media/desktop-tutorial-create-calculated-columns/if1.png)
 

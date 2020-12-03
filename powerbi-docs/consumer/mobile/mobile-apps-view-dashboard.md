@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリにおけるダッシュボードの表示
 description: Power BI サービス内でダッシュボードを作成またはダッシュボードに接続します。 次に、Power BI モバイル アプリでダッシュボードを表示します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/10/2020
-ms.author: painbar
-ms.openlocfilehash: 5add474500754405acb959577a0a7eb2e50a148b
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: f3e3677e79c1b54a665f21095810163caa7576a2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668645"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415521"
 ---
 # <a name="view-dashboards-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリにおけるダッシュボードの表示
 適用対象:
@@ -63,7 +63,7 @@ ms.locfileid: "91668645"
    
    * [タイルをタップ](mobile-tiles-in-the-mobile-apps.md)してフォーカス モードで開き、操作します。
    * 星 ![お気に入りの星ではありません](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) をタップして[お気に入りにします](mobile-apps-favorites.md)。
-   * 自分のダッシュボードを見てもらえるよう、 **[招待]** ![[招待] アイコン](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) をタップして[仕事仲間を招待](mobile-share-dashboard-from-the-mobile-apps.md)します。
+   * 自分のダッシュボードを見てもらえるよう、 **[招待]** ![[招待] アイコン](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) をタップして [仕事仲間を招待](mobile-share-dashboard-from-the-mobile-apps.md)します。
    * [ダッシュ ボードを Apple Watch と同期させる](mobile-apple-watch.md)
 4. ダッシュボードの一覧に戻るには、ダッシュボードのタイトルの横にある矢印をタップし、 **[マイ ワークスペース]** をタップします。
    
@@ -117,7 +117,7 @@ ms.locfileid: "91668645"
 
     ダッシュボードの所有者である場合は、Power BI サービスで、縦モードの[スマートフォン独自のダッシュボード ビューを作成](../../create-reports/service-create-dashboard-mobile-phone-view.md)できます。 
 
-1. ダッシュボードでは、名前の隣にある垂直線の**その他のオプション** (...) ボタンをタップして仕事仲間の招待、更新、またはダッシュボードに関する情報を取得できます。
+1. ダッシュボードでは、名前の隣にある垂直線の **その他のオプション** (...) ボタンをタップして仕事仲間の招待、更新、またはダッシュボードに関する情報を取得できます。
    
    ![省略記号メニュー](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. [ダッシュボードのタイル](mobile-tiles-in-the-mobile-apps.md)をすべて参照するには、上下にスワイプします。 
@@ -133,7 +133,7 @@ ms.locfileid: "91668645"
    
    * 黄色の星 ![お気に入りの星](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) は、お気に入りのダッシュ ボードを表します。 
    * 各ダッシュボード名の下の表示 (この例では "MBI") :::image type="icon" source="././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png" border="false"::: は、各ダッシュボード内のデータを分類する方法を示しています。 詳細については、[Power BI でのデータの分類](../../create-reports/service-data-classification.md)に関するページを参照してください。
-3. ダッシュボードでは、名前の隣にある垂直線の**その他のオプション** (...) ボタンをタップして仕事仲間の招待、更新、またはダッシュボードに関する情報を取得できます。
+3. ダッシュボードでは、名前の隣にある垂直線の **その他のオプション** (...) ボタンをタップして仕事仲間の招待、更新、またはダッシュボードに関する情報を取得できます。
    
    ![省略記号メニュー](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. [ダッシュボードのタイル](mobile-tiles-in-the-mobile-apps.md)をすべて参照するには、上下にスワイプします。 

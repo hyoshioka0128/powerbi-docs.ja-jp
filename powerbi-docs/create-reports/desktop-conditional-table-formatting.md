@@ -2,25 +2,25 @@
 title: Power BI Desktop での条件付きテーブルの書式設定
 description: テーブルへのカスタマイズされた書式の適用
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1273030bc1fd8664e854eb2b59939cf271b017fa
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 421ccbe08435e03fe43cf6f0e7f2b71c99ec6901
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860028"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414394"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>テーブルでの条件付き書式の使用 
 
 Power BI Desktop のテーブルで条件付き書式を使用すると、フィールド値に基づいて、色のグラデーションなど、カスタマイズしたセルの色を指定できます。 セル値は、データ バーや KPI アイコンを使用して、またはアクティブな Web リンクとして表すこともできます。 数値、色の名前や 16 進数コード、または Web URL の値が含まれるフィールドで書式設定を基準として使用していると、任意のテキストまたはデータ フィールドに条件付き書式を適用できます。 
 
-条件付き書式を適用するには、Power BI Desktop で**テーブル**または**マトリックス**の視覚化を選択します。 **[視覚化]** ペインの **[フィールド]** セクションで、書式設定する **[値]** ウェルのフィールドの横にある下向き矢印を右クリックまたは選択します。 **[条件付き書式]** を選択してから、適用する書式設定の種類を選択します。
+条件付き書式を適用するには、Power BI Desktop で **テーブル** または **マトリックス** の視覚化を選択します。 **[視覚化]** ペインの **[フィールド]** セクションで、書式設定する **[値]** ウェルのフィールドの横にある下向き矢印を右クリックまたは選択します。 **[条件付き書式]** を選択してから、適用する書式設定の種類を選択します。
 
 ![[条件付き書式設定] メニュー](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
@@ -161,7 +161,7 @@ Web サイト URL が含まれる列またはメジャーがある場合は、�
 
 各州の名前を Web サイトへのライブ リンクとして表示するには、 **[State]** フィールドの **[条件付き書式]** を選択し、 **[Web URL]** を選択します。 **[Web URL]** ダイアログ ボックスの **[フィールドに基づく]** で、 **[Website]** を選択し、 **[OK]** を選択します。 
 
-**[State]** フィールドに適用された **Web URL** 書式設定により、各州の名前がその Web サイトへのアクティブなリンクになります。 次の表の例では、**State** 列に **Web URL** 書式設定が適用され、**Affordability** 列に**データ バー**と**背景の書式設定**が適用されています。 
+**[State]** フィールドに適用された **Web URL** 書式設定により、各州の名前がその Web サイトへのアクティブなリンクになります。 次の表の例では、**State** 列に **Web URL** 書式設定が適用され、**Affordability** 列に **データ バー** と **背景の書式設定** が適用されています。 
 
 ![Web URL、データ バー、および背景色が設定されたテーブル](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
@@ -179,7 +179,7 @@ Web サイト URL が含まれる列またはメジャーがある場合は、�
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 条件付きテーブルの書式設定を使用する場合は、留意すべき考慮事項がいくつかあります。
 
-- 条件付き書式は、テーブルまたはマトリックスのビジュアルの値にのみ適用され、小計、総計、**合計**行には適用されません。 
+- 条件付き書式は、テーブルまたはマトリックスのビジュアルの値にのみ適用され、小計、総計、**合計** 行には適用されません。 
 - グループ化されていないテーブルは、条件付き書式をサポートしていない単一行として表示されます。
 - データに *NaN* 値が含まれている場合は、自動最大値/最小値、または割合ルールを使用したルールベースの書式設定を使用してグラデーションの書式設定を適用することはできません。 NaN は "Not a number" (数値ではない) を意味し、通常は、ゼロ除算エラーで発生します。 このようなエラーを回避するには、[DIVIDE() DAX 関数](/dax/divide-function-dax)を使用できます。
 - 条件付き書式を使用するには、集計またはメジャーを値に適用する必要があります。 そのため、 **[値によって色分け]** の例に "第 1" または "最後" が表示されます。 Analysis Services 多次元キューブに対してレポートを作成する場合、キューブ所有者が値を提供するメジャーを構築していない限り、条件付き書式の属性を使用することはできません。

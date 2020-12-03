@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリで通知を受け取る
 description: 通知センターは、モバイル デバイスのユーザーに合わせた Power BI エクスペリエンスに関連する情報を提示します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: b3b447b315befef11f342f537d4ab3ad8c837f03
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 19cda3734ba56a5879dc10041d2ba9e9bdc4146e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668484"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414739"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリで通知を受け取る
 適用対象:
@@ -23,12 +23,12 @@ ms.locfileid: "91668484"
 | iPhone |iPad |Android フォン |Android タブレット |Windows 10 デバイス |
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 通知は、Power BI サービスまたはモバイル デバイスのユーザーに合わせた Power BI エクスペリエンスに関連する情報を提示します。 通知を開くと、[自分で設定したアラート](mobile-set-data-alerts-in-the-mobile-apps.md)、共有されている新しいダッシュボードに関する一連のメッセージ フィード、グループ ワークスペースの変更、Power BI イベントや会議などに関する情報が表示されます。
 
 > [!NOTE]
-> iOS デバイスで[更新バージョンの Power BI アプリ](https://powerbi.microsoft.com/mobile/)に初めてサインインすると、Power BI からの通知を受けるかどうかを確認するメッセージが表示されます。 また、デバイスの**設定**で Power BI からの通知を受ける方法についても構成できます。 
+> iOS デバイスで[更新バージョンの Power BI アプリ](https://powerbi.microsoft.com/mobile/)に初めてサインインすると、Power BI からの通知を受けるかどうかを確認するメッセージが表示されます。 また、デバイスの **設定** で Power BI からの通知を受ける方法についても構成できます。 
 > 
 > 
 

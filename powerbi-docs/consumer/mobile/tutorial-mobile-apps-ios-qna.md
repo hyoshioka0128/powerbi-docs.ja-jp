@@ -2,18 +2,18 @@
 title: チュートリアル:iOS アプリの Q&A 仮想アナリストで質問する
 description: このチュートリアルでは、iOS デバイス上の Power BI モバイル アプリで Q&A 仮想アナリストを使用して、自分の言葉でサンプル データについて質問します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/26/2019
-ms.author: painbar
-ms.openlocfilehash: 3b84cf4969df05d4e9570b12a80436bca3e280be
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 6d69f4527b838136b54ccfbad43d27fa247804d9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668323"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415291"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>チュートリアル:Power BI iOS アプリの Q&A 仮想アナリストでデータについて質問する
 
@@ -43,7 +43,7 @@ Q&A 仮想アナリストは、[Power BI サービス](https://powerbi.com)の�
   * iOS 11 以降の iPad。
   * iOS 11 以降の iPhone 5 以上。 
   * iOS 11 以降の iPod Touch。
-* **サンプル データをダウンロードする**:最初のステップでは、Power BI サービスの**営業案件の分析サンプル**をダウンロードします。 この方法については、「[Power BI サービスのマイ ワークスペースにサンプルをダウンロードする](./mobile-apps-download-samples.md)」を参照してください。
+* **サンプル データをダウンロードする**:最初のステップでは、Power BI サービスの **営業案件の分析サンプル** をダウンロードします。 この方法については、「[Power BI サービスのマイ ワークスペースにサンプルをダウンロードする](./mobile-apps-download-samples.md)」を参照してください。
 
 
 前提条件を満たし、サンプル データをダウンロードしたら、お使いの iOS デバイスでサンプルを表示できます。

@@ -1,20 +1,20 @@
 ---
 title: ページ分割されたレポートの URL 内でレポート パラメーターを渡す - Power BI レポート ビルダー
 description: このトピックでは、レポート パラメーターをページ分割されたレポートの URL に含めることでレポートに渡す方法について説明します。
+author: maggiesMSFT
+ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: f103f29c61d1a4e4a5340d97598d80a86c708701
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: ac3cd10ec4c356da92aca6983292ff57b16f58b3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298029"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415590"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Power BI のページ分割されたレポートの URL 内でレポート パラメーターを渡す 
 
@@ -65,7 +65,7 @@ rp:SalesOrderNumber:isnull=true
 ブール値を渡すには、false には 0 を、true には 1 を使用します。 浮動小数点型の値を渡すには、サーバー ロケールの小数点区切り記号を含めます。
 
 > [!NOTE]
-> 既定値を持つレポート パラメーターがレポートに含まれ、 **[プロンプト]** プロパティの値が **false** (つまり、 **[ユーザーにメッセージを表示]** プロパティがレポート マネージャーで選択されていない場合)、URL 内のそのレポート パラメーターの値を渡すことはできません。 これにより、管理者は、エンド ユーザーが特定のレポート パラメーターの値を追加または変更できないようにすることができます。
+> 既定値を持つレポート パラメーターがレポートに含まれ、**[プロンプト]** プロパティの値が **false** (つまり、**[ユーザーにメッセージを表示]** プロパティがレポート マネージャーで選択されていない場合)、URL 内のそのレポート パラメーターの値を渡すことはできません。 これにより、管理者は、エンド ユーザーが特定のレポート パラメーターの値を追加または変更できないようにすることができます。
 > 
 > Power BI では、2,000 文字を超えるクエリ文字列はサポートしていません。  この値は、ご自分のページ分割されたレポートを参照するために url パラメーターを使用している場合に超過することがあります。  これは、特に値が複数あるパラメーターを使用するときに当てはまります。
 

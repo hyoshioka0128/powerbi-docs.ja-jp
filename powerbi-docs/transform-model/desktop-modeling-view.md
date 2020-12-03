@@ -2,23 +2,23 @@
 title: Power BI Desktop でモデルリング ビューを使用する
 description: Power BI Desktop でモデリング ビューを使用して、複雑なデータセットをビジュアル形式で表示させます
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 27d601da2a3ef922c75aee6f52011ac22ca26336
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a47bcba58a39f76a6e9e64778d2d06a75dc14132
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83280336"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413957"
 ---
 # <a name="work-with-modeling-view-in-power-bi-desktop"></a>Power BI Desktop でモデルリング ビューを操作する
 
-**Power BI Desktop** の**モデルリング ビュー**を使用すると、多くのテーブルを含む複雑なデータセットを表示して操作することができます。
+**Power BI Desktop** の **モデルリング ビュー** を使用すると、多くのテーブルを含む複雑なデータセットを表示して操作することができます。
 
 
 ## <a name="using-modeling-view"></a>モデルリング ビューの使用
@@ -45,7 +45,7 @@ ms.locfileid: "83280336"
 
 **CTRL** キーを押したまま複数のテーブルをクリックすることで、モデリング ビューで一度に複数のオブジェクトを選択することができます。 複数のテーブルを選択すると、それらがモデルリング ビュー内で強調表示されます。 複数のテーブルが強調表示されている場合、 **[プロパティ]** ウィンドウで適用した変更は選択したテーブルすべてに対して適用されます。
 
-たとえば、ダイアグラム ビューにある複数のテーブルの[ストレージ モード](desktop-storage-mode.md)を変更するには、**CTRL** キーを押しながらテーブルを選択した後、 **[プロパティ]** ウィンドウでストレージ モードの設定を変更します。
+たとえば、ダイアグラム ビューにある複数のテーブルの [ストレージ モード](desktop-storage-mode.md)を変更するには、**CTRL** キーを押しながらテーブルを選択した後、 **[プロパティ]** ウィンドウでストレージ モードの設定を変更します。
 
 ![CTRL キーを押しながら複数のテーブルを選択した後、選択したテーブル全体の共通プロパティを設定する](media/desktop-modeling-view/modeling-view_06.png)
 

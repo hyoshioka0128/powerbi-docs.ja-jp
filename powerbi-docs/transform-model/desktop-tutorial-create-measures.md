@@ -2,19 +2,19 @@
 title: チュートリアル:Power BI Desktop での独自のメジャーの作成
 description: Power BI Desktop のメジャーは、ユーザーがレポートで操作するデータに対して計算を実行するために役立ちます。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: tutorial
 ms.date: 11/08/2019
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 61eb4fc54966545858a7ebc85044696064027acd
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 16ce255f22d6242a1b8e78d34b27519d22fb5489
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858395"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413911"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>チュートリアル:Power BI Desktop での独自のメジャーの作成
 メジャーを使用すると、Power BI Desktop で最も強力なデータ分析ソリューションをいくつか作成できます。 メジャーは、ユーザーがレポートで操作するデータに対して計算を実行するために役立ちます。 このチュートリアルでは、メジャーの基本について説明し、独自のメジャーを Power BI Desktop で作成する手順を紹介します。
@@ -57,7 +57,7 @@ Power BI Desktop でメジャーが作成されるときは、ほとんどの場
 
 ![国別の SaleAmount](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
 
-ユーザーがレポートを操作した結果としてメジャーが変化した場合は、ユーザーがそのメジャーの*コンテキスト*に影響を与えたことになります。 ユーザーがレポートの視覚化を操作するたびにコンテキストが変更され、メジャーは結果を計算して表示します。
+ユーザーがレポートを操作した結果としてメジャーが変化した場合は、ユーザーがそのメジャーの *コンテキスト* に影響を与えたことになります。 ユーザーがレポートの視覚化を操作するたびにコンテキストが変更され、メジャーは結果を計算して表示します。
 
 ## <a name="create-and-use-your-own-measures"></a>独自のメジャーの作成と使用
 
@@ -65,11 +65,11 @@ Power BI Desktop でメジャーが作成されるときは、ほとんどの場
 
 DAX の数式では、Excel の数式と同じ関数、演算子、および構文を多数使用しています。 ただし、DAX の関数は、リレーショナル データを処理し、ユーザーがレポートを操作するのに合わせて動的に計算を実行するように設計されています。 200 種類を超える DAX 関数は、Sum や Average などの簡単な集計から、さらに複雑な統計関数やフィルター処理関数まで、あらゆる処理を実行できます。 DAX の理解を深めるために役立つリソースは多数あります。 このチュートリアルを終えたら、「[Power BI Desktop における DAX の基本事項](desktop-quickstart-learn-dax-basics.md)」をお読みください。
 
-独自のメジャーを作成すると、それは*モデル* メジャーと呼ばれ、選択したテーブルの **[フィールド]** リストに追加されます。 メジャー モデルの利点として、任意の必要なものに名前を付けて識別しやすくすることができる、他の DAX 式の引数として使用できる、複雑な計算を高速に実行できるなどがあります。
+独自のメジャーを作成すると、それは *モデル* メジャーと呼ばれ、選択したテーブルの **[フィールド]** リストに追加されます。 メジャー モデルの利点として、任意の必要なものに名前を付けて識別しやすくすることができる、他の DAX 式の引数として使用できる、複雑な計算を高速に実行できるなどがあります。
 
 ### <a name="quick-measures"></a>クイック メジャー
 
-Power BI Desktop の 2018 年 2 月のリリースから、ウィンドウでの入力に基づいて DAX 式が自動的に入力される*クイック メジャー*で、利用できる一般的な計算が多数増えました。 迅速で強力な計算なので、DAX の学習や、独自のカスタマイズしたメジャーのシード処理にも役立ちます。 
+Power BI Desktop の 2018 年 2 月のリリースから、ウィンドウでの入力に基づいて DAX 式が自動的に入力される *クイック メジャー* で、利用できる一般的な計算が多数増えました。 迅速で強力な計算なので、DAX の学習や、独自のカスタマイズしたメジャーのシード処理にも役立ちます。 
 
 次のいずれかの方法を使用して、クイック メジャーを作成します。 
  - **[フィールド]** ウィンドウ内のテーブルで、**その他のオプション** **[...]** を右クリックするか選択し、一覧から **[新しいクイック メジャー]** を選択します。
@@ -136,7 +136,7 @@ Power BI Desktop の 2018 年 2 月のリリースから、ウィンドウでの
     
     ![式の完了](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
     
-1. **Enter** キーを押すか、数式バーにある**コミット** (チェックマーク アイコン) を選択して入力を完了し、数式を検証します。 
+1. **Enter** キーを押すか、数式バーにある **コミット** (チェックマーク アイコン) を選択して入力を完了し、数式を検証します。 
 
     検証された **Net Sales** メジャーは、 **[フィールド]** ウィンドウの **Sales** テーブルで使用できるようになります。
     
@@ -193,7 +193,7 @@ Power BI Desktop の 2018 年 2 月のリリースから、ウィンドウでの
 
     ![テーブルをスライサーに変換](media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png)
     
-5.  **Year** スライサーで任意の値を選択すると、それに従って **RegionCountryName 別の売上高と純売上高**グラフがフィルター処理されます。 選択した **Year** フィールドのコンテキストで **Net Sales** メジャーと **SalesAmount** メジャーが再計算され、結果が表示されます。 
+5.  **Year** スライサーで任意の値を選択すると、それに従って **RegionCountryName 別の売上高と純売上高** グラフがフィルター処理されます。 選択した **Year** フィールドのコンテキストで **Net Sales** メジャーと **SalesAmount** メジャーが再計算され、結果が表示されます。 
     
     ![年ごとにスライスされたグラフ](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
 

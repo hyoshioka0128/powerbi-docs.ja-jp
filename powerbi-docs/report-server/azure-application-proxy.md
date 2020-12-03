@@ -2,18 +2,18 @@
 title: Azure アプリケーション プロキシを使用して Power BI Report Server を構成する
 description: Azure Active Directory アプリケーション プロキシを使用して Power BI Report Server を構成する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/28/2020
-ms.author: maggies
-ms.openlocfilehash: 60287bfde79c918250037ccc03781e7cb47d6320
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 795b2e7e1b9ef0c705f7240e9a20a5c2da2f81a3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634230"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414923"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Azure アプリケーション プロキシを使用して Power BI Report Server を構成する
 
@@ -79,13 +79,13 @@ RSWindowsNegotiate が一覧に表示されていて、かつ認証の種類の�
 </AuthenticationTypes>
 ```
 
-構成ファイルを変更する必要がある場合は、レポート サーバー構成マネージャーから**レポート サーバー サービスを停止して再開**することで、変更を確実に有効にします。
+構成ファイルを変更する必要がある場合は、レポート サーバー構成マネージャーから **レポート サーバー サービスを停止して再開** することで、変更を確実に有効にします。
 
 ### <a name="2-register-service-principal-names-spns"></a>2. サービス プリンシパル名 (SPN) を登録する
 
 管理者としてコマンド プロンプトを開き、次の手順を行います。
 
-次のコマンドを使用して、アカウントとしての **Power BI Report Server サービス アカウント**に次の SPN を登録します。
+次のコマンドを使用して、アカウントとしての **Power BI Report Server サービス アカウント** に次の SPN を登録します。
 
 ```
 setspn -s http/ Netbios name\_of\_Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
@@ -114,7 +114,7 @@ setspn -s MSSQLSVC/FQDN\_of\_SQL\_Server<SQL service service account>
 7. **[任意の認証プロトコルを使う]** をオンにします。
 8. **[このアカウントが委任された資格情報を提示できるサービス]** で **[追加]** を選択します。
 9. 新しいダイアログで、 **[ユーザーまたはコンピューター]** を選択します。
-10. **SQL Server サービス用のサービス アカウント**を入力し、 **[OK]** を選択します。
+10. **SQL Server サービス用のサービス アカウント** を入力し、 **[OK]** を選択します。
 
     それは MSSQLSVC で始まります。
 
@@ -178,13 +178,13 @@ KCD を構成するには、コネクタ コンピューターごとに以下の
 アプリケーションを発行したら、次の手順でシングル サインオンの設定を構成します。
 
 1. ポータルのアプリケーション ページで **[シングル サインオン]** を選択します。
-2. **シングル サインオン モード**の場合、 **[統合 Windows 認証]** を選択します。
+2. **シングル サインオン モード** の場合、 **[統合 Windows 認証]** を選択します。
 3. **[内部アプリケーション SPN]** を先ほど設定した値に設定します。 この値を特定するには、次の手順を行います。
 
     - レポートを実行してみるか、またはデータ ソースへのテスト接続を実行します。これにより、Kerberos チケットが作成されます。
     - レポートまたはテスト接続の実行が正常に完了したら、コマンド プロンプトを開き、コマンド `klist` を実行します。 結果セクションに、`http/` SPN のチケットが表示されるはずです。 それが、Power BI Report Server で構成した SPN と同じである場合は、その SPN をこのセクションで使用します。
 
-1. ユーザーの代わりに使うコネクタに**委任されたログイン ID** を選択します。 詳細については、「[さまざまなオンプレミス ID とクラウド ID の操作](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities)」を参照してください。
+1. ユーザーの代わりに使うコネクタに **委任されたログイン ID** を選択します。 詳細については、「[さまざまなオンプレミス ID とクラウド ID の操作](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities)」を参照してください。
 
     ユーザー プリンシパル名を使用することをお勧めします。 このサンプルでは、 **[ユーザー プリンシパル名]** オプションを使用するように構成しました。
 
@@ -218,7 +218,7 @@ KCD を構成するには、コネクタ コンピューターごとに以下の
 
     リファレンスについては、「[チュートリアル: 既存のカスタム DNS 名を Azure App Service にマップする](/Azure/app-service/app-service-web-tutorial-custom-domain)」を参照してください。
 
-1. カスタム ドメインの DNS エントリの検証が正常に行われると、ポータルから、そのドメインに対応する**検証済み**の状態を確認できるはずです。
+1. カスタム ドメインの DNS エントリの検証が正常に行われると、ポータルから、そのドメインに対応する **検証済み** の状態を確認できるはずです。
 
     ![ドメイン名](media/azure-application-proxy/azure-ad-custom-domain-names.png)
 

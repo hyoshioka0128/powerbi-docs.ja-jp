@@ -1,26 +1,26 @@
 ---
 title: R スクリプトを使用して高度な分析とビジュアルを作成する
 description: Power BI Desktop で R スクリプトを使用して、高度な分析と高度な視覚エフェクトを作成する
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/14/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3b43d644a0bb7ecd2800b99d3ffb5d7c7d26bf96
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 60a4edac34e98170d0499f3480f01b366a512ddc
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412098"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415659"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Power BI で R ビジュアルを作成して使用する
 
 [!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
 
-R ビジュアルは現在、 **Power BI Desktop** でのみ作成でき、その後 Power BI サービスに発行できます。 R ビジュアルの作成の詳細については、「[R を使用した Power BI ビジュアルの作成](../create-reports/desktop-r-visuals.md)」を参照してください。
+R ビジュアルは現在、**Power BI Desktop** でのみ作成でき、その後 Power BI サービスに発行できます。 R ビジュアルの作成の詳細については、「[R を使用した Power BI ビジュアルの作成](../create-reports/desktop-r-visuals.md)」を参照してください。
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Power BI サービスでの R ビジュアルの表示
 Power BI サービスでは、R スクリプトで作成したビジュアルの表示と操作がサポートされています。 R スクリプトで作成したビジュアルは一般的に *R ビジュアル* と呼ばれ、R の豊富な分析と視覚化の機能を使用した高度なデータ整形と予測などの分析に使用できます。
@@ -121,9 +121,9 @@ powerbi_rEnableShowTextForCJKLanguages =  1
 ## <a name="overview-of-r-packages"></a>R パッケージの概要
 R パッケージは、適切に定義された形式で結合された R 関数、データ、およびコンパイル済みコードのコレクションです。 R のインストールには標準のパッケージ セットが付属しており、他のパッケージはダウンロードしてインストールできます。 インストールしたら、使用するセッションに R パッケージを読み込む必要があります。 無料の R パッケージの主要なソースは、CRAN ([Comprehensive R Archive Network](https://cran.r-project.org/web/packages/available_packages_by_name.html)) です。
 
-**Power BI Desktop** では、どのような種類の R パッケージでも制限なく使うことができます。 **Power BI Desktop** で使う R パッケージをユーザー自身がインストールできます (たとえば、 [RStudio IDE](https://www.rstudio.com/) を使って)。
+**Power BI Desktop** では、どのような種類の R パッケージでも制限なく使うことができます。 **Power BI Desktop** で使う R パッケージをユーザー自身がインストールできます (たとえば、[RStudio IDE](https://www.rstudio.com/) を使って)。
 
-**Power BI サービス** の R ビジュアルは、 **この記事** の「 [サポートされるパッケージ](../connect-data/service-r-packages-support.md)」セクションで示されているパッケージによってサポートされます。 サポートされるパッケージの一覧に目的のパッケージがない場合は、パッケージのサポートを要求できます。 サポートを要求する方法については、「[Power BI サービスの R パッケージ](../connect-data/service-r-packages-support.md)」を参照してください。
+**Power BI サービス** の R ビジュアルは、**この記事** の「[サポートされるパッケージ](../connect-data/service-r-packages-support.md)」セクションで示されているパッケージによってサポートされます。 サポートされるパッケージの一覧に目的のパッケージがない場合は、パッケージのサポートを要求できます。 サポートを要求する方法については、「[Power BI サービスの R パッケージ](../connect-data/service-r-packages-support.md)」を参照してください。
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>R パッケージの要件と制限事項
 R パッケージにはいくつかの要件と制限があります。

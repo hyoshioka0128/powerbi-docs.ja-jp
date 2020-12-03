@@ -2,16 +2,17 @@
 title: Power BI Android アプリで Android アプリのショートカットを使用する
 description: ショートカットや Google Search を使用して、頻繁に表示されるコンテンツに直接すばやくアクセスする方法について学習します。
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-ms.openlocfilehash: ec4763118360ea02362e3f49fe9776224e9c087a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3231e896384f7d438f5448461bc4534532c04910
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229397"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414693"
 ---
 # <a name="use-android-app-shortcuts-in-the-power-bi-android-app"></a>Power BI Android アプリで Android アプリのショートカットを使用する
 
@@ -21,7 +22,7 @@ ms.locfileid: "85229397"
 |:--- |:--- |
 | Android フォン |Android タブレット |
 
-Android 用 Power BI モバイル アプリでは、必要なレポートまたはダッシュボードにすぐにアクセスするための 2 つの簡単な方法 (**デバイスのホーム画面のショートカット**と**アプリ起動ツールのショートカット**) が提供され、アプリ内を移動する必要はありません。
+Android 用 Power BI モバイル アプリでは、必要なレポートまたはダッシュボードにすぐにアクセスするための 2 つの簡単な方法 (**デバイスのホーム画面のショートカット** と **アプリ起動ツールのショートカット**) が提供され、アプリ内を移動する必要はありません。
  * **デバイスのホーム画面のショートカット**:任意のレポートまたはダッシュボードへのショートカットを作成し、デバイスのホーム画面にピン留めすることができます。 レポートまたはダッシュボードが、ワークスペースのいずれかに含まれている必要はありません。アプリ内にあるレポートやダッシュボード、あるいは外部 (B2B) テナントに配置されているレポートまたはダッシュボードへのショートカットを作成することもできます。
  * **アプリ起動ツールのショートカット**:デバイスのホーム画面でアプリ起動ツール アイコンをロング タップしてアプリ起動ツールを開くだけで、頻繁に表示されるレポートやダッシュボードに直接アクセスすることができます。 クイック アクセス メニューでは、頻繁に表示される 3 つの項目へのショートカットが提供されます。 これらの項目は時々変更されます。Power BI モバイル アプリでは、よく表示されるものを追跡し、それに応じてショートカットを変更します。
 

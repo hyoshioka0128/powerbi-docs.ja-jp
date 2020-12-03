@@ -2,18 +2,18 @@
 title: iOS モバイル アプリでの "通信障害" - Power BI の修正
 description: この記事は、"通信エラーが発生しました。 Wi-Fi 接続のプロキシ設定に関係したエラーの可能性があります。" というメッセージが表示される場合に役に立ちます。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 0162d78fd4358f415ac52ea70bd3460d3c28b722
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1af46edad96ce191798502a1887c6c402a0e7319
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114902"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415337"
 ---
 # <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>iOS モバイル アプリでの "通信障害" - Power BI の修正
 

@@ -2,18 +2,18 @@
 title: レポートの対話式操作の設定を構成する
 description: レポートの既定の対話式操作の設定をオーバーライドする方法について説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/08/2020
-ms.author: painbar
-ms.openlocfilehash: 67f34bfe04599ffa7d9f9f2c2c3d13545b4306ac
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: fdafc1cd5804bf62a715dc4161ce853c2690ce3a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635265"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414647"
 ---
 # <a name="configure-report-interaction-settings"></a>レポートの対話式操作の設定を構成する
 
@@ -28,7 +28,7 @@ Power BI モバイル アプリには、多くの構成可能な "対話式操�
 | [レポート フッターのドッキングと動的なレポート フッター](#docked-report-footer) |✔|✔|||
 | [ボタンからのレポートの更新とプルによる更新](#report-refresh) |✔||||
 
-対話式操作の設定に移動するには、ご自分のプロフィール画像をタップして[サイド パネル](./mobile-apps-home-page.md#header)を開き、**[設定]** を選択して、**[対話式操作]** セクションを見つけます。
+対話式操作の設定に移動するには、ご自分のプロフィール画像をタップして [サイド パネル](./mobile-apps-home-page.md#header)を開き、**[設定]** を選択して、**[対話式操作]** セクションを見つけます。
 
 ![対話式操作の設定](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
@@ -56,7 +56,7 @@ Power BI モバイル アプリをダウンロードすると、そのアプリ�
 
 ドッキングされたレポート フッターの設定では、レポート フッターをレポートの下部にドッキング (固定して常に表示) したままにするか、非表示にしてレポート内のアクション (スクロールなど) に基づいて再表示するかを指定します。
 
-Android フォンでは、ドッキングされたレポート フッター設定が既定で**オン**になっています。つまり、レポート フッターがドッキングされ、レポートの下部に常に表示されます。 レポートでのアクションに応じて表示および非表示にする動的レポート フッターを使用する場合は、この設定を**オフ**に切り替えます。
+Android フォンでは、ドッキングされたレポート フッター設定が既定で **オン** になっています。つまり、レポート フッターがドッキングされ、レポートの下部に常に表示されます。 レポートでのアクションに応じて表示および非表示にする動的レポート フッターを使用する場合は、この設定を **オフ** に切り替えます。
 
 ### <a name="report-refresh"></a>レポートの更新
 

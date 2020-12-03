@@ -2,19 +2,19 @@
 title: Power BI Desktop で例から列を追加する
 description: Power BI Desktop で既存の列を例として使って新しい列を簡単に作成します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/16/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 68f2dc14b713345796ba0472fc3d55f6baedf819
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: f33a9f5656875825b70c7e51202431ba268fe86a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263184"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414509"
 ---
 # <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Power BI Desktop で例から列を追加する
 Power Query エディターの "*例から列を追加する*" で、新しい列に 1 つ以上の例の値を指定するだけで、データ モデルに新しい列を追加できます。 選択範囲から新しい列の例を作成したり、テーブル内の既存のすべての列に基づいて入力を指定したりできます。
@@ -66,7 +66,7 @@ Power Query エディターは、入力された例を変換に追加します�
 
 列見出しをダブルクリックするか、右クリックして **[名前の変更]** を選択すると、新しい列を任意の名前に変更することができます。 
 
-次のビデオで、サンプル データ ソースを使用して実際に**例から列を追加する**方法をご覧ください。 
+次のビデオで、サンプル データ ソースを使用して実際に **例から列を追加する** 方法をご覧ください。 
 
 [Power BI Desktop: 例から列を追加する](https://www.youtube.com/watch?v=-ykbVW9wQfw)。 
 

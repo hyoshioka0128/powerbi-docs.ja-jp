@@ -2,18 +2,19 @@
 title: Power BI Desktop のメジャー
 description: Power BI Desktop でクイック メジャーや DAX 構文などのメジャーを作成して使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/29/2020
-ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 752e43fa3471419a76338f9db81f08a6180b6aba
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 78c883c28323d34ef4583b6b3bd04736f9654cbc
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238238"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414026"
 ---
 # <a name="create-measures-for-data-analysis-in-power-bi-desktop"></a>Power BI Desktop でデータ分析用のメジャーを作成する
 
@@ -23,12 +24,12 @@ Power BI Desktop では、わずか数クリックで、データに対する洞
 
 ## <a name="understanding-measures"></a>メジャーについて
 
-Power BI Desktop では、*レポート ビュー*または*データ ビュー*でメジャーを作成し、表示します。 ユーザーが自分で作成したメジャーは、**フィールド** リストに、計算機のアイコン付きで表示されます。 メジャーには任意の名前を付け、他のフィールドと同じように、新規または既存の視覚エフェクトを追加することができます。
+Power BI Desktop では、*レポート ビュー* または *データ ビュー* でメジャーを作成し、表示します。 ユーザーが自分で作成したメジャーは、**フィールド** リストに、計算機のアイコン付きで表示されます。 メジャーには任意の名前を付け、他のフィールドと同じように、新規または既存の視覚エフェクトを追加することができます。
 
 ![[フィールド] のメジャー フィールド](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
 > [!NOTE]
-> ダイアログ ボックスから選ぶことができる既製の*クイック メジャー*もあります。 これらはメジャーをすばやく作成することができ、自動的に作成される Data Analysis Expressions (DAX) 式を確認できるため DAX 構文の勉強にも適しています。 詳細については、[クイック メジャー](desktop-quick-measures.md)に関するページを参照してください。
+> ダイアログ ボックスから選ぶことができる既製の *クイック メジャー* もあります。 これらはメジャーをすばやく作成することができ、自動的に作成される Data Analysis Expressions (DAX) 式を確認できるため DAX 構文の勉強にも適しています。 詳細については、[クイック メジャー](desktop-quick-measures.md)に関するページを参照してください。
 > 
 > 
 

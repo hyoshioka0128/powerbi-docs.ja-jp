@@ -2,18 +2,18 @@
 title: Surface Hub と Windows 10 でプレゼンテーション モードを表示する - Power BI
 description: Surface Hub で Power BI レポートを表示する方法と、Windows 10 デバイスで Power BI のダッシュボード、レポート、タイルをプレゼンテーション モードで表示する方法について説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
-ms.author: painbar
-ms.openlocfilehash: a982374bbf713d4e0c970da601fdca3249120cbe
-ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
+ms.openlocfilehash: 797b00210154e577275f486194f7e36f2cd0077e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683323"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415452"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Surface Hub と Windows 10 デバイスで、プレゼンテーション モードでレポートとダッシュボードを表示する
 Windows 10 デバイスと Surface Hub で、プレゼンテーション モードを使用し、レポートとダッシュボードを全画面表示できます。 プレゼンテーション モードは、会議やカンファレンスで、またはオフィスの専用プロジェクターで Power BI を表示する場合や、小さい画面上の領域を最大化するためだけにも役立ちます。
@@ -38,17 +38,17 @@ Power BI モバイル アプリで **[Switch to presentation mode]\(プレゼン
 
 | アイコン | アクション |
 |------|--------|
-|![[戻る] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png)|前のページに **戻ります** 。 アイコンを長押しすると、階層リンク ウィンドウがポップアップ表示され、レポートやダッシュボードを含むフォルダーに移動できます。|
-|![改ページ アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|プレゼンテーション内のレポートの別のページに **ページを切り替えます** 。|
+|![[戻る] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png)|前のページに **戻ります**。 アイコンを長押しすると、階層リンク ウィンドウがポップアップ表示され、レポートやダッシュボードを含むフォルダーに移動できます。|
+|![改ページ アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|プレゼンテーション内のレポートの別のページに **ページを切り替えます**。|
 |![ブックマーク アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-bookmarks-icon.png)|**ブックマークを適用** して、そのブックマークによってキャプチャされるデータの特定のビューを表示します。 個人用とレポートの両方のブックマークを適用できます。|
-|![インク アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png)|Surface ペンを使ってレポート ページ上に描画したり、注釈を付けたりするときの **インクの色を選択します** 。|
-|![消しゴム アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png)|Surface ペンを使ってレポート ページ上に描画したり、注釈を付けたりするために作成した **インク マークを消します** 。          |
+|![インク アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png)|Surface ペンを使ってレポート ページ上に描画したり、注釈を付けたりするときの **インクの色を選択します**。|
+|![消しゴム アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png)|Surface ペンを使ってレポート ページ上に描画したり、注釈を付けたりするために作成した **インク マークを消します**。          |
 |![リセット アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-reset-icon.png)|**既定のビューにリセット** し、プレゼンテーション中に行ったすべてのフィルター、スライサー、またはその他のデータ ビューの変更をクリアします。|
-|![[共有] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png)|プレゼンテーション ビューの画像を同僚と **共有します** 。 この画像には、プレゼンテーション中に Surface ペンで書いたすべての注釈が含まれます。|
-|![アイコンを更新する](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png)|レポートを **更新します** 。|
-|![[再生] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png)|**スライドショーを再生します** 。操作バーを非表示にして、スライドショーを開始します。 セレクターを使用すると、ページ、ブックマーク、またはページとブックマークの両方の間での自動切り替えを選択できます。 既定では、スライドショーでは 30 秒ごとに自動的にページが切り替わります。 これらの設定は、 [ **[設定] > [オプション]**](#slideshow-settings) で変更できます。 スライドショーについての[詳細情報](#slideshows)を参照してください|
-|![全画面表示モードを終了](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png)|プレゼンテーション モードを **終了します** 。|
-|![[検索] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png)|Power BI 内の他の成果物を **検索します** 。|
+|![[共有] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png)|プレゼンテーション ビューの画像を同僚と **共有します**。 この画像には、プレゼンテーション中に Surface ペンで書いたすべての注釈が含まれます。|
+|![アイコンを更新する](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png)|レポートを **更新します**。|
+|![[再生] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png)|**スライドショーを再生します**。操作バーを非表示にして、スライドショーを開始します。 セレクターを使用すると、ページ、ブックマーク、またはページとブックマークの両方の間での自動切り替えを選択できます。 既定では、スライドショーでは 30 秒ごとに自動的にページが切り替わります。 これらの設定は、[ **[設定] > [オプション]**](#slideshow-settings) で変更できます。 スライドショーについての[詳細情報](#slideshows)を参照してください|
+|![全画面表示モードを終了](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png)|プレゼンテーション モードを **終了します**。|
+|![[検索] アイコン](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png)|Power BI 内の他の成果物を **検索します**。|
 
 ツール バーを切り離し、画面上の任意の場所にドラッグ アンド ドロップできます。 これは大きな画面の場合に便利です。レポートの特定の領域に集中的に取り組むとき、その隣にツールを配置します。 ツール バーを指で触れ、レポート キャンバスまでスワイプします。
 
@@ -62,7 +62,7 @@ Power BI モバイル アプリで **[Switch to presentation mode]\(プレゼン
 
 ![スライドショーのセレクターのスクリーンショット](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-selector.png)
 
- コントローラーには、現在表示されているビュー (ページまたはブックマークとページ) の名前が表示されます。 上の図では、 **Sales** という名前のレポート内で、現在 **Sales Performance** ページ上の **Asia Pacific** ブックマークが表示されていることを確認できます。
+ コントローラーには、現在表示されているビュー (ページまたはブックマークとページ) の名前が表示されます。 上の図では、**Sales** という名前のレポート内で、現在 **Sales Performance** ページ上の **Asia Pacific** ブックマークが表示されていることを確認できます。
 
 既定では、スライドショーは 30 秒ごとに 1 回のペースでページのみが切り替わります。 [スライドショーの設定](#slideshow-settings)で既定の動作を変更できます。
 

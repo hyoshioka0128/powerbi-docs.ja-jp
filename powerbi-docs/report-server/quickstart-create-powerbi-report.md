@@ -2,18 +2,18 @@
 title: Power BI Report Server の Power BI レポートの作成
 description: Power BI レポート サーバーの Power BI レポートをいくつかの簡単な手順で作成する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/24/2020
-ms.author: maggies
-ms.openlocfilehash: b41ca7c8a85a544afea84e7f19a06f91dc85f376
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 965c3837b2d0153716442ea37b52b468be9742fb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045026"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414118"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI Report Server の Power BI レポートの作成
 Power BI サービス (https://powerbi.com) ) のクラウドで Power BI レポートを格納する場合と同じように、Power BI Report Server の Web ポータルでも Power BI レポートをオンプレミスで格納して管理することができます。 Power BI Desktop でレポートを作成および編集することができ、レポートを Web ポータルに公開することもできます。 その後、組織内のレポート閲覧者が、ブラウザーや、モバイル デバイスの Power BI モバイル アプリでレポートを表示できるようになります。
@@ -26,11 +26,11 @@ Power BI サービス (https://powerbi.com) ) のクラウドで Power BI レポ
 
 Power BI Desktop で Power BI レポートを既に作成している場合は、Power BI Report Server の Power BI レポートを作成する準備がほぼできています。 サーバーとアプリを常に同期させるため、Power BI レポート サーバー向けに最適化された Power BI Desktop のバージョンをインストールすることをお勧めします。同じコンピューターに Power BI Desktop の両方のバージョンを共存させることができます。
 
-1. レポート サーバーの Web ポータルで、 **ダウンロード** の矢印、 **[Power BI Desktop]** の順に選択します。
+1. レポート サーバーの Web ポータルで、**ダウンロード** の矢印、 **[Power BI Desktop]** の順に選択します。
 
     ![Web ポータルから Power BI Desktop をダウンロードする](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    あるいは、 [Power BI Report Server](https://powerbi.microsoft.com/report-server/) ホーム ページに進み、 **[高度なダウンロード オプション]** を選択します。
+    あるいは、[Power BI Report Server](https://powerbi.microsoft.com/report-server/) ホーム ページに進み、 **[高度なダウンロード オプション]** を選択します。
 
 2. ダウンロード センター ページで、 **[ダウンロード]** を選択します。
 
@@ -58,7 +58,7 @@ Power BI Desktop で Power BI レポートを既に作成している場合は�
 1. [ようこそ] 画面で、 **[データの取得]** を選択します。
    
     または **[ホーム]** タブで **[データの取得]** を選択します。
-2. データ ソースを選びます (この例では **Analysis Services** )。
+2. データ ソースを選びます (この例では **Analysis Services**)。
    
     ![データ ソースの選択](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. **[サーバー]** を入力し、必要に応じて **[データベース]** も入力します。 **[ライブ接続]** が選択されていることを確認し、 **[OK]** をクリックします。

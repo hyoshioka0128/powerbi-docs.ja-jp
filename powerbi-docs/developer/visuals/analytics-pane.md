@@ -6,28 +6,28 @@ ms.author: kesharab
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 5f8b2a54ac7882c02f1ece63ce1362c97ad027af
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 85dc34a2dbdfba02623f4d369d72311d9a93e997
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749025"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414187"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Power BI ビジュアルの分析ウィンドウ
 
-2018 年 11 月に、**分析**ウィンドウが[ネイティブ ビジュアル](../../transform-model/desktop-analytics-pane.md)に導入されました。
-この記事では、API v2.5.0 を使用する Power BI ビジュアルで**分析**ウィンドウにそれらのプロパティを表示して管理する方法について検討します。
+2018 年 11 月に、**分析** ウィンドウが [ネイティブ ビジュアル](../../transform-model/desktop-analytics-pane.md)に導入されました。
+この記事では、API v2.5.0 を使用する Power BI ビジュアルで **分析** ウィンドウにそれらのプロパティを表示して管理する方法について検討します。
 
 ![分析ウィンドウ](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 ## <a name="manage-the-analytics-pane"></a>分析ウィンドウを管理する
 
-[**書式**ウィンドウ](./custom-visual-develop-tutorial-format-options.md)でプロパティを管理するように、ビジュアルの **capabilities.json** ファイルでオブジェクトを定義することで、*分析*ウィンドウを管理します。
+[**書式** ウィンドウ](./custom-visual-develop-tutorial-format-options.md)でプロパティを管理するように、ビジュアルの **capabilities.json** ファイルでオブジェクトを定義することで、*分析* ウィンドウを管理します。
 
-**分析**ウィンドウでは、次のような違いがあります。
+**分析** ウィンドウでは、次のような違いがあります。
 
 * オブジェクトの定義で、値が 2 の **objectCategory** フィールドを追加します。
 
@@ -65,13 +65,13 @@ ms.locfileid: "91749025"
 }
 ```
 
-他のプロパティは、**書式**オブジェクトの場合と同じ方法で定義できます。 また、**書式**ウィンドウの場合と同様に、オブジェクトを列挙することもできます。
+他のプロパティは、**書式** オブジェクトの場合と同じ方法で定義できます。 また、**書式** ウィンドウの場合と同様に、オブジェクトを列挙することもできます。
 
 ## <a name="known-limitations-and-issues-of-the-analytics-pane"></a>分析ウィンドウの既知の制限事項と問題
 
-* **分析**ウィンドウでは、まだマルチインスタンスはサポートされていません。 オブジェクトに静的以外の[セレクター](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector)を含めることはできません (つまり、"selector": null)。また、Power BI ビジュアルでは、ユーザー定義の複数のカード インスタンスを含めることはできません。
+* **分析** ウィンドウでは、まだマルチインスタンスはサポートされていません。 オブジェクトに静的以外の[セレクター](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector)を含めることはできません (つまり、"selector": null)。また、Power BI ビジュアルでは、ユーザー定義の複数のカード インスタンスを含めることはできません。
 * `integer` 型のプロパティが正しく表示されません。 回避策として、代わりに `numeric` 型を使用します。
 
 > [!NOTE]
-> * **分析**ウィンドウは、新しい情報を追加するか、表示された情報に新たな光を当てるオブジェクトに対してのみ使用します (たとえば、重要な傾向を示す動的な参照行)。
-> * ビジュアルの外観 (つまり、書式設定) を制御するオプションはすべて、**書式設定**ウィンドウに限定する必要があります。
+> * **分析** ウィンドウは、新しい情報を追加するか、表示された情報に新たな光を当てるオブジェクトに対してのみ使用します (たとえば、重要な傾向を示す動的な参照行)。
+> * ビジュアルの外観 (つまり、書式設定) を制御するオプションはすべて、**書式設定** ウィンドウに限定する必要があります。

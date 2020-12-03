@@ -1,18 +1,18 @@
 ---
 title: Power BI 共有データセットを使用して改ページ調整されたレポートを作成する - Power BI Report Builder
 description: Power BI 共有データセットに基づいて、Power BI Report Builder で改ページ調整されたレポートを作成します。
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 11/18/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: 9b8e7ac37b42e74835cde120ad1465df586a8fe3
-ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
+ms.openlocfilehash: 7e74a64aad33f310109b754bba09fd61043747ff
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94893708"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415774"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Power BI 共有データセットを基づいて改ページ調整されたレポートを作成する
 

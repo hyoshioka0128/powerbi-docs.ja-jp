@@ -2,22 +2,22 @@
 title: Power BI レポートでドリルスルーを設定する
 description: Power BI レポートの新しいレポート ページで、ドリルスルーを使用してデータを掘り下げる方法について説明します
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/12/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7ba75bf5bce05f7a2614dc27d5ff8245ec1a31ef
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cec22acab7cc44b96f3137df04777671964707a8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239173"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414233"
 ---
 # <a name="set-up-drill-through-in-power-bi-reports"></a>Power BI レポートでドリルスルーを設定する
-Power BI レポートの*ドリルスルー*を利用すると、サプライヤー、顧客、メーカーなど、特定のエンティティに焦点を置いたページをあなたのレポートに作成できます。 ドリルスルーを使用するあなたのレポートの読者は、他のレポート ページのデータ ポイントを右クリックします。すると、ドリルスルーして、そのコンテキストでフィルター処理されたそれに焦点を置いたページで詳細を取得できます。 ユーザーがクリックしたときに詳細に[ドリルスルーするボタンを作成](desktop-drill-through-buttons.md)することもできます。
+Power BI レポートの *ドリルスルー* を利用すると、サプライヤー、顧客、メーカーなど、特定のエンティティに焦点を置いたページをあなたのレポートに作成できます。 ドリルスルーを使用するあなたのレポートの読者は、他のレポート ページのデータ ポイントを右クリックします。すると、ドリルスルーして、そのコンテキストでフィルター処理されたそれに焦点を置いたページで詳細を取得できます。 ユーザーがクリックしたときに詳細に[ドリルスルーするボタンを作成](desktop-drill-through-buttons.md)することもできます。
 
 ドリルスルーは、Power BI Desktop または Power BI サービスで、ご自分のレポートに設定することができます。
 
@@ -28,7 +28,7 @@ Power BI レポートの*ドリルスルー*を利用すると、サプライヤ
 
     たとえば、製造元用のドリルスルーを用意したいとします。 この場合には、売上合計、合計出荷単位、カテゴリ別の売上、地域別の売上などを表示するビジュアルを含むドリルスルー ページを作成します。 このようにすると、そのページにドリルスルーすると、選択した製造元に固有のビジュアルが表示されます。
 
-2. その後、そのドリルスルー ページの **[視覚化]** ウィンドウの **[フィールド]** セクションで、ドリルスルー対象のフィールドを**ドリルスルー フィルター**までドラッグします。
+2. その後、そのドリルスルー ページの **[視覚化]** ウィンドウの **[フィールド]** セクションで、ドリルスルー対象のフィールドを **ドリルスルー フィルター** までドラッグします。
 
     ![ドリルスルー ウェル](media/desktop-drillthrough/drillthrough_02.png)
 

@@ -2,19 +2,19 @@
 title: Power BI のお客様の収益性のサンプル:ツアーを開始する
 description: Power BI のお客様の収益性のサンプル:ツアーを開始する
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/05/2019
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: e1dcc202b8da269be3ee7c5ec2fea1d55381931e
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: adc642d5366949e547e0115badd5e800ffa04bb0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344643"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415107"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Power BI のお客様の収益性のサンプル:ツアーを開始する
 
@@ -126,8 +126,8 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
     ![下部にある 3 つのタブ](media/sample-customer-profitability/power-bi-report-tabs.png)
 
-    * **チーム スコアカード**では、5 人のマネージャーの業績とその顧客管理手法に焦点を合わせます。
-    * **業界の利益分析**では、業界全体の状況と比較して収益性を分析する方法が提供されます。
+    * **チーム スコアカード** では、5 人のマネージャーの業績とその顧客管理手法に焦点を合わせます。
+    * **業界の利益分析** では、業界全体の状況と比較して収益性を分析する方法が提供されます。
     * **Executive Scorecard** では、カスタム ページ サイズ フォーマットで各マネージャーのビューが提供されます。
 
 ### <a name="team-scorecard-page"></a>「チーム スコアカード」ページ
@@ -137,7 +137,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 1. 左側の **[Executive]** スライサーで Andrew の名前を選んで、Andrew のデータのみが表示されるようにレポート ページをフィルター処理します。
 
-   * クイック KPI では、Andrew の**収益の状態 (合計年)** に注目します。それは緑色であり、業績が良好であることを意味しています。
+   * クイック KPI では、Andrew の **収益の状態 (合計年)** に注目します。それは緑色であり、業績が良好であることを意味しています。
    * **[月別および役員別の予算に対する収益率差異]** グラフには、2 月の落ち込みを除き、Andrew は良好な結果を出していることが示されています。 Andrew の主要な地域は東部地域で、49 社の顧客と (7 つのうち) 5 つの製品が含まれています。 Andrew の GM% は、最上位でも最下位でもありません。
    * **[RevenueTY and Revenue % Var to Budget by Month]\(月別の予算に対する収益年合計と収益 % 差異\)** グラフには、安定した一様の収益利益が示されています。 ところが、地域ツリーマップ内の **[Central]\(中部\)** の四角形をクリックしてフィルター処理すると、Andrew は 3 月にインディアナ州でのみ売上があることがわかります。 この傾向は意図的なものでしょうか、それとも検討する必要があるものでしょうか。
 
@@ -175,7 +175,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Q&A で質問をすることによるデータの詳しい考察
 どの業界が Valery の最大の収益を生み出すかを判別することは分析に役立つ場合があります。 Q&A を利用してみましょう。
 
-1. **[レポートの編集]** を選んで、編集ビューでレポートを開きます。 編集ビューは、自分がレポートを所有している場合にのみ使用できます。 このビューは、*作成者*モードと呼ばれることがあります。 自分がレポートを共有しているだけの場合は、編集ビューで開くことはできません。
+1. **[レポートの編集]** を選んで、編集ビューでレポートを開きます。 編集ビューは、自分がレポートを所有している場合にのみ使用できます。 このビューは、*作成者* モードと呼ばれることがあります。 自分がレポートを共有しているだけの場合は、編集ビューで開くことはできません。
 
 2.  ダッシュボードの上部から、 **[質問する]** を選択して Q&A 質問ボックスを開きます。
 
@@ -191,7 +191,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 流通業界を見てみましょう。  
 
 1. **[Industry Margin Analysis]\(業界の利益分析\)** レポートのページを開きます。
-2. レポート ページで視覚エフェクトが選択されていない状態で、(まだ展開されていない場合は) 右側のフィルター ウィンドウを展開します。 **フィルター** ペインには、**ページ レベル フィルター**のみが表示されます。  
+2. レポート ページで視覚エフェクトが選択されていない状態で、(まだ展開されていない場合は) 右側のフィルター ウィンドウを展開します。 **フィルター** ペインには、**ページ レベル フィルター** のみが表示されます。  
 
    ![ページ レベル フィルター](media/sample-customer-profitability/power-bi-filters.png)
 3. **[Industry]** フィルターを選択し、矢印を選択して一覧を展開します。 流通業界のページ フィルターを追加してみましょう。 まず **[Select All]** チェックボックスをオフにして、すべての選択を解除します。 次に、 **[Distribution]** のみを選択します。  

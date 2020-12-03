@@ -2,19 +2,19 @@
 title: Power BI 開発者 (1 日) コース
 description: このビデオベースのコースでは、アプリ開発者として、Power BI コンテンツを埋め込むために必要な技術知識を学ぶことができます。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: yana.berkovich
 featuredvideoid: dv-ep90wse8
 ms.service: powerbi
-ms.subservice: powerbi-developer
+ms.subservice: powerbi
 ms.topic: tutorial
 ms.date: 06/01/2020
-ms.author: v-pemyer
-ms.openlocfilehash: bb5e2d0accd2db339666e23c449164103bb26ac8
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 67633bf4362984d0a1e3b6a6aa8b74de3747191f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527886"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414900"
 ---
 # <a name="power-bi-developer-in-a-day-course"></a>Power BI 開発者 (1 日) コース
 
@@ -84,14 +84,14 @@ Power BI に関する知識は、あれば望ましいですが、必須では�
 ラボを完了するには、Windows PC (Windows 7 以降) と次のソフトウェアがインストールされている必要があります。
 
 - 最新バージョンの [Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)。
-- Visual Studio 2015 以降。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) をお勧めします。 学習シナリオに適した無料の **Community** エディションを使用できます。 **ASP.NET および Web 開発**ワークロードがインストールされている必要があります。
+- Visual Studio 2015 以降。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) をお勧めします。 学習シナリオに適した無料の **Community** エディションを使用できます。 **ASP.NET および Web 開発** ワークロードがインストールされている必要があります。
 - [Power BI によってサポートされている](../fundamentals/power-bi-browsers.md) Web ブラウザー。 Microsoft Edge をお勧めします。
 
 次の手順に従ってセットアップを開始します。
 
 1. [こちらのリンク](https://aka.ms/deviad-student)を使用すると、自己学習キット (.zip) をご利用の PC にローカルにダウンロードできます。
 1. ファイル プロパティを開き、"ブロック解除" のチェックをオンにします (Windows によって、信頼されていない可能性があるというフラグがファイルに付けられる場合があります)。
-1. ご利用のファイル システム内のフォルダーにファイルの内容を抽出します。 **トレーニング**という名前を付けるなどして、見つけやすいフォルダーを作成することをお勧めします。 ラボのドキュメントでは、この場所は **&lt;CourseFolder&gt;** と呼ばれています。
+1. ご利用のファイル システム内のフォルダーにファイルの内容を抽出します。 **トレーニング** という名前を付けるなどして、見つけやすいフォルダーを作成することをお勧めします。 ラボのドキュメントでは、この場所は **&lt;CourseFolder&gt;** と呼ばれています。
 
 抽出されると、**PowerBIDevIAD** フォルダーが作成され、その中に次のフォルダーを確認できます。
 

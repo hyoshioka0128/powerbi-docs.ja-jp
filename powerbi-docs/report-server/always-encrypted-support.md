@@ -2,18 +2,18 @@
 title: Power BI Report Server の Always Encrypted
 description: この記事では、データ ソースの種類 Microsoft SQL Server および Microsoft Azure SQL Database を使用する場合に Power BI Report Server でサポートされる Always Encrypted について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2020
-ms.author: maggies
-ms.openlocfilehash: f921d9dbeb16d1b960e22f228f7833c8fbf184b4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 4851a20ecd406ffe2a460ba52833cca420b517da
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861247"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415544"
 ---
 # <a name="always-encrypted-in-power-bi-report-server"></a>Power BI Report Server の Always Encrypted
 
@@ -42,7 +42,7 @@ ms.locfileid: "90861247"
 
 ### <a name="column-encryption-strategy"></a>列暗号化戦略
 
-Power BI Report Server では、列暗号化戦略として、*決定論的*暗号化または*ランダム化*を使用できます。 次の表では、使用する戦略による違いについて説明します。
+Power BI Report Server では、列暗号化戦略として、*決定論的* 暗号化または *ランダム化* を使用できます。 次の表では、使用する戦略による違いについて説明します。
 
 |用途  |決定的  |ランダム化  |
 |---------|---------|---------|

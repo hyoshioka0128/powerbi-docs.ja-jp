@@ -2,16 +2,16 @@
 title: ビジネスおよび技術に関する意思決定者向けラーニング カタログ
 description: 最も基本的なものから最も高度なものまで、ビジネスおよび技術の意思決定者向けの Power BI のトレーニング オプションをすべて紹介します。
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
-ms.openlocfilehash: d64b83c08f4b7a332d0b4b894ea136921bc57ae6
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: b5d46a7960f5164a5b351673d677e532ecff2626
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749255"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414854"
 ---
 # <a name="business-and-technical-decision-makers-learning-catalog"></a>ビジネスおよび技術に関する意思決定者向けラーニング カタログ
 

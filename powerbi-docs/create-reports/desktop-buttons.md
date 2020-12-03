@@ -2,22 +2,22 @@
 title: Power BI でボタンを使用する
 description: Power BI レポートにボタンを追加すると、アプリのように動作するご自分のレポートを作成し、ユーザーとの連携を深めることができます。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/21/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7597d135bc05783d0d43bb481e24fc197abd9d4b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 77f16bedb45b0730a7007da19a427b1832bc9969
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222403"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414463"
 ---
 # <a name="use-buttons-in-power-bi"></a>Power BI でボタンを使用する
-Power BI で**ボタン**を使用したレポートを作成すると、ユーザーが Power BI コンテンツにマウス ポインターを重ねたり、クリックや対話操作を行うことができる、アプリのように動作する魅力的な環境を作成できます。 ボタンは、**Power BI Desktop** と **Power BI サービス**のレポートに追加できます。 ご自分のレポートを Power BI サービスで共有すると、それらはあなたのユーザーに対してアプリのように動作します。
+Power BI で **ボタン** を使用したレポートを作成すると、ユーザーが Power BI コンテンツにマウス ポインターを重ねたり、クリックや対話操作を行うことができる、アプリのように動作する魅力的な環境を作成できます。 ボタンは、**Power BI Desktop** と **Power BI サービス** のレポートに追加できます。 ご自分のレポートを Power BI サービスで共有すると、それらはあなたのユーザーに対してアプリのように動作します。
 
 ![Power BI のボタン](media/desktop-buttons/power-bi-buttons.png)
 
@@ -31,7 +31,7 @@ Power BI で**ボタン**を使用したレポートを作成すると、ユー�
 
 ### <a name="create-a-button-in-the-power-bi-service"></a>Power BI サービスでボタンを作成する
 
-**Power BI サービス**でボタンを作成するには、レポートを編集ビューで開きます。 上部のメニュー バーで **[ボタン]** を選択すると、次の図のように、オプションの集合から希望するボタンを選択できるドロップダウン メニューが表示されます。 
+**Power BI サービス** でボタンを作成するには、レポートを編集ビューで開きます。 上部のメニュー バーで **[ボタン]** を選択すると、次の図のように、オプションの集合から希望するボタンを選択できるドロップダウン メニューが表示されます。 
 
 ![Power BI サービスにボタン コントロールを追加する](media/desktop-buttons/power-bi-button-service-dropdown.png)
 
@@ -43,7 +43,7 @@ Power BI で**ボタン**を使用したレポートを作成すると、ユー�
 
 ## <a name="set-button-properties-when-idle-hovered-over-or-selected"></a>アイドル状態、マウスのポイント時、または選択時のボタンのプロパティを設定する
 
-Power BI のボタンには 3 つの状態があります: 既定 (マウスでポイントされていないとき、または選択されていないときに表示されます)、マウスのポイント時、または選択時 (通常、*クリック*時として参照されます)。 **[視覚化]** ウィンドウのカードの多くは、ボタンをカスタマイズするために十分な柔軟性があり、3 つの状態を基に個別に変更できます。
+Power BI のボタンには 3 つの状態があります: 既定 (マウスでポイントされていないとき、または選択されていないときに表示されます)、マウスのポイント時、または選択時 (通常、*クリック* 時として参照されます)。 **[視覚化]** ウィンドウのカードの多くは、ボタンをカスタマイズするために十分な柔軟性があり、3 つの状態を基に個別に変更できます。
 
 **[視覚化]** ウィンドウの次のカードでは、3 つの状態に基づいてボタンの書式設定または動作を調整できます。
 
@@ -72,7 +72,7 @@ Power BI のボタンには 3 つの状態があります: 既定 (マウスで�
 
 特定のボタンには、既定のアクションが自動的に選択されます。 たとえば、 **[Q&A]** ボタンの種類では、既定のアクションとして **[Q&A]** を自動的に選択します。 [このブログの投稿](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer)を確認すると、**Q&A Explorer** の詳細を確認できます。
 
-使用するボタン上で *Ctrl キーを押しながらクリック*して、レポートを作成するボタンを試したり、テストしたりすることができます。 
+使用するボタン上で *Ctrl キーを押しながらクリック* して、レポートを作成するボタンを試したり、テストしたりすることができます。 
 
 ## <a name="create-page-navigation"></a>ページ ナビゲーションを作成する
 

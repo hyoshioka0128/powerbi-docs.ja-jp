@@ -2,19 +2,19 @@
 title: Power BI Desktop でファイル (バイナリ) を結合する
 description: Power BI Desktop でファイル (バイナリ) データ ソースを簡単に結合できます
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/13/2020
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: cb287d63444b60318a717a1a1587f7755cd7f666
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bf75a5656de956be5ddd38330d659cba06e30455
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237872"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415843"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Power BI Desktop でファイル (バイナリ) を結合する
 
@@ -32,7 +32,7 @@ Power Query エディターでバイナリ ファイルを結合するには、 
 
 ![[ファイルの結合] コマンド、Power Query エディター、Power BI Desktop](media/desktop-combine-binaries/combine-binaries_2a.png)
 
-*ファイルの結合*変換は次のように動作します。
+*ファイルの結合* 変換は次のように動作します。
 
 * ファイルの結合変換では、各入力ファイルが分析され、使用する適切なファイル形式が決定されます ("*テキスト ファイル*"、"*Excel ブック*"、"*JSON ファイル*" など)。
 * 変換では、最初のファイルから特定のオブジェクト (Excel ブックなど) を選択して抽出できます。
@@ -41,7 +41,7 @@ Power Query エディターでバイナリ ファイルを結合するには、 
 * ファイルの結合変換では、次の操作が自動的に実行されます。
   
   * 単一のファイルで必要なすべての抽出手順を実行するクエリの例を作成します。
-  * ファイル/バイナリ入力を*見本クエリ*にパラメーター化する*関数クエリ*を作成します。 見本クエリと関数クエリはリンクされており、見本クエリを変更すると関数クエリに反映されます。
+  * ファイル/バイナリ入力を *見本クエリ* にパラメーター化する *関数クエリ* を作成します。 見本クエリと関数クエリはリンクされており、見本クエリを変更すると関数クエリに反映されます。
   * "*関数クエリ*" を、入力バイナリの元のクエリ ("*フォルダー*" クエリなど) に適用します。 各行のバイナリ入力に関数クエリが適用された後、結果として得られるデータ抽出が最上位レベルの列として展開されます。
 
     ![ファイルの結合変換の結果、Power Query エディター、Power BI Desktop](media/desktop-combine-binaries/combine-binaries_4.png)

@@ -1,25 +1,25 @@
 ---
 title: Power BI レポート ビルダーでのテーブル、マトリックス、リスト
 description: Power BI Report Builder のテーブル、マトリックス、リストは、行と列に編成されたセルにページ分割されたレポート データが表示されるデータ領域です。
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: 3d22696168d8ae550238fab243110db357b39c22
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 4b678bf3a11ab243aea8c2cc00fbf58c4ca8ffae
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297693"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415613"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Power BI レポート ビルダーでのテーブル、マトリックス、リスト
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
-レポート ビルダーのテーブル、マトリックス、リストは、行と列に編成されたセルにページ分割されたレポート データが表示される " *データ領域* " です。 セルには通常、テキスト、日付、数字などのテキスト データが含まれていますが、ゲージ、グラフ、または画像などのレポート アイテムも含めることができます。 テーブル、マトリックス、リストは、総称して *Tablix* データ領域と呼ばれることがよくあります。  
+レポート ビルダーのテーブル、マトリックス、リストは、行と列に編成されたセルにページ分割されたレポート データが表示される "*データ領域*" です。 セルには通常、テキスト、日付、数字などのテキスト データが含まれていますが、ゲージ、グラフ、または画像などのレポート アイテムも含めることができます。 テーブル、マトリックス、リストは、総称して *Tablix* データ領域と呼ばれることがよくあります。  
   
  テーブル、マトリックス、および一覧のテンプレートは、セルにデータを表示できる柔軟なグリッドである Tablix データ領域に基づいて構築されます。 テーブルおよびマトリックスのテンプレートでは、セルは行と列で構成されます。 テンプレートは基になる汎用の Tablix データ領域の一種であるため、レポートの作成時に、テンプレート形式を組み合わせてデータを表示し、テーブル、マトリックス、または一覧を変更して別のデータ領域の機能を含めることができます。 たとえば、追加したテーブルがニーズに合わない場合は、列グループを追加してテーブルをマトリックスに変更できます。  
   

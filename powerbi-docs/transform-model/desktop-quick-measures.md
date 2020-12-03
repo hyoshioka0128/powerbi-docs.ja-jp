@@ -2,23 +2,23 @@
 title: クイック メジャーを使用して一般的で強力な計算を実行する
 description: クイック メジャーは、一般的な計算をすばやく実行する既製の DAX 式を提供します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 11/22/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ba43290e0e076963a61a7211ad99e99636ebb2e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 77f15cb0fcb92a895c92bd93d8fa18896dafc7f8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853386"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413888"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>クイック メジャーを使用して一般的な計算を実行する
-*クイック メジャー*を使用し、一般的で強力な計算を簡単に実行できます。 クイック メジャーでは、一連の Data Analysis Expressions (DAX) コマンドがバックグラウンドで実行され、レポートで使用できるように結果が提供されます。 DAX を記述する必要はありません。ダイアログ ボックスで指定した入力に基づいて自動的に作成されます。 計算のカテゴリ、およびニーズに合わせた各計算の変更方法が、数多くあります。 一番の利点はおそらく、クイック メジャーで実行された DAX を参照することで DAX がすぐに始められること、DAX に関する自分の知識を広められることです。
+*クイック メジャー* を使用し、一般的で強力な計算を簡単に実行できます。 クイック メジャーでは、一連の Data Analysis Expressions (DAX) コマンドがバックグラウンドで実行され、レポートで使用できるように結果が提供されます。 DAX を記述する必要はありません。ダイアログ ボックスで指定した入力に基づいて自動的に作成されます。 計算のカテゴリ、およびニーズに合わせた各計算の変更方法が、数多くあります。 一番の利点はおそらく、クイック メジャーで実行された DAX を参照することで DAX がすぐに始められること、DAX に関する自分の知識を広められることです。
 
 ## <a name="create-a-quick-measure"></a>クイック メジャーを作成する
 
@@ -96,7 +96,7 @@ Power BI Desktop でクイック メジャーを作成するには、 **[フィ�
 
 ![ビジュアルの新しいクイック メジャー、数式バー、フィールド リスト](media/desktop-quick-measures/quick-measures_07.png)
 
-1. マトリックス ビジュアルに、**カテゴリ別に平均単価**を計算する新しい列が与えられます。
+1. マトリックス ビジュアルに、**カテゴリ別に平均単価** を計算する新しい列が与えられます。
    
 2. 新しいクイック メジャーの DAX 数式が数式バーに表示されます。 DAX 数式の詳細については、[次のセクション](#learn-dax-by-using-quick-measures)を参照してください。
    
@@ -107,7 +107,7 @@ Power BI Desktop でクイック メジャーを作成するには、 **[フィ�
 ![クイック メジャー フィールドに基づく新しい棒グラフ ビジュアル](media/desktop-quick-measures/quick-measures_09.png)
 
 ## <a name="learn-dax-by-using-quick-measures"></a>クイック メジャーを使用して DAX を学習する
-クイック メジャーの優れた利点は、メジャーを実装する DAX 数式が表示されることです。 **[フィールド]** ウィンドウでクイック メジャーを選択すると、**数式バー**が表示され、メジャーを実装するために Power BI により作成された DAX 式が示されます。
+クイック メジャーの優れた利点は、メジャーを実装する DAX 数式が表示されることです。 **[フィールド]** ウィンドウでクイック メジャーを選択すると、**数式バー** が表示され、メジャーを実装するために Power BI により作成された DAX 式が示されます。
 
 ![数式バーのクイック メジャー数式](media/desktop-quick-measures/quick-measures_10.png)
 

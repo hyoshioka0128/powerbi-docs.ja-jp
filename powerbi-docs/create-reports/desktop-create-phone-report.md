@@ -2,20 +2,20 @@
 title: Power BI モバイル アプリ用にレポートを最適化する
 description: 縦バージョンのレポートをスマートフォンとタブレット専用に作成して、Power BI モバイル アプリ用にレポート ページを最適化する方法について説明します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/15/2020
-ms.author: painbar
 LocalizationGroup: Create reports
-ms.openlocfilehash: 23873d53aa0d472247f2e8d850dc3b1e9b3bf065
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 0780b11cb1e95578be144f65f8adb1bf641d1c1c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853795"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414325"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>モバイル アプリ用に Power BI レポートを最適化する
 モバイル ユーザーは、任意の Power BI レポート ページを横向きに表示できます。 ただし、レポート作成者は、モバイル デバイス用に最適化され、縦向きで表示される追加のビューを作成できます。 このデザイン オプション (Power BI Desktop と Power BI サービスの両方で使用できます) を使用すると、作成者は、出先のモバイル ユーザーにとって意味のある視覚化だけを選択して再配置することができます。

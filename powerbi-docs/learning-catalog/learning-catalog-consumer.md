@@ -2,16 +2,16 @@
 title: コンシューマー ラーニング カタログ
 description: 最も基本的なものから最も高度なものまで、レポートとダッシュボードを使用する利用者向けの Power BI のトレーニング オプションをすべて紹介します。
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
-ms.openlocfilehash: 4a4190dd8a1f17c1a49eca09e6c673a102ae0924
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 8a40d11c9bf2a8ee09e879912d2bd2de0da327ee
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749416"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414808"
 ---
 # <a name="consumers-learning-catalog"></a>コンシューマー ラーニング カタログ
 
