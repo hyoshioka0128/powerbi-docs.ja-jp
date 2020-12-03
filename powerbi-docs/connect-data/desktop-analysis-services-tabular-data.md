@@ -2,19 +2,19 @@
 title: Power BI Desktop で Analysis Services の表形式データに接続する
 description: Power BI Desktop では、ライブ接続を使用するか、項目を選択して Power BI Desktop にインポートするという方法で SQL Server Analysis Services 表形式モデルに接続し、データを取得できます。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/28/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bb55342974bcd64e7d5871b7b84977105b7467fa
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 6c31079bc0ad517a1b2bb37f8da0c0ed5240595f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858694"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411519"
 ---
 # <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Power BI Desktop で Analysis Services の表形式データに接続する
 Power BI Desktop では、2 つの方法で SQL Server Analysis Services 表形式モデルに接続し、データを取得することができます。ライブ接続を使用するか、項目を選択して Power BI Desktop にインポートして探索してみてください。

@@ -2,19 +2,19 @@
 title: Power BI Desktop で LinkedIn Sales Navigator に接続する
 description: Power BI Desktop で LinkedIn に簡単に接続してデータを使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/11/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dd8e453a0cec6c404cad077a85f68044fa57ba1f
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 9baa0d6f05f62efcc453983d53f50335db2bc4b9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600248"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411450"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Power BI Desktop で LinkedIn Sales Navigator に接続する
 
@@ -25,7 +25,7 @@ ms.locfileid: "91600248"
 
 **Linkedin Sales Navigator** を使用して LinkedIn データに接続するには、LinkedIn Sales Navigator Enterprise プランが必要です。また、Sales Navigator Contract で管理者またはレポート ユーザーのいずれかである必要があります。
 
-次のビデオでは、**LinkedIn Sales Navigator** テンプレート アプリを使用するためのクイック ツアーとチュートリアルが紹介されています。その詳細を[この記事で後述](#using-the-linkedin-sales-navigator-template-app)します。 
+次のビデオでは、**LinkedIn Sales Navigator** テンプレート アプリを使用するためのクイック ツアーとチュートリアルが紹介されています。その詳細を [この記事で後述](#using-the-linkedin-sales-navigator-template-app)します。 
 
 > [!VIDEO https://www.youtube.com/embed/ZqhmaiORLw0]
 
@@ -64,7 +64,7 @@ PBIX ファイルに加えて、LinkedIn Sales Navigator には、ダウンロ�
 
 ## <a name="using-the-linkedin-sales-navigator-template-app"></a>LinkedIn Sales Navigator テンプレート アプリの使用
 
-**LinkedIn Sales Navigator** をできるだけ簡単に使用できるようにするには、LinkedIn Sales Navigator データから既製のレポートが自動的に作成される[テンプレート アプリ](service-template-apps-overview.md) を使用します。
+**LinkedIn Sales Navigator** をできるだけ簡単に使用できるようにするには、LinkedIn Sales Navigator データから既製のレポートが自動的に作成される [テンプレート アプリ](service-template-apps-overview.md) を使用します。
 
 ![LinkedIn Sales Navigator のテンプレート アプリ](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-10.png)
 

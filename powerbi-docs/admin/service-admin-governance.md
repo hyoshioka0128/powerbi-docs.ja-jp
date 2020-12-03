@@ -2,19 +2,19 @@
 title: 管理と展開のアプローチ
 description: Power BI エコシステム内での管理の概念、オプション、および推奨事項について説明するホワイト ペーパー。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/13/2019
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: f6dd4171d786d9272ef2ef6b876148eaf2f31cf3
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 537fb25d1b8514efdcaf17fe9f922eb11de46c3f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139697"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413658"
 ---
 # <a name="governance-and-deployment-approaches"></a>管理と展開のアプローチ
 

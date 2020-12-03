@@ -1,21 +1,21 @@
 ---
 title: Power BI の Excel で分析
 description: Microsoft Excel で Power BI データセットを分析する
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/22/2020
-ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 845fb523e9045e7a1062d11eebbb5e34bcc29ce3
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: 2f0d9dbec6c40b43a3b47f9cd698efed4a2899f0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020069"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412094"
 ---
 # <a name="analyze-in-excel"></a>[Excel で分析]
 **[Excel で分析]** を使用すると、Power BI データセットを Excel に取り込み、ピボットテーブル、グラフ、スライサー、およびその他の Excel 機能を使用してデータセットを表示および操作できます。 **[Excel で分析]** を使用するには、まず Power BI から機能をダウンロードしてインストールし、Excel で使用する 1 つ以上のデータセットを選択する必要があります。 
@@ -87,7 +87,7 @@ Power BI サービスで、Excel で分析するデータセットまたはレ�
 3. Excel ファイルを開きます。
 
     >[!NOTE]
-    >ファイルを初めて開くとき、[保護ビュー](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb)と[信頼済みドキュメント](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53)の設定に応じて、**編集を有効にする**こと、さらに**コンテンツを有効にする**ことが必要な場合があります。
+    >ファイルを初めて開くとき、[保護ビュー](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb)と [信頼済みドキュメント](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53)の設定に応じて、**編集を有効にする** こと、さらに **コンテンツを有効にする** ことが必要な場合があります。
     >
     >![保護ビューの編集を有効にするバナーのスクリーンショット](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
     >
@@ -104,7 +104,7 @@ Excel を使用してピボットテーブルを使用した Power BI を分析�
 
 ## <a name="use-excel-to-analyze-the-data"></a>Excel を使用してデータを分析する
 
-編集とコンテンツを有効にすると、Excel に Power BI データセットから空の**ピボットテーブル**と**フィールド**の一覧が表示され、分析する準備が整います。
+編集とコンテンツを有効にすると、Excel に Power BI データセットから空の **ピボットテーブル** と **フィールド** の一覧が表示され、分析する準備が整います。
 
 ![データが接続された Excel](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
@@ -143,7 +143,7 @@ Excel ファイルには、Power BI 内のユーザーのデータセットに�
 ユーザーはデータセットを更新する必要がある一方で、Excel Online では外部接続の更新がサポートされていないため、ユーザー自身のコンピューター上のデスクトップ版 Excel を使用してブックを開くことをお勧めします。
 
 > [!NOTE]
-> Power BI テナントの管理者は、*Power BI 管理ポータル*を使って、Analysis Services (AS) データベースに格納されているオンプレミスのデータセットでの **[Excel で分析]** の使用を無効にできます。 このようにすると、 **[Excel で分析]** は AS データベースに対しては無効になりますが、他のデータセットについては引き続き使用できます。
+> Power BI テナントの管理者は、*Power BI 管理ポータル* を使って、Analysis Services (AS) データベースに格納されているオンプレミスのデータセットでの **[Excel で分析]** の使用を無効にできます。 このようにすると、 **[Excel で分析]** は AS データベースに対しては無効になりますが、他のデータセットについては引き続き使用できます。
 
 
 ## <a name="other-ways-to-access-power-bi-datasets-from-excel"></a>Excel から Power BI データセットにアクセスするその他の方法
@@ -157,7 +157,7 @@ Excel ファイルには、Power BI 内のユーザーのデータセットに�
 
 このように Excel にデータを取り込む方法の詳細については、「[Power BI データセットからピボットテーブルを作成する](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884)」をご覧ください。
 
-また、Excel の**データ型**ギャラリーで、**おすすめのテーブル**にアクセスすることもできます。 おすすめのテーブルとそれらにアクセスする方法の詳細については、「[Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)](service-excel-featured-tables.md)」をご覧ください。
+また、Excel の **データ型** ギャラリーで、**おすすめのテーブル** にアクセスすることもできます。 おすすめのテーブルとそれらにアクセスする方法の詳細については、「[Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)](service-excel-featured-tables.md)」をご覧ください。
 
 ## <a name="requirements"></a>必要条件
 **[Excel で分析]** を使用するには、次のいくつかの要件があります。

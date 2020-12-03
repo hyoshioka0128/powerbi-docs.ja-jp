@@ -2,19 +2,19 @@
 title: Power BI での SAP HANA 用 DirectQuery
 description: SAP HANA で DirectQuery を使用する場合の考慮事項
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/10/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4d2c48f39fff9cd55243848b2ee62d05f9d5db00
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: f6cb4fa1ee35754d8ffe468ddb845089f26045a9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216382"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411174"
 ---
 # <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Power BI で DirectQuery を使用して SAP HANA データ ソースに接続する
 **SAP HANA** データ ソースへは、**DirectQuery** を使用して直接接続することが可能です。 SAP HANA には 2 つの方法で接続できます。
@@ -35,11 +35,11 @@ SAP HANA をリレーショナル ソースとして扱うオプションは、S
 
 ## <a name="treat-sap-hana-as-a-multi-dimensional-source-default"></a>SAP HANA を多次元ソースとして扱う (既定)
 
-SAP HANA に対するすべての新規接続では、この接続方法が既定で使われ、SAP HANA を多次元ソースとして扱います。 SAP HANA への接続をリレーショナル ソースとして扱うには、 **[ファイル] > [オプションと設定] > [オプション] > [直接クエリ]** の順に選択し、 **[SAP HANA をリレーショナル ソースとして扱う]** チェック ボックスをオンにします。 この機能が**プレビュー**段階の間は、多次元手法で作成されたレポートは Power BI サービスに公開*できません*。公開すると、Power BI サービス内でレポートを開いたとき、エラーが発生します。  
+SAP HANA に対するすべての新規接続では、この接続方法が既定で使われ、SAP HANA を多次元ソースとして扱います。 SAP HANA への接続をリレーショナル ソースとして扱うには、 **[ファイル] > [オプションと設定] > [オプション] > [直接クエリ]** の順に選択し、 **[SAP HANA をリレーショナル ソースとして扱う]** チェック ボックスをオンにします。 この機能が **プレビュー** 段階の間は、多次元手法で作成されたレポートは Power BI サービスに公開 *できません*。公開すると、Power BI サービス内でレポートを開いたとき、エラーが発生します。  
 
 多次元ソースとして SAP HANA に接続する場合は、次の考慮事項が適用されます。
 
-* **データ取得ナビゲーター**では、SAP HANA ビューを 1 つ選択できます。 計測値や属性を個々に選択することはできません。 接続時にクエリは定義されません。データをインポートするときや、SAP HANA をリレーショナル ソースとして扱っているときに DirectQuery を使用するときとは異なります。 つまり、この接続方法を選択しているとき、SAP HANA SQL クエリを直接利用することはできません。
+* **データ取得ナビゲーター** では、SAP HANA ビューを 1 つ選択できます。 計測値や属性を個々に選択することはできません。 接続時にクエリは定義されません。データをインポートするときや、SAP HANA をリレーショナル ソースとして扱っているときに DirectQuery を使用するときとは異なります。 つまり、この接続方法を選択しているとき、SAP HANA SQL クエリを直接利用することはできません。
 
 * 選択したビューのすべてのメジャー、階層、属性がフィールド一覧に表示されます。 
 
@@ -97,7 +97,7 @@ DirectQuery を使用して SAP HANA に接続する (多次元ソースとし�
 
 * ビジュアルでは、それ以降の (*Sum*、*Average*、*Min* などの) すべての集約がクエリの論理テーブルに対して再度実行されます。 ここでも、*AveragePrice* の *Average* を含むビジュアルでは、同様に 4.56 が返されます。
   
-それでは、接続をリレーショナル ソースとして扱うときの SAP HANA について考えてみましょう。 Power BI は SAP HANA の、メジャーを含むことができる*分析ビュー*と*計算ビュー*の両方で使用することができます。 しかしながら、SAP HANA のアプローチは、このセクションで先に紹介したものと同じ原則に従います。つまり、 **[データの取得]** または **[クエリ エディター]** に定義したクエリによって使用可能なデータが決定され、ビジュアル内のそれ以降のすべての集計はそのデータに対して行われます。これは、インポートと DirectQuery の両方に対しても同様です。  
+それでは、接続をリレーショナル ソースとして扱うときの SAP HANA について考えてみましょう。 Power BI は SAP HANA の、メジャーを含むことができる *分析ビュー* と *計算ビュー* の両方で使用することができます。 しかしながら、SAP HANA のアプローチは、このセクションで先に紹介したものと同じ原則に従います。つまり、 **[データの取得]** または **[クエリ エディター]** に定義したクエリによって使用可能なデータが決定され、ビジュアル内のそれ以降のすべての集計はそのデータに対して行われます。これは、インポートと DirectQuery の両方に対しても同様です。  
 ただし、SAP HANA の性質を考えた場合、最初の **[データの取得]** ダイアログまたは **[クエリ エディター]** で定義したクエリは常に集計クエリであり、一般に、実際に使用される集計が SAP HANA ビューによって定義されているメジャーを含みます。
 
 上の SQL Server の例と同等なものとして、*ID*、*ProductID*、*DepotID* を含む SAP HANA ビュー、およびビューで *Average of Price* として定義されている *AveragePrice* を含むメジャーがあります。  

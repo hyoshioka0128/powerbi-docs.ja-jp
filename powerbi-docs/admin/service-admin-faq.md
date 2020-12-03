@@ -2,19 +2,19 @@
 title: Power BI の管理 - よく寄せられる質問 (FAQ)
 description: Power BI のサインアップ、テナント管理、その他の管理タスクに関するよく寄せられる質問 (FAQ) とその回答について説明します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 3aa42394bb12078fb2abcf6574d04b8109a9c40c
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 5a30ff855616eef04db4827b4a25cb0facb9db1b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981598"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413704"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI の管理 - よく寄せられる質問 (FAQ)
 
@@ -169,7 +169,7 @@ Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-do-we-manage-power-bi"></a>Power BI を管理するにはどうすればよいですか。
 
-Power BI には、Microsoft 365 全体管理者ロールのユーザーと Power BI サービス管理者ロールのユーザーとを対象とした Power BI 管理ポータルが用意されています。 Power BI 管理ポータルを使用するには、自分のアカウントを Microsoft 365 または Azure Active Directory 内で**全体管理者**としてマークしておくか、自分のユーザー アカウントに別のユーザーが Power BI サービス管理者ロールを割り当てている必要があります。 詳しくは、[Power BI 管理者ロールについて](service-admin-role.md)および [Power BI 管理ポータル](service-admin-portal.md)についての記事をご覧ください。 ポータルには、テナント全体の設定を制御する機能や、Power BI の使用状況の統計を表示する機能、ユーザーとグループを管理するための Microsoft 365 管理センターへのリンクが用意されています。
+Power BI には、Microsoft 365 全体管理者ロールのユーザーと Power BI サービス管理者ロールのユーザーとを対象とした Power BI 管理ポータルが用意されています。 Power BI 管理ポータルを使用するには、自分のアカウントを Microsoft 365 または Azure Active Directory 内で **全体管理者** としてマークしておくか、自分のユーザー アカウントに別のユーザーが Power BI サービス管理者ロールを割り当てている必要があります。 詳しくは、[Power BI 管理者ロールについて](service-admin-role.md)および [Power BI 管理ポータル](service-admin-portal.md)についての記事をご覧ください。 ポータルには、テナント全体の設定を制御する機能や、Power BI の使用状況の統計を表示する機能、ユーザーとグループを管理するための Microsoft 365 管理センターへのリンクが用意されています。
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Microsoft が私の管理下にあるユーザー用に作成したテナントは、どのようなプロセスで管理されますか
 

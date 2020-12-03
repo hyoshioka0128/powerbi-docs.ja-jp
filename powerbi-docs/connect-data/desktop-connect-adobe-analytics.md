@@ -2,19 +2,19 @@
 title: Power BI Desktop で Adobe Analytics に接続する
 description: Power BI Desktop で Adobe Analytics に簡単に接続して使用します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/07/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bc6b40754e12531c57dfcab2923fdf999aee5481
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 89376902f1c37526ddf9376461871bcf27c2566d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224818"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411496"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Power BI Desktop で Adobe Analytics に接続する 
 **Power BI Desktop** では、**Adobe Analytics** に接続し、Power BI Desktop の他のデータ ソースと同じように基になっているデータを使用できます。 
@@ -34,7 +34,7 @@ ms.locfileid: "85224818"
 
 ![ナビゲーターを使用してデータを選択する](media/desktop-connect-adobe-analytics/connect-adobe-analytics_04.png)
 
-選択したテーブルを**読み込んで**、テーブル全体を **Power BI Desktop** に取り込むことができます。またはクエリを**編集**して**クエリ エディター**を開き、使用するデータのセットをフィルターし、絞り込んでから、その絞り込んだデータのセットを **Power BI Desktop** に取り込むこともできます。
+選択したテーブルを **読み込んで**、テーブル全体を **Power BI Desktop** に取り込むことができます。またはクエリを **編集** して **クエリ エディター** を開き、使用するデータのセットをフィルターし、絞り込んでから、その絞り込んだデータのセットを **Power BI Desktop** に取り込むこともできます。
 
 ![ナビゲーターでデータを読み込んで編集する](media/desktop-connect-adobe-analytics/connect-adobe-analytics_05.png)
 

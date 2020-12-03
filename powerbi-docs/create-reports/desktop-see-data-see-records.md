@@ -2,19 +2,19 @@
 title: Power BI Desktop の視覚化での視覚エフェクト テーブルとレコード
 description: Power BI Desktop の視覚エフェクト テーブルとデータ ポイント テーブルの機能を使用して、詳細を掘り下げます
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/21/2020
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f9fa3ee1c1e0f757eb3b464785c8cb3fe3ab6e78
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 05dcd5f0d7ca1681ee1e82762ea1557c79c5bc24
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264739"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412807"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Power BI Desktop の視覚エフェクト テーブルとデータ ポイント テーブルを使用する
 **Power BI Desktop** では、視覚エフェクトの詳細にドリルダウンして、基になるデータのテキスト表現または選択したビジュアルの個々のデータ レコードを見ることができます。 これらの機能は、"*クリックスルー*"、"*ドリルスルー*"、"*詳細情報へのドリルスルー*" などとも呼ばれます。
@@ -40,7 +40,7 @@ ms.locfileid: "86264739"
 
 ![リボンの視覚エフェクト テーブル](media/desktop-see-data-see-records/visual-table-01.png)
 
-データは、視覚化を右クリックし、表示されるメニューから **[データの表示]** を選択するか、視覚化の右上隅で**その他のオプション** (...) を選択し、 **[テーブルとして表示]** を選択することでも表示できます。
+データは、視覚化を右クリックし、表示されるメニューから **[データの表示]** を選択するか、視覚化の右上隅で **その他のオプション** (...) を選択し、 **[テーブルとして表示]** を選択することでも表示できます。
 
 ![右クリックの [データの表示]](media/desktop-see-data-see-records/visual-table-02.png)&nbsp;&nbsp;![その他のオプションの [データの表示]](media/desktop-see-data-see-records/visual-table-03.png)
 
@@ -82,7 +82,7 @@ ms.locfileid: "86264739"
 > [!NOTE]
 >**[データ ポイント テーブル]** には次の制限事項があります。
 > - **[データ ポイント テーブル]** ビューでデータを変更してレポートに保存することはできません。
-> - 視覚化で、(多次元) メジャー グループの計算されるメジャーが使用される場合、**データ ポイント テーブル**は使用できません。
+> - 視覚化で、(多次元) メジャー グループの計算されるメジャーが使用される場合、**データ ポイント テーブル** は使用できません。
 > - ライブ多次元 (MD) モデルに接続されている場合は、 **[データ ポイント テーブル]** を使用できません。
 
 ## <a name="next-steps"></a>次の手順

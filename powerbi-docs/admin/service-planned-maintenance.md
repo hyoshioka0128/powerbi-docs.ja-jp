@@ -2,21 +2,21 @@
 title: Power BI の計画メンテナンス
 description: Power BI の計画メンテナンスによって組織に及ぼされる影響と、次に実行する必要がある手順に関する管理者向けの情報を示します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2020
-ms.author: kfollis
 ms.custom: MC
 ROBOTS: NOINDEX
 LocalizationGroup: Admin
-ms.openlocfilehash: 68cd001995603fec3a64e4b2c79ee2216bfe9ac0
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: d62b06e23f7e97141f6d10451e9d75f8fb9e417e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132300"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412324"
 ---
 # <a name="power-bi-planned-maintenance"></a>Power BI の計画メンテナンス
 

@@ -6,16 +6,16 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 09/15/2020
-ms.openlocfilehash: 4b3e628c2a8cd3c90d44ae2a6c8f3f9967b22d9a
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: b85be8e4b231e714b4b9aba8cdf88b404c8bda74
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965639"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411772"
 ---
 # <a name="add-the-power-bi-app-to-microsoft-teams"></a>Power BI アプリを Microsoft Teams に追加する
 
@@ -42,7 +42,7 @@ Microsoft Teams で Power BI アプリを使用すると、Microsoft Teams 内�
 
 左側のナビゲーション バーで **[さらに追加されたアプリ (...)]** を選択し、 **[Power BI]** を選択します。 表示されない場合は、 **[アプリを検索]** ボックスに「**Power BI**」と入力します。
 
-:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-app.png" alt-text="Microsoft Teams での Power BI アプリのスクリーンショット。":::
+:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-app.png" alt-text="Microsoft Teams での Power BI アプリのインストールのスクリーンショット。":::
 
 これで完了です。 Power BI アプリが Microsoft Teams にインストールされました。
 
@@ -52,11 +52,11 @@ Microsoft Teams でのコンテンツの操作は、Power BI サービスの場�
 
 Microsoft Teams で、Microsoft Teams 内の Power BI アプリからレポートを同僚と共有することもできます。
 
-:::image type="content" source="media/service-microsoft-teams-app/power-bi-app-share-teams.png" alt-text="Microsoft Teams での Power BI アプリのスクリーンショット。":::
+:::image type="content" source="media/service-microsoft-teams-app/power-bi-app-share-teams.png" alt-text="Microsoft Teams 内の Microsoft Teams アプリからの共有のスクリーンショット。":::
 
 Microsoft Teams 内の Power BI アプリには、トレーニング用のハブ機能もあります。 **[Learn]\(学習\)** を選択して **[ラーニング センター]** を表示します。
 
-:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Microsoft Teams での Power BI アプリのスクリーンショット。":::
+:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Microsoft Teams 内の Power BI アプリのラーニング センターのスクリーンショット。":::
 
 ### <a name="differences-in-interactions"></a>操作の相違点
 
@@ -64,11 +64,11 @@ Teams アプリには、ブラウザーとは操作が異なる点がいくつ�
 
 - ダッシュボードまたはレポートを表示しているときは、Power BI ナビゲーション ペインは表示されません。 [ホーム] またはワークスペースに戻るには、 **[閉じる]** ボタンを選択します。
 
-    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-close-report.png" alt-text="Microsoft Teams での Power BI アプリのスクリーンショット。":::
+    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-close-report.png" alt-text="Microsoft Teams 内の Power BI アプリの [閉じる] ボタンのスクリーンショット。":::
 
 - Microsoft Teams でレポートを表示するのではなく、Power BI サービスでレポートを開くことを選択できます。 **[Open this on the web]\(これを Web で開く\)** を選択します。
 
-    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Microsoft Teams での Power BI アプリのスクリーンショット。":::
+    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Microsoft Teams 内の Power BI アプリの [Open this on the web]\(これを Web で開く\) ボタンのスクリーンショット。":::
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 

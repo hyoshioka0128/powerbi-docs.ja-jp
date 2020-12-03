@@ -2,20 +2,20 @@
 title: Microsoft 365 パートナーを通じて Power BI を購入する
 description: パートナーを通じて購入した Microsoft 365 サブスクリプションに Power BI を追加する方法について説明します。 シンジケート モデルは Microsoft 365 で使用される購入モデルです。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/27/2020
-ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 14ca898e634f7c555ae649b0de8290e9c76507a7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a7a2f06b019361f164f47469d5bd16218d4ebff2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227569"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413474"
 ---
 # <a name="add-power-bi-to-a-microsoft-365-partner-subscription"></a>Microsoft 365 パートナー サブスクリプションに Power BI を追加する
 

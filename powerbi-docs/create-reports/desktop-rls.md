@@ -1,20 +1,21 @@
 ---
 title: Power BI Desktop の行レベルのセキュリティを使用してデータ アクセスを制限する
 description: Power BI Desktop 内にインポートしたデータセットと DirectQuery の行レベルのセキュリティを構成する方法。
-author: davidiseminger
-ms.author: davidi
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: ''
 ms.date: 01/31/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9036967c826dee83847c3bc3d4a903bbe749b2ce
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0d5501ba8929318081a5db7e34e80722f2ffbf70
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238645"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412853"
 ---
 # <a name="restrict-data-access-with-row-level-security-rls-for-power-bi-desktop"></a>Power BI Desktop の行レベルのセキュリティを使用してデータ アクセスを制限する
 

@@ -2,29 +2,29 @@
 title: Power BI Desktop の動的 M クエリ パラメーター (プレビュー)
 description: Power BI Desktop で動的 M クエリ パラメーターを作成する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/22/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 104692fff7f94168a505dc6e1f2c513d647554ce
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 7f7dd319c69291f690dae5cd18b95285618df07b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349646"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411197"
 ---
 # <a name="dynamic-m-query-parameters-in-power-bi-desktop-preview"></a>Power BI Desktop の動的 M クエリ パラメーター (プレビュー)
 
-**動的 M クエリ パラメーター** を使用すると、モデル作成者は、 **レポートの閲覧者** がフィルターまたはスライサーを使用して [M クエリ パラメーター](/power-query/power-query-query-parameters)の値を設定できるようにすることができます。これはクエリ パフォーマンスの最適化に特に役立ちます。 動的 M クエリ パラメーターを使用すると、モデル作成者は、フィルター選択を DirectQuery ソース クエリに組み込む方法をさらに細かく制御できます。 
+**動的 M クエリ パラメーター** を使用すると、モデル作成者は、**レポートの閲覧者** がフィルターまたはスライサーを使用して [M クエリ パラメーター](/power-query/power-query-query-parameters)の値を設定できるようにすることができます。これはクエリ パフォーマンスの最適化に特に役立ちます。 動的 M クエリ パラメーターを使用すると、モデル作成者は、フィルター選択を DirectQuery ソース クエリに組み込む方法をさらに細かく制御できます。 
 
 モデル作成者がフィルターの意図されたセマンティクスを理解すると、多くの場合、そのデータ ソースに対して効率的なクエリを記述する方法がわかるため、フィルター選択をソース クエリの適切な点に組み込んで、改善されたパフォーマンスで意図した結果を達成できるようになります。
 
 ## <a name="enabling-dynamic-m-query-parameters"></a>動的 M クエリ パラメーターの有効化
 
-現在、 **動的 M クエリ パラメーター** はプレビューの段階にあり、使用するには有効にする必要があります。 **[ファイル] > [オプションと設定] > [オプション]** の順に選択した後、左側のペインから **[プレビュー機能]** を選択します。 そこから、 **[Dynamic M Query Parameters]\(動的 M クエリ パラメーター\)** チェックボックスがオンになっていることを確認します。 変更内容を有効にするには、Power BI Desktop の再起動が必要になる場合があります。
+現在、**動的 M クエリ パラメーター** はプレビューの段階にあり、使用するには有効にする必要があります。 **[ファイル] > [オプションと設定] > [オプション]** の順に選択した後、左側のペインから **[プレビュー機能]** を選択します。 そこから、 **[Dynamic M Query Parameters]\(動的 M クエリ パラメーター\)** チェックボックスがオンになっていることを確認します。 変更内容を有効にするには、Power BI Desktop の再起動が必要になる場合があります。
 
 ![プレビュー機能を有効にする](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-01.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "92349646"
 
     ![パラメーターを参照する](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png)
 
-6. これでパラメーターを作成し、M クエリで参照できました。次に、そのパラメーターで使用可能な値を提供する列を含むテーブルを作成する必要があります。 これにより、フィルターの選択に基づいてパラメーターが動的に設定されるようになります。 この例では、 *StartTime* パラメーターと *EndTime* パラメーターを動的にする必要があります。 これらのパラメーターには日付と時刻のパラメーターが必要なため、パラメーターの日付を設定するために使用できる日付入力を生成したいと思います。 まず、新しいテーブルを作成します。
+6. これでパラメーターを作成し、M クエリで参照できました。次に、そのパラメーターで使用可能な値を提供する列を含むテーブルを作成する必要があります。 これにより、フィルターの選択に基づいてパラメーターが動的に設定されるようになります。 この例では、*StartTime* パラメーターと *EndTime* パラメーターを動的にする必要があります。 これらのパラメーターには日付と時刻のパラメーターが必要なため、パラメーターの日付を設定するために使用できる日付入力を生成したいと思います。 まず、新しいテーブルを作成します。
 
     ![新しいテーブルを作成する](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-07.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "92349646"
 
 ## <a name="potential-security-risk"></a>潜在的なセキュリティ リスク
 
-レポート閲覧者が M クエリ パラメーターの値を動的に設定できるようにすると、M クエリ内でのパラメーターの参照方法やパラメーターに渡される値に応じて、 **インジェクション攻撃** を使用して追加データにアクセスしたり、ソース システムに対する変更をトリガーしたりできるようになる可能性があります。
+レポート閲覧者が M クエリ パラメーターの値を動的に設定できるようにすると、M クエリ内でのパラメーターの参照方法やパラメーターに渡される値に応じて、**インジェクション攻撃** を使用して追加データにアクセスしたり、ソース システムに対する変更をトリガーしたりできるようになる可能性があります。
 
 たとえば、次のように構築された、パラメーター化された Kusto クエリがあるとします。
 
@@ -115,7 +115,7 @@ Products
  | project ReleaseDate, Name, Category, Region```
 ```
 
-パラメーターに適切な値 (たとえば *Games* ) を渡してくれるフレンドリなユーザーの場合、問題は発生しないかもしれません。
+パラメーターに適切な値 (たとえば *Games*) を渡してくれるフレンドリなユーザーの場合、問題は発生しないかもしれません。
 
 ```
 | where Category == 'Games' & HasReleased == 'True'

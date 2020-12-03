@@ -5,20 +5,20 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 52593cbcbdc0a67709735a06eca493fefb18e1a0
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: a7f8c6d52acff8cbaaa00004448a3fae300afb9b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633701"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411910"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>セキュリティで保護されたポータルまたは Web サイトにレポートを埋め込む
 
-Power BI レポートの新しい**埋め込み**オプションを使うと、ユーザーは簡単かつ安全に内部 Web ポータルにレポートを埋め込むことができます。 ポータルは**クラウドベース**か、SharePoint 2019 など、**ホステッド オンプレミス**になります。 埋め込まれたレポートでは、[行レベルのセキュリティ (RLS)](../admin/service-admin-rls.md) を使ってすべての項目のアクセス許可とデータのセキュリティが守られます。 URL または iFrame の埋め込みを受け取るあらゆるポータルにノーコードで埋め込むことができます。 
+Power BI レポートの新しい **埋め込み** オプションを使うと、ユーザーは簡単かつ安全に内部 Web ポータルにレポートを埋め込むことができます。 ポータルは **クラウドベース** か、SharePoint 2019 など、**ホステッド オンプレミス** になります。 埋め込まれたレポートでは、[行レベルのセキュリティ (RLS)](../admin/service-admin-rls.md) を使ってすべての項目のアクセス許可とデータのセキュリティが守られます。 URL または iFrame の埋め込みを受け取るあらゆるポータルにノーコードで埋め込むことができます。 
 
 **[埋め込み]** オプションでは [URL フィルター](service-url-filters.md)と URL 設定がサポートされています。 HTML と JavaScript の基本的な知識のみを必要とする、コードの少ない手法でポータルと統合できます。
 
@@ -42,7 +42,7 @@ Power BI レポートの新しい**埋め込み**オプションを使うと、�
 
     ![レポートを埋め込む](media/service-embed-secure/secure-embed-report.png)
 
-5. iFrame を使用するとき、場合によっては、ポータルの Web ページに収まるように**高さ**と**幅**を編集する必要があります。
+5. iFrame を使用するとき、場合によっては、ポータルの Web ページに収まるように **高さ** と **幅** を編集する必要があります。
 
     ![高さと幅を設定する](media/service-embed-secure/secure-embed-size.png)
 

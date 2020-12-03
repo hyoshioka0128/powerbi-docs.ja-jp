@@ -2,18 +2,18 @@
 title: Power BI Pro と Power BI Premium のサポート オプション
 description: この記事では、Power BI Pro と Power BI Premium のお客様が利用できるサポート オプションについて説明します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
-ms.author: kfollis
-ms.openlocfilehash: 3ec6e3f060b495efd6b961a7a16d8e1cf68f44c9
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 3071d9034883c61837370348b2047c1874d0c977
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120618"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412048"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>Power BI Pro と Power BI Premium のサポート オプション
 
@@ -28,7 +28,7 @@ ms.locfileid: "84120618"
 | **Microsoft Premier サポート**: アカウント管理、オンサイト サポート向けのオプション、トレーニングとデータ モデル パフォーマンスの最適化などのプロアクティブ サービスを含む、エンタープライズ級のサポート手法。 | X | X | X | オファリングとケースの重要度に応じて、各種。\* | テクニカル アカウント マネージャー <br>OR<br> [Microsoft 365 管理センター](https://portal.office.com/adminportal) |
 | | | | | | |
 
-\*1 時間の SLA は_重大度 A のケース_のみに利用できます。これは、既存の生産レポートで作業の中断によりビジネスへの直接的な影響があり、即時の正当性の理由が必要なケースです。
+\*1 時間の SLA は _重大度 A のケース_ のみに利用できます。これは、既存の生産レポートで作業の中断によりビジネスへの直接的な影響があり、即時の正当性の理由が必要なケースです。
 
 ## <a name="power-bi-benefits-for-microsoft-premier-support"></a>Microsoft Premier サポートでの Power BI の特典
 

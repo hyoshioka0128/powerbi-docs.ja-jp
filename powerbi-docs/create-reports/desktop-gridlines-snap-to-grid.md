@@ -2,20 +2,20 @@
 title: Power BI Desktop レポートでグリッド線と "グリッドにスナップ" を使用する
 description: Power BI Desktop レポートで、グリッド線、グリッドへのスナップ、重ね順、配置、および分布を使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8323cc04726fa1e29b3c6858bda3f848af34ebc5
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 745b89efc76c179c0393e4dccd29d5bee6910676
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263334"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412945"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Power BI Desktop レポートでグリッド線と "グリッドにスナップ" を使用する
 **Power BI Desktop** のレポート キャンバスには、グリッド線と "グリッドにスナップ" 機能が提供されました。グリッド線を使用すると、レポート上でビジュアルを一直線に並べることができます。また、"グリッドにスナップ" 機能を使用すると、レポート内のビジュアルがきれいに揃えられ、間隔が均等に見えるようになります。
@@ -40,14 +40,14 @@ Ctrl キーを押しながらクリックを使用すると、複数のビジュ
 ![レポート キャンバスのスクリーンショット。グリッド線を使用してビジュアルを配置する方法を示しています。](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
 ### <a name="using-gridlines-inside-visuals"></a>ビジュアル内でグリッド線を使用する
-Power BI では、ビジュアル内にもグリッド線があります。データ ポイントや値を比較するための目に見えるガイドになります。 2017 年 9 月リリースの **Power BI Desktop** 以降、**X 軸**カードと **Y 軸**カード (ビジュアル タイプに基づく) でビジュアル内のグリッド線を操作できるようになりました。カードは **[視覚化]** ウィンドウの **[書式]** セクションにあります。 ビジュアル内では、グリッド線の次の要素を操作できます。
+Power BI では、ビジュアル内にもグリッド線があります。データ ポイントや値を比較するための目に見えるガイドになります。 2017 年 9 月リリースの **Power BI Desktop** 以降、**X 軸** カードと **Y 軸** カード (ビジュアル タイプに基づく) でビジュアル内のグリッド線を操作できるようになりました。カードは **[視覚化]** ウィンドウの **[書式]** セクションにあります。 ビジュアル内では、グリッド線の次の要素を操作できます。
 
 * グリッド線のオン/オフを切り替える
 * グリッド線の色を変更する
 * グリッド線のストローク (幅) を調整する
 * 実線、破線、点線など、ビジュアルのグリッド線のスタイルを選択する
 
-グリッド線の特定の要素を変更することは、ビジュアルに暗い背景が使用されているレポートで特に役立ちます。 次の画像では、**Y 軸**カードの **[グリッド線]** セクションを確認できます。
+グリッド線の特定の要素を変更することは、ビジュアルに暗い背景が使用されているレポートで特に役立ちます。 次の画像では、**Y 軸** カードの **[グリッド線]** セクションを確認できます。
 
 ![ビジュアルのスクリーンショット。Y 軸カードの [グリッド線] セクションを示しています。](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
 
@@ -56,7 +56,7 @@ Power BI では、ビジュアル内にもグリッド線があります。デ�
 
 ![レポート キャンバスのスクリーンショット。グリッド線と "グリッドにスナップ" でレポートのビジュアルを一直線に並べる方法を示しています。](media/desktop-gridlines-snap-to-grid/snap-to-grid_3.png)
 
-これで完了です。**グリッド線**と**グリッドにスナップ**を使用して、レポート内のビジュアルを一直線に並べることができました。
+これで完了です。**グリッド線** と **グリッドにスナップ** を使用して、レポート内のビジュアルを一直線に並べることができました。
 
 ## <a name="using-z-order-align-and-distribute"></a>重ね順、配置、整列の使用
 レポートでのビジュアルの前面から背面への順序 (要素の "*重ね順*") を管理できます。 この機能により、任意の方法でビジュアルを重ね合わせ、各ビジュアルの前後関係を調整することができます。 **[書式]** リボンの **[整列]** セクションの **[前面へ移動]** ボタンと **[背面へ移動]** ボタンを使用して、ビジュアルの順序を設定します。 **[書式]** リボンは、ページで 1 つ以上のビジュアルを選択するとすぐに表示されます。

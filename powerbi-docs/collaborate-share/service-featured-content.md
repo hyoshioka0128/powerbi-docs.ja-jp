@@ -2,19 +2,19 @@
 title: 同僚の Power BI ホーム ページでコンテンツをおすすめに登録する
 description: 組織内の同僚の Power BI ホーム ページで Power BI ダッシュボードとレポートをおすすめに登録する方法。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: nikhilga
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eef0ba24347bd46cc86325cac494937e3f95086a
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: c45eb2afdf028f9e3a4b213333a0028924858a09
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462456"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411818"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>同僚の Power BI ホーム ページでコンテンツをおすすめに登録する
 
@@ -40,13 +40,13 @@ ms.locfileid: "92462456"
 
 1. ワークスペースの **[ダッシュボード]** または **[レポート]** 一覧で、 **[設定]** アイコンを選択します。
 
-    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="ホーム上の Power BI おすすめコンテンツ":::
+    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="レポートの設定アイコン":::
 
-2. **[設定]** ペインで、名前を確認または変更します。 必要に応じて、 **説明** を追加し、 **スナップショット** をアップロードします。 これらは、ユーザーがコンテンツを見つける際に役立つため、便利です。
+2. **[設定]** ペインで、名前を確認または変更します。 必要に応じて、**説明** を追加し、**スナップショット** をアップロードします。 これらは、ユーザーがコンテンツを見つける際に役立つため、便利です。
 
 3. **[おすすめ]** を選択します。
 
-    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="ホーム上の Power BI おすすめコンテンツ":::
+    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="おすすめコンテンツの設定":::
 
 4. **[保存]** を選択します。
 

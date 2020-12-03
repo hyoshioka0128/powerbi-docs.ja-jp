@@ -2,20 +2,20 @@
 title: Power BI Desktop にデータを直接入力する
 description: Power BI Desktop にデータを簡単に追加できます
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c489155b278e8dd102a32e9973edc843cb3c45d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 292404719c476e1397930e2a9b94101ba957119f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223650"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411151"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Power BI Desktop にデータを直接入力する
 
@@ -29,7 +29,7 @@ Power BI Desktop では、データを直接入力して、レポートや表示
 
 ![最初の行が列タイトルとして使用されているデータ](media/desktop-enter-data-directly-into-desktop/enter-data-directly_2.png)
 
-入力または貼り付けたデータを整形する場合は、 **[編集]** を選択して**クエリ エディター**を開きます。 Power BI Desktop で使用する前に、データを整形および変換できます。 表示されているとおりにデータをインポートするには、 **[読み込み]** を選択します。
+入力または貼り付けたデータを整形する場合は、 **[編集]** を選択して **クエリ エディター** を開きます。 Power BI Desktop で使用する前に、データを整形および変換できます。 表示されているとおりにデータをインポートするには、 **[読み込み]** を選択します。
 
 **[読み込み]** を選択すると、データから新しいテーブルが作成されて、 **[フィールド]** ウィンドウで使用できるようになります。 次の図の Power BI Desktop では、*Table1* という名前の新しいテーブルと、その中に作成された 2 つのフィールドが示されています。
 

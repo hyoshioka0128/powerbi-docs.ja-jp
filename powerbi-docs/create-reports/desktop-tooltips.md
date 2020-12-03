@@ -2,22 +2,22 @@
 title: Power BI のレポートでのヒント ページの使用
 description: Power BI Desktop のヒント ページでは、レポートのビジュアルをマウス ポインターでポイントすると表示されるさまざまなヒントを作成できます。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/26/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8e794ecc67f7873efb1ee5750f55aefb3d93b40b
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 60eb647c6910a50512669c6b18f8a9010ab89867
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600317"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412669"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Power BI Desktop のレポート ページを基にしてヒントを作成する
-**Power BI Desktop** で作成したレポート ページを基にして、ビジュアルをマウス ポインターでポイントすると表示されるさまざまな視覚的**レポート ヒント**を作成できます。 ヒントとして機能するレポート ページを作成することにより、レポート ページで作成したビジュアル、イメージ、その他の項目のコレクションを、カスタム ヒントに含めることができます。 
+**Power BI Desktop** で作成したレポート ページを基にして、ビジュアルをマウス ポインターでポイントすると表示されるさまざまな視覚的 **レポート ヒント** を作成できます。 ヒントとして機能するレポート ページを作成することにより、レポート ページで作成したビジュアル、イメージ、その他の項目のコレクションを、カスタム ヒントに含めることができます。 
 
 ![Power BI Desktop のレポート ヒント](media/desktop-tooltips/desktop-tooltips_00a.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "91600317"
 
 ![個々のビジュアルのヒント カード](media/desktop-tooltips/desktop-tooltips_09.png)
 
-次に、 **[ページ]** ドロップダウンで、選択したビジュアルに使うヒント ページを選びます。 ダイアログには**ヒント** ページとして指定したレポート ページだけが表示されることに注意してください。
+次に、 **[ページ]** ドロップダウンで、選択したビジュアルに使うヒント ページを選びます。 ダイアログには **ヒント** ページとして指定したレポート ページだけが表示されることに注意してください。
 
 ![手動ヒントのヒント ページを選択する](media/desktop-tooltips/desktop-tooltips_10.png)
 
@@ -109,7 +109,7 @@ ms.locfileid: "91600317"
 
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
-**ヒント**に関して注意すべきいくつかの制限事項と考慮事項があります。
+**ヒント** に関して注意すべきいくつかの制限事項と考慮事項があります。
 
 * **Power BI Desktop** の 2018 年 12 月リリースより、ボタン ビジュアルでもツールヒントがサポートされます。
 * Power BI ビジュアルでは、レポート ヒントはサポートされません。 

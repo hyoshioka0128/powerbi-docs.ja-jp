@@ -1,20 +1,20 @@
 ---
 title: Power BI Desktop の "Excel で分析" に関するトラブルシューティング
 description: ”Excel で分析” に関する一般的な問題の解決方法
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
 ms.date: 05/27/2020
-ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 3c36a2725748e2c701c65f1737c39f4d56128962
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ae152a99557f86ef82718efdbe3ee767893d15b8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034384"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412071"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>”Excel で分析” に関するトラブルシューティング
 
@@ -39,11 +39,11 @@ ms.locfileid: "86034384"
 * ピボットテーブルの値領域 (メジャーなし) にドラッグできない
 
 ## <a name="update-excel-libraries-for-the-ole-db-provider"></a>OLE DB プロバイダーの Excel ライブラリを更新する
-**Excel で分析**を使用するには、コンピューターに最新の AS OLE DB プロバイダーがインストールされている必要があります。 この[コミュニティ投稿](https://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081)は、OLE DB プロバイダーのインストールを確認したり、最新バージョンをダウンロードしたりするうえで有益な情報源です。
+**Excel で分析** を使用するには、コンピューターに最新の AS OLE DB プロバイダーがインストールされている必要があります。 この[コミュニティ投稿](https://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081)は、OLE DB プロバイダーのインストールを確認したり、最新バージョンをダウンロードしたりするうえで有益な情報源です。
 
 Excel ライブラリは、ビット レベルが Windows のバージョンと一致している必要があります。 64 ビットの Windows がインストールされている場合は、64 ビットの OLE DB プロバイダーをインストールする必要があります。
 
-最新版の Excel ライブラリをダウンロードするには、Power BI にアクセスし、Power BI サービスの右上隅で**下向きの矢印**を選択し、 **[Excel 更新プログラムで分析]** を選択します。
+最新版の Excel ライブラリをダウンロードするには、Power BI にアクセスし、Power BI サービスの右上隅で **下向きの矢印** を選択し、 **[Excel 更新プログラムで分析]** を選択します。
 
 ![右上隅にある、[Excel 更新プログラムで分析] を選択するための下向き矢印メニュー オプションのスクリーンショット。](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
@@ -84,11 +84,11 @@ Excel OLE DB プロバイダーのクライアント ライブラリが最新の
 オンプレミスの Analysis Services データに接続するデータセットにアクセスしようとする場合、エラー メッセージが表示されることがあります。 **[Excel で分析]** では、使用しているコンピューターが **Analysis Services** サーバーと同じドメインにあり、アカウントがその **Analysis Services** サーバーへのアクセス権を持つ限り、接続文字列によるオンプレミス **Analysis Services** 上のデータセットおよびレポートへの接続をサポートしています。
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>ピボットテーブルの値領域 (メジャーなし) にドラッグできない
-**[Excel で分析]** から外部 OLAP モデルに接続する場合 (Excel から Power BI に接続する方法)、"*ピボットテーブル*" には外部モデルで定義される**メジャー**が必要です。これは、すべての計算がサーバーで実行されるためです。 ローカル データ ソースを操作する場合 (Excel のテーブルを操作する場合や、**Power BI Desktop** または**Power BI サービス** でデータセットを操作する場合) は、これとは異なります。つまり、テーブル モデルをローカルに利用でき、[暗黙的なメジャーを使用できます](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)。暗黙的なメジャーとは、動的に生成され、データ モデルに格納されないメジャーです。 このような場合、Excel での動作は **Power BI Desktop** や **Power BI サービス**とは異なります。つまり、データの中に、Power BI でメジャーとして扱うことができても、Excel で値 (メジャー) として使用できない列が存在する可能性があります。
+**[Excel で分析]** から外部 OLAP モデルに接続する場合 (Excel から Power BI に接続する方法)、"*ピボットテーブル*" には外部モデルで定義される **メジャー** が必要です。これは、すべての計算がサーバーで実行されるためです。 ローカル データ ソースを操作する場合 (Excel のテーブルを操作する場合や、**Power BI Desktop** または **Power BI サービス** でデータセットを操作する場合) は、これとは異なります。つまり、テーブル モデルをローカルに利用でき、[暗黙的なメジャーを使用できます](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)。暗黙的なメジャーとは、動的に生成され、データ モデルに格納されないメジャーです。 このような場合、Excel での動作は **Power BI Desktop** や **Power BI サービス** とは異なります。つまり、データの中に、Power BI でメジャーとして扱うことができても、Excel で値 (メジャー) として使用できない列が存在する可能性があります。
 
 この問題に対処するには、いくつかの選択肢があります。
 
-1. [**Power BI Desktop** でデータ モデルにメジャーを作成](../transform-model/desktop-tutorial-create-measures.md)し、データ モデルを **Power BI サービス**に公開して、その公開したデータセットに Excel からアクセスします。
+1. [**Power BI Desktop** でデータ モデルにメジャーを作成](../transform-model/desktop-tutorial-create-measures.md)し、データ モデルを **Power BI サービス** に公開して、その公開したデータセットに Excel からアクセスします。
 2. [Excel PowerPivot でデータ モデルにメジャーを作成](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)します。
 3. テーブルのみ (データ モデルなし) の Excel ブックからデータをインポートした場合は、[データ モデルにテーブルを追加](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)した後、直前のオプション 2 の手順に従って、データ モデルにメジャーを作成します。
 

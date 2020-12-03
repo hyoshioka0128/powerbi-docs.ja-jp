@@ -2,19 +2,19 @@
 title: Power BI Desktop で Python スクリプトを実行する
 description: Power BI Desktop での Python スクリプトの実行
 author: otarb
+ms.author: otarb
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 06/02/2020
-ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f97bde6b6754283ca13ff9dd3db3682183f74e26
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eae2a6710d38547aeb13e9a77db8123def74e836
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223210"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410990"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Power BI Desktop で Python スクリプトを実行する
 
@@ -83,7 +83,7 @@ Power BI Desktop で Python スクリプトを準備し、実行するとき、�
 * pandas データ フレームだけがインポートされるため、Power BI にインポートするデータがデータ フレームで表されていることを確認してください
 * Python スクリプトは、30 分以上実行するとタイムアウトになります
 * ユーザー入力の待機中など、Python スクリプトの対話的呼び出しでスクリプトの実行が停止します
-* Python スクリプト内で作業ディレクトリを設定する場合は、作業ディレクトリへの相対パスではなく、完全パスを定義する*必要があります*
+* Python スクリプト内で作業ディレクトリを設定する場合は、作業ディレクトリへの相対パスではなく、完全パスを定義する *必要があります*
 * 現在、入れ子になったテーブルはサポートされていません
 
 ### <a name="run-your-python-script-and-import-data"></a>Python スクリプトを実行し、データをインポートする

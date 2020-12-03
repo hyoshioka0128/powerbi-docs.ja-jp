@@ -2,20 +2,20 @@
 title: Power BI Desktop で CSV に接続する
 description: Power BI Desktop で CSV ファイルのデータに簡単に接続して使用します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/29/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6d7d22ba9aad24ed9f1ac60314d18d16f22d7994
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 3bb37d4ba3b3ca7d5fec3f8577b971432f5a9d0f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86033809"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411381"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Power BI Desktop で CSV に接続する
 Power BI Desktop からコンマ区切り値 (*CSV*) ファイルへの接続は、Excel ブックへの接続とよく似ています。 どちらも簡単です。この記事では、アクセス権がある CSV ファイルに接続する手順を説明します。

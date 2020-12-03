@@ -2,17 +2,17 @@
 title: デバイス ネイティブ ID で Power BI のデータを保護する
 description: 自分の Power BI データにアクセスする前に追加 ID が必要になるように、ご利用の iOS および Android アプリを構成する方法について学習します
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/07/2020
-ms.author: painbar
-ms.openlocfilehash: a32ac9b1631a23502d9752ed9f96355fa36b90da
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 9ca31aa16d74ab89b9af374244d2696f77dedac6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668599"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413060"
 ---
 # <a name="protect-power-bi-app-with-face-id-touch-id-passcode-or-biometric-data"></a>Face ID、Touch ID、パスコード、または生体認証データで Power BI アプリを保護する 
 

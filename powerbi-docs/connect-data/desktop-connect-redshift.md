@@ -2,19 +2,19 @@
 title: Power BI Desktop で Amazon Redshift データベースに接続する
 description: Power BI Desktop で Amazon Redshift データベースに簡単に接続して使用する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b832e96b795b38133939296a15dcab6ece3996be
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 60bf73e4500785c766a485fffc92a25bd8f2c852
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214905"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411358"
 ---
 # <a name="connect-to-an-amazon-redshift-database-in-power-bi-desktop"></a>Power BI Desktop で Amazon Redshift データベースに接続する
 **Power BI Desktop** では、**Amazon Redshift** データベースに接続し、Power BI Desktop の他のデータ ソースの場合と同様に基になっているデータを使用できます。
@@ -36,10 +36,10 @@ ms.locfileid: "86214905"
 
 ![サーバー上で使用可能なデータを示す、[ナビゲーター] ダイアログのスクリーンショット。](media/desktop-connect-redshift/connect_redshift_6.png)
 
-**[ナビゲーター]** ウィンドウで目的の選択を行うと、データの**読み込み**またはデータの**編集**を行うことができます。
+**[ナビゲーター]** ウィンドウで目的の選択を行うと、データの **読み込み** またはデータの **編集** を行うことができます。
 
-* データの**読み込み**を選択した場合は、*インポート* モードまたは *DirectQuery* モードを使用してデータを読み込むように促されます。 詳細については、DirectQuery を説明している[こちらの記事](desktop-use-directquery.md)を参照してください。
-* データの**編集**を選択した場合は、**クエリ エディター**が表示され、あらゆる種類の変換およびフィルターをデータに適用することができます。その多くは、基となる **Amazon Redshift** データベース自体 (サポートされている場合) に適用されます。
+* データの **読み込み** を選択した場合は、*インポート* モードまたは *DirectQuery* モードを使用してデータを読み込むように促されます。 詳細については、DirectQuery を説明している[こちらの記事](desktop-use-directquery.md)を参照してください。
+* データの **編集** を選択した場合は、**クエリ エディター** が表示され、あらゆる種類の変換およびフィルターをデータに適用することができます。その多くは、基となる **Amazon Redshift** データベース自体 (サポートされている場合) に適用されます。
 
 ## <a name="next-steps"></a>次の手順
 Power BI Desktop を使用して接続できるデータの種類は他にもあります。 データ ソースの詳細については、次のリソースを参照してください。

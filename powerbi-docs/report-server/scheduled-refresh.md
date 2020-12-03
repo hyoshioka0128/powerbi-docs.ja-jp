@@ -2,18 +2,18 @@
 title: Power BI Report Server での Power BI のスケジュールされた更新
 description: Power BI レポートのスケジュールされた更新を使用すると、埋め込みモデルのレポートのデータを最新の状態に保つことができます。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/09/2020
-ms.author: maggies
-ms.openlocfilehash: 710df5f4159f49884d9eee1044b2c077c7edcb88
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 4dd8914abe1f098b66d23daa299200b90b9bda6a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749094"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412577"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Power BI Report Server での Power BI のスケジュールされた更新
 Power BI レポートのスケジュールされた更新は、レポートのデータを最新の状態に保つことができます。

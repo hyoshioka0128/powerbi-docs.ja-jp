@@ -2,23 +2,23 @@
 title: Power BI でクラシック ワークスペースを作成する
 description: 組織に主要なメトリックを提供するために作成されたダッシュボード、レポート、ページ分割されたレポートのコレクションである、クラシック ワークスペースを作成する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/29/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5a5aced331ff8f66fdd0cb58fd7625a68acf9331
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: 024696aa69fc1c6e95b103a679b11de4fe468169
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132392"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411956"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Power BI でクラシック ワークスペースを作成する
 
-Power BI では、" *ワークスペース* " を作成することができます。このワークスペースは、同僚と共同でダッシュボード、レポート、およびページ分割されたレポートのコレクションを作成して調整するための場所です。 Power BI には、オリジナルである " *クラシック* " ワークスペースと新しいワークスペースがあります。 この記事では、クラシック ワークスペースについて説明します。
+Power BI では、"*ワークスペース*" を作成することができます。このワークスペースは、同僚と共同でダッシュボード、レポート、およびページ分割されたレポートのコレクションを作成して調整するための場所です。 Power BI には、オリジナルである "*クラシック*" ワークスペースと新しいワークスペースがあります。 この記事では、クラシック ワークスペースについて説明します。
 
 **ご存知でしたか?** Power BI で新しいワークスペース エクスペリエンスが提供されるようになりました。これは既定値となります。 新しいワークスペースの詳細については、「[Power BI の新しいワークスペースで作業を整理する](service-new-workspaces.md)」を参照してください。 クラシック ワークスペースを移行する場合、 詳細については、「[Power BI でクラシック ワークスペースを新しいワークスペースにアップグレードする](service-upgrade-workspaces.md)」を参照してください。
 
@@ -72,7 +72,7 @@ Power BI でサポートされるすべてのサード パーティ サービス
 
 ## <a name="distribute-an-app"></a>アプリを配布する
 
-組織内の大勢の対象ユーザーに公式コンテンツを配布する場合は、ワークスペースからアプリを発行できます。  コンテンツが用意できたら、発行するダッシュボードやレポートを選択し、それを " *アプリ* " として発行します。 各ワークスペースから 1 つのアプリを作成できます。
+組織内の大勢の対象ユーザーに公式コンテンツを配布する場合は、ワークスペースからアプリを発行できます。  コンテンツが用意できたら、発行するダッシュボードやレポートを選択し、それを "*アプリ*" として発行します。 各ワークスペースから 1 つのアプリを作成できます。
 
 ナビ ペインにあるアプリの一覧には、インストールしたすべてのアプリが表示されます。 同僚はいくつかの異なる方法でアプリを取得することができます。 
 - Microsoft AppSource からアプリを検索してインストールできます。

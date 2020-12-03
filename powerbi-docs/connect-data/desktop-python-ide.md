@@ -2,19 +2,19 @@
 title: Power BI で外部 Python IDE を使用する
 description: Power BI で外部の IDE を起動して使用できます。
 author: otarb
+ms.author: otarb
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 06/18/2018
-ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8fdc0ecb4dfa1d35077e773ff7f568106168009c
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: c93c358f79b77a9cdda51eb815c35e674150cc39
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215360"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411082"
 ---
 # <a name="use-an-external-python-ide-with-power-bi"></a>Power BI で外部 Python IDE を使用する
 **Power BI Desktop** では、外部の Python IDE (統合開発環境) を使用して Python スクリプトを作成および調整した後、Power BI でそのスクリプトを使用できます。
@@ -73,7 +73,7 @@ ms.locfileid: "86215360"
    > スクリプトを実行した後で **Power BI Desktop** からデータをインポートするために、**Power BI Desktop** はスクリプトの最初の 3 行を追加します。
    > 
    > 
-7. **Power BI Desktop** の **[Python スクリプト エディター]** ウィンドウで作成したスクリプトは、Python IDE の 4 行目以降に表示されます。 この状態になれば、Python IDE で Python スクリプトを作成できます。 Python IDE で Python スクリプトが完成した後は、それをコピーし、**Power BI Desktop** の **[Python スクリプト エディター]** ウィンドウに貼り付けて戻す必要があります。ただし、**Power BI Desktop** が自動的に生成したスクリプトの先頭 3 行は*除外する*必要があります。 スクリプトの先頭の 3 行は、**Power BI Desktop** にコピーしないでください。これらの行は、**Power BI Desktop** から Python IDE にデータをインポートするためだけに使用されたものです。
+7. **Power BI Desktop** の **[Python スクリプト エディター]** ウィンドウで作成したスクリプトは、Python IDE の 4 行目以降に表示されます。 この状態になれば、Python IDE で Python スクリプトを作成できます。 Python IDE で Python スクリプトが完成した後は、それをコピーし、**Power BI Desktop** の **[Python スクリプト エディター]** ウィンドウに貼り付けて戻す必要があります。ただし、**Power BI Desktop** が自動的に生成したスクリプトの先頭 3 行は *除外する* 必要があります。 スクリプトの先頭の 3 行は、**Power BI Desktop** にコピーしないでください。これらの行は、**Power BI Desktop** から Python IDE にデータをインポートするためだけに使用されたものです。
 
 ### <a name="known-limitations"></a>既知の制限事項
 Power BI Desktop から直接 Python IDE を起動するには、いくつかの制限があります。

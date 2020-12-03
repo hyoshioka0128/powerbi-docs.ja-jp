@@ -2,17 +2,17 @@
 title: Power BI Windows アプリでオンプレミス レポートと KPI を表示する
 description: Windows 10 用 Power BI モバイル アプリにより、タッチ対応のモバイルからオンプレミスの重要なビジネス情報に簡単にアクセスできるようになります。
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/19/2020
-ms.author: painbar
-ms.openlocfilehash: 98f528e13bd92692bd76afc42aaac43828f7f586
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: eb6b86b2810609c0ad795190afc91c40677f5e70
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860902"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413313"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Power BI Windows アプリでオンプレミス レポートと KPI を表示する
 Windows 10 用 Power BI アプリを使って、タッチ対応のモバイルから、SQL Server 2016 Reporting Services のオンプレミスの重要なビジネス情報に簡単にアクセスできます。 
@@ -28,7 +28,7 @@ Windows 10 用 Power BI アプリで、フォルダーやお気に入りに追�
 > デバイスで Windows 10 を実行している必要があります。 このアプリは、最低 1 GB RAM と 8 GB の内部記憶域を持つデバイスに適しています。
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="explore-samples-without-a-sql-server-2016-reporting-services-server"></a>SQL Server 2016 Reporting Services サーバーを使用せずにサンプルを参照する
 Reporting Services の Web ポータルへのアクセス権がない場合でも、Reporting Services のモバイル レポートの機能を参照できます。

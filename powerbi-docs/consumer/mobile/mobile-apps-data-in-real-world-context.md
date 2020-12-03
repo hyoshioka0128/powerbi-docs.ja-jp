@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリで現実世界のデータを取得する
 description: Power BI モバイル アプリでは、現実世界を関連する BI 情報に直接接続することができます。検索の必要はありません。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 512d9f5662a87b3819b7151eb0fc3a4d6a540dd6
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b6564cafe087000fd0ce4409fac2cbfc78d0e8fa
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278516"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413152"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Power BI モバイル アプリで現実世界からデータを取得する
 Power BI モバイル アプリでは、現実世界を関連する BI 情報に直接接続することができます。それには複数の方法があります。 

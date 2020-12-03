@@ -2,19 +2,19 @@
 title: 組織のコンテンツ パックを作成して発行する - Power BI
 description: このチュートリアルでは、組織のコンテンツ パックを作成して、特定のグループにアクセスを制限し、そのコンテンツ パックを Power BI の組織のコンテンツ パック ライブラリに発行します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 08/06/2019
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9bb424e2e7f9e8bd32769813958d14a808339aa8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0a72582a54903c97dd9594f6a4a1c5980aea8e16
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225922"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411726"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>チュートリアル:Power BI の組織のコンテンツ パックを作成して発行する
 
@@ -60,7 +60,7 @@ ms.locfileid: "85225922"
 
     1. グループ メンバーがコンテンツ パックを簡単に見つけられるように、画像またはロゴをアップロードします。
 
-        テキストをスキャンするよりも、画像をスキャンする方が高速です。 このスクリーンショットは、**営業案件数**の縦棒グラフ タイルの画像を示しています。
+        テキストをスキャンするよりも、画像をスキャンする方が高速です。 このスクリーンショットは、**営業案件数** の縦棒グラフ タイルの画像を示しています。
 
     1. **[営業案件の分析のサンプル]** ダッシュボードを選択し、コンテンツ パックに追加します。
 

@@ -2,25 +2,25 @@
 title: Power BI Desktop でグループ化とビン分割を使用する
 description: Power BI Desktop で要素をグループ化およびビン分割する方法について説明します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 12/18/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0beca84bc95c2947fef500fb9e3a9e5c377a0a46
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5f1b3d226fb7b27ebb31879d2f4a5c3489660b94
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234026"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412922"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Power BI Desktop でグループ化とビン分割を使用する
 Power BI Desktop では、ビジュアルを作成するとき、基になっているデータで見つかった値に基づいて、データをチャンク (またはグループ) にまとめて集計します。 多くの場合は問題ありませんが、チャンクの表示方法の調整が必要になる場合もあります。 たとえば、3 つの製品カテゴリを 1 つの大きなカテゴリ (1 つの *グループ*) にしたい場合などです。 または、売上の数字を 923,983 ドルのサイズのチャンクではなく、1,000,000 ドルのビン サイズにしたいこともあります。
 
-Power BI Desktop では、データ ポイントを*グループ化*して、ビジュアルでのデータと傾向の表示、分析、調査をいっそう明確にすることができます。 また、"*ビン サイズ*" を定義して、意味のある方法でデータを視覚化しやすくする等しいサイズのグループに値をまとめることもできます。 このアクションは、"*ビン分割*" と呼ばれることがよくあります。
+Power BI Desktop では、データ ポイントを *グループ化* して、ビジュアルでのデータと傾向の表示、分析、調査をいっそう明確にすることができます。 また、"*ビン サイズ*" を定義して、意味のある方法でデータを視覚化しやすくする等しいサイズのグループに値をまとめることもできます。 このアクションは、"*ビン分割*" と呼ばれることがよくあります。
 
 ## <a name="using-grouping"></a>グループ化の使用
 グループ化を使用するには、ビジュアル上で Ctrl キーを押しながら複数の要素をクリックして選択します。 次に、選択した複数の要素のいずれかを右クリックし、コンテキスト メニューから **[グループ]** を選択します。
@@ -61,6 +61,6 @@ Power BI Desktop では、データ ポイントを*グループ化*して、ビ
 
 ![ビン フィールドをキャンバス上にドラッグ、Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-*ビン分割*を実際に使っている様子は、こちらの[ビデオ](https://www.youtube.com/watch?v=BRvdZSfO0DY)でご覧いただけます。
+*ビン分割* を実際に使っている様子は、こちらの [ビデオ](https://www.youtube.com/watch?v=BRvdZSfO0DY)でご覧いただけます。
 
-*グループ化*と*ビン分割*を使ってレポートのビジュアルに意図したとおりにデータを表示する方法がわかります。
+*グループ化* と *ビン分割* を使ってレポートのビジュアルに意図したとおりにデータを表示する方法がわかります。

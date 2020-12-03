@@ -2,19 +2,19 @@
 title: チュートリアル:Power BI Desktop を使用して Facebook のデータを分析する
 description: Facebook からデータをインポートし、Power BI Desktop で使用する方法を学習します。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 05/06/2020
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: e8c6ed4476a1bd5236d838610da624f5dde4fb4c
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: c138b5d3b03b360ee1f83c57a98906b5fec25d6e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600484"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410967"
 ---
 # <a name="tutorial-analyze-facebook-data-by-using-power-bi-desktop"></a>チュートリアル:Power BI Desktop を使用して Facebook のデータを分析する
 
@@ -40,7 +40,7 @@ ms.locfileid: "91600484"
    
 3. **[続行]** を選択します。 
    
-4. **[Facebook]** ダイアログ ボックスで、**ユーザー名**としてページ名の「**microsoftbi**」を入力し、 **[接続]** ドロップダウンから **[投稿]** を選び、 **[OK]** を選択します。
+4. **[Facebook]** ダイアログ ボックスで、**ユーザー名** としてページ名の「**microsoftbi**」を入力し、 **[接続]** ドロップダウンから **[投稿]** を選び、 **[OK]** を選択します。
    
    ![接続](media/desktop-tutorial-facebook-analytics/2.png)
    
@@ -86,12 +86,12 @@ ms.locfileid: "91600484"
 
 これで日付と時刻のデータの準備ができたので、入れ子になった列を展開してコメント データを公開できます。 
 
-1. **object_link** 列の上部にある ![展開アイコン](media/desktop-tutorial-facebook-analytics/14.png) アイコンを選択して、 **[展開/集計]** ダイアログ ボックスを開きます。 **接続**を選択し、 **[OK]** を選択します。 
+1. **object_link** 列の上部にある ![展開アイコン](media/desktop-tutorial-facebook-analytics/14.png) アイコンを選択して、 **[展開/集計]** ダイアログ ボックスを開きます。 **接続** を選択し、 **[OK]** を選択します。 
    
    ![object_link を展開する](media/desktop-tutorial-facebook-analytics/expand1.png)
    
    列ヘッダーが **object_link.connections** に変わります。
-2. **object_link.connections** 列の上部にある ![展開アイコン](media/desktop-tutorial-facebook-analytics/14.png) アイコンを選択し、**コメント**を選んでから **[OK]** を選択します。 列ヘッダーが **object_link.connections.comments** に変わります。
+2. **object_link.connections** 列の上部にある ![展開アイコン](media/desktop-tutorial-facebook-analytics/14.png) アイコンを選択し、**コメント** を選んでから **[OK]** を選択します。 列ヘッダーが **object_link.connections.comments** に変わります。
    
 3. **object_link.connections.comments** 列の上部にある ![展開アイコン](media/desktop-tutorial-facebook-analytics/14.png) アイコンを選択し、今回は、ダイアログ ボックスの **[展開]** ではなく、 **[集計]** を選びます。 **# Count of id** を選択し、 **[OK]** を選択します。 
    
@@ -142,7 +142,7 @@ Facebook ページからデータをインポートしたら、視覚化を使�
    
 2. そのテーブルを選択した状態で、 **[フィールド]** ペインから **[Number of comments]** も選択するか、テーブルにドラッグします。 
    
-3. **[視覚化]** ペインで**積み上げ横棒グラフ** アイコンを選択します。 テーブルは、投稿ごとのコメント数を示す横棒グラフに変わります。 
+3. **[視覚化]** ペインで **積み上げ横棒グラフ** アイコンを選択します。 テーブルは、投稿ごとのコメント数を示す横棒グラフに変わります。 
    
    ![横棒グラフ](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
@@ -162,9 +162,9 @@ Facebook ページからデータをインポートしたら、視覚化を使�
 
 1. グラフの視覚化のハンドルを使用して、グラフのサイズをできるだけ大きくします。 
    
-2. グラフを選択した状態で、 **[視覚化]** ペインで**書式設定**アイコン (ペイント ローラー) を選びます。
+2. グラフを選択した状態で、 **[視覚化]** ペインで **書式設定** アイコン (ペイント ローラー) を選びます。
    
-3. **Y 軸**の横にある下矢印を選択し、 **[最大サイズ]** スライダーを右端 (**50%** ) までドラッグします。 
+3. **Y 軸** の横にある下矢印を選択し、 **[最大サイズ]** スライダーを右端 (**50%** ) までドラッグします。 
 4. より多くのテキストを表示するには、 **[テキスト サイズ]** を **[10 pt]** に減らします。
    
    ![書式設定の変更](media/desktop-tutorial-facebook-analytics/barchart4.png)
@@ -175,7 +175,7 @@ Facebook ページからデータをインポートしたら、視覚化を使�
    
 グラフの x 軸 (コメント数) には正確な値が表示されず、グラフの下部が表示されていません。 代わりに、データ ラベルを使用してみましょう。 
 
-1. **書式設定**アイコンを選択し、 **[X 軸]** のスライダーを **[オフ]** に設定します。 
+1. **書式設定** アイコンを選択し、 **[X 軸]** のスライダーを **[オフ]** に設定します。 
    
 2. **[データ ラベル]** スライダーを選択して、 **[オン]** にします。 
 
@@ -185,7 +185,7 @@ Facebook ページからデータをインポートしたら、視覚化を使�
    
 ### <a name="edit-the-data-type"></a>データ型を編集する
 
-これで改善されましたが、すべてのデータ ラベルに小数点以下の **.0** が付いています。**Number of posts** は整数である必要があるため、これは邪魔で誤解を招きます。 これを修正するには、**Number of posts** 列のデータ型を**整数**に変更する必要があります。
+これで改善されましたが、すべてのデータ ラベルに小数点以下の **.0** が付いています。**Number of posts** は整数である必要があるため、これは邪魔で誤解を招きます。 これを修正するには、**Number of posts** 列のデータ型を **整数** に変更する必要があります。
 
 1. **[フィールド]** ペインで **[Query1]** を右クリックするか、その上にカーソルを合わせ、 **[その他のオプション]** (...) を選択します。 
 
@@ -196,7 +196,7 @@ Facebook ページからデータをインポートしたら、視覚化を使�
    - 列ヘッダーを右クリックし、 **[型の変更]**  >  **[整数]** の順に選択します。
    - **[データ型: 10 進数]** を **[ホーム]** タブの **[変換]** グループ、または **[変換]** タブの **[任意の列]** グループで選択してから、 **[整数]** を選びます。
    
-   列ヘッダーのアイコンは、**整数**のデータ型であることを示す、**123** に変わります。
+   列ヘッダーのアイコンは、**整数** のデータ型であることを示す、**123** に変わります。
    
    ![データ型を変更する](media/desktop-tutorial-facebook-analytics/change-datatype.png)
    
@@ -210,7 +210,7 @@ Facebook ページからデータをインポートしたら、視覚化を使�
 
 投稿のコメント数を時系列で視覚化するとします。 この場合、スライサーの視覚化を作成して、グラフ データをさまざまな時間枠にフィルター処理することができます。 
 
-1. キャンバスの空白領域を選択し、 **[視覚化]** ペインで**スライサー** アイコンを選びます。 
+1. キャンバスの空白領域を選択し、 **[視覚化]** ペインで **スライサー** アイコンを選びます。 
 
    空白のスライサーの視覚化が表示されます。
    
@@ -230,7 +230,7 @@ Facebook ページからデータをインポートしたら、視覚化を使�
 
 グラフによりわかりやすく魅力的なタイトルを付けます。 
 
-1. グラフを選択した状態で、 **[視覚化]** ペインの**書式設定**アイコンを選択し、 **[タイトル]** の横にあるドロップダウン矢印を選んで展開します。
+1. グラフを選択した状態で、 **[視覚化]** ペインの **書式設定** アイコンを選択し、 **[タイトル]** の横にあるドロップダウン矢印を選んで展開します。
 
 2. **[タイトル テキスト]** を「**Comments per post**」に変更します。 
 

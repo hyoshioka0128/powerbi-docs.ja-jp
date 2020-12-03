@@ -2,18 +2,19 @@
 title: Power BI ワークスペースの OneDrive のファイルに接続する
 description: Power BI ワークスペースの OneDrive への Excel、CSV、Power BI Desktop などのファイルの保存とファイルへの接続について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/15/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 738ef62811ff510b20be60851cb6bd8225b1ad34
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 6c3c43d8aad26249ac1b8afab09bdcbf1414f0cf
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116928"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411979"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Power BI ワークスペースの OneDrive に保存されているファイルに接続する
 [Power BI でワークスペースを作成する](service-create-workspaces.md)ときは、Microsoft 365 グループおよび関連付けられた OneDrive for Business も作成します。 この記事では、その OneDrive for Business に Excel、CSV、Power BI Desktop のファイルを格納して更新する方法について説明します。 これらの更新プログラムは、ファイルに基づいて Power BI レポートとダッシュボードに自動的に反映されます。
@@ -61,7 +62,7 @@ ms.locfileid: "92116928"
 4. **[OneDrive]**  -  *[<ワークスペース名>]* を選択します。
    
     ![ワークスペースを選択するための 3 つのタイルのスクリーンショット。ローカル ファイル、OneDrive、SharePoint が表示されています。](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
-5. 必要なファイルを選び、**接続**します。
+5. 必要なファイルを選び、**接続** します。
    
     この時点で、[Excel ブックからデータをインポートする](../connect-data/service-get-data-from-files.md)か、[Excel ブック全体に接続する](../connect-data/service-excel-workbook-files.md)かどうかを決定します。
 6. **[インポート]** または **[接続]** を選びます。

@@ -2,20 +2,20 @@
 title: Power BI Desktop で Azure Cost Management データに接続する
 description: Power BI Desktop を使用して、Azure に簡単に接続し、Azure のコストと使用状況に関する分析情報を取得します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: eae8afc9db44b703ade1a9a4fcc28c24c3d72641
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: fa06b1d561c770c3b9e0535e94789931a74bd9df
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599866"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411473"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Power BI Desktop で Azure Cost Management コネクタを使用してビジュアルとレポートを作成する
 
@@ -32,7 +32,7 @@ Azure Cost Management コネクタは、Azure での認証に OAuth 2.0 を使�
 
 ## <a name="connect-using-azure-cost-management"></a>Azure Cost Management を使用して接続する
 
-Power BI Desktop で **Azure Cost Management コネクタ**を使用するには、次の手順を実行します。
+Power BI Desktop で **Azure Cost Management コネクタ** を使用するには、次の手順を実行します。
 
 1.  **[ホーム]** リボンで **[データの取得]** を選択します。
 2.  データ カテゴリの一覧から **[Azure]** を選択します。
@@ -40,12 +40,12 @@ Power BI Desktop で **Azure Cost Management コネクタ**を使用するには
 
     ![データを取得する](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
 
-4. 表示されるダイアログに、**Microsoft 顧客契約**の場合は**課金プロファイル ID** を、**Enterprise Agreement (EA)** の場合は**加入契約番号**を入力します。 
+4. 表示されるダイアログに、**Microsoft 顧客契約** の場合は **課金プロファイル ID** を、**Enterprise Agreement (EA)** の場合は **加入契約番号** を入力します。 
 
 
 ## <a name="connect-to-a-microsoft-customer-agreement-account"></a>Microsoft 顧客契約アカウントに接続する 
 
-**Microsoft 顧客契約アカウント**を使用して接続するには、Azure portal から**課金プロファイル ID** を取得できます。
+**Microsoft 顧客契約アカウント** を使用して接続するには、Azure portal から **課金プロファイル ID** を取得できます。
 
 1.  [Azure portal](https://portal.azure.com/) で、 **[コストの管理と請求]** に移動します。
 2.  ご自分の課金プロファイルを選択します。 

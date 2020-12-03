@@ -1,20 +1,20 @@
 ---
 title: Power BI の折れ線グラフ
 description: Power BI の折れ線グラフ
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: acbd6e40a351885b8644aca48edf41db81462864
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 6bd2ae3fe4abd3d1db21928edfa217d50f95ca92
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411983"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412600"
 ---
 # <a name="line-charts-in-power-bi"></a>Power BI の折れ線グラフ
 

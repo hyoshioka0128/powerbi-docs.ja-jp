@@ -2,22 +2,22 @@
 title: Power BI Desktop でグループ化を使用する
 description: Power BI Desktop でビジュアルをグループ化する方法について説明します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 067a9cfc63b36f97716d61580f2e191756dbf0e6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b74e06c076cd25132a6e3bfb8a12775d50b7263f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233849"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412899"
 ---
 # <a name="group-visuals-in-power-bi-desktop-reports"></a>Power BI Desktop レポートでビジュアルをグループ化する
-**Power BI Desktop** で**グループ化**を使用すると、PowerPoint で項目をグループ化するのと同じように、レポート内でビジュアルをグループ化できます。これには、ボタン、テキストボックス、図形の画像、その他作成したあらゆるビジュアルが含まれます。 レポート内のビジュアルをグループ化すると、グループを 1 つのオブジェクトのように扱い、レポート内での移動、サイズ変更、およびレイヤーの操作をより簡単かつ迅速に、直感的に行うことができます。
+**Power BI Desktop** で **グループ化** を使用すると、PowerPoint で項目をグループ化するのと同じように、レポート内でビジュアルをグループ化できます。これには、ボタン、テキストボックス、図形の画像、その他作成したあらゆるビジュアルが含まれます。 レポート内のビジュアルをグループ化すると、グループを 1 つのオブジェクトのように扱い、レポート内での移動、サイズ変更、およびレイヤーの操作をより簡単かつ迅速に、直感的に行うことができます。
 
 ![グループ化の使用](media/desktop-grouping-visuals/grouping-visuals-01.png)
 

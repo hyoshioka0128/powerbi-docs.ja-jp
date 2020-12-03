@@ -2,19 +2,19 @@
 title: Power BI Desktop の Analysis Services 多次元データ
 description: Power BI Desktop の SQL Server Analysis Services (SSAS) 多次元データ
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7b96e9707e9c91c6403047091bed00afbff3789d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9567c0511a771b9b92de74171dec5fed3110e2d8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222521"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410898"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Power BI Desktop で SSAS 多次元モデルに接続する
 
@@ -24,7 +24,7 @@ SSAS MD データベースに接続するには、 **[データの取得]** 、 
 
 ![SQL Server Analysis Services (SSAS) データベース、[データの取得] ダイアログ ボックス、Power BI Desktop](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
-ライブ接続モードの SSAS 多次元モデルは、Power BI サービスと Power BI Desktop の両方でサポートされます。 ライブ モードの **SSAS 多次元モデル**を使用するレポートを Power BI サービスに公開およびアップロードすることができます。
+ライブ接続モードの SSAS 多次元モデルは、Power BI サービスと Power BI Desktop の両方でサポートされます。 ライブ モードの **SSAS 多次元モデル** を使用するレポートを Power BI サービスに公開およびアップロードすることができます。
 
 ## <a name="capabilities-and-features-of-ssas-md"></a>SSAS MD の能力と機能
 
@@ -41,7 +41,7 @@ SSAS MD データベースに接続するには、 **[データの取得]** 、 
 | ディメンション属性 (キー)、名前 |列 |
 | メジャー グループ |テーブル |
 | メジャー |メジャー |
-| 関連付けられたメジャー グループのないメジャー |*メジャー*という名前のテーブル内 |
+| 関連付けられたメジャー グループのないメジャー |*メジャー* という名前のテーブル内 |
 | [メジャー グループ] -> [キューブ ディメンションのリレーションシップ] |リレーションシップ |
 | パースペクティブ |パースペクティブ |
 | KPI |KPI |
@@ -51,7 +51,7 @@ SSAS MD データベースに接続するには、 **[データの取得]** 、 
 
 多次元キューブのメジャー グループは、テーブルとして公開され、 **[フィールド]** ウィンドウで横にシグマ (∑) が付けられます。 関連付けられたメジャー グループがない計算メジャーは、表形式のメタデータ内で "*メジャー*" という名前の特別なテーブルの下にグループ化されます。
 
-多次元モデルで複雑なモデルを簡素化するには、キューブ内の一連のメジャーまたは KPI を定義して、"*表示フォルダー*" 内に配置します。 Power BI は、表形式のメタデータの表示フォルダーを認識し、表示フォルダー内にメジャーと KPI を表示します。 多次元データベースの KPI は*値*、*目標*、*状態マーク*、および*傾向マーク*をサポートします。
+多次元モデルで複雑なモデルを簡素化するには、キューブ内の一連のメジャーまたは KPI を定義して、"*表示フォルダー*" 内に配置します。 Power BI は、表形式のメタデータの表示フォルダーを認識し、表示フォルダー内にメジャーと KPI を表示します。 多次元データベースの KPI は *値*、*目標*、*状態マーク*、および *傾向マーク* をサポートします。
 
 ### <a name="dimension-attribute-type"></a>ディメンション属性の種類
 
@@ -65,7 +65,7 @@ SSAS MD データベースに接続するには、 **[データの取得]** 、 
 
 ### <a name="dimension-calculated-members"></a>ディメンションが計算されるメンバー
 
-多次元モデルはさまざまな型の *計算されるメンバー*の作成をサポートしています。 最も一般的な種類の計算メンバーは、次の 2 つです。
+多次元モデルはさまざまな型の *計算されるメンバー* の作成をサポートしています。 最も一般的な種類の計算メンバーは、次の 2 つです。
 
 * "*すべて*" の兄弟ではない、属性階層の計算メンバー
 * ユーザー階層の計算されるメンバー
@@ -82,7 +82,7 @@ SSAS MD データベースに接続するには、 **[データの取得]** 、 
 
 ### <a name="security"></a>セキュリティ
 
-多次元モデルでは、*ロール*を使用してディメンションおよびセル レベルのセキュリティをサポートします。 Power BI でキューブに接続する場合、認証が行われ、適切なアクセス許可の有無が評価されます。 ユーザーに "*ディメンション セキュリティ*" が適用されている場合、Power BI のユーザーがそれぞれのディメンション メンバーを表示することはできません。 ただし、ユーザーが "*セル セキュリティ*" のアクセス許可を定義しており、特定のセルが制限されている場合、そのユーザーは Power BI を使用してキューブに接続することはできません。
+多次元モデルでは、*ロール* を使用してディメンションおよびセル レベルのセキュリティをサポートします。 Power BI でキューブに接続する場合、認証が行われ、適切なアクセス許可の有無が評価されます。 ユーザーに "*ディメンション セキュリティ*" が適用されている場合、Power BI のユーザーがそれぞれのディメンション メンバーを表示することはできません。 ただし、ユーザーが "*セル セキュリティ*" のアクセス許可を定義しており、特定のセルが制限されている場合、そのユーザーは Power BI を使用してキューブに接続することはできません。
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 

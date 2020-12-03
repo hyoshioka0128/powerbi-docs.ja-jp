@@ -2,19 +2,19 @@
 title: Power BI Desktop からの発行
 description: Power BI Desktop からの発行
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/22/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4405ab8d3e0db949ec825f3eea436183512f862d
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: dc1914b8fce55de9bd6141c9cc8d44082779c9df
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91019911"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412646"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Power BI Desktop からデータセットとレポートを発行する
 Power BI Desktop ファイルを Power BI サービスに発行すると、モデル内のデータが Power BI ワークスペースに発行されます。 **レポート** ビューで作成したレポートの場合も同様です。 ワークスペース ナビゲーターに、同じ名前の新しいデータセットおよびレポートが表示されます。

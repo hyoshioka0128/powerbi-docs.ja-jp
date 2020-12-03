@@ -2,19 +2,19 @@
 title: Power BI でデータのない項目を表示する
 description: Power BI によるデータのない項目の処理および表示方法について説明します
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/16/2019
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 89c4c9919ac5b47a1e3c20c786b239be44c4308b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3c65f7b18a7df70749c9374e1290313141244665
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238563"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412738"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Power BI でデータのない項目を表示する
 
@@ -75,7 +75,7 @@ Power BI では、さまざまなソースのあらゆる種類のデータを�
 
 **[データのない項目を表示する]** 機能を使うと、(メジャー データを含まない (空白のメジャー値) データ行と列を含めて) まさにそれを実行できます。
 
-**データのないアイテムの表示**機能を有効にするには、次の図に示すように、ビジュアルを選択し、 **[フィールド]** 内で、フィールドを右クリックして表示されるメニューの **[データのないアイテムの表示]** を選択します。
+**データのないアイテムの表示** 機能を有効にするには、次の図に示すように、ビジュアルを選択し、 **[フィールド]** 内で、フィールドを右クリックして表示されるメニューの **[データのないアイテムの表示]** を選択します。
 
 ![[データのない項目を表示する] 機能を有効にする方法](media/desktop-show-items-no-data/show-items-no-data_02.png)
 

@@ -2,19 +2,19 @@
 title: Power BI におけるデータ保護
 description: Power BI でのデータ保護について説明します
 author: paulinbar
+ms.author: painbar
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 09/17/2020
-ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 27f4aa5f186b2af49a4c4d8f0427b4e59e2dc97e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 4405b83dae3d517b16099725ab10990cc8e503f4
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854439"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413359"
 ---
 # <a name="data-protection-in-power-bi"></a>Power BI におけるデータ保護
 
@@ -34,7 +34,7 @@ Power BI のデータ保護機能を使用すると、次のことができる�
 * Office やその他の Microsoft 製品で使われている Microsoft Information Protection の秘密度ラベルを使用して、**機密性の高い Power BI データを分類し、ラベルを付ける**。  
 * Excel、Power Point、PDF、およびその他のサポートされているエクスポート形式に **Power BI コンテンツがエクスポートされ、Power BI を離れた場合でもデータが確実に保護されるように、ガバナンス ポリシーを適用する**。
 * Cloud App Security を使用したアラート、セッション監視、リスクの修復により、**機密性の高いデータに対するユーザー アクティビティをリアルタイムで監視および保護する**。
-* Microsoft Cloud App Security でデータ保護レポートとセキュリティ調査機能を使用する**セキュリティ管理者を強化**して、組織の監視を強化する。
+* Microsoft Cloud App Security でデータ保護レポートとセキュリティ調査機能を使用する **セキュリティ管理者を強化** して、組織の監視を強化する。
 
 詳細については、[Microsoft Information Protection の秘密度ラベル](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)と [Cloud App Security](/cloud-app-security/what-is-cloud-app-security) に関するページを参照してください。
 

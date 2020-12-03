@@ -2,20 +2,20 @@
 title: Power BI で数値範囲スライサーを使用する
 description: Power BI で数値範囲を制約するためのスライサーを使用する方法について説明します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 91dfc9da235e9d5c8a763b3d6cba2abc11b77f6f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 83ba0234ef4f4e350f413f3c934e2f09f0a9a3f2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238587"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412784"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi"></a>Power BI で数値範囲スライサーを使用する
 
@@ -37,7 +37,7 @@ ms.locfileid: "85238587"
 
 ## <a name="add-a-numeric-range-slicer"></a>数値範囲スライサーの追加
 
-他のスライサーを使用する場合と同様に、数値範囲スライサーを使用できます。 レポートに**スライサー** ビジュアルを作成し、 **[フィールド]** 値に対して数値を選択するだけです。 次の図では、**LineTotal** フィールドを選択しました。
+他のスライサーを使用する場合と同様に、数値範囲スライサーを使用できます。 レポートに **スライサー** ビジュアルを作成し、 **[フィールド]** 値に対して数値を選択するだけです。 次の図では、**LineTotal** フィールドを選択しました。
 
 ![数値範囲スライサーの作成](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
@@ -67,7 +67,7 @@ ms.locfileid: "85238587"
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>数値範囲スライサーを整数にスナップする
 
-基礎とするフィールドのデータ型が*整数*の場合、数値範囲スライサーは整数にスナップします。 この機能により、スライサーを完全に整数に揃えることができます。 *10 進数*のフィールドでは、ある数の分数を入力または選択できます。 数値をさらに正確に入力または選択できますが、テキスト ボックスに設定される書式設定は、フィールドに設定されている書式設定に一致します。
+基礎とするフィールドのデータ型が *整数* の場合、数値範囲スライサーは整数にスナップします。 この機能により、スライサーを完全に整数に揃えることができます。 *10 進数* のフィールドでは、ある数の分数を入力または選択できます。 数値をさらに正確に入力または選択できますが、テキスト ボックスに設定される書式設定は、フィールドに設定されている書式設定に一致します。
 
 ## <a name="display-formatting-with-the-date-range-slicer"></a>日付範囲スライサーによる表示書式設定
 

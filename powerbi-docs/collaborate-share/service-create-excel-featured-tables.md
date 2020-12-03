@@ -2,30 +2,30 @@
 title: Power BI Desktop でおすすめのテーブルを設定する (プレビュー)
 description: Excel のデータ型ギャラリーに表示されるように、Power BI Desktop でおすすめのテーブルを作成します。
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 20a81ed4675f6392f28a20f7b741d0c0ad1076eb
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: d2d87f16b8100424b47277360354d79ee834d467
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680771"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411933"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Power BI Desktop でおすすめのテーブルを設定する (プレビュー)
 
-Excel のデータ型ギャラリーでは、ユーザーが Power BI データセットの " *おすすめのテーブル* " からのデータを検索することができます。 この記事では、データセットの *おすすめの* テーブルを設定する方法について説明します。 これらのタグを使用すると、ユーザーが Excel シートにエンタープライズ データを簡単に追加できるようになります。 おすすめのテーブルを設定して共有するための基本的な手順を次に示します。
+Excel のデータ型ギャラリーでは、ユーザーが Power BI データセットの "*おすすめのテーブル*" からのデータを検索することができます。 この記事では、データセットの *おすすめの* テーブルを設定する方法について説明します。 これらのタグを使用すると、ユーザーが Excel シートにエンタープライズ データを簡単に追加できるようになります。 おすすめのテーブルを設定して共有するための基本的な手順を次に示します。
 
 1. Power BI Desktop でデータセット内のおすすめのテーブルを識別します (この記事)。
 1. おすすめのテーブルを含むこれらのデータセットを、新しいワークスペースのいずれかに保存します。 レポート作成者は、これらのおすすめのテーブルを使用してレポートを作成できます。 
-1. 組織の残りの部分は、関連する更新可能なデータのために、これらのおすすめのテーブル ( *Excel ではデータ型と呼ばれる* ) に接続できます。 「[Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)](service-excel-featured-tables.md)」の記事では、Excel でこれらのおすすめのテーブルを使用する方法について説明します。
+1. 組織の残りの部分は、関連する更新可能なデータのために、これらのおすすめのテーブル (*Excel ではデータ型と呼ばれる*) に接続できます。 「[Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)](service-excel-featured-tables.md)」の記事では、Excel でこれらのおすすめのテーブルを使用する方法について説明します。
 
 > [!NOTE]
-> [Power BI でデータセットを昇格または認定](../collaborate-share/service-endorse-content.md)することができます。 これは " *承認* " と呼ばれます。 Excel によって、データ型ギャラリーで承認されたデータセット内のテーブルの優先順位が設定されます。 Excel によって、最初に認定済みデータセットのおすすめのテーブルが一覧表示され、次に昇格されたデータセットのテーブルが一覧表示されます。 Excel によって、その後、承認されていないデータセットのおすすめのテーブルが一覧表示されます。 
+> [Power BI でデータセットを昇格または認定](../collaborate-share/service-endorse-content.md)することができます。 これは "*承認*" と呼ばれます。 Excel によって、データ型ギャラリーで承認されたデータセット内のテーブルの優先順位が設定されます。 Excel によって、最初に認定済みデータセットのおすすめのテーブルが一覧表示され、次に昇格されたデータセットのテーブルが一覧表示されます。 Excel によって、その後、承認されていないデータセットのおすすめのテーブルが一覧表示されます。 
 
 ## <a name="turn-on-the-featured-table-preview"></a>おすすめのテーブルのプレビューを有効にする
 
@@ -40,15 +40,21 @@ Excel のデータ型ギャラリーでは、ユーザーが Power BI データ�
 
 1. Power BI Desktop でモデル ビューに移動します。
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="おすすめのテーブル オプションをプレビューする":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="モデル ビュー":::
  
 2. テーブルを選択し、 **[Is featured table]\(おすすめのテーブル\)** を **[はい]** に設定します。
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="おすすめのテーブル オプションをプレビューする" で説明を開始します。
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="[Is featured table]\(おすすめのテーブル\) を [はい] に設定する":::
+
+4. **[Set up this featured table]\(このおすすめのテーブルの設定\)** で、必須フィールドを指定します。
+
+    - **[説明]** 。 
+        > [!TIP]
+        > Power BI レポート作成者が識別できるように、"おすすめのテーブル" で説明を開始します。
     - **[行ラベル]** フィールド値は、ユーザーが行を簡単に識別できるようにするために Excel で使用されます。 これは、リンク セルのセル値として、また **[Data Selector]\(データ セレクター\)** ペインおよび **[情報]** カード内に表示されます。 
     - **[キー列]** フィールド値により、行の一意の ID が指定されます。 この値により、Excel でセルをテーブル内の特定の行にリンクすることが可能になります。
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="おすすめのテーブル オプションをプレビューする":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="おすすめのテーブルの設定":::
 
 1. Power BI サービスに対してデータセットを発行またはインポートすると、Excel のデータ型ギャラリーにおすすめのテーブルが表示されます。 また、自分や他のレポート作成者がこのデータセットに基づくレポートを作成することもできます。
 

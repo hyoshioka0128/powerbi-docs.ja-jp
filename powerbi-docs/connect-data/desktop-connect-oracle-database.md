@@ -2,19 +2,19 @@
 title: Power BI Desktop を使用して Oracle データベースに接続する
 description: Oracle を Power BI Desktop に接続するために必要な手順とダウンロード
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/11/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b77543a7601cf4f8522c333137802e71ce41a41c
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 2e25ab87d042fdc2f0e88ee00a0b0f8f9dbd83a0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858372"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411404"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Power BI Desktop を使用して Oracle データベースに接続する
 Power BI Desktop を使用して Oracle データベースに接続するには、Power BI Desktop を実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、インストールした Power BI Desktop のバージョンによって異なります。32 ビットまたは 64 ビット。 また、お使いの Oracle サーバーのバージョンにもよります。
@@ -40,7 +40,7 @@ Power BI Desktop を使用して Oracle データベースに接続するには�
 > [!NOTE]
 > お使いの Oracle サーバーと互換性のある Oracle Data Access Client (ODAC) のバージョンを選択します。 たとえば、ODAC 12.x では、必ずしも Oracle Server バージョン 9 をサポートしていません。
 > Oracle クライアント用の Windows インストーラーを選択します。
-> Oracle クライアントのセットアップ中に、セットアップ ウィザードの該当するチェック ボックスをオンにすることで、*コンピューター全体のレベルで ODP.NET および/または Oracle Providers for ASP.NET の構成*を有効にする必要があります。 Oracle クライアント ウィザードの一部のバージョンでは、既定でチェックボックスがオンになっていますが、他のバージョンではそうなっていません。 Power BI が Oracle データベースに接続できるように、チェックボックスがオンになっていることを確認してください。
+> Oracle クライアントのセットアップ中に、セットアップ ウィザードの該当するチェック ボックスをオンにすることで、*コンピューター全体のレベルで ODP.NET および/または Oracle Providers for ASP.NET の構成* を有効にする必要があります。 Oracle クライアント ウィザードの一部のバージョンでは、既定でチェックボックスがオンになっていますが、他のバージョンではそうなっていません。 Power BI が Oracle データベースに接続できるように、チェックボックスがオンになっていることを確認してください。
 
 ## <a name="connect-to-an-oracle-database"></a>Oracle データベースへの接続
 一致する Oracle クライアント ドライバーをインストールした後、Oracle データベースに接続できます。 接続するには、次の手順を実行します。
@@ -50,7 +50,7 @@ Power BI Desktop を使用して Oracle データベースに接続するには�
 2. 表示される **[データを取得]** ウィンドウで、 **[その他]** (必要に応じて) を選択し、 **[データベース]**  >  **[Oracle Database]** を選択し、 **[接続]** を選択します。
    
    ![Oracle データベースの接続](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-3. 表示される **[Oracle Database]** ダイアログで**サーバー**の名前を指定し、 **[OK]** を選択します。 SID が必要な場合、次の形式を使用して指定できます: "*サーバー名/SID*"。*SID* はデータベースの一意名です。 "*サーバー名/SID*" の形式で正しく動作しない場合は、"*サーバー名/サービス名*" を使用します。"*サービス名*" は接続に使用した別名です。
+3. 表示される **[Oracle Database]** ダイアログで **サーバー** の名前を指定し、 **[OK]** を選択します。 SID が必要な場合、次の形式を使用して指定できます: "*サーバー名/SID*"。*SID* はデータベースの一意名です。 "*サーバー名/SID*" の形式で正しく動作しない場合は、"*サーバー名/サービス名*" を使用します。"*サービス名*" は接続に使用した別名です。
 
 
    ![Oracle サーバー名の入力](media/desktop-connect-oracle-database/connect-oracle-database_3.png)

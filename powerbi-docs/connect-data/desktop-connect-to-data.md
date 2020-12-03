@@ -2,20 +2,20 @@
 title: Power BI Desktop におけるデータへの接続
 description: Power BI Desktop におけるデータへの接続
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/21/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3319c2d3d739c1f67e5b8477de385e9dfa71e25a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a9fdb4e2ebd71d652c66220ad4a70473ef6dd764
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224112"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411289"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Power BI Desktop のデータ ソースへの接続
 
@@ -39,7 +39,7 @@ Power BI Desktop では、 *あらゆる種類* のデータ ソースを使用�
 
 ![Web ソース アドレスを入力する](media/desktop-connect-to-data/connecttodata_3.png)
 
-**[OK]** をクリックすると、Power BI Desktop の*クエリ*機能が動作します。 Power BI Desktop は Web リソースにアクセスし、 **[ナビゲーター]** ウィンドウにその Web ページで検出した結果が返されます。 この場合は、テーブルと Document 全体が検出されました。 テーブルに興味があるので、一覧からテーブルを選択します。 **[ナビゲーター]** ウィンドウにプレビューが表示されます。
+**[OK]** をクリックすると、Power BI Desktop の *クエリ* 機能が動作します。 Power BI Desktop は Web リソースにアクセスし、 **[ナビゲーター]** ウィンドウにその Web ページで検出した結果が返されます。 この場合は、テーブルと Document 全体が検出されました。 テーブルに興味があるので、一覧からテーブルを選択します。 **[ナビゲーター]** ウィンドウにプレビューが表示されます。
 
 ![ナビゲーターでのデータのプレビュー](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
 

@@ -2,25 +2,25 @@
 title: Power BI Desktop のレポート ビュー
 description: Power BI Desktop のレポート ビュー
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 10/12/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 859fb6156af38fc5333e9c94281255369d9ee413
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 3b168eb0e6a475651f4f8fb6337c518812d8ffcf
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256975"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412876"
 ---
 # <a name="work-with-report-view-in-power-bi-desktop"></a>Power BI Desktop でレポート ビューを操作する
 
 Power BI を操作したことがあるユーザーは、レポートを作成して動的なパースペクティブと情報をデータに与えることがいかに簡単であるかをご存知でしょう。 Power BI では、Power BI Desktop にさらに多くの高度な機能を備えています。 Power BI Desktop を使用すると、高度なクエリの作成、複数のソースからのデータのマッシュアップ、テーブル間のリレーションシップの作成などを行えます。
 
-Power BI Desktop には、視覚化を含む任意の数のレポート ページを作成できる*レポート ビュー*があります。 Power BI Desktop のレポート ビューには、*Power BI サービス*のレポートの編集ビューと同様のデザイン エクスペリエンスが用意されています。 視覚化の移動、コピーと貼り付け、マージなどを行うことができます。
+Power BI Desktop には、視覚化を含む任意の数のレポート ページを作成できる *レポート ビュー* があります。 Power BI Desktop のレポート ビューには、*Power BI サービス* のレポートの編集ビューと同様のデザイン エクスペリエンスが用意されています。 視覚化の移動、コピーと貼り付け、マージなどを行うことができます。
 
 これらの相違点は、Power BI Desktop を使用すると、データのクエリとモデルを操作して、レポートでの最適な分析を支えるデータが確実に得られるようになることです。 その後、Power BI Desktop のファイルは、ローカルのドライブまたはクラウドに関係なく、お好みの場所に保存することができます。
 
@@ -84,6 +84,6 @@ Power BI Desktop には、視覚化を含む任意の数のレポート ペー�
 
 * Power BI サービスでレポートを表示するとき、非表示レポート ページを表示することは "*できません*"。
 
-* レポート ページを非表示にすることは、セキュリティ対策では*ありません*。 ユーザーはこの非表示ページにアクセスできます。ドリルスルーやその他の手段でページのコンテンツにアクセスできます。
+* レポート ページを非表示にすることは、セキュリティ対策では *ありません*。 ユーザーはこの非表示ページにアクセスできます。ドリルスルーやその他の手段でページのコンテンツにアクセスできます。
 
 * ページが非表示のときは、表示モードでも表示モード ナビゲーションの矢印が表示されません。

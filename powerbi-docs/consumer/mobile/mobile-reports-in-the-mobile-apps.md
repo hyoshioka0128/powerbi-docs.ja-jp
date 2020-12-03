@@ -2,18 +2,18 @@
 title: Power BI モバイル アプリのレポートを調べる
 description: スマートフォンまたはタブレット上の Power BI モバイル アプリでレポートを表示および操作する方法について説明します。 Power BI サービスまたは Power BI Desktop でレポートを作成し、モバイル アプリで操作します。
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
-ms.author: painbar
-ms.openlocfilehash: 47f1db75eb3923c1c4195a319323c3a37d17484e
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.openlocfilehash: 5d361a749f947f8d45b052a8a2b6455007745d20
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92026085"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413083"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリのレポートを調べる
 適用対象:
@@ -23,7 +23,7 @@ ms.locfileid: "92026085"
 | iPhone |iPad |Android フォン |Android タブレット |Windows 10 デバイス |
 
 >[!NOTE]
->**Windows 10 Mobile を使用するスマートフォン**に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Power BI レポートは、データの対話型表示で、データから得られるさまざまな発見と洞察を表す視覚化が付いています。 Power BI モバイル アプリでは、3 段階のプロセスの 3 つ目の手順でレポートを表示できます。
 
@@ -47,7 +47,7 @@ Power BI モバイル アプリのレポートには、次の 2 つのアイコ�
 > [!NOTE]
 > 電話を横向きに持つと、レポート ページがモバイル レイアウトの場合でも、常に横レイアウトが表示されます。
 
-ダッシュボードからレポートを表示するには、タイルの右上にある**その他のオプション** (...) をタップして、 **[レポートを開く]** をタップします。
+ダッシュボードからレポートを表示するには、タイルの右上にある **その他のオプション** (...) をタップして、 **[レポートを開く]** をタップします。
   
   ![レポートを開く](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -100,7 +100,7 @@ Power BI モバイル アプリをダウンロードすると、そのアプリ�
 ![ドリル操作](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
 
-ビジュアルの特定の部分をタップしてから*ドリルスルー* オプションをタップすると、Power BI によって、レポートの別のページがタップした値でフィルター処理されて表示されます。 レポートの作成者は、それぞれ異なるページを表示するドリルスルー オプションを 1 つ以上定義できます。 その場合、ドリルスルーしたいオプションを選ぶことができます。 "戻る" ボタンで前のページに戻ることができます。
+ビジュアルの特定の部分をタップしてから *ドリルスルー* オプションをタップすると、Power BI によって、レポートの別のページがタップした値でフィルター処理されて表示されます。 レポートの作成者は、それぞれ異なるページを表示するドリルスルー オプションを 1 つ以上定義できます。 その場合、ドリルスルーしたいオプションを選ぶことができます。 "戻る" ボタンで前のページに戻ることができます。
 
 
 詳細については、[こちら](../../create-reports/desktop-drillthrough.md)で Power BI Desktop でドリルスルーを追加する方法をご確認ください。
@@ -124,7 +124,7 @@ Power BI モバイル アプリをダウンロードすると、そのアプリ�
 * すべてのレポート操作を表示します。
 
 #### <a name="all-report-actions"></a>すべてのレポート操作
-レポート フッターの**その他のオプション** (...) をタップすると、レポートで実行できるすべてのアクションが表示されます。
+レポート フッターの **その他のオプション** (...) をタップすると、レポートで実行できるすべてのアクションが表示されます。
 
 
 ![すべてのレポート操作](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
@@ -132,15 +132,15 @@ Power BI モバイル アプリをダウンロードすると、そのアプリ�
 一部のアクションは、特定のレポート機能に依存しているため、無効になっている場合があります。
 次に例を示します。
 
-**ブックマーク**はレポートに[ブックマーク](mobile-reports-in-the-mobile-apps.md#bookmarks)が設定されている場合にのみ表示されます。 Power BI サービスで定義できる個人用ブックマークとレポートの作成者によって定義されたブックマークの両方が表示されます。 ブックマークの 1 つが既定のブックマークとして定義されている場合、レポートが読み込まれたとき、そのビューが開きます。
+**ブックマーク** はレポートに [ブックマーク](mobile-reports-in-the-mobile-apps.md#bookmarks)が設定されている場合にのみ表示されます。 Power BI サービスで定義できる個人用ブックマークとレポートの作成者によって定義されたブックマークの両方が表示されます。 ブックマークの 1 つが既定のブックマークとして定義されている場合、レポートが読み込まれたとき、そのビューが開きます。
 
 Power BI モバイル アプリからの共有を禁止する [Intune 保護ポリシー](/intune/app-protection-policies)が組織で適用されている場合、**[注釈を付けて共有]** がオフになることがあります。
 
-**招待**は、ユーザーがレポートを他のユーザーと共有するアクセス許可を持っている場合にのみ有効になります。 レポートの所有者である場合、または所有者から再共有アクセス許可を与えられている場合にのみ、アクセス許可が付与されます。
+**招待** は、ユーザーがレポートを他のユーザーと共有するアクセス許可を持っている場合にのみ有効になります。 レポートの所有者である場合、または所有者から再共有アクセス許可を与えられている場合にのみ、アクセス許可が付与されます。
 
-レポート作成者がレポートを地理的データで分類している場合は、**現在の場所でのフィルター処理**が有効になります。 レポート内の地理的データの識別の詳細については、[こちら](../../transform-model/desktop-mobile-geofiltering.md)を参照してください。
+レポート作成者がレポートを地理的データで分類している場合は、**現在の場所でのフィルター処理** が有効になります。 レポート内の地理的データの識別の詳細については、[こちら](../../transform-model/desktop-mobile-geofiltering.md)を参照してください。
 
-**バーコードのスキャンによるレポートのフィルター処理**は、レポート内のデータセットが**バーコード**としてタグ付けされている場合にのみ有効になります。 Power BI Desktop でのバーコードのタグ付けの詳細については、[こちら](../../transform-model/desktop-mobile-barcodes.md)を参照してください。
+**バーコードのスキャンによるレポートのフィルター処理** は、レポート内のデータセットが **バーコード** としてタグ付けされている場合にのみ有効になります。 Power BI Desktop でのバーコードのタグ付けの詳細については、[こちら](../../transform-model/desktop-mobile-barcodes.md)を参照してください。
 
 ### <a name="bookmarks"></a>ブックマーク
 

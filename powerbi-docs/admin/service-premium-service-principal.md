@@ -1,24 +1,24 @@
 ---
 title: サービス プリンシパルを使用して Power BI Premium ワークスペースとデータセットのタスクを自動化する | Microsoft Docs
 description: サービス プリンシパルを使用して、Power BI Premium ワークスペースとデータセットの管理タスクを自動化する方法について説明します。
-author: minewiskan
-ms.author: owend
+author: Minewiskan
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 10/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 406b526f9e2dd146ee99629ed913c60b95989cb0
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 7ffd2d2673a4efb827110c04e5e466e143c36022
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483721"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413428"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>サービス プリンシパルを使用して Premium ワークスペースとデータセットのタスクを自動化する
 
-サービス プリンシパルは、リソースおよびサービス レベルの操作を自動で実行するためにテナント内に作成する Azure Active Directory の " *アプリの登録* " です。 これは一意の種類のユーザー ID で、アプリ名、アプリケーション ID、テナント ID、およびパスワード用の " *クライアント シークレット* " または証明書を含みます。
+サービス プリンシパルは、リソースおよびサービス レベルの操作を自動で実行するためにテナント内に作成する Azure Active Directory の "*アプリの登録*" です。 これは一意の種類のユーザー ID で、アプリ名、アプリケーション ID、テナント ID、およびパスワード用の "*クライアント シークレット*" または証明書を含みます。
 
 Power BI Premium では、Power BI Embedded と同じサービス プリンシパル機能が使用されています。 詳細については、[サービス プリンシパルを使用した Power BI コンテンツの埋め込み](../developer/embedded/embed-service-principal.md)に関する記事をご覧ください。
 
@@ -62,7 +62,7 @@ Premium ワークスペースとデータセットの操作を実行するため
 
     ![ワークスペース アクセスの設定](media/service-premium-service-principal/workspace-access.png)
 
-2. アプリケーション名で検索し、 **管理者** または **メンバー** としてワークスペースにサービス プリンシパルを追加します。
+2. アプリケーション名で検索し、**管理者** または **メンバー** としてワークスペースにサービス プリンシパルを追加します。
 
     ![[アクセス] ダイアログ](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 

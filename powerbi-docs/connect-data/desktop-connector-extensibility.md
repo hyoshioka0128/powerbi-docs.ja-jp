@@ -1,24 +1,24 @@
 ---
 title: Power BI でのコネクタの機能拡張
 description: コネクタの拡張機能, 機能, セキュリティ設定, 認定コネクタ
-author: cpopell
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/02/2020
-ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b604ade56335e65b25501eb9fe3d3c2fd185a6f0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6b78309ad17446aabacd39006968b6d397a51037
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293515"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411243"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Power BI でのコネクタの機能拡張
 
-Power BI では、既存のコネクタと ODBC、OData、OLE DB、Web、CSV、XML や JSON などの一般的なデータ ソースを使用してデータに接続できます。 または、開発者が*カスタム コネクタ*と呼ばれるカスタム データ拡張機能を使用して、新しいデータ ソースを有効にできます。 一部のカスタム コネクタは、Microsoft の*認定コネクタ*として認定され配布されています。
+Power BI では、既存のコネクタと ODBC、OData、OLE DB、Web、CSV、XML や JSON などの一般的なデータ ソースを使用してデータに接続できます。 または、開発者が *カスタム コネクタ* と呼ばれるカスタム データ拡張機能を使用して、新しいデータ ソースを有効にできます。 一部のカスタム コネクタは、Microsoft の *認定コネクタ* として認定され配布されています。
 
 ご自分またはサードパーティが開発した認定されていないコネクタを使用する場合、検証または警告なしで拡張機能が読み込まれるように、Power BI Desktop のセキュリティ設定を調整する必要があります。 このコードは、資格情報の HTTP を介した送信を含むそれらの処理が可能で、プライバシー レベルを無視するため、このセキュリティ設定はお使いのカスタム コネクタを絶対的に信頼しているときのみ使用する必要があります。
 
@@ -46,7 +46,7 @@ Power BI Desktop のデータ拡張機能の既定のセキュリティ設定は
 
 ## <a name="certified-connectors"></a>認定コネクタ
 
-*認定済み*とされているデータ拡張機能のサブセットは限られています。 Microsoft はこれらのコネクタを配布しますが、パフォーマンスや機能の継続性については責任を負いません。 そのコネクタを作成したサードパーティの開発者が、そのメンテナンスとサポートを担当します。 
+*認定済み* とされているデータ拡張機能のサブセットは限られています。 Microsoft はこれらのコネクタを配布しますが、パフォーマンスや機能の継続性については責任を負いません。 そのコネクタを作成したサードパーティの開発者が、そのメンテナンスとサポートを担当します。 
 
 認定されているサードパーティ製のコネクタは、Power BI Desktop では汎用および共通のコネクタと共に、 **[データの取得]** ダイアログボックスに一覧表示されます。 それらの認定コネクタの使用には、セキュリティ設定を調整する必要はありません。
 

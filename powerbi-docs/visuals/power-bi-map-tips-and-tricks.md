@@ -1,21 +1,21 @@
 ---
 title: マップに関するヒントとテクニック (Bing マップの統合を含む)
 description: 'Power BI マップの視覚化、ビジュアル、場所、緯度と経度、Bing マップとの連動に関するヒントとテクニック。 '
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ec2e097dd829760c331ff8f045af00176b0c302b
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 8bbcd6eafc2a0b8eaac7424700bbbb68314730d2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411868"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412508"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Power BI マップの視覚エフェクトに関するヒントとテクニック
 

@@ -1,21 +1,21 @@
 ---
 title: Power BI Desktop の Microsoft Graph Security API に接続する
 description: Power BI Desktop の Microsoft Graph Security API に簡単に接続する
-author: preetikr
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.custom: seojan19
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/29/2019
-ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7f08d75ecc9386dc2329c6564448023dfbfb3b9b
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: b3aa9be7be6e2769367cd3337b78030d52bde0c7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374961"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411427"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Power BI Desktop の Microsoft Graph Security API に接続する
 
@@ -41,7 +41,7 @@ Microsoft Graph Security コネクタを使用するには、Azure Active Direct
 
 * ご利用のロジック アプリが初めて実行されたときに[アプリケーション同意エクスペリエンス](/azure/active-directory/develop/application-consent-experience)を介して送信した要求に応答する
    
-Microsoft Graph Security コネクタにサインインするユーザーが "*セキュリティ管理者*" ロールのメンバーでない**場合**は、そのアカウントに Azure AD Security 閲覧者ロールを割り当てる必要があります。 「[Assign Azure AD roles to users](/graph/security-authorization#assign-azure-ad-roles-to-users)」(Azure AD のロールをユーザーに割り当てる) を参照してください。
+Microsoft Graph Security コネクタにサインインするユーザーが "*セキュリティ管理者*" ロールのメンバーでない **場合** は、そのアカウントに Azure AD Security 閲覧者ロールを割り当てる必要があります。 「[Assign Azure AD roles to users](/graph/security-authorization#assign-azure-ad-roles-to-users)」(Azure AD のロールをユーザーに割り当てる) を参照してください。
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Microsoft Graph Security コネクタを使用する
 
@@ -57,7 +57,7 @@ Microsoft Graph Security コネクタにサインインするユーザーが "*�
 
     ![[バージョンの選択] ダイアログ ボックス](media/desktop-connect-graph-security/selectVersion.PNG)
     
-5. Azure Active Directory アカウントにサインインするように求められたら、サインインします。 このアカウントでは、前のセクションで述べたように*セキュリティ閲覧者*ロールまたは*セキュリティ管理者*ロールを用意する必要があります。
+5. Azure Active Directory アカウントにサインインするように求められたら、サインインします。 このアカウントでは、前のセクションで述べたように *セキュリティ閲覧者* ロールまたは *セキュリティ管理者* ロールを用意する必要があります。
 
     ![サインイン](media/desktop-connect-graph-security/SignIn.PNG) 
     

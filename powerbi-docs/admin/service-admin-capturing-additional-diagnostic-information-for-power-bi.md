@@ -2,20 +2,20 @@
 title: 追加の診断情報をキャプチャする
 description: 次の手順では、Power BI Web クライアントから追加の診断情報を手動で収集するために可能性のある 2 つのオプションを提供します。
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
-ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 49e0b85cb42b008f8d5e3e38296172e24b868fa8
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 856eb4ca9b8c8afab90d351b5a025c2198b393b1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161217"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413727"
 ---
 # <a name="capture-additional-diagnostic-information-for-power-bi"></a>Power BI 用に追加の診断情報をキャプチャする
 

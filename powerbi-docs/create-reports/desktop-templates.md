@@ -2,23 +2,23 @@
 title: Power BI Desktop でのテンプレートの使用
 description: Power BI Desktop でテンプレートを作成して共有する
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/16/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 955e32e99c4f208bbf3582c32b9e5efee95a8f3a
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 71e7167be5f39868b36211fd906cccf482cada5c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861937"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412715"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Power BI Desktop のレポート テンプレートを作成する
 
-**Power BI Desktop** を使用すると、分析情報を組織全体で共有する説得力のあるレポートを作成できます。 Power BI Desktop **テンプレート**を使用すると、既存のテンプレートに基づいてレポート テンプレートを作成することによって作業を効率化することができ、組織内のご自身も他のユーザーもそれを新しいレポートのレイアウト、データ モデル、およびクエリの出発点として使用することができます。 **Power BI Desktop** のテンプレートは、レポートの作成をすぐに開始し、標準化するのに役立ちます。
+**Power BI Desktop** を使用すると、分析情報を組織全体で共有する説得力のあるレポートを作成できます。 Power BI Desktop **テンプレート** を使用すると、既存のテンプレートに基づいてレポート テンプレートを作成することによって作業を効率化することができ、組織内のご自身も他のユーザーもそれを新しいレポートのレイアウト、データ モデル、およびクエリの出発点として使用することができます。 **Power BI Desktop** のテンプレートは、レポートの作成をすぐに開始し、標準化するのに役立ちます。
 
 ![レポートをテンプレートとしてエクスポートする](media/desktop-templates/desktop-templates-01.png)
 
@@ -26,9 +26,9 @@ ms.locfileid: "90861937"
 
 Power BI レポート テンプレートには、生成元のレポートからの次の情報が含まれています。
 
-* レポートの**ページ**、ビジュアル、およびその他のビジュアル要素
+* レポートの **ページ**、ビジュアル、およびその他のビジュアル要素
 * スキーマ、リレーションシップ、メジャー、およびその他のモデル定義の成果物を含む、**データ モデル定義**
-* クエリ、クエリ パラメーター、その他のクエリ要素など、すべての**クエリ定義**
+* クエリ、クエリ パラメーター、その他のクエリ要素など、すべての **クエリ定義**
 
 テンプレートに含まれて "*いない*" ものは、レポートのデータです。 
 
@@ -69,7 +69,7 @@ Power BI レポート テンプレートを使用するには、Power BI Desktop
 これで終了です。 Power BI Desktop でレポート テンプレートの作成および使用が簡単にできるため、説得力のあるレイアウトやその他のレポートの要素を簡単に再現し、他のユーザーと共有することができます。
 
 ## <a name="next-steps"></a>次のステップ
-**クエリ パラメーター**の学習についても関心がありますか。
+**クエリ パラメーター** の学習についても関心がありますか。
 * [Power BI Desktop でクエリ パラメーターを使用する](/power-query/power-query-query-parameters)
 
 さらに、Power BI Desktop を使用すると、さまざまなことを行えます。 そのような機能について詳しくは、次のリソースをご覧ください。
