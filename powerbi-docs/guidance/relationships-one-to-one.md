@@ -2,18 +2,18 @@
 title: 一対一のリレーションシップのガイダンス
 description: 一対一のモデル リレーションシップを開発するためのガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
-ms.openlocfilehash: cbcf7fc1890ae1455f1f6ec7c8604e275f60b2d5
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 19fe2aa003c3d39169bc449dab83c09702f49b1d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668415"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419155"
 ---
 # <a name="one-to-one-relationship-guidance"></a>一対一のリレーションシップのガイダンス
 
@@ -43,7 +43,7 @@ ms.locfileid: "91668415"
 
 **OrderNumber** 列には注文番号が格納され、**OrderLineNumber** 列にはその注文内の一連の明細行が格納されます。
 
-次のモデル図では、注文番号の列と注文明細行番号の列が **Sales** テーブルに読み込まれていないことがわかります。 代わりに、これらの値を使用して、**SalesOrderLineID** という名前の[代理キー](star-schema.md#surrogate-keys)列を作成しました。 (このキーの値は、注文番号を 1000 で乗算した後、注文明細行番号を加算することによって計算されます。)
+次のモデル図では、注文番号の列と注文明細行番号の列が **Sales** テーブルに読み込まれていないことがわかります。 代わりに、これらの値を使用して、**SalesOrderLineID** という名前の [代理キー](star-schema.md#surrogate-keys)列を作成しました。 (このキーの値は、注文番号を 1000 で乗算した後、注文明細行番号を加算することによって計算されます。)
 
 ![モデル図には、次の 2 つのテーブルが含まれています: Sales と Sales Order。 一対一のリレーションシップによって SalesOrderLineID 列が関連付けられています。](media/relationships-one-to-one/sales-order-degenerate.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "91668415"
 一対一で関連付けられたデータを統合してモデル化する方法を、以下の手順に示します。
 
 1. **クエリをマージする**:[2 つのクエリを組み合わせる](../connect-data/desktop-shape-and-combine-data.md#combine-queries)場合は、各クエリのデータの完全性を考慮してください。 1 つのクエリに行の完全なセット (マスター リストなど) が含まれている場合は、もう 1 つのクエリをそれとマージします。 既定の結合の種類である "_左外部結合_" を使用するように、マージ変換を構成します。 この結合の種類を使用すると、最初のクエリの行がすべて維持され、2 番目のクエリの一致する行でそれらが補完されます。 2 番目のクエリの必要なすべての列を、最初のクエリに展開します。
-2. **クエリの読み込みの無効化**:必ず 2 番目のクエリの[読み込みの無効化](import-modeling-data-reduction.md#disable-power-query-query-load)を行います。 これにより、その結果がモデル テーブルとして読み込まれなくなります。 この構成により、データ モデルのストレージ サイズが削減され、 **[フィールド]** ペインの乱雑さを減らすことができます。
+2. **クエリの読み込みの無効化**:必ず 2 番目のクエリの [読み込みの無効化](import-modeling-data-reduction.md#disable-power-query-query-load)を行います。 これにより、その結果がモデル テーブルとして読み込まれなくなります。 この構成により、データ モデルのストレージ サイズが削減され、 **[フィールド]** ペインの乱雑さを減らすことができます。
 
     この例では、レポート作成者は、 **[フィールド]** ペインで **Product** という名前の 1 つのテーブルを確認できるようになりました。 これには、すべての製品関連フィールドが含まれます。
 

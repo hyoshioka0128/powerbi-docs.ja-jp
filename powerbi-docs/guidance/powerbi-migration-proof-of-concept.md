@@ -2,22 +2,22 @@
 title: Power BI に移行するための概念実証を実施する
 description: Power BI に移行するときの概念実証の実施に関するガイダンス。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: a7b7a848aafc3a581c1a19cf34366d61ba891f86
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 77174da7fd47470974a292ba98f6b50c268b04fd
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803357"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419132"
 ---
-# <a name="conductproofofconcepttomigratetopowerbi"></a>Power BI に移行するための概念実証を実施する
+# <a name="conduct-proof-of-concept-to-migrate-to-power-bi"></a>Power BI に移行するための概念実証を実施する
 
-この記事では**ステージ 3** について説明します。これは、Power BI への移行時にできるだけ早期にリスクを軽減して不明な部分に対処するための概念実証 (POC) の実施に関係します。
+この記事では **ステージ 3** について説明します。これは、Power BI への移行時にできるだけ早期にリスクを軽減して不明な部分に対処するための概念実証 (POC) の実施に関係します。
 
 :::image type="content" source="media/powerbi-migration-proof-of-concept/migrate-to-powerbi-stage-3.png" alt-text="Power BI への移行のステージを示す画像。この記事では、ステージ 3 を重点的に説明します。":::
 

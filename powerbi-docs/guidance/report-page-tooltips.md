@@ -2,18 +2,18 @@
 title: レポート ページのヒントによるビジュアルの拡張
 description: レポート ページのツールヒントを使用するためのガイド
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 11/24/2019
-ms.author: v-pemyer
-ms.openlocfilehash: e3af0828afcc7c085b896fe9e1b99f3b10bfdd5f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 919fc9cfa2bbdb55317fed0879347c929a723ce8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277849"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419063"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>レポート ページのヒントによるビジュアルの拡張
 
@@ -27,7 +27,7 @@ ms.locfileid: "83277849"
 - **ビジュアル ヘッダー:** ページのツールヒントを表示するように特定のビジュアルを構成できます。 レポート ユーザーはビジュアル ヘッダー アイコンの上にカーソルを置くことでページのツールヒントを表示できます。このアイコンのことをユーザーに教えてください。
 
 > [!NOTE]
-> レポート ビジュアルでは、ツールヒントのページ フィルターとビジュアルのデザインに互換性がある場合にのみ、ページのツールヒントを表示できます。 たとえば、_製品_別にグループ化されているビジュアルは、_製品_でフィルター処理されるツールヒント ページと互換性があります。
+> レポート ビジュアルでは、ツールヒントのページ フィルターとビジュアルのデザインに互換性がある場合にのみ、ページのツールヒントを表示できます。 たとえば、_製品_ 別にグループ化されているビジュアルは、_製品_ でフィルター処理されるツールヒント ページと互換性があります。
 >
 > ページのツールヒントでは対話機能がサポートされていません。 レポート ユーザーに対話機能を与える場合、代わりに[ドリルスルー ページ](../create-reports/desktop-drillthrough.md)を作成します。
 >
@@ -47,7 +47,7 @@ ms.locfileid: "83277849"
 
 ![マトリックス ビジュアルには、行の年と月でグループ化された値のグリッドが表示されます。 レポート ユーザーが単一の値の上にカーソルを置きました。 ページのツールヒントが表示されました。](media/report-page-tooltips/suggestion-different-perspective.png)
 
-ページのツールヒントが表示されました。 別のデータ ビジュアル (折れ線グラフおよび集合縦棒グラフ) が提示され、期間別に比較するフィルターが適用されます。 データ ポイントのフィルター コンテキストが 2018 年 11 月になっていることにご注目ください。 それでも、ページのツールヒントには、_丸一年の月別_傾向が表示されます。
+ページのツールヒントが表示されました。 別のデータ ビジュアル (折れ線グラフおよび集合縦棒グラフ) が提示され、期間別に比較するフィルターが適用されます。 データ ポイントのフィルター コンテキストが 2018 年 11 月になっていることにご注目ください。 それでも、ページのツールヒントには、_丸一年の月別_ 傾向が表示されます。
 
 ### <a name="add-detail"></a>詳細の追加
 

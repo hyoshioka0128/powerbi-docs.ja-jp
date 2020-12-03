@@ -2,18 +2,18 @@
 title: ページ分割されたレポートでのデータ取得のガイダンス
 description: Power BI のページ分割されたレポートに対してデータ ソースとデータセットを作成するためのガイダンスです。
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/16/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 511dc42a3090f838654cda84f596d34f02bb3439
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 5869402a1f5147dbd4cea18b426452e115a97911
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275089"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419040"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>ページ分割されたレポートでのデータ取得のガイダンス
 
@@ -107,7 +107,7 @@ MDX クエリ デザイナーでは、モデルにメジャーを含める必要
 
 複数のデータ ソースからのデータを結合する必要がある場合は、次の 2 つの選択肢があります。
 
-- **レポート データセットを結合する**:データ ソースが[ページ分割されたレポートでネイティブにサポートされている](../paginated-reports/paginated-reports-data-sources.md)場合は、Report Builder 関数 [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) や [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) を使用する計算フィールドを作成することを検討できます。
+- **レポート データセットを結合する**:データ ソースが [ページ分割されたレポートでネイティブにサポートされている](../paginated-reports/paginated-reports-data-sources.md)場合は、Report Builder 関数 [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) や [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) を使用する計算フィールドを作成することを検討できます。
 - **Power BI Desktop モデルを開発する**:ただし、Power BI Desktop でデータ モデルを開発する方が効率的である可能性があります。 Power Query を使用して、[サポートされている任意のデータ ソース](../connect-data/power-bi-data-sources.md)に基づいてクエリを組み合わせることができます。 Power BI サービスに発行されると、Power BI データセットに接続するページ分割されたレポートを作成できます。
 
 ## <a name="sql-server-complex-data-types"></a>SQL Server の複合データ型
@@ -131,7 +131,7 @@ SQL Server はオンプレミスのデータ ソースであるため、Power BI
 
 ### <a name="deleted-query-fields"></a>削除されたクエリ フィールド
 
-**[データセットのプロパティ]** ウィンドウの **[フィールド]** ページでは、データセット _クエリ フィールド_を削除できます (クエリ フィールドは、データセット クエリによって取得される列にマップされます)。 ただし、Report Builder によって、データセット クエリから対応する列が削除されることはありません。
+**[データセットのプロパティ]** ウィンドウの **[フィールド]** ページでは、データセット _クエリ フィールド_ を削除できます (クエリ フィールドは、データセット クエリによって取得される列にマップされます)。 ただし、Report Builder によって、データセット クエリから対応する列が削除されることはありません。
 
 クエリ フィールドをデータセットから削除する必要がある場合は、データセット クエリから対応する列を削除することをお勧めします。 重複するクエリ フィールドはすべて、Report Builder によって自動的に削除されます。 意図せずクエリフ ィールドを削除してしまった場合は、データセット クエリ ステートメントも変更して列を削除する必要があります。
 
