@@ -96,8 +96,6 @@
               href: /rest/api/power-bi/
         - name: Power BI ライブラリ
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
-        - name: カスタム レイアウトをアプリに埋め込む
-          href: embedded-custom-layout.md
         - name: Azure CLI
           href: /cli/azure/ext/powerbidedicated/powerbi
     - name: リソース
