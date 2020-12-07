@@ -9,11 +9,11 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
 ms.openlocfilehash: 09489c3dbb33e1c5fb289cc1cc132eae0083a95f
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981737"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96120800"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Power BI Embedded での行レベルのセキュリティ
 
@@ -38,7 +38,7 @@ RLS を利用するには、ユーザー、ロール、ルールの 3 つの主�
 
 ## <a name="adding-roles-with-power-bi-desktop"></a>Power BI Desktop でのロールの追加
 
-**小売りの分析のサンプル**では、小売チェーンのすべての店舗の売上が表示されます。 RLS がないと、どの地域のマネージャーがサインインしてレポートを表示しても、必ず同じデータが表示されます。 経営陣は、各地域のマネージャーは自分が管理している店舗の売上のみを見ることができるようにする必要があると決定しました。 経営陣は、RLS を使い、地域のマネージャーに基づいてデータを制限できます。
+**小売りの分析のサンプル** では、小売チェーンのすべての店舗の売上が表示されます。 RLS がないと、どの地域のマネージャーがサインインしてレポートを表示しても、必ず同じデータが表示されます。 経営陣は、各地域のマネージャーは自分が管理している店舗の売上のみを見ることができるようにする必要があると決定しました。 経営陣は、RLS を使い、地域のマネージャーに基づいてデータを制限できます。
 
 RLS は Power BI Desktop で作成します。 データセットとレポートを開いた後は、ダイアグラム表示に切り替えてスキーマを見ることができます。
 
@@ -88,9 +88,9 @@ Power BI Desktop でロールを構成したので、アプリケーションで
 
 **PowerBIClient.Reports** で **GenerateTokenInGroup** メソッドを使って、埋め込みトークンを作成できます。
 
-たとえば、 *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > [.NET Framework] > [Embed for your customers]\(顧客向けに埋め込む\) > **[PowerBIEmbedded_AppOwnsData]*** のサンプルを変更できます。
+たとえば、"*[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > [.NET Framework] > [Embed for your customers]\(顧客向けに埋め込む\) > **PowerBIEmbedded_AppOwnsData** _" のサンプルを変更できます。
 
-**変更前**
+_ *変更前**
 
 ```csharp
 // Generate Embed Token with effective identities.
@@ -239,7 +239,7 @@ Power BI Embedded アプリケーションで CustomData() 機能の設定を開
 
 ## <a name="using-rls-vs-javascript-filters"></a>RLS の使用とJavaScript のフィルター
 
-レポート内のデータをフィルター処理することに決めた場合、**行レベルのセキュリティ (RLS)** か **JavaScript のフィルター**を使用できます。
+レポート内のデータをフィルター処理することに決めた場合、**行レベルのセキュリティ (RLS)** か **JavaScript のフィルター** を使用できます。
 
 [行レベルのセキュリティ](../../admin/service-admin-rls.md)は、データ モデルのレベルでデータをフィルター処理する機能です。 バックエンド データ ソースによって RLS 設定が制御されます。 データ モデルに基づいて、埋め込みトークンの生成によりセッションのユーザー名とロールが設定されます。 クライアント側のコードでこれをオーバーライド、削除、または制御することはできません。これがセキュリティで保護されていると見なされる理由です。 RLS を使ってデータを安全にフィルター処理することをお勧めします。 以下のオプションのいずれかを使うことで、RLS を使ってデータをフィルター処理できます。
 
@@ -314,13 +314,13 @@ public IdentityBlob(string value);
 ID BLOB で提供する値は、Azure SQL Server に対する (リソース URL が <https://database.windows.net/> の) 有効なアクセス トークンである必要があります。
 
    > [!Note]
-   > Azure SQL に対するアクセス トークンを作成できるためには、Azure portal の AAD アプリ登録構成において、**Azure SQL Database** API に対する **Azure SQL DB と Data Warehouse へのアクセス**の委任されたアクセス許可を、アプリケーションに設定する必要があります。
+   > Azure SQL に対するアクセス トークンを作成できるためには、Azure portal の AAD アプリ登録構成において、**Azure SQL Database** API に対する **Azure SQL DB と Data Warehouse へのアクセス** の委任されたアクセス許可を、アプリケーションに設定する必要があります。
 
    ![アプリの登録](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
 ## <a name="on-premises-data-gateway-with-service-principal"></a>サービス プリンシパルを使用するオンプレミス データ ゲートウェイ
 
-SQL Server Analysis Services (SSAS) オンプレミス ライブ接続データ ソースを使用して行レベル セキュリティ (RLS) を構成するお客様は、**Power BI Embedded** と統合することで、新しい[サービス プリンシパル](embed-service-principal.md)機能を使用して、ユーザーと、SSAS のデータへのユーザー アクセスを管理することができます。
+SQL Server Analysis Services (SSAS) オンプレミス ライブ接続データ ソースを使用して行レベル セキュリティ (RLS) を構成するお客様は、**Power BI Embedded** と統合することで、新しい [サービス プリンシパル](embed-service-principal.md)機能を使用して、ユーザーと、SSAS のデータへのユーザー アクセスを管理することができます。
 
 [Power BI REST API](/rest/api/power-bi/) を使用すると、[サービス プリンシパル オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)を使用して埋め込みトークンに対して SSAS オンプレミス ライブ接続用の有効な ID を指定することができます。
 
@@ -336,7 +336,7 @@ SQL Server Analysis Services (SSAS) オンプレミス ライブ接続データ 
 * Power BI サービスでは RLS の設定は管理者や編集アクセス許可を持つメンバーには適用されませんが、埋め込みトークンで ID を指定すると、データに適用されます。
 * オンプレミス サーバー向けの Analysis Services ライブ接続がサポートされています。
 * Azure Analysis Services ライブ接続ではロールによるフィルター処理はサポートされます。 動的フィルターは、CustomData を使用して適用できます。
-* 基になるデータセットで RLS が必要ない場合、GenerateToken 要求に有効な ID が含まれていては**なりません**。
+* 基になるデータセットで RLS が必要ない場合、GenerateToken 要求に有効な ID が含まれていては **なりません**。
 * 基になるデータセットがクラウド モデル (キャッシュされたモデルまたは DirectQuery) の場合は、有効な ID に少なくとも 1 つのロールが含まれている必要があります。そうでない場合、ロールの割り当ては行われません。
 * ID のリストを使うと、ダッシュボードの埋め込みに複数の ID トークンを使うことができます。 他のすべてのアーティファクトでは、リストには単一の ID が含まれます。
 

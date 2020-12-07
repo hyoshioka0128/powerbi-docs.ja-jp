@@ -2,19 +2,19 @@
 title: Power BI の "ビジネス ユーザー" とは
 description: ビジネス ユーザー (エンド ユーザーまたはビジネス ユーザーとも呼ばれます) 向けの Power BI の概要。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: overview
 ms.date: 10/11/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7616d84ca93c336e606b3a96e7a362a1b57e6a96
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 133ffefd32008a138c736094dadcfe154211e98c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982060"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391233"
 ---
 # <a name="the-power-bi-service-for-business-users"></a>ビジネス ユーザー向けの Power BI サービス
 
@@ -28,7 +28,7 @@ ms.locfileid: "91982060"
 
 ## <a name="the-power-bi-service-for-business-users"></a>"*ビジネス ユーザー*" 向けの Power BI サービス
 
-Power BI によって仕事が簡単になり、同時にインパクトも増します。 データはすべてチャートとグラフになり、データが視覚化されます。 データの分析情報は、数字や語句から成る長い一覧や表ではなく、データの分析情報についてのストーリーを示す、"***美しく***"、カラフルで説得力のあるビジュアルです。 
+Power BI によって仕事が簡単になり、同時にインパクトも増します。 データはすべてチャートとグラフになり、データが視覚化されます。 データの分析情報は、数字や語句から成る長い一覧や表ではなく、データの分析情報についてのストーリーを示す、"***美しく** _"、カラフルで説得力のある視覚化です。 
 
 ![スクリーンショットには、さまざまな種類のグラフを含んだ Power BI レポートが表示されています。](media/end-user-consumer/power-bi-consumer-examples.png)
  
@@ -38,7 +38,7 @@ Power BI によって仕事が簡単になり、同時にインパクトも増�
 
 コンテンツは静的ではないため、傾向、分析情報、およびその他のビジネス インテリジェンスを調べることができます。 コンテンツを細かく分けます。自分の言葉を使って質問することもできます。 または、自分から何もしなくても、データによって興味深い分析情報が見つかります。データが変更されるとアラートが送信され、設定したスケジュールに基づいてメールでレポートが送信されます。 任意のデバイスから、クラウドまたはオンプレミスのすべてのデータをいつでも使用できます。 これは、Power BI で実行できることのほんの始まりにしかすぎません。 
 
-## <a name="am-i-a-power-bi-business-user"></a>Power BI "*ビジネス ユーザー*" とは
+## <a name="am-i-a-power-bi-_business-user"></a>Power BI "_ビジネス ユーザー*" とは
 
 Power BI をどのように操作するかは、ご自分の仕事上の役割により異なります。 コンシューマーまたは "*ビジネス ユーザー*" の場合、同僚からコンテンツ (ダッシュボード、レポート、アプリ) を受け取ります。 Power BI のオンラインまたはモバイル バージョン (Power BI サービスと呼ばれます) で作業し、このコンテンツをレビューおよび操作してビジネス上の決定を行います。 
    

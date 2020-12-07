@@ -2,32 +2,32 @@
 title: ビジネス ユーザーとしての視覚化 (視覚エフェクト) の操作
 description: Power BI の概念と用語 - 視覚化、ビジュアル。 Power BI の視覚化とビジュアルの概要。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/7/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f463e9a065ddfa550cdab6929393cfb71ce30158
-ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
+ms.openlocfilehash: dfa030b487e1e4d9f6f4d1bfd39cfab8baa72c71
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830284"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389186"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>レポート、ダッシュボード、アプリでビジュアルを操作する
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-基本的に、***視覚化*** (または*ビジュアル*) は、レポートとデータセットのデータを使用して、Power BI *デザイナー*によってビルドされたグラフの種類です。 
+基本的に、"***視覚化** _" (または "_視覚エフェクト*") は、レポートとデータセットのデータを使用して、Power BI "*デザイナー*" によってビルドされたグラフの種類です。 
 
-ビジュアルはダッシュボードとレポートに表示され、Power BI Q&A を使用してその場で作成できます。 レポートのデザイナーでビジュアルを作成した場合は、そのビジュアルをダッシュボードに*ピン留め*できます。 [ダッシュボード上のビジュアルは*タイル*と呼ばれます](end-user-tiles.md)。 次のダッシュボードには、8 つのタイルがあります。 
+ビジュアルはダッシュボードとレポートに表示され、Power BI Q&A を使用してその場で作成できます。 レポートのデザイナーでビジュアルを作成した場合は、そのビジュアルをダッシュボードに *ピン留め* できます。 [ダッシュボード上のビジュアルは *タイル* と呼ばれます](end-user-tiles.md)。 次のダッシュボードには、8 つのタイルがあります。 
 
 ![タイルのあるダッシュボード](media/end-user-visualizations/power-bi-dashboard.png)
 
 > [!TIP]
-> この詳細な内容を読む前に、[*ビジネス ユーザー*向けの Power BI の基本的な概念](end-user-basic-concepts.md)に関する概要トピックを先に読むことをお勧めします。
+> この詳細な内容を読む前に、[*ビジネス ユーザー* 向けの Power BI の基本的な概念](end-user-basic-concepts.md)に関する概要トピックを先に読むことをお勧めします。
 
 ## <a name="what-can-i-do-with-visuals"></a>ビジュアルで実行できること
 
@@ -35,7 +35,7 @@ ms.locfileid: "91830284"
 
 "*ビジネス ユーザー*" の最も一般的なタスクと、詳細な手順の説明へのリンクを次の表に示します。 "*ビジネス ユーザー*" の場合、視覚エフェクトを操作するさまざまなオプションがあり、分析情報を明らかにして、データ駆動型のビジネス上の意思決定を行ことができます。  
 
-これらのオプションの多くに対して、管理者または*デザイナー*は、ユーザーがこれらの機能を表示または使用する許可を無効にできます。 また、これらの機能の一部は、特定の視覚エフェクトの種類でのみ機能します。  ご不明な点がある場合は、管理者、またはレポート/ダッシュボードの所有者にお問い合わせください。 所有者を見つけるには、ダッシュボードまたはレポートのドロップダウンを選択します。 
+これらのオプションの多くに対して、管理者または *デザイナー* は、ユーザーがこれらの機能を表示または使用する許可を無効にできます。 また、これらの機能の一部は、特定の視覚エフェクトの種類でのみ機能します。  ご不明な点がある場合は、管理者、またはレポート/ダッシュボードの所有者にお問い合わせください。 所有者を見つけるには、ダッシュボードまたはレポートのドロップダウンを選択します。 
 
 ![所有者を示すタイトル ドロップダウン](media/end-user-visualizations/power-bi-designer.png)
 
@@ -50,9 +50,9 @@ ms.locfileid: "91830284"
 |[自分用にビジュアルにコメントを追加するか、ビジュアルについて同僚と会話を開始します](end-user-comment.md)。     |  はい       |   はい      |  no  |
 |[ビジュアルが作成されたレポートを開いて探索します](end-user-tiles.md)。     |    はい     |   NA      |  no |
 |[ビジュアルに影響を与えるフィルターとスライサーの一覧を表示します](end-user-report-filter.md)。     |    フォーカス モードで開く場合     |   はい      |  no |
-|[Q&A でビジュアルを開いて探索します (*デザイナー*が Q&A を使用してビジュアルを作成した場合)](end-user-q-and-a.md)。     |   はい      |   NA      |  NA  |
+|[Q&A でビジュアルを開いて探索します (*デザイナー* が Q&A を使用してビジュアルを作成した場合)](end-user-q-and-a.md)。     |   はい      |   NA      |  NA  |
 |[Q&A でビジュアルを作成します (探索の場合は、ビジュアルを保存できません)](end-user-q-and-a.md)。     |   はい      |   デザイナーが Q&A をレポートに追加した場合      |  はい  |
-|ビジュアルのデータから[興味深い事実や傾向を探すように Power BI に要求します](end-user-insights.md)。  これらの自動的に生成されたビジュアルは、*分析情報*と呼ばれます。     |    はい (タイルに対して)    |  no       | no   |
+|ビジュアルのデータから[興味深い事実や傾向を探すように Power BI に要求します](end-user-insights.md)。  これらの自動的に生成されたビジュアルは、*分析情報* と呼ばれます。     |    はい (タイルに対して)    |  no       | no   |
 |["*フォーカス*" モードを使用して一度に 1 つずつビジュアルを表示します](end-user-focus.md)。     | はい (タイルに対して)        |   はい (ビジュアルに対して)      | NA  |
 |[ビジュアルが最後に更新された時刻を検索します](end-user-fresh.md)。     |  はい       |    はい     | NA  |
 |["*全画面表示*" モードを使用して、罫線またはナビ ペインなしで、ビジュアルを一度に 1 つずつ表示します](end-user-focus.md)。     |   はい      |  はい       | 既定による  |

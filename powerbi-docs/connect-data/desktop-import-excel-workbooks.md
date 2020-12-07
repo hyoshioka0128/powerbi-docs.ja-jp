@@ -2,19 +2,19 @@
 title: Power BI Desktop に Excel ブックをインポートする
 description: Power Query のクエリ、Power Pivot のモデル、Power View のワークシートが格納されている Excel ブックを Power BI Desktop にインポートできます。
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/22/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6fce5e88fa41c2eb7ed03b805494165344701da7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 874e95c6ac917ca723e67ae0741d5244a09f288d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223520"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411013"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Power BI Desktop に Excel ブックをインポートする
 Power BI Desktop を使用すると、Power Query のクエリ、Power Pivot のモデル、Power View のワークシートが格納されている Excel ブックを Power BI Desktop に簡単にインポートできます。 Power BI Desktop では、Excel ブックに基づいて自動的にレポートが作成され、データが可視化されます。 インポート後も引き続き、作成されたレポートを Power BI Desktop で改良したり、能率化したりできます。その際、既存の機能や毎月の Power BI Desktop 更新でリリースされる新しい機能をご利用いただけます。
@@ -54,7 +54,7 @@ Power BI Desktop を使用すると、Power Query のクエリ、Power Pivot の
 ブックのインポート後、レポートで作業を続行できます。 Power BI Desktop に含まれているいずれかの機能を利用し、データを新たに可視化したり、データを追加したり、新しいレポート ページを作成したりすることができます。
 
 ## <a name="which-workbook-elements-are-imported"></a>インポートされるブック要素
-Power BI Desktop は、Excel で一般的に *オブジェクト*と呼ばれる次の要素をインポートできます。
+Power BI Desktop は、Excel で一般的に *オブジェクト* と呼ばれる次の要素をインポートできます。
 
 | Excel ブック内のオブジェクト | Power BI Desktop ファイルの最終結果 |
 | --- | --- |
@@ -71,6 +71,6 @@ Power BI Desktop には、ブックをインポートする際にいくつかの
 * **階層:** 現在は、Power BI Desktop でこの種類のデータ モデル オブジェクトはサポートされていません。 そのため、Power BI Desktop に Excel ブックをインポートするとき、階層は省かれます。
 * **バイナリ データ列:** 現在は、Power BI Desktop でこの種類のデータ モデル列はサポートされていません。 バイナリ データ列は、Power BI Desktop で結果的に生成されるテーブルから削除されます。
 * **サポートされていない Power View の要素:** テーマや特定の種類の視覚化 (再生軸のある散布図やドリルダウン動作など) など、Power View のいくつかの機能は Power BI Desktop で利用できません。 これらの視覚化はサポートされていないため、Power BI Desktop レポートの該当する場所に *サポートされていない視覚化* というメッセージが表示され、必要に応じてこれを削除したり、再構成したりできます。
-* **Power Query の** ***[ソース テーブル]***、**または M の** ***Excel.CurrentWorkbook*** **を使用した名前付き範囲:** 現在のところ、この名前付き範囲のデータを Power BI Desktop にインポートすることはできませんが、更新プログラムとして予定されています。 現時点では、これらの名前付き範囲は、外部の Excel ブックへの接続として Power BI Desktop に読み込まれます。
+* **Power Query の** **_[ソース テーブル]_ *_、_* または M の** **_Excel.CurrentWorkbook_ *_ _* を使用した名前付き範囲:** 現在のところ、この名前付き範囲のデータを Power BI Desktop にインポートすることはできませんが、更新プログラムとして予定されています。 現時点では、これらの名前付き範囲は、外部の Excel ブックへの接続として Power BI Desktop に読み込まれます。
 * **PowerPivot から SSRS:** 現在のところ、PowerPivot てでは、SQL Server Reporting Services (SSRS) に外部接続できません。そのデータ ソースが現在、Power BI Desktop で利用できないためです。
 

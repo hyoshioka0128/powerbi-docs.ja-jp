@@ -2,17 +2,17 @@
 title: Google Search でコンテンツを検索してアクセスする
 description: Google Search でのコンテンツの検索とアクセスについて学習します。
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-ms.openlocfilehash: cb6d2d1474ffaeddc98b5019830920f3064e3df2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2bd49b9578c8c0ba2d24bd74d77251bc663cf7fa
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235150"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414624"
 ---
 # <a name="find-and-access-your-content-with-google-search"></a>Google Search でコンテンツを検索してアクセスする
 
@@ -28,7 +28,7 @@ Google Search を使用して、Power BI モバイル アプリを検索して�
 
 ## <a name="search-using-google-search"></a>Google Search を使用して検索する
 
-Google 検索ボックスでは、***search for &lt;検索項目&gt; in power bi*** という形式を使用して検索します。 たとえば、**search for sales in power bi** のようにします。
+Google 検索ボックスでは、"***search for &lt;検索項目&gt; in power bi** _" という形式を使用して検索します。 たとえば、_*search for sales in power bi** のようにします。
 
 * 一致するものが 1 つだけ見つかった場合、Power BI モバイル アプリで、探していた項目が開かれます。
 * 一致するものが複数見つかった場合、Power BI では、要求に応じてフィルター処理された検索画面が開かれます。

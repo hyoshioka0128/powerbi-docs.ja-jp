@@ -2,20 +2,20 @@
 title: フォーカス モードと全画面表示モード - 拡大して詳細を表示する方法
 description: フォーカス モードまたは全画面表示モードでの Power BI のダッシュボード、ダッシュボード タイル、レポート、またはレポートのビジュアルの表示について説明しているドキュメントです
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 7ab2500a393751c3013c1f3427173b57b3b5cf07
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: 6385d263c47bde156a7dae941fefb101b9b30d18
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642657"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400456"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>コンテンツを詳細に表示する: フォーカス モードと全画面表示モード
 
@@ -56,11 +56,11 @@ Power BI Mobile を使用している場合、[全画面は Windows 10 Mobile �
 
 ## <a name="when-to-use-focus-mode"></a>フォーカス モードを使用する場合
 
-"***フォーカス***" モードでは、ビジュアルまたはタイルを拡大 (ポップアウト) し、詳細を確認することができます。  ダッシュボードやレポートが少し混み合っていて、1 つのビジュアルだけを拡大して見たいことがあるでしょう。  これは、フォーカス モードを使用するのに最適です。  
+"***フォーカス** _" モードでは、ビジュアルまたはタイルを拡大 (ポップアウト) し、詳細を確認することができます。  ダッシュボードやレポートが少し混み合っていて、1 つのビジュアルだけを拡大して見たいことがあるでしょう。  これは、フォーカス モードを使用するのに最適です。  
 
 ![ダッシュボード タイル フォーカス モードの前後](media/end-user-focus/power-bi-compare-dash.png)
 
-フォーカス モードでは、Power BI の "*ビジネス ユーザー*" は、このビジュアルを作成するときに適用されたフィルターを操作できます。  Power BI サービスでは、ダッシュボードのタイルまたはレポートのビジュアルでフォーカス モードを使用できます。
+フォーカス モードでは、Power BI の "_ビジネス ユーザー*" は、この視覚エフェクトの作成時に適用されたフィルターを操作できます。  Power BI サービスでは、ダッシュボードのタイルまたはレポートのビジュアルでフォーカス モードを使用できます。
 
 ## <a name="working-in-full-screen-mode"></a>全画面表示モードでの操作
 

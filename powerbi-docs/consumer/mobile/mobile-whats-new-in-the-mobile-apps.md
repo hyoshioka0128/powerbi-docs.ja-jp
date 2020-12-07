@@ -2,18 +2,18 @@
 title: Power BI 用モバイル アプリの新機能
 description: Power BI 用モバイル アプリの新機能
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/01/2020
-ms.author: painbar
-ms.openlocfilehash: 83a280b94a6db937133e0d7ab1e6d7ad64af06f4
-ms.sourcegitcommit: 29cafa1602efb56cfa8dbd0010dd04ad3fcdd02c
+ms.date: 12/01/2020
+ms.openlocfilehash: 81a387d2f87e857cb56dcbc1fb22c8da72bbd27e
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93355936"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96502089"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -25,9 +25,19 @@ ms.locfileid: "93355936"
 >[!NOTE]
 >**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## <a name="december-2020"></a>2020 年 12 月
+### <a name="weve-added-dark-mode-to-power-bi-mobile-android"></a>Power BI モバイルにダーク モードが追加されました (Android)
+
+Android デバイス用 Power BI モバイル アプリで、新しいダーク モードをお試しください。 ダーク モードでは、暗い背景に明るいテキストが表示され、画面の明るさが下がり、内容が見やすくなります。 アプリの表示設定でテーマを切り替えることができます。 [詳細情報](mobile-apps-dark-mode.md)
+
+![Android 用 Power BI モバイル アプリのダーク モードのスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
+
+### <a name="maximize-the-view-with-full-screen-mode-ipads"></a>全画面表示モードを使用してビューを最大化する (iPad)
+iPad 用のモバイル アプリに新しいボタンが追加されました。これを使用すると、アプリのヘッダーとフッターを削除して、コンテンツを表示するための領域を最大化できます。 全画面表示切り替えボタン ![全画面表示モードのアイコンのスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) (画面の右上隅) をタップするだけで、モードを切り替えることができます。
+
 ## <a name="november-2020"></a>2020 年 11 月
 ### <a name="maximize-the-view-with-full-screen-mode-android-tablets"></a>表示を全画面表示モードで最大化する (Android タブレット)
-Android タブレット用のモバイル アプリに新しいボタンが追加されました。このボタンを使用すると、アプリのヘッダーとフッターを削除して、コンテンツを表示するための領域を最大化できます。 画面の右上隅にある全画面表示のトグル ボタンをタップするだけで、モードを切り替えることができます。
+Android タブレット用のモバイル アプリに新しいボタンが追加されました。このボタンを使用すると、アプリのヘッダーとフッターを削除して、コンテンツを表示するための領域を最大化できます。 全画面表示切り替えボタン ![全画面表示モードのアイコンのスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) (画面の右上隅) をタップするだけで、モードを切り替えることができます。
 
 ## <a name="october-2020"></a>2020 年 10 月
 ### <a name="automatic-page-refresh-is-now-supported-windows"></a>ページの自動更新はサポートされています (Windows)

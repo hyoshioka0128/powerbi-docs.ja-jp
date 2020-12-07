@@ -2,20 +2,20 @@
 title: サインインとサインアウト
 description: Web で Power BI サービスにサインインする方法とサインアウトする方法について説明します。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 Ms.custom: css_fy20Q4
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/06/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bea5b36c98ab8a62b444bfc731b5d54df6550f0f
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 18fe7dc1c2d1b064d28e32782dc58fcbcf92341d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780446"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389623"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Power BI サービスにサインインする
 
@@ -65,10 +65,10 @@ Power BI サービスがブラウザーで実行されます。
 
 ![ホーム ランディング ページ](media/end-user-sign-in/power-bi-home-new.png)
 
-Power BI でホームを開きたくない場合は、代わりに[**おすすめ**ダッシュボードまたはレポートを設定](end-user-featured.md)して開くことができます。 
+Power BI でホームを開きたくない場合は、代わりに [**おすすめ** ダッシュボードまたはレポートを設定](end-user-featured.md)して開くことができます。 
 
 ## <a name="safely-interact-with-content"></a>コンテンツを安全に操作する
-"***ビジネス ユーザー***" として、他のユーザーから共有されたコンテンツを操作し、データを探索して、ビジネスに関する決定を行います。  フィルター、スライス、サブスクライブ、エクスポート、サイズ変更などの操作を行っても、基になっているデータセットや元の共有コンテンツ (ダッシュボードとレポート) が影響を受けることはありません。 Power BI は、探索や実験のための安全な場所です。 それは変更を保存できないという意味ではありません。保存できます。 ただし、それらの変更が反映されるのはコンテンツの**自分の**表示だけです。 また、ボタンをクリックするだけで、簡単に元の既定のビューに戻すことができます。
+**"_ビジネス ユーザー_" *_ として、他のユーザーから共有されたコンテンツを操作し、データを探索して、ビジネスに関する決定を行います。フィルター、スライス、サブスクライブ、エクスポート、サイズ変更などの操作を行っても、基になっているデータセットや元の共有コンテンツ (ダッシュボードとレポート) が影響を受けることはありません。Power BI は、探索や実験のための安全な場所です。それは変更を保存できないという意味ではありません。保存できます。ただし、それらの変更が反映されるのは、コンテンツの_* 自分の** 表示のみです。 また、ボタンをクリックするだけで、簡単に元の既定のビューに戻すことができます。
 
 ![[既定値にリセット] ボタン](media/end-user-sign-in/power-bi-reset.png)
 

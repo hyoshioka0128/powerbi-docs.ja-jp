@@ -2,19 +2,19 @@
 title: ダッシュボードとは何ですか? それはどのように開きますか?
 description: ダッシュボードは、Power BI サービスの主要な機能です。
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 08/30/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2e2c4656c5436691df96b86f145e255153ff9f96
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 518310c6b4b0d45f02049c91a493b6394a4a50d2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286696"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400548"
 ---
 # <a name="dashboards-for-business-users-of-the-power-bi-service"></a>Power BI サービスのビジネス ユーザー向けダッシュボード
 
@@ -22,11 +22,11 @@ ms.locfileid: "89286696"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Power BI の "***ダッシュボード***" は、視覚化を使ってストーリーを伝える単一のページであり、キャンバスと呼ばれることもよくあります。 ダッシュボードは 1 ページに制限されているため、適切に設計されたダッシュボードには、そのストーリーの最も重要な要素のみが含まれます。
+Power BI の***ダッシュボード** _は、視覚エフェクトを使ってストーリーを伝える単一のページであり、キャンバスと呼ばれることもよくあります。 ダッシュボードは 1 ページに制限されているため、適切に設計されたダッシュボードには、そのストーリーの最も重要な要素のみが含まれます。
 
 ![ダッシュボードのスクリーンショット](media/end-user-dashboards/power-bi-dashboard.png)
 
-ダッシュボードに表示される視覚エフェクトは*タイル*と呼ばれ、レポート *デザイナー*によってダッシュボードに*ピン留め*されています。 通常、タイルを選択すると、その視覚エフェクトが作成されたレポート ページに移動します。 Power BI を初めて使うときは、[Power BI の基本的な概念](end-user-basic-concepts.md)に関するページを読むと基礎がよくわかります。
+ダッシュボードに表示される視覚エフェクトは "_タイル*" と呼ばれ、レポート "*デザイナー*" によってダッシュボードに "*ピン留め*" されています。 通常、タイルを選択すると、その視覚エフェクトが作成されたレポート ページに移動します。 Power BI を初めて使うときは、[Power BI の基本的な概念](end-user-basic-concepts.md)に関するページを読むと基礎がよくわかります。
 
 > [!NOTE]
 > ダッシュボードは、[モバイル デバイス上で表示および共有する](mobile/mobile-apps-view-dashboard.md)ことができます。
@@ -42,8 +42,8 @@ Power BI の "***ダッシュボード***" は、視覚化を使ってストー�
 
 ダッシュボードは単なる美しい画像ではありません。対話機能を備え、基になっているデータが変化するとタイルが更新されます。
 
-## <a name="dashboards-versus-reports-for-power-bi-business-users"></a>Power BI の "***ビジネス ユーザー***" から見たダッシュボードとレポートの違い
-レポートも視覚化が表示されたキャンバスであるため、ダッシュボードと混同されることがよくあります。 しかし、Power BI の "*ビジネス ユーザー*" の観点からは大きな違いがいくつかあります。
+## <a name="dashboards-versus-reports-for-power-bi-business-users_"></a>Power BI の "***ビジネス ユーザー** _" から見たダッシュボードとレポートの違い
+レポートも視覚化が表示されたキャンバスであるため、ダッシュボードと混同されることがよくあります。 しかし、Power BI の "_ビジネス ユーザー*" の観点からは大きな違いがいくつかあります。
 
 | **機能** | **ダッシュボード** | **レポート** |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Power BI の "***ダッシュボード***" は、視覚化を使ってストー�
 
 
 ## <a name="dashboard-designers-and-dashboard-business-users"></a>ダッシュボードのデザイナーとダッシュボードのビジネス ユーザー
-Power BI の "***ビジネス ユーザー***" は、"*デザイナー*" からダッシュボードを受け取ります。 次のトピックについて、ダッシュボードに関する学習を続けてください。
+Power BI の "**_ビジネス ユーザー_* _" は、"_デザイナー*" からダッシュボードを受け取ります。 次のトピックについて、ダッシュボードに関する学習を続けてください。
 
 * [ダッシュボードの表示](end-user-dashboard-open.md)
 * [ダッシュボードのタイル](end-user-tiles.md)およびタイルを選んだときの結果について学習します。

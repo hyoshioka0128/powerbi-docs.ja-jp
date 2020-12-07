@@ -2,18 +2,18 @@
 title: Power BI ウェビナー
 description: Power BI ウェビナー
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/22/2020
-ms.author: kfollis
-ms.openlocfilehash: 76f0963da1a7cecec6f97fc7e0ab534f7d4bcb8a
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.date: 12/01/2020
+ms.openlocfilehash: 1c0c572072fd085feab1533eb346d745b56f66b0
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020023"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96502020"
 ---
 # <a name="power-bi-webinars"></a>Power BI ウェビナー
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) は Chauncy Freels と業務提携するベンダーであり、このウェビナー リストの維持を手伝っています"
@@ -22,19 +22,30 @@ ms.locfileid: "91020023"
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー
 
-**Power BI ですばやく起動して実行する**  
-作成者: Miguel Martinez、Microsoft  
-[2020 年 11 月 5 日、午前 10 時 00 分から午前 11 時 00 分まで (太平洋夏時間) に視聴できるように登録する](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
-
 [Power BI コミュニティからの今後のウェビナー](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>おすすめのウェビナー
 
 最初に、次の人気のオンデマンド ウェビナーをご覧ください。
 
+**Power BI ですばやく起動して実行する**  
+作成者: Miguel Martinez、Microsoft  
+[2020 年 11 月 5 日、午前 10 時 00 分から午前 11 時 00 分まで (太平洋夏時間) に視聴できるように登録する](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+
+**Power BI と Microsoft Teams を使用してリモート データ カルチャを推進する**  
+作成者: Lukasz Pawlowski  
+[今すぐ見る](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html?LCID=EN-US)
+
+**組み合わせて、もっと便利に:Excel ユーザーが Power BI を使用することで得られる 5 つのメリット**  
+作成者: Miguel Martinez、Carlos Otero  
+[今すぐ見る](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html?LCID=EN-US)
+
 **Microsoft Power BI を使用してリアルタイムでデータを監視する**  
 作成者: Miguel Martinez、Peter Myers  
 [今すぐ見る](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+
+**Dremio を使用して Azure Data Lake Storage での Power BI を加速させる**  
+作成者: Chris Webb、Tomer Shiran [今すぐ見る]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html?lcid=en-us)
 
 **Power BI と Snowflake を使用してスケーラブルな BI ソリューションを構築する**  
 作成者: Chris Webb、Craig Collier、Chris Holliday  
@@ -46,7 +57,7 @@ ms.locfileid: "91020023"
 
 **分析情報からアクションへ:Power BI を使用したデータ カルチャの推進**  
 作成者: Arun Ulagaratchagan、Amir Netz  
-[ビデオを見る]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html?lcid=en-us)
+[今すぐ見る]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html?lcid=en-us)
 
 **Power BI Embedded でより優れた分析を実現する**  
 作成者: Alon Baram  
