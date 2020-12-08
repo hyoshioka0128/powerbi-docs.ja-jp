@@ -118,7 +118,7 @@
               href: service-premium-metrics-app.md
             - name: 管理ポータルで容量を監視する
               href: service-admin-premium-monitor-portal.md
-            - name: 大規模なモデルを構成する (プレビュー)
+            - name: 大規模なデータセットの構成
               href: service-premium-large-models.md
             - name: Multi-Geo の構成
               href: service-admin-premium-multi-geo.md
