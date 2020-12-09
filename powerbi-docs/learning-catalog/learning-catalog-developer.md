@@ -6,12 +6,12 @@ ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.openlocfilehash: 01aa3579fd837b36562dbed27f557d5efdf07c20
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: de460437225dd32c0e6db673a06006a711feb413
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414831"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96906754"
 ---
 # <a name="developer-learning-catalog"></a>開発者向けラーニング カタログ
 
@@ -31,7 +31,7 @@ ms.locfileid: "96414831"
 | [Power BI Embedded を 20 分で学習する](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | このウェビナーでは、Power BI Embedded の概要を説明します。 このウェビナーを最後まで見ると、ユーザーは Power BI Embedded の概要、製品を使い始める次の手順、ヘルプ/リソースの場所を理解することができます。 | ウェビナー       |                |
 | [Power BI の埋め込みによる開発 - Ted Pattison – 2018 年 4 月更新](https://www.youtube.com/watch?v=swnGlrRy588)  | この開発者向けのウェビナーでは、Power BI 埋め込みプラットフォームに対する最新の機能強化について、ISV や企業の開発者がそれらをどのように活用できるかについて、Ted Pattison が説明します。 | YouTube ビデオ | 59 分 49 秒  |
 | [Power BI 埋め込みバージョン 2 – 完全なストーリー](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Embedding-Version-2-The-Full-Story/td-p/229527)    | このウェビナーは、クリティカル パス トレーニングの Power BI MVP Ted Pattison により、2017 年 8 月 10 日に発表されました。 このウェビナーでは、Power BI Premium を介して提供される新しい Power BI 埋め込み機能を使用して開発する方法について説明します。  | ウェビナー       | 1 時間 7 分 23 秒 |
-| [チュートリアル: 顧客向けのアプリケーションに Power BI コンテンツを埋め込む](../developer/embedded/embed-sample-for-customers.md#set-up-your-embedded-analytics-development-environment) | Azure の Power BI Embedded または Office での Power BI の埋め込みを使用すると、アプリ所有データを使用して、レポート、ダッシュボード、またはタイルをアプリケーション内に埋め込むことができます。  | ドキュメント |                |
+| [チュートリアル: 顧客向けのアプリケーションに Power BI コンテンツを埋め込む](../developer/embedded/embed-sample-for-customers.md) | Azure の Power BI Embedded または Office での Power BI の埋め込みを使用すると、アプリ所有データを使用して、レポート、ダッシュボード、またはタイルをアプリケーション内に埋め込むことができます。  | ドキュメント |                |
 | [Power BI Embedded を 20 分で学習する](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | このウェビナーでは、Power BI Embedded の概要を説明します。 このウェビナーを最後まで見ると、ユーザーは Power BI Embedded の概要、製品を使い始める次の手順、ヘルプ/リソースの場所を理解することができます。 | ウェビナー       |                |
 ## <a name="dax"></a>DAX<a name="dax"></a>
 | コンテンツ | Description | 書式  | 長さ      |

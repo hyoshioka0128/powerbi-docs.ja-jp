@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 58d1112dfccda798a32b2a3cb95d72c37b7a16ec
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 02d73a2eb36636091ff6059fd6543bb950082c2a
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668398"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907304"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -40,7 +40,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
 
 > [!IMPORTANT]
 > * **サービス プリンシパル** を使用する必要があります。 マスター ユーザーはサポートされていません。
->* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) はサポートされていません。 PPU を使用してソリューションを試してみることはできますが、[運用に移行する](embed-sample-for-customers.md#move-to-production)ことはできません。
+>* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) はサポートされていません。 PPU を使用してソリューションを試してみることはできますが、[運用に移行する](move-to-production.md)ことはできません。
 > * シングル サインオン (SSO) を必要とするデータソースは、サポートされていません。 サポートされているデータセットとその認証方法の一覧については、「[Power BI のページ分割されたレポートでサポートされるデータ ソース](../../paginated-reports/paginated-reports-data-sources.md)」を参照してください。 
 > * Power BI データセットは、[データソース](../../connect-data/service-get-data.md)としてサポートされていません。
 
@@ -184,7 +184,7 @@ Get-PowerBIworkspace -name "Paginated Report Embed" | Get-PowerBIReport
 
 ### <a name="tenant"></a>テナント
 
-**テナント** 情報には azure テナント ID を入力します。 この情報は Power BI サービスにサインインしたときに [Azure AD 管理センター](/onedrive/find-your-office-365-tenant-id)から取得するか、PowerShell を使用して取得できます。
+**テナント** 情報には Azure テナント ID を入力します。 この情報は Power BI サービスにサインインしたときに [Azure AD 管理センター](/onedrive/find-your-office-365-tenant-id)から取得するか、PowerShell を使用して取得できます。
 
 ### <a name="run-the-application"></a>アプリケーションの実行
 
