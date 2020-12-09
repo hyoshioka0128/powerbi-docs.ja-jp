@@ -7,14 +7,14 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/13/2020
+ms.date: 12/03/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c2be9c2c266c489dbb93f5e3f93c3c120cae5c3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9df90a41143ddb6d0657aa0d61dc83f25ecbae1a
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390612"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578064"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>ダッシュボード、レポート、アプリを検索する
 
@@ -42,13 +42,13 @@ Power BI ホームには、コンテンツを探して表示する方法が 3 �
 ## <a name="home-canvas"></a>ホーム キャンバス
 ホーム キャンバスでは、使用権限が与えられているすべてのコンテンツを表示できます。 ホーム キャンバスはまた、推奨コンテンツや学習リソースで更新されます。 最初は、ホーム キャンバスにそれほど多くのコンテンツが表示されない場合もありますが、Power BI の使用を開始して、同僚と共に使用するに従って外観は変化します。
 
-![Power BI サービスの新規ユーザー向けのようこそ画面のスクリーンショット。](media/end-user-home/power-bi-home-new-user.png)
+![Power BI サービスの新規ユーザー向けのようこそ画面のスクリーンショット。](media/end-user-home/power-bi-home-new-users.png)
 
 
  
 Power BI サービスで作業していると、同僚からダッシュボード、レポート、アプリが届き、ゆくゆくは Power BI ホームが充実します。 しばらくすると、次のような外観になるかもしれません。
 
-![Power BI サービスのようこそ画面のスクリーンショット。](media/end-user-home/power-bi-experienced-user.png)
+![Power BI サービスのようこそ画面のスクリーンショット。](media/end-user-home/power-bi-experienced-users.png)
 
  
 次からのトピックでは、経験豊富なユーザーのために、ホームを上から下まで詳しく見ていきます。

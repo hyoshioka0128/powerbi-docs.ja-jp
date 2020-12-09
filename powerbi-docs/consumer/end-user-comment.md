@@ -8,20 +8,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 12/03/2020
 LocalizationGroup: Consumer
-ms.openlocfilehash: ee053fe000ad85b768ce3d451984f987e3c79e6f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f1265a8eb3fb4a7a1ec18a74c6b3a7d28b3b09ba
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96400755"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578247"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>ダッシュボードまたはレポートにコメントを追加する
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 個人のコメントを追加するか、同僚とダッシュボードまたはレポートに関する会話を開始します。 **コメント** 機能は、"*ビジネス ユーザー*" が他のユーザーと共同作業するための方法の 1 つにすぎません。 
 

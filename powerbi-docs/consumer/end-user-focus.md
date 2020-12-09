@@ -8,20 +8,21 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 12/03/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 6385d263c47bde156a7dae941fefb101b9b30d18
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: video-dtdLul6otYE
+ms.openlocfilehash: 611fe62486fbe376bdf1c44aa7ab4d18a7ae5c65
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96400456"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613627"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>コンテンツを詳細に表示する: フォーカス モードと全画面表示モード
 
 [!INCLUDE [consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -41,7 +42,7 @@ ms.locfileid: "96400456"
 
 ## <a name="when-to-use-full-screen-mode"></a>全画面モードを有効にする場合
 
-![ダッシュボードの全画面表示モードの前後](media/end-user-focus/power-bi-dashboards-focus.png)
+![ダッシュボードの全画面表示モードの前後](media/end-user-focus/power-bi-dashboard-focus.png)
 
 メニューやナビ ペインを表示せずに、ご利用の Power BI サービスのコンテンツ (ダッシュボード、レポート ページ、ビジュアル) を表示します。  いつでもひと目でコンテンツの全体図のみを把握できます。 このモードはテレビ モードとも呼ばれます。   
 
@@ -58,7 +59,7 @@ Power BI Mobile を使用している場合、[全画面は Windows 10 Mobile �
 
 "***フォーカス** _" モードでは、ビジュアルまたはタイルを拡大 (ポップアウト) し、詳細を確認することができます。  ダッシュボードやレポートが少し混み合っていて、1 つのビジュアルだけを拡大して見たいことがあるでしょう。  これは、フォーカス モードを使用するのに最適です。  
 
-![ダッシュボード タイル フォーカス モードの前後](media/end-user-focus/power-bi-compare-dash.png)
+![ダッシュボード タイル フォーカス モードの前後](media/end-user-focus/power-bi-compare.png)
 
 フォーカス モードでは、Power BI の "_ビジネス ユーザー*" は、この視覚エフェクトの作成時に適用されたフィルターを操作できます。  Power BI サービスでは、ダッシュボードのタイルまたはレポートのビジュアルでフォーカス モードを使用できます。
 

@@ -8,20 +8,19 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/28/2020
+ms.date: 12/03/2020
 LocalizationGroup: Consumers
-ms.openlocfilehash: 13d8eda142896b406269f940823e702b2ca7cb3e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: d8b9f11abe639d2892bc199a9f65400e5488dedc
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391026"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578121"
 ---
 # <a name="export-data-from-a-visual"></a>ビジュアルからデータをエクスポートする
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 ビジュアルの作成に使用されているデータを確認するには、[Power BI でそのデータを表示する](end-user-show-data.md)か、それを Excel にエクスポートできます。 データをエクスポートするオプションを使用するには、特定の種類のライセンスと、コンテンツの編集アクセス許可が必要です。 エクスポートできない場合は、Power BI 管理者または IT ヘルプ デスクに問い合わせてください。 
 
@@ -33,7 +32,7 @@ ms.locfileid: "96391026"
 1. Power BI ダッシュボードから始めます。 ここでは、"**マーケティングと売上サンプル**" アプリのダッシュボードを使用しています。 [このアプリは AppSource.com からダウンロード](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample
 )できます。
 
-    ![アプリ ダッシュボード](media/end-user-export/power-bi-dashboards.png)
+    ![アプリ ダッシュボード](media/end-user-export/power-bi-dashboard.png)
 
 2. ビジュアルをポイントすると、"*その他のオプション*" (...) が表示され、クリックするとアクション メニューが表示されます。
 

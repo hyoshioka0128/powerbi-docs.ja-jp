@@ -9,18 +9,17 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 152d3ee87afe93fdfbe19060a42f013ec83f2d2a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0cf2389b9dafc19519010142079fbb15f6f21711
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389729"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781660"
 ---
 # <a name="reports-in-power-bi"></a>Power BI のレポート
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Power BI レポートはデータセットのマルチパースペクティブ表示です。データセットからのさまざまな結果や分析情報がビジュアルによって表されます。  レポートでは、単一のビジュアルを使用することも、各ページでさまざまなビジュアルを使用することもできます。 職務に応じて、レポートを *デザイン* する人になる場合があります。 また、レポートを "*使用*" する "*ビジネス ユーザー*" になる場合もあります。 この記事は、"*ビジネス ユーザー*" を対象としています。
 

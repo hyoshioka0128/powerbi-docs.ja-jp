@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 0bb2e0c249df668378d62f62184dc044d174ce81
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 0ddcf3c54a5bb3cf9259f6c0d18d0001b838df60
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95550551"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577856"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>チュートリアル:Azure 関数を使用してテンプレート アプリのインストールの構成を自動化する
 
@@ -57,7 +57,7 @@ ms.locfileid: "95550551"
 
 * 上記のテナントに登録されている[サービス プリンシパル (アプリ専用トークン)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal)。
 
-* インストール用に準備された、[パラメーター化されたテンプレート アプリ](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview)。 テンプレート アプリは、Azure Active Directory (Azure AD) にアプリケーションを登録するものと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md)に関するページまたは「[Power BI でテンプレート アプリを作成する](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create)」を参照してください。
+* インストール用に準備された、[パラメーター化されたテンプレート アプリ](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview)。 テンプレート アプリは、Azure Active Directory (Azure AD) にアプリケーションを登録するものと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips)に関するページまたは「[Power BI でテンプレート アプリを作成する](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create)」を参照してください。
 
 * **Power BI Pro ライセンス**。 Power BI Pro にサインアップしていない場合は、[無料試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してから始めてください。
 

@@ -10,18 +10,18 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/25/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 5487697196b5ab6c7132db44ba707a0c7cc708d4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: video-B2vd4MQrz4M#t
+ms.openlocfilehash: c3672433675bd2c44de8e9005a3c46d592d51452
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389913"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781798"
 ---
 # <a name="see-related-content-in-the-power-bi-service"></a>Power BI サービスで関連するコンテンツを表示する
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 **[関連するコンテンツ]** ペインには、Power BI サービスのコンテンツ (ダッシュボード、レポート、データセット) がどのように相互接続されているかが示されます。 **[関連するコンテンツ]** ウィンドウは、操作を実行するための起動パッドでもあります。 ここからは、ダッシュボードを開いたり、レポートを開いたり、分析情報を生成したり、Excel でデータを分析するといった操作を行うことができます。  
 

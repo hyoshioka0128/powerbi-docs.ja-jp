@@ -7,21 +7,20 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/03/2020
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3cf504d1df824840f8f3af134ac3e6e3cd8a3fca
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ed9e7f826c8b5e75e1192c16dc72315cf32c1b9a
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391555"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578316"
 ---
 # <a name="apps-in-power-bi"></a>Power BI のアプリ
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 ## <a name="what-is-a-power-bi-app"></a>Power BI とは?
 *アプリ* とは、関連するダッシュ ボードとレポートがすべて 1 か所にまとめられた Power BI のコンテンツの種類です。 アプリでは、1 つ以上のダッシュ ボードと 1 つ以上のレポートをすべてまとめることができます。 アプリは、アプリを配布したり仕事仲間と共有する Power BI "*デザイナー*" によって作成されます。 "*デザイナー*" がコンテンツを共有するには、多くの異なる方法があります。 詳細については、以下の「**新しいアプリを取得する**」セクションを参照してください。 

@@ -10,18 +10,18 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/19/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d861bbc32584ccbc95d7bcc13701938f671f0c73
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: eaa7cc9911b003a8872f983cd7c9768501833047
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96399559"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613764"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Power BI サービスから印刷する
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 ## <a name="what-can-be-printed"></a>印刷できる内容
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 
 Power BI サービスから、ダッシュボード全体、ダッシュボード タイル、レポート ページ、またはレポートのビジュアルを印刷します。 レポートに複数のページがある場合は、各ページを個別に印刷する必要があります。 
 

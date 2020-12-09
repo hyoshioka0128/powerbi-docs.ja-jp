@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.custom: seodec18
-ms.openlocfilehash: 433b3d53ccb653e1a945a83176ab9ebc19ccac5d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1495400a59d8250f407a5f7415a550871501e4e3
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409242"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577511"
 ---
 # <a name="add-power-bi-urls-to-your-allow-list"></a>Power BI URL を許可リストに追加する
 [//]: # "suparnap、miwehnia、natham はこのリストを維持するための連絡先です"
@@ -76,7 +76,7 @@ OneDrive などの特定のデータ ソースからデータを取得するに�
 | 2 | **オプション:** サインインしてコンテンツ パックのデータを取得する | 使用しているコンテンツパックによって異なる | 使用しているコンテンツパックによって異なる |
 | 3 | **オプション:** 個人用 OneDrive からのファイルのインポート | 「[Required URLs and ports for OneDrive](/onedrive/required-urls-and-ports)」 (OneDrive に必要な URL とポート) を参照 | 該当なし |
 | 4 | **オプション:** Power BI の 60 秒間のチュートリアル ビデオ | *.doubleclick.net <br> *.ggpht.com <br> *.google.com <br> *.googlevideo.com <br> *.youtube.com <br> *.ytimg.com <br> fonts.gstatic.com | TCP 443 |
-| 5 | **オプション:** PubNub ストリーミング データ ソース | [PubNub のドキュメント](https://support.pubnub.com/support/solutions/articles/14000043522)を参照 | 該当なし |
+| 5 | **オプション:** PubNub ストリーミング データ ソース | [PubNub のドキュメント](https://support.pubnub.com/hc/en-us/categories/360004336832-PubNub-101)を参照 | 該当なし |
 | | | |
 
 ## <a name="dashboard-and-report-integration"></a>ダッシュボードとレポートの統合

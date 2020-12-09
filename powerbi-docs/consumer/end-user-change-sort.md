@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/25/2020
+ms.date: 12/03/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 44bdb454bbe22082a20182002e817fead561d8da
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e211aded069675c02e59004631ea2264be1e0dcc
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391417"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578282"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI レポートでのグラフの並べ替え方法の変更
 
@@ -80,7 +80,7 @@ Shift キーを押しながら同じ列をもう一度クリックすると、�
 
 これらの変更は、レポートをデザインしたユーザーのみが行うことができます。 "*デザイナー*" の連絡先情報は、ヘッダー バーからレポート名を選択することで確認できます。
 
-![連絡先情報を示すドロップダウン](media/end-user-change-sort/power-bi-header.png)
+![連絡先情報を示すドロップダウン](media/end-user-change-sort/power-bi-heading.png)
 
 ご自分が "*デザイナー*" であり、コンテンツに対して編集アクセス許可を持っている場合は、「[Power BI Desktop での列による並べ替え](../create-reports/desktop-sort-by-column.md)」を読み、データセットを更新して、この種類の並べ替えを有効にする方法を確認してください。
 

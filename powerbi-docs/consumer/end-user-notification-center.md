@@ -8,20 +8,20 @@ featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 598cbca7756ab6f929180da0c3a95b68643abf00
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: video-bZMSv5KAlcE
+ms.openlocfilehash: d476fdfe18b12307be18e84f1dac42cc5f7fc632
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96399776"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613672"
 ---
 # <a name="view-power-bi-notifications"></a>Power BI 通知を表示する
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 通知センターは、Power BI の利用に関連する情報のシーケンシャルなフィードです。 これを開くと、共有されている新しいダッシュボードに関するメッセージ、Power BI のイベントや会議に関する情報、設定したアラートなどが表示されます。 [Power BI サービスでアラートを設定](end-user-alerts.md)できます。Power BI モバイル アプリでもアラートを設定できます。
 

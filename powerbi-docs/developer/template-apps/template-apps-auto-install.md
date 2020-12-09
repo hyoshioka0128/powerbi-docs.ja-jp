@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: ca5db6ed7a07d5a6fb10133285378e8318527464
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 671fcbabf10666c03f39bc4582e00fa0adbdbd5e
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386094"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578362"
 ---
 # <a name="automated-configuration-of-a-template-app-installation"></a>テンプレート アプリのインストールの自動構成
 
@@ -55,7 +55,7 @@ ms.locfileid: "96386094"
 
 * 上記のテナントに登録されている **サービス プリンシパル (アプリ専用トークン)** 。 詳細については、「[サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal)」を参照してください。 必ず、アプリケーションを **サーバー側 Web アプリケーション** として登録してください。 アプリケーション シークレットを作成するには、サーバー側 Web アプリケーションを登録します。 以降の手順のために、このプロセスから "*アプリケーション ID*" (クライアント ID) と "*アプリケーション シークレット*" (クライアント シークレット) を保存する必要があります。
 
-* インストール用に準備された、**パラメーター化されたテンプレート アプリ**。 テンプレート アプリは、Azure Active Directory (Azure AD) にアプリケーションを登録するものと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md)に関するページまたは「[Power BI でテンプレート アプリを作成する](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create)」を参照してください。 以降の手順のために、テンプレート アプリから、
+* インストール用に準備された、**パラメーター化されたテンプレート アプリ**。 テンプレート アプリは、Azure Active Directory (Azure AD) にアプリケーションを登録するものと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips)に関するページまたは「[Power BI でテンプレート アプリを作成する](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create)」を参照してください。 以降の手順のために、テンプレート アプリから、
      * アプリの作成時に [テンプレート アプリのプロパティを定義する](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app)プロセスの終了時にインストール URL 内に表示される "*アプリ ID*"、"*パッケージ キー*"、"*所有者 ID*" をメモしておく必要があります。 また、テンプレート アプリの [[リリース管理]](../../connect-data/service-template-apps-create.md#manage-the-template-app-release) で **[リンクの取得]** をクリックして、同じリンクを取得することもできます。
 
     * テンプレート アプリのデータセットで定義されている "*パラメーター名*"。 パラメーター名は、大文字と小文字を区別する文字列であり、[テンプレート アプリのプロパティを定義する](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app)ときに **[Parameter Settings]\(パラメーターの設定\)** タブから、または Power BI のデータセット設定から取得することもできます。
