@@ -51,6 +51,8 @@
           href: dataflows/dataflows-premium-features.md
         - name: データフローと共に Machine Learning と Cognitive Services を使用する
           href: dataflows/dataflows-machine-learning-integration.md
+        - name: データフローのベスト プラクティス
+          href: ./dataflows/dataflows-best-practices.md
         - name: データフローの制限事項と考慮事項
           href: dataflows/dataflows-features-limitations.md
     - name: 攻略ガイド
@@ -95,44 +97,6 @@
               href: desktop-import-and-display-kpis.md
             - name: 自動の日付/時刻を適用する
               href: desktop-auto-date-time.md
-        - name: セルフサービスのデータ作成
-          items:
-            - name: データフローの作成と使用
-              href: ./dataflows/dataflows-create.md
-            - name: データフローのベスト プラクティス
-              href: ./dataflows/dataflows-best-practices.md
-            - name: Power BI で DirectQuery とデータフローを使用する (プレビュー)
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: データフローで強化されたコンピューティング エンジンを使用する
-              href: ./dataflows/dataflows-premium-features.md
-            - name: Power BI Premium での計算されたエンティティ
-              href: ./dataflows/dataflows-premium-features.md
-            - name: データフローを使用してのデータ ソースへの接続
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: オンプレミス データ ソースでのデータフローの使用
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: データフロー間でエンティティをリンクする
-              href: ./dataflows/dataflows-premium-features.md
-            - name: データフローでの増分更新の使用
-              href: ./dataflows/dataflows-premium-features.md
-            - name: データフロー用の開発者向けリソース
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: Power BI Desktop でデータフローに接続する
-              href: desktop-connect-dataflows.md
-            - name: データフローと Azure Data Lake の統合 (プレビュー)
-              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
-            - name: データフロー ストレージ用の Azure Data Lake Storage Gen2 を接続する
-              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
-            - name: ワークスペース データフローの設定の構成 (プレビュー)
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: データフローとして CDM フォルダーを Power BI へ追加する (プレビュー)
-              href: ./dataflows/dataflows-machine-learning-integration.md
-            - name: Power BI で Machine Learning を統合する
-              href: ./dataflows/dataflows-machine-learning-integration.md
-            - name: Power BI での Cognitive Services の使用
-              href: ./dataflows/dataflows-machine-learning-integration.md
-            - name: Power BI での自動化 された機械学習
-              href: ./dataflows/dataflows-machine-learning-integration.md
     - name: リファレンス
       items:
         - name: Power BI Desktop のフィールド リストを使用する (プレビュー)

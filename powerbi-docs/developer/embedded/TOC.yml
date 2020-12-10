@@ -48,6 +48,8 @@
           href: embed-service-principal.md
         - name: サービス プリンシパルと証明書を使用して埋め込む
           href: embed-service-principal-certificate.md
+        - name: 埋め込みアプリを運用環境に移行する
+          href: move-to-production.md
         - name: アプリからの埋め込み
           href: embed-from-apps.md
         - name: レポートをファイルにエクスポートする
