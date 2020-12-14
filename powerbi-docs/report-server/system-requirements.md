@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/29/2020
-ms.openlocfilehash: 30e8f1cb1ef8f12d9573d77a70771eef915a2704
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.date: 12/07/2020
+ms.openlocfilehash: 10fb104d1c03ae5d08836b8e865178c347d848ce
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044805"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781775"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Power BI レポート サーバーをインストールするためのハードウェアとソフトウェアの要件
 
@@ -23,7 +23,7 @@ ms.locfileid: "93044805"
 
 | コンポーネント | 要件 |
 | --- | --- |
-| .NET Framework |4.8<br><br>.NET Framework は、[Windows 用 Microsoft.NET Framework 4.8 (Web インストーラー)](https://support.microsoft.com/en-us/help/4503548/) から手動でインストールできます。<br/><br/> .NET Framework 4.8 の詳細情報、推奨事項、ガイダンスについては、「[.NET Framework 配置ガイド (開発者向け)](/dotnet/framework/deployment/deployment-guide-for-developers)」を参照してください。<br/><br/>Windows 8.1 および Windows Server 2012 R2 では、.NET Framework 4.8 をインストールする前に、[KB2919355](https://support.microsoft.com/kb/2919355) をインストールする必要があります。 |
+| .NET Framework |4.8<br><br>サーバーがインターネットにアクセスできない場合は、[Windows 用 Microsoft .NET Framework 4.8 (オフライン インストーラー)](https://support.microsoft.com/en-us/help/4503548/) から .NET Framework を手動でインストールすることができます。<br/><br/> .NET Framework 4.8 の詳細情報、推奨事項、ガイダンスについては、「[.NET Framework 配置ガイド (開発者向け)](/dotnet/framework/deployment/deployment-guide-for-developers)」を参照してください。<br/><br/>Windows 8.1 および Windows Server 2012 R2 では、.NET Framework 4.8 をインストールする前に、[KB2919355](https://support.microsoft.com/kb/2919355) をインストールする必要があります。 |
 | ハード ディスク |Power BI レポート サーバーには、最低 1 GB の使用可能なハード ディスク空き領域が必要です。<br><br>レポート サーバーのデータベースをホストしているデータベース サーバーには、追加の領域が必要です。 |
 | メモリ |**最低:** 1 GB<br/><br/> **推奨:** 4 GB 以上 |
 | プロセッサ速度 |**最小:** x64 プロセッサ:1.4 GHz<br/><br/> **推奨:** 2.0 GHz 以上 |

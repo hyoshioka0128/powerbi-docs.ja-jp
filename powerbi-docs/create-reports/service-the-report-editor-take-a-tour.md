@@ -8,14 +8,14 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 12/01/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 26a98609481ce45a6e432c8006d80f9becdd9f3b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 560c03865519d1c5d2435dc333954f284ee726e6
+ms.sourcegitcommit: 8993400b32a44f4e7ce9a2db998ddebda18c7698
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96387783"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96536509"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Power BI でのレポート エディターのツアー
 
@@ -33,14 +33,14 @@ Power BI サービスでは、レポート エディターは編集ビューで�
 
 Power BI のレポート エディターは、次のいくつかのメイン セクションに分かれています。  
 
-1. 上部のナビ ペイン
+1. リボン
 1. レポート キャンバス
 1. フィルター ウィンドウ
 1. 視覚化ウィンドウ
 1. [フィールド] ウィンドウ
 
-## <a name="1-the-top-nav-pane"></a>1.上部のナビ ペイン
-上部のナビ ペインからさまざまな操作を実行できます。新しい操作が常時追加されています。 特定の操作については、Power BI ドキュメントの目次や検索ボックスを使用してください。
+## <a name="1-the-ribbon"></a>1.リボン
+リボンからさまざまな操作を実行できます。新しい操作が常時追加されています。 特定の操作については、Power BI ドキュメントの目次や検索ボックスを使用してください。
 
 
 ## <a name="2-the-report-canvas"></a>2.レポート キャンバス
@@ -135,25 +135,9 @@ Power BI Desktop では、フィールドの表示/非表示、計算の追加�
 
 ## <a name="the-field-icons"></a>フィールド アイコン
 
-Power BI では、レポート内のフィールドの種類を示すために、多くのアイコンが使用されます。 それらを認識できる場合、さまざまなビジュアルでどのように動作するかをより適切に理解できます。 より一般的なものの一部を次に示します。
+Power BI では、レポート内のフィールドの種類を示すために、多くのアイコンが使用されます。 それらを認識できる場合、さまざまなビジュアルでどのように動作するかをより適切に理解できます。 完全な一覧については、[「Power BI Desktop のフィールド一覧の使用」のフィールド一覧アイコンのセクション](../transform-model/desktop-field-list.md#field-list-changes)をご覧ください。
 
-
-|アイコン  |意味  |
-|---------|---------|
-| ![フォルダー](media/service-the-report-editor-take-a-tour/power-bi-field-list-folder.png) | [フィールド] リストのフォルダー |
-|![数値フィールド](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | 数値フィールド: 数値フィールドは、合計や平均などが可能な集計です。 集計は、データと一緒にインポートされ、レポートの基となるデータ モデルで定義されます。 詳細については、「[Power BI レポートの集計](service-aggregates.md)」を参照してください。 |
-|![数値以外の計算列](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png) | 数値以外のデータ型を含む計算列: 列の値を定義する Data Analysis Expressions (DAX) 式を使用して作成する新しい数値以外の列です。 [計算列](../transform-model/desktop-calculated-columns.md)に関する詳細情報を表示します。 |
-|![数値の計算列](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric-calculated-column.png)     |   数値の計算列: 列の値を定義する Data Analysis Expressions (DAX) 式を使用して作成する新しい列です。 [計算列](../transform-model/desktop-calculated-columns.md)に関する詳細情報を表示します。 |
-|![メジャー](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure.png) |  メジャー: メジャーには、独自のハードコーディングされた式があります。 計算を変更することはできません、たとえば、合計であれば、合計のままにしかできません。 値は列に格納されません。 これらは、ビジュアル内の場所のみに応じて、すぐに計算されます。 詳細については、「[メジャーについて](../transform-model/desktop-measures.md)」を参照してください。 |
-|![メジャー グループ](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | メジャー グループ  |
-|![KPI アイコン](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      KPI: 測定可能な目標に対する進捗状況を視覚的に伝える方法の 1 つです。 主要業績評価指標 (KPI) ビジュアルに関する詳細については、[こちら](../visuals/power-bi-visualization-kpi.md)を参照してください |
-|![階層アイコン](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  フィールドの階層: 矢印を選択し、階層を構成するフィールドを表示します。  詳細については、YouTube で[階層の作成と使用](https://www.youtube.com/watch?v=q8WDUAiTGeU)についてのこの Power BI ビデオをご覧ください。 |
-|![Geo データ](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Geo データ: これらの場所フィールドは、地図の視覚化を作成するために使用できます。 |
-| ![ID フィールド](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | ID フィールド: このアイコンのフィールドは、*一意のフィールド* であり、重複するものがあっても、すべての値が表示されるように設定されています。 たとえば、データに 'Robin Smith' という名前のユーザーのためのレコードが 2 つあったとしても、それぞれが一意として扱われます。 これらは合算されることはありません。   |
-|![パラメーター](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | パラメーター: 1 つまたは複数のパラメーター値に応じて、レポートおよびデータ モデルの一部 (クエリ フィルター、データ ソース参照、メジャー定義など) にするパラメーターを設定します。 詳細については、この Power BI の[クエリ パラメーター](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)に関するブログ投稿を参照してください。 |
-| ![カレンダー](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | 組み込みの日付テーブルを含むカレンダー日付フィールド |
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [レポートの作成](service-report-create-new.md)
 
 [Power BI サービス](service-report-create-new.md)、[Power BI Desktop](desktop-report-view.md)、[Power BI モバイル アプリ](../consumer/mobile/mobile-apps-view-phone-report.md)の各レポートについての詳細をご覧ください。

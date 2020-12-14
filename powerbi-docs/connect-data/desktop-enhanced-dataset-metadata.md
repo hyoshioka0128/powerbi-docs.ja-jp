@@ -7,23 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 12/08/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2c5e465026f1ba7564bda18ad3b005b024a663a7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 661e50617094d396e8beb887ac0e4a27c28c2ca7
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404987"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96906992"
 ---
 # <a name="using-enhanced-dataset-metadata"></a>拡張データセット メタデータの使用
 
-Power BI Desktop によってレポートが作成されると、対応する PBIX ファイルと PBIT ファイルにデータセット メタデータも作成されます。 以前は、メタデータは Power BI Desktop に固有の形式で格納されていました。 Base-64 でエンコードされた M 式とデータ ソースが使用され、そのメタデータの格納方法に関する制限事項が適用されていました。
+Power BI Desktop によってレポートが作成されると、対応する PBIX ファイルと PBIT ファイルにデータセット メタデータも作成されます。 以前は、メタデータは Power BI Desktop に固有の形式で格納されていました。 メタデータには、Base-64 でエンコードされた M 式とデータ ソースが使用されていました。 そのメタデータの格納方法は Power BI によって想定されていました。
 
 **拡張データセット メタデータ** 機能のリリースにより、これらの制限事項の多くはなくなります。 PBIX ファイルは、ファイルを開いたときに自動的に拡張メタデータにアップグレードされます。 **拡張データセット メタデータ** を使用すると、Power BI Desktop によって作成されたメタデータでは、[表形式オブジェクト モデル](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo)に基づいて、Analysis Services 表形式モデルに使用されるものと同様の形式が使用されます。
 
 
-**拡張データセット メタデータ** 機能は、将来の Power BI 機能がそのメタデータに基づいて構築されるため、戦略的かつ基本的な機能です。 拡張データセット メタデータを活用するための追加機能としては、Power BI データセットを管理するための [XMLA 読み取り/書き込み](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite)や、次世代機能を活用するための Power BI への Analysis Services ワークロードの移行などがあります。
+**拡張データセット メタデータ** は、戦略的かつ基本的な機能です。 今後の Power BI 機能は、そのメタデータに基づいて構築されることになります。 他に次の機能でも、拡張データセット メタデータが活用されます。
+
+- Power BI データセットを管理するための [XMLA の読み取り/書き込み](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite)
+- 次世代の機能を活用するための、Analysis Services ワークロードから Power BI への移行。
+
+## <a name="limitations"></a>制限事項
+SQL Server、Oracle、Teradata、従来の HANA の各接続に対して拡張メタデータをサポートする前に、Power BI Desktop によってデータ モデルがネイティブ クエリに追加されています。 このクエリは Power BI サービス データ モデルによって使用されます。 拡張メタデータ サポートを使用すると、Power BI サービス データ モデルによって実行時にネイティブ クエリが再生成されます。 Power BI Desktop によって作成されたクエリは使用されません。 ほとんどの場合、この取得は自動的に正しく解決されますが、一部の変換は、基になるデータを読み取らないと機能しません。 以前は機能していたレポートでも、いくつかのエラーが表示される場合があります。 たとえば、次のようなエラーが発生します。 
+
+"テーブル 'Dimension City' の M クエリをネイティブ ソース クエリに変換できません。 後でもう一度お試しいただくか、サポートにお問い合わせください。 サポートにお問い合わせいただく場合、これらの詳細をお伝えください。" 
+
+クエリは、Power BI Desktop 内の次の 3 つの場所で修正することができます。
+
+- 変更を適用する場合または更新を行う場合。
+- Power Query エディターの警告バー (式をデータソースに折りたたむことができなかったことが通知されます)。
+    :::image type="content" source="media/desktop-enhanced-dataset-metadata/enhanced-metadata-apply-query-changes.png" alt-text="[クエリ変更の適用] メッセージのスクリーンショット:データ ソースに式を折りたためませんでした。":::
+- レポートを開いたときに評価を実行して、サポートされていないクエリがあるかどうかを確認する場合。 これらの評価を実行すると、パフォーマンスに影響が生じるおそれがあります。
 
 
 ## <a name="next-steps"></a>次の手順

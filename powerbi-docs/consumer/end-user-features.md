@@ -10,14 +10,14 @@ ms.topic: reference
 ms.date: 11/16/2020
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: 8e3a32402b3eff202a8e35a2e34fa52271650a64
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e2bd6a752d94bd2a549d0149512707fbd7832319
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390727"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613787"
 ---
-# <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>"*コンシューマー*" および無料ライセンスを持つその他のユーザー向けの Power BI 機能の一覧
+# <a name="power-bi-feature-list-for-business-users-and-others-with-free-licenses"></a>"*ビジネス ユーザー*" および無料ライセンスを持つその他のユーザー向けの Power BI 機能の一覧
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -58,7 +58,7 @@ ms.locfileid: "96390727"
 
    
 
-## <a name="power-bi-feature-list-for-consumers-and-free-users"></a>"*コンシューマー*" および無料ユーザー向けの Power BI 機能の一覧
+## <a name="power-bi-feature-list-for-business-users-and-free-users"></a>"*ビジネス ユーザー*" および無料ユーザー向けの Power BI 機能の一覧
 次の表には、Premium 容量のコンテンツを操作する "*ビジネス ユーザー*" が実行できるタスクが示されています。    
 
 最初の列は、 **[マイ ワークスペース]** のコンテンツを操作する無料ユーザーを表します。 このユーザーは、Power BI サービス内の同僚と共同作業することはできません。 同僚は、このユーザーと直接コンテンツを共有することはできません。また、このユーザーは **[マイ ワークスペース]** から共有することはできません。 

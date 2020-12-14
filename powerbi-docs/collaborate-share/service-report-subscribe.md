@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/01/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 384ce5efc28355ea238d5782dd1553901097e0f2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9d9d628ea2d478eb6a09ae8ca53b98837349a224
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411680"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613822"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI サービスのレポートとダッシュボードを自分および他のユーザーがサブスクライブする
 
@@ -28,14 +28,14 @@ ms.locfileid: "96411680"
 - ページ分割されたレポートにサブスクライブする場合は、フル レポートの添付ファイルを含めます。
 - Power BI コンテンツが Premium 容量でホストされている場合は、テナントの外部のユーザーに電子メールを送信します。  管理者は、Power BI 管理センターで既存の外部共有コントロール設定を利用して、外部ユーザーに電子メール サブスクリプションを送信できるユーザーに対してアクセスを制御できます。
 
-![ダッシュボードのメール スナップショット](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
+![ダッシュボードのメール スナップショット](media/service-report-subscribe/power-bi-dashboard-email-new.jpg)
 
 ## <a name="requirements"></a>要件
 
 サブスクリプションの **作成** は以下が実行できます。
 
-- Power BI Pro ライセンスを持つユーザー 
-- また、Premium ワークスペースまたはアプリのコンテンツを閲覧するユーザーも、Power BI Pro ライセンスがなくても、そこに配置されているコンテンツをサブスクライブできます。 
+- Power BI Pro ライセンスを持つユーザー
+- また、Premium ワークスペースまたはアプリのコンテンツを閲覧するユーザーも、Power BI Pro ライセンスがなくても、そこに配置されているコンテンツをサブスクライブできます。
 
 ご自分のサブスクリプションを作成する場合は、コンテンツ (ダッシュボードまたはレポート) に対する編集アクセス許可は必要ありませんが、他のユーザー用に作成する場合は、編集アクセス許可が必要です。
 
@@ -44,12 +44,12 @@ ms.locfileid: "96411680"
 ダッシュボード、レポート、またはページ分割されたレポートのいずれをサブスクライブする場合でも、そのプロセスは似ています。 同じボタンで、Power BI サービスのダッシュボードとレポートをサブスクライブすることができます。
 
 ページ分割されたレポートのサブスクライブの場合、若干異なります。 詳細については、「[Subscribe yourself and others to a paginated report in the Power BI service](../consumer/paginated-reports-subscriptions.md)」(Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする) を参照してください。
- 
+
 ![サブスクライブ アイコンの選択](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. ダッシュボードまたはレポートを開きます。
 2. 上部のメニュー バーから、 **[サブスクリプション]** を選択するか、封筒アイコン :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false"::: を選択します。
-   
+
     ![サブスクライブ アイコン](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. 黄色のスライダーを使うと、サブスクリプションのオン/オフを切り替えることができます。 スライダーを **[オフ]** にしても、サブスクリプションは削除されません。 サブスクリプションを削除するには、ごみ箱アイコンを選択します。
@@ -65,8 +65,8 @@ ms.locfileid: "96411680"
 6. 既定では、サブスクリプションの開始日は、作成日となります。 終了日を選ぶこともできます。 終了日を設定しない場合は、自動的に終了日が開始日から 1 年後となります。 サブスクリプションが終了する前に、(9999 年までの) 将来の任意の日付に変更することができます。 サブスクリプションは、終了日に達すると、再度有効にするまで停止します。 スケジュールされた終了日の前に、延長するかどうかを確認する通知を受信します。
 
     下のスクリーンショットでは、レポートをサブスクライブすると、実際にはレポート _ページ_ をサブスクライブしていることがわかります。 レポートの複数のページをサブスクライブするには、 **[別のサブスクリプションを追加]** を選択し、別のページを選択します。
-     
-    ![サブスクライブ ウィンドウ](media/service-report-subscribe/power-bi-subscribe-pane.png)  
+
+    ![サブスクライブ ウィンドウ](media/service-report-subscribe/power-bi-subscribe-pane.png)
 
 1. (省略可能) Power BI のコンテンツへのリンクを含めるかどうか、およびサブスクライブするコンテンツへのアクセスをユーザーに許可するかどうかを選択します。  リンクを含めることを選択する場合は、最適なエクスペリエンスを得るために、すべてのユーザーが確実にレポートにアクセスできるようにします。
 2. **[保存して閉じる]** を選択します。 サブスクライブしているユーザーは、選択された頻度と時刻で、ダッシュボードまたはレポート ページのメールとスナップショットを受信します。 いずれの場合も、レポートまたはダッシュボードごとに最大 24 個のサブスクリプションを作成でき、サブスクリプションごとに一意の受信者、時刻、および頻度を指定できます。 ダッシュボードまたはレポートの **[データ更新後]** に設定されたすべてのサブスクリプションでは、最初のスケジュールされた更新後にのみ、引き続きメールが送信されます。
@@ -102,7 +102,7 @@ Power BI 管理者は、Power BI 監査ログを使用して、サブスクリ�
 - 登録済みコンテンツ
 - Recipients
 - 頻度
-- 変更者/
+- [変更者]
 - 更新日
 
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
@@ -118,7 +118,7 @@ Power BI 管理者は、Power BI 監査ログを使用して、サブスクリ�
     - Power BI Pro ライセンスを持っていても、Microsoft Exchange ライセンスを持っていないことがあります。 持っていない場合、お使いの Azure Active Directory アカウントで電子メールまたは連絡用電子メール アドレスが指定されていない可能性があります。 その場合、サブスクリプションは送信されているように見えますが、手元に届くことはありません。  Power BI 管理者がメール アドレスを割り当てる場合、次回サインインしたとき、Power BI によって更新が同期され、サブスクリプションにそのメール アドレスが使用されます。
 
 - ダッシュボードまたはレポートが Premium 容量にある場合は、一度に同僚の 1 件の電子メール アドレスをサブスクライブする代わりに、サブスクリプションのグループのメール エイリアスを使用できます。 このエイリアスは現在の Active Directory に基づいています。
-- コンテンツが Premium 容量に含まれていない場合、Power BI Pro のユーザーのみが電子メール サブスクリプションを受信できます。 
+- コンテンツが Premium 容量に含まれていない場合、Power BI Pro のユーザーのみが電子メール サブスクリプションを受信できます。
 - 現在、サブスクリプションではブックマークがサポートされていません。
 - 既存のサブスクリプションを編集するとき、レポートまたはダッシュボードへのアクセスを可能にするオプションは、常に有効として表示されます。  このオプションをオフにしてサブスクリプションを保存すると、その状態が保存されます。 ただし、レポートの編集に再度進むと、既定ではオンになります。
 - 連絡用メール アドレスがあるがプライマリがない場合、それを使用して Power BI によってサブスクリプションが配信されます。
@@ -141,9 +141,18 @@ Power BI 管理者は、Power BI 監査ログを使用して、サブスクリ�
 - メール サブスクリプションでは、この時点では、R を利用したカスタム ビジュアルはサポートされていません。
 - メール サブスクリプションは、レポートの既定のフィルターとスライサーの状態で送信されます。 サブスクライブした後に既定値を変更しても、メールには反映されません。 ページ分割されたレポートではこの機能がサポートされており、サブスクリプションごとに特定のパラメーター値を設定できます。
 - Analysis Services へのライブ接続を含むレポートがあり、データ更新後にサブスクリプションが実行するように設定したとします。 これは、Power BI サービスが Analysis Services インスタンスをポーリングして、オンプレミス モデルの変更を最初に検出したときに実行されます。  Power BI は、Analysis Services データ モデルの変更を 1 時間ごとにチェックして、サブスクリプションをいつ送信するかを決定します。
+- フル レポート添付ファイル機能は、次の 3 つの条件を満たすレポートに対して使用できます。
 
-## <a name="next-steps"></a>次の手順
+    - [Power BI Premium または Power BI Premium Per User](../admin/service-premium-what-is.md) のアップグレードされたワークスペースにあります。 
+    - 添付ファイルのサイズは、25 MB 未満です。
+    - レポートは、20 ページ未満です。 
+    
+    レポートがこれら 3 つの条件を満たしていない場合は、フル レポートが添付ファイルとして含まれるサブスクリプションを作成することができません。 フル レポートが添付ファイルとして含まれる既存のサブスクリプションは無効となり、エラーについて説明するメールを受信します。
+    
+    :::image type="content" source="media/service-report-subscribe/full-report-attachment-error-email.png" alt-text="フル レポート添付ファイル エラーのメール。":::
 
-- [Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする](../consumer/paginated-reports-subscriptions.md)
-- 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。    
-- [ブログの投稿をお読みください](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
+## <a name="next-steps"></a>次のステップ
+
+- [Power BI サービスでのページ分割されたレポート: ](../consumer/paginated-reports-subscriptions.md)自分や他のユーザーをサブスクライブする
+- 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+- [ダッシュボードのメール サブスクリプションに関する Power BI ブログ記事](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

@@ -8,14 +8,14 @@ featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/23/2019
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5aa34834df49d54be885d94a1a1c06e13891ead1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ad3a38fa8aef4f5404196213ebd3c7b26d3fc3b8
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417338"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578408"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>レポートから Power BI ダッシュボードにタイルをピン留め
 
@@ -58,10 +58,12 @@ Amanda が Power BI レポートからビジュアルとイメージを固定す
 
 詳細については、「[レポート ページ全体をピン留めする](service-dashboard-pin-live-tile-from-report.md)」をご覧ください。
 
-> [!NOTE]
-> 視覚化がダッシュボードにピン留めされている場合、一部の書式設定オプションは適用されません。 ピン留めされたタイルでは、罫線、影、および背景の設定は無視されます。 カードの視覚化の場合、値に使用されるテキストは、常に 'DIN' フォント ファミリを使用してダッシュボードに表示されます。 
-> 
->
+## <a name="limitations"></a>制限事項
+一部のレポートの書式オプションまたはテーマは、ダッシュボードにピン留めしたときに、ビジュアルに適用されません。
+- ピン留めされたタイルでは、罫線、影、背景の設定が無視されます。
+- カード ビジュアルの場合、値に使用されるテキストは、'DIN' フォント ファミリを使用して黒のテキストでダッシュボードに表示されます。 ダッシュボード上のすべてのタイルのテキストの色を変更するには、[カスタムのダッシュボード テーマを作成します](service-dashboard-themes.md)。
+- 条件付き書式は適用されません。
+- ビジュアルのサイズはタイルのサイズに合わせて調整されます。 これにより、レポートでビジュアルのサイズを変更した場合と同じようにレイアウトに違いが生じる場合があります。
 
 ## <a name="next-steps"></a>次の手順
 - [Power BI サービスの利用者向けのダッシュボード](../consumer/end-user-dashboards.md)

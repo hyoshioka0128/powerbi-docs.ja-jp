@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 1166f51c21e765e5710d33ad45a47057ea773bd8
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 348032345a56d538e1e5ffbb6036d411e42b2954
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397440"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907074"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Power BI Embedded に関してよく寄せられる質問
 
@@ -112,14 +112,14 @@ Power BI では、組織のアカウントでサインアップすることが�
 
 ### <a name="can-i-use-apis-to-create-and-manage-azure-capacities"></a>API を使って Azure の容量を作成し、管理することはできますか?
 
-はい。PowerShell コマンドレットや Azure Resource Manager REST API を使って、PBIE リソースを作成および管理できます。
+はい。PowerShell コマンドレットや Azure Resource Manager REST API を使用して、PBIE リソースを作成および管理できます。
 
 * [REST API](/rest/api/power-bi-embedded/) 
 * [PowerShell コマンドレット](/powershell/module/azurerm.powerbiembedded/)
 
 ### <a name="what-is-the-pbi-embedded-capacity-role-in-a-pbi-embedded-solution"></a>PBI Embedded ソリューションでは、PBI Embedded 容量はどのような役割を果たしますか?
 
-[ソリューションを運用に昇格させる](embed-sample-for-customers.md#move-to-production)には、アプリケーションで使う Power BI コンテンツ (ワークスペース) を、Power BI Embedded (A SKU) 容量に割り当てる必要があります。
+[ソリューションを運用に昇格させる](move-to-production.md)には、アプリケーションで使う Power BI コンテンツ (ワークスペース) を、Power BI Embedded (A SKU) 容量に割り当てる必要があります。
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>PBI Embedded はどの Azure リージョンで利用できますか?
 
@@ -198,7 +198,7 @@ Power BI で[サービス プリンシパル](embed-service-principal.md)を使�
 
 ### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>アプリケーション ID とサービス プリンシパル オブジェクト ID はそれぞれどのような状況で使用しますか?
 
-**[アプリケーション ID](embed-sample-for-customers.md#application-id)** は、認証のためにアプリケーション ID を渡すときに、アクセス トークンを作成する目的で使用されます。
+**[アプリケーション ID](embed-sample-for-customers.md#client-id)** ("*クライアント ID*" とも呼ばれます) は、認証のためにアプリケーション ID を渡すときに、アクセス トークンを作成する目的で使用されます。
 
 ワークスペースに管理者としてサービス プリンシパルを適用するなど、サービス プリンシパルを各種操作または変更のために参照するには、 **[サービス プリンシパル オブジェクト ID](embed-service-principal.md)** を使用します。
 

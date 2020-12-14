@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: c8d756a80cf6d748f3ff33298b3a243f82197734
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 845499bc236489932bf1347c43f7a5ba71c21a6b
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668651"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907327"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD アプリケーションを登録して Power BI とともに使用する
 
@@ -32,7 +32,7 @@ Power BI 埋め込み分析を使用するには、Azure Active Directory (Azure
 
 * **マスター ユーザー** アカウント (Power BI へのサインインに使用する Power BI Pro ライセンス)
 
-*  [サービス プリンシパル](embed-service-principal.md)
+* [サービス プリンシパル](embed-service-principal.md)
 
 顧客向けに埋め込むソリューションは、通常、独立系ソフトウェア ベンダー (ISV) およびサードパーティ向けアプリケーションを作成する開発者によって使用されます。
 
@@ -115,7 +115,16 @@ Azure AD アプリを登録する最も簡単な方法は、[Power BI 埋め込�
 
 # <a name="manual-registration"></a>[手動登録](#tab/manual)
 
-Azure AD 手動アプリ登録は、"*組織向けに埋め込む*" ソリューションを開発している場合にのみ選択します。 Azure Active Directory でアプリケーションを登録する方法の詳細については、[アプリを Azure Active Directory に登録する](/azure/active-directory/develop/quickstart-v2-register-an-app)方法に関するページを参照してください。
+Azure AD 手動アプリ登録は、次のいずれかのソリューションを作成している場合にのみ使用します。
+
+* "*組織向けの埋め込み*" アプリケーション。
+
+* "*サービス プリンシパル*" を使用した、"*顧客向けの埋め込み*" アプリケーション。
+
+    >[!NOTE]
+    >このオプションを選択した場合は、Azure AD アプリを登録した後で、それに [Power BI アクセス許可を追加](#change-your-azure-ad-apps-permissions)する必要があります。
+
+Azure Active Directory でアプリケーションを登録する方法の詳細については、[アプリを Azure Active Directory に登録する](/azure/active-directory/develop/quickstart-v2-register-an-app)方法に関するページを参照してください。
 
 1. [Azure Portal](https://portal.azure.com) にサインインします。
 
@@ -140,6 +149,9 @@ Azure AD 手動アプリ登録は、"*組織向けに埋め込む*" ソリュー
 ## <a name="change-your-azure-ad-apps-permissions"></a>Azure AD アプリのアクセス許可を変更する
 
 アプリケーションを登録した後、そのアクセス許可を変更できます。 アクセス許可の変更は、プログラムまたは Azure portal で行うことができます。
+
+>[!NOTE]
+>Azure AD アプリのアクセス許可は、"*マスター ユーザー*" 認証方法を使用した、"*顧客向けの埋め込み*" ソリューションにのみ適用されます。
 
 # <a name="azure"></a>[Azure](#tab/Azure)
 

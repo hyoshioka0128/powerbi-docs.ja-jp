@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/05/2020
+ms.date: 12/01/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4e71580857827a370676c4d05274c4c57b1d56c5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b238daa82bc2ae039c137c259ca8f63044281e6f
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413497"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613718"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>XMLA エンドポイントを使用したデータセット接続
 
@@ -23,7 +23,7 @@ ms.locfileid: "96413497"
 
 ## <a name="whats-an-xmla-endpoint"></a>XMLA エンドポイントとは
 
-Power BI Premium では、クライアント アプリケーションと、ワークスペースおよびデータセットを管理するエンジンとの間の通信に、[XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) プロトコルが使用されます。 これらの接続は、一般的に XMLA エンドポイントとして参照されるものを介しています。 XMLA は、内部にある Microsoft Analysis Services エンジンによって使用されるのと同じ通信プロトコルであり、Power BI のセマンティック モデル、ガバナンス、ライフサイクル、データ管理を実行します。
+Power BI Premium では、クライアント アプリケーションと、ワークスペースおよびデータセットを管理するエンジンとの間の通信に、[XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) プロトコルが使用されます。 これらの接続は、一般的に XMLA エンドポイントとして参照されるものを介しています。 XMLA は、内部にある Microsoft Analysis Services エンジンによって使用されるのと同じ通信プロトコルであり、Power BI のセマンティック モデル、ガバナンス、ライフサイクル、データ管理を実行します。 XMLA プロトコルを介して送信されるデータは完全に暗号化されます。
 
 既定では、エンドポイントを使用した "*読み取り専用*" の接続が、容量のうち **データセット ワークロード** に対して有効になります。 読み取り専用のデータ可視化アプリケーションとツールでは、データセット モデルのデータ、メタデータ、イベント、スキーマに対してクエリを実行できます。 エンドポイントを使用した "*読み取り/書き込み*" 操作を有効にすると、追加のデータセット管理、ガバナンス、高度なセマンティック モデリング、デバッグ、監視を実現できます。 読み取り/書き込みを有効にすると、Power BI Premium データセットでは、Azure Analysis Services と SQL Server Analysis Services のエンタープライズ レベルの表形式モデリング ツールおよびプロセスとのパリティが向上します。
 
@@ -32,7 +32,7 @@ Power BI Premium では、クライアント アプリケーションと、ワ�
 
 ## <a name="data-modeling-and-management-tools"></a>データ モデリングと管理のツール
 
-次に示すのは、Azure Analysis Services と SQL Server Analysis Services で使用される最も一般的なツールの一部です。これらが Power BI Premium データセットでサポートされるようになりました。
+次に一覧表示するのは、Azure Analysis Services と SQL Server Analysis Services で使用される最も一般的なツールの一部です。これらが Power BI Premium データセットでサポートされるようになりました。
 
 **Visual Studio と Analysis Services プロジェクト** – SQL Server Data Tools、または単に **SSDT** とも呼ばれる、Analysis Services 表形式モデル用のエンタープライズ レベル モデル作成ツールです。 Analysis Services プロジェクトの拡張機能は、Visual Studio 2017 以降のすべてのエディション (無料の Community Edition を含む) でサポートされています。 表形式モデルを Premium ワークスペースに配置するには、拡張機能バージョン 2.9.6 以降が必要です。 Premium ワークスペースに配置する場合、モデルは 1500 以上の互換性レベルである必要があります。 データセット ワークロードには、XMLA 読み取り/書き込みが必要です。 詳細については、「[Analysis Services 用のツール](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true)」を参照してください。
 
@@ -70,7 +70,7 @@ Power BI Premium では、クライアント アプリケーションと、ワ�
 
 ### <a name="to-enable-read-write-for-a-capacity"></a>容量の読み取り/書き込みを有効にするには
 
-1. 管理ポータルで、 **[容量の設定]**  >  **[Power BI Premium]** > 容量の名前をクリックします。
+1. 管理ポータルで、 **[容量の設定]**  >  **[Power BI Premium]** > 容量の名前を選択します。
 2. **[ワークロード]** を展開します。 **[XMLA エンドポイント]** の設定で、 **[読み取り/書き込み]** を選択します。
 
     ![XMLA エンドポイントを有効にする](media/service-premium-connect-tools/xmla-endpoint-enable.png)
@@ -80,7 +80,7 @@ Power BI Premium では、クライアント アプリケーションと、ワ�
 容量に割り当てられたワークスペースには、次のような URL 形式の接続文字列があります。  
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
 
-ワークスペースに接続するアプリケーションでは、その URL を Analysis Services サーバー名と同様に使用します。 たとえば、次のように入力します。  
+ワークスペースに接続するアプリケーションでは、Analysis Services サーバー名であるかのように URL が使用されます。 たとえば、次のように入力します。  
 `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
 (B2B ではなく) 同じテナント内に UPN を持つユーザーは、テナント名を `myorg` に置き換えることができます。 たとえば、  
@@ -91,7 +91,7 @@ B2B ユーザーは、テナント名に組織 UPN を指定する必要があ�
 
 ### <a name="to-get-the-workspace-connection-url"></a>ワークスペースの接続 URL を取得するには
 
-ワークスペースの **[設定]**  >  **[Premium]**  >  **[ワークスペース接続]** で、 **[コピー]** をクリックします。
+ワークスペースの **[設定]**  >  **[Premium]**  >  **[ワークスペース接続]** で、 **[コピー]** を選択します。
 
 ![ワークスペースの接続文字列](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
@@ -99,11 +99,11 @@ B2B ユーザーは、テナント名に組織 UPN を指定する必要があ�
 
 ### <a name="initial-catalog"></a>初期カタログ
 
-SQL Server Profiler などの一部のツールでは、"*初期カタログ*" を指定することが必要な場合があります。 自分のワークスペースでデータセット (データベース) を指定します。 **[サーバーに接続]** ダイアログの **[オプション]**  >  **[接続プロパティ]**  >  **[データベースへの接続]** で、データセット名を入力します。
+SQL Server Profiler などの一部のツールでは、"*初期カタログ*" を指定することが必要な場合があります。 自分のワークスペースでデータセット (データベース) を指定します。 **[サーバーに接続]** ダイアログで **[オプション]**  >  **[接続プロパティ]**  >  **[データベースへの接続]** を選択し、データセット名を入力します。
 
 ### <a name="duplicate-workspace-names"></a>重複するワークスペース名
 
-Power BI の[新しいワークスペース](../collaborate-share/service-new-workspaces.md) (新しいワークスペース エクスペリエンスを使用して作成) では、名前が重複するワークスペースの作成または名前変更を禁止するために、検証が課されます。 移行されていないワークスペースでは、重複する名前が生成される可能性があります。 別のワークスペースと同じ名前でワークスペースに接続している場合、次のエラーが表示されることがあります:
+Power BI の[新しいワークスペース](../collaborate-share/service-new-workspaces.md) (新しいワークスペース エクスペリエンスを使用して作成) では、名前が重複するワークスペースの作成または名前変更を禁止するために、検証が課されます。 移行されていないワークスペースによって、重複する名前が生成される場合があります。 別のワークスペースと同じ名前でワークスペースに接続している場合、次のエラーが表示されることがあります:
 
 **powerbi://api.powerbi.com/v1.0/[テナント名]/[ワークスペース名] に接続できません。**
 
@@ -129,9 +129,15 @@ Power BI の[新しいワークスペース](../collaborate-share/service-new-wo
 
 ## <a name="security"></a>セキュリティ
 
-容量管理者によって XMLA エンドポイント プロパティの読み取り/書き込みが有効になっていることに加えて、Power BI 管理ポータルでテナントレベルの **[データのエクスポート]** 設定が有効になっている必要があります。この設定も [Excel で分析] に必要です。
+容量管理者によって XMLA エンドポイント プロパティの読み取り/書き込みが有効になっていることに加えて、管理ポータルでテナントレベルの設定 **[オンプレミスのデータセットを使った "Excel で分析" と XMLA エンドポイントを許可する]** を有効にする必要があります。 XMLA エンドポイントに接続する AIXL ファイルを生成する必要がある場合は、テナントレベルの設定 **[ライブ接続の許可]** も有効にする必要があります。 これらの設定は、どちらも既定で有効になっています。
 
-![データのエクスポートを有効にする](media/service-premium-connect-tools/xmla-endpoint-export-data.png)
+**[オンプレミスのデータセットを使った "Excel で分析" と XMLA エンドポイントを許可する]** は統合設定です。
+
+:::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="統合設定により、XMLA エンドポイントが許可されます。":::
+
+**[ライブ接続の許可]** はエクスポートと共有の設定です。
+
+:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="エクスポートと共有の設定により、ライブ接続が許可されます。":::
 
 XMLA エンドポイントを使用してアクセスすると、ワークスペースまたはアプリのレベルで設定されたセキュリティ グループ メンバーシップが優先されます。
 
@@ -184,7 +190,7 @@ Visual Studio で作成された表形式モデル プロジェクトを配置�
 
 **初めて配置する場合**、model.bim 内のメタデータを使用してデータセットがワークスペース内に作成されます。 配置操作の一部として、ワークスペースにモデル メタデータからデータセットが作成された後、データ ソースからデータセットにデータを読み込む処理は失敗します。
 
-処理が失敗する理由は、Azure または SQL Server 分析サーバー インスタンスに配置する場合 (データ ソースの資格情報が配置操作の一部として要求される) とは異なり、Premium ワークスペースに配置する場合は、データ ソースの資格情報を配置操作の一部として指定できないためです。 代わりに、メタデータの配置が正常に完了し、データセットが作成された後、データ ソースの資格情報が Power BI サービスのデータセットの設定で指定されます。 ワークスペースで、 **[データセット]**  >  **[設定]**  >  **[データ ソースの資格情報]**  >  **[資格情報の編集]** をクリックします。
+処理が失敗する理由は、Azure または SQL Server 分析サーバー インスタンスに配置する場合 (データ ソースの資格情報が配置操作の一部として要求される) とは異なり、Premium ワークスペースに配置する場合は、データ ソースの資格情報を配置操作の一部として指定できないためです。 代わりに、メタデータの配置が正常に完了し、データセットが作成された後、データ ソースの資格情報が Power BI サービスのデータセットの設定で指定されます。 ワークスペースで、 **[データセット]**  >  **[設定]**  >  **[データ ソースの資格情報]**  >  **[資格情報の編集]** を選択します。
 
 ![データ ソース資格情報](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
 
@@ -198,7 +204,7 @@ SSMS を使用したワークスペースへの接続は、Azure または SQL S
 
 ### <a name="connect-to-a-workspace-by-using-ssms"></a>SSMS を使用してワークスペースに接続する
 
-1. SQL Server Management Studio で、 **[接続]**  >  **[サーバーに接続]** をクリックします。
+1. SQL Server Management Studio で、 **[接続]**  >  **[サーバーに接続]** を選択します。
 
 2. **[サーバーの種類]** で **[Analysis Services]** を選択します。 **[サーバー名]** にワークスペースの URL を入力します。 **[認証]** で **[Active Directory - MFA で汎用]** を選択し、 **[ユーザー名]** に組織のユーザー ID を入力します。
 

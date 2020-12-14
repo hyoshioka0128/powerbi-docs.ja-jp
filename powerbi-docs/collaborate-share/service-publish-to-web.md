@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/02/2020
+ms.date: 12/03/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 004546a941426f602bfb5cacaf938bd55cec452d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 76f45ac7aee01cb907e727bc8cb12a69bd234d72
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406781"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613879"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI から Web への公開
 
@@ -198,6 +198,7 @@ Power BI にサインアップしたより小規模の組織または個人の�
 - シングル サインオン データ クエリ モデル
 - セキュリティで保護された秘密または機密情報
 - **[埋め込む]** オプションを使って提供される自動認証機能は、Power BI JavaScript API では動作しません。 Power BI JavaScript API の場合は、[ユーザー所有データ](../developer/embedded/embed-sample-for-your-organization.md)の方法を使って埋め込みを行います。
+- 管理者は、「[Power BI にアクセスするためのプライベート リンク](../admin/service-security-private-links.md)」で説明されているように、パブリック インターネット アクセスをブロックすることができます。 その場合、Power BI 管理ポータルでは、ご利用のテナントに対して **[Web に公開]** オプションがグレー表示されます。 
 
 ## <a name="next-steps"></a>次の手順
 

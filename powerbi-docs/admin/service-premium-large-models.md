@@ -1,42 +1,59 @@
 ---
-title: Power BI Premium の大規模なモデル (プレビュー)
-description: 大規模なモデルの機能を使用すると、Power BI Premium のデータセットのサイズを 10 GB 以上に拡張することができます。
+title: Power BI Premium での大規模なデータセット
+description: 大規模なデータセットのストレージ形式を使用すると、Power BI Premium のデータセットのサイズを 10 GB 以上に拡張することができます。
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 12/04/2020
+ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 0bb6f7bf46875e0af7c09d221c73ae5e4b70b2df
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1f9a34b68f465eda5b8921e48576c9bef5d17f36
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412232"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781722"
 ---
-# <a name="large-models-in-power-bi-premium-preview"></a>Power BI Premium の大規模なモデル (プレビュー)
+# <a name="large-datasets-in-power-bi-premium"></a>Power BI Premium での大規模なデータセット
 
-Power BI データセットでは、クエリ パフォーマンスが最適化されるように、データを圧縮率の高い、メモリ内キャッシュに格納できます。これにより、ユーザーは大規模なデータセットと高速に対話できるようになります。 大規模なモデルの機能を使用すると、Power BI Premium のデータセットのサイズを 10 GB 以上に拡張することができます。 その代わり、データセットのサイズは Power BI Premium 容量のサイズによって制限されます。これは、モデル サイズの制限という点で Azure Analysis Services が動作するしくみと似ています。 Power BI Premium における容量サイズの詳細については、容量ノードに関するページを参照してください。 すべての Premium P SKU と Embedded A SKU で大規模なモデルを設定できますが、これは[新しいワークスペース](../collaborate-share/service-create-the-new-workspaces.md)でのみ機能します。
+Power BI データセットでは、クエリ パフォーマンスが最適化されるように、データを圧縮率の高い、メモリ内キャッシュに格納できます。これにより、ユーザー対話機能が高速になります。 Premium 容量に関しては、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** 設定を使用することで、既定の 10 GB の上限を超える大規模なデータセットを有効にすることができます。 有効にした場合、データセットのサイズは、Premium "*容量*" サイズによって制限されます。
 
-大規模なモデルは PBIX のアップロード サイズには影響しません。これは現在も 10 GB に制限されています。 その代わり、データセットは更新時にサービス内で 10 GB を超えてもかまいません。 増分更新を使用して、10 GB を超えるサイズのデータセットを構成できます。
+すべての Premium P SKU および Embedded A SKU に対して、大規模なデータセットを有効にすることができます。 Premium での大規模なデータセットのサイズ制限は、データ モデルのサイズ制限の観点から、Azure Analysis Services に相当します。
 
-## <a name="enable-large-models"></a>大規模なモデルを有効にする
+データセットを 10 GB を超えて拡張する必要がありますが、[Large dataset storage format]\(大規模なデータセットのストレージ形式\) 設定を有効にすれば、追加の利点が得られます。 データセットの書き込み操作に XMLA エンドポイントベースのツールを使用する予定がある場合は、"*大規模な*" データセットとして必ずしも特徴付けるとは限らないデータセットについても、当該設定を必ず有効にしてください。 有効にすると、大規模なデータセットのストレージ形式によって、XMLA 書き込み操作のパフォーマンスが向上します。
 
-10 GB を超えるデータセットを作成するには、次の手順を実行します。
+Power BI Desktop モデルのアップロード サイズは、このサービスの大規模なデータセットの影響を受けることはなく、引き続き 10 GB に制限されます。 その代わり、データセットは更新時にサービス内で 10 GB を超える可能性があります。
 
-1. Power BI Desktop でデータセットを作成し、[増分更新](service-premium-incremental-refresh.md)を構成します。
+## <a name="enable-large-datasets"></a>大規模なデータセットを有効にする
 
-1. データセットを Power BI Premium サービスに発行します。
+以下の手順では、サービスに発行される新しいモデルに対して大規模なデータセットを有効にする方法について説明します。 既存のデータセットの場合は、手順 3 のみが必要です。
 
-1. 下の PowerShell コマンドレットを実行して、大規模なモデルのデータセットを有効にします。 これらのコマンドレットを実行すると、Power BI ではそのデータセットが Azure Premium ファイルに格納され、10 GB の制限が適用されなくなります。
+1. Power BI Desktop で、モデルを作成します。 データセットがより大きくなり、徐々により多くのメモリを消費する場合は、必ず[増分更新](service-premium-incremental-refresh.md)を構成してください。
 
-1. 更新を呼び出し、増分更新ポリシーに基づいて履歴データを読み込みます。 最初の更新では、履歴の読み込みに時間がかかる場合があります。 その後の更新は増分であるため、時間は短縮されます。
+1. モデルをデータセットとしてサービスに発行します。
 
-### <a name="powershell-cmdlets"></a>PowerShell コマンドレット
+1. [サービス] > [データセット] > **[設定]** で、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** を展開し、スライダーをクリックして **[オン]** にして、 **[適用]** をクリックします。
 
-現在のバージョンの大規模なモデルで、PowerShell コマンドレットを使用して、Premium ファイル ストレージのデータセットを有効にします。 PowerShell コマンドレットを実行するには、容量管理者とワークスペース管理者の特権が必要です。
+    :::image type="content" source="media/service-premium-large-models/enable-large-dataset.png" alt-text="大規模なデータセットのスライダーを有効にする":::
+
+1. 更新を呼び出し、増分更新ポリシーに基づいて履歴データを読み込みます。 最初の更新では、履歴の読み込みに時間がかかる場合があります。 ご利用の増分更新ポリシーによっては、それ以降の更新はより速くになります。
+
+## <a name="set-default-storage-format"></a>既定のストレージ形式を設定する
+
+Premium 容量に割り当てられたワークスペース内で作成されるすべての新しいデータセットについては、大規模なデータセットのストレージ形式を既定で有効にすることができます。
+
+1. ワークスペースで、 **[設定]**  >  **[Premium]** の順にクリックします。
+
+1. **[既定のストレージ形式]** で、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** を選択して、 **[保存]** をクリックします。
+
+    :::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="既定のストレージ形式を有効にする":::
+
+### <a name="enable-with-powershell"></a>PowerShell を使用した有効化
+
+PowerShell を使用して、大規模なデータセットのストレージ形式を有効にすることもできます。 PowerShell コマンドレットを実行するには、容量管理者とワークスペース管理者の特権が必要です。
 
 1. データセット ID (GUID) を確認します。 ワークスペースの **[データセット]** タブで、データセットの設定の下にある URL に ID が表示されます。
 
@@ -66,7 +83,7 @@ Power BI データセットでは、クエリ パフォーマンスが最適化�
     <Dataset ID>         Abf
     ```
 
-1. 次のコマンドレットを実行して、ストレージ モードを Premium ファイルに設定し、これを確認します。 Premium ファイルへの変換には、数秒かかることがあります。
+1. 次のコマンドレットを実行して、ストレージ モードを設定します。 Premium ファイルへの変換には、数秒かかることがあります。
 
     ```powershell
     Set-PowerBIDataset -Id <Dataset ID> -TargetStorageMode PremiumFiles
@@ -112,20 +129,18 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 
-大規模なモデルを使用する場合は、次の制限事項に留意してください。
+大規模なデータセットを使用する場合は、次の制限事項に留意してください。
 
-- **Multi-geo のサポート**:Premium ファイルに対して有効になっているデータセットは、[Multi-geo](service-admin-premium-multi-geo.md) も有効になっている容量で失敗します。
+- **新しいワークスペースが必要**: 大規模なデータセットは、[新しいワークスペース](../collaborate-share/service-create-the-new-workspaces.md)でのみ機能します。
 
 - **Power BI Desktop へのダウンロード**:データセットが Premium ファイルに格納されている場合、[.pbix ファイルとしてのダウンロード](../create-reports/service-export-to-pbix.md)は失敗します。
-- **サポートされているリージョン**:大規模なモデルは、Premium ファイル ストレージをサポートするすべての Azure リージョンでサポートされています。 詳細については、「[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?products=storage)」を確認し、次のセクションに記載されている表を参照してください。
+- **サポートされているリージョン**: 大規模なデータ セットは、Premium ファイル ストレージをサポートするすべての Azure リージョンでサポートされています。 詳細については、「[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?products=storage)」を確認し、次のセクションに記載されている表を参照してください。
 
+## <a name="region-availability"></a>利用可能なリージョン
 
-## <a name="availability-in-regions"></a>リージョンで使用できるかどうか
+Power BI の大規模なデータセットは、[Azure Premium ファイル ストレージ](/azure/storage/files/storage-files-planning#storage-tiers)がサポートされている特定の Azure リージョンでのみ使用できます。
 
-Power BI の大規模なモデルは、[Azure Premium ファイル ストレージ](/azure/storage/files/storage-files-planning#storage-tiers)がサポートされている特定の Azure リージョンでのみ使用できます。
-
-次の一覧は、Power BI の大規模なモデルを使用できるリージョンを示しています。 次の一覧に含まれていないリージョンでは、大規模なモデルがサポートされていません。
-
+次の一覧には、Power BI の大規模なデータセットを使用できるリージョンを示しています。 次の一覧に含まれていないリージョンでは、大規模なモデルがサポートされていません。
 
 |Azure リージョン  |Azure リージョンの省略形  |
 |---------|---------|
@@ -149,8 +164,6 @@ Power BI の大規模なモデルは、[Azure Premium ファイル ストレー�
 |米国西部     | westus        |
 |米国西部 2     | westus2        |
 
-
-
 ## <a name="next-steps"></a>次のステップ
 
 次のリンクには、大規模なモデルを使用する際に役立つ情報が用意されています。
@@ -160,7 +173,6 @@ Power BI の大規模なモデルは、[Azure Premium ファイル ストレー�
 * [Power BI で独自の暗号化キーを使用する](service-encryption-byok.md)
 * [容量はどのように機能するのか](service-premium-what-is.md#how-capacities-function)
 * [増分更新](service-premium-incremental-refresh.md)。
-
 
 Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
 * パフォーマンス

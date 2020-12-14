@@ -7,20 +7,19 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/26/2020
+ms.date: 12/03/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: ec56f15386aeddafa74d952ce772aa3dcce4f901
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7aa199547f6cad0b7d4dbfc6b75e9d9e25b2b153
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391486"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578339"
 ---
 # <a name="what-are-bookmarks"></a>ブックマークとは?
 
 [!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 ブックマークは、フィルター、スライサー、ビジュアルの状態など、レポート ページで現在構成されているビューをキャプチャします。 ブックマークを選択すると、Power BI はそのビューに戻ります。 ブックマークには、自分で作成したものとレポート *デザイナー* が作成したものの 2 種類があります。 Power BI ユーザーであれば、誰でも個人用のブックマークを作成できます。 しかしながら、他のユーザーが作成したブックマークを使用するには、Power BI Pro または Premium ライセンスが必要です。 [お使いのライセンスの種類について](end-user-license.md)
 
@@ -30,6 +29,16 @@ ms.locfileid: "96391486"
 また、ブックマークのコレクションを作成して適切な順序に並べ替えた後、プレゼンテーションで各ブックマークを順番に表示することで、一連の分析情報を強調し、ストーリーを伝えることができます。  
 
 ![リボンからブックマーク ウィンドウを選択して表示します。](media/end-user-bookmarks/power-bi-bookmark-icon.png)
+
+ブックマークが設定されたレポートを、そのレポートに対する読み取りアクセス権を持つ同僚と共有します。 レポートのブックマーク付きビューによってデザイナーの元のレポートがオーバーライドされることはありません。  まだ読み取りアクセス権を持っていない同僚と共有するには、再共有のアクセス許可が必要です。 レポートのビューを共有できない場合は、レポートの所有者に連絡して、再共有のアクセス許可を依頼してください。  
+
+
+### <a name="share-changes"></a>変更を共有する 
+読み取りと再共有のアクセス許可を持っている場合は、レポートを共有するときに、自分の変更内容を含めることを選択できます。
+
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-share-changes.png" alt-text="変更を共有する":::
+ 
+
 
 ## <a name="open-bookmarks"></a>ブックマークを開く
 [ブックマーク] ウィンドウを開くには、メニューバーから **[ブックマーク]**  >  **[ブックマークをさらに表示]** を選択します。 
@@ -164,17 +173,22 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 -->
 
 
+### <a name="reset-all-your-changes-to-a-report"></a>レポートへのすべての変更をリセットする
+
+レポート キャンバスの右上隅にある **[既定にリセット]** を選択します。 これにより、レポート内のすべての変更が削除され、作成者が最後に保存したレポート ビューに設定し直されます。
+
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="すべての変更をリセットする":::
 
 
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 このリリースの **ブックマーク** には、注意すべきいくつかの制限事項と考慮事項があります。
 
-* ほとんどの Power BI ビジュアルは、ブックマークでうまく機能します。 ブックマークと Power BI ビジュアルで問題が発生する場合は、その Power BI ビジュアルの作成者に連絡して、ブックマークのサポートをそのビジュアルに追加するよう依頼してください。
+* ほとんどの Power BI カスタム ビジュアルは、ブックマークでうまく機能します。 ブックマークと Power BI カスタム ビジュアルで問題が発生する場合は、そのビジュアルの作成者に連絡して、ブックマークのサポートを追加するよう依頼してください。    
 * ブックマークを作成した後でレポート ページにビジュアルを追加した場合、ビジュアルは既定の状態で表示されます。 ブックマークを作成した後でページにスライサーを追加した場合も、スライサーは既定の状態で動作します。
 * 一般に、レポート *デザイナー* がレポートを更新したり、再発行したりした場合、ブックマークは影響を受けません。 ただし、ブックマークで使用されているフィールドを削除するなど、デザイナーがレポートに大規模な変更を行った場合、次回、そのブックマークを開こうとしたとき、エラー メッセージが表示されます。 
+* この機能は、iOS と Android タブレット用の Power BI モバイルアプリ、および Power BI Windows アプリでサポートされています。スマートフォン用の Power BI モバイル アプリではサポートされていません。 ただし、Power BI サービスの使用中に個人用ブックマークに保存した視覚エフェクトの変更は、すべての Power BI モバイル アプリに適用されます。
 
-<!--
-## Next steps
-spotlight?
--->
+
+## <a name="next-steps"></a>次の手順
+[レポート内のビジュアルをカスタマイズする](end-user-personalize-visuals.md)

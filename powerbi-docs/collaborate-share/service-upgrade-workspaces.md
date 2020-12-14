@@ -9,12 +9,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d8e53e997aeef24d531cb733adc0b276a8395e57
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f5a76783d91da610a447667a9ea648bbcebbdc8b
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411611"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577626"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Power BI でクラシック ワークスペースを新しいワークスペースにアップグレードする
 
@@ -22,6 +22,10 @@ ms.locfileid: "96411611"
 
 >[!NOTE]
 >ワークスペース アップグレードはパブリック プレビューとして利用できます。 
+
+>[!NOTE]
+>ワークスペースのアップグレードは、Power BI 管理者が開始できます。Power BI 管理者によってワークスペースがアップグレードされると、そのワークスペースの管理者に電子メールが送信されます。[詳細情報](../admin/service-admin-portal.md#workspaces) 
+
 
 ![成功するアップグレード](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -68,6 +72,7 @@ ms.locfileid: "96411611"
 - クラシック ワークスペースの Microsoft 365 グループは、Power BI のワークスペースのアップグレードの影響を受けません。 Microsoft 365 で管理されているすべての Teams、SharePoint サイト、メールボックス、またはその他のリソースは変更されません。 これらは、Power BI ワークスペースをアップグレードした後も残ります。 Microsoft 365 グループは、引き続き以前と同じように存在します。
 - アップグレード後のワークスペースのセキュリティ保護方法には変更点があります。 詳細については、[アップグレード後のワークスペースのアクセス許可](#permissions-after-upgrade)に関するセクションを参照してください。
 - 必要な場合に備えて、**クラシック ワークスペースに戻る** オプションが用意されています。 ただし、アップグレード前にワークスペースの一部の側面が完全に復元されるわけではありません。 新しいワークスペース エクスペリエンスでのみ動作する機能を使用する場合は、元に戻すことはできません。 戻るオプションは、アップグレードから 30 日間使用できます。
+- Power BI 管理者は、ワークスペースのアップグレードを開始できます。 Power BI 管理者によってワークスペースがアップグレードされると、そのワークスペースの管理者に電子メールが送信されます。
 
 ## <a name="permissions-after-upgrade"></a>アップグレード後のアクセス許可
 
@@ -193,12 +198,14 @@ Microsoft 365 グループにはワークスペースでロールが与えられ
 
 ## <a name="manage-migration-to-the-new-workspaces-for-your-tenant"></a>テナントの新しいワークスペースへの移行を管理する 
 
-組織によっては、多数またはすべてのワークスペースを新しいワークスペース エクスペリエンスに移行することを望んでいます。 ワークスペース アップグレード ツールは、ワークスペース管理者がアップグレードできるようにすることに重点を置いています。 このようなプロセスを管理する組織では、次の手順を実行できます。
+新しいワークスペース エクスペリエンスへの移行に積極的な組織は、Power BI 管理ポータルからそれを行うことができます。 Power BI 管理者は、1 つまたは複数のワークスペースを選択してアップグレードすることができます。 Power BI 管理者が開始したワークスペースのアップグレードは、ワークスペースの管理者が開始したワークスペースのアップグレードと同じ考慮事項と制限事項を共有します。 [詳細を表示](../admin/service-admin-portal.md#workspaces) 
+
+このようなプロセスを管理する組織は、次の手順を行って、影響を受けるワークスペース管理者との明確なコミュニケーションを確保することをお勧めします。
 
 1. Power BI 管理ポータルのワークスペース一覧とそれに対応する API によって、Power BI のすべてのワークスペースの一覧が得られます。 クラシック ワークスペースは、一覧に "グループ" という種類で表示されます。
-2. 個々のグループ所有者、または Microsoft 365 の管理者と連携して、ワークスペースをアップグレードさせます。 ワークスペースをアップグレードする場合は、グループの所有者である必要があります。
+2. 個々のグループ所有者、または Microsoft 365 の管理者と連携して、クラシック ワークスペースをアップグレードする計画を彼らに伝えます。
 
-ワークスペースのアップグレード機能には、一括アップグレードまたはプログラムによるアップグレード用のツールが用意されていません。 また、組織に作成された新しい Microsoft 365 グループは、Power BI に引き続き表示されます。
+ワークスペースのアップグレード機能には、プログラムによるアップグレード用のツールが用意されていません。 また、組織に作成された新しい Microsoft 365 グループは、Power BI に引き続き表示されます。
    
    
 ## <a name="known-issues"></a>既知の問題
@@ -213,4 +220,5 @@ Microsoft 365 グループにはワークスペースでロールが与えられ
 * [新しいワークスペース エクスペリエンスで作業を整理する](service-new-workspaces.md)
 * [新しいワークスペースを作成する](service-create-the-new-workspaces.md)
 * [従来のワークスペースを作成する](service-create-workspaces.md)
-* わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+* [Power BI 管理者が開始したワークスペースのアップグレードを開始する](../admin/service-admin-portal.md#workspaces)
+* 疑問がある場合 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
