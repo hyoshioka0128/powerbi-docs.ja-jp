@@ -30,10 +30,10 @@
           href: service-tutorial-connect-to-github.md
         - name: Cognitive Services の使用
           href: service-tutorial-use-cognitive-services.md
-        - name: Machine Learning 統合
-          href: service-tutorial-invoke-machine-learning-model.md
-        - name: 機械学習モデルの構築
+        - name: 機械学習モデルを構築する
           href: service-tutorial-build-machine-learning-model.md
+        - name: レポートでの機械学習モデルの使用
+          href: service-aml-integrate.md
         - name: SQL Server からのデータを更新する
           href: service-gateway-sql-tutorial.md
     - name: 概念

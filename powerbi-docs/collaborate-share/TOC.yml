@@ -103,12 +103,16 @@
           items:
             - name: データ アラートを Power Automate と統合する
               href: service-flow-integration.md
+            - name: Power Automate でレポートをエクスポートしてメールで送信する
+              href: service-automate-power-bi-report-export.md
             - name: Power Automate を使用してページ分割されたレポートをエクスポートする
               href: service-automate-paginated-integration.md
             - name: ページ分割されたレポートを OneDrive または SharePoint Online に保存する
               href: service-automate-paginated-onedrive-sharepoint.md
             - name: Excel Online または SharePoint リストからページ分割されたレポートをエクスポートする
               href: service-automate-paginated-excel-sharepoint-list.md
+            - name: ページ分割されたレポートをローカル フォルダーに保存する
+              href: service-automate-paginated-local-file.md
         - name: サード パーティ製アプリを使用する
           href: service-power-bi-get-started-third-party-apps.md
         - name: 組織のコンテンツ パック
