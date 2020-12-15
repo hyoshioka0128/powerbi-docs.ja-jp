@@ -7,8 +7,6 @@
       items:
         - name: クエリ エディターの概要
           href: desktop-query-overview.md
-        - name: データフローを使用したセルフサービスのデータ準備
-          href: ./dataflows/dataflows-introduction-self-service.md
     - name: チュートリアル
       expanded: true
       items:
