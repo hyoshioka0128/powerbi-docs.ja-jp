@@ -9,6 +9,8 @@
           href: service-get-data.md
         - name: オンプレミス データ ゲートウェイとは
           href: service-gateway-onprem.md
+        - name: Power BI サービスでのデータセットの検出
+          href: service-datasets-hub.md
     - name: クイックスタート
       expanded: true
       items:
