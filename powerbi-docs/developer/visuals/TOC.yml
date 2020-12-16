@@ -82,6 +82,8 @@
           href: drill-down-support.md
         - name: ビジュアルに色を追加する
           href: add-colors-power-bi-visual.md
+        - name: 条件付き書式を追加する
+          href: conditional-format.md
         - name: ビジュアル内のデータを強調表示する
           href: highlight.md
         - name: ハイコントラスト モードのサポートを追加する
