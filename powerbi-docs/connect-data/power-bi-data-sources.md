@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.openlocfilehash: 18b7e55d409dc6562fab7cf1f36b83e7edac994b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: 67a0577c906e23fc51182120f1445814bdcd8028
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96392866"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491830"
 ---
 # <a name="power-bi-data-sources"></a>Power BI データ ソース
 
@@ -21,29 +21,30 @@ ms.locfileid: "96392866"
 
 | データ ソースの | デスクトップから接続する | サービスから接続し、更新する | DirectQuery / ライブ接続 | ゲートウェイ (サポートあり) | ゲートウェイ (必須) | Power BI データフロー |
 |---|---|---|---|---|---|---|---|
-| Access データベース | はい | はい | いいえ | はい <sup>1</sup> | はい | はい |
-| Active Directory | はい | はい | いいえ | はい | はい | はい |
-| Adobe Analytics | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Amazon Redshift | はい | はい | はい | はい | いいえ | はい |
+| Access データベース | はい | ○ | いいえ | はい <sup>1</sup> | はい | はい |
+| Active Directory | はい | はい | いいえ | ○ | はい | はい |
+| Adobe Analytics | はい | ○ | いいえ | いいえ | いいえ | いいえ |
+| Amazon Redshift | はい | ○ | はい | はい | いいえ | はい |
 | appFigures | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| AtScale キューブ | はい | はい | はい | はい | いいえ | いいえ |
-| Azure Analysis Services | はい | はい | はい | いいえ | いいえ | いいえ |
-| Azure Blob Storage | はい | はい | いいえ | はい | いいえ | はい |
-| Azure Cosmos DB | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Azure Cost Management | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Azure Data Explorer (Kusto) | はい | はい | はい | はい | いいえ | はい |
+| AtScale キューブ | はい | はい | はい | ○ | いいえ | いいえ |
+| Azure Analysis Services | はい | ○ | はい | いいえ | いいえ | いいえ |
+| Azure Blob Storage | はい | ○ | いいえ | ○ | いいえ | はい |
+| Azure Cosmos DB | ○ | ○ | いいえ | いいえ | いいえ | いいえ |
+| Azure Cost Management | はい | ○ | いいえ | いいえ | いいえ | いいえ |
+| Azure Data Explorer (Kusto) | はい | はい | はい | ○ | いいえ | はい |
 | Azure Data Lake Storage Gen1 | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Azure Data Lake Storage Gen2 | はい | はい | いいえ | はい | いいえ | はい |
-| Azure DevOps | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Azure DevOps Server | はい | はい | いいえ | はい | はい | いいえ |
+| Azure Data Lake Storage Gen2 | はい | ○ | いいえ | はい | いいえ | はい |
+| Azure Databricks | はい | ○ | ○ | ○ | いいえ | いいえ |
+| Azure DevOps | はい | ○ | いいえ | いいえ | いいえ | いいえ |
+| Azure DevOps Server | はい | ○ | いいえ | はい | はい | いいえ |
 | Azure HDInsight (HDFS) | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Azure HDInsight Spark | はい | はい | はい | いいえ | いいえ | はい |
-| Azure SQL データベース | はい | はい | はい | はい | いいえ | はい |
-| Azure SQL Data Warehouse | はい | はい | はい | はい | いいえ | はい |
+| Azure SQL データベース | はい | ○ | ○ | ○ | いいえ | はい |
+| Azure SQL Data Warehouse | はい | ○ | ○ | ○ | いいえ | はい |
 | Azure Table Storage | はい | はい | いいえ | はい | いいえ | はい |
 | BI コネクタ | はい | はい | はい | はい | はい | いいえ |
 | BI360 - Budgeting & Financial Reporting | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Common Data Service | はい | はい | いいえ | いいえ | いいえ | はい |
+| Microsoft Dataverse | はい | はい | いいえ | いいえ | いいえ | はい |
 | Data.World - データセットの取得 | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Denodo | はい | はい | はい | はい | はい | いいえ |
 | Dremio | はい | はい | はい | はい | はい | いいえ |
@@ -56,10 +57,10 @@ ms.locfileid: "96392866"
 | Entersoft Business Suite | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Essbase | はい | はい | はい | はい | はい | いいえ |
 | Exasol | はい | はい | はい | はい | はい | いいえ |
-| Excel | はい <sup>3</sup> | はい <sup>3</sup> | いいえ | はい <sup>3</sup> | いいえ <sup>4</sup> | Yes |
+| Excel | はい <sup>3</sup> | はい <sup>3</sup> | いいえ | はい <sup>3</sup> | いいえ <sup>4</sup> | はい |
 | Facebook | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | ファイル | はい | はい | いいえ | はい | はい | はい |
-| Folder | はい | はい | いいえ | はい | はい | はい |
+| フォルダー | はい | はい | いいえ | はい | はい | はい |
 | GitHub | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Google Analytics | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Google BigQuery | はい | はい | はい | はい | いいえ | はい |
@@ -92,7 +93,7 @@ ms.locfileid: "96392866"
 | OleDb | はい | はい | いいえ | はい | はい | いいえ |
 | Oracle | はい | はい | はい | はい | はい | はい |
 | Paxata <sup>8</sup> | はい | はい | いいえ | はい | いいえ | いいえ |
-| PDF | はい | はい | いいえ | はい | いいえ <sup>4</sup> | Yes |
+| PDF | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | Planview Enterprise One - CTM | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Planview Enterprise One - PRM | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Planview Projectplace | はい | はい | いいえ | いいえ | いいえ | いいえ |
@@ -110,7 +111,7 @@ ms.locfileid: "96392866"
 | Salesforce レポート | はい | はい | いいえ | いいえ | いいえ | はい |
 | SAP Business Warehouse メッセージ サーバー | はい | はい | はい | はい | はい | はい |
 | SAP Business Warehouse サーバー | はい | はい | はい | はい | はい | はい |
-| SAP HANA | はい | はい | はい | はい | はい | Yes |
+| SAP HANA | はい | はい | はい | はい | はい | はい |
 | SharePoint フォルダー | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | SharePoint リスト | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | SharePoint Online リスト | はい | はい | いいえ | はい | いいえ | はい |
@@ -126,11 +127,11 @@ ms.locfileid: "96392866"
 | Sybase | はい | はい | いいえ | はい | はい | はい |
 | TeamDesk | はい | はい | いいえ | はい | いいえ | いいえ |
 | Tenforce | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Teradata | はい | はい | はい | はい | はい | Yes |
+| Teradata | はい | はい | はい | はい | はい | はい |
 | テキスト/CSV | はい | はい | いいえ | はい | いいえ <sup>4</sup> | Yes |
 | Twilio | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | tyGraph | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Vertica | はい | はい | はい | はい | はい | Yes |
+| Vertica | はい | はい | はい | はい | はい | はい |
 | Web | はい | はい | いいえ | はい | はい <sup>6</sup> | Yes |
 | Webtrends | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Workforce Dimensions | はい | はい | いいえ | はい | いいえ | いいえ |

@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: d4f9ba18a036c7416689a05476bd1cba6fec72e4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 04340be9c7e3700630657306093e3d96e3e9e693
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408345"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491416"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium 容量でワークロードを構成する
 
@@ -25,7 +25,8 @@ ms.locfileid: "96408345"
 
 ## <a name="default-memory-settings"></a>既定のメモリ設定
 
-クエリのワークロードは、Premium 容量の SKU によって決定されるリソース用に最適化され、そのリソースによって制限されます。 Premium 容量では、容量のリソースを使用できる追加のワークロードもサポートされます。 これらのワークロードの既定のメモリの値は、SKU で使用可能な容量ノードに基づきます。 最大メモリの設定は、累積ではありません。 指定された最大値までのメモリは、AI とデータフローには動的に割り当てられますが、ページ分割されたレポートには静的に割り当てられます。
+クエリのワークロードは、Premium 容量の SKU によって決定されるリソース用に最適化され、そのリソースによって制限されます。 Premium 容量では、容量のリソースを使用できる追加のワークロードもサポートされます。 これらのワークロードの既定のメモリの値は、SKU で使用可能な容量ノードに基づきます。 最大メモリの設定は、累積ではありません。 
+
 
 |                       | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
 |-----------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|

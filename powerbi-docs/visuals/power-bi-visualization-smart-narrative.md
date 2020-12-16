@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/06/2020
-ms.custom: video
+ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7ebb9d4c3682f1ce5cac5e587cb326d4e4ba506b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2e3d7c276c90edde6ce6270a9deea07d185ecdcc
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418764"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96999038"
 ---
 # <a name="create-smart-narrative-summaries-preview"></a>スマート説明の概要を作成する (プレビュー)
 
@@ -39,7 +39,7 @@ ms.locfileid: "96418764"
 ## <a name="get-started"></a>はじめに 
 Watch Justyna でスマート説明の使用方法について説明します。その後、チュートリアルを使用してご自分で試してください。こちらがその動画です。  このチュートリアルを続けるには、オンライン販売シナリオの[サンプル ファイル](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix)をダウンロードしてください。
 
-> [!VIDEO https://youtu.be/01UrT-z37sw]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/01UrT-z37sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **[視覚化]** ペインで、 **[Smart narrative]\(スマート説明\)** アイコンを選択して、概要を自動的に生成します。
 

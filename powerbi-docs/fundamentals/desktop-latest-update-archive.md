@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 12/09/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 9bf482f14b197acda93b6411525a98e865706721
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: da9a143921c640f6933af572a7ac14fc04c96c47
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578520"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998509"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktop に対する以前の毎月の更新
 
@@ -546,13 +546,6 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
 * 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
 * アーカイブされるのは英語版の Power BI Desktop のみです。
-
-次のリンクを選択して、この以前のバージョンをダウンロードします。 
-
-* [2020 年 5 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS.msi)
-* [2020 年 5 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS_x64.msi)
-
-
 
 
 

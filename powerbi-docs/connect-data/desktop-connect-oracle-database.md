@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2e25ab87d042fdc2f0e88ee00a0b0f8f9dbd83a0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 907435fbf5b920d46b1db32c7d652a347245e9b2
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411404"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491876"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Power BI Desktop を使用して Oracle データベースに接続する
 Power BI Desktop を使用して Oracle データベースに接続するには、Power BI Desktop を実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、インストールした Power BI Desktop のバージョンによって異なります。32 ビットまたは 64 ビット。 また、お使いの Oracle サーバーのバージョンにもよります。
