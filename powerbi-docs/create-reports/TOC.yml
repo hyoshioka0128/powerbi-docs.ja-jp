@@ -120,6 +120,7 @@
             - name: ベスト プラクティス
               href: deployment-pipelines-best-practices.md
     - name: 攻略ガイド
+      expanded: true
       items:
         - name: Power BI レポート
           items:

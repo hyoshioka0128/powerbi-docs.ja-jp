@@ -14,12 +14,14 @@
         - name: Power BI Desktop とサービスの比較
           href: service-service-vs-desktop.md
     - name: チュートリアル
+      expanded: true
       items:
         - name: Power BI Desktop の概要
           href: desktop-getting-started.md
         - name: Power BI サービスの概要
           href: service-get-started.md
     - name: 概念
+      expanded: true
       items:
         - name: Power BI Desktop の最新の更新プログラムの新機能
           href: desktop-latest-update.md
@@ -39,11 +41,12 @@
               href: service-self-service-purchase-help.md
             - name: Power BI のサインアップに関するヘルプを表示する
               href: service-self-service-sign-up-help.md
-        - name: セキュリティ
+        - name: Security
           items:
             - name: セキュリティ ベースライン
               href: security-baseline.md
     - name: 操作方法ガイド
+      expanded: true
       items:
         - name: Power BI Desktop の取得
           href: desktop-get-the-desktop.md
