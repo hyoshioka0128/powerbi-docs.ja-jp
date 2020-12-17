@@ -57,7 +57,7 @@
               href: service-microsoft-teams-app.md
             - name: '[Teams] タブにレポートを埋め込む'
               href: service-embed-report-microsoft-teams.md
-            - name: Teams に直接共有する
+            - name: Teams で直接チャットする
               href: service-share-report-teams.md
             - name: Teams でリンク プレビューを取得する
               href: service-teams-link-preview.md

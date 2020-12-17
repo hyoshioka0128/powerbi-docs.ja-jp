@@ -17,6 +17,7 @@
         - name: Power BI Desktop におけるデータへの接続
           href: desktop-quickstart-connect-to-data.md
     - name: チュートリアル
+      expanded: true
       items:
         - name: 複数のデータ ソースの整形と結合
           href: desktop-shape-and-combine-data.md
@@ -39,6 +40,7 @@
         - name: SQL Server からのデータを更新する
           href: service-gateway-sql-tutorial.md
     - name: 概念
+      expanded: true
       items:
         - name: Power BI データ ソース
           href: power-bi-data-sources.md
@@ -50,6 +52,8 @@
           href: desktop-default-member-multidimensional-models.md
         - name: Power BI での DirectQuery の使用について
           href: desktop-directquery-about.md
+        - name: Power BI データセットおよび Azure Analysis Services 用の DirectQuery を使用する (プレビュー)
+          href: desktop-directquery-datasets-azure-analysis-services.md
         - name: ゲートウェイ
           items:
             - name: データ ゲートウェイの展開に関するガイダンス
@@ -57,6 +61,7 @@
             - name: オンプレミス データ ゲートウェイに関してよく寄せられる質問 (FAQ)
               href: service-gateway-power-bi-faq.md
     - name: 攻略ガイド
+      expanded: true
       items:
         - name: データ ソースに接続する
           href: desktop-connect-to-data.md
