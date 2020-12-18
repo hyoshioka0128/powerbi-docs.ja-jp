@@ -30,8 +30,6 @@
           href: mobile-apps-offline-data.md
         - name: HoloLens 2 の Power BI
           href: mobile-hololens2-app.md
-        - name: HoloLens の Power BI (第 1 世代)
-          href: mobile-mixed-reality-app.md
     - name: 操作方法
       items:
         - name: すべてのモバイル アプリ
