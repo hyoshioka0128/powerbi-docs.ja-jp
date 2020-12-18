@@ -1,5 +1,5 @@
 ---
-title: 埋め込みアプリケーションのトラブルシューティング
+title: Power BI 埋め込み分析アプリケーションのトラブルシューティング
 description: この記事では、Power BI からコンテンツを埋め込むときに発生する一般的な問題について説明します。
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 3016cce1e4dd8fb1be5b5ab95ebcc73bdcb56ac1
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f46bdf5aec254763257fa4b121b4b8c135a0d58a
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098078"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>埋め込みアプリケーションのトラブルシューティング
 
@@ -63,7 +63,7 @@ Azure Portal または Power BI アプリ登録ページ内のエラー メッ�
 
 ### <a name="power-bi-service-doesnt-appear-in-the-azure-portal-when-registering-a-new-app"></a>新しいアプリを登録したとき、Power BI サービスが Azure portal に表示されない
 
-少なくとも 1 名のユーザーを Power BI に登録する必要があります。 API 一覧に **Power BI サービス**が表示されない場合、Power BI にユーザーが登録されていません。
+少なくとも 1 名のユーザーを Power BI に登録する必要があります。 API 一覧に **Power BI サービス** が表示されない場合、Power BI にユーザーが登録されていません。
 
 ## <a name="rest-api"></a>REST API
 
@@ -101,7 +101,7 @@ HTTP/1.1 403 Forbidden
 
 ### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>AADSTS90002 で認証が失敗しました:テナント 'authorize' が見つかりません
 
- ***error: invalid_request, error_description:AADSTS90002:テナント 'authorize' が見つかりません*** などのログインに関するメッセージを受信している場合、ADAL 4.x で権限 URL として "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" がサポートされていないことが原因です。
+ "***error: invalid_request, error_description:AADSTS90002:テナント 'authorize' が見つかりません** _" などのログインに関するメッセージを受信している場合、ADAL 4.x が "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" を権限 URL としてサポートしていないことが原因です。
  
 この問題を解決するには、権限 URL の末尾から "oauth2/authorize/" をトリミングする必要があります。[Power BI の開発者向けサンプル](https://github.com/Microsoft/PowerBI-Developer-Samples)に関するページを参照してください。
 
@@ -109,15 +109,15 @@ HTTP/1.1 403 Forbidden
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>AADSTS70002 または AADSTS50053 で認証が失敗しました
 
-**_(AADSTS70002: 資格情報の検証エラー。AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました)_**
+_*_ (AADSTS70002:資格情報の検証エラー。 AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました)_**
 
-Power BI Embedded を使用、および Azure AD Direct Authentication を利用している場合、次のようなログインに関するメッセージを受信する場合があります: ***error:unauthorized_client,error_description:AADSTS70002: 資格情報の検証エラー。AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました***。これは、2018 年 6 月 14 日から直接認証が使われていないことが原因です。
+Power BI Embedded を使用、および Azure AD Direct Authentication を利用している場合、次のようなログインに関するメッセージを受信する場合があります: "**_error:unauthorized_client, error_description:AADSTS70002:資格情報の検証エラー。AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました_* _"。これは、2018 年 6 月 14 日から直接認証が使われていないことが原因です。
 
 組織または[サービス プリンシパル](/azure/active-directory/develop/active-directory-application-objects#service-principal-object)にスコープ設定された [Azure AD ポリシー](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications)を使用して、直接認証をオンに戻す方法があります。
 
 このポリシーは、アプリごとにのみ有効にすることをお勧めします。
 
-このポリシーを作成するには、ポリシーを作成して割り当てるディレクトリに対して**グローバル管理者**であることが必要です。 ポリシーを作成して、このアプリケーションの SP に割り当てるのためのサンプル スクリプトを次に示します。
+このポリシーを作成するには、ポリシーを作成して割り当てるディレクトリに対して_ *グローバル管理者**であることが必要です。 ポリシーを作成して、このアプリケーションの SP に割り当てるのためのサンプル スクリプトを次に示します。
 
 1. [Azure AD プレビュー PowerShell モジュール](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)をインストールします。
 
@@ -183,7 +183,7 @@ Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id
 
     ![同意テストの修正](media/embedded-troubleshoot/consent-test-02.png)
 
-テナント全体または特定のユーザーのいずれかを対象として、管理者がアプリケーションへの*アクセス許可を付与*します。
+テナント全体または特定のユーザーのいずれかを対象として、管理者がアプリケーションへの *アクセス許可を付与* します。
 
 ### <a name="cs1061-error"></a>CS1061 エラー
 
@@ -199,7 +199,7 @@ Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id
 
 [**JavaScript SDK** から *error* イベントによって返される **IError オブジェクト**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts)を使用して、アプリケーションをデバッグし、エラーの原因に対する理解を深めます。
 
-IError オブジェクトを取得したら、使用している埋め込みの種類に応じた、該当する一般的なエラーのテーブルを確認する必要があります。 **IError のプロパティ**とテーブル内のプロパティを比較し、エラーの考えられる理由を見つけてください。
+IError オブジェクトを取得したら、使用している埋め込みの種類に応じた、該当する一般的なエラーのテーブルを確認する必要があります。 **IError のプロパティ** とテーブル内のプロパティを比較し、エラーの考えられる理由を見つけてください。
 
 ### <a name="typical-errors-when-embedding-for-power-bi-users"></a>Power BI ユーザー向けに埋め込む場合に発生する一般的なエラー
 
@@ -266,7 +266,7 @@ Power BI Desktop から、あるいは powerbi.com 内でファイルを開き�
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>顧客サンプル アプリケーションへの埋め込みの使用
 
-**顧客向けの埋め込み**エクスペリエンスを使用している場合、*PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 その後、*PowerBI-Developer-Samples-master\App Owns Data* フォルダーを開き、*PowerBIEmbedded_AppOwnsData.sln* ファイルを実行します。
+**顧客向けの埋め込み** エクスペリエンスを使用している場合、*PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 その後、*PowerBI-Developer-Samples-master\App Owns Data* フォルダーを開き、*PowerBIEmbedded_AppOwnsData.sln* ファイルを実行します。
 
 **[アクセス許可の付与]** を選ぶと ([アクセス許可の付与] ステップ)、次のエラーが発生します。
 
@@ -290,9 +290,9 @@ MFA が有効になっていない AAD アカウントを使用する必要が�
 
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>組織のサンプル アプリケーションでの埋め込みの使用
 
-**組織向けの埋め込み**エクスペリエンスを使用している場合、*PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* フォルダーを開き、*pbi-saas-embed-report.sln* ファイルを実行します。
+**組織向けの埋め込み** エクスペリエンスを使用している場合、*PowerBI-Developer-Samples.zip* ファイルを保存して解凍します。 *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* フォルダーを開き、*pbi-saas-embed-report.sln* ファイルを実行します。
 
-**組織向けの埋め込み**サンプル アプリを実行すると、次のエラーが発生します。
+**組織向けの埋め込み** サンプル アプリを実行すると、次のエラーが発生します。
 
 ```output
 AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>

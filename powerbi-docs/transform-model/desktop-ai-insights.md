@@ -9,12 +9,12 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3654bc77ebdbd41ef608378157bf0d24bb94c88
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f4128939bd90f0b6514a792a60d583b830bea0d2
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416119"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353452"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Power BI Desktop で AI 分析情報を使用する
 
@@ -223,7 +223,7 @@ Power BI Desktop の Azure ML には、次の考慮事項と制限事項が適�
 
 この記事では、Machine Learning を Power BI Desktop. に統合する手順を概説しました。 以下の記事も興味深い内容で、役立つかもしれません。
 
-- [チュートリアル: Power BI での Machine Learning Studio (クラシック) モデルの呼び出し](../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [チュートリアル: Power BI で Azure Machine Learning モデルを使用する](../connect-data/service-aml-integrate.md)
 - [チュートリアル: Power BI での Cognitive Services の使用](../connect-data/service-tutorial-use-cognitive-services.md)
 - [Power BI の Cognitive Services](./dataflows/dataflows-machine-learning-integration.md)
 - [Azure Machine Learning の Power BI への統合](./dataflows/dataflows-machine-learning-integration.md)

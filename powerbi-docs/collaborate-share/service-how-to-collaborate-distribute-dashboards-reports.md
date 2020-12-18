@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 12/14/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 424f3cc7412813cb9ea9f401d6edd22257e8d14a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5b26f8fe04c7aaf6847de50398c54db6a3870844
+ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411795"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513783"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Power BI で共同作業し、共有する方法
 
@@ -27,22 +27,22 @@ ms.locfileid: "96411795"
 
 **共同作業**
 
-- 同僚と "*ワークスペース*" で共同作業し、役立つレポートやダッシュボードを作成します。
-- *Microsoft Teams* で共同作業します。
+- [同僚と "*ワークスペース*" で共同作業](#collaborate-in-a-workspace)し、役立つレポートやダッシュボードを作成します。
+- [*Microsoft Teams* で共同作業します](#collaborate-in-microsoft-teams)。
 
 **ダッシュボードとレポートの配布または共有**
 
-- マイ ワークスペースまたは別のワークスペースから "*ダッシュボードまたはレポートを共有*" します。
-- Power BI "*モバイル アプリ*" から注釈を付けて共有します。
-- ワークスペースのダッシュボードとレポートを "*アプリ*" にバンドルし、より大きいグループや組織全体に配布します。
-- "*セキュリティで保護されたポータル*" または "*パブリック Web サイト*" にレポートを埋め込みます。
-- レポートを印刷します。
-- Microsoft AppSource を介して外部の Power BI ユーザーに配布することができる *テンプレート アプリ* を作成します。
+- マイ ワークスペースまたは別のワークスペースから ["*ダッシュボードまたはレポートを共有*" します](#share-dashboards-and-reports)。
+- [Power BI "*モバイル アプリ*" から注釈を付けて共有](#annotate-and-share-from-the-power-bi-mobile-apps)します。
+- ワークスペースのダッシュボードとレポートを "*アプリ*" にバンドルし、より大きいグループや組織全体に[アプリを配布](#distribute-insights-in-an-app)します。
+- "*セキュリティで保護されたポータル*" または "*パブリック Web サイト*" に[レポートを埋め込みます](#embed-reports-in-secure-portals-or-public-web-sites)。
+- [レポートを印刷します](#print-or-save-as-pdf-or-other-static-file)。
+- Microsoft AppSource を介して外部の Power BI ユーザーに配布することができる ["*テンプレート アプリ*" を作成します](#create-and-deploy-template-apps)。
  
 **データの共有**
 
-- 同僚が自分のレポートの基礎として自分のワークスペース内で使用できる "*共有データセット*" を作成します。
-- 共通データソースを共有する方法として "*データフロー*" を作成します。
+- 同僚が自分のレポートの基礎として自分のワークスペース内で使用できる ["*共有データセット*" を作成します](#share-a-dataset)。
+- 共通データソースを共有する方法として ["*データフロー*" を作成します](#create-dataflows)。
 
 どのオプションでも、コンテンツを共有するには [Power BI Pro のライセンス](../fundamentals/service-features-license-type.md)が必要です。あるいは、コンテンツを [Premium 容量](../admin/service-premium-what-is.md)に格納する必要があります。 ライセンスの要件は、コンテンツを表示する同僚については、選んだオプションに応じて異なります。 次のセクションでは、詳細を説明します。 
 
@@ -67,7 +67,7 @@ ms.locfileid: "96411795"
 
 ## <a name="collaborate-in-microsoft-teams"></a>Microsoft Teams で共同作業する
 
-Power BI レポートと Power BI によってページ分割されたレポートを Microsoft Teams に埋め込むことで、組織内のデータ ドリブン コラボレーションを強化します。 Power BI サービスには、レポートの **[Share in Teams]\(Teams で共有\)** ボタンがあります。 個々のレポートごとに個別の Power BI タブを追加し、各タブにレポートの名前またはその他の名前を付けることができます。 
+Power BI レポートと Power BI によってページ分割されたレポートを Microsoft Teams に埋め込むことで、組織内のデータ ドリブン コラボレーションを強化します。 Power BI サービスには、レポートの **[Teams でのチャット]** ボタンがあります。 個々のレポートごとに個別の Power BI タブを追加し、各タブにレポートの名前またはその他の名前を付けることができます。 
 
 Power BI レポート タブを Microsoft Teams に追加すると、レポートに関するタブの会話が Teams によって自動的に作成されます。 その Microsoft Teams チャネル内のすべてのユーザーが、会話でレポートを表示して話し合うことができます。 
 
@@ -77,7 +77,7 @@ Power BI レポート タブを Microsoft Teams に追加すると、レポー�
 
 ## <a name="share-dashboards-and-reports"></a>ダッシュボードとレポートを共有する
 
-たとえば、Power BI Desktop でレポートを完成させ、他の人にそのレポートへのアクセスを許可するとします。 それらを行う 1 つの方法として、Power BI サービスでそれを "*共有*" することがあります。 マイ ワークスペースまたは別のワークスペースに発行します。 それに合わせてダッシュボードを作成すれば、準備は完了です。
+たとえば、Power BI Desktop でレポートの準備ができていて、他の人にそのレポートへのアクセスを許可するとします。 それらを行う 1 つの方法として、Power BI サービスでそれを "*共有*" することがあります。 マイ ワークスペースまたは別のワークスペースに発行します。 それに合わせてダッシュボードを作成すれば、準備は完了です。
 
 ![レポートの共有](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
@@ -125,7 +125,7 @@ Power BI サービスの **[SharePoint Online に埋め込む]** および **[�
 
 ### <a name="publish-to-public-web-sites"></a>パブリック Web サイトに公開する
 
-**[Web に公開]** では、ブログ記事、Web サイト、ソーシャル メディア、その他オンライン通信に視覚化を埋め込むことで、Power BI レポートをインターネット全体に公開することができます。 インターネット上のすべてのユーザーがレポートを表示できるため、公開した内容を閲覧できるユーザーは制御できません。 ユーザーに Power BI ライセンスは必要ありません。 Web に公開できるのは、自分で編集可能なレポートだけです。 他のユーザーから共有されているレポート、またはアプリ内にあるレポートは、Web に公開できません。 [Web に公開する](service-publish-to-web.md)方法を参照してください。
+**[Web に公開]** では、ブログ記事、Web サイト、ソーシャル メディア、その他オンライン通信に視覚化を埋め込むことで、Power BI レポートをインターネット全体に公開することができます。 インターネット上のすべてのユーザーがレポートを表示できるため、公開した内容を閲覧するユーザーを制御することはできません。 ユーザーに Power BI ライセンスは必要ありません。 Web に公開できるのは、自分で編集可能なレポートだけです。 他のユーザーから共有されているレポート、またはアプリ内にあるレポートは、Web に公開できません。 [Web に公開する](service-publish-to-web.md)方法を参照してください。
 
 >[!Warning]
 >内部の共有ではなく、一般向けにコンテンツを共有する場合にのみ、[[Web に公開]](service-publish-to-web.md) を使用してください。

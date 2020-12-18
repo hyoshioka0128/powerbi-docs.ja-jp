@@ -1,5 +1,5 @@
 ---
-title: 顧客用のアプリケーションにコンテンツを埋め込む
+title: 顧客向けの Power BI 埋め込み分析アプリケーションにコンテンツを埋め込む
 description: Power BI 埋め込み分析サンプルにレポート、ダッシュボード、またはタイルを埋め込む方法について学習します。
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/02/2020
-ms.openlocfilehash: 7bc825992f5c7382e1c0a24783f732957913c588
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: e79a73880b50a0edb5e507726cb0c995ba13cd77
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96907202"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098423"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>チュートリアル:"*顧客向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
@@ -149,7 +149,7 @@ ms.locfileid: "96907202"
 |---------|---------|---------|
 |メカニズム     |Azure AD アプリの[サービス プリンシパル オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object)を使用すると、Azure AD で Power BI に対して埋め込みソリューション アプリを認証できます。        |Azure AD アプリでは Power BI ユーザーの資格情報 (ユーザー名とパスワード) を使用して、Power BI に対して認証を行います。         |
 |セキュリティ     |"*サービス プリンシパル*" は Azure AD で推奨される承認方法です。 サービス プリンシパルを使用する場合は、"*アプリケーション シークレット*" または "*証明書*" を使用して認証できます。</br></br>このチュートリアルでは、"*サービス プリンシパル*" と "*アプリケーション シークレット*" の使用についてのみ説明します。 "*サービス プリンシパル*" と "*証明書*" を使用して埋め込む場合は、[サービス プリンシパルと証明書](embed-service-principal-certificate.md)に関する記事を参照してください。         |この認証方法は、"*サービス プリンシパル*" を使用する場合と同じように安全とは見なされません。 これは、"*マスター ユーザー*" の資格情報 (ユーザー名とパスワード) に注意する必要があるためです。 たとえば、それらは埋め込みアプリケーションで公開できず、パスワードを頻繁に変更する必要があります。         |
-|Azure AD のデリゲートされたアクセス許可 |必要なし。 |"*マスター ユーザー*" または管理者は、アプリから Power BI REST API への[アクセス許可](/azure/active-directory/develop/v2-permissions-and-consent) (スコープとも呼ばれます) に対する同意を付与する必要があります。 たとえば、*Report.ReadWrite.All* です。 |
+|Azure AD のデリゲートされたアクセス許可 |必要なし。 |"*マスター ユーザー*" または管理者は、アプリから Power BI REST API への [アクセス許可](/azure/active-directory/develop/v2-permissions-and-consent) (スコープとも呼ばれます) に対する同意を付与する必要があります。 たとえば、*Report.ReadWrite.All* です。 |
 |Power BI サービスへのアクセス |"*サービス プリンシパル*" を使用して、Power BI サービスにアクセスすることはできません。|Power BI サービスには、"*マスター ユーザー*" の資格情報を使用してアクセスできます。|
 |ライセンス     |Pro ライセンスは必要ありません。 ご自分がメンバーまたは管理者であるすべてのワークスペースのコンテンツを使用できます。         |[Power BI Pro ライセンス](../../admin/service-admin-purchasing-power-bi-pro.md)が必要です。         |
 

@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/01/2020
+ms.date: 12/09/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: b238daa82bc2ae039c137c259ca8f63044281e6f
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 383c9bd20c86d89c5bf51c64c8027f86c1bfaab9
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613718"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998969"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>XMLA エンドポイントを使用したデータセット接続
 
@@ -34,9 +34,9 @@ Power BI Premium では、クライアント アプリケーションと、ワ�
 
 次に一覧表示するのは、Azure Analysis Services と SQL Server Analysis Services で使用される最も一般的なツールの一部です。これらが Power BI Premium データセットでサポートされるようになりました。
 
-**Visual Studio と Analysis Services プロジェクト** – SQL Server Data Tools、または単に **SSDT** とも呼ばれる、Analysis Services 表形式モデル用のエンタープライズ レベル モデル作成ツールです。 Analysis Services プロジェクトの拡張機能は、Visual Studio 2017 以降のすべてのエディション (無料の Community Edition を含む) でサポートされています。 表形式モデルを Premium ワークスペースに配置するには、拡張機能バージョン 2.9.6 以降が必要です。 Premium ワークスペースに配置する場合、モデルは 1500 以上の互換性レベルである必要があります。 データセット ワークロードには、XMLA 読み取り/書き込みが必要です。 詳細については、「[Analysis Services 用のツール](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true)」を参照してください。
+**Visual Studio と Analysis Services プロジェクト** – SQL Server Data Tools、または単に **SSDT** とも呼ばれる、Analysis Services 表形式モデル用のエンタープライズ レベル モデル作成ツールです。 Analysis Services プロジェクトの拡張機能は、Visual Studio 2017 以降のすべてのエディション (無料の Community Edition を含む) でサポートされています。 表形式モデルを Premium ワークスペースに配置するには、拡張機能バージョン 2.9.14 以降が必要です。 Premium ワークスペースに配置する場合、モデルは 1500 以上の互換性レベルである必要があります。 データセット ワークロードには、XMLA 読み取り/書き込みが必要です。 詳細については、「[Analysis Services 用のツール](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true)」を参照してください。
 
-**SQL Server Management Studio (SSMS)**  - DAX、MDX、XMLA のクエリがサポートされます。 [表形式モデルのスクリプト言語](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL) を使用して、データセット メタデータに対する粒度の細かい更新操作とスクリプト作成を実行します。 クエリ操作には読み取り専用が必要です。 メタデータをスクリプト化するには、読み取り/書き込みが必要です。 SSMS バージョン 18.4 以降が必要です。  [こちら](/sql/ssms/download-sql-server-management-studio-ssms)からダウンロードすることができます。
+**SQL Server Management Studio (SSMS)**  - DAX、MDX、XMLA のクエリがサポートされます。 [表形式モデルのスクリプト言語](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL) を使用して、データセット メタデータに対する粒度の細かい更新操作とスクリプト作成を実行します。 クエリ操作には読み取り専用が必要です。 メタデータをスクリプト化するには、読み取り/書き込みが必要です。 SSMS バージョン 18.7.1 以降が必要です。  [こちら](/sql/ssms/download-sql-server-management-studio-ssms)からダウンロードすることができます。
 
 **SQL Server Profiler** – SSMS と共にインストールされます。このツールによりサーバー イベントのトレースとデバッグが提供されます。 Profiler は、SQL Server では公式に非推奨になりましたが、引き続き SSMS に含まれており、Analysis Services と Power BI Premium で引き続きサポートされます。 XMLA 読み取り専用が必要です。 詳細については、 [Analysis Services 用の SQL Server Profiler](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true) に関するページを参照してください。
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 11/12/2020
+ms.date: 12/14/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 446c3620cf3b2a7435897108cfcd9c8972ad8bb4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: da5ee837345b6f26dd6636bc93f6b38c1e0f5ea7
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412163"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491853"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Power BI にアクセスするためのプライベート リンク
 
@@ -118,9 +118,9 @@ ARM テンプレートを作成する
 | ```<resource-group-name>```   | myResourceGroup |
 | ```<virtual-network-name>```  | myVirtualNetwork |
 | ```<region-name>```   | 米国中部  |
-| ```<IPv4-address-space>```    | 10.1.0.0/16 |
+| ```<IPv4-address-space>```    | 10.5.0.0/16 |
 | ```<subnet-name>```   | mySubnet |
-| ```<subnet-address-range>```  | 10.1.0.0/24 |
+| ```<subnet-address-range>```  | 10.5.0.0/24 |
 
 1. 画面の左上で、 **[リソースの作成] > [ネットワーク] > [仮想ネットワーク]** の順に選択するか、検索ボックスで **Virtual network** を検索します。
 2. **[仮想ネットワークの作成]** の **[基本]** タブで次の情報を入力または選択します。
@@ -166,7 +166,6 @@ ARM テンプレートを作成する
 
 ## <a name="create-a-virtual-machine-vm"></a>仮想マシン (VM) の作成
 
-
 次の手順では、仮想ネットワークと、仮想マシン (VM) をホストするサブネットを作成します。
 
 1. Azure portal の画面の左上で、 **[リソースの作成] > [コンピューティング] > [仮想マシン]** の順に選択します。
@@ -200,8 +199,8 @@ ARM テンプレートを作成する
     |設定 | 値 |
     |-------------------|---------|
     |仮想ネットワーク|   既定値 **[MyVirtualNetwork]** のままにします|
-    |アドレス空間| 既定値 **[10.1.0.0/24]** のままにします|
-    |Subnet |既定値 **[mySubnet (10.1.0.0/24)]** のままにします|
+    |アドレス空間| 既定値 **[10.5.0.0/24]** のままにします|
+    |Subnet |既定値 **[mySubnet (10.5.0.0/24)]** のままにします|
     |パブリック IP| 既定値 **[(新規) myVm-ip]** のままにします|
     |パブリック受信ポート|  **[Allow selected]\(選択した項目を許可する\)** を選択します|
     |受信ポートの選択|  **[RDP]** を選択します|
@@ -289,7 +288,7 @@ ARM テンプレートを作成する
     
     Non-authoritative answer:
     Name:    52d40f65ad6d48c3906f1ccf598612d4-api.privatelink.analysis.windows.net
-    Address:  10.1.0.4
+    Address:  10.5.0.4
     ```
 
 4. ブラウザーを開き、app.powerbi.com に移動して、Power BI にプライベート アクセスします。
@@ -306,12 +305,10 @@ app.powerbi.com に管理者としてログインし、**管理ポータル** �
 
 Power BI でプライベート リンクを使用する際に留意する必要がある考慮事項がいくつかあります。
 
-* プライベート リンク環境を使用する場合、外部の画像またはテーマを使用することはできません。カスタム ビジュアルに影響を与える可能性があります
-* プライベート リンク環境を使用する場合、[PDF にエクスポート] などのエクスポート サービス、レポートから Excel へのエクスポート、その他のエクスポート サービスは機能しません
-* プライベート リンク環境では、SQL Server Reporting Services レポート (一般に RDL ファイルと呼ばれ、*.rdl 形式のファイル) はレンダリングされません
-* インターネット アクセスが無効になっていて、データセットまたはデータフローが Power BI データセットまたはデータフローにデータ ソースとして接続している場合、接続は失敗します
+* プライベート リンク環境を使用する場合、外部の画像またはテーマを使用することはできません。カスタム ビジュアルに影響を与える可能性があります。
+* インターネット アクセスが無効になっていて、データセットまたはデータフローが Power BI データセットまたはデータフローにデータ ソースとして接続している場合、接続は失敗します。
 * Private Links が有効になっているとき、使用状況メトリックは機能 "*しません*"。
-* Power BI で **[パブリック インターネット アクセスのブロック]** を有効にすると、[Web に公開] は動作しません (淡色表示になります)
+* Power BI で **[パブリック インターネット アクセスのブロック]** を有効にすると、[Web に公開] は動作しません (淡色表示になります)。
 
 
 ## <a name="next-steps"></a>次の手順

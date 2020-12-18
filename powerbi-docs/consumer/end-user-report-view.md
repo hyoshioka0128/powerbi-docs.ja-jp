@@ -9,12 +9,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/27/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: ea537e19eb7c3ab2a155f417af92e45841031f89
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.openlocfilehash: 79658c2296ac2ae189680c9d8c778046778a882e
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781637"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998555"
 ---
 # <a name="change-the-display-of-a-report-page"></a>レポート ページの表示の変更
 
@@ -58,7 +58,7 @@ ms.locfileid: "96781637"
 
 ブラウザーのズーム コントロールを使うと、使用できるキャンバス領域を増減できます。 ズームを小さくすると、使用できるキャンバス領域が拡張されます。その逆の操作も行うことができます。 
 
-![ブラウザーのズーム コントロールが表示される短い動画](media/end-user-report-view/power-bi-zoom.png)
+![ブラウザーのズーム コントロール](media/end-user-report-view/power-bi-zoom.png)
 
 ブラウザー全体のサイズを変更して、レポートの表示サイズを変更することもできます。 
 

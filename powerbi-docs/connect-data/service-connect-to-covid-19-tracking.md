@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/05/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 19dc9f5c5adfa5853d98cd6b0ef427c8bccebada
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: fc421f7635a3d6e3b2336d5bce081d7914c0fad5
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410622"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998866"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>COVID-19 US トラッキング レポートに接続する
 この記事では、COVID-19 トラッキング レポート用のテンプレート アプリをインストールする方法と、データ ソースに接続する方法について説明します。
@@ -28,7 +28,7 @@ ms.locfileid: "96410622"
 
 1. アプリにアクセスするには、次のリンクをクリックします: [COVID-19 US トラッキング レポート テンプレート アプリ](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. アプリの [AppSource] ページが表示されたら、[ **[今すぐ入手する]**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms) をクリックします。
+1. アプリの [AppSource] ページが表示されたら、[ **[今すぐ入手する]** ](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms) をクリックします。
 
     [![AppSource の Covid-19 US トラッキング レポート](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
@@ -38,11 +38,11 @@ ms.locfileid: "96410622"
 
 ## <a name="connect-to-data-sources"></a>データ ソースに接続する
 
-1. [アプリ] ページのアイコンをクリックして、アプリを開きます。
+1. [アプリ] ページのアイコンをクリックして、アプリを開きます。 アプリが開き、サンプル データが表示されます。
 
-1. 表示されたスプラッシュ スクリーンで、 **[接続]** を選択します。
+1. ページの上部にあるバナーの **[データを接続]** リンクを選択します。
 
-   ![テンプレート アプリのスプラッシュ スクリーン](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
+   ![GitHub アプリの [データを接続] リンク](media/service-connect-to-covid-19-tracking/power-bi-covid-19-connect-data.png)
 
 1. パラメーター ダイアログが表示されます。 必要なパラメーターはありません **[次へ]** をクリックします。
 

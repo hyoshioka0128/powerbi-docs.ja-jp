@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 74d61d40c4447f2649f5cce5fbcdcba68cd31afe
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7a48a9a594364de4261aa66de48c1a4262392364
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408000"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097848"
 ---
 # <a name="export-a-paginated-report-for-each-row-in-an-excel-online-table-or-sharepoint-list"></a>Excel Online テーブルまたは SharePoint リスト内の行ごとにページ分割されたレポートをエクスポートする
 
@@ -30,7 +30,7 @@ Power BI のページ分割されたレポート用の、その他の Power Auto
 
 先に進むには、次のものがあることを確認してください。
 
-- 予約容量でサポートされている Power BI テナント内に少なくとも 1 つのワークスペース。 この容量は、A4/P1 – A6/P3 SKU のいずれかになります。 Power BI Premium の予約容量の詳細については、[こちら](../admin/service-premium-what-is.md)を参照してください。
+- 予約容量でサポートされている Power BI テナント内に少なくとも 1 つのワークスペース。 この容量は、A4/P1 – A6/P3 SKU のいずれかになります。 詳細については、[Power BI Premium のページ分割されたレポートの予約容量](../admin/service-premium-what-is.md#paginated-reports)に関する記事を参照してください。
 - Office 365 サブスクリプションに付属する、Power Automate における標準コネクタへのアクセス。
 - Excel Online テーブルを使用している場合は、Excel のテーブルとして書式設定する必要があります。 詳細については、「[表を作成する](https://support.microsoft.com/office/create-a-table-in-excel-bf0ce08b-d012-42ec-8ecf-a2259c9faf3f)」を参照してください。
 
@@ -73,9 +73,9 @@ Power BI のページ分割されたレポート用の、その他の Power Auto
 
 1. **[Apply to Each]** で、 **[Select an output from previous step]\(前のステップの出力を選択する\)** ボックスが既定により **[値]** に設定されます。 この設定により、 **[Apply to Each]** に含まれるアクションが、Excel Online テーブルまたは SharePoint Online リスト内の行ごとに反復処理されます。  
 
-1. **[ワークスペース]** ボックスで、専用容量のワークスペースを選択します。 **[レポート]** ボックスで、エクスポートする選択したワークスペース内のページ分割されたレポートを選択します。 ドロップダウンから **[Enter a custom value]\(カスタム値を入力\)** を設定した場合は、 **[ワークスペース]** と **[レポート]** を、Excel Online テーブルまたは SharePoint Online リストの列と同じにすることができます。 これらの列には、それぞれワークスペース ID とレポート ID が含まれている必要があります。  
+1. **[ワークスペース]** ボックスで、予約容量のワークスペースを選択します。 **[レポート]** ボックスで、エクスポートする選択したワークスペース内のページ分割されたレポートを選択します。 ドロップダウンから **[Enter a custom value]\(カスタム値を入力\)** を設定した場合は、 **[ワークスペース]** と **[レポート]** を、Excel Online テーブルまたは SharePoint Online リストの列と同じにすることができます。 これらの列には、それぞれワークスペース ID とレポート ID が含まれている必要があります。  
 
-1. ドロップダウンから **[エクスポート形式]** を選択するか、必要なエクスポート形式を含む Excel Online テーブルの列と同じになるように設定します。 たとえば、PDF、DOCX、または PPTX です。 必要に応じて、ページ分割されたレポートのパラメーターを指定できます。 パラメーターの詳細な説明は、[Power BI Rest API のコネクタのリファレンス](/connectors/powerbi/#export-to-file-for-paginated-reports)にあります。
+1. ドロップダウンから **[エクスポート形式]** を選択するか、必要なエクスポート形式を含む Excel Online テーブルの列と同じになるように設定します。 たとえば、PDF、DOCX、または PPTX です。 必要に応じて、ページ分割されたレポートのパラメーターを指定できます。 パラメーターの詳細な説明は、[Power BI REST API のコネクタのリファレンス](/connectors/powerbi/#export-to-file-for-paginated-reports)に記載されています。
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-export-format-9.png" alt-text="[Export to File for Paginated Reports]\(ページ分割されたレポート用のファイルにエクスポートする\) に入力します。":::
 

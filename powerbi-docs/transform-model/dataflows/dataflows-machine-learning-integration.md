@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 60214c16cbd287a30631e7ad9fbab274cb8f4cb0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 22fa980230b01132c8cb4faa6e7e959409f19f1b
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414302"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353130"
 ---
 # <a name="ai-with-dataflows"></a>データフローを使用した AI
 
@@ -454,9 +454,9 @@ Azure ML モデルを呼び出すには、選択したエンティティのい�
 
 この記事では、Power BI サービスのデータフローの自動機械学習の概要について説明しました。 次の記事も推奨されます。
 
-- [チュートリアル: Power BI で Machine Learning モデルを構築する](../../connect-data/service-tutorial-build-machine-learning-model.md)
+- [チュートリアル: Power BI で機械学習モデルを構築する](../../connect-data/service-tutorial-build-machine-learning-model.md)
 - [チュートリアル: Power BI での Cognitive Services の使用](../../connect-data/service-tutorial-use-cognitive-services.md)
-- [チュートリアル: Power BI での Machine Learning Studio (クラシック) モデルの呼び出し (プレビュー)](../../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [チュートリアル: Power BI で Azure Machine Learning モデルを使用する](../../connect-data/service-aml-integrate.md)
 
 データフローと Power BI の詳細については、以下の記事を参照してください。
 

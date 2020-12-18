@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/06/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7cce4f9e78fce27fedf795a4a0016593580f061a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e9fd1179dc15776cef701476d38b18823f3a8deb
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96403170"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998801"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>危機管理コミュニケーション プレゼンス レポートに接続する
 
@@ -57,9 +57,6 @@ ms.locfileid: "96403170"
 
 1. [アプリ] ページでアイコンを選択して、アプリを開きます。
 
-1. スプラッシュ スクリーンで、 **[探索]** を選択します。
-
-   ![テンプレート アプリのスプラッシュ スクリーン](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 
    アプリが開き、サンプル データが表示されます。
 
@@ -75,7 +72,7 @@ ms.locfileid: "96403170"
 
 1. 次に表示されるダイアログで、認証方法を **[OAuth2]** に設定します。 プライバシー レベルの設定については、何もする必要はありません。
 
-   **[サインイン]** をクリックします。
+   **[サインイン]** を選択します。
 
    ![危機管理コミュニケーション プレゼンス レポート アプリの認証ダイアログ](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-authentication-dialog.png)
 
@@ -101,7 +98,7 @@ ms.locfileid: "96403170"
 
 詳細については、「[アプリをカスタマイズして共有する](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app)」を参照してください。 アプリを公開または配布する前に、必ず、[レポートの免責事項](../create-reports/sample-covid-19-us.md#disclaimers)を確認してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 * [Power Apps での危機通信のサンプル テンプレートのセットアップと学習](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
 * [Power BI テンプレート アプリとは](../connect-data/service-template-apps-overview.md)

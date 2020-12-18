@@ -1,5 +1,5 @@
 ---
-title: 政府機関向けクラウドおよび国内クラウド用のアプリケーションにコンテンツを埋め込む
+title: 政府機関向けクラウドおよび国内クラウド用の Power BI 埋め込み分析アプリケーションにコンテンツを埋め込む
 description: Power BI API を使って、アプリケーションに顧客向けの分析情報用のレポート、ダッシュボード、タイルを統合する (埋め込む) 方法について説明します。 政府機関向けクラウドおよび国内クラウド用の埋め込み分析ソフトウェア、埋め込み分析ツール、または埋め込みビジネス インテリジェンス ツールを使って、ご自身のアプリケーションに Power BI を統合する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: 9b5382510fe69b998855071dbcfe654629e73820
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9aa49e9f9df048b5c71b644c40a414159341c321
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098147"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>チュートリアル:Power BI コンテンツを国内クラウド向けアプリケーションに埋め込む
 

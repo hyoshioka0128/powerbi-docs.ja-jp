@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
-ms.openlocfilehash: 5c897909d9fe31e4b22743a77058caba4767a579
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: a11ac8edb9abab29f58c3e4eda15ae204d105b26
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410139"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491738"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Power BI テンプレート アプリとは
 
@@ -98,6 +98,7 @@ Power BI テンプレート アプリを使用すると、Power BI Pro または
 - オンライン ストアとして AppSource を使用して、アプリケーションをホストします。 これにより、Power BI を使用するすべてのユーザーがアプリを検索できます。 
 - 独立した固有のシナリオのために複数のテンプレート アプリの提供を検討します。 
 - カスタム接続や、インストーラーによるパラメーター構成のサポートなど、データをカスタマイズできるようにします。
+- ISV が自分の Web サービスからアプリを配布している場合、顧客にとっての利便性とインストールに成功する確率を上げるため、インストール中のパラメーター構成の自動化を検討してください。 詳細については、「[テンプレート アプリのインストールの自動構成](../developer/template-apps/template-apps-auto-install.md)」を参照してください。
 
 他の推奨事項については、「[Power BI でのテンプレート アプリの作成に関するヒント](service-template-apps-tips.md)」をご覧ください。
 

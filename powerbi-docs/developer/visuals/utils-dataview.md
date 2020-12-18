@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 80c53b183f37dc09ee83ff20bd97f944bdcbc9b4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fc0ebf3d315b10bc14190a5ae01e8d389e2be0cc
+ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379331"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513737"
 ---
 # <a name="dataviewutils"></a>DataViewUtils
 
@@ -25,6 +25,22 @@ ms.locfileid: "79379331"
 パッケージをインストールするには、現在のカスタム ビジュアルを使用して、ディレクトリ内で次のコマンドを実行する必要があります。
 
 npm install powerbi-visuals-utils-dataviewutils --save このコマンドでは、パッケージがインストールされ、パッケージが依存関係として package.json に追加されます。
+
+## <a name="dataviewwildcard"></a>DataViewWildcard
+
+`DataViewWildcard` には、プロパティの [条件付き書式](conditional-format.md#define-how-conditional-formatting-behaves)をサポートする `createDataViewWildcardSelector` 関数があります。
+
+`createDataViewWildcardSelector` からは、`dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)` に基づき、書式設定ウィンドウの条件付き書式の適用方法を決めるために必要なセレクターが返されます。
+
+例:
+
+ ```typescript
+import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
+
+let selector = dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals);
+// returns {data: [{dataViewWildcard:{matchingOption: 0}}]};
+
+```
 
 ## <a name="datarolehelper"></a>DataRoleHelper
 
@@ -40,7 +56,7 @@ npm install powerbi-visuals-utils-dataviewutils --save このコマンドでは�
 function getMeasureIndexOfRole(grouped: DataViewValueColumnGroup[], roleName: string): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -85,7 +101,7 @@ dataRoleHelper.getMeasureIndexOfRole(columnGroup, "product");
 function getCategoryIndexOfRole(categories: DataViewCategoryColumn[], roleName: string): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -128,7 +144,7 @@ dataRoleHelper.getCategoryIndexOfRole(categoryGroup, "product");
 function hasRole(column: DataViewMetadataColumn, name: string): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -156,7 +172,7 @@ DataRoleHelper.hasRole(metadata, "company");
 function hasRoleInDataView(dataView: DataView, name: string): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -196,7 +212,7 @@ DataRoleHelper.hasRoleInDataView(dataView, "product");
 function hasRoleInValueColumn(valueColumn: DataViewValueColumn, name: string): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -233,7 +249,7 @@ dataRoleHelper.hasRoleInValueColumn(valueColumn, "company");
 function getValue<T>(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultValue?: T): T;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -266,7 +282,7 @@ dataViewObjects.getValue(objects, property);
 function getObject(objects: DataViewObjects, objectName: string, defaultValue?: IDataViewObject): IDataViewObject;
 ```
 
-例: 
+例:
 
 ```typescript
 import { dataViewObjects } from "powerbi-visuals-utils-dataviewutils";
@@ -296,7 +312,7 @@ dataViewObjects.getObject(objects, "microsoft");
 function getFillColor(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultColor?: string): string;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -333,7 +349,7 @@ dataViewObjects.getFillColor(objects, property);
 function getCommonValue(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultValue?: any): any;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -380,7 +396,7 @@ dataViewObjects.getCommonValue(objects, biProperty); // returns: Power
 function getValue<T>(object: IDataViewObject, propertyName: string, defaultValue?: T): T;
 ```
 
-例: 
+例:
 
 ```typescript
 import { dataViewObject } from "powerbi-visuals-utils-dataviewutils";
@@ -404,7 +420,7 @@ dataViewObject.getValue(object, "microsoft");
 function getFillColorByPropertyName(object: IDataViewObject, propertyName: string, defaultColor?: string): string;
 ```
 
-例: 
+例:
 
 ```typescript
 import { dataViewObject } from "powerbi-visuals-utils-dataviewutils";
@@ -438,7 +454,7 @@ dataViewObject.getFillColorByPropertyName(object, "fillColor");
 function categoryIsAlsoSeriesRole(dataView: DataViewCategorical, seriesRoleName: string, categoryRoleName: string): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -474,7 +490,7 @@ converterHelper.categoryIsAlsoSeriesRole(categorical, "power", "bi");
 function getSeriesName(source: DataViewMetadataColumn): PrimitiveValue;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -504,7 +520,7 @@ converterHelper.getSeriesName(metadata);
 function isImageUrlColumn(column: DataViewMetadataColumn): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -534,7 +550,7 @@ converterHelper.isImageUrlColumn(metadata);
 function isWebUrlColumn(column: DataViewMetadataColumn): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -564,7 +580,7 @@ converterHelper.isWebUrlColumn(metadata);
 function hasImageUrlColumn(dataView: DataView): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import DataView = powerbi.DataView;
@@ -608,7 +624,7 @@ converterHelper.hasImageUrlColumn(dataView);
 static getDefault(): DataViewObjectsParser;
 ```
 
-例: 
+例:
 
 ```typescript
 import { dataViewObjectsParser } from "powerbi-visuals-utils-dataviewutils";
@@ -675,7 +691,7 @@ export class YourVisual extends IVisual {
 static enumerateObjectInstances(dataViewObjectParser: dataViewObjectsParser.DataViewObjectsParser, options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration;
 ```
 
-例: 
+例:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";

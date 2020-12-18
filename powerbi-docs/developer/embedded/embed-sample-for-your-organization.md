@@ -1,5 +1,5 @@
 ---
-title: 組織用のアプリケーションにコンテンツを埋め込む
+title: 組織向けの Power BI 埋め込み分析アプリケーションにコンテンツを埋め込む
 description: Power BI API を使って、アプリケーションにご自身の組織向けの分析情報用のレポート (Power BI またはページ分割された)、ダッシュボード、タイルを統合する (埋め込む) 方法について説明します。 埋め込み分析ソフトウェア、埋め込み分析ツール、または埋め込みビジネス インテリジェンス ツールを使って、ご自身のアプリケーションに Power BI を統合する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: f84270d76265da2877ae5d2e16289373235271b6
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 223495b68f160b637f5bcf40b37f1f1a1365fffd
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098170"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI コンテンツを埋め込む
 

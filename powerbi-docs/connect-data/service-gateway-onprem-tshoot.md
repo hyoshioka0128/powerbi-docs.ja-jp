@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 09/25/2020
+ms.date: 12/10/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 045d7df36deefae5c323e88d0ddf3053ea56682e
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: de8d24af0dbaa0ed4b27efca140cf29acda9df76
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634644"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353418"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>ゲートウェイのトラブルシューティング - Power BI
 
@@ -238,6 +238,37 @@ Active Directory で委任が正しく構成されていない場合は、"-1070
 * Active Directory のゲートウェイ サービス アカウントの [委任] タブに SAP Hana サーバーがあることを確認します。
 
    ![[委任] タブ](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
+## <a name="export-logs-for-a-support-ticket"></a>サポート チケットのログをエクスポートする
+
+ゲートウェイ ログは、サポート チケットのトラブルシューティングと作成のために必要です。 このログは次の手順で抽出します。
+
+1. ゲートウェイ クラスターを特定します。
+
+    データセットの所有者であれば、まず、データセットに関連付けられているゲートウェイ クラスター名を確認します。 次の図では、*IgniteGateway* がゲートウェイ クラスターです。
+
+    ![ゲートウェイ クラスター](media/service-gateway-onprem-tshoot/gateway-cluster.png)
+
+2. ゲートウェイのプロパティを確認します。
+
+    ゲートウェイ管理者がその後、クラスター内のゲートウェイ メンバーの数と、負荷分散が有効になっているかどうかを確認します。
+
+    負荷分散が有効になっている場合、全ゲートウェイ メンバーに対して手順 3 を繰り返します。 有効になっていない場合、プライマリ ゲートウェイでのログ エクスポートで十分です。
+
+3. ゲートウェイ ログを取得して、エクスポートします。
+
+    次に、ゲートウェイ システムの管理者でもあるゲートウェイ管理者が次の手順を行います。
+
+    a. ゲートウェイ コンピューターにサインインし、[オンプレミス データ ゲートウェイ アプリ](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-app)を起動し、ゲートウェイにサインインします。
+    
+    b. [追加のログ記録](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#slow-performing-queries)を有効にします。
+    
+    c. 必要に応じて、[パフォーマンス監視機能](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#enable-performance-logging)を有効にし、トラブルシューティングの追加詳細を提供するためにパフォーマンス ログを含めることができます。
+    
+    d. ゲートウェイ ログをキャプチャしようとしているシナリオを実行します。
+    
+    e. [ゲートウェイのログをエクスポートします](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app)。
+
 
 ## <a name="refresh-history"></a>更新履歴
 

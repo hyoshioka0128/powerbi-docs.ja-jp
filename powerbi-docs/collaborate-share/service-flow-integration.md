@@ -1,5 +1,5 @@
 ---
-title: データ アラートを Power Automate と統合する
+title: Power BI データ アラートを Power Automate と統合する
 description: Power BI データ アラートによってトリガーされる Power Automate フローを作成する方法について説明します。
 author: maggiesMSFT
 ms.author: maggies
@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/09/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 65c7c00a705ed95c26c32a4fc5bcb9e0c18c13bf
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8f73bd959691ea8359a8584966e0b83f439d8652
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097641"
 ---
-# <a name="integrate-data-alerts-with-power-automate"></a>データ アラートを Power Automate と統合する
+# <a name="integrate-power-bi-data-alerts-with-power-automate"></a>Power BI データ アラートを Power Automate と統合する
 
 Power BI をお気に入りのアプリやサービスと統合するには、[Power Automate](/power-automate/getting-started) を使用します。 Power Automate を使用すると、自動化されたワークフローを作成して、通知の取得、ファイルの同期、データの収集などを行うことができます。 この記事では、Power BI データ アラートに基づく電子メールの生成を自動化します。
 
@@ -90,6 +90,5 @@ Power BI をお気に入りのアプリやサービスと統合するには、[P
 
 ## <a name="next-steps"></a>次の手順
 * [Power Automate の概要](/power-automate/getting-started/)
-* [Power BI サービスでデータ アラートを設定する](../create-reports/service-set-data-alerts.md)
-* [iPhone でデータ アラートを設定する](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Power Automate を使用して、Power BI レポートをエクスポートし、電子メールで送信する](service-automate-power-bi-report-export.md)
 * その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

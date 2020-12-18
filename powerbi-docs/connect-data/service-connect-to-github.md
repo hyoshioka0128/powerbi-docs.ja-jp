@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/19/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e92afdbad41f212ac93245583430ae44fe0abaf9
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f0d756b7909043a644ab8220cd71a9fca9b1c0e0
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410645"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998709"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Power BI で GitHub に接続する
 この記事では、Power BI テンプレート アプリを使用して GitHub アカウントからデータをプルする手順について説明します。 このテンプレート アプリは、ダッシュボード、一連のレポート、およびデータセットを含むワークスペースを生成して、GitHub データの探索を可能にします。 Power BI 用の GitHub アプリは、投稿、問題、pull request、アクティブなユーザーなどに関するデータを含む、GitHub リポジトリ (リポジトリとも呼ばれます) の分析情報を示します。
@@ -41,7 +41,7 @@ ms.locfileid: "96410645"
 
 1. **[インストール]** を選択します。 
 
-    ![GitHub テンプレート アプリをインストールする](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
+    ![GitHub テンプレート アプリをインストールする](media/service-connect-to-github/power-bi-github-install-dialog.png)
 
     アプリがインストールされると、[アプリ] ページに表示されます。
 
@@ -51,30 +51,23 @@ ms.locfileid: "96410645"
 
 1. [アプリ] ページでアイコンを選択して、アプリを開きます。
 
-1. スプラッシュ スクリーンで、 **[アプリを探索]** を選択します。
-
-   ![テンプレート アプリのスプラッシュ スクリーン](media/service-connect-to-github/service-github-app-splash-screen.png)
-
    アプリが開き、サンプル データが表示されます。
 
 1. ページの上部にあるバナーの **[データを接続]** リンクを選択します。
 
    ![GitHub アプリの [データを接続] リンク](media/service-connect-to-github/service-github-app-connect-data.png)
 
-1. 表示されるダイアログ ボックスで、リポジトリの名前とリポジトリの所有者を入力します。 [これらのパラメーターの見つけ方](#FindingParams)について詳しくは、後述します。 完了したら、 **[次へ]** をクリックします。
+1. パラメーター ダイアログが開きます。ここで、サンプル データのデータ ソースを独自のデータ ソースに変更します ([既知の制限](service-template-apps-overview.md#known-limitations)に関するページを参照してください)。次に、認証方法ダイアログが開きます。 これらのダイアログでは、必要に応じて値を再定義します。
 
-   ![Power BI での GitHub リポジトリ名](media/service-connect-to-github/power-bi-github-app-tutorial-connect.png)
+   ![データへの接続ダイアログのスクリーンショット。](media/service-connect-to-github/power-bi-template-app-connect-to-data-dialogs.png)
 
-1. 次に表示されるダイアログで、認証方法が **[OAuth2]** に設定されていることを確認します。 プライバシーの設定については何もする必要はありません。 準備ができたら、 **[サインイン]** をクリックします。
-
-   ![Power BI GitHub の認証方法](media/service-connect-to-github/power-bi-github-authentication.png)
 
 1. ご自分の GitHub の資格情報を入力し、GitHub の認証プロセスに従います (ブラウザーで既にサインインしている場合は、この手順が省略される可能性があります)。
 
    ![Power BI GitHub の認証プロセス](media/service-connect-to-github/power-bi-github-authenticate-process.png)
 
 
-サインインした後、レポートがデータ ソースに接続され、最新のデータが設定されます。 この間は、利用状況モニターが作動します。
+接続ダイアログの入力が完了し、GitHub にサインインすると、接続プロセスが開始します。 バナーによってデータが更新中であることと、その間サンプル データが表示されていることが示されます。
 
 ![Power BI GitHub アプリの更新が進行中](media/service-connect-to-github/service-github-app-refresh-monitor.png)
 
@@ -96,7 +89,7 @@ ms.locfileid: "96410645"
 ## <a name="whats-included-in-the-app"></a>アプリに含まれるもの
 Power BI では、次のデータを GitHub から使用できます。     
 
-| テーブル名 | Description |
+| テーブル名 | 説明 |
 | --- | --- |
 | 貢献 |投稿物のテーブルは、共同作成者によって作成された追加、削除、コミットの合計を週ごとに集計して示します。 上位 100 人の共同作成者が含まれています。 |
 | Issues |選択したリポジトリのすべての問題の一覧を表示します。問題が閉じられるまでの合計時間と平均時間、開かれている問題の合計、閉じられた問題の合計などの計算が含まれます。 リポジトリに問題がない場合、このテーブルは空になります。 |
@@ -136,7 +129,7 @@ GitHub 自体のリポジトリを見ることで、所有者とリポジトリ�
 2. GitHub で、Power BI でアクセスしようとしているリポジトリの URL に移動します。 たとえば、 https://github.com/dotnet/corefx です。  
 3. Power BI に戻って GitHub に接続します。 [GitHub の構成] ダイアログ ボックスで、その同じリポジトリの名前と所有者を使用します。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [チュートリアル: Power BI を使用して GitHub リポジトリに接続する](service-tutorial-connect-to-github.md)
 * [Power BI で新しいワークスペースを作成する](../collaborate-share/service-create-the-new-workspaces.md)

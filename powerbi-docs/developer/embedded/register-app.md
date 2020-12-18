@@ -1,5 +1,5 @@
 ---
-title: アプリを登録して Power BI コンテンツを埋め込む
+title: 埋め込み分析アプリケーションに Power BI コンテンツを埋め込むアプリを登録する
 description: 埋め込みの Power BI コンテンツとともに使用するため、Azure Active Directory 内にアプリケーションを登録する方法を説明します。
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: 845499bc236489932bf1347c43f7a5ba71c21a6b
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 98956beb3e5a106b885ecbca187521f85917f25e
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96907327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098216"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD アプリケーションを登録して Power BI とともに使用する
 

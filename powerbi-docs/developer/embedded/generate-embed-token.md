@@ -1,5 +1,5 @@
 ---
-title: 埋め込みトークンの生成に関する考慮事項
+title: Power BI 埋め込み分析での埋め込みトークンの生成に関する考慮事項
 description: 埋め込みトークンの生成に関する考慮事項、制限事項、および必要なアクセス許可について説明します
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/15/2020
-ms.openlocfilehash: cea97f16cf06e80b7b16ef7740fcf3103b2f1eb4
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 45a88d93e7ac5a63b269350451f39991ba153dd5
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95513782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098032"
 ---
 # <a name="considerations-when-generating-an-embed-token"></a>埋め込みトークンを生成するときの考慮事項
 

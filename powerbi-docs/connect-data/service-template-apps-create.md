@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/15/2020
-ms.openlocfilehash: fc62d291b890d840b89997cd5d5253572f91bf3e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: cfd9302c9c64760298eb78be10affad8be510a65
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410231"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491761"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Power BI でテンプレート アプリを作成する
 
 Power BI "*テンプレート アプリ*" を利用すれば、Power BI パートナーはコードをほとんど、あるいはまったく記述せずに Power BI アプリを作成し、Power BI の顧客に展開できます。  この記事には、Power BI テンプレート アプリを段階的に作成する手順が含まれています。
 
-Power BI のレポートやダッシュボードを作成できる場合、"*テンプレート アプリ ビルダー*" となって、分析コンテンツを作成し、パッケージ化して "*アプリ*" にすることができます。 作成したアプリは、AppSource など、利用できるあらゆるプラットフォームから他の Power BI テナントに配備できます。また、自分の Web サービスで使用するという方法もあります。 ビルダーは保護付きの分析パッケージを作成し、配布できます。
+Power BI のレポートやダッシュボードを作成できる場合、"*テンプレート アプリ ビルダー*" となって、分析コンテンツを作成し、パッケージ化して "*アプリ*" にすることができます。 アプリは、AppSource や自分の Web サービスなど、利用できるあらゆるプラットフォームから他の Power BI テナントに配備できます。 自分の Web サービスからテンプレート アプリを配布している場合、[インストール プロセスの一部を自動化](../developer/template-apps/template-apps-auto-install.md)し、顧客にとってさらに便利にすることもできます。
 
 Power BI 管理者は、組織においてテンプレート アプリを作成できる人とそれをインストールできる人を管理します。 権限を与えられたこれらのユーザーはテンプレート アプリをインストールし、その後、そのアプリを変更したり、組織内の Power BI 利用者に配布したりできます。
 
@@ -178,12 +178,10 @@ Power Query でパラメーターを使用している場合は、適切に定�
     インストールが正常に完了すると、新しいアプリの準備ができたことが通知されます。
 
 6. **[アプリへ移動]** を選択します。
-7. **[新しいアプリを開始する]** に自分のアプリが表示されます。これと同じ画面を顧客が見ることになります。
 
-    ![アプリを開始する](media/service-template-apps-create/power-bi-template-app-get-started.png)
-8. **[アプリを探索]** を選択し、テスト アプリとサンプル データを確認します。
-9. 変更を行うには、元のワークスペースでアプリに戻ります。 納得できるまでテスト アプリを修正します。
-10. アプリを実稼働前ステージに昇格させ、テナントの外でテストする準備ができたら、**[リリース管理]** ウィンドウに戻り、**[アプリの昇格]** を選択します。
+    テスト アプリにサンプル データが含まれていることを確認します。 変更を行うには、元のワークスペースでアプリに戻ります。 納得できるまでテスト アプリを修正します。
+
+1. アプリを実稼働前ステージに昇格させ、テナントの外でテストする準備ができたら、**[リリース管理]** ウィンドウに戻り、**[アプリの昇格]** を選択します。
 
     ![実稼働前にアプリを昇格させる](media/service-template-apps-create/power-bi-template-app-promote.png)
     >[!NOTE]
@@ -200,6 +198,10 @@ Power Query でパラメーターを使用している場合は、適切に定�
     ![実稼働のアプリ](media/service-template-apps-create/power-bi-template-app-production.png)
 
 自分のアプリを世界中に何千人といる Power BI ユーザーに広く利用してもらうために、アプリを AppSource に提出することをお勧めします。 詳細については、「[Power BI アプリケーション プラン](/azure/marketplace/partner-center-portal/create-power-bi-app-offer)」を参照してください。
+
+## <a name="automate-parameter-configuration-during-installation"></a>インストール中、パラメーター構成を自動化する
+
+ISV が自分の Web サービスからテンプレート アプリを配布している場合、顧客が自分の Power BI アカウントでアプリをインストールするとき、テンプレート アプリ パラメーターを自動的に構成する自動化を作成できます。 わからない詳細を提供する必要がないため、顧客にとっては、利便性とインストールに成功する確率が上がります。 詳細については、「[テンプレート アプリのインストールの自動構成](../developer/template-apps/template-apps-auto-install.md)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -7,18 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/13/2020
+ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53a8573138a87f8be65183e0571077a02ac0715d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 116458c094159cbeeadaf2e955744759e4648220
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097963"
 ---
 # <a name="dataflows-best-practices"></a>データフローのベスト プラクティス
 
 Power BI **データフロー** はエンタープライズに重点を置いたデータ準備ソリューションであり、使用、再利用、統合の準備が整ったデータのエコシステムを可能にします。 この記事では、ベスト プラクティスの一覧と、データフローを理解し、最大限に活用するために役立つ記事やその他の情報へのリンクを提供します。
+
+## <a name="dataflows-across-the-power-platform"></a>Power Platform 全体のデータフロー
+
+データフローは、Power Query、Microsoft Dynamics 365 やその他の Microsoft オファリングなど、さまざまな Power Platform テクノロジ全体で使用することができます。 データフローが Power Platform 全体でどのように動作するかの詳細については、[Microsoft 製品全体でのデータフローの使用](https://docs.microsoft.com/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)に関する記事を参照してください。
 
 
 ## <a name="dataflows-best-practices-table-and-links"></a>データフローのベスト プラクティスの表とリンク
@@ -29,7 +33,7 @@ Power BI **データフロー** はエンタープライズに重点を置いた
 |**トピック**  |**ガイダンス領域**  |**記事またはコンテンツへのリンク**  |
 |---------|---------|---------|
 |Power Query     | データ ラングリング経験を最大限に活用するためのヒントとテクニック        |[Power Query のベスト プラクティス](https://docs.microsoft.com/power-query/best-practices)        |
-|計算されたエンティティを活用する     |計算されたエンティティをデータフローで使用することには、パフォーマンス上の利点があります。         |[コンピューティング エンティティのシナリオ](https://docs.microsoft.com/power-query/dataflows/computed-entities-scenarios)         |
+|計算されたエンティティを活用する     |計算されたエンティティをデータフローで使用することには、パフォーマンス上の利点があります。         |[計算されたエンティティのシナリオ](https://docs.microsoft.com/power-query/dataflows/computed-entities-scenarios)         |
 |複雑なデータフローの開発     |大規模でパフォーマンスの高いデータフローを開発するためのパターン         |[複雑なデータフロー](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows)         |
 |データフローの再利用     |パターン、ガイダンス、ユースケース         |[データフローの再利用](https://docs.microsoft.com/power-query/dataflows/best-practices-reusing-dataflows)         |
 |大規模な実装     |大規模な使用と、エンタープライズ アーキテクチャを補完するガイダンス         |[データフローを使用したデータ ウェアハウス](https://docs.microsoft.com/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows)         |
@@ -40,6 +44,8 @@ Power BI **データフロー** はエンタープライズに重点を置いた
 |データ プロファイルの使用     |列の品質、分布、プロファイルを理解する         |[データ プロファイリング ツール](https://docs.microsoft.com/power-query/data-profiling-tools)         |
 |エラー処理の実装     |修正候補を提示し、更新エラーからの回復性がある堅牢なデータフローを開発する         |[一般的なエラーのパターン](https://docs.microsoft.com/power-query/dealing-with-errors)  </br> [複雑なエラー処理](https://docs.microsoft.com/power-query/error-handling)      |
 |スキーマ ビューの使用      |幅の広いテーブルを使用するとき、また、スキーマ レベル操作を行うとき、作成エクスペリエンスを向上する         |[スキーマ ビュー](https://docs.microsoft.com/power-query/schema-view)         |
+|リンクされたエンティティ      |変換の再利用と参照         |[リンクされたエンティティ](https://docs.microsoft.com/power-query/dataflows/linked-entities)         |
+|増分更新      |最新または変更されたデータの読み込み、および完全な再読み込み         |[増分更新](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)         |
 |||
 
 

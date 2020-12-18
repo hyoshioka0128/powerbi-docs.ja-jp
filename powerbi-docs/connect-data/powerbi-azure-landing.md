@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.date: 12/12/2019
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 73d6b90736045dc436d49889e6b22df29d15cfa0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ee997ca1a0d913871e7e6b1afd97741cdf6b3203
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96392843"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353268"
 ---
 # <a name="power-bi-for-microsoft-azure-users"></a>Microsoft Azure ユーザー向けの Power BI 
 
@@ -135,7 +135,7 @@ Microsoft Azure で、データの操作、インフラストラクチャの管�
                                           <h3>Azure Machine Learning</h3> 
                                           <p></p>
                                                 <a href="/power-bi/transform-model/dataflows/dataflows-machine-learning-integration">Azure Machine Learning と Power BI</a><br/> 
-                                                <a href="service-tutorial-invoke-machine-learning-model.md">チュートリアル: Power BI から AML モデルを呼び出す</a><br/> 
+                                                <a href="service-aml-integrate.md">チュートリアル: Azure Machine Learning モデルを使用する</a><br/> 
                                     </div> 
                               </div> 
                         </div> 

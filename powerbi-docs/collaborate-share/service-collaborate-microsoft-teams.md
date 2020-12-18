@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 09/15/2020
-ms.openlocfilehash: bcd7d94e4fd3d50277ddd2a33c1d10407b9400de
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: 80aa8097ce38a9b1bac228ea61dcc959e4aba60d
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412002"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492014"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Microsoft Teams と Power BI で共同作業する
 
@@ -23,7 +23,7 @@ ms.locfileid: "96412002"
 
 - Microsoft Teams の **[Power BI]** タブを使用すると、[対話形式のレポートを Microsoft Teams のチャネルおよびチャットに埋め込む](service-embed-report-microsoft-teams.md)ことができます。 [Power BI] タブを使用すると、仕事仲間があなたのチームのデータを検索し、あなたのチームのチャネル内のデータについて話し合うことができます。 
 - ご自分のレポート、ダッシュボード、およびアプリへのリンクを [Microsoft Teams] メッセージ ボックスに貼り付けるときに、[リンク プレビュー](service-teams-link-preview.md)を作成します。 リンク プレビューには、リンクに関する情報が表示されます。 
-- Power BI サービスでレポートやダッシュボードを表示しているときに Microsoft Teams で会話をすばやく開始するには、[[Microsoft Teams で共有]](service-share-report-teams.md) を使用します。
+- Power BI サービスでレポートやダッシュボードを表示しているときに Microsoft Teams で会話をすばやく開始するには、[[Microsoft Teams でのチャット]](service-share-report-teams.md) を使用します。
 - [Microsoft Teams 内の Power BI アプリ](service-microsoft-teams-app.md)を使用すると、基本的な Power BI サービス エクスペリエンス全体を Microsoft Teams に取り込むことができます。
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Microsoft Teams チャネルに埋め込まれた Power BI レポートのスクリーンショット。":::
@@ -70,6 +70,6 @@ Microsoft Teams にレポートを埋め込んだり、項目へのリンクを�
 
 - [Microsoft Teams に Power BI コンテンツを埋め込む](service-embed-report-microsoft-teams.md)
 - [Microsoft Teams で Power BI リンク プレビューを入手する](service-teams-link-preview.md)
-- [Power BI サービスから Microsoft Teams に直接共有する](service-share-report-teams.md)
+- [Power BI サービスから直接、Microsoft Teams でチャットする](service-share-report-teams.md)
 
 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

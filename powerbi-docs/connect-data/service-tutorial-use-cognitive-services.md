@@ -10,12 +10,12 @@ ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 02/20/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f647bcafe035515a1d5d1438ed580cabea579134
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 22548c092e1407d1744a019c15cb0d29a94913eb
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96401491"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353360"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>チュートリアル:Power BI での Cognitive Services の使用
 
@@ -180,6 +180,6 @@ Tag Images 関数を選択し、列フィールドに「 _[バイナリ]_ 」、
 
 次の記事にも興味をもたれるかもしれません。
 
-* [チュートリアル: Power BI での Machine Learning Studio (クラシック) モデルの呼び出し (プレビュー)](service-tutorial-invoke-machine-learning-model.md)
+* [チュートリアル: Power BI で Azure Machine Learning モデルを使用する](service-aml-integrate.md)
 * [Azure Machine Learning の Power BI への統合 (プレビュー)](../transform-model/dataflows/dataflows-machine-learning-integration.md)
 * [Power BI での Cognitive Services (プレビュー)](../transform-model/dataflows/dataflows-machine-learning-integration.md)

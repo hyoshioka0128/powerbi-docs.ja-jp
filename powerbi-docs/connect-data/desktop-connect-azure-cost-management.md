@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa06b1d561c770c3b9e0535e94789931a74bd9df
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6d99e91657d0c5f0bbd1e9c665f00d16c34ba24f
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411473"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353245"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Power BI Desktop で Azure Cost Management コネクタを使用してビジュアルとレポートを作成する
 
@@ -56,7 +56,7 @@ Power BI Desktop で **Azure Cost Management コネクタ** を使用するに�
 
     ![Azure Cost Management プロパティのスクリーンショット。課金プロファイル ID のスコープを確認できます。](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
-7.  プロンプトが表示されたら、Azure ユーザー アカウントとパスワードを使用してサインインします。 
+7.  プロンプトが表示されたら、Azure ユーザー アカウントとパスワードを使用してサインインします。 正常にアクセスするには課金アカウント所有者を使用する必要があります。 
 
 
 ## <a name="connect-to-an-enterprise-agreement-account"></a>Enterprise Agreement アカウントに接続する
@@ -71,13 +71,11 @@ Enterprise Agreement (EA) アカウントを使用して接続するには、Azu
 
     ![Azure Cost Management プロパティのスクリーンショット。加入契約番号のスコープを確認できます。](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
-6.  プロンプトが表示されたら、Azure ユーザー アカウントとパスワードを使用してサインインします。 
+6.  プロンプトが表示されたら、Azure ユーザー アカウントとパスワードを使用してサインインします。 Enterprise Agreements には Enterprise Administrator アカウントを使用する必要があります。
 
 ## <a name="data-available-through-the-connector"></a>コネクタ経由で使用できるデータ
 
 正常に認証されると、**[ナビゲーター]** ウィンドウが開き、次の使用できるデータ テーブルが表示されます。
-
-
 
 | **Table** | **説明** |
 | --- | --- |

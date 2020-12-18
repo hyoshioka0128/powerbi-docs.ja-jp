@@ -1,5 +1,5 @@
 ---
-title: Power BI サービスから Microsoft Teams に直接共有する
+title: Power BI サービスから直接、Microsoft Teams でチャットする
 description: Power BI ダッシュボードとレポートを、Power BI サービスから Microsoft Teams に直接共有できます。
 author: maggiesMSFT
 ms.author: maggies
@@ -9,37 +9,35 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/31/2020
-ms.openlocfilehash: 0a6f73c14c8dd8ebb48f856f3079ec8f5922ef9e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: af1fac127d1a20f13bc99fc2d05510491a01be5a
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411565"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492037"
 ---
-# <a name="share-directly-to-microsoft-teams-from-the-power-bi-service"></a>Power BI サービスから Microsoft Teams に直接共有する
+# <a name="chat-in-microsoft-teams-directly-from-the-power-bi-service"></a>Power BI サービスから直接、Microsoft Teams でチャットする
 
-Power BI ダッシュボード、レポート、およびビジュアルを、Power BI サービスから Microsoft Teams に直接共有できます。 Power BI サービスでレポートやダッシュボードを表示しているときに会話をすばやく開始するには、 **[Teams で共有]** 機能を使用します。
+Power BI サービスから直接、Power BI のダッシュボード、レポート、ビジュアルについて Microsoft Teams とチャットできます。 Power BI サービスでレポートやダッシュボードを表示しているときに会話をすばやく開始するには、 **[Teams でのチャット]** 機能を使用します。
 
 ## <a name="requirements"></a>要件
 
-Power BI で **[Teams で共有]** 機能を使用するには、次の設定を確認します。
-
-- Power BI 管理者が、Power BI 管理ポータルで **[Teams で共有]** テナント設定を無効にしていない。 この設定により、組織は **[Teams で共有]** ボタンに非表示にすることができます。 詳細については、[Power BI 管理ポータル](../admin/service-admin-portal.md#share-to-teams)に関する記事を参照してください。
+Power BI の **[Teams でのチャット]** 機能を使用するには、Power BI 管理者が Power BI 管理ポータルで **[Teams で共有]** テナント設定を無効にしていないことを確認します。 この設定により、組織は **[Teams でのチャット]** ボタンに非表示にすることができます。 詳細については、[Power BI 管理ポータル](../admin/service-admin-portal.md#share-to-teams)に関する記事を参照してください。
 
 Power BI と Microsoft Teams がどのように連携するかの背景とその他の要件については、「[Microsoft Teams と Power BI で共同作業する](service-collaborate-microsoft-teams.md)」を参照してください。
 
-## <a name="share-power-bi-content-to-microsoft-teams"></a>Microsoft Teams に Power BI コンテンツを共有する
+## <a name="chat-about-power-bi-content-in-microsoft-teams"></a>Microsoft Teams で Power BI コンテンツについてチャットする
 
-次の手順に従って、Power BI サービスでレポート、ダッシュボード、およびビジュアルへのリンクを、Microsoft Teams のチャネルとチャットに共有します。
+次の手順に従って、Power BI サービスでレポート、ダッシュボード、ビジュアルへのリンクを共有し、Microsoft Teams のチャネルとチャットについてチャットします。
 
 1. 次のいずれかのオプションを選択します。
 
-   * ダッシュボードまたはレポートのアクション バーの **[Teams で共有]** :
+   * ダッシュボードまたはレポートのアクション バーの **[Teams でのチャット]** :
 
        ![アクション バーの [Teams で共有] ボタンのスクリーンショット。](media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png)
     
-   * 1 つのビジュアルのコンテキスト メニューの **[Teams で共有]** :
+   * 1 つのビジュアルのコンテキスト メニューの **[Teams でのチャット]** :
     
       ![視覚化のコンテキスト メニューの [Teams で共有] ボタンのスクリーンショット。](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
@@ -63,10 +61,10 @@ Power BI と Microsoft Teams がどのように連携するかの背景とその
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
 - Power BI のライセンスまたはレポートへのアクセス許可を持たないユーザーには、"コンテンツは利用できません" というメッセージが表示されます。
-- ブラウザーで厳格なプライバシー設定を使用している場合は、 **[Teams で共有]** ボタンが機能しないことがあります。 **[問題が発生した場合新しいウィンドウで開いてみてください]** オプションを、ダイアログ ボックスが正しく開かない場合は使用してください。
-- **[Teams で共有]** には、リンク プレビューは含まれていません。
-- リンクプ レビューと **[Teams で共有]** では、項目を表示するためのアクセス許可がユーザーに付与されません。 アクセス許可は個別に管理する必要があります。
-- レポートの作成者が視覚化の **[その他]** オプションを **[オフ]** に設定している場合、視覚化のコンテキスト メニューの **[Teams で共有]** ボタンは使用できません。
+- ブラウザーで厳格なプライバシー設定を使用している場合は、 **[Teams でのチャット]** ボタンが機能しないことがあります。 **[問題が発生した場合新しいウィンドウで開いてみてください]** オプションを、ダイアログ ボックスが正しく開かない場合は使用してください。
+- **[Teams でのチャット]** には、リンク プレビューは含まれていません。
+- リンク プレビューと **[Teams でのチャット]** では、項目を表示するためのアクセス許可がユーザーに付与されません。 アクセス許可は個別に管理する必要があります。
+- レポートの作成者が視覚化の **[その他]** オプションを **[オフ]** に設定している場合、視覚化のコンテキスト メニューの **[Teams でのチャット]** ボタンは使用できません。
 - その他の問題については、Microsoft Teams での共同作業に関する記事の「[既知の問題と制限事項](service-collaborate-microsoft-teams.md#known-issues-and-limitations)」セクションを参照してください。
 
 ## <a name="next-steps"></a>次の手順

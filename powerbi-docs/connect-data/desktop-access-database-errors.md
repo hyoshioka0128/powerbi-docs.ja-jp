@@ -8,14 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/21/2019
+ms.date: 12/09/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f8d24c672fa3e9d5cda007e061eac8c4ea9c6d4c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b144412ee322aa9bec0a35bb3876a949abcd3f13
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406045"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998900"
 ---
 # <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Power BI Desktop での Access と Excel の .xls ファイルのインポートに関するトラブルシューティング
 
@@ -24,6 +24,8 @@ Power BI Desktop では、Access データベースと初期バージョンの E
 ## <a name="situation-1-no-access-database-engine-is-installed"></a>状況 1:Access データベース エンジンがインストールされていない
 
 Power BI Desktop のエラー メッセージで Access データベース エンジンがインストールされていないことが判明した場合、お使いの Power BI Desktop のバージョンに合わせて、32 ビット版か 64 ビット版の Access データベース エンジンをインストールする必要があります。 Access Database Engine は[ダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=13255)からインストールできます。
+
+データフローを使用していて、ゲートウェイを使用してデータに接続している場合は、ゲートウェイが実行されているコンピューターにアクセス データベース エンジンをインストールする必要があります。 
 
 >[!NOTE]
 >インストールした Access データベース エンジンのビット版がお使いの Microsoft Office のビット版と異なる場合、Office アプリケーションで Access データベース エンジンを利用できません。

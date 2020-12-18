@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.openlocfilehash: bb48b92df81a49ee687376ee9f53428c10171b80
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b20bb007c55f7d7d618b70690475d34d9f53fc06
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410116"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491715"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Power BI でのテンプレート アプリの作成に関するヒント
 
@@ -145,6 +145,10 @@ AppSource でテンプレート アプリを発行した後、Web サイトか�
 
 [![アプリのダウンロード リンク](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-## <a name="next-steps"></a>次の手順
+## <a name="automate-parameter-configuration-during-installation"></a>インストール中、パラメーター構成を自動化する
+
+ISV が自分の Web サービスからテンプレート アプリを配布している場合、顧客が自分の Power BI アカウントでアプリをインストールするとき、テンプレート アプリ パラメーターを自動的に構成する自動化を作成できます。 わからない詳細を提供する必要がないため、顧客にとっては、利便性とインストールに成功する確率が上がります。 詳細については、「[テンプレート アプリのインストールの自動構成](../developer/template-apps/template-apps-auto-install.md)」を参照してください。
+
+## <a name="next-steps"></a>次のステップ
 
 [Power BI テンプレート アプリとは](service-template-apps-overview.md)

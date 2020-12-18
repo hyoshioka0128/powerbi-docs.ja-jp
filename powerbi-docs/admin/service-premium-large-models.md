@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 12/10/2020
 ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 1f9a34b68f465eda5b8921e48576c9bef5d17f36
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.openlocfilehash: 7256e17f561aa79d63b7fefd268df560903de6b2
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781722"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353107"
 ---
 # <a name="large-datasets-in-power-bi-premium"></a>Power BI Premium での大規模なデータセット
 
-Power BI データセットでは、クエリ パフォーマンスが最適化されるように、データを圧縮率の高い、メモリ内キャッシュに格納できます。これにより、ユーザー対話機能が高速になります。 Premium 容量に関しては、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** 設定を使用することで、既定の 10 GB の上限を超える大規模なデータセットを有効にすることができます。 有効にした場合、データセットのサイズは、Premium "*容量*" サイズによって制限されます。
+Power BI データセットでは、クエリ パフォーマンスが最適化されるように、データを圧縮率の高い、メモリ内キャッシュに格納できます。これにより、ユーザー対話機能が高速になります。 Premium 容量に関しては、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** 設定を使用することで、既定の 10 GB の上限を超える大規模なデータセットを有効にすることができます。 有効にすると、データセットのサイズが Premium *容量* サイズか、管理者によって設定された最大サイズに制限されます。
 
 すべての Premium P SKU および Embedded A SKU に対して、大規模なデータセットを有効にすることができます。 Premium での大規模なデータセットのサイズ制限は、データ モデルのサイズ制限の観点から、Azure Analysis Services に相当します。
 
@@ -136,6 +136,8 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 - **Power BI Desktop へのダウンロード**:データセットが Premium ファイルに格納されている場合、[.pbix ファイルとしてのダウンロード](../create-reports/service-export-to-pbix.md)は失敗します。
 - **サポートされているリージョン**: 大規模なデータ セットは、Premium ファイル ストレージをサポートするすべての Azure リージョンでサポートされています。 詳細については、「[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?products=storage)」を確認し、次のセクションに記載されている表を参照してください。
 
+- **最大データセット サイズの設定**:最大データセットのサイズは管理者が設定できます。 最大値は、0.1 GB から SKU の最大容量まで設定できます。
+
 ## <a name="region-availability"></a>利用可能なリージョン
 
 Power BI の大規模なデータセットは、[Azure Premium ファイル ストレージ](/azure/storage/files/storage-files-planning#storage-tiers)がサポートされている特定の Azure リージョンでのみ使用できます。
@@ -146,6 +148,9 @@ Power BI の大規模なデータセットは、[Azure Premium ファイル ス�
 |---------|---------|
 |オーストラリア東部     | australiaeast        |
 |オーストラリア南東部     | australiasoutheast        |
+|カナダ東部     | canadaeast        |
+|カナダ中部     | canadacentral        |
+|Central India     | centralindia        |
 |米国中部     | centralus        |
 |東アジア     | eastasia        |
 |米国東部     | eastus        |
@@ -161,6 +166,7 @@ Power BI の大規模なデータセットは、[Azure Premium ファイル ス�
 |英国南部     | uksouth        |
 |英国西部     | ukwest        |
 |西ヨーロッパ     | westeurope        |
+|インド西部     | westindia        |
 |米国西部     | westus        |
 |米国西部 2     | westus2        |
 

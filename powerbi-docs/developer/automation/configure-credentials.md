@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: df5e82af012f4d85fd81399d6e31fde3b7539ce6
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 902fb0534eee307a84b24fe30496a32cccadb147
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95513828"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097986"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Power BI 用の資格情報をプログラムで構成する
 
@@ -80,7 +80,7 @@ ms.locfileid: "95513828"
 
     # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
 
-    **手順 3** で取得した公開キーを指定して AssymetricKeyEncriptor クラスを使用します。
+    **手順 3** で取得した公開キーを指定して AssymetricKeyEncryptor クラスを使用します。
 
     ```csharp
     var credentialDetails = new CredentialDetails(

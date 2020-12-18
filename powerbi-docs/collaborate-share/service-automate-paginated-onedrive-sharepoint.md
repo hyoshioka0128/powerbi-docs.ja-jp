@@ -9,16 +9,17 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/17/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 4a0a504db15d78bec112aaafd2a972f066e88193
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6aaad48fb3e97aa6c1b4fc51834ee593a49a8192
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097733"
 ---
 # <a name="save-a-paginated-report-to-onedrive-for-business-or-sharepoint-online"></a>ページ分割されたレポートを OneDrive for Business または SharePoint Online に保存する
 
 [Power Automate](/power-automate/getting-started) を使用すると、サポートされているさまざまな形式やシナリオへの Power BI のページ分割されたレポートのエクスポートと配布を自動化できます。 この記事では、Power Automate を使用して、Power BI のページ分割されたレポートを OneDrive for Business または SharePoint Online フォルダーに保存する方法を自動化します。
+
 
 :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/paginated-onedrive-flow.png" alt-text="ページ分割されたレポートを OneDrive または SharePoint Online に保存するための Power Automate フローのスクリーンショット":::
 
@@ -28,7 +29,7 @@ Power BI のページ分割されたレポート用の、その他の Power Auto
 
 先に進むには、次のものがあることを確認してください。
 
-- 予約容量でサポートされている Power BI テナント内に少なくとも 1 つのワークスペース。 この容量は、A4/P1 – A6/P3 SKU のいずれかになります。 Power BI Premium の予約容量の詳細については、[こちら](../admin/service-premium-what-is.md)を参照してください。
+- 予約容量でサポートされている Power BI テナント内に少なくとも 1 つのワークスペース。 この容量は、A4/P1 – A6/P3 SKU のいずれかになります。 詳細については、[Power BI Premium のページ分割されたレポートの予約容量](../admin/service-premium-what-is.md#paginated-reports)に関する記事を参照してください。
 - Office 365 サブスクリプションに付属する、Power Automate における標準コネクタへのアクセス。
 
 ## <a name="save-a-paginated-report-to-onedrive-for-business-or-a-sharepoint-online-folder"></a>ページ分割されたレポートを OneDrive for Business または SharePoint Online フォルダーに保存する 
@@ -57,7 +58,7 @@ Power BI のページ分割されたレポート用の、その他の Power Auto
 
     :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-3-advanced-recurrence.png" alt-text="繰り返しの詳細オプションを表示しています。":::
 
-1. **[ワークスペース]** ボックスで、予約容量のワークスペースを選択します。 **[レポート]** ボックスで、エクスポートする選択したワークスペース内のページ分割されたレポートを選択します。 **[エクスポート形式]** ボックスで、目的のエクスポート形式を選択します。 必要に応じて、ページ分割されたレポートのパラメーターを指定できます。 パラメーターの詳細な説明は、[Power BI Rest API のコネクタのリファレンス](/connectors/powerbi/#export-to-file-for-paginated-reports)にあります。  
+1. **[ワークスペース]** ボックスで、予約容量のワークスペースを選択します。 **[レポート]** ボックスで、エクスポートする選択したワークスペース内のページ分割されたレポートを選択します。 **[エクスポート形式]** ボックスで、目的のエクスポート形式を選択します。 必要に応じて、ページ分割されたレポートのパラメーターを指定できます。 パラメーターの詳細な説明は、[Power BI REST API のコネクタのリファレンス](/connectors/powerbi/#export-to-file-for-paginated-reports)に記載されています。  
 
     :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-4-export-format.png" alt-text="ページ分割されたレポート、ワークスペース、エクスポート形式を選択しています。":::
 

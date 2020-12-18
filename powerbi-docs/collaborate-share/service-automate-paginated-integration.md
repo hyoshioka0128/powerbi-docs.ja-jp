@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 2689597e35801d6829b29790309ea53ad410ff47
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5c69abe925751e8b065f262e151bfee65c487238
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412025"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492060"
 ---
 # <a name="export-power-bi-paginated-reports-with-power-automate"></a>Power Automate を使用して Power BI のページ分割されたレポートをエクスポートする
 
@@ -40,7 +40,7 @@ ms.locfileid: "96412025"
 
 - [Power BI のページ分割されたレポートを OneDrive for Business または SharePoint Online フォルダーに保存します](service-automate-paginated-onedrive-sharepoint.md)。  
 - [SharePoint Online リストの項目、または Excel Online テーブルの各行の Power BI のページ分割されたレポートをエクスポートします](service-automate-paginated-excel-sharepoint-list.md)。
-- Power BI のページ分割されたレポートをローカル システム フォルダーに保存します。
+- [Power BI のページ分割されたレポートをローカル システム フォルダーに保存します](service-automate-paginated-local-file.md)。
 
 ## <a name="next-steps"></a>次のステップ
 

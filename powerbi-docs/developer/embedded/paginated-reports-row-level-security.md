@@ -1,5 +1,5 @@
 ---
-title: Power BI の埋め込みコンテンツで行レベルのセキュリティを使用する
+title: Power BI 埋め込み分析のコンテンツで行レベルのセキュリティを使用する
 description: ここでは、アプリケーション内に Power BI コンテンツを埋め込むために必要な手順について説明します。
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 4066911e90090fe770ca0d33f7e0d9a18d9dde71
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 00f818754c560768392aec0aa1df4555fe5d7ffa
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098308"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports"></a>埋め込みのページ分割されたレポートでの行レベルのセキュリティの実装
 
@@ -26,7 +26,7 @@ ms.locfileid: "91746311"
 
 ## <a name="configuring-a-parameter-to-filter-the-dataset"></a>データセットをフィルター処理するためのパラメーターを構成する
 
-Power BI のページ分割されたレポートに行レベルのセキュリティを適用する場合は、**UserID 属性**に[パラメーター](../../paginated-reports/report-builder-parameters.md)を割り当てる必要があります。 このパラメーターは、レポートが埋め込まれる前に、データセットからプルされるデータを制限します。
+Power BI のページ分割されたレポートに行レベルのセキュリティを適用する場合は、**UserID 属性** に [パラメーター](../../paginated-reports/report-builder-parameters.md)を割り当てる必要があります。 このパラメーターは、レポートが埋め込まれる前に、データセットからプルされるデータを制限します。
 
 パラメーターを **UserID** に割り当てた後、[Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API を使用して、埋め込みトークンを取得します。
 

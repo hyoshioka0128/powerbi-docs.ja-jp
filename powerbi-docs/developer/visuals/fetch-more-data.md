@@ -7,17 +7,19 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
-ms.openlocfilehash: b8be5b68603f818e26e7f731e4f163bc626b5053
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.date: 12/13/2020
+ms.openlocfilehash: 3dc94a24e5e6a84992745775b1639b7a186ed19d
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483698"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492083"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>より多くのデータを Power BI からフェッチする
 
-この記事では、`fetchMoreData` メソッドを使用することにより、30 KB のデータ ポイントのハード制限を回避して、より多くのデータを読み込む方法について説明します。 この方法では、データがチャンクで提供されます。 パフォーマンスを向上させるために、ユース ケースに合わせてチャンク サイズを構成できます。
+`fetchMoreData` API によって Power BI ビジュアルは 30K 行のデータ表示というハード制限を回避できます。 新しい 3.4 API リリースでは、データ チャンクを新しい手法で読み込むよう、`fetchMoreData` API の機能性が拡張されています。 要求されたチャンクをすべて集める既存の手法に加え、この API では、増分データ チャンクのみを読み込むことができます。
+
+この新しい手法では、一層柔軟な方法でデータ チャンクをビジュアルに読み込むことができます。 パフォーマンスを向上させるために、ユース ケースに合わせてチャンク サイズを構成できます。
 
 ## <a name="limitations-of-fetchmoredata"></a>fetchMoreData の制限
 

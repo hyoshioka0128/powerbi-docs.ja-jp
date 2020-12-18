@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.openlocfilehash: b60728978a3429249d7376fdfe1477bf67ef293a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e6499d9e4547f1bd2b8cf4ac29fbc375af871f8a
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96401997"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998670"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>組織でテンプレート アプリをインストールして配布する
 
@@ -64,10 +64,6 @@ ms.locfileid: "96401997"
 ## <a name="connect-to-data"></a>データに接続する
 
 1. **[アプリに移動]** を選択します。
-
-1. **[新しいアプリを開始する]** ウィンドウで、**探索** を選択します。
-
-   ![テンプレート アプリのスプラッシュ スクリーン](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
    アプリが開き、サンプル データが表示されます。
 
@@ -138,6 +134,20 @@ ms.locfileid: "96401997"
 
 >[!IMPORTANT]
 >上書き後は、組織のアプリ ユーザーのために、レポートとダッシュボードに変更を適用するために[アプリを更新](#customize-and-share-the-app)するようにしてください。
+
+## <a name="delete-a-template-app"></a>テンプレート アプリを削除する
+
+インストールされたテンプレート アプリは、アプリとそれに関連付けられているワークスペースで構成されます。 テンプレート アプリを削除する場合は、次の 2 つのオプションがあります。
+* **アプリとそれに関連付けられているワークスペースを完全に削除します**: テンプレート アプリとそれに関連付けられているワークスペースを完全に削除するには、[アプリ] ページのアプリ タイルに移動して、ごみ箱アイコンを選択し、表示されるダイアログで **[削除]** をクリックします。
+* **アプリの発行を取り消します**: このオプションを選択すると、アプリは削除されますが、関連付けられているワークスペースは保持されます。 このオプションは、作成したカスタマイズをいくつか保持したい場合などに便利です。
+
+    アプリの発行を取り消すには、次を実行します。
+    1. アプリを開きます。
+    1. アプリの編集の鉛筆アイコンをクリックして、テンプレート アプリのワークスペースを開きます。
+    1. テンプレート アプリのワークスペースで、 **[その他のオプション (...)]** を選択し、 **[アプリ発行の取り消し]** を選択します。
+
+        ![[アプリ発行の取り消し] オプションのスクリーンショット。](media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png)
+
 
 ## <a name="next-steps"></a>次の手順
 
