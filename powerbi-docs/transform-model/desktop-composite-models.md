@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 12/16/2020
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 078596c91f86f635cb69f543ee0ea828e5cef62d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c29728641560502e19486f47e3ec06e370399640
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415866"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600532"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Power BI Desktop で複合モデルを使用する
 
@@ -188,3 +188,4 @@ DirectQuery の既存の制限事項は、複合モデルを使用する場合�
 * [Power BI Desktop のストレージ モード](desktop-storage-mode.md)
 * [Power BI で DirectQuery を使用する](../connect-data/desktop-directquery-about.md)
 * [Power BI の DirectQuery でサポートされるデータ ソース](../connect-data/power-bi-data-sources.md)
+* [Power BI データセットおよび Azure Analysis Services 用の DirectQuery を使用する (プレビュー)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

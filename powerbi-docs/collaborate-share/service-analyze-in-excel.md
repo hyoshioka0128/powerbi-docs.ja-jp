@@ -4,18 +4,18 @@ description: Microsoft Excel で Power BI データセットを分析する
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/22/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 2f0d9dbec6c40b43a3b47f9cd698efed4a2899f0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 4ce463cb82fec7da8d7ec43db7914fb028368bc3
+ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412094"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97621259"
 ---
 # <a name="analyze-in-excel"></a>[Excel で分析]
 **[Excel で分析]** を使用すると、Power BI データセットを Excel に取り込み、ピボットテーブル、グラフ、スライサー、およびその他の Excel 機能を使用してデータセットを表示および操作できます。 **[Excel で分析]** を使用するには、まず Power BI から機能をダウンロードしてインストールし、Excel で使用する 1 つ以上のデータセットを選択する必要があります。 

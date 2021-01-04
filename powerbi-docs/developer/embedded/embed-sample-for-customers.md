@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 12/02/2020
-ms.openlocfilehash: e79a73880b50a0edb5e507726cb0c995ba13cd77
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.date: 12/22/2020
+ms.openlocfilehash: 5417266658a493bc81da882761431aa3db072dbe
+ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098423"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97745118"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>チュートリアル:"*顧客向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
@@ -192,7 +192,7 @@ Power BI により、レポート、ダッシュボード、およびタイル�
 
 サンプル レポートをダウンロードしてワークスペースに発行するには、これらの手順に従います。
 
-1. GitHub の [Power BI Desktop サンプル](https://github.com/microsoft/PowerBI-Developer-Samples) フォルダーを開きます。
+1. GitHub の [Power BI Desktop サンプル](https://github.com/Microsoft/PowerBI-Desktop-Samples) フォルダーを開きます。
 
 2. **[コード]** を選んでから、 **[ZIP のダウンロード]** を選択します。
 

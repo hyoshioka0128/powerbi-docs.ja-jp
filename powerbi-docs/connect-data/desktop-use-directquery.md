@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ab606733e47dec06837cfc1840da09732f7019
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 60805ba0977b3b603ace0d50f7b080bd62d54ec7
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491232"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600302"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Power BI Desktop の DirectQuery
 *Power BI Desktop* では、データ ソースに接続するときに、常にデータのコピーを Power BI Desktop にインポートすることができます。 データ ソースによっては、代替手法を利用できます。DirectQuery を使用して、データ ソースに直接接続します。
@@ -108,3 +108,4 @@ DirectQuery の詳細については、次のリソースを参照してくだ�
 - [DirectQuery と SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery と SAP HANA](desktop-directquery-sap-hana.md)
 - [オンプレミス データ ゲートウェイとは](service-gateway-onprem.md)
+- [Power BI データセットおよび Azure Analysis Services 用の DirectQuery を使用する (プレビュー)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

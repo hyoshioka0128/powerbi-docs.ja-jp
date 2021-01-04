@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 12/14/2020
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5b26f8fe04c7aaf6847de50398c54db6a3870844
-ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
+ms.openlocfilehash: 1efce480d911e5aca878f2a1b3c34e2050c1f8cd
+ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513783"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97621580"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Power BI で共同作業し、共有する方法
 
@@ -34,8 +34,8 @@ ms.locfileid: "97513783"
 
 - マイ ワークスペースまたは別のワークスペースから ["*ダッシュボードまたはレポートを共有*" します](#share-dashboards-and-reports)。
 - [Power BI "*モバイル アプリ*" から注釈を付けて共有](#annotate-and-share-from-the-power-bi-mobile-apps)します。
-- ワークスペースのダッシュボードとレポートを "*アプリ*" にバンドルし、より大きいグループや組織全体に[アプリを配布](#distribute-insights-in-an-app)します。
-- "*セキュリティで保護されたポータル*" または "*パブリック Web サイト*" に[レポートを埋め込みます](#embed-reports-in-secure-portals-or-public-web-sites)。
+- ワークスペースのダッシュボードとレポートを "*アプリ*" にバンドルし、より大きいグループや組織全体に [アプリを配布](#distribute-insights-in-an-app)します。
+- "*セキュリティで保護されたポータル*" または "*パブリック Web サイト*" に [レポートを埋め込みます](#embed-reports-in-secure-portals-or-public-web-sites)。
 - [レポートを印刷します](#print-or-save-as-pdf-or-other-static-file)。
 - Microsoft AppSource を介して外部の Power BI ユーザーに配布することができる ["*テンプレート アプリ*" を作成します](#create-and-deploy-template-apps)。
  
