@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 5df13baf295745f86c89ce75d2890ca2c13894ee
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 7ef9b75f01dedaf55be77312f07217593d886ef0
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049340"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675283"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>チュートリアル:R スクリプトから R ビジュアルにフィルター プロットを作成する
 この記事では、R ビジュアルで R スクリプトを使用してじょうごプロットを作成する方法を順を追って説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "92049340"
 
 ## <a name="build-a-report"></a>レポートを作成する
 
-次に、スクリプトの編集を行って、[こちらのスクリプト](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/script_RV_v2_00.r)をミラーリングします。 これにより、*read.csv* ではなく *dataset.csv* が Power BI デスクトップ ワークスペースに読み込まれ、**がん死亡率**テーブルが作成されます。 次の [PBIX ファイル](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/funnelPlot_Rvisual.pbix)の結果を確認してください。
+次に、スクリプトの編集を行って、[こちらのスクリプト](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/script_RV_v2_00.r)をミラーリングします。 これにより、*read.csv* ではなく *dataset.csv* が Power BI デスクトップ ワークスペースに読み込まれ、**がん死亡率** テーブルが作成されます。 次の [PBIX ファイル](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/funnelPlot_Rvisual.pbix)の結果を確認してください。
 
 > [!NOTE]
 > `dataset` は、任意の R ビジュアルの入力 `data.frame` に対してハードコーディングされた名前です。 
@@ -60,7 +60,7 @@ ms.locfileid: "92049340"
    pbiviz package
    ```
 
-   このコマンドによって、初期テンプレート ビジュアル (`-t` は**テンプレート**に対応する) を含むフォルダー *funnel-visual* が作成されます。 PBIVIZ は *dist* フォルダー内の *script.r* ファイルに含まれる R コードです。 それを Power BI にインポートして、何が起こるかを試してみてください。
+   このコマンドによって、初期テンプレート ビジュアル (`-t` は **テンプレート** に対応する) を含むフォルダー *funnel-visual* が作成されます。 PBIVIZ は *dist* フォルダー内の *script.r* ファイルに含まれる R コードです。 それを Power BI にインポートして、何が起こるかを試してみてください。
 
 1. *script.r* ファイルを編集して、その内容を前のスクリプトに置き換えます。
 
@@ -150,7 +150,7 @@ ms.locfileid: "92049340"
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![スクリプトの前と後](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![スクリプトの前と後](https://raw.githubusercontent.com/microsoft/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    パラメーターを UI に公開しないように決定することもできます。  
 
@@ -245,7 +245,7 @@ ms.locfileid: "92049340"
 
 ## <a name="tips-and-tricks"></a>ヒントとコツ
 
-* *pbiviz.json* を編集することで、**バージョン**、**電子メール**、**名前**、**ライセンスの種類**などの正しいメタデータを格納することを開発者にお勧めします。
+* *pbiviz.json* を編集することで、**バージョン**、**電子メール**、**名前**、**ライセンスの種類** などの正しいメタデータを格納することを開発者にお勧めします。
 
    > [!IMPORTANT]
    > **guid** フィールドは、ビジュアルの一意の識別子です。 ビジュアルごとに新しいプロジェクトを作成する場合は、GUID もそれぞれ異なります。 それが同じになるのは、新しいビジュアルに古いプロジェクトをコピーして使用する場合のみとなりますが、これを行うべきではありません。
