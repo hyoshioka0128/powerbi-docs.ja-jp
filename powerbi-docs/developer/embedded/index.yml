@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Power BI Embedded の分析ドキュメント
-summary: 2 つの埋め込み分析ソリューションの使用、Power BI Embedded、および Power BI Premium を使用した埋め込みについて説明します。
+title: 拡張埋め込み BI インサイトに関する Power BI 埋め込み分析ドキュメント
+summary: 2 つの Power BI 埋め込み分析ソリューションの使用、Power BI Embedded、および Power BI Premium を使用した埋め込みについて説明します。
 metadata:
   title: Power BI Embedded の分析ドキュメント
   description: 2 つの埋め込み分析ソリューションの使用、Power BI Embedded、および Power BI Premium を使用した埋め込みについて説明します。
@@ -12,12 +12,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: d66f11bdbb9de10f77b7841958d9ef08c358ef7e
-  ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+  ms.openlocfilehash: 0f5afe65128f8e9b79522380b2271895f2afacaf
+  ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/06/2020
-  ms.locfileid: "91746035"
+  ms.lasthandoff: 01/05/2021
+  ms.locfileid: "97888675"
 landingContent:
 - title: はじめに
   linkLists:

@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Power BI ビジュアルのドキュメント
-summary: 独自の Power BI ビジュアルを開発することができます。これは、ユーザー、ユーザーの組織、または Power BI コミュニティ全体で使用できます。 Microsoft のドキュメントは、必要な情報を提供しています。
+title: 埋め込み BI インサイトの品質を向上させるための Power BI 埋め込み分析の Power BI ビジュアルのドキュメント
+summary: 独自の Power BI ビジュアルを開発することができます。これは、ユーザー、ユーザーの組織、または Power BI コミュニティ全体で使用できます。 Microsoft のドキュメントは、必要な情報を提供しています。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 metadata:
   title: Power BI ビジュアルのドキュメント
   description: 独自の Power BI ビジュアルを開発することができます。これは、ユーザー、ユーザーの組織、または Power BI コミュニティ全体で使用できます。 Microsoft のドキュメントは、必要な情報を提供しています。
@@ -12,12 +12,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 92eb2ebc5eaff00c5c83cd32b0fa90b631906237
-  ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+  ms.openlocfilehash: d6673e5a44b315c3c54fca53231efe97a4342fcd
+  ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/14/2020
-  ms.locfileid: "92049317"
+  ms.lasthandoff: 01/05/2021
+  ms.locfileid: "97888238"
 landingContent:
 - title: 作業開始
   linkLists:
