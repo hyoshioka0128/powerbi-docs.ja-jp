@@ -8,16 +8,16 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f6092e6324a0fa400458b8da0be8f41c366f85e0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7ba25ff8b4462d2cf50f9285b3d9ac92b98373cf
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405907"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927036"
 ---
-# <a name="connect-to-excel-workbooks-in-power-bi-desktop"></a>Power BI Desktop で Excel ブックに接続する
+# <a name="connect-to-excel-in-power-bi-desktop"></a>Power BI Desktop で Excel に接続する
 Power BI Desktop から Excel ブックには簡単に接続できます。この記事ではその手順を説明します。
 
 Power BI Desktop の **[ホーム]** リボンで、 **[データの取得]、[Excel]** の順に選択します。
