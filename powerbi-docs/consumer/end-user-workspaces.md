@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/14/2020
 ms.custom: licensing support
 LocalizationGroup: Consumers
-ms.openlocfilehash: 2341306672da4c1923dc5bc97f0d1537604a1a7c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bc8c3147efc9037fef7207f62856f3f9a0b1b5a8
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398708"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97674938"
 ---
 # <a name="collaborate-in-workspaces"></a>ワークスペースで共同作業する
 
@@ -49,7 +49,7 @@ Power BI の "*ビジネス ユーザー*" は通常、**ビューアー** ロ�
 
 ### <a name="workspace-permissions-and-roles"></a>ワークスペースのアクセス許可とロール
 
-4 つのロールの機能は次のとおりです:管理者、メンバー、共同作成者、およびビューアー。 表示と操作を除く、これらの機能すべてに、Power BI Pro ライセンスが必要です。
+4 つのロールの機能は次のとおりです:管理者、メンバー、共同作成者、およびビューアー。 これらの機能のうち、*項目の表示と操作* を除くすべての機能には Power BI Pro ライセンスが必要です。
 
 [!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 

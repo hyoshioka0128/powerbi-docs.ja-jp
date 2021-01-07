@@ -9,19 +9,19 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 806198b783785a06562411b53f7bd6f644b16918
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a971e0d0b35b0a3988a1c10ea2b7b801830229d6
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388197"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721549"
 ---
 # <a name="create-a-report-from-an-excel-file-in-the-power-bi-service"></a>Power BI サービスで Excel ファイルからレポートを作成する
 [Power BI のレポート](../consumer/end-user-reports.md)を読んで、次は自分のレポートを作成しようと思われるでしょう。 レポートを作成するには、さまざまな方法があります。 この記事では、まず、Excel ファイルから Power BI サービスに基本的なレポートを作成します。 レポートの作成の基本を理解したら、最後の「[次の手順](#next-steps)」でより高度なレポートに関するトピックを確認してください。  
 
 ## <a name="prerequisites"></a>前提条件
 - [Power BI サービスにサインアップする](../fundamentals/service-self-service-signup-for-power-bi.md)。 
-- [小売りの分析のサンプル Excel ファイルをダウンロード](https://go.microsoft.com/fwlink/?LinkId=529778)し、それを OneDrive for Business またはローカルに保存します。
+- [小売りの分析のサンプル Excel ファイルをダウンロード](https://go.microsoft.com/fwlink/?LinkId=529778)し、それを自分のコンピューターまたは OneDrive for Business に保存します。
 
 ## <a name="import-the-excel-file"></a>Excel ファイルをインポートする
 この方法でのレポート作成は、ファイルと空白のレポート キャンバスから始まります。 小売りの分析のサンプル Excel ファイルでも同じようにできます。

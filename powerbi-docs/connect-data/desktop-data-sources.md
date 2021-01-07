@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 038d0fc4b136f89db290010289d24ee41454c9ea
-ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
+ms.openlocfilehash: 0d09871f9a47e9c8691ab3f955638c59b016d145
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97353337"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600555"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktop のデータ ソース
 
@@ -227,7 +227,7 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Automation Anywhere (ベータ)
 * Solver
 * Cherwell (ベータ)
-* Cognite Data Fusion (ベータ)
+* Cognite Data Fusion
 * FHIR
 * Information Grid (ベータ)
 * Jamf Pro (ベータ)

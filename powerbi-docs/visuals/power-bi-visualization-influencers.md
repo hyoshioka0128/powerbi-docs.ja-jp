@@ -10,12 +10,12 @@ ms.custom: video-fDb5zZ3xmxU
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f76203e00bb691abe9a4d212c930595d180798d8
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 4b41ea6310cb644aeae92db17f52680734f68803
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999130"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721572"
 ---
 # <a name="create-key-influencers-visualizations"></a>主要なインフルエンサーの視覚化を作成する
 
@@ -260,7 +260,7 @@ ID の数を見てみましょう。 各顧客の行には、関連付けられ�
 
 ![スクリーンショットには、このセクションで説明している 3 つの列を基準にした、住宅価格の視覚化が示されています。](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
-主要なインフルエンサーの視覚化を使用してメジャーを分析する方法の詳細については、次のチュートリアルをご覧ください。
+主要なインフルエンサーの視覚化を使用してメジャーを分析する方法の詳細については、次のビデオをご覧ください。 Power BI によりバックグラウンドで ML.NET を使用してどのようにデータが分析され、自然な方法で分析情報が表示されるかについては、「[Power BI で ML.NET を使用して主要なインフルエンサーを特定する](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)」を参照してください。
 
 <iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -410,3 +410,4 @@ Power BI を使用する同僚とレポートを共有するには、それぞ�
 ## <a name="next-steps"></a>次の手順
 - [Power BI の複合グラフ](power-bi-visualization-combo-chart.md)
 - [Power BI での視覚化の種類](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Power BI で ML.NET を使用して主要なインフルエンサーが特定される方法](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)

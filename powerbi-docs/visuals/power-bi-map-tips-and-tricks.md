@@ -11,12 +11,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3e0d944f8058ddc5dfb64c8f960bd354571bb23c
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 24ad57ca976fa7a7a859b1c0d07523895236787e
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999061"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721618"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Power BI マップの視覚エフェクトに関するヒントとテクニック
 
@@ -88,9 +88,9 @@ Power BI では、使っているデータセットに経度と緯度のフィ�
 
 地理階層を使用してドリルを行う場合、各ドリル ボタンの機能と、Bing マップに送信される内容を把握することが重要です。 
 
-* 右端のドリル ボタン (ドリル モード) ![ドリル モード アイコン](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) を使用すると、マップの場所を選択し、特定の場所を 1 レベルずつドリル ダウンすることができます。 たとえば、ドリル ダウンを有効にして北米をクリックすると、1 つ下位の階層、つまり北米の州にドリル ダウンされます。 ジオコーディングでは、Power BI から Bing マップに北米のみの国と州のデータが送信されます。  
+* 右端のドリル ボタン (ドリル モード) ![ドリル モード アイコン](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) を使用すると、マップの場所を選択し、特定の場所を 1 レベルずつドリル ダウンすることができます。 たとえば、ドリル ダウンを有効にして北米をクリックすると、1 つ下位の階層、つまり北米の州に移動します。 ジオコーディングでは、Power BI から Bing マップに北米のみの国と州のデータが送信されます。  
 * 左側には、他にも 2 つのドリル オプションがあります。 1 つ目のオプション ![1 つ目のドリル アイコン](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) は、一度にすべての場所で階層を次のレベルにドリルします。 たとえば、国を見ている状態でこのオプションを使用して次のレベル (州) に移動すると、Power BI には、すべての国の州データが表示されます。 ジオコーディングでは、Power BI から Bing マップにすべての場所の州データ (国データはなし) が送信されます。 このオプションは、階層の各レベルがその上のレベルと関係がない場合に便利です。 
-* 2 つ目のオプションである ![マップのドリルダウン](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) は、マップをクリックする必要がある点を除き、ドリル ダウンと似ています。  現在のレベルのコンテキストを記憶して、階層の次のレベルに展開されます。 たとえば、国を見ている状態でこのアイコンを選択すると、階層の次のレベル (州) にドリルダウンされます。 ジオコーディングでは、Power BI から各州とそれに関連する国のデータが送信されるので、Bing マップのジオコーディングがより正確になります。 多くのマップでは、このオプションまたは右端のドリル ダウン オプションを使用して、できるだけ多くの情報を Bing に送信して、正確な場所情報を取得します。 
+* 2 つ目のオプションである ![マップでのドリルダウン](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) は、マップをクリックする必要がある点を除き、ドリルダウンと似ています。  現在のレベルのコンテキストを記憶して、階層の次のレベルに展開されます。 たとえば、国を見ている状態でこのアイコンを選択すると、階層の次のレベル (州) にドリルダウンされます。 ジオコーディングでは、Power BI から各州とそれに関連する国のデータが送信されるので、Bing マップのジオコーディングがより正確になります。 多くのマップでは、このオプションまたは右端のドリルダウン オプションを使用して、できるだけ多くの情報を Bing に送信して、正確な場所情報を取得します。 
 
 ## <a name="next-steps"></a>次の手順
 [Power BI での視覚化のドリルダウン](../consumer/end-user-drill.md)

@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 12/16/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: f2eacca4571b8d00c8fc7e5ca5c6ef7935afaf29
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e239b95fe18ba9ddfad399c5b53b10a3f1f4a4c2
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419500"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97674892"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktop の新機能
 
-## <a name="november-2020-update-2872610"></a>2020 年 11 月の更新 (2.87.261.0)
+## <a name="december-2020-update-2883210"></a>2020 年 12 月の更新 (2.88.321.0)
 
-11 月の Power BI Desktop の更新は、新機能や改善された機能がまとめて入った、盛りだくさんな内容となっています。 
+12 月の Power BI Desktop の更新プログラムを適用すると、雪明りに満ちた小道のように明るい気分になります。 
 
 Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルと Power BI サービスの更新プログラムの詳細については、それぞれの新機能に関する記事をご覧ください。
 
@@ -46,30 +46,29 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 以下の更新は、今月の Power BI Desktop の新しい機能です。
 
-
 ### <a name="reporting"></a>レポート
-* 新しいフィールド リスト (プレビュー) [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=15)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467053) 
-* 新しいモデル ビュー (プレビュー) [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=61)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467054) [[記事]](../create-reports/power-bi-personalize-visuals.md)
-* 一般公開を開始したすべてのフィルターの適用 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=98)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467055)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* ビジュアル ズーム スライダー [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=160)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467056)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* マップのビジュアルに拡張された、データ ポイントの四角形の選択 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=185)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467057)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* Web 接続に関する証明書失効の確認 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=292)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467058)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* ページ分割されたレポートの更新 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=292)   [[動画]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467059)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* DirectQuery for Power BI datasets and Azure Analysis Services (プレビュー) [[ビデオ]](https://youtu.be/68YvRs49VZM?t=33)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831296)   [[記事]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+* スモール マルチプル (プレビュー) [[ビデオ]](https://youtu.be/68YvRs49VZM?t=378)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831297)
+* Power BI Desktop (プレビュー) のデータ保護の秘密度ラベル [[ビデオ]](https://youtu.be/68YvRs49VZM?t=656)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831298) 
+* 四角形の選択データ ポイント制限の引き上げ [[ビデオ]](https://youtu.be/68YvRs49VZM?t=734)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831299) 
+* モバイル レイアウト ビューで使用できるようになった [選択] ペイン [[ビデオ]](https://youtu.be/68YvRs49VZM?t=757)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831300) 
+* Analysis Services ソースのページの自動更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=789)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831301) 
 
-### <a name="analytics"></a>分析
-* 異常検出 (プレビュー) [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=199)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467061) 
-* Q&A で部分一致データ値のサポートを開始 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=438)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467062)  [[記事]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+
+### <a name="data-preparation"></a>データの準備
+* Power Query とデータフローの変更 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=851)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831302)
 
 ### <a name="data-connectivity"></a>データ接続
-* Hive LLAP コネクタの一般提供開始 [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=461)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467064)
-* 新しいデータ コネクタ - Actian、Anaplan、Starburst Presto [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=487)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467065)
+* Microsoft Dataverse コネクタ [[ビデオ]](https://youtu.be/68YvRs49VZM?t=886)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831566)
+* Azure Time Series Insights の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=919)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831305)
+* SurveyMonkey の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=926)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831568)
+* Cognite の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=933)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831307)
 
 
 ### <a name="visuals"></a>視覚化
-* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/DT_tOas5YIo?t=688)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467072)
+* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/68YvRs49VZM?t=1330)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831588)
 
-
-これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/)に関するブログ投稿を参照してください。
+これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/)に関するブログ投稿を参照してください。
 
 
 > [!NOTE]
@@ -79,7 +78,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 ### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
 次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
 
-> [!VIDEO https://www.youtube.com/embed/DT_tOas5YIo]
+> [!VIDEO https://www.youtube.com/embed/68YvRs49VZM]
 
 ## <a name="more-videos"></a>他のビデオ
 

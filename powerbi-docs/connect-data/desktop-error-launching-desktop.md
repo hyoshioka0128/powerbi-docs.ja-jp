@@ -7,20 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/14/2020
+ms.date: 11/14/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8d33973f1a11050d104399c98866fdae0ffb1f8a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 62b3c9bb10cb47df0d21eb05e381c5c4784b3106
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404895"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600233"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Power BI Desktop の起動に関するトラブルシューティング
 
-Power BI Desktop では、以前のバージョンの *Power BI オンプレミス データ ゲートウェイ* をインストールして実行していたユーザーが Power BI Desktop を開くことができないことがあります。これは、Power BI オンプレミス データ ゲートウェイによってローカル コンピューター上の名前付きパイプに設定された管理ポリシー制限が原因で発生します。
+この記事では、Power BI を開くことができないさまざまな状況を解決する方法について説明します。 
+
+## <a name="resolve-issues-with-opening-encrypted-pbix-files"></a>暗号化された PBIX ファイルを開くときの問題を解決する
+
+Information Protection がサポートされていない Power BI Desktop バージョンを使用して、暗号化された PBIX ファイルを開くことはできません。
+
+Power BI Desktop を引き続き使用する必要がある場合は、Information Protection がサポートされているバージョンに更新して解決することをお勧めします。 [最新バージョンの Power BI Desktop](https://www.microsoft.com/download/confirmation.aspx?id=58494) をダウンロードできます (このリンクは、インストール用実行可能ファイルを直接ダウンロードするためのリンクです)。 最新バージョンの Power BI Desktop を使用すると、Information Protection がサポートされるようになり、暗号化された任意の PBIX ファイルを解読して開くことができます。
+
+###
 
 ## <a name="resolve-issues-with-the-on-premises-data-gateway-and-power-bi-desktop"></a>オンプレミス データ ゲートウェイと Power BI Desktop での問題を解決する
+
+Power BI Desktop では、以前のバージョンの *Power BI オンプレミス データ ゲートウェイ* をインストールして実行していたユーザーが Power BI Desktop を開くことができないことがあります。これは、Power BI オンプレミス データ ゲートウェイによってローカル コンピューター上の名前付きパイプに設定された管理ポリシー制限が原因で発生します。
 
 オンプレミス データ ゲートウェイに関する問題を解決して、Power BI Desktop を開くことができるようにするには、3 つのオプションがあります。
 

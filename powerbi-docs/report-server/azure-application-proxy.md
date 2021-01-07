@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 07/28/2020
-ms.openlocfilehash: 795b2e7e1b9ef0c705f7240e9a20a5c2da2f81a3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/18/2020
+ms.openlocfilehash: be256a0ed861ae7ebc26fe4e2a74e0d597ef5542
+ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414923"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97699323"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Azure アプリケーション プロキシを使用して Power BI Report Server を構成する
 
@@ -260,6 +260,9 @@ KCD を構成するには、コネクタ コンピューターごとに以下の
 ### <a name="configure-the-application-registration"></a>アプリケーションの登録を構成する
 
 Power BI モバイル アプリから Power BI Report Server に接続してアクセスできるようにするには、この記事で前述した「[Azure AD アプリケーション プロキシを介して公開する](#publish-through-azure-ad-application-proxy)」で自動的に作成されたアプリケーションの登録を事前に構成しておく必要があります。
+
+> [!NOTE]
+> Power BI モバイル アプリが承認されたクライアント アプリであることを必須とする条件付きアクセス ポリシーを使用する場合、Azure AD アプリケーション プロキシを使用して Power BI モバイル アプリを Power BI Report Server に接続することはできません。
 
 1. Azure Active Directory の **[概要]** ページで、 **[アプリの登録]** を選択します。
 2. **[すべてのアプリケーション]** タブで、Power BI Report Server 用に作成したアプリケーションを検索します。

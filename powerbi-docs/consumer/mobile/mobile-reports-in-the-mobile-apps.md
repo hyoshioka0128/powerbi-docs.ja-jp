@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/12/2020
-ms.openlocfilehash: 5d361a749f947f8d45b052a8a2b6455007745d20
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/17/2020
+ms.openlocfilehash: 944f840133fd2ae8fee558e26d44fa31456bd565
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413083"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675394"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリのレポートを調べる
 適用対象:
@@ -155,6 +155,29 @@ Power BI モバイル アプリでは、レポートの作成者が定義した�
 ![ブックマーク ビュー](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Power BI サービスでのブックマークについてさらに学習してください](../end-user-bookmarks.md)。
+
+## <a name="investigate-anomalies-in-time-series-data"></a>時系列データの異常を調査する
+
+[異常検出](https://powerbi.microsoft.com/blog/anomaly-detection-preview/)は、時系列データを含む折れ線グラフの異常 (つまり、想定される範囲外の値) を自動的に検出する Power BI の機能です。 さらに、異常値の原因について、説明の強さに従ってランク付けされた、考えられる説明が提供されます。 異常検出は、レポート作成者がグラフで有効にしている場合に使用できます。 
+
+時系列データを含むグラフで異常検出が有効なレポートを表示すると、Power BI サービスや Power BI Desktop の場合と同じように、グラフに示された異常を確認できます。 
+
+![異常を示す折れ線グラフのスクリーンショット。](media/mobile-reports-in-the-mobile-apps/mobile-detected-anomalies.png)
+
+追加情報と説明を表示するには、[Anomalies]\(異常\) パネルを開く必要があります。 これを行うには、次のようないくつかの方法があります。
+* グラフの異常をタップします。 
+* **[その他のオプション (...)]** をタップし、表示されるメニューから **[Show anomalies]\(異常の表示\)** を選択します。    
+* データ ポイントをタップしてツールヒントを表示し、 **[Anomalies]\(異常\)** を選択します。
+
+次の画像は、[Anomalies]\(異常\) パネルを開く 3 つの方法を示しています。
+
+![[Anomalies]\(異常\) パネルを開く方法を示すスクリーンショット。](media/mobile-reports-in-the-mobile-apps/mobile-opening-anomalies-panel.png)
+
+[Anomalies]\(異常\) パネルには、検出された異常に関する自然言語の説明と、その説明の強さで並べ替えられた関連する要因が表示されます。 関連するすべての要素とその長所を確認するには、右から左にスワイプします。
+
+![異常の説明を表示するために右から左にスワイプする操作を示すスクリーンショット。](media/mobile-reports-in-the-mobile-apps/mobile-swipe-to-see-explanations.png)
+
+[Anomalies]\(異常\) パネルが表示されている間、その下にあるモバイル レポートをスクロールできるので、引き続きレポートを操作し、さまざまな角度からデータの異常を詳しく調べることができます。 操作が行われるごとに、Power BI によって異常検出が再実行され、スコープ内のデータの異常が検出されます。 
 
 ## <a name="refresh-your-data"></a>データを更新する
 

@@ -1,63 +1,56 @@
 ---
 title: Sales & Marketing アプリをインストールして Power BI サービスで使用する
-description: Power BI では、アプリが関連のあるダッシュボードやレポートをまとめて 1 つの場所に表示します。 Power BI アプリ マーケットプレースから Sales および Marketing アプリをインストールします。
+description: Power BI では、アプリが関連のあるダッシュボードやレポートをまとめて 1 つの場所に表示します。 Power BI AppSource から Sales & Marketing アプリをインストールします。
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 12/22/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: ba9b0f461d609cea2efd6d737f86b00554e9c0f1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1cc67af5a545f18867fa3c47ebf2568c687dcef2
+ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391762"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97745026"
 ---
 # <a name="install-and-use-the-sample-sales-and-marketing-app-in-the-power-bi-service"></a>サンプルの Sales & Marketing アプリをインストールして Power BI サービスで使用する
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[Power BI コンテンツを取得する方法の基本について理解](end-user-app-view.md)したので、Microsoft AppSource を使用して Sales & Marketing アプリを取得してみましょう。 
+[Power BI コンテンツを取得する方法の基本について理解](end-user-app-view.md)したので、Microsoft AppSource を使用して Sales & Marketing テンプレート アプリを取得してみましょう。 Sales & Marketing テンプレート アプリには、Power BI サービスを調べるために使用できるサンプル データが含まれています。 この特定のアプリには、1 つのダッシュボードと複数のレポート ページがあります。 
 
+> [!IMPORTANT]
+> Microsoft AppSource からこのアプリをインストールするには、**Power BI Pro** ライセンスを持っている必要があります。  詳細については、[ライセンス](end-user-license.md)に関するページを参照してください。
 
 ## <a name="get-the-app-from-microsoft-appsource"></a>Microsoft AppSource からアプリを取得する
 
 1. [https://appsource.microsoft.com](https://appsource.microsoft.com) を開きます。
 
-   ![AppSource サイトを開く  ](./media/end-user-app-marketing/power-bi-appsource.png)
+   ![AppSource サイトを開く  ](./media/end-user-app-marketing/power-bi-appsource-start.png)
 
-1. 検索ボックスに「**Marketing**」と入力し、 **[製品で絞り込む] の [Power BI アプリ]** の横にあるチェック ボックスをオンにします。 
+1. 検索ボックスに「**Microsoft サンプル**」と入力し、**Microsoft sample - Sales & Marketing** を選択します。 
 
-    ![アプリの取得  ](./media/end-user-app-marketing/power-bi-search-appsource.png)
+    ![アプリの取得  ](./media/end-user-app-marketing/power-bi-appsource-search.png)
 
+1. 必要に応じて、概要とレビューを読み、イメージを確認します。  次に、 **[今すぐ入手する]** を選択します。
 
-1. **[Microsoft Sample - Sales & Marketing]** のアプリ タイルを選択します。 必要に応じて、概要とレビューを読み、イメージを確認します。  次に、 **[今すぐ入手する]** を選択します。
-
-   ![AppSource でのアプリのオファリング](./media/end-user-app-marketing/power-bi-app-offering.png)
+   ![AppSource でのアプリのオファリング](./media/end-user-app-marketing/power-bi-app-offer.png)
 
 1. このアプリをインストールすることを確認します。
 
-   ![このアプリをインストールしますか?](./media/end-user-app-marketing/power-bi-installs.png)
+   ![このアプリをインストールしますか?](./media/end-user-app-marketing/power-bi-install-confirm.png)
 
-5. アプリがインストールされると、Power BI サービスに成功のメッセージが表示されます。 **[アプリへ移動]** を選択して、アプリを開きます。 デザイナーでアプリを作成した方法に応じて、アプリのダッシュボードまたはアプリのレポートのいずれかが表示されます。
-
-    ![アプリが正常にインストールされました ](./media/end-user-app-marketing/power-bi-app-ready.png)
-
-    **[アプリ]** を選択し、 **[Sales & Marketing]** アプリ タイルを選択することで、アプリのコンテンツ リストからアプリを直接開くこともできます。
-
-    ![Power BI のアプリ](./media/end-user-app-marketing/power-bi-sales-marketing.png)
+5. アプリがインストールされると、Power BI サービスに成功のメッセージが表示されます。 **[アプリに移動]** を選択します。 または、 **[アプリ]** キャンバスからアプリ自体を選択します。 デザイナーでアプリを作成した方法に応じて、アプリのダッシュボードまたはアプリのレポートのいずれかが表示されます。
 
 
-6. 独自のデータに接続するか、サンプル データを使用して探索するか、新しいアプリをカスタマイズして共有するかを選択します。 Microsoft のサンプル アプリを選択したので、探索を開始しましょう。 
+    ![Power BI のアプリ](./media/end-user-app-marketing/power-bi-marketing.png)
 
-    ![スクリーンショットでは、[新しいアプリを開始する] の [サンプル データで探索する] オプションが赤枠で強調されています。](./media/end-user-app-marketing/power-bi-explore-app.png)
+7.  このテンプレート アプリは、ダッシュボードで開くように設定されています。 アプリの "*デザイナー*" によって、代わりにレポート ページの 1 つが開くように、アプリが設定されている可能性があります。  
 
-7.  新しいアプリがダッシュボードで開かれます。 アプリ "*デザイナー*" によって、代わりにレポートを開くように、アプリが設定されている可能性があります。  
-
-    ![スクリーンショットは、アプリのダッシュボードを示しています。](./media/end-user-app-marketing/power-bi-app-new.png)
+    ![スクリーンショットは、アプリのダッシュボードを示しています。](./media/end-user-app-marketing/power-bi-dashboard.png)
 
 
 

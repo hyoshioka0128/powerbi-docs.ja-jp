@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.custom: contperfq1
-ms.date: 10/21/2020
-ms.openlocfilehash: c9ae23a88bd557681ca89e541f082a69d449ed8c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: contperf-fy21q1
+ms.date: 12/28/2020
+ms.openlocfilehash: 4bb709e41698bc0dc32341f517593717f64f9b6d
+ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415015"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805213"
 ---
 # <a name="understand-the-deployment-process"></a>デプロイ プロセスを理解する
 
@@ -149,13 +149,21 @@ ms.locfileid: "96415015"
 
 * 保証の設定
 
-## <a name="incremental-refresh"></a>増分更新
+## <a name="supported-dataset-features"></a>サポートされているデータセットの機能
+
+配置パイプラインでは、Power BI データセットの多くの機能がサポートされています。 このセクションでは、配置パイプラインのエクスペリエンスを拡張できる Power BI データセットの 2 つの機能について説明します。
+
+* [増分更新](#incremental-refresh)
+
+* [複合モデル](#composite-models)
+
+### <a name="incremental-refresh"></a>増分更新
 
 デプロイ パイプラインでは[増分更新](../admin/service-premium-incremental-refresh.md)がサポートされています。この機能により、大規模なデータセットのより高速かつ信頼性の高い更新が可能になり、使用量も抑えられます。
 
 デプロイ パイプラインを使用すると、データとパーティションの両方を保持しながら、増分更新を使用してデータセットを更新できます。 データセットをデプロイすると、ポリシーが一緒にコピーされます。
 
-### <a name="activating-incremental-refresh-in-a-pipeline"></a>パイプラインで増分更新をアクティブにする
+#### <a name="activating-incremental-refresh-in-a-pipeline"></a>パイプラインで増分更新をアクティブにする
 
 増分更新を有効にするには、[それを Power BI Desktop でオンにして](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh)から、データセットを発行します。 発行した後、増分更新ポリシーはパイプライン全体で類似しており、Power BI Desktop でのみ作成できます。
 
@@ -169,7 +177,7 @@ ms.locfileid: "96415015"
 
 4. "*テスト*" ステージで加えた変更を確認し、検証した後で、"*運用*" ステージにデプロイします。
 
-### <a name="usage-examples"></a>使用例
+#### <a name="usage-examples"></a>使用例
 
 次に、増分更新をデプロイ パイプラインと統合する方法の例をいくつか示します。
 
@@ -181,7 +189,7 @@ ms.locfileid: "96415015"
 
 * 既存のパイプラインの一部であるワークスペースに増分更新を使用するデータセットを発行します。
 
-### <a name="limitations-and-considerations"></a>制限事項と考慮事項
+#### <a name="limitations-and-considerations"></a>制限事項と考慮事項
 
 増分更新の場合、デプロイ パイプラインでサポートされるのは[拡張データセット メタデータ](../connect-data/desktop-enhanced-dataset-metadata.md)を使用するデータセットのみです。 Power BI Desktop の 2020 年 9 月リリース以降、Power BI Desktop で作成または変更されたすべてのデータセットでは、拡張データセット メタデータが自動的に実装されます。
 
@@ -194,6 +202,24 @@ ms.locfileid: "96415015"
 * 増分更新が有効になっているテーブルの非計算列の名前を変更する。
 
 列の追加、列の削除、計算列の名前の変更など、その他の変更は許可されています。 ただし、変更によって表示内容が影響を受ける場合は、更新した後に変更が表示されます。
+
+### <a name="composite-models"></a>複合モデル
+
+[複合モデル](../transform-model/desktop-composite-models.md)使用すると、複数のデータ接続を含むレポートを設定できます。
+
+複合モデル機能を使用すると、Power BI データセットを Azure Analysis Services などの外部データセットに接続できます。 詳細については、[Power BI データセットおよび Azure Analysis Services 用の DirectQuery の使用](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)に関するページを参照してください。
+
+配置パイプラインで複合モデルを使用すると、データセットをパイプラインの外部にある別の Power BI データセットに接続できます。  
+
+#### <a name="limitations"></a>制限事項
+
+次の複合モデル接続はサポートされていません。
+
+* 同じワークスペース内に存在するデータセットの接続。
+
+* 異なるパイプラインに存在するデータセットの接続。
+
+* 同じパイプラインに存在するデータセットの接続。 
 
 ## <a name="deploying-power-bi-apps"></a>Power BI アプリの配置
 

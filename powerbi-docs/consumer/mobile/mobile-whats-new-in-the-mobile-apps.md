@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/01/2020
-ms.openlocfilehash: 81a387d2f87e857cb56dcbc1fb22c8da72bbd27e
-ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
+ms.date: 12/17/2020
+ms.openlocfilehash: 7779976e7897b31e5f3dde2c4c3306c909ecf0f0
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96502089"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675581"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -26,8 +26,17 @@ ms.locfileid: "96502089"
 >**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="december-2020"></a>2020 年 12 月
-### <a name="weve-added-dark-mode-to-power-bi-mobile-android"></a>Power BI モバイルにダーク モードが追加されました (Android)
+### <a name="weve-added-anomaly-detection-to-the-mobile-apps"></a>モバイル アプリに異常検出を追加しました
+レポート作成者がレポートの視覚化に異常検出を設定している場合、データの外れ値 (つまり、異常) が原因でデータに予期しない高いピークまたは低い降下が発生しているかどうかを確認できます。 [詳細情報](mobile-reports-in-the-mobile-apps.md#investigate-anomalies-in-time-series-data)
 
+![異常検出のスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/mobile-anomaly-detection.png)
+
+### <a name="easily-find-your-orgs-endorsed-content"></a>組織の承認済みコンテンツを簡単に見つける
+Power BI サービスで[宣伝または認定されている](../../collaborate-share/service-endorsement-overview.md)コンテンツは、アプリ内で、バッジを使用してタグ付けされるようになりました。 レポート作成者は、コンテンツを宣伝して、使用する準備ができていることを示すか (宣伝)、コンテンツを認定し、組織によって承認されていることを示します (認定)。
+
+![モバイルのレポート情報にある認定済みレポートのスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-certified-badge.png)
+
+### <a name="weve-added-dark-mode-to-power-bi-mobile-android"></a>Power BI モバイルにダーク モードが追加されました (Android)
 Android デバイス用 Power BI モバイル アプリで、新しいダーク モードをお試しください。 ダーク モードでは、暗い背景に明るいテキストが表示され、画面の明るさが下がり、内容が見やすくなります。 アプリの表示設定でテーマを切り替えることができます。 [詳細情報](mobile-apps-dark-mode.md)
 
 ![Android 用 Power BI モバイル アプリのダーク モードのスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
@@ -433,7 +442,7 @@ IT 管理者は MDM ツールを使用し、レポート サーバーへの Powe
 
 #### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI for Mixed Reality アプリ (プレビュー)
 
-Power BI for Mixed Reality アプリが Microsoft ストアに登場しました。 仮想世界に専念した状態でダッシュボードとレポートを表示するか、あるいは使用環境のコンテキストで特定の場所にダッシュボードとレポートを配置して表示します。 コンテキストのために新しい「[Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss)」(Hololens での Power BI の紹介) のビデオを見るか、新しい [Power BI for Mixed Reality](mobile-mixed-reality-app.md) に関する記事をご覧ください。
+Power BI for Mixed Reality アプリが Microsoft ストアに登場しました。 仮想世界に専念した状態でダッシュボードとレポートを表示するか、あるいは使用環境のコンテキストで特定の場所にダッシュボードとレポートを配置して表示します。 コンテキストのために新しい「[HoloLens での Power BI の紹介](https://www.youtube.com/watch?v=J_X_nOFUBss)」のビデオをご覧になるか、新しい [Power BI for Mixed Reality](mobile-mixed-reality-app.md) に関する記事を参照してください。
 
 
 ### <a name="april-2018"></a>2018 年 4 月

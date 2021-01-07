@@ -1,18 +1,18 @@
 ---
 title: Power BI 埋め込み分析のレポートのエクスポート API
-description: 埋め込まれた Power BI レポートをエクスポートする方法について説明します
+description: 埋め込み Power BI レポートをエクスポートして、Power BI Embedded 分析の埋め込み BI エクスペリエンスを向上させる方法について説明します
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/01/2020
-ms.openlocfilehash: a0aa5839272529a0217ea4a4355342c51d55a6c3
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.date: 12/28/2020
+ms.openlocfilehash: da0f5f155552a8a53b53789f3bfb6ebe839367c5
+ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098285"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805144"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI レポートをファイルにエクスポートする (プレビュー)
 
@@ -30,7 +30,7 @@ ms.locfileid: "97098285"
 
 * **印刷に送信ボタン** - アプリケーションで、クリックされたらエクスポート ジョブをトリガーするボタンを作成します。 ジョブでは表示されているレポートを .pdf または .pptx としてエクスポートでき、完了したら、ユーザーはファイルをダウンロードとして受け取ることができます。 ブックマークを使用すると、構成済みのフィルター、スライサー、追加の設定など、レポートを特定の状態でエクスポートできます。 API は非同期であるため、ファイルが使用可能になるまでに時間がかかることがあります。
 
-* **メールの添付ファイル** - .pdf レポートを添付して、設定された間隔で自動的にメールを送信します。 このシナリオは、週単位のレポートを役員に自動的に送信する場合に便利です。
+* **メールの添付ファイル** - .pdf レポートを添付して、設定された間隔で自動的にメールを送信します。 このシナリオは、週単位のレポートを役員に自動的に送信する場合に便利です。 詳細については、「[Power Automate を使用して、Power BI レポートをエクスポートし、電子メールで送信する](../../collaborate-share/service-automate-power-bi-report-export.md)」を参照してください
 
 ## <a name="using-the-api"></a>API を使用する
 
@@ -64,6 +64,23 @@ API は非同期です。 [exportToFile](/rest/api/power-bi/reports/exporttofile
 
 >[!NOTE]
 >[個人用ブックマーク](../../consumer/end-user-bookmarks.md#personal-bookmarks)と[永続的フィルター](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/)はサポートされていません。
+
+### <a name="filters"></a>フィルター
+
+[PowerBIReportExportConfiguration](/rest/api/power-bi/reports/exporttofile#powerbireportexportconfiguration) の `reportLevelFilters` を使用すると、フィルター処理された条件でレポートをエクスポートできます。
+
+フィルター処理されたレポートをエクスポートするには、フィルターとして使用する [URL クエリ文字列パラメーター](../../collaborate-share/service-url-filters.md)を、[ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter) に挿入します。 文字列を入力する場合は、URL クエリ パラメーターの `?filter=` 部分を削除する必要があります。
+
+次の表では、`ExportFilter` に渡すことができる文字列の構文の例を示します。
+
+|Assert    |構文    |例    |
+|---|----|----|----|
+|フィールド内の値    |<テーブル>/<フィールド> eq '<値>'    |Store/Territory eq 'NC'    |
+|フィールド内の複数の値    |<テーブル>/<フィールド> in ('<値 1>', '<値 2>')     |Store/Territory in ('NC', 'TN')    |
+|あるフィールド内の個別の値と、別のフィールド内の異なる個別の値    |<テーブル>/<フィールド 1> eq '<値 1>' and <テーブル>/<フィールド 2> eq '<値 2>'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
+
+>[!NOTE]
+>`ReportLevelFilters` に含めることができる [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter) は 1 つだけです。
 
 ### <a name="authentication"></a>認証
 
@@ -142,7 +159,8 @@ private async Task<string> PostExportRequest(
     Guid reportId,
     Guid groupId,
     FileFormat format,
-    IList<string> pageNames = null /* Get the page names from the GetPages REST API */)
+    IList<string> pageNames = null, /* Get the page names from the GetPages REST API */
+    string urlFilter = null)
 {
     var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
     {
@@ -153,6 +171,9 @@ private async Task<string> PostExportRequest(
         // Note that page names differ from the page display names
         // To get the page names use the GetPages REST API
         Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+        // ReportLevelFilters collection needs to be instantiated explicitly
+        ReportLevelFilters = !string.IsNullOrEmpty(urlFilter) ? new List<ExportFilter>() { new ExportFilter(urlFilter) } : null,
+
     };
 
     var exportRequest = new ExportReportRequest
@@ -263,7 +284,8 @@ private async Task<ExportedFile> ExportPowerBIReport(
     FileFormat format,
     int pollingtimeOutInMinutes,
     CancellationToken token,
-    IList<string> pageNames = null  /* Get the page names from the GetPages REST API */)
+    IList<string> pageNames = null,  /* Get the page names from the GetPages REST API */
+    string urlFilter = null)
 {
     const int c_maxNumberOfRetries = 3; /* Can be set to any desired number */
     const int c_secToMillisec = 1000;
@@ -273,7 +295,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
         int retryAttempt = 1;
         do
         {
-            var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
+            var exportId = await PostExportRequest(reportId, groupId, format, pageNames, urlFilter);
             var httpMessage = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
             export = httpMessage.Body;
             if (export == null)
@@ -339,3 +361,6 @@ private async Task<ExportedFile> ExportPowerBIReport(
 
 > [!div class="nextstepaction"]
 >[組織向けの埋め込み](embed-sample-for-your-organization.md)
+
+> [!div class="nextstepaction"]
+>[Power Automate を使用して、Power BI レポートをエクスポートし、電子メールで送信する](../../collaborate-share/service-automate-power-bi-report-export.md)

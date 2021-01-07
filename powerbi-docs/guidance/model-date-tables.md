@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.openlocfilehash: 9040fb54e51dfeecad853e5ba980f423ab48e908
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a2616b5f77a03056de03b213369d55e9b590b1b6
+ms.sourcegitcommit: 7599622381f35a161bfc54726675ed3c9cf13816
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417844"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97827574"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Power BI Desktop で日付テーブルを作成する
 
@@ -54,10 +54,7 @@ DirectQuery モデルを開発していて、データ ソースに日付テー�
 
 ## <a name="generate-with-power-query"></a>Power Query を使用して生成する
 
-Power Query を使用して日付テーブルを生成できます。 その方法を示す 2 つのブログ エントリを次に示します。
-
-- [Creating a Date Dimension with a Power Query Script (Power Query スクリプトを使用した日付ディメンションの作成)](https://www.mattmasson.com/2014/02/creating-a-date-dimension-with-a-power-query-script/) (Matt Masson)
-- [Generating A Date Dimension Table In Power Query (Power Query を使用した日付ディメンション テーブルの生成)](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) (Chris Webb)
+Power Query を使用して日付テーブルを生成できます。 詳細については、Chris Webb のブログ エントリ「[Power Query での日付ディメンション テーブルの生成](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/)」を参照してください。
 
 > [!TIP]
 > 組織内にデータ ウェアハウスやその他の一貫した定義がない場合は、Power Query を使用して[データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)を発行することを検討します。 次に、すべてのデータ モデル管理者をデータフローに接続し、モデルに日付テーブルを追加します。 このデータフローは、組織内の時間に関する 1 つの信頼できる情報源になります。

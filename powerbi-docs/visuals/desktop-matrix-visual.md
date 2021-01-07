@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33e0ee83815c739d8201fad995d84c7ee397bc6c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 401d8905c4fe2ca0f27a8f0c58bd756c87a10456
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398133"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721503"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Power BI でマトリックスの視覚エフェクトを作成する
 
@@ -65,13 +65,13 @@ ms.locfileid: "96398133"
 > Analysis Services 多次元モデルに基づいてレポートを作成する場合、モデルで既定のメンバー機能が使用されていると、展開と折りたたみに関する特別な考慮事項がいくつか生じます。 詳細については、「[Power BI で多次元モデルを操作する](../connect-data/desktop-default-member-multidimensional-models.md)」を参照してください。
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>マトリックス ビジュアルでドリルダウンを使用する
-マトリックス ビジュアルを使って、これまで使用できなかった興味深いさまざまなドリルダウン操作を行うことができます。 また、行、列、さらには個々のセクションやセルを使用して、ドリルダウンすることもできます。 これらのそれぞれのしくみを見てましょう。
+マトリックス視覚化を使用すると、これまでは使用できなかった興味深いさまざまなドリルダウン操作を行うことができます。 また、行、列、さらには個々のセクションやセルを使用して、ドリルダウンすることもできます。 これらのそれぞれのしくみを見てましょう。
 
 ### <a name="drill-down-on-row-headers"></a>行ヘッダーでのドリルダウン
 
 [視覚化] ウィンドウで、 **[フィールド]** の **[行]** セクションに複数のフィールドを追加する場合は、マトリックス ビジュアルの行のドリルダウンを有効にします。 これは階層の作成と似ています。これにより、その階層からドリルダウン (およびバックアップ) して、各レベルのデータを分析できます。
 
-次の図の **[行]** セクションには、"*営業段階*" と "*営業案件サイズ*" が含まれ、ドリルスルーできる行にグループ (または階層) が作成されます。
+次の図の **[行]** セクションには *Sales stage* と *Opportunity size* が含まれており、ドリルして詳細を表示できるグループ (または階層) が行に作成されます。
 
 ![選択されている行を示すフィルター カード](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "96398133"
 
 ![ドリル コントロールが強調表示されたマトリックス](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-他のビジュアルのドリルと展開の動作と同じように、そのボタンを選択すると、階層をドリルダウン (またはバックアップ) できます。 この場合、次の図のように、"*営業段階*" から "*営業案件サイズ*" にドリルダウンできます。ここでは、1 レベル ドリルダウン アイコン (熊手) が選択されています。
+他のビジュアルのドリルと展開の動作と同じように、そのボタンを選択すると、階層をドリルダウン (またはバックアップ) できます。 この場合、次の図のように、*Sales stage* から *Opportunity size* にドリルダウンできます。ここでは、**1 レベル ドリルダウン** アイコン (熊手) が選択されています。
 
 ![熊手が強調表示されたマトリックス](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 

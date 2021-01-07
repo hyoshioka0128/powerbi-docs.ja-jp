@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/14/2020
+ms.date: 11/14/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: c83b7d1e52a0d443c52348bec91f935e288830d4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1a196d149a6519f9bcad6bd70ef02d62ef16f69b
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388680"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600670"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Power BI サービスから Power BI Desktop にレポートをダウンロードする (プレビュー)
       
@@ -54,7 +54,7 @@ Power BI サービスから .pbix ファイルをダウンロードすること�
 * レポートが Power BI Desktop を使用して作成され、Power BI サービスに *発行* されているか、.pbix ファイルが Power BI サービスに *アップロード* されている必要があります。
 * レポートは、2016 年 11 月 23 日以降に更新または発行されている必要があります。 それ以前に発行されたレポートはダウンロードできません。
 * この機能は、Power BI サービスでもともと作成されたレポートやコンテンツ パックには使用できません。
-* ダウンロードしたファイルを開くときは常に最新バージョンの Power BI Desktop を使用してください。 最新バージョンではない Power BI Desktop では、ダウンロードした .pbix ファイルを開くことができない場合があります。
+* ダウンロードしたファイルを開くときは常に最新バージョンの Power BI Desktop を使用してください。 最新バージョンではない Power BI Desktop では、ダウンロードした .pbix ファイルを開くことができない場合があります。 たとえば、Information Protection がサポートされていないバージョンの Desktop を使用して、ダウンロードされた .pbix ファイルを開くことはできません。
 * データをダウンロードする機能を管理者が無効にしている場合、この機能は Power BI サービスに表示されません。
 * 増分更新を使用しているデータセットは .pbix ファイルにダウンロードできません。
 * [大規模なモデル](../admin/service-premium-large-models.md)に対して有効になっているデータセットは、.pbix ファイルにダウンロードできません。

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/13/2020
+ms.date: 12/16/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e177eb9e124a26e62d392b7dd97562c11c8f9d5a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 432db58636866afe0dfda9e77e989f8469b66e34
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411036"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600417"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Power BI Desktop から Power BI サービスのデータセットに接続する
 
@@ -107,7 +107,7 @@ Power BI サービス ライブ接続を利用するとき、注意すべきい�
 
 * 公開されたデータセットに Power BI サービス ライブ接続を使って接続できるのは、データセットに対してビルド アクセス許可を持つユーザーだけです。
 * 無料ユーザーに表示されるのは、 **[マイ ワークスペース]** 内のデータセットと Premium ベース ワークスペース内のデータセットのみです。
-* この接続はライブ接続であるため、左側のナビゲーションとモデリングは無効です。 各レポートで接続できるデータセットは 1 つだけです。 この動作は、*SQL Server Analysis Services* に接続したときの動作に似ています。
+* この接続はライブ接続であるため、左側のナビゲーションとモデリングは無効です。 各レポートで接続できるデータセットは 1 つだけです。 この動作は、*SQL Server Analysis Services* に接続したときの動作に似ています。 ただし、Power BI の新機能を使用してこれを可能にする方法が、次の記事で説明されています。「[Power BI データセットおよび Azure Analysis Services 用の DirectQuery を使用する (プレビュー)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)」を参照してください
 * この接続はライブ接続であるため、行レベルのセキュリティ (RLS) とその他のそのような接続動作が実施されます。 これは、SQL Server Analysis Services に接続したときと同じです。
 * 所有者が元の共有 *.pbix* ファイルを変更すると、Power BI サービスで共有されているデータセットおよびレポートが上書きされます。 そのデータセットに基づくレポートは上書きされませんが、データセットに加えられた変更はいずれもレポートに反映されます。
 * ワークスペースのメンバーは、もともと共有されていたレポートを置き換えることはできません。 置き換えようとすると、ファイルの名前を変更して発行するよう求める警告が表示されます。
@@ -116,3 +116,18 @@ Power BI サービス ライブ接続を利用するとき、注意すべきい�
 * "*自分の所属組織*" からのコンテンツ パックの場合、コピーした後は、サービスで作成されたレポートや、ライブ接続でのコンテンツ パックのコピーの一部として作成されたレポートを、置き換えることはできません。 置き換えようとすると、ファイルの名前を変更して発行するよう求める警告が表示されます。 このような状況では、発行されたライブ接続されているレポートのみを置換できます。
 * Power BI サービスで共有データセットを削除すると、Power BI Desktop からそのデータセットにアクセスできなくなります。
 * Power BI サービスでデータセットが共有されるレポートでは、Power BI REST API を使用した自動デプロイはサポートされていません。
+
+## <a name="next-steps"></a>次のステップ
+DirectQuery と、Power BI の他のデータ接続機能の詳細については、次のリソースを参照してください。
+
+- [Power BI で DirectQuery を使用する](desktop-directquery-about.md)
+- [DirectQuery でサポートされるデータ ソース](power-bi-data-sources.md)
+- [Power BI データセットおよび Azure Analysis Services 用の DirectQuery を使用する (プレビュー)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+
+Power BI の詳細については、次のリンク先を参照してください。
+
+* [Power BI Desktop とは何ですか?](../fundamentals/desktop-what-is-desktop.md)
+* [Power BI Desktop でのクエリの概要](../transform-model/desktop-query-overview.md)
+* [Power BI Desktop でのデータ型](desktop-data-types.md)
+* [Power BI Desktop でのデータの整形と結合](desktop-shape-and-combine-data.md)
+* [Power BI Desktop での一般的なクエリ タスク](../transform-model/desktop-common-query-tasks.md)

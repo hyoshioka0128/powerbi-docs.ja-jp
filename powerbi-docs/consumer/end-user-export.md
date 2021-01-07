@@ -4,18 +4,18 @@ description: レポートのビジュアルとダッシュボードのビジュ�
 author: mihart
 ms.author: mihart
 ms.reviewer: cmfinlan
-featuredvideoid: jtlLGRKBvXY
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 12/21/2020
 LocalizationGroup: Consumers
-ms.openlocfilehash: d8b9f11abe639d2892bc199a9f65400e5488dedc
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: cd07004149afd2525c5830e04e5c2490eeebcb3c
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578121"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721388"
 ---
 # <a name="export-data-from-a-visual"></a>ビジュアルからデータをエクスポートする
 
@@ -40,7 +40,7 @@ ms.locfileid: "96578121"
 
 3. **[.csv にエクスポート]** を選択します。
 
-4. 次に行われることは、使用しているブラウザーによって異なります。 ファイルを保存するように求められるか、またはブラウザーの下部にエクスポートされたファイルへのリンクが表示される場合があります。 
+4. 次に行われることは、使用しているブラウザーによって異なります。 ファイルを保存するように求められるか、またはブラウザーの下部にエクスポートされたファイルへのリンクが表示される場合があります。 既定では、エクスポートはローカル環境のダウンロード フォルダーに保存されます。 
 
     ![エクスポートされたファイルへのリンクが示されている Chrome ブラウザー](media/end-user-export/power-bi-dashboards-export.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "96578121"
 
     ![基になるデータまたは概要データを選択するメニュー](media/end-user-export/power-bi-export-underlying.png)
 
-5. 次に行われることは、使用しているブラウザーによって異なります。 ファイルを保存するように求められるか、またはブラウザーの下部にエクスポートされたファイルへのリンクが表示される場合があります。 
+5. 次に行われることは、使用しているブラウザーによって異なります。 ファイルを保存するように求められるか、またはブラウザーの下部にエクスポートされたファイルへのリンクが表示される場合があります。 Microsoft Teams で Power BI アプリを使用している場合、エクスポートしたファイルはローカル環境のダウンロード フォルダーに保存されます。 
 
     ![Microsoft Edge ブラウザーで表示されているエクスポートされたファイル](media/end-user-export/power-bi-export-edge-screen.png)
 

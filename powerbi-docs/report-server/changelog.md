@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/18/2020
-ms.openlocfilehash: 2331785b14cd8cbcf9aec1232293cb601b1e2dc6
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/16/2020
+ms.openlocfilehash: c292e1ccaa03904ee0bfa4825a539430fed71867
+ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418120"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97621880"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -40,8 +40,12 @@ ms.locfileid: "96418120"
             - 名前にピリオドが含まれるレポートのエクスポートで発生する問題を解決しました。
             - Tablix のスクリーン リーダーの問題を解決しました。
             - ログ ファイルが空になることがある問題を解決しました。
-            - [Power BI アカウントに接続] ダイアログが閉じない問題を解決しました
-            - 新しい HTML DOCTYPE を使用するように MHTML レンダラーを更新しました
+            - アップロード時に Excel ファイルが上書きされる問題を解決しました。
+            - Model.UpdateCacheSnapshot REST API メソッドの問題を解決しました。
+            - XMLA を使用した SAP BW データソース接続の問題を解決しました。
+            - [Power BI アカウントに接続] ダイアログが閉じない問題を解決しました。
+            - CustomHeaders の高度な機能の既定値に関する問題を解決しました。
+            - 新しい HTML DOCTYPE を使用するように MHTML レンダラーを更新しました。
 
 - **Power BI Desktop (Power BI Report Server 用に最適化)**
    - *バージョン:2.86.961.0 (2020 年 10 月)、リリース日:2020 年 10 月 27 日* (新しいビルドと新しいバージョン)

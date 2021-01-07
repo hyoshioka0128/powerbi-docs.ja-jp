@@ -6,17 +6,18 @@ ms.author: mihart
 manager: kvivek
 ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
+ms.custom: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 12/21/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b7aae0e05c74209e66503612d3c89bb430cb5185
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bf388f28b83ad67fd246d23ba7113e74f0630a0e
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414785"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721480"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>視覚エフェクトの作成に使用されたデータをエクスポートする
 
@@ -105,7 +106,7 @@ Watch では、レポート内の視覚化の 1 つからデータをエクス�
 
     ![[データをエクスポート] と、[概要データ]、[xlsx]、および [エクスポート] オプションのスクリーンショット。](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
-1. **[エクスポート]** を選ぶと、ファイルを保存するように求められます。 保存したら、Excel でファイルを開きます。
+1. **[エクスポート]** を選ぶと、ファイルを保存するように求められます。 保存したら、Excel でファイルを開きます。 Microsoft Teams で Power BI アプリを使用している場合は、同じプロンプトが表示されないことがあります。 エクスポートしたファイルは、ローカル環境のダウンロード フォルダーに保存されます。 
 
     ![Excel の出力のスクリーンショット。](media/power-bi-visualization-export-data/power-bi-export-data9.png)
 
@@ -144,7 +145,7 @@ Watch では、レポート内の視覚化の 1 つからデータをエクス�
 
     ![[基になるデータ] が選択された [データのエクスポート] のスクリーンショット。](media/power-bi-visualization-export-data/power-bi-underlying.png)
 
-1. **[エクスポート]** を選ぶと、ファイルを保存するように求められます。 保存したら、Excel でファイルを開きます。
+1. **[エクスポート]** を選ぶと、ファイルを保存するように求められます。 保存したら、Excel でファイルを開きます。  Microsoft Teams で Power BI アプリを使用している場合は、同じプロンプトが表示されないことがあります。 エクスポートしたファイルは、ローカル環境のダウンロード フォルダーに保存されます。 
 
     ![エクスポートされたデータを表示した .xlsx ファイルのスクリーンショット。](media/power-bi-visualization-export-data/power-bi-excel.png)
     

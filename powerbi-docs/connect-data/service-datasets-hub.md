@@ -1,5 +1,5 @@
 ---
-title: データセット ハブを使用したデータセットの検出
+title: データセット ハブを使用したデータセットの検出 (プレビュー)
 description: 組織内のデータセットとそれに関連するレポートを見つけて探索し、使用する方法について説明します。
 author: paulinbar
 ms.author: painbar
@@ -8,14 +8,14 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: c6b7170df78b6d544f7eb97ec62516577f9267b6
-ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
+ms.openlocfilehash: 4e09eb9e0b44fbddf8787f474fe1a93b0b4c2d71
+ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513806"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97707975"
 ---
-# <a name="datasets-discovery-using-the-datasets-hub"></a>データセット ハブを使用したデータセットの検出
+# <a name="datasets-discovery-using-the-datasets-hub-preview"></a>データセット ハブを使用したデータセットの検出 (プレビュー)
 
 データセット ハブを使用すると、組織内のデータセットを簡単に見つけて探索し、使用することができます。 データセットに関する情報と、これらのデータセットに基づいてレポートを作成したり、Excel での分析によってデータセットを使用するためのエントリ ポイントについて説明します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "97513806"
 ### <a name="dataset-list"></a>データセットの一覧
 
 データセットの一覧には、少なくとも[ビルド アクセス許可](service-datasets-build-permissions.md)を保持している組織内のデータセットが表示されます。 一覧には、データセットの一覧をフィルター処理するためのタブが 3 つあります。
-* **すべてのデータセット**:少なくとも[ビルド アクセス許可](service-datasets-build-permissions.md)を保持している組織内のすべてのデータセットが表示されます。
+* **すべてのデータセット**:少なくとも [ビルド アクセス許可](service-datasets-build-permissions.md)を保持している組織内のすべてのデータセットが表示されます。
 * **Recent (新着順)** :最近アクセスした関連レポートを含むデータセットが表示されます。 レポートにアクセスするとき、関連するデータセットが [Recent]\(新着順\) 列に表示されるまで、数分間の遅延が発生する場合があります。
 * **自分のデータセット**:自分が所有しているデータセットが表示されます。 
 
