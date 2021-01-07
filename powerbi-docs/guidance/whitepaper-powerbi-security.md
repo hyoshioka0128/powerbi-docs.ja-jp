@@ -9,12 +9,12 @@ ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 879f931797786ee1bb9f12a56323c50642716afb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 806869b10b52ff7c161484f3e8d38fbc61b85f60
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398593"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961272"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI のセキュリティに関するホワイトペーパー
 
@@ -33,7 +33,7 @@ ms.locfileid: "96398593"
 
 **Power BI** は、セルフサービスビジネスインテリジェンスダッシュボード、レポート、データセット、および視覚エフェクトを簡単かつ迅速に作成できる Microsoft のオンラインソフトウェアサービス (_SaaS_ またはサービスとしてのソフトウェア) です。 Power BI では、多くの異なるデータ ソースに接続し、それらの接続からのデータを組み合わせて整形した後、他のユーザーと共有できるレポートやダッシュボードを作成することができます。
 
-Power BI サービスは、[Microsoft Online Services の使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31)および [Microsoft Enterprise のプライバシーに関する声明](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx)によって管理されます。 データ処理の場所で、Microsoft Online Services の使用条件のデータ処理の場所の使用条件を参照してください。 コンプライアンスについては、[Microsoft セキュリティ センター](https://www.microsoft.com/trustcenter)が Power BI に関する主要なリソースです。 Power BI チームは、お客様に最新の技術革新と生産性を届けようと懸命に取り組んでいます。 Power BI は、現在、Microsoft 365 準拠フレームワークの階層 D にあります。 コンプライアンスの詳細については、 [Microsoft セキュリティセンター](https://www.microsoft.com/trust-center/compliance/compliance-overview)を参照してください。
+Power BI サービスは、[Microsoft Online Services の使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31)および [Microsoft Enterprise のプライバシーに関する声明](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx)によって管理されます。 データ処理の場所で、Microsoft Online Services の使用条件のデータ処理の場所の使用条件を参照してください。 コンプライアンスについては、[Microsoft セキュリティ センター](https://www.microsoft.com/trust-center/product-overview)が Power BI に関する主要なリソースです。 Power BI チームは、お客様に最新の技術革新と生産性を届けようと懸命に取り組んでいます。 Power BI は、現在、Microsoft 365 準拠フレームワークの階層 D にあります。 コンプライアンスの詳細については、 [Microsoft セキュリティセンター](https://docs.microsoft.com/compliance/regulatory/offering-home)を参照してください。
 
 この記事では、Power BI のセキュリティについて、Power BI のアーキテクチャ、ユーザーが Power BI に対して認証を行う方法とデータ接続が確立される方法、Power BI でサービスによりデータが格納および移される方法の順に説明します。 最後のセクションでは、セキュリティに関する質問にお答えします。
 
@@ -119,13 +119,13 @@ Power BI は、リージョンのデータセンターで Power BI クラスタ�
 - [Azure リージョン](https://azure.microsoft.com/regions/) – Azure のグローバル プレゼンスと場所についての情報
 - [リージョンごとの Azure サービス](https://azure.microsoft.com/regions/#services) – 各リージョンで Microsoft から利用できる Azure サービスの完全な一覧 (インフラストラクチャ サービスとプラットフォーム サービスの両方)。
 
-現時点では、Power BI サービスは、 [Microsoft セキュリティセンター](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)で説明されているように、データセンターによって提供される特定の地域で利用できます。 次のリンクは Power BI のデータ センターのマップを示しており、リージョンにポインターを合わせると、そこに位置するデータ センターを表示できます。
+現時点では、Power BI サービスは、 [Microsoft セキュリティセンター](https://www.microsoft.com/trust-center/product-overview)で説明されているように、データセンターによって提供される特定の地域で利用できます。 次のリンクは Power BI のデータ センターのマップを示しており、リージョンにポインターを合わせると、そこに位置するデータ センターを表示できます。
 
 * [Power BI のデータ センター](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
 ソブリン クラウドに対するデータセンターも提供されています。 国内クラウドで利用可能な Power BI サービスについて詳しくは、[Power BI 国内クラウド](https://powerbi.microsoft.com/clouds/)に関する記事をご覧ください。
 
-データが格納されている場所とその使用方法の詳細については、[Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where)を参照してください。 保存時の顧客データの場所に関するコミットメントは、[Microsoft Online Services 規約](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31)の **データ処理規約** で指定されています。
+データが格納されている場所とその使用方法の詳細については、[Microsoft セキュリティ センター](https://www.microsoft.com/trust-center/product-overview)を参照してください。 保存時の顧客データの場所に関するコミットメントは、[Microsoft Online Services 規約](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31)の **データ処理規約** で指定されています。
 
 ## <a name="user-authentication"></a>ユーザー認証
 
@@ -173,7 +173,7 @@ Power BI サービスによるデータの管理方法は、データが **Direc
 
 |                         | インポート   | DirectQuery | ライブ接続  |
 |-------------------------|----------|-------------|---------------|
-|**[スキーマ]**               | X        | X           |               |
+|**スキーマ**               | X        | X           |               |
 |**行データ**             | X        |             |               |
 |**ビジュアルのデータ キャッシュ** | X        | X           | X             |
 
@@ -203,13 +203,13 @@ CEK の暗号化に使用されるキー暗号化キー (KEK) は、事前に定
 
 1. メタデータ (テーブル、列、メジャー、計算、接続文字列など)
 
-    a。 オンプレミスの Analysis Services では、暗号化されて Azure SQL に格納されるデータベースへの参照を除き、サービスには何も格納されません。
+    a. オンプレミスの Analysis Services では、暗号化されて Azure SQL に格納されるデータベースへの参照を除き、サービスには何も格納されません。
 
     b. ETL、DirectQuery、およびプッシュ データに対する他のすべてのメタデータは、暗号化されて Azure Blob Storage に格納されます。
 
 1. 元のデータ ソースに対する資格情報
   
-      a。 オンプレミスの Analysis Services – 資格情報は必要なく、そのため、資格情報は保存されません。
+      a. オンプレミスの Analysis Services – 資格情報は必要なく、そのため、資格情報は保存されません。
 
       b. DirectQuery - これはモデルがサービス内で直接作成されるかどうかによって異なります。直接作成される場合、それは接続文字列内に格納され Azure Blob で暗号化されます。モデルが Power BI Desktop からインポートされる場合、資格情報はデータ移動の Azure SQL Database で暗号化されて格納されます。 暗号化キーは、顧客のインフラストラクチャ上でゲートウェイを実行しているコンピューターに格納されます。
 
@@ -224,7 +224,7 @@ CEK の暗号化に使用されるキー暗号化キー (KEK) は、事前に定
 
 1. Data
 
-    a。 オンプレミスの Analysis Services と、DirectQuery – Power BI サービスでは何も格納されません。
+    a. オンプレミスの Analysis Services と、DirectQuery – Power BI サービスでは何も格納されません。
 
     b. ETL – Azure Blob ストレージで暗号化されます。しかし、Power BI サービスの Azure Blob ストレージに現在あるすべてのデータに [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption) (サーバー側の暗号化とも呼ばれる) が使用されます。 Multi-Geo でも SSE が使用されます。
 
@@ -244,7 +244,7 @@ Power BI では、次の方法でデータ整合性の監視が実現されま�
 
 1. メタデータ (レポートの定義)
 
-   a。 レポートは、Microsoft 365 レポートの場合は Excel、レポートの場合は Power BI のいずれかになります。 レポートの種類に基づいて、メタデータには次が適用されます。
+   a. レポートは、Microsoft 365 レポートの場合は Excel、レポートの場合は Power BI のいずれかになります。 レポートの種類に基づいて、メタデータには次が適用されます。
         
     &ensp;&ensp;。 Excel レポートのメタデータは、SQL Azure に暗号化されて格納されます。 メタデータも Microsoft 365 に格納されます。
 
@@ -298,7 +298,7 @@ Power BI では、次の方法でデータ整合性の監視が実現されま�
 
 3. 元のデータ ソースに対する資格情報
 
-    a。 オンプレミスの Analysis Services - 何も格納されません
+    a. オンプレミスの Analysis Services - 何も格納されません
 
     b. DirectQuery - これはモデルがサービス内で直接作成されるかどうかによって異なります。直接作成される場合、それは、(暗号化された情報と共に) 同じ場所にクリア テキストで格納された暗号化キーを使用する暗号化形式で、接続文字列内に格納されます。モデルが Power BI Desktop からインポートされる場合、資格情報は非揮発性デバイス上に格納されません。
 
@@ -356,7 +356,7 @@ Power BI Mobile は、Android、iOS、Windows Mobile という3つの主要な�
 | **CBA サポート** | **iOS** | **Android** | **Windows** |
 | --- | --- | --- | --- |
 | **Power BI** (サービスにサインイン) | サポート対象 | サポート対象 | サポートされていません |
-| **SSRS ADFS** (SSRS サーバーに接続) | サポートされていません | サポート | サポートされていません |
+| **SSRS ADFS** (SSRS サーバーに接続) | サポートされていません | サポートされています | サポートされていません |
 
 Power BI Mobile アプリは、積極的に Power BI サービスと通信します。 利用統計情報はモバイル アプリの利用統計情報や類似のデータの収集に使用され、利用状況とアクティビティを監視するために使用するサービスに転送されます。個人データが利用統計情報とともに送信されることは一切ありません。
 
