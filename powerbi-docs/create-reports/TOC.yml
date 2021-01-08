@@ -63,8 +63,6 @@
               href: power-bi-reports-filters-and-highlighting.md
             - name: 高密度線サンプリング
               href: desktop-high-density-sampling.md
-            - name: Q&A ビジュアルについて
-              href: ../visuals/power-bi-visualization-q-and-a.md
             - name: アクセシビリティについて
               href: desktop-accessibility-overview.md
             - name: 自然言語での Q&A
@@ -320,7 +318,7 @@
               href: ../visuals/power-bi-visualization-waterfall-charts.md
         - name: 自然言語での Q&A
           items:
-            - name: Q&A ビジュアル
+            - name: Q&A ビジュアルを作成する
               href: ../visuals/power-bi-visualization-q-and-a.md
             - name: 理解できるように Q&A を学習させる
               href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
