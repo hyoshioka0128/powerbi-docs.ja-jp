@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/22/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 88d508e5a71fec2574104356d77aaa0fb79bb0bc
-ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
+ms.openlocfilehash: 730a997a6d1d304fe868dd5bdd5bfbed6e359d91
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745234"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927162"
 ---
 # <a name="microsoft-sustainability-calculator-support-page"></a>Microsoft Sustainability Calculator のサポート ページ
 
@@ -22,13 +22,14 @@ Microsoft Sustainability Calculator では、Azure サービスに関連する�
 > [!NOTE]
 > このコネクタ バージョンでサポートされるのは、[Azure Enterprise Portal](https://ea.azure.com) からの登録のみです。 現在、中国での登録はサポートされていません。
 
-## <a name="prerequisites"></a>[前提条件]
+## <a name="prerequisites"></a>前提条件
 
 Microsoft Sustainability Calculator にアクセスするには、次の情報を組織の Azure 管理者から入手する必要があります。
 
 - テナント ID
 - アクセス キー
 - 加入契約番号
+- Azure 管理者ロールのみが、Calculator を認証して会社のデータに接続できます。 (**2020 年 12 月プレビュー バージョンの場合のみ**)
 
 会社の登録番号を確認するには:
 

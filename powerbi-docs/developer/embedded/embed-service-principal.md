@@ -1,6 +1,6 @@
 ---
-title: サービス プリンシパルとアプリケーション シークレットを使用して、埋め込み分析アプリケーションに Power BI コンテンツを埋め込む
-description: Azure Active Directory アプリケーション サービス プリンシパルとアプリケーション シークレットを使用して、埋め込み分析を認証する方法について説明します。
+title: サービス プリンシパルとアプリケーション シークレットを使用して、埋め込み分析アプリケーションに Power BI コンテンツを埋め込んで、埋め込み BI 分析情報を向上させる
+description: Azure Active Directory アプリケーション サービス プリンシパルとアプリケーション シークレットを使用して、埋め込み分析を認証する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: 8cf7b46687491f446d4e17fc96b020dbc08de5fc
-ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
+ms.openlocfilehash: 35bdaa8af06187767975126daa1f2445908fed9f
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97708067"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886789"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み
 

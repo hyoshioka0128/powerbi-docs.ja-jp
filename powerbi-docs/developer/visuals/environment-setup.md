@@ -1,6 +1,6 @@
 ---
-title: Power BI の視覚化を開発するための環境のセットアップ
-description: この記事では、Power BI の視覚化を開発できるように環境を設定する方法について説明します
+title: 埋め込み BI 分析情報を向上させるために、Power BI 埋め込み分析で Power BI の視覚化を開発するための環境を設定する
+description: この記事では、Power BI の視覚化を開発できるように環境を設定する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 09/02/2020
-ms.openlocfilehash: e5b176ac9e8d334b6dec9af70c189d2767bace1c
-ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
+ms.openlocfilehash: 43c5a636a7e3d0396210370df4427e1e13494551
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805236"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885892"
 ---
 # <a name="set-up-your-environment-for-developing-a-power-bi-visual"></a>Power BI の視覚化の開発用に環境をセットアップする
 
