@@ -1,6 +1,6 @@
 ---
-title: 認証アクセス トークンを取得する
-description: データをプッシュするチュートリアル - 認証アクセス トークンを取得する
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析で認証アクセス トークンを取得する
+description: データをプッシュするチュートリアル - 認証アクセス トークンを取得する。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: b66c87d88e08a4c1f9ee4f9aebdbf44516d9cb43
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 22d30e14256a2e58e05e17207380842392fe0c23
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746518"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887410"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>手順 2: 認証アクセス トークンを取得する
 
@@ -39,7 +39,7 @@ ms.locfileid: "91746518"
 
 3. 次の手順の後に一覧表示されているサンプル コードを Program.cs に追加します。
 
-4. "{ClientID}" を、[前のシリーズの記事](../embedded/register-app.md)で、アプリを登録したときに取得した**クライアント ID** で置き換えます。
+4. "{ClientID}" を、[前のシリーズの記事](../embedded/register-app.md)で、アプリを登録したときに取得した **クライアント ID** で置き換えます。
 
 5. コンソール アプリを実行し、Power BI アカウントにサインインします。 
 

@@ -1,6 +1,6 @@
 ---
-title: チュートリアル:R を利用した Power BI 視覚エフェクトを作成する
-description: このチュートリアルでは、Power BI Desktop の R スクリプト エディターを使用して、R を利用した Power BI の視覚エフェクトを作成する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるために、Power BI 埋め込み分析で R を利用した Power BI 視覚エフェクトを作成する
+description: このチュートリアルでは、Power BI Desktop の R スクリプト エディターを使用して、R を利用した Power BI の視覚エフェクトを作成する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 05/11/2020
-ms.openlocfilehash: 2046dc389b859ce71c4d26cc31cc686f812e461e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: dde18b9945d808cc6b2630bdad4d83768b0e2e8b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749324"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889043"
 ---
 # <a name="tutorial-create-an-r-powered-power-bi-visual"></a>チュートリアル:R を利用した Power BI 視覚エフェクトを作成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "91749324"
 * **Power BI Pro** アカウント。 開始する前に、[無料試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してください。
 * R エンジン。 これはさまざまな場所から無料でダウンロードできます。たとえば、[Revolution Open ダウンロード ページ](https://mran.revolutionanalytics.com/download/)や [CRAN Repository](https://cran.r-project.org/bin/windows/base/) があります。 詳細については、「[R を使用した Power BI ビジュアルの作成](../../create-reports/desktop-r-visuals.md)」をご覧ください。
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md)。
-* Windows ユーザーの場合は [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) バージョン 4 以降、OSX ユーザーの場合は[ターミナル](https://macpaw.com/how-to/use-terminal-on-mac)。
+* Windows ユーザーの場合は [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) バージョン 4 以降、OSX ユーザーの場合は[ターミナル](https://macpaw.com/how-to/use-terminal-on-mac)。
 
 ## <a name="getting-started"></a>作業の開始
 
@@ -68,7 +68,7 @@ ms.locfileid: "91749324"
 
    `Values` データ フレームには `Values` データ ロールの列が含まれます。
 
-1. 開発者向け視覚エフェクトにデータを割り当てるには、視覚エフェクトの **Values** に **MonthNo** と**合計ユニット数**を追加します。
+1. 開発者向け視覚エフェクトにデータを割り当てるには、視覚エフェクトの **Values** に **MonthNo** と **合計ユニット数** を追加します。
 
    ![データを含む R 視覚エフェクト](./media/create-r-based-power-bi-desktop/r-data-values.png)
 

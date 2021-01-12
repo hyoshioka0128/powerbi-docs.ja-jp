@@ -1,6 +1,6 @@
 ---
-title: テーブルに行を追加する
-description: データをプッシュするチュートリアル - Power BI テーブルに行を追加する
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析でテーブルに行を追加する
+description: データをプッシュするチュートリアル - Power BI テーブルに行を追加する。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: b43e9c93499f60039a924051c30b0ed631c85e8e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: b34bc292d832938f34766ef94c5d9addd7b9e271
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748381"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887548"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>手順 5.Power BI テーブルに行を追加する
 
 この記事は、チュートリアル「[データセットにデータをプッシュする](walkthrough-push-data.md)」の一部です。
 
-チュートリアル「データセットにデータをプッシュする」の**手順 4**「[Power BI テーブルに行を追加するためにデータセットを取得する](walkthrough-push-data-get-datasets.md)」では、[データセットの取得](/rest/api/power-bi/datasets/getdatasets)操作と Newtonsoft.Json を使ってデータセット ID を取得しました。この手順では、そのデータセット ID と [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) 操作を使って **Power BI** のデータセットに行を追加します。 
+チュートリアル「データセットにデータをプッシュする」の **手順 4**「[Power BI テーブルに行を追加するためにデータセットを取得する](walkthrough-push-data-get-datasets.md)」では、[データセットの取得](/rest/api/power-bi/datasets/getdatasets)操作と Newtonsoft.Json を使ってデータセット ID を取得しました。この手順では、そのデータセット ID と [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) 操作を使って **Power BI** のデータセットに行を追加します。 
 
 [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) 操作を呼び出すと、データセットに行が追加されます。
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI で使用する Azure Active Directory テナントを作成する
-description: Power BI REST API を呼び出すカスタム アプリケーション用に新しい Azure Active Directory (Azure AD) テナントを作成する方法を説明します。
+title: Power BI 埋め込み分析の埋め込み BI で使用する Azure Active Directory テナントを作成する
+description: カスタムの埋め込み分析アプリケーション用に新しい Azure Active Directory (Azure AD) テナントを作成する方法について説明します。このアプリケーションは、Power BI REST API を呼び出し、顧客のために埋め込み BI インテリジェンスを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 05/28/2019
-ms.openlocfilehash: 03ba0a3090a4224cdc97a2f5bdcf80dc4b59dc64
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 24e1d8678234b7b355d99985f8e8a567954d6211
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748772"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888997"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Power BI で使用する Azure Active Directory テナントを作成する
 
@@ -27,7 +27,7 @@ Azure AD テナントを作成すると、アプリケーションを定義し�
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Azure Active Directory テナントを作成する
 
-カスタム アプリケーションに Power BI を統合するには、Azure AD 内で、Azure AD ディレクトリを必要とするアプリケーションを定義する必要があります。 このディレクトリが、*テナント*です。 組織で Power BI または Microsoft 365 を使用していないためにまだテナントがない場合は、[開発環境を設定する必要があります](/azure/active-directory/develop/active-directory-howto-tenant)。 また、アプリケーションを組織のテナントと混在させたくない場合にも、テナントを作成して、分離させる必要があります。 または、テスト目的でテナントを作成することもできます。
+カスタム アプリケーションに Power BI を統合するには、Azure AD 内で、Azure AD ディレクトリを必要とするアプリケーションを定義する必要があります。 このディレクトリが、*テナント* です。 組織で Power BI または Microsoft 365 を使用していないためにまだテナントがない場合は、[開発環境を設定する必要があります](/azure/active-directory/develop/active-directory-howto-tenant)。 また、アプリケーションを組織のテナントと混在させたくない場合にも、テナントを作成して、分離させる必要があります。 または、テスト目的でテナントを作成することもできます。
 
 新しい Azure AD テナントを作成するには:
 
@@ -43,7 +43,7 @@ Azure AD テナントを作成すると、アプリケーションを定義し�
 
 4. **[作成]** を選択します。
 
-5. **組織の名前**と**初期ドメイン名**を指定します。 **[作成]** を選択します。 ディレクトリが作成されます。
+5. **組織の名前** と **初期ドメイン名** を指定します。 **[作成]** を選択します。 ディレクトリが作成されます。
 
     ![組織とドメイン](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
 

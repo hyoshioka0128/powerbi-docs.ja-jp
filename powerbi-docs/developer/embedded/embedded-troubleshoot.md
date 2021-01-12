@@ -1,6 +1,6 @@
 ---
-title: Power BI 埋め込み分析アプリケーションのトラブルシューティング
-description: この記事では、Power BI からコンテンツを埋め込むときに発生する一般的な問題について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析アプリケーションのトラブルシューティング
+description: この記事では、Power BI からコンテンツを埋め込むときに発生する一般的な問題について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: f46bdf5aec254763257fa4b121b4b8c135a0d58a
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: db2ae20436eddc4cb06287b6266488b65588dcb5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098078"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887203"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>埋め込みアプリケーションのトラブルシューティング
 
@@ -119,7 +119,7 @@ Power BI Embedded を使用、および Azure AD Direct Authentication を利用
 
 このポリシーを作成するには、ポリシーを作成して割り当てるディレクトリに対して_ *グローバル管理者**であることが必要です。 ポリシーを作成して、このアプリケーションの SP に割り当てるのためのサンプル スクリプトを次に示します。
 
-1. [Azure AD プレビュー PowerShell モジュール](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)をインストールします。
+1. [Azure AD プレビュー PowerShell モジュール](/powershell/azure/active-directory/install-adv2)をインストールします。
 
 2. 次の PowerShell コマンドを 1 行ずつ実行します (結果として、変数 $sp に複数のアプリケーションが含まれていないことを確認します)。
 

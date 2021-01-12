@@ -1,6 +1,6 @@
 ---
-title: Azure の Power BI Embedded サービスの診断ログ | Microsoft Docs
-description: Azure の Power BI Embedded サービスの診断ログの設定について説明します。
+title: Power BI 埋め込み分析の埋め込み BI ソリューションのために Azure で Power BI Embedded サービスの診断ログを記録する
+description: Power BI 埋め込み分析の埋め込み BI ソリューションのために Azure で Power BI Embedded サービスの診断ログを設定する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 4ab6a0d6135fcd2428df03e84596eebf6bba6704
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c98fbf4aa05a634a6755a77f79c8189226c12eed
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417361"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887387"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Azure の Power BI Embedded の診断ログ
 

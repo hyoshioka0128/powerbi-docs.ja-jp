@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルの概念
-description: この記事では、ビジュアルを Power BI と統合する方法と、ユーザーが Power BI でビジュアルを操作する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルの概念
+description: この記事では、ビジュアルを Power BI と統合する方法と、ユーザーが Power BI でビジュアルを操作する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8971c07b39de5b01b945218659fb8ead711c3f3c
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 4a6d78e332ae6e6c29b11a4ee79b05718c30f355
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94511943"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97884995"
 ---
 # <a name="power-bi-visuals-system-integration"></a>Power BI ビジュアルのシステム統合
 

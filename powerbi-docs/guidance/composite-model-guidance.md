@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/24/2019
-ms.openlocfilehash: 53c0af04a76d4cf8cfacd49002434ecbc246fbe8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e4ddc487f81835edfdc5ad8a4074a91204ee0336
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394384"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97884788"
 ---
 # <a name="composite-model-guidance-in-power-bi-desktop"></a>Power BI Desktop の複合モデルのガイダンス
 
@@ -54,8 +54,8 @@ ms.locfileid: "96394384"
 Power BI で複合モデルにクエリを実行する場合は、いくつかのシナリオが考えられます。
 
 - **インポート テーブルまたはデュアル テーブルに対してのみクエリを実行する**:すべてのデータは、モデル キャッシュから取得されます。 可能な限り最速のパフォーマンスを達成できます。 このシナリオは、フィルターまたはスライサー ビジュアルによってクエリが行われるディメンション型テーブルの場合に一般的です。
-- **同じソースのデュアル テーブルまたは DirectQuery テーブルに対してクエリを実行する**:1 つ以上のネイティブ クエリを DirectQuery ソースに送信することで、すべてのデータを取得します。 特にソース テーブルに適切なインデックスが存在する場合に、最速のパフォーマンスを達成できます。 このシナリオは、デュアル ディメンション型テーブルと DirectQuery ファクト型テーブルを関連付けるクエリの場合に一般的です。 これらのクエリは "_アイランド内_" なので、1 対 1 または 1 対多の関係はすべて [標準リレーションシップ](../transform-model/desktop-relationships-understand.md#regular-relationships)として評価されます。
-- **他のすべてのクエリ**:これらのクエリには、アイランド間のリレーションシップが含まれます。 これは、インポート テーブルが DirectQuery テーブルと関係しているか、デュアル テーブルが異なるソースの DirectQuery テーブルと関係している (この場合はインポート テーブルとして動作します) ためです。 すべてのリレーションシップは[制限付きリレーションシップ](../transform-model/desktop-relationships-understand.md#limited-relationships)として評価されます。 また、非 DirectQuery テーブルに適用されるグループ化は、仮想テーブルとして DirectQuery ソースに送信される必要があることも意味します。 この場合、特に大規模なグループ化セットの場合、ネイティブ クエリは非効率的です。 また、ネイティブ クエリでは機密データが公開される可能性があります。
+- **同じソースのデュアル テーブルまたは DirectQuery テーブルに対してクエリを実行する**:1 つ以上のネイティブ クエリを DirectQuery ソースに送信することで、すべてのデータを取得します。 特にソース テーブルに適切なインデックスが存在する場合に、最速のパフォーマンスを達成できます。 このシナリオは、デュアル ディメンション型テーブルと DirectQuery ファクト型テーブルを関連付けるクエリの場合に一般的です。 これらのクエリは "_ソース グループ内_" なので、1 対 1 または 1 対多の関係はすべて[標準リレーションシップ](../transform-model/desktop-relationships-understand.md#regular-relationships)として評価されます。
+- **他のすべてのクエリ**:これらのクエリには、ソース グループ間のリレーションシップが含まれます。 これは、インポート テーブルが DirectQuery テーブルと関係しているか、デュアル テーブルが異なるソースの DirectQuery テーブルと関係している (この場合はインポート テーブルとして動作します) ためです。 すべてのリレーションシップは[制限付きリレーションシップ](../transform-model/desktop-relationships-understand.md#limited-relationships)として評価されます。 また、非 DirectQuery テーブルに適用されるグループ化は、仮想テーブルとして DirectQuery ソースに送信される必要があることも意味します。 この場合、特に大規模なグループ化セットの場合、ネイティブ クエリは非効率的です。 また、ネイティブ クエリでは機密データが公開される可能性があります。
 
 まとめると、推奨事項は次のとおりです。
 

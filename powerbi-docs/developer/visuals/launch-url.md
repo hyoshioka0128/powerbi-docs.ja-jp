@@ -1,6 +1,6 @@
 ---
-title: 起動 URL を作成する
-description: この記事では、Power BI ビジュアルを使用して、新しいタブで URL を開く方法について説明します。
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析で起動 URL を作成する
+description: この記事では、Power BI ビジュアルを使用して、新しいタブで URL を開く方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 7e398354ab069bb02554c94312909c0ed835d027
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6fe9908c324705b8cb00519b4743ae8c052c7ad8
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379780"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888307"
 ---
 # <a name="create-a-launch-url"></a>起動 URL を作成する
 
@@ -43,7 +43,7 @@ export class Visual implements IVisual {
 }
 ```
 
-## <a name="usage"></a>使用
+## <a name="usage"></a>使用法
 
 `host.launchUrl()` API 呼び出しを使用して、送信先 URL を文字列引数として渡します。
 
@@ -51,7 +51,7 @@ export class Visual implements IVisual {
 this.host.launchUrl('https://some.link.net');
 ```
 
-## <a name="restrictions"></a>制限事項
+## <a name="restrictions"></a>制限
 
 * 絶対パスのみを使用し、相対パスは使用しません。 たとえば、`https://some.link.net/subfolder/page.html` のような絶対パスを使用します。 相対パス `/page.html` を開くことはできません。
 

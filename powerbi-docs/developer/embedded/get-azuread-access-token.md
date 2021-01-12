@@ -1,6 +1,6 @@
 ---
-title: ユーザーを認証し、アプリケーション用の Azure AD アクセス トークンを取得する
-description: 埋め込みの Power BI コンテンツと共に使用するため、Azure Active Directory にアプリケーションを登録する方法を説明します。
+title: ユーザーを認証し、Power BI 埋め込み分析アプリケーションの Azure AD アクセス トークンを取得して、埋め込み BI カスタマー エクスペリエンスを強化する
+description: 埋め込みの Power BI コンテンツと共に使用するため、Azure Active Directory にアプリケーションを登録する方法を説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: cb7c874fc68da361971c34879f2ea44006402bf4
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 8001dd0e15ef713fa67256a45f645b0d7a0890c0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906936"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888445"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Power BI アプリケーション用の Azure AD アクセス トークンを取得する
 

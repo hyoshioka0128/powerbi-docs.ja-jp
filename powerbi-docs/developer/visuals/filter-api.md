@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルでの Visual Filters API
-description: この記事では、Power BI ビジュアルで他のビジュアルをフィルター処理する方法を説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Power BI ビジュアルでの Visual Filters API
+description: この記事では、Power BI ビジュアルで他のビジュアルをフィルター処理する方法を説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,11 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 24e8ac32fb89db2fdc0d1f4ad3fbaffdadaf57bb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c03c64c2835ff8bf0b0f1ad3bd555da94aaf3126
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237413"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888744"
 ---
 # <a name="the-visual-filters-api-in-power-bi-visuals"></a>Power BI ビジュアルでの Visual Filters API
 

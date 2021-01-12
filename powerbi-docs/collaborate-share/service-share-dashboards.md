@@ -8,21 +8,21 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/26/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7a85021ee1931b2d5f7c247d7caa4c2813f86a8c
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 1069a000daf3f46055f45118f4442e4b19037234
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621604"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926722"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>同僚や他のユーザーと Power BI ダッシュボードやレポートを共有する
 "*共有*" は、Power BI サービス内の自分のダッシュボードやレポートに他のユーザーがアクセスできるようにする最も簡単な方法です。 組織内外のユーザーと共有できます。
 
 ダッシュボードやレポートを共有する場合、共有した相手はそれを表示して操作することはできますが、編集することはできません。 共有先のユーザーには自分のダッシュボードおよびレポートに表示されるものと同じデータが表示され、基になるデータセットに行レベルのセキュリティ (RLS) が適用されていない限り、基になるデータセット全体にアクセスできます。  共有元のユーザーが許可した場合、共有先のユーザーも同僚と共有できます。 組織外のユーザーは、ダッシュボードやレポートを表示して操作することはできますが、他のユーザーと共有することはできません。 
 
-![ダッシュボードの一覧での共有アイコン](media/service-share-dashboards/power-bi-share-new-look.png)
+![レポートの [共有] アイコン](media/service-share-dashboards/power-bi-share-new-look.png)
 
 Power BI サービスの多くの場所からダッシュボードとレポートを共有できます([お気に入り]、[Recent]\(最近使ったもの)\、[マイ ワークスペース])。 ワークスペースで [[管理者]、[メンバー]、または [共同作成者] のロール](service-new-workspaces.md#roles-in-the-new-workspaces)をお持ちの場合は、他のワークスペースからも共有できます。 また、所有者が許可している場合は、[自分と共有] のダッシュボードとレポートを共有できます。 
 

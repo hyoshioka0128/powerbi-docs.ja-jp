@@ -1,6 +1,6 @@
 ---
-title: モバイル開発
-description: モバイル対応の Power BI ビジュアルを作成する方法
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析でのモバイル開発
+description: モバイル対応の Power BI ビジュアルを作成する方法。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/12/2019
-ms.openlocfilehash: dca16fd29dc89fc2e67ce1e8f5c6abfc0adcb9a6
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 63d2366f91398878af231c8dbb6ed07e8e623a03
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049294"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885547"
 ---
 # <a name="how-to-create-mobile-friendly-power-bi-visuals"></a>モバイル対応の Power BI ビジュアルを作成する方法
 モバイル消費は、Power BI において大きな役割があります。 その長所の 1 つは、いつでもどこでもデータに接続していられることです。
@@ -28,7 +28,7 @@ Power BI ビジュアルを作成する開発者は、できるだけ多くの�
 
 - レンダー
 
-  Power BI ビジュアルは、サポートされているブラウザーとアプリケーションを含む、サポートされているすべてのモバイル デバイスのレポートやダッシュボードに、または**フォーカス** モードで実行されているとき、エラーを出さずに表示される必要があります。 
+  Power BI ビジュアルは、サポートされているブラウザーとアプリケーションを含む、サポートされているすべてのモバイル デバイスのレポートやダッシュボードに、または **フォーカス** モードで実行されているとき、エラーを出さずに表示される必要があります。 
 
 - Interactive
 

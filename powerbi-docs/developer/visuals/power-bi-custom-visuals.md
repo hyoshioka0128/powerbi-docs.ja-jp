@@ -1,6 +1,6 @@
 ---
-title: Power BI のビジュアル
-description: この記事では、Power BI のカスタム ビジュアルについて説明します。
+title: 埋め込み BI インサイトの品質を向上させるための Power BI 埋め込み分析の Power BI のビジュアル
+description: この記事では、Power BI のカスタム ビジュアルについて説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 91c9115f7d9ca0eb15606fcd77f99070e949842e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3d2e8f46605238a87eb23c32765f0a4ffaa02400
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416763"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888077"
 ---
 # <a name="visuals-in-power-bi"></a>Power BI のビジュアル
 

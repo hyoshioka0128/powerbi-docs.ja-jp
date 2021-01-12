@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルのオブジェクトとプロパティ
-description: この記事では、Power BI ビジュアルのカスタマイズ可能なプロパティについて説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Power BI ビジュアルのオブジェクトとプロパティ
+description: この記事では、Power BI ビジュアルのカスタマイズ可能なプロパティについて説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ae548abd0d579414a69b0d970213ff9d69ff2f08
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 4596465fcd9f59768b18282ec3ad39d2531b7768
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96120199"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885961"
 ---
 # <a name="objects-and-properties-of-power-bi-visuals"></a>Power BI ビジュアルのオブジェクトとプロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "96120199"
 
 `displayName` は、プロパティ ウィンドウに表示される名前です。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 `properties` は、開発者によって定義されるプロパティのマップです。
 
@@ -50,7 +50,7 @@ ms.locfileid: "96120199"
 > [!NOTE]
 > `show` は、スイッチを使用してオブジェクトを切り替えることができる特殊なプロパティです。
 
-例: 
+例:
 
 ```json
 "properties": {
@@ -194,7 +194,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 }
 ```
 
-### <a name="properties"></a>プロパティ
+### <a name="properties"></a>Properties
 
 `enumerateObjectInstances` のプロパティには、機能で定義したプロパティを反映します。 例については、この記事の末尾を参照してください。
 
@@ -202,7 +202,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 `enumerateObjectInstances` のセレクターでは、dataView 内でのオブジェクトのバインド先を決定します。 4 つの異なるオプションがあります。
 
-#### <a name="static"></a>静的
+#### <a name="static"></a>static
 
 このオブジェクトは、ここで示すようにメタデータ `dataviews[index].metadata.objects` にバインドされます。
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルの並べ替えオプション
-description: この記事では、Power BI ビジュアルの既定の並べ替え動作について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルの並べ替えオプション
+description: この記事では、Power BI ビジュアルの既定の並べ替え動作について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 3cb8f5af63960667dc46cab1d818ba48943fd582
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0d24719b486608c283ec73f0188092a1ece3155e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378078"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889250"
 ---
 # <a name="sorting-options-for-power-bi-visuals"></a>Power BI ビジュアルの並べ替えオプション
 

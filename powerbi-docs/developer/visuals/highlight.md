@@ -1,19 +1,19 @@
 ---
-title: 強調表示
-description: Power BI ビジュアルでのデータ ポイント選択項目の強調表示
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の強調表示
+description: Power BI ビジュアルでのデータ ポイント選択項目の強調表示。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: a472db6c6dcc1266a11e78d72ab8465df7682042
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f45b363ce4616a725d19d0b06f4f9fb96110ac8a
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114154"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886536"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Power BI ビジュアルでデータ ポイントを強調表示する
 
@@ -329,7 +329,7 @@ div.value {
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
 |   R1   |   R11   |   R113   |   C1   |   C11   |   C113   |   3   |
 |   R1   |   R12   |   R121   |   C1   |   C12   |   C121   |   4   |
-|   R1   |   R12   |   R122   |   C1   |   C12   |   C122   |   8   |
+|   R1   |   R12   |   R122   |   C1   |   C12   |   C122   |   5   |
 |   R1   |   R12   |   R123   |   C1   |   C12   |   C123   |   6   |
 |   R1   |   R13   |   R131   |   C1   |   C13   |   C131   |   7   |
 |   R1   |   R13   |   R132   |   C1   |   C13   |   C132   |   8   |

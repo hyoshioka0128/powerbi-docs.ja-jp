@@ -1,6 +1,6 @@
 ---
-title: Azure Power BI Embedded と埋め込み分析の概要 | Microsoft Docs
-description: Power BI Embedded は、ISV や開発者が Power BI の機能を使いやすくする埋め込み分析ツールを意図しており、目を見張るようなビジュアル、レポート、ダッシュボードをアプリに簡単に追加できます。 Power BI Embedded を使用して、埋め込み分析ソフトウェア、埋め込み分析ツール、または埋め込みビジネス インテリジェンス ツールを使用する方法について説明します。
+title: Power BI 埋め込み分析の埋め込み BI Power BI Azure Power BI Embedded とは
+description: Power BI Embedded は、ISV や開発者が埋め込み BI Power BI の機能を使いやすくする埋め込み分析ツールを意図しており、目を見張るようなビジュアル、レポート、ダッシュボードをアプリに簡単に追加できます。 Power BI Embedded を使用して、埋め込み分析ソフトウェア、埋め込み分析ツール、または埋め込みビジネス インテリジェンス ツールを使用する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -10,12 +10,12 @@ ms.devlang: csharp, javascript
 ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: fb2c9046b5812ae027e60f5661c50f573bea8976
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1c2227e376879693833af18c5c30acda9f6b16dd
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417246"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887226"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Azure の Power BI Embedded とは
 

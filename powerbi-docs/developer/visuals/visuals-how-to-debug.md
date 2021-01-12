@@ -1,6 +1,6 @@
 ---
-title: Power BI のビジュアルをデバッグする方法
-description: この記事では、Power BI のビジュアルをデバッグする方法について説明します。
+title: 埋め込み BI 分析情報を向上させるために、Power BI 埋め込み分析で Power BI のビジュアルをデバッグする方法
+description: この記事では、Power BI のビジュアルをデバッグする方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: f3a3551db1d7d995db0194ff7fa9b7141415c9eb
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 0005fe6cfd14f0377cdd7ff648aaa3c5cc96a751
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525549"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888376"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Power BI のビジュアルをデバッグする方法
 
@@ -75,7 +75,7 @@ public update(options: VisualUpdateOptions) {
 
 1. 開発者ツールを開きます (F12)。
 2. **[デバッガー]** タブに移動します。
-3. **例外で中断**アイコン (一時停止記号の付いた六角形) をクリックします。
+3. **例外で中断** アイコン (一時停止記号の付いた六角形) をクリックします。
 4. **[すべての例外で中断]** を選択します。
 
 ![[すべての例外で中断] がオンの [デバッガー] タブを示すスクリーンショット。](media/visuals-how-to-debug/how-to-debug-edge.png)
@@ -84,7 +84,7 @@ public update(options: VisualUpdateOptions) {
 
 1. 開発者ツールを開きます (F12)。
 2. **[ソース]** タブに移動します。
-3. **例外で中断**アイコン (一時停止記号の付いた停止標識) をクリックします。
+3. **例外で中断** アイコン (一時停止記号の付いた停止標識) をクリックします。
 4. **[Pause On Caught Exceptions]\(キャッチされた例外で一時停止\)** チェック ボックスをオンにします。
 
 ![[Pause On Caught Exceptions]\(キャッチされた例外で一時停止\) がオンの [ソース] タブを示すスクリーンショット。](media/visuals-how-to-debug/how-to-debug-chrome.png)

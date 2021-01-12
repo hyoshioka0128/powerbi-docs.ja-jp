@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルのインタラクティビティ ユーティリティ
-description: この記事では、インタラクティビティ ユーティリティを使用して Power BI ビジュアルに選択項目を追加する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Power BI ビジュアル インタラクティビティ ユーティリティ
+description: この記事では、インタラクティビティ ユーティリティを使用して Power BI ビジュアルに選択項目を追加する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/24/2020
-ms.openlocfilehash: f4d47347c98d19afdfbf07615842bfb4649dc1b9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 533cf90ed9192a8d9e595cdea6320207b841b559
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379262"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887778"
 ---
 # <a name="power-bi-visuals-interactivity-utils"></a>Power BI ビジュアルのインタラクティビティ ユーティリティ
 
@@ -138,7 +138,7 @@ Power BI ビジュアルのツールによって外部 CSS ルールがラップ
     クラスには、次の対応するメソッドがあります。
     * `bindClick`
     * `bindClearCatcher`
-    * `bindContextMenu`
+    * `bindContextMenu`.
 
     ```typescript
     export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {

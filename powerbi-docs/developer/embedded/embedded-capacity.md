@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded の分析の容量と SKU
-description: Power BI Embedded 分析の容量と SKU について確認します。
+title: 埋め込み BI 分析情報を向上させる Power BI 埋め込み分析の容量と SKU
+description: Power BI Embedded 分析の容量と SKU について確認します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/17/2020
-ms.openlocfilehash: 4102ed7307c9b7be40fb682befc4056094cbe6ad
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 7ff6ada14128a6231b84adf83d90b3871e1c7537
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916937"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888813"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Power BI Embedded の分析の容量と SKU
 
-運用環境に移行する場合、Power BI Embedded 分析には、埋め込み Power BI コンテンツを公開するための容量 ( *A* 、 *EM* 、または *P* SKU) が必要です。
+運用環境に移行する場合、Power BI Embedded 分析には、埋め込み Power BI コンテンツを公開するための容量 (*A*、*EM*、または *P* SKU) が必要です。
 
 容量とは、排他的使用のために予約されたリソースの専用セットです。 これにより、ユーザーごとのライセンスを購入しなくても、ユーザーに対してダッシュボード、レポート、データセットを公開できます。 また、コンテンツに対して信頼性の高い、一貫性のあるパフォーマンスも提供されます。
 
@@ -54,11 +54,11 @@ Power BI Premium は SaaS 製品であり、ユーザーはモバイル アプ�
 
 ### <a name="power-bi-embedded-skus"></a>Power BI Embedded の SKU
 
-Power BI Embedded には、 [*A* SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) が付属しています。
+Power BI Embedded には、[*A* SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) が付属しています。
 
 ### <a name="power-bi-premium-skus"></a>Power BI Premium の SKU
 
-Power BI Premium には、 *P* および *EM* の 2 つの SKU が用意されています。
+Power BI Premium には、*P* および *EM* の 2 つの SKU が用意されています。
 * [*P* および *EM* SKU の違いを理解する](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
 * [Premium SKU を購入する](../../admin/service-admin-premium-purchase.md)
 

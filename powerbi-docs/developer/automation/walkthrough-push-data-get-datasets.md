@@ -1,6 +1,6 @@
 ---
-title: 行を追加するためにデータセットを取得する
-description: データをプッシュするチュートリアル - Power BI テーブルに行を追加するためにデータセットを取得する
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析で行を追加するためにデータセットを取得する
+description: データをプッシュするチュートリアル - Power BI テーブルに行を追加するためにデータセットを取得する。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,35 +8,35 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: a150666eafd8dc11b573150455775d2ecf6f7f1b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: e1be761f68dfcd58de8623618acd859694b95bde
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748312"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887456"
 ---
-# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>手順 4.Power BI テーブルに行を追加するためにデータセットを取得する
+# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>手順 4: Power BI テーブルに行を追加するためにデータセットを取得する
 
 この記事は、チュートリアル「[データセットにデータをプッシュする](walkthrough-push-data.md)」の一部です。
 
-チュートリアル「データセットにデータをプッシュする」の**手順 3**「[Power BI でデータセットを作成する](walkthrough-push-data-create-dataset.md)」では、[データセットの作成](/rest/api/power-bi/datasets)操作を呼び出して Power BI でデータセットを作成しました。 この手順では、[データセットの取得](/rest/api/power-bi/datasets/getdatasets)操作と Newtonsoft.Json を使ってデータセット ID を取得します。データセットに行を追加するには、手順 4 で取得したデータセット ID を使います。 
+チュートリアル「データセットにデータをプッシュする」の **手順 3**「[Power BI でデータセットを作成する](walkthrough-push-data-create-dataset.md)」では、[データセットの作成](/rest/api/power-bi/datasets)操作を呼び出して Power BI でデータセットを作成しました。 この手順では、[データセットの取得](/rest/api/power-bi/datasets/getdatasets)操作と Newtonsoft.Json を使ってデータセット ID を取得します。データセットに行を追加するには、手順 4 で取得したデータセット ID を使います。 
 
-Power BI データセットにデータをプッシュするには、データセット内のテーブルを参照する必要があります。 データセット内のテーブルを参照するには、まず **データセット ID**を取得する必要があります。 **データセット ID** は、[データセットの取得](/rest/api/power-bi/datasets/getdatasets)操作を使って取得します。 **データセットの取得**操作では、Power BI 内にあるすべてのデータセットのリストを含む JSON 文字列が返されます。 JSON 文字列を逆シリアル化するには、[Newtonsoft.Json](https://www.newtonsoft.com/json) を使うことをお勧めします。
+Power BI データセットにデータをプッシュするには、データセット内のテーブルを参照する必要があります。 データセット内のテーブルを参照するには、まず **データセット ID** を取得する必要があります。 **データセット ID** は、[データセットの取得](/rest/api/power-bi/datasets/getdatasets)操作を使って取得します。 **データセットの取得** 操作では、Power BI 内にあるすべてのデータセットのリストを含む JSON 文字列が返されます。 JSON 文字列を逆シリアル化するには、[Newtonsoft.Json](https://www.newtonsoft.com/json) を使うことをお勧めします。
 
 データセットを取得する方法は次のとおりです。
 
 ## <a name="get-a-power-bi-dataset"></a>Power BI データセットを取得する
 
-> **注**:作業を開始する前に、チュートリアル「[データセットにデータをプッシュする](walkthrough-push-data.md)」の前の手順を完了してください。
+> **注**: 作業を開始する前に、チュートリアル「[データセットにデータをプッシュする](walkthrough-push-data.md)」の前の手順を完了してください。
 
-1. データをプッシュするチュートリアルの手順 2:「[認証アクセス トークンを取得する](walkthrough-push-data-get-token.md)」で作成したコンソール アプリケーション プロジェクトに、Newtonsoft.Json NuGet パッケージをインストールします。 パッケージをインストールする方法を次に示します。
+1. データをプッシュするチュートリアルの手順 2「[認証アクセス トークンを取得する](walkthrough-push-data-get-token.md)」で作成したコンソール アプリケーション プロジェクトに、Newtonsoft.Json NuGet パッケージをインストールします。 パッケージをインストールする方法を次に示します。
 
      a. Visual Studio 2015 で、 **[ツール]**  >  **[NuGet パッケージ マネージャー]**  >  **[パッケージ マネージャー コンソール]** を選びます。
 
      b. **[パッケージ マネージャー コンソール]** で、「Install-Package Newtonsoft.Json」と入力します。
-2. パッケージをインストールした後、「 **using Newtonsoft.Json;** 」を Program.cs に追加します。
-3. Program.cs に、 **データセット ID**を取得するために以下のコードを追加します。
-4. コンソール アプリを実行し、Power BI アカウントにログインします。 コンソール ウィンドウに、 **Dataset ID:** の後に ID が表示されるはずです。
+2. パッケージをインストールした後、「**using Newtonsoft.Json;**」を Program.cs に追加します。
+3. Program.cs に、**データセット ID** を取得するために以下のコードを追加します。
+4. コンソール アプリを実行し、Power BI アカウントにログインします。 コンソール ウィンドウに、**Dataset ID:** の後に ID が表示されるはずです。
 
 **データセットの取得のサンプル**
 
@@ -264,7 +264,7 @@ namespace walkthrough_push_data
 }
 ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [Power BI テーブルに行を追加する](walkthrough-push-data-add-rows.md)  
 * [Newtonsoft.Json](https://www.newtonsoft.com/json)  

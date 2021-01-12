@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルでのテスト ユーティリティの使用の概要
-description: この記事では、テスト ユーティリティを使用して、Power BI ビジュアルの単体テストでのモックと特定のメソッドの使用を簡略化する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析の Power BI ビジュアルでのテスト ユーティリティの使用の概要
+description: この記事では、テスト ユーティリティを使用して、Power BI ビジュアルの単体テストでのモックと特定のメソッドの使用を簡略化する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 02/14/2020
-ms.openlocfilehash: c50ad894b2e1f5eb838abdd4442f473f8bcbbb10
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4b2a846f4905c4cb28fe92043cf3c71750b40f11
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82196608"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888054"
 ---
 # <a name="power-bi-visuals-test-utils"></a>Power BI ビジュアルのテスト ユーティリティ
 
 この記事では、Power BI ビジュアルのテスト ユーティリティをインストール、インポート、使用する方法について説明します。 これらのテスト ユーティリティは単体テストに使用でき、データ ビュー、選択、配色などの要素用のモックとメソッドが含まれます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 このパッケージを使用するには、次のものをインストールする必要があります。
 
@@ -643,6 +643,6 @@ enum MouseEventType {
 }
 ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 webpack ベースの Power BI ビジュアル用の単体テスト、および `karma` と `jasmine` を使用した単体テストの作成について、たとえば「[チュートリアル: Power BI のビジュアル プロジェクトの単体テストを追加する](./unit-tests-introduction.md)」をご覧ください。

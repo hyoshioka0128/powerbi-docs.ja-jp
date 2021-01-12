@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルでのカラー ユーティリティの使用の概要
-description: この記事では、Power BI ビジュアルでカラー ユーティリティを使用して、ビジュアルのデータ ポイントにテーマとパレットを簡単に適用する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析の Power BI ビジュアルでのカラー ユーティリティの使用の概要
+description: この記事では、Power BI ビジュアルでカラー ユーティリティを使用して、ビジュアルのデータ ポイントにテーマとパレットを簡単に適用する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,17 +8,17 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 8de530871739a18c1afc72cee3e0da5fc70ebb16
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cc75188d806d653766860b2fada9028477a75f71
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379354"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887847"
 ---
 # <a name="color-utils"></a>カラー ユーティリティ
 この記事は、カラー ユーティリティのインストール、インポート、使用に役立ちます。 この記事では、Power BI ビジュアルでカラー ユーティリティを使用して、ビジュアルのデータ ポイントにテーマとパレットを簡単に適用する方法について説明します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 パッケージを使用するには、次のものが必要です。
 * [node.js](https://nodejs.org) (最新の LTS バージョンをお勧めします)
 * [npm](https://www.npmjs.com/) (サポートされる最小バージョンは 3.0.0 です)
@@ -175,7 +175,7 @@ let selector = ColorHelper.normalizeSelector(selectionId.getSelector(), false);
 ```typescript
 getHighContrastColor(themeColorName?: ThemeColorName, defaultColor?: string): string;
 ```
-#### <a name="example-related-to-high-contrast-mode-usage"></a>ハイ コントラスト モードの使用に関連する例: 
+#### <a name="example-related-to-high-contrast-mode-usage"></a>ハイ コントラスト モードの使用に関連する例:
 ```typescript
 
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";

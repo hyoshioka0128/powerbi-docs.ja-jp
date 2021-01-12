@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded での Q&A
-description: Power BI Embedded では、アプリケーションに Q&amp;A を組み込む手段が提供されており、ユーザーは自然言語を使って質問できます。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Q&A
+description: Power BI 埋め込み分析では、アプリケーションに Q&A を組み込む手段が提供されており、ユーザーは自然言語を使って質問できます。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 11/20/2017
-ms.openlocfilehash: 0106cc9ddb0e82a7b40e362342fce5196ef655c5
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 43e886e6472c6d95b900ccdb5c2e73b8dca3d4a0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749278"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886605"
 ---
-# <a name="qa-in-power-bi-embedded"></a>Power BI Embedded での Q&A
+# <a name="qa-in-power-bi-embedded-analytics"></a>Power BI 埋め込み分析の Q&A
 
-Power BI Embedded では、アプリケーションに Q&amp;A を組み込む手段が提供されており、ユーザーは、自然言語を使って質問し、チャートやグラフなどのビジュアルの形式ですぐに回答を受け取ることができます。
+Power BI 埋め込み分析では、アプリケーションに Q&amp;A を組み込む手段が提供されており、ユーザーは、自然言語を使って質問し、チャートやグラフなどのビジュアルの形式ですぐに回答を受け取ることができます。
 
 ![埋め込みフレームでの Q&A の対話的な質問](media/qanda/embedded-qanda.gif)
 
-アプリケーション内に Q&A を埋め込むには、**対話式**と**結果のみ**の 2 つのモードがあります。 **対話式**モードでは、質問を入力し、ビジュアル内に表示することができます。 保存されている質問、または表示したい設定済みの質問がある場合は、埋め込み構成に質問を設定することにより、**結果のみ**モードを使うことができます。
+アプリケーション内に Q&A を埋め込むには、**対話式** と **結果のみ** の 2 つのモードがあります。 **対話式** モードでは、質問を入力し、ビジュアル内に表示することができます。 保存されている質問、または表示したい設定済みの質問がある場合は、埋め込み構成に質問を設定することにより、**結果のみ** モードを使うことができます。
 
 JavaScript のコードは次のようになります。
 
@@ -48,7 +48,7 @@ var qna = powerbi.embed(qnaContainer, config);
 
 ## <a name="set-question"></a>設定済みの質問
 
-設定済みの質問で**結果モード**を使う場合、追加の質問をフレームに挿入し、すぐに得られる回答で前の結果を置き換えることができます。 新しい質問と一致する新しいビジュアルが表示されます。
+設定済みの質問で **結果モード** を使う場合、追加の質問をフレームに挿入し、すぐに得られる回答で前の結果を置き換えることができます。 新しい質問と一致する新しいビジュアルが表示されます。
 
 この使用例の 1 つは、よく寄せられる質問の一覧です。 ユーザーは質問を選んで、同じ埋め込みパーツ内で回答を見ることができます。
 
@@ -72,7 +72,7 @@ qna.setQuestion("This year sales")
 
 ## <a name="visual-rendered-event"></a>ビジュアル レンダリング イベント
 
-**対話式**モードでは、アプリケーションはレンダリングされたビジュアルが変化するたびにデータ変更イベントの通知を受信して、入力時に、更新済みの入力クエリを対象とすることができます。
+**対話式** モードでは、アプリケーションはレンダリングされたビジュアルが変化するたびにデータ変更イベントの通知を受信して、入力時に、更新済みの入力クエリを対象とすることができます。
 
 *visualRendered* イベントをリッスンすると、後で使うために質問を保存することができます。 
 
@@ -102,4 +102,4 @@ Q&A パーツを開始するためのデータセットの埋め込みトーク�
 
 Q&A の埋め込みを試してみるなら、[JavaScript の埋め込みサンプル](https://microsoft.github.io/PowerBI-JavaScript/demo/)をご覧ください。
 
-他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+その他の質問 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

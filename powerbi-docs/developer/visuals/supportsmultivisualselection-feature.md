@@ -1,6 +1,6 @@
 ---
-title: supportsMultiVisualSelection 機能
-description: この記事では Power BI ビジュアルの supportsMultiVisualSelection 機能の使用方法とその要件について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の supportsMultiVisualSelection 機能
+description: この記事では Power BI ビジュアルの supportsMultiVisualSelection 機能の使用方法とその要件について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 091bdeb4eeb4c979ccf0e79476eb081895fae2e1
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 9e6b17a4576f2354a5cbecc0c3a965a5611784ee
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049409"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887939"
 ---
 # <a name="use-the-supportsmultivisualselection-feature"></a>supportsMultiVisualSelection 機能を使用する
 

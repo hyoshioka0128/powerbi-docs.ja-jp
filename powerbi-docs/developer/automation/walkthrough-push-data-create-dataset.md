@@ -1,6 +1,6 @@
 ---
-title: データセットの作成
-description: チュートリアル - データセットにデータをプッシュする - Power BI でデータセットを作成する
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析でデータセットを作成する
+description: チュートリアル - データセットにデータをプッシュする - Power BI でデータセットを作成する。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: d782ee1d7a3fd137624054ee9e2bca0247ddb5ea
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: e2f1bbd1503ca4adeac626d02fc7bf3e41baa9b5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748887"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887502"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>手順 3:Power BI でデータセットを作成する
 この記事は、チュートリアル「[データセットにデータをプッシュする](walkthrough-push-data.md)」の一部です。
 
-チュートリアル「データセットにデータをプッシュする」の**手順 2**「[認証アクセス トークンを取得する](walkthrough-push-data-get-token.md)」では、**Azure AD** に対する認証トークンを取得しました。 この手順では、そのトークンを使って [PostDataset](/rest/api/power-bi/pushdatasets) 操作を呼び出します。
+チュートリアル「データセットにデータをプッシュする」の **手順 2**「[認証アクセス トークンを取得する](walkthrough-push-data-get-token.md)」では、**Azure AD** に対する認証トークンを取得しました。 この手順では、そのトークンを使って [PostDataset](/rest/api/power-bi/pushdatasets) 操作を呼び出します。
 
-REST リソースを呼び出すには、リソースを指定する URL を使って、Power BI サービス リソースに JavaScript Object Notation (JSON) 文字列 (データセットを記述したもの) を送信します。 REST リソースは、Power BI サービスのうち操作する部分を識別します。 データセットにデータをプッシュする場合、対象のリソースは**データセット**です。 データセットを識別する URL は、 `https://api.PowerBI.com/v1.0/myorg/datasets` です。 グループ内にデータをプッシュする場合の URL は、 `https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets` です。
+REST リソースを呼び出すには、リソースを指定する URL を使って、Power BI サービス リソースに JavaScript Object Notation (JSON) 文字列 (データセットを記述したもの) を送信します。 REST リソースは、Power BI サービスのうち操作する部分を識別します。 データセットにデータをプッシュする場合、対象のリソースは **データセット** です。 データセットを識別する URL は、 `https://api.PowerBI.com/v1.0/myorg/datasets` です。 グループ内にデータをプッシュする場合の URL は、 `https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets` です。
 
 Power BI REST 操作を認証するには、[認証アクセス トークンを取得する](walkthrough-push-data-get-token.md)手順で入手したトークンを要求ヘッダーに追加します。
 

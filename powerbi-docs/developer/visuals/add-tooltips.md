@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルのヒント
-description: この記事では、Power BI ビジュアルにヒントを表示する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析のPower BI ビジュアルのヒント
+description: この記事では、Power BI ビジュアルにヒントを表示する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/09/2020
-ms.openlocfilehash: 60933d1a44cbf83f719c808b658b06009217ff53
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e3f5486faec033b48ba59b7076d5835035458584
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239960"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889227"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Power BI ビジュアルのヒント
 
@@ -109,9 +109,9 @@ ms.locfileid: "85239960"
 
 * **selection: d3.Selection<Element>** : ヒントが処理される d3 要素。
 
-* **getTooltipInfoDelegate: (args:TooltipEventArgs<T>) => VisualTooltipDataItem[]** : コンテキストごとにヒント コンテンツ (表示内容) を作成するための委任。
+* **getTooltipInfoDelegate: (args:TooltipEventArgs<T>) => VisualTooltipDataItem[]** :コンテキストごとにヒント コンテンツ (表示内容) を作成するための委任。
 
-* **getDataPointIdentity: (args:TooltipEventArgs<T>) => ISelectionId**: データ ポイント ID を取得するための委任 (このサンプルでは使用されません)。 
+* **getDataPointIdentity: (args:TooltipEventArgs<T>) => ISelectionId**:データ ポイント ID を取得するための委任 (このサンプルでは使用されません)。 
 
 * **reloadTooltipDataOnMouseMove? boolean**: MouseMove イベント中にヒント データを更新するかどうかを示すブール値 (このサンプルでは使用されません)。
 
@@ -207,7 +207,7 @@ BarChart クラスは、データ ポイントの `category`、`value`、`color`
 }
 ```
 
-**書式**ウィンドウでは、レポート ページのヒントを定義できます。
+**書式** ウィンドウでは、レポート ページのヒントを定義できます。
 
 ![レポート ページのヒント](media/add-tooltips/report-page-tooltips.png)
 

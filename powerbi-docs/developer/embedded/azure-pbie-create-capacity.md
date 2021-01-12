@@ -1,6 +1,6 @@
 ---
-title: Azure Portal での Power BI Embedded 容量の作成 | Microsoft Docs
-description: この記事では、Microsoft Azure で Power BI Embedded の容量を作成する方法について説明します。
+title: Power BI 埋め込み分析の埋め込み BI ソリューションのために Azure portal で Power BI Embedded 容量を作成する
+description: この記事では、Power BI 埋め込み分析の埋め込み BI ソリューションのために Microsoft Azure で Power BI Embedded 容量を作成する手順について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 3ba075c33f689d76fb0c94aec09ed9fd309c718d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 898da0f5e4284183f2ffa08fba8e6a50d9474d15
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395143"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887525"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Azure Portal での Power BI Embedded 容量の作成
 
@@ -115,7 +115,7 @@ Power BI Embedded 容量コマンドでは、バージョン 2.3.1 以降の Azu
 
 ### <a name="create-a-capacity-with-azure-cli"></a>Azure CLI で容量を作成する
 
-[az Power BI embedded-capacity create](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) コマンドを使用し、容量を作成します。
+[az Power BI embedded-capacity create](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-create) コマンドを使用し、容量を作成します。
 
 ```azurecli
 az powerbi embedded-capacity create --location westeurope
@@ -127,7 +127,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### <a name="delete-a-capacity-with-azure-cli"></a>Azure CLI で容量を削除する
 
-Azure CLI を使用して容量を削除するには、[az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) コマンドを使用します。
+Azure CLI を使用して容量を削除するには、[az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) コマンドを使用します。
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -136,7 +136,7 @@ az powerbi embedded-capacity delete --name
 
 ### <a name="manage-your-capacity-with-azure-cli"></a>Azure CLI で容量を管理する
 
-[az powerbi](/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest) ですべての Power BI Embedded Azure CLI コマンドを表示できます。
+[az powerbi](/cli/azure/ext/powerbidedicated/powerbi) ですべての Power BI Embedded Azure CLI コマンドを表示できます。
 
 # <a name="arm-template"></a>[ARM テンプレート](#tab/ARM-template)
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI を使用した埋め込み分析
-description: Power BI には、ダッシュボードとレポート用の埋め込み分析をアプリケーションで利用するための API があります。 PaaS 環境と SaaS 環境の両方で、埋め込み分析ソフトウェア、埋め込み分析ツール、または埋め込みビジネス インテリジェンス ツールを使用した、Power BI を使用した埋め込みの詳細について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析による埋め込み分析
+description: Power BI には、Power BI 埋め込み分析のダッシュボードとレポートをアプリケーションに埋め込むための API があります。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 4dba33e2ae800198d4840139d43893a7dca77e4f
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: c7278dee5957e2b63b6821decec0171ba6b628a0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396819"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887134"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Power BI を使用した埋め込み分析
 

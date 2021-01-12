@@ -1,6 +1,6 @@
 ---
-title: 例として円形カード視覚化を使用して独自の Power BI 視覚化を開発する方法について学習する
-description: このチュートリアルでは、Power BI の視覚化を開発する方法を説明します
+title: 埋め込み BI 分析情報を向上させるため、例として円形カード視覚化を使用して独自の Power BI 視覚化を開発する方法について説明します。
+description: このチュートリアルでは、Power BI の視覚化を開発する方法を説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 09/02/2020
-ms.openlocfilehash: ff73c07fb08e80938fae34c19205885722c33672
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0bfc36a37dbcc4c595ea467eb3b365c30d4ed781
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418718"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885639"
 ---
 # <a name="tutorial-develop-a-power-bi-circle-card-visual"></a>チュートリアル:Power BI の円形カード視覚化を開発する
 

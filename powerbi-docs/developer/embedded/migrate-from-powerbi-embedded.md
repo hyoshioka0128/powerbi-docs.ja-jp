@@ -1,18 +1,18 @@
 ---
-title: Power BI に Power BI ワークスペース コレクション コンテンツを移行する方法
-description: Power BI ワークスペース コレクションから Power BI Embedded に移行し、アプリでの埋め込みで先進機能を利用する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるために Power BI ワークスペース コレクション コンテンツを Power BI 埋め込み分析の Power BI Embedded ソリューションに移行する方法
+description: Power BI ワークスペース コレクションから Power BI Embedded に移行し、アプリでの埋め込みで先進機能を利用する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: afff3023942352a25ff89fbed5f4a855b23d724d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a2e73ced427daa8aebf6b5c9836aa060d3591e3e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416556"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886375"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI Embedded に Power BI ワークスペース コレクション コンテンツを移行する方法
 

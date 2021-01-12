@@ -1,6 +1,6 @@
 ---
-title: サービス プリンシパルと証明書を使用して、埋め込み分析アプリケーションに Power BI コンテンツを埋め込む
-description: Azure Active Directory アプリケーションのサービス プリンシパルと証明書を使用して、埋め込み分析を認証する方法について説明します。
+title: サービス プリンシパルと証明書を使用して、埋め込み分析アプリケーションに Power BI コンテンツを埋め込んで、埋め込み BI 分析情報を向上させる
+description: Azure Active Directory アプリケーションのサービス プリンシパルと証明書を使用して、Power BI 埋め込み分析を認証する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: f36f77ec1b6648bcb9ab45622fd9888366803b11
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 647b9cce0835d21028da586ce3cf09f3383e544b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098400"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888882"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>サービス プリンシパルと証明書を使用した Power BI コンテンツの埋め込み
 

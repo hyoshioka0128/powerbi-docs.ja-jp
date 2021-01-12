@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 65a83bf0e91d4f3004445ffcd8cd6f78d5a77fc3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2389290fedd26c9e88af614e1fbf6afb29c02d35
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411841"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926817"
 ---
 # <a name="endorsement---promoting-and-certifying-power-bi-content"></a>承認 - Power BI コンテンツの昇格と認定
 
@@ -27,11 +27,15 @@ ms.locfileid: "96411841"
 
     コンテンツの所有者、またはコンテンツが配置されているワークスペースに対する書き込みアクセス許可を持つメンバーは、コンテンツが共有に十分適していると考えた場合に、それを簡単に昇格させることができます。
 
+    [コンテンツを昇格させる方法を学習する](service-endorse-content.md#promote-content)。
+
 * **認定**: 認定は、コンテンツが組織の品質基準を満たしており、組織全体で使用できる状態にある信頼できる優先コンテンツと見なせることを意味します。
 
-    選択されたレビュー担当者のグループ (Power BI 管理者によって定義される) だけが、コンテンツを認定することを許可されます。 自分のコンテンツを認定済みにしたいコンテンツの所有者が、それを自分で認定することを許可されていない場合は、組織のガイドラインに従ってコンテンツの認定を受ける必要があります。
+    [選択されたレビュー担当者のグループ (Power BI 管理者によって定義される)](../admin/service-admin-setup-certification.md) だけが、コンテンツを認定することを許可されます。 自分のコンテンツを認定済みにしたいコンテンツの所有者が、それを自分で認定することを許可されていない場合は、組織のガイドラインに従ってコンテンツの認定を受ける必要があります。
 
-    **認定を使用できるのは、Power BI 管理者が組織に対してそれを有効にし、構成した場合のみです**。
+    [コンテンツを認証する](service-endorse-content.md#certify-content)または[証明書を要求する](service-endorse-content.md#request-content-certification)方法を学習する。
+
+    **認定を使用できるのは、Power BI 管理者が組織に対してそれを[有効にし、構成した](../admin/service-admin-setup-certification.md)場合のみです**。
 
 次の図は、レポート作成の基になるデータセットを検索しているときに、承認されたコンテンツ (昇格されたものと認定されたもの) が、どのように明確に識別されるかを示しています。
 

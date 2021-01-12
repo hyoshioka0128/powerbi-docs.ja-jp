@@ -1,6 +1,6 @@
 ---
-title: チュートリアル:Power BI の React ベースのビジュアルを作成する
-description: このチュートリアルでは、React を使用して Power BI のビジュアルを作成する方法を説明します。 円の中に値が表示されます。 アダプティブなサイズと設定を使用すると、それをカスタマイズできます。
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析で Power BI の React ベースのビジュアルを作成する
+description: このチュートリアルでは、React を使用して Power BI のビジュアルを作成する方法を説明します。 円の中に値が表示されます。 アダプティブなサイズと設定を使用すると、それをカスタマイズできます。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/30/2020
-ms.openlocfilehash: d8e7b5dca207aef1a4f119bf324662dbcaa1bbab
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 04c73d88d4051aa024a2bf3a56f3bdaf02b9dc1e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94513323"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889016"
 ---
 # <a name="tutorial-create-a-react-based-visual"></a>チュートリアル:React ベースのビジュアルを作成する
 

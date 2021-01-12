@@ -1,6 +1,6 @@
 ---
-title: Power BI 埋め込み分析のコンテンツで行レベルのセキュリティを使用する
-description: ここでは、アプリケーション内に Power BI コンテンツを埋め込むために必要な手順について説明します。
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析のコンテンツで行レベルのセキュリティを使用する
+description: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込みアプリケーション内で Power BI コンテンツを埋め込むために必要な手順について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 00f818754c560768392aec0aa1df4555fe5d7ffa
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: bd62a9da0c773f39d7cef91a405340b0ba403130
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098308"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885064"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports"></a>埋め込みのページ分割されたレポートでの行レベルのセキュリティの実装
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルへの外部ライブラリの追加
-description: この記事では Power BI ビジュアルで外部ライブラリを使用する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルへの外部ライブラリの追加
+description: この記事では Power BI ビジュアルで外部ライブラリを使用する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 02/24/2020
-ms.openlocfilehash: 9df111e7545c43fe9b75784b1a95df4f37fd01e7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b9a443040384e4d38bd7440eae0a5582cc422836
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114131"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889181"
 ---
 # <a name="adding-external-libraries"></a>外部ライブラリを追加する
 

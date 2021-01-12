@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7232cad4fc1216ac6e1aa7c8a01136239a2f09d2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5485f59e11f3c971c719b2604b9e1280a072c5b1
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407057"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926719"
 ---
 # <a name="endorse-your-content"></a>コンテンツを承認する
 
@@ -25,7 +25,7 @@ Power BI には、有用で質の高いコンテンツを承認してその可�
 
 * **認定**: 認定は、コンテンツが組織の品質基準を満たしており、信頼でき、優先され、組織全体で使用できる状態にあると見なせることを意味します。
 
-    承認されたレビュー担当者だけがコンテンツを認定できます。 自分のコンテンツを認定済みにしたいコンテンツの所有者が、それを自分で認定することを許可されていない場合は、組織のガイドラインに従ってコンテンツの認定を受ける必要があります。
+    [承認されたレビュー担当者 (Power BI 管理者によって定義される)](../admin/service-admin-setup-certification.md) だけが、コンテンツを認定できます。 自分のコンテンツを認定済みにしたいコンテンツの所有者が、それを自分で認定することを許可されていない場合は、組織のガイドラインに従ってコンテンツの認定を受ける必要があります。
 
 現在、次のものを承認できます。
 * データセット

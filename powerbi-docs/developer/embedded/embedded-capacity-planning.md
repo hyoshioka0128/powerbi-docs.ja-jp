@@ -1,6 +1,6 @@
 ---
-title: Power BI 埋め込み分析の容量計画
-description: Power BI 埋め込み分析で容量を計画する
+title: 埋め込み BI 分析情報を向上させる Power BI 埋め込み分析の容量計画
+description: Power BI 埋め込み分析で容量を計画する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: b172b48517ccc8c55821fa8e8217d5e2df398b2d
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 69eeae495f66a4f41f25d5234f1b995d1e3d4986
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098354"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888836"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Power BI 埋め込み分析の容量計画
 

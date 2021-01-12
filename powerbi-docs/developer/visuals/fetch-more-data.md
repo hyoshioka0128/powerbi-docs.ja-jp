@@ -1,6 +1,6 @@
 ---
-title: より多くのデータを Power BI からフェッチする
-description: この記事では、Power BI ビジュアルに対する大きいデータセットのセグメント化されたフェッチを有効にする方法を説明します。
+title: 埋め込み BI 分析情報を向上させるために Power BI 埋め込み分析で Power BI からさらにデータをフェッチする
+description: この記事では、Power BI ビジュアルに対する大きいデータセットのセグメント化されたフェッチを有効にする方法を説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 12/13/2020
-ms.openlocfilehash: 3dc94a24e5e6a84992745775b1639b7a186ed19d
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 345efe91be1af5ee61d713c576f04657b182ad47
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492083"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886306"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>より多くのデータを Power BI からフェッチする
 

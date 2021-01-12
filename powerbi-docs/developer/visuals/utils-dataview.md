@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルでのデータ ビュー ユーティリティの使用の概要
-description: この記事では、SVG ユーティリティを使用して Power BI ビジュアルの DataView オブジェクトの解析を簡略化する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析の Power BI ビジュアルでのデータ ビュー ユーティリティの使用の概要
+description: この記事では、SVG ユーティリティを使用して Power BI ビジュアルの DataView オブジェクトの解析を簡略化する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: fc0ebf3d315b10bc14190a5ae01e8d389e2be0cc
-ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
+ms.openlocfilehash: 3c54333c35809ab272c065973d4d948e1ac37a8b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513737"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887824"
 ---
 # <a name="dataviewutils"></a>DataViewUtils
 

@@ -1,6 +1,6 @@
 ---
-title: ドリルダウン サポートの追加
-description: この記事では、Power BI ビジュアルにドリルダウン サポートを追加する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるため、 Power BI 埋め込み分析でドリルダウン サポートを追加する
+description: この記事では、Power BI ビジュアルにドリルダウン サポートを追加する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 602c13964e5364f9d21ec4e761fd42ea8d3e85f7
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 40c8d7f362ca461b4295507c0ddff8db4bcc3509
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514127"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885466"
 ---
 # <a name="add-drill-down-support"></a>ドリルダウン サポートの追加
 
@@ -213,7 +213,7 @@ button {
 |   A    |    A1    |    A12    |    2    |
 |   A    |    A2    |    A21    |    3    |
 |   A    |    A2    |    A22    |    4    |
-|   A    |    A3    |    A31    |    8    |
+|   A    |    A3    |    A31    |    5    |
 |   A    |    A3    |    A32    |    6    |
 |   B    |    B1    |    B11    |    7    |
 |   B    |    B1    |    B12    |    8    |
@@ -328,7 +328,7 @@ export class Visual implements IVisual {
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
 |   R1   |   R11   |   R113   |   C1   |   C11   |   C113   |   3   |
 |   R1   |   R12   |   R121   |   C1   |   C12   |   C121   |   4   |
-|   R1   |   R12   |   R122   |   C1   |   C12   |   C122   |   8   |
+|   R1   |   R12   |   R122   |   C1   |   C12   |   C122   |   5   |
 |   R1   |   R12   |   R123   |   C1   |   C12   |   C123   |   6   |
 |   R1   |   R13   |   R131   |   C1   |   C13   |   C131   |   7   |
 |   R1   |   R13   |   R132   |   C1   |   C13   |   C132   |   8   |

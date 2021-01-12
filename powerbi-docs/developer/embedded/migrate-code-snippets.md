@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded からコンテンツを移行するためのコード スニペット
-description: ここでは、コンテンツの移行に必要な基本処理のコード スニペットを紹介します
+title: 埋め込み BI insights を向上させるために、ワークスペース コレクションから Power BI 埋め込み分析の Power BI Embedded ソリューションにコンテンツを移行するためのコード スニペット
+description: コンテンツの移行に必要な基本処理のコード スニペットを紹介します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 9ed021ce95fd1e978916c188c93ca77fa88ccdb6
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f6b6023ac77d007b07662e200d6f165d56d67628
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416510"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888721"
 ---
-# <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Power BI ワークスペース コレクションからコンテンツを移行するためのコード スニペット
+# <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Power BI ワークスペース コレクションからコンテツを移行するためのコード スニペット
 
-ここでは、コンテンツの移行に必要な基本処理のコード スニペットを紹介します。 各レポートの種類に関連するフローについては、「[Power BI Embedded に Power BI ワークスペース コレクション コンテンツを移行する方法](migrate-from-powerbi-embedded.md#content-migration)」をご覧ください。
+コンテンツの移行に必要な基本処理のコード スニペットを紹介します。 各レポートの種類に関連するフローについては、「[Power BI Embedded に Power BI ワークスペース コレクション コンテンツを移行する方法](migrate-from-powerbi-embedded.md#content-migration)」をご覧ください。
 
 Power BI Embedded (PaaS) から Power BI サービス (SaaS) にコンテンツをコピーする際に役立つ **移行ツール** を使用することができます。 これは特に、多くのコンテンツがある場合に役立ちます。 詳細については、「[Power BI Embedded 移行ツール](migrate-tool.md)」を参照してください。
 
-以下のコードは、C# と [Power BI .NET SDK](https://www.nuget.org/profiles/powerbi) を使用している例です。
+以下のコードは、C# と [Power BI .NET SDK](https://www.nuget.org/profiles/powerbi) を使用した例です。
 
 以下のコード スニペットを実行する際には、必ず次の名前空間を使用してください。
 
@@ -164,7 +164,7 @@ SaaS に移行した後に PBIX を更新する場合の例です。
 
 ## <a name="push-dataset-and-report"></a>データセットとレポートのプッシュ
 
-作成したデータセットのレポートを再構築する必要があります。
+作成したデータセットのレポートを再作成する必要があります。
 
 このスニペットでは、プッシュ可能なデータセットが SaaS 環境内のワークスペースに既に存在すると想定しています。 プッシュ API の詳細については、「[Power BI データセットにデータをプッシュする](../automation/walkthrough-push-data.md)」を参照してください。
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 76f45ac7aee01cb907e727bc8cb12a69bd234d72
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 800e81b8fe5e9c2f108b71a4d8fb6bf9732a29ac
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613879"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926839"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI から Web への公開
 
@@ -50,18 +50,19 @@ Power BI の **[Web に公開]** オプションを使用して、対話型の P
 
    ![警告を確認します。](media/service-publish-to-web/publish_to_web3_ga.png)
 
-5. リンクを含むダイアログが表示されます。 リンクを選択して電子メールで送信するか、HTML をコピーします。 このリンクは iFrame などのコードに埋め込むことも、Web ページまたはブログに直接貼り付けることもできます。
+5. **[成功]** ダイアログに、レポートの外観のプレビューが表示されます。 **[サイズ]** と **[既定のページ]** を選択します。 
+
+    また、**プレースホルダー** の画像を追加して、Web ページの読み込みを高速化することもできます。 プレースホルダーの画像を使用すると、Web 上でレポートを表示しているユーザーに、レポートそのものを表示するために選択できる **[View interactive content]\(対話型コンテンツの表示\)** ボタンが表示されます。 
+
+    これらの変更を最初に行います。 次に、リンクをコピーして電子メールで送信するか、HTML をコピーして Web サイトに貼り付けます。 このリンクは iFrame などのコードに埋め込むことも、Web ページまたはブログに直接貼り付けることもできます。
 
    ![成功: リンクと HTML](media/service-publish-to-web/publish_to_web4.png)
 
-6. 前にレポートの埋め込みコードを作成していて **[Web に公開]** を選択した場合、手順 2 - 4 内のダイアログ ボックスは表示されません。 代わりに、次の **[埋め込みコード]** ダイアログが表示されます。
+6. 前にレポートの埋め込みコードを作成していて **[Web に公開]** を選択した場合、手順 2 - 4 内のダイアログ ボックスは表示されません。 代わりに、 **[埋め込みコード]** ダイアログが表示されます。
 
    ![[埋め込みコード] ダイアログ ボックス](media/service-publish-to-web/publish_to_web5.png)
 
    各レポートに 1 つだけ埋め込みコードを作成できます。
-
-ダイアログで変更を行った場合は、更新された URL または iFrame をコピーして、更新された設定がページで使用されるようにしてください。
-
 
 ### <a name="tips-for-view-modes"></a>表示モードのヒント
 
@@ -128,7 +129,7 @@ Power BI の **[Web に公開]** オプションを使用して、対話型の P
 
 レポートに対してプレースホルダー画像を設定することをお勧めします。 使用率が高くなった場合、ユーザーにはプレースホルダー画像が表示されます。 
 
-使用率が高くなるのを防ぐには、レポートで生成できる個別のクエリの数とデータ更新の頻度を制限します。
+使用率が高くなるのを防ぐには、レポートで生成できる個別のクエリの数とデータ更新の頻度を制限します。 レポートの合理化に関するヒントについては、[Power BI の最適化ガイド](../guidance/power-bi-optimization.md)を参照してください。
 
 ## <a name="power-bi-visuals"></a>Power BI ビジュアル
 

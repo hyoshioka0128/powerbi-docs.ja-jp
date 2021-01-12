@@ -1,6 +1,6 @@
 ---
-title: 完全なコード リスト
-description: データをプッシュするチュートリアル - 完全なコード リスト
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の完全なコード リスト
+description: データをプッシュするチュートリアル - 完全なコード リスト。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f2e421297eb942e6e9a622c91e9d5a074cb042ba
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: d478c742112c15c80657ec424f5a4d6739a3c6d7
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746495"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887479"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>データセットにデータをプッシュする処理の完全なコード リスト
 
@@ -233,4 +233,4 @@ ms.locfileid: "91746495"
 * [Power BI REST API リファレンス](/rest/api/power-bi/)  
 * [Power BI REST API の概要](overview-of-power-bi-rest-api.md)  
 
-他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

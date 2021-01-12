@@ -1,6 +1,6 @@
 ---
-title: 組織向けの埋め込みのときに Power BI アプリを自動インストールする
-description: 組織向けの埋め込みのときに Power BI アプリを自動インストールする方法について説明します。
+title: 組織向けの埋め込みのときに、Power BI 埋め込み分析を使用してPower BI アプリを自動インストールして組み込み BI 分析情報を作成する
+description: 組織向けの埋め込みのときに、Power BI 埋め込み分析を使用してPower BI アプリを自動インストールして組み込み BI 分析情報を作成する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: c9f9a09d659a047ff7342dd0c90f0effe03ce6a1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f6418f8a9b927b05b3809032b28a740553ec625c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417223"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888928"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>組織向けの埋め込みのときに Power BI アプリを自動インストールする
 

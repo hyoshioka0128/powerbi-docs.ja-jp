@@ -1,19 +1,19 @@
 ---
-title: Power BI ビジュアルでのビジュアル対話
-description: この記事では、Power BI ビジュアルでビジュアル対話を許可する必要があるかどうかを確認する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Power BI ビジュアルでのビジュアル対話
+description: この記事では、Power BI ビジュアルでビジュアル対話を許可する必要があるかどうかを確認する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: b8b1a1a59ee9fae5a1c248548a14c5f91438edc9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a5b46e901b5e8cabc00d48e4ef307b2ae98de2b6
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378940"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888514"
 ---
 # <a name="visual-interactions-in-power-bi-visuals"></a>Power BI ビジュアルでのビジュアル対話
 

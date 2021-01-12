@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルの開発方法に関するトラブルシューティング
-description: この記事では、Power BI カスタム ビジュアルの開発または作成時に発生する一般的な問題について説明します。
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析で Power BI ビジュアルを開発する方法に関するトラブルシューティング
+description: この記事では、Power BI カスタム ビジュアルの開発または作成時に発生する一般的な問題について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
 ms.date: 11/06/2018
-ms.openlocfilehash: fda4bbddb2f0b1a878e0ddf85f31795405c66331
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 440bb6648dca1eaa85b697a10e9fd41180c66d7e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417154"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888100"
 ---
 # <a name="troubleshoot-power-bi-visuals"></a>Power BI ビジュアルのトラブルシューティング
 
@@ -25,7 +25,7 @@ ms.locfileid: "96417154"
 
 **[視覚化] タブで "ビジュアルのデバッグ" が見つかりません**
 
-"ビジュアルのデバッグ" は、 **[視覚化]** タブ内でプロンプト アイコンのように表示されます。
+"ビジュアルのデバッグ" は、[**視覚化**] タブ内でプロンプト アイコンのように表示されます。
 
 ![ビジュアルの選択](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI で Power BI ビジュアルにロケールを追加する
-description: 視覚化を使用して Power BI ロケールを取得し、関連する言語にコンテンツをローカライズする方法を説明します。
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析の Power BI で Power BI ビジュアルにロケールを追加する
+description: 視覚化を使用して Power BI ロケールを取得し、関連する言語にコンテンツをローカライズする方法を説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 7492b70b9a82fe6c5579c4251000e9af7509e8fb
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 4df09979eeae476578b247e729a31f5f5c9c9baa
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746058"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888215"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Power BI で Power BI ビジュアルにロケールを追加する
 

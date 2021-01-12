@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルへの色の追加
-description: この記事では、Power BI ビジュアルに色を追加する方法と、色付きのビジュアルのデータ ポイントを処理する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルへの色の追加
+description: この記事では、Power BI ビジュアルに色を追加する方法と、色付きのビジュアルのデータ ポイントを処理する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/27/2020
-ms.openlocfilehash: 3a68f3dedbef9e97b6c29d3a0923d43872a5f01a
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: e6b6fb1dbc1397b93ac12692c8610e6f36d0b8bf
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048811"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887985"
 ---
 # <a name="add-colors-to-your-power-bi-visuals"></a>Power BI ビジュアルへの色の追加
 

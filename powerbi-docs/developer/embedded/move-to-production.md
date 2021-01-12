@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded の分析アプリケーションを運用環境に移行する
-description: Power BI アプリケーションを運用環境に移行するために必要な手順について説明します。
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析アプリケーションを運用環境に移行する
+description: Power BI アプリケーションを運用環境に移行するために必要な手順について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 188974531f7b78e04c2cf0f8072dcef7efe3b888
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 71eff0f09c0e34ffd8789f1b56347d754b6589bc
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098193"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886674"
 ---
 # <a name="move-your-embedded-app-to-production"></a>埋め込みアプリを運用環境に移行する
 

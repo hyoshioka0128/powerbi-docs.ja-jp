@@ -1,19 +1,19 @@
 ---
-title: Power BI ビジュアルでのハイコントラスト モードのサポート
-description: この記事では、ハイコントラスト モードのサポートを Power BI ビジュアルに追加する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Power BI ビジュアルでのハイコントラスト モードのサポート
+description: この記事では、ハイコントラスト モードのサポートを Power BI ビジュアルに追加する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 9372187ae1fdfac27f6b3e7267a1c0622c063464
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f55427511a76fc65b3ae6b3933dca68ef742039c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114338"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889204"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Power BI ビジュアルでのハイコントラスト モードのサポート
 
@@ -33,10 +33,10 @@ Windows の "*ハイコントラスト*" の設定を使用すると、よりは
 
 ハイコントラスト モードの場合、ビジュアルでは以下の設定だけを使用する必要があります。
 
-* **前景**色は、線、アイコン、テキスト、輪郭、または図形の塗りつぶしを描画するために使用されます。
-* **背景**色は、背景および線で囲まれた図形の塗りつぶしの色として使用されます。
-* **前景に選択された**色は、選択された要素またはアクティブな要素を示すために使用されます。
-* **ハイパーリンク**の色は、ハイパーリンク テキストに対してのみ使用されます。
+* **前景** 色は、線、アイコン、テキスト、輪郭、または図形の塗りつぶしを描画するために使用されます。
+* **背景** 色は、背景および線で囲まれた図形の塗りつぶしの色として使用されます。
+* **前景に選択された** 色は、選択された要素またはアクティブな要素を示すために使用されます。
+* **ハイパーリンク** の色は、ハイパーリンク テキストに対してのみ使用されます。
 
 > [!NOTE]
 > 2 番目の色が必要な場合は、ある程度の不透明度で前景色を使用できます (Power BI のネイティブ ビジュアルでは 40% の不透明度が使用されます)。 ビジュアルの詳細を見やすくするために、これは控えめに使用してください。
@@ -88,7 +88,7 @@ Power BI のネイティブ ビジュアルは、次のガイドラインに従�
 
 次のセクションでは、ハイコントラストをサポートするために変更された `visualTransform` 関数の 1 つの場所を示します。 それは、更新の間にレンダリングの一部として呼び出されます。
 
-### <a name="before"></a>適用前
+### <a name="before"></a>変更前
 
 ```typescript
 for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
@@ -109,7 +109,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-### <a name="after"></a>より後
+### <a name="after"></a>After
 
 ```typescript
 for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {

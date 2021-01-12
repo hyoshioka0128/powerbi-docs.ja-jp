@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルでのツールヒント ユーティリティの使用の概要
-description: この記事では、ツールヒント ユーティリティを使用して Power BI ビジュアルのツールヒントを簡単にカスタマイズする方法について説明します
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析の Power BI ビジュアルでのツールヒント ユーティリティの使用の概要
+description: この記事では、ツールヒント ユーティリティを使用して Power BI ビジュアルのツールヒントを簡単にカスタマイズする方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,17 +8,17 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 69650982bd3e71c235ffb09b00a99959bc02c231
-ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
+ms.openlocfilehash: b2ddc85d9ba2530dc394b4106d72b4af702bd9b4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197635"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888652"
 ---
 # <a name="tooltip-utils"></a>ツールヒント ユーティリティ
 この記事では、ツールヒント ユーティリティのインストール、インポート、使用について説明します。 このユーティリティは、Power BI ビジュアルのツールヒントをカスタマイズするのに役立ちます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 パッケージを使用するには、次のものが必要です。
 * [node.js](https://nodejs.org) (最新の LTS バージョンをお勧めします)
 * [npm](https://www.npmjs.com/) (サポートされる最小バージョンは 3.0.0 です)
@@ -48,7 +48,7 @@ npm install powerbi-visuals-utils-tooltiputils --save
   * [addTooltip](#itooltipservicewrapperaddtooltip)
   * [hide](#itooltipservicewrapperhide)
 
-* "[インターフェイス](#interfaces)"
+* [Interfaces](#interfaces)
   * [TooltipEventArgs](#tooltipeventargs)
   * [TooltipEnabledDataPoint](#tooltipenableddatapoint)
   * [TooltipServiceWrapperOptions](#tooltipservicewrapperoptions)

@@ -7,21 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 01/05/2021
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 3587c019f6b460774efca3db2229f315adcbded3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 48bd70c83865c7002cb3408684f9940cf5943d32
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388174"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927197"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Power BI Q&A のおすすめの質問を作成する
-データセットがある場合、そのデータセットにおすすめの質問を追加できます。 Power BI Q&A には、そのデータセットに基づくレポートを使用する同僚におすすめの質問が表示されます。  同僚は、データセットについて確認できる質問の種類についておすすめの質問をヒントにすることができます。 任意のおすすめの質問を追加できます。よくある質問、興味深い結果が表示される質問、表現しづらい質問などを追加してください。
-
+データセットに対して編集のアクセス許可がある場合、そのデータセットにおすすめの質問を追加できます。 Power BI Q&A には、そのデータセットに基づくダッシュボードを使用する同僚におすすめの質問が表示されます。  同僚は、データセットについて確認できる質問の種類についておすすめの質問をヒントにすることができます。 任意のおすすめの質問を追加できます。よくある質問、興味深い結果が表示される質問、表現しづらい質問などを追加してください。
 
 > [!NOTE]
-> Q&A を利用する質問は、[iPad、iPhone、iPod Touch デバイスの iOS 用の Microsoft Power BI アプリ](../consumer/mobile/mobile-apps-ios-qna.md)および Power BI Desktop の Q&A で利用できます。 質問の作成は Power BI サービス (app.powerbi.com) でのみ利用できます。
+> Q&A のおすすめの質問は、[iPad、iPhone、iPod Touch デバイスの Microsoft Power BI アプリ](../consumer/mobile/mobile-apps-ios-qna.md)および Power BI サービス (app.powerbi.com) で利用できます。 質問の作成は、Power BI サービスでのみ行うことができます。
 > 
 
 ## <a name="create-a-featured-question"></a>おすすめの質問を作成する
@@ -35,11 +34,11 @@ ms.locfileid: "96388174"
 4. **[質問の追加]** を選択します。
    
    ![[設定] メニュー](media/service-q-and-a-create-featured-questions/power-bi-settings.png)
-5. テキスト ボックスに質問を入力し、 **[適用]** を選択します。   必要に応じて、 **[質問の追加]** を選択して別の質問を追加します。  
+5. テキスト ボックスに質問を入力します。 たとえば、「昨年の地域別売上高を塗り分け地図として表示する」と入力し、 **[適用]** を選択します。   必要に応じて、 **[質問の追加]** をもう一度選択して、別の質問を追加します。  
    ![[おすすめの Q&A 質問] ウィンドウ](media/service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
 6. Power BI ダッシュボードに戻って小売りの分析のサンプルを表示し、Q&A の質問ボックスにカーソルを置きます。   
    ![Q&A 質問ボックスとおすすめの質問](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
-7. 追加したおすすめの質問の **[Sales by territory as a map]** (担当地域別の売上の地図) が一覧の最初に表示されます。 その質問を選択します。  
+7. 新しいおすすめの質問、"**昨年の地域別売上高を塗り分け地図として表示する**" が、一覧の最初に表示されます。 その質問を選択します。  
 8. Power BI によって回答が作成され、塗り分け地図の視覚化として表示されます。  
    ![Q&A おすすめの質問の回答: マップの視覚エフェクト](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question.png)
 

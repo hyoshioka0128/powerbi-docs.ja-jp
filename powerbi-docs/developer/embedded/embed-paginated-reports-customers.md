@@ -1,6 +1,6 @@
 ---
-title: 顧客向けの Power BI 埋め込み分析アプリケーションにページ分割されたレポートを埋め込む
-description: Power BI API を使用して、Power BI のページ分割されたレポートをアプリケーションに統合または埋め込む方法を説明します。
+title: 顧客向けの埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析アプリケーションにページ分割されたレポートを埋め込む
+description: Power BI API を使用して、Power BI のページ分割されたレポートをアプリケーションに統合または埋め込む方法を説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 3aecfa7e00528217dc5b6fa27b03a5ac4302d9dd
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: a06553a3e0c090d4e4b0e007b61148115f8f5eb5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098239"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885225"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 

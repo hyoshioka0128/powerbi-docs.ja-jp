@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルの機能とプロパティ
-description: この記事では、Power BI ビジュアルの機能とプロパティについて説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Power BI ビジュアルの機能とプロパティ
+description: この記事では、Power BI ビジュアルの機能とプロパティについて説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: e3af800696fd593f092cc46f9a59df2d0a5f94e2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e0fb17053ff8e6d17321994d515d8b69dbe8e22b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380309"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888261"
 ---
 # <a name="capabilities-and-properties-of-power-bi-visuals"></a>Power BI ビジュアルの機能とプロパティ 
 
@@ -37,10 +37,10 @@ ms.locfileid: "79380309"
 
 データにバインドできるフィールドを定義するには、`dataRoles` を使用します。 `dataRoles` では、必要なすべてのプロパティを定義する `DataViewRole` オブジェクトの配列を受け取ります。
 
-### <a name="properties"></a>プロパティ
+### <a name="properties"></a>Properties
 
 * **name**:このデータ フィールドの内部名 (一意である必要があります)。
-* **kind**: フィールドの種類: 
+* **kind**: フィールドの種類:
     * `Grouping`:メジャー フィールドをグループ化するために使用されるディスクリート値。
     * `Measure`:数値データ値。
     * `GroupingOrMeasure`:グループ化またはメジャーのいずれかとして使用できる値。

@@ -10,12 +10,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 12/14/2020
-ms.openlocfilehash: 80aa8097ce38a9b1bac228ea61dcc959e4aba60d
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 7c8fa59521be1cfc8bb25fb04c3904f257fb62be
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492014"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926687"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Microsoft Teams と Power BI で共同作業する
 
@@ -44,6 +44,14 @@ Microsoft Teams にレポートを埋め込んだり、項目へのリンクを�
 > Power BI サービスでレポートを表示できるユーザーを確認し、一覧に含まれないユーザーにアクセスを許可します。
 
 チーム内のすべてのユーザーがレポートに確実にアクセスできるようにする方法の 1 つは、1 つのワークスペースにレポートを配置し、チームの Microsoft 365 グループにアクセス権を付与することです。
+
+## <a name="share-with-external-users"></a>外部ユーザーと共有する
+
+チーム内の Power BI レポートを統合し、外部ユーザーと共有することができます。 実行する手順は次のとおりです。
+
+1.  組織に外部ユーザーを招待し、そのユーザーが招待状を受け入れます。 詳細については、「[Azure Active Directory B2B を使用して外部ゲスト ユーザーに Power BI コンテンツを配布する](../guidance/whitepaper-azure-b2b-power-bi.md)」を参照してください。
+2.  レポートに対するアクセス許可を外部ユーザーに付与します。 個別にアクセス許可を割り当てるのが最適です。
+3.  外部ユーザーに Power BI ライセンスが割り当てられていることを確認します。 コンテンツが Premium 容量にある場合、ユーザーに必要なのは無料ライセンスのみです。 それ以外の場合、ユーザーは [Power BI Pro の個人向け試用版にサインアップ](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro)することができます。
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 

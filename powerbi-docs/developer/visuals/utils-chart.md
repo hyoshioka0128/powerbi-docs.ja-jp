@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルでのグラフ ユーティリティの使用の概要
-description: この記事では、グラフ ユーティリティを使用して Power BI ビジュアルで軸や凡例を描画する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析の Power BI ビジュアルでのグラフ ユーティリティの使用の概要
+description: この記事では、グラフ ユーティリティを使用して Power BI ビジュアルで軸や凡例を描画する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 531da1ede8b83af9fb8093a3178c945f374b835c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9094d639225eb82cbcf427346d1ad78943ddc90f
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379392"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887870"
 ---
 # <a name="chart-utils"></a>グラフ ユーティリティ
 
@@ -42,7 +42,7 @@ npm install powerbi-visuals-utils-chartutils --save
 function getRecommendedNumberOfTicksForXAxis(availableWidth: number): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -60,7 +60,7 @@ axis.getRecommendedNumberOfTicksForXAxis(1024);
 function getRecommendedNumberOfTicksForYAxis(availableWidth: number);
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -84,7 +84,7 @@ function getBestNumberOfTicks(
 ): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -132,7 +132,7 @@ function getTickLabelMargins(
 ): TickLabelMargins;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -164,7 +164,7 @@ axis.getTickLabelMargins(
 function isOrdinal(type: ValueTypeDescriptor): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -183,7 +183,7 @@ axis.isOrdinal(type);
 function isDateTime(type: ValueTypeDescriptor): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -202,7 +202,7 @@ D3 スケールを使用して、カテゴリの実際の太さを取得しま�
 function getCategoryThickness(scale: any): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -226,7 +226,7 @@ let actualThickness = axis.getCategoryThickness(scale);
 function invertOrdinalScale(scale: d3.scale.Ordinal<any, any>, x: number);
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -256,7 +256,7 @@ function findClosestXAxisIndex(
 ): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -302,7 +302,7 @@ function diffScaled(
 ): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -335,7 +335,7 @@ function createDomain(
 ): number[];
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -386,7 +386,7 @@ function getCategoryValueType(
 ): number[];
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -431,7 +431,7 @@ axis.getCategoryValueType(
 function createAxis(options: CreateAxisOptions): IAxisProperties;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -476,7 +476,7 @@ var os = axis.createAxis({
 function applyCustomizedDomain(customizedDomain, forcedDomain: any[]): any[];
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -503,7 +503,7 @@ function combineDomain(
 ): any[];
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -526,7 +526,7 @@ axis.combineDomain(forcedYDomain, xDomain, ensureXDomain);
 function powerOfTen(d: any): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -556,7 +556,7 @@ function hideCollidedLabels(
 ): LabelEnabledDataPoint[];
 ```
 
-例: 
+例:
 
 ```typescript
 let dataLabelManager = new DataLabelManager();
@@ -576,7 +576,7 @@ let filteredData = dataLabelManager.hideCollidedLabels(
 function isValid(rect: IRect): boolean;
 ```
 
-例: 
+例:
 
 ```typescript
 let rectangle = {
@@ -613,7 +613,7 @@ function getLabelPrecision(precision: number, format: string): number;
 function getLabelFormattedText(options: LabelFormattedTextOptions): string;
 ```
 
-例: 
+例:
 
 ```typescript
 import { dataLabelUtils } from "powerbi-visuals-utils-chartutils";
@@ -661,7 +661,7 @@ function enumerateCategoryLabels(
 function createColumnFormatterCacheManager(): IColumnFormatterCacheManager;
 ```
 
-例: 
+例:
 
 ```typescript
 import { dataLabelUtils } from "powerbi-visuals-utils-chartutils";
@@ -699,7 +699,7 @@ function createLegend(
 ): ILegend;
 ```
 
-例: 
+例:
 
 ```typescript
 public constructor(options: VisualConstructorOptions) {
@@ -749,7 +749,7 @@ export interface ILegend {
 function drawLegend(data: LegendData, viewport: IViewport): void;
 ```
 
-例: 
+例:
 
 ```typescript
 private renderLegend(): void {

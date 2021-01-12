@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアル API の変更ログ
-description: この記事では、Power BI ビジュアル API のさまざまなバージョンにおける主な変更点について説明します
+title: 埋め込み BI インサイトの品質を向上させるための Power BI 埋め込み分析の Power BI ビジュアル API の変更ログ
+description: この記事では、Power BI ビジュアル API のさまざまなバージョンにおける主な変更点について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: c43542bc6c2bb0699403062f68024f9718bbbb60
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 4ed42f8c9c3acf740b68bf6c28aaa201efb0d5ba
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92501951"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927127"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Power BI ビジュアル API の変更ログ
 このページには、API バージョンの簡単な概要が含まれています。 ここに記載されているバージョンは安定バージョンと見なされ、変更されません。
@@ -43,6 +43,7 @@ ms.locfileid: "92501951"
 ## <a name="api-v220"></a>API v2.2.0
   * **[DataView からの JSON フィルターの復元](./filter-api.md#restore-the-json-filter-from-the-data-view)** をサポート
   * **[ContextMenu API](./context-menu.md)**
+  * **[ドリルスルー](../../create-reports/desktop-drillthrough.md)** 機能をサポート
 
 ## <a name="api-v210"></a>API v2.1.0
   * パフォーマンスの向上:
@@ -66,7 +67,7 @@ ms.locfileid: "92501951"
 * `proto` プロパティでは、dataView 内に非表示のメタデータまたはデータが格納されなくなりました。 `proto` を介してプロパティにアクセスするビジュアルは、この更新によって破損する可能性があります。
 
 ## <a name="api-v1130"></a>API v1.13.0
-* **[同期スライサー](./enable-sync-slicers.md)** をサポート。これは、PBI の現在のコード状態により、単一フィールド スライサーでのみ動作することに注意してください。 [詳細](../../visuals/power-bi-visualization-slicers.md)。
+* **[同期スライサー](./enable-sync-slicers.md)** をサポート。これは、PBI の現在のコード状態により、単一フィールド スライサーでのみ動作することに注意してください。[詳細](../../visuals/power-bi-visualization-slicers.md)。
 * アクセシビリティ:[ハイコントラストのサポート](./high-contrast-support.md) 
 * アクセシビリティ:"キーボード フォーカスを許可する" フラグ
 

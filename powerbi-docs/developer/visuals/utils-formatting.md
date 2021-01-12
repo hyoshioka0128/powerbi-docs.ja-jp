@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルでの書式設定ユーティリティの使用の概要
-description: この記事では、書式設定ユーティリティを使用して値の書式を設定し、Power BI ビジュアルの値にローカライズを適用する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析の Power BI ビジュアルでの書式設定ユーティリティの使用の概要
+description: この記事では、書式設定ユーティリティを使用して値の書式を設定し、Power BI ビジュアルの値にローカライズを適用する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: dc2d036ab1e3e3dab551269163ced2f066a71626
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 564f6587ff361e3b2860bafb4ae43bc19ad8c2ba
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378026"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887801"
 ---
 # <a name="formatting-utils"></a>ユーティリティの書式設定
 
@@ -127,7 +127,7 @@ textMeasurementService.measureSvgTextHeight(textProperties);
 function estimateSvgTextBaselineDelta(textProperties: TextProperties): number;
 ```
 
-例: 
+例:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -629,7 +629,7 @@ interface ValueFormatterOptions {
 }
 ```
 
-## <a name="create"></a>作成
+## <a name="create"></a>create
 
 このメソッドでは、IValueFormatter のインスタンスを作成します。
 

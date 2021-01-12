@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルのローカル ストレージ API
-description: この記事では、Power BI ビジュアル API を使用してブラウザーのローカル ストレージにアクセスする方法について説明します
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析のローカル ストレージ API
+description: この記事では、Power BI ビジュアル API を使用してブラウザーのローカル ストレージにアクセスする方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 01/21/2019
-ms.openlocfilehash: e2cb11ea9be85916e6b5557e7933f6a6b5a7159a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: abec68c5622d3dcd96746148ed7a6da4f06c8ec0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380596"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888192"
 ---
 # <a name="local-storage-api"></a>ローカル ストレージ API
 

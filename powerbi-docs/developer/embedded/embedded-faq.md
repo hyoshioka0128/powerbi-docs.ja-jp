@@ -1,6 +1,6 @@
 ---
-title: Power BI 埋め込み分析についてよく寄せられる質問
-description: Power BI Embedded についてよく寄せられる質問とその回答の一覧です。
+title: 埋め込み BI 分析情報を向上させる目的で役立つ、Power BI 埋め込み分析についてよく寄せられる質問
+description: Power BI 埋め込み分析についてよく寄せられる質問と回答を一覧にしてあるのでご参照ください。顧客の埋め込み BI 分析情報を向上させます。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 5d402a32571f70f3a5a3b5686e3fc40ef07126c9
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 4d8096793c4663cbed71c3149bde11305ebee71e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098331"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886697"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Power BI Embedded に関してよく寄せられる質問
 

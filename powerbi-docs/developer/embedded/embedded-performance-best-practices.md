@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded のパフォーマンスのベスト プラクティス
-description: この記事では、埋め込み分析のベスト プラクティスについて説明します
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析のパフォーマンスのベスト プラクティス
+description: この記事では、Power BI 埋め込み分析のベスト プラクティスについて説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 2d33ed5a707a3b4bc3e0a77a38128e7e00154798
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f8bf41ae9a4b6f2e16aae2c05df8fa4448a0457c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746679"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888790"
 ---
-# <a name="power-bi-embedded-performance-best-practices"></a>Power BI Embedded のパフォーマンスのベスト プラクティス
+# <a name="power-bi-embedded-analytics-performance-best-practices"></a>Power BI 埋め込み分析のパフォーマンスのベスト プラクティス
 
 この記事では、アプリケーションでレポート、ダッシュボード、タイルを短時間で表示するための推奨事項を紹介しています。
 
@@ -40,7 +40,7 @@ ms.locfileid: "91746679"
 
 ### <a name="permissions"></a>アクセス許可
 
-編集モードでレポートを埋め込まないのであれば、**表示**アクセス許可を与えます。 この方法では、編集モードで使用されるコンポーネントが埋め込みコードによって初期化されることがありません。
+編集モードでレポートを埋め込まないのであれば、**表示** アクセス許可を与えます。 この方法では、編集モードで使用されるコンポーネントが埋め込みコードによって初期化されることがありません。
 
 ### <a name="filters-bookmarks-and-slicers"></a>フィルター、ブックマーク、スライサー
 
@@ -65,7 +65,7 @@ Power BI Premium 容量または Power BI Embedded 容量を使用する組織�
 
 `powerbi.preload()` を使用して、エンドユーザーのパフォーマンスを向上させます。 `powerbi.preload()` メソッドによって、後でレポートを埋め込むために使用される javascript、css ファイル、およびその他の成果物がダウンロードされます。
 
-レポートをすぐに埋め込まない場合は、`powerbi.preload()` を呼び出します。 たとえば、Power BI の埋め込みコンテンツがホーム ページに表示されない場合は、`powerbi.preload()` を使って、コンテンツを埋め込むために使われる成果物のダウンロードとキャッシュを行います。
+レポートをすぐに埋め込まない場合は、`powerbi.preload()` を呼び出します。 たとえば、埋め込み Power BI コンテンツがホーム ページに表示されない場合は、`powerbi.preload()` を使って、コンテンツを埋め込むために使われる成果物のダウンロードとキャッシュを行います。
 
 ## <a name="bootstrapping-the-iframe"></a>iframe のブートストラップ
 
@@ -107,5 +107,5 @@ Power BI Premium 容量または Power BI Embedded 容量を使用する組織�
 ## <a name="next-steps"></a>次の手順
 
 * [Power BI の最適化ガイド](../../guidance/power-bi-optimization.md)
-* [Power BI Embedded の問題を解決する方法](embedded-troubleshoot.md)
-* [Power BI Embedded のよくあるご質問](embedded-faq.md)
+* [Power BI 埋め込み分析の問題を解決する方法](embedded-troubleshoot.md)
+* [Power BI 埋め込み分析の FAQ](embedded-faq.md)

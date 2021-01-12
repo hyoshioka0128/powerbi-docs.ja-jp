@@ -1,6 +1,6 @@
 ---
-title: Power BI カスタム ビジュアルへの書式設定オプションの追加
-description: Power BI カスタム ビジュアルの書式オプションの開発方法に関するチュートリアル
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析で Power BI カスタム ビジュアルに書式設定オプションを追加する
+description: Power BI カスタム ビジュアルの書式オプションの開発方法に関するチュートリアル。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: ec3ba601eb6cd5db4fbc19298d76ce0cd7346f53
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ec5dbe338cc27379d69781a83f58091d94011f08
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418741"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886582"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>チュートリアル:Power BI ビジュアルへの書式設定オプションの追加
 
 このチュートリアルでは、ビジュアルに共通プロパティを追加する方法について説明します。
 
-このチュートリアルで学習する内容は次のとおりです。
+このチュートリアルでは、以下の内容を学習します。
 > [!div class="checklist"]
 > * ビジュアルのプロパティを追加する。
 > * ビジュアルをパッケージ化する。
@@ -48,7 +48,7 @@ ms.locfileid: "96418741"
 5. **Power BI** で、書式設定オプションをもう一度確認します。
 
     > [!Note]
-    > 書式設定オプションが変化していない場合は、 **[Reload Custom Visual]\(カスタム ビジュアルの再読み込み\)** を選択します。
+    > 書式設定オプションが変化していない場合は、**[Reload Custom Visual]\(カスタム ビジュアルの再読み込み\)** を選択します。
 
     ![書式設定オプションを表示する](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
@@ -192,9 +192,9 @@ ms.locfileid: "96418741"
     pbiviz start
     ```
 
-15. **Power BI** のビジュアルの上に表示されるツールバーで、 **[自動再読み込みの切り替え]** を選択します。
+15. **Power BI** のビジュアルの上に表示されるツールバーで、**[自動再読み込みの切り替え]** を選択します。
 
-16. **ビジュアルの書式** オプションで、 **[Circle]** を展開します。
+16. **ビジュアルの書式** オプションで、**[Circle]** を展開します。
 
     ![Circle の書式](media/custom-visual-develop-tutorial-format-options/circle-format.png)
 
@@ -222,7 +222,7 @@ ms.locfileid: "96418741"
 
 5. ビジュアルの **supportUrl** と **gitHubUrl** を設定します。
 
-    例: 
+    例:
 
     ```json
     {
@@ -235,7 +235,7 @@ ms.locfileid: "96418741"
 
 7. **pbiviz.json** ファイルを保存します。
 
-8. **assets** オブジェクトのドキュメントでアイコンへのパスが定義されていることに注意してください。 このアイコンは、 **_[視覚化]_** ウィンドウに表示されるイメージです。 これは "*20 × 20 ピクセル*" の **PNG** ファイルにする必要があります。
+8. **assets** オブジェクトのドキュメントでアイコンへのパスが定義されていることに注意してください。 このアイコンは、**_[視覚化]_** ウィンドウに表示されるイメージです。 これは "*20 × 20 ピクセル*" の **PNG** ファイルにする必要があります。
 
 9. エクスプローラーで icon.png ファイルをコピーして貼り付け、assets フォルダーにある既定のファイルを置き換えます。
 
@@ -267,13 +267,13 @@ Power BI Desktop レポートを開き、カスタム ビジュアル Circle Car
 
     ![デスクトップにカスタム ビジュアルを追加する](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
-3. **インポート ウィンドウ** で、 **[インポート]** を選択します。
+3. **インポート ウィンドウ** で、**[インポート]** を選択します。
 
 4. 開いたウィンドウで、プロジェクトのディレクトリの **dist** フォルダーに移動します。
 
-5. **circleCard.pbiviz** ファイルを選択して、 **[開く]** を選択します。
+5. **circleCard.pbiviz** ファイルを選択して、**[開く]** を選択します。
 
-6. ビジュアルが正常にインポートされたら、 **[OK]** を選択します。
+6. ビジュアルが正常にインポートされたら、**[OK]** を選択します。
 
 7. ビジュアルが **_[視覚化]_** ウィンドウに追加されたことを確認します。
 
@@ -285,6 +285,6 @@ Power BI Desktop レポートを開き、カスタム ビジュアル Circle Car
 
 カスタム ビジュアルのデバッグに関するヒントについては、[デバッグ ガイド](./visuals-how-to-debug.md#how-to-debug-power-bi-visuals)を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 他のユーザーが使用できるように新しく開発したビジュアルをリストすることはできますが、その場合、**AppSource** に送信する必要があります。 このプロセスの詳細については、「[Power BI ビジュアルを AppSource に発行する](office-store.md)」を参照してください。

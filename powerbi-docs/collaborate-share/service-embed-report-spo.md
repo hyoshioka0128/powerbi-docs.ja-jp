@@ -9,17 +9,17 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/28/2020
-ms.openlocfilehash: 6a1f8a69db20d44fc814c7e63e4ad13ed5fc955c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/04/2021
+ms.openlocfilehash: e4d31a7bf83d4e94e2f3b71ca43924d468268f76
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407379"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888411"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>SharePoint Online にレポート Web パーツを埋め込む
 
-Power BI の新しい SharePoint Online 用レポート Web パーツでは、対話型の Power BI レポートを SharePoint Online のページに簡単に埋め込むことができます。
+新しい Power BI の SharePoint Online 用レポート Web パーツを使用すると、対話型の Power BI レポートを SharePoint Online のページに簡単に埋め込むことができます。
 
 新しい **[SharePoint Online に埋め込む]** オプションを使用するとき、埋め込みレポートでは、[行レベル セキュリティ (RLS)](../admin/service-admin-rls.md) を介してあらゆる項目のアクセス許可とデータ セキュリティが順守されます。そのため、安全な内部ポータルを簡単に作成できます。
 
@@ -39,9 +39,9 @@ SharePoint Online にレポートを埋め込むには、レポートの URL を
 
 ### <a name="get-a-report-url"></a>レポートの URL を取得する
 
-1. Power BI 内でレポートを表示します。
+1. Power BI サービスで、レポートを開きます。
 
-2. **[その他のオプション (...)]** ドロップダウン メニューで、 **[埋め込む]**  >  **[SharePoint Online]** の順に選択します。
+2. **[共有]** メニューで、 **[レポートを埋め込む]**  >  **[SharePoint Online]** を選択します。
 
     ![[その他のオプション] メニュー、SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 

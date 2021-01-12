@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルの分析ウィンドウ
-description: この記事では、Power BI ビジュアルで動的な参照行を作成する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルの分析ウィンドウ
+description: この記事では、Power BI ビジュアルで動的な参照行を作成する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 85dc34a2dbdfba02623f4d369d72311d9a93e997
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: dd3d3a8a3553dc9c3ab8c2867c6fee319ad74a07
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414187"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889158"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Power BI ビジュアルの分析ウィンドウ
 
@@ -25,7 +25,7 @@ ms.locfileid: "96414187"
 
 ## <a name="manage-the-analytics-pane"></a>分析ウィンドウを管理する
 
-[**書式** ウィンドウ](./custom-visual-develop-tutorial-format-options.md)でプロパティを管理するように、ビジュアルの **capabilities.json** ファイルでオブジェクトを定義することで、*分析* ウィンドウを管理します。
+[**書式** ウィンドウ](./custom-visual-develop-tutorial-format-options.md)でプロパティを管理するように、ビジュアルの *capabilities.json* ファイルでオブジェクトを定義することで、**分析** ウィンドウを管理します。
 
 **分析** ウィンドウでは、次のような違いがあります。
 
@@ -38,7 +38,7 @@ ms.locfileid: "96414187"
 
 * オブジェクトには、次の 2 つのプロパティが必要です。
     * `bool` 型の `show`。既定値は `false` です。
-    * `text` 型の `displayName`。 選択する既定値が、インスタンスの最初の表示名になります。
+    * `displayName` 型の `text`。 選択する既定値が、インスタンスの最初の表示名になります。
 
 ```json
 {

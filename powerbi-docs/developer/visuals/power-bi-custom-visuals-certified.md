@@ -1,6 +1,6 @@
 ---
-title: 認定済み Power BI ビジュアル
-description: 認定を受けるためにカスタム ビジュアルを提出する場合の要件とプロセス、認定済み Power BI ビジュアルの一覧。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の認定済み Power BI ビジュアル
+description: 認定を受けるためにカスタム ビジュアルを提出する場合の要件とプロセス、認定済み Power BI ビジュアルの一覧。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/08/2020
-ms.openlocfilehash: bbca1802b1136c4e9e16e70ab87ab7554612c037
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1331543973680879e4fcc2dbafc7323e72a27694
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386711"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888169"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>認定済みの Power BI ビジュアルを取得する
 
@@ -180,4 +180,4 @@ AppSource への配置は、時間がかかる可能性のあるプロセスで�
 
 * [Microsoft AppSource に Power BI ビジュアルを発行する](office-store.md)
 
-* その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+* 他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

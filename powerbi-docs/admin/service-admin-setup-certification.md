@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17fc02131f13fe7fe7d8fb17af4380f6a013b9e7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 520a3673d34019c6045988cd5d501e187849a5c6
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413520"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927058"
 ---
 # <a name="enable-content-certification"></a>コンテンツの認定を有効にする
 
@@ -39,7 +39,7 @@ Power BI 管理者は、自分が所属する組織の認定プロセスを有�
 
 1. トグルを **[有効]** に設定します。
 1. 組織に発行済みの認定ポリシーがある場合は、ここでその URL を指定します。 これは、[承認設定のダイアログ](../collaborate-share/service-endorse-content.md#request-content-certification)の認定セクションでは **[詳細情報]** リンクとなります。 リンクが指定されていない場合、自分のコンテンツの認定を要求するユーザーは担当の Power BI 管理者に連絡するように勧められることになります。
-1. コンテンツを認定することを承認されたメンバーで構成されている 1 つまたは複数のセキュリティ グループを指定します。 このような承認された認定者は、[承認設定ダイアログ](../collaborate-share/service-endorse-content.md#certify-content)の認定セクションにある [認定] ボタンを使用できるようになります。
+1. コンテンツを認定することを承認されたメンバーで構成されている 1 つまたは複数のセキュリティ グループを指定します。 このような承認された認定者は、[承認設定ダイアログ](../collaborate-share/service-endorse-content.md#certify-content)の認定セクションにある [認定] ボタンを使用できるようになります。 このフィールドには、セキュリティ グループのみを入力できます。 名前付きユーザーを入力することはできません。
     
     認定の権限を付与したくないサブセキュリティ グループがセキュリティ グループに含まれている場合は、 **[特定のセキュリティ グループを除く]** ボックスをオンにし、表示されるテキスト ボックスに該当するグループの名前を入力してください。
 1. **[適用]** をクリックします。

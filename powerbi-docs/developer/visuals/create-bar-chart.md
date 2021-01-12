@@ -1,6 +1,6 @@
 ---
-title: 横棒グラフを作成する
-description: このステップ バイ ステップ ガイドを使用して、コードで単純な Power BI 横棒グラフ ビジュアルを作成します。
+title: 埋め込み BI 分析情報を向上させるため、 Power BI 埋め込み分析で横棒グラフを作成する
+description: このステップ バイ ステップ ガイドを使用して、コードで単純な Power BI 横棒グラフ ビジュアルを作成します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 05/01/2020
-ms.openlocfilehash: 0f8f97e5f707e813d316ae4d5388f0793f8c1aa0
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a3210c2fdb86632d9fa47b4c9c4add6fff5f052e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149039"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889089"
 ---
 # <a name="build-a-bar-chart"></a>横棒グラフを作成する
 
@@ -84,14 +84,14 @@ let viewModel: BarChartViewModel = {
 ## <a name="data-binding"></a>データ バインディング 
 データ バインディングを追加するには、*capabilities.json* でビジュアル機能を定義します。 このサンプルコードには、使用するスキーマが既にあります。
 
-データ バインディングは、Power BI の**フィールド** ウェルに対して機能します。
+データ バインディングは、Power BI の **フィールド** ウェルに対して機能します。
 
 ![フィールド ウェルのデータ バインディング](./media/create-bar-chart/data-binding.png)
 
 ### <a name="add-data-roles"></a>データ ロールの追加
 サンプルコードには既にデータ ロールがありますが、カスタマイズすることができます。
 
-- `displayName` は**フィールド** ウェルに表示される名前です。
+- `displayName` は **フィールド** ウェルに表示される名前です。
 - `name` はデータ ロールを参照するために使用される内部名です。
 - `kind` は、フィールドの種類を示します。 *Grouping* フィールド (0) には不連続値が含まれます。 *Measure* フィールド (1) には数値データ値が含まれます。
 
@@ -270,7 +270,7 @@ bars.on('click', function(d) {
 
 ## <a name="static-objects"></a>静的オブジェクト
 
-オブジェクトを**プロパティ** ウィンドウに追加して、ビジュアルをさらにカスタマイズすることができます。 これらのカスタマイズは、ユーザー インターフェイスの変更、またはクエリされたデータに関連する変更になります。 このサンプルでは、静的オブジェクトを使用して、横棒グラフの X 軸を表示します。
+オブジェクトを **プロパティ** ウィンドウに追加して、ビジュアルをさらにカスタマイズすることができます。 これらのカスタマイズは、ユーザー インターフェイスの変更、またはクエリされたデータに関連する変更になります。 このサンプルでは、静的オブジェクトを使用して、横棒グラフの X 軸を表示します。
 
 **プロパティ** ウィンドウでは、オブジェクトのオンとオフを切り替えることができます。
 
@@ -416,7 +416,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 ```
 
 ### <a name="control-property-update-logic"></a>コントロール プロパティの更新ロジック
-オブジェクトが**プロパティ** ウィンドウに追加されると、各トグルによって更新がトリガーされます。 `if` ブロックに特定のオブジェクト ロジックを追加します。
+オブジェクトが **プロパティ** ウィンドウに追加されると、各トグルによって更新がトリガーされます。 `if` ブロックに特定のオブジェクト ロジックを追加します。
 
 ```typescript
 if(settings.enableAxis.show) {

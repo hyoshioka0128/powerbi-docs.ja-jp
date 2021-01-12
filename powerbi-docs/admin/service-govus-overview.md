@@ -1,21 +1,21 @@
 ---
 title: 米国政府顧客向け Power BI - 概要
-description: 米国政府機関のお客様は、Power BI Pro サブスクリプションを Microsoft 365 Government プランに追加できます。 このサービスの説明では、サインアップして接続し、利用可能な機能を確認する方法について説明します。
+description: 米国政府機関のお客様は、Power BI サブスクリプションを Microsoft 365 Government プランに追加できます。 このサービスの説明では、サインアップして接続し、利用可能な機能を確認する方法について説明します。
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.custom: licensing support
+ms.date: 01/05/2021
+ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: e8cf03d90165463fd1e59bf4c4394c1da94e995e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9b52e0698f6b9c1ae779bf21738acee30db7447d
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407862"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927091"
 ---
 # <a name="power-bi-for-us-government-customers"></a>米国政府顧客向け Power BI
 
@@ -113,9 +113,14 @@ SQL データベースのファイアウォールを設定するには、「[IP 
 
 ## <a name="power-bi-feature-availability"></a>Power BI の機能の利用可能性
 
-Government クラウドのお客様の要件に対応するため、Government プランと商用プランにはいくつかの違いがあります。 私たちの目標は、一般提供から 30 日以内に、すべての機能を政府機関向けクラウドで使用できるようにすることです。 場合によっては、基になる依存関係によって機能が使用できなくなることがあります。
+Government クラウドのお客様の要件に対応するため、Government プランと商用プランにはいくつかの違いがあります。 私たちの目標は、一般提供から 30 日以内に、すべての機能を政府機関向けクラウドで使用できるようにすることです。 場合によっては、基になる依存関係によって機能が使用できなくなることがあります。 以下の一覧は、特定の政府環境ではまだ利用できない機能や、機能が制限されている機能を示しています。 この一覧では、次のキーが使用されています。
 
-次の表は、特定の政府環境で利用できない機能を示しています。 リリースが計画されている場合の公開予定時期も含めます。
+|Key |説明|
+|-----|------|
+|![利用可能](../media/yes.png)|この機能は、脚注で定義されている例外を除いて、この環境で使用できます。|
+|![利用不可](../media/no.png)| この機能は、この環境では使用できません。また、配信時期の予定もありません。|
+
+環境に対してリリースが予定されている場合は、公開予定時期の四半期を含めています。
 
 |特徴 |GCC |GCC High |DoD|
 |------|------|------|------|
@@ -123,18 +128,18 @@ Government クラウドのお客様の要件に対応するため、Government �
 |[Power BI Web パーツを使用した SharePoint Online への埋め込み](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
 |[データドリブン アラートのための Power Automate との接続](../connect-data/power-bi-data-sources.md)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
 |[Teams での [Power BI] タブ](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
-|[大規模なモデル](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
-|[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/dataflows/dataflows-premium-features.md) | Q4 2020 |Q4 2020| ![利用不可](../media/no.png) |
-|[データフロー - 直接クエリ](../transform-model/dataflows/dataflows-configure-consume.md) | Q4 2020 |Q4 2020|![利用不可](../media/no.png)|
-|[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
-|[テンプレート アプリ](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
-|[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
-|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| Q4 2020|Q4 2020|Q4 2020|
+|[大規模なモデル](service-premium-large-models.md) | ![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png) |
+|[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/dataflows/dataflows-premium-features.md) | ![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png) |
+|[データフロー - 直接クエリ](../transform-model/dataflows/dataflows-configure-consume.md) | ![利用不可](../media/no.png) |![利用不可](../media/no.png)|![利用不可](../media/no.png)|
+|[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png) |![利用不可](../media/no.png)|
+|[テンプレート アプリ](../connect-data/service-template-apps-overview.md)<sup>3</sup>|![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png)|
+|[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png)|
+|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| ![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[ストレージ持ち込み (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[QR コードの生成](../create-reports/service-create-qr-code-for-tile.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 
-<sup>1</sup> B2B コラボレーションは GCC で利用できますが、その環境でのライセンスを外部ユーザーに発行する必要があります。 商用クラウド ライセンスは GCC では無効です。 米国政府機関向け B2B コラボレーションの既知の制限に関する詳細については、「[Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)」(Azure Government とグローバル Azure の比較) を参照してください
+<sup>1</sup> B2B コラボレーションは GCC で利用できますが、その環境でのライセンスを外部ユーザーに発行する必要があります。 商用クラウド ライセンスは GCC では無効です。 米国政府機関向け B2B コラボレーションの既知の制限に関する詳細については、「[Azure Government とグローバル Azure の比較](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)」を参照してください。
 
 <sup>2</sup> GCC 用の Teams の Power BI エクスペリエンスは限られており、従来のワークスペースでのみ機能します。また、「[Microsoft Teams に Power BI コンテンツを埋め込む](../collaborate-share/service-embed-report-microsoft-teams.md)」で説明されている拡張機能は含まれていません。
 

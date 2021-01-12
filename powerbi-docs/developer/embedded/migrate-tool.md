@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded 移行ツール
-description: この移行ツールを使用して、Power BI Embedded Azure サービス (PaaS) のレポートを Power BI サービス (SaaS) にコピーできます。
+title: 埋め込み BI insights を向上させるために、ワークスペース コレクションから Power BI Embedded ソリューションの Power BI 埋め込み分析に Power BI Embedded ソリューションを移行するツール
+description: この移行ツールを使用して、Power BI Embedded Azure サービス (PaaS) のレポートを Power BI サービス (SaaS) にコピーできます。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: 60e80311ff12da2bc79b7f844c81c7b5c8f4c3ac
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 7156d0e414a4469cb4e0cba5ea5958e02e4e2e43
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354871"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885276"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded 移行ツール
 
@@ -49,7 +49,7 @@ ms.locfileid: "85354871"
 3. サインインするように求められます。 Azure サブスクリプションのログイン アカウントを使用します。
 
    > [!IMPORTANT]
-   > これは Power BI へのサインインに使用する組織アカウントでは**ありません**。
+   > これは Power BI へのサインインに使用する組織アカウントでは **ありません**。
 
 4. Power BI Embedded ワークスペース コレクションを保存する Azure サブスクリプションを選択します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "85354871"
    > [!NOTE]
    > ワークスペース コレクション数と、ワークスペース コレクション内に存在するコンテンツ数によりますが、分析プロセスには数分かかります。
 
-7. **分析**が完了すると、移行プランを保存するように求められます。
+7. **分析** が完了すると、移行プランを保存するように求められます。
 
 この時点で、移行プランは Azure サブスクリプションに接続されています。 移行プランの操作方法の流れについては、後述の説明を参照してください。 移行プランには、移行の分析と計画、ダウンロード、グループの作成、アップロードが含まれています。
 
@@ -120,7 +120,7 @@ PaaS トポロジ内の項目を選択して、レポート セクションに�
 
 ### <a name="target-structure"></a>ターゲット構造
 
-**ターゲット構造**は、ダウンロード先とアップロード方法をツールに指示するための場所です。
+**ターゲット構造** は、ダウンロード先とアップロード方法をツールに指示するための場所です。
 
 #### <a name="download-plan"></a>ダウンロード プラン
 
@@ -145,7 +145,7 @@ Power BI サービス内で作成されるワークスペースに使用する�
 ![レポートのアップロードと項目名の変更](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
 
 > [!NOTE]
-> *グループ*の名前にスペースや無効な文字を含めることはできません。
+> *グループ* の名前にスペースや無効な文字を含めることはできません。
 
 ## <a name="step-2-download"></a>手順 2:ダウンロード
 

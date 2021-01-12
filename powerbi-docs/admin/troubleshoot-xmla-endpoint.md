@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/16/2020
+ms.date: 01/04/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: ca9dd1b18fb037013e6d1d5c6e6c3510065068b4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 191cf3ce71ca30f257276df78ad43cdb2e49a1e1
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413290"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886088"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -151,7 +151,7 @@ Executing the query ...
 Error -1052311437:
 ```
 
-これは、SSMS v18.7.1 でインストールされたクライアント ライブラリでセッション トレーシングがサポートされていないために発生します。 これは今後リリースされる SSMS で解決されます。
+これは、SSMS v18.7.1 でインストールされたクライアント ライブラリでセッション トレーシングがサポートされていないために発生します。 これは SSMS 18.8 以降で解決されています。 [最新の SSMS をダウンロードしてください](/sql/ssms/download-sql-server-management-studio-ssms)。
 
 ### <a name="refresh-operations"></a>更新操作
 
@@ -168,7 +168,51 @@ Date (UTC): 11/13/2020 7:57:16 PM
 Run complete
 ```
 
-これは、更新要求の状態が間違って追跡記録されるというクライアント ライブラリの既知の問題によるものです。 これは今後リリースされる SSMS で解決されます。
+これは、更新要求の状態が間違って追跡記録されるというクライアント ライブラリの既知の問題によるものです。 これは SSMS 18.8 以降で解決されています。 [最新の SSMS をダウンロードしてください](/sql/ssms/download-sql-server-management-studio-ssms)。
+
+## <a name="editing-role-memberships-in-ssms"></a>SSMS でロール メンバーシップを編集する
+
+SQL Server Management Studio (SSMS) v18.8 を使用してデータセットのロール メンバーシップを編集するとき、SSMS に次のエラーが表示されることがあります。
+
+```
+Failed to save modifications to the server. 
+Error returned: ‘Metadata change of current operation cannot be resolved, please check the command or try again later.’ 
+```
+
+これはアプリ サービス REST API の既知の問題によるものです。 これは今後のリリースで解決される予定です。 それまでの間は、このエラーを回避するには、 **[ロールのプロパティ]** で **[スクリプト]** をクリックし、次の TMSL コマンドを入力し、実行してください。
+
+```json
+{ 
+  "createOrReplace": { 
+    "object": { 
+      "database": "AdventureWorks", 
+      "role": "Role" 
+    }, 
+    "role": { 
+      "name": "Role", 
+      "modelPermission": "read", 
+      "members": [ 
+        { 
+          "memberName": "xxxx", 
+          "identityProvider": "AzureAD" 
+        }, 
+        { 
+          "memberName": “xxxx” 
+          "identityProvider": "AzureAD" 
+        } 
+      ] 
+    } 
+  } 
+} 
+```
+
+## <a name="publish-error---live-connected-dataset"></a>発行エラー - ライブ接続されたデータセット
+
+Analysis Services コネクタを使用し、ライブ接続されたデータセットを再発行するとき、次のエラーが表示されることがあります。
+
+:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Power BI エラーに発行できませんでした。":::
+
+エラー メッセージに示されているように、この問題を解決するには、既存のデータセットを削除するか、その名前を変更します。 また、レポートに依存しているアプリがあれば、それを必ず再発行してください。 必要であれば、最新のレポートにアクセスできるよう、新しいレポートでブックマークを更新するように下流のユーザーにもお知らせください。  
 
 ## <a name="see-also"></a>関連項目
 

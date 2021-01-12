@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルのブックマーク サポートを追加する
-description: Power BI ビジュアルではブックマークの切り替えを処理できます
+title: 埋め込み BI 分析情報を向上させるために、Power BI 埋め込み分析で Power BI ビジュアルのブックマーク サポートを追加する
+description: Power BI ビジュアルで処理できます。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。 ブックマークの切り替え
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: aeea5ea3a9d1d2bd375c44b6c6b7eac57eb65aff
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 6a4f0e8ad8890e85db54e8d77a2ec19bb0d02ea8
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749002"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889112"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Power BI ビジュアルのブックマーク サポートを追加する
 

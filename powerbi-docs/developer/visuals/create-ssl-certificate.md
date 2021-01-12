@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアル用の SSL 証明書を作成する
-description: Windows、Mac、Linux で Power BI Visual Tools を使用して、または手動で、SSL 証明書を生成する方法について説明します。
+title: 埋め込み BI 分析情報を向上させるため、Power BI 埋め込み分析で Power BI ビジュアルの SSL 証明書を作成する
+description: Windows、Mac、Linux で Power BI Visual Tools を使用して、または手動で、SSL 証明書を生成する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 05/08/2020
-ms.openlocfilehash: f6f458d2fe82668074d7cfb046cb5a72afa35c38
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 7897d25f3ac49c0f1b728f2aaf05b8612de67055
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048788"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885524"
 ---
 # <a name="create-an-ssl-certificate"></a>SSL 証明書を作成する
 

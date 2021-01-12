@@ -7,25 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/02/2018
+ms.date: 01/05/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ec0b384efb4b43afad76e18feb1b5a53d5f3738c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5ae148feaa294c8779a7140ef450c832bd3376d8
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395212"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927173"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Q&A からダッシュボードにタイルをピン留めする
-## <a name="how-to-pin-a-tile-from-qa"></a>Q&A からタイルをピン留めする方法
-Q&A は、Power BI のアドホック レポート作成ツールです。 特定の情報を検索する必要がありますか。 データについての質問を投稿し、視覚エフェクト形式で回答を受信します。
 
-この記事では、Power BI サービス (app.powerbi.com) を使ってダッシュボードを開き、自然言語を使って視覚エフェクトを作成し、その視覚エフェクトをダッシュボードにピン留めする方法を紹介します。 ダッシュボードは Power BI Desktop では利用できません。 他の Power BI ツールやコンテンツで Q&A を使う方法について詳しくは、[Power BI Q&A の概要](../consumer/end-user-q-and-a.md)についての説明をご覧ください。 
+Q&A は、自然言語を使用してデータを探索するための Power BI ツールです。 特定の情報を検索する必要がありますか。 データについての質問を投稿し、視覚エフェクト形式で回答を受信します。
+
+この記事では、Power BI サービス (app.powerbi.com) で[ダッシュボード](../consumer/end-user-dashboards.md)を開き、自然言語を使って質問して、視覚エフェクトを作成し、その視覚エフェクトをダッシュボードにピン留めする方法を紹介します。 ダッシュボードは Power BI Desktop では利用できません。 他の Power BI ツールやコンテンツで Q&A を使う方法について詳しくは、[Power BI Q&A の概要](../consumer/end-user-q-and-a.md)についての説明をご覧ください。 
 
 作業を進めるために、[小売りの分析のサンプル ダッシュボード](sample-retail-analysis.md)を開きます。
 
+## <a name="how-to-pin-a-tile-from-qa"></a>Q&A からタイルをピン留めする方法
 
-1. レポートから少なくとも 1 つのタイルをピン留めした[ダッシュボード](../consumer/end-user-dashboards.md)を開きます。 質問を入力すると、Power BI はダッシュボードにタイルがピン留めされたデータセットで回答を検索します。  詳細については、[データの取得](../connect-data/service-get-data.md)に関するページを参照してください。
+1. レポートから少なくとも 1 つのタイルをピン留めしたダッシュボードを開きます。 質問を入力すると、Power BI はダッシュボードにタイルがピン留めされたデータセットで回答を検索します。
 2. ダッシュボードの上部にある質問ボックスに、データに関する質問を入力します。  
    ![Q&A 質問ボックス](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. たとえば、"月および担当地域別の昨年度の販売" と入力します。  
@@ -62,5 +63,5 @@ Q&A は、Power BI のアドホック レポート作成ツールです。 特�
 ## <a name="next-steps"></a>次の手順
 [タイルの名前の変更、サイズ変更、ハイパーリンクの追加、位置変更など](service-dashboard-edit-tile.md)    
 [フォーカス モードでダッシュボード タイルを表示する](../consumer/end-user-focus.md)     
-[Power BI での Q&A に戻る](../consumer/end-user-q-and-a.md)  
-他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+[Power BI での Q&A の概要](../consumer/end-user-q-and-a.md)  
+その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

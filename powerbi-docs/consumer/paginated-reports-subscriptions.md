@@ -7,19 +7,19 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/01/2020
-ms.openlocfilehash: be552df28bebb5876d24da8bbecf66ea503fdb04
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/04/2021
+ms.openlocfilehash: 67efe0e7abd23792f46561f78b0b048b431561a4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415245"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888008"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする 
 
 Power BI サービスのページ分割されたレポートに対して自分および他のユーザー用の電子メール サブスクリプションを設定できるようになりました。 一般に、[Power BI サービスのレポートおよびダッシュボードをサブスクライブ](end-user-subscribe.md)する場合とプロセスは同じです。 この記事では、違いと考慮事項について詳しく説明します。 
 
-サブスクリプションの設定時には、メールの受信頻度 (毎日、毎週、毎月、毎時間) を選択します。 サブスクリプションを実行する時間を選択することもできます。 いずれの場合も、すべてのレポートに最大 24 個の異なるサブスクリプションを設定できます。 
+サブスクリプションの設定時には、メールの受信頻度 (毎日、毎週、毎月、毎時間) を選択します。 サブスクリプションを実行する時間を選択することもできます。 すべてのレポートに対して設定できるサブスクリプションの数に制限はありません。 
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>ページ分割されたレポート サブスクリプションに関する考慮事項 
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアルの送信テスト
-description: この記事では、AppSource への発行に先だってビジュアルが合格する必要があるテスト ケースについて説明します。 オプションのテスト ケースもあります。
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルの送信テスト
+description: この記事では、AppSource への発行に先だってビジュアルが合格する必要があるテスト ケースについて説明します。 オプションのテスト ケースもあります。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/15/2020
-ms.openlocfilehash: 515813aeb98010f838cfff75febbb1ef206bc2cf
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: b5054d821dc797f1606fea8ec5d0bb43569a57e5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397486"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888468"
 ---
 # <a name="submission-testing-of-a-power-bi-visual"></a>Power BI ビジュアルの送信テスト
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI データセット プロパティ
-description: Power BI データセット API のプロパティについて説明します
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI データセットのプロパティ
+description: Power BI データセット API のプロパティについて説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: e0092003cbf019bcf720eeb7aa32e8a9e800f143
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: b4bd173c2f3730a0a6082214afbfdf5760048102
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747300"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887686"
 ---
 # <a name="dataset-properties"></a>データセットのプロパティ
 
@@ -24,28 +24,28 @@ ms.locfileid: "91747300"
 
 ## <a name="dataset"></a>データセット
 
-Name (名前)  |種類  |Description  |読み取り専用  |必須
+名前  |Type  |説明  |[読み取り専用]  |必須
 ---------|---------|---------|---------|---------
-ID     |  Guid       | システム全体で一意である、データセットの識別子です。        | True        | False        
-名前     | String        | データセットのユーザー定義名です。        | False        | True        
-tables     | テーブル[]        | テーブルのコレクションです。        |  False       | False        
+id     |  Guid       | システム全体で一意である、データセットの識別子です。        | 正        | 誤        
+name     | String        | データセットのユーザー定義名です。        | False        | True        
+表     | テーブル[]        | テーブルのコレクションです。        |  False       | False        
 relationships     | リレーションシップ[]        | テーブル間のリレーションシップのコレクションです。        | False        |  False  
 defaultMode     | String        | "Push" と "Streaming" の値で、データセットがプッシュされるか、ストリーミングされるか、またはその両方かを決定します。         | False        |  False
 
-## <a name="table"></a>Table
+## <a name="table"></a>テーブル
 
-Name (名前)  |種類  |Description  |読み取り専用  |必須
+名前  |Type  |説明  |[読み取り専用]  |必須
 ---------|---------|---------|---------|---------
-名前     | String        |  テーブルのユーザー定義名前です。 これは、テーブルの識別子としても使用されます。       | False        |  True       
+name     | String        |  テーブルのユーザー定義名前です。 これは、テーブルの識別子としても使用されます。       | False        |  True       
 列     |  列[]       |  列のコレクション。       | False        |  True       
 メジャー     | メジャー[]        |  メジャーのコレクション。       | False        |  False       
 isHidden     | Boolean        | true の場合、クライアント ツールにテーブルは表示されません。        | False        | False        
 
 ## <a name="column"></a>列
 
-Name (名前)  |種類  |Description  |読み取り専用  |必須
+名前  |Type  |説明  |[読み取り専用]  |必須
 ---------|---------|---------|---------|---------
-名前     |  String        | 列のユーザー定義名です。        |  False       | True       
+name     |  String        | 列のユーザー定義名です。        |  False       | True       
 dataType     |  String       |  サポートされている [EDM データ型](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) と制限事項です。 [データ型の制限事項](#data-type-restrictions) を参照してください。      |  False       | True        
 formatString     | String        | 値が表示されるときの値の書式設定を示す文字列です。 文字列の書式設定の詳細については、[「FORMAT_STRING Contents」](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents) (FORMAT_STRING の内容) を参照してください。      | False        | False        
 sortByColumn    | String        |   同一テーブル内の列の文字列名であり、現在の列を並べ替えるために使用されます。     | False        | False       
@@ -55,18 +55,18 @@ summarizeBy     | String        |  列の既定の集計方法です。 含ま�
 
 ## <a name="measure"></a>メジャー
 
-Name (名前)  |種類  |Description  |読み取り専用  |必須
+名前  |Type  |説明  |[読み取り専用]  |必須
 ---------|---------|---------|---------|---------
-名前     | String        |  メジャーのユーザー定義名です。       |  False       | True        
+name     | String        |  メジャーのユーザー定義名です。       |  False       | True        
 expression     | String        | 有効な DAX 式です。        | False        |  True       
 formatString     | String        |  値が表示されるときの値の書式設定を示す文字列です。 文字列の書式設定の詳細については、[「FORMAT_STRING Contents」](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents) (FORMAT_STRING の内容) を参照してください。       | False        | False        
 isHidden     | String        |  true の場合、クライアント ツールにテーブルは表示されません。       |  False       | False       
 
-## <a name="relationship"></a>リレーションシップ
+## <a name="relationship"></a>Relationship
 
-Name (名前)  |種類  |Description  |読み取り専用  |必須 
+名前  |Type  |説明  |[読み取り専用]  |必須 
 ---------|---------|---------|---------|---------
-名前     | String        | リレーションシップのユーザー定義名です。 リレーションシップの識別子としても使用されます。        | False       | True        
+name     | String        | リレーションシップのユーザー定義名です。 リレーションシップの識別子としても使用されます。        | False       | True        
 crossFilteringBehavior     | String        |    リレーションシップのフィルターの方向: OneDirection (既定値)、BothDirections、Automatic       | False        | False        
 fromTable     | String        | 外部キー テーブルの名前です。        | False        | True         
 fromColumn    | String        | 外部キー列の名前です。        | False        | True         
@@ -77,14 +77,14 @@ toColumn     | String        | 主キー列の名前です。        | False    
 
 これらの制限事項は dataType プロパティに適用されます。
 
-データ型  |制限事項  
+データ型  |制限  
 ---------|---------
 Int64     |   Int64.MaxValue と Int64.MinValue が許可されまていせん。      
 Double     |  Double.MaxValue と Double.MinValue 値が許可されていません。 NaN はサポートされていません。一部の関数では正の無限大と負の無限大がサポートされていません (例: Min、Max)。       
-Boolean     |   True または False。
-DateTime    |   データの読み込み中に、日時分数の値を 1/300 秒 (3.33ms) の整数倍に量子化します。      
+Boolean     |   正誤問題。
+Datetime    |   データの読み込み中に、日時分数の値を 1/300 秒 (3.33ms) の整数倍に量子化します。      
 String     |  現在のところ、文字列値あたり、最大 4,000 文字が許可されます。
-小数|精度=28、スケール=4
+Decimal|精度=28、スケール=4
 
 ## <a name="example"></a>例
 次のコード サンプルには、上記のプロパティが複数含まれています。

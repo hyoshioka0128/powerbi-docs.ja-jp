@@ -1,6 +1,6 @@
 ---
-title: Power BI データ モデルのバージョン管理
-description: OData サービスによって公開されるデータ モデル
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の Power BI データ モデル バージョン管理
+description: OData サービスによって公開されるデータ モデル。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: d8ab94bd33aa2f0674f6dc45a93da0d2f42b1647
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 0c645774f7af1a8575ca3c755a74fd65b652031a
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749301"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887709"
 ---
 # <a name="data-model-versioning"></a>データ モデルのバージョン管理
 
@@ -32,11 +32,11 @@ Power BI データ モデルなど、OData サービスによって公開され�
 * 型定義または列挙型の追加  
 * サービスと正しく対話するために、クライアントによって認識される必要がないモデル要素への注釈の追加  
   
-サービスのためにクライアントを準備し、この増分の変更をモデルに加える "***必要があります***"。 特にクライアントは、以前にサービスで定義されていないプロパティと派生型を受け取る準備をする必要があります。  
+クライアントに対して、サービスがこのような増分の変更をモデルに加えるように準備する "**必要があります**"。 特にクライアントは、以前にサービスで定義されていないプロパティと派生型を受け取る準備をする必要があります。  
   
-サービスでは、認証されたユーザーに応じてそのデータ モデルを変更する "***べきではありません***"。 データ モデルがユーザーやユーザー グループに依存する場合は、認証が制限されているユーザーに表示されるモデルと完全なモデルを比較するときに、このセクションで定義されているように、すべての変更は安全な変更である必要があります。  
+サービスでは、認証されたユーザーに応じてそのデータ モデルを変更する "*_べきではありません_*"。 データ モデルがユーザーやユーザー グループに依存する場合は、認証が制限されているユーザーに表示されるモデルと完全なモデルを比較するときに、このセクションで定義されているように、すべての変更は安全な変更である必要があります。  
   
-OData データ モデル標準の詳細については、[「OData バージョン 4.0 パート 1: Protocol Plus Errata 02」](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) をご覧ください。  
+OData データ モデル標準の詳細については、「[OData バージョン 4.0 パート 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)」をご覧ください。  
   
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [Power BI REST API の概要](/rest/api/power-bi/)

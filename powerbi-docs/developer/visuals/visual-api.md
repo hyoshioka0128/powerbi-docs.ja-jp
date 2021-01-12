@@ -1,6 +1,6 @@
 ---
-title: ビジュアル API
-description: この記事では Power BI ビジュアルで IVisual API を使用する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の ビジュアル API
+description: この記事では Power BI ビジュアルで IVisual API を使用する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/19/2020
-ms.openlocfilehash: 6ec30fdd4812427ae855ff9a167d946d2a415c28
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7b81ecfa1b97b202b6c1ff306cf858f2ea00acde
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83302968"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888537"
 ---
 # <a name="visual-api"></a>ビジュアル API
 すべてのビジュアルは、`IVisual` インターフェイスを実装するクラスから開始されます。 `IVisual` インターフェイスを実装するクラスが 1 つしかない場合は、クラスに任意の名前を指定できます。
@@ -92,7 +92,7 @@ constructor(options: VisualConstructorOptions)
    * `allowInteractions: boolean` は、ビジュアルを対話形式にする必要があるかどうかのヒントを提供するブール型のフラグです
    * `applyJsonFilter` は、特定のフィルターの種類を適用します。[フィルター API](./filter-api.md) に関するページをご覧ください
    * `persistProperties` は、プロパティを保持し、ビジュアル定義と共に保存できるようにします。これによって、次回の再読み込み時にプロパティが利用可能になります
-   * `eventService` は、**Render** イベントをサポートする[イベント サービス](./event-service.md)を返します
+   * `eventService` は、**Render** イベントをサポートする [イベント サービス](./event-service.md)を返します
    * `storageService` は、ビジュアルで[ローカル ストレージ](./local-storage.md)を使用できるようにするためのサービスを返します
    * `authenticationService` は、ユーザー認証を支援するサービスを生成します
    * `tooltipService` は、ビジュアルでツールヒントを使用できるようにする[ツールヒント サービス](./add-tooltips.md)を返します

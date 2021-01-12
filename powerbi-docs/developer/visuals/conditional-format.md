@@ -1,6 +1,6 @@
 ---
-title: 条件付き書式
-description: Power BI の視覚化プロジェクトに条件付き書式を適用する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の条件付き書式設定
+description: Power BI の視覚化プロジェクトに条件付き書式を適用する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 10/27/2020
-ms.openlocfilehash: 5243d1eda3fef2c7b82350fb0ca2669eb43c7623
-ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
+ms.openlocfilehash: 13f9dae542b8e0a340a880ab50b2f57c660e0ed9
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513849"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888767"
 ---
 # <a name="add-conditional-formatting"></a>条件付き書式を追加する
 

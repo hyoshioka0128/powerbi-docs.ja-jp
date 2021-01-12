@@ -1,6 +1,6 @@
 ---
-title: Power BI ビジュアル プロジェクトの単体テストの概要
-description: この記事では、Power BI ビジュアル プロジェクトの単体テストを作成する方法について説明します
+title: 埋め込み BI 分析情報を向上させるための、Power BI 埋め込み分析の Power BI ビジュアル プロジェクトの単体テストの概要
+description: この記事では、Power BI ビジュアル プロジェクトの単体テストを作成する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 996e409e634292ca0767f34c49931cfbcdcd4b94
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ee7ed48043a902a9b5ebd3c548ebec7505e76ab1
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379569"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887916"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>チュートリアル:Power BI のビジュアル プロジェクトの単体テストを追加する
 
@@ -359,11 +359,11 @@ describe("BarChart", () => {
 
 複数のメソッドが呼び出されます。
 
-* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): テスト ケースが記述されます。 Jasmine フレームワークのコンテキストでは、多くの場合、スペックのスイートまたはグループが記述されます。
+* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe):テスト ケースが記述されます。 Jasmine フレームワークのコンテキストでは、多くの場合、スペックのスイートまたはグループが記述されます。
 
 * `beforeEach`:[`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) メソッドで定義されている `it` メソッドの各呼び出しの前に呼び出されます。
 
-* [`it`](https://jasmine.github.io/api/2.6/global.html#it): 1 つのスペックが定義されます。`it` メソッドには、`expectations` が 1 つ以上含まれている必要があります。
+* [`it`](https://jasmine.github.io/api/2.6/global.html#it):1 つのスペックが定義されます。`it` メソッドには、`expectations` が 1 つ以上含まれている必要があります。
 
 * [`expect`](https://jasmine.github.io/api/2.6/global.html#expect): スペックの要求項目が作成されます。要求項目のすべてに合格すると (不合格の項目が 1 つもなければ) スペックが成功となります。
 
@@ -565,7 +565,7 @@ public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 37
 "powerbi-visuals-utils-testutils": "2.2.0"
 ```
 
-次を呼び出します。
+Call (英語の可能性あり)
 
 ```cmd
 npm install
@@ -613,6 +613,6 @@ Lines        : 52.83% ( 112/212 )
 > [!IMPORTANT]
 > コード カバレッジはビジュアルの機能のカバレッジが十分であることを意味するものではありません。 1 つの簡単な単体テストで、`src\visual.ts` の 96% 以上のカバレッジが提供されています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ビジュアルの準備ができたら、発行用に送信できます。 詳細については、「[Power BI ビジュアルを AppSource に発行する](office-store.md)」をご覧ください。

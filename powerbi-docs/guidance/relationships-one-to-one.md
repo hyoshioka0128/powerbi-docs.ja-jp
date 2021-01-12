@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 19fe2aa003c3d39169bc449dab83c09702f49b1d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b9cff6a4a59db3a30fc4bbe2373a723700d00fee
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419155"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885018"
 ---
 # <a name="one-to-one-relationship-guidance"></a>一対一のリレーションシップのガイダンス
 
@@ -99,11 +99,11 @@ ms.locfileid: "96419155"
 - 階層を作成する機能が制限される (そのレベルは "_同じテーブル_" の列に基づいている必要があるため)
 - テーブル間で完全に一致する行が存在しない場合に、予期しない結果が生成される
 
-具体的な推奨事項は、一対一のリレーションシップが "_アイランド内_" であるか、または "_アイランド間_" であるかによって異なります。 リレーションシップの評価について詳しくは、[Power BI Desktop でのモデル リレーションシップ (リレーションシップの評価)](../transform-model/desktop-relationships-understand.md#relationship-evaluation) に関する記事をご覧ください。
+具体的な推奨事項は、一対一のリレーションシップが "_ソース グループ内_" であるか、または "_ソース グループ間_" であるかによって異なります。 リレーションシップの評価について詳しくは、[Power BI Desktop でのモデル リレーションシップ (リレーションシップの評価)](../transform-model/desktop-relationships-understand.md#relationship-evaluation) に関する記事をご覧ください。
 
-### <a name="intra-island-one-to-one-relationship"></a>アイランド内の一対一のリレーションシップ
+### <a name="intra-source-group-one-to-one-relationship"></a>ソース グループ内の一対一のリレーションシップ
 
-テーブル間に一対一の "_アイランド内_" のリレーションシップが存在する場合は、データを 1 つのモデル テーブルに統合することをお勧めします。 これは、Power Query クエリをマージすることで実行できます。
+テーブル間に一対一の "_ソース グループ内_" のリレーションシップが存在する場合は、データを 1 つのモデル テーブルに統合することをお勧めします。 これは、Power Query クエリをマージすることで実行できます。
 
 一対一で関連付けられたデータを統合してモデル化する方法を、以下の手順に示します。
 
@@ -131,11 +131,11 @@ ms.locfileid: "96419155"
 
 ![[フィールド] ペインで、Marketing という名前の表示フォルダー内に Category フィールドが表示されています。](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-引き続きモデル内で一対一のアイランド内のリレーションシップを定義する必要がある場合は、可能であれば、関連テーブルに一致する行が存在していることを確認してください。 一対一のアイランド内のリレーションシップは[標準リレーションシップ](../transform-model/desktop-relationships-understand.md#regular-relationships)として評価されるため、レポートのビジュアルにおいて、データ整合性の問題が空白として発生する可能性があります。 (この記事に記載されている最初のテーブル ビジュアルでは、空白のグループ化の例を確認できます。)
+引き続きモデル内で一対一のソース グループ内のリレーションシップを定義する必要がある場合は、可能であれば、関連テーブルに一致する行が存在していることを確認してください。 一対一のソース グループ内のリレーションシップは[標準リレーションシップ](../transform-model/desktop-relationships-understand.md#regular-relationships)として評価されるため、レポートのビジュアルにおいて、データ整合性の問題が空白として発生する可能性があります。 (この記事に記載されている最初のテーブル ビジュアルでは、空白のグループ化の例を確認できます。)
 
-### <a name="inter-island-one-to-one-relationship"></a>アイランド間の一対一のリレーションシップ
+### <a name="cross-source-group-one-to-one-relationship"></a>ソース グループ間の一対一のリレーションシップ
 
-テーブル間に一対一の "_アイランド間_" のリレーションシップが存在する場合は、データ ソースのデータを事前に統合しない限り、代替となるモデル設計は存在しません。 Power BI によって、一対一のモデル リレーションシップは[制限付きリレーションシップ](../transform-model/desktop-relationships-understand.md#limited-relationships)として評価されます。 そのため、関連テーブル内に一致する行が存在するように注意してください。一致しない行はクエリ結果から削除されます。
+テーブル間に一対一の "_ソース グループ間_" のリレーションシップが存在する場合は、データ ソースのデータを事前に統合しない限り、代替となるモデル設計は存在しません。 Power BI によって、一対一のモデル リレーションシップは[制限付きリレーションシップ](../transform-model/desktop-relationships-understand.md#limited-relationships)として評価されます。 そのため、関連テーブル内に一致する行が存在するように注意してください。一致しない行はクエリ結果から削除されます。
 
 両方のテーブルのフィールドをテーブル ビジュアルに追加するときに、テーブル間に制限付きリレーションシップが存在するとどうなるかを見てみましょう。
 

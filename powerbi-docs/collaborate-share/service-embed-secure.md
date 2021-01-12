@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/27/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: a7f8c6d52acff8cbaaa00004448a3fae300afb9b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: cf056581c7c1f472e1e7ce20baf3d7afd8815bda
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411910"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886032"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>セキュリティで保護されたポータルまたは Web サイトにレポートを埋め込む
 
@@ -26,11 +26,11 @@ Power BI レポートの新しい **埋め込み** オプションを使うと�
 
 1. Power BI サービスで、レポートを開きます。
 
-2. **[その他のオプション (...)]** メニューで、 **[埋め込む]**  >   **[Web サイトまたはポータル]** の順に選択します。
+2. **[共有]** メニューで、 **[レポートを埋め込む]** 、 **[Web サイトまたはポータル]** の順に選択します。
 
     ![[Web サイトまたはポータル] オプション](media/service-embed-secure/power-bi-more-options-website.png)
 
-2. **[埋め込む]** オプションを選択するとダイアログが開きますが、そのダイアログにはレポートを安全に埋め込む目的で利用できる iFrame とリンクがあります。
+2. **[安全な埋め込みコード]** ダイアログで、 **[こちらのリンクを使用してこのコンテンツを埋め込むことができます]** か、iFrame で **[ブログまたは Web サイトに貼り付けることのできる HTML]** を選択します。
 
     ![[埋め込む] オプションのダイアログ ボックス](media/service-embed-secure/secure-embed-code-dialog.png)
 
