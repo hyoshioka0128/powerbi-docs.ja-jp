@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/08/2020
-ms.openlocfilehash: 1331543973680879e4fcc2dbafc7323e72a27694
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 5f337197655d41b830b237c04faa2642991c34ee
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888169"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969813"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>認定済みの Power BI ビジュアルを取得する
 
@@ -92,7 +92,7 @@ Power BI ビジュアルを作成するには、最新バージョンの [powerb
 * 公開されている Javascript や TypeScript ライブラリなどの公開レビュー可能な OSS コンポーネントのみを使用します。
 * このコードでは、[レンダリング イベント API](event-service.md) をサポートする必要があります。
 * DOM が安全に操作されていることを確認します。 ユーザー入力またはユーザー データにサニタイズを使用してから DOM に追加します。
-* テスト データセットとして[サンプル レポート](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix)を使用します。
+* テスト データセットとして[サンプル レポート](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets)を使用します。
 
 **禁止**
 * 外部のサービスまたはリソースへのアクセス。 たとえば、Power BI から任意のサービスにアクセスできる HTTP/S または WebSocket 要求を含めることはできません。

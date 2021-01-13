@@ -1,6 +1,6 @@
 ---
-title: Power BI 埋め込み分析の埋め込み BI ソリューションのために Azure portal で Power BI Embedded 容量を作成する
-description: この記事では、Power BI 埋め込み分析の埋め込み BI ソリューションのために Microsoft Azure で Power BI Embedded 容量を作成する手順について説明します。
+title: Azure Portal での Power BI Embedded 容量の作成 | Microsoft Docs
+description: この記事では、Microsoft Azure で Power BI Embedded の容量を作成する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 898da0f5e4284183f2ffa08fba8e6a50d9474d15
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 73be957feae7fb869cca0af7bce0eeeb8daab03f
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887525"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155724"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Azure Portal での Power BI Embedded 容量の作成
 
@@ -47,7 +47,8 @@ Power BI Embedded 容量を作成する前に、少なくとも一度、Power BI
 
 4. 必須情報を入力し、 **[確認および作成]** を選択します。
 
-    ![スクリーンショットには、Azure portal で新しい容量を作成するための、Power BI Embedded ページの [基本] タブが示されています。](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    >[!div class="mx-imgBorder"]
+    >![スクリーンショットには、Azure portal で新しい容量を作成するための、Power BI Embedded ページの [基本] タブが示されています。](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
 
     * **サブスクリプション** - 容量を作成するサブスクリプション。
 

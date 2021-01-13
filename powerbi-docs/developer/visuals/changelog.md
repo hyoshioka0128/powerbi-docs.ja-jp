@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 4ed42f8c9c3acf740b68bf6c28aaa201efb0d5ba
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 3917ef64cfecd20e09be9b253ac05953cfe3d37a
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927127"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969675"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Power BI ビジュアル API の変更ログ
 このページには、API バージョンの簡単な概要が含まれています。 ここに記載されているバージョンは安定バージョンと見なされ、変更されません。
@@ -96,7 +96,7 @@ ms.locfileid: "97927127"
 
 ## <a name="api-v162"></a>API v1.6.2
 * ビジュアルをビジュアル編集モードに移行する **[編集モード](./advanced-edit-mode.md)** をサポート
-* html に基づく **[インタラクティブ (html) R Power BI ビジュアル](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** をサポート
+* html に基づく **[インタラクティブ (html) R Power BI ビジュアル](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** をサポート
 
 ## <a name="api-v150"></a>API v1.5.0
 * ビジュアル対話のための " **[ビジュアル対話を許可](./visuals-interactions.md)** " をサポート
@@ -110,7 +110,7 @@ ms.locfileid: "97927127"
 ## <a name="api-v120"></a>API v1.2.0
 * **colorPalette** を追加して、ビジュアルで使用する色を管理します。
 * **複数選択** をサポート。selectionManager は `SelectionId` の配列を受け入れることができます。
-* R スクリプトを使用した **[R ビジュアル](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** をサポート
+* R スクリプトを使用した **[R ビジュアル](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** をサポート
 
 ## <a name="api-v110"></a>API v1.1.0
 * iFrame 内のデバッグ ビジュアルをサポート

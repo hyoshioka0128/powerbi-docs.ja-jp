@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 08/12/2020
-ms.openlocfilehash: 67875f9b571e0a0376046a3cb080551d23e579e4
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: adb238b918d01bcdefe247a5452a0432b97d2e0c
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97889296"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969514"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI ビジュアルのガイドライン
 他のユーザーが検出して使用できるようにご自分の Power BI ビジュアルを Microsoft AppSource に[発行](office-store.md)する前に、ユーザー向けに優れたエクスペリエンスを作成するためのガイドラインに従っていることを確認してください。
@@ -57,7 +57,7 @@ Power BI ビジュアルが検証されて承認されたら、IAP Power BI ビ�
 ## <a name="context-menu"></a>コンテキスト メニュー
 コンテキスト メニューは、ユーザーがビジュアルの上にマウス ポインターを置いたときに表示される右クリック メニューです。
 すべての Power BI ビジュアルでは、コンテキスト メニューを使用して、統一されたエクスペリエンスを実現できます。
-コンテキスト メニューを追加する方法については、[こちらの記事](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md)をご覧ください。
+コンテキスト メニューを追加する方法については、[こちらの記事](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/tutorials/building-bar-chart)をご覧ください。
 
 >[!div class="mx-imgBorder"]
 >![Power BI ビジュアルのコンテキスト メニューのスクリーンショット。](media/guidelines-powerbi-visuals/context-menu.png)

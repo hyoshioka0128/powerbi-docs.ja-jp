@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 7779976e7897b31e5f3dde2c4c3306c909ecf0f0
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: 6eebe7b75db06b97d116ca0c17e67e9ee7b0562e
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97675581"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969652"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -570,7 +570,7 @@ Power BI コンテンツの編成については[ここ](mobile-apps-quickstart-
 #### <a name="all-devices"></a>すべてのデバイス
 **電話レポートの背景色** Power BI Desktop でレポートの背景色を定義すると、電話レポートの背景色が同じになります。 電話のレポート ページの最適化については[ここ](../../create-reports/desktop-create-phone-report.md)をご覧ください。
 
-**モバイルに最適な Power BI ビジュアルの作成** この [開発者ガイド](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md)には、モバイル デバイスできれいに表示され、問題なく動作する Power BI ビジュアルの作成に関するヒントがあります。
+**モバイルに最適な Power BI ビジュアルの作成** この [開発者ガイド](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md)には、モバイル デバイスできれいに表示され、問題なく動作する Power BI ビジュアルの作成に関するヒントがあります。
 
 #### <a name="ios-devices"></a>iOS デバイス
 **データに話しかける: 音声認識で質問する** 文字を入力する代わりに音声を認識させる方法で [データに問い合わせ](mobile-apps-ios-qna.md)できるようになりました。 

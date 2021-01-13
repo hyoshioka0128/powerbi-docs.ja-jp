@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 4d8096793c4663cbed71c3149bde11305ebee71e
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: d787dfbb926a3a1224d5b4949003e0b0d260260f
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886697"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155643"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Power BI Embedded に関してよく寄せられる質問
 
@@ -35,7 +35,6 @@ ms.locfileid: "97886697"
 Power BI は、サービスとしてのソフトウェアの分析ソリューションです。組織はその最も重要なビジネス データを 1 つのビューで見ることができます。
 
 Microsoft は、顧客が分析に関する決定を行うときに役立つビジュアルをアプリケーションに埋め込もうと考えている ISV のために Power BI Embedded を開発しました。 これにより、ISV は独自の分析ソリューションを自分で構築する必要がなくなります。 [埋め込み分析](embedding.md)を使用すると、ビジネス ユーザーはビジネス データにアクセスしてクエリを実行し、アプリケーション内で分析情報を生成できます。
-
 
 ### <a name="what-is-the-difference-between-power-bi-premium-and-power-bi-embedded"></a>Power BI Premium と Power BI Embedded の違いは何ですか?
 

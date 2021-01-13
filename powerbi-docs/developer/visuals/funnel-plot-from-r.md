@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: f3d22a4143287588ad9290d000402a10a4cef227
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: f1f8c037a3ceb66d8ffb5abab6bccd4ec9bc7adc
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97889273"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969560"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>チュートリアル:R スクリプトから R ビジュアルにフィルター プロットを作成する
 この記事では、R ビジュアルで R スクリプトを使用してじょうごプロットを作成する方法を順を追って説明します。
@@ -36,13 +36,13 @@ ms.locfileid: "97889273"
 
 ## <a name="build-an-r-script-with-dataset"></a>データセットを使用した R スクリプトの作成
 
-1. [最小の R スクリプト](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_00.r) とそのデータテーブル ([dataset.csv](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/dataset.csv)) をダウンロードします。
+1. [最小の R スクリプト](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_00.r) とそのデータテーブル ([dataset.csv](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/dataset.csv)) をダウンロードします。
 
-1. 次に、スクリプトの編集を行って、[こちらのスクリプト](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_01.r)をミラーリングします。 これにより、入力エラー処理とユーザー パラメーターが追加され、プロットの外観を制御できます。
+1. 次に、スクリプトの編集を行って、[こちらのスクリプト](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_01.r)をミラーリングします。 これにより、入力エラー処理とユーザー パラメーターが追加され、プロットの外観を制御できます。
 
 ## <a name="build-a-report"></a>レポートを作成する
 
-次に、スクリプトの編集を行って、[こちらのスクリプト](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/script_RV_v2_00.r)をミラーリングします。 これにより、*read.csv* ではなく *dataset.csv* が Power BI デスクトップ ワークスペースに読み込まれ、**がん死亡率** テーブルが作成されます。 次の [PBIX ファイル](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/funnelPlot_Rvisual.pbix)の結果を確認してください。
+次に、スクリプトの編集を行って、[こちらのスクリプト](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/script_RV_v2_00.r)をミラーリングします。 これにより、*read.csv* ではなく *dataset.csv* が Power BI デスクトップ ワークスペースに読み込まれ、**がん死亡率** テーブルが作成されます。 次の [PBIX ファイル](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/funnelPlot_Rvisual.pbix)の結果を確認してください。
 
 > [!NOTE]
 > `dataset` は、任意の R ビジュアルの入力 `data.frame` に対してハードコーディングされた名前です。 
@@ -75,7 +75,7 @@ ms.locfileid: "97889273"
 1. `pbiviz package` コマンドを使用してビジュアルを再パッケージ化してから、それを Power BI にインポートしてみてください。
 
 > [!NOTE]
-> ダウンロードについては、[PBIX](https://github.com/microsoft/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) と[ソースコード](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/)を参照してください。
+> ダウンロードについては、[PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) と[ソースコード](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/)を参照してください。
 
 ## <a name="make-r-based-visual-improvements"></a>R ベースのビジュアルの改善
 
@@ -85,7 +85,7 @@ ms.locfileid: "97889273"
 
    ![CV01to02](./media/funnel-plot/diagram-one.PNG)
 
-1. *capabilities.json* を編集して、`dataset` ロールを 3 つの新しいロールに置き換えるか、または [capabilities.json](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/capabilities.json) をダウンロードします。
+1. *capabilities.json* を編集して、`dataset` ロールを 3 つの新しいロールに置き換えるか、または [capabilities.json](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/capabilities.json) をダウンロードします。
 
    各入力フィールドの名前、種類、ツールヒント、および最大列数が定義されているセクション `dataRoles` および `dataViewMappings` を更新する必要があります。
 
@@ -93,7 +93,7 @@ ms.locfileid: "97889273"
    
    詳細については、[機能](./capabilities.md)に関する記事を参照してください。
 
-1. `dataset` ではなく、`Population`、`Number`、および `Tooltips` を入力データフレームとしてサポートするように *script.r* を編集するか、または [script.r](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r) をダウンロードします。
+1. `dataset` ではなく、`Population`、`Number`、および `Tooltips` を入力データフレームとしてサポートするように *script.r* を編集するか、または [script.r](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r) をダウンロードします。
 
    ![スクリプト](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
 
@@ -113,7 +113,7 @@ ms.locfileid: "97889273"
 1. `pbiviz package` コマンドを使用してビジュアルを再パッケージ化してから、それを Power BI にインポートしてみてください。
 
 > [!NOTE]
-> ダウンロードについては、[PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) と[ソースコード](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02)を参照してください。
+> ダウンロードについては、[PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) と[ソースコード](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02)を参照してください。
 
 ## <a name="add-user-parameters"></a>ユーザー パラメーターを追加する
 
@@ -123,11 +123,11 @@ ms.locfileid: "97889273"
 
 1. *capabilities.json* を編集して、`objects` セクションを更新します。 ここでは、各パラメーターの名前、ツールヒント、および種類を定義すると共に、パラメーターを複数のグループに分割することも決定します (この場合は 3 つのグループ)。
 
-   [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json) をダウンロードします。詳細については、[オブジェクトのプロパティ](./objects-properties.md)に関するページを参照してください。
+   [capabilities.json](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json) をダウンロードします。詳細については、[オブジェクトのプロパティ](./objects-properties.md)に関するページを参照してください。
 
    ![capabilities](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
 
-1. *src/settings.ts* の編集を行って、[こちらの settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts) をミラーリングします。 このファイルは TypeScript で記述されています。  
+1. *src/settings.ts* の編集を行って、[こちらの settings.ts](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts) をミラーリングします。 このファイルは TypeScript で記述されています。  
 
    ここでは、次に示すコードの 2 つのブロックが追加されていることがわかります。
    - プロパティ値を保持する新しいインターフェイスを宣言する
@@ -135,7 +135,7 @@ ms.locfileid: "97889273"
 
    ![設定](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
 
-1. *script.r* の編集を行って、[こちらの script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r) をミラーリングします。 これにより、ユーザー パラメーターごとに `if.exists` 呼び出しを追加することで、UI のパラメーターのサポートが追加されます。
+1. *script.r* の編集を行って、[こちらの script.r](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r) をミラーリングします。 これにより、ユーザー パラメーターごとに `if.exists` 呼び出しを追加することで、UI のパラメーターのサポートが追加されます。
 
    > [!TIP]
    > R スクリプト内の変更をたどるには、次のコメントを検索します。
@@ -150,17 +150,17 @@ ms.locfileid: "97889273"
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![スクリプトの前と後](https://raw.githubusercontent.com/microsoft/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![スクリプトの前と後](https://raw.githubusercontent.com/PowerBi-Projects/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    パラメーターを UI に公開しないように決定することもできます。  
 
 1. `pbiviz package` コマンドを使用してビジュアルを再パッケージ化してから、それを Power BI にインポートしてみてください。
 
 > [!NOTE]
-> ダウンロードについては、[PBIX](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) と[ソースコード](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/)を参照してください。
+> ダウンロードについては、[PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) と[ソースコード](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/)を参照してください。
 
 > [!TIP]
-> ここでは、複数の型 (ブール値、数値、文字列、および色) のパラメーターをすべて一度に追加しました。 シンプルなケースとして、単一パラメーターの追加方法については、[こちらの例](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/PropertiesPane.md)を参照してください。 
+> ここでは、複数の型 (ブール値、数値、文字列、および色) のパラメーターをすべて一度に追加しました。 シンプルなケースとして、単一パラメーターの追加方法については、[こちらの例](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/PropertiesPane.md)を参照してください。 
 
 ## <a name="convert-visual-to-rhtml-based-visual"></a>ビジュアルを RHTML ベースのビジュアルに変換する
 
@@ -184,21 +184,21 @@ ms.locfileid: "97889273"
    これにより *out.html* が作成され、保存されます。 自己完結型 (外部の依存関係なし) であるこのファイルでは、HTML ウィジェット内のグラフィックスが定義されます。 
 
    > [!IMPORTANT]
-   > `htmlWidgets` ユーザーを対象として、[r_files フォルダー](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files)には、`plotly` オブジェクトまたは `widget` オブジェクトを自己コンテンツ HTML に変換するのに役立つ R ユーティリティが用意されています。 
+   > `htmlWidgets` ユーザーを対象として、[r_files フォルダー](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files)には、`plotly` オブジェクトまたは `widget` オブジェクトを自己コンテンツ HTML に変換するのに役立つ R ユーティリティが用意されています。 
    > 
    > R を利用したこのバージョンのビジュアルでは、(以前の種類のビジュアルとは異なって) `source` コマンドもサポートされており、自分のコードを読みやすくすることができます。   
  
-1. *capabilities.json* を前の手順からの *capabilities.json* に置き換えるか、または [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/capabilities.json) をダウンロードします。
+1. *capabilities.json* を前の手順からの *capabilities.json* に置き換えるか、または [capabilities.json](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/capabilities.json) をダウンロードします。
 
    必ず次のようにしてください。
 
    `"scriptOutputType": "html"`
 
-1. 最新バージョンの *script.r* をテンプレートからの *script.r* にマージするか、または [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/script.r) をダウンロードします。
+1. 最新バージョンの *script.r* をテンプレートからの *script.r* にマージするか、または [script.r](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/script.r) をダウンロードします。
 
    新しいスクリプトでは、`plotly` パッケージを使用して、**ggplot** オブジェクトが **plotly** オブジェクトに変換され、さらに `htmlWidgets` パッケージを使用してそれが HTML ファイルに保存されます。 
 
-   ユーティリティ関数の大部分は [_r_files/utils.r_](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) に移動され、`generateNiceTooltips` 関数は、**plotly** オブジェクトの外観用に追加されます。
+   ユーティリティ関数の大部分は [_r_files/utils.r_](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) に移動され、`generateNiceTooltips` 関数は、**plotly** オブジェクトの外観用に追加されます。
 
    ![1](./samples/funnel-plot/chapter-4/RHTML-v01/script-before-after-1.PNG)
    
@@ -217,14 +217,14 @@ ms.locfileid: "97889273"
    > #RVIZ_IN_PBI_GUIDE:BEGIN:Removed to create HTML-based
    > ```
 
-1. 最新バージョンの *dependencies.json* をテンプレートからの *dependencies.json* にマージして、新しい R パッケージ依存関係を含めるか、または [dependencies.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/dependencies.json) をダウンロードします。
+1. 最新バージョンの *dependencies.json* をテンプレートからの *dependencies.json* にマージして、新しい R パッケージ依存関係を含めるか、または [dependencies.json](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/dependencies.json) をダウンロードします。
 
 1. *src/settings.ts* を前の手順と同じ方法で編集します。
 
 1. `pbiviz package` コマンドを使用してビジュアルを再パッケージ化してから、それを Power BI にインポートしてみてください。
 
 > [!NOTE]
-> ダウンロードについては、[PBIX とソースコード](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01)を参照してください。
+> ダウンロードについては、[PBIX とソースコード](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01)を参照してください。
 
 ## <a name="build-additional-examples"></a>追加の例を作成する
 
@@ -250,7 +250,7 @@ ms.locfileid: "97889273"
    > [!IMPORTANT]
    > **guid** フィールドは、ビジュアルの一意の識別子です。 ビジュアルごとに新しいプロジェクトを作成する場合は、GUID もそれぞれ異なります。 それが同じになるのは、新しいビジュアルに古いプロジェクトをコピーして使用する場合のみとなりますが、これを行うべきではありません。
 
-* [*assets/icon.png*](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/assets/icon.png) を編集して、ビジュアル用の一意のアイコンを作成します。 
+* [*assets/icon.png*](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/assets/icon.png) を編集して、ビジュアル用の一意のアイコンを作成します。 
 
 * ご利用の Power BI レポートと同じデータを使用して RStudio で R コードをデバッグするには、R スクリプトの先頭に以下を追加します (`fileRda` 変数を編集します)。
 
@@ -270,17 +270,17 @@ ms.locfileid: "97889273"
 
 * [GitHub](https://github.com/Microsoft?utf8=%E2%9C%93&q=PowerBI&type=&language=R) で入手できるコードを使用すれば、R を利用したビジュアルをゼロから開発する必要はありません。 テンプレートとして使用するビジュアルを選択し、そのコードを新しいプロジェクトにコピーすることができます。
 
-   たとえば、[スプライン カスタム ビジュアル](https://github.com/Microsoft/PowerBI-visuals-spline)を使用してみてください。
+   たとえば、[スプライン カスタム ビジュアル](https://github.com/PowerBi-Projects/PowerBI-visuals-spline)を使用してみてください。
 
 * 各 R ビジュアルでは、その入力テーブルに `unique` 演算子が適用されます。 複数の同一の行が削除されるのを防ぐには、一意の ID を持つ追加の入力フィールドを追加し、R コードでそれを無視することを検討してください。   
 
 * Power BI アカウントを持っている場合は、`pbiviz package` コマンドを使用して再パッケージ化するのではなく、Power BI サービスを使用してビジュアルを[即座に](./develop-circle-card.md)開発してください。
 
 ### <a name="html-widgets-gallery"></a>HTML ウィジェット ギャラリー
-次のビジュアルで使用するために、[ HTML ウィジェット ギャラリー](http://gallery.htmlwidgets.org/)でビジュアルを探索します。 作業を簡単にするために、20 を超える対話型の HTML ビジュアを含む[ビジュアル プロジェクト リポジトリ](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML)を作成し、その中から選択できるようにしました。
+次のビジュアルで使用するために、[ HTML ウィジェット ギャラリー](http://gallery.htmlwidgets.org/)でビジュアルを探索します。 作業を簡単にするために、20 を超える対話型の HTML ビジュアを含む[ビジュアル プロジェクト リポジトリ](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML)を作成し、その中から選択できるようにしました。
 
 > [!TIP]
-> html ウィジェットを切り替えるには、 **[形式]**  >  **[設定]**  >  **[型]** の順に使用します。 [この PBIX ファイル](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML/assets/sample.pbix)を使用して試してみてください。 
+> html ウィジェットを切り替えるには、 **[形式]**  >  **[設定]**  >  **[型]** の順に使用します。 [この PBIX ファイル](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML/assets/sample.pbix)を使用して試してみてください。 
 
 #### <a name="to-use-a-sample-for-your-visual"></a>ビジュアルに対してサンプルを使用するには
 
