@@ -266,6 +266,8 @@
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: X 軸と Y 軸のプロパティをカスタマイズする
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+            - name: 異常検出
+              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Power BI の視覚エフェクトで ArcGIS マップと対話する
               href: ../visuals/power-bi-visualizations-arcgis.md
             - name: 基本的な面グラフ
@@ -276,10 +278,6 @@
               href: ../visuals/power-bi-visualization-combo-chart.md
             - name: 分解ツリー ビジュアル
               href: ../visuals/power-bi-visualization-decomposition-tree.md
-            - name: スマート物語
-              href: ../visuals/power-bi-visualization-smart-narrative.md
-            - name: 異常検出
-              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: ドーナツ グラフ
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: 塗り分け地図 (コロプレス)
@@ -310,6 +308,8 @@
               href: ../visuals/desktop-high-density-scatter-charts.md
             - name: 図形マップのビジュアル (プレビュー)
               href: ../visuals/desktop-shape-map.md
+            - name: スマート物語
+              href: ../visuals/power-bi-visualization-smart-narrative.md
             - name: レポートとダッシュボードのテーブル
               href: ../visuals/power-bi-visualization-tables.md
             - name: ツリーマップ
