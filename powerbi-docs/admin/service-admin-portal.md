@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 01/05/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 2e89dc43f467aec8edcefaa4ecdbd2fc6cbf6dea
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: 554cce8c0313ad6624a2991aa09f60c98ff454be
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699541"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969619"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
@@ -193,7 +193,7 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 * **コミュニティ**。 ヘルプ メニューから、[Power BI コミュニティ](https://community.powerbi.com/)ではなく、内部フォーラムにユーザーを移動させるには、**ディスカッション フォーラム** のカスタム URL を設定します。
 
-* **ライセンス アップグレード**。 Power BI Free ライセンスを持つユーザーには、サービスを使用している間にアカウントを Power BI Pro にアップグレードする機会が示される場合があります。 **ライセンスの要求** の内部 URL を指定した場合、ユーザーは内部要求および購買フローにリダイレクトされ、セルフサービス購入が防止されます。 ユーザーがライセンスを購入できないようにするが、Power BI Pro の試用版を開始できるようにする場合は、「[ユーザーが Power BI Pro を試せるようにする](#allow-users-to-try-power-bi-pro)」を参照して、購入体験と試用体験を分けます。
+* **ライセンス アップグレード**。 Power BI Free ライセンスを持つユーザーには、サービスを使用している間にアカウントを Power BI Pro にアップグレードする機会が示される場合があります。 **ライセンスの要求** の内部 URL を指定した場合、ユーザーは内部要求および購買フローにリダイレクトされ、セルフサービス購入が防止されます。 ユーザーがライセンスを購入できないようにするが、Power BI Pro の試用版を開始できるようにする場合は、「[ユーザーが Power BI Pro を試せるようにする](#allow-users-to-try-power-bi-paid-features)」を参照して、購入体験と試用体験を分けます。
 
 * **ヘルプの表示**。 ヘルプ メニューから、[Power BI サポート](https://powerbi.microsoft.com/support/)ではなく、内部ヘルプ デスクにユーザーを移動させるには、**ヘルプ デスク** のカスタム URL を設定します。
 
@@ -201,11 +201,11 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 このテナントがサービスの停止またはインシデントの影響を受けた場合、メールが有効なセキュリティ グループはメール通知を受け取ります。 詳細については、「[サービス中断の通知](service-interruption-notifications.md)」を参照してください。
 
-### <a name="allow-users-to-try-power-bi-pro"></a>ユーザーが Power BI Pro を試せるようにする
+### <a name="allow-users-to-try-power-bi-paid-features"></a>ユーザーが Power BI 有料機能を試せるようにする
 
 ![ユーザーが Power BI Pro の設定 UI を試せるようにする](media/service-admin-portal/allow-pro-trial.png)
 
-**[Allow users to try Power BI Pro]\(ユーザーが Power BI Pro を試せるようにする\)** 設定は既定で有効になっています。 この設定を使用すると、ユーザーが Power BI Pro ライセンスを取得する方法をより細かく制御できます。 セルフサービス購入がブロックされているシナリオでは、この設定により、ユーザーは Power BI Pro の評価を開始できます。 エンドユーザー エクスペリエンスは、ライセンス設定の組み合わせ方によって異なります。 次の表は、Power BI Free から Power BI Pro へのアップグレード エクスペリエンスが、さまざまな設定の組み合わせによってどのような影響を受けるかを示しています。
+**[Allow users to try Power BI paid features]\(ユーザーが Power BI 有料機能を試せるようにする\)** 設定は既定で有効になっています。 この設定を使用すると、ユーザーが Power BI Pro ライセンスを取得する方法をより細かく制御できます。 セルフサービス購入がブロックされているシナリオでは、この設定により、ユーザーは Power BI Pro の評価を開始できます。 エンドユーザー エクスペリエンスは、ライセンス設定の組み合わせ方によって異なります。 次の表は、Power BI Free から Power BI Pro へのアップグレード エクスペリエンスが、さまざまな設定の組み合わせによってどのような影響を受けるかを示しています。
 
 | セルフサービスでの購入の設定 | ユーザーが Power BI Pro の設定を試せるようにする | エンド ユーザー エクスペリエンス |
 | ------ | ------ | ----- |
@@ -218,6 +218,30 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 > ライセンス要求の内部 URL を追加するには、[ヘルプとサポートの設定](#help-and-support-settings)を使用します。 この URL を設定すると、既定のセルフサービス購入エクスペリエンスがオーバーライドされます。 Power BI Pro ライセンス試用版のサインアップはリダイレクトされません。 上の表で説明したシナリオでライセンスを購入できるユーザーは、内部 URL にリダイレクトされます。
 
 詳細については、「[セルフサービスでのサインアップと購入を有効または無効にする](service-admin-disable-self-service.md)」を参照してください。
+
+### <a name="show-a-custom-message-before-publishing-reports"></a>レポートを発行する前にカスタム メッセージを表示する  
+
+管理者は、ユーザーが Power BI Desktop からレポートを発行する前に表示されるカスタム メッセージを提供できます。 この設定を有効にした後、**カスタム メッセージ** を提供する必要があります。 カスタム メッセージは、次のメッセージ例のように、プレーン テキストにするか、または Markdown 構文に従うことができます。
+
+```markdown
+#### Important Disclaimer 
+
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+```
+
+**[カスタム メッセージ]** テキスト領域ではスクロールがサポートされているため、5000 文字までのメッセージを指定できます。
+
+:::image type="content" source="media/service-admin-portal/admin-show-custom-message.png" alt-text="カスタム メッセージ ボックスのスクリーンショット。":::
+
+ユーザーが Power BI のワークスペースにレポートを発行するとき、作成したこのメッセージが表示されます。
+
+:::image type="content" source="media/service-admin-portal/admin-user-show-custom-message.png" alt-text="ワークスペースにレポートを発行するときにユーザーに表示されるダイアログボックス。":::
+
+他のテナント設定と同様に、**カスタム メッセージ** が適用されるユーザーを選択できます。
+
+- **組織全体**。
+- **特定のセキュリティ グループ**。
+- または **特定のセキュリティ グループを除く**。
 
 ## <a name="workspace-settings"></a>ワークスペースの設定
 
@@ -388,7 +412,7 @@ Power BI 管理者には、ユーザーが埋め込みコードを作成して�
 この組織内のユーザーがデータセット、データフロー、レポート、およびアプリを認定できるようにします。 詳細については、「[コンテンツの認定を有効にする](service-admin-setup-certification.md)」を参照してください。
 
 ### <a name="email-subscriptions"></a>電子メール サブスクリプション
-組織内のユーザーは電子メール サブスクリプションを作成できます。 サブスクリプションの詳細は[こちら](../collaborate-share/service-publish-to-web.md)をご覧ください。
+組織内のユーザーは電子メール サブスクリプションを作成できます。 サブスクリプションの詳細は[こちら](../collaborate-share/service-report-subscribe.md)をご覧ください。
 
 ![電子メール サブスクリプションを有効にする](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 

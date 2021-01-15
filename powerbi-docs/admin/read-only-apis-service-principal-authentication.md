@@ -10,12 +10,12 @@ ms.date: 12/01/2020
 ms.author: painbar
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: ec3cd60916630fe355b9ea4f54d5a025788800bf
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 332101009946c64cb5e97bd40b9949f6daa67b7b
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906821"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155689"
 ---
 # <a name="enable-service-principal-authentication-for-read-only-admin-apis-preview"></a>読み取り専用の管理 API に対してサービス プリンシパル認証を有効にする (プレビュー)
 
@@ -42,7 +42,7 @@ Power BI 読み取り専用 API のサービス プリンシパル認証を有�
         * **[アクセス許可]** を選択します。 このアプリケーションには、Power BI 管理者の同意が必要なアクセス許可が設定されていないことを確認してください。 詳細については、「[アプリケーションの同意の管理と同意要求の評価](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)」を参照してください。 
 4. Power BI サービス管理者設定を有効にします。 手順は次のとおりです。
     1. Power BI 管理ポータルにログインします。 テナントの設定ページを表示するには、Power BI 管理者である必要があります。
-    1. **[開発者向け設定]** に、 **[読み取り専用 Power BI 管理 API の使用をサービス プリンシパルに許可 (プレビュー)]** が表示されます。 次の図に示すように、切り替えを [有効] に設定し、 **[特定のセキュリティ グループ]** ラジオ ボタンをオンにして、その下に表示されるテキスト フィールドに手順 2 で作成したセキュリティ グループを追加します。
+    1. **[Admin API settings]\(管理 API 設定\)** に、 **[読み取り専用 Power BI 管理 API の使用をサービス プリンシパルに許可 (プレビュー)]** が表示されます。 次の図に示すように、切り替えを [有効] に設定し、 **[特定のセキュリティ グループ]** ラジオ ボタンをオンにして、その下に表示されるテキスト フィールドに手順 2 で作成したセキュリティ グループを追加します。
 
         ![サービス プリンシパルのテナント設定を許可するスクリーンショット。](media/read-only-apis-service-principal-auth/allow-service-principals-tenant-setting.png)
 
@@ -53,7 +53,7 @@ Power BI 読み取り専用 API のサービス プリンシパル認証を有�
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 * サービス プリンシパルを使用して Power BI ポータルにサインインすることはできません。
-* Power BI 管理ポータルの開発者向け設定でサービス プリンシパルを有効にするには、Power BI 管理者権限が必要です。
+* Power BI 管理ポータルの [Admin API settings]\(管理 API 設定\) でサービス プリンシパルを有効にするには、Power BI 管理者権限が必要です。
 * 現在、サービス プリンシパルでは次の API がサポートされています。
     * [GetGroupsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/groups_getgroupsasadmin) (dashboards、datasets、reports、dataflows の $expand と共に) 
     * [GetDashboardsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) ($expand tiles と共に)

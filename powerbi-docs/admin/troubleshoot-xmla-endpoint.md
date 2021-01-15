@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/04/2021
+ms.date: 01/11/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 191cf3ce71ca30f257276df78ad43cdb2e49a1e1
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 16a07065507abfe825c39677f234d626070827b4
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886088"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110730"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -213,6 +213,10 @@ Analysis Services コネクタを使用し、ライブ接続されたデータ�
 :::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Power BI エラーに発行できませんでした。":::
 
 エラー メッセージに示されているように、この問題を解決するには、既存のデータセットを削除するか、その名前を変更します。 また、レポートに依存しているアプリがあれば、それを必ず再発行してください。 必要であれば、最新のレポートにアクセスできるよう、新しいレポートでブックマークを更新するように下流のユーザーにもお知らせください。  
+
+## <a name="workspaceserver-alias"></a>ワークスペースまたはサーバーのエイリアス
+
+Azure Analysis Services とは異なり、Power BI Premium ワークスペースではサーバー名の [エイリアスは](/azure/analysis-services/analysis-services-server-alias)は **サポートされていません**。 
 
 ## <a name="see-also"></a>関連項目
 

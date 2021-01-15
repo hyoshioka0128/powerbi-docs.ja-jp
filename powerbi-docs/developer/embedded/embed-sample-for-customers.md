@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: f6ca898bafff0b3375df65b63f913eb81d8dc006
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: de954c5950f550c3ed2f3c340714851f5233d3e8
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888951"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969767"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>チュートリアル:"*顧客向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
@@ -147,7 +147,7 @@ ms.locfileid: "97888951"
 
 |考慮事項  |サービス プリンシパル  |マスター ユーザー  |
 |---------|---------|---------|
-|メカニズム     |Azure AD アプリの[サービス プリンシパル オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object)を使用すると、Azure AD で Power BI に対して埋め込みソリューション アプリを認証できます。        |Azure AD アプリでは Power BI ユーザーの資格情報 (ユーザー名とパスワード) を使用して、Power BI に対して認証を行います。         |
+|メカニズム     |Azure AD アプリの[サービス プリンシパル オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)を使用すると、Azure AD で Power BI に対して埋め込みソリューション アプリを認証できます。        |Azure AD アプリでは Power BI ユーザーの資格情報 (ユーザー名とパスワード) を使用して、Power BI に対して認証を行います。         |
 |セキュリティ     |"*サービス プリンシパル*" は Azure AD で推奨される承認方法です。 サービス プリンシパルを使用する場合は、"*アプリケーション シークレット*" または "*証明書*" を使用して認証できます。</br></br>このチュートリアルでは、"*サービス プリンシパル*" と "*アプリケーション シークレット*" の使用についてのみ説明します。 "*サービス プリンシパル*" と "*証明書*" を使用して埋め込む場合は、[サービス プリンシパルと証明書](embed-service-principal-certificate.md)に関する記事を参照してください。         |この認証方法は、"*サービス プリンシパル*" を使用する場合と同じように安全とは見なされません。 これは、"*マスター ユーザー*" の資格情報 (ユーザー名とパスワード) に注意する必要があるためです。 たとえば、それらは埋め込みアプリケーションで公開できず、パスワードを頻繁に変更する必要があります。         |
 |Azure AD のデリゲートされたアクセス許可 |必要なし。 |"*マスター ユーザー*" または管理者は、アプリから Power BI REST API への [アクセス許可](/azure/active-directory/develop/v2-permissions-and-consent) (スコープとも呼ばれます) に対する同意を付与する必要があります。 たとえば、*Report.ReadWrite.All* です。 |
 |Power BI サービスへのアクセス |"*サービス プリンシパル*" を使用して、Power BI サービスにアクセスすることはできません。|Power BI サービスには、"*マスター ユーザー*" の資格情報を使用してアクセスできます。|
@@ -185,7 +185,7 @@ Power BI により、レポート、ダッシュボード、およびタイル�
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>手順 4 - Power BI レポートを作成して発行する
 
-次の手順では、レポートを作成してワークスペースにアップロードします。 Power BI Desktop を使用して[独自のレポートを作成](/powerbi-docs/fundamentals/desktop-getting-started#build-reports)してから、ワークスペースにそれを[発行する](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work)ことができます。 ワークスペースにサンプル レポートをアップロードすることもできます。
+次の手順では、レポートを作成してワークスペースにアップロードします。 Power BI Desktop を使用して[独自のレポートを作成](/power-bi/fundamentals/desktop-getting-started#build-reports)してから、ワークスペースにそれを[発行する](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work)ことができます。 ワークスペースにサンプル レポートをアップロードすることもできます。
 
 >[!Tip]
 >レポートがあるワークスペースが既に存在する場合は、この手順を省略できます。
@@ -536,7 +536,7 @@ Power BI レポートを埋め込むには、これらの手順に従って、"*
 
     a. IDE ターミナルで、`npm start` を実行します。
 
-    b. ブラウザーで新しいタブを開き、[http://localhost:5300](http://localhost:5300) に移動します。
+    b. ブラウザーで新しいタブを開き、`http://localhost:5300` に移動します。
 
 # <a name="python"></a>[Python](#tab/python)
 
@@ -571,7 +571,7 @@ Power BI レポートを埋め込むには、これらの手順に従って、"*
 
     a. **PowerShell** または **コマンド プロンプト** で、**Python** > **顧客向けの埋め込み** > **AppOwnesData** フォルダーの順に移動し、`flask run` を実行します。
 
-    b. ブラウザーで新しいタブを開き、[http://localhost:5300](http://localhost:5300) に移動します。
+    b. ブラウザーで新しいタブを開き、`http://localhost:5300` に移動します。
 
 ---
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: ff41f702edc605ee346aa10a759e633377597504
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9ed9b42a42e497eaa332b3b1eb93be6247ddc542
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408966"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961226"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI の高可用性、フェールオーバー、およびディザスター リカバリーに関する FAQ
 
@@ -26,7 +26,7 @@ Power BI は、フル マネージドのサービスとしてのソフトウェ�
 
 ## <a name="what-is-a-power-bi-failover"></a>Power BI のフェールオーバーとは
 
-Power BI では、ビジネス継続性を保証するために Azure データセンター (リージョンともいう) 内の各コンポーネントの複数のインスタンスを保持します。 サービスが停止したか、問題が発生し、Power BI がリージョンでアクセス不可または操作不能となった場合、Power BI ではバックアップ インスタンスに対するそのリージョン内のすべてのコンポーネントが失敗します。 フェールオーバーによって、可用性と運用性は ([Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location) に示されているように、通常は同じ地理的場所内の) 新しいリージョンの Power BI サービス インスタンスに復元されます。
+Power BI では、ビジネス継続性を保証するために Azure データセンター (リージョンともいう) 内の各コンポーネントの複数のインスタンスを保持します。 サービスが停止したか、問題が発生し、Power BI がリージョンでアクセス不可または操作不能となった場合、Power BI ではバックアップ インスタンスに対するそのリージョン内のすべてのコンポーネントが失敗します。 フェールオーバーによって、可用性と運用性は ([Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) に示されているように、通常は同じ地理的場所内の) 新しいリージョンの Power BI サービス インスタンスに復元されます。
 
 フェールオーバーされた Power BI サービスのインスタンスでサポートされるのは、_読み取り操作_ のみです。つまり、フェールオーバー中は、更新、レポートの発行操作、ダッシュボードまたはレポートの変更、および Power BI メタデータの変更が必要となるその他の操作 (レポートへのコメントの挿入など) はサポートされません。  (オンプレミス データ ソースに対する DirectQuery と Live Connect に基づいていない) ダッシュボードやレポートの表示などの読み取り操作は、引き続き正常に機能します。
 
@@ -36,7 +36,7 @@ Power BI サービスのすべてのコンポーネントでは、そのバッ�
 
 ## <a name="where-are-the-failover-clusters-located"></a>フェールオーバー クラスターはどこに配置されますか。
 
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location) に示されていない限り、バックアップ インスタンスは、組織が Power BI にサインアップしたときに選択されたのと同じ地理的場所 (geo) 内に存在します。 geo には複数のリージョンを含めることができ、Microsoft では、データの回復性のために特定の geo 内のいずれかのリージョンにデータをレプリケートする場合があります。 Microsoft では、geo 外に顧客データをレプリケートしたり、移動したりすることはありません。 Power BI によって提供される geo とそれに含まれるリージョンとのマッピングについては、[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location) を参照してください。
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) に示されていない限り、バックアップ インスタンスは、組織が Power BI にサインアップしたときに選択されたのと同じ地理的場所 (geo) 内に存在します。 geo には複数のリージョンを含めることができ、Microsoft では、データの回復性のために特定の geo 内のいずれかのリージョンにデータをレプリケートする場合があります。 Microsoft では、geo 外に顧客データをレプリケートしたり、移動したりすることはありません。 Power BI によって提供される geo とそれに含まれるリージョンとのマッピングについては、[Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) を参照してください。
 
 ## <a name="how-does-microsoft-decide-to-fail-over"></a>Microsoft ではフェールオーバーすることをどのように決定するのですか。
 

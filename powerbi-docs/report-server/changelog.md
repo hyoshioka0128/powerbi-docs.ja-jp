@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/31/2020
-ms.openlocfilehash: 7c1df405c80f50b7b98803b68ae2d3887013a623
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 01/06/2021
+ms.openlocfilehash: 51df40463a02c2c165ca6cde59ef2b16cda8860c
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886191"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053330"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -23,6 +23,10 @@ ms.locfileid: "97886191"
 
 ## <a name="october-2020"></a>2020 年 10 月
 - **Power BI Report Server**
+    - *バージョン:1.9.7675.15620 (ビルド 15.0.1104.300)、リリース日:2021 年 1 月 8 日*
+        - バグの修正
+            - 文字の大文字と小文字のみが異なる 2 つ以上のデータソースを含むレポートの更新に関する問題を修正しました。
+            - 入れ子になった結合の特定の組み合わせに対するレポートの更新に関する問題を修正しました。
     - *バージョン:1.9.7627.11028 (ビルド 15.0.1104.264)、リリース日:2020 年 11 月 18 日*
         - バグの修正
             - ユーザーがポータルを使用してサイト設定のフィールドを変更できない問題を修正しました。

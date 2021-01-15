@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 1/11/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 383c9bd20c86d89c5bf51c64c8027f86c1bfaab9
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 3a3a0f44fd9f02942ecc8f6646d219ace649b295
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96998969"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110786"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>XMLA エンドポイントを使用したデータセット接続
 
@@ -36,9 +36,9 @@ Power BI Premium では、クライアント アプリケーションと、ワ�
 
 **Visual Studio と Analysis Services プロジェクト** – SQL Server Data Tools、または単に **SSDT** とも呼ばれる、Analysis Services 表形式モデル用のエンタープライズ レベル モデル作成ツールです。 Analysis Services プロジェクトの拡張機能は、Visual Studio 2017 以降のすべてのエディション (無料の Community Edition を含む) でサポートされています。 表形式モデルを Premium ワークスペースに配置するには、拡張機能バージョン 2.9.14 以降が必要です。 Premium ワークスペースに配置する場合、モデルは 1500 以上の互換性レベルである必要があります。 データセット ワークロードには、XMLA 読み取り/書き込みが必要です。 詳細については、「[Analysis Services 用のツール](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true)」を参照してください。
 
-**SQL Server Management Studio (SSMS)**  - DAX、MDX、XMLA のクエリがサポートされます。 [表形式モデルのスクリプト言語](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL) を使用して、データセット メタデータに対する粒度の細かい更新操作とスクリプト作成を実行します。 クエリ操作には読み取り専用が必要です。 メタデータをスクリプト化するには、読み取り/書き込みが必要です。 SSMS バージョン 18.7.1 以降が必要です。  [こちら](/sql/ssms/download-sql-server-management-studio-ssms)からダウンロードすることができます。
+**SQL Server Management Studio (SSMS)**  - DAX、MDX、XMLA のクエリがサポートされます。 [表形式モデルのスクリプト言語](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL) を使用して、データセット メタデータに対する粒度の細かい更新操作とスクリプト作成を実行します。 クエリ操作には読み取り専用が必要です。 メタデータをスクリプト化するには、読み取り/書き込みが必要です。 SSMS バージョン **18.8** 以降が必要です。  [こちら](/sql/ssms/download-sql-server-management-studio-ssms)からダウンロードすることができます。
 
-**SQL Server Profiler** – SSMS と共にインストールされます。このツールによりサーバー イベントのトレースとデバッグが提供されます。 Profiler は、SQL Server では公式に非推奨になりましたが、引き続き SSMS に含まれており、Analysis Services と Power BI Premium で引き続きサポートされます。 XMLA 読み取り専用が必要です。 詳細については、 [Analysis Services 用の SQL Server Profiler](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true) に関するページを参照してください。
+**SQL Server Profiler** – SSMS と共にインストールされます。このツールによりサーバー イベントのトレースとデバッグが提供されます。 Profiler は、SQL Server では公式に非推奨になりましたが、引き続き SSMS に含まれており、Analysis Services と Power BI Premium で引き続きサポートされます。 SQL Server Profiler バージョン **18.8** 以降が必要で、また、XMLA 読み取り専用設定が Premium 容量で有効になっている必要があります。 XMLA エンドポイントに接続するときに、ユーザーはデータセット ([初期カタログ](#initial-catalog)) を指定する必要があります。 詳細については、 [Analysis Services 用の SQL Server Profiler](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true) に関するページを参照してください。
 
 **Analysis Services 配置ウィザード** – SSMS と共にインストールされます。このツールを使用すると、Visual Studio で作成した表形式モデル プロジェクトを Analysis Services および Power BI Premium のワークスペースに配置できます。 対話形式で実行することも、自動化するためにコマンド ラインから実行することもできます。 XMLA 読み取り/書き込みが必要です。 詳細については、[Analysis Services 配置ウィザード](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true)に関するページを参照してください。
 
@@ -99,7 +99,9 @@ B2B ユーザーは、テナント名に組織 UPN を指定する必要があ�
 
 ### <a name="initial-catalog"></a>初期カタログ
 
-SQL Server Profiler などの一部のツールでは、"*初期カタログ*" を指定することが必要な場合があります。 自分のワークスペースでデータセット (データベース) を指定します。 **[サーバーに接続]** ダイアログで **[オプション]**  >  **[接続プロパティ]**  >  **[データベースへの接続]** を選択し、データセット名を入力します。
+SQL Server Profiler などの一部のツールでは、"*初期カタログ*" を指定する必要があります。これは、ワークスペースで接続するデータセット (データベース) です。 **[サーバーに接続]** ダイアログで **[オプション]**  >  **[接続プロパティ]**  >  **[データベースへの接続]** を選択し、データセット名を入力します。
+
+![SQL Server Profiler でのデータセットの選択](media/service-premium-connect-tools/sql-profiler-connection-properties.png)
 
 ### <a name="duplicate-workspace-names"></a>重複するワークスペース名
 
@@ -126,6 +128,10 @@ Power BI の[新しいワークスペース](../collaborate-share/service-new-wo
 - 別のワークスペース内の Power BI データセットへのライブ接続に基づくデータセット。 詳細については、「[ワークスペース全体のデータセットの概要](../connect-data/service-datasets-across-workspaces.md)」を参照してください。
 - REST API を使用したプッシュ データでのデータセット
 - Excel ブックのデータセット
+
+### <a name="serverworkspace-alias"></a>サーバー/ワークスペースのエイリアス
+
+Azure Analysis Services でサポートされているサーバー名のエイリアスは、Power BI Premium ワークスペースではサポートされていません。
 
 ## <a name="security"></a>セキュリティ
 

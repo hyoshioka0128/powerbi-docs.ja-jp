@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 01/08/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4a8234176dd44fd265ff2d4a6af8e1b5568a642c
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: 1253c2b2548a7e6333840b8d33fdf255d5634be5
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699281"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053399"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI サービスのレポートとダッシュボードを自分および他のユーザーがサブスクライブする
 
@@ -128,6 +128,7 @@ Power BI 管理者は、Power BI 監査ログを使用して、サブスクリ�
 - 既存のサブスクリプションを編集するとき、レポートまたはダッシュボードへのアクセスを可能にするオプションは、常に有効として表示されます。  このオプションをオフにしてサブスクリプションを保存すると、その状態が保存されます。 ただし、レポートの編集に再度進むと、既定ではオンになります。
 - 連絡用メール アドレスがあるがプライマリがない場合、それを使用して Power BI によってサブスクリプションが配信されます。
 - 外部ユーザーをレポートまたはダッシュボードに登録すると、サブスクリプション ペインで **[保存して閉じる]** を選択した直後、そのユーザーに共有通知が届きます。 この通知は外部ユーザーにのみ送信され、内部ユーザーには送信されません。レポートまたはダッシュボードを表示するための招待リンクを外部ユーザーが要求するためです。 
+- 1 つのレポートまたはダッシュボードのサブスクライバーの数には制限があります。 サブスクライバーが 200 を超えると、配信に関する問題が発生する可能性があります。
 
 ### <a name="dashboards"></a>ダッシュボード
 

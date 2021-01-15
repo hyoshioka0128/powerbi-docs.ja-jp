@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/19/2019
+ms.date: 01/08/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 092ce10b527c6160cb27de5e3de0ed5852219f6a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2d5eb4047b467544110a5802fa1d41b7ed65bb6a
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417292"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053353"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Power BI デザイナーのダッシュボードの概要
 
@@ -53,9 +53,9 @@ Power BI の *ダッシュボード* は、ストーリーをしばしばキャ�
 | データ ソース |ダッシュボードごとに、1 つ以上のレポートおよび 1 つ以上のデータセット |レポートごとに 1 つのデータセット |
 | Power BI Desktop での使用可能性 |いいえ | はい。 Power BI Desktop でレポートを作成および表示することができます |
 | 購読 |はい。 ダッシュボードをサブスクライブできます |はい。 レポート ページにサブスクライブできます |
-| フィルター処理 |いいえ。 フィルター処理またはスライスはできません |はい。 さまざまな方法でフィルター処理、強調表示、スライスできます |
+| フィルター処理 |いいえ。 ダッシュボードをフィルター処理またはスライスはできません。 *フォーカス モードのダッシュボード タイル* をフィルター処理することは[できます](../consumer/end-user-focus.md#working-in-focus-mode)が、フィルターを保存することはできません。 |はい。 さまざまな方法でフィルター処理、強調表示、スライスできます |
 | おすすめ |はい。 1 つのダッシュボードを "*おすすめの*" ダッシュボードとして設定できます |いいえ |
-| お気に入り | はい。 複数のダッシュボードを "*お気に入り*" として設定できます | はい。 複数のレポートを "*お気に入り*" として設定できます
+| お気に入り | はい。 複数のダッシュボードを "*お気に入り*" として設定できます | はい。 複数のレポートを "*お気に入り*" として設定できます |
 | 通知の設定 |はい。 特定の状況でダッシュボードのタイルを使用できます |いいえ |
 | 自然言語クエリ (Q&A) |はい | はい (ただし、レポートと基になるデータセットに対して編集のためのアクセス許可を持っている場合) |
 | 基になっているデータセットのテーブルとフィールドの表示 |いいえ。 データのエクスポートはできますが、ダッシュボード自体にテーブルとフィールドを表示することはできません |はい |

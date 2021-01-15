@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 12/01/2020
-ms.openlocfilehash: 1c0c572072fd085feab1533eb346d745b56f66b0
-ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
+ms.openlocfilehash: 1ca4db3ad43553521c55866fd16b2440e3b64a65
+ms.sourcegitcommit: 73ca86f7633317fe3831839c4dd14a333b2f514c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96502020"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "97979955"
 ---
 # <a name="power-bi-webinars"></a>Power BI ウェビナー
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) は Chauncy Freels と業務提携するベンダーであり、このウェビナー リストの維持を手伝っています"
@@ -28,52 +28,56 @@ ms.locfileid: "96502020"
 
 最初に、次の人気のオンデマンド ウェビナーをご覧ください。
 
+**リアルタイムの意思決定とより強力な顧客とのつながりのためのデータに基づく分析情報**  
+作成者: Shruti Shukla と Chandra Stevens  
+[ビデオを見る](https://info.microsoft.com/ww-Landing-DataDrivenInsights.html)
+
 **Power BI ですばやく起動して実行する**  
 作成者: Miguel Martinez、Microsoft  
-[2020 年 11 月 5 日、午前 10 時 00 分から午前 11 時 00 分まで (太平洋夏時間) に視聴できるように登録する](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+[今すぐ見る](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html)
 
 **Power BI と Microsoft Teams を使用してリモート データ カルチャを推進する**  
 作成者: Lukasz Pawlowski  
-[今すぐ見る](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html?LCID=EN-US)
+[ビデオを見る](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html)
 
 **組み合わせて、もっと便利に:Excel ユーザーが Power BI を使用することで得られる 5 つのメリット**  
 作成者: Miguel Martinez、Carlos Otero  
-[今すぐ見る](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html?LCID=EN-US)
+[今すぐ見る](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html)
 
 **Microsoft Power BI を使用してリアルタイムでデータを監視する**  
 作成者: Miguel Martinez、Peter Myers  
-[今すぐ見る](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+[今すぐ見る](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html)
 
 **Dremio を使用して Azure Data Lake Storage での Power BI を加速させる**  
-作成者: Chris Webb、Tomer Shiran [今すぐ見る]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html?lcid=en-us)
+作成者: Chris Webb、Tomer Shiran [今すぐ見る]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html)
 
 **Power BI と Snowflake を使用してスケーラブルな BI ソリューションを構築する**  
 作成者: Chris Webb、Craig Collier、Chris Holliday  
-[今すぐ見る](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html?lcid=en-us)
+[今すぐ見る](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html)
 
 **BI コンテンツ管理のベスト プラクティスでユーザーの満足度を大幅に上げる**  
 作成者: Nimrod Shalit  
-[今すぐ見る](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html?lcid=en-us)
+[ビデオを見る](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html)
 
 **分析情報からアクションへ:Power BI を使用したデータ カルチャの推進**  
 作成者: Arun Ulagaratchagan、Amir Netz  
-[今すぐ見る]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html?lcid=en-us)
+[今すぐ見る]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html)
 
 **Power BI Embedded でより優れた分析を実現する**  
 作成者: Alon Baram  
-[今すぐ見る](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html?Lcid=EN-US)
+[ビデオを見る](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html)
 
 **マイアミ・ヒートが Power BI 使用してビジネス上の意思決定を推進した方法**  
 作成者: Edson Crevecoeur、Frank Mesa、Xinrou Tan  
-[今すぐ見る]( https://info.microsoft.com/ww-Landing-How-the-Miami-HEAT-Used-Power-BI-to-Drive-Business-Decisions.html?Lcid=EN-US)
+[今すぐ見る]( https://info.microsoft.com/ww-Landing-How-the-Miami-HEAT-Used-Power-BI-to-Drive-Business-Decisions.html)
 
 **Power BI でビッグ データの準備と分析を簡素化する**  
 作成者: Priya Sathy  
-[今すぐ見る](https://info.microsoft.com/ww-landing-simplify-big-data-prep-and-analysis-with-power-BI.html?lcid=en-us)
+[今すぐ見る](https://info.microsoft.com/ww-landing-simplify-big-data-prep-and-analysis-with-power-BI.html)
 
 **Power BI を使用して意思決定を改善する**  
 作成者: Kim Manis、Lukasz Pawlowski  
-[今すぐ見る](https://info.microsoft.com/ww-Landing-Improve-Decision-Making-with-Power-BI.html?LCID=EN-US)
+[今すぐ見る](https://info.microsoft.com/ww-Landing-Improve-Decision-Making-with-Power-BI.html)
 
 ## <a name="on-demand-webinars"></a>オンデマンド ウェビナー
 
@@ -81,7 +85,7 @@ ms.locfileid: "96502020"
 
 **Microsoft Power BI がもたらす総合的な経済効果を調べる**  
 講師: Megan Tomlin (Microsoft)、Jonathan Lipsitz (Forrester Consulting)  
-[今すぐ見る]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html?Lcid=EN-US)
+[今すぐ見る]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html)
 
 **Azure 仮想イベントの分析: Azure Synapse Analytics を使用して分析情報の取得時間の短縮**  
 講師: Gayle Sheppard および John Macintyre  
@@ -89,23 +93,23 @@ ms.locfileid: "96502020"
 
 **Microsoft が BI データ保護をどのように変化させているか**  
 講師: Anton Fritz および Adi Regev  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html)
 
 **分析情報主導のビジネスを実現する方法**  
 講師: Amir Netz (Microsoft)、Boris Evelson (Forrester)  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html?lcid=en-us)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html)
 
 **AI によって BI が変更される 3 つの方法**  
 作成者: Justyna Lucznik  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html&ocid=mkto_eml_EM581230A1LA1)
 
 **Power BI、および最近の企業向け BI の将来**  
 作成者: Arun Ulag および Amir Netz  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html)
 
 **ビッグ データ分析の未来を形成する 9 つの傾向**  
 講師: Vijay Gopalakrishnan  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html)
 
 **Power BI の概要**  
 作成者: Miguel Martinez  
@@ -113,7 +117,7 @@ ms.locfileid: "96502020"
 
 **Power BI Mobile アプリの使用を開始する**  
 作成者: Maya Shenhav  
-[登録して今すぐ見る](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html?LCID=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html)
 
 **20 分で学ぶ Power BI ダッシュボードの使い方**  
 作成者: Miguel Martinez  
@@ -125,7 +129,7 @@ ms.locfileid: "96502020"
 
 **Dynamics 365 Finance and Operations での Power BI の使用**  
 作成者: Kevin Horlock  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html)
 
 **Power BI で実行する Microsoft - 財務の計画と分析を簡単に**  
 作成者: Cory Hrncirik と Miguel Martinez  
@@ -133,7 +137,7 @@ ms.locfileid: "96502020"
 
 **Power BI で実行する Microsoft:Modern Treasury での Power BI の使用**  
 作成者: Pankaj Gudimella および Guru Kirthigavasan  
-[登録して今すぐ見る](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html)
 
 **Power BI JavaScript API を使用して、お使いのアプリケーションの機能を強化する**  
 作成者: Nimrod Shalit  
@@ -157,7 +161,7 @@ ms.locfileid: "96502020"
 
 **マルチテナント デプロイ用に Power BI 埋め込み分析を管理するためのベスト プラクティス**  
 作成者: Nimrod Shalit  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html)
 
 **Power BI:適切に行われる分析**  
 講師: Gohul Shanmugalingam  
@@ -200,7 +204,7 @@ ms.locfileid: "96502020"
 
 **Power BI:Workday HR データから分析情報を取得する方法**  
 作成者: Iman Eftekhari、Julia Paton (Agile Analytics)、および Shahram Karimi (QBE Insurance)  
-[登録して今すぐ見る](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+[登録して今すぐ見る](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html)
 
 **コンシューマー向け製品の製造元と小売業者が Win-Win の関係を実現する**  
 作成者: Liz McCreesh (Thorogood)  
@@ -208,7 +212,7 @@ ms.locfileid: "96502020"
 
 **Power BI を使用して、顧客データから小売業を成功に導く**  
 作成者: Angad Soni (日立ソリューションズ)  
-[登録して今すぐ見る](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+[登録して今すぐ見る](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?wt.mc_id=undefined)
 
 **患者のアウトカムと収益性の両方を向上させる実績のある医療ソリューション**  
 作成者: Stephen Cracknell/Stuart Macanliss (US Medical IT)  
@@ -228,7 +232,7 @@ ms.locfileid: "96502020"
 
 **成功を収めるトレンド キュレーターの 5 つの習慣 - Rohit Bhargava**  
 作成者: Rohit Bhargava (Non-Obvious)  
-[登録して今すぐ見る](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
+[登録して今すぐ見る](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html)
 
 ### <a name="community"></a>コミュニティ ###
 

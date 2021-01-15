@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/17/2020
+ms.date: 01/08/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4b5c076837ea5f70a84c1782349fd27ced4d866c
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: d7dfcdadd4becddb46127106b390d566faa2f9b9
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699327"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053445"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Power BI サービスでレポートまたはダッシュボードをサブスクライブする 
 
@@ -34,7 +34,7 @@ ms.locfileid: "97699327"
 
 
 ## <a name="requirements"></a>要件
-自分用のサブスクリプションを **作成する** には、*Power BI Pro* または *Premium Per User* の[ライセンス](end-user-license.md)が必要です。 また、レポートまたはダッシュボードが Premium ワークスペースに存在し、そのワークスペースへのアクセス権を持っている場合も、自分用のサブスクリプションを作成することができます。 サブスクリプションを作成できない場合は、Power BI 管理者または IT ヘルプ デスクに問い合わせてください。 
+自分用のサブスクリプションを **作成する** には、*Power BI Pro* または *Premium Per User* の [ライセンス](end-user-license.md)が必要です。 また、レポートまたはダッシュボードが Premium ワークスペースに存在し、そのワークスペースへのアクセス権を持っている場合も、自分用のサブスクリプションを作成することができます。 サブスクリプションを作成できない場合は、Power BI 管理者または IT ヘルプ デスクに問い合わせてください。 
 
 **他のユーザーをサブスクライブ** する機能は、*Power BI Pro* ライセンスを持っているダッシュボードまたはレポートの所有者のみが使用できます。 ページ分割されたレポートのサブスクライブの場合、若干異なります。 詳細については、「[Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)」(Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする) を参照してください。 
 
@@ -96,7 +96,7 @@ Pro ライセンスの有効期限が切れた場合、所有者がダッシュ�
 * メール内の (コンテンツへの) リンクが機能しなくなった場合は、コンテンツが削除された可能性があります。 メール内のスクリーンショットの下で、自分自身をサブスクライブしたかどうか、または他の人が自分をサブスクライブしたかどうかを確認できます。 他の人の場合は、同僚に電子メールをキャンセルするか、再度自分をサブスクライブするよう依頼してください。
 * ダッシュボードのサブスクリプションについては、特定の種類のタイルはまだサポートされていません。 ストリーミング タイル、ビデオ タイル、カスタム Web コンテンツ タイルなどです。 
 * レポート ページのサブスクリプションは、レポート ページの名前に関連付けられています。 レポート ページにサブスクライブしたときに、その名前が変更されている場合は、サブスクリプションを再作成する必要があります。
-* サブスクリプション機能を使用できない場合は、システム管理者または IT ヘルプ デスクに問い合わせてください。 組織によって、この機能が無効にされている可能性があります。  
+* サブスクリプション機能を使用できない場合は、システム管理者または IT ヘルプ デスクに問い合わせてください。 組織がこの機能を無効にしているか、サブスクライバーの上限に達した可能性があります。  
 * メール サブスクリプションは、ほとんどの[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)をサポートしていません。  例外は[認定](../developer/visuals/power-bi-custom-visuals-certified.md)されている Power BI カスタム ビジュアルです。    
 * メール サブスクリプションは、レポートの既定のフィルターとスライサーの状態で送信されます。 サブスクライブした後に既定値を変更しても、メールには反映されません。 ページ分割されたレポートではこの機能がサポートされており、サブスクリプションごとに特定のパラメーター値を設定できます。  
 * メール サブスクリプションでは、この時点では、R を利用した Power BI ビジュアルはサポートされていません。  

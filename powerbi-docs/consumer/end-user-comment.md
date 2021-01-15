@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/08/2021
 LocalizationGroup: Consumer
-ms.openlocfilehash: f1265a8eb3fb4a7a1ec18a74c6b3a7d28b3b09ba
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: a4a89fd9db3ea3d92012bdaffdcaf248f7546c86
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578247"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053468"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>ダッシュボードまたはレポートにコメントを追加する
 
@@ -92,7 +92,7 @@ ms.locfileid: "96578247"
 5. **[閉じる]** を選択して、ダッシュボードまたはレポートに戻ります。
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>@ 記号を使用して同僚の注目を得る
-ダッシュボード、レポート、タイル、ビジュアル コメントのいずれを作成する場合でも、"\@" 記号を使用して同僚の注目を集めることができます。  "\@" 記号を入力すると、Power BI では、組織のユーザーを検索および選択できるドロップダウンが開かれます。 "\@" 記号が前につく検証済みのすべての名前は、青のフォントで表示されます。 @mentioned された個人は、受信トレイにすぐに電子メールが届きます。Power BI Mobile アプリを使用している場合は、デバイスでプッシュ通知を受信します。 通知から直接コメントを開いたり、データを表示したり、それに応じて応答したりすることができます。
+ダッシュボード、レポート、タイル、ビジュアル コメントのいずれを作成する場合でも、"\@" 記号を使用して同僚の注目を集めることができます。  "\@" 記号を入力すると、Power BI では、組織のユーザーを検索および選択できるドロップダウンが開かれます。 "\@" 記号が前につく検証済みのすべての名前は、青のフォントで表示されます。 @mentioned された個人は、受信トレイにすぐに電子メールが届きます。Power BI Mobile アプリを使用している場合は、デバイスでプッシュ通知を受信します。 通知から直接レポートまたはダッシュボードを開いたり、コメントを表示したり、データを表示したり、それに応じて応答したりすることができます。
 
 これは、視覚エフェクトの *デザイナー* と行っている会話です。 @ 記号を使用して、確実にコメントを見ることができるようにしています。 通知を受け取り、このダッシュボードと関連する会話を開くためのリンクを選択します。  
 

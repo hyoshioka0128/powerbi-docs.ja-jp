@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/14/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: da5ee837345b6f26dd6636bc93f6b38c1e0f5ea7
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 56ac55ceec480d6d33d6974b97871c5fa4d2d799
+ms.sourcegitcommit: 73ca86f7633317fe3831839c4dd14a333b2f514c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491853"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "97979978"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Power BI にアクセスするためのプライベート リンク
 
@@ -305,7 +305,7 @@ app.powerbi.com に管理者としてログインし、**管理ポータル** �
 
 Power BI でプライベート リンクを使用する際に留意する必要がある考慮事項がいくつかあります。
 
-* プライベート リンク環境を使用する場合、外部の画像またはテーマを使用することはできません。カスタム ビジュアルに影響を与える可能性があります。
+* プライベート リンク環境を使用する場合、外部の画像またはテーマを使用することはできません。
 * インターネット アクセスが無効になっていて、データセットまたはデータフローが Power BI データセットまたはデータフローにデータ ソースとして接続している場合、接続は失敗します。
 * Private Links が有効になっているとき、使用状況メトリックは機能 "*しません*"。
 * Power BI で **[パブリック インターネット アクセスのブロック]** を有効にすると、[Web に公開] は動作しません (淡色表示になります)。

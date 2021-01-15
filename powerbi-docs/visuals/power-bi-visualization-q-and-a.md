@@ -1,35 +1,31 @@
 ---
-title: Power BI Q&A ビジュアルを使用する
-description: Power BI Q&A ビジュアルを設定する方法
-author: rien
-ms.author: rien
-ms.reviewer: mihart
+title: Power BI で Q&A ビジュアルを作成する
+description: Power BI Desktop または Power BI サービスで Power BI Q&A ビジュアルを作成および書式設定する方法。
+author: maggiesMSFT
+ms.author: maggies
+ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/19/2019
-ms.openlocfilehash: 43da67114808538d64aa2ceb7f59af590ee23857
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/05/2021
+ms.openlocfilehash: 1cf80593458c12a1bee07ed40202e3613fdcb5e9
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418948"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961364"
 ---
-# <a name="introduction-to-power-bi-qa-visualizations"></a>Power BI Q&A のビジュアル化の概要
+# <a name="create-a-qa-visual-in-power-bi"></a>Power BI で Q&A ビジュアルを作成する
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+Q&A ビジュアルでは、ユーザーが自然言語で質問すると、その回答がビジュアルの形式で得られます。 "*コンシューマー*" は、これを使用して、データに対する回答をすばやく得ることができます。 また、"*デザイナー*" はこれを使用して、ビジュアルをすばやく作成できます。 この記事は、レポート デザイナーを対象としています。 レポートの任意の場所をダブルクリックし、自然言語を使用して作業を開始できます。 この記事では、Q&A ビジュアルを作成、書式設定、およびカスタマイズします。 Power BI 内で使用できるテーマとその他の既定の書式設定オプションがサポートされています。 作成後は、他のビジュアルと同じように動作し、クロスフィルタリング、クロス強調表示、およびブックマークをサポートします。 
 
-## <a name="what-are-qa-visualizations"></a>Q&A のビジュアル化とは
-
-Q&A ビジュアルでは、ユーザーが自然言語で質問すると、その回答がビジュアルの形式で得られます。 
+Power BI の Q&A に関する背景情報がさらに必要な場合は、 [Q&A の概要](../natural-language/q-and-a-intro.md)をご覧ください。 
 
 ![Q&A ビジュアルのチュートリアル](../natural-language/media/qna-visual-walkthrough.gif)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
-
-Q&A ビジュアルは、"*コンシューマー*" がデータに対する回答をすばやく得るためのツールとして使用できます。また、"*デザイナー*" がレポート内にビジュアルを作成する際に、レポート上の任意の場所をダブルクリックし、自然言語を使って開始するだけで済ますために使用することもできます。 Q&A ビジュアルは、他のビジュアルと同様に動作するため、クロスフィルター処理またはクロス強調表示が可能で、ブックマークもサポートされます。 Q&A ビジュアルでは、Power BI 内で使用できるテーマとその他の既定の書式設定オプションもサポートされます。
 
 Q&A ビジュアルは、4 つのコア コンポーネントで構成されています。
 
@@ -38,22 +34,22 @@ Q&A ビジュアルは、4 つのコア コンポーネントで構成されて�
 - Q&A ビジュアルを標準ビジュアルに変換するためのアイコン。 
 - 基になる自然言語エンジンをデザイナーが構成できる Q&A ツールを開くためのアイコン。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
 
-1. このチュートリアルでは、[売上およびマーケティングのサンプル PBIX ファイル](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)を使います。 
+1. [売上およびマーケティングのサンプル PBIX ファイル](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)をダウンロードして、作業を進めます。
 
-1. Power BI Desktop メニュー バーの左上のセクションで、 **[ファイル]**  >  **[開く]** の順に選択します
+1. Power BI Desktop の左上のセクションで、 **[ファイル]**  >  **[開く]** を選択します。
    
-2. **売上およびマーケティングのサンプル PBIX ファイル** のコピーを見つけます
+2. **売上およびマーケティングのサンプル PBIX ファイル** のコピーを見つけます。
 
 1. レポート ビューでファイルを開きます ![レポート ビューのアイコンのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. 選択 ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
+1. プラス記号を選択します ![黄色のタブのスクリーンショット。](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) を選択して、新しいページを追加します。
 
-Q&A ビジュアルの作成時にエラーが表示される場合は、[制限事項](../natural-language/q-and-a-limitations.md)に関するセクションを参照して、データソース構成がサポートされているかどうかを確認してください。    
+Q&A ビジュアルの作成時にエラーが表示される場合は、[Q&A の制限事項](../natural-language/q-and-a-limitations.md)に関する記事を参照して、データソース構成がサポートされているかどうかを確認してください。    
 
 > [!NOTE]
-> Power BI を使用する同僚とレポートを共有するには、それぞれのユーザーが個別の Power BI Pro ライセンスを持っているか、レポートが Premium 容量に保存されている必要があります。 [レポートの共有](../collaborate-share/service-share-reports.md)に関するページをご覧ください。
+> Power BI を使用する同僚とレポートを共有するには、それぞれのユーザーが個別の Power BI Pro ライセンスを持っているか、レポートが Premium 容量のワークスペースに保存されている必要があります。 [レポートの共有](../collaborate-share/service-share-dashboards.md)に関するページをご覧ください。
 
 ## <a name="create-a-qa-visual-using-a-suggested-question"></a>提案された質問を使用して Q&A ビジュアルを作成する
 この演習では、提案された質問の 1 つを選択して、Q&A ビジュアルを作成します。 
@@ -77,7 +73,7 @@ Q&A ビジュアルの作成時にエラーが表示される場合は、[制限
 ## <a name="create-a-qa-visual-using-a-natural-language-query"></a>自然言語クエリを使用して Q&A ビジュアルを作成する
 上の例では、提案された質問の 1 つを選択して、Q&A ビジュアルを作成しました。  この演習では、独自の質問を入力します。 質問を入力する際は、Power BI のオートコンプリート、入力ヒント、フィードバック機能を利用できます。
 
-どのような質問をするべきか、またどのような用語を使用すべきかがわからない場合は、 **[すべての候補を表示する]** を展開するか、キャンバスの右側にある [フィールド] ペインを確認します。 そうすることで、売上およびマーケティング データセットの用語と内容について詳しく知ることができます。
+どのような質問をするべきか、またどのような用語を使用すべきかがわからない場合は、 **[すべての候補を表示する]** を展開するか、キャンバスの右側にある [フィールド] ペインを確認します。 [フィールド] ペインでは、売上およびマーケティング データセットの用語と内容について詳しく知ることができます。
 
 ![[すべての候補を表示する] を含むキャンバスと、枠で囲まれた [フィールド] ペイン](media/power-bi-visualization-q-and-a/power-bi-terminology.png)
 
@@ -125,7 +121,7 @@ Q&A ビジュアル、質問フィールド、候補の表示方法を書式設�
 ![書式設定の結果が反映された Q&A ビジュアル](media/power-bi-visualization-q-and-a/power-bi-q-and-a-format.png)
 
 ## <a name="convert-your-qa-visual-into-a-standard-visual"></a>Q&A ビジュアルを標準ビジュアルに変換する
-色の識別が困難なユーザーに対応する縦棒グラフ ビジュアルの書式設定を少し変更して、タイトルと境界線を追加しました。 これで、これをレポート内の標準ビジュアルに変換し、ダッシュボードにピン留めする準備ができました。
+色の識別が困難なユーザーに対応する縦棒グラフ ビジュアルの書式設定を少し変更しました。タイトルと境界線を追加しました。 これで、これをレポート内の標準ビジュアルに変換し、ダッシュボードにピン留めする準備ができました。
 
 ![歯車アイコン](media/power-bi-visualization-q-and-a/power-bi-convert-icon.png) アイコンを選択して、**この Q&A の結果を標準ビジュアルに変換します**。
 
@@ -144,7 +140,7 @@ Q&A ビジュアル、質問フィールド、候補の表示方法を書式設�
 
 ![ツール アイコンが選択された Q&A ビジュアル](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png)
 
-ツール ペインは、認識できない Q&A 用語を教え、それらの用語を管理し、このデータセットとレポートに関して提案される質問を管理するために使用します。 ツール ペインでは、この Q&A ビジュアルを使用してたずねられた質問を確認し、ユーザーによってフラグが設定された質問を確認することもできます。 詳細については、[Q&A ツールの概要](../natural-language/q-and-a-tooling-intro.md)に関するページを参照してください。
+ツール ペインは、認識できない Q&A 用語を教え、それらの用語を管理し、このデータセットとレポートに関して提案される質問を管理するために使用します。 ツール ペインでは、この Q&A ビジュアルでユーザーによってたずねられた質問を確認し、ユーザーによってフラグが設定された質問を確認することもできます。 詳細については、「[Power BI Q&A をトレーニングするための Q&A ツールの概要](../natural-language/q-and-a-tooling-intro.md)」を参照してください。
 
 ![Q&A ツール ペイン](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png)
 
@@ -153,7 +149,7 @@ Q&A ビジュアルは Office および Bing と統合され、認識されな�
 
 ## <a name="next-steps"></a>次の手順
 
-自然言語を統合するには、さまざまな方法があります。 詳細については、次の記事を参照してください。
+自然言語を統合するには、いくつかの方法があります。 詳細については、次の記事を参照してください。
 
 [Q&A ツール](../natural-language/q-and-a-tooling-intro.md)
 * [Q&A ベスト プラクティス](../natural-language/q-and-a-best-practices.md)

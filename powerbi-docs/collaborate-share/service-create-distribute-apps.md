@@ -8,12 +8,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/23/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: f15508f030a1fa2ee0112134faf71e94e752984c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 981b4aa0f9e8bb12e4231476d27b8f58152ff3fd
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407701"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110914"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Power BI でアプリを発行する
 
@@ -70,7 +70,7 @@ Power BI で公式のパッケージ化コンテンツを作成し、*アプリ*
     
     >[!IMPORTANT]
     >お使いのアプリが他のワークスペースのデータセットに依存している場合、自分の責任ですべてのアプリ ユーザーが基になるデータセットにアクセスできるようにする必要があります。
-    >
+    >アプリまたはレポートがデータセットと同じワークスペースにある場合は、データセットに関連付けられているレポートもアプリに追加する必要があります。
 
 6. Power BI 管理者が Power BI 管理ポータルで該当する設定を有効にした場合、受信者用にアプリを自動的にインストールできます。 この記事の[アプリの自動インストール](#automatically-install-apps-for-end-users)に関する詳細を確認してください。
 

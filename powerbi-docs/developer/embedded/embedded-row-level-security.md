@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 408b5a03b415e6b1dabdb762eefee81e1a4fe483
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: cdb3543bc65e21f53cc21dea0f4da62910a7bd55
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887364"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110845"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Power BI Embedded での行レベルのセキュリティ
 
@@ -320,15 +320,18 @@ ID BLOB で提供する値は、Azure SQL Server に対する (リソース URL 
 
 ## <a name="on-premises-data-gateway-with-service-principal"></a>サービス プリンシパルを使用するオンプレミス データ ゲートウェイ
 
-SQL Server Analysis Services (SSAS) オンプレミス ライブ接続データ ソースを使用して行レベル セキュリティ (RLS) を構成するお客様は、**Power BI Embedded** と統合することで、新しい [サービス プリンシパル](embed-service-principal.md)機能を使用して、ユーザーと、SSAS のデータへのユーザー アクセスを管理することができます。
+SQL Server Analysis Services (SSAS) オンプレミス ライブ接続データ ソースを使用しているお客様は、**Power BI Embedded** と統合することで、[サービス プリンシパル](embed-service-principal.md)機能を使用して、ユーザーと、SSAS のデータへのユーザー アクセスを管理することができます。
 
 [Power BI REST API](/rest/api/power-bi/) を使用すると、[サービス プリンシパル オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)を使用して埋め込みトークンに対して SSAS オンプレミス ライブ接続用の有効な ID を指定することができます。
 
-これまでは、SSAS オンプレミス ライブ接続用の有効な ID を指定することができるためには、埋め込みトークンを生成するマスター ユーザーがゲートウェイ管理者である必要がありました。現在では、ユーザーがゲートウェイ管理者である必要はなくなりました。ゲートウェイ管理者は、そのデータ ソースに専用のアクセス許可をユーザーに付与することができ、そのユーザーは埋め込みトークンを生成するときに、有効な ID をオーバーライドできます。 この新しい機能により、SSAS ライブ接続に対してサービス プリンシパルでの埋め込みが可能になります。
+これまでは、SSAS オンプレミス ライブ接続用の有効な ID を指定することができるためには、埋め込みトークンを生成する *マスター ユーザー* がゲートウェイ管理者である必要がありました。現在では、ユーザーがゲートウェイ管理者である必要はなくなりました。ゲートウェイ管理者は、そのデータ ソースに専用のアクセス許可をユーザーに付与することができ、そのユーザーは埋め込みトークンを生成するときに、有効な ID をオーバーライドできます。 この新しい機能により、SSAS ライブ接続に対してサービス プリンシパルでの埋め込みが可能になります。
 
-このシナリオを有効にするには、ゲートウェイ管理者が [Add Datasource User REST API](/rest/api/power-bi/gateways/adddatasourceuser) を使用して、Power BI Embedded に対する *ReadOverrideEffectiveIdentity* アクセス許可をサービス プリンシパルに付与する必要があります。
+このシナリオを有効にするには、ゲートウェイ管理者が [Add Datasource User REST API](/rest/api/power-bi/gateways/adddatasourceuser) を使用して、SSAS データ ソースに対する *ReadOverrideEffectiveIdentity* アクセス許可をサービス プリンシパルに付与する必要があります。
 
 管理ポータルを使用してこのアクセス許可を設定することはできません。 このアクセス許可は、API でのみ設定されます。 管理ポータルでは、そのようなアクセス許可を持つユーザーと SPN についての指示が表示されます。
+
+>[!NOTE]
+>RLS が構成されていない SSAS データベースに接続している場合でも、埋め込みトークン生成呼び出しで有効な ID (SSAS サーバー管理者の ID) を指定する必要があります。
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 
