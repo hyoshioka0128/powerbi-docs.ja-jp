@@ -13,6 +13,8 @@
       items:
         - name: 'Power BI Desktop:Excel からレポートへ'
           href: desktop-excel-stunning-report.md
+        - name: 'Power BI Desktop:ディメンショナル モデルからレポートへ'
+          href: desktop-dimensional-model-report.md
         - name: 'Power BI サービス: Excel からレポートへ'
           href: service-from-excel-to-stunning-report.md
         - name: 'オンライン コース: ページ分割されたレポート'
