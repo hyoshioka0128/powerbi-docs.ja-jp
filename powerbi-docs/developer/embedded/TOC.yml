@@ -9,8 +9,6 @@
           href: embedding.md
         - name: Azure での Power BI Embedded とは
           href: azure-pbie-what-is-power-bi-embedded.md
-        - name: Power BI Embedded Generation 2 とは
-          href: power-bi-embedded-generation-2.md
     - name: チュートリアル
       expanded: true
       items:
@@ -40,6 +38,8 @@
           href: paginated-reports-row-level-security.md
         - name: マルチテナントを管理する
           href: embed-multi-tenancy.md
+        - name: 動的バインドを使用してレポートを接続する
+          href: embed-dynamic-binding.md
         - name: Azure の Power BI Embedded の診断ログ
           href: azure-pbie-diag-logs.md
         - name: 埋め込みに関するよくあるご質問
@@ -64,8 +64,6 @@
           href: register-app.md
         - name: Azure AD アクセス トークンを取得する
           href: get-azuread-access-token.md
-        - name: 動的バインドを使用してレポートを接続する
-          href: embed-dynamic-binding.md
         - name: 埋め込みに関する Q&A
           href: qanda.md
         - name: 埋め込みアプリケーションのトラブルシューティング
