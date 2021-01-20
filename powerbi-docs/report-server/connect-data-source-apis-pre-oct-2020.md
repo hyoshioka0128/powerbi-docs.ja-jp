@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.openlocfilehash: c063d145919dfc6f075cf8945b88a5f3644dead7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 72b81f10b6337530ab05f1fcef0a17a5869af867
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415498"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226745"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server-pre-october-2020"></a>PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - 2020 年 10 月より前の Power BI Report Server
 
@@ -37,7 +37,7 @@ PowerShell を使用して必要な API を操作することにより、Power B
 2. PowerShell コマンドレットを使用して、Power BI ファイルの既存のデータ ソース情報を取得します。
 
     ```powershell
-    Get-RsRestItemDataSource -RsItem '/MyPbixReport'
+    $dataSources = Get-RsRestItemDataSource -RsItem '/MyPbixReport'
     ```
 
     Power BI レポートに含まれている最初のデータ ソースの情報を表示するには: 

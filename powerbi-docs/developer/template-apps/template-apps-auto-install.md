@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 33de464a1bb1389fadfbc7a85ded9365321e0a62
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 0852fcb2c932680f6c20aeee94a89c68f473e46d
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926301"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565723"
 ---
 # <a name="automated-configuration-of-a-template-app-installation"></a>テンプレート アプリのインストールの自動構成
 
@@ -42,7 +42,7 @@ ms.locfileid: "97926301"
 
 1. ISV は、ISV のテナントに登録されている [サービス プリンシパル (アプリ専用トークン)](../embedded/embed-service-principal.md) に基づいて、"*アプリ専用*" トークンを取得します。
 
-1. ISV は、[Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) を使用して、*インストール チケット* を作成します。この中には、ISV によって準備されたユーザー固有のパラメーター構成が含まれます。
+1. ISV は、[Power BI REST API](/rest/api/power-bi/) を使用して、*インストール チケット* を作成します。この中には、ISV によって準備されたユーザー固有のパラメーター構成が含まれます。
 
 1. ISV は、インストール チケットを含む ```POST``` リダイレクト メソッドを使用して、ユーザーを Power BI にリダイレクトします。
 
@@ -56,23 +56,23 @@ ms.locfileid: "97926301"
 テンプレート アプリの事前構成済みのインストール エクスペリエンスを提供するには、次の前提条件が必要です。
 
 * Power BI Pro ライセンス。 Power BI Pro にサインアップしていない場合は、[無料試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してから始めてください。
-* 独自の Azure Active Directory (Azure AD) テナントの設定。 その設定方法については、[Azure AD テナントの作成](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant)に関するページを参照してください。
-* 前述のテナントに登録されている **サービス プリンシパル (アプリ専用トークン)** 。 詳細については、「[サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal)」を参照してください。 必ず、アプリケーションを **サーバー側 Web アプリケーション** として登録してください。 アプリケーション シークレットを作成するには、サーバー側 Web アプリケーションを登録します。 以降の手順のために、このプロセスから "*アプリケーション ID*" (ClientID) と "*アプリケーション シークレット*" (ClientSecret) を保存する必要があります。
-* インストール用に準備された、**パラメーター化されたテンプレート アプリ**。 テンプレート アプリは、Azure AD でアプリケーションを登録するのと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips)に関するページまたは「[Power BI でテンプレート アプリを作成する](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create)」を参照してください。 以降の手順のために、テンプレート アプリから次の情報をメモしておく必要があります。
+* 独自の Azure Active Directory (Azure AD) テナントの設定。 その設定方法については、[Azure AD テナントの作成](../embedded/create-an-azure-active-directory-tenant.md)に関するページを参照してください。
+* 前述のテナントに登録されている **サービス プリンシパル (アプリ専用トークン)** 。 詳細については、「[サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み](../embedded/embed-service-principal.md)」を参照してください。 必ず、アプリケーションを **サーバー側 Web アプリケーション** として登録してください。 アプリケーション シークレットを作成するには、サーバー側 Web アプリケーションを登録します。 以降の手順のために、このプロセスから "*アプリケーション ID*" (ClientID) と "*アプリケーション シークレット*" (ClientSecret) を保存する必要があります。
+* インストール用に準備された、**パラメーター化されたテンプレート アプリ**。 テンプレート アプリは、Azure AD でアプリケーションを登録するのと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](../../connect-data/service-template-apps-tips.md)に関するページまたは「[Power BI でテンプレート アプリを作成する](../../connect-data/service-template-apps-create.md)」を参照してください。 以降の手順のために、テンプレート アプリから次の情報をメモしておく必要があります。
      * アプリの作成時に [テンプレート アプリのプロパティを定義する](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app)プロセスの終わりの時点でインストール URL 内に表示される、"*アプリ ID*"、"*パッケージ キー*"、"*所有者 ID*"。 また、テンプレート アプリの [[リリース管理] ウィンドウ](../../connect-data/service-template-apps-create.md#manage-the-template-app-release)で **[リンクの取得]** を選択することでも同じリンクを取得できます。
     * テンプレート アプリのデータセットで定義されている "*パラメーター名*"。 パラメーター名は、大文字と小文字を区別する文字列であり、[テンプレート アプリのプロパティを定義する](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app)ときに **[Parameter Settings]\(パラメーターの設定\)** タブから、または Power BI のデータセット設定から取得することもできます。
 
     >[!NOTE]
-    >AppSource でまだ一般公開されていない場合でも、テンプレート アプリをインストールする準備ができていれば、テンプレート アプリで、事前構成されたインストール アプリケーションをテストできます。 テナント外のユーザーが自動インストール アプリケーションを使用してテンプレート アプリをインストールできるようにするには、テンプレート アプリが [Power BI アプリ マーケットプレース](https://app.powerbi.com/getdata/services)で一般公開されている必要があります。 テンプレート アプリは、作成している自動インストール アプリケーションを使用して配布する前に、必ず[パートナー センター](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer)に公開してください。
+    >AppSource でまだ一般公開されていない場合でも、テンプレート アプリをインストールする準備ができていれば、テンプレート アプリで、事前構成されたインストール アプリケーションをテストできます。 テナント外のユーザーが自動インストール アプリケーションを使用してテンプレート アプリをインストールできるようにするには、テンプレート アプリが [Power BI アプリ マーケットプレース](https://app.powerbi.com/getdata/services)で一般公開されている必要があります。 テンプレート アプリは、作成している自動インストール アプリケーションを使用して配布する前に、必ず[パートナー センター](/azure/marketplace/partner-center-portal/create-power-bi-app-offer)に公開してください。
 
 ## <a name="main-steps-and-apis"></a>主な手順と API
 
-以下のセクションでは、テンプレート アプリのインストールの構成を自動化するための主な手順と必要な API について説明します。 ほとんどの手順は、[Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) を使用して実行されますが、ここで説明するコード例は .NET SDK を使用して作成されています。
+以下のセクションでは、テンプレート アプリのインストールの構成を自動化するための主な手順と必要な API について説明します。 ほとんどの手順は、[Power BI REST API](/rest/api/power-bi/) を使用して実行されますが、ここで説明するコード例は .NET SDK を使用して作成されています。
 
 ## <a name="step-1-create-a-power-bi-client-object"></a>手順 1:Power BI クライアント オブジェクトを作成する
 
-Power BI REST API を使用するには、Azure AD から [サービス プリンシパル](../embedded/embed-service-principal.md)の *アクセス トークン* を取得する必要があります。 [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) への呼び出しを行う前に、Power BI アプリケーションのための [Azure AD アクセス トークン](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data)を取得する必要があります。
-アクセス トークンを使用して Power BI クライアントを作成するには、[Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) とやり取りするための Power BI クライアント オブジェクトを作成する必要があります。 **AccessToken** を **Microsoft.Rest.TokenCredentials** オブジェクトでラップして、Power BI クライアント オブジェクトを作成します。
+Power BI REST API を使用するには、Azure AD から [サービス プリンシパル](../embedded/embed-service-principal.md)の *アクセス トークン* を取得する必要があります。 [Power BI REST API](/rest/api/power-bi/) への呼び出しを行う前に、Power BI アプリケーションのための [Azure AD アクセス トークン](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data)を取得する必要があります。
+アクセス トークンを使用して Power BI クライアントを作成するには、[Power BI REST API](/rest/api/power-bi/) とやり取りするための Power BI クライアント オブジェクトを作成する必要があります。 **AccessToken** を **Microsoft.Rest.TokenCredentials** オブジェクトでラップして、Power BI クライアント オブジェクトを作成します。
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -91,7 +91,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ## <a name="step-2-create-an-install-ticket"></a>手順 2:インストール チケットを作成する
 
 インストール チケットを作成します。これは、ユーザーを Power BI にリダイレクトするときに使用されます。 この操作に使用される API は、**CreateInstallTicket** API です。
-* [Template Apps CreateInstallTicket](https://docs.microsoft.com/rest/api/power-bi/templateapps/createinstallticket)
+* [Template Apps CreateInstallTicket](/rest/api/power-bi/templateapps/createinstallticket)
 
 テンプレート アプリのインストールと構成用のインストール チケット作成する方法を示すサンプルは、[サンプル アプリケーション](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)内の [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs) ファイルから入手できます。
 

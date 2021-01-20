@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: c30b8f7ebe403e38fa59fa248aacc4b3086bf9ed
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 624e0a2838a08d1cf68ae58223fe979a56312b48
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885869"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565924"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD アプリケーションを登録して Power BI とともに使用する
 
@@ -247,7 +247,7 @@ Azure AD アプリのアクセス許可をプログラムで変更するには�
 
 # <a name="c"></a>[C#](#tab/CSharp)
 
-また、C# を使用して Azure AD アプリのアクセス許可を変更することもできます。 詳細については、[oAuth2PermissionGrant](https://docs.microsoft.com/graph/api/oauth2permissiongrant-get) API に関するページを参照してください。 この方法は、プロセスの一部を自動化することを検討している場合に便利です。
+また、C# を使用して Azure AD アプリのアクセス許可を変更することもできます。 詳細については、[oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get) API に関するページを参照してください。 この方法は、プロセスの一部を自動化することを検討している場合に便利です。
 
 HTTP 要求に関する詳細については、[[HTTP] タブ](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions)を参照してください。
 

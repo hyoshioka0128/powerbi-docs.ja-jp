@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 78ba14c8a715c927f35c32244734e66a5fb80473
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: da356800a49e6d8876a147862dd08541ed2999bc
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888974"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565688"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI コンテンツを埋め込む
 
@@ -57,7 +57,7 @@ Azure Active Directory に[アプリケーションを登録する](register-app
 
 >[!NOTE]
 >独自のアプリケーションでは、 *[認証]* に移動して、 *[リダイレクト URI]* フィールドにリダイレクト アドレスを挿入する必要があります。
-リダイレクトの詳細については、「[リダイレクト URI (応答 URL) に関する制約と制限](https://docs.microsoft.com/azure/active-directory/develop/reply-url)」を参照してください。
+リダイレクトの詳細については、「[リダイレクト URI (応答 URL) に関する制約と制限](/azure/active-directory/develop/reply-url)」を参照してください。
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI 環境を設定する
 
@@ -428,7 +428,7 @@ function updateEmbedReport() {
 このチュートリアルでは、Power BI の組織アカウントを使用して、アプリケーションに Power BI コンテンツを埋め込む方法を説明しました。 これで、アプリを使用して、アプリケーションへの Power BI コンテンツの埋め込みを試すことができます。 また、顧客のために Power BI コンテンツを埋め込むことができます (ページ分割されたレポートの埋め込みにはまだ対応していません)。
 
 > [!div class="nextstepaction"]
-> [アプリからの埋め込み](embed-from-apps.md)
+> [アプリからの埋め込み](./index.yml)
 
 > [!div class="nextstepaction"]
 >[顧客向けに埋め込む](embed-sample-for-customers.md)

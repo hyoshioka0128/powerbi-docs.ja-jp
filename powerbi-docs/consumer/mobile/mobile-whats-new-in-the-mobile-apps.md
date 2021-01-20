@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 6eebe7b75db06b97d116ca0c17e67e9ee7b0562e
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: 8301b51ccbb2ac344e24a297f9a309fc3601b3e1
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969652"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565591"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -442,7 +442,7 @@ IT 管理者は MDM ツールを使用し、レポート サーバーへの Powe
 
 #### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI for Mixed Reality アプリ (プレビュー)
 
-Power BI for Mixed Reality アプリが Microsoft ストアに登場しました。 仮想世界に専念した状態でダッシュボードとレポートを表示するか、あるいは使用環境のコンテキストで特定の場所にダッシュボードとレポートを配置して表示します。 コンテキストのために新しい「[HoloLens での Power BI の紹介](https://www.youtube.com/watch?v=J_X_nOFUBss)」のビデオをご覧になるか、新しい [Power BI for Mixed Reality](mobile-mixed-reality-app.md) に関する記事を参照してください。
+Power BI for Mixed Reality アプリが Microsoft ストアに登場しました。 仮想世界に専念した状態でダッシュボードとレポートを表示するか、あるいは使用環境のコンテキストで特定の場所にダッシュボードとレポートを配置して表示します。 コンテキストのために新しい「[HoloLens での Power BI の紹介](https://www.youtube.com/watch?v=J_X_nOFUBss)」のビデオをご覧になるか、新しい [Power BI for Mixed Reality](./mobile-hololens2-app.md) に関する記事を参照してください。
 
 
 ### <a name="april-2018"></a>2018 年 4 月
@@ -460,7 +460,7 @@ Power BI for Mixed Reality アプリが Microsoft ストアに登場しました
 
 #### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI for Mixed Reality アプリ (プレビュー)
 
-最新のデータ傾向に応じて、Power BI for Mixed Reality アプリが作成されました。 仮想世界に専念した状態でダッシュボードとレポートを表示するか、あるいは使用環境のコンテキストで特定の場所にダッシュボードとレポートを配置して表示します。 詳細については、新しい [Power BI for Mixed Reality アプリ](mobile-mixed-reality-app.md)に関するページを参照してください。
+最新のデータ傾向に応じて、Power BI for Mixed Reality アプリが作成されました。 仮想世界に専念した状態でダッシュボードとレポートを表示するか、あるいは使用環境のコンテキストで特定の場所にダッシュボードとレポートを配置して表示します。 詳細については、新しい [Power BI for Mixed Reality アプリ](./mobile-hololens2-app.md)に関するページを参照してください。
 
 #### <a name="share-reports-and-dashboards-externally"></a>レポートおよびダッシュボードを外部と共有する
 

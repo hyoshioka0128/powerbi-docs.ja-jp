@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 1bf62e99d666c05af8efc05ecbc496d69c586ae6
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: a44bd7837e7605fd23e49a91e3e9eba106d5a933
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927107"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565766"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>チュートリアル:Azure 関数を使用してテンプレート アプリのインストールの構成を自動化する
 
@@ -38,7 +38,7 @@ ms.locfileid: "97927107"
 
 一般的な自動化のフローとアプリで使用される API の詳細については、「[テンプレート アプリのインストールの自動構成](template-apps-auto-install.md)」を参照してください。
 
-この単純なアプリケーションでは、Azure 関数を使用します。 Azure Functions について詳しくは、[Azure Functions のドキュメント](https://docs.microsoft.com/azure/azure-functions/)をご覧ください。
+この単純なアプリケーションでは、Azure 関数を使用します。 Azure Functions について詳しくは、[Azure Functions のドキュメント](/azure/azure-functions/)をご覧ください。
 
 ## <a name="basic-flow"></a>基本のフロー
 
@@ -48,7 +48,7 @@ ms.locfileid: "97927107"
 
 1. ISV は、ISV のテナントに登録されている [サービス プリンシパル (アプリ専用トークン)](../embedded/embed-service-principal.md) に基づいて、"*アプリ専用*" トークンを取得します。
 
-1. ISV は、[Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) を使用して、"*インストール チケット*" を作成します。この中には、ISV によって準備されたユーザー固有のパラメーター構成が含まれます。
+1. ISV は、[Power BI REST API](/rest/api/power-bi/) を使用して、"*インストール チケット*" を作成します。この中には、ISV によって準備されたユーザー固有のパラメーター構成が含まれます。
 
 1. ISV は、インストール チケットを含む ```POST``` リダイレクト メソッドを使用して、ユーザーを Power BI にリダイレクトします。
 
@@ -59,18 +59,18 @@ ms.locfileid: "97927107"
 
 ## <a name="prerequisites"></a>前提条件
 
-* 独自の Azure Active Directory (Azure AD) テナントの設定。 その設定方法については、[Azure AD テナントの作成](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant)に関するページを参照してください。
-* 前述のテナントに登録されている[サービス プリンシパル (アプリ専用トークン)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal)。
-* インストール用に準備された、パラメーター化された[テンプレート アプリ](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview)。 テンプレート アプリは、Azure AD でアプリケーションを登録するのと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md)に関するページまたは「[Power BI でテンプレート アプリを作成する](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create)」を参照してください。
+* 独自の Azure Active Directory (Azure AD) テナントの設定。 その設定方法については、[Azure AD テナントの作成](../embedded/create-an-azure-active-directory-tenant.md)に関するページを参照してください。
+* 前述のテナントに登録されている[サービス プリンシパル (アプリ専用トークン)](../embedded/embed-service-principal.md)。
+* インストール用に準備された、パラメーター化された[テンプレート アプリ](../../connect-data/service-template-apps-overview.md)。 テンプレート アプリは、Azure AD でアプリケーションを登録するのと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](../../connect-data/service-template-apps-tips.md)に関するページまたは「[Power BI でテンプレート アプリを作成する](../../connect-data/service-template-apps-create.md)」を参照してください。
 * Power BI Pro ライセンス。 Power BI Pro にサインアップしていない場合は、[無料試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してから始めてください。
 
 ## <a name="set-up-your-template-apps-automation-development-environment"></a>テンプレート アプリの自動化開発環境を設定する
 
-アプリケーションのセットアップを続行する前に、「[クイック スタート:Azure App Configuration を使用して Azure Functions アプリを作成する](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp)」の手順に従い、Azure アプリ構成と共に Azure 関数を開発します。 この記事の説明に従ってアプリ構成を作成します。
+アプリケーションのセットアップを続行する前に、「[クイック スタート:Azure App Configuration を使用して Azure Functions アプリを作成する](/azure/azure-app-configuration/quickstart-azure-functions-csharp)」の手順に従い、Azure アプリ構成と共に Azure 関数を開発します。 この記事の説明に従ってアプリ構成を作成します。
 
 ### <a name="register-an-application-in-azure-ad"></a>アプリケーションを Azure AD に登録する
 
-「[サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal)」の説明に従ってサービス プリンシパルを作成します。
+「[サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み](../embedded/embed-service-principal.md)」の説明に従ってサービス プリンシパルを作成します。
 
 必ず、アプリケーションを **サーバー側 Web アプリケーション** として登録してください。 アプリケーション シークレットを作成するには、サーバー側 Web アプリケーションを登録します。
 
@@ -89,12 +89,12 @@ ms.locfileid: "97927107"
 * テンプレート アプリのデータセットで定義されている "*パラメーター名*"。 パラメーター名は、大文字と小文字を区別する文字列です。 [テンプレート アプリのプロパティを定義する](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app)ときに **[Parameter Settings]\(パラメーターの設定\)** タブから、または Power BI のデータセット設定から取得することもできます。
 
 >[!NOTE]
->AppSource でまだ一般公開されていない場合でも、テンプレート アプリをインストールする準備ができていれば、テンプレート アプリで、事前構成されたインストール アプリケーションをテストできます。 テナント外のユーザーが自動インストール アプリケーションを使用してテンプレート アプリをインストールできるようにするには、テンプレート アプリが [Power BI アプリ マーケットプレース](https://app.powerbi.com/getdata/services)で一般公開されている必要があります。 テンプレート アプリは、作成している自動インストール アプリケーションを使用して配布する前に、必ず[パートナー センター](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer)に公開してください。
+>AppSource でまだ一般公開されていない場合でも、テンプレート アプリをインストールする準備ができていれば、テンプレート アプリで、事前構成されたインストール アプリケーションをテストできます。 テナント外のユーザーが自動インストール アプリケーションを使用してテンプレート アプリをインストールできるようにするには、テンプレート アプリが [Power BI アプリ マーケットプレース](https://app.powerbi.com/getdata/services)で一般公開されている必要があります。 テンプレート アプリは、作成している自動インストール アプリケーションを使用して配布する前に、必ず[パートナー センター](/azure/marketplace/partner-center-portal/create-power-bi-app-offer)に公開してください。
 
 
 ## <a name="install-and-configure-your-template-app"></a>テンプレート アプリのインストールと構成
 
-このセクションでは、テンプレート アプリを事前構成してインストールするために作成された自動インストールの Azure Functions サンプルを使用します。 このサンプルは、例を示すことを目的としているため、意図的にシンプルに作成されています。 これを使用すると、[Azure 関数](https://docs.microsoft.com/azure/azure-functions/functions-overview)と [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) を利用して、テンプレート アプリの自動インストール API を簡単にデプロイし、使用することができます。
+このセクションでは、テンプレート アプリを事前構成してインストールするために作成された自動インストールの Azure Functions サンプルを使用します。 このサンプルは、例を示すことを目的としているため、意図的にシンプルに作成されています。 これを使用すると、[Azure 関数](/azure/azure-functions/functions-overview)と [Azure App Configuration](/azure/azure-app-configuration/overview) を利用して、テンプレート アプリの自動インストール API を簡単にデプロイし、使用することができます。
 
 ### <a name="download-visual-studio-version-2017-or-later"></a>[Visual Studio](https://www.visualstudio.com/) (バージョン 2017 以降) をダウンロードする
 
@@ -200,7 +200,7 @@ applicationId を取得するには、次の手順に従います。
 
 ## <a name="test-your-function-locally"></a>関数をローカルでテストする
 
-「[関数をローカルで実行する](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally)」で説明されている手順に従って、関数を実行します。
+「[関数をローカルで実行する](/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally)」で説明されている手順に従って、関数を実行します。
 
 関数の URL への ```POST``` 要求を発行するようにポータルを構成します。 たとえば ```POST http://localhost:7071/api/install``` です。 要求本文は、キーと値のペアを記述する JSON オブジェクトである必要があります。 キーは、Power BI Desktop で定義されている "*パラメーター名*" です。 値は、テンプレート アプリの各パラメーターに設定する必要がある値です。
 
@@ -218,4 +218,4 @@ applicationId を取得するには、次の手順に従います。
 
 ### <a name="publish-your-project-to-azure"></a>プロジェクトを Azure に発行する
 
-プロジェクトを Azure に発行するには、[Azure Functions のドキュメント](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure)の手順に従います。 その後、テンプレート アプリの自動インストール API を製品に統合し、運用環境でのテストを開始できます。
+プロジェクトを Azure に発行するには、[Azure Functions のドキュメント](/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure)の手順に従います。 その後、テンプレート アプリの自動インストール API を製品に統合し、運用環境でのテストを開始できます。

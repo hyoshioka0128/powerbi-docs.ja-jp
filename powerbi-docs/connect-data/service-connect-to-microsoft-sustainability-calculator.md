@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/22/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 730a997a6d1d304fe868dd5bdd5bfbed6e359d91
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: bff53ac0e230a91dd980b461340ae4109f551999
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927162"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565569"
 ---
 # <a name="microsoft-sustainability-calculator-support-page"></a>Microsoft Sustainability Calculator のサポート ページ
 
@@ -165,7 +165,7 @@ Microsoft からの顧客の排出量がゼロにならないのには、主に 
 
 **排出量をさらに削減するにはどうすればよいですか?**
 
-Azure のリソースとコスト効率により、Azure の使用による環境への影響が軽減されます。 たとえば、使用されていない仮想マシンは、クラウドでもオンプレミスでも無駄になります。 仮想マシンのサイズを適切に調整してコンピューティング利用率 (CUF) を向上させることで、物理サーバーの場合と同様に、有用な出力ごとのエネルギー使用量が減ります。 [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) には、クラウドへの投資を最大限に活用するために支出を計画、分析、削減するためのツールが用意されています。
+Azure のリソースとコスト効率により、Azure の使用による環境への影響が軽減されます。 たとえば、使用されていない仮想マシンは、クラウドでもオンプレミスでも無駄になります。 仮想マシンのサイズを適切に調整してコンピューティング利用率 (CUF) を向上させることで、物理サーバーの場合と同様に、有用な出力ごとのエネルギー使用量が減ります。 [Azure Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) には、クラウドへの投資を最大限に活用するために支出を計画、分析、削減するためのツールが用意されています。
 
 #### <a name="methodology"></a>手法
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/06/2021
-ms.openlocfilehash: 6b0277b342d454536154207ede2cb4bc2a2ba340
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.openlocfilehash: c27d95715fe436b59825390b1cc16111e83ffc1d
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155666"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565002"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Power BI Embedded の分析の容量と SKU
 
@@ -152,4 +152,4 @@ Power BI Premium には、*P* および *EM* の 2 つの SKU が用意されて
 >[組織向けの埋め込み](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
-> [アプリからの埋め込み](embed-from-apps.md)
+> [アプリからの埋め込み](./index.yml)

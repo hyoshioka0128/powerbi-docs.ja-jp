@@ -9,16 +9,16 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: 647b9cce0835d21028da586ce3cf09f3383e544b
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 0e19f2c592f5a5249e80771edf4a16c02eb68708
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888882"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565109"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>サービス プリンシパルと証明書を使用した Power BI コンテンツの埋め込み
 
-証明書ベースの認証では、Windows、Android、または iOS デバイス上のクライアント証明書、または [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) に保持されているクライアント証明書を、Azure Active Directory (Azure AD) と共に使用して認証することができます。
+証明書ベースの認証では、Windows、Android、または iOS デバイス上のクライアント証明書、または [Azure Key Vault](/azure/key-vault/basic-concepts) に保持されているクライアント証明書を、Azure Active Directory (Azure AD) と共に使用して認証することができます。
 
 この認証方法を使用すると、ローテーションまたは失効に対して、証明書を中央の場所から CA を使用して管理できます。
 

@@ -8,16 +8,16 @@ ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: ef74b3bcddd981c9f63172fa2e641335a081836d
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: a76c7f9d205fe47322768a514a1e5d89a36a2306
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96577718"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565742"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Power BI 用の Azure セキュリティ ベースライン
 
-このセキュリティ ベースラインでは、[Azure セキュリティ ベンチマーク バージョン 2.0](https://docs.microsoft.com/azure/security/benchmarks/overview) からのガイダンスを Power BI に適用します。 Azure セキュリティ ベンチマークには、Azure 上のクラウド ソリューションをセキュリティで保護する方法に関する推奨事項がまとめてあります。 Azure セキュリティ ベンチマークで定義されている **セキュリティ制御** および Power BI に適用できる関連のガイダンスによって、内容をグループ化しています。 Power BI に適用できない **制御** については除外しています。
+このセキュリティ ベースラインでは、[Azure セキュリティ ベンチマーク バージョン 2.0](/azure/security/benchmarks/overview) からのガイダンスを Power BI に適用します。 Azure セキュリティ ベンチマークには、Azure 上のクラウド ソリューションをセキュリティで保護する方法に関する推奨事項がまとめてあります。 Azure セキュリティ ベンチマークで定義されている **セキュリティ制御** および Power BI に適用できる関連のガイダンスによって、内容をグループ化しています。 Power BI に適用できない **制御** については除外しています。
 
 Power BI を Azure セキュリティ ベンチマークに完全にマップする方法については、[完全な Power BI のセキュリティ ベースライン マッピング ファイル](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines)に関するページを参照してください。
 
@@ -29,7 +29,7 @@ Power BI を Azure セキュリティ ベンチマークに完全にマップす
 
 **ガイダンス**: Power BI では、プライベート リンク エンドポイントへの Power BI テナントの接続、およびパブリック インターネット アクセスの無効化がサポートされています。
 
-- [Power BI にアクセスするためのプライベート リンク](https://docs.microsoft.com/power-bi/admin/service-security-private-links)
+- [Power BI にアクセスするためのプライベート リンク](../admin/service-security-private-links.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -47,13 +47,13 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 注意:Azure AD では外部 ID がサポートされています。これにより、Microsoft アカウントを持たないユーザーは、自分の外部 ID を使用して自分のアプリケーションおよびリソースにサインインすることができます。
 
-- [Azure Active Directory のテナント](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)
+- [Azure Active Directory のテナント](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
-- [Azure AD インスタンスを作成して構成する方法](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+- [Azure AD インスタンスを作成して構成する方法](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
-- [アプリケーションに外部 ID プロバイダーを使用する](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers)
+- [アプリケーションに外部 ID プロバイダーを使用する](/azure/active-directory/b2b/identity-providers)
 
-- [Azure Active Directory の ID セキュリティ スコアとは](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
+- [Azure Active Directory の ID セキュリティ スコアとは](/azure/active-directory/fundamentals/identity-secure-score)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -73,7 +73,7 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 **ガイダンス**: Power BI では Azure Active Directory を使用して、Azure リソース、クラウド アプリケーション、およびオンプレミスのアプリケーションに ID を付与し、アクセス管理を実現します。 これには、従業員などのエンタープライズ ID や、パートナー、ベンダー、サプライヤーなどの外部 ID も含まれます。 これにより、オンプレミスおよびクラウド内の組織のデータとリソースへのアクセスを管理し、セキュリティで保護するためのシングルサインオン (SSO) が可能になります。 すべてのユーザー、アプリケーション、デバイスを Azure AD に接続することで、シームレスで安全なアクセスを実現し、可視性と制御性を高めることができます。
 
-- [Azure AD を使用したアプリケーションの SSO について理解する](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Azure AD を使用したアプリケーションの SSO について理解する](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -89,9 +89,9 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 注意:MFA を適用できるのは、Azure AD で有効になっているユーザー アカウントに限られます。 Power BI サービス プリンシパルでは、MFA の使用はサポートされていません。
 
-- [Azure で MFA を有効にする方法](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+- [Azure で MFA を有効にする方法](/azure/active-directory/authentication/howto-mfa-getstarted)
 
-- [Azure Active Directory のパスワードレス認証オプションの概要](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
+- [Azure Active Directory のパスワードレス認証オプションの概要](/azure/active-directory/authentication/concept-authentication-passwordless)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -101,7 +101,7 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 **ガイダンス**: 個別にスコープを指定できる Microsoft Cloud App Security で異常検出ポリシーを定義します。これにより、それらは対象として含めるユーザーおよびグループのみに適用されることになります。 このような異常検出ポリシーは、ユーザーによる Power BI へのアクセスおよびその使用に関連する動作の異常を検出して監視するのに役立ちます。
 
-- [Power BI で Microsoft Cloud App Security の制御を使用する](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Power BI で Microsoft Cloud App Security の制御を使用する](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -111,13 +111,13 @@ Azure AD を保護することは、組織のクラウド セキュリティ プ
 
 **ガイダンス**: Power BI では、Azure AD 条件付きアクセスがサポートされています。これを使用すれば、ユーザー定義の条件 (特定の IP 範囲からのユーザー ログインでは MFA を使用してログインする必要がある、など) に基づいて、よりきめ細かいアクセス制御を行うことができます。 さまざまなユース ケースに対してきめ細かな認証セッション管理ポリシーを使用することもできます。
 
-- [Azure での条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Azure での条件付きアクセスの概要](/azure/active-directory/conditional-access/overview)
 
-- [一般的な条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
+- [一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
 
-- [条件付きアクセスを使用して認証セッション管理を構成する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
+- [条件付きアクセスを使用して認証セッション管理を構成する](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
 
-- [Power BI で Microsoft Cloud App Security の制御を使用する](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Power BI で Microsoft Cloud App Security の制御を使用する](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -131,7 +131,7 @@ Key Vault での Power BI の暗号化または Power BI へのアクセスに�
  
 GitHub の場合、ネイティブ シークレット スキャン機能を使用して、コード内で資格情報やその他の形式のシークレットを識別できます。
 
-- [Power BI で独自の暗号化キーを使用する](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Power BI で独自の暗号化キーを使用する](../admin/service-encryption-byok.md)
 
  
 資格情報を設定する方法
@@ -164,11 +164,11 @@ Power BI には、以下の高い特権が与えられたアカウントが用�
 
 M365 Privileged Access Management を使用して、Power BI 管理者アカウントに対して Just-In-Time (JIT) 特権アクセスを有効にします。
 
-- [Power BI に関連する管理者ロール](https://docs.microsoft.com/power-bi/admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi)
+- [Power BI に関連する管理者ロール](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi)
 
-- [M365 Privileged Access Management](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&amp;preserve-view=true)
+- [M365 Privileged Access Management](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)
 
-- [Power BI での Cloud App Security 制御](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Power BI での Cloud App Security 制御](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -178,7 +178,7 @@ M365 Privileged Access Management を使用して、Power BI 管理者アカウ�
 
 **ガイダンス**: 高い特権を持つアカウント、または Power BI への昇格されたアクセスを持つロールの数を制限します。
 
-[こちら](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&amp;preserve-view=true)の M365 Privileged Access Management のガイダンスを使用して、Just-In-Time (JIT) 特権アクセスを有効にすることができます。
+[こちら](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)の M365 Privileged Access Management のガイダンスを使用して、Just-In-Time (JIT) 特権アクセスを有効にすることができます。
 
 詳細については、[こちら](https://aka.ms/PBIEnterpriseDeploymentWP)の Power BI のエンタープライズ展開に関するドキュメントの 183 ページを参照してください。
 
@@ -196,7 +196,7 @@ Power BI アクティビティ ログにアクセスするには、次の要件�
 
 これらの要件が満たされたら、次のガイダンスに従って Power BI 内のユーザー アクティビティを追跡できます。
 
-- [Power BI でユーザー アクティビティを追跡する](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
+- [Power BI でユーザー アクティビティを追跡する](../admin/service-admin-auditing.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -208,9 +208,9 @@ Power BI アクティビティ ログにアクセスするには、次の要件�
 
 緊急アクセス用アカウントの資格情報 (パスワード、証明書、スマート カードなど) は安全に保管し、緊急時にのみそれらを使うことを許可された個人のみに知らせる必要があります。
 
-- [Azure AD で緊急アクセス用アカウントを管理する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)
+- [Azure AD で緊急アクセス用アカウントを管理する](/azure/active-directory/users-groups-roles/directory-emergency-access)
 
-- [M365 アカウントを保護する](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-protect-admin-accounts)
+- [M365 アカウントを保護する](/microsoft-365/campaigns/m365-campaigns-protect-admin-accounts)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -221,9 +221,9 @@ Power BI アクティビティ ログにアクセスするには、次の要件�
 **ガイダンス**:セキュリティで保護された分離したワークステーションは、管理者、開発者、重要なサービス オペレーターのような機密性の高い役割のセキュリティには非常に重要です。 Power BI の管理に関係する管理タスクの場合は、高度にセキュリティで保護されたユーザー ワークステーションや Azure Bastion を使用してください。 Azure Active Directory、Microsoft Defender Advanced Threat Protection (ATP)、または Microsoft Intune を使用して、管理タスクのためにセキュリティで保護されたマネージド ユーザー ワークステーションを展開します。 セキュリティで保護されたワークステーションを一元管理して、強力な認証、ソフトウェアとハードウェアのベースライン、制限された論理アクセスとネットワーク アクセスなどのセキュリティで保護された構成を実施できます。
 
 特権アクセスについて
-- [ワークステーション](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-managed-workstation)
+- [ワークステーション](/azure/active-directory/devices/concept-azure-managed-workstation)
 
-- [特権アクセス ワークステーションを展開する](https://docs.microsoft.com/azure/active-directory/devices/howto-azure-managed-workstation)
+- [特権アクセス ワークステーションを展開する](/azure/active-directory/devices/howto-azure-managed-workstation)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -239,7 +239,7 @@ Power BI アクティビティ ログにアクセスするには、次の要件�
 
 Microsoft Information Protection の秘密度ラベルを使用すれば、Power BI サービスでレポート、ダッシュボード、データセット、およびデータフローを分類およびラベル付けできるほか、コンテンツが Power BI サービスから Excel、PowerPoint、および PDF ファイルにエクスポートされるときに機密コンテンツを不正なデータ アクセスや漏洩から保護することができます。
 
-- [Power BI で秘密度ラベルを適用する方法](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)
+- [Power BI で秘密度ラベルを適用する方法](../admin/service-security-apply-data-sensitivity-labels.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -247,13 +247,13 @@ Microsoft Information Protection の秘密度ラベルを使用すれば、Power
 
 ### <a name="dp-2-protect-sensitive-data"></a>DP-2:機密データを保護する
 
-**ガイダンス**: Power BI は、機密データの保護のために Microsoft Information Protection の秘密度ラベルと統合されています。 詳細については、[Power BI の Microsoft Information Protection 秘密度ラベル](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)に関するページを参照してください。
+**ガイダンス**: Power BI は、機密データの保護のために Microsoft Information Protection の秘密度ラベルと統合されています。 詳細については、[Power BI の Microsoft Information Protection 秘密度ラベル](../admin/service-security-sensitivity-label-overview.md)に関するページを参照してください。
 
-Power BI を使用すると、サービス ユーザーは独自のキーを使用して保存データを保護することができます。 詳細については、「[Power BI で独自の暗号化キーを使用する](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)」を参照してください。
+Power BI を使用すると、サービス ユーザーは独自のキーを使用して保存データを保護することができます。 詳細については、「[Power BI で独自の暗号化キーを使用する](../admin/service-encryption-byok.md)」を参照してください。
 
-お客様には、クラウド サービスへのデータの露出を最小限に抑えるために、データ ソースをオンプレミスで維持し、直接クエリまたはライブ接続をオンプレミス データ ゲートウェイで利用するオプションが用意されています。 詳細については、「[オンプレミス データ ゲートウェイとは](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)」を参照してください。
+お客様には、クラウド サービスへのデータの露出を最小限に抑えるために、データ ソースをオンプレミスで維持し、直接クエリまたはライブ接続をオンプレミス データ ゲートウェイで利用するオプションが用意されています。 詳細については、「[オンプレミス データ ゲートウェイとは](/data-integration/gateway/service-gateway-onprem)」を参照してください。
 
-Power BI では行レベルのセキュリティがサポートされています。 詳細については、「[Power BI での行レベルのセキュリティ (RLS)](https://docs.microsoft.com/power-bi/admin/service-admin-rls)」をご覧ください。 RLS は、直接クエリ データ ソースにも適用できることに注目してください。この場合、PBIX ファイルは、セキュリティを有効にするためのプロキシとして機能します。
+Power BI では行レベルのセキュリティがサポートされています。 詳細については、「[Power BI での行レベルのセキュリティ (RLS)](../admin/service-admin-rls.md)」をご覧ください。 RLS は、直接クエリ データ ソースにも適用できることに注目してください。この場合、PBIX ファイルは、セキュリティを有効にするためのプロキシとして機能します。
 
 **Azure Security Center の監視**: 適用なし
 
@@ -266,7 +266,7 @@ Power BI では行レベルのセキュリティがサポートされていま�
 Power BI で Cloud App Security を使用すると、Power BI のレポート、データ、およびサービスを意図しない漏えいや侵害から保護することができます。 Cloud App Security では、Azure Active Directory (Azure AD) のリアルタイム セッション制御を使用して、組織のデータに対して条件付きアクセス ポリシーを作成すると、Power BI 分析を確実にセキュリティで保護することができます。 これらのポリシーを設定すると、管理者は、ユーザーのアクセスとアクティビティの監視、リアルタイムのリスク分析の実行、ラベル固有の制御の設定を行うことができます。
 
 使用
-- [Power BI での Microsoft Cloud App Security の制御](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Power BI での Microsoft Cloud App Security の制御](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -276,9 +276,9 @@ Power BI で Cloud App Security を使用すると、Power BI のレポート、
 
 **ガイダンス**: HTTP トラフィックの場合、ご利用の Power BI リソースに接続するクライアントおよびデータソースがいずれも、TLS v1.2 以上とネゴシエートできるようにします。
 
-- [TLS バージョンの使用の強制](https://docs.microsoft.com/power-bi/admin/service-admin-power-bi-security#enforcing-tls-version-usage)
+- [TLS バージョンの使用の強制](../admin/service-admin-power-bi-security.md#enforcing-tls-version-usage)
 
-- [TLS セキュリティに関する情報](https://docs.microsoft.com/security/engineering/solving-tls1-problem)
+- [TLS セキュリティに関する情報](/security/engineering/solving-tls1-problem)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -288,7 +288,7 @@ Power BI で Cloud App Security を使用すると、Power BI のレポート、
 
 **ガイダンス**: Power BI では、保存データと処理中のデータが暗号化されます。 既定では、Power BI で Microsoft マネージド キーを使用してデータを暗号化します。 組織は、レポート イメージから Premium 容量にインポートされたデータセットまで、Power BI 全体で保存時のユーザー コンテンツの暗号化に独自のキーを使用することを選択できます。
 
-- [Power BI で bring-your-own-key を使用する](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Power BI で bring-your-own-key を使用する](../admin/service-encryption-byok.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -302,7 +302,7 @@ Power BI で Cloud App Security を使用すると、Power BI のレポート、
 
 **ガイダンス**: Azure Sentinel を Power BI の Office 監査ログと共に使用することで、セキュリティ チームが Power BI 資産に対するリスクを確実に把握できるようにします。
 
-- [Azure Sentinel に Office 365 のログを接続する](https://docs.microsoft.com/azure/sentinel/connect-office-365)
+- [Azure Sentinel に Office 365 のログを接続する](/azure/sentinel/connect-office-365)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -316,9 +316,9 @@ Azure Resource Graph を使用すると、ご利用のサブスクリプショ�
 
 タグと Azure の他のメタデータ (名前、説明、カテゴリ) を使用して、組織の分類に従って資産を論理的に整理します。  
 
-- [Azure Resource Graph Explorer を使用してクエリを作成する方法](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
+- [Azure Resource Graph Explorer を使用してクエリを作成する方法](/azure/governance/resource-graph/first-query-portal)
 
-- [リソースの名前付けとタグ付けの意思決定ガイド](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json)
+- [リソースの名前付けとタグ付けの意思決定ガイド](/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2fazure%2fazure-resource-manager%2fmanagement%2ftoc.json)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -330,13 +330,13 @@ Azure Resource Graph を使用すると、ご利用のサブスクリプショ�
 
 Azure Policy を使用して、環境内でユーザーがプロビジョニングできるサービスを監査および制限します。 Azure Resource Graph を使用して、サブスクリプション内のリソースのクエリまたは検出を行います。 また、Azure Monitor を使用して、承認されていないサービスが検出されたときにアラートをトリガーするルールを作成することもできます。
 
-- [Azure Policy を構成して管理する方法](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)
+- [Azure Policy を構成して管理する方法](/azure/governance/policy/tutorials/create-and-manage)
 
 特定のリソースの種類を拒否する方法
-- [Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Azure Policy](/azure/governance/policy/samples/built-in-policies#general)
 
 Azure でクエリを作成する方法
-- [Resource Graph エクスプローラー](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
+- [Resource Graph エクスプローラー](/azure/governance/resource-graph/first-query-portal)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -348,9 +348,9 @@ Azure でクエリを作成する方法
 
 ### <a name="lt-2-enable-threat-detection-for-azure-identity-and-access-management"></a>LT-2:Azure ID とアクセスの管理のために脅威検出を有効にする
 
-**ガイダンス**: カスタム脅威検出を設定するのに使用できるログを Power BI から SIEM に転送します。 さらに、Power BI で Microsoft Cloud App Security (MCAS) 制御を使用すれば、[こちら](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)のガイドに従って異常検出を有効にすることができます。
+**ガイダンス**: カスタム脅威検出を設定するのに使用できるログを Power BI から SIEM に転送します。 さらに、Power BI で Microsoft Cloud App Security (MCAS) 制御を使用すれば、[こちら](../admin/service-security-using-microsoft-cloud-app-security-controls.md)のガイドに従って異常検出を有効にすることができます。
 
-- [Power BI でユーザー アクティビティを追跡する](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
+- [Power BI でユーザー アクティビティを追跡する](../admin/service-admin-auditing.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -360,7 +360,7 @@ Azure でクエリを作成する方法
 
 **ガイダンス**: Power BI はフル マネージド SaaS オファリングであり、基になるネットワーク構成とログは Microsoft の責任となります。 プライベート リンクを利用しているお客様には、構成可能なログおよび監視が用意されています。
 
-- [プライベート リンクのログおよび監視](https://docs.microsoft.com/azure/private-link/private-link-overview#logging-and-monitoring)
+- [プライベート リンクのログおよび監視](/azure/private-link/private-link-overview#logging-and-monitoring)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -411,11 +411,11 @@ Power BI アクティビティ ログ:
  
 - テナントが別の Azure リージョンに移動された場合、アクティビティ データは保持されません。
 
-- [Power BI の監査データ](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs)
+- [Power BI の監査データ](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
 
-- [Power BI アクティビティ ログ](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-activity-log)
+- [Power BI アクティビティ ログ](../admin/service-admin-auditing.md#use-the-activity-log)
 
-- [Power BI 監査ログ](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-audit-log)
+- [Power BI 監査ログ](../admin/service-admin-auditing.md#use-the-audit-log)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -456,11 +456,11 @@ Power BI アクティビティ ログ:
 
 - テナントが別の Azure リージョンに移動された場合、アクティビティ データは保持されません。
 
-- [Power BI の監査データ](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs)
+- [Power BI の監査データ](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
 
-- [Power BI アクティビティ ログ](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-activity-log)
+- [Power BI アクティビティ ログ](../admin/service-admin-auditing.md#use-the-activity-log)
 
-- [Power BI 監査ログ](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-audit-log)
+- [Power BI 監査ログ](../admin/service-admin-auditing.md#use-the-audit-log)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -470,7 +470,7 @@ Power BI アクティビティ ログ:
 
 **ガイダンス**: 自社のコンプライアンス、規制、およびビジネス要件に応じて、Office 監査ログに対するストレージ保持ポリシーを構成します。
 
-- [Office 監査ログの保持ポリシー](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies)
+- [Office 監査ログの保持ポリシー](/microsoft-365/compliance/audit-log-retention-policies)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -484,9 +484,9 @@ Power BI アクティビティ ログ:
 
 **ガイダンス**:組織において、セキュリティ インシデントに対応するためのプロセスが用意されていること、Azure のこれらのプロセスが更新されていること、それらのプロセスを定期的に使用して準備されていることを確認します。
 
-- [企業環境全体にセキュリティを実装する](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [企業環境全体にセキュリティを実装する](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [インシデント対応のリファレンス ガイド](https://docs.microsoft.com/microsoft-365/downloads/IR-Reference-Guide.pdf)
+- [インシデント対応のリファレンス ガイド](/microsoft-365/downloads/IR-Reference-Guide.pdf)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -496,7 +496,7 @@ Power BI アクティビティ ログ:
 
 **ガイダンス**:Azure Security Center でセキュリティ インシデントの連絡先情報を設定します。 この連絡先情報は、Microsoft Security Response Center (MSRC) でユーザーのデータが違法または権限のないユーザーによってアクセスされたことが検出された場合に、Microsoft からの連絡先として使用されます。 また、インシデント対応のニーズに応じて、異なる Azure サービスでインシデント アラートと通知をカスタマイズするオプションもあります。 
 
-- [Azure Security Center のセキュリティ連絡先を設定する方法](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
+- [Azure Security Center のセキュリティ連絡先を設定する方法](/azure/security-center/security-center-provide-security-contact-details)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -508,7 +508,7 @@ Power BI アクティビティ ログ:
 
 Microsoft Cloud App Security で Power BI に関連するアラートを監視します。 高品質のアラートは、過去のインシデントからの経験と、検証済みのコミュニティ ソースと、さまざまな信号ソースを融合して相互に関連付けることでアラートを生成およびクリーンアップするように設計されたツールに基づいて構築できます。
 
-- [Cloud App Security でアラートを監視する](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
+- [Cloud App Security でアラートを監視する](/cloud-app-security/monitor-alerts)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -520,7 +520,7 @@ Microsoft Cloud App Security で Power BI に関連するアラートを監視�
 
 要員のすべてのロールを定義するインシデント対応計画が記述されていることと、検出からインシデント後のレビューまでのインシデント対応/管理のフェーズがあることを確認します。
 
-- [Microsoft Threat Protection でのインシデントの概要](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
+- [Microsoft Threat Protection でのインシデントの概要](/microsoft-365/security/mtp/incidents-overview)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -533,7 +533,7 @@ Microsoft Cloud App Security で Power BI に関連するアラートを監視�
  
 Microsoft Threat Protection を使用すると、関連付け分析が適用され、さまざまな製品からの関連するアラートおよび調査結果が 1 つのインシデントに集約されます。 また、Microsoft Threat Protection を使用すると、Microsoft Threat Protection が備える資産および製品スイート全体にわたるエンドツーエンドの可視性によって、悪意のあるものとしか識別できないアクティビティに対して固有のアラートがトリガーされます。 そのような方法で、Microsoft Threat Protection によって、より広範な攻撃ストーリーが説明されます。これにより、セキュリティ運用アナリストは組織全体の複雑な脅威を理解し、対処できるようになります。
 
-- [Microsoft Threat Protection でインシデントの優先度を設定する](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue?view=o365-worldwide&amp;preserve-view=true)
+- [Microsoft Threat Protection でインシデントの優先度を設定する](/microsoft-365/security/mtp/incident-queue?amp;preserve-view=true&view=o365-worldwide)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -545,7 +545,7 @@ Microsoft Threat Protection を使用すると、関連付け分析が適用さ�
  
 Microsoft Threat Protection のワークフロー オートメーション機能を使用すれば、受信セキュリティ アラートに応じて調査と修復を自動的にトリガーすることができます。 
  
-- [Microsoft Threat Protection で自動化されている調査と応答](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft Threat Protection で自動化されている調査と応答](/microsoft-365/security/mtp/mtp-autoir)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -569,7 +569,7 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 **ガイダンス**: Power BI 管理 REST API を使用して、Power BI インスタンスを監視します。
 
-- [Power BI 管理 REST API](https://docs.microsoft.com/rest/api/power-bi/admin)
+- [Power BI 管理 REST API](/rest/api/power-bi/admin)
 
 - [Power BI のエンタープライズ展開に関するホワイトペーパー](https://aka.ms/PBIEnterpriseDeploymentWP)
 
@@ -583,7 +583,7 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 お客様の侵入テストが Microsoft のポリシーに違反しないように、Microsoft クラウド侵入テストの実施ルールに従ってください。 Microsoft が管理しているクラウド インフラストラクチャ、サービス、アプリケーションに対する Red Teaming およびライブ サイト侵入テストに関する Microsoft の戦略と実施を活用してください。
 
-- [Azure での侵入テスト](https://docs.microsoft.com/azure/security/fundamentals/pen-testing)
+- [Azure での侵入テスト](/azure/security/fundamentals/pen-testing)
 
 - [侵入テストの実施ルール](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1)
 
@@ -601,7 +601,7 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 **ガイダンス**: Power BI で Bring Your Own Key (BYOK) 機能を使用している場合は、ご利用のカスタマー マネージド キーにアクセスしてそれを復元できることを定期的に検証する必要があります。
 
-- [Power BI での BYOK](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Power BI での BYOK](../admin/service-encryption-byok.md)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -611,13 +611,13 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 **ガイダンス**: Power BI で Bring Your Own Key (BYOK) 機能を使用している場合は、Power BI での BYOK に関する以下のドキュメントに記載されているガイダンスに従って、カスタマー マネージド キーを制御する Key Vault を確実に構成する必要があります。 Azure Key Vault で論理的な削除と消去保護を有効にして、キーが偶発的または悪意から削除されないようにします。
 
-- [Power BI での BYOK](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Power BI での BYOK](../admin/service-encryption-byok.md)
 
-- [Key Vault で論理的な削除と消去保護を有効にする方法](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
+- [Key Vault で論理的な削除と消去保護を有効にする方法](/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
 
 ゲートウェイのキー リソースについては、以下のゲートウェイ回復キーに関するドキュメントに記載されているガイダンスに確実に従ってください。
 
-- [オンプレミス データ ゲートウェイ回復キー](https://docs.microsoft.com/data-integration/gateway/service-gateway-recovery-key)
+- [オンプレミス データ ゲートウェイ回復キー](/data-integration/gateway/service-gateway-recovery-key)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -650,13 +650,13 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 -   適切な暗号化標準
 
 詳細については、次のリファレンスを参照してください。
-- [Azure セキュリティ アーキテクチャに関する推奨事項 - ストレージ、データ、暗号化](https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&amp;bc=/security/compass/breadcrumb/toc.json)
+- [Azure セキュリティ アーキテクチャに関する推奨事項 - ストレージ、データ、暗号化](/azure/architecture/framework/security/storage-data-encryption?amp;bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json)
 
-- [Azure のセキュリティの基礎 - Azure のデータ セキュリティ、暗号化、ストレージ](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)
+- [Azure のセキュリティの基礎 - Azure のデータ セキュリティ、暗号化、ストレージ](/azure/security/fundamentals/encryption-overview)
 
-- [クラウド導入フレームワーク - Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=/azure/cloud-adoption-framework/toc.json&amp;bc=/azure/cloud-adoption-framework/_bread/toc.json)
+- [クラウド導入フレームワーク - Azure のデータ セキュリティと暗号化のベスト プラクティス](/azure/security/fundamentals/data-encryption-best-practices?amp;bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
 
-- [Azure セキュリティ ベンチマーク - アセット管理](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-asset-management)
+- [Azure セキュリティ ベンチマーク - アセット管理](/azure/security/benchmarks/security-controls-v2-asset-management)
 
 - [Azure セキュリティ ベンチマーク - データ保護](/azure/security/benchmarks/security-controls-v2-data-protection)
 
@@ -672,11 +672,11 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 セグメント化戦略は、ネットワーク セキュリティ、ID とアクセス モデル、アプリケーション アクセス許可とアクセス モデル、人的プロセスの制御など、あらゆるコントロールの種類を対象として確実に一貫性をもって実装します。
 
-- [Azure のセグメント化戦略に関するガイド (動画)](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
+- [Azure のセグメント化戦略に関するガイド (動画)](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
 
-- [Azure のセグメント化戦略に関するガイド (ドキュメント)](https://docs.microsoft.com/security/compass/governance#enterprise-segmentation-strategy)
+- [Azure のセグメント化戦略に関するガイド (ドキュメント)](/security/compass/governance#enterprise-segmentation-strategy)
 
-- [ネットワークのセグメント化を企業のセグメント化戦略に合わせる](https://docs.microsoft.com/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
+- [ネットワークのセグメント化を企業のセグメント化戦略に合わせる](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -686,7 +686,7 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 **ガイダンス**:個々の資産とそれらがホストされている環境に対するリスクを継続的に測定し、軽減します。 高い価値を持つ資産と、攻撃に晒される可能性の高い部分 (公開されたアプリケーション、ネットワークのイングレス ポイントとエグレス ポイント、ユーザーと管理者のエンドポイントなど) を優先します。
 
-- [Azure セキュリティ ベンチマーク - 体制と脆弱性の管理](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management)
+- [Azure セキュリティ ベンチマーク - 体制と脆弱性の管理](/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -696,11 +696,11 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 **ガイダンス**:セキュリティ組織における役割と責任に関する明確な戦略が文書化されて伝えられるようにします。 セキュリティに関する決定についてわかりやすく説明すること、共有される責任モデルについて全員に教育すること、クラウドをセキュリティで保護するテクノロジについて技術チームに教育することを優先とします。
 
-- [Azure のセキュリティのベスト プラクティス 1 – 人: クラウド セキュリティに関する取り組みについてチームを教育する](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
+- [Azure のセキュリティのベスト プラクティス 1 – 人: クラウド セキュリティに関する取り組みについてチームを教育する](/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
 
-- [Azure のセキュリティのベスト プラクティス 2 - 人: クラウド セキュリティ テクノロジについてチームを教育する](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
+- [Azure のセキュリティのベスト プラクティス 2 - 人: クラウド セキュリティ テクノロジについてチームを教育する](/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
 
-- [Azure のセキュリティのベスト プラクティス 3 - プロセス: クラウドのセキュリティに関する意思決定のアカウンタビリティを割り当てる](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Azure のセキュリティのベスト プラクティス 3 - プロセス: クラウドのセキュリティに関する意思決定のアカウンタビリティを割り当てる](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -725,13 +725,13 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 -   最新のネットワーク セキュリティ成果物 (例: ネットワーク図、参照ネットワーク アーキテクチャ)
 
 詳細については、次のリファレンスを参照してください。
-- [Azure のセキュリティのベスト プラクティス 11 - アーキテクチャ。単一の統合セキュリティ戦略](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Azure のセキュリティのベスト プラクティス 11 - アーキテクチャ。単一の統合セキュリティ戦略](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
 - [Azure セキュリティ ベンチマーク - ネットワーク セキュリティ](/azure/security/benchmarks/security-controls-v2-network-security)
 
-- [Azure のネットワーク セキュリティの概要](https://docs.microsoft.com/azure/security/fundamentals/network-overview)
+- [Azure のネットワーク セキュリティの概要](/azure/security/fundamentals/network-overview)
 
-- [エンタープライズ ネットワーク アーキテクチャ戦略](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
+- [エンタープライズ ネットワーク アーキテクチャ戦略](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -755,13 +755,13 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 詳細については、次のリファレンスを参照してください。
 
-- [Azure セキュリティ ベンチマーク - ID 管理](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-identity-management)
+- [Azure セキュリティ ベンチマーク - ID 管理](/azure/security/benchmarks/security-controls-v2-identity-management)
 
 - [Azure セキュリティ ベンチマーク - 特権アクセス](/azure/security/benchmarks/security-controls-v2-privileged-access)
 
-- [Azure のセキュリティのベスト プラクティス 11 - アーキテクチャ。単一の統合セキュリティ戦略](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Azure のセキュリティのベスト プラクティス 11 - アーキテクチャ。単一の統合セキュリティ戦略](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Azure ID 管理のセキュリティの概要](https://docs.microsoft.com/azure/security/fundamentals/identity-management-overview)
+- [Azure ID 管理のセキュリティの概要](/azure/security/fundamentals/identity-management-overview)
 
 **Azure Security Center の監視**: 適用なし
 
@@ -793,11 +793,11 @@ Microsoft Threat Protection のワークフロー オートメーション機能
 
 - [Azure セキュリティ ベンチマーク - インシデント対応](/azure/security/benchmarks/security-controls-v2-incident-response)
 
-- [Azure のセキュリティのベスト プラクティス 4 - プロセス: クラウドのインシデント対応プロセスを更新する](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Azure のセキュリティのベスト プラクティス 4 - プロセス: クラウドのインシデント対応プロセスを更新する](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Azure 導入フレームワーク、ログ、およびレポートの決定ガイド](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
+- [Azure 導入フレームワーク、ログ、およびレポートの決定ガイド](/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
 
-- [Azure のエンタープライズ スケーリング、管理、監視](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
+- [Azure のエンタープライズ スケーリング、管理、監視](/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
 
 **Azure Security Center の監視**: 適用なし
 

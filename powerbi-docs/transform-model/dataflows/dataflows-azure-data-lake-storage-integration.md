@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 646f3d37bb0200cf423ccdffb42dc4ce866ade9f
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: bf9740e0f4f6a2e25e1d5d0cc49671bd6eb90b37
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098262"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565409"
 ---
 # <a name="configuring-dataflow-storage-to-use-azure-data-lake-gen-2"></a>Azure Data Lake Gen 2 を使用するようにデータフロー ストレージを構成する 
 
@@ -26,7 +26,7 @@ ms.locfileid: "97098262"
 
 独自の ADLS Gen 2 アカウントを使用するには、ストレージ アカウント、リソース グループ、サブスクリプションのいずれかの層で所有者のアクセス許可が必要です。 管理者であっても、自分自身に所有者のアクセス許可を割り当てる必要があります。 
 
-ストレージ アカウントは、[階層型名前空間 (HNS)](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account) が有効な状態で作成する必要があります。 
+ストレージ アカウントは、[階層型名前空間 (HNS)](/azure/storage/blobs/create-data-lake-storage-account) が有効な状態で作成する必要があります。 
 
 さらに、ADLS Gen 2 アカウントを、Power BI テナントと同じリージョンにデプロイする必要があります。 リソースの場所が同じリージョンにない場合、エラーが発生します。
 

@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/23/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6168a1fb8d64444b703c6acac21c3bac67c4219a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a622da545d4fa9fca8b9478f6d5293d2b34296e9
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96396500"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191707"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>パフォーマンス アナライザーを使用してレポート要素のパフォーマンスを確認する
 
@@ -58,7 +58,7 @@ ms.locfileid: "96396500"
 * **ビジュアルの表示** - ビジュアルが画面に描画されるのに必要な時間 (Web の画像やジオコーディングの取得に必要な時間を含む)。 
 * **その他** - クエリの準備、他のビジュアルの完了の待機、または他のバックグラウンド処理の実行のためにビジュアルが必要とする時間。
 
-**[期間 (ミリ秒)]** 値は、各操作の "*開始*" と "*終了*" のタイムスタンプの差を示します。 ほとんどのキャンバスおよびビジュアル操作は、複数の操作で共有される単一のユーザー インターフェイス スレッド上で順番に実行されます。 報告される期間には、他の操作が完了するまでキューに入れられた時間が含まれます。 GitHub の [パフォーマンス アナライザー サンプル](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)とそれに関連する[ドキュメント](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)で、ビジュアルでデータのクエリを実行する方法や、そのレンダリング方法の詳細がわかります。
+**[期間 (ミリ秒)]** 値は、各操作の "*開始*" と "*終了*" のタイムスタンプの差を示します。 ほとんどのキャンバスおよびビジュアル操作は、複数の操作で共有される単一のユーザー インターフェイス スレッド上で順番に実行されます。 報告される期間には、他の操作が完了するまでキューに入れられた時間が含まれます。 GitHub の [パフォーマンス アナライザー サンプル](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer)とそれに関連する[ドキュメント](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)で、ビジュアルでデータのクエリを実行する方法や、そのレンダリング方法の詳細がわかります。
 
 
 ![ログ情報の要素](media/desktop-performance-analyzer/performance-analyzer-06.png)
@@ -94,5 +94,5 @@ ms.locfileid: "96396500"
 
 パフォーマンス アナライザーのサンプルの詳細については、次のリソースを参照してください。
 
-* [パフォーマンス アナライザーのサンプル](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
-* [パフォーマンス アナライザーのサンプルのドキュメント](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)
+* [パフォーマンス アナライザーのサンプル](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer)
+* [パフォーマンス アナライザーのサンプルのドキュメント](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

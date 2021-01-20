@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: d4ef44cb0e03c5de7807f0e95cefa532353f4685
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: b98e761a9ac2578a1af43bdb2c536f73fc3cc5af
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885179"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565693"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -209,7 +209,7 @@ Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport -Name "Sal
 このチュートリアルでは、Power BI の組織アカウントを使用して、アプリケーションに Power BI のページ分割されたレポートを埋め込む方法について説明しました。 
 
 > [!div class="nextstepaction"]
-> [アプリからの埋め込み](embed-from-apps.md)
+> [アプリからの埋め込み](./index.yml)
 
 > [!div class="nextstepaction"]
 >[顧客向けに Power BI コンテンツを埋め込む](embed-sample-for-customers.md)

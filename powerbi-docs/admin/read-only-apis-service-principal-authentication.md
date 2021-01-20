@@ -10,24 +10,24 @@ ms.date: 12/01/2020
 ms.author: painbar
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 332101009946c64cb5e97bd40b9949f6daa67b7b
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.openlocfilehash: 48e1a82b7a88bf4535acea49ea6770cedfdbf304
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155689"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98564883"
 ---
 # <a name="enable-service-principal-authentication-for-read-only-admin-apis-preview"></a>読み取り専用の管理 API に対してサービス プリンシパル認証を有効にする (プレビュー)
 
 サービス プリンシパルとは、Azure Active Directory (Azure AD) アプリケーションが Power BI サービスのコンテンツと API にアクセスできるようにするための認証方法です。
-Azure AD アプリを作成すると、[サービス プリンシパル オブジェクト](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)が作成されます。 サービス プリンシパル オブジェクト (単にサービス プリンシパルとも呼ばれる) を使用することで、Azure AD によるご利用のアプリの認証が可能になります。 認証が完了すると、アプリは Azure AD テナント リソースにアクセスできるようになります。
+Azure AD アプリを作成すると、[サービス プリンシパル オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)が作成されます。 サービス プリンシパル オブジェクト (単にサービス プリンシパルとも呼ばれる) を使用することで、Azure AD によるご利用のアプリの認証が可能になります。 認証が完了すると、アプリは Azure AD テナント リソースにアクセスできるようになります。
 
 ## <a name="method"></a>Method
 
 Power BI 読み取り専用 API のサービス プリンシパル認証を有効にするには、次の手順に従います。
 
-1. [Azure AD アプリを作成します](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)。 使用する Azure AD アプリが既にある場合は、この手順を省略できます。 後の手順のために、アプリ ID をメモしておきます。 
-2. Azure Active Directory に新しい **セキュリティ グループ** を作成します。 [Azure Active Directory を使用して基本グループを作成し、メンバーを追加する方法の詳細を参照してください](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)。 使用するセキュリティ グループが既にある場合は、この手順を省略できます。
+1. [Azure AD アプリを作成します](/azure/active-directory/develop/howto-create-service-principal-portal)。 使用する Azure AD アプリが既にある場合は、この手順を省略できます。 後の手順のために、アプリ ID をメモしておきます。 
+2. Azure Active Directory に新しい **セキュリティ グループ** を作成します。 [Azure Active Directory を使用して基本グループを作成し、メンバーを追加する方法の詳細を参照してください](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)。 使用するセキュリティ グループが既にある場合は、この手順を省略できます。
     グループの種類として **[セキュリティ]** を選択してください。
 
     ![Azure portal の新しいグループの作成ダイアログのスクリーンショット。](media/read-only-apis-service-principal-auth/azure-portal-new-group-dialog.png)
@@ -39,7 +39,7 @@ Power BI 読み取り専用 API のサービス プリンシパル認証を有�
        * グローバル管理者、アプリケーション管理者、またはクラウド アプリケーション管理者として **Azure portal** にサインインします。 
         * **[Azure Active Directory]** を選択した後、 **[エンタープライズ アプリケーション ]** を選択します。 
         * Power BI へのアクセス権を付与するアプリケーションを選択します。 
-        * **[アクセス許可]** を選択します。 このアプリケーションには、Power BI 管理者の同意が必要なアクセス許可が設定されていないことを確認してください。 詳細については、「[アプリケーションの同意の管理と同意要求の評価](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)」を参照してください。 
+        * **[アクセス許可]** を選択します。 このアプリケーションには、Power BI 管理者の同意が必要なアクセス許可が設定されていないことを確認してください。 詳細については、「[アプリケーションの同意の管理と同意要求の評価](/azure/active-directory/manage-apps/manage-consent-requests)」を参照してください。 
 4. Power BI サービス管理者設定を有効にします。 手順は次のとおりです。
     1. Power BI 管理ポータルにログインします。 テナントの設定ページを表示するには、Power BI 管理者である必要があります。
     1. **[Admin API settings]\(管理 API 設定\)** に、 **[読み取り専用 Power BI 管理 API の使用をサービス プリンシパルに許可 (プレビュー)]** が表示されます。 次の図に示すように、切り替えを [有効] に設定し、 **[特定のセキュリティ グループ]** ラジオ ボタンをオンにして、その下に表示されるテキスト フィールドに手順 2 で作成したセキュリティ グループを追加します。
@@ -55,15 +55,15 @@ Power BI 読み取り専用 API のサービス プリンシパル認証を有�
 * サービス プリンシパルを使用して Power BI ポータルにサインインすることはできません。
 * Power BI 管理ポータルの [Admin API settings]\(管理 API 設定\) でサービス プリンシパルを有効にするには、Power BI 管理者権限が必要です。
 * 現在、サービス プリンシパルでは次の API がサポートされています。
-    * [GetGroupsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/groups_getgroupsasadmin) (dashboards、datasets、reports、dataflows の $expand と共に) 
-    * [GetDashboardsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) ($expand tiles と共に)
-    * [GetDatasourcesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/datasets_getdatasourcesasadmin) 
-    * [GetDatasetToDataflowsLinksAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/datasets_getdatasettodataflowslinksingroupasadmin)
-    * [GetDataflowDatasourcesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dataflows_getdataflowdatasourcesasadmin) 
-    * [GetDataflowUpstreamDataflowsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
-    * [GetCapacitiesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/getcapacitiesasadmin)
-    * [GetActivityLog](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents)
-    * [GetModifiedWorkspaces](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
-    * [WorkspaceGetInfo](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
-    * [WorkspaceScanStatus](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
-    * [WorkspaceScanResult](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanresult)
+    * [GetGroupsAsAdmin](/rest/api/power-bi/admin/groups_getgroupsasadmin) (dashboards、datasets、reports、dataflows の $expand と共に) 
+    * [GetDashboardsAsAdmin](/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) ($expand tiles と共に)
+    * [GetDatasourcesAsAdmin](/rest/api/power-bi/admin/datasets_getdatasourcesasadmin) 
+    * [GetDatasetToDataflowsLinksAsAdmin](/rest/api/power-bi/admin/datasets_getdatasettodataflowslinksingroupasadmin)
+    * [GetDataflowDatasourcesAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowdatasourcesasadmin) 
+    * [GetDataflowUpstreamDataflowsAsAdmin](/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
+    * [GetCapacitiesAsAdmin](/rest/api/power-bi/admin/getcapacitiesasadmin)
+    * [GetActivityLog](/rest/api/power-bi/admin/getactivityevents)
+    * [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
+    * [WorkspaceGetInfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
+    * [WorkspaceScanStatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
+    * [WorkspaceScanResult](/rest/api/power-bi/admin/workspaceinfo_getscanresult)

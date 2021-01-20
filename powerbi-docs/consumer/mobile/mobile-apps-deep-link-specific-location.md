@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 11/16/2020
-ms.openlocfilehash: 1c2260fdc3df201a655e6641c351319e366eac6b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8c5b3c394d54df390d690d58b56e9084f9829733
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413129"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565650"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリの特定の場所へのリンクを作成する
 リンクを使用して、特定のレポート、レポート ページ、ダッシュボード、タイルなどの特定の Power BI コンテンツに直接アクセスできます。
@@ -193,7 +193,7 @@ https<nolink>://app.powerbi.com/Redirect? **[QUERYPARAMETERS]** </code>
 
 Power BI モバイル アプリでは、Power BI 内のリンクは Power BI サービスで動作する場合と同じように動作します。
 
-別の Power BI 項目を指すレポートにリンクを追加する場合は、ブラウザーのアドレス バーからその項目の URL をコピーします。 レポートのテキスト ボックスにハイパーリンクを追加する方法については[こちら](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box)をご覧ください。
+別の Power BI 項目を指すレポートにリンクを追加する場合は、ブラウザーのアドレス バーからその項目の URL をコピーします。 レポートのテキスト ボックスにハイパーリンクを追加する方法については[こちら](../../create-reports/service-add-hyperlink-to-text-box.md)をご覧ください。
 
 ## <a name="next-steps"></a>次のステップ
 Power BI モバイル アプリで使用したいその他の機能にぜひ投票してください。お客様からのフィードバックは、将来実装する機能を決めるのに役立ちます。 
@@ -201,4 +201,4 @@ Power BI モバイル アプリで使用したいその他の機能にぜひ投�
 * [モバイル デバイス用の Power BI アプリ](mobile-apps-for-mobile-devices.md)
 * Twitter で @MSPowerBI をフォローする
 * [Power BI コミュニティの会話](http://community.powerbi.com/)に参加する
-* [Power BI とは?](../../power-bi-overview.md)
+* [Power BI とは?](../../fundamentals/power-bi-overview.md)

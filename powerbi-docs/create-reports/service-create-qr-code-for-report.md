@@ -9,19 +9,19 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/13/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 7d163519162c6e7ab2cd1a13b10320d5c66796a8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6322876bec350ca3d7c3fde4586387d640423f07
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395281"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565517"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>モバイル アプリで使用する Power BI のレポートの QR コードを作成する
 Power BI で QR コードを使用すると、実世界の任意のものを、関連する BI 情報に直接接続することができます。ナビゲーションや検索の必要がなくなります。
 
 Power BI サービスでは、編集できないレポートの場合でも、すべてのレポートについて QR コードを作成できます。 その後、必要な場所にその QR コードを配置します。 たとえば、メールに貼り付けたり、印刷して特定の場所に貼り付けたりできます。 
 
-レポートを共有している仕事仲間は、レポートにアクセスするため QR コードを[モバイル デバイス](../consumer/mobile/mobile-apps-qr-code.md)から直接スキャンできます。 Power BI アプリに付属の QR コード スキャナーを使用しても、それらのデバイスにインストールされているその他の QR スキャナーを使用しても構いません。 [Power BI for Mixed Reality アプリでレポートの QR コードをスキャンする](../consumer/mobile/mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view)こともできます。
+レポートを共有している仕事仲間は、レポートにアクセスするため QR コードを[モバイル デバイス](../consumer/mobile/mobile-apps-qr-code.md)から直接スキャンできます。 Power BI アプリに付属の QR コード スキャナーを使用しても、それらのデバイスにインストールされているその他の QR スキャナーを使用しても構いません。 [Power BI for Mixed Reality アプリでレポートの QR コードをスキャンする](../consumer/mobile/mobile-hololens2-app.md#open-reports-with-qr-codes)こともできます。
 
 ## <a name="create-a-qr-code-for-a-report"></a>レポートの QR コードを作成する
 1. Power BI サービスで、レポートを開きます。

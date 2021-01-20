@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.openlocfilehash: b6564cafe087000fd0ce4409fac2cbfc78d0e8fa
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5710f70dafbb01aca68cfc03107a1f1ededaf015
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413152"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565878"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Power BI モバイル アプリで現実世界からデータを取得する
 Power BI モバイル アプリでは、現実世界を関連する BI 情報に直接接続することができます。それには複数の方法があります。 
@@ -27,7 +27,7 @@ Power BI モバイル アプリでは、現実世界を関連する BI 情報に
 
 * [Power BI でタイルの QR コードを作成する](../../create-reports/service-create-qr-code-for-tile.md)
 * [モバイル デバイスから Power BI QR コードをスキャンする](mobile-apps-qr-code.md)
-* [Power BI for Mixed Reality アプリで QR コードをスキャンする](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view)。
+* [Power BI for Mixed Reality アプリで QR コードをスキャンする](./mobile-hololens2-app.md#open-reports-with-qr-codes)。
 
 ## <a name="qr-codes-for-reports"></a>レポートの QR コード
 レポートの QR コードを作成します。  同僚が iPhone を使用してコードをスキャンすると (Android フォンは近日対応予定)、その QR コードに関連付けられたレポートが表示されます。 

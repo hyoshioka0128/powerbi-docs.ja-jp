@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: de954c5950f550c3ed2f3c340714851f5233d3e8
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: a0cfeaece56594c52a8d747350c5f9bfb0886cad
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969767"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565470"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>チュートリアル:"*顧客向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
@@ -185,7 +185,7 @@ Power BI により、レポート、ダッシュボード、およびタイル�
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>手順 4 - Power BI レポートを作成して発行する
 
-次の手順では、レポートを作成してワークスペースにアップロードします。 Power BI Desktop を使用して[独自のレポートを作成](/power-bi/fundamentals/desktop-getting-started#build-reports)してから、ワークスペースにそれを[発行する](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work)ことができます。 ワークスペースにサンプル レポートをアップロードすることもできます。
+次の手順では、レポートを作成してワークスペースにアップロードします。 Power BI Desktop を使用して[独自のレポートを作成](../../fundamentals/desktop-getting-started.md#build-reports)してから、ワークスペースにそれを[発行する](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work)ことができます。 ワークスペースにサンプル レポートをアップロードすることもできます。
 
 >[!Tip]
 >レポートがあるワークスペースが既に存在する場合は、この手順を省略できます。

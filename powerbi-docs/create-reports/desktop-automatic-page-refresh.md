@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: eb572c17705f06b989f15323322c0da11b1d85ac
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 4e9d5783dd0c7d956f438358a5c20ad334a67aca
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600693"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565957"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Power BI でのページの自動更新
 
@@ -283,7 +283,7 @@ Power BI Desktop または Power BI サービスでページの自動更新を�
 
 **Analysis Services に接続しても APR トグルが表示されない**
 
-* Analysis Services モデルが[直接クエリ モード](https://docs.microsoft.com/analysis-services/tabular-models/directquery-mode-ssas-tabular)になっていることを確認します。
+* Analysis Services モデルが[直接クエリ モード](/analysis-services/tabular-models/directquery-mode-ssas-tabular)になっていることを確認します。
 
 
 ## <a name="next-steps"></a>次の手順
@@ -297,4 +297,4 @@ Power BI Desktop または Power BI サービスでページの自動更新を�
 * [Power BI Desktop のデータ ソース](../connect-data/desktop-data-sources.md)
 * [Power BI Desktop でのデータの整形と結合](../connect-data/desktop-shape-and-combine-data.md)
 * [Power BI Desktop で Excel ブックに接続する](../connect-data/desktop-connect-excel.md)   
-* [Power BI Desktop にデータを直接入力する](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Power BI Desktop にデータを直接入力する](../connect-data/desktop-enter-data-directly-into-desktop.md)

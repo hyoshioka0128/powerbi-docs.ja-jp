@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: d47d9b973eadb06095c2a2aebb8fe93cf6ab4414
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: df109f279a43826e164a461ae213bc74c0498cea
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969537"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565027"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Power BI における秘密度ラベル
 
@@ -34,7 +34,7 @@ Microsoft Information Protection 秘密度ラベルを使用すると、生産�
 
 Power BI サービスでは、秘密度ラベルをデータセット、レポート、ダッシュボード、データフローに適用できます。 Excel、PowerPoint、PDF、または .pbix ファイルへのエクスポート、または他のサポートされているエクスポート シナリオ ([Excel で分析] や Excel でのライブ接続ピボットテーブルなど) を介して、ラベルが適用されたデータを Power BI から移動するときは、Power BI により、エクスポートされるファイルにラベルが自動的に適用され、ラベルのファイル暗号化設定に従って保護されます。 このようにして、Power BI の外部でも機密データの保護を維持できます。
 
-さらに、Power BI Desktop で秘密度ラベルを .pbix ファイルに適用すると、Power BI サービスに発行される前であっても、データとコンテンツを Power BI の外部で安全に共有できます (たとえば、組織内のユーザーだけが、共有されている、またはメールに添付されている機密の .pbix ファイルを開くことができます)。 詳細については、「[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)」を参照してください。
+さらに、Power BI Desktop で秘密度ラベルを .pbix ファイルに適用すると、Power BI サービスに発行される前であっても、データとコンテンツを Power BI の外部で安全に共有できます (たとえば、組織内のユーザーだけが、共有されている、またはメールに添付されている機密の .pbix ファイルを開くことができます)。 詳細については、「[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)」を参照してください。
 
 レポート、ダッシュボード、データセット、およびデータフローに対する秘密度ラベルは、Power BI サービスの多くの場所から表示できます。 レポートとダッシュボードの秘密度ラベルは、Power BI iOS および Android モバイル アプリと埋め込みビジュアルにも表示されます。 Desktop では、ステータス バーに秘密度ラベルが表示されます。
 
@@ -185,7 +185,7 @@ Power BI レポート、ダッシュボード、およびビジュアルは、Mi
 
 ### <a name="power-bi-desktop-preview"></a>Power BI Desktop (プレビュー)
 
-* 保護された .pbix ファイルを開いたり発行したりできるのは、ファイルの RMS 所有者であるユーザー (最初にラベルをファイルに適用したユーザー)、または関連するラベルについての [**フル コントロール** **または** エクスポート](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)の使用権限を持つユーザーのみです。 RMS 所有者はフル コントロールを持っており、ロックアウトすることはできません。[詳細についてはこちらを参照してください](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
+* 保護された .pbix ファイルを開いたり発行したりできるのは、ファイルの RMS 所有者であるユーザー (最初にラベルをファイルに適用したユーザー)、または関連するラベルについての [**フル コントロール** **または** エクスポート](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)の使用権限を持つユーザーのみです。 RMS 所有者はフル コントロールを持っており、ロックアウトすることはできません。[詳細についてはこちらを参照してください](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
 
 * .pbix ファイルに適用されているラベルが、Microsoft 365 Security Center または Microsoft 365 コンプライアンス センターでユーザーに公開されていない場合、ユーザーは Desktop でファイルを保存できません。
 

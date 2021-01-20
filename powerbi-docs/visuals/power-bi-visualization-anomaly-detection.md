@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cd08d5e6196c1cd321efbe89ec0727d314eff4ce
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: fdd93e0839f9eb0dd99586fb5ddcd07000de0dd7
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409863"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191914"
 ---
 # <a name="anomaly-detection-preview"></a>異常検出 (プレビュー)
 
@@ -27,7 +27,7 @@ ms.locfileid: "96409863"
 :::image type="content" source="media/power-bi-visualization-anomaly-detection//preview-feature-switch.png" alt-text="[異常検出] プレビュー機能スイッチをオンにする方法を示すスクリーンショット。":::
  
 ## <a name="get-started"></a>はじめに
-このチュートリアルでは、さまざまな製品のオンライン販売データを使用します。このチュートリアルを続けるには、オンライン販売シナリオの[サンプル ファイル](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix)をダウンロードしてください。
+このチュートリアルでは、さまざまな製品のオンライン販売データを使用します。このチュートリアルを続けるには、オンライン販売シナリオの[サンプル ファイル](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix)をダウンロードしてください。
 
 異常検出を有効にするには、グラフを選択し、分析ペインで [Find Anomalies]\(異常の検出\) オプションを追加します。 
 

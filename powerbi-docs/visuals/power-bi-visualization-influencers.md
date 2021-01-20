@@ -10,12 +10,12 @@ ms.custom: video-fDb5zZ3xmxU
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4b41ea6310cb644aeae92db17f52680734f68803
-ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
+ms.openlocfilehash: 29182234f64226dee8c9fed281ebf362164f8c1a
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97721572"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191983"
 ---
 # <a name="create-key-influencers-visualizations"></a>主要なインフルエンサーの視覚化を作成する
 
@@ -60,7 +60,7 @@ ms.locfileid: "97721572"
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-あなたは、プロダクト マネージャーから顧客が自社のクラウド サービスについて否定的なレビューをすることにつながる要因を把握するように指示されています。 理解するには、Power BI Desktop で[カスタマー フィードバック PBIX ファイル](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix)を開きます。 [Power BI サービスまたは Power BI Desktop 用のカスタマー フィードバック Excel ファイル](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx)をダウンロードすることもできます。 どちらか一方のリンクを選択して、表示された GitHub ページの **[ダウンロード]** を選択します。
+あなたは、プロダクト マネージャーから顧客が自社のクラウド サービスについて否定的なレビューをすることにつながる要因を把握するように指示されています。 理解するには、Power BI Desktop で[カスタマー フィードバック PBIX ファイル](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix)を開きます。 [Power BI サービスまたは Power BI Desktop 用のカスタマー フィードバック Excel ファイル](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx)をダウンロードすることもできます。 どちらか一方のリンクを選択して、表示された GitHub ページの **[ダウンロード]** を選択します。
 
 > [!NOTE]
 > カスタマー フィードバック データセットは、[Moro et al., 2014] S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, June 2014 に基づくものです。 

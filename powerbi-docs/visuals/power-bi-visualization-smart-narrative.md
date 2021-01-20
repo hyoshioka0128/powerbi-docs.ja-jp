@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/06/2020
 ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e3d7c276c90edde6ce6270a9deea07d185ecdcc
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 43b2e9c33bf420c7446aa2eb198048101704a1ba
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999038"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191937"
 ---
 # <a name="create-smart-narrative-summaries-preview"></a>スマート説明の概要を作成する (プレビュー)
 
@@ -37,7 +37,7 @@ ms.locfileid: "96999038"
 
 
 ## <a name="get-started"></a>はじめに 
-Watch Justyna でスマート説明の使用方法について説明します。その後、チュートリアルを使用してご自分で試してください。こちらがその動画です。  このチュートリアルを続けるには、オンライン販売シナリオの[サンプル ファイル](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix)をダウンロードしてください。
+Watch Justyna でスマート説明の使用方法について説明します。その後、チュートリアルを使用してご自分で試してください。こちらがその動画です。  このチュートリアルを続けるには、オンライン販売シナリオの[サンプル ファイル](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix)をダウンロードしてください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/01UrT-z37sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
