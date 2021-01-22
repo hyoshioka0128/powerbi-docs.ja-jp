@@ -7,24 +7,24 @@ ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/02/2018
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: eccc60c4f26502ea2249c378efbdb910bd7c8a30
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2fd2bca7e031d4a758031f80db0825f5af9e897c
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406735"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227240"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>組織のコンテンツ パック: コピー、更新、およびアクセスの取得
 
+> [!NOTE]
+> 組織のコンテンツパックは非推奨とされます。 コンテンツ パックをアプリにまだアップグレードしていない場合は、今がそのよい機会です。 タイムラインについては、こちらの [Power BI 管理者がクラシック ワークスペースをアップグレードできることについてのお知らせ](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/)に関するブログ記事のワークスペース アップグレード ロードマップに関するセクションを参照してください。
+> 
+
 組織のコンテンツ パックが発行されると、すべての受信者は同じダッシュボード、レポート、Excel ブック、データセット、データ (SQL Server Analysis Services (SSAS) データ ソースを除く) を参照します。  コンテンツ パックは、[作成者のみが編集および再発行する](service-organizational-content-pack-manage-update-delete.md)ことができます。  ただし、すべての受信者は、コンテンツ パックのコピーを保存し、オリジナルと共に保持できます。
 
-コンテンツ パックの作成は、ダッシュ ボードを共有すること、またはグループ内でダッシュボードで共同作業を行うこととは異なります。 状況に応じた最適なオプションを決定するには、「[How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)」(ダッシュボードとレポートで共同作業と共有を行う方法) を参照してください。
-
-> [!NOTE]
-> 新しいワークスペース エクスペリエンスでは、組織のコンテンツ パックを作成したり、インストールしたりすることはできません。 コンテンツ パックをアプリにまだアップグレードしていない場合は、今がそのよい機会です。 新しいワークスペース エクスペリエンスの詳細については、[こちら](service-create-the-new-workspaces.md)を参照してください。
->
+コンテンツ パックの作成は、ダッシュ ボードを共有すること、またはグループ内でダッシュボードで共同作業を行うこととは異なります。 状況に応じた最適なオプションを決定するには、[ダッシュボードとレポートで共同作業と共有を行う方法](service-how-to-collaborate-distribute-dashboards-reports.md)に関するページを参照してください。 
 
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>組織のコンテンツ パックのコピーを作成する
 他のユーザーは見ることができない、コンテンツ パックの自分専用のコピーを作成します。

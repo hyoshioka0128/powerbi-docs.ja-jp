@@ -7,25 +7,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/06/2019
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0a72582a54903c97dd9594f6a4a1c5980aea8e16
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b0b57967ed86c25f51c08a94e4c252c250e85304
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411726"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227194"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>チュートリアル:Power BI の組織のコンテンツ パックを作成して発行する
+
+> [!NOTE]
+> 組織のコンテンツパックは非推奨とされます。 コンテンツ パックをアプリにまだアップグレードしていない場合は、今がそのよい機会です。 タイムラインについては、こちらの [Power BI 管理者がクラシック ワークスペースをアップグレードできることについてのお知らせ](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/)に関するブログ記事のワークスペース アップグレード ロードマップに関するセクションを参照してください。
+> 
 
 このチュートリアルでは、組織のコンテンツ パックを作成して、特定のグループにアクセス許可を付与し、そのコンテンツ パックを Power BI の組織のコンテンツ パック ライブラリに発行します。
 
 コンテンツ パックの作成は、ダッシュ ボードを共有すること、またはグループ内でダッシュボードで共同作業を行うこととは異なります。 [Power BI で作業を共有する方法](service-how-to-collaborate-distribute-dashboards-reports.md)を読んで、ご自分の状況に最適なオプションを決定します。
 
 組織のコンテンツ パックを作成するには、あなたとあなたの同僚が使用する [Power BI Pro アカウント](https://powerbi.microsoft.com/pricing)が必要となります。
-
-> [!NOTE]
-> 新しいワークスペース エクスペリエンスでは、組織のコンテンツ パックを作成したり、インストールしたりすることはできません。 コンテンツ パックをアプリにまだアップグレードしていない場合は、今がそのよい機会です。 新しいワークスペース エクスペリエンスの詳細については、[こちら](service-create-the-new-workspaces.md)を参照してください。
 
 ## <a name="create-and-publish-a-content-pack"></a>コンテンツ パックの作成および公開
 

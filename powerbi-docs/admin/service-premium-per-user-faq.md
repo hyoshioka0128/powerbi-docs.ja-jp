@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 1/13/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 005f6c72dd67282e2f15ceb3c91fb74d7e723712
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e5edcde0f367c573c86aaac1b7f14397614eeedf
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412255"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191644"
 ---
 # <a name="power-bi-premium-per-user-faq-preview"></a>Power BI Premium Per User に関する FAQ (プレビュー)
 
@@ -46,15 +46,21 @@ Power BI **Premium Per User** を使用することで、組織はユーザー�
 4.  **試用版を入手するにはどうすればよいですか?**
 
     製品内の試用版エクスペリエンスと、Microsoft 365 から利用可能な試用版エクスペリエンスがあります。 ユーザーは、組織で PPU が制限されていなければ、ワークスペースで Premium Per User を有効にすることにより、製品内の試用版エクスペリエンスにアクセスできます。 Microsoft 365 からの試用版エクスペリエンスは、現在 Power BI Pro 試用版を開始するのと同じように、ポータルで有効にすることができます。  
+    
+5.  **最初の試用版の有効期限は期限切れになりましたが、プレビュー期間はまだ続いています。プレビュー期間中に Premium Per User の試用版を延長、更新するための操作方法を教えてください。**
 
-5.  **Premium Per User ではどのような機能を利用できますか?**
+    製品内試用版を使用しているお客様については、最初の試用版の有効期限が終了しても、ポータルの右上隅にあるプロファイル アイコンをクリックすることでいつでも新しい試用版を開始できます。  試用版にもう一度オプトインするオプションが表示されます。  これにより、新たに 60 日の試用版が開始されます。  これは、プレビュー期間中は引き続きオプションとなります。  
+    
+    Microsoft 365 を介して提供される試用版を使用しているお客様については、ご利用になっている最初の 30 日間試用版が担当のテナント管理者によって新たに 30 日間延長されることがあります。 これは、試用版を延長できる最長の期間です。
+
+6.  **Premium Per User ではどのような機能を利用できますか?**
 
     機能を比較した表を次に示します。    
 
     ![Premium Per User の機能の比較](media/service-premium-per-user-faq/premium-per-user-faq-02.png)
 
 
-6.  **組織には既に Power BI Premium があります。コンテンツを自分の容量に発行するために、Premium Per User ライセンスが必要ですか?**
+7.  **組織には既に Power BI Premium があります。コンテンツを自分の容量に発行するために、Premium Per User ライセンスが必要ですか?**
     
     組織で Premium 容量を補完するために Premium Per User が使用されている場合がありますが、既存の容量にコンテンツを発行するために Premium Per User は必要ありません。  
 
@@ -89,6 +95,10 @@ Power BI **Premium Per User** を使用することで、組織はユーザー�
 7.  **容量 API を Premium Per User で使用できますか?**
 
     ワークスペースを移動できるように限られた API のセットを利用できますが、ワークロードの無効化や他のそのようなアクティビティを行うことはできません。  
+    
+7.  **サービス プリンシパルは Premium Per User ワークスペースでサポートされていますか?**
+
+    いいえ。現在、Premium Per User ワークスペースでサービス プリンシパルはサポートされていません。  
 
 
 ## <a name="end-user-experience-questions"></a>エンド ユーザー エクスペリエンスに関する質問
@@ -113,9 +123,10 @@ Power BI **Premium Per User** を使用することで、組織はユーザー�
 
     Premium Per User は、Pro ライセンスを使用する場合と同じように埋め込みのユース ケースで動作します。 コンテンツを埋め込むことができ、それを表示するにはユーザーごとに PPU ライセンスが必要です。
 
-5.  **試用版の有効期限が切れた場合、PPU のワークスペースはどうなりますか?**
+5.  **私が Premium Per User ライセンスを購入しないことを選択した場合、プレビュー期間の終了時に私の PPU ワークスペースはどうなりますか?**
 
-    ユーザーは引き続きワークスペースにアクセスできますが、そのライセンスの種類を必要とするコンテンツは使用できません。 ワークスペースを Premium 容量に移動するか、単に要件をオフにする必要があります。 
+    お客様もお客様のユーザーも引き続きワークスペースにアクセスできますが、そのライセンスの種類を必要とするコンテンツは使用できません。 ワークスペースを Premium 容量に移動するか、単に要件をオフにする必要があります。 
+
 6.  **Premium Per User で利用できるストレージはどれくらいですか?**
 
     ストレージに関しては、テナント全体で Premium 容量と同じ 100 TB を利用できます。

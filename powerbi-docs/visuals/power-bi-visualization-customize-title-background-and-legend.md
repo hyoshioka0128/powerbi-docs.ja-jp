@@ -5,24 +5,25 @@ author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
+ms.custom: video-OgjX-pFGgfM, video-RE4IY3L
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 1/13/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2a8c125a37e0d70ea735d9f1962f64deb69061c8
-ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
+ms.openlocfilehash: b285d699d71001d8015615fdeb3652ba35274896
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745141"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191818"
 ---
 # <a name="customize-visualization-titles-backgrounds-labels-and-legends"></a>視覚エフェクトのタイトル、背景、ラベル、凡例をカスタマイズする
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 
-このチュートリアルでは、視覚化をカスタマイズする、さまざまな方法について説明します。 視覚化をカスタマイズするオプションは多数あります。 そのすべてを学習するには、 **[形式]** ウィンドウ (ペイント ローラー アイコンを選択) を調べることをお勧めします。 その手始めとして、この記事では視覚エフェクトのタイトル、凡例、背景、ラベルをカスタマイズする方法とテーマを追加する方法を説明します。
+このチュートリアルでは、視覚化をカスタマイズする、さまざまな方法について説明します。 視覚化をカスタマイズするオプションは多数あります。 そのすべてを学習するには、 **[形式]** ウィンドウ (ペイント ローラー アイコンを選択) を調べることをお勧めします。 はじめに、この記事では視覚エフェクトのタイトル、凡例、背景、ラベル、レイヤーをカスタマイズする方法とテーマを追加する方法を説明します。
 
 一部の視覚化についてはカスタマイズできません。 詳細については、[完全なリスト](#visualization-types-that-you-can-customize)をご覧ください。
 
@@ -148,6 +149,36 @@ Rien が積み上げグラフに合計ラベルを追加するのを見てから
 1. 必要に応じて、合計ラベルの書式を設定します。 この例では、色を黒に変更し、フォント サイズを大きくし、 **[千]** 単位で値を表示するように選択しました。
 
     ![合計ラベルのある新しい積み上げ横棒グラフのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
+
+
+## <a name="customize-layer-order"></a>レイヤーの順序をカスタマイズする
+レポート内のビジュアルおよび図形のレイヤー化の順序を変更します。 レイヤーの順序によって、選択したときに前面に表示されるオブジェクトが決まります。 レポート キャンバス上でオブジェクトを選択すると、常にアクティブになり、最上位レイヤーに移動されます。 ビジュアルの場合は、これにより、選択したビジュアルの操作が容易になります。 しかし、図形と背景については、誤って選択してレポートのビジュアルを覆ったり隠したりすることがないように、それらを最下部のレイヤーに固定することをお勧めします。 
+
+レイヤー化コントロールは、Power BI サービス、Power BI Desktop、モバイル、レポート サーバーで使用できます。 この記事では、Power BI サービスでレイヤーの順序の動作を変更する方法について説明します。
+
+"Rien によるレイヤーの順序の動作の変更" をご覧になってから、以下の手順に従って自分で試してみてください。
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
+
+1. 黄色の正符号を選択して、新しいレポート ページを追加します。 
+
+1. キャンバスに図形を追加します。 ここでは、青色の四角形を追加しました。 
+
+    ![青色の四角形を含む新しいレポート ページのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png)
+
+1. レポート内の別のページから、ビジュアルをコピーして貼り付けます。 
+
+    ![青色の四角形と円グラフを含む新しいレポート ページのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png)
+
+    2 つのレイヤーを用意できたので、円グラフを選択してから、背景を選択してみてください。 円グラフを選択すると、Power BI によってそのオブジェクトがアクティブにされ、ヘッダー メニューが表示されます。 四角形を選択すると、Power BI によってそのオブジェクトがアクティブにされ、前面に移動されます。ここで、円グラフが覆い隠されます。 この既定の動作を変更することができます。
+
+1. 四角形を選択し、[書式設定] ウィンドウを開きます。 **[全般]** を展開し、 **[レイヤーの順序の維持]** トグルを見つけます。 レポートの変更を保存し、[読み取り] ビューに切り替えます。
+
+    ![新しいレポート ページと、オンに設定されている [レイヤーの順序の維持] のスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png)
+
+1. [読み取り] ビューでは、青色の四角形は選択された場合もバック レイヤーに残ります。
+
 
 ## <a name="customize-colors-using-a-theme"></a>テーマを使用して色をカスタマイズする
 

@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: dc3ce931664a3c125504865c6cccfe3fdfa404c4
-ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
+ms.openlocfilehash: acb1a1550c0ab216e4934e99f871df9321561314
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98053422"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565435"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>クラシック ワークスペースで使用状況メトリックを監視する
 
@@ -162,7 +162,11 @@ Power BI は別個の国内クラウドで利用できます。 これらのク�
 
 ### <a name="discrepancies-between-rest-apis-and-usage-metrics"></a>REST API と使用状況メトリックの違い
 
-Power BI の[レポート REST API](https://docs.microsoft.com/rest/api/power-bi/reports) および[管理 REST API](https://docs.microsoft.com/rest/api/power-bi/admin) では Power BI サービス データも使用されます。 前のセクションで説明した理由により、API のレポート数は、使用状況メトリックのレポート数とは異なる場合があります。 API から派生したレポート数は、クライアントの問題の影響を受けないため、正確であると見なされます。
+Power BI の[レポート REST API](/rest/api/power-bi/reports) および[管理 REST API](/rest/api/power-bi/admin) では Power BI サービス データも使用されます。 前のセクションで説明した理由により、API のレポート数は、使用状況メトリックのレポート数とは異なる場合があります。 API から派生したレポート数は、クライアントの問題の影響を受けないため、正確であると見なされます。
+
+### <a name="classic-usage-metrics-are-not-supported-with-private-links"></a>クラシックの使用状況メトリックは、プライベート リンクでサポートされていません 
+
+所属する組織が[プライベート リンク](../admin/service-security-private-links.md)を使用している場合、クラシックの使用状況メトリック レポートにデータは含まれません。 現在、プライベート リンク経由でクライアント情報を転送する場合は制限があります。 
 
 ### <a name="other-considerations"></a>その他の注意事項
 

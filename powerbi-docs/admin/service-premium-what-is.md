@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 01/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: c1e5cad6ab1da796d2f10a64e867d5848e86aea4
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.openlocfilehash: c89cf7b00d5167ffb68a491a9cfdcea21378dfd5
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155620"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565156"
 ---
 # <a name="what-is-power-bi-premium"></a>Power BI Premium とは
 
@@ -87,6 +87,15 @@ Premium Gen2 を有効にして、その更新を利用します。 Premium Gen2
     |SQL Server Management Studio (SSMS)|18.8|2020 年 12 月 8 日|
     |SQL Server Data Tools (SSDT)|2.9.15|一般提供 2020 年 11 月 30 日|
     | AS PowerShell| 21.1.18229 より後|2020 年 11 月 26 日|
+
+5.  ある Premium Gen2 容量から異なるリージョン内の別の Premium 容量へのデータフローが含まれるワークスペースの再割り当ては、サポートされていません。 また、Premium 容量間で大規模なストレージ形式モデルを移動することもサポートされていません。 異なるリージョン内の容量に既に移行してある場合は、次のいずれかの手順を行って機能を復元してください。
+ 
+    1.  新しいワークスペースを作成し、データフローをコピーします
+    2.  以前のリージョン内の容量にワークスペースを戻します
+    3.  Premium Gen 1 に戻します
+
+この制限は、Premium Gen 2 の一般提供 (GA) 時に削除される可能性があります。
+
 
 ## <a name="subscriptions-and-licensing"></a>サブスクリプションとライセンス
 
@@ -299,7 +308,7 @@ P1 から P3 の SKU および A4 から A6 の SKU でサポートされてい�
 Power BI Premium では、ページ分割されたレポートは管理ポータルを使用して容量に対して有効にする必要があるワークロードです。 容量管理者は、有効にしてから、容量のメモリ リソース全体に対するパーセンテージとしてメモリ量を指定することができます。 他の種類のワークロードとは異なり、ページ分割されたレポートは容量内に含まれる領域で Premium によって実行されます。 ワークロードがアクティブかどうかに関係なく、この領域に指定した最大メモリが使用されます。 既定値は 20% です。
 
 > [!NOTE]
-> **Premium Gen2 (プレビュー)** には、ページ分割されたレポート用のメモリ管理は備わっていません。 Premium Gen2 では、ページ分割されたレポートが EM1-EM3 SKU と A1-A3 SKU でサポートされています。
+> **Premium Gen2 (プレビュー)** には、ページ分割されたレポート用のメモリ管理は備わっていません。 Premium Gen2 では、ページ分割されたレポートが EM1-EM3 SKU でサポートされています。
 
 ### <a name="paginated-reports-and-premium-gen2"></a>ページ分割されたレポートと Premium Gen2
 
@@ -333,7 +342,7 @@ Premium では、コンテンツを表示する受信者に Pro ライセンス�
 
 ## <a name="analysis-services-in-power-bi-premium"></a>Power BI Premium での Analysis Services
 
-内部では、企業で実証済みの Microsoft **Analysis Services Vertical エンジン** によって Power BI Premium ワークスペースとデータセットが強化されます。 Analysis Services では、オープンスタンダードの XMLA プロトコルをサポートするクライアント ライブラリと API を介して、プログラミング機能やクライアント アプリケーションおよびツールがサポートされます。 既定では、Power BI Premium 容量データセット ワークロードでは、Microsoft およびサードパーティのクライアント アプリケーションおよびツールから **XMLA エンドポイント** を経由して行う "*読み取り専用*" 操作がサポートされています。 また、容量管理者は、エンドポイントを経由した "*読み取り/書き込み*" 操作を無効にすることも、許可することもできます。
+内部では、企業で実証済みの Microsoft **Analysis Services Vertipaq エンジン** によって Power BI Premium ワークスペースとデータセットが強化されます。 Analysis Services では、オープンスタンダードの XMLA プロトコルをサポートするクライアント ライブラリと API を介して、プログラミング機能やクライアント アプリケーションおよびツールがサポートされます。 既定では、Power BI Premium 容量データセット ワークロードでは、Microsoft およびサードパーティのクライアント アプリケーションおよびツールから **XMLA エンドポイント** を経由して行う "*読み取り専用*" 操作がサポートされています。 また、容量管理者は、エンドポイントを経由した "*読み取り/書き込み*" 操作を無効にすることも、許可することもできます。
 
 読み取り専用アクセスの場合、SQL Server Management Studio (SSMS) や SQL Server Profiler などの Microsoft のツール、および DAX Studio やデータ視覚化アプリケーションなどのサードパーティ アプリでは、XMLA、DAX、MDX、DMV、および Trace イベントを使用して Premium データセットに接続し、それに対してクエリを実行することができます。 読み取り/書き込みアクセスの場合、Visual Studio と Analysis Services プロジェクト拡張機能や、オープン ソースの表形式エディターなどのエンタープライズ データ モデリング ツールで、表形式モデルをデータセットとして Premium ワークスペースに配置できます。 また、SSMS などのツールを使用すると、管理者は表形式モデルのスクリプト言語 (TMSL) を使用して、メタデータの変更や高度なデータ更新のシナリオをスクリプト化することができます。 
 

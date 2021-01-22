@@ -7,18 +7,19 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/23/2019
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: bd7fdea827d0fbaf4c56f373ea028a8fffdc3123
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 038a0c57fe5994b2b15b64dfe67f3eda77ef86f2
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411703"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227102"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI での組織のコンテンツ パックの概要
+
 > [!NOTE]
-> 新しいワークスペース エクスペリエンスでは、組織のコンテンツ パックを作成したり、インストールしたりすることはできません。 コンテンツ パックをアプリにまだアップグレードしていない場合は、今がそのよい機会です。 新しいワークスペース エクスペリエンスの詳細については、[こちら](service-create-the-new-workspaces.md)を参照してください。
+> 組織のコンテンツパックは非推奨とされます。 コンテンツ パックをアプリにまだアップグレードしていない場合は、今がそのよい機会です。 タイムラインについては、こちらの [Power BI 管理者がクラシック ワークスペースをアップグレードできることについてのお知らせ](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/)に関するブログ記事のワークスペース アップグレード ロードマップに関するセクションを参照してください。
 > 
 
 チームのメンバーにメールで定期的にレポートを配布する場合は、 代わりに次のことを試してください。自分のダッシュボード、レポート、Excel ブック、およびデータセットをパッケージ化し、"*組織のコンテンツ パック*" としてチームに公開します。 すべてのコンテンツ パックは AppSource にあるので、チームは簡単に見つけることができます。 ライブラリは Power BI に含まれているので、インタラクティブなデータ探索、新しいビジュアル、Q&A、他のデータ ソースとの統合、データ更新、その他 Power BI の機能のすべてを活用できます。

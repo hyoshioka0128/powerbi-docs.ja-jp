@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/04/2020
+ms.date: 01/12/2021
 ms.custom: contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2c15c6afbf1a84ab5e8103a8d73792705418d2e6
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: b849921b0ec9c5bbad46394343d266179ba547b8
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621719"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227286"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Power BI で新しいワークスペースを作成する
 
@@ -24,7 +24,8 @@ ms.locfileid: "97621719"
 クラシック ワークスペースを移行する場合、 詳細については、「[Power BI でクラシック ワークスペースを新しいワークスペースにアップグレードする](service-upgrade-workspaces.md)」を参照してください。
 
 > [!NOTE]
-> ワークスペースでコンテンツを参照する Power BI Pro ユーザーに対して行レベル セキュリティ (RLS) を適用するには、ユーザーにビューアー ロールを割り当てます。 さまざまなロールの説明については、「[新しいワークスペースのロール](service-new-workspaces.md#roles-in-the-new-workspaces)」を参照してください。
+> コンテンツ パックの作成に関するコンテンツを検索していますか? それらは非推奨とされます。 今こそ、ご利用のコンテンツ パックをアプリにアップグレードする良い機会です。 タイムラインについては、こちらの [Power BI 管理者がクラシック ワークスペースをアップグレードできることについてのお知らせ](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/)に関するブログ記事のワークスペース アップグレード ロードマップに関するセクションを参照してください。
+> 
 
 ## <a name="create-one-of-the-new-workspaces"></a>新しいワークスペースのいずれかを作成する
 
@@ -59,6 +60,9 @@ ms.locfileid: "97621719"
 ## <a name="give-access-to-your-workspace"></a>ワークスペースへのアクセスを許可する
 
 ワークスペースの管理者ロールを持つすべてのユーザーが、ユーザーを他のロールに追加することでワークスペースへのアクセス権を付与することができます。 ワークスペースの作成者は、自動的に管理者になります。 ロールの説明については、「[新しいワークスペースのロール](service-new-workspaces.md#roles-in-the-new-workspaces)」を参照してください。
+
+> [!NOTE]
+> ワークスペースでコンテンツを参照する Power BI Pro ユーザーに対して行レベル セキュリティ (RLS) を適用するには、ユーザーにビューアー ロールを割り当てます。 さまざまなロールの説明については、「[新しいワークスペースのロール](service-new-workspaces.md#roles-in-the-new-workspaces)」を参照してください。
 
 1. 管理者であるため、ワークスペースのコンテンツ一覧ページには **[アクセス]** が表示されます。
 

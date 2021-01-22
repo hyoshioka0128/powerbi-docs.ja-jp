@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 11/14/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 62b3c9bb10cb47df0d21eb05e381c5c4784b3106
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: c41f8f9b23ef57d5dd6fd4b851918b7ffa5904a0
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600233"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226941"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Power BI Desktop の起動に関するトラブルシューティング
 
@@ -58,7 +58,7 @@ SQL Server データベースに接続しようとすると、次のテキスト
 
 多くの場合、SQL Server 接続を行う前に管理者として Power BI Desktop を開くと、この問題を解決できます。
 
-Power BI Desktop を管理者として起動して接続を確立すると、必要な DLL が適切に登録されます。 その後は、管理者として Power BI Desktop を開く必要はありません。
+Power BI Desktop を管理者として起動して接続を確立すると、必要な DLL が適切に登録されます。 その後は、管理者として Power BI Desktop を開く必要はありません。 別の Windows 資格情報を使用して SQL サーバーに接続する場合は、接続のたびに管理者として Power BI Desktop を開く必要があります。
 
 ## <a name="get-help-with-other-launch-issues"></a>他の起動時の問題に関するヘルプを得る
 

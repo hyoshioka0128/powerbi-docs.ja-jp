@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6ce7afedb43aa7abaffb3ad5afdb00b4749addb5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 573180ef4087af7654480da8ca581e1881729243
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885396"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565295"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>新しいワークスペース エクスペリエンスで使用状況メトリックを監視する (プレビュー)
 
@@ -297,6 +297,7 @@ Power BI は別個の国内クラウドで利用できます。 これらのク�
 - [利用状況の指標に関するレポート] データセットの初期化は、更新中に発生したタイムアウトが原因で失敗する場合があります。 この問題を解決するには、以下のトラブルシューティングに関するセクションを参照してください。
 - 使用状況メトリック レポートの共有は無効になっています。 ユーザーにレポートへの読み取りアクセス権を付与するには、まずワークスペースへのアクセス権を付与する必要があります。
 - 場合によっては、パフォーマンス データが欠落していることがあります。 これは、ユーザーがレポートを開いて、読み込みが完了する前にレポートを操作した場合、またはレポートの読み込み中にエラーが発生した場合に発生することがあります。 
+- 所属する組織が[プライベート リンク](../admin/service-security-private-links.md)を使用している場合、最新の使用状況メトリック レポートには部分的なデータが含まれます ([レポートの表示] のみ)。 クライアント情報をプライベート リンク経由で転送する場合に現在適用される制限により、プライベート リンクを介して [レポートページの表示] やパフォーマンスのデータをキャプチャすることはできません。 
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

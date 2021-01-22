@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 01/14/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 800e81b8fe5e9c2f108b71a4d8fb6bf9732a29ac
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 6b28537c9ea757fb43179196f9d7cb053955c5e0
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926839"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227217"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI から Web への公開
 
@@ -189,7 +189,7 @@ Power BI にサインアップしたより小規模の組織または個人の�
 - ライブ接続データ ソースを使うレポート (Analysis Services 表形式でホストされたオンプレミスの Analysis Service 多次元、Azure Analysis Services など)。
 - レポートとは別のワークスペースに格納されている、[共有データセット](../connect-data/service-datasets-across-workspaces.md)を使用するレポート。
 - [共有データセットと認定済みデータセット](../connect-data/service-datasets-share.md)。
-- 直接共有されているか、組織のコンテンツ パックを経由して共有されているレポート
+- 直接またはアプリを介して共有されるレポート。
 - 編集メンバーではないワークスペース内のレポート。
 - 現時点では、 **[Web に公開]** レポートで "R" および Python ビジュアルはサポートされていません。
 - Web に公開されたレポートのビジュアルからのデータのエクスポート。

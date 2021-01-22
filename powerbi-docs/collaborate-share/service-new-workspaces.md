@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 01/12/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5aabc825ecd22ed49d05428148133be17156645d
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 5aa4fb617bc4a6d362bcf17a5e6b4d6d7f355086
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621489"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227263"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Power BI の新しいワークスペースで作業を整理する
 
@@ -37,7 +37,7 @@ ms.locfileid: "97621489"
 - **連絡先リスト**: 新しいワークスペースでは、ワークスペース アクティビティに関する通知を受け取るユーザーを指定することができます。
 - **テンプレート アプリを作成する**: "*テンプレート アプリ*" は新しいワークスペースでのみ作成できます。 テンプレート アプリとは、組織外の顧客に配布できるアプリのことです。 その後、これらの顧客はテンプレート アプリを使用して、自分のデータに接続できます。 テンプレート アプリの詳細については、[こちら](../connect-data/service-template-apps-overview.md)を参照してください。
 - **データセットを共有する**: 特定のワークスペース外のデータセットを共有するには、そのデータセットを含むレポートを、新しいワークスペースのいずれかに保存する必要があります。 クラシック ワークスペースからデータセットを共有することはできません。 共有データセットの詳細については、[こちら](../connect-data/service-datasets-across-workspaces.md)を参照してください。
-- **組織のコンテンツ パック**:クラシック ワークスペースで組織のコンテンツ パックを作成し、使用します。 それらを新しいワークスペースで作成したり、使用したりすることはできません。 新しいワークスペースでは、組織のコンテンツ パックはアプリとテンプレート アプリに置き換えられます。
+- **組織のコンテンツ パック**:クラシック ワークスペースで組織のコンテンツ パックを作成し、使用します。 それらを新しいワークスペースで作成したり、使用したりすることはできません。 新しいワークスペースでは、組織のコンテンツ パックはアプリとテンプレート アプリに置き換えられます。 組織のコンテンツパックは非推奨とされます。 今こそ、ご利用のコンテンツ パックをアプリにアップグレードする良い機会です。 タイムラインについては、こちらの [Power BI 管理者がクラシック ワークスペースをアップグレードできることについてのお知らせ](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/)に関するブログ記事のワークスペース アップグレード ロードマップに関するセクションを参照してください。
 
 この記事では、これらの機能について詳しく説明します。
 

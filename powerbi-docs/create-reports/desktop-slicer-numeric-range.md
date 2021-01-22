@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/06/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 83ba0234ef4f4e350f413f3c934e2f09f0a9a3f2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 59e88818adee9aaf893d9f32fe96386c3f7ac47e
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412784"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565799"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi"></a>Power BI で数値範囲スライサーを使用する
 
@@ -84,3 +84,4 @@ ms.locfileid: "96412784"
 * 数値範囲スライサーでは、集計値ではなく、データの基になるすべての行がフィルター処理されます。 たとえば、 *[Sales Amount]\(売上高\)* フィールドを使用するとします。 次に、スライサーによって、ビジュアルの各データ ポイントの売上高の合計ではなく、売上高に基づいて各トランザクションがフィルター処理されます。
 * 現在、メジャーでは動作しません。
 * 数値スライサーには、基になっている列の値の範囲から外れるものも含めて、あらゆる数値を入力できます。 今後、データが変わる可能性があることがわかっている場合、このオプションを使用してフィルターを設定できます。
+* 日付範囲スライサーでは、基になる日付列に日付値が存在しない場合でも、その任意の値を使用できます。

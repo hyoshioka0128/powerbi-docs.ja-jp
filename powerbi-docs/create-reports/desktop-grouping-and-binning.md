@@ -8,14 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/18/2019
+ms.date: 01/13/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f1b3d226fb7b27ebb31879d2f4a5c3489660b94
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a44b6cbbc0517bee50d14447e790f6491483a894
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412922"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565861"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Power BI Desktop でグループ化とビン分割を使用する
 Power BI Desktop では、ビジュアルを作成するとき、基になっているデータで見つかった値に基づいて、データをチャンク (またはグループ) にまとめて集計します。 多くの場合は問題ありませんが、チャンクの表示方法の調整が必要になる場合もあります。 たとえば、3 つの製品カテゴリを 1 つの大きなカテゴリ (1 つの *グループ*) にしたい場合などです。 または、売上の数字を 923,983 ドルのサイズのチャンクではなく、1,000,000 ドルのビン サイズにしたいこともあります。
@@ -47,17 +47,17 @@ Power BI Desktop では、データ ポイントを *グループ化* して、�
 > 既存のビジュアルから複数の項目を選択することなく、 **[フィールド]** で任意のフィールドのグループを作成することもできます。 フィールドを右クリックし、表示されるメニューの **[グループ]** を選択するだけです。
 
 ## <a name="using-binning"></a>ビン分割の使用
-**Power BI Desktop** の数値フィールドと時間フィールドに対してビンのサイズを設定できます。 ビン分割を使って、Power BI Desktop に表示されるデータを適切なサイズに設定できます。
+**Power BI Desktop** の数値フィールドと時間フィールドに対してビンのサイズを設定できます。 計算列に対してビンを作成することはできますが、メジャーに対しては作成できません。 ビン分割を使用すれば、Power BI Desktop に表示されるデータを適切なサイズに設定できます。
 
-ビンのサイズを適用するには、 **[フィールド]** を右クリックし、 **[新しいグループ]** を選択します。
+ビンのサイズを適用するには、**[フィールド]** を右クリックし、**[新しいグループ]** を選択します。
 
 ![新しいグループ コマンド、フィールドの一覧、Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_5.png)
 
-**[グループ]** ダイアログ ボックスで、 **[ビンのサイズ]** を適切なサイズに設定します。
+**[グループ]** ダイアログ ボックスで、**[ビンのサイズ]** を適切なサイズに設定します。
 
 ![ビンのサイズ、[グループ] ダイアログ ボックス、Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_6.png)
 
-**[OK]** を選ぶと、 **[フィールド]** ウィンドウに新しいフィールドが表示されます。フィールド名の後には " **(ビン)** " が追加されています。 その後は、フィールドをキャンバスにドラッグして、ビジュアルでビンのサイズを使うことができます。
+**[OK]** を選ぶと、**[フィールド]** ウィンドウに新しいフィールドが表示されます。フィールド名の後には "**(ビン)**" が追加されています。 その後、そのフィールドをキャンバスにドラッグして、そのビンのサイズをビジュアルで使用することができます。
 
 ![ビン フィールドをキャンバス上にドラッグ、Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_7.png)
 

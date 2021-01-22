@@ -8,13 +8,13 @@ featuredvideoid: DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: tutorial
-ms.date: 11/11/2020
-ms.openlocfilehash: e05078bf51cd33fb565dc783386258fe9ea305d1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/31/2020
+ms.openlocfilehash: 504b5bcb63fa8c8897ae0b44922d3dc144a02730
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416372"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227355"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Power BI のページ分割されたレポートの 1 日コース
 
@@ -43,7 +43,7 @@ ms.locfileid: "96416372"
 
 ## <a name="course-outline"></a>コースのアウトライン
 
-[24 個の動画のコース](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) が、8 つのモジュールに分割されています。 動画は撮影された順に視聴することをお勧めします。動画 01 から始まり、動画 24 で終わります。
+[25 個の動画のコース](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) が、8 つのモジュールに編成されています。 動画は撮影された順に視聴することをお勧めします。動画 01 から始まり、動画 25 で終わります。
 
 - **はじめに**
   - 動画 01: [紹介とコースの概要](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -78,6 +78,7 @@ ms.locfileid: "96416372"
   - 動画 22: [ボーナス コンテンツ: レビュー](https://www.youtube.com/watch?v=w5zlJ8BodxI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - 動画 23: [ボーナス コンテンツ: ページ分割されたレポートの進化](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - 動画 24: [ボーナス コンテンツ: 利用開始の壁を低くする](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - 動画 25: [ボーナス コンテンツ: 2020 年 12 月の更新](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## <a name="self-study-kit"></a>自己学習キット
 

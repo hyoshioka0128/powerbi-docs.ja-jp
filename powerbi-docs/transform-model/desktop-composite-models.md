@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 01/19/2021
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: c29728641560502e19486f47e3ec06e370399640
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: cbf41315f6b33483b7fdd0797bf4dfbcebb605c3
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600532"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597693"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Power BI Desktop で複合モデルを使用する
 
@@ -22,7 +22,7 @@ ms.locfileid: "97600532"
 
 Power BI Desktop の複合モデル機能は、3 つの関連する機能で構成されています。
 
-* **複合モデル**:複数のデータ接続 (DirectQuery 接続やインポートなど) を任意の組み合わせでレポートに含めることができます。 この記事では、複合モデルについて詳しく説明します。
+* **複合モデル**:1 つまたは複数の DirectQuery 接続およびインポート接続、2 つ以上の DirectQuery 接続、またはそれらの任意の組み合わせなど、さまざまなソース グループからの 2 つ以上のデータ接続をレポートに含めることができます。 この記事では、複合モデルについて詳しく説明します。
 
 * **多対多のリレーションシップ**:複合モデルでは、テーブル間で "*多対多のリレーションシップ*" を確立することができます。 このアプローチでは、テーブル内の一意の値の要件が除外されます。 また、リレーションシップを作成するためだけに新しいテーブルを導入するなどの以前の回避策も除外されます。 詳細については、「[Power BI Desktop で多対多リレーションシップを適用する](desktop-many-to-many-relationships.md)」を参照してください。
 
@@ -141,6 +141,8 @@ DirectQuery を使用するモデルに計算テーブルを追加すること�
 * 各ソースの暗号化設定を考慮する必要があります。 暗号化された接続を使用して 1 つのソースから情報を取得した後、暗号化されていない接続を使用して別のソースに送信されるクエリにその情報を誤って含めないようにする必要があります。
 
 あらゆるセキュリティへの影響が考慮されていることを確認するために、Power BI Desktop では、複合モデルを作成するときに警告メッセージが表示されます。  
+
+さらに、作成者が *Table1* を "*モデル A*" から複合モデル (参照用に "*モデルC*" と呼びます) に追加した場合、"*モデル C*" で作成されたレポートを表示しているユーザーは、RLS によって保護されていない "*モデル A*" の **任意のテーブル** に対してクエリを実行することが可能です。
 
 同様の理由から、信頼できないソースから送信された Power BI Desktop ファイルを開くときには注意が必要です。 ファイルに複合モデルが含まれている場合、そのファイルを開くユーザーの資格情報を使用して、だれかがあるソースから取得した情報が、クエリの一部として別のデータ ソースに送信される場合があります。 その情報は、Power BI Desktop ファイルの悪意のある作成者によって閲覧される可能性があります。 複数のソースを含む Power BI Desktop ファイルを最初に開くときに、Power BI Desktop によって警告が表示されます。 この警告は、ネイティブの SQL クエリを含むファイルを開くときに表示される警告と似ています。  
 

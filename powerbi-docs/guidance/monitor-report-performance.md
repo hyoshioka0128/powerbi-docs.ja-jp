@@ -8,17 +8,17 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 02/16/2020
-ms.openlocfilehash: bd700ae7c6c175f4e9cf7841ce308a275ba9babb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/14/2021
+ms.openlocfilehash: a7da63efcc991da57eba9c6b9bb6b9527ad66e1f
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96393040"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227378"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Power BI でレポートのパフォーマンスを監視する
 
-[Power BI Premium Metrics アプリ](../admin/service-premium-metrics-app.md)を使用して Power BI Desktop でレポートのパフォーマンスを監視し、ボトルネックがどこにあるかを確認して、レポートのパフォーマンスを向上させる方法を学習します。
+[パフォーマンス アナライザー](../create-reports/desktop-performance-analyzer.md)を使用して Power BI Desktop でレポートのパフォーマンスを監視し、[Power BI Premium Metrics アプリ](../admin/service-premium-metrics-app.md)を活用して所属組織の Power BI Premium 容量に展開されたコンテンツのパフォーマンスを監視します。 ボトルネックの場所、およびレポートのパフォーマンスを向上させる方法について説明します。
 
 パフォーマンスの監視は、次のような状況に関連しています。
 

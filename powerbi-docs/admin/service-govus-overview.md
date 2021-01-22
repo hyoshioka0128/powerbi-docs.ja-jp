@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/05/2021
+ms.date: 01/19/2021
 ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: 9b52e0698f6b9c1ae779bf21738acee30db7447d
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: e7100be7890673cecc77a8a1147a25a942fc4666
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927091"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597625"
 ---
 # <a name="power-bi-for-us-government-customers"></a>米国政府顧客向け Power BI
 
@@ -124,26 +124,22 @@ Government クラウドのお客様の要件に対応するため、Government �
 
 |特徴 |GCC |GCC High |DoD|
 |------|------|------|------|
-|[政府機関と商用クラウド間の Azure B2B コラボレーション](service-admin-azure-ad-b2b.md)<sup>1</sup>|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
+|[政府機関と商用クラウド間の Azure B2B コラボレーション](service-admin-azure-ad-b2b.md)<sup>1</sup>|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)
+|[テンプレート アプリ](../connect-data/service-template-apps-overview.md)<sup>2</sup>|![利用可能](../media/yes.png) |![利用可能](../media/yes.png)| ![利用可能](../media/yes.png)|
 |[Power BI Web パーツを使用した SharePoint Online への埋め込み](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
-|[データドリブン アラートのための Power Automate との接続](../connect-data/power-bi-data-sources.md)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
-|[Teams での [Power BI] タブ](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
-|[大規模なモデル](service-premium-large-models.md) | ![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png) |
+|[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png) |2021 年第 1 四半期|
+|[データフロー - 直接クエリ](../transform-model/dataflows/dataflows-configure-consume.md) | ![利用可能](../media/yes.png) |![利用可能](../media/yes.png)|未定 |
+|[Teams での [Power BI] タブ](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
+|[大規模なモデル](service-premium-large-models.md) | 2021 年第 1 四半期 |2021 年第 1 四半期| 未定 |
 |[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/dataflows/dataflows-premium-features.md) | ![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png) |
-|[データフロー - 直接クエリ](../transform-model/dataflows/dataflows-configure-consume.md) | ![利用不可](../media/no.png) |![利用不可](../media/no.png)|![利用不可](../media/no.png)|
-|[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png) |![利用不可](../media/no.png)|
-|[テンプレート アプリ](../connect-data/service-template-apps-overview.md)<sup>3</sup>|![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png)|
-|[カスタム ビジュアル](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png)|
-|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| ![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[ストレージ持ち込み (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
-|[QR コードの生成](../create-reports/service-create-qr-code-for-tile.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 
 <sup>1</sup> B2B コラボレーションは GCC で利用できますが、その環境でのライセンスを外部ユーザーに発行する必要があります。 商用クラウド ライセンスは GCC では無効です。 米国政府機関向け B2B コラボレーションの既知の制限に関する詳細については、「[Azure Government とグローバル Azure の比較](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)」を参照してください。
 
-<sup>2</sup> GCC 用の Teams の Power BI エクスペリエンスは限られており、従来のワークスペースでのみ機能します。また、「[Microsoft Teams に Power BI コンテンツを埋め込む](../collaborate-share/service-embed-report-microsoft-teams.md)」で説明されている拡張機能は含まれていません。
+<sup>2</sup> Marketplace アプリが米国政府向けクラウド インスタンスでは使用できないため、テンプレート アプリはプライベートおよび組織アプリに限定されます。
 
-<sup>3</sup> テンプレート アプリの機能とリリース時のカスタム ビジュアルは、政府機関向けクラウドに限定されます。 特定の制限事項の詳細については、リリース時に公開されます。
+<sup>3</sup> GCC 用の Teams の Power BI エクスペリエンスは限られており、従来のワークスペースでのみ機能します。また、「[Microsoft Teams に Power BI コンテンツを埋め込む](../collaborate-share/service-embed-report-microsoft-teams.md)」で説明されている拡張機能は含まれていません。
 
 ## <a name="next-steps"></a>次の手順
 

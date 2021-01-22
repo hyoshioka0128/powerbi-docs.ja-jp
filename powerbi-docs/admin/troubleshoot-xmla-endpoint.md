@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/11/2021
+ms.date: 01/13/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 16a07065507abfe825c39677f234d626070827b4
-ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
+ms.openlocfilehash: 0753a9c3d5b832275f65ac11b87f90c38606f289
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98110730"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226987"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -217,6 +217,10 @@ Analysis Services コネクタを使用し、ライブ接続されたデータ�
 ## <a name="workspaceserver-alias"></a>ワークスペースまたはサーバーのエイリアス
 
 Azure Analysis Services とは異なり、Power BI Premium ワークスペースではサーバー名の [エイリアスは](/azure/analysis-services/analysis-services-server-alias)は **サポートされていません**。 
+
+## <a name="dataset-refresh-through-the-xmla-endpoint"></a>XMLA エンドポイントを介したデータセットの更新
+
+前回の更新日時は、レポートおよびリスト内の [更新日時] 列、[データセットの詳細]、[データセットの設定]、[データセット更新履歴] など、Power BI のいくつかの場所に表示されます。 現在、Power BI に表示される更新日時には、TMSL/TOM、SSMS、またはサードパーティ製のツールを使用して XMLA エンドポイント経由で実行される更新操作は含まれ **ません**。
 
 ## <a name="see-also"></a>関連項目
 
