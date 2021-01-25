@@ -62,6 +62,8 @@
           href: create-an-azure-active-directory-tenant.md
         - name: アプリケーションを登録する
           href: register-app.md
+        - name: Power BI Embedded を監視する
+          href: monitor-power-bi-embedded.md
         - name: Azure AD アクセス トークンを取得する
           href: get-azuread-access-token.md
         - name: 埋め込みに関する Q&A
@@ -94,6 +96,8 @@
               href: /rest/api/power-bi-embedded/
             - name: Power BI REST API
               href: /rest/api/power-bi/
+        - name: Power BI Embedded データ参照を監視する
+          href: monitor-power-bi-embedded-reference.md
         - name: Power BI ライブラリ
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
         - name: Azure CLI
