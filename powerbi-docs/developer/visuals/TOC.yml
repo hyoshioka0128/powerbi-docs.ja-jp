@@ -12,7 +12,7 @@
       items:
         - name: 'チュートリアル:Power BI サークル カード ビジュアルの開発'
           href: develop-circle-card.md
-        - name: 反応ベースのビジュアルを作成する
+        - name: 'チュートリアル:React を使用して Power BI 視覚エフェクトを作成する'
           href: create-react-visual.md
         - name: 横棒グラフを作成する
           href: create-bar-chart.md

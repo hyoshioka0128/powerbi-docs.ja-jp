@@ -161,7 +161,7 @@
           href: service-interruption-notifications.md
         - name: Power BI のパスワードを忘れた場合
           href: service-admin-forgot-your-password.md
-        - name: Power BI 用に追加の診断情報をキャプチャする
+        - name: Power BI サービスから診断情報をキャプチャする
           href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
         - name: Power BI の代替メール アドレス
           href: service-admin-alternate-email-address-for-power-bi.md

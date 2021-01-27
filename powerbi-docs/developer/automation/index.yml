@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Power BI 埋め込み分析での埋め込み BI インサイトの向上を可能にする Power BI のオートメーションのドキュメント
+title: Power BI のオートメーションのドキュメント
 summary: Power BI のオートメーションを使用すると、レポート、データセット、ワークスペースなどの Power BI オブジェクトで管理タスクを実行できます。
 metadata:
   title: Power BI のオートメーションのドキュメント
@@ -12,12 +12,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: def78e481474b7186457d019404f4604406ce967
-  ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+  ms.openlocfilehash: eb357c5a89afec8f42b86ec80bca688e37101322
+  ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/05/2021
-  ms.locfileid: "97887594"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "98781549"
 landingContent:
 - title: はじめに
   linkLists:
@@ -39,6 +39,12 @@ landingContent:
       url: walkthrough-push-data-add-rows.md
     - text: チュートリアル:テンプレート アプリの構成を自動化する
       url: ../template-apps/template-apps-auto-install-tutorial.md
+- title: クライアント API
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Power BI 埋め込み分析のクライアント API
+      url: /javascript/api/overview/powerbi/
 - title: データの処理
   linkLists:
   - linkListType: concept

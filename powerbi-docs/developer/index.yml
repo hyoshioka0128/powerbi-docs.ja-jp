@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Power BI 埋め込み分析での埋め込み BI インサイトの品質向上のための Power BI 開発者向けドキュメント
+title: Power BI 開発者向けドキュメント
 summary: Power BI 開発者は、Power BI コンテンツを埋め込んだり、Power BI ビジュアルを作成したり、Power BI プロセスを自動化したりできます。
 brand: power-bi
 metadata:
@@ -13,12 +13,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 701f9e5e02d8b8cb8d019deebd9ae226560e07df
-  ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+  ms.openlocfilehash: 51bd353206d605cd0627e10e226d0950adf8de0f
+  ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/05/2021
-  ms.locfileid: "97885685"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "98781447"
 highlightedContent:
   items:
   - title: Power BI を使用した埋め込み分析
@@ -30,6 +30,9 @@ highlightedContent:
   - title: Power BI のビジュアル
     itemType: overview
     url: visuals/power-bi-custom-visuals.md
+  - title: Power BI 埋め込み分析のクライアント API
+    itemType: whats-new
+    url: /javascript/api/overview/powerbi/
   - title: テンプレート アプリの自動構成
     itemType: concept
     url: template-apps/template-apps-auto-install.md
@@ -105,6 +108,6 @@ additionalContent:
     - title: プレイグラウンド
       summary: 機能を試し、API を探索します。
       url: https://aka.ms/pbieplayground
-    - title: JavaScript Wiki
-      summary: JavaScript ナレッジ ベースを探索します。
-      url: https://github.com/Microsoft/powerbi-javascript/wiki
+    - title: Power BI 埋め込み分析のクライアント API
+      summary: Power BI 埋め込み分析のクライアント API を探索します。
+      url: /javascript/api/overview/powerbi/
