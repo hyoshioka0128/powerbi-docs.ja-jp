@@ -11,12 +11,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/14/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 8da3446814d2c356acb24100eaa03df23be8f567
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: d61ed128827572198e24bb8f31e190f328e273ff
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416786"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687600"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI サービスのデザイナー向けの基本的な概念
 
@@ -218,7 +218,7 @@ Q&A は、ダッシュボードに接続されたデータセットで回答を�
 Q&A では、質問の入力を開始するとすぐに Q&A ページが表示されます。 入力中に Q&A は言い直し、オートコンプリート、候補表示などの方法により、正しく質問して最適な回答を得られるように支援します。 求めている視覚エフェクト (回答) を得ることができたら、それをダッシュボードにピン留めします。 詳しくは、「[Power BI での Q&A](../consumer/end-user-q-and-a.md)」をご覧ください。
 
 ### <a name="4-icons-in-the-black-header-bar"></a>4.**黒いヘッダー バーのアイコン**
-右上隅のアイコンは、設定、通知、ダウンロード、ヘルプの表示、 **[新しい外観]** のオン/オフ、Power BI チームへのフィードバックの送信を行うためのリソースです。  
+右上隅のアイコンは、設定、通知、ダウンロード、ヘルプの表示、Power BI チームへのフィードバックの送信を行うためのリソースです。  
 
 ![複数のアイコン ボタンを表示している Power BI サービスのスクリーンショット。](media/service-basic-concepts/power-bi-icons.png)
 

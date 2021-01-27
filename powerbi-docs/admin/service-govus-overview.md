@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/19/2021
 ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: e7100be7890673cecc77a8a1147a25a942fc4666
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
+ms.openlocfilehash: 06a2dff78cc2367afb153111e080e29a16fc82ab
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597625"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686984"
 ---
 # <a name="power-bi-for-us-government-customers"></a>米国政府顧客向け Power BI
 
@@ -129,9 +129,9 @@ Government クラウドのお客様の要件に対応するため、Government �
 |[Power BI Web パーツを使用した SharePoint Online への埋め込み](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|
 |[データ保護 (MIP ラベル)](service-security-sensitivity-label-overview.md)|![利用可能](../media/yes.png)|![利用可能](../media/yes.png) |2021 年第 1 四半期|
 |[データフロー - 直接クエリ](../transform-model/dataflows/dataflows-configure-consume.md) | ![利用可能](../media/yes.png) |![利用可能](../media/yes.png)|未定 |
+|[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/dataflows/dataflows-premium-features.md) | ![利用可能](../media/yes.png) |![利用可能](../media/yes.png)|未定 |
 |[Teams での [Power BI] タブ](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![利用可能](../media/yes.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[大規模なモデル](service-premium-large-models.md) | 2021 年第 1 四半期 |2021 年第 1 四半期| 未定 |
-|[データフロー - SQL コンピューティング エンジンの最適化](../transform-model/dataflows/dataflows-premium-features.md) | ![利用不可](../media/no.png) |![利用不可](../media/no.png)| ![利用不可](../media/no.png) |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 |[ストレージ持ち込み (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|![利用不可](../media/no.png)|
 

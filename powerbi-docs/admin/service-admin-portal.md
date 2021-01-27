@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 01/05/2020
+ms.date: 01/25/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 554cce8c0313ad6624a2991aa09f60c98ff454be
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: 8305d4662da9f4f7b8a5cce2b3badf5e70e88bc5
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969619"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861309"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
@@ -174,12 +174,6 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
     ![一部を除いて有効にする設定](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 次のいくつかのセクションでは、さまざまな種類のテナント設定の概要を示します。
-
-## <a name="tenant-wide-new-look-settings"></a>テナント全体の新しい外観の設定
-
-**[新しい外観]** オプションが無効になっているとき、この組織のユーザーは Power BI の新しい外観のオンとオフを切り替えることができます。 **[新しい外観]** オプションを有効にすると、この組織の "*すべて*" のユーザーに対して Power BI の新しい外観の最新コントロールが常に表示されます。 新しい外観をオフに切り替えることはできなくなります。 既定では、[新しい外観] オプションは有効になっています。
-
-:::image type="content" source="media/service-admin-portal/admin-portal-new-look-disable.png" alt-text="管理ポータルで [新しい外観] オプションを無効にするスクリーンショット。":::
 
 ## <a name="help-and-support-settings"></a>ヘルプとサポートの設定
 

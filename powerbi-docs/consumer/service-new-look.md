@@ -7,14 +7,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/09/2020
+ms.date: 01/25/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 5e357b275cd6648721b021f68a9b8496e266e003
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ROBOTS: NOINDEX
+ms.openlocfilehash: 5de13f991e5439cf25bf8c00dc260fccc4918318
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999096"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98780775"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI サービスの "新しい外観"
 
@@ -70,5 +71,4 @@ Power BI サービス (app.powerbi.com) には、レポートの表示と操作�
 ## <a name="next-steps"></a>次のステップ
 
 - [Power BI Desktop で更新されたリボンを使用する](../create-reports/desktop-ribbon.md)
-- [ワークスペースの "新しい外観" を選択する](../collaborate-share/service-workspaces-new-look.md)
 - [コンシューマー向けの Power BI](end-user-consumer.md)
