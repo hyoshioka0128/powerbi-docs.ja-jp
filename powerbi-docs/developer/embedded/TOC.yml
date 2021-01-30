@@ -96,6 +96,8 @@
               href: /rest/api/power-bi-embedded/
             - name: Power BI REST API
               href: /rest/api/power-bi/
+        - name: Power BI 開発者 (1 日) コース
+          href: /power-bi/learning-catalog/developer-online-course
         - name: Power BI Embedded データ参照を監視する
           href: monitor-power-bi-embedded-reference.md
         - name: Power BI ライブラリ
