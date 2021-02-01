@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/13/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: df2083effaec83639d5c14cd62d81ee4b44ffcd7
-ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
+ms.openlocfilehash: 9f02d3785c5a74c1f2658c3c00fb16c076558213
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191615"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718602"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Power BI サービスでレポートまたはダッシュボードをサブスクライブする 
 
@@ -36,7 +36,9 @@ ms.locfileid: "98191615"
 ## <a name="requirements"></a>要件
 自分用のサブスクリプションを **作成する** には、*Power BI Pro* または *Premium Per User* の [ライセンス](end-user-license.md)が必要です。 また、レポートまたはダッシュボードが Premium ワークスペースに存在し、そのワークスペースへのアクセス権を持っている場合も、自分用のサブスクリプションを作成することができます。 サブスクリプションを作成できない場合は、Power BI 管理者または IT ヘルプ デスクに問い合わせてください。 
 
-**他のユーザーをサブスクライブ** する機能は、*Power BI Pro* ライセンスを持っているダッシュボードまたはレポートの所有者のみが使用できます。 ページ分割されたレポートのサブスクライブの場合、若干異なります。 詳細については、「[Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)」(Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする) を参照してください。 
+**他のユーザーをサブスクライブ** する機能は、*Power BI Pro* ライセンスを持っているダッシュボードまたはレポートの所有者のみが使用できます。
+
+**ページ分割されたレポートのサブスクライブ** の場合、若干異なります。 詳細については、[Power BI サービスのページ分割されたレポートのサブスクライブ](paginated-reports-subscriptions.md)に関する記事を参照してください。 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>ダッシュボードまたはレポート ページをサブスクライブする
 ダッシュボードとレポートのどちらをサブスクライブする場合でも、そのプロセスは似ています。 同じボタンで、Power BI サービスのダッシュボードとレポートをサブスクライブすることができます。

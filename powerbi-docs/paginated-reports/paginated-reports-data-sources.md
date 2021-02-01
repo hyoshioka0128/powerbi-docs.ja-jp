@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/07/2020
-ms.openlocfilehash: 4368230812d90031d1f7cf83d426fc1508382412
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.date: 01/21/2021
+ms.openlocfilehash: abb91ef54167f4a7d50f2dc36e23b2fc5833a65d
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781936"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687467"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートでサポートされるデータ ソース
 
@@ -31,7 +31,7 @@ ms.locfileid: "96781936"
 | Azure SQL Managed Instance | 基本 | パブリック エンドポイントまたはプライベート エンドポイント経由 (プライベート エンドポイントは、エンタープライズ ゲートウェイ経由でルーティングする必要があります)  |
 | Azure Analysis Services | SSO、OAuth2 | AAS ファイアウォールを無効にするか、BlackForest リージョンの IP 範囲をすべて許可するように構成する必要があります。 これは、BlackForest リージョンにのみ適用されます。  外部テナントからの SSO はサポートされていません。 |
 | Power BI データセット | SSO | Premium と Premium 以外の Power BI データセット。 読み取りのアクセス許可が必要です。 インポート モードと DirectQuery Power BI データセットのみがサポートされています。 |
-| Premium Power BI データセット (XMLA) | SSO | "アプリ所有データ" のシナリオでは、Power BI データセットは埋め込みのページ分割されたレポートのデータ ソースとしてはサポートされません。  Power BI レポート ビルダーで適切に接続できるようにするには、データ ソースを設定するときに [資格情報を使用しない] オプションが選択されていることを確認します。   |
+| Premium Power BI データセット (XMLA) | SSO | "アプリ所有データ" のシナリオでは、Power BI データセットは埋め込みのページ分割されたレポートのデータ ソースとしてはサポートされません。  Power BI Report Builder で適切に接続できるようにするには、データ ソースを設定するときに **[資格情報を使用しない]** オプションが選択されていることを確認します。<br />XMLA を使用してアクセスすると、ワークスペースまたはアプリのレベルで設定されたセキュリティ グループ メンバーシップが優先されます。<br />少なくとも[ワークスペースの共同作成者ロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)を持つユーザーは、Premium Power BI データセットでページ分割されたレポートを表示できます。 その他のユーザーは、[基になるデータセットに対するビルド アクセス許可](../connect-data/service-datasets-build-permissions.md)が必要です。    |
 | データの入力 | 該当なし | データはレポートに埋め込まれます。 |
 
 Azure SQL Database を除き、データ ソースはすべて、Power BI サービスにレポートをアップロードした後に使用できるようになります。 データ ソースは、既定でシングル サインオン (SSO) を使用するように設定されています (該当する場合)。 Azure Analysis Services では、認証の種類を OAuth2 に変更できます。 ただし、特定のデータ ソースの認証の種類が OAuth2 に変更されると、SSO を使用するように戻すことはできません。  また、この変更は、特定のテナントのすべてのワークスペースでそのデータ ソースを使用するすべてのレポートに適用されます。  ページ分割されたレポートの行レベルのセキュリティは、ユーザーが認証の種類に SSO を選択しない限り機能しません。
@@ -75,4 +75,4 @@ SSO と OAuth2 を正常に機能させるには、データ ソースが接続�
 
 [ページ分割されたレポートを Power BI サービスで表示する](../consumer/paginated-reports-view-power-bi-service.md)
 
-他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 04/05/2020
-ms.openlocfilehash: 42f110356c891235d17810dbb1f220f0a006c066
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: befb64ec85c02f8993d828202df06aafc5901482
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887088"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98781517"
 ---
 # <a name="export-paginated-report-to-file-preview"></a>ページ割り付けされたレポートをファイルにエクスポートする (プレビュー)
 
@@ -122,6 +122,42 @@ RLS の有効なユーザー名を指定する例を次に示します。
       }
 }
 ```
+
+### <a name="single-sign-on-sql-and-dataverse-sso"></a>シングル サインオンの SQL と Dataverse (SSO)
+
+Power BI には、SSO で OAuth を設定するオプションがあります。 その場合、レポートを表示しているユーザーの資格情報が、データを取得するために使用されます。 要求ヘッダー内のアクセス トークンはデータへのアクセスに使用されません。このトークンは、POST 本文内の有効な ID を使用して渡す必要があります。
+
+アクセス トークンに関して紛らわしい点は、アクセスするリソースに対して正しいアクセス トークンを取得することです。
+
+- Azure SQL の場合、リソースは `https://database.windows.net` です。
+- Dataverse の場合、リソースはお使いの環境の `https://` アドレスです。 たとえば、「 `https://contoso.crm.dynamics.com` 」のように指定します。
+
+[AuthenticationContext.AcquireTokenAsync](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) メソッドを使用して、トークン API にアクセスします。
+
+アクセス トークンで有効なユーザー名を指定する例を次に示します。
+
+```json
+{
+       "format":"PDF",
+       "paginatedReportConfiguration":{
+          "formatSettings":{
+             "AccessiblePDF":"true",
+             "PageHeight":"11in",
+             "PageWidth":"8.5in",
+             "MarginBottom":"2in"
+          },
+          "identities":[
+             {
+                "username":"john@contoso.com",
+                "identityBlob": {
+                "value": "eyJ0eX....full access token"
+         }
+        }
+     ]
+   }
+}
+```
+
 ## <a name="ppu-concurrent-requests"></a>PPU 同時要求数
 `exportToFile` API で [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) を使用すると、5 分間に 1 つの要求が許可されます。 5 分以内に複数の (1 を超える) 要求が発生すると、"*要求が多すぎる*" (429) エラーが発生します。
 

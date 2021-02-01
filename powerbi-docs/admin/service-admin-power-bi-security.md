@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 9019ed9e64bca94a87e2ab9b6febdb7a25055b75
-ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
+ms.openlocfilehash: b21443fd334e465ca5ced3efd00fe66828367615
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97961157"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98780938"
 ---
 # <a name="power-bi-security"></a>Power BI のセキュリティ
 
@@ -39,7 +39,7 @@ Power BI のそれぞれのデプロイは、Web フロントエンド (**WFE**)
 
 ## <a name="data-storage-security"></a>データ ストレージのセキュリティ
 
-Power BI では、データの格納と管理に 2 つの主要なリポジトリが使用されます。ユーザーからアップロードされるデータは通常、**Azure BLOB** ストレージに送信され、システムそのものに関するすべてのメタデータとアーティファクトは **Azure SQL Database** に格納されます。
+Power BI では、データの格納と管理に 2 つの主要なリポジトリが使用されます。ユーザーからアップロードされるデータは通常、**Azure Blob Storage** に送信され、システムそのものに関するすべてのメタデータと成果物は **Azure SQL Database** に格納されます。
 
 上記の **バックエンド** クラスターの図で、点線は、ユーザーからアクセス可能なコンポーネント (点線の左側) と、システムからのみアクセスできるロールという 2 つのコンポーネントの境界線を明確に示しています。 認証されたユーザーが Power BI サービスに接続したとき、クライアントからの接続とすべての要求は **ゲートウェイ ロール** に受け入れられ、そのロールで管理されます (最終的には **Azure API Management** で処理されます)。次に、このロールがユーザーに代わって Power BI サービスの残りの部分と対話します。 たとえば、クライアントがダッシュボードを表示しようとすると、**ゲートウェイ ロール** がその要求を受け入れ、それとは別に **プレゼンテーション ロール** に要求を送り、ブラウザーでダッシュボードを表示するために必要なデータを取得します。
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 01/11/2021
+ms.date: 01/19/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: f5d35d7fc189f055a6f51e493fd313eb31f0564f
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 03eac7aefdebb31eac353c969db2bf8810173395
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565984"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687365"
 ---
 # <a name="tutorial-from-dimensional-model-to-stunning-report-in-power-bi-desktop"></a>チュートリアル:Power BI Desktop でディメンション モデルから魅力的なレポートを作成する 
 
@@ -64,11 +64,10 @@ ms.locfileid: "98565984"
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="ナビゲーターにテーブルを読み込む。":::
 
-列のデータ型が次のテーブルのデータ型と一致することを確認します。 変更を加えるには、クエリを選択し、1 つ以上の列を選択します。
+列のデータ型が次のテーブルのデータ型と一致することを確認します。 Power BI で自動的にデータ型を検出できるようにするには、クエリを選択してから、1 つまたは複数の列を選択します。 **[変換]** タブで、 **[データ型の検出]** を選択します。 検出されたデータ型を変更するには、 **[ホーム]** タブで **[データ型]** を選択し、テーブルから適切なデータ型を選択します。
 
 :::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="列のデータ型を確認する。":::
 
-**[ホーム]** タブで、 **[データ型]** を選択し、テーブルから適切なデータ型を選択します。
 
 |クエリ  |列  |データ型  |
 |---------|---------|---------|
@@ -330,8 +329,9 @@ DAX 数式言語による "*メジャー*" の作成は、非常に強力なデ�
 
 1. レポート キャンバスの下半分の空白領域を選択します。 
 
-1. [フィールド] ウィンドウで、 **[Sales]** から **[Sales Amount]** 、 **[Product] (製品)** から **[Product Category] (製品カテゴリ)** 、 **[Reseller]** から **[Business Type] (業種)** をそれぞれ選択します。 
-
+1. [フィールド] ウィンドウで、 **[Sales]** から **[Sales Amount]** 、 **[Product] (製品)** から **[Product Category] (製品カテゴリ)** 、 **[Reseller]** から **[Business Type] (業種)** をそれぞれ選択します。
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-field-well.png" alt-text="[Category] と [Business Type] が [行] にあり、[Sales Amount] が [値] として選択されていることを確認します。":::
+    
     Power BI によって、集合縦棒グラフが自動的に作成されます。 視覚化を **[マトリックス]** に変更します。 
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-change-to-matrix.png" alt-text="集合縦棒グラフをマトリックスに変更する。":::
@@ -346,7 +346,7 @@ DAX 数式言語による "*メジャー*" の作成は、非常に強力なデ�
 
 1. マトリックスの [書式設定] ウィンドウで、 **[条件付き書式]** セクションを開き、 **[データ バー]** をオンにします。 **[詳細コントロール]** を選択し、正のバーに明るい色を設定します。 **[OK]** を選択します。 
 
-1. Sales Amount 列の幅を広げて、領域全体を覆います。 
+1. マトリックスをドラッグして Sales Amount 列の幅を広げ、領域全体を覆うようにします。
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-add-databars.png" alt-text="Sales Amount のデータ バーがあるマトリックス。":::
 

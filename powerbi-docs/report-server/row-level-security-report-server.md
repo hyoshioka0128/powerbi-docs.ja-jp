@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/22/2019
-ms.openlocfilehash: eb06bc41aaaeea9790c34bb808548506963b8cb8
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 01/22/2021
+ms.openlocfilehash: 50c89bdaa47aa8a687178a33627cf9148720acf2
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861845"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718579"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Power BI Report Server での行レベルのセキュリティ (RLS)
 
@@ -95,6 +95,7 @@ DirectQuery に対して統合セキュリティを使用している場合、�
 
 レポート作成者が Power BI Report Server 内でレポート データを表示するためのアクセス権を取得するには、レポートをアップロードした後、自分自身に適切なロールを割り当てる必要があります。 
 
+グループ メンバーシップを使用したロールの割り当ては、Power BI Report Server が NTLM または Kerberos 認証を使用して実行するように構成されている場合にのみサポートされます。 カスタム認証または Windows Basic を使用して実行しているサーバーの場合は、ユーザーがロールに明示的に割り当てられている必要があります。
  
 
 ## <a name="faq"></a>FAQ 

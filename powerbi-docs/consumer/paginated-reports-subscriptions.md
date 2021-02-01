@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/04/2021
-ms.openlocfilehash: 67efe0e7abd23792f46561f78b0b048b431561a4
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 01/22/2021
+ms.openlocfilehash: 88293bbfc39f75472422e6785099421efcd45802
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888008"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718533"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする 
 
@@ -23,13 +23,15 @@ Power BI サービスのページ分割されたレポートに対して自分�
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>ページ分割されたレポート サブスクリプションに関する考慮事項 
 
+- ご自分のサブスクリプションを作成する場合は、ページ分割されたレポートに対する編集アクセス許可は必要ありませんが、他のユーザー用に作成する場合は、編集アクセス許可が必要です。 ページ分割されたレポートが存在するワークスペースで少なくとも共同作成者ロールがある場合は、他のユーザー用にサブスクリプションを作成できます。 詳細については、[ワークスペースのロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)に関する記事を参照してください。
+
 - ダッシュボードまたは Power BI レポート用のサブスクリプションとは異なり、ご利用のサブスクリプションには、レポート出力全体の添付ファイルが含まれています。  次の添付ファイルの種類がサポートされています: PDF、PowerPoint プレゼンテーション (PPTX)、Excel ブック (XLSX)、Word 文書 (DOCX)、CSV ファイル、および XML。
 
 - レポートのプレビュー画像を電子メールの本文に含めることができます。  これは省略可能であり、選択した添付ファイル形式によっては、添付したレポート ドキュメントの最初のページと多少異なる場合があります。 
 
 - レポート添付ファイルの最大サイズは 24 MB です。 
 
-- Azure Analysis Services や Power BI のデータセットなど、現在サポートされているデータ ソースに接続する、他のユーザーのページ分割されたレポートをサブスクライブすることができます。 SQL Server Reporting Services で現在の方法と同様に、レポート添付ファイルでもご利用のアクセス許可に基づいてデータが反映されることに留意してください。 
+- Azure Analysis Services や Power BI のデータセットなど、現在サポートされているデータ ソースに接続するページ分割されたレポートに対して、他のユーザーをサブスクライブすることができます。 SQL Server Reporting Services で現在の方法と同様に、レポート添付ファイルでもご利用のアクセス許可に基づいてデータが反映されることに留意してください。 
 
 - 電子メール サブスクリプションは、ご利用のレポートに対して現在選択されているパラメーターまたは既定のパラメーターのいずれかを使用して送信できます。  ご利用のレポート用に作成するサブスクリプションごとに異なるパラメーター値を設定してもかまいません。 
 

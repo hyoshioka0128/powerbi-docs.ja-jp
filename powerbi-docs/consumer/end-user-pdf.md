@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/11/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 932149fc117568cffd94e6d551878f706a58ec65
-ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
+ms.openlocfilehash: d9d4677e8f0fe415f7a0169fb48ede7187c3fcf5
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191960"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718556"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Power BI から PDF にレポートをエクスポートする
 
@@ -57,7 +57,7 @@ Power BI サービスで、レポートを選択してそれをキャンバス�
 * 現在、R と Python ビジュアルはサポートされていません。 PDF では、これらのビジュアルは空白となり、エラー メッセージが表示されます。 
 * 認定を受けた Power BI ビジュアルはサポートされます。 Power BI ビジュアルの認定を受ける方法など、認定を受けた Power BI ビジュアルの詳細については、「[認定済みの Power BI ビジュアルを取得する](../developer/visuals/power-bi-custom-visuals-certified.md)」を参照してください。 認定を受けていない Power BI ビジュアルはサポートされません。 PDF では、それらはエラー メッセージを伴って表示されます。
 * ESRI 視覚エフェクトはサポートされていません
-* 現在、レポート ページが 50 ページを超えるレポートはエクスポートできません。
+* 現在、レポート ページが 50 ページを超える Power BI レポートはエクスポートできません。 ページ分割されたレポートには、この制限はありません。 詳細については、「[ページ分割されたレポートを印刷する](end-user-paginated-report.md#interact-with-a-paginated-report)」を参照してください。 
 * 現在、500 MB を超えるレポートをエクスポートすることはできません。 
 * レポートを PDF にエクスポートする処理が完了するまで数分かかる場合がありますので、しばらくお待ちください。 必要な時間に影響する要因としては、レポートの構造や、Power BI サービスの現在の負荷などがあります。
 * Power BI サービスで **[PDF にエクスポート]** メニュー項目を使用できない場合は、Power BI 管理者が機能を無効にしている可能性があります。 詳細については、管理者にお問い合わせください。

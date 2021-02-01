@@ -8,14 +8,14 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 01/20/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: 4ce463cb82fec7da8d7ec43db7914fb028368bc3
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: e708e5001e49841d01b60cfc8712d37b990102f2
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621259"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687122"
 ---
 # <a name="analyze-in-excel"></a>[Excel で分析]
 **[Excel で分析]** を使用すると、Power BI データセットを Excel に取り込み、ピボットテーブル、グラフ、スライサー、およびその他の Excel 機能を使用してデータセットを表示および操作できます。 **[Excel で分析]** を使用するには、まず Power BI から機能をダウンロードしてインストールし、Excel で使用する 1 つ以上のデータセットを選択する必要があります。 
@@ -34,11 +34,11 @@ ms.locfileid: "97621259"
 
 ## <a name="install-analyze-in-excel"></a>[Excel で分析] をインストールする
 
-Power BI サービスで提供されるリンクから **[Excel で分析]** をインストールする必要があります。 Power BI によってお使いのコンピューター上にある Excel のバージョンが検出され、適切なバージョン (32 ビットまたは 64 ビット) が自動的にダウンロードされます。 Power BI サービスがブラウザーで実行されます。 次のリンクを使用して Power BI にサインインできます。
+Power BI サービスで提供されるリンクから **[Excel で分析]** をインストールする必要があります。 Power BI によってお使いのコンピューター上にある Excel のバージョンが検出され、適切なバージョン (32 ビットまたは 64 ビット) が自動的にダウンロードされます。 次のリンクを使用して Power BI サービスにサインインできます。
 
 * [Power BI へのサインイン](https://app.powerbi.com)
 
-サインインして Power BI サービスがブラウザーで実行されたら、右上隅にある **[その他のオプション]** 項目 ([...]) を選択してから、 **[ダウンロード] > [Excel で分析の更新プログラム]** の順に選択します。 このメニュー項目は、[Excel で分析] の更新プログラムの新規インストールに適用されます。
+サインインして Power BI サービスがブラウザーで実行されたら、右上隅にある **[その他のオプション]** ([...]) を選択してから、 **[ダウンロード] > [Excel で分析の更新プログラム]** の順に選択します。 このメニュー項目は、[Excel で分析] の更新プログラムの新規インストールに適用されます。
 
 ![Power BI ホームから [Excel で分析] をダウンロードする](media/service-analyze-in-excel/analyze-excel-02.png)
 
@@ -160,23 +160,24 @@ Excel ファイルには、Power BI 内のユーザーのデータセットに�
 また、Excel の **データ型** ギャラリーで、**おすすめのテーブル** にアクセスすることもできます。 おすすめのテーブルとそれらにアクセスする方法の詳細については、「[Excel で Power BI のおすすめのテーブルにアクセスする (プレビュー)](service-excel-featured-tables.md)」をご覧ください。
 
 ## <a name="requirements"></a>必要条件
-**[Excel で分析]** を使用するには、次のいくつかの要件があります。
+**[Excel で分析]** を使用するためのいくつかの要件を次に示します。
 
 * **[Excel で分析]** は、Microsoft Excel 2010 SP1 以降でサポートされています。
-
 * Excel のピボット テーブルは、数値フィールドのドラッグ アンド ドロップでの集計をサポートしていません。 Power BI でのデータセットには、*メジャーを事前定義する必要があります*。 メジャーの作成方法については[こちら](../transform-model/desktop-measures.md)をご覧ください。
 * 一部の組織では、グループ ポリシーの規則により、必要な **[Excel で分析]** 更新プログラムを Excel にインストールできないことがあります。 更新プログラムをインストールできない場合は、管理者に問い合わせてください。
 * **[Excel で分析]** では、Power BI Premium にデータセットがあるか、またはユーザーが Power BI Pro ライセンスを持っている必要があります。 Power BI ライセンスの種類間での機能の違いについては、「[Power BI 料金](https://powerbi.microsoft.com/pricing/)」の「_Power BI 機能の比較_」セクションを参照してください。
-* 基になるデータセットに対するアクセス許可が与えられている場合、ユーザーは [Excel で分析] を使用してデータセットに接続できます。  データセットが含まれるワークスペースで Member ロールを与える、データセットが使用されるレポートやダッシュボードを共有する、データセットが含まれるワークスペースかアプリでデータセットの Build アクセス許可を与えるなど、ユーザーにはいくつかの方法でこのアクセス許可を与えることができます。 データセットの Build アクセス許可については[こちら](../connect-data/service-datasets-build-permissions.md)をご覧ください。
+* 基になるデータセットに対するアクセス許可が与えられている場合、ユーザーは [Excel で分析] を使用してデータセットに接続できます。  データセットが含まれるワークスペースで Member ロールを与える、またはデータセットが含まれるワークスペースかアプリでデータセットの Build アクセス許可を与えるなど、ユーザーにはいくつかの方法でこのアクセス許可を与えることができます。 データセットの Build アクセス許可については[こちら](../connect-data/service-datasets-build-permissions.md)をご覧ください。
 * ゲスト ユーザーは、別のテナントから送信された (別のテナントに由来する) データセットに対して、 **[Excel で分析]** を使用することはできません。 
 * **[Excel で分析]** は Power BI サービスの機能であり、Power BI Report Server と Power BI Embedded では使用できません。 
 * **[Excel で分析]** は、Microsoft Windows を実行しているコンピューターでのみサポートされます。
 
 
-**[Excel で分析]** 機能をアンインストールする必要がある場合は、Windows コンピューターの **[プログラムの追加と削除]** システム設定を使用して実行できます。
+**[Excel で分析]** 機能をアンインストールする必要がある場合は、コンピューター上の **[プログラムの追加と削除]** システム設定を使用します。
 
-## <a name="troubleshooting"></a>トラブルシューティング
-”Excel で分析” の使用中に、予期しない結果が出る場合や、機能が期待どおりに動作しない場合があります。 [このページでは、[Excel で分析] の使用中に発生する一般的な問題の解決方法を説明します](desktop-troubleshooting-analyze-in-excel.md)。
+## <a name="limitations-and-considerations"></a>制限事項と考慮事項
+
+- [Excel で分析] では行レベルのセキュリティ (RLS) がサポートされています。 RLS はデータモデル レベルで適用され、レポート内のデータにアクセスするすべてのユーザーに常に適用されます。 詳細については、[行レベルのセキュリティ](../admin/service-admin-rls.md)に関する記事を参照してください。
+- ”Excel で分析” の使用中に、予期しない結果が出る場合や、機能が期待どおりに動作しない場合があります。 一般的な問題の解決策については、[[Excel で分析] でのトラブルシューティング](desktop-troubleshooting-analyze-in-excel.md)に関する記事を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

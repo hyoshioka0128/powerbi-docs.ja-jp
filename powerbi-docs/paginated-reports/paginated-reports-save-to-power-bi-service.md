@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/04/2020
-ms.openlocfilehash: 28058161672de9db0cac5093e652e1d551f6a80a
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 01/25/2021
+ms.openlocfilehash: bbe88b206c4c07e2e296b9c85d46be7901f5972a
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297324"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861286"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>ページ分割されたレポートを Power BI サービスに発行する
 
@@ -27,27 +27,27 @@ ms.locfileid: "93297324"
 
 ワークスペースの名前の横にダイヤモンド形のアイコン ![Power BI Premium 容量のダイヤモンド形のアイコン](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) がない場合は、Premium 容量にワークスペースを追加する必要があります。 
 
-1. **[ワークスペース]** を選択し、ワークスペース名の横にある省略記号 **[...]** を選択して、 **[ワークスペースの編集]** を選択します。
+1. **[ワークスペース]** を選択し、ワークスペース名の横にある省略記号 **[...]** を選択して、**[ワークスペースの編集]** を選択します。
 
     ![[ワークスペースの編集] を選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 
-1. **[ワークスペースの編集]** ダイアログ ボックスで、 **[詳細設定]** を展開し、 **[専用の容量]** を **[オン]** にスライドします。
+1. **[ワークスペースの編集]** ダイアログ ボックスで、**[詳細設定]** を展開し、**[専用の容量]** を **[オン]** にスライドします。
 
     ![[専用の容量] を選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace-dialog.png)
 
    変更できない場合があります。 できない場合は、Power BI Premium 容量の管理者に連絡し、ワークスペースを Premium 容量に追加するための割り当て権限を付与してもらってください。
 
-## <a name="from-report-builder-publish-a-paginated-report"></a>レポート ビルダーから、ページ分割されたレポートを発行する
+## <a name="from-report-builder-publish-a-paginated-report-to-the-power-bi-service"></a>Report Builder から、ページ分割されたレポートを Power BI サービスに発行する
 
-1. レポート ビルダーでページ分割されたレポートを作成し、ローカル コンピューターに保存します。
+1. Report Builder でページ分割された新しいレポートを作成するか、Power BI サービスから既存のページ分割されたレポートを開きます。 サービスから既存のページ分割されたレポートを開く場合は、 **[保存]** オプションは無効になっています。これは、Power BI サービス内に存在しているレポートを更新するためです。
 
-1. レポート ビルダーの **[ファイル]** メニューで、 **[名前を付けて保存]** を選択します。
+1. Report Builder の **[ファイル]** メニューで、 **[発行]** を選択します。
 
-    ![[ファイル] メニュー > [保存] > [ファイルとして保存]](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
+    ![[ファイル] メニュー、[発行] の順に選択します。](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
 
     まだ Power BI にサインインしていない場合は、ここでサインインするか、アカウントを作成する必要があります。 レポート ビルダーの右上隅にある **[サインイン]** を選択し、手順を完了します。
 
-2. 左側のワークスペースのリストで、その名前の横にあるダイヤモンド形のアイコン ![Power BI Premium 容量のダイヤモンド形のアイコン](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) が付いたワークスペースを選択します。 ボックスに **ファイル名** を入力して、 **[保存]** を選択します。 
+2. 左側のワークスペースのリストで、その名前の横にあるダイヤモンド形のアイコン ![Power BI Premium 容量のダイヤモンド形のアイコン](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) が付いたワークスペースを選択します。 ボックスに **ファイル名** を入力して、**[保存]** を選択します。 
 
     ![Premium ワークスペースを選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
 
@@ -77,7 +77,7 @@ Power BI サービスから開始し、ページ分割されたレポートを�
 
     ![Power BI のファイルの取得](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-files-get.png)
 
-1. **[ローカル ファイル]** を選択し、ページ分割されたレポートを参照して、 **[開く]** を選択します。
+1. **[ローカル ファイル]** を選択し、ページ分割されたレポートを参照して、**[開く]** を選択します。
 
     ![[ローカル ファイル] を選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-local-file.png)
 
@@ -85,7 +85,7 @@ Power BI サービスから開始し、ページ分割されたレポートを�
 
     ![[資格情報の編集] を選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-edit-credentials.png)
 
-1. 資格情報を構成し、 **[サインイン]** を選択します。
+1. 資格情報を構成し、**[サインイン]** を選択します。
 
     ![資格情報を編集](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png)
 
