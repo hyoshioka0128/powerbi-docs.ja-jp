@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 01/25/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 9bd968676e2e9413c0d366cc22980e0a6355e4f9
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 723debee411f6c2198e750fe6cb319f90e469174
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395028"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861146"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI でサポートされる言語と国または地域
 
@@ -71,6 +71,9 @@ Power BI が利用可能な国と地域の一覧については、[ご利用い�
 * ウクライナ語 - українська
 * ベトナム語 - Tiếng Việt
 
+## <a name="languages-for-power-bi-desktop"></a>Power BI Desktop の言語
+Power BI Desktop は、ヘブライ語とアラビア語を除き、Power BI サービスと同じ言語で使用できます。 Desktop では、右から左に記述する言語はサポートされていません。
+
 ### <a name="whats-translated"></a>翻訳対象
 Power BI では、メニュー、ボタン、メッセージ、その他の UI 要素がユーザーの言語に翻訳されます。 たとえば、Power BI は、自動的に生成されたタイトル、フィルター、ツールヒントなどのレポート コンテンツを翻訳します。 ただし、データは自動的には翻訳されません。 ヘブライ語など、右から左へ記述する言語を使用している場合、レポート内では、ビジュアルのレイアウトが変更されません。
 
@@ -81,43 +84,42 @@ Power BI では、メニュー、ボタン、メッセージ、その他の UI �
 
 追加の機能も他の言語に順次翻訳されています。時折ご確認ください。 
 
+
 ### <a name="choose-your-language-in-the-power-bi-service"></a>Power BI サービスでの言語の選択
-1. Power BI サービスで、 **[設定]** アイコン![[設定] アイコンを表示している Power BI サービスのスクリーンショット](media/supported-languages-countries-regions/pbi_settings_icon.png) >  **[設定]** の順に選択します。
-2. **[全般]** タブ > **[言語]** で、。
-3. 言語を選択し、 **[適用]** をクリックします。
+1. Power BI サービスで、 **[設定]** アイコン ![[設定] アイコンが表示された Power BI サービスのスクリーンショット。](media/supported-languages-countries-regions/pbi_settings_icon.png) >  **[設定]** の順に選択します。
+2. **[全般]** タブで、 **[言語]** を選択します。
+3. ブラウザーに対して既に設定されている言語を使用するか、Power BI サービス用に別の言語を選択します。  
 
 ### <a name="choose-your-language-in-the-browser"></a>ブラウザーでの言語の選択
-Power BI では、コンピューターの言語設定を基に言語を検出します。 これらの設定へのアクセス、および変更方法は、オペレーティング システムやブラウザーによって異なる場合があります。 次に、Internet Explorer および Google Chrome から設定にアクセスする方法を示します。
+Power BI では、コンピューターの言語設定を基に言語を検出します。 これらの設定へのアクセス、および変更方法は、オペレーティング システムやブラウザーによって異なる場合があります。 次に、Microsoft Edge および Google Chrome から設定にアクセスする方法を示します。
 
-#### <a name="internet-explorer-version-11"></a>Internet Explorer (バージョン 11)
-1. ブラウザー ウィンドウの右上隅にある **[ツール]** ボタンをクリックします。
-   
-   ![[ツール] ボタンを表示している Internet Explorer のスクリーンショット。](media/supported-languages-countries-regions/languages1.png)
-2. **インターネット オプション** をクリックします。
-3. [インターネット オプション] ダイアログの [全般] タブの [デザイン] の下の、 **[言語]** ボタンをクリックします。
+#### <a name="microsoft-edge"></a>Microsoft Edge
+1. ブラウザー ウィンドウの右上隅にある **[設定など]** の省略記号 ([...]) を選択し、 **[設定]** を選択します。    
+    ![[設定など] アイコンが表示されている Edge のスクリーンショット。](media/supported-languages-countries-regions/power-bi-setting-icon.png)
 
-#### <a name="google-chrome-version-42"></a>Google Chrome (バージョン 42)
-1. ブラウザー ウィンドウの右上隅にある [メニュー] ボタンをクリックします。
+1. ブラウザー ウィンドウの左上隅にある **[設定]** アイコンを選択し、 **[言語]** を選択します。
    
-   ![メニュー ボタンを表示している Google Chrome のスクリーンショット。](media/supported-languages-countries-regions/languages2.png)
-2. **[設定]** をクリックします。
-3. **[詳細設定を表示]** をクリックします。
-4. [言語] の下の、 **[言語と入力の設定]** ボタンをクリックします。
-5. **[追加]** をクリックし、言語を選択して **[OK]** をクリックします。
+   ![[設定] ボタンが表示されている Edge のスクリーンショット。](media/supported-languages-countries-regions/power-bi-languages.png)
+
+1. 優先する言語を選択します。
+
+#### <a name="google-chrome-version-87"></a>Google Chrome (バージョン 87)
+1. ブラウザー ウィンドウの右上隅にあるメニュー ボタンを選択し、 **[設定]** を選択します。
    
-   ![言語の一覧を表示している Google Chrome のスクリーンショット。](media/supported-languages-countries-regions/pbi_langs_enus.png)
-   
-   新しい言語が一覧の末尾に表示されます。 
-6. 新しい言語を一覧の最上部にドラッグし、 **[Google Chrome をこの言語で表示]** をクリックします。
-   
-   ![表示言語を表示している Google Chrome のスクリーンショット。](media/supported-languages-countries-regions/pbi_langs_eses.png)
+   ![メニュー ボタンを表示している Google Chrome のスクリーンショット。](media/supported-languages-countries-regions/power-bi-chrome.png)
+ 
+3. **[詳細設定]** を展開し、 **[言語]** を選択します。
+
+    ![言語の設定が表示されている Google Chrome のスクリーンショット。](media/supported-languages-countries-regions/power-bi-chrome-settings.png)
+
+4. 新しい言語を追加するには、 **[言語を追加]** を選択します。
    
    変更内容を表示するには、ブラウザーを閉じて再度開かなければならない場合があります。
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>Power BI Desktop の言語またはロケールを選択する
-Power BI Desktop を入手するには2 つがあります。スタンドアロン インストーラーとしてダウンロードする方法と、Windows ストアからインストールする方法です。
+Power BI Desktop を入手するには2 つがあります。スタンドアロン インストーラーとしてダウンロードする方法と、Windows ストアからインストールする方法です。 
 
-* Windows ストアから Power BI Desktop をインストールすると、すべての言語がインストールされ、Windows の既定の言語に対応する言語が既定で表示されます。
+* Windows ストアから Power BI Desktop をインストールすると、すべての言語 (現在 42 言語) がインストールされ、Windows の既定の言語に対応する言語が既定で表示されます。
 * Power BI Desktop をスタンドアロン インストーラーとしてダウンロードする場合は、インストーラーを実行するときに既定の言語を選択します。 これは後で変更できます。
 * 特定のレポートの[データをインポートするときに使うロケールを選択する](#choose-the-locale-for-importing-data-into-power-bi-desktop)こともできます。
 
@@ -126,21 +128,11 @@ Power BI Desktop を入手するには2 つがあります。スタンドアロ�
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>Power BI Desktop の言語を選択する 
 1. Power BI Desktop を [Windows ストアから](https://aka.ms/pbidesktopstore)インストールするか、[スタンドアロン インストーラー](https://aka.ms/pbiSingleInstaller)としてインストールします。
-2. 言語を変更するには、Windows メニューの **[設定]** を選択します
+2. 言語を変更するには、Desktop を開き、左上隅から **[ファイル]**  >  **[オプションと設定]**  >  **[オプション]** の順に選択します。    
 
-3. **[Windows の設定]** で、 **[時刻と言語]** を選択します。
-   
-     ![[Windows の設定] ダイアログ ボックスを表示している Power BI Desktop のスクリーンショット。](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
-4. **[言語]** を選択し、言語を選択します。 必要に応じて、 **[Add a Windows display language in Microsoft Store]\(Microsoft Store に Windows 表示言語を追加する\)** を選択します。
-   
-     ![Windows の言語設定ダイアログ ボックスを表示している Power BI Desktop のスクリーンショット。](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
-   
-     次に Power BI Desktop を起動すると、既定値として設定した言語が使用されます。 
+   ![[オプション] ボタンが表示されている Power BI Desktop のスクリーンショット。](media/supported-languages-countries-regions/power-bi-desktop-options.png)    
 
-既定値をオーバーライドし、Windows 言語以外の言語で Power BI Desktop を使用するには、次の手順を行います。
-1. Power BI Desktop で、 **[ファイル]**  >  **[オプションと設定]**  >  **[オプション]** の順に移動します。
-2. **[グローバル設定]** で **[地域の設定]** を選択します。
-3. **[アプリケーション言語]** ボックスで、別のロケールを選択します。 
+1. **[地域の設定]** を選択して、優先する言語を設定または変更します。
 
 Power BI Desktop の言語サポートは、[アプリケーション言語] ドロップダウンに表示される言語に限定されます。
 
@@ -154,7 +146,7 @@ Power BI Desktop は、Windows の地域設定から既定の数値と日付の�
    
      ![[Windows の設定] ダイアログ ボックスを表示している Power BI Desktop のスクリーンショット。](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 
-3. **[地域]**  >  **[日付、時刻、地域の追加設定]** を選択します。
+3. **[地域]**  >  **[日付、時刻、地域の追加設定]** を選択します。 このオプションが表示されない場合は、 **[Change data formats]\(データ形式の変更\)** を選択し、 **[関連設定]** を選択します。
 
     :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-region-settings.png" alt-text="[日付、時刻、地域の追加設定]":::
 

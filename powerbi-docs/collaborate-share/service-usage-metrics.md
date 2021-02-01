@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/15/2021
+ms.date: 01/26/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: acb1a1550c0ab216e4934e99f871df9321561314
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 2710143ddd0474e38e7c0c1e6f82ba9c3d1fbba3
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565435"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861240"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>クラシック ワークスペースで使用状況メトリックを監視する
 
@@ -157,12 +157,12 @@ Power BI は別個の国内クラウドで利用できます。 これらのク�
 
 * 一貫性のないネットワーク接続やアド ブロッカー、またはクライアントからのイベントの送信を妨害する可能性があるその他の問題が原因で、使用状況メトリックがアクティビティを少なくカウントする場合があります。
 * この記事で前述したように、特定の種類のビューは利用状況の指標に含まれません。
-* Power BI サービスに要求を送り返すことなくクライアントが更新を行う状況では、利用状況の指標がアクティビティを多くカウントする場合があります。
+* Power BI サービスに要求を送り返すことなくクライアントが更新を行う状況では、利用状況の指標がアクティビティを多くカウントする場合があります。 たとえば、レポート ページを切り替えても、そのページの定義は既にブラウザー内に存在するため、レポートを読み込む要求がサーバーに発行されることはありません。
 * 使用状況メトリック レポートの共有は無効になっています。 ユーザーにレポートへの読み取りアクセス権を付与するには、まずワークスペースへのアクセス権を付与する必要があります。
 
 ### <a name="discrepancies-between-rest-apis-and-usage-metrics"></a>REST API と使用状況メトリックの違い
 
-Power BI の[レポート REST API](/rest/api/power-bi/reports) および[管理 REST API](/rest/api/power-bi/admin) では Power BI サービス データも使用されます。 前のセクションで説明した理由により、API のレポート数は、使用状況メトリックのレポート数とは異なる場合があります。 API から派生したレポート数は、クライアントの問題の影響を受けないため、正確であると見なされます。
+Power BI の[レポート REST API](/rest/api/power-bi/reports) および[管理 REST API](/rest/api/power-bi/admin) では Power BI サービス データも使用されます。 前のセクションで説明した理由により、API のレポート数は、使用状況メトリックのレポート数とは異なる場合があります。 API から派生したレポート数は、クライアントの問題の影響を受けないため、正確であると見なされます。 また、管理 API では Power BI デプロイの "現在の状態" が提供され、要求の時点で存在しているものだけが考慮されることにも注意してください。 クラシック使用状況メトリック レポートには 90 日分のデータが含まれており、その "合計数" は 90 日間に閲覧された一意のレポート数を表します。 閲覧後に削除されたレポートは、管理 API ではカウントされませんが、使用状況レポートで使用される履歴データではカウントされます。
 
 ### <a name="classic-usage-metrics-are-not-supported-with-private-links"></a>クラシックの使用状況メトリックは、プライベート リンクでサポートされていません 
 

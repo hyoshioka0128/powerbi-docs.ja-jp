@@ -8,15 +8,15 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 11/16/2020
+ms.date: 01/25/2021
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: 852ac027903dc974e84691dc714a7e7e220dd36d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a3492383d5341518de178419afe29df1af8fa26b
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390451"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861263"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>"*ビジネス ユーザー*" のライセンスとサブスクリプション
 
@@ -36,60 +36,65 @@ Power BI サービスで何ができるかは、次の 3 つのことによっ�
 
 ## <a name="licenses"></a>ライセンス
 
-Power BI サービスの各ユーザーは、*無料* ライセンスまたは *Pro* ライセンスのいずれかを持っています。 Power BI "*ビジネス ユーザー*" の場合は、おそらく、Power BI 管理者によって管理されている無料ライセンスを使用しています。
+Power BI サービスの各ユーザーは、*Free* ライセンス、*Pro* ライセンス、または *Premium Per User** ライセンスのいずれかを持っています。 Power BI "*ビジネス ユーザー*" の場合は、おそらく、Power BI 管理者によって管理されている無料ライセンスを使用しています。
 
 複数のライセンスを同時に所有している可能性もあります。  サービスでは、常に、ユーザーが現在所有している最も制限の少ないライセンスに等しいエクスペリエンスが提供されます。
 
-## <a name="power-bi-premium-capacity"></a>Power BI Premium 容量
+## <a name="power-bi-premium-capacity-subscription"></a>Power BI Premium 容量サブスクリプション
 
-Premium は組織のサブスクリプションであり、コンテンツの格納方法が異なります (容量)。 Premium を使用すれば、アクセス許可を持つ組織内または組織外いずれのユーザーも、個別の Power BI Pro ライセンスを購入することなく、この Premium 容量に格納されているコンテンツを見ることができます。 
+Premium は組織の "*サブスクリプション*" であり、コンテンツの格納方法が異なります。そこでは "*容量*" と呼ばれる仮想コンテナーを使用します。 Premium 容量を使用すると、アクセス許可を持つ組織内または組織外いずれのユーザーも、個別の Power BI Pro または Premium Per User ライセンスを購入することなく、この Premium 容量に格納されているコンテンツを見ることができます。 
 
-Premium では、コンテンツを表示する受信者に Pro ライセンスを要求することなく、Pro ユーザーによるコンテンツの広範囲な配信が可能になります。 コンテンツ デザイナーの場合は Pro ライセンスが必要です。 デザイナーは、データ ソースに接続し、データをモデル化し、ワークスペースのアプリとしてパッケージ化されるレポートおよびダッシュボードを作成できます。 Pro ライセンスを持たないユーザーは Power BI Premium 容量内のワークスペースに、[そのワークスペースでのロール](end-user-workspaces.md)を割り当てられている限りアクセスできます。
+Premium 容量では、コンテンツを表示する受信者に Pro ライセンスを要求することなく、Pro ユーザーによるコンテンツの広範囲な配信が可能になります。 Premium 容量にコンテンツを作成するユーザーは、Pro ライセンスを使用してデータ ソースに接続し、データをモデル化し、Premium 容量内のワークスペースに保存されるレポートとダッシュボードを作成します。 Pro ライセンスを持たないユーザーは Power BI Premium 容量内のワークスペースに、[そのワークスペースでのロール](end-user-workspaces.md)を割り当てられている限りアクセスできます。 ワークスペースの所有者がそのワークスペース内のコンテンツに基づいてアプリを作成した場合でも、Pro ライセンスのないユーザーにそのアプリのアクセス許可が付与されていれば、引き続き Premium 容量内のそのアプリを表示できます。 
 
 それらのワークスペース内では、デザイナーによって、**ビューアー**、**共同作成者**、**メンバー**、**管理者** などのロールが割り当てられます。 これらのロールによって、同僚がコンテンツと対話できる範囲が決まります。 詳細については、[ワークスペースのアクセス許可とロール](end-user-workspaces.md)に関する記事をご覧ください。 
+
+デザイナーがアプリを作成して発行するときに、組織全体または個人に対してアクセス権を付与します。 ユーザーがアプリのコンテンツと対話できる範囲は、付与されている特定のアクセス許可によって異なります。 たとえば、ユーザーに対して、アプリを表示したり、基になるデータセットに接続したり、レポートのコピーを作成したり、コンテンツを共有したりするためのアクセス権を付与することができます。
 
 Premium 容量の詳細については、「[Power BI Premium とは](../admin/service-premium-what-is.md)」をご覧ください。
 
 ## <a name="find-out-which-licenses-you-have"></a>使用しているライセンスを確認する
-アカウント情報を表示するには、プロファイル画像を選択します。 Zalan は無料ライセンスを使用しています。 
+アカウント情報を表示するには、プロファイル画像を選択します。 Zalan は無料ライセンスを使用しています。 その他の種類のライセンスは、**Pro** と **Premium Per User** です。 
 
 ![プロファイル画像をクリックすると表示されるドロップダウンのスクリーンショット](media/end-user-license/power-bi-profiles.png)
 
 
-アカウントの詳細を表示するには、 **[アカウントを表示]** を選択します。 新しいブラウザー タブに [Microsoft の **[マイ アカウント]** ページ](https://portal.office.com/account)が開かれます。自分に割り当てられているライセンスを確認するには。  **[サブスクリプション]** タブをクリックします。
+アカウントの詳細を表示するには、 **[アカウントを表示]** を選択します。 
 
-![Microsoft 365 の [アカウント] ページのスクリーンショット。](media/end-user-license/power-bi-subscriptions.png)
+<!-- [Your Microsoft **My account** page](https://portal.office.com/account) opens in a new browser tab.  To see what licenses are assigned to you.  Select the tab for  **Subscriptions**.
 
+![Screenshot of Microsoft 365 Accounts page.](media/end-user-license/power-bi-subscriptions.png)
 
+This first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro license.
 
+![Office portal subscriptions tab showing Office 365 E5 subscription](media/end-user-license/power-bi-license-office.png)
 
-この最初のユーザー Pradtanna は Office 365 E5 を使用しています。これには、Power BI Pro ライセンスが含まれています。
+This second user, Zalan, has a Power BI free license. 
 
-![Office 365 E5 サブスクリプションを示す Office ポータルの [サブスクリプション] タブ](media/end-user-license/power-bi-license-office.png)
+![Office portal subscriptions tab](media/end-user-license/power-bi-license-free.png) 
 
-この 2 番目のユーザー Zalan は、Power BI Free ライセンスを持っています。 
+## Find out if you have access to Premium capacity
 
-![Office ポータルの [サブスクリプション] タブ](media/end-user-license/power-bi-license-free.png)
+Next, check to see if you're part of an organization that has Premium capacity. Either of the users above, Pro or free, could belong to an organization that has Premium capacity.  Let's check for our second user, Zalan.  
 
-## <a name="find-out-if-you-have-access-to-premium-capacity"></a>Premium 容量にアクセスできるかどうかを確認する
+We can determine whether Zalan's organization has Premium capacity by looking up the amount of storage available. 
 
-次に、自分が Premium 容量を持つ組織に属しているかどうかを確認します。 上記のいずれかのユーザー (Pro または Free) は、Premium 容量を持っている組織に属すことができます。  2 番目のユーザー Zalan について確認してみましょう。  
+- In the Power BI service, select **My workspace** and then select the cog icon from the upper right corner. Choose **Manage personal storage**.
 
-使用可能なストレージの量を調べることで、Zalan の組織が Premium 容量を使用しているかどうかを確認できます。 
+    ![Cog Settings menu displays](media/end-user-license/power-bi-license-personal.png)
 
-- Power BI サービスで、 **[マイ ワークスペース]** を選択して、右上隅の歯車アイコンを選択します。 **[パーソナル ストレージの管理]** を選択します。
+    If you see more than 10 GB, then you're a member of an organization that has a Premium subscription. The image below shows that Zalan's organization has up to 100 GB of storage. Zalan, personally, doesn't own 100GB as indicated by the heading **Owned by us**.  
 
-    ![歯車アイコンで [設定] メニューを表示する](media/end-user-license/power-bi-license-personal.png)
+    ![Manage storage showing 100 GB](media/end-user-license/power-bi-free-capacity.png)
 
-    10 GB より大きい値が表示される場合は、Premium サブスクリプションを持つ組織のメンバーです。 次の図では、Zalan の組織に最大 100 GB のストレージがあることが示されています。  
+    Notice that a Pro user has already shared a workspace with Zalan. The diamond icon shows that this workspace is stored in Premium capacity. 
 
-    ![100 GB を示す [ストレージの管理] 画面](media/end-user-license/power-bi-free-capacity.png)
+    If you see any amount of storage, the words **Pro user** next to your name, and the heading **Owned by me**, then you have a Premium per-user license.  
 
-Pro ユーザーは既に Zalan とワークスペースを共有していることに注目します。 ダイヤモンドのアイコンは、このワークスペースが Premium 容量内に格納されていることを示します。 
+    -->
 
 ## <a name="identify-content-hosted-in-premium-capacity"></a>Premium 容量でホストされているコンテンツを識別する
 
-組織が Premium 容量かどうかを確認するもう 1 つの方法は、ダイヤモンド型のアイコンが付いたアプリとアプリ ワークスペースを探すことです。 ダイヤモンドは、コンテンツが Premium 容量内に格納されていることを示します。 
+Premium 容量に格納されているコンテンツを識別するには、いくつかの方法があります。 1 つの方法は、ダイヤモンドのアイコンが付いているアプリとアプリ ワークスペースを探すことです。 ダイヤモンドは、コンテンツが Premium 容量内に格納されていることを示します。 
 
 次の図では、3 つのアプリが Premium 容量に格納されています。
 
@@ -99,21 +104,21 @@ Pro ユーザーは既に Zalan とワークスペースを共有しているこ
 
 ## <a name="putting-it-all-together"></a>まとめ
 
-組織が Premium サブスクリプションを購入する場合、管理者は通常、Premium 容量内で作業を行い、コンテンツの作成と共有を行う従業員に対して、Pro ライセンスを割り当てます。 Pro ユーザーは、[ワークスペース](end-user-workspaces.md)を作成し、それらのワークスペースにコンテンツ (ダッシュボード、レポート、アプリ) を追加します。 それらのワークスペース内で Free ユーザーが共同作業できるようにするには、管理者または Pro ユーザーは、"*容量*" にワークスペースを割り当てます。  
+組織で Power BI のサブスクリプションとライセンスを整理する方法は多数あります。 "*ビジネス ユーザー*" の観点から最も一般的なシナリオの 1 つは、組織で Premium サブスクリプションを購入したときに、管理者が Pro ライセンスを少数のユーザーに割り当て、他のすべてのユーザーは Free ライセンスで作業するというものです。 通常、管理者は、コンテンツの作成と共有を行う従業員に Pro ライセンスを割り当てます。 Pro ユーザーは、[ワークスペース](end-user-workspaces.md)を作成し、それらのワークスペースにコンテンツ (ダッシュボード、レポート、データセット、アプリ) を追加します。 それらのワークスペース内で Free ユーザーが共同作業できるようにするには、次に、管理者または Pro ユーザーがそのワークスペースを "*Premium 容量*" に割り当てます。  
 
-|ライセンスの種類  |共有された容量 | Premium 容量  |
+|ライセンスの種類  |Premium 容量でない | Premium 容量  |
 |---------|---------|---------|
-|**Free**     |  自分用のコンテンツを作成してそのコンテンツと対話する、個人用サンドボックスとして使用します。 Free ライセンスは、Power BI サービスを試すのに適した方法です。 他のユーザーのコンテンツを使用したり、自分のコンテンツを他のユーザーと共有したりすることはできません <sup>1</sup>     |   Premium 容量に割り当てられているコンテンツ、および他のユーザーから共有されているコンテンツを使用します。 Free ユーザーと Pro ユーザーは、Free ユーザーが Pro アカウントを持っていなくても共同作業を行うことができます。      |
-|**Pro**     |  コンテンツを作成して共有することで、他の Pro ユーザーと共同作業します。        |  コンテンツを作成して共有することで、Free および Pro ユーザーと共同作業します。       |
+|**Free**     |  自分用のコンテンツを作成してそのコンテンツと対話する、個人用サンドボックスとして使用します。 Free ライセンスは、Power BI サービスを試すのに適した方法です。 他のユーザーのコンテンツを使用したり、自分のコンテンツを他のユーザーと共有したりすることはできません <sup>1</sup>     |   Premium 容量に割り当てられているコンテンツ、および他のユーザーから共有されているコンテンツを使用します。 Free、Premium Per User、および Pro ユーザーは、Free ユーザーが Pro アカウントを持っていなくても共同作業を行うことができます。      |
+|**Pro**     |  コンテンツを作成して共有することで、Premium Per User および Pro ユーザーと共同作業を行います。        |  コンテンツを作成して共有することで、Free、Premium Per User、および Pro ユーザーと共同作業を行います。       |
 
 
 <sup>1</sup> 「[考慮事項とトラブルシューティング](#considerations-and-troubleshooting)」をご覧ください。
 
 次の図の左側は、アプリ ワークスペース内でコンテンツを作成および共有する Pro ユーザーを表しています。
 
-- **ワークスペース A** は、Premium 容量を持たない組織で作成されました。
+- **ワークスペース A** は Premium 容量内で作成されませんでした。
 
-- **ワークスペース B** は、Premium サブスクリプションを持つ組織で作成されました。 このワークスペースは容量に保存されました。 このワークスペースには、ダイヤモンド アイコンが付いています。  
+- **ワークスペース B** は Premium 容量内で作成および保存されました。 このワークスペースには、ダイヤモンド アイコンが付いています。  
 
     ![3 つのワークスペースの画像](media/end-user-license/power-bi-dedicated.jpg)
 
@@ -123,7 +128,7 @@ Power BI Pro "*デザイナー*" は、いずれかのワークスペースで�
 
 - 複数の Power BI ライセンスを所有している場合があります。 Power BI サービスでは、常に、現在所有している最もよいライセンスと同じエクスペリエンスが提供されます。 たとえば、Pro ライセンスと Free ライセンスの両方がある場合、Power BI サービスでは Pro ライセンスが使用されます。
 
-- コンテンツ (ダッシュボード、レポート、アプリ) を作成して共有する場合、または他のユーザーが自分と共有したコンテンツを開く場合は、Pro ユーザー ライセンスを持っている必要があります。 60 日間無料の Power BI Pro の個人向け試用版にサインアップできます。 Pro 機能を使用しようとするたびに Power BI サービスに表示される、アップグレード ダイアログを選択します。
+- コンテンツ (ダッシュボード、レポート、アプリ) を作成して共有する場合、または他のユーザーが自分と共有したコンテンツを開く場合は、Pro ユーザー ライセンスまたは Premium Per User ライセンスを持っている必要があります。 60 日間無料の Power BI Pro の個人向け試用版にサインアップできます。 Pro 機能を使用しようとするたびに Power BI サービスに表示される、アップグレード ダイアログを選択します。
 
     ![Pro 試用版のリンクを含むダイアログ](media/end-user-license/power-bi-trial.png)
 

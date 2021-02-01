@@ -7,31 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 01/20/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: b0132996be1ed70f228ce96d413c4925dc1a3e48
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: f68c01e503400b83fe3e0488fdc49e15f55d7067
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512771"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687053"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premium の Multi-Geo のサポートを構成する
 
-Multi-Geo は、多国籍企業のお客様が、リージョン、業界固有、または組織のデータの配置場所に関する要件に対応するために役立つ Power BI Premium の機能です。 Power BI Premium をご利用の場合、Power BI テナントのホーム リージョン以外のリージョンにあるデータセンターにコンテンツを展開できます。 geo (地域) には、複数のリージョンが含まれる可能性があります。 たとえば、米国は geo であり、米国中西部と米国中南部は米国のリージョンです。 次のいずれかのリージョンにコンテンツを展開することができます。
+Multi-Geo は、多国籍企業のお客様が、リージョン、業界固有、または組織のデータの配置場所に関する要件に対応するために役立つ Power BI Premium の機能です。 Power BI Premium をご利用の場合、Power BI テナントのホーム リージョン以外のリージョンにあるデータセンターにコンテンツを展開できます。 geo (地域) には、複数のリージョンが含まれる可能性があります。 たとえば、米国は geo であり、米国中西部と米国中南部は米国のリージョンです。 [Azure 地域のマップ](https://azure.microsoft.com/global-infrastructure/geographies/)で定義されている地域 (geo) のいずれかにコンテンツを展開できます。
 
-- United States
-- Canada
-- イギリス
-- ブラジル
-- ヨーロッパ
-- 日本
-- インド
-- アジア太平洋
-- オーストラリア
-- アフリカ
+ソブリン クラウドでは、そのクラウド内の各リージョンにまたがる複数の geo がサポートされています。
 
-Multi-Geo は、Power BI Germany、21Vianet が運営する Power BI China、または米国政府向け Power BI では使用できません。
+> [!NOTE]
+> 現在、中国北部では Premium Gen2 容量に対して複数の geo がサポートされていません。
 
 Multi-Geo は、Power BI Embedded でも使用できるようになりました。 詳細については、「[Power BI Embedded の Multi-Geo のサポート](../developer/embedded/embedded-multi-geo.md)」をご覧ください。
 

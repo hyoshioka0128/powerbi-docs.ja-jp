@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/11/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 00c375267ceaede23b317fb71d76e31e4ae66a83
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0c13d0f54d18527e6b8614f40b5b15fd46187968
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408644"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718510"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>組織のユーザーに Power BI サービスのライセンスを与える
 
@@ -121,7 +121,7 @@ Power BI Pro のライセンス ライフサイクルは Microsoft 365 と同じ
 
 Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
 * パフォーマンス
-* ユーザーごとのライセンス
+* ユーザーごとのライセンス。 詳細については、[Premium Per User の FAQ](service-premium-per-user-faq.md) を参照してください。
 * より大きなスケール
 * メトリックの改善
 * 自動スケール

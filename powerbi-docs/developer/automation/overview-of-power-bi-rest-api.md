@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
-ms.openlocfilehash: 122028b2ac838763318ab5a0c4e6208138d93188
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 8fac168bf4e2d1cb7b386a1e22da99f39b579da8
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887617"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98781561"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Power BI API の開発者向け機能
 
@@ -37,8 +37,8 @@ Power BI API を使って行うことのできる例は以下のとおりです�
 
 | ツール | Description |
 |---------|-------------|
-| [プレイグラウンド ツール](https://microsoft.github.io/PowerBI-JavaScript/demo) | Power BI JavaScript API を使用した完全なサンプルを体験できます。 このツールを使うと、さまざまな種類の Power BI Embedded のサンプルを簡単に再生することもできます。 |
-| [Power BI JavaScript Wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | Power BI JavaScript API の詳細情報が得られます。 |
+| [プレイグラウンド ツール](https://microsoft.github.io/PowerBI-JavaScript/demo) | Power BI 埋め込み分析のクライアント API を使用した完全なサンプルを体験できます。 このツールを使うと、さまざまな種類の Power BI Embedded のサンプルを簡単に再生することもできます。 |
+| [Power BI 埋め込み分析のクライアント API](/javascript/api/overview/powerbi/) | Power BI クライアント API の詳細情報が得られます。 |
 | [Postman](https://www.getpostman.com/) | 要求の実行、テスト、デバッグ、監視、自動テストの実行などを行います。 |
 
 ## <a name="push-data-into-power-bi"></a>Power BI にデータをプッシュする
@@ -51,7 +51,7 @@ Power BI API を使って、[データセットにデータをプッシュ](walk
 
 * [Power BI の開発者向けサンプル](https://github.com/Microsoft/PowerBI-Developer-Samples)
 * [.NET SDK](https://github.com/Microsoft/PowerBI-CSharp)
-* [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
+* [Power BI 埋め込み分析のクライアント API](/javascript/api/overview/powerbi/)
 
 ## <a name="next-steps"></a>次の手順
 

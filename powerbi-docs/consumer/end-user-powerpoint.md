@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: df0591e7ae934ffa945e0e780b2764c7170358f1
-ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
+ms.openlocfilehash: 6001cbd1b503084012b358c4dabf7db27405b9c4
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98227033"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718625"
 ---
 # <a name="export-reports-to-powerpoint"></a>レポートを PowerPoint にエクスポートする
 
@@ -37,8 +37,6 @@ Power BI サービスから一度に 1 つのビジュアルをコピーし、Po
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Power BI レポートを PowerPoint にエクスポートする
 **Power BI サービス** で、キャンバスに表示するレポートを選択します。 レポートは、 **[ホーム]** 、 **[アプリ]** 、またはナビゲーション ウィンドウの他の任意のコンテナーから選択することもできます。
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 PowerPoint にエクスポートするレポートがキャンバスに表示されているとき、メニュー バーから **[ファイル]** 、 **[PowerPoint へのエクスポート]** の順に選択します。
 
@@ -89,9 +87,7 @@ PowerPoint デッキや高解像度画像についての作業を自由に行う
 "**PowerPoint へのエクスポート**" 機能を使用する場合は、留意すべき注意事項と制限事項がいくつかあります。
  
 
-* **[エクスポート]** オプションが表示されない場合、確実に "新しい外観" をオンにし、(ダッシュボードではなく) レポートを表示してください。
-
-    ![[新しい外観] トグルのスクリーンショット](media/end-user-powerpoint/power-bi-new-look.png)
+* **[エクスポート]** オプションが表示されない場合は、確実に (ダッシュボードではなく) レポートを表示してください。
 
 * 現在、エクスポートに **[現在の値]** を選択した場合、[URL フィルター](../collaborate-share/service-url-filters.md)は適用されません。
 
@@ -105,7 +101,7 @@ PowerPoint デッキや高解像度画像についての作業を自由に行う
 
 * 一部のレポートはエクスポートできません。 次のようなものが含まれます。
     - 組織外の人、つまり、Power BI テナント内にいないユーザーとダッシュボードを共有している場合、そのユーザーは共有されたダッシュ ボードに関連付けられているレポートを PowerPoint にエクスポートできません。 たとえば、ユーザー aaron@contoso.com は david@cohowinery.com と共有することができます。 しかし、david@cohowinery.com は関連付けられたレポートを PowerPoint にエクスポートできません。
-    - 50 を超えるレポート ページを含むレポート。
+    - 50 を超えるレポート ページを含むレポート。 ページ分割されたレポートには、この制限はありません。 詳細については、「[ページ分割されたレポートを印刷する](end-user-paginated-report.md#interact-with-a-paginated-report)」を参照してください。
     - エクスポート時に 500 MB を超えるレポート。 
     - 以前のバージョンの PowerPoint へのレポートのエクスポート。
     - 処理に 1 時間以上かかるレポート。 

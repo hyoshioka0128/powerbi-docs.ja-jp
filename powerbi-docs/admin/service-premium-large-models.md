@@ -7,25 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 01/21/2021
 ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 7256e17f561aa79d63b7fefd268df560903de6b2
-ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
+ms.openlocfilehash: 4fd953eac998e954579af83f2acec975f66e7436
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97353107"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687030"
 ---
 # <a name="large-datasets-in-power-bi-premium"></a>Power BI Premium での大規模なデータセット
 
-Power BI データセットでは、クエリ パフォーマンスが最適化されるように、データを圧縮率の高い、メモリ内キャッシュに格納できます。これにより、ユーザー対話機能が高速になります。 Premium 容量に関しては、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** 設定を使用することで、既定の 10 GB の上限を超える大規模なデータセットを有効にすることができます。 有効にすると、データセットのサイズが Premium *容量* サイズか、管理者によって設定された最大サイズに制限されます。
+Power BI データセットでは、クエリ パフォーマンスが最適化されるように、データを圧縮率の高い、メモリ内キャッシュに格納できます。これにより、ユーザー対話機能が高速になります。 Premium 容量に関しては、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** 設定を使用することで、既定の上限を超える大規模なデータセットを有効にすることができます。 有効にすると、データセットのサイズが Premium *容量* サイズか、管理者によって設定された最大サイズに制限されます。
 
 すべての Premium P SKU および Embedded A SKU に対して、大規模なデータセットを有効にすることができます。 Premium での大規模なデータセットのサイズ制限は、データ モデルのサイズ制限の観点から、Azure Analysis Services に相当します。
 
 データセットを 10 GB を超えて拡張する必要がありますが、[Large dataset storage format]\(大規模なデータセットのストレージ形式\) 設定を有効にすれば、追加の利点が得られます。 データセットの書き込み操作に XMLA エンドポイントベースのツールを使用する予定がある場合は、"*大規模な*" データセットとして必ずしも特徴付けるとは限らないデータセットについても、当該設定を必ず有効にしてください。 有効にすると、大規模なデータセットのストレージ形式によって、XMLA 書き込み操作のパフォーマンスが向上します。
 
-Power BI Desktop モデルのアップロード サイズは、このサービスの大規模なデータセットの影響を受けることはなく、引き続き 10 GB に制限されます。 その代わり、データセットは更新時にサービス内で 10 GB を超える可能性があります。
+Power BI Desktop モデルのアップロード サイズは、このサービスの大規模なデータセットの影響を受けることはなく、引き続き 10 GB に制限されます。 その代わり、データセットは更新時にサービス内でその上限を超える可能性があります。
+
+> [!IMPORTANT]
+> Power BI Premium では大規模なデータセットがサポートされています。 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** オプションを有効にすると、既定の上限を超えるデータセットを Power BI Premium で使用できます。 
+
 
 ## <a name="enable-large-datasets"></a>大規模なデータセットを有効にする
 
