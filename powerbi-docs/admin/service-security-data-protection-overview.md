@@ -9,12 +9,12 @@ ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 09/17/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4405b83dae3d517b16099725ab10990cc8e503f4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: d3d5721ff3b00b4a739a95dea9070d4c5c9d26b5
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413359"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086282"
 ---
 # <a name="data-protection-in-power-bi"></a>Power BI におけるデータ保護
 
@@ -36,7 +36,7 @@ Power BI のデータ保護機能を使用すると、次のことができる�
 * Cloud App Security を使用したアラート、セッション監視、リスクの修復により、**機密性の高いデータに対するユーザー アクティビティをリアルタイムで監視および保護する**。
 * Microsoft Cloud App Security でデータ保護レポートとセキュリティ調査機能を使用する **セキュリティ管理者を強化** して、組織の監視を強化する。
 
-詳細については、[Microsoft Information Protection の秘密度ラベル](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)と [Cloud App Security](/cloud-app-security/what-is-cloud-app-security) に関するページを参照してください。
+詳細については、[Microsoft Information Protection の秘密度ラベル](/microsoft-365/compliance/sensitivity-labels)と [Cloud App Security](/cloud-app-security/what-is-cloud-app-security) に関するページを参照してください。
 
 
 ## <a name="next-steps"></a>次のステップ

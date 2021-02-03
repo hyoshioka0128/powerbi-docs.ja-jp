@@ -2,19 +2,19 @@
 title: Power BI 開発者 (1 日) コース
 description: このビデオベースのコースでは、アプリ開発者として、Power BI コンテンツを埋め込むために必要な技術知識を学ぶことができます。
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: yana.berkovich
 featuredvideoid: dv-ep90wse8
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: tutorial
 ms.date: 06/01/2020
-ms.openlocfilehash: 67633bf4362984d0a1e3b6a6aa8b74de3747191f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: de53a528ef72c3dc46ea507152a66f8343e0e37e
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414900"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99087869"
 ---
 # <a name="power-bi-developer-in-a-day-course"></a>Power BI 開発者 (1 日) コース
 

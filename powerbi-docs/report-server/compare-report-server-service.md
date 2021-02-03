@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 07/28/2020
-ms.openlocfilehash: 6d63e8825965a18d2ea5b6d56112c3a063c3456e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/25/2021
+ms.openlocfilehash: ba0fada8ed167b9ba788f4f0d2f9ab9e900dcde4
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418074"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044289"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI Report Server と Power BI サービスの比較
 
@@ -43,7 +43,7 @@ Power BI Report Server と Power BI サービスには、多くの類似点と�
 | Excel で分析 | いいえ | はい | [Excel で分析](../collaborate-share/service-analyze-in-excel.md) 
 | ページ分割されたレポート | はい | はい | [Premium 容量の Power BI サービスでページ分割されたレポートが利用可能](../paginated-reports/paginated-reports-report-builder-power-bi.md) (プレビュー) |
 | Power BI モバイル アプリ | はい | はい | [Power BI モバイル アプリの概要](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
-| ArcGIS マップ | いいえ | はい | [Esri が提供する Power BI サービスおよび Power BI Desktop の ArcGIS マップ](../visuals/power-bi-visualizations-arcgis.md) |
+| ArcGIS for Power BI | Yes | はい | [ArcGIS for Power BI](../visuals/power-bi-visualizations-arcgis.md) |
 | Power BI レポートの電子メールのサブスクリプション | いいえ | はい | Power BI サービスのレポートまたはダッシュボードを[自分または他のユーザーがサブスクライブします](../collaborate-share/service-report-subscribe.md) |
 | ページ分割されたレポートの電子メールのサブスクリプション | はい | はい | [Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする](../consumer/paginated-reports-subscriptions.md)<br><br>[Reporting Services での電子メール配信](/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | データ アラート | いいえ | はい | Power BI サービスで[データ アラート](../create-reports/service-set-data-alerts.md)を設定する

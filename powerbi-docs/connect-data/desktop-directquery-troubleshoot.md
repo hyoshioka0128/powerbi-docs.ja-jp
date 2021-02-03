@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 10/24/2019
-ms.openlocfilehash: 943c8283d48b4281d2ddb5d7eeed0e69db4ee6fc
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ae73a14763babb4bf3d2c2a80d1b90d8a1cff76f
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405309"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086489"
 ---
 # <a name="troubleshoot-developing-directquery-models-in-power-bi-desktop"></a>Power BI Desktop での DirectQuery モデルの開発のトラブルシューティング
 
@@ -54,7 +54,7 @@ ms.locfileid: "96405309"
 
 そのフォルダー内の _\Data_ サブフォルダーには、現在の Power BI セッションのトレース ファイル FlightRecorderCurrent.trc が含まれます。 関連する Power BI Desktop セッションが終了すると、対応するワークスペース フォルダーは削除されます。
 
-トレース ファイルは、SQL Server Profiler ツールを使って開くことができます。このツールは、SQL Server Management Studio の一部として無料でダウンロードできます。 [この場所](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)から入手できます。
+トレース ファイルは、SQL Server Profiler ツールを使って開くことができます。このツールは、SQL Server Management Studio の一部として無料でダウンロードできます。 [この場所](/sql/ssms/download-sql-server-management-studio-ssms)から入手できます。
 
 SQL Server Management Studio をダウンロードしてインストールした後、SQL Server Profiler を実行します。
 

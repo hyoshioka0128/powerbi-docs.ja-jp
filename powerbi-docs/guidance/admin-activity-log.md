@@ -2,18 +2,18 @@
 title: Power BI アクティビティ ログへのアクセス
 description: Power BI アクティビティ ログを操作するためのガイダンスとサンプルの PowerShell スクリプト コード。
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: sample
 ms.date: 09/03/2020
-ms.openlocfilehash: 18ce155419f712cce2c4973949cd02ffbd870724
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0e86966225060c24aa154c0b29ea533dad89908b
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394660"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088697"
 ---
 # <a name="access-the-power-bi-activity-log"></a>Power BI アクティビティ ログへのアクセス
 
@@ -30,7 +30,7 @@ Power BI アクティビティ ログ イベントをフィルター処理して
 - 直接レポート共有用のユーザー一覧を取得する。
 
 > [!NOTE]
-> [Power BI 管理者 API](/rest/api/power-bi/admin) および [Power BI PowerShell モジュール](/powershell/power-bi/overview?view=powerbi-ps)について理解しておく必要があります。 PowerShell モジュールは、これらのスクリプト ブロックを実行する前にインストールする必要があります。 詳細については、「[Power BI でユーザー アクティビティを追跡する](../admin/service-admin-auditing.md#use-the-activity-log)」を参照してください。
+> [Power BI 管理者 API](/rest/api/power-bi/admin) および [Power BI PowerShell モジュール](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true)について理解しておく必要があります。 PowerShell モジュールは、これらのスクリプト ブロックを実行する前にインストールする必要があります。 詳細については、「[Power BI でユーザー アクティビティを追跡する](../admin/service-admin-auditing.md#use-the-activity-log)」を参照してください。
 >
 > Power BI イベントを取得するまでに、最大 30 分の遅延が発生することがあります。
 

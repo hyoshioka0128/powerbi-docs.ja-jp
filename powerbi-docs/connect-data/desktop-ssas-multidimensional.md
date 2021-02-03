@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9567c0511a771b9b92de74171dec5fed3110e2d8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b3ff42b33ccf2d93217d9d88ada4dfbe45a5436c
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410898"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085454"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Power BI Desktop で SSAS 多次元モデルに接続する
 
@@ -98,7 +98,7 @@ SSAS MD 使用には、次のようないくつかの制限があります。
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Power BI Desktop でサポートされる SSAS MD の機能
 
-このリリースの SSAS MD では、次の要素の使用がサポートされます。 これらの機能の詳細については、「[多次元モデルの Power View について](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014)」を参照してください。
+このリリースの SSAS MD では、次の要素の使用がサポートされます。 これらの機能の詳細については、「[多次元モデルの Power View について](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models)」を参照してください。
 
 * 既定メンバー
 * [ディメンションの属性]

@@ -2,18 +2,18 @@
 title: ページ分割されたレポートでのデータ取得のガイダンス
 description: Power BI のページ分割されたレポートに対してデータ ソースとデータセットを作成するためのガイダンスです。
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/16/2020
-ms.openlocfilehash: 5869402a1f5147dbd4cea18b426452e115a97911
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c29e4dfa97b91cb16fc76d095ce05a04b906ee7f
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419040"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088099"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>ページ分割されたレポートでのデータ取得のガイダンス
 

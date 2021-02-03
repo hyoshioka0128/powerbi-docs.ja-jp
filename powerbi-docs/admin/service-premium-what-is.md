@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/18/2021
+ms.date: 02/01/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: c89cf7b00d5167ffb68a491a9cfdcea21378dfd5
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 05f2523e468759444a731d5484e8ce17350a46ae
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565156"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494905"
 ---
 # <a name="what-is-power-bi-premium"></a>Power BI Premium とは
 
@@ -76,25 +76,15 @@ Premium Gen2 を有効にして、その更新を利用します。 Premium Gen2
 
 1.    Premium Gen2 の容量使用率をメトリック アプリで追跡できません。
 
-2.    特定のワークロードの Premium Gen2 容量設定は、管理ポータルの Premium Gen2 容量設定ページにまだ表示されません。 設定を変更するには、容量を元のバージョンの Premium に切り替え、設定を変更してから、再び Premium Gen2 を使用するように容量を設定します。 メモリ割り当ての設定は、Premium Gen2 容量に適用されません。
+2.  Premium Gen2 で XMLA を使用する場合は、最新バージョンの[データ モデリングおよび管理ツール](service-premium-connect-tools.md#data-modeling-and-management-tools)を使用していることを確認してください。 
 
-3.  Premium Gen2 で XMLA を使用する場合は、最新バージョンの[データ モデリングおよび管理ツール](service-premium-connect-tools.md#data-modeling-and-management-tools)を使用していることを確認してください。 
-
-4.  Premium Gen2 の Analysis Services の機能は、最新のクライアント ライブラリでのみサポートされています。 この要件をサポートするための依存ツールのリリース予定日は次のとおりです。
+3.  Premium Gen2 の Analysis Services の機能は、最新のクライアント ライブラリでのみサポートされています。 この要件をサポートするための依存ツールのリリース予定日は次のとおりです。
 
     |ツール|最小バージョンが必要|リリース予定日|
     |---|---|---|
     |SQL Server Management Studio (SSMS)|18.8|2020 年 12 月 8 日|
     |SQL Server Data Tools (SSDT)|2.9.15|一般提供 2020 年 11 月 30 日|
     | AS PowerShell| 21.1.18229 より後|2020 年 11 月 26 日|
-
-5.  ある Premium Gen2 容量から異なるリージョン内の別の Premium 容量へのデータフローが含まれるワークスペースの再割り当ては、サポートされていません。 また、Premium 容量間で大規模なストレージ形式モデルを移動することもサポートされていません。 異なるリージョン内の容量に既に移行してある場合は、次のいずれかの手順を行って機能を復元してください。
- 
-    1.  新しいワークスペースを作成し、データフローをコピーします
-    2.  以前のリージョン内の容量にワークスペースを戻します
-    3.  Premium Gen 1 に戻します
-
-この制限は、Premium Gen 2 の一般提供 (GA) 時に削除される可能性があります。
 
 
 ## <a name="subscriptions-and-licensing"></a>サブスクリプションとライセンス
@@ -126,11 +116,6 @@ Power BI Premium では、"*予約容量*" が提供されます。 他の顧客
 ワークスペースは容量内に存在します。 各 Power BI ユーザーには、**マイ ワークスペース** と呼ばれる個人用のワークスペースが用意されます。 **ワークスペース** と呼ばれる追加のワークスペースを作成して、コラボレーションを有効にすることができます。 既定では、ワークスペース (個人用のワークスペースも含む) は、共有容量内に作成されます。 Premium 容量をお持ちの場合は、マイ ワークスペースとワークスペースの両方を Premium 容量に割り当てることができます。
 
 容量管理者は、自分のマイ ワークスペースが Premium 容量に自動的に割り当てられます。
-
-### <a name="updates-for-premium-gen2-preview"></a>Premium Gen2 (プレビュー) の更新
-
-Premium Gen 2 ノードでは予約されたインフラストラクチャが使用されなくなりました。 代わりに、このサービスでは、非常に高機能なコンピューティング ノードの共有プールから十分なリソースを割り当てることで、実行中の各ワークロードで十分なコンピューティング能力を利用できるようにします。
-
 
 ### <a name="capacity-nodes"></a>容量ノード
 

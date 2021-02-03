@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/08/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 6e00474d81d4de1c8316625c6e3a7ade1bf73197
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 929540e0f04fb6f8fa7b3f71da2a2f34f5fd273b
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408598"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085569"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Power BI ユーザー ライセンスの表示と管理
 
@@ -37,11 +37,11 @@ ms.locfileid: "96408598"
 
   ![無料サブスクリプションが表示されている Power BI サブスクリプションのスクリーンショット。](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
-この種類のサブスクリプションは、ユーザーがセルフサービス サインアップを利用するときに自動的に作成されます。 詳細については、「[組織内の Power BI](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide)」を参照してください。
+この種類のサブスクリプションは、ユーザーがセルフサービス サインアップを利用するときに自動的に作成されます。 詳細については、「[組織内の Power BI](/microsoft-365/admin/misc/power-bi-in-your-organization)」を参照してください。
 
 ## <a name="manage-user-licenses-in-microsoft-365"></a>Microsoft 365 でライセンスを管理する
 
-Microsoft 365 管理センターを使用してユーザー ライセンスを管理するには、「[ビジネス サブスクリプションと課金ドキュメント](/microsoft-365/commerce/?view=o365-worldwide)」を参照してください。
+Microsoft 365 管理センターを使用してユーザー ライセンスを管理するには、「[ビジネス サブスクリプションと課金ドキュメント](/microsoft-365/commerce/)」を参照してください。
 
 ## <a name="manage-user-licenses-in-azure-portal"></a>Azure portal でライセンスを管理する
 

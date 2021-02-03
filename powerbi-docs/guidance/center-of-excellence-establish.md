@@ -2,18 +2,18 @@
 title: センター オブ エクセレンスの確立
 description: Microsoft が適切な運用モデル、利害関係者エンゲージメント、および共有投資と専用投資によって分析情報を解放するための標準化された分析およびデータ プラットフォームを作成するうえで、センター オブ エクセレンスがどのように役立ったかについて説明します。
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/19/2020
-ms.openlocfilehash: 90de33f85c0ede28b14e651414c311e4986a2172
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f3cdf40c0cdb17269232093f7407c61b13794a3e
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394568"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088651"
 ---
 # <a name="establish-a-center-of-excellence"></a>センター オブ エクセレンスの確立
 

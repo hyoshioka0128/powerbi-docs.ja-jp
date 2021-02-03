@@ -2,18 +2,18 @@
 title: オンプレミス データ ゲートウェイのサイズ設定
 description: オンプレミス データ ゲートウェイのサイズ設定操作に関するガイダンス。
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/30/2019
-ms.openlocfilehash: c0506b492a0c28140256dc0be850358836b284b0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 35630891a66b9aed0b9e568d8e34180e3ee41544
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419409"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088398"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>オンプレミス データ ゲートウェイのサイズ設定
 
@@ -84,7 +84,7 @@ Power BI サービスとゲートウェイ間と、ゲートウェイとデー�
 
 - 信頼性、高速、短く一貫した待機時間を目指します
 - ゲートウェイとデータ ソース間のマシンのホップをなくすか減らします
-- ファイアウォール プロキシ レイヤーによって課される帯域幅調整をなくします。 Power BI エンドポイントの詳細については、「[Power BI URL を許可リストに追加する](../admin/power-bi-whitelist-urls.md)」をご覧ください。
+- ファイアウォール プロキシ レイヤーによって課される帯域幅調整をなくします。 Power BI エンドポイントの詳細については、「[Power BI URL を許可リストに追加する](../admin/power-bi-allow-list-urls.md)」をご覧ください。
 - [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) を構成して、Power BI に対して非公開の管理された接続を確立します
 - Azure VM のデータ ソースの場合、必ず VM を [Power BI サービスと同じ場所に配置します](../admin/service-admin-where-is-my-tenant-located.md)
 - 動的 RLS を含む SQL Server Analysis Services (SSAS) へのライブ接続ワークロードの場合、ゲートウェイ マシンとオンプレミスの Active Directory 間に良好な接続を確保します

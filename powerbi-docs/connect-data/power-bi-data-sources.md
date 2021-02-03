@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 12/14/2020
-ms.openlocfilehash: 67a0577c906e23fc51182120f1445814bdcd8028
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: def849c9a3b867f181dbc91628260cf24491e855
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491830"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99087938"
 ---
 # <a name="power-bi-data-sources"></a>Power BI データ ソース
 
@@ -21,33 +21,33 @@ ms.locfileid: "97491830"
 
 | データ ソースの | デスクトップから接続する | サービスから接続し、更新する | DirectQuery / ライブ接続 | ゲートウェイ (サポートあり) | ゲートウェイ (必須) | Power BI データフロー |
 |---|---|---|---|---|---|---|---|
-| Access データベース | はい | ○ | いいえ | はい <sup>1</sup> | はい | はい |
-| Active Directory | はい | はい | いいえ | ○ | はい | はい |
-| Adobe Analytics | はい | ○ | いいえ | いいえ | いいえ | いいえ |
-| Amazon Redshift | はい | ○ | はい | はい | いいえ | はい |
+| Access データベース | はい | はい | いいえ | はい <sup>1</sup> | はい | はい |
+| Active Directory | はい | はい | いいえ | はい | はい | はい |
+| Adobe Analytics | はい | はい | いいえ | いいえ | いいえ | いいえ |
+| Amazon Redshift | はい | Yes | はい | はい | いいえ | はい |
 | appFigures | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| AtScale キューブ | はい | はい | はい | ○ | いいえ | いいえ |
-| Azure Analysis Services | はい | ○ | はい | いいえ | いいえ | いいえ |
-| Azure Blob Storage | はい | ○ | いいえ | ○ | いいえ | はい |
-| Azure Cosmos DB | ○ | ○ | いいえ | いいえ | いいえ | いいえ |
-| Azure Cost Management | はい | ○ | いいえ | いいえ | いいえ | いいえ |
-| Azure Data Explorer (Kusto) | はい | はい | はい | ○ | いいえ | はい |
+| AtScale キューブ | はい | はい | はい | はい | いいえ | いいえ |
+| Azure Analysis Services | はい | Yes | はい | いいえ | いいえ | いいえ |
+| Azure Blob Storage | はい | はい | いいえ | はい | いいえ | はい |
+| Azure Cosmos DB | はい | はい | いいえ | いいえ | いいえ | いいえ |
+| Azure Cost Management | はい | はい | いいえ | いいえ | いいえ | いいえ |
+| Azure Data Explorer (Kusto) | はい | はい | はい | はい | いいえ | はい |
 | Azure Data Lake Storage Gen1 | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Azure Data Lake Storage Gen2 | はい | ○ | いいえ | はい | いいえ | はい |
-| Azure Databricks | はい | ○ | ○ | ○ | いいえ | いいえ |
-| Azure DevOps | はい | ○ | いいえ | いいえ | いいえ | いいえ |
-| Azure DevOps Server | はい | ○ | いいえ | はい | はい | いいえ |
+| Azure Data Lake Storage Gen2 | はい | はい | いいえ | はい | いいえ | はい |
+| Azure Databricks | はい | Yes | Yes | はい | いいえ | いいえ |
+| Azure DevOps | はい | はい | いいえ | いいえ | いいえ | いいえ |
+| Azure DevOps Server | はい | はい | いいえ | はい | はい | いいえ |
 | Azure HDInsight (HDFS) | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Azure HDInsight Spark | はい | はい | はい | いいえ | いいえ | はい |
-| Azure SQL データベース | はい | ○ | ○ | ○ | いいえ | はい |
-| Azure SQL Data Warehouse | はい | ○ | ○ | ○ | いいえ | はい |
+| Azure SQL データベース | はい | Yes | Yes | はい | いいえ | はい |
+| Azure SQL Data Warehouse | はい | Yes | Yes | はい | いいえ | はい |
 | Azure Table Storage | はい | はい | いいえ | はい | いいえ | はい |
-| BI コネクタ | はい | はい | はい | はい | はい | いいえ |
+| BI コネクタ | はい | Yes | はい | はい | はい | いいえ |
 | BI360 - Budgeting & Financial Reporting | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Microsoft Dataverse | はい | はい | いいえ | いいえ | いいえ | はい |
+| Microsoft Dataverse | はい | はい | はい | いいえ | いいえ | はい |
 | Data.World - データセットの取得 | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Denodo | はい | はい | はい | はい | はい | いいえ |
-| Dremio | はい | はい | はい | はい | はい | いいえ |
+| Denodo | はい | Yes | Yes | Yes | はい | いいえ |
+| Dremio | はい | Yes | Yes | はい | はい | いいえ |
 | Dynamics 365 (オンライン) | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Dynamics 365 Business Central | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Dynamics 365 Business Central (オンプレミス) | はい | はい | いいえ | いいえ | いいえ | いいえ |
@@ -55,43 +55,43 @@ ms.locfileid: "97491830"
 | Dynamics NAV | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Emigo Data Source | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Entersoft Business Suite | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Essbase | はい | はい | はい | はい | はい | いいえ |
-| Exasol | はい | はい | はい | はい | はい | いいえ |
+| Essbase | はい | はい | はい | Yes | はい | いいえ |
+| Exasol | はい | はい | はい | Yes | はい | いいえ |
 | Excel | はい <sup>3</sup> | はい <sup>3</sup> | いいえ | はい <sup>3</sup> | いいえ <sup>4</sup> | はい |
 | Facebook | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | ファイル | はい | はい | いいえ | はい | はい | はい |
-| フォルダー | はい | はい | いいえ | はい | はい | はい |
+| Folder | はい | はい | いいえ | はい | はい | はい |
 | GitHub | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Google Analytics | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Google BigQuery | はい | はい | はい | はい | いいえ | はい |
+| Google BigQuery | はい | Yes | Yes | はい | いいえ | はい |
 | Hadoop ファイル (HDFS) | はい | いいえ | いいえ | いいえ | いいえ | いいえ |
-| Hive LLAP | はい | はい | はい | はい | いいえ | いいえ |
-| HDInsight 対話型クエリ | はい | はい | はい | いいえ | いいえ | いいえ |
+| Hive LLAP | はい | はい | Yes | はい | いいえ | いいえ |
+| HDInsight 対話型クエリ | はい | Yes | はい | いいえ | いいえ | いいえ |
 | IBM DB2 | はい | はい | はい | はい | いいえ | はい |
 | IBM Informix データベース | はい | はい | いいえ | はい | いいえ | いいえ |
-| IBM Netezza | はい | はい | はい | はい | はい | いいえ |
-| Impala | はい | はい | はい | はい | はい | はい |
-| Indexima | はい | はい | はい | はい | はい | いいえ |
+| IBM Netezza | はい | Yes | Yes | Yes | はい | いいえ |
+| Impala | はい | Yes | Yes | Yes | はい | はい |
+| Indexima | はい | はい | Yes | はい | はい | いいえ |
 | Industrial App Store | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Information Grid | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Intersystems IRIS | はい | はい | はい | はい | はい | いいえ |
+| Intersystems IRIS | はい | はい | Yes | はい | はい | いいえ |
 | Intune データ ウェアハウス | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Jethro ODBC | はい | はい | はい | はい | はい | いいえ |
+| Jethro ODBC | はい | はい | はい | Yes | はい | いいえ |
 | JSON | はい | はい | いいえ | はい** | いいえ <sup>4</sup> | はい |
-| Kyligence Enterprise | はい | はい | はい | はい | はい | いいえ |
+| Kyligence Enterprise | はい | Yes | はい | はい | はい | いいえ |
 | MailChimp | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Marketo | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| MarkLogic ODBC | はい | はい | はい | はい | はい | いいえ |
+| MarkLogic ODBC | はい | Yes | はい | Yes | はい | いいえ |
 | Microsoft Azure Consumption Insights | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Microsoft Exchange | はい | はい | いいえ | はい | いいえ | いいえ |
 | Microsoft Exchange Online | はい | はい | いいえ | いいえ | いいえ | はい |
 | Microsoft Graph Security | はい | はい | いいえ | はい | いいえ | いいえ |
 | Mixpanel | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| MySQL | はい | はい | いいえ | はい | はい | はい |
+| MySQL | はい | はい | いいえ | はい | Yes | はい |
 | OData | はい | はい <sup>7</sup> | いいえ | はい | いいえ | はい |
 | ODBC | はい | はい | いいえ | はい | はい | はい |
 | OleDb | はい | はい | いいえ | はい | はい | いいえ |
-| Oracle | はい | はい | はい | はい | はい | はい |
+| Oracle | はい | はい | Yes | Yes | Yes | はい |
 | Paxata <sup>8</sup> | はい | はい | いいえ | はい | いいえ | いいえ |
 | PDF | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | Planview Enterprise One - CTM | はい | はい | いいえ | いいえ | いいえ | いいえ |
@@ -99,39 +99,39 @@ ms.locfileid: "97491830"
 | Planview Projectplace | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | PostgreSQL | はい | はい | はい | はい | いいえ | はい |
 | Power BI データフロー | はい | はい | いいえ | いいえ | いいえ | はい |
-| Power BI データセット | はい | はい | はい | いいえ | いいえ | いいえ |
+| Power BI データセット | はい | Yes | はい | いいえ | いいえ | いいえ |
 | Power Platform データフロー | はい | はい | いいえ | いいえ | いいえ | はい |
 | Python スクリプト | はい | はい <sup>5</sup> | いいえ | はい <sup>5</sup> | はい | いいえ |
-| QubolePresto | はい | はい | はい | はい | はい | いいえ |
+| QubolePresto | はい | Yes | はい | はい | はい | いいえ |
 | Quick Base | はい | はい | いいえ | はい | はい | いいえ |
 | QuickBooks Online | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | R スクリプト | はい | はい <sup>5</sup> | いいえ | はい <sup>5</sup> | いいえ | いいえ |
 | Roamler | はい | はい | いいえ | はい | いいえ | いいえ |
 | Salesforce オブジェクト | はい | はい | いいえ | いいえ | いいえ | はい |
 | Salesforce レポート | はい | はい | いいえ | いいえ | いいえ | はい |
-| SAP Business Warehouse メッセージ サーバー | はい | はい | はい | はい | はい | はい |
+| SAP Business Warehouse メッセージ サーバー | はい | はい | はい | Yes | Yes | はい |
 | SAP Business Warehouse サーバー | はい | はい | はい | はい | はい | はい |
-| SAP HANA | はい | はい | はい | はい | はい | はい |
+| SAP HANA | はい | Yes | はい | Yes | Yes | はい |
 | SharePoint フォルダー | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | SharePoint リスト | はい | はい | いいえ | はい | いいえ <sup>4</sup> | はい |
 | SharePoint Online リスト | はい | はい | いいえ | はい | いいえ | はい |
 | Smartsheet | はい | はい | いいえ | いいえ | いいえ | はい |
-| Snowflake | はい | はい | はい | はい | いいえ | はい |
-| Spark | はい | はい | はい | はい | いいえ | はい |
+| Snowflake | はい | はい | Yes | はい | いいえ | はい |
+| Spark | はい | Yes | はい | はい | いいえ | はい |
 | SparkPost | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| SQL Server | はい | はい | はい | はい | はい | はい |
-| SQL Server Analysis Services | はい | はい | はい | はい | はい | いいえ |
+| SQL Server | はい | Yes | Yes | Yes | Yes | はい |
+| SQL Server Analysis Services | はい | Yes | Yes | Yes | はい | いいえ |
 | Stripe | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | SurveyMonkey | はい | はい | いいえ | はい | いいえ | いいえ |
 | SweetIQ | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Sybase | はい | はい | いいえ | はい | はい | はい |
+| Sybase | はい | はい | いいえ | はい | Yes | はい |
 | TeamDesk | はい | はい | いいえ | はい | いいえ | いいえ |
 | Tenforce | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Teradata | はい | はい | はい | はい | はい | はい |
+| Teradata | はい | Yes | Yes | Yes | Yes | Yes |
 | テキスト/CSV | はい | はい | いいえ | はい | いいえ <sup>4</sup> | Yes |
 | Twilio | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | tyGraph | はい | はい | いいえ | いいえ | いいえ | いいえ |
-| Vertica | はい | はい | はい | はい | はい | はい |
+| Vertica | はい | Yes | Yes | Yes | Yes | Yes |
 | Web | はい | はい | いいえ | はい | はい <sup>6</sup> | Yes |
 | Webtrends | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Workforce Dimensions | はい | はい | いいえ | はい | いいえ | いいえ |

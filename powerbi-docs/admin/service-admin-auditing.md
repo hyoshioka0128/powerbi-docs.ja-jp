@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/20/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 3c1e2b4513b3ac920d447ef0b8195c76c1ec2a04
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: cf10ac72f387438a60d3840c69ad1ee713c26708
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413750"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086214"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Power BI でユーザー アクティビティを追跡する
 
@@ -122,7 +122,7 @@ $activities[0]
 
 監査ログにアクセスするには、次の要件を満たしている必要があります。
 
-- 監査ログにアクセスするには、グローバル管理者であるか、Exchange Online で Audit Logs (監査ログ) または View-Only Audit Logs (表示専用監査ログ) ロールが割り当てられている必要があります。 既定では、これらのロールは、Exchange 管理センター内の **[アクセス許可]** ページで Compliance Management (コンプライアンス管理) および Organization Management (組織管理) ロール グループに割り当てられています。 監査ログを表示できるロールに関する詳細については、「[監査ログを検索するための要件](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log)」を参照してください。
+- 監査ログにアクセスするには、グローバル管理者であるか、Exchange Online で Audit Logs (監査ログ) または View-Only Audit Logs (表示専用監査ログ) ロールが割り当てられている必要があります。 既定では、これらのロールは、Exchange 管理センター内の **[アクセス許可]** ページで Compliance Management (コンプライアンス管理) および Organization Management (組織管理) ロール グループに割り当てられています。 監査ログを表示できるロールに関する詳細については、「[監査ログを検索するための要件](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#requirements-to-search-the-audit-log)」を参照してください。
 
     管理者以外のアカウントに監査ログへのアクセス許可を与えるには、これらのロール グループのいずれかのメンバーとしてそのユーザーを追加します。 別の方法でそれを行いたい場合は、Exchange 管理センターでカスタム ロール グループを作成し、Audit Logs (監査ログ) または View-Only Audit Logs (表示専用監査ログ) ロールをこのグループに割り当ててから、管理者以外のアカウントをこの新しいロール グループに追加することができます。 詳細については、「[Manage role groups in Exchange Online (Exchange Online でロール グループを管理する)](/Exchange/permissions-exo/role-groups)」をご覧ください。
 
@@ -211,7 +211,7 @@ Power BI 監査ログを CSV ファイルにエクスポートするには、次
 
 ### <a name="use-powershell-to-search-audit-logs"></a>PowerShell を使用して監査ログを検索する
 
-PowerShell を使用し、自分のログインに基づいて監査ログにアクセスすることもできます。 次の例は、Exchange Online PowerShell に接続してから [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) コマンドを使用して Power BI 監査ログのエントリを取得する方法を示しています。 スクリプトを実行するには、「[監査ログの要件](#audit-log-requirements)」セクションで説明されているように、管理者に適切なアクセス許可が割り当てられている必要があります。
+PowerShell を使用し、自分のログインに基づいて監査ログにアクセスすることもできます。 次の例は、Exchange Online PowerShell に接続してから [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps&preserve-view=true/) コマンドを使用して Power BI 監査ログのエントリを取得する方法を示しています。 スクリプトを実行するには、「[監査ログの要件](#audit-log-requirements)」セクションで説明されているように、管理者に適切なアクセス許可が割り当てられている必要があります。
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -226,7 +226,7 @@ Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType Power
 
 ### <a name="use-powershell-to-export-audit-logs"></a>PowerShell を使用して監査ログをエクスポートする
 
-PowerShell を使用し、監査ログ検索の結果をエクスポートすることもできます。 次の例では、[Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) コマンドから送信し、[Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) コマンドレットを使用して結果をエクスポートする方法を確認できます。 スクリプトを実行するには、「[監査ログの要件](#audit-log-requirements)」セクションで説明されているように、管理者に適切なアクセス許可が割り当てられている必要があります。
+PowerShell を使用し、監査ログ検索の結果をエクスポートすることもできます。 次の例では、[Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps&preserve-view=true/) コマンドから送信し、[Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) コマンドレットを使用して結果をエクスポートする方法を確認できます。 スクリプトを実行するには、「[監査ログの要件](#audit-log-requirements)」セクションで説明されているように、管理者に適切なアクセス許可が割り当てられている必要があります。
 
 ```powershell
 $UserCredential = Get-Credential

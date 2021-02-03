@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 07/16/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: a4c652a0728dcecde960e8faba2070fc5a2b14e4
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: f7556dba4d0221d28e0a6993a03b1e4c398ba6d2
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96577396"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085638"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Power BI のリアルタイム ストリーミング
 Power BI のリアルタイム ストリーミングを使用すると、リアルタイムでデータをストリーミングし、ダッシュボードを更新できます。 Power BI で作成された任意の視覚化やダッシュボードで、リアルタイムのデータや視覚化を表示し、更新できます。 ストリーミング データのデバイスおよびソースとしては、工場のセンサー、ソーシャル メディア ソース、サービス使用状況メトリック、またはその他の多くの時間依存データのコレクターや転送元が考えられます。
@@ -52,7 +52,7 @@ Power BI のリアルタイム ストリーミングを使用すると、リア�
 実際には、ストリーミング データセットとそれに付随するストリーミング ビジュアルは、データのプッシュからデータの視覚化までの待機時間を最小限に抑えることが重要な状況で使用するのが最適です。 また、追加の集計を行うことなく、そのまま視覚化することができる形式でデータをプッシュすることをお勧めします。 そのままで視覚化できるデータの例としては、温度や事前に計算された平均値などがあります。
 
 ### <a name="pubnub-streaming-dataset"></a>PubNub ストリーミング データセット
-**PubNub** ストリーミング データセットの場合、Power BI Web クライアントでは PubNub SDK を使用して既存の PubNub データ ストリームが読み取られます。 Power BI サービスによってデータが保存されることはありません。 この呼び出しは Web クライアントから直接行われるため、自分のネットワークからの承認済みアウトバウンド トラフィックのみを許可している場合は、許可するリストに PubNub へのトラフィックを登録する必要があります。 [PubNub への送信トラフィックの承認](https://support.pubnub.com/hc/en-us/articles/360051496672-Can-I-whitelist-IPs-for-PubNub-traffic-)に関するサポート記事の手順を参照してください。
+**PubNub** ストリーミング データセットの場合、Power BI Web クライアントでは PubNub SDK を使用して既存の PubNub データ ストリームが読み取られます。 Power BI サービスによってデータが保存されることはありません。 この呼び出しは Web クライアントから直接行われるため、自分のネットワークからの承認済みアウトバウンド トラフィックのみを許可している場合は、許可するリストに PubNub へのトラフィックを登録する必要があります。 [PubNub への送信トラフィックの承認](https://support.pubnub.com/hc/en-us/articles/360051496672)に関するサポート記事の手順を参照してください。
 
 **ストリーミング データセット** と同様に、**PubNub ストリーミング データセット** の場合も、Power BI に基になるデータベースはありません。そのため、流れ込んだデータに対してレポートのビジュアルを作成したり、フィルター処理や Power BI ビジュアルなどのレポート機能を利用したりすることはできません。 そのため、**PubNub ストリーミング データセット** を視覚化するには、ダッシュボードにタイルを追加し、PubNub データ ストリームをソースとして構成するしかありません。
 

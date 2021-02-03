@@ -8,12 +8,12 @@ ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: a76c7f9d205fe47322768a514a1e5d89a36a2306
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 04a971aa6d1e584866ff7740676ab35b2e0e17af
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565742"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494882"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Power BI 用の Azure セキュリティ ベースライン
 
@@ -166,7 +166,7 @@ M365 Privileged Access Management を使用して、Power BI 管理者アカウ�
 
 - [Power BI に関連する管理者ロール](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi)
 
-- [M365 Privileged Access Management](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)
+- [M365 Privileged Access Management](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&preserve-view=true)
 
 - [Power BI での Cloud App Security 制御](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
@@ -178,7 +178,7 @@ M365 Privileged Access Management を使用して、Power BI 管理者アカウ�
 
 **ガイダンス**: 高い特権を持つアカウント、または Power BI への昇格されたアクセスを持つロールの数を制限します。
 
-[こちら](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)の M365 Privileged Access Management のガイダンスを使用して、Just-In-Time (JIT) 特権アクセスを有効にすることができます。
+[こちら](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&preserve-view=true)の M365 Privileged Access Management のガイダンスを使用して、Just-In-Time (JIT) 特権アクセスを有効にすることができます。
 
 詳細については、[こちら](https://aka.ms/PBIEnterpriseDeploymentWP)の Power BI のエンタープライズ展開に関するドキュメントの 183 ページを参照してください。
 
@@ -221,7 +221,7 @@ Power BI アクティビティ ログにアクセスするには、次の要件�
 **ガイダンス**:セキュリティで保護された分離したワークステーションは、管理者、開発者、重要なサービス オペレーターのような機密性の高い役割のセキュリティには非常に重要です。 Power BI の管理に関係する管理タスクの場合は、高度にセキュリティで保護されたユーザー ワークステーションや Azure Bastion を使用してください。 Azure Active Directory、Microsoft Defender Advanced Threat Protection (ATP)、または Microsoft Intune を使用して、管理タスクのためにセキュリティで保護されたマネージド ユーザー ワークステーションを展開します。 セキュリティで保護されたワークステーションを一元管理して、強力な認証、ソフトウェアとハードウェアのベースライン、制限された論理アクセスとネットワーク アクセスなどのセキュリティで保護された構成を実施できます。
 
 特権アクセスについて
-- [ワークステーション](/azure/active-directory/devices/concept-azure-managed-workstation)
+- [ワークステーション](https://4sysops.com/archives/understand-the-microsoft-privileged-access-workstation-paw-security-model/)
 
 - [特権アクセス ワークステーションを展開する](/azure/active-directory/devices/howto-azure-managed-workstation)
 
@@ -533,7 +533,7 @@ Microsoft Cloud App Security で Power BI に関連するアラートを監視�
  
 Microsoft Threat Protection を使用すると、関連付け分析が適用され、さまざまな製品からの関連するアラートおよび調査結果が 1 つのインシデントに集約されます。 また、Microsoft Threat Protection を使用すると、Microsoft Threat Protection が備える資産および製品スイート全体にわたるエンドツーエンドの可視性によって、悪意のあるものとしか識別できないアクティビティに対して固有のアラートがトリガーされます。 そのような方法で、Microsoft Threat Protection によって、より広範な攻撃ストーリーが説明されます。これにより、セキュリティ運用アナリストは組織全体の複雑な脅威を理解し、対処できるようになります。
 
-- [Microsoft Threat Protection でインシデントの優先度を設定する](/microsoft-365/security/mtp/incident-queue?amp;preserve-view=true&view=o365-worldwide)
+- [Microsoft Threat Protection でインシデントの優先度を設定する](/microsoft-365/security/mtp/incident-queue?view=o365-worldwide&preserve-view=true)
 
 **Azure Security Center の監視**: 適用なし
 

@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
 LocalizationGroup: Samples
-ms.openlocfilehash: 2e14a81c6ae04048f85fae417b354a110436fc50
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f69be1cd602c0b20c48581a5d6ee1ff034749b2a
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96396202"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495135"
 ---
 # <a name="get-samples-for-power-bi"></a>Power BI のサンプルを入手する
 Power BI を初めて試してみたくてもデータがない場合や、  または、Power BI の機能の一部を示すレポートを表示したいと思う場合があります。 そのような場合でもご利用いただけます。
@@ -42,7 +42,7 @@ Power BI には、目的ごとにさまざまな種類のサンプルが用意�
 次の方法で調べることができます。
 
 - Power BI コミュニティ [データ ストーリー ギャラリー](https://community.powerbi.com/t5/Data-Stories-Gallery/Sales-amp-Returns-Sample-Report/m-p/876607)で表示および操作します。
-- .pbix ファイルをダウンロードし、詳細に調査します。 Miguel がそれをどのように作成したか、その背景を見ます。 このリンクを選択すると、ファイルが自動的にダウンロードされます。[売上と返品のサンプル レポート](https://go.microsoft.com/fwlink/?linkid=2113239)。
+- .pbix ファイルをダウンロードし、詳細に調査します。 Miguel がそれをどのように作成したか、その背景を見ます。 このリンクを選択すると、ファイルが自動的にダウンロードされます。[売上と返品のサンプル レポート](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix)。
 - レポートの詳細については、Power BI のブログ記事「[新しい売上と返品のサンプル レポートのツアー](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/)」を参照してください。
 
 ## <a name="sample-app-from-appsource"></a>AppSource からのサンプル アプリ

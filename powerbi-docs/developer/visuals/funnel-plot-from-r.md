@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: f1f8c037a3ceb66d8ffb5abab6bccd4ec9bc7adc
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: 3d618735f2783e0fce0be938fbdcac7beb5d399e
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969560"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495112"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>チュートリアル:R スクリプトから R ビジュアルにフィルター プロットを作成する
 この記事では、R ビジュアルで R スクリプトを使用してじょうごプロットを作成する方法を順を追って説明します。
@@ -270,7 +270,7 @@ ms.locfileid: "97969560"
 
 * [GitHub](https://github.com/Microsoft?utf8=%E2%9C%93&q=PowerBI&type=&language=R) で入手できるコードを使用すれば、R を利用したビジュアルをゼロから開発する必要はありません。 テンプレートとして使用するビジュアルを選択し、そのコードを新しいプロジェクトにコピーすることができます。
 
-   たとえば、[スプライン カスタム ビジュアル](https://github.com/PowerBi-Projects/PowerBI-visuals-spline)を使用してみてください。
+   たとえば、[スプライン カスタム ビジュアル](https://github.com/microsoft/PowerBI-visuals-spline)を使用してみてください。
 
 * 各 R ビジュアルでは、その入力テーブルに `unique` 演算子が適用されます。 複数の同一の行が削除されるのを防ぐには、一意の ID を持つ追加の入力フィールドを追加し、R コードでそれを無視することを検討してください。   
 

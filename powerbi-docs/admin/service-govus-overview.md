@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/19/2021
 ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: 06a2dff78cc2367afb153111e080e29a16fc82ab
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.openlocfilehash: 93198628677966208609892ee45ea4a28932c091
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686984"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085845"
 ---
 # <a name="power-bi-for-us-government-customers"></a>米国政府顧客向け Power BI
 
@@ -66,7 +66,7 @@ Power BI に接続するための URL は、政府機関のユーザーと商用
 
 Power BI サービスを使用するには、インターネット上で必要なエンドポイントへの接続を許可する必要があります。 自分のネットワーク、Power BI、およびその他の依存サービスの間の通信を有効にするには、これらの宛先にアクセスできる必要があります。
 
-次の表では、一般的なサイト使用目的で Power BI サービスへの接続を有効にするために、許可リストに追加する必要のあるエンドポイントを示します。 これらのエンドポイントは、米国政府のクラウドに固有のものです。 Power BI のサービスで必要なことは、リストに記載されているエンドポイントのために TCP ポート 443 を開いておくことだけです。 データの取得、ダッシュボードとレポートの統合、Power BI ビジュアル、およびその他のオプション サービスのエンドポイントは、米国政府のクラウドに固有のものではありません。 許可リストにこれらの URL も追加するには、「[Power BI URL を許可リストに追加する](power-bi-whitelist-urls.md)」を参照してください。
+次の表では、一般的なサイト使用目的で Power BI サービスへの接続を有効にするために、許可リストに追加する必要のあるエンドポイントを示します。 これらのエンドポイントは、米国政府のクラウドに固有のものです。 Power BI のサービスで必要なことは、リストに記載されているエンドポイントのために TCP ポート 443 を開いておくことだけです。 データの取得、ダッシュボードとレポートの統合、Power BI ビジュアル、およびその他のオプション サービスのエンドポイントは、米国政府のクラウドに固有のものではありません。 許可リストにこれらの URL も追加するには、「[Power BI URL を許可リストに追加する](power-bi-allow-list-urls.md)」を参照してください。
 
 Power BI の認証、ID、管理は、Microsoft 365 サービスへの接続に依存します。 また、監査ログを表示するには Microsoft 365 に接続する必要があります。 これらのサービスのエンドポイントを識別するには、次の表の「Microsoft 365 統合」を参照してください。
 

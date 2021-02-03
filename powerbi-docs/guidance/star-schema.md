@@ -2,18 +2,18 @@
 title: スター スキーマと Power BI での重要性を理解する
 description: スター スキーマと、パフォーマンスおよび使いやすさのために最適化された Power BI データ モデルの開発とのその関連性について理解します。
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.openlocfilehash: 4d54a0d27ed7cbf0c464a6c4d770e39b99e8b384
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8d3a23b577fde668b546f471a861e980a976f629
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419109"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088053"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>スター スキーマと Power BI での重要性を理解する
 

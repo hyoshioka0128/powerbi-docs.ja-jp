@@ -7,13 +7,13 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
-ms.openlocfilehash: 063750445f3c8ef1fb50f77535ccf01295bd45ec
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 01/28/2021
+ms.openlocfilehash: 0dca634769a7b2779d3ee4168dc2c37f1c33bd9c
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885662"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043162"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Power BI ビジュアルでのデータ ビューのマッピングについて理解する
 
@@ -429,7 +429,7 @@ Power BI では、それがカテゴリ別のデータ ビューとして作成�
 "use strict";
 import powerbi from "powerbi-visuals-api";
 import DataView = powerbi.DataView;
-import DataViewDataViewCategoricalSingle = powerbi.DataViewCategorical;
+import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
 import PrimitiveValue = powerbi.PrimitiveValue;
 // standart imports

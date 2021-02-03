@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/11/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 0c13d0f54d18527e6b8614f40b5b15fd46187968
-ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.openlocfilehash: 0da3b5134db770c97b5b86b215998df91c1f646c
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718510"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085983"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>組織のユーザーに Power BI サービスのライセンスを与える
 
@@ -27,7 +27,7 @@ Power BI サービスでユーザーが実行できる操作は、そのユー�
 
 ## <a name="who-can-purchase-and-assign-licenses"></a>ライセンスを購入して割り当てることができるユーザー
 
-組織のライセンスを購入または割り当てるには、管理者ロールが割り当てられている必要があります。 管理者ロールは、Azure Active Directory 管理センターまたは Microsoft 365 管理センターを使用して割り当てられます。 次の表に、購入とライセンスに関連するタスクを実行するために必要なロールを示します。 Azure Active Directory での管理者ロールの詳細については、「[Azure Active Directory で管理者ロールを表示して割り当てる](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)」を参照してください。 ベスト プラクティスなど、Microsoft 365 での管理者ロールの詳細については、「[管理者ロールについて」](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)を参照してください。
+組織のライセンスを購入または割り当てるには、管理者ロールが割り当てられている必要があります。 管理者ロールは、Azure Active Directory 管理センターまたは Microsoft 365 管理センターを使用して割り当てられます。 次の表に、購入とライセンスに関連するタスクを実行するために必要なロールを示します。 Azure Active Directory での管理者ロールの詳細については、「[Azure Active Directory で管理者ロールを表示して割り当てる](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)」を参照してください。 ベスト プラクティスなど、Microsoft 365 での管理者ロールの詳細については、「[管理者ロールについて」](/microsoft-365/admin/add-users/about-admin-roles)を参照してください。
 
 | サービスとライセンスを購入できるユーザー | ユーザー ライセンスを管理できるユーザー |
 | --------------- | --------------- |
@@ -114,7 +114,7 @@ Power BI Pro のライセンス ライフサイクルは Microsoft 365 と同じ
 ## <a name="next-steps"></a>次の手順
 
 - [Power BI Pro のライセンスを購入して割り当てる](service-admin-purchasing-power-bi-pro.md)
-- [ビジネス サブスクリプションと課金ドキュメント](/microsoft-365/commerce/?view=o365-worldwide)
+- [ビジネス サブスクリプションと課金ドキュメント](/microsoft-365/commerce/)
 - [サインインした Power BI ユーザーを見つける](service-admin-access-usage.md)
 - 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
 

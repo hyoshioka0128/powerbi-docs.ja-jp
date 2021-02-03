@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 01/28/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 8fad09221caafd66467e8e183304ab408b803720
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 51c006a076a34764791a7da6f952b416b89e6a5a
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412209"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043070"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium のよく寄せられる質問
 
@@ -61,7 +61,7 @@ Power BI Premium は容量ベースのライセンスですが、Power BI Pro �
 | **解決方法:**<br/><br/>1.全ユーザーに Power BI Pro<br/><br/>2.Power BI Premium を追加して可能性を広げることを検討する - その他のシナリオを参照 |**解決方法:**<br/><br/>1.セルフサービス BI とコラボレーションが必要なユーザーに Power BI Pro<br/><br/>2.Power BI Premium を追加して、BI コンテンツの使用のみが必要なユーザー向けに BI コンテンツを配信できるようにする |**解決方法:**<br/><br/>1.セルフサービス BI とコラボレーションが必要なユーザーに Power BI Pro<br/><br/>2.Power BI Premium を追加してオンプレミスでレポートを発行できるようにして、必要に応じてクラウドに移行する |**解決方法:**<br/><br/>1.財務部門の全ユーザーに Power BI Pro<br/><br/>2.専用リソース (クラウド内) 用に Power BI Premium を追加し、財務チーム専用にして、スケールとパフォーマンスを向上する |
 
 **Power BI Premium のコストはどのくらいですか?使用できる SKU 数はどのくらいですか?**  
-Power BI Premium は、仮想コア数に基づいて購入します。 価格については、[Power BI の価格のページ](https://powerbi.microsoft.com/pricing/)を参照してください。 ノードと v コアの詳細については、[Microsoft Power BI Premium のホワイトペーパー](https://aka.ms/pbipremiumwhitepaper)を参照してください。 また、この[計算ツール](https://powerbi.microsoft.com/calculator/)を使用して、必要な Premium 容量を見積もることができます。
+Power BI Premium は、仮想コア数に基づいて購入します。 価格については、[Power BI の価格のページ](https://powerbi.microsoft.com/pricing/)を参照してください。 ノードと v コアの詳細については、[Microsoft Power BI Premium のホワイトペーパー](https://aka.ms/pbipremiumwhitepaper)を参照してください。
 
 **"容量" どのような意味で使われていますか?**  
 容量とは、Power BI の使用についてお客様の組織に予約されているコンピューティング能力の量です。 これは、サービス管理者が Power BI Premium 管理ポータルの **[容量管理]** ページでプロビジョニングするものです。
@@ -71,9 +71,6 @@ Power BI Premium は、年間契約で毎月請求されます。
 
 **Power BI Premium の購入方法を教えてください。**  
 Power BI Premium は、Microsoft 365 管理センターから入手できます。 詳細については、「[How to purchase Power BI Premium](service-admin-premium-purchase.md)」(Power BI Premium の購入方法) を参照してください。 また、詳細については Microsoft の担当者に相談にお問い合わせください。
-
-**購入する必要がある Power BI Premium の容量を知るにはどうすればよいですか?**  
-この[コスト計算ツール](https://powerbi.microsoft.com/calculator/)を使用して、必要な Power BI Premium の容量を見積もることができます。
 
 **Power BI Premium は Office 365 E5 で使用できますか?**  
 Power BI Premium は、Power BI Pro のアドオンとして使用できます。 Office 365 E5 には Power BI Pro が含まれています。 E5 ユーザーは、既存の Pro ライセンスのアドオンとして Premium を購入できます。

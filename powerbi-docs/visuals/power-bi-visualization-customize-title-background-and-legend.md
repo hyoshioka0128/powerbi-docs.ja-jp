@@ -11,22 +11,20 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 1/13/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b285d699d71001d8015615fdeb3652ba35274896
-ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
+ms.openlocfilehash: 8cfba48839f4055c7d48bf01a475cf2804053239
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191818"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99422331"
 ---
 # <a name="customize-visualization-titles-backgrounds-labels-and-legends"></a>視覚エフェクトのタイトル、背景、ラベル、凡例をカスタマイズする
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 このチュートリアルでは、視覚化をカスタマイズする、さまざまな方法について説明します。 視覚化をカスタマイズするオプションは多数あります。 そのすべてを学習するには、 **[形式]** ウィンドウ (ペイント ローラー アイコンを選択) を調べることをお勧めします。 はじめに、この記事では視覚エフェクトのタイトル、凡例、背景、ラベル、レイヤーをカスタマイズする方法とテーマを追加する方法を説明します。
 
 一部の視覚化についてはカスタマイズできません。 詳細については、[完全なリスト](#visualization-types-that-you-can-customize)をご覧ください。
-
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -60,14 +58,13 @@ ms.locfileid: "98191818"
 
     ![タイトル テキストが入力された [形式] ウィンドウのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
-1. **[フォント色]** を白に、 **[背景色]** を青に変更します。    
+1. **[フォント色]** を白に、 **[背景色]** を青に変更します。
 
     a. ドロップダウンを選択し、 **[テーマの色]** 、 **[最近使用した色]** 、または **[ユーザー設定の色]** から色を選択します。
-    
+
     ![フォントの色と背景色のオプションのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
     b. ドロップダウンを選択して、色ウィンドウを閉じます。
-
 
 1. テキスト サイズを **16 ポイント** に増やします。
 
@@ -128,6 +125,7 @@ ms.locfileid: "98191818"
 すべての変更を既定値に戻す必要がある場合は、 **[凡例]** カスタマイズ ウィンドウの下部にある **[既定値に戻す]** を選択します。
 
 ## <a name="customize-total-labels-for-stacked-visuals"></a>積み上げ視覚エフェクトの合計ラベル数をカスタマイズする
+
 積み上げ視覚エフェクトには、データ ラベルと合計ラベルを表示できます。 積み上げ縦棒グラフでは、データ ラベルによって列の各部分の値が示されます。 合計ラベルには、集計された列全体の合計値が表示されます。 
 
 Rien が積み上げグラフに合計ラベルを追加するのを見てから、以下の手順に従って自分で試してみてください。
@@ -136,7 +134,7 @@ Rien が積み上げグラフに合計ラベルを追加するのを見てから
 
 1. **[Overview]** レポート ページを開き、 **[Chain および Store Type による Average Selling Area Size]** 横棒グラフを選択します。
 
-1. **[視覚化]** タブで、![積み上げ横棒グラフのアイコン](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) を選択して、この横棒グラフを積み上げ横棒グラフに変換します。 視覚エフェクトのデータ ラベルが保持されていることに注意してください。 
+1. **[視覚化]** タブで、![積み上げ横棒グラフのアイコン](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) を選択して、この横棒グラフを積み上げ横棒グラフに変換します。 視覚エフェクトのデータ ラベルが保持されていることに注意してください。
 
     ![新しい積み上げ横棒グラフのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png)
 
@@ -150,24 +148,23 @@ Rien が積み上げグラフに合計ラベルを追加するのを見てから
 
     ![合計ラベルのある新しい積み上げ横棒グラフのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
 
-
 ## <a name="customize-layer-order"></a>レイヤーの順序をカスタマイズする
+
 レポート内のビジュアルおよび図形のレイヤー化の順序を変更します。 レイヤーの順序によって、選択したときに前面に表示されるオブジェクトが決まります。 レポート キャンバス上でオブジェクトを選択すると、常にアクティブになり、最上位レイヤーに移動されます。 ビジュアルの場合は、これにより、選択したビジュアルの操作が容易になります。 しかし、図形と背景については、誤って選択してレポートのビジュアルを覆ったり隠したりすることがないように、それらを最下部のレイヤーに固定することをお勧めします。 
 
 レイヤー化コントロールは、Power BI サービス、Power BI Desktop、モバイル、レポート サーバーで使用できます。 この記事では、Power BI サービスでレイヤーの順序の動作を変更する方法について説明します。
 
 "Rien によるレイヤーの順序の動作の変更" をご覧になってから、以下の手順に従って自分で試してみてください。
 
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
 
-1. 黄色の正符号を選択して、新しいレポート ページを追加します。 
+1. 黄色の正符号を選択して、新しいレポート ページを追加します。
 
-1. キャンバスに図形を追加します。 ここでは、青色の四角形を追加しました。 
+1. キャンバスに図形を追加します。 ここでは、青色の四角形を追加しました。
 
     ![青色の四角形を含む新しいレポート ページのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png)
 
-1. レポート内の別のページから、ビジュアルをコピーして貼り付けます。 
+1. レポート内の別のページから、ビジュアルをコピーして貼り付けます。
 
     ![青色の四角形と円グラフを含む新しいレポート ページのスクリーンショット。](media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png)
 
@@ -179,14 +176,12 @@ Rien が積み上げグラフに合計ラベルを追加するのを見てから
 
 1. [読み取り] ビューでは、青色の四角形は選択された場合もバック レイヤーに残ります。
 
-
 ## <a name="customize-colors-using-a-theme"></a>テーマを使用して色をカスタマイズする
 
 レポートのテーマでは、コーポレート カラーを使用したり、アイコン セットを変更したり、ビジュアルの新しい既定の形式を適用したりなど、デザインの変更をお使いのレポート全体に適用できます。 レポートのテーマを適用すると、お使いのレポートのすべてのビジュアルで、ご自身が選択したテーマの色と書式設定が使用されます。
 
 お使いのレポートにテーマを適用するには、メニュー バーから **[テーマの切り替え]** を選択します。 テーマを選択します。  次のレポートでは、 **[太陽]** のテーマが使用されています。
 
- 
 ![黄色、オレンジ、赤の [太陽] のテーマを使用したレポート](media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png)
 
 ## <a name="visualization-types-that-you-can-customize"></a>カスタマイズ可能な視覚化の種類
@@ -227,5 +222,3 @@ Rien が積み上げグラフに合計ラベルを追加するのを見てから
 - [色の書式設定と軸のプロパティの概要](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
-
-

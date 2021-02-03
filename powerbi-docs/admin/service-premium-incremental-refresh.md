@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 68d12c69afadb3d5d82782c239381844c1d58b5e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b019ed8177a4300b39d41c53c2e7d6a4d84e673a
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413543"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086558"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Power BI での増分更新
 
@@ -116,7 +116,7 @@ Power BI サービスの最初の更新では、丸 5 年間のすべてをイ�
 
 #### <a name="current-date"></a>現在の日付
 
-"*現在の日付*" とは、更新時のシステム日付です。 Power BI サービスのデータセットでスケジュールされている更新が有効になっている場合は、指定したタイム ゾーンが考慮され、現在の日付が決定されます。 Power BI サービスにより手動で呼び出された更新でも、スケジュールされた更新でも、指定されている場合はタイム ゾーンが順守されます。 たとえば、タイム ゾーンが指定された、太平洋標準時の午後 8 時 (米国およびカナダ) に発生する更新では、(それ以外の場合では翌日になる) GMT ではなく、太平洋標準時に基づいて現在の日付が決定されます。 Power BI サービスによって呼び出されていない更新操作 ([TMSL 更新コマンド](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current)など) では、スケジュールされた更新タイム ゾーンは考慮されません
+"*現在の日付*" とは、更新時のシステム日付です。 Power BI サービスのデータセットでスケジュールされている更新が有効になっている場合は、指定したタイム ゾーンが考慮され、現在の日付が決定されます。 Power BI サービスにより手動で呼び出された更新でも、スケジュールされた更新でも、指定されている場合はタイム ゾーンが順守されます。 たとえば、タイム ゾーンが指定された、太平洋標準時の午後 8 時 (米国およびカナダ) に発生する更新では、(それ以外の場合では翌日になる) GMT ではなく、太平洋標準時に基づいて現在の日付が決定されます。 Power BI サービスによって呼び出されていない更新操作 ([TMSL 更新コマンド](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true)など) では、スケジュールされた更新タイム ゾーンは考慮されません
 
 ![タイム ゾーン](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -180,7 +180,7 @@ XMLA エンドポイントの読み取り、書き込みが有効になってい
 
 #### <a name="override-incremental-refresh-behavior"></a>増分更新の動作をオーバーライドする
 
-SSMS では、[テーブル モデルのスクリプト言語 (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) と[表形式オブジェクト モデル (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current) を使用して、増分更新を呼び出す方法をより細かく制御することもできます。 たとえば、SSMS では、オブジェクト エクスプローラーでテーブルを右クリックしてから、 **[テーブルの処理]** メニュー オプションを選択します。 次に、 **[スクリプト]** ボタンをクリックして、TMSL 更新コマンドを生成します。
+SSMS では、[テーブル モデルのスクリプト言語 (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) と[表形式オブジェクト モデル (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true) を使用して、増分更新を呼び出す方法をより細かく制御することもできます。 たとえば、SSMS では、オブジェクト エクスプローラーでテーブルを右クリックしてから、 **[テーブルの処理]** メニュー オプションを選択します。 次に、 **[スクリプト]** ボタンをクリックして、TMSL 更新コマンドを生成します。
 
 ![[テーブルの処理] ダイアログの [スクリプト] ボタン](media/service-premium-incremental-refresh/ssms-process-table.png)
 
@@ -208,7 +208,7 @@ SSMS では、[テーブル モデルのスクリプト言語 (TMSL)](/analysis-
 }
 ```
 
-TMSL での既定の増分更新動作の上書きの詳細については、「[Refresh コマンド](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current)」を参照してください。
+TMSL での既定の増分更新動作の上書きの詳細については、「[Refresh コマンド](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true)」を参照してください。
 
 ### <a name="custom-queries-for-detect-data-changes"></a>データ変更の検出のためのカスタム クエリ
 
