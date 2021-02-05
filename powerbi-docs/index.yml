@@ -12,24 +12,24 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 12/16/2020
-  ms.openlocfilehash: be6ec499d78d3ba5f3899fcb8556296568a40319
-  ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+  ms.date: 02/03/2021
+  ms.openlocfilehash: 8f8956075030eee75077b9da9b6fccca94b73546
+  ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "97621857"
+  ms.lasthandoff: 02/04/2021
+  ms.locfileid: "99533052"
 highlightedContent:
   items:
   - title: Power BI Desktop の概要
     itemType: get-started
     url: fundamentals/desktop-getting-started.md
-  - title: Power BI データセットおよび Azure Analysis 用の DirectQuery
+  - title: Power BI 埋め込み分析のクライアント API
+    itemType: overview
+    url: /javascript/api/overview/powerbi/
+  - title: データセット ハブを使用したデータセットの検出 (プレビュー)
     itemType: concept
-    url: connect-data/desktop-directquery-datasets-azure-analysis-services.md
-  - title: Power BI で Azure Machine Learning モデルを使用する
-    itemType: tutorial
-    url: connect-data/service-aml-integrate.md
+    url: connect-data/service-datasets-hub.md
   - title: Microsoft Learn の Power BI
     itemType: learn
     url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
@@ -234,13 +234,24 @@ conceptualContent:
 additionalContent:
   sections:
   - title: 関連するツール
-  - items:
+    items:
     - title: Power BI Report Server
       summary: Power BI のレポート、ページ分割されたレポートおよび KPI を表示および管理できる Web ポータルを持つオンプレミスのレポート サーバーである Power BI Report Server をご探索ください。
       url: report-server/index.yml
     - title: Power BI REST API
       summary: Power BI の REST API には、埋め込み、管理およびユーザー リソース用のサービス エンドポイントがあります。
       url: /rest/api/power-bi/
-    - title: Power Platform ドキュメント
-      summary: Power BI、Power Apps、Power Automate、および Power Virtual Agents を連携させることによる機能強化について説明します。
-      url: /power-platform/
+    - title: Power BI 埋め込み分析のクライアント API
+      summary: JavaScript または TypeScript を使用して Power BI を埋め込むためのクライアント側ライブラリ。
+      url: /javascript/api/overview/powerbi/
+  - title: その他の Microsoft Power Platform 製品
+    items:
+    - title: Power Apps
+      summary: 組織のプロセスを最新化し、困難なビジネス上の課題を解決するアプリを、わずかなコードで迅速に構築します。
+      url: /powerapps/
+    - title: Power Automate
+      summary: お気に入りのアプリとサービスの間に自動化されたワークフローを作成して、ファイルの同期や通知の受信などを行います。
+      url: /power-automate/
+    - title: Power Virtual Agents
+      summary: コード不要のガイド付きグラフィカル インターフェイスを使用して、強力なボットを作成します。データ サイエンティストや開発者は必要ありません。
+      url: /power-virtual-agents/
