@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 01/28/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 597ae36aaddcbabbedcd084061410dab9334a702
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9e0cd283728afad43ddf37f765b1fda66c300270
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413589"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043415"
 ---
 # <a name="purchase-power-bi-premium-for-testing"></a>テスト用の Power BI Premium を購入する
 
 この記事では、テスト シナリオのために、および Power BI Premium P SKU の購入に必要な (Microsoft 365 グローバル管理者ロールまたは課金管理者ロール) のアクセス許可がない場合に、Power BI Premium A SKU を購入する方法について、 A SKU には時間のコミットメントは不要であり、課金は時間単位で行われます。 A SKU は [Azure portal](https://portal.azure.com) で購入します。
 
-Power BI Premium の詳細については、「[Microsoft Power BI Premium とは何ですか?](service-premium-what-is.md)」を参照してください。 現在の価格と計画については、[Power BI の料金ページ](https://powerbi.microsoft.com/pricing/)および「[Power BI Premium 計算ツール](https://powerbi.microsoft.com/calculator/)」を参照してください。 ご自分の組織が Power BI Premium を使用している場合でも、コンテンツの作成者には引き続き [Power BI Pro のライセンス](service-admin-purchasing-power-bi-pro.md)が必要です。 組織で Power BI Pro ライセンスを少なくとも 1 つ購入してください。 A SKU では、コンテンツを使用する "_すべてのユーザー_" にも Pro ライセンスが必要です。
+Power BI Premium の詳細については、「[Microsoft Power BI Premium とは何ですか?](service-premium-what-is.md)」を参照してください。 現在の価格と計画については、[Power BI の価格ページ](https://powerbi.microsoft.com/pricing/)を参照してください。 ご自分の組織が Power BI Premium を使用している場合でも、コンテンツの作成者には引き続き [Power BI Pro のライセンス](service-admin-purchasing-power-bi-pro.md)が必要です。 組織で Power BI Pro ライセンスを少なくとも 1 つ購入してください。 A SKU では、コンテンツを使用する "_すべてのユーザー_" にも Pro ライセンスが必要です。
 
 > [!NOTE]
 > Premium サブスクリプションの有効期限が切れてから 30 日間は、容量への完全なアクセス権があります。 その後、コンテンツは共有された容量に戻ります。 1 GB を超えるモデルは、共有された容量ではサポートされません。
@@ -92,7 +92,6 @@ Azure portal で A SKU を購入するには、次の手順に従います。
 [Power BI Premium の購入方法](service-admin-premium-purchase.md)
 [Power BI Premium で容量を構成および管理する](service-admin-premium-manage.md)\
 [Power BI の料金ページ](https://powerbi.microsoft.com/pricing/)\
-[Power BI Premium 計算ツール](https://powerbi.microsoft.com/calculator/)\
 [Power BI Premium のよくあるご質問](service-premium-faq.md)\
 [Power BI のエンタープライズ展開の計画に関するホワイト ペーパー](https://aka.ms/pbienterprisedeploy)
 

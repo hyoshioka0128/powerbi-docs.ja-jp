@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.openlocfilehash: 72b81f10b6337530ab05f1fcef0a17a5869af867
-ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
+ms.openlocfilehash: f0dd30e721d8325fdbfd8b562083fbedef2af9c0
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226745"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044197"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server-pre-october-2020"></a>PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - 2020 年 10 月より前の Power BI Report Server
 
@@ -21,7 +21,7 @@ ms.locfileid: "98226745"
 PowerShell を使用して必要な API を操作することにより、Power BI Report Server でホストされている Power BI レポートのデータ ソース接続文字列を変更できます。 
 
 > [!IMPORTANT]
-> Power BI Report Server の最新版である 2020 年 10 月バージョンを使用している場合は、「[PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - Power BI Report Server](connect-data-source-apis.md)」を参照してください。
+> Power BI Report Server の最新バージョンを使用している場合は、「[PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - Power BI Report Server](connect-data-source-apis.md)」を参照してください。
 
 > [!NOTE]
 > 現在、この機能は DirectQuery に対してのみ機能します。 インポートとデータ更新のサポートが予定されています。

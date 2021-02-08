@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 12/09/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 09188b3b03fd5bfb720b98045ee9d895d337d677
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: a50a8c8514a4316f16a6a38647804aabf878d5ad
+ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969169"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925693"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Power BI で秘密度ラベルを適用する方法
 
@@ -95,7 +95,7 @@ Power BI Desktop で秘密度ラベルを使用するには:
 ![Desktop のステータス バーでの秘密度ラベルのスクリーンショット。](media/service-security-apply-data-sensitivity-labels/sensitivity-label-in-desktop-status-bar.png)
 
 ### <a name="sensitivity-labels-when-uploading-or-downloading-pbix-files-tofrom-the-service"></a>サービスとの間で .pbix ファイルをアップロードまたはダウンロードするときの秘密度ラベル
-* Desktop から Power BI サービスに .pbix ファイルを発行するとき、または **[データを取得]** を使用して .pbix ファイルを直接 Power BI サービスにアップロードするときは、サービスで作成されるレポートとデータセットの両方に .pbix ファイルのラベルが適用されます。 発行またはアップロードされた .pbix ファイルによって既存のアセット (つまり、.pbix ファイルと同じ名前を持つアセット) が置き換えられる場合は、.pbix ファイルのラベルでそれらのアセットのラベルが上書きされます。
+* Desktop から Power BI サービスに .pbix ファイルを発行するとき、または **[データを取得]** を使用して .pbix ファイルを直接 Power BI サービスにアップロードするときは、サービスで作成されるレポートとデータセットの両方に .pbix ファイルのラベルが適用されます。 発行またはアップロードされた .pbix ファイルによって既存のアセット (つまり、.pbix ファイルと同じ名前を持つアセット) が置き換えられる場合は、.pbix ファイルのラベルでそれらのアセットのラベルが上書きされます。 .pbix ファイルがラベル付けされていない場合は、サービスのラベルが保持されます。
 * Power BI サービスで ".pbix へのダウンロード" を使用するとき、ダウンロードされるレポートとデータセットの両方にラベルがあり、それらのラベルが異なる場合、2 つのうちで制限が厳しい方のラベルが .pbix ファイルに適用されます。
 
 ## <a name="remove-sensitivity-labels"></a>秘密度ラベルを削除する

@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ''
 ms.date: 09/22/2020
-ms.openlocfilehash: 890b3c8124cc1711e08415cdcfda1f51b548fa63
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 68494784e3c5b21c0c3e15bd5a3a816fd07e5f8b
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983070"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043553"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Power BI Report Server のアップグレード
 
@@ -22,7 +22,7 @@ Power BI Report Server のアップグレード方法について説明します
 
  **ダウンロード** ![ダウンロード アイコン](media/upgrade/download.png "ダウンロード アイコン")
 
-Power BI Report Server および Power BI Report Server 向けに最適化された Power BI Desktop をダウンロードするには、「[Power BI Report Server によるオンプレミスでのレポート作成](https://powerbi.microsoft.com/report-server/)」を参照してください。
+Power BI Report Server および Power BI Report Server 向けの Power BI Desktop をダウンロードするには、「[Power BI Report Server を使用してオンプレミスでレポートを作成する](https://powerbi.microsoft.com/report-server/)」を参照してください。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -38,7 +38,7 @@ Power BI Report Server および Power BI Report Server 向けに最適化され
 
 * **reportserver** データベースをバックアップするには、完全復旧モデルを使用します。
 * **reportservertempdb** データベースをバックアップするには、単純復旧モデルを使用します。
-* 各データベースに対して異なるバックアップ スケジュールを設定できます。 **reportservertempdb** をバックアップする唯一の理由は、ハードウェア障害が発生した場合にこのデータベースの再作成を回避することです。 ハードウェア障害が発生した場合、**reportservertempdb** のデータを復旧する必要はありませんが、テーブル構造については復旧が必要になります。 **reportservertempdb**が失われた場合、レポート サーバー データベースの再作成以外にこのデータベースを復元する方法はありません。 **reportservertempdb** を再作成する場合、プライマリ レポート サーバー データベースと同じ名前を使用することが重要です。
+* 各データベースに対して異なるバックアップ スケジュールを設定できます。 **reportservertempdb** をバックアップする唯一の理由は、ハードウェア障害が発生した場合にこのデータベースの再作成を回避することです。 ハードウェア障害が発生した場合、**reportservertempdb** のデータを復旧する必要はありませんが、テーブル構造については復旧が必要になります。 **reportservertempdb** が失われた場合、レポート サーバー データベースの再作成以外にこのデータベースを復元する方法はありません。 **reportservertempdb** を再作成する場合、プライマリ レポート サーバー データベースと同じ名前を使用することが重要です。
 
 SQL Server リレーショナル データベースのバックアップと復旧の詳細については、「[SQL Server データベースのバックアップと復元](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)」を参照してください。
 
@@ -82,12 +82,12 @@ Power BI Report Server では、Microsoft Update 経由でセキュリティ修�
 
 ## <a name="upgrade-power-bi-desktop"></a>Power BI Desktop のアップグレード
 
-レポート サーバーをアップグレードしたら、そのサーバーに一致する、Power BI Power BI Report Server に最適化された Power BI Desktop のバージョンに、すべての Power BI のレポート作成者がアップグレードしたかどうかを確認してください。
+レポート サーバーをアップグレードしたら、そのサーバーに一致する、Power BI Power BI Report Server 向けの Power BI Desktop のバージョンに、すべての Power BI のレポート作成者がアップグレードしたかどうかをご確認ください。
 
 ## <a name="next-steps"></a>次の手順
 
 * [管理者の概要](admin-handbook-overview.md)  
-* [Power BI レポート サーバー向けに最適化された Power BI Desktop のインストール](install-powerbi-desktop.md)  
+* [Power BI Report Server 向け Power BI Desktop をインストールする](install-powerbi-desktop.md)  
 * [レポート サービスのインストールを確認する](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 * [レポート サーバー サービス アカウントを構成する](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 * [レポート サーバーの URL を構成する](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
