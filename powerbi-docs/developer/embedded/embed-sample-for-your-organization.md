@@ -8,429 +8,324 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 02/04/2020
-ms.openlocfilehash: da356800a49e6d8876a147862dd08541ed2999bc
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.date: 12/17/2020
+ms.openlocfilehash: fbae63597ecf4ff36783ad83785f87c242359f90
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565688"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99495000"
 ---
-# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI コンテンツを埋め込む
+# <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-organization-application"></a>チュートリアル:"*組織向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
-**Power BI** では、ユーザー所有データを使用して、レポート (Power BI またはページ分割された)、ダッシュボード、またはタイルをアプリケーションに埋め込むことができます。 **ユーザー所有データ** を使用すれば、アプリケーションで埋め込み分析を使用できるように Power BI サービスを拡張できます。 このチュートリアルでは、レポート (Power BI またはページ分割された) をアプリケーションに統合する方法を取り上げます。 Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けのアプリケーションに Power BI を埋め込みます。
+Power BI 埋め込み分析を使用すると、レポート、ダッシュボードおよびタイルなどの Power BI コンテンツをアプリケーションに埋め込むことができます。
 
-![Power BI 埋め込みレポート](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+このチュートリアルでは、次の方法について説明します。
 
-このチュートリアルでは、以下のタスクについて説明します。
-> [!div class="checklist"]
-> * Azure にアプリケーションを登録します。
-> * Power BI テナントを使用して、Power BI またはページ分割されたレポートをアプリケーションに埋め込みます。
+>[!div class="checklist"]
+>* 埋め込み環境を設定する。
+>* "*組織向けの埋め込み*" ("*ユーザー所有データ*" ともいう) サンプル アプリケーションを構成する。
+
+アプリケーションを使用するために、ユーザーが Power BI にサインインする必要はありません。
+
+組織向けに埋め込むソリューションは、通常、企業や大規模な組織で使用され、内部ユーザーを対象としています。
+
+## <a name="code-sample-specifications"></a>コード サンプルの仕様
+
+このチュートリアルには、次のフレームワークのいずれかで "*組織向けの埋め込み*" サンプル アプリケーションを構成する手順が含まれています。
+
+* .NET Framework
+* .NET Core
+* React TypeScript
+
+>[!NOTE]
+>*.NET Core* と *.NET Framework* のサンプルを使用すると、エンド ユーザーは Power BI サービスでアクセスできる任意の Power BI ダッシュボード、レポートまたはタイルを表示できます。 *React TypeScript* のサンプルを使用すると、エンド ユーザーは Power BI サービスで既にアクセスできるレポートを 1 つだけ埋め込むことができます。
+
+このコード サンプルでは次のブラウザーがサポートされています。
+
+* Microsoft Edge
+* Google Chrome
+* Mozilla Firefox
 
 ## <a name="prerequisites"></a>前提条件
 
-始めるにあたり、必要なもの:
+このチュートリアルを開始する前に、以下に一覧表示されている Power BI とコードの両方の依存関係があることを確認してください。
 
-* [Power BI Pro アカウント](../../fundamentals/service-self-service-signup-for-power-bi.md)。
-* [Microsoft Azure](https://azure.microsoft.com/) サブスクリプション。
-* 独自の [Azure Active Directory テナント](create-an-azure-active-directory-tenant.md)のセットアップが必要です。
-* ページ分割された SharePoint レポートを埋め込むためには、少なくとも P1 容量が必要です。「[ページ分割されたレポートに必要な Premium 容量のサイズはどれくらいですか。](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)」を参照してください。
+* **Power BI の依存関係**
 
-**Power BI Pro** にサインアップしていない場合は、[無料の試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してください。
+    * 独自の [Azure Active Directory テナント](create-an-azure-active-directory-tenant.md)。
 
-Azure サブスクリプションをお持ちでない場合は、始める前に[無料アカウントを作成](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)してください。
+    * 次のいずれかのライセンス:
 
->[!NOTE]
->[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) はサポートされています。 ただし、PPU を使用している場合は、組織内の PPU ユーザーのみがソリューションにアクセスできるようになります。
+        * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md)
 
-## <a name="set-up-your-embedded-analytics-development-environment"></a>埋め込み分析開発環境を設定する
+        * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md)
 
-アプリケーションへのレポート、ダッシュボード、タイルの埋め込みを開始する前に、使用している環境で Power BI での埋め込みが許可されていることを確認する必要があります。
+    >[!NOTE]
+    >[運用環境に移行する](move-to-production.md)には、次のいずれかの構成が必要です。
+    >* Pro ライセンスを持つすべてのユーザー。
+    >* PPU ライセンスを持つすべてのユーザー。
+    >* [容量](embedded-capacity.md)。 この構成を使用すると、すべてのユーザーが無料ライセンスを持つことができます。
 
-[埋め込みセットアップ ツール](https://app.powerbi.com/embedsetup)を使うと、環境の作成とレポートの埋め込みを段階的に行うのに役立つサンプル アプリケーションをすぐに使い始めたり、ダウンロードしたりできます。 ページ分割されたレポートを埋め込む場合、作成したワークスペースに少なくとも P1 容量を割り当てる必要があります。
+* **コードの依存関係**
 
-手動で環境をセットアップする場合は、以下を続行できます。
+    # <a name="net-core"></a>[.NET Core](#tab/net-core)
 
-### <a name="register-an-application-in-azure-active-directory"></a>Azure Active Directory にアプリケーションを登録する
+    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (またはそれ以降)
+    
+    * 統合開発環境 (IDE)。 次のいずれかを使用することをお勧めします。
 
-Azure Active Directory に[アプリケーションを登録する](register-app.md)と、アプリケーションは [Power BI REST API](/rest/api/power-bi/) にアクセスできるようになります。 アプリケーションを登録すると、アプリケーションの ID を設定し、Power BI REST リソースへのアクセス許可を指定することができます。
+        * [Visual Studio](https://visualstudio.microsoft.com/)
 
->[!NOTE]
->独自のアプリケーションでは、 *[認証]* に移動して、 *[リダイレクト URI]* フィールドにリダイレクト アドレスを挿入する必要があります。
-リダイレクトの詳細については、「[リダイレクト URI (応答 URL) に関する制約と制限](/azure/active-directory/develop/reply-url)」を参照してください。
+        * [Visual Studio Code](https://code.visualstudio.com/)
 
-## <a name="set-up-your-power-bi-environment"></a>Power BI 環境を設定する
+    # <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
 
-### <a name="create-a-workspace"></a>ワークスペースの作成
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
 
-顧客向けのレポート、ダッシュボード、またはタイルを埋め込む場合は、コンテンツをワークスペース内に配置する必要があります。 設定可能なワークスペースには、[従来のワークスペース](../../collaborate-share/service-create-workspaces.md)と[新しいワークスペース](../../collaborate-share/service-create-the-new-workspaces.md)があります。
+    # <a name="react-typescript"></a>[React TypeScript](#tab/react)
 
-### <a name="create-and-publish-your-power-bi-reports"></a>Power BI レポートを作成して発行する
+    * テキスト エディター
 
-Power BI Desktop を使用して、レポートとデータセットを作成することができます。 その後、そのレポートをワークスペースに発行できます。 レポートを発行するエンド ユーザーには、ワークスペースに発行するための Power BI Pro ライセンスが必要です。
+    * コマンド ライン ターミナル (または PowerShell)
 
-1. GitHub からサンプルの [Demo](https://github.com/Microsoft/powerbi-desktop-samples) をダウンロードします。
+---
 
-    ![デモをダウンロードする](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026-1.png)
+## <a name="method"></a>Method
 
-2. Power BI Desktop でサンプルの .pbix レポートを開きます。
+"*組織向けの埋め込み*" サンプル アプリを作成するには、これらの手順に従います。
 
-   ![サンプルの Power BI Desktop レポート](media/embed-sample-for-your-organization/embed-sample-for-your-organization-027.png)
+1. [Azure AD アプリケーションを登録します](#step-1---register-an-azure-ad-application)。
 
-3. ワークスペースに発行します。
+2. [Power BI ワークスペースを作成します](#step-2---create-a-power-bi-workspace)。
 
-   ![Power BI Desktop レポートを発行する](media/embed-sample-for-your-organization/embed-sample-for-your-organization-028.png)
+3. [Power BI レポートを作成して発行します](#step-3---create-and-publish-a-power-bi-report)。
 
-    Power BI サービスを使ってオンラインでレポートを表示できるようになります。
+4. [埋め込みパラメーター値を取得します](#step-4---get-the-embedding-parameter-values)。
 
-   ![Power BI Desktop レポートを表示する](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
-   
-### <a name="create-and-publish-your-paginated-reports"></a>ページ分割されたレポートを作成して発行する
+5. [コンテンツを埋め込みます](#step-5---embed-your-content)。
 
-[Power BI レポート ビルダー](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder)を使用して、ページ分割されたレポートを作成できます。 その後、少なくとも P1 容量に割り当てられているワークスペースに[レポートをアップロード](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service)できます。 レポートをアップロードするエンドユーザーがワークスペースに発行するには、Power BI Pro ライセンスを持っている必要があります。
-   
-## <a name="embed-your-content-by-using-the-sample-application"></a>サンプル アプリケーションを使用してコンテンツを埋め込む
+## <a name="step-1---register-an-azure-ad-application"></a>手順 1 - Azure AD アプリケーションを登録する
 
-このサンプルは実演目的から意図的に単純に作られています。
+Azure AD にアプリケーションを登録すると、アプリの ID を確立できます。
 
-次の手順に従い、サンプル アプリケーションを使用してコンテンツの埋め込みを開始します。
+[!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
-1. [Visual Studio](https://www.visualstudio.com/) (バージョン 2013 以降) をダウンロードします。 必ず最新の [NuGet パッケージ](https://www.nuget.org/profiles/powerbi)をダウンロードしてください。
+## <a name="step-2---create-a-power-bi-workspace"></a>手順 2 - Power BI ワークスペースを作成する
 
-2. 最初に、GitHub から [User Owns Data サンプル](https://github.com/Microsoft/PowerBI-Developer-Samples)をダウンロードします。
+[!INCLUDE[Create a Power BI workspace](../../includes/embed-tutorial-create-workspace.md)]
 
-    ![User Owns Data アプリケーションのサンプル](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
+## <a name="step-3---create-and-publish-a-power-bi-report"></a>手順 3 - Power BI レポートを作成して発行する
 
-3. サンプル アプリケーションで **Cloud.config** ファイルを開きます。
+[!INCLUDE[Create a Power BI report](../../includes/embed-tutorial-create-report.md)]
 
-    アプリケーションを実行する目的で入力必須となるフィールドがあります。
+## <a name="step-4---get-the-embedding-parameter-values"></a>手順 4 - 埋め込みパラメーター値を取得する
 
-    | フィールド |
-    |--------------------|
-    | **[アプリケーション ID](#application-id)** |
-    | **[ワークスペース ID](#workspace-id)** |
-    | **[レポート ID](#report-id)** |
-    | **[AADAuthorityUrl](#aadauthorityurl)** |
+コンテンツを埋め込むには、いくつかのパラメーター値を取得する必要があります。 必要になるパラメーター値は、使用するサンプル アプリケーションの言語によって異なります。 以下の表には、各サンプルに必要なパラメーター値が一覧表示されています。
 
-    ![Cloud.config ファイル](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
+|パラメーター  |.NET Core  |.NET Framework  |React TypeScript |
+|---------|---------|---------|---------|
+|[クライアント ID](#client-id) |![適用対象:](../../media/yes.png) |![適用対象:](../../media/yes.png)         |![適用対象:](../../media/yes.png) |
+|[クライアント シークレット](#workspace-id) |![適用対象:](../../media/yes.png) |![適用対象:](../../media/yes.png) |![適用対象外](../../media/no.png) |
+|[ワークスペース ID]() |![適用対象外](../../media/no.png) |![適用対象外](../../media/no.png) |![適用対象:](../../media/yes.png) |
+|[レポート ID]() |![適用対象外](../../media/no.png) |![適用対象外](../../media/no.png) |![適用対象:](../../media/yes.png) |
 
-### <a name="application-id"></a>アプリケーション ID
+### <a name="client-id"></a>クライアント ID
 
-**applicationId** 情報には、**Azure** の **アプリケーション ID** を入力します。 **applicationId** は、アクセス許可を要求しているユーザーに対して、アプリケーションが自身を識別するために使用します。
+>[!TIP]
+>**適用対象:** ![適用対象](../../media/yes.png) .NET Core ![適用対象](../../media/yes.png) .NET Framework ![適用対象](../../media/yes.png) React TypeScript
 
-**applicationId** を取得するには、次の手順に従います。
+[!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
-1. [Azure Portal ](https://portal.azure.com)にサインインします。
+### <a name="client-secret"></a>クライアント シークレット
 
-2. 左側のナビ ペインで、 **[すべてのサービス]** 、 **[アプリの登録]** の順に選択します。
+>[!TIP]
+>**適用対象:** ![適用対象](../../media/yes.png) .NET Core ![適用対象](../../media/yes.png) .NET Framework ![適用対象外](../../media/no.png) React TypeScript
 
-3. **applicationId** を必要とするアプリケーションを選択します。
-
-    ![アプリの選択](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. **アプリケーション ID** が GUID として一覧表示されます。 この **アプリケーション ID** を、アプリケーションの **applicationId** として使用します。
-
-    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
+[!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ### <a name="workspace-id"></a>ワークスペース ID
 
-**workspaceId** 情報には、Power BI のワークスペース (グループ) の GUID を入力します。 この情報は、Power BI サービスにサインインしたときに URL から取得するか、PowerShell を使用して取得できます。
+>[!TIP]
+>**適用対象:** ![適用対象外](../../media/no.png) .NET Core ![適用対象外](../../media/no.png) .NET Framework ![適用対象](../../media/yes.png) React TypeScript
 
-URL <br>
-
-![workspaceId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040.png)
-
-PowerShell <br>
-
-```powershell
-Get-PowerBIworkspace -name "User Owns Embed Test"
-```
-
-   ![PowerShell の workspaceId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040-ps.png)
+[!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 ### <a name="report-id"></a>レポート ID
 
-**reportId** には、Power BI からレポートの GUID を設定します。 この情報は、Power BI サービスにサインインしたときに URL から取得するか、PowerShell を使用して取得できます。
+>[!TIP]
+>**適用対象:** ![適用対象外](../../media/no.png) .NET Core ![適用対象外](../../media/no.png) .NET Framework ![適用対象](../../media/yes.png) React TypeScript
 
-Power BI レポート URL <br>
+[!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
-![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+## <a name="step-5---embed-your-content"></a>手順 5 - コンテンツを埋め込む
 
+Power BI の埋め込みサンプル アプリケーションを使用すると、Power BI の "*組織向けの埋め込み*" アプリを作成できます。
 
-ページ分割されたレポートの URL<br>
+Power BI レポートを埋め込むには、これらの手順に従って、"*組織向けの埋め込み*" サンプル アプリケーションを変更します。
 
-![ページ分割されたレポートの ID](media/embed-sample-for-your-organization/paginated-reports-url.png)
+[!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
-PowerShell <br>
+4. アプリケーションで使用する言語に応じて、次のいずれかのフォルダーを開きます。
 
-```powershell
-Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
-```
+    * .NET Core
+    * .NET Framework
+    * React-TS
 
-![PowerShell の reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041-ps.png)
+    >[!NOTE]
+    >"*組織向けの埋め込み*" サンプル アプリケーションでサポートされるのは、上に一覧表示されているフレームワークのみです。 *Java*、*Node JS* および *Python* のサンプル アプリケーションでサポートされるのは、" *[顧客向けの埋め込み](embed-sample-for-customers.md)* " ソリューションのみです。
 
-### <a name="aadauthorityurl"></a>AADAuthorityUrl
+# <a name="net-core"></a>[.NET Core](#tab/net-core)
 
-組織のテナント内に埋め込むか、またはゲスト ユーザーに埋め込むことのできる URL を使用して、**AADAuthorityUrl** 情報を入力します。
+### <a name="configure-your-azure-ad-app"></a>Azure AD アプリを構成する
 
-組織のテナントに埋め込む場合は、URL - *https://login.microsoftonline.com/common/oauth2/authorize* を使用します。
+[!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
-ゲストに埋め込む場合は、URL - `https://login.microsoftonline.com/report-owner-tenant-id` を使用します。ここで、*report-owner-tenant-id* に置き換えて、レポート所有者のテナント ID を追加します。
+5. "*プラットフォーム構成*" で、 *[Web]* プラットフォームを開き、 **[リダイレクト URI]** セクションで `https://localhost:5000/signin-oidc` を追加します。
 
-### <a name="run-the-application"></a>アプリケーションの実行
+    > [!NOTE]
+    >**[Web]** プラットフォームがない場合は、 **[プラットフォームを追加]** を選択し、 *[プラットフォームの構成]* ウィンドウで **[Web]** を選択します。
 
-1. **Visual Studio** で **[実行]** を選びます。
+6. 変更を保存します。
 
-    ![アプリケーションの実行](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text=".NET Core アプリ サンプル用の Web リダイレクト URI を含む、Azure AD アプリの認証構成を示すスクリーンショット。":::
 
-2. 次に、 **[Embed Report]** を選びます。 テスト対象に選んだコンテンツ (レポート、ダッシュボード、タイル) に応じて、アプリケーションでそのオプションを選びます。
+### <a name="configure-the-sample-embedding-app"></a>埋め込みサンプル アプリを構成する
 
-    ![コンテンツを選択する](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
+1. **[組織向けの埋め込み]** フォルダーを開きます。
 
-3. サンプル アプリケーションでレポートを表示できるようになります。
+2. これらのいずれかの方法を使用して、"*組織向けの埋め込みサンプル アプリ*" を開きます。
 
-    ![アプリケーションでレポートを表示する](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+    * [Visual Studio](https://visualstudio.microsoft.com/) を使用する場合は、**UserOwnsData.sln** ファイルを開きます。
 
-## <a name="embed-your-content-within-your-application"></a>アプリケーション内にコンテンツを埋め込む
+    * [Visual Studio Code](https://code.visualstudio.com/) を使用する場合は、**UserOwnsData** フォルダーを開きます。
 
-コンテンツを埋め込む手順は [Power BI REST API](/rest/api/power-bi/) で行うことはできますが、この記事で説明するコード例は .NET SDK で作成されています。
+3. **appsettings.json** を開き、次のパラメーター値を入力します。
 
-Web アプリにレポートを統合するには、Power BI REST API または Power BI C# SDK を使用します。 Azure Active Directory 認証アクセス トークンを使用してレポートを取得することもできます。 その後、同じアクセス トークンを使ってレポートを読み込みます。 Power BI Rest API では、特定の Power BI リソースへのプログラムによるアクセスが提供されます。 詳細については、「[Power BI REST API](/rest/api/power-bi/)」 (Power BI REST API) と [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) に関するページを参照してください。
+    * `ClientId` - [クライアント ID](#client-id) の GUID を使用します
 
-### <a name="get-an-access-token-from-azure-ad"></a>Azure AD からアクセス トークンを取得する
+    * `ClientSecret` - [クライアント シークレット](#client-secret)を使用します
 
-アプリケーション内では、Power BI REST API の呼び出しを行う前に、Azure AD からアクセス トークンを取得する必要があります。 詳しくは、「[ユーザーを認証し、Power BI アプリ用の Azure AD アクセス トークンを取得する](get-azuread-access-token.md)」をご覧ください。
+### <a name="run-the-sample-app"></a>サンプル アプリを実行する
 
-### <a name="get-a-report"></a>レポートを取得する
+1. 適切なオプションを選択してプロジェクトを実行します。
 
-Power BI またはページ分割されたレポートを取得するには、[レポートの取得](/rest/api/power-bi/reports/getreports)操作を使用し、Power BI レポートとページ分割されたレポートの一覧を取得します。 レポートの一覧から、レポート ID を取得できます。
+    * **Visual Studio** を使用する場合は、 **[IIS Express]** (再生) を選択します。
 
-### <a name="get-reports-by-using-an-access-token"></a>アクセス トークンを使ってレポートを取得する
+    * **Visual Studio Code** を使用する場合は、 **[実行]、[デバッグの開始]** の順に選択します。
 
-[レポートを取得する](/rest/api/power-bi/reports/getreports)操作により、レポートの一覧が返されます。 レポートの一覧から 1 つのレポートを取得できます。
+[!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
 
-REST API 呼び出しを行うには、*Authorization* ヘッダーを "*ベアラー {アクセス トークン}* " の形式で含める必要があります。
+# <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
 
-#### <a name="get-reports-with-the-rest-api"></a>REST API でレポートを取得する
+### <a name="configure-your-azure-ad-app"></a>Azure AD アプリを構成する
 
-以下のコード サンプルでは、REST API を使用してレポートを取得する方法を示します。
+[!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
-> [!Note]
-> 埋め込むコンテンツ アイテムを取得するサンプルは、[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)の Default.aspx.cs ファイルにあります。 たとえば、レポート、ダッシュボード、タイルです。
+5. "*プラットフォーム構成*" で、次のように構成します。
 
-```csharp
-using Newtonsoft.Json;
+    1. *[Web]* プラットフォームの **[リダイレクト URI]** セクションで、`https://localhost:44300/` を追加します。
 
-//Get a Report. In this sample, you get the first Report.
-protected void GetReport(int index)
-{
-    //Configure Reports request
-    System.Net.WebRequest request = System.Net.WebRequest.Create(
-        String.Format("{0}/Reports",
-        baseUri)) as System.Net.HttpWebRequest;
+        > [!NOTE]
+        >**[Web]** プラットフォームがない場合は、 **[プラットフォームを追加]** を選択し、 *[プラットフォームの構成]* ウィンドウで **[Web]** を選択します。
+    
+    2. *[Implicit grant and hybrid flows]\(暗黙的な許可およびハイブリッド フロー\)* で、 **[ID トークン]** オプションを有効にします。
+    
+6. 変更を保存します。
 
-    request.Method = "GET";
-    request.ContentLength = 0;
-    request.Headers.Add("Authorization", String.Format("Bearer {0}", accessToken.Value));
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text=".NET Framework アプリ サンプル用の Web リダイレクト URI と選択されたアクセス トークン オプションを含む、Azure AD アプリの認証構成を示すスクリーンショット。":::
 
-    //Get Reports response from request.GetResponse()
-    using (var response = request.GetResponse() as System.Net.HttpWebResponse)
-    {
-        //Get reader from response stream
-        using (var reader = new System.IO.StreamReader(response.GetResponseStream()))
-        {
-            //Deserialize JSON string
-            PBIReports Reports = JsonConvert.DeserializeObject<PBIReports>(reader.ReadToEnd());
+### <a name="configure-the-sample-embedding-app"></a>埋め込みサンプル アプリを構成する
 
-            //Sample assumes at least one Report.
-            //You could write an app that lists all Reports
-            if (Reports.value.Length > 0)
-            {
-                var report = Reports.value[index];
+1. **[組織向けの埋め込み]** フォルダーを開きます。
 
-                txtEmbedUrl.Text = report.embedUrl;
-                txtReportId.Text = report.id;
-                txtReportName.Text = report.name;
-            }
-        }
-    }
-}
-
-//Power BI Reports used to deserialize the Get Reports response.
-public class PBIReports
-{
-    public PBIReport[] value { get; set; }
-}
-public class PBIReport
-{
-    public string id { get; set; }
-    public string reportType { get; set }
-    public string name { get; set; }
-    public string webUrl { get; set; }
-    public string embedUrl { get; set; }
-}
-```
-
-#### <a name="get-reports-by-using-the-net-sdk"></a>.NET SDK を使ってレポートを取得する
-
-REST API を直接呼び出すのではなく、.NET SDK を使ってレポートの一覧を取得することもできます。 次のコード サンプルでは、レポートを一覧表示する方法を示します。
-
-```csharp
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-var tokenCredentials = new TokenCredentials(<ACCESS TOKEN>, "Bearer");
-
-// Create a Power BI Client object. It is used to call Power BI APIs.
-using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
-{
-    // Get the first report all reports in that workspace
-    ODataResponseListReport reports = client.Reports.GetReports();
-
-    Report report = reports.Value.FirstOrDefault();
-
-    var embedUrl = report.EmbedUrl;
-}
-```
-
-### <a name="load-a-report-by-using-javascript"></a>JavaScript を使ってレポートを読み込む
-
-JavaScript を使って、Web ページの div 要素にレポートを読み込むことができます。 以下のコード サンプルでは、指定したワークスペースからレポートを取得する方法を示します。
-
-> [!NOTE]  
-> 埋め込むコンテンツ アイテムを読み込むサンプルは、[サンプル アプリケーション](https://github.com/Microsoft/PowerBI-Developer-Samples)の **Default.aspx** ファイルにあります。
-
-```javascript
-<!-- Embed Report-->
-<div> 
-    <asp:Panel ID="PanelEmbed" runat="server" Visible="true">
-        <div>
-            <div><b class="step">Step 3</b>: Embed a report</div>
-
-            <div>Enter an embed url for a report from Step 2 (starts with https://):</div>
-            <input type="text" id="tb_EmbedURL" style="width: 1024px;" />
-            <br />
-            <input type="button" id="bEmbedReportAction" value="Embed Report" />
-        </div>
-
-        <div id="reportContainer"></div>
-    </asp:Panel>
-</div>
-```
-
-#### <a name="sitemaster"></a>Site.master
-
-```javascript
-window.onload = function () {
-    // client side click to embed a selected report.
-    var el = document.getElementById("bEmbedReportAction");
-    if (el.addEventListener) {
-        el.addEventListener("click", updateEmbedReport, false);
-    } else {
-        el.attachEvent('onclick', updateEmbedReport);
-    }
-
-    // handle server side post backs, optimize for reload scenarios
-    // show embedded report if all fields were filled in.
-    var accessTokenElement = document.getElementById('MainContent_accessTokenTextbox');
-    if (accessTokenElement !== null) {
-        var accessToken = accessTokenElement.value;
-        if (accessToken !== "")
-            updateEmbedReport();
-    }
-};
-
-// update embed report
-function updateEmbedReport() {
-
-    // check if the embed url was selected
-    var embedUrl = document.getElementById('tb_EmbedURL').value;
-    if (embedUrl === "")
-        return;
-
-    // get the access token.
-    accessToken = document.getElementById('MainContent_accessTokenTextbox').value;
-
-    // Embed configuration used to describe the what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'report',
-        accessToken: accessToken,
-        embedUrl: embedUrl
-    };
-
-    // Grab the reference to the div HTML element that will host the report.
-    var reportContainer = document.getElementById('reportContainer');
-
-    // Embed the report and display it within the div container.
-    var report = powerbi.embed(reportContainer, config);
-
-    // report.on will add an event handler which prints to Log window.
-    report.on("error", function (event) {
-        var logView = document.getElementById('logView');
-        logView.innerHTML = logView.innerHTML + "Error<br/>";
-        logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
-        logView.innerHTML = logView.innerHTML + "---------<br/>";
-    }
-  );
-}
-```
-
-## <a name="using-a-power-bi-premium-capacity"></a>Power BI Premium 容量の使用
-
-これでアプリケーションの開発が完了したため、容量を持つワークスペースに戻ります。
-
-### <a name="create-a-capacity"></a>容量を作成する
-
-容量を作成することにより、ワークスペース内のコンテンツに対してリソースを持つことができます。 ページ分割されたレポートの場合は、少なくとも P1 容量を使用してワークスペースをバックアップする必要があります。 [Power BI Premium](../../admin/service-premium-what-is.md) を使用して、容量を作成できます。
-
-次の表は、[Microsoft 365](../../admin/service-admin-premium-purchase.md) で利用可能な Power BI Premium SKU の一覧です。
-
-| 容量ノード | 仮想コアの合計<br/>(バックエンド + フロント エンド) | バックエンドの仮想コア | フロント エンドの仮想コア | DirectQuery/ライブ接続の制限 |
-| --- | --- | --- | --- | --- | --- |
-| EM1 |1 仮想コア |0.5 仮想コア、3 GB の RAM |0.5 仮想コア |1 秒あたり 3.75 |
-| EM2 |2 仮想コア |1 仮想コア、5 GB の RAM |1 仮想コア |1 秒あたり 7.5 |
-| EM3 |4 仮想コア |2 仮想コア、10 GB の RAM |2 仮想コア |1 秒あたり 15 |
-| P1 |8 仮想コア |4 仮想コア、25 GB の RAM |4 仮想コア |1 秒あたり 30 |
-| P2 |16 仮想コア |8 仮想コア、50 GB の RAM |8 仮想コア |1 秒あたり 60 |
-| P3 |32 仮想コア |16 仮想コア、100 GB の RAM |16 仮想コア |1 秒あたり 120 |
-| P4 |64 仮想コア |32 仮想コア、200 GB の RAM |32 仮想コア |1 秒あたり 240 |
-| P5 |128 仮想コア |64 仮想コア、400 GB の RAM |64 仮想コア |1 秒あたり 480 |
-
-> [!NOTE]
-> - Microsoft Office アプリで埋め込もうとしている場合は、EM SKU を使用して、無料の Power BI ライセンスでコンテンツにアクセスできます。 しかし、Powerbi.com または Power BI Mobile を使用する場合、無料の Power BI ライセンスでコンテンツにアクセスすることはできません。
-> - Powerbi.com または Power BI Mobile を使用して、Microsoft Office アプリで埋め込もうとしている場合は、無料の Power BI ライセンスでコンテンツにアクセスできます。
-
-### <a name="assign-a-workspace-to-a-capacity"></a>容量にワークスペースを割り当てる
-
-容量を作成した後、ワークスペースをその容量に割り当てることができます。 このプロセスを完了するには、次の手順に従います。
-
-1. Power BI サービス内でワークスペースを展開し、コンテンツを埋め込むために使用しているワークスペースの省略記号を選択します。 次に、 **[Edit workspaces]\(ワークスペースの編集\)** を選択します。
-
-    ![ワークスペースを編集する](media/embed-sample-for-your-organization/embed-sample-for-your-organization-036.png)
-
-2. **[詳細]** を展開し、 **[容量]** を有効にします。 作成した容量を選択します。 その後、 **[保存]** を選びます。
-
-    ![容量を割り当てる](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
-
-3. **[保存]** を選択すると、ワークスペース名の横にひし形が表示されます。
-
-    ![容量に関連付けられたワークスペース](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
-
-## <a name="admin-settings"></a>管理者設定
-
-グローバル管理者または Power BI サービス管理者は、テナントに対して REST API を使う機能を有効または無効にできます。 Power BI 管理者は、組織全体または個々のセキュリティ グループに対してこれを設定できます。 既定では組織全体に対して有効になります。 [Power BI 管理ポータル](../../admin/service-admin-portal.md)でこれらの変更を行うことができます。
-
-## <a name="next-steps"></a>次の手順
-
-このチュートリアルでは、Power BI の組織アカウントを使用して、アプリケーションに Power BI コンテンツを埋め込む方法を説明しました。 これで、アプリを使用して、アプリケーションへの Power BI コンテンツの埋め込みを試すことができます。 また、顧客のために Power BI コンテンツを埋め込むことができます (ページ分割されたレポートの埋め込みにはまだ対応していません)。
+2. [Visual Studio](https://visualstudio.microsoft.com/) を使用して、**UserOwnsData.sln** ファイルを開きます。
+
+3. **Web.config** を開き、次のパラメーター値を入力します。
+
+    * `clientId` - [クライアント ID](#client-id) の GUID を使用します
+
+    * `clientSecret` - [クライアント シークレット](#client-secret)を使用します
+
+### <a name="run-the-sample-app"></a>サンプル アプリを実行する
+
+1. **[IIS Express]** (再生) を選択して、プロジェクトを実行します。
+
+[!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
+
+# <a name="react-typescript"></a>[React TypeScript](#tab/react)
+
+### <a name="configure-your-azure-ad-app"></a>Azure AD アプリを構成する
+
+[!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
+
+5. "*プラットフォーム構成*" で、 **[Web]** プラットフォームを次のように構成します。
+
+    1. **[リダイレクト URI]** で、`https://localhost:3000` を追加し、 **[構成]** を選択します。
+
+        > [!NOTE]
+        >**[Web]** プラットフォームがない場合は、 **[プラットフォームを追加]** を選択し、 *[プラットフォームの構成]* ウィンドウで **[Web]** を選択します。
+
+    2. *[Implicit grant and hybrid flows]\(暗黙的な許可およびハイブリッド フロー\)* で、次の両方のオプションを有効にします。
+        * **アクセス トークン**
+        * **ID トークン**
+    
+6. 変更を保存します。
+
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="localhost 3000 用に設定された Web リダイレクト URI を含む、Azure AD アプリの認証構成を示すスクリーンショット。":::
+
+### <a name="configure-the-sample-embedding-app"></a>埋め込みサンプル アプリを構成する
+
+1. **[組織向けの埋め込み]**  > **UserOwnsData** > **src** フォルダーの順に開きます。
+
+2. テキスト エディターを使用して、**Config. ts** ファイルを開き、次のパラメーター値を入力します。
+
+    * `clientId` - [クライアント ID](#client-id) の GUID を使用します
+
+    * `workspaceId` - [ワークスペース ID](#client-secret) を使用します
+
+    * `reportId` - [レポート ID](#report-id) を使用します
+
+3. ファイルを保存します。
+
+### <a name="run-the-sample-app"></a>サンプル アプリを実行する
+
+1. ターミナルを開き、 **[組織向けの埋め込み]**  > **UserOwnsData** の順に移動します。
+
+2. 次のコマンドを実行して、必要な依存関係をインストールします。
+
+   `npm install`
+
+3. 次のコマンドを実行して、アプリケーションを実行します。
+
+   `npm run start`
+
+    >[!NOTE]
+    >最初のサインイン時に、アプリに対する Azure AD アクセス許可を許可するように求められます。
+
+---
+
+## <a name="developing-your-application"></a>アプリケーションの開発
+
+"*顧客向けの埋め込み*" サンプル アプリケーションを構成して実行した後、独自のアプリケーションの開発を開始できます。
+
+[!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
+
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [アプリからの埋め込み](./index.yml)
+>[運用環境への移行](move-to-production.md)
 
-> [!div class="nextstepaction"]
+>[!div class="nextstepaction"]
 >[顧客向けに埋め込む](embed-sample-for-customers.md)
 
-さらに質問がある場合は、[Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+> [!div class="nextstepaction"]
+>[顧客向けにページ分割されたレポートを埋め込む](embed-paginated-reports-customers.md)
+
+> [!div class="nextstepaction"]
+>[組織向けにページ分割されたレポートを埋め込む](embed-paginated-reports-organization.md)
+
+>[!div class="nextstepaction"]
+>[Power BI コミュニティに質問する](https://community.powerbi.com/)

@@ -7,13 +7,13 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/10/2020
-ms.openlocfilehash: cfa4b46e521079802ec87b63d6323e01213625c3
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.date: 01/28/2021
+ms.openlocfilehash: 282700151e605bd3571847b3b75f08e65f948e08
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483867"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044352"
 ---
 # <a name="sample-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートのサンプル
 
@@ -121,9 +121,35 @@ ms.locfileid: "94483867"
 - ゲージ パネル。
 
 データ ソース:.rdl に含まれます
+
+## <a name="regional-sales"></a>地域の売上
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-regional-sales.png" alt-text="Power BI のページ分割されたレポートの地域の売上サンプルのスクリーンショット。":::
+
+地域の売上は、自己完結型のページ分割されたレポートのサンプルです。 このレポートのシナリオは、合計売上とクォータの比較を表示するためのピクセル パーフェクトで印刷可能なレポートが必要である、というものです。 次の特徴が示されています。
+
+- テーブル内の選択した詳細を表示するためのパラメーターの使用。
+- ヘッダーとフッター。
+- 式のプレースホルダーを使用した、テキスト ボックス、線、四角形などのレポート アイテム。
+- ゲージ パネル。
+- テーブル内に配置された折れ線グラフ。
+
+データ ソース:.rdl に含まれます
+
+## <a name="organization-expenditures"></a>組織の支出
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-organization-expenditures.png" alt-text="Power BI のページ分割されたレポートの組織の支出サンプルのスクリーンショット。":::
+
+組織の支出は、自己完結型のページ分割されたレポートのサンプルです。 このレポートのシナリオは、組織内の経費の内訳を示すためのピクセル パーフェクトで印刷可能な経費報告書が必要である、というものです。 次の特徴が示されています。
+
+- ヘッダーとフッター。
+- 式のプレースホルダーを使用した、テキスト ボックス、線、四角形などのレポート アイテム。
+- ツリーマップやサン バーストなどのグラフ。
+
+データ ソース:.rdl に含まれます
   
 ## <a name="next-steps"></a>次のステップ
 
 [ページ分割されたレポートを Power BI サービスで表示する](../consumer/paginated-reports-view-power-bi-service.md)
 
-その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

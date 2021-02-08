@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
-ms.openlocfilehash: 85fcd6249a833c35cb98fca6abf2881ab1a4bf7e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e66b15498f7ba66005448d88dc26cf715947f7da
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418419"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043944"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>チュートリアル:VM で Power BI Report Server Web ポータルを探索する
 このチュートリアルでは、Power BI Report Server が既にインストールされている Azure 仮想マシンを作成するので、サンプルの Power BI とページ分割されたレポートの表示、編集、および管理と、KPI を体験できます。
@@ -103,7 +103,7 @@ VM が開いたら、デスクトップには次の項目が表示されます�
 |---------|---------|
 |![番号 1](media/tutorial-explore-report-server-web-portal/number-1.png) | サンプル Power BI (.PBIX) レポート |
 |![番号 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Power BI Report Server ドキュメントへのリンク |
-|![番号 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Power BI Report Server (2019 年 1 月) 向けに最適化された Power BI Desktop を起動します |
+|![番号 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Power BI Report Server (2021 年 1 月) 向け Power BI Desktop を起動します |
 |![番号 4](media/tutorial-explore-report-server-web-portal/number-4.png) | ブラウザーで Power BI Report Server の Web ポータルを開きます |
 |![番号 5](media/tutorial-explore-report-server-web-portal/number-5.png) | ページ分割された (.RDL) レポートを作成するために SQL Server Data Tools を起動します |
 
@@ -162,7 +162,7 @@ Web ポータルで Power BI レポートを表示して操作し、Web ポー�
 
 1. **[許可]** を選択すると、この Web サイトで、このコンピューター上のプログラムを開くことができるようになります。 
 
-     Power BI Desktop でレポートが開きます。 上部のバーに "Power BI Desktop (2019 年 1 月)" と表示されます。 これは Power BI Report Server 向けに最適化されたバージョンです。
+     Power BI Desktop でレポートが開きます。 上部のバーに "Power BI Desktop (2021 年 1 月)" と表示されます。 これは Power BI Report Server 向けに最適化されたバージョンです。
 
     VM にインストールされているバージョンの Power BI Desktop を使用します。 レポートのアップロードのためにドメイン間を移動することはできません。
 

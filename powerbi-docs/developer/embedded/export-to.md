@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/28/2020
-ms.openlocfilehash: acd9d98b55697e8ca3729cad65a1ead8f01f6e62
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 02/01/2021
+ms.openlocfilehash: 64a9472960195c8d4f91013a778bb61cdf029ab4
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887019"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99422354"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI レポートをファイルにエクスポートする (プレビュー)
 
@@ -40,15 +40,41 @@ API を使用する前に、次の[管理者テナント設定](../../admin/serv
 
 API は非同期です。 [exportToFile](/rest/api/power-bi/reports/exporttofile) API を呼び出すと、エクスポート ジョブがトリガーされます。 エクスポート ジョブをトリガーした後は、[ポーリング](/rest/api/power-bi/reports/getexporttofilestatus)を使用して、ジョブが完了するまで追跡します。
 
-ポーリングの間、API からは完了した作業量を表す数値が返されます。 各エクスポート ジョブの作業量は、レポートに含まれるページ数に基づいて計算されます。 すべてのページに同じ重みが設定されます。 たとえば、10 ページのレポートをエクスポートしていて、ポーリングから 70 が返された場合は、API によりエクスポート ジョブで 10 ページのうち 7 ページが処理されたことを意味します。
+ポーリングの間、API からは完了した作業量を表す数値が返されます。 各エクスポート ジョブの作業は、ジョブ内のエクスポートの合計に基づいて計算されます。 1 つのエクスポートには、1 つのビジュアル、またはブックマークありまたはなしのページのエクスポートが含まれます。 すべてのエクスポートに同じ重みが設定されます。 たとえば、エクスポート ジョブに 10 ページのレポートのエクスポートが含まれていて、ポーリングから 70 が返された場合は、API によりエクスポート ジョブで 10 ページのうち 7 ページが処理されたことを意味します。
 
 エクスポートが完了すると、ポーリング API の呼び出しから、ファイルを取得するための [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) が返されます。 その URL は 24 時間有効です。
 
 ## <a name="supported-features"></a>サポートされている機能
 
+このセクションでは、次のサポートされている機能の操作について説明します。
+
+* [印刷するページの選択](#selecting-which-pages-to-print)
+* [ページまたは 1 つのビジュアルのエクスポート](#exporting-a-page-or-a-single-visual)
+* [Bookmarks](#bookmarks)
+* [フィルター](#filters)
+* [認証](#authentication)
+* [行レベル セキュリティ (RLS)](#row-level-security-rls)
+* [データ保護](#data-protection)
+* [ローカリゼーション](#localization)
+
 ### <a name="selecting-which-pages-to-print"></a>印刷するページの選択
 
 [ページ取得](/rest/api/power-bi/reports/getpages)または[グループ内のページ取得](/rest/api/power-bi/reports/getpagesingroup)の戻り値に従って、印刷するページを指定します。 エクスポートするページの順序を指定することもできます。
+
+### <a name="exporting-a-page-or-a-single-visual"></a>ページまたは 1 つのビジュアルのエクスポート
+
+エクスポートするページまたは 1 つのビジュアルを指定できます。 ページは、ブックマークがある状態でもない状態でもエクスポートできます。
+
+エクスポートの種類に応じて、異なる属性を [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) オブジェクトに渡す必要があります。 次の表は、各エクスポート ジョブに必要な属性を示しています。  
+
+>[!NOTE]
+>1 つのビジュアルのエクスポートの場合、ページ (ブックマークありまたはなし) のエクスポートと同じ重みがあります。 つまり、システムの計算においては、両方の操作で同じ値が使用されます。
+
+|属性   |ページ     |1 つのビジュアル  |説明|
+|------------|---------|---------|---|
+|`bookmark`  |Optional |![適用対象外](../../media/no.png)|特定の状態のページをエクスポートするために使用します|
+|`pageName`  |![適用対象:](../../media/yes.png)|![適用対象:](../../media/yes.png)|[GetPages](/rest/api/power-bi/reports/getpage) REST API または `getPages` クライアント API を使用します。 詳細については、「[ページとビジュアルの取得](/javascript/api/overview/powerbi/get-visuals)」を参照してください。   |
+|`visualName`|![適用対象外](../../media/no.png)|![適用対象:](../../media/yes.png)|ビジュアルの名前を取得するには、2 つの方法があります。<li>`getVisuals` クライアント API を使用する。 詳細については、「[ページとビジュアルの取得](/javascript/api/overview/powerbi/get-visuals)」を参照してください。</li><li>ビジュアルが選択されたときにトリガーされる *visualClicked* イベントをリッスンしてログに記録する。 詳細については、「[イベントの処理方法](/javascript/api/overview/powerbi/handle-events)」を参照してください。</li>. |
 
 ### <a name="bookmarks"></a>ブックマーク
 
@@ -127,10 +153,10 @@ RLS を使用してエクスポートするには、次のアクセス許可を�
 
 * エクスポートするレポートは、Premium または Embedded の容量に存在している必要があります。
 * エクスポートするレポートのデータセットは、Premium または Embedded の容量に存在している必要があります。
-* パブリック プレビューの場合、1 時間あたりのエクスポートされる Power BI レポートのページ数は、容量ごとに 50 に制限されています。
+* パブリック プレビューの場合、1 時間あたりの Power BI エクスポート数は、容量ごとに 50 に制限されています。 1 つのエクスポートには、1 つのビジュアル、またはブックマークありまたはなしのページのエクスポートが含まれます。ページ分割されたレポートのエクスポートは含まれません。
 * エクスポートされたレポートのファイル サイズは 250 MB を超えてはなりません。
 * .png にエクスポートする場合、機密ラベルはサポートされません。
-* エクスポートされるレポートに含めることができるページ数は 50 です。 レポートに含まれるページがそれより多い場合、API はエラーを返し、エクスポート ジョブは取り消されます。
+* エクスポートされたレポートに含めることができるエクスポートの数 (1 つのビジュアルまたはレポート ページ) は、50 です (ページ分割されたレポートのエクスポートはこれには含まれません)。 要求に含まれるエクスポートがそれより多い場合、API はエラーを返し、エクスポート ジョブは取り消されます。
 * [個人用ブックマーク](../../consumer/end-user-bookmarks.md#personal-bookmarks)と[永続的フィルター](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/)はサポートされていません。
 * 次に示す Power BI のビジュアルはサポートされていません。 これらのビジュアルを含むレポートをエクスポートすると、これらのビジュアルが含まれるレポートの部分は表示されず、エラー記号が表示されます。
     * 認められていない Power BI ビジュアル

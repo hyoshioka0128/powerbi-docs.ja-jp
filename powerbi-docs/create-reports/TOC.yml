@@ -312,6 +312,10 @@
               href: ../visuals/power-bi-visualization-scatter.md
             - name: 高密度な散布図を使用する
               href: ../visuals/desktop-high-density-scatter-charts.md
+            - name: スモール マルチプルを作成する (プレビュー)
+              href: ../visuals/power-bi-visualization-small-multiples.md
+            - name: スモール マルチプルとの対話 (プレビュー)
+              href: ../visuals/power-bi-visualization-small-multiples-interact.md
             - name: 図形マップのビジュアル (プレビュー)
               href: ../visuals/desktop-shape-map.md
             - name: スマート物語

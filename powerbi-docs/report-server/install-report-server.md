@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/16/2020
-ms.openlocfilehash: 049f6f563c9ac6e7494b0680b69e0df8909304d4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 3347bb18306497781ab5915225db8c3e071cfa3f
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861891"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044105"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI レポート サーバーのインストール
 
@@ -113,7 +113,7 @@ Reporting Services の初期構成を完了するには、[レポート サー�
 
 ## <a name="windows-service"></a>Windows サービス
 
-Windows サービスは、インストールの一部として作成されます。 **Power BI レポート サーバー**として表示されます。 サービス名は **PowerBIReportServer** です。
+Windows サービスは、インストールの一部として作成されます。 **Power BI レポート サーバー** として表示されます。 サービス名は **PowerBIReportServer** です。
 
 ![レポート サーバー Windows サービス](media/install-report-server/pbireportserver-windows-service.png)
 
@@ -152,7 +152,7 @@ Web サービスの URL と Web ポータルの URL 用に構成した TCP ポ�
 
 [管理者の概要](admin-handbook-overview.md)  
 [レポート サーバーのプロダクト キーを検索する方法](find-product-key.md)  
-[Power BI レポート サーバー向けに最適化された Power BI Desktop のインストール](install-powerbi-desktop.md)  
+[Power BI Report Server 向け Power BI Desktop をインストールする](install-powerbi-desktop.md)  
 [レポート サービスのインストールを確認する](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [レポート サーバー サービス アカウントを構成する](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [レポート サーバーの URL を構成する](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

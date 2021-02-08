@@ -3,24 +3,25 @@ title: 顧客向けの埋め込み BI 分析情報を向上させるため、Pow
 description: Power BI 埋め込み分析サンプルにレポート、ダッシュボード、またはタイルを埋め込む方法について学習します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: rkarlin
+ms.reviewer: ''
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: a0cfeaece56594c52a8d747350c5f9bfb0886cad
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 28081342763ca297648f67f953a29b46d02bf478
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565470"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99494858"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>チュートリアル:"*顧客向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
 **埋め込み分析** と **Power BI Embedded** (Azure プラン) を使用すると、レポート、ダッシュボードおよびタイルなどの Power BI コンテンツをアプリケーションに埋め込むことができます。
 
 このチュートリアルでは、次の方法について説明します。
+
 >[!div class="checklist"]
 >* 埋め込み環境を設定する。
 >* "*顧客向けの埋め込み*" ("*アプリ所有データ*" とも呼ばれます) サンプル アプリケーションを構成する。
@@ -31,7 +32,7 @@ ms.locfileid: "98565470"
 
 ## <a name="code-sample-specifications"></a>コード サンプルの仕様
 
-このチュートリアルには、次の言語のいずれかで "*顧客向けの埋め込み*" サンプル アプリケーションを構成する手順が含まれています。
+このチュートリアルには、次のフレームワークのいずれかで "*顧客向けの埋め込み*" サンプル アプリケーションを構成する手順が含まれています。
 
 * .NET Framework
 * .NET Core
@@ -41,10 +42,8 @@ ms.locfileid: "98565470"
 
 このコード サンプルでは次のブラウザーがサポートされています。
 
-* Google Chrome
-
 * Microsoft Edge
-
+* Google Chrome
 * Mozilla Firefox
 
 ## <a name="prerequisites"></a>前提条件
@@ -68,13 +67,6 @@ ms.locfileid: "98565470"
 
 * **コードの依存関係**
 
-    # <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
-    
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
-    
-    * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-    
     # <a name="net-core"></a>[.NET Core](#tab/net-core)
     
     * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (またはそれ以降)
@@ -84,6 +76,12 @@ ms.locfileid: "98565470"
         * [Visual Studio](https://visualstudio.microsoft.com/)
     
         * [Visual Studio Code](https://code.visualstudio.com/)
+
+    # <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
+    
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
 
     # <a name="java"></a>[Java](#tab/java)
     
@@ -161,46 +159,18 @@ Azure AD にアプリケーションを登録すると、次のことが可能�
 >* アプリから [Power BI REST API](/rest/api/power-bi/) にアクセスできるようにする
 >* "*マスター ユーザー*" を使用する場合 - アプリの [Power BI REST アクセス許可](/azure/active-directory/develop/v2-permissions-and-consent)を指定します
 
-Azure AD にアプリケーションを登録するには、[アプリケーションの登録](register-app.md)に関する手順に従います。
+[!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
 >[!NOTE]
 >アプリケーションを登録する前に、使用する認証方法 ("*サービス プリンシパル*" または "*マスター ユーザー*") を決定する必要があります。
 
 ## <a name="step-3---create-a-power-bi-workspace"></a>手順 3 - Power BI ワークスペースを作成する
 
-Power BI により、レポート、ダッシュボード、およびタイルがワークスペースに保持されます。 これらのアイテムを埋め込むには、それらを作成してワークスペースにアップロードする必要があります。
-
->[!TIP]
->既にワークスペースがある場合は、この手順を省略できます。
-
-ワークスペースを作成するには、次のようにします。
-
-1. Power BI にサインインします。
-
-2. **[ワークスペース]** を選択します。
-
-3. **[ワークスペースの作成]** を選択します。
-
-4. ワークスペースに名前を付けて、 **[保存]** を選択します。
+[!INCLUDE[Create a Power BI workspace](../../includes/embed-tutorial-create-workspace.md)]
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>手順 4 - Power BI レポートを作成して発行する
 
-次の手順では、レポートを作成してワークスペースにアップロードします。 Power BI Desktop を使用して[独自のレポートを作成](../../fundamentals/desktop-getting-started.md#build-reports)してから、ワークスペースにそれを[発行する](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work)ことができます。 ワークスペースにサンプル レポートをアップロードすることもできます。
-
->[!Tip]
->レポートがあるワークスペースが既に存在する場合は、この手順を省略できます。
-
-サンプル レポートをダウンロードしてワークスペースに発行するには、これらの手順に従います。
-
-1. GitHub の [Power BI Desktop サンプル](https://github.com/Microsoft/PowerBI-Desktop-Samples) フォルダーを開きます。
-
-2. **[コード]** を選んでから、 **[ZIP のダウンロード]** を選択します。
-
-    :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="GitHub の Power BI Desktop サンプルの ZIP ダウンロード オプションを示すスクリーンショット":::
-
-3. ダウンロードした ZIP を抽出し、**Samples Reports** フォルダーに移動します。
-
-4. 埋め込むレポートを選択し、自分のワークスペースに[発行します](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work)。
+[!INCLUDE[Create a Power BI report](../../includes/embed-tutorial-create-report.md)]
 
 ## <a name="step-5---get-the-embedding-parameter-values"></a>手順 5 - 埋め込みパラメーター値を取得する
 
@@ -223,64 +193,28 @@ Power BI により、レポート、ダッシュボード、およびタイル�
 >[!TIP]
 >**適用対象:** ![適用対象 ](../../media/yes.png)サービス プリンシパル ![適用対象 ](../../media/yes.png)マスター ユーザー
 
-クライアント ID GUID ("*アプリケーション ID*" とも呼ばれます) を取得するには、これらの手順に従います。
-
-1. [Microsoft Azure](https://ms.portal.azure.com/#allservices) にログインします。
-
-2. **[アプリの登録]** を検索し、 **[アプリの登録]** リンクを選択します。
-
-3. Power BI コンテンツを埋め込むために使用する Azure AD アプリを選択します。
-
-4. **[概要]** セクションで、 **[アプリケーション (クライアント) ID]** の GUID をコピーします。
+[!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ### <a name="workspace-id"></a>ワークスペース ID
 
 >[!TIP]
 >**適用対象:** ![適用対象 ](../../media/yes.png)サービス プリンシパル ![適用対象 ](../../media/yes.png)マスター ユーザー
 
-ワークスペース ID の GUID を取得するには、これらの手順に従います。
-
-1. Power BI サービスにサインインします。
-
-2. 埋め込むレポートを開きます。
-
-3. URL から GUID をコピーします。 GUID は **/groups/** と **/reports/** の間にある数値です。
-
-    :::image type="content" source="media/embed-sample-for-customers/workspace-id.png" alt-text="Power BI サービスの URL のワークスペース ID GUID を示すスクリーンショット":::
+[!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 ### <a name="report-id"></a>レポート ID
 
 >[!TIP]
 >**適用対象:** ![適用対象 ](../../media/yes.png)サービス プリンシパル ![適用対象 ](../../media/yes.png)マスター ユーザー
 
-1. Power BI サービスにサインインします。
-
-2. 埋め込むレポートを開きます。
-
-3. URL から GUID をコピーします。 GUID は **/reports/** と **/ReportSection** の間にある数値です。
-
-    :::image type="content" source="media/embed-sample-for-customers/report-id.png" alt-text="Power BI サービスの URL のレポート ID GUID を示すスクリーンショット":::
+[!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
 ### <a name="client-secret"></a>クライアント シークレット
 
 >[!TIP]
 >**適用対象:** ![適用対象 ](../../media/yes.png)サービス プリンシパル ![適用対象外 ](../../media/no.png)マスター ユーザー
 
-クライアント シークレットを取得するには、これらの手順に従います。
-
-1. [Microsoft Azure](https://ms.portal.azure.com/#allservices) にログインします。
-
-2. **[アプリの登録]** を検索し、 **[アプリの登録]** リンクを選択します。
-
-3. Power BI コンテンツを埋め込むために使用する Azure AD アプリを選択します。
-
-4. **[管理]** で、 **[証明書とシークレット]** を選択します。
-
-5. **[クライアント シークレット]** で、 **[新しいクライアント シークレット]** を選択します。
-
-6. **[クライアント シークレットの追加]** ポップアップ ウィンドウで、アプリケーション シークレットの説明を入力し、アプリケーション シークレットの有効期限を選択し、 **[追加]** を選択します。
-
-7. **[クライアント シークレット]** セクションで、新しく作成されたアプリケーション シークレットの **[値]** 列にある文字列をコピーします。 そのクライアント シークレットの値が "*クライアント ID*" です。
+[!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ### <a name="tenant-id"></a>テナント ID
 
@@ -343,7 +277,7 @@ Power BI サービスでレポート、ダッシュボードおよびデータ�
     >[!NOTE]
     >"*サービス プリンシパル*" を使用する場合、その名前は Azure AD アプリに指定した名前になります。
 
-5. **[追加]** を選択します。
+4. **[追加]** を選択します。
 
 ## <a name="step-8---embed-your-content"></a>手順 8 - コンテンツを埋め込む
 
@@ -351,23 +285,18 @@ Power BI の埋め込みサンプル アプリケーションを使用すると�
 
 Power BI レポートを埋め込むには、これらの手順に従って、"*顧客向けの埋め込み*" サンプル アプリケーションを変更します。  
 
-1. [Power BI の開発者向けサンプル](https://github.com/microsoft/PowerBI-Developer-Samples) フォルダーを開きます。
-
-2. **[コード]** を選んでから、 **[ZIP のダウンロード]** を選択します。
-
-    :::image type="content" source="media/embed-sample-for-customers/developer-samples.png" alt-text="GitHub の Power BI 開発者向けサンプルの ZIP ダウンロード オプションを示すスクリーンショット":::
-
-3. ダウンロードした ZIP ファイルを抽出し、**PowerBI-Developer-Samples-master** フォルダーに移動します。
+[!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
 4. アプリケーションで使用する言語に応じて、次のいずれかのフォルダーを開きます。
 
-* .NET Core
-* .NET Framework
-* Java
-* Node JS
-* Python
+    * .NET Core
+    * .NET Framework
+    * Java
+    * Node JS
+    * Python
+
     >[!NOTE]
-    >"*顧客向けの埋め込み*" サンプル アプリケーションでサポートされるのは、上記の一覧にある言語のみです。 *React TS* サンプル アプリケーションでサポートされるのは、" *[組織向けの埋め込み](embed-sample-for-your-organization.md)* " ソリューションのみです。
+    >"*顧客向けの埋め込み*" サンプル アプリケーションでサポートされるのは、上記の一覧にあるフレームワークのみです。 *React* サンプル アプリケーションでサポートされるのは、" *[組織向けの埋め込み](embed-sample-for-your-organization.md)* " ソリューションのみです。
 
 5. **顧客向けの埋め込み** フォルダーを開きます。
 
@@ -377,7 +306,7 @@ Power BI レポートを埋め込むには、これらの手順に従って、"*
 
     * [Visual Studio](https://visualstudio.microsoft.com/) を使用する場合は、**AppOwnsData.sln** ファイルを開きます。
 
-    * [Visual Studio Code](https://code.visualstudio.com/) を使用する場合は、**アプリ所有データ** フォルダーを開きます。
+    * [Visual Studio Code](https://code.visualstudio.com/) を使用する場合は、**AppOwnsData** フォルダーを開きます。
 
 7. **appsettings.json** を開きます。
 
@@ -421,13 +350,6 @@ Power BI レポートを埋め込むには、これらの手順に従って、"*
 
 9. **[IIS Express]** (再生) を選択して、プロジェクトを実行します。
 
->[!NOTE]
->サンプル アプリを実行しているときに埋め込みレポートが表示されない場合は、これらの手順に従って Power BI パッケージを更新します。
->1. プロジェクト名 (AppOwnesData) を右クリックし、 **[NuGet パッケージの管理]** を選択します。
->2. **[Power BI JavaScript]** を検索してから、パッケージを再インストールします。
->
->詳細については、「[パッケージを再インストールし更新する方法](/nuget/consume-packages/reinstalling-and-updating-packages)」を参照してください。
-
 # <a name="java"></a>[Java](#tab/java)
 
 6. **Eclipse** を開き、以下で説明されている手順に従います。
@@ -468,7 +390,7 @@ Power BI レポートを埋め込むには、これらの手順に従って、"*
 
     a. **[Package Explorer]\(パッケージ エクスプローラー\)** ペインで、 **[AppOwnsData]** を右クリックし、 **[プロパティ]** を選択します。
 
-    b. **AppOwnesData の [プロパティ]** ウィンドウで、 **[Targeted Runtimes]\(ターゲット ランタイム\)** を選択してから **[Apache Tomcat]** を選びます。 この選択には、使用する *Apache Tomcat* のバージョン (*Apache Tomact v9.0* など) が含まれます。
+    b. **AppOwnesData の [プロパティ]** ウィンドウで、 **[Targeted Runtimes]\(ターゲット ランタイム\)** を選択してから **[Apache Tomcat]** を選びます。 この選択には、使用する *Apache Tomcat* のバージョン (*Apache Tomcat v9.0* など) が含まれます。
 
     c. **[Apply and Close]\(適用して閉じる\)** を選択します。
 
@@ -579,8 +501,7 @@ Power BI レポートを埋め込むには、これらの手順に従って、"*
 
 "*顧客向けの埋め込み*" サンプル アプリケーションを構成して実行した後、独自のアプリケーションの開発を開始できます。
 
-準備ができたら、[運用開始](move-to-production.md)の要件を確認します。 また、[容量](embedded-capacity.md)が必要であり、[キャパシティ プランニング](embedded-capacity-planning.md)に関する記事を参照して、ニーズに最も適した SKU を確立する必要があります。
-
+[!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
 
 ## <a name="next-steps"></a>次のステップ
 

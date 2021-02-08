@@ -1,28 +1,28 @@
 ---
-title: Power BI ワークスペースの OneDrive のファイルに接続する
-description: Power BI ワークスペースの OneDrive への Excel、CSV、Power BI Desktop などのファイルの保存とファイルへの接続について説明します。
+title: クラシック ワークスペースの OneDrive のファイルに接続する
+description: クラシック Power BI ワークスペースの OneDrive への Excel、CSV、Power BI Desktop などのファイルの保存とファイルへの接続について説明します。
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/15/2020
+ms.date: 01/28/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6c3c43d8aad26249ac1b8afab09bdcbf1414f0cf
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f6544a137b8f656e938db4516de5e8c0685394b4
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411979"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085813"
 ---
-# <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Power BI ワークスペースの OneDrive に保存されているファイルに接続する
-[Power BI でワークスペースを作成する](service-create-workspaces.md)ときは、Microsoft 365 グループおよび関連付けられた OneDrive for Business も作成します。 この記事では、その OneDrive for Business に Excel、CSV、Power BI Desktop のファイルを格納して更新する方法について説明します。 これらの更新プログラムは、ファイルに基づいて Power BI レポートとダッシュボードに自動的に反映されます。
+# <a name="connect-to-files-stored-in-onedrive-for-a-classic-workspace"></a>クラシック ワークスペースの OneDrive に保存されているファイルに接続する
+[Power BI で "*クラシック*" ワークスペースを作成する](service-create-workspaces.md)ときは、Microsoft 365 グループおよび関連付けられた OneDrive for Business も作成します。 この記事では、その OneDrive for Business に Excel、CSV、Power BI Desktop のファイルを格納して更新する方法について説明します。 これらの更新プログラムは、ファイルに基づいて Power BI レポートとダッシュボードに自動的に反映されます。
 
 > [!NOTE]
-> 新しいワークスペース エクスペリエンスでは、Power BI ワークスペースと Microsoft 365 グループ間の関係が変わります。 新しいワークスペースのいずれかを作成するたびに Microsoft 365 グループが自動的に作成されることはありません。 新しいワークスペースの作成については、[こちら](service-create-the-new-workspaces.md)を参照してください
+> "*新しい*" ワークスペース エクスペリエンスでは、Power BI ワークスペースと Microsoft 365 グループ間の関係が変わります。 新しいワークスペースのいずれかを作成するたびに Microsoft 365 グループが自動的に作成されることはありません。 また、[ワークスペース OneDrive を新しいワークスペースに設定する](service-create-the-new-workspaces.md#set-a-workspace-onedrive)こともできます。
 
-ワークスペースへのファイルの追加は、次の 2 つの手順で行います。 
+クラシック ワークスペースへのファイルの追加は、次の 2 つの手順で行います。 
 
 1. まず、ワークスペースの [OneDrive for Business にファイルをアップロード](#1-upload-files-to-the-onedrive-for-business-for-your-workspace)します。
 2. 次に、[アップロードしたファイルに Power BI から接続](#2-import-excel-files-as-datasets-or-as-excel-online-workbooks)します。

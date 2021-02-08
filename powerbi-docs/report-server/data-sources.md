@@ -8,15 +8,15 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/29/2020
-ms.openlocfilehash: 37b44df504d0263324186765d8426584288f005e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: eb0dbf79c5825a4baa1974366e81fb1daadd6b47
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417982"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044266"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI Report Server での Power BI レポート データ ソース
-Power BI レポートは、複数のデータ ソースに接続できます。 データの使い方に応じて、異なるデータ ソースを利用できます。 データをインポートすること、または DirectQuery を使うか SQL Server Analysis Services へのライブ接続を使ってデータのクエリを直接行うことができます。 一部のデータ ソースは、Power BI Report Server 用に最適化された Power BI Desktop では使用できますが、Power BI Report Server に発行するときはサポートされていません。
+Power BI レポートは、複数のデータ ソースに接続できます。 データの使い方に応じて、異なるデータ ソースを利用できます。 データをインポートすること、または DirectQuery を使うか SQL Server Analysis Services へのライブ接続を使ってデータのクエリを直接行うことができます。 一部のデータ ソースは、Power BI Report Server 向け Power BI Desktop では使用できますが、Power BI Report Server に発行するときはサポートされていません。
 
 これらのデータ ソースは、Power BI Report Server 内で使われている Power BI レポートに固有のものです。 ページ分割されたレポート (.rdl) でサポートされるデータ ソースについては、「[Reporting Services でサポートされるデータ ソース (SSRS)](/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs)」をご覧ください。
 
@@ -198,14 +198,14 @@ Power BI Report Server では、DirectQuery 用の認証方法として、OAuth 
 
 | **データ ソース** | **匿名認証** | **キー認証** | **ユーザー名とパスワード** | **Windows 認証** | **統合 Windows 認証** |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server データベース |いいえ |いいえ |はい |はい |はい |
-| SQL Server Analysis Services |いいえ |いいえ |はい |はい |はい |
+| SQL Server データベース |いいえ |いいえ |はい |Yes |はい |
+| SQL Server Analysis Services |いいえ |いいえ |はい |Yes |はい |
 | Azure SQL データベース |いいえ |いいえ |はい |いいえ |いいえ |
 | Azure SQL Data Warehouse |いいえ |いいえ |はい |いいえ |いいえ |
-| Oracle Database |いいえ |いいえ |はい |はい |はい |
+| Oracle Database |いいえ |いいえ |はい |Yes |はい |
 | SAP Business Warehouse サーバー |いいえ |いいえ |はい |いいえ |いいえ |
 | SAP HANA データベース |いいえ |いいえ |はい |はい |はい** |
-| Teradata |いいえ |いいえ |はい |はい |はい |
+| Teradata |いいえ |いいえ |はい |Yes |はい |
 
 **SAP HANA では、統合 Windows 認証での DirectQuery は、公開されている Power BI Desktop ファイル (.pbix) でリレーショナル データベースとして使用する場合にのみサポートされます。
 

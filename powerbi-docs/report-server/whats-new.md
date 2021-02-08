@@ -7,33 +7,98 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/30/2020
-ms.openlocfilehash: 14b629eed17eca2d1e016913dcfffb5858d4ddc3
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.date: 01/27/2021
+ms.openlocfilehash: bb69df893a3a9841d911e558e2ef2afb09230122
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96120765"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99087087"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI レポート サーバーの新機能
 
-Power BI Report Server 用に最適化された Power BI Report Server と Power BI Desktop の最新バージョンの新機能について説明します。 この記事は主要な機能領域を網羅しており、新しいリリースのたびに更新されます。 Power BI Report Server の新機能の詳細については、「[Power BI Report Server の変更ログ](changelog.md)」を参照してください。
+Power BI Report Server と Power BI Report Server 向け Power BI Desktop の最新バージョンの新機能について説明します。 この記事は主要な機能領域を網羅しており、新しいリリースのたびに更新されます。 Power BI Report Server の新機能の詳細については、「[Power BI Report Server の変更ログ](changelog.md)」を参照してください。
 
-[Power BI Report Server と Power BI Report Server 向けに最適化された Power BI Desktop](https://powerbi.microsoft.com/report-server/) をダウンロードしてください。
+[Power BI Report Server と Power BI Report Server 向け Power BI Desktop](https://powerbi.microsoft.com/report-server/) をダウンロードしてください。
+
+## <a name="january-2021"></a>2021 年 1 月
+
+新機能と更新された機能の一覧を以下に示します。 詳細については、[Power BI Report Server の 2021 年 1 月のブログ記事](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2021-feature-summary/)を参照してください。
+
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Report Server 向け Power BI Desktop
+
+ここでは、新機能の一部を紹介します。
+
+**Power BI レポート**
+
+- すべてのフィルターの適用を一般提供開始
+- ビジュアル ズーム スライダー
+- Web 接続に関する証明書失効の確認
+- モバイル レイアウト ビューの選択ウィンドウ
+- ArcGIS for Power BI のサポート
+
+**データ接続**
+
+- Hive LLAP コネクタの一般提供開始
+- 新しいコネクタ:Actian、Anaplan、Starburst Presto
+
+### <a name="new-connection-metadata-format-preview"></a>新しい接続メタデータ形式 (プレビュー)
+
+接続メタデータを .pbix ファイル形式に格納する方法を 10 月に更新しました。 この更新は、.pbix ファイルにプログラムからアクセスして編集できるようにする長期的な取り組みの一環です。 この変更は、Power BI サービスと共に毎月リリースされる Power BI Desktop のバージョンで既に有効になっています。 この変更は、この Report Server 向け Power BI Desktop リリースで今月からプレビューとなります。
+
+このリリースからは、プレビューをオンにして拡張形式にアップグレードするように求める次の通知が表示されます。
+
+"近日対応予定: 強化されたメタデータ形式のプレビューを有効にすると、Power BI のパフォーマンスが向上し、セキュリティ更新を取得できます。"
+
+次のことを考慮してください。
+
+- 既存のデータセットは、アップグレードしなくても引き続き機能します。 これらは、拡張形式が一般公開されるとアップグレードされます。
+- 既存のデータセットは、ユーザーのために、Report Server 向け Power BI Desktop により自動的に拡張形式にアップグレードされます。 既存のレポートは、以前の形式に戻す場合に備えて、Report Server でアップグレードしたバージョンで上書きしないことをお勧めします。
+- このプレビューへの参加は任意ですが、是非お試しいただき、フィードバックをいただければ幸いです。 拡張形式は、次回の Report Server のリリースで唯一の選択肢として一般公開することを目標としています。
+ 
+管理者は、このプレビューを無効にし、V3 を強制的にオフにして、[プレビュー機能] チェックボックスを非表示にできます。 レジストリで、次の DWORD 値を 0 に設定します。AllowV3Models は次のいずれになります。
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
+"AllowV3Models"=dword:00000000
+```
+
+or
+
+```
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
+"AllowV3Models"=dword:00000000
+```
+
+詳細については、「[拡張データセット メタデータの使用](../connect-data/desktop-enhanced-dataset-metadata.md)」を参照してください。
+
+### <a name="power-bi-report-server"></a>Power BI Report Server
+
+**ブラウザーのサポートの廃止**
+
+Edge レガシまたは Internet Explorer 11 を使用している場合は、お使いのブラウザーをアップグレードしてください。 Edge レガシ ブラウザーのサポートは、2021 年 3 月 9 日以降終了します。 Internet Explorer 11 のサポートは、2021 年 8 月 17 日以降終了します。 
+
+Power BI Report Server の Web ポータルには、Internet Explorer 11 が非推奨であるという警告が表示されます。 アップグレードをお願いします。 詳細については、「[Power BI Report Server のブラウザーのサポート](browser-support.md)」のページを参照してください。
+
+**新しい製品アイコン**
+
+Microsoft の全製品のアイコンが新規ロールアウトされるのに伴い、Power BI Report Server のアイコンも新しくなります。
+
+:::image type="content" source="media/whats-new/power-bi-report-server-new-logo.png" alt-text="Power BI Report Server の新しいロゴ。":::
 
 ## <a name="october-2020"></a>2020 年 10 月
 
 新機能と更新された機能の完全一覧を以下に示します。 詳細については、[Power BI Report Server の 2020 年 10 月のブログ記事](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/)を参照してください。 
 
-### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Report Server 用に最適化された Power BI Desktop
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Report Server 向け Power BI Desktop
 
 ここでは、新機能の一部を紹介します。
 
 **最新のリボン**  
 
-Power BI Report Server 用に最適化された Power BI Desktop のリボンは、最新のものになっています。 引き続きリボンへの機能の追加を行っていきます。 変更と利点の詳細については、「[Power BI Desktop で更新されたリボンを使用する](../create-reports/desktop-ribbon.md)」を参照してください。
+Power BI Report Server 向け Power BI Desktop のリボンが最新になりました。 引き続きリボンへの機能の追加を行っていきます。 変更と利点の詳細については、「[Power BI Desktop で更新されたリボンを使用する](../create-reports/desktop-ribbon.md)」を参照してください。
 
-:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Power BI Report Server 用に最適化された Power BI Desktop の新しいリボンのスクリーンショット。":::
+:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Power BI Report Server 向け Power BI Desktop の新しいリボンのスクリーンショット。":::
 
 **階層スライサー**
 
@@ -44,13 +109,13 @@ Power BI Report Server 用に最適化された Power BI Desktop のリボンは
 - 子項目のカスタマイズ可能なインデント。
 - スライサーのヘッダー テキストの詳細なカスタマイズ。
 
-:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Power BI Report Server 用に最適化された Power BI Desktop の階層スライサー。":::
+:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Power BI Report Server 向け Power BI Desktop の階層スライサー。":::
 
 詳細については、ドキュメントの「[Power BI のスライサー](../visuals/power-bi-visualization-slicers.md)」を参照してください。
 
 **モバイル作成の機能強化** 
 
-このリリースでは、モバイル レイアウト作成エクスペリエンスが強化され、モバイル レイアウト機能が追加されています。 組織による Power BI モバイル アプリの導入がますます増えるにつれて、さらなる機能追加と、モバイル作成エクスペリエンスの改善を要望するフィードバックを受け取っています。 このリリースでの機能強化により、モバイル デバイス用に最適化された魅力的な対話型レポートをより簡単に作成できるようになります。
+このリリースでは、モバイル レイアウト作成エクスペリエンスが強化され、モバイル レイアウト機能が追加されています。 組織での Power BI モバイル アプリの導入増加に伴い、さらなる機能の追加と、モバイル作成エクスペリエンスの改善を要望するフィードバックを頂いています。 このリリースでの機能強化により、モバイル デバイス用に最適化された魅力的な対話型レポートをより簡単に作成できるようになります。
 
 モバイル最適化レポートを作成するための新しいエクスペリエンスと機能には次のようなものがあります。  
 
@@ -60,7 +125,7 @@ Power BI Report Server 用に最適化された Power BI Desktop のリボンは
 - モバイル レイアウト ビューで使用できるブックマーク  
 - グリッド線の無効化とグリッドへのスナップ  
 
-:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Power BI Report Server 用に最適化された Power BI Desktop での拡張モバイル レイアウト。":::
+:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Power BI Report Server 向け Power BI Desktop のモバイル レイアウトの強化。":::
 
 詳細については、こちらのブログ記事「[モバイル作成の強化](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile)」を参照してください。
 
@@ -68,7 +133,7 @@ Power BI Report Server 用に最適化された Power BI Desktop のリボンは
 
 Excel コネクタのこの新機能により、テーブルに抽出する各 Excel スプレッドシートのセクションが自動的に識別されます。 それらは、ナビゲーターで [提案されたテーブル] グループの下に表示されます。 以前は、Excel でデータをテーブルまたは名前付き範囲として書式設定する必要がありました。 それ以外の場合は、次の例の Sheet1 のように、行のスキップや列の削除など、ワークシート オブジェクトから特定の変換で関連する行または列をスクレイピングする必要がありました。 この機能を使用するには、 **[設定]** ダイアログ ボックスで有効にする必要があります。
 
-:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Power BI Report Server 用に最適化された Power BI Desktop での Excel テーブルの認識。":::
+:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Power BI Report Server 向け Power BI Desktop での Excel テーブルの認識。":::
 
 **モデリング: 拡張データセット メタデータ**
 
@@ -81,15 +146,15 @@ Excel コネクタのこの新機能により、テーブルに抽出する各 E
 - Power BI Desktop に外部ツールを追加すると (現在プレビュー段階)、レポートを再度開いたときに、これらの外部ツールを使用して追加したテーブルが、クエリとして表示されるようになります。
 - PBIT ファイルをエクスポートしてファイルを解凍しようとすると、JSON でモデルが表示され、破損したファイルに関するエラーが発生しなくなります。 
 
-変更が適用されていないなどの理由で、自動的に更新できない古い PBIX がある場合、モデルをさらに変更するには、先にモデルを正常にアップグレードする必要があります。 
+変更が適用されていないなどの理由で、自動更新されない古い PBIX をお使いの場合、その他のモデル変更を行うには、先にお使いのモデルを正常にアップグレードする必要があります。 
 
 **Windows 7 のサポートの終了**
 
-10 年が経過し、Windows 7 のサポートは 2020 年 1 月 14 日に終了しました。 そのため、Windows 7 での Power BI Desktop のサポートは、2021 年 1 月 31 日に終了します。 その後、Power BI Desktop は Windows 8 以降でのみサポートされます。 Report Server 用に最適化された Power BI Desktop の 2021 年 1 月リリースは、最新のライフサイクル ポリシーに従ってサポートされます。 つまり、次のリリースまでは完全にサポートされます (現在は 2021 年 5 月に予定されています)。 2021 年 5 月以降については、2022 年 1 月までセキュリティ更新プログラムのみを受け取ります。 2022 年 1 月以降は、すべてのサポートが停止されます。 詳細については、[Power BI Report Server のサポート タイムライン](support-timeline.md)に関する記事を参照してください。 
+10 年が経過し、Windows 7 のサポートは 2020 年 1 月 14 日に終了しました。 この変更に伴い、Windows 7 での Power BI Desktop のサポートは、2021 年 1 月 31 日に終了します。 その後、Power BI Desktop は Windows 8 以降でのみサポートされます。 Report Server 用に最適化された Power BI Desktop の 2021 年 1 月リリースは、最新のライフサイクル ポリシーに従ってサポートされます。 つまり、次のリリースまでは完全にサポートされます (現在は 2021 年 5 月に予定されています)。 2021 年 5 月以降については、2022 年 1 月までセキュリティ更新プログラムのみを受け取ります。 2022 年 1 月以降は、すべてのサポートが停止されます。 詳細については、[Power BI Report Server のサポート タイムライン](support-timeline.md)に関する記事を参照してください。 
 
 **更新の完全な一覧**
 
-Power BI Report Server 用に最適化された Power BI Desktop の 10 月版における更新の完全な一覧を次に示します。 
+Power BI Report Server 向け Power BI Desktop の 10 月版における更新の完全な一覧を次に示します。 
 
 **レポート**
 
@@ -145,7 +210,7 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 
 ## <a name="may-2020"></a>2020 年 5 月
 
-### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Report Server 用に最適化された Power BI Desktop
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Report Server 向け Power BI Desktop
 
 今回の更新プログラムの目玉として、階層スライサー、分割ツリー ビジュアル、クエリ診断があります。 新機能と更新された機能の完全一覧を以下に示します。 詳細については、[Power BI Report Server の 2020 年 5 月のブログ記事](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/)を参照してください。 
 
@@ -203,7 +268,7 @@ Power BI Report Server の 10 月リリースでは、DirectQuery および最�
 
 詳細については、Power BI Report Server の 2020 年 1 月のブログ記事を参照してください。
 
-### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Report Server 用に最適化された Power BI Desktop
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Report Server 向け Power BI Desktop
 
 このリリースでは、ボタンの条件付き書式設定、データ プロファイルの機能強化、KPI およびテーブル ビジュアルの追加の書式設定など、多くの新機能が導入されています。 更新をまとめた一覧を次に示します。
 
@@ -427,7 +492,7 @@ Power BI レポートは対話式です。 レポートの現在の状態が反�
 
 #### <a name="cross-highlight-by-axis-labels"></a>軸ラベルによるクロス強調表示
 
-ビジュアル内で軸カテゴリ ラベルを選択すると、ビジュアル内でデータ ポイントを選択する場合と同じように、ページ上の他の要素が強調表示されます。 クロス強調表示の詳細は[こちら](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting)で参照してください。
+ビジュアル内で軸カテゴリ ラベルを選択すると、ビジュアル内でデータ ポイントを選択する場合と同じように、ページ上の他の要素が強調表示されます。 クロス強調表示の詳細は[こちら](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-cross-filtering-and-cross-highlighting)で参照してください。
 
 #### <a name="all-the-new-features"></a>すべての新機能
 
@@ -503,7 +568,7 @@ Power BI レポートでは、次の機能がサポートされています。
 
 ## <a name="august-2018"></a>2018 年 8 月
 
-2018 年 8 月に、Power BI Report Server 向けに最適化された Power BI Desktop のバージョンに多くの新しい機能が追加されます。 それらは次の領域に分類されます。
+2018 年 8 月に、Power BI Report Server 向け Power BI Desktop のバージョンに多くの新しい機能が追加されました。 それらは次の領域に分類されます。
 
 - [レポート](#reporting)
 - [分析](#analytics)
@@ -609,7 +674,7 @@ IT 管理者は、組織の MDM ツールを使用し、レポート サーバ�
 
 ## <a name="march-2018"></a>2018 年 3 月
 
-2018 年 3 月に、Power BI Report Server 向けに最適化された Power BI Desktop のバージョンに数多くの新しい機能が追加されます。 それらは次の領域に分類されます。
+2018 年 3 月に、Power BI Report Server 向け Power BI Desktop のバージョンに多くの新しい機能が追加されました。 それらは次の領域に分類されます。
 
 - [ビジュアル](#visuals-updates)
 - [レポート](#reporting)
@@ -628,7 +693,7 @@ IT 管理者は、組織の MDM ツールを使用し、レポート サーバ�
 
 #### <a name="show-and-hide-pages"></a>[ページの表示と非表示](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
-閲覧者がレポートにアクセスできるようにしたいが、一部のページが完全に完成していない場合があります。 そのページの準備ができるまで非表示にできるようになりました。 通常のナビゲーションからページを非表示にすることもできます。その場合、閲覧者はブックマークやドリルスルーを使用してページにアクセスできます。
+ご自分のレポートに閲覧者がアクセスできるようにしたいが、一部のページが完成していない場合があります。 そのページの準備ができるまで非表示にできるようになりました。 通常のナビゲーションからページを非表示にすることもできます。その場合、閲覧者はブックマークやドリルスルーを使用してページにアクセスできます。
 
 #### <a name="bookmarking"></a>[ブックマーク](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 

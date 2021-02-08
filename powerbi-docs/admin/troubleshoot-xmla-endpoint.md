@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/13/2021
+ms.date: 02/02/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 0753a9c3d5b832275f65ac11b87f90c38606f289
-ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
+ms.openlocfilehash: 98bc3da33f38974f3dfcb9e155111e7d16e6c069
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226987"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494468"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -221,6 +221,10 @@ Azure Analysis Services とは異なり、Power BI Premium ワークスペース
 ## <a name="dataset-refresh-through-the-xmla-endpoint"></a>XMLA エンドポイントを介したデータセットの更新
 
 前回の更新日時は、レポートおよびリスト内の [更新日時] 列、[データセットの詳細]、[データセットの設定]、[データセット更新履歴] など、Power BI のいくつかの場所に表示されます。 現在、Power BI に表示される更新日時には、TMSL/TOM、SSMS、またはサードパーティ製のツールを使用して XMLA エンドポイント経由で実行される更新操作は含まれ **ません**。
+
+## <a name="discover_m_expressions"></a>DISCOVER_M_EXPRESSIONS 
+
+DMV DISCOVER_M_EXPRESSIONS データ管理ビュー (DMV) は現在、XMLA エンドポイントを使用する Power BI ではサポートされていません。 アプリケーションでは表形式オブジェクト モデル (TOM) を使用し、データ モデルで使用される M 式を取得できます。
 
 ## <a name="see-also"></a>関連項目
 

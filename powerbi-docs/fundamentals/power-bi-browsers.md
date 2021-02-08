@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 02/01/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 425a7561d33a96db7c9537a934d9707af6388f1e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c7f5f5769c5d4f29ba67b64c0e0fa646aa5d4ddb
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416740"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495089"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Power BI のサポートされているブラウザー
 
-Power BI はこれらのサポートされているすべてのブラウザーで動作するように設計されていますが、選択したブラウザーによってパフォーマンスは異なります。 特に Internet Explorer を使用している場合は、パフォーマンスが低下する可能性があります。 Internet Explorer から Microsoft Edge などの最新のブラウザーに切り替えることを強くお勧めします。 それでも許容できないパフォーマンスが発生する場合は、サポートされている他の最新のブラウザーをテストして、Power BI ソリューションでより良い結果が得られるかどうかを確認します。
+Power BI は、後述の任意のサポート対象ブラウザーで動作するように設計されています。 しかしながら、選択したブラウザーによってパフォーマンスは異なります。 特に Internet Explorer を使用している場合は、パフォーマンスが低下する可能性があります。 Internet Explorer から Microsoft Edge などの最新のブラウザーに切り替えることを強くお勧めします。 それでも許容できないパフォーマンスが発生する場合は、サポートされている他の最新のブラウザーをテストして、Power BI ソリューションでより良い結果が得られるかどうかを確認します。
 
 Power BI では、使用できるすべてのプラットフォームでこれらのブラウザーがサポートされます。
 
@@ -33,5 +33,5 @@ Power BI では、使用できるすべてのプラットフォームでこれ�
 
 ## <a name="next-steps"></a>次のステップ
 * [Power BI とは?](power-bi-overview.md)
-* [Power BI コミュニティ](https://community.powerbi.com/)で質問してみてください。
+* [Power BI コミュニティ](https://community.powerbi.com/)でご質問ください
 * それでも解決しない場合は、 [Power BI のサポート ページ](https://powerbi.microsoft.com/support/)をご覧ください

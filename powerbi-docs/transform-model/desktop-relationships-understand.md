@@ -2,18 +2,18 @@
 title: Power BI Desktop でのモデル リレーションシップ
 description: Power BI Desktop でのモデル リレーションシップに関する理論を紹介します
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 10/15/2019
-ms.openlocfilehash: 7aeae77efeadfa3b39f9c39cadc36b2a046286b2
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 101207fe60f4e66344b936bdef2c4b18d9ab947f
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888578"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088168"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Power BI Desktop でのモデル リレーションシップ
 
@@ -53,7 +53,7 @@ Power BI Desktop の What-If パラメーターは、切断されたテーブル
 
 ### <a name="cardinality"></a>カーディナリティ
 
-各モデル リレーションシップは、カーディナリティの種類と共に定義する必要があります。 カーディナリティの種類には 4 つのオプションがあり、それぞれ関連 "元" と関連 "先" の列のデータ特性を表しています。 "一" 側は、列に一意の値が含まれていることを意味します。"二" 側は、列に重複する値が含まれている可能性があることを意味します。
+各モデル リレーションシップは、カーディナリティの種類と共に定義する必要があります。 カーディナリティの種類には 4 つのオプションがあり、それぞれ関連 "元" と関連 "先" の列のデータ特性を表しています。 "一" 側は、列に一意の値が含まれていることを意味します。"多" 側は、列に重複する値が含まれている可能性があることを意味します。
 
 > [!NOTE]
 > データ更新の操作によって、"一" 側の列に重複する値を読み込もうとすると、データ更新全体が失敗します。

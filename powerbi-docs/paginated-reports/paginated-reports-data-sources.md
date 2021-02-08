@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/21/2021
-ms.openlocfilehash: abb91ef54167f4a7d50f2dc36e23b2fc5833a65d
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.date: 01/27/2021
+ms.openlocfilehash: c544126132ce18d8093f8c07359418f2052e9c74
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98687467"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044404"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートでサポートされるデータ ソース
 
@@ -33,6 +33,7 @@ ms.locfileid: "98687467"
 | Power BI データセット | SSO | Premium と Premium 以外の Power BI データセット。 読み取りのアクセス許可が必要です。 インポート モードと DirectQuery Power BI データセットのみがサポートされています。 |
 | Premium Power BI データセット (XMLA) | SSO | "アプリ所有データ" のシナリオでは、Power BI データセットは埋め込みのページ分割されたレポートのデータ ソースとしてはサポートされません。  Power BI Report Builder で適切に接続できるようにするには、データ ソースを設定するときに **[資格情報を使用しない]** オプションが選択されていることを確認します。<br />XMLA を使用してアクセスすると、ワークスペースまたはアプリのレベルで設定されたセキュリティ グループ メンバーシップが優先されます。<br />少なくとも[ワークスペースの共同作成者ロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)を持つユーザーは、Premium Power BI データセットでページ分割されたレポートを表示できます。 その他のユーザーは、[基になるデータセットに対するビルド アクセス許可](../connect-data/service-datasets-build-permissions.md)が必要です。    |
 | データの入力 | 該当なし | データはレポートに埋め込まれます。 |
+| Dataverse | SSO、OAuth2 | 多要素認証 (MFA) がサポートされていないため、ゲートウェイは使用できません。
 
 Azure SQL Database を除き、データ ソースはすべて、Power BI サービスにレポートをアップロードした後に使用できるようになります。 データ ソースは、既定でシングル サインオン (SSO) を使用するように設定されています (該当する場合)。 Azure Analysis Services では、認証の種類を OAuth2 に変更できます。 ただし、特定のデータ ソースの認証の種類が OAuth2 に変更されると、SSO を使用するように戻すことはできません。  また、この変更は、特定のテナントのすべてのワークスペースでそのデータ ソースを使用するすべてのレポートに適用されます。  ページ分割されたレポートの行レベルのセキュリティは、ユーザーが認証の種類に SSO を選択しない限り機能しません。
 
@@ -75,4 +76,4 @@ SSO と OAuth2 を正常に機能させるには、データ ソースが接続�
 
 [ページ分割されたレポートを Power BI サービスで表示する](../consumer/paginated-reports-view-power-bi-service.md)
 
-その他の質問 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。

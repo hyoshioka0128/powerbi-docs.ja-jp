@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 00f78fef9f1abd11d7c553009db5541822c59c85
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 377ede2171a721a33aa0b70819ef511d721f2590
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926365"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494445"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Power BI Desktop で Snowflake に接続する
 Power BI Desktop では、**Snowflake** Computing ウェアハウスに接続し、Power BI Desktop の他のデータ ソースの場合と同様に基になっているデータを使用できます。 
@@ -48,7 +48,11 @@ Microsoft アカウント オプションを使用する場合、Snowflake 側�
 
 選択したテーブルを **読み込んで**、テーブル全体を **Power BI Desktop** に取り込むことができます。またはクエリを **編集** して **クエリ エディター** を開き、使用するデータのセットをフィルターし、絞り込んでから、その絞り込んだデータのセットを **Power BI Desktop** に取り込むこともできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="custom-roles"></a>カスタム ロール
+
+現在のところ、Snowflake コネクタの "カスタム役割" は基本認証でのみ機能します。 これは近い将来、解決される予定です。
+
+## <a name="next-steps"></a>次のステップ
 Power BI Desktop を使用して接続できるデータの種類は他にもあります。 データ ソースの詳細については、次のリソースを参照してください。
 
 * [Power BI Desktop とは何ですか?](../fundamentals/desktop-what-is-desktop.md)

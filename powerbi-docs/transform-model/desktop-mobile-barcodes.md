@@ -1,36 +1,44 @@
 ---
-title: モバイル アプリ向けの Power BI Desktop でバーコード フィールドにタグ付けする
-description: Power BI Desktop でモデルのバーコード フィールドにタグ付けすると、iPhone の Power BI アプリでバーコードのデータを自動的にフィルター処理できます。
+title: Power BI Desktop でバーコード フィールドにタグを付け、モバイル アプリでバーコードスキャンのフィルター処理を有効にする
+description: Power BI Desktop でモデルのバーコード フィールドにタグを付けると、モバイル アプリ ユーザーはバーコードをスキャンして、iOS と Android のスマートフォンおよびタブレットでフィルター処理されたデータを取得することができます。
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/16/2018
+ms.date: 01/20/2021
 LocalizationGroup: Model your data
-ms.openlocfilehash: 91cf4fb4101b710ad49e49c914dbc4bcaa03682a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 4674347d3acd6520d7d156a7d1634a13df611afe
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413934"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494411"
 ---
-# <a name="tag-barcodes-in-power-bi-desktop-for-use-in-the-mobile-app"></a>モバイル アプリで使用するために Power BI Desktop でバーコードにタグ付けする
+# <a name="tag-barcode-fields-in-power-bi-desktop-to-enable-barcode-scan-filtering-in-the-mobile-apps"></a>Power BI Desktop でバーコード フィールドにタグを付け、モバイル アプリでバーコードスキャンのフィルター処理を有効にする
 
-Power BI Desktop で列の[データを分類](desktop-data-categorization.md)し、Power BI Desktop がレポートの表示での値の処理方法を認識できるようにすることができます。 列を **バーコード** として分類することもできます。 iPhone の [Power BI アプリで製品のバーコードをスキャン](../consumer/mobile/mobile-apps-scan-barcode-iphone.md)すると、そのバーコードに含まれるレポートが表示されます。 モバイル アプリでレポートを開くと、Power BI によってレポートが自動的にフィルター処理されて、そのバーコードに関連するデータだけが表示されます。
+Power BI Desktop で列の[データを分類](desktop-data-categorization.md)し、Power BI Desktop がレポートの表示での値の処理方法を認識できるようにすることができます。 列を **バーコード** として分類することもできます。 その後、会社または組織内の誰かが、iOS または Android スマートフォンあるいはタブレットの Power BI モバイル アプリを使用して製品の[バーコードをスキャンする](../consumer/mobile/mobile-apps-scan-barcode-iphone.md)と、そのバーコードを含むレポートが表示されます。 レポートを開くと、そのバーコードに関連するデータに自動的にフィルターが適用されます。
 
-1. Power BI Desktop でデータ ビューに切り替えます。
-2. バーコード データがある列を選択します。 後の「[サポートされるバーコード形式](#supported-barcode-formats)」の一覧を参照してください。
-3. **[モデリング]** タブで、 **[データ カテゴリ]**  >  **[バーコード]** を選択します。
+## <a name="categorize-barcode-data"></a>バーコード データを分類する
+
+バーコードを含むレポートがあるとします。 
+
+1. Power BI Desktop で、データ ビューに切り替えます。
+2. バーコード データを含む列を選択します。 後の「[サポートされるバーコード形式](#supported-barcode-formats)」の一覧を参照してください。
+3. **[列ツール]** タブで、 **[データ カテゴリ]**  >  **[バーコード]** の順に選択します。
    
     ![データ カテゴリの一覧](media/desktop-mobile-barcodes/power-bi-desktop-barcode.png)
-4. レポート ビューで、バーコードによってフィルター処理する表示にこのフィールドを追加します。
+
+    >[!WARNING]
+    >レポート内のすべてのデータ テーブルにわたる複数の列を **バーコード** として分類しないでください。 モバイル アプリでは、すべてのレポート データ テーブルにわたるバーコード列が 1 つしかないレポートに対してのみ、バーコード フィルター処理がサポートされます。 レポートに複数のバーコード列がある場合、フィルター処理は行われません。
+
+4. レポート ビューで、バーコードによってフィルター処理するビジュアルにバーコード フィールドを追加します。
 5. レポートを保存して、Power BI サービスに発行します。
 
-[iPhone 用 Power BI アプリ](../consumer/mobile/mobile-iphone-app-get-started.md)でスキャナーを開き、バーコードをスキャンすると、レポートの一覧にこのレポートが表示されます。 レポートを開くと、スキャンした製品のバーコードによって表示がフィルター処理されます。
+これで iOS と Android スマートフォンおよびタブレット用の Power BI アプリでスキャナーを開き、バーコードをスキャンすると、バーコードがあるレポートの一覧にこのレポートが表示されるようになります。 レポートを開くと、スキャンした製品バーコードでそのビジュアルがフィルター処理されます。
 
 ## <a name="supported-barcode-formats"></a>サポートされるバーコード形式
-Power BI レポートでタグを付けることができる場合、Power BI は次のバーコードを認識します。 
+Power BI レポートでタグを付けることができる場合は、Power BI で次のバーコード形式が認識されます。 
 
 * UPCECode 
 * Code39Code  
@@ -44,7 +52,7 @@ Power BI レポートでタグを付けることができる場合、Power BI �
 * ITF14Code 
 
 ## <a name="next-steps"></a>次のステップ
-* [iPhone の Power BI アプリからバーコードをスキャンする](../consumer/mobile/mobile-apps-scan-barcode-iphone.md)
-* [iPhone でのバーコードのスキャンに関する問題](../consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
+* [iOS または Android スマートフォンあるいはタブレットの Power BI アプリからバーコードをスキャンする](../consumer/mobile/mobile-apps-scan-barcode-iphone.md)
+* [バーコードのスキャンに関する問題](../consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Power BI Desktop でのデータ分類](desktop-data-categorization.md)  
-* ご質問 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
+* わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

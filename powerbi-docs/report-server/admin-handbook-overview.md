@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: a1c8e11fbf3b157a0d9fc1a897347875b82226fa
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9b4b7557a977c5975920e0ef414b7daf8183c062
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96387260"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044243"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>管理の概要、Power BI Report Server
 この記事では、Power BI Report Server の管理の概要について説明します。Power BI Report Server は、Power BI レポート、モバイル レポート、およびページ分割されたレポートを格納および管理するためのオンプレミスの場所です。 この記事では、Power BI Report Server の計画、展開、管理の概念について説明します。また、詳細情報へのリンクが用意されています。
@@ -46,7 +46,7 @@ SQL Server Reporting Services のインプレース アップグレードはあ�
 ## <a name="next-steps"></a>次の手順
 [Power BI レポート サーバーのインストール](install-report-server.md)  
 [レポート サーバーのプロダクト キーを検索する](find-product-key.md)  
-[Power BI レポート サーバー向けに最適化された Power BI Desktop のインストール](install-powerbi-desktop.md)  
+[Power BI Report Server 向け Power BI Desktop をインストールする](install-powerbi-desktop.md)  
 [レポート ビルダーのダウンロード](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) のダウンロード](/sql/ssdt/download-sql-server-data-tools-ssdt)
 

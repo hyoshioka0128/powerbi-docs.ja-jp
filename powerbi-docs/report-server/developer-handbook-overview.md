@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.openlocfilehash: d485c7ab7583d2604cd9da9e4c122c6cceeeb4fe
-ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
+ms.openlocfilehash: 8fbe19beddbb95b27828ee1fae73860fe92e6b4f
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95012005"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044163"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>開発者向けハンドブックの概要、Power BI レポート サーバー
 
 Power BI レポート サーバーの開発者向けハンドブックへようこそ。Power BI レポート サーバーは、Power BI レポート、モバイル レポート、およびページ分割されたレポートを格納および管理するためのオンプレミスの場所です。
 
-![管理者向けハンドブック](media/developer-handbook-overview/admin-handbook.png)
+![Power BI Report Server の概要。](media/admin-handbook-overview/admin-handbook.png)
 
 このハンドブックでは、開発者として Power BI Report Server を使用するためのオプションについて主に説明します。
 

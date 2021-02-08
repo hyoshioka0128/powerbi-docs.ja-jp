@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 134c11108da77c87ba087df9ac5564521d7a303d
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 32029ee1c5b19205fafe10c77babfe9bf764341d
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926392"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086466"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Power BI Desktop を使用して Oracle データベースに接続する
 Power BI Desktop を使用して Oracle データベースに接続するには、Power BI Desktop を実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、インストールした Power BI Desktop のバージョンによって異なります。32 ビットまたは 64 ビット。 また、お使いの Oracle サーバーのバージョンにもよります。
@@ -24,7 +24,7 @@ Power BI Desktop を使用して Oracle データベースに接続するには�
 - Oracle Data Access Client (ODAC) ソフトウェア 11.2 以降
 
 > [!NOTE]
-> Power BI Desktop、オンプレミス データ ゲートウェイ、または Power BI Report Server 用に Oracle データベースを構成する場合は、[Oracle の接続の種類](/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15)に関する記事を参照してください。 
+> Power BI Desktop、オンプレミス データ ゲートウェイ、または Power BI Report Server 用に Oracle データベースを構成する場合は、[Oracle の接続の種類](/sql/reporting-services/report-data/oracle-connection-type-ssrs)に関する記事を参照してください。 
 
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>インストールされている Power BI Desktop バージョンの特定
@@ -58,7 +58,7 @@ Power BI Desktop を使用して Oracle データベースに接続するには�
    > [!NOTE]
    > ローカル データベースまたは自律データベース接続を使用しているとき、接続エラーを避けるため、サーバー名を引用符で囲む必要がある場合があります。 
       
-4. ネイティブ データベース クエリを使用してデータをインポートする場合、 **[Oracle Database]** ダイアログで **[詳細オプション]** セクションを展開すると表示される、 **[SQL ステートメント]** ボックスにクエリを入力します。
+4. ネイティブ データベース クエリを使用してデータをインポートする場合、 **[Oracle Database]** ダイアログで **[詳細オプション]** セクションを展開すると表示される、 **[SQL ステートメント]** ボックスにクエリを入力します。  Power BI Desktop では、ストアド プロシージャを実行する Oracle ネイティブ クエリはサポートされていません。また、"begin ... end" ブロック内の Oracle ネイティブ クエリは結果セットを返しません。  
    
    ![[詳細オプション] の展開](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 
@@ -89,4 +89,5 @@ Microsoft Store から Power BI Desktop をダウンロードした場合、Orac
 
 Oracle データベースへの接続時に Power BI Gateway に "*オブジェクト参照が設定されていません*" というエラー メッセージが表示される場合は、「[データ ソースの管理 - Oracle](service-gateway-onprem-manage-oracle.md)」に記載されている手順に従ってください。
 
-Power BI Report Server を使用している場合は、[Oracle の接続の種類](/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15)に関する記事のガイダンスを参照してください。
+Power BI Report Server を使用している場合は、[Oracle の接続の種類](/sql/reporting-services/report-data/oracle-connection-type-ssrs)に関する記事のガイダンスを参照してください。
+

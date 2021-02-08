@@ -2,41 +2,41 @@
 title: Power BI で Microsoft Cloud App Security の制御を使用する
 description: Power BI と共に Microsoft Cloud App Security を使用する方法について説明します
 author: paulinbar
-ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
+ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: f7bd3a59395e9f5f1ea167b7e7988aeb9882a72f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8a09de5777332d69332cae6928022e7e99fe689e
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413336"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99422285"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi"></a>Power BI で Microsoft Cloud App Security の制御を使用する
 
-Power BI で Cloud App Security を使用すると、Power BI のレポート、データ、およびサービスを意図しない漏えいや侵害から保護することができます。 Cloud App Security では、Azure Active Directory (Azure AD) のリアルタイム セッション制御を使用して、組織のデータに対して条件付きアクセス ポリシーを作成すると、Power BI 分析を確実にセキュリティで保護することができます。 これらのポリシーを設定すると、管理者は、ユーザーのアクセスとアクティビティの監視、リアルタイムのリスク分析の実行、ラベル固有の制御の設定を行うことができます。 
+Power BI で Cloud App Security を使用すると、Power BI のレポート、データ、およびサービスを意図しない漏えいや侵害から保護することができます。 Cloud App Security を使用すると、Azure Active Directory (Azure AD) のリアルタイム セッション制御を使用して、組織のデータに対して条件付きアクセス ポリシーを作成することができます。これにより、Power BI 分析を確実にセキュリティで保護することができます。 これらのポリシーを設定すると、管理者は、ユーザーのアクセスとアクティビティの監視、リアルタイムのリスク分析の実行、ラベル固有の制御の設定を行うことができます。 
 
 ![Cloud App Security コントロール ペインを使用する](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
 Cloud App Security は、Power BI だけでなく、あらゆる種類のアプリとサービスに対して構成できます。 Power BI のデータと分析に対する Cloud App Security 保護を活用するには、Power BI と連携するように Cloud App Security を構成する必要があります。 Cloud App Security について、その動作の概要、ダッシュボード、アプリのリスク スコアなどの詳細については、[Cloud App Security](/cloud-app-security/) のドキュメントを参照してください。
 
+## <a name="cloud-app-security-licensing"></a>Cloud App Security ライセンス
 
-## <a name="using-cloud-app-security-with-power-bi"></a>Power BI で Cloud App Security を使用する
-
-Power BI で Cloud App Security を使用するには、関連する Microsoft セキュリティ サービスを使用および構成する必要があります。その中には、Power BI の外部で設定されるものもあります。
-
-### <a name="cloud-app-security-licensing"></a>Cloud App Security ライセンス
-
-テナント内に Cloud App Security を含めるには、次のいずれかの[ライセンス](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO)が必要です。
+Power BI で Cloud App Security を使用するには、関連する Microsoft セキュリティ サービスを使用および構成する必要があります。その中には、Power BI の外部で設定されるものもあります。 テナント内に Cloud App Security を含めるには、次のいずれかの[ライセンス](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO)が必要です。
 * Microsoft Cloud App Security:EMS E5 および Microsoft 365 E5 スイートの一部として、サポートされているすべてのアプリに対する Cloud App Security 機能が提供されます。
 * Office 365 Cloud App Security:Office 365 E5 スイートの一部として、Office 365 に対する Cloud App Security 機能だけが提供されます。
-* Azure Active Directory Premium P1。主要な Cloud App Security 機能を利用したい場合。
 
-以下のセクションでは、Power BI で Cloud App Security を使用する手順について説明します。
+
+## <a name="configure-real-time-controls-for-power-bi-with-cloud-app-security"></a>Cloud App Security を使用して Power BI のリアルタイム コントロールを構成する
+
+> [!NOTE]
+> * Cloud App Security リアルタイム コントロールを活用するためには、Azure Active Directory Premium P1 ライセンスが必要です。
+
+以降のセクションでは、Cloud App Security を使用して Power BI のリアルタイム コントロールを構成する手順について説明します。
 
 ### <a name="set-session-policies-in-azure-ad-required"></a>Azure AD でセッション ポリシーを設定する (必須)
 セッション制御を設定するために必要な手順は、Azure AD ポータルと Cloud App Security ポータルで完了します。 Azure AD ポータルでは、Power BI 用の条件付きアクセス ポリシーを作成し、Cloud App Security サービスを介して Power BI で使用されるセッションをルーティングします。 
@@ -60,6 +60,20 @@ Cloud App Security には、Power BI 専用の 2 つの組み込み検出もあ�
 秘密度ラベルを使用すると、機密性の高いコンテンツを分類して保護することができるため、組織内のユーザーは組織外のパートナーと共同作業を行いながら、機密性の高いコンテンツやデータを慎重に認識できます。 
 
 Power BI の秘密度ラベルを使用するプロセスについて詳しく説明されている、[Power BI の秘密度ラベル](service-security-sensitivity-label-overview.md)に関する記事を参照してください。 [秘密度ラベルに基づいた Power BI ポリシーの例](#example)については、以下を参照してください。
+
+## <a name="custom-policies-to-alert-on-suspicious-user-activity-in-power-bi"></a>Power BI の疑わしいユーザー アクティビティについてアラートを生成するためのカスタム ポリシー
+
+Cloud App Security アクティビティ ポリシーを使用すると、管理者は独自のカスタム ルールを定義して、標準から逸脱したユーザーの動作を検出したり、それが危険すぎると見受けられる場合には自動的に対応したりすることもできます。 例:
+
+* **大量の秘密度ラベルの削除。** たとえば、1 人のユーザーが 5 分に満たない短い時間枠で 20 個の異なるレポートから秘密度ラベルを削除した場合に、アラートが通知されるようにします。
+
+* **暗号化秘密度ラベルのダウングレード。** たとえば、"極秘" の秘密度ラベルが付いたレポートが "パブリック"' に分類された場合に、アラートが通知されるようにします。
+
+> [!NOTE]
+> * [Power BI REST API](/rest/api/power-bi/) を使用すると、Power BI 成果物と秘密度ラベルの一意の識別子 (ID) を見つけることができます。 詳細については、[データセットの取得](/rest/api/power-bi/datasets/getdatasets)または[レポートの取得](/rest/api/power-bi/reports/getreports)に関するページを参照してください。
+
+
+カスタム アクティビティ ポリシーは、Cloud App Security ポータルで構成します。 [詳細については、こちらを参照してください](/cloud-app-security/user-activity-policies)。 
 
 ## <a name="built-in-cloud-app-security-detections-for-power-bi"></a>Power BI の組み込みの Cloud App Security 検出
 

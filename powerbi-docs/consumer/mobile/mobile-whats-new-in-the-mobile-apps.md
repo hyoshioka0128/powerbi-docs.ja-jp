@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 8301b51ccbb2ac344e24a297f9a309fc3601b3e1
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 4a50d35ee3aa25932537846a13fc2d75c6fa38df
+ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565591"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925794"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -24,6 +24,10 @@ ms.locfileid: "98565591"
 
 >[!NOTE]
 >**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="january-2021"></a>2021 年 1 月
+### <a name="workspace-support-with-a-power-bi-free-license"></a>Power BI 無料ライセンスを使用したワークスペースのサポート
+Power BI 無料ライセンスを持つユーザーは、ワークスペース リストから閲覧者として直接追加されている先のワークスペースを表示したり、アクセスしたりすることができるようになりました。 この変更は、Power BI Premium 容量でホストされているコンテンツに適用できます。
 
 ## <a name="december-2020"></a>2020 年 12 月
 ### <a name="weve-added-anomaly-detection-to-the-mobile-apps"></a>モバイル アプリに異常検出を追加しました

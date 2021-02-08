@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/22/2021
-ms.openlocfilehash: 50c89bdaa47aa8a687178a33627cf9148720acf2
-ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.openlocfilehash: 2cc5b33065b46f690462454ce55bc16407d77f0b
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718579"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043829"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Power BI Report Server での行レベルのセキュリティ (RLS)
 
@@ -44,7 +44,7 @@ Power BI Report Server にご自分のレポートを保存したら、サーバ
 
  レポートにそれが必要とするロールが割り当てられていない場合は、Power BI Desktop でそのレポートを開き、ロールを追加または変更してから、Power BI Report Server に再び保存する必要があります。 
 
-1. Power BI Desktop で、Power BI Report Server にレポートを保存します。 Power BI Report Server 向けに最適化された Power BI Desktop のバージョンを使用する必要があります。
+1. Power BI Desktop で、Power BI Report Server にレポートを保存します。 Power BI Report Server 向け Power BI Desktop のバージョンを使用する必要があります。
 2. Power BI Report Service で、レポートの横に表示されている省略記号 ( **…** ) を選択します。 
 
 3. **[管理]**  >  **[行レベルのセキュリティ]** を選択します。 

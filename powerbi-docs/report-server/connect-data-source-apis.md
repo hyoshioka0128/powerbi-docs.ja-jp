@@ -8,24 +8,24 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.openlocfilehash: 4e1947abe0fa0f17e1db92619f0aa7fba5df5575
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b7f431ba6b8f559380916c17689d0eab74a0c9a7
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415475"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044312"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - Power BI Report Server
 
 
-Power BI Report Server の 2020 年 10 月リリースから、DirectQuery および最新の情報への更新のために Power BI レポートの接続を更新する機能が有効になります。
+Power BI Report Server の 2020 年 10 月リリースから、DirectQuery および最新の情報への更新のために Power BI レポートの接続を更新する機能が有効になりました。
 
 > [!IMPORTANT]
 > これは、以前のリリースでのこの設定方法に対する破壊的変更でもあります。 Power BI Report Server の 2020 年 10 月より前のバージョンを使用している場合は、「[PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - 2020 年 10 月より前の Power BI Report Server](connect-data-source-apis-pre-oct-2020.md)」を参照してください
 
 ## <a name="prerequisites"></a>前提条件:
-- [Power BI Report Server と Power BI Report Server 向けに最適化された Power BI Desktop](https://powerbi.microsoft.com/report-server/) の 2020 年 10 月リリースをダウンロードしてください。
-- **拡張データセット メタデータ** が有効になっている、Report Server 向けに最適化された Power BI Desktop の 2020 年 10 月リリースで保存されたレポート。
+- [Power BI Report Server と Power BI Report Server 向け Power BI Desktop](https://powerbi.microsoft.com/report-server/) の 2020 年 10 月以降のリリースをダウンロードしてください。
+- **拡張データセット メタデータ** が有効になっている、Report Server 向けに最適化された Power BI Desktop の 2020 年 10 月以降のリリースで保存されたレポート。
 - パラメーター化された接続を使用するレポート。 発行後に更新できるのは、パラメーター化された接続とデータベースを使用するレポートのみです。
 - この例では、Reporting Services PowerShell ツールを使用します。 新しい REST API を使用して、同じことを実現できます。
 
