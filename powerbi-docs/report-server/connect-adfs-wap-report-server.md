@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 10/12/2020
-ms.openlocfilehash: 17e153528e45a52de7addf3563c58c2586600660
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.date: 02/03/2021
+ms.openlocfilehash: 73c7e0b2256d4a45fb9f433a887827e772a32257
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92026016"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533075"
 ---
 # <a name="use-web-application-proxy-and-active-directory-federated-services---power-bi-report-server"></a>Web アプリケーション プロキシと Active Directory フェデレーション サービスを使用する - Power BI Report Server
 
@@ -68,7 +68,7 @@ AD FS サーバーで AD FS 管理アプリを使用して、次の手順を実�
 
     ![証明書利用者信頼の追加](media/connect-adfs-wap-report-server/report-server-adfs-add-relying-party-trust.png)
 
-2. **証明書利用者信頼の追加**ウィザードで、次の手順に従います。
+2. **証明書利用者信頼の追加** ウィザードで、次の手順に従います。
 
     **[要求に対応しない]** オプションを選択して、認証メカニズムとして Windows 統合セキュリティを使用します。
 
@@ -85,7 +85,7 @@ AD FS サーバーで AD FS 管理アプリを使用して、次の手順を実�
 
     ![アクセス制御を選択する](media/connect-adfs-wap-report-server/report-server-adfs-choose-access-control.png)
     
-    **[次へ]** を選択し、 **[完了]** を選択して、**証明書利用者信頼の追加**ウィザードを完了します。
+    **[次へ]** を選択し、 **[完了]** を選択して、**証明書利用者信頼の追加** ウィザードを完了します。
 
     完了すると、証明書利用者信頼のプロパティは次のようになります。
 
@@ -93,7 +93,7 @@ AD FS サーバーで AD FS 管理アプリを使用して、次の手順を実�
 
 ## <a name="3-configure-web-application-proxy-wap"></a>3.Web アプリケーション プロキシ (WAP) を構成する
 
-環境内のサーバーで、Web アプリケーション プロキシ (役割) の Windows の役割を有効にします。 これは、Windows 2016 サーバー上になければなりません。 詳しくは、「[Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server)」 (Windows Server 2016 での Web アプリケーション プロキシ) および「[Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication)」 (AD FS の事前認証を使用したアプリケーションの公開) をご覧ください。
+環境内のサーバーで、Web アプリケーション プロキシ (役割) の Windows の役割を有効にします。 これは、Windows 2016 サーバー上になければなりません。 詳しくは、「[Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server)」 (Windows Server 2016 での Web アプリケーション プロキシ) および「[Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#BKMK_1.2)」 (AD FS の事前認証を使用したアプリケーションの公開) をご覧ください。
 
 ### <a name="configure-constrained-delegation"></a>制約付き委任を構成する
 
@@ -103,7 +103,7 @@ Active Directory 内の WAP サーバー コンピューター アカウント�
 
 制約付き委任を構成するには、次の手順に従います。
 
-1. Active Directory ツールがインストールされているコンピューターで、**Active Directory ユーザーとコンピューター**を起動します。
+1. Active Directory ツールがインストールされているコンピューターで、**Active Directory ユーザーとコンピューター** を起動します。
 2. WAP サーバーのコンピューター アカウントを検索します。 既定では、それは **[コンピューター]** コンテナー内にあります。
 3. WAP サーバーを右クリックし、 **[プロパティ]** に移動します。
 4. **[委任]** タブで、 **[指定されたサービスへの委任でのみこのコンピューターを信頼する]** と **[任意の認証プロトコルを使う]** をオンにします。
@@ -145,7 +145,7 @@ Active Directory 内の WAP サーバー コンピューター アカウント�
 
     ![サポートされるクライアント](media/connect-adfs-wap-report-server/report-server-supported-clients-publish-new-app-wizard.png)
 
-5. 次に示すように AD FS サーバーで作成した**証明書利用者**を追加し、 **[次へ]** を選択します。
+5. 次に示すように AD FS サーバーで作成した **証明書利用者** を追加し、 **[次へ]** を選択します。
 
     ![証明書利用者の発行](media/connect-adfs-wap-report-server/report-server-relying-party-publish-new-app-wizard.png)
 

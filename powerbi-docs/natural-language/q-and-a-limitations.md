@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.openlocfilehash: 6ad81bc88ee559fa08400b5ed8a74dd1a9b6051f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 74e99f42677c6adda73a8b5e2e3043e2d039f5b3
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410024"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99569901"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Power BI Q&A の制限事項
 
@@ -34,8 +34,6 @@ Power BI Q&A では、Power BI サービスにおけるデータ ソースの次
 **Q&A の DirectQuery サポート** (プレビュー)
 
 SQL Server 2019、Azure SQL Database、Azure Synapse Analytics などの SQL DirectQuery ソースが、Q&A でサポートされるようになりました。 Q&A を使用すれば、これらのデータ ソースに対して自然言語の質問をすることができます。 DirectQuery モードのときの Q&A の動作には少し変更が加えられています。質問を入力したら、 **[送信]** ボタンを選択します。 この変更により、入力時に不要なクエリで DirectQuery ソースが過負荷になるのを防ぐことができます。
-
-その他の DirectQuery ソースは、Q&A によってサポートされていません。 ご利用のデータセット内に他の DirectQuery ソースが含まれていても、Microsoft が Q&A を完全にブロックすることはありませんが、質問によっては正しい回答が得られなかったり、エラーが返されたりする場合があります。
 
 ### <a name="data-sources-not-supported"></a>サポートされていないデータ ソース
 

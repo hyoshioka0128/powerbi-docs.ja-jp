@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 340f29394d0c6c83659d77f2545a4f76eef99a9a
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
+ms.openlocfilehash: a35b8e127c008f78cb9348704b9e049f9fa3b46f
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597667"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99569993"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Power BI での DirectQuery の使用について
 
@@ -163,7 +163,6 @@ DirectQuery を使うと、これらのモデル強化の多くを行うこと�
 ほとんどすべてのレポート機能は、DirectQuery モデルでもサポートされます。 そのため、基になるソースが適切なレベルのパフォーマンスを提供する限り、同じ視覚エフェクトのセットを使うことができます。 レポートを発行した後、Power BI サービスで提供されている他の機能の一部には何らかの重要な制限があります。
 
 * **クイック分析情報がサポートされない:** Power BI のクイック分析情報では、興味がある可能性のある情報を検出するために一連の高度なアルゴリズムを適用しながら、データセットのさまざまなサブセットが検索されます。 非常にハイ パフォーマンスのクエリを必要とするため、この機能は DirectQuery を使用するデータセットでは利用することはできません。
-* **Q&A はサポートされていません:** Power BI の Q&A を使うと、直感的な自然言語の機能を使ってデータを調査し、チャートやグラフの形式で質問に対する回答を受け取ることができます。 ただし、現時点では、DirectQuery を使用するデータセットではサポートされていません。
 * **Excel で分析を使うとパフォーマンスが低下する可能性がある:** データセットで [Excel で分析] 機能を使って自分のデータを調べることができます。 このアプローチを使用すると、Excel でピボットテーブルとピボットグラフを作成できます。 DirectQuery を使うデータセットでもこの機能はサポートされますが、一般にパフォーマンスは Power BI で視覚エフェクトを作成する場合より遅くなります。したがって Excel の使用が重要なシナリオの場合、DirectQuery の使用を判断する際にこのことを考慮する必要があります。
 * **テキスト列の最大長:** DirectQuery を使用するデータセットのテキスト列に含まれるデータの最大長は 32,764 文字です。 これを超えるテキストで報告すると、エラーが発生します。
 

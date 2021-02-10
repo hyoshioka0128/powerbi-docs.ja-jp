@@ -1,20 +1,20 @@
 ---
 title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析のページ分割されたレポートのエクスポート API
-description: ページ分割された埋め込み Power BI レポートをエクスポートする方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
+description: ページ分割された埋め込み Power BI レポートをエクスポートする方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/05/2020
-ms.openlocfilehash: befb64ec85c02f8993d828202df06aafc5901482
-ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+ms.date: 02/09/2021
+ms.openlocfilehash: 9757b19e4faf4537cf4ff3c1e6f06dc9d499bc8c
+ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98781517"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100013592"
 ---
-# <a name="export-paginated-report-to-file-preview"></a>ページ割り付けされたレポートをファイルにエクスポートする (プレビュー)
+# <a name="export-paginated-report-to-file"></a>ページ分割されたレポートをファイルにエクスポートする
 
 `exportToFile` API を使用すると、REST の呼び出しを使用して、ページ割り付けされた Power BI レポートをエクスポートできます。 次のファイル形式がサポートされています。
 * **.pptx** (PowerPoint)

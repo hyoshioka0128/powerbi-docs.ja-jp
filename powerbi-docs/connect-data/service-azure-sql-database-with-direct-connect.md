@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 04/28/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 3dbd769d11b3122591e0a34df9d74ca8e9c1e3b2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f23a7029f365f35d8f8f9324ff45716f45ba778d
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410668"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570062"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database と DirectQuery
 
@@ -32,7 +32,6 @@ DirectQuery を使用すると、レポート ビューでデータを調べる�
 * データベースのファイアウォール ルールが確実に "[Azure サービスに対するアクセスを許可する](/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)" ように構成します。
 * 列の選択、フィルターの追加など、どの操作によってもクエリがデータベースに送り返されます。
 * タイルは、1 時間ごとに更新されます (更新をスケジュール設定する必要はありません)。 更新の頻度は、接続したときに [詳細] 設定で調整できます。
-* DirectQuery データセットの Q&A は使用できません。
 * スキーマ変更は自動選択されません。
 
 これらの制限および注意事項については、エクスペリエンスの向上に伴い変更される可能性があります。 接続するための手順の詳細を以下に示します。
