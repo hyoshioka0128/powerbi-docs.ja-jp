@@ -72,6 +72,8 @@
               href: mobile-apps-scan-barcode-iphone.md
             - name: 対話設定を構成する
               href: mobile-app-interaction-settings.md
+            - name: 分割画面表示モード
+              href: mobile-apps-split-screen.md
             - name: ダーク モード
               href: mobile-apps-dark-mode.md
             - name: モバイル デバイス管理を使用して構成する

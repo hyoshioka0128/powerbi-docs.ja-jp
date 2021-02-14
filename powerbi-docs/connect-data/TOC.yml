@@ -257,6 +257,8 @@
           items:
             - name: アプリでサービスに接続する
               href: service-connect-to-services.md
+            - name: Power BI を使用した人気のある株式の分析
+              href: service-connect-to-analyze-stocks.md
             - name: COVID-19 US トラッキング レポート
               href: service-connect-to-covid-19-tracking.md
             - name: 危機管理コミュニケーション プレゼンス レポート
