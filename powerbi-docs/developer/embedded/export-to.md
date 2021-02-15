@@ -1,18 +1,18 @@
 ---
-title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析レポートのエクスポート API
-description: 埋め込み Power BI レポートをエクスポートして、Power BI 埋め込み分析の埋め込み BI エクスペリエンスを向上させる方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
+title: Power BI 埋め込み分析のレポートのエクスポート API
+description: 埋め込まれた Power BI レポートをエクスポートする方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/01/2021
-ms.openlocfilehash: 64a9472960195c8d4f91013a778bb61cdf029ab4
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.date: 02/09/2021
+ms.openlocfilehash: 68d4802ebb150827982a348bc67f6f46f60812be
+ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99422354"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100013569"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI レポートをファイルにエクスポートする (プレビュー)
 

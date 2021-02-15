@@ -1,19 +1,19 @@
 ---
-title: 埋め込み BI 分析情報を向上させる目的で役立つ、Power BI 埋め込み分析についてよく寄せられる質問
-description: Power BI 埋め込み分析についてよく寄せられる質問と回答を一覧にしてあるのでご参照ください。顧客の埋め込み BI 分析情報を向上させます。
+title: Power BI 埋め込み分析についてよく寄せられる質問
+description: Power BI 埋め込み分析についてよく寄せられる質問とその回答の一覧を参照します
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020
-ms.openlocfilehash: d787dfbb926a3a1224d5b4949003e0b0d260260f
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.date: 01/14/2021
+ms.openlocfilehash: e9487cc0cd799e925108163f729fdbf7da5d3ad5
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155643"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533006"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Power BI Embedded に関してよく寄せられる質問
 
@@ -41,6 +41,10 @@ Microsoft は、顧客が分析に関する決定を行うときに役立つビ�
 Power BI Premium は、組織、パートナー、顧客、サプライヤーを 1 つのビューで見ることができる完全 BI ソリューションを望む企業向けです。 Power BI Premium は組織の意思決定に役立ちます。 Power BI Premium は SaaS 製品であり、ユーザーはモバイル アプリ、社内で開発したアプリを使用して、または Power BI ポータルでコンテンツを利用できます。
 
 Power BI Embedded は、アプリケーションにビジュアルを埋め込むことを望む ISV 用です。 Power BI Embedded はアプリケーション開発者向けであり、そのアプリケーションを入手すれば、組織の内外を問わず、誰でも Power BI Embedded 容量に保存されているコンテンツを利用できます。Power BI Embedded は顧客の意思決定に役立ちます。 Power BI Embedded 容量に入っているコンテンツを、ワンクリック Web 公開やワンクリック SharePoint 公開で共有することはできません。
+
+### <a name="what-is-power-bi-embedded-generation-2"></a>Power BI Embedded Generation 2 とは
+
+最近、Power BI Embedded では新しいバージョン **Embedded Gen2** がリリースされました。 Embedded Gen2 を使用すると、埋め込み容量の管理が簡素化され、Power BI Embedded エクスペリエンスが向上します。 詳細については、[Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
 ### <a name="what-is-the-microsoft-recommendation-for-when-a-customer-should-buy-power-bi-premium-vs-power-bi-embedded"></a>Power BI Premium と Power BI Embedded を比較して、どのような状況でどちらを購入するべきか、Microsoft は勧めていますか?
 

@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 02/02/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 98bc3da33f38974f3dfcb9e155111e7d16e6c069
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: 0ae9a37d8d3a54d02811b9f3051d11cb1ab82ff8
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99494468"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532569"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
@@ -144,7 +144,7 @@ Power BI で、スケジュールされた更新またはオンデマンドの�
 
 ### <a name="query-execution"></a>クエリ実行
 
-[Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) 容量のワークスペースに接続されているとき、SQL Server Management Studio に次のエラーが表示されることがあります。
+[Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) または [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) 容量のワークスペースに接続されているとき、SQL Server Management Studio に次のエラーが表示されることがあります。
 
 ```
 Executing the query ...
@@ -155,7 +155,7 @@ Error -1052311437:
 
 ### <a name="refresh-operations"></a>更新操作
 
-v18.7.1 以前の SSMS を使用し、Premium Gen2 容量のデータセットで長時間 (1 分超) の更新操作を実行するとき、更新操作に成功したとしても、SSMS には次のようなエラーが表示されることがあります。
+v18.7.1 以前の SSMS を使用し、Premium Gen2 または [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) 容量のデータセットで長時間 (1 分超) の更新操作を実行するとき、更新操作に成功したとしても、SSMS には次のようなエラーが表示されることがあります。
 
 ```
 Executing the query ...

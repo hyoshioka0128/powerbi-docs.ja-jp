@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/11/2020
 ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: dd0080f96117be949a7d4901f8445a509740b5b0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f3bdf12106ffa15764719fe3146a1ed52adf5990
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413451"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532937"
 ---
 # <a name="optimizing-premium-capacities"></a>Premium 容量を最適化する
 
@@ -30,6 +30,8 @@ Premium 容量のパフォーマンスに関する問題が発生した場合、
 
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+>
+>Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
 この記事で推奨されている推奨事項とベスト プラクティスを使用すると、各データセットの CPU 使用率とその他の Power BI の成果物が確実に最適化されます。
 

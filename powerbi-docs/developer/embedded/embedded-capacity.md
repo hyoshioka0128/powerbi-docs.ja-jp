@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/06/2021
-ms.openlocfilehash: c27d95715fe436b59825390b1cc16111e83ffc1d
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.date: 01/14/2021
+ms.openlocfilehash: b37182cbdf030e8b32fdfe307d0a652fef678b9b
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565002"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533029"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Power BI Embedded の分析の容量と SKU
 
@@ -37,6 +37,9 @@ Power BI Embedded 分析には 2 つのソリューションが含まれてい�
 Power BI Embedded は、アプリケーションにビジュアルを埋め込むことを望む ISV と開発者用です。
 
 Power BI Embedded を使用するアプリケーションでは、ユーザーは Power BI Embedded 容量に格納されているコンテンツを使用できます。
+
+>[!NOTE]
+>最近、Power BI Embedded では新しいバージョン **Embedded Gen2** がリリースされました。 Embedded Gen2 を使用すると、埋め込み容量の管理が簡素化され、Power BI Embedded エクスペリエンスが向上します。 詳細については、[Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -142,6 +145,10 @@ Power BI Premium には、*P* および *EM* の 2 つの SKU が用意されて
 | P4 | 64 | 32 | 200 | 32 | 240 | 48 |
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
+
+#### <a name="embedded-gen-2-memory-enhancements-preview"></a>Embedded Gen 2 メモリの機能強化 (プレビュー)
+
+[Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (別名 Embedded Gen 2) では、各ノード サイズで使用できるメモリの量は、メモリの累積消費量ではなく、1 つの Power BI 項目 (レポートやダッシュボードなど) のメモリ占有領域の制限に設定されます。 たとえば、Embedded Gen2 A4 容量では、1 つのデータセットのみのサイズが 25 GB に制限されています。一方、元の Power BI Embedded 容量では、同時に処理されるデータセットの合計メモリ占有領域が 25 GB に制限されます。
 
 ## <a name="next-steps"></a>次の手順
 

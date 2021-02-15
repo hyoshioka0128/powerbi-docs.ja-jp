@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 12/01/2020
-ms.openlocfilehash: 5b4c32296c7121fa3d161461af7e86caba617ee1
-ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
+ms.openlocfilehash: 5f03a994085e139da714219ce2e9095bde3a35d6
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501951"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570039"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Power BI サービスのデータセット モード
 
@@ -80,7 +80,7 @@ DirectQuery モデルにはいくつかの長所があります。
 ただし、DirectQuery モデルに関連したいくつかの制限があります。
 
 - DAX の数式は、データ ソースが理解できるネイティブ クエリに置き換え可能な関数のみを使用するように制限されています。 計算テーブルはサポートされません。
-- Q&A およびクイック分析情報の機能はサポートされません
+- クイック分析情報機能はサポートされません
 
 Power BI サービス リソースの観点から見ると、DirectQuery モデルに必要なものは次のとおりです。
 
@@ -105,7 +105,7 @@ _複合_ モードでは、インポート モードと DirectQuery モードを
 
 詳細については、「[Power BI Desktop で複合モデルを使用する](../transform-model/desktop-composite-models.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Power BI サービスのデータセット](service-dataset-modes-understand.md)
 - [Power BI Desktop のストレージ モード](../transform-model/desktop-storage-mode.md)

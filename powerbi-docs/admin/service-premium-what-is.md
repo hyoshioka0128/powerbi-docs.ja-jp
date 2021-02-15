@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/01/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 05f2523e468759444a731d5484e8ce17350a46ae
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: e226d70822e9462f376ec3b5d4d9fd5f36ade252
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99494905"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532776"
 ---
 # <a name="what-is-power-bi-premium"></a>Power BI Premium とは
 
@@ -38,6 +38,9 @@ Power BI Premium を使用すると、Premium でのみ利用可能な機能に�
 ## <a name="power-bi-premium-generation-2-preview"></a>Power BI Premium Generation 2 (プレビュー)
 
 Power BI Premium の新しいバージョンである **Power BI Premium Generation 2** が最近リリースされ、これは便宜上 **Premium Gen2** と呼ばれています。 Premium Gen2 は現在プレビュー段階であり、Premium サブスクライバーがプレビュー期間中に使用できます。 元のバージョンの Premium を使用することも、Premium Gen2 を使用するように切り替えることもできます。 Premium 容量の場合は、どちらか一方のみを使用できます。
+
+>[!NOTE]
+>Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
 Premium Gen2 では、次の更新または改善されたエクスペリエンスが提供されます。
 
@@ -136,9 +139,9 @@ Power BI Premium では、"*予約容量*" が提供されます。 他の顧客
 | EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
-| P1 | 8 | 4 | 25 | 4 | 30 | 6 |
-| P2 | 16 | 8 | 50 | 8 | 60 | 12 |
-| P3 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | P4 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
 | P5 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
@@ -150,7 +153,7 @@ Power BI Premium では、"*予約容量*" が提供されます。 他の顧客
 
 #### <a name="updates-for-premium-gen2-preview"></a>Premium Gen2 (プレビュー) の更新
 
-**Premium Gen2** では、各ノード サイズで使用できるメモリ量は、メモリの累積消費量ではなく、1 つのアーティファクトのメモリ占有領域の制限に設定されます。 たとえば、Premium Gen2 では、1 つのデータセットのみのサイズが 25 GB に制限されています。一方、元の Premium では、同時に処理されるデータセットの合計メモリ占有領域が 25 GB に制限されていました。
+**Premium Gen2** および [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) では、各ノード サイズで使用できるメモリ量は、メモリの累積消費量ではなく、1 つの成果物のメモリ占有領域の制限に設定されます。 たとえば、Premium Gen2 P1 容量では、1 つのデータセットのみのサイズが 25 GB に制限されています。一方、元の Premium では、同時に処理されるデータセットの合計メモリ占有領域が 25 GB に制限されていました。
 
 ### <a name="capacity-workloads"></a>容量のワークロード
 
@@ -186,7 +189,7 @@ Power BI サービスでは常に、容量に課されている制限を超え�
 
 #### <a name="updates-for-premium-gen2-preview"></a>Premium Gen2 (プレビュー) の更新
 
-Premium Gen2 は累積メモリ制限を必要としないため、データセットの同時更新はリソースの制約の一因となりません。 仮想コアあたりの更新の実行数に上限はありません。 ただし、個々のデータセットの更新は、引き続き既存の容量メモリおよび CPU の制限の影響を受けます。 任意の時点で必要に応じて何度でも更新をスケジュールして実行できます。また、Power BI サービスでは、ベスト エフォートとしてスケジュールされた時間にこれらの更新が実行されます。
+Premium Gen2 および [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) は累積メモリ制限を必要としないため、データセットの同時更新はリソースの制約の一因となりません。 仮想コアあたりの更新の実行数に上限はありません。 ただし、個々のデータセットの更新は、引き続き既存の容量メモリおよび CPU の制限の影響を受けます。 任意の時点で必要に応じて何度でも更新をスケジュールして実行できます。また、Power BI サービスでは、ベスト エフォートとしてスケジュールされた時間にこれらの更新が実行されます。
 
 セクションに関する注意事項:   
 <a name="endnote-1"></a>\[1\] 変更される可能性があります。
@@ -290,10 +293,10 @@ Premium 容量ではクエリごとのメモリと時間の制約値は大幅に
 
 P1 から P3 の SKU および A4 から A6 の SKU でサポートされているページ分割されたレポートは、SQL Server Reporting Services のレポート定義言語 (RDL) テクノロジに基づいています。 RDL テクノロジをベースにしてはいますが、これは、オンプレミスにインストールできるダウンロード可能なレポート プラットフォームである Power BI Report Server (これも Power BI Premium にも含まれている) と同じではありません。 ページ分割されたレポートは、印刷または共有することができるページ上にうまく収まるように書式設定されます。 テーブルが複数のページにまたがる場合でも、データはテーブル内に表示されます。 無料の [**Power BI レポート ビルダー**](https://aka.ms/pbireportbuilder) Windows デスクトップ アプリケーションを使用して、ユーザーはページ分割されたレポートを作成し、サービスに公開することができます。
 
-Power BI Premium では、ページ分割されたレポートは管理ポータルを使用して容量に対して有効にする必要があるワークロードです。 容量管理者は、有効にしてから、容量のメモリ リソース全体に対するパーセンテージとしてメモリ量を指定することができます。 他の種類のワークロードとは異なり、ページ分割されたレポートは容量内に含まれる領域で Premium によって実行されます。 ワークロードがアクティブかどうかに関係なく、この領域に指定した最大メモリが使用されます。 既定値は 20% です。
+Power BI Premium では、ページ分割されたレポートは管理ポータルを使用して容量に対して有効にする必要があるワークロードです。 容量管理者は、有効にしてから、容量のメモリ リソース全体に対するパーセンテージとしてメモリ量を指定することができます。 他の種類のワークロードとは異なり、ページ分割されたレポートは容量内に含まれる領域で Premium によって実行されます。 ワークロードがアクティブかどうかに関係なく、この領域に指定した最大メモリが使用されます。 既定値は 20% です。 
 
 > [!NOTE]
-> **Premium Gen2 (プレビュー)** には、ページ分割されたレポート用のメモリ管理は備わっていません。 Premium Gen2 では、ページ分割されたレポートが EM1-EM3 SKU でサポートされています。
+> **Premium Gen2 (プレビュー)** および [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) には、ページ分割されたレポート用のメモリ管理は備わっていません。 Premium Gen2 および Embedded Gen2 では、ページ分割されたレポートが EM1-EM3 SKU と A1-A3 SKU でサポートされています。
 
 ### <a name="paginated-reports-and-premium-gen2"></a>ページ分割されたレポートと Premium Gen2
 
@@ -327,7 +330,7 @@ Premium では、コンテンツを表示する受信者に Pro ライセンス�
 
 ## <a name="analysis-services-in-power-bi-premium"></a>Power BI Premium での Analysis Services
 
-内部では、企業で実証済みの Microsoft **Analysis Services Vertipaq エンジン** によって Power BI Premium ワークスペースとデータセットが強化されます。 Analysis Services では、オープンスタンダードの XMLA プロトコルをサポートするクライアント ライブラリと API を介して、プログラミング機能やクライアント アプリケーションおよびツールがサポートされます。 既定では、Power BI Premium 容量データセット ワークロードでは、Microsoft およびサードパーティのクライアント アプリケーションおよびツールから **XMLA エンドポイント** を経由して行う "*読み取り専用*" 操作がサポートされています。 また、容量管理者は、エンドポイントを経由した "*読み取り/書き込み*" 操作を無効にすることも、許可することもできます。
+内部では、企業で実証済みの Microsoft **Analysis Services VertiPaq エンジン** によって Power BI Premium ワークスペースとデータセットが強化されます。 Analysis Services では、オープンスタンダードの XMLA プロトコルをサポートするクライアント ライブラリと API を介して、プログラミング機能やクライアント アプリケーションおよびツールがサポートされます。 既定では、Power BI Premium 容量データセット ワークロードでは、Microsoft およびサードパーティのクライアント アプリケーションおよびツールから **XMLA エンドポイント** を経由して行う "*読み取り専用*" 操作がサポートされています。 また、容量管理者は、エンドポイントを経由した "*読み取り/書き込み*" 操作を無効にすることも、許可することもできます。
 
 読み取り専用アクセスの場合、SQL Server Management Studio (SSMS) や SQL Server Profiler などの Microsoft のツール、および DAX Studio やデータ視覚化アプリケーションなどのサードパーティ アプリでは、XMLA、DAX、MDX、DMV、および Trace イベントを使用して Premium データセットに接続し、それに対してクエリを実行することができます。 読み取り/書き込みアクセスの場合、Visual Studio と Analysis Services プロジェクト拡張機能や、オープン ソースの表形式エディターなどのエンタープライズ データ モデリング ツールで、表形式モデルをデータセットとして Premium ワークスペースに配置できます。 また、SSMS などのツールを使用すると、管理者は表形式モデルのスクリプト言語 (TMSL) を使用して、メタデータの変更や高度なデータ更新のシナリオをスクリプト化することができます。 
 

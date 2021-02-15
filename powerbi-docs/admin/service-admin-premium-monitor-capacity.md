@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 46e2684b468e480da5db5287ffc40466d71c8f22
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: f99f40fd04154f2a934fb812dfc1a4683e64ceb9
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512219"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532983"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>アプリで Premium 容量を監視する
 
@@ -27,6 +27,8 @@ Premium 容量リソースを最適に利用するにはどうすればよいか
 
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+>
+>Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
 ## <a name="install-the-app"></a>アプリをインストールする
 

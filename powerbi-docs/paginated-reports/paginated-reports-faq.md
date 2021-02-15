@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/19/2020
-ms.openlocfilehash: 7cba43ff6339ce890ca2f4f1744282648eaf877b
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 02/09/2021
+ms.openlocfilehash: d8460fe1a3eb199848f47181837225f1e540bb08
+ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297887"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100013638"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Power BI のページ分割されたレポート:FAQ 
 
@@ -28,6 +28,13 @@ ms.locfileid: "93297887"
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>ページ分割されたレポートに必要な Premium 容量のサイズはどれくらいですか。
 
 ページ分割されたレポート ワークロードは P1 ～ P3 SKU で利用できます。  A4 から A6 SKU では、埋め込みまたはテスト/開発シナリオに使用することもできます。
+
+> [!NOTE]
+> Power BI に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 **Premium Gen2** では、ページ分割されたレポート ワークロードは P1-P3 SKU および A1-A6 SKU で利用できます。 
+>
+>Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+>
+>Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>容量でページ分割されたレポートに対して設定できる最大メモリしきい値はどれくらいですか。
 
@@ -74,13 +81,16 @@ Pro ライセンスがなくても、お使いのマイ ワークスペースが
 
 ページ分割されたレポートに対する各 Premium SKU の既定のメモリは次のとおりです。
 
-- **P1/A4** :20% (既定値)、10% (最小値)
-- **P2/A5** :20% (既定値)、5% (最小値)
-- **P3/A6** :20% (既定値)、2.5% (最小値)
+- **P1/A4**:20% (既定値)、10% (最小値)
+- **P2/A5**:20% (既定値)、5% (最小値)
+- **P3/A6**:20% (既定値)、2.5% (最小値)
 
 Power BI 管理者は、管理ポータルで、既定の最大メモリの割合を変更できます。 **[容量の設定]** タブの **[Power BI Premium]** の下にある **[ページ分割されたレポート]** ワークロード セクションを参照してください。
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="[ページ分割されたレポート] の [容量の設定] タブ":::
+
+> [!NOTE]
+> **Premium Gen2** (現在プレビュー段階) では、メモリ設定を変更する必要はありません。 基盤のシステムによって、Premium Gen2 のメモリは自動的に管理されます。 **Premium Gen2** では、ページ分割されたレポート ワークロードは P1-P3 SKU と A1-A6 SKU で利用できます。
 
 ## <a name="general"></a>全般
 

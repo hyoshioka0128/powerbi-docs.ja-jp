@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
-ms.date: 11/23/2020
-ms.openlocfilehash: 35bdaa8af06187767975126daa1f2445908fed9f
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 02/04/2021
+ms.openlocfilehash: 6a322d331dce9fd989a93545745cf7feb2d9eb70
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886789"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99569970"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>サービス プリンシパルとアプリケーション シークレットを使用した Power BI コンテンツの埋め込み
 
@@ -243,7 +243,7 @@ Add-PowerBIWorkspaceUser -Id $pbiWorkspace.Id -AccessRight Member -PrincipalType
 * Power BI 管理ポータル内の開発者向け設定でサービス プリンシパルを有効にするには、Power BI 管理者権限が必要です。
 * [組織のアプリケーションへの埋め込み](embed-sample-for-your-organization.md)では、サービス プリンシパルを使用することはできません。
 * [データフロー](../../transform-model/dataflows/dataflows-introduction-self-service.md)管理はサポートされていません。
-* サービス プリンシパルでは現在、管理 API は一切サポートされていません。
+* サービス プリンシパルでは、一部の読み取り専用管理 API のみがサポートされています。 読み取り専用管理 API に対するサービス プリンシパルのサポートを有効にするには、テナントで Power BI サービス管理者設定を有効にする必要があります。 詳細については、「[読み取り専用の管理 API に対してサービス プリンシパル認証を有効にする](../../admin/read-only-apis-service-principal-authentication.md)」を参照してください。
 * サービス プリンシパルを [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) データ ソースと共に使用する場合、サービス プリンシパル自体に Azure Analysis Services インスタンスのアクセス許可が含まれている必要があります。 この目的のためのサービス プリンシパルを含むセキュリティ グループを使用することはできません。
 
 ## <a name="next-steps"></a>次のステップ

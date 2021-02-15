@@ -10,12 +10,12 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 06/26/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 07b16bb90b548f071472f9f7d22095ccdff78f56
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: d3a30098b793ccb75cbae6c271ab1685b3176a10
+ms.sourcegitcommit: f17acb16018752c234db6bff1f51f5130be12c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96401721"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99616958"
 ---
 # <a name="create-visuals-by-using-python-packages-in-the-power-bi-service"></a>Power BI サービスで Python パッケージを使用して視覚化を作成する
 Power BI サービスで視覚化を作成するには、強力な [Python プログラミング言語](https://www.python.org/)を使用できます。 多くの Python パッケージが Power BI サービスでサポートされており、サポート対象は常に増え続けています。
@@ -46,7 +46,7 @@ Python パッケージにはいくつかの要件と制限事項があります�
 |pandas|1.0.1|https://pypi.org/project/pandas|
 |scikit-learn|0.23.0|https://pypi.org/project/scikit-learn|
 |scipy|1.4.1|https://pypi.org/project/scipy|
-|s  eaborn|0.10.1|https://pypi.org/project/seaborn|
+|seaborn|0.10.1|https://pypi.org/project/seaborn|
 |statsmodels|0.11.1|https://pypi.org/project/statsmodels|
 |xgboost|1.1.0|https://pypi.org/project/xgboost|
 

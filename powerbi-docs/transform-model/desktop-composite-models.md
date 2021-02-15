@@ -9,12 +9,12 @@ ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 01/19/2021
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: cbf41315f6b33483b7fdd0797bf4dfbcebb605c3
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
+ms.openlocfilehash: 0601760392b9bac549ff683f4460a3681da16119
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597693"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570016"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Power BI Desktop で複合モデルを使用する
 
@@ -180,7 +180,7 @@ DirectQuery を使用する場合は、常にパフォーマンスを考慮す�
 
 DirectQuery を使用してこれらの多次元ソースに接続した場合は、別の DirectQuery ソースに接続することも、インポート データと結合することもできません。
 
-DirectQuery の既存の制限事項は、複合モデルを使用する場合にも適用されます。 これらの制限事項の多くは、テーブルのストレージ モードに応じてテーブルごとに適用されるようになりました。 たとえば、インポート テーブルの計算列からは他のテーブルを参照できますが、DirectQuery テーブルの計算列からは引き続き同じテーブルの列しか参照できません。 モデル内のテーブルのいずれかが DirectQuery の場合、モデル全体に他の制限事項が適用されます。 たとえば、モデル内のいずれかのテーブルにストレージ モードの DirectQuery がある場合、QuickInsights 機能と Q&A 機能は使用できません。
+DirectQuery の既存の制限事項は、複合モデルを使用する場合にも適用されます。 これらの制限事項の多くは、テーブルのストレージ モードに応じてテーブルごとに適用されるようになりました。 たとえば、インポート テーブルの計算列からは他のテーブルを参照できますが、DirectQuery テーブルの計算列からは引き続き同じテーブルの列しか参照できません。 モデル内のテーブルのいずれかが DirectQuery の場合、モデル全体に他の制限事項が適用されます。 たとえば、モデル内のいずれかのテーブルにストレージ モードの DirectQuery がある場合、QuickInsights 機能は使用できません。
 
 ## <a name="next-steps"></a>次の手順
 

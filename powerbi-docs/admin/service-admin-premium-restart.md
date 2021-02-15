@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 367195e0e09bbfb7de20acfa71b8da9742664ca2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: da6108927e9d6182c08db68972a5452514eedca7
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413566"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532960"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Power BI Premium 容量を再起動する
 
@@ -30,6 +30,8 @@ Power BI では、Premium 容量の利用者をこのような問題から守る
 
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Preview Gen2 の容量は再起動を必要としないため、この機能は Premium Gen2 では使用できません。
+>
+> **Embedded Gen2** 容量でも再起動する必要はありません。 Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>再起動プロセスは安全ですか。 データを失ったりしませんか。
 

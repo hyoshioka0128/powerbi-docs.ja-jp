@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 5cce18c2ec4a24b06f4cf48d5fd2b542109d70c6
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 2eb1c5bd685cedabd96483867546c7578124af45
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512495"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532845"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Power BI Premium で容量を構成および管理する
 
@@ -24,7 +24,7 @@ Power BI Premium および Power BI Embedded の容量を管理する方法に�
 
 ![Power BI の容量設定画面](media/service-admin-premium-manage/premium-capacity-management.png)
 
-*容量* は Power BI Premium および Power BI Embedded サービスの中核となるものです。 これは、組織専用に予約されたリソースのセットです。 容量を持つことで、組織全体のユーザー用にユーザーごとのライセンスを購入しなくても、これらのユーザーに対してダッシュボード、レポート、データセットを公開できます。 また、それによって、容量内でホストされているコンテンツに対して信頼性の高い、一貫性のあるパフォーマンスも提供されます。 詳しくは、「[Power BI Premium - what is it?](service-premium-what-is.md)」 (Power BI Premium とは) を参照してください。
+"*容量*" は Power BI Premium および [Power BI Embedded](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md) サービスの中核となるものです。 これは、組織専用に予約されたリソースのセットです。 容量を持つことで、組織全体のユーザー用にユーザーごとのライセンスを購入しなくても、これらのユーザーに対してダッシュボード、レポート、データセットを公開できます。 また、それによって、容量内でホストされているコンテンツに対して信頼性の高い、一貫性のあるパフォーマンスも提供されます。 詳しくは、「[Power BI Premium - what is it?](service-premium-what-is.md)」 (Power BI Premium とは) を参照してください。
 
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

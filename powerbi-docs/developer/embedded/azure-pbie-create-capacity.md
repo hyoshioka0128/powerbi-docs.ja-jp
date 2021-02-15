@@ -1,6 +1,6 @@
 ---
-title: Azure Portal での Power BI Embedded 容量の作成 | Microsoft Docs
-description: この記事では、Microsoft Azure で Power BI Embedded の容量を作成する方法について説明します。
+title: Power BI 埋め込み分析の埋め込み BI ソリューションのために Azure portal で Power BI Embedded 容量を作成する
+description: この記事では、Power BI 埋め込み分析の埋め込み BI ソリューションのために Microsoft Azure で Power BI Embedded 容量を作成する手順について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -9,13 +9,13 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 08/02/2020
-ms.openlocfilehash: 73be957feae7fb869cca0af7bce0eeeb8daab03f
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.date: 01/14/2021
+ms.openlocfilehash: e006d4fe23c85daf941ba7274027ee21b0f44eac
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155724"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532661"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Azure Portal での Power BI Embedded 容量の作成
 
@@ -27,9 +27,9 @@ ms.locfileid: "98155724"
 
 * **Azure サブスクリプション:** [Azure 無料試用版](https://azure.microsoft.com/free/)にアクセスし、アカウントを作成してください。
 
-* **Azure Active Directory:** お使いのサブスクリプションは Azure Active Directory (Azure AD) テナントに関連付けられている必要があります。 また、"**_そのテナントのアカウントで Azure にサインインする必要があります_* _"。 Microsoft アカウントはサポートされていません。 詳細については、「[認証とユーザーのアクセス許可](/azure/analysis-services/analysis-services-manage-users)」を参照してください。
+* **Azure Active Directory:** お使いのサブスクリプションは Azure Active Directory (Azure AD) テナントに関連付けられている必要があります。 また、"**_そのテナントのアカウントで Azure にサインインする必要があります_**"。 Microsoft アカウントはサポートされていません。 詳細については、「[認証とユーザーのアクセス許可](/azure/analysis-services/analysis-services-manage-users)」を参照してください。
 
-_ **Power BI テナント:** ご利用の Azure AD テナントの少なくとも 1 つのアカウントを Power BI に登録しておく必要があります。
+* **Power BI テナント:** ご利用の Azure AD テナントの少なくとも 1 つのアカウントを Power BI に登録しておく必要があります。
 
 * **リソース グループ:** 既にあるリソース グループを使用するか、[新しく作成](/azure/azure-resource-manager/resource-group-overview)します。
 
@@ -46,9 +46,9 @@ Power BI Embedded 容量を作成する前に、少なくとも一度、Power BI
 3. Power BI Embedded 内で **[追加]** を選択します。
 
 4. 必須情報を入力し、 **[確認および作成]** を選択します。
-
-    >[!div class="mx-imgBorder"]
-    >![スクリーンショットには、Azure portal で新しい容量を作成するための、Power BI Embedded ページの [基本] タブが示されています。](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
+    
+    > [!div class="mx-imgBorder"]
+    >![スクリーンショットには、Azure portal で新しい容量を作成するための、Power BI Embedded ページの [基本] タブが示されています。](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
     * **サブスクリプション** - 容量を作成するサブスクリプション。
 
@@ -66,7 +66,19 @@ Power BI Embedded 容量を作成する前に、少なくとも一度、Power BI
         >* 別のユーザーまたはサービス プリンシパルを容量管理者として選択できます。
         >* 容量管理者は、容量がプロビジョニングされるテナントに属する必要があります。 企業間 (B2B) ユーザーを容量管理者にすることはできません。
 
+    * **リソース モード** - 次の 2 つの Power BI Embedded リソース モードのいずれかを選択します。
+
+        * **Embedded Generation 1** - クラシック Power BI Embedded リソースです。
+
+        * **Embedded Generation 2** - エクスペリエンスが向上した、新しい Power BI Embedded リソースです。 詳細については、[Power BI Embedded Premium Generation 2](power-bi-embedded-generation-2.md) に関する記事を参照してください。
+        
+        >[!IMPORTANT]
+        >一度容量リソースを作成したら、世代を切り替えることはできません。 Power BI Embedded の世代を変更する場合は、異なる世代を使用して別のリソースを作成し、それにワークスペースを再割り当てすることができます。 Azure Resource Manager API を使用して、このプロセスを自動化することもできます。
+
 # <a name="azure-cli"></a>[Azure CLI](#tab/CLI)
+
+>[!NOTE]
+>Azure CLI は、[Power BI Embedded Generation 2 (プレビュー)](power-bi-embedded-generation-2.md) ではサポートされていません。
 
 ### <a name="use-azure-cloud-shell"></a>Azure Cloud Shell を使用する
 
@@ -128,7 +140,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### <a name="delete-a-capacity-with-azure-cli"></a>Azure CLI で容量を削除する
 
-Azure CLI を使用して容量を削除するには、[az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) コマンドを使用します。
+Azure CLI を使用して容量を削除するには、[Azure Power BI embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) コマンドを使用します。
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -137,7 +149,7 @@ az powerbi embedded-capacity delete --name
 
 ### <a name="manage-your-capacity-with-azure-cli"></a>Azure CLI で容量を管理する
 
-[az powerbi](/cli/azure/ext/powerbidedicated/powerbi) ですべての Power BI Embedded Azure CLI コマンドを表示できます。
+[Azure Power BI](/cli/azure/ext/powerbidedicated/powerbi) ですべての Power BI Embedded Azure CLI コマンドを表示できます。
 
 # <a name="arm-template"></a>[ARM テンプレート](#tab/ARM-template)
 
@@ -151,6 +163,12 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 
 このクイックスタートで使用されるテンプレートは [Azure クイックスタート テンプレート](https://azure.microsoft.com/resources/templates/101-power-bi-embedded)からのものです。
 
+Azure リソースがテンプレートで定義されたら、[Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Power BI Embedded 容量を作成します。
+
+#### <a name="embedded-gen1"></a>Embedded Gen1
+
+このテンプレートを使用して、クラシック Power BI Embedded リソースを作成します。
+
 ```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -159,14 +177,14 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
         "name": {
             "type": "string",
             "metadata": {
-              "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
+                "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
             }
         },
         "location": {
             "type": "string",
             "defaultValue": "[resourceGroup().location]",
             "metadata": {
-              "description": "The location where Power BI is hosted for your tenant"
+                "description": "The location where Power BI is hosted for your tenant"
             }
         },
         "sku": {
@@ -180,13 +198,13 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
                 "A6"
             ],
             "metadata": {
-              "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
+                "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
             }
         },
         "admin": {
             "type": "string",
             "metadata": {
-              "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
+                "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
             }
         }
     },
@@ -211,7 +229,70 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 }
 ```
 
-1 つの Azure リソースがテンプレートで定義されます。[Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Power BI Embedded 容量の作成。
+#### <a name="embedded-gen2-preview"></a>Embedded Gen2 (プレビュー)
+
+このテンプレートを使用して、[Embedded Gen 2](power-bi-embedded-generation-2.md) リソースを作成します。
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "type": "string",
+            "metadata": {
+                "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
+            }
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+                "description": "The location where Power BI is hosted for your tenant"
+            }
+        },
+        "sku": {
+            "type": "string",
+            "allowedValues": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+            ],
+            "metadata": {
+                "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
+            }
+        },
+        "admin": {
+            "type": "string",
+            "metadata": {
+                "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.PowerBIDedicated/capacities",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[parameters('name')]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "[parameters('sku')]"
+            },
+            "properties": {
+                "administration": {
+                    "members": [
+                        "[parameters('admin')]"
+                    ]
+                },
+                "mode": "Gen2"
+            }
+        }
+    ]
+}
+```
 
 ### <a name="deploy-the-template"></a>テンプレートのデプロイ
 
