@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/12/2019
+ms.date: 02/05/2021
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 179e8740bed71d3d295cfc2fe5f103744e9dbd07
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1451b6812e9304eb1933de6cde2ed3cc681b7207
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96402733"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531909"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service"></a>Power BI サービスで SAP 変数を編集する
 
@@ -28,11 +28,6 @@ SAP Business Warehouse または SAP HANA を DirectQuery と共に使用する�
 
 SAP 変数編集機能を使用するにはいくつかの要件があります。 次の一覧にその要件をまとめています。
 
-**新しいフィルター エクスペリエンスが必須** - レポートに対して [新しいフィルター エクスペリエンス](../create-reports/power-bi-report-filter.md)を有効にする必要があります。 Power BI Desktop では、レポートに対してこれを次のように有効にします。
-- Power BI Desktop で、 **[ファイル]** 、 >  **[オプションと設定]** 、 >  **[オプション]** の順に選択します。
-- ナビ ペインで、 **[現在のファイル]** の **[レポートの設定]** を選択します。
-- **[エクスペリエンスのフィルター処理]** で、 **[Enable the updated filter pane]\(更新されたフィルター ウィンドウを有効にする\)** を選択します。
-
 **DirectQuery 接続が必須** - DirectQuery を使用し、SAP データ ソースに接続している必要があります。 インポート接続はサポートされていません。
 
 **SSO セットアップが必須** - この機能を動作させるには、シングル サインオン (SSO) を構成する必要があります。 詳細については、[シングル サインオン (SSO) の概要](service-gateway-sso-overview.md)ページをご覧ください。
@@ -45,7 +40,7 @@ SAP 変数編集機能を使用するにはいくつかの要件があります�
 
 ## <a name="how-to-enable-the-feature"></a>機能を有効にする方法
 
-**SAP 変数編集** 機能を有効にするには、Power BI Desktop 内で SAP HANA または SAP BW データソースに接続します。 次に、 **[ファイル]、[オプションと設定]、[オプション]** の順に移動し、左側のウィンドウにある [現在のファイル] セクションで **[DirectQuery]** を選択します。 これを選択すると、次の画像に示されているように、右側のウィンドウに DirectQuery オプションとチェックボックスが表示され、そこで **エンドユーザーにレポートの SAP 変数の変更を許可する** ことができます。
+**SAP 変数編集** 機能を有効にするには、Power BI Desktop 内で SAP HANA または SAP BW データソースに接続します。 次に、**[ファイル]、[オプションと設定]、[オプション]** の順に移動し、左側のウィンドウにある [現在のファイル] セクションで **[DirectQuery]** を選択します。 これを選択すると、次の画像に示されているように、右側のウィンドウに DirectQuery オプションとチェックボックスが表示され、そこで **エンドユーザーにレポートの SAP 変数の変更を許可する** ことができます。
 
 ![DirectQuery オプション](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
@@ -62,25 +57,25 @@ Power BI Desktop で SAP 変数編集を使用する場合、リボンの **[ク
 
 1. Power BI サービスでは、ワークスペースのコンテンツ一覧で **[データセット]** タブを選択します。
 
-2. 更新する必要があるデータセットを見つけ、 **[更新]** アイコンを選択します。
+2. 更新する必要があるデータセットを見つけ、**[更新]** アイコンを選択します。
 
     ![変数を編集](media/service-edit-sap-variables/sap-edit-variables-link.png)
 
-3. [変数を編集] リンクを選択すると、 **[変数を編集]** ダイアログが表示され、そこで変数をオーバーライドできます。 **[リセット]** ボタンを選択すると、このダイアログを開いたときに表示された元の値に変数がリセットされます。
+3. [変数を編集] リンクを選択すると、**[変数を編集]** ダイアログが表示され、そこで変数をオーバーライドできます。 **[リセット]** ボタンを選択すると、このダイアログを開いたときに表示された元の値に変数がリセットされます。
 
     ![[変数を編集] ダイアログ ボックス](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-4. Power BI の他の永続性動作と同様に、 **[変数を編集]** ダイアログで行った変更はこのユーザーに対してのみ残ります。 次の画像のように、 **[既定値にリセット]** を選択すると、変数を含め、レポート作成者がレポートを作成したときの元の状態にレポートがリセットされます。
+4. Power BI の他の永続性動作と同様に、**[変数を編集]** ダイアログで行った変更はこのユーザーに対してのみ残ります。 次の画像のように、**[既定値にリセット]** を選択すると、変数を含め、レポート作成者がレポートを作成したときの元の状態にレポートがリセットされます。
 
     ![既定値にリセット](media/service-edit-sap-variables/reset-to-default.png)
 
-SAP HANA または SAP BW を使用する Power BI サービスで公開済みのレポートを操作するとき、 **[変数を編集]** 機能が有効になっている場合、レポート所有者はこれらの既定値を変更できます。 レポートの所有者は編集モードで変数を変更してレポートを保存し、その設定をそのレポートの *新しい既定の設定* にすることができます。 レポートの所有者によるそのような変更の後、そのレポートにアクセスするユーザーには、新しい設定が既定値として表示されます。
+SAP HANA または SAP BW を使用する Power BI サービスで公開済みのレポートを操作するとき、**[変数を編集]** 機能が有効になっている場合、レポート所有者はこれらの既定値を変更できます。 レポートの所有者は編集モードで変数を変更してレポートを保存し、その設定をそのレポートの *新しい既定の設定* にすることができます。 レポートの所有者によるそのような変更の後、そのレポートにアクセスするユーザーには、新しい設定が既定値として表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 SAP HANA、SAP BW、DirectQuery の詳細については、次の記事をご覧ください。
 
-- [Power BI Desktop で SAP HANA を使用する](desktop-sap-hana.md)
+- [Power BI Desktop での SAP HANA の使用](desktop-sap-hana.md)
 - [DirectQuery と SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery と SAP HANA](desktop-directquery-sap-hana.md)
 - [Power BI で DirectQuery を使用する](desktop-directquery-about.md)
