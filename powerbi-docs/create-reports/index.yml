@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 12/16/2020
-  ms.openlocfilehash: 2bc4ade5dc563445c945f0a5b14f28272938c0d5
-  ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+  ms.openlocfilehash: 585581e3b4243bf96439970a35fe617aa4d59234
+  ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "97622018"
+  ms.lasthandoff: 02/16/2021
+  ms.locfileid: "100531449"
 landingContent:
 - title: 作業の開始
   linkLists:
@@ -89,7 +89,7 @@ landingContent:
       url: desktop-drillthrough.md
     - text: レポートにブックマークを追加する
       url: desktop-bookmarks.md
-    - text: レポートにフィルターを追加する
+    - text: レポート内のフィルターを書式設定する
       url: power-bi-report-filter.md
 - title: Power BI のページ分割されたレポート
   linkLists:

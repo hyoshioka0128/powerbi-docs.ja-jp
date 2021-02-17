@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/27/2021
-ms.openlocfilehash: bb69df893a3a9841d911e558e2ef2afb09230122
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: a0e5ced79c5aee6d6392b3d52fcc8e6d638faf27
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99087087"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531932"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI レポート サーバーの新機能
 
@@ -492,7 +492,7 @@ Power BI レポートは対話式です。 レポートの現在の状態が反�
 
 #### <a name="cross-highlight-by-axis-labels"></a>軸ラベルによるクロス強調表示
 
-ビジュアル内で軸カテゴリ ラベルを選択すると、ビジュアル内でデータ ポイントを選択する場合と同じように、ページ上の他の要素が強調表示されます。 クロス強調表示の詳細は[こちら](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-cross-filtering-and-cross-highlighting)で参照してください。
+ビジュアル内で軸カテゴリ ラベルを選択すると、ビジュアル内でデータ ポイントを選択する場合と同じように、ページ上の他の要素が強調表示されます。 クロス強調表示の詳細は[こちら](../create-reports/power-bi-reports-filters-and-highlighting.md#cross-filter-and-cross-highlight-visuals)で参照してください。
 
 #### <a name="all-the-new-features"></a>すべての新機能
 

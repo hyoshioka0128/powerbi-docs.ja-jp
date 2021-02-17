@@ -59,8 +59,6 @@
               href: desktop-ribbon.md
             - name: レポート ビューを操作する
               href: desktop-report-view.md
-            - name: レポート内のフィルターの種類
-              href: power-bi-report-filter-types.md
             - name: レポート内のフィルターと強調表示
               href: power-bi-reports-filters-and-highlighting.md
             - name: 高密度線サンプリング
@@ -142,6 +140,26 @@
               href: desktop-tooltips.md
             - name: レポートを PDF ファイルにエクスポートする
               href: desktop-export-to-pdf.md
+            - name: レポート内のフィルターとスライサー
+              items:
+                - name: レポートにフィルターを追加する
+                  href: power-bi-report-add-filter.md
+                - name: レポート内のフィルターを書式設定する
+                  href: power-bi-report-filter.md
+                - name: レポート内のフィルターの種類
+                  href: power-bi-report-filter-types.md
+                - name: スライサー
+                  href: ../visuals/power-bi-visualization-slicers.md
+                - name: 数値範囲スライサー
+                  href: desktop-slicer-numeric-range.md
+                - name: 相対日付スライサーとフィルター
+                  href: ../visuals/desktop-slicer-filter-date-range.md
+                - name: 相対時間スライサーとフィルター
+                  href: slicer-filter-relative-time.md
+                - name: サイズを変更できるスライサーを作成する
+                  href: power-bi-slicer-filter-responsive.md
+                - name: スライサーに複数のフィールドを追加する
+                  href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: 分析情報を適用して変化を視覚エフェクトで説明する (プレビュー)
               href: desktop-insights.md
             - name: 分析情報を使用して分布の違いを調べる (プレビュー)
@@ -158,10 +176,6 @@
               href: desktop-bookmarks.md
             - name: レポートのテーマを操作する
               href: desktop-report-themes.md
-            - name: レポートでフィルターを操作する
-              href: power-bi-report-filter.md
-            - name: レポートにフィルターを追加する
-              href: power-bi-report-add-filter.md
             - name: グループ化とビン分割を適用する
               href: desktop-grouping-and-binning.md
             - name: グリッド線と "グリッドにスナップ" を適用する
@@ -174,18 +188,6 @@
               href: desktop-add-custom-column.md
             - name: インライン階層ラベルを使用する
               href: desktop-inline-hierarchy-labels.md
-            - name: スライサー
-              href: ../visuals/power-bi-visualization-slicers.md
-            - name: 数値範囲スライサー
-              href: desktop-slicer-numeric-range.md
-            - name: 相対日付スライサーとフィルター
-              href: ../visuals/desktop-slicer-filter-date-range.md
-            - name: 相対時間スライサーとフィルター
-              href: slicer-filter-relative-time.md
-            - name: サイズを変更できるスライサーを作成する
-              href: power-bi-slicer-filter-responsive.md
-            - name: スライサーに複数のフィールドを追加する
-              href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: 行レベルのセキュリティを使用してデータ アクセスを制限する
               href: desktop-rls.md
             - name: ヒントをカスタマイズする
