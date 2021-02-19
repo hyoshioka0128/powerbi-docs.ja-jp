@@ -30,6 +30,8 @@
           href: embedded-capacity.md
         - name: キャパシティ プランニング
           href: embedded-capacity-planning.md
+        - name: 埋め込み分析アプリケーション トークン
+          href: embed-tokens.md
         - name: 埋め込みトークンの生成に関する考慮事項
           href: generate-embed-token.md
         - name: のパフォーマンスのベスト プラクティス
