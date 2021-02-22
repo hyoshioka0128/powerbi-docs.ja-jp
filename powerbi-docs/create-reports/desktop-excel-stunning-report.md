@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 10/13/2020
+ms.date: 02/10/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: b984c0f6ebee6cdcc9982956701f3a112be74ab7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: cf63c16822e04e160da2765ae0be20bd707e89da
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413198"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489950"
 ---
 # <a name="tutorial-from-excel-workbook-to-stunning-report-in-power-bi-desktop"></a>チュートリアル:Power BI Desktop で Excel ブックから魅力的なレポートを作成する
 
@@ -120,7 +120,9 @@ Power BI Desktop からこのチュートリアルに移動してきた場合は
 
 1. 次のメジャーを入力して、2013 年 1 月 1 日から 2014 年 12 月 31 日までのすべての日付を含むカレンダー テーブルを作成します。  
 
-    `Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))` 
+    ```dax
+    Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))    
+    ```
 
 2. チェック マークを選択してコミットします。
 
@@ -207,9 +209,23 @@ Power BI Desktop からこのチュートリアルに移動してきた場合は
 
 ### <a name="visual-5-year-slicer"></a>ビジュアル 5: 年のスライサー 
 
-スライサーは、レポート ページのビジュアルを特定の選択範囲にフィルター処理するための重要なツールです。 この場合、各月および年の業績を絞り込むためのスライサーを作成できます。  
+スライサーは、レポート ページのビジュアルを特定の選択範囲にフィルター処理するための重要なツールです。 この場合、各月および年の業績を絞り込むための、2 つの異なるスライサーを作成できます。 1 つのスライサーでは、元のテーブルの日付フィールドを使用します。 もう 1 つでは、このチュートリアルの前述の ["追加の手順" で作成した日付テーブル](#extra-credit-write-a-measure-in-dax)を使用します。
 
-1. [フィールド] ウィンドウで、 **[日付]** フィールドを選択し、キャンバスの左側の空白領域にドラッグします。 
+
+**元のテーブルを使用する日付スライサー**
+
+1. [フィールド] ペインで、Financials テーブルの **[Date]** フィールドを選択します。 それをキャンバスの左側にある空白の領域にドラッグします。 
+2. [視覚化] ウィンドウで、 **[スライサー]** を選択します。 
+
+    Power BI によって、数値範囲のスライサーが自動的に作成されます。 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-numeric-range.png" alt-text="Date の数値範囲スライサーのスクリーンショット。":::
+
+1. 端をドラッグしてフィルター処理するか、右上隅の矢印を選択して別の種類のスライサーに変更することができます。
+
+**DAX テーブルを使用する日付スライサー**
+
+1. [フィールド] ペインで、Calendar テーブルの **[Date]** フィールドを選択します。 それをキャンバスの左側にある空白の領域にドラッグします。 
 2. [視覚化] ウィンドウで、 **[スライサー]** を選択します。 
 3. [視覚化] ウィンドウの [フィールド] セクションで、 **[フィールド]** のドロップダウンを選択します。 [四半期] と [日] を削除して、[年] と [月] のみを残します。 
 
@@ -219,7 +235,9 @@ Power BI Desktop からこのチュートリアルに移動してきた場合は
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="日付の階層スライサーのスクリーンショット。":::
 
-以上で、上司が 2013 年のデータのみを表示するように要求した場合、スライサーを使用して、年を切り替えたり、各年の特定の月に切り替えたりすることができます。 
+    完成したレポートではこのスライサーを使用します。
+
+これで上司が 2013 年のデータのみを表示するように要求した場合に、いずれかのスライサーを使用して、年、または各年の特定の月を選択することができます。
 
 ### <a name="extra-credit-format-the-report"></a>追加の手順: レポートを書式設定する
 

@@ -1,21 +1,21 @@
 ---
-title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルの送信テスト
-description: この記事では、AppSource への発行に先だってビジュアルが合格する必要があるテスト ケースについて説明します。 オプションのテスト ケースもあります。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
+title: Power BI ビジュアルの送信テスト
+description: この記事では、AppSource への発行に先だってビジュアルが合格する必要があるテスト ケースについて説明します。 オプションのテスト ケースもあります。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/15/2020
-ms.openlocfilehash: b5054d821dc797f1606fea8ec5d0bb43569a57e5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 02/09/2021
+ms.openlocfilehash: 391282b7868ba24b14c0859d431e6868b3fcbc2d
+ms.sourcegitcommit: 7e0cc3b1ed9cf38da134ef7221648cb758ceea98
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888468"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100100835"
 ---
-# <a name="submission-testing-of-a-power-bi-visual"></a>Power BI ビジュアルの送信テスト
+# <a name="testing-a-power-bi-visual-before-submission"></a>送信前に Power BI 視覚化をテストする
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) に発行するビジュアルは、この記事に記載されているテストに事前に合格する必要があります。 送信する前にビジュアルをテストしてください。 必要なテスト ケースに合格していない場合、ビジュアルは拒否されます。
 
@@ -23,7 +23,13 @@ ms.locfileid: "97888468"
 
 ## <a name="testing-a-new-version-of-a-published-visual"></a>発行されたビジュアルの新しいバージョンのテスト
 
-既に発行されているビジュアルの新しいバージョンをテストまたはデバッグしている場合に、AppSource バージョンをローカル ファイル バージョンでオーバーライドするには、Power BI Desktop で開発者モードを有効にします。
+既定では、Power BI により、ローカル ファイルから視覚化をインポートした場合でも、AppSource から最新の発行されたバージョンの視覚化が読み込まれます。
+
+既に発行されている視覚化の新しいバージョンをテストまたはデバッグしている場合に、AppSource バージョンをローカル ファイル バージョンでオーバーライドするには、Power BI Desktop か Power BI サービスのいずれかで開発者モードを有効にします。
+
+### <a name="enable-developer-mode-in-power-bi-desktop"></a>Power BI Desktop で開発者モードを有効にする
+
+Power BI Desktop の開発者モードは、1 つのセッションに対してのみ有効です。 テストのために新しい Power BI Desktop インスタンスを開いた場合は、もう一度開発者モードを有効にする必要があります。
 
 開発者モードを有効にするには、次の手順を行います。
 
@@ -37,8 +43,11 @@ ms.locfileid: "97888468"
 
 5. 開発者モードで、 **[このセッションの開発者モードを有効にします]** オプションを選択します。
 
->[!NOTE]
->Power BI Desktop の開発者モードは、1 つのセッションに対してのみ有効です。 テストのために新しい Power BI Desktop インスタンスを開いた場合は、もう一度開発者モードを有効にする必要があります。
+### <a name="enable-developer-mode-in-power-bi-service"></a>Power BI サービスで開発者モードを有効にする
+
+Power BI サービスでは、開発者モードはユーザー アカウントごとに保持されます。 ユーザーがローカル ファイルからパッケージを読み込むたびに、Power BI により AppSource バージョンの視覚化は無視されます。
+
+Power BI サービスで開発者モードを有効にするには、「[視覚化の開発用に Power BI サービスを設定する](environment-setup.md#set-up-power-bi-service-for-developing-a-visual)」の手順に従います。
 
 ## <a name="general-test-cases"></a>一般的なテスト ケース
 

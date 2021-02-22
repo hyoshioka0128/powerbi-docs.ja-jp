@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2021
-ms.openlocfilehash: 83c7a778b6c799bd759443e7601e1f624ed5f9e5
-ms.sourcegitcommit: 5c943a05071efb69a17ca4c501c6b89f2f351f1a
+ms.openlocfilehash: fbd43600e67e4ac544df65bba6d9d2072293132d
+ms.sourcegitcommit: 7e0cc3b1ed9cf38da134ef7221648cb758ceea98
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089492"
+ms.locfileid: "100100858"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -26,7 +26,7 @@ ms.locfileid: "100089492"
 >**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="february-2021"></a>2021 年 2 月
-### <a name="support-for-power-bi-in-split-screens-android-tablets-only"></a>分割画面での Power BI のサポート (Android タブレットのみ)
+### <a name="support-for-power-bi-in-split-screens-android-tablets"></a>分割画面での Power BI のサポート (Android タブレット)
 
 お使いの Android タブレットでマルチウィンドウがサポートされている場合は、分割画面モードを使用して、別のアプリとサイド バイ サイドでデータを表示し、対話することができます。 [詳細情報](mobile-apps-split-screen.md)
 

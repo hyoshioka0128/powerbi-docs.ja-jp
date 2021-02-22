@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: dbb173c65ecfc5d1ca464387ed43ae615cdcbca1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 996c4a1e7b2bdda0bfdfa0951afc7922b2996084
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96396178"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531564"
 ---
 # <a name="change-settings-for-power-bi-reports"></a>Power BI レポートの設定を変更する
 
@@ -67,7 +67,7 @@ Power BI Desktop および Power BI サービスのレポート設定を使用�
 
 ## <a name="control-filters"></a>フィルターを制御する
 
-レポートの **[設定]** ウィンドウには、レポートに対して閲覧者が行うフィルターの操作を制御するための設定が 3 つあります。 以下のリンクから記事「[Power BI レポートでフィルターをデザインする](power-bi-report-filter.md)」にアクセスすれば、各設定の詳細を確認できます。
+レポートの **[設定]** ウィンドウには、レポートに対して閲覧者が行うフィルターの操作を制御するための設定が 3 つあります。 以下のリンクから記事「[Power BI レポートでフィルターを書式設定する](power-bi-report-filter.md)」にアクセスすれば、各設定の詳細を確認できます。
 
 - **[固定フィルター]** を使用すると、[レポートに対するフィルターを保存する](power-bi-report-filter.md#allow-saving-filters)ことを閲覧者に許可できます。
 - **[フィルター処理エクスペリエンス]** に、さらに次の 2 つの設定があります。

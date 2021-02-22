@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 11/11/2020
-ms.openlocfilehash: 9d0c10b80aeb1bf4745bb8a646933bcfea9bafc6
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.date: 02/09/2021
+ms.openlocfilehash: 53e6e7401caff5b4334af67f5de54a3669214851
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621213"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489994"
 ---
 # <a name="get-started-with-deployment-pipelines"></a>デプロイ パイプラインの使用を開始する
 
@@ -143,6 +143,8 @@ ms.locfileid: "97621213"
 
 ### <a name="create-a-dataset-rule"></a>データセット ルールの作成
 
+データセット ルールを作成するには、このセクションの手順に従います。 必要なすべてのデータセット ルールを作成したら、新しく作成したルールを含むデータセットをソース ステージから、ルールが作成されたターゲット ステージに配置します。 ソースからターゲット ステージにデータセットを配置するまで、ルールは適用されません。
+
 1. データセット ルールを作成するパイプライン ステージで、 **[デプロイの設定]** をクリックします。
 
     ![各デプロイ パイプライン ステージの右上にある、デプロイの設定ボタンのスクリーンショット。](media/deployment-pipelines-get-started/deployment-settings.png)
@@ -222,6 +224,8 @@ ms.locfileid: "97621213"
 * **[New]\(新規\)** – ソース ステージの新しいアイテム。 これは、ターゲット ステージには存在しないアイテムです。 デプロイ後、このアイテムはターゲット ステージに複製されます。
 
 * **[Different]\(差分あり\)** – ソースとターゲットの両方のステージに存在するアイテムで、最後のデプロイの後にいずれかのバージョンが変更されています。 デプロイ後、変更が行われた場所に関係なく、ターゲット ステージのアイテムがソース ステージのアイテムで上書きされます。
+
+    まだ配置されていない構成済みデータセット ルールを含むデータセットも "*異なる*" としてマークされます。 これは、データセットがソース ステージから、構成されたルールを含むターゲット ステージに配置されるまで、データセット ルールが適用されないためです。
 
 * **[Missing from]\(不足\)** – このラベルは、アイテムがソース ステージにはないが、ターゲット ステージには表示されていることを示します。
 

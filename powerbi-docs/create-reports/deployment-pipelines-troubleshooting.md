@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 11/11/2020
-ms.openlocfilehash: 3787f1cb61262f9f1fa64e04487c7d6395b4e549
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 02/09/2021
+ms.openlocfilehash: f502649c08a71dc1cc602f0f69f4134a10a5a879
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417637"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489902"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>配置パイプラインのトラブルシューティング
 
@@ -147,6 +147,10 @@ Power BI サービスでは、データ ソース接続を変更することは�
 >[!NOTE]
 >逆方向の配置では、[完全配置](deployment-pipelines-get-started.md#deploying-all-content)のみがサポートされます。 [選択的配置](deployment-pipelines-get-started.md#selective-deployment)はサポートされていません
 
+### <a name="why-do-i-need-to-deploy-after-configuring-dataset-rules"></a>データセット ルールを構成した後に配置する必要があるのはなぜですか。
+
+データセット ルールは、構成した直後に適用されるわけではありません。 データセット ルールを適用するには、データセットをソース ステージから、作成したデータセット ルールを含むターゲット ステージに配置する必要があります。 データセット ルールを構成した後、配置する前に、構成したルールを含むデータセットの横に "*異なる*" インジケーターが表示されます。 これは、ソース ステージからターゲット ステージにそのデータセットを配置する必要があることを示しています。 配置すると、その他の変更が行われていない場合は "*異なる*" インジケーターは表示されなくなり、ルールが正常に適用されたことが示されます。
+
 ### <a name="does-deployment-pipelines-support-multi-geo"></a>配置パイプラインでは Multi-Geo はサポートされていますか。
 
 Multi-Geo はサポートされています。 異なる geo のステージ間でコンテンツを配置するのには、時間がかかることがあります。
@@ -181,7 +185,7 @@ Multi-Geo はサポートされています。 異なる geo のステージ間�
 >[配置パイプラインの概要](deployment-pipelines-overview.md)
 
 >[!div class="nextstepaction"]
->[デプロイ パイプラインの使用を開始する](deployment-pipelines-get-started.md)
+>[配置パイプラインの使用を開始する](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
 >[配置パイプライン プロセスを理解する](deployment-pipelines-process.md)

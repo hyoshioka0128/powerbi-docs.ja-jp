@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 67264868fdbba42856169ca586066f650fca5c38
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 61b909ba5c90c7ecf801b4ce448e73353d2334c4
+ms.sourcegitcommit: 9a00abaca80d0cdb2bd0cd9270f99db62df8a2ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621972"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100569632"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Power BI Desktop でレポート テーマを使用する
 
@@ -171,7 +171,7 @@ Power BI Desktop でテーマを直接カスタマイズするには、目的の
 
 - **name**:レポート テーマの名前です。 必須フィールドはこのフィールドのみです。
 - **dataColors**:Power BI Desktop ビジュアルのデータ用に使用する、色の 16 進数コードのリストです。 このリストには、必要な数の色を含めることができます。
-- **background**、**firstLevelElements**、および **tableAccent** (など): 色クラスです。 色クラスを使用すると、レポート内の多くの構造色を一度に設定できます。
+- **background**、**foreground**、**tableAccent** (など):色クラスです。 色クラスを使用すると、レポート内の多くの構造色を一度に設定できます。
 
 この JSON ファイルを基礎として使用して、インポートするカスタムのレポート テーマ ファイルを独自に作成できます。 レポートの基本色だけを調整する場合は、ファイル内の名前と 16 進コードを変更します。
 

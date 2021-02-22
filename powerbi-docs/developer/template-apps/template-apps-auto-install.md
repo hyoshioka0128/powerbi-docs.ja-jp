@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 0852fcb2c932680f6c20aeee94a89c68f473e46d
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 2ecb47513ada6ab2f4b81d5e26a1ca41717b7676
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565723"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100490017"
 ---
 # <a name="automated-configuration-of-a-template-app-installation"></a>テンプレート アプリのインストールの自動構成
 
@@ -61,6 +61,7 @@ ms.locfileid: "98565723"
 * インストール用に準備された、**パラメーター化されたテンプレート アプリ**。 テンプレート アプリは、Azure AD でアプリケーションを登録するのと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](../../connect-data/service-template-apps-tips.md)に関するページまたは「[Power BI でテンプレート アプリを作成する](../../connect-data/service-template-apps-create.md)」を参照してください。 以降の手順のために、テンプレート アプリから次の情報をメモしておく必要があります。
      * アプリの作成時に [テンプレート アプリのプロパティを定義する](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app)プロセスの終わりの時点でインストール URL 内に表示される、"*アプリ ID*"、"*パッケージ キー*"、"*所有者 ID*"。 また、テンプレート アプリの [[リリース管理] ウィンドウ](../../connect-data/service-template-apps-create.md#manage-the-template-app-release)で **[リンクの取得]** を選択することでも同じリンクを取得できます。
     * テンプレート アプリのデータセットで定義されている "*パラメーター名*"。 パラメーター名は、大文字と小文字を区別する文字列であり、[テンプレート アプリのプロパティを定義する](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app)ときに **[Parameter Settings]\(パラメーターの設定\)** タブから、または Power BI のデータセット設定から取得することもできます。
+* 自動化のワークフローをテストできるようにするには、管理者としてサービス プリンシパルをテンプレート アプリ ワークスペースに追加します。
 
     >[!NOTE]
     >AppSource でまだ一般公開されていない場合でも、テンプレート アプリをインストールする準備ができていれば、テンプレート アプリで、事前構成されたインストール アプリケーションをテストできます。 テナント外のユーザーが自動インストール アプリケーションを使用してテンプレート アプリをインストールできるようにするには、テンプレート アプリが [Power BI アプリ マーケットプレース](https://app.powerbi.com/getdata/services)で一般公開されている必要があります。 テンプレート アプリは、作成している自動インストール アプリケーションを使用して配布する前に、必ず[パートナー センター](/azure/marketplace/partner-center-portal/create-power-bi-app-offer)に公開してください。

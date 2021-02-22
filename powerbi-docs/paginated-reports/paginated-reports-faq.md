@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/09/2021
-ms.openlocfilehash: d8460fe1a3eb199848f47181837225f1e540bb08
-ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
+ms.openlocfilehash: 788f6cbd840b2c260b00033e27d39f56ed7ce964
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100013638"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489833"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Power BI のページ分割されたレポート:FAQ 
 
@@ -30,7 +30,7 @@ ms.locfileid: "100013638"
 ページ分割されたレポート ワークロードは P1 ～ P3 SKU で利用できます。  A4 から A6 SKU では、埋め込みまたはテスト/開発シナリオに使用することもできます。
 
 > [!NOTE]
-> Power BI に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 **Premium Gen2** では、ページ分割されたレポート ワークロードは P1-P3 SKU および A1-A6 SKU で利用できます。 
+> Power BI に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 **Premium Gen2** では、ページ分割されたレポート ワークロードは EM1-EM3 SKU、P1-P3 SKU、および A1-A6 SKU で利用できます。  また、Premium Per User でユーザーごとに利用することもできます。これは Premium Gen2 に基づいており、これもパブリック プレビュー段階です。 
 >
 >Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 >

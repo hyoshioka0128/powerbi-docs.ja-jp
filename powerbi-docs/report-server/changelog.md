@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/01/2021
-ms.openlocfilehash: 6742b915cf4418cd0f9f735eaffea8da1d010e79
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.date: 02/11/2021
+ms.openlocfilehash: 768e0e8a360c2434fdb66cf309d24857707b9d59
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99422377"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531587"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -24,7 +24,7 @@ ms.locfileid: "99422377"
 
 ## <a name="january-2021"></a>2021 年 1 月
 - **Power BI Report Server**
-    - *バージョン:1.10.7698.12811 (ビルド 15.0.1105.194)、リリース日:2021 年 1 月 21 日*
+    - *バージョン:1.10.7698.27886 (ビルド 15.0.1105.195)、リリース日:2021 年 1 月 28 日*
         - 特徴
             - 新しいアイコンが Power BI と Power BI のレポートに関連します。
             - リリースに付属するカスタム ビジュアル API - バージョン 3.5.0
@@ -35,7 +35,7 @@ ms.locfileid: "99422377"
         - セキュリティ更新プログラム
 
 - **Power BI Desktop (Power BI Report Server 用に最適化)**
-   - *バージョン:2.88.1382.0 (2021 年 1 月)、リリース日:2021 年 1 月 21 日* (新しいビルドと新しいバージョン)
+   - *バージョン:2.88.1382.0 (2021 年 1 月)、リリース日:2021 年 1 月 28 日* (新しいビルドと新しいバージョン)
         - Power BI Report Server との接続に必要な変更が含まれます (2021 年 1 月)        
    
 ## <a name="october-2020"></a>2020 年 10 月

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/14/2020
-ms.openlocfilehash: f9a3558bd83f9c2e263d69ad37c3e985c2c6199a
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
+ms.openlocfilehash: 4a7156259dbc1273ab14ce4e44d91b54794736e0
+ms.sourcegitcommit: bae5e9a37772360d0aae8624905d5f33951a187f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597592"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100560981"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Power BI テンプレート アプリとは
 
@@ -23,11 +23,11 @@ Power BI パートナーは、顧客向けのすぐに使えるコンテンツ�
 
 顧客が自分のアカウントで接続してインスタンス化できるテンプレート アプリを作成します。 ドメインの専門家として、ビジネス ユーザーが簡単に利用できる方法でデータのロックを解除できます。  
 
-テンプレート アプリをパートナー センターに送信します。 その後、アプリは、[Power BI Apps Marketplace](https://app.powerbi.com/getdata/services) と [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi) で一般提供されるようになります。 ここではパブリック テンプレート アプリの作成エクスペリエンスの概要を示します。
+テンプレート アプリをパートナー センターに送信します。 その後、アプリは、[Power BI Apps Marketplace](https://app.powerbi.com/groups/me/getapps/apps) と [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi) で一般提供されるようになります。 ここではパブリック テンプレート アプリの作成エクスペリエンスの概要を示します。
 
 ## <a name="power-bi-apps-marketplace"></a>Power BI Apps Marketplace
 
-Power BI テンプレート アプリを使用すると、Power BI Pro または Power BI Premium のユーザーは、事前パッケージ済みのダッシュボードとライブ データ ソースに接続できるレポートを通して、分析情報をすぐに得ることができます。 [Power BI Apps Marketplace](https://app.powerbi.com/getdata/services) には、すぐに使用できる Power BI アプリが多数用意されています。
+Power BI テンプレート アプリを使用すると、Power BI Pro または Power BI Premium のユーザーは、事前パッケージ済みのダッシュボードとライブ データ ソースに接続できるレポートを通して、分析情報をすぐに得ることができます。 [Power BI Apps Marketplace](https://app.powerbi.com/groups/me/getapps/apps) には、すぐに使用できる Power BI アプリが多数用意されています。
 
 :::row:::
     :::column:::
@@ -118,6 +118,7 @@ Power BI テンプレート アプリを使用すると、Power BI Pro または
 | データ ソース | クラウドのスケジュールされたデータ更新がサポートされているデータ ソースは許可されます。 <br>サポートされない:  <li>ライブ接続 (Azure AS なし)</li> <li>オンプレミスのデータ ソース (パーソナル ゲートウェイとエンタープライズ ゲートウェイはサポートされていません)</li> <li>リアルタイム (プッシュ データセットはサポートされていません)</li> <li>複合モデル</li></ul> |
 | データセット: クロスワークスペース | クロスワークスペースのデータセットは許可されません  |
 | クエリ パラメーター | 非サポート:型が "Any"、"Date"、または "Binary" のパラメーターでデータセットの更新操作がブロックされます |
+| 増分更新 | テンプレート アプリでは増分更新がサポートされていません |
 | Power BI ビジュアル | パブリックに使用可能な Power BI ビジュアルのみがサポートされます。 [組織の Power BI ビジュアル](../developer/visuals/power-bi-custom-visuals-organization.md)はサポートされません |
 | ソブリン クラウド | テンプレート アプリはソブリン クラウドでは使用できません |
 

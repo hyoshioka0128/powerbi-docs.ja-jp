@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: a44bd7837e7605fd23e49a91e3e9eba106d5a933
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 9a652531b90d65df985c0698d3fade7927a1907b
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565766"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100490063"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>チュートリアル:Azure 関数を使用してテンプレート アプリのインストールの構成を自動化する
 
@@ -62,6 +62,7 @@ ms.locfileid: "98565766"
 * 独自の Azure Active Directory (Azure AD) テナントの設定。 その設定方法については、[Azure AD テナントの作成](../embedded/create-an-azure-active-directory-tenant.md)に関するページを参照してください。
 * 前述のテナントに登録されている[サービス プリンシパル (アプリ専用トークン)](../embedded/embed-service-principal.md)。
 * インストール用に準備された、パラメーター化された[テンプレート アプリ](../../connect-data/service-template-apps-overview.md)。 テンプレート アプリは、Azure AD でアプリケーションを登録するのと同じテナント内に作成する必要があります。 詳細については、[テンプレート アプリのヒント](../../connect-data/service-template-apps-tips.md)に関するページまたは「[Power BI でテンプレート アプリを作成する](../../connect-data/service-template-apps-create.md)」を参照してください。
+* 自動化のワークフローをテストできるようにするには、管理者としてサービス プリンシパルをテンプレート アプリ ワークスペースに追加します。
 * Power BI Pro ライセンス。 Power BI Pro にサインアップしていない場合は、[無料試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してから始めてください。
 
 ## <a name="set-up-your-template-apps-automation-development-environment"></a>テンプレート アプリの自動化開発環境を設定する
@@ -77,6 +78,8 @@ ms.locfileid: "98565766"
 以降の手順のために、"*アプリケーション ID*" (ClientID) と "*アプリケーション シークレット*" (ClientSecret) を保存します。
 
 [埋め込みセットアップ ツール](https://aka.ms/embedsetup/AppOwnsData)に移動して、アプリの登録の作成をすぐに開始することができます。 [Power BI アプリ登録ツール](https://app.powerbi.com/embedsetup)を使用する場合は、"**顧客向けに埋め込む**" オプションを選択します。
+
+管理者としてサービス プリンシパルをテンプレート アプリ ワークスペースに追加し、自動化のワークフローをテストできるようにします。
 
 ## <a name="template-app-preparation"></a>テンプレート アプリの準備
 
