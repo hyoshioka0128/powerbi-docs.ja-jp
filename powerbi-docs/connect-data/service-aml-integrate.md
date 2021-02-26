@@ -9,13 +9,13 @@ ms.topic: tutorial
 ms.author: samkemp
 author: samuel100
 ms.reviewer: sdgilley, maggies
-ms.date: 12/10/2020
-ms.openlocfilehash: 6c68fff575e4da0c9126904df2de5292747c209c
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.date: 02/17/2021
+ms.openlocfilehash: 91ba29a09cfdd434c52794e83651736c2b796b1e
+ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491784"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655648"
 ---
 # <a name="tutorial-consume-azure-machine-learning-models-in-power-bi"></a>チュートリアル:Power BI で Azure Machine Learning モデルを使用する
 
@@ -57,6 +57,10 @@ https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
 
 **[OK]** を選択します。
 
+**[Web コンテンツへのアクセス]** で、 **[匿名]**  >  **[接続]** の順に選択します。
+
+:::image type="content" source="media/service-aml-integrate/anonymous-access-web-content.png" alt-text="Web コンテンツの匿名アクセスを示すスクリーンショット。":::
+
 **[データの変換]** を選択して **[Power Query エディター]** ウィンドウを開きます。
 
 Power Query エディターの [ホーム] リボンで、 **[Azure Machine Learning]** ボタンを選択します。
@@ -84,7 +88,9 @@ Power Query によって、列が自動的に設定されます。 サービス�
 > [!NOTE]
 > デザイナー モデルをデプロイした場合は、**レコード** が表示されます。
 
-予測を取得するには、 **[変換]** リボン上で、 **[列の展開]** ボタン > **[新しい行に展開する]** の順に選択します。
+予測を取得するには、**AzureML.my-diabetes-model** 列ヘッダーの両方向矢印を選択し、 **[新しい行に展開する]** を選択します。
+
+:::image type="content" source="media/service-aml-integrate/expand-column.png" alt-text="[列の展開] アイコンを示すスクリーンショット。":::
 
 展開後は、AzureML.my-diabetes-model 列に予測が表示されます。
 

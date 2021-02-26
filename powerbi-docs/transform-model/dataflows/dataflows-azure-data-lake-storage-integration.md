@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: bf9740e0f4f6a2e25e1d5d0cc49671bd6eb90b37
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 44e8af257bc4b4e2a83747f79505caed8f3cc72a
+ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565409"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655767"
 ---
 # <a name="configuring-dataflow-storage-to-use-azure-data-lake-gen-2"></a>Azure Data Lake Gen 2 を使用するようにデータフロー ストレージを構成する 
 
@@ -24,7 +24,7 @@ ms.locfileid: "98565409"
 
 ## <a name="pre-requisites"></a>前提条件
 
-独自の ADLS Gen 2 アカウントを使用するには、ストレージ アカウント、リソース グループ、サブスクリプションのいずれかの層で所有者のアクセス許可が必要です。 管理者であっても、自分自身に所有者のアクセス許可を割り当てる必要があります。 
+独自の ADLS Gen 2 アカウントを使用するには、ストレージ アカウント、リソース グループ、サブスクリプションのいずれかの層で所有者のアクセス許可が必要です。 管理者であっても、自分自身に所有者のアクセス許可を割り当てる必要があります。  **現在、ファイアウォールの内側で ADLS Gen2 ストレージ アカウントをサポートしていません**
 
 ストレージ アカウントは、[階層型名前空間 (HNS)](/azure/storage/blobs/create-data-lake-storage-account) が有効な状態で作成する必要があります。 
 

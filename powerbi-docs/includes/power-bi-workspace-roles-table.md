@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 10/21/2020
+ms.date: 02/17/2021
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 3828a11f4b4447f6484e121fec84fb44d702c86a
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: f9ac328df2f24ef9993b6f9bd9c86aa94ee017de
+ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93136315"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655733"
 ---
 |機能   | 管理者  | メンバー  | 共同作成者  | Viewer |
 |---|---|---|---|---|
@@ -26,12 +26,12 @@ ms.locfileid: "93136315"
 | 項目を共有する、またはアプリを共有する。<sup>2</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | 他のユーザーに項目の再共有を許可する。<sup>2</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | 同僚のホームでアプリを勧める |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
+| データセットのアクセス許可を管理します。<sup>3</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |  |
 | 同僚のホームでダッシュボードとレポートを勧める |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |   |
 | ワークスペースでのコンテンツの作成、編集、削除。  |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | ワークスペースへのレポートの公開と、コンテンツの削除。  |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | このワークスペース内のデータセットに基づいて、別のワークスペースにレポートを作成する。<sup>2</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | レポートをコピーする。<sup>3</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
-| データセットのアクセス許可を管理します。<sup>3</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | オンプレミス ゲートウェイを介してデータの更新をスケジュールする。<sup>4</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | ゲートウェイの接続設定を変更する。<sup>4</sup> | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | 項目の表示と操作。<sup>5</sup> |  ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png) | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![[はい] チェックマーク](media/power-bi-workspace-roles-table/green-checkmark.png)  |
