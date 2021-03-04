@@ -45,7 +45,7 @@
         - name: 動的バインドを使用してレポートを接続する
           href: embed-dynamic-binding.md
         - name: Azure の Power BI Embedded の診断ログ
-          href: azure-pbie-diag-logs.md
+          href: ./monitor-power-bi-embedded.md
         - name: 埋め込みに関するよくあるご質問
           href: embedded-faq.md
     - name: 操作方法
@@ -101,7 +101,7 @@
             - name: Power BI REST API
               href: /rest/api/power-bi/
         - name: Power BI 開発者 (1 日) コース
-          href: /power-bi/learning-catalog/developer-online-course
+          href: ../../learning-catalog/developer-online-course.md
         - name: Power BI Embedded データ参照を監視する
           href: monitor-power-bi-embedded-reference.md
         - name: Power BI ライブラリ
