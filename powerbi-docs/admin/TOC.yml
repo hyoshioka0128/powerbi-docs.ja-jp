@@ -38,6 +38,8 @@
           items:
             - name: Premium 容量を管理する
               href: service-premium-capacity-manage.md
+            - name: Power BI Premium で自動スケーリングを使用する
+              href: service-premium-auto-scale.md
             - name: Premium 容量を最適化する
               href: service-premium-capacity-optimize.md
             - name: Premium 容量のシナリオ
