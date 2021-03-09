@@ -25,8 +25,6 @@
       items:
         - name: Power BI Desktop の最新の更新プログラムの新機能
           href: desktop-latest-update.md
-        - name: Power BI サービスの新機能
-          href: service-whats-new.md
         - name: Power BI サービスについて理解する
           href: service-basic-concepts.md
         - name: ヘルプを得るための 10 のヒント
@@ -41,11 +39,11 @@
               href: service-self-service-purchase-help.md
             - name: Power BI のサインアップに関するヘルプを表示する
               href: service-self-service-sign-up-help.md
-        - name: Security
+        - name: セキュリティ
           items:
             - name: セキュリティ ベースライン
               href: security-baseline.md
-    - name: 操作方法ガイド
+    - name: 攻略ガイド
       expanded: true
       items:
         - name: Power BI Desktop の取得
@@ -64,7 +62,7 @@
           href: webinars.md
         - name: Power BI Desktop のビデオ
           href: desktop-videos.md
-        - name: Power BI Desktop の更新プログラムのアーカイブ
+        - name: Power BI 更新プログラムのアーカイブ
           href: desktop-latest-update-archive.md
         - name: Power BI Desktop "気に入った機能の報告" のプライバシーに関する声明
           href: desktop-send-smile-privacy-statement.md

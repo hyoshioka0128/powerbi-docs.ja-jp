@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/05/2020
-  ms.openlocfilehash: 9d2304816263c151959f6aa00f6aaac91784f85c
-  ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+  ms.openlocfilehash: cbe807a01fcddf3426bef30bc8bd1a1ead4abaa9
+  ms.sourcegitcommit: b4ebd259fc8676b8c535ae1c2bb9d19c08c463dc
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/22/2020
-  ms.locfileid: "90861362"
+  ms.lasthandoff: 03/06/2021
+  ms.locfileid: "102252746"
 landingContent:
 - title: Power BI とは?
   linkLists:
@@ -35,10 +35,8 @@ landingContent:
   linkLists:
   - linkListType: concept
     links:
-    - text: Power BI Desktop の新機能
+    - text: Power BI の新機能
       url: desktop-latest-update.md
-    - text: サービスの新機能
-      url: service-whats-new.md
 - title: ご利用ガイドの使用を開始する
   linkLists:
   - linkListType: learn
