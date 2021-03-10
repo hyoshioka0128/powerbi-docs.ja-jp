@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 02/25/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: b1d9be5515680a199a2ae74c59aa1baeb30ef1f1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5da01b3d0f0875ea24b06770e99cbdc66a69dba5
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414486"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843989"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Power BI Desktop でブックマークを作成して分析情報を共有し、ストーリーを作成する
 Power BI Desktop で "*ブックマーク*" を使用して、フィルター処理やビジュアルの状態など、レポート ページの現在構成されているビューをキャプチャします。 その後、保存したブックマークを選択することで、その状態に戻ることができます。 
@@ -185,19 +185,6 @@ Power BI Desktop によって、グループに *Group 1* という名前が自�
 Power BI サービスの **[ブックマーク]** ペインは Power BI Desktop と同じように動作するので、 **[ビュー]** をせんたくしてスライド ショーのようにブックマークを順番に表示できます。
 
 ブックマーク間を移動するには、黒い矢印ではなく、グレーのブックマークのタイトル バーを使用します。 (黒い矢印は、ブックマークではなく、レポート ページ間を移動します)。
-
-## <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>ブックマークのプレビューを有効にする (2018 年 3 月より前のバージョン)
-Power BI Desktop の 2018 年 3 月バージョン以降では、ブックマークが一般公開されています。 
-
-常に最新のリリースにアップグレードすることをお勧めします。 ただし、お使いの Power BI Desktop がそのリリースより前のものであっても、ブックマーク機能は Power BI Desktop の 2017 年 10 月リリースから試すことができ、Power BI サービスでもブックマーク対応のサポートを使うことができます。 
-
-ブックマークのプレビュー機能を有効にするには: 
-
-1. **[ファイル]**  >  **[オプションと設定]**  >  **[オプション]**  >  **[プレビュー機能]** の順に選択し、 **[ブックマーク]** を選択します。 
-
-   ![[オプション] ウィンドウでブックマークを有効にする](media/desktop-bookmarks/bookmarks_02.png)
-
-2. ブックマークのプレビュー バージョンを有効にするには、Power BI Desktop を再起動します。
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 このリリースのブックマーク機能には、注意すべきいくつかの制限事項と考慮事項があります。

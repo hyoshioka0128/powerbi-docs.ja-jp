@@ -4,16 +4,16 @@ description: 組織内のデータセットとそれに関連するレポート�
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
-ms.subservice: pbi-data-sources
-ms.topic: how-to
+ms.subservice: powerbi-eim
+ms.topic: conceptual
 ms.date: 12/14/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4e09eb9e0b44fbddf8787f474fe1a93b0b4c2d71
-ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
+ms.openlocfilehash: 6eb88074df306bd455203d4b4601d36def34e00b
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97707975"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194942"
 ---
 # <a name="datasets-discovery-using-the-datasets-hub-preview"></a>データセット ハブを使用したデータセットの検出 (プレビュー)
 

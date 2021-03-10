@@ -5,18 +5,18 @@ author: mihart
 ms.author: mihart
 ms.reviewer: lukasz
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: pbi-fundamentals
 Ms.custom: css_fy20Q4
 ms.topic: how-to
 ms.date: 02/01/2021
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: 4ec3b034822ca9db86bc8d481588d44ae44158a1
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: 7cfe0a18ce336a37c2241281503ef980282b1184
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99495158"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195586"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>"*ビジネス ユーザー*" のライセンスとサブスクリプション
 

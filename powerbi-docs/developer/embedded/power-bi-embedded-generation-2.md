@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 02/03/2021
-ms.openlocfilehash: fa72ab380cac1a1ac6d12cb431bdacfb5964ee83
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.date: 03/05/2021
+ms.openlocfilehash: 668aa60104328d3ea928fc17c24f2e28e49e1672
+ms.sourcegitcommit: b4ebd259fc8676b8c535ae1c2bb9d19c08c463dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99539644"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102252676"
 ---
 # <a name="power-bi-embedded-generation-2-preview"></a>Power BI Embedded Generation 2 (プレビュー)
 
@@ -52,13 +52,13 @@ Embedded Gen2 容量リソースを作成して、その更新内容を活用し
 
 ## <a name="known-limitations"></a>既知の制限事項
 
-* Embedded Gen2 容量の使用率を[メトリック アプリ](../../admin/service-admin-premium-monitor-capacity.md)で追跡することはできません。 詳細については、[Premium Gen2 の監視の更新](../../admin/service-premium-what-is.md#updates-for-premium-gen2-preview-2)に関する記事を参照してください。
+* Embedded Gen2 容量の使用率を[メトリック アプリ](../../admin/service-admin-premium-monitor-capacity.md)で追跡することはできません。 詳細については、[Premium Gen2 の監視の更新](../../admin/service-premium-what-is.md#updates-for-premium-gen2-preview)に関する記事を参照してください。
 
 * 特定のワークロードに対するメモリ割り当ての設定が Embedded Gen2 容量に適用されません。 詳細については、[Embedded Gen 2 メモリの機能強化](embedded-capacity.md#embedded-gen-2-memory-enhancements-preview)に関する記事を参照してください
 
 * Embedded Gen2 で XMLA を使用する場合は、最新バージョンのデータ モデリングおよび管理ツールを使用するようにしてください。
 
-* Embedded Gen2 の Analysis Services の機能は、最新のクライアント ライブラリでのみサポートされています。 この要件をサポートするための依存ツールのリリース予定日は、「[Premium Gen2 の既知の制限](../../admin/service-premium-what-is.md#known-limitations-in-premium-gen2)」に記載されています。
+* Embedded Gen2 の Analysis Services の機能は、最新のクライアント ライブラリでのみサポートされています。 この要件をサポートするための依存ツールのリリース予定日は、「[Premium Gen2 の既知の制限](../../admin/service-premium-what-is.md#limitations-in-premium-gen2)」に記載されています。
 
 * 現在のすべての Power BI Embedded 用 Azure メトリックおよびログ診断では、Gen1 容量のみがサポートされています。
 

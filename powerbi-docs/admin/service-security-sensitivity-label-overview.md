@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3bc9a946d8f9091f8a2939ad9865460c1f22a446
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 6af58c7768f8717b3cae3524a0d12458cb4f3446
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99085811"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195333"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Power BI における秘密度ラベル
 
@@ -80,7 +80,6 @@ Power BI の秘密度ラベルのしくみを簡単に説明した例を次に�
 
 >[!NOTE]
 >* このプレビュー リリースでは、いくつかの制限が適用される場合があります。 「[制限事項](#limitations)」を参照してください。
->* Power BI Desktop で秘密度ラベルを使用できるようにするには、まず[情報保護プレビュー機能を有効化](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-power-bi-desktop-preview)してから、プログラムを再起動する必要があります。 再起動後にプログラムがクラッシュした場合、必要なバージョンの Visual C++ 再頒布可能ランタイム ライブラリがマシンに存在しないことが原因である可能性があります。 このようなクラッシュが発生した場合は、更新プログラムをダウンロードしてインストールする方法について、[Microsoft Visual C++ 2015 再頒布可能パッケージの更新プログラム 3 のダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=53587)を参照してください。 更新プログラムをインストールした後、もう一度 Desktop を起動してみてください。
 
 Desktop で秘密度ラベルを適用した場合、サービスに作業内容を発行すると、またはその作業の .pbix ファイルをサービスにアップロードすると、データと共にラベルがサービスに転送されます。 サービスでは、ファイルで取得されるデータセットとレポートの両方にラベルが適用されます。 データセットとレポートに既に秘密度ラベルがある場合、それらのラベルは Desktop からのラベルによって上書きされます。
  

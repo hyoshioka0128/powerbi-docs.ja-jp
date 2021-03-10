@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 02/23/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0d09871f9a47e9c8691ab3f955638c59b016d145
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 61203b93f6bd27dd0add87dc268fba94f21cab03
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600555"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843564"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktop のデータ ソース
 
@@ -59,6 +59,7 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * JSON
 * フォルダー
 * PDF
+* Parquet
 * SharePoint フォルダー
 
 次の図は、 **[ファイル]** の **[データの取得]** ウィンドウを示しています。
@@ -89,7 +90,9 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Vertica
 * Snowflake
 * Essbase
+* Actian (ベータ)
 * AtScale キューブ
+* BI コネクタ
 * Data Virtuality LDW (ベータ)
 * Denodo
 * Dremio
@@ -101,8 +104,7 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Linkar PICK スタイル / MultiValue Databases (ベータ)
 * MariaDB (ベータ)
 * MarkLogic
-* BI コネクタ
-* Actian (ベータ)
+
 
 > [!NOTE]
 > 一部のデータベース コネクタの場合、有効にするためには、 **[ファイル]、[オプションと設定]、[オプション]** の順に選択し、 **[プレビュー機能]** を選択し、コネクタを有効にする必要があります。 前途コネクタの一部が表示されず、その中に使用したいコネクタも含まれている場合は、 **[プレビュー機能]** を確認してください。 データ ソースに *ベータ* や *プレビュー* などのマークが付いている場合、サポートや機能が限定されていることにもご注意ください。運用環境では利用しないでください。
@@ -117,7 +119,8 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 
 * Power BI データセット
 * Power BI データフロー
-* Microsoft Dataverse
+* Common Data Service (レガシ)
+* Dataverse
 * Power Platform データフロー (ベータ)
 
 次の図は、 **[Power Platform]** の **[データの取得]** ウィンドウを示しています。
@@ -185,8 +188,10 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Dynamics 365 Customer Insights (ベータ版)
 * Emigo Data Source
 * Entersoft Business Suite (ベータ)
+* eWay-CRM (ベータ)
 * FactSet Analytics
 * Palantir Foundry
+* Hexagon PPM Smart API
 * Industrial App Store
 * Intune データ ウェアハウス (ベータ)
 * Microsoft Graph Security (ベータ)
@@ -199,8 +204,6 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Witivio (ベータ)
 * Workplace Analytics (ベータ)
 * Zoho Creator (ベータ)
-* eWay-CRM (ベータ)
-* Hexagon PPM Smart API
 
 
 次の図は、 **[オンライン サービス]** の **[データの取得]** ウィンドウを示しています。
@@ -224,6 +227,7 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * ODBC
 * OLE DB
 * Acterys: Model Automation & Planning (ベータ)
+* Anaplan Connector v1.0 (ベータ)
 * Automation Anywhere (ベータ)
 * Solver
 * Cherwell (ベータ)
@@ -237,14 +241,13 @@ Power BI Desktop を使用すると、多種多様なソースからデータに
 * Roamler (ベータ)
 * Shortcuts Business Insights (ベータ)
 * Siteimprove
+* Starburst Enterprise Presto (ベータ)
 * SurveyMonkey (ベータ)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (ベータ)
 * Vena (ベータ)
 * Vessel Insight (ベータ)
 * Zucchetti HR Infinity (ベータ)
-* Anaplan Connector v1.0 (ベータ)
-* Starburst Enterprise Presto (ベータ)
 * 空のクエリ
 
 

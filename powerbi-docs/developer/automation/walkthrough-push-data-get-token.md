@@ -7,13 +7,14 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
+ms.custom: has-adal-ref
 ms.date: 05/29/2019
-ms.openlocfilehash: 8959a0ac63ff1f182bcb3544b1925529b1ad3663
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.openlocfilehash: 15110459fb710611781631c992d7699c2a8bff83
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99422400"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843230"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>手順 2: 認証アクセス トークンを取得する
 

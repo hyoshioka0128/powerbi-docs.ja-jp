@@ -2,20 +2,20 @@
 title: Power BI での XMLA エンドポイント接続のトラブルシューティング
 description: Power BI Premium で XMLA エンドポイントを使用した接続のトラブルシューティングを行う方法について説明します。
 author: Minewiskan
-ms.author: kfollis
-ms.reviewer: kayu
+ms.author: owend
+ms.reviewer: owend
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.date: 02/02/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 0ae9a37d8d3a54d02811b9f3051d11cb1ab82ff8
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.openlocfilehash: db08a2845e8d4afeccbc733e2cefb6e4c1bdbcd9
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99532569"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842876"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 

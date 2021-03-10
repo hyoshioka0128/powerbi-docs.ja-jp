@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.custom: subject-monitoring
 ms.topic: how-to
 ms.date: 01/14/2021
-ms.openlocfilehash: 5cea43f4be9a3fee7c2fb0f99ef0acef99bb8364
-ms.sourcegitcommit: f17acb16018752c234db6bff1f51f5130be12c58
+ms.openlocfilehash: e76b02146232e475bfa337d1ad6a7ba3a877ef23
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99616998"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842448"
 ---
 # <a name="monitor-power-bi-embedded"></a>Power BI Embedded を監視する
 
@@ -110,7 +110,7 @@ Power BI Embedded 用に収集されるプラットフォーム メトリック�
 
 Azure Monitor ログのデータはテーブルに格納され、各テーブルには独自の一意のプロパティ セットがあります。  
 
-Azure Monitor 内のすべてのリソース ログには、同じフィールドの後にサービス固有のフィールドがあります。 共通のスキーマについては、[Azure Monitor リソース ログ スキーマ](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema)に関する記事を参照してください。Power BI Embedded リソース ログのスキーマは、[Power BI Embedded データ リファレンス](monitor-power-bi-embedded-reference.md#schemas)に記載されています。
+Azure Monitor 内のすべてのリソース ログには、同じフィールドの後にサービス固有のフィールドがあります。 共通のスキーマについては、[Azure Monitor リソース ログ スキーマ](/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema)に関する記事を参照してください。Power BI Embedded リソース ログのスキーマは、[Power BI Embedded データ リファレンス](monitor-power-bi-embedded-reference.md#schemas)に記載されています。
 
 [アクティビティ ログ](/azure/azure-monitor/platform/activity-log)は、サブスクリプション レベルのイベントの分析情報を提供するプラットフォーム ログイン Azure です。 個別に表示できるほか、Azure Monitor ログにルーティングして、Log Analytics を使用してより複雑なクエリを実行することもできます。  
 

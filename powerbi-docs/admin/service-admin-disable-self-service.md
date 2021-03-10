@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 01/31/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 80e263cc6e67c28b7593fcf10aea4c81c9f4af86
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: 6abb8fe58625a9dfd4bda18fac24ab9d1a3564ab
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99494307"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843253"
 ---
 # <a name="enable-or-disable-self-service-sign-up-and-purchasing"></a>セルフサービスでのサインアップと購入を有効または無効にする
 
@@ -179,7 +179,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 
     > [!NOTE]
-    > 組織に、電子メール ドメインに接続されている Microsoft 365 環境がない場合、セルフサービス ユーザーは新しいクラウド専用のユーザー ディレクトリに追加されています。 既に作成済みのテナントを検索、要求、および[引き継ぐ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)ことが必要になる場合があります。 
+    > 組織に、電子メール ドメインに接続されている Microsoft 365 環境がない場合、セルフサービス ユーザーは新しいクラウド専用のユーザー ディレクトリに追加されています。 既に作成済みのテナントを検索、要求、および[引き継ぐ](/azure/active-directory/users-groups-roles/domains-admin-takeover)ことが必要になる場合があります。 
 
 ## <a name="next-steps"></a>次の手順
 

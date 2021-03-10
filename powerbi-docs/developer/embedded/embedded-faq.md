@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/14/2021
-ms.openlocfilehash: e9487cc0cd799e925108163f729fdbf7da5d3ad5
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.openlocfilehash: dc67cabfdb7fcceab202b607e144c7c99f092bf0
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99533006"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842011"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Power BI Embedded に関してよく寄せられる質問
 
@@ -74,7 +74,7 @@ PRO ライセンスでの埋め込みトークンは、開発テストを意図�
 
 * Power BI で [metric app](../../admin/service-admin-premium-monitor-capacity.md) をダウンロードします。
 
-* [Azure 診断ログ](azure-pbie-diag-logs.md)を使用します。
+* [Azure 診断ログ](./monitor-power-bi-embedded.md)を使用します。
 
 ### <a name="can-my-capacity-scale-automatically-to-adjust-to-my-app-consumption"></a>自分のアプリでの消費に合わせて調整するように容量を自動的にスケーリングできますか?
 

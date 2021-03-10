@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 02/09/2021
-ms.openlocfilehash: 9757b19e4faf4537cf4ff3c1e6f06dc9d499bc8c
-ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
+ms.openlocfilehash: cbb1466ff0f9fdb0c2a8d86c3214a2f5ff0110c4
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100013592"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842632"
 ---
 # <a name="export-paginated-report-to-file"></a>ページ分割されたレポートをファイルにエクスポートする
 
@@ -132,7 +132,7 @@ Power BI には、SSO で OAuth を設定するオプションがあります。
 - Azure SQL の場合、リソースは `https://database.windows.net` です。
 - Dataverse の場合、リソースはお使いの環境の `https://` アドレスです。 たとえば、「 `https://contoso.crm.dynamics.com` 」のように指定します。
 
-[AuthenticationContext.AcquireTokenAsync](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) メソッドを使用して、トークン API にアクセスします。
+[AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) メソッドを使用して、トークン API にアクセスします。
 
 アクセス トークンで有効なユーザー名を指定する例を次に示します。
 

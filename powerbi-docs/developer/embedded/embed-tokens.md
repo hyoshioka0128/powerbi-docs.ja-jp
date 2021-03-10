@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/17/2021
-ms.openlocfilehash: 6a7847b0e89086094220a51a4893ffffd59d5642
-ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
+ms.openlocfilehash: 4fd45adeabde402472b97cecce3475d8a6a490cc
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100656472"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194827"
 ---
 # <a name="embedded-analytics-application-tokens"></a>埋め込み分析アプリケーション トークン
 
@@ -28,7 +28,7 @@ Power BI のコンテンツを使用するには、アクセス トークンが�
 
 ## <a name="azure-ad-token"></a>Azure AD トークン
 
-"*顧客向け埋め込み*" と "*組織向け埋め込み*" のどちらのソリューションについても、[Azure AD トークン](#azure-ad-token)が必要です。 このトークンは、すべての [REST API](/rest/api/power-bi/) 操作に必要であり、1 時間後に有効期限が切れます。
+"*顧客向け埋め込み*" と "*組織向け埋め込み*" のどちらのソリューションについても、[Azure AD トークン](/azure/databricks/dev-tools/api/latest/aad/)が必要です。 このトークンは、すべての [REST API](/rest/api/power-bi/) 操作に必要であり、1 時間後に有効期限が切れます。
 
 * "*顧客向け埋め込み*" では、Azure AD トークンは "*埋め込みトークン*" を生成するために使用されます。
 
@@ -60,9 +60,9 @@ Power BI のコンテンツを使用するには、アクセス トークンが�
 
 * **マスター ユーザー**
 
-    Web アプリで、ユーザー アカウントを使用して Azure AD に対する認証を行い、"*Azure AD トークン*" を取得します。 "*マスター ユーザー*" は、[Power BI Pro](/power-bi/admin/service-admin-purchasing-power-bi-pro) または [Premium Per User (PPU)](/power-bi/admin/service-premium-per-user-faq) のライセンスを持っている必要があります。
+    Web アプリで、ユーザー アカウントを使用して Azure AD に対する認証を行い、"*Azure AD トークン*" を取得します。 "*マスター ユーザー*" は、[Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) または [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) のライセンスを持っている必要があります。
 
-    "*マスター ユーザー*" を使用する場合は、アプリの[委任されたアクセス許可](/azure/active-directory/develop/v2-permissions-and-consent) (スコープとも呼ばれます) を定義する必要があります。 "*マスター ユーザー*" または "*テナント管理者*" は、Power BI REST API を使用してこれらのアクセス許可を使用するための同意を付与する必要があります。
+    "*マスター ユーザー*" を使用する場合は、アプリの [委任されたアクセス許可](/azure/active-directory/develop/v2-permissions-and-consent) (スコープとも呼ばれます) を定義する必要があります。 "*マスター ユーザー*" または "*テナント管理者*" は、Power BI REST API を使用してこれらのアクセス許可を使用するための同意を付与する必要があります。
 
 Azure AD に対する認証が成功した後は、Web アプリで[埋め込みトークン](/rest/api/power-bi/embedtoken)を生成し、特定の Power BI コンテンツへのアクセスをユーザーに許可します。
 

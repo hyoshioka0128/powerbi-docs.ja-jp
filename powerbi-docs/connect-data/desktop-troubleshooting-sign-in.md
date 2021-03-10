@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 03/05/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 4a825c2e3bcfdbe637c59fde9c33dc23ad326b0e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b30f86b609a2c1a4dff072d8b3a7472ff754657c
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404413"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195828"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Power BI Desktop のサインインに関するトラブルシューティング
 **Power BI Desktop** にサインインしようとして、エラーになる場合があります。 サインインの問題には 2 つの主な理由があります。**プロキシ認証エラー** と **非 HTTPS URL リダイレクト エラー** です。 
@@ -90,7 +90,7 @@ Power BI Desktop によって発行された Web 要求では、Web プロキシ
 
 レジストリ エントリを両方の場所に配置する必要はありません。
 
-![既定のシステム資格情報を使用するためのレジストリ キー](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+![既定のシステム資格情報を使用するためのレジストリ キー](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03b.png)
 
 レジストリ エントリが作成されると (再起動が必要になる場合があります)、Power BI Desktop によって Web 要求が行われるときに、Internet Explorer で定義されているプロキシ設定が使用されます。 
 

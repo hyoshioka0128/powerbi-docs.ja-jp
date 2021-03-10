@@ -16,7 +16,7 @@
             - name: モバイル
               tocHref: /power-bi/consumer/mobile/
               topicHref: /power-bi/consumer/mobile/index
-            - name: Developer
+            - name: 開発者
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
               items:
@@ -26,7 +26,7 @@
                 - name: Power BI ビジュアル
                   tocHref: /power-bi/developer/visuals/
                   topicHref: /power-bi/developer/visuals/
-                - name: Automation
+                - name: オートメーション
                   tocHref: /power-bi/developer/automation/
                   topicHref: /power-bi/developer/automation/
             - name: ガイド付き学習
@@ -47,12 +47,19 @@
             - name: レポートとダッシュボードの作成
               tocHref: /power-bi/create-reports/
               topicHref: /power-bi/create-reports/index
-            - name: データへの接続
+            - name: データに接続する
               tocHref: /power-bi/connect-data/
               topicHref: /power-bi/connect-data/index
-            - name: はじめに
+            - name: 作業開始
               tocHref: /power-bi/fundamentals/
               topicHref: /power-bi/fundamentals/index
             - name: データの変換、成形、モデリング
               tocHref: /power-bi/transform-model/
               topicHref: /power-bi/transform-model/index
+        - name: Power BI
+          tocHref: /azure/
+          topicHref: /power-bi/index
+          items:
+            - name: レポートとダッシュボードの作成
+              tocHref: /azure-maps/
+              topicHref: /power-bi/create-reports/index

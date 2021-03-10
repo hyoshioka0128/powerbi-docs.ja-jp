@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: 09e215dbb32dcb93b2ae8ca51953eb636e1aad81
-ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.openlocfilehash: c9e32dd7445b8c2de80b0faae0174b0b07f5b2d1
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718487"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843207"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI の高可用性、フェールオーバー、およびディザスター リカバリーに関する FAQ
 
@@ -26,7 +26,7 @@ Power BI は、フル マネージドのサービスとしてのソフトウェ�
 
 Power BI では、データセンターの障害から Power BI レポート、アプリケーション、およびデータを保護するために **Azure Availability Zones** が使用されます。これは Power BI に自動的に適用されて使用されます。 Availability Zones は、Azure リージョン内の障害から分離された場所であり、Azure リージョン内で、冗長な電源、冷却、およびネットワークを備えた、3 つ以上の個別な一意の場所が提供されます。 Availability Zones によって、Power BI ユーザーは、データセンターの障害に対してより高い可用性とフォールト トレランスを備えた、ミッション クリティカルなアプリケーションを実行できます。 Availability Zones により、サービスの冗長性と論理的な分離を通じて、データセンターの障害に耐える機能がお客様に提供されます。 
 
-**Availability Zones** の詳細については、次の記事を参照してください。「[Azure のリージョンと Availability Zones](https://docs.microsoft.com/azure/availability-zones/az-overview)」について詳しく説明されています。
+**Availability Zones** の詳細については、次の記事を参照してください。「[Azure のリージョンと Availability Zones](/azure/availability-zones/az-overview)」について詳しく説明されています。
 
 ## <a name="what-is-a-power-bi-failover"></a>Power BI のフェールオーバーとは
 
