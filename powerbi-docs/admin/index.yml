@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/17/2020
-  ms.openlocfilehash: 9a8a47df351d3990763b8e44da2aee6271e4e94f
-  ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+  ms.openlocfilehash: b9a7549a87361ac5756ba757a0a47c6dc01dcfa0
+  ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "97621052"
+  ms.lasthandoff: 03/11/2021
+  ms.locfileid: "102628181"
 landingContent:
 - title: 管理者とエンタープライズにおける Power BI
   linkLists:
@@ -41,6 +41,8 @@ landingContent:
       url: service-admin-portal.md
   - linkListType: how-to-guide
     links:
+    - text: Power BI Desktop の取得
+      url: ../fundamentals/desktop-get-the-desktop.md
     - text: Power BI Pro を購入する
       url: service-admin-purchasing-power-bi-pro.md
     - text: Microsoft 365 評価版にサインアップする

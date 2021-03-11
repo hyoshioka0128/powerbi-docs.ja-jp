@@ -270,14 +270,10 @@
               href: ../visuals/power-bi-visualization-move-and-resize.md
             - name: レポート内のビジュアルの相互作用を変更します。
               href: service-reports-visual-interactions.md
-            - name: マップの視覚エフェクトに関するヒントとテクニック
-              href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: X 軸と Y 軸のプロパティをカスタマイズする
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
             - name: 異常検出
               href: ../visuals/power-bi-visualization-anomaly-detection.md
-            - name: ArcGIS マップ
-              href: ../visuals/power-bi-visualizations-arcgis.md
             - name: 基本的な面グラフ
               href: ../visuals/power-bi-visualization-basic-area-chart.md
             - name: カード ビジュアル (大きな数字のタイル) を作成する
@@ -288,14 +284,26 @@
               href: ../visuals/power-bi-visualization-decomposition-tree.md
             - name: ドーナツ グラフ
               href: ../visuals/power-bi-visualization-doughnut-charts.md
-            - name: 塗り分け地図 (コロプレス)
-              href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
             - name: じょうごグラフ
               href: ../visuals/power-bi-visualization-funnel-charts.md
             - name: 主要なインフルエンサーのビジュアル
               href: ../visuals/power-bi-visualization-influencers.md
             - name: KPI ビジュアル
               href: ../visuals/power-bi-visualization-kpi.md
+            - name: Maps
+              items:
+                - name: 図形マップの視覚エフェクト (プレビュー)
+                  href: ../visuals/desktop-shape-map.md
+                - name: 塗り分け地図 (コロプレス)
+                  href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
+                - name: ArcGIS マップ
+                  href: ../visuals/power-bi-visualizations-arcgis.md
+                - name: マップの視覚エフェクトに関するヒントとテクニック
+                  href: ../visuals/power-bi-map-tips-and-tricks.md
+            - name: Power BI での Azure Maps
+              items:
+                - name: Azure Maps の Power BI 視覚エフェクトの概要
+                  href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/context/context
             - name: マトリックスのビジュアル
               href: ../visuals/desktop-matrix-visual.md
             - name: Power Apps のビジュアル
@@ -314,8 +322,6 @@
               href: ../visuals/power-bi-visualization-scatter.md
             - name: 高密度な散布図を使用する
               href: ../visuals/desktop-high-density-scatter-charts.md
-            - name: 図形マップのビジュアル (プレビュー)
-              href: ../visuals/desktop-shape-map.md
             - name: スモール マルチプルを作成する (プレビュー)
               href: ../visuals/power-bi-visualization-small-multiples.md
             - name: スモール マルチプルとの対話 (プレビュー)

@@ -13,17 +13,29 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 02/03/2021
-  ms.openlocfilehash: 8f8956075030eee75077b9da9b6fccca94b73546
-  ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+  ms.openlocfilehash: 3324f631496a7ecd35ecf03210b508821f7b952d
+  ms.sourcegitcommit: 0eaddc9b25535ae806023f4aa710b03fd344d1fa
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/04/2021
-  ms.locfileid: "99533052"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102490016"
 highlightedContent:
   items:
   - title: Power BI Desktop の概要
     itemType: get-started
     url: fundamentals/desktop-getting-started.md
+  - title: Premium Gen2 での自動スケーリング
+    itemType: concept
+    url: admin/service-premium-auto-scale.md
+  - title: Power BI Embedded Gen2 (プレビュー)
+    itemType: overview
+    url: developer/embedded/power-bi-embedded-generation-2.md
+  - title: React を使用して Power BI 視覚エフェクトを作成する
+    itemType: tutorial
+    url: developer/visuals/create-react-visual.md
+  - title: Power BI アプリを Microsoft Teams に追加する
+    itemType: how-to-guide
+    url: collaborate-share/service-microsoft-teams-app.md
   - title: Power BI 埋め込み分析のクライアント API
     itemType: overview
     url: /javascript/api/overview/powerbi/
