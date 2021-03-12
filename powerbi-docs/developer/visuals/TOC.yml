@@ -90,6 +90,8 @@
           href: high-contrast-support.md
         - name: スライサーの同期を有効にする
           href: enable-sync-slicers.md
+        - name: データをバインドせずに視覚エフェクトをレンダリングする
+          href: no-dataroles-support.md
         - name: ビジュアルのデバッグ
           href: visuals-how-to-debug.md
         - name: モバイル開発

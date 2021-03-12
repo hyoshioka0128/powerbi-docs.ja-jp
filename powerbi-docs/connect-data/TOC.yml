@@ -25,8 +25,6 @@
           href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
         - name: Excel と OData フィードの売上データを分析する
           href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-        - name: Facebook データを分析する
-          href: desktop-tutorial-facebook-analytics.md
         - name: Analysis Services 表形式モデルに行レベル セキュリティを実装する
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
         - name: GitHub サンプルへの接続
@@ -153,8 +151,6 @@
               href: desktop-sap-bw-connector.md
             - name: OneDrive for Business のリンクを使用する
               href: desktop-use-onedrive-business-links.md
-            - name: 'サード パーティのサービス:Facebook コネクタを使用する'
-              href: service-facebook-connector.md
             - name: 'サード パーティのサービス:Google アナリティクス コネクタを使用する'
               href: service-google-analytics-connector.md
             - name: Power BI Desktop 経由で Project Online データに接続する
