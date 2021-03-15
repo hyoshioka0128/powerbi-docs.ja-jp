@@ -48,6 +48,10 @@
               href: service-premium-faq.md
             - name: ユーザーごとの Power BI Premium に関する FAQ
               href: service-premium-per-user-faq.md
+        - name: 情報の保護
+          items:
+            - name: データ ソースからの秘密度ラベルの継承
+              href: service-security-sensitivity-label-inheritance-from-data-sources.md
     - name: 操作方法
       items:
         - name: ライセンスとサインアップ
