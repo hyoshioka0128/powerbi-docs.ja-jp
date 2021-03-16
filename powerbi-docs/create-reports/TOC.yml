@@ -97,6 +97,8 @@
               href: ../paginated-reports/report-builder-data.md
             - name: サポートされるデータ ソース
               href: ../paginated-reports/paginated-reports-data-sources.md
+            - name: ODBC データ ソースのサポート
+              href: ../paginated-reports/paginated-reports-odbc-support.md
             - name: デザインに関するヒント
               href: ../paginated-reports/report-builder-design-tips.md
             - name: テーブル、マトリックス、リスト
