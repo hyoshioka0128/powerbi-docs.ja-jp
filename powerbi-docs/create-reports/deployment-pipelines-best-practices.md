@@ -1,18 +1,18 @@
 ---
-title: デプロイ パイプラインのベスト プラクティス
-description: Power BI のデプロイ パイプラインのベスト プラクティス
+title: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) のベスト プラクティス
+description: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) のベスト プラクティスについて学習します
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 10/21/2020
-ms.openlocfilehash: 60bc6a787cee735db4d77197f9a3e18260c5e65d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 03/04/2021
+ms.openlocfilehash: daf89f1354a44131791bd623a10b5fea1eb44e14
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415061"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194919"
 ---
 # <a name="deployment-pipelines-best-practices"></a>デプロイ パイプラインのベスト プラクティス
 
@@ -200,10 +200,10 @@ XMLA の r/w 機能を使用して、外部ワークスペースで[共有デー
 ## <a name="next-steps"></a>次の手順
 
 >[!div class="nextstepaction"]
->[デプロイ パイプラインの概要](deployment-pipelines-overview.md)
+>[配置パイプラインの概要](deployment-pipelines-overview.md)
 
 >[!div class="nextstepaction"]
->[デプロイ パイプラインの使用を開始する](deployment-pipelines-get-started.md)
+>[配置パイプラインの使用を開始する](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
 >[デプロイ パイプライン プロセスを理解する](deployment-pipelines-process.md)

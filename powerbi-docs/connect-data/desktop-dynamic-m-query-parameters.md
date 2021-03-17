@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/22/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7f7dd319c69291f690dae5cd18b95285618df07b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3d4ef7cff9cccd735eabcab4dc7c9e0e10566ffd
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411197"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842103"
 ---
 # <a name="dynamic-m-query-parameters-in-power-bi-desktop-preview"></a>Power BI Desktop の動的 M クエリ パラメーター (プレビュー)
 
@@ -157,7 +157,7 @@ Products
     * ライブ接続データ ソース: Azure Analysis Services、SQL Server Analysis Services、Power BI Datasets
     * サポートされていないその他のデータ ソース: Oracle、Teradata、Relational SAP Hana
     * XMLA / TOM エンドポイントのプログラミングによって部分的にサポート: SAP BW と SAP Hana 
-
+* [集計](../transform-model/desktop-aggregations.md)は、この機能ではサポートされていません
 
 * すぐに使用できるパラメーターの型でサポートされていないものは、次のとおりです。
   * Any

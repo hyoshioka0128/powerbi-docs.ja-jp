@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/21/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fec45c895b4b4eb43bd6efd2e5428d789ff4f44d
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.openlocfilehash: 3f7d54f65d31fa77c9880b8dc50a55e6d27fec28
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98687099"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843483"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>Power BI Desktop で SAP Business Warehouse コネクタを使用する
 
@@ -68,6 +68,9 @@ SAP BW Connector とその DirectQuery での使用方法の詳細について�
 また、 **[詳細設定オプション]** として、**言語コード** と、指定したサーバーに対して実行するカスタム **MDX ステートメント** の 2 つを指定できます。
 
 ![追加の接続情報](media/desktop-sap-bw-connector/sap_bw_4a.png)
+
+> [!NOTE]
+> **言語コード** を使用し、サービスに対して発行する場合は、ゲートウェイを使用する際に、サービス データ ソースの設定で [テスト接続をスキップする] を有効にする必要があります。
 
 MDX ステートメントを指定しない場合、接続設定には、サーバーで使用可能なキューブの一覧が表示されます。 使用可能なキューブから、ディメンションやメジャーなどの項目をドリルダウンして選択することができます。 Power BI には、[Open Analysis インターフェイス](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm)によって公開されているクエリとキューブが表示されます。
 

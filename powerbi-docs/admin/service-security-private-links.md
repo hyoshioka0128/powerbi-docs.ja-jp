@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/14/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 56ac55ceec480d6d33d6974b97871c5fa4d2d799
-ms.sourcegitcommit: 73ca86f7633317fe3831839c4dd14a333b2f514c
+ms.openlocfilehash: 3cf766b8f0ecf4a137a15bffcf02941f0b14ccad
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "97979978"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195517"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Power BI にアクセスするためのプライベート リンク
 
@@ -309,7 +309,7 @@ Power BI でプライベート リンクを使用する際に留意する必要�
 * インターネット アクセスが無効になっていて、データセットまたはデータフローが Power BI データセットまたはデータフローにデータ ソースとして接続している場合、接続は失敗します。
 * Private Links が有効になっているとき、使用状況メトリックは機能 "*しません*"。
 * Power BI で **[パブリック インターネット アクセスのブロック]** を有効にすると、[Web に公開] は動作しません (淡色表示になります)。
-
+* [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) では、ネットワークの分離は現在サポートされていません。 つまり、分離されたネットワークで実行されている [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop-preview) では、[秘密度] ボタンが淡色表示され、ラベル情報は表示されず、 *.pbix* ファイルの暗号化解除は失敗します。
 
 ## <a name="next-steps"></a>次の手順
 

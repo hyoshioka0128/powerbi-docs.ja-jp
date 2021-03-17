@@ -7,25 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 02/26/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: e239b95fe18ba9ddfad399c5b53b10a3f1f4a4c2
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: 905cae4a2def7748641dcc366575e72e31b096ad
+ms.sourcegitcommit: b4ebd259fc8676b8c535ae1c2bb9d19c08c463dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97674892"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102252711"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktop の新機能
 
-## <a name="december-2020-update-2883210"></a>2020 年 12 月の更新 (2.88.321.0)
+## <a name="february-2021-update-2903030"></a>2021 年 2 月の更新 (2.90.303.0)
 
-12 月の Power BI Desktop の更新プログラムを適用すると、雪明りに満ちた小道のように明るい気分になります。 
+Power BI Desktop の 2 月の更新は、バレンタインのチョコレートよりも嬉しい内容となっています。 
 
-Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルと Power BI サービスの更新プログラムの詳細については、それぞれの新機能に関する記事をご覧ください。
-
-* [Power BI サービスの新機能](service-whats-new.md)
-* [Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルの更新の詳細については、「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご覧ください。
 
 [ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得してください。 Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
 
@@ -47,28 +44,43 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 以下の更新は、今月の Power BI Desktop の新しい機能です。
 
 ### <a name="reporting"></a>レポート
-* DirectQuery for Power BI datasets and Azure Analysis Services (プレビュー) [[ビデオ]](https://youtu.be/68YvRs49VZM?t=33)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831296)   [[記事]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
-* スモール マルチプル (プレビュー) [[ビデオ]](https://youtu.be/68YvRs49VZM?t=378)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831297)
-* Power BI Desktop (プレビュー) のデータ保護の秘密度ラベル [[ビデオ]](https://youtu.be/68YvRs49VZM?t=656)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831298) 
-* 四角形の選択データ ポイント制限の引き上げ [[ビデオ]](https://youtu.be/68YvRs49VZM?t=734)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831299) 
-* モバイル レイアウト ビューで使用できるようになった [選択] ペイン [[ビデオ]](https://youtu.be/68YvRs49VZM?t=757)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831300) 
-* Analysis Services ソースのページの自動更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=789)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831301) 
+* DirectQuery for Power BI datasets and Azure Analysis Services (プレビュー) [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=17)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074644)   [[記事]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+* 検索バー [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=72)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074792)   [[記事]](../create-reports/desktop-ribbon.md)
+* モデル ビューの更新 (プレビュー) [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=188)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074646)  [[記事]](../transform-model/desktop-relationship-view.md)
+* 新しいフィールド一覧 (プレビュー) [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=280)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074794) 
+* スモール マルチプル (プレビュー) - グリッド線と背景色 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=309)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074648) 
+* カラー ピッカー [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=340)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63024803) 
+* オブジェクトを整列するためのスマート ガイド - モバイル レイアウト ビュー [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=422)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074650) 
+* 新しいフィルター操作 - 値がない、値がある [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=441)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074798) 
+* Web 接続に関する証明書失効の確認 - きめ細かい制御 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=486)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074643) 
 
 
-### <a name="data-preparation"></a>データの準備
-* Power Query とデータフローの変更 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=851)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831302)
+### <a name="analytics"></a>分析
+* リボンでの異常検出 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=526)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074653)
+
+
+### <a name="modeling"></a>モデリング
+* 拡張データセット メタデータ形式 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=552)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074655)
+
 
 ### <a name="data-connectivity"></a>データ接続
-* Microsoft Dataverse コネクタ [[ビデオ]](https://youtu.be/68YvRs49VZM?t=886)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831566)
-* Azure Time Series Insights の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=919)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831305)
-* SurveyMonkey の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=926)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831568)
-* Cognite の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=933)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831307)
+* 新しい Teams Analytics コネクタ [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=588)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074657)
+* Snowflake - カスタム ロールのサポート [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=629)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074806)  [[記事]](../connect-data/desktop-connect-snowflake.md)
+* Parquet ファイル - Power BI Desktop で利用可能なコネクタ [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=654)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074659)  [[記事]](../connect-data/desktop-data-sources.md#file-data-sources)
+* Hive LLAP - Windows 認証のサポート [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=673)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074808)
+* Salesforce - API の更新 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=682)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074661)
+* SAP HANA と BW - 新しいドキュメント [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=723)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074662)
 
 
 ### <a name="visuals"></a>視覚化
-* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/68YvRs49VZM?t=1330)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831588)
+* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=837)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074670)
 
-これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/)に関するブログ投稿を参照してください。
+### <a name="other"></a>その他
+* 新しいアイコンの更新 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=1061)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074832)
+
+
+
+これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/)に関するブログ投稿を参照してください。
 
 
 > [!NOTE]
@@ -78,7 +90,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 ### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
 次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
 
-> [!VIDEO https://www.youtube.com/embed/68YvRs49VZM]
+> [!VIDEO https://www.youtube.com/embed/h4JL2lITJ7U]
 
 ## <a name="more-videos"></a>他のビデオ
 

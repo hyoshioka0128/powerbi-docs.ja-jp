@@ -2,20 +2,20 @@
 title: Power BI での XMLA エンドポイントを使用したデータセットの接続と管理
 description: クライアント アプリケーションとツールから Power BI Premium のデータセットに接続する方法について説明します。
 author: Minewiskan
-ms.author: davidi
+ms.author: owend
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 1/11/2020
+ms.date: 3/1/2021
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 3a3a0f44fd9f02942ecc8f6646d219ace649b295
-ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
+ms.openlocfilehash: 69a571d93b40b0b0e886be4d5fa2c1fbc7edcca2
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98110786"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842977"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>XMLA エンドポイントを使用したデータセット接続
 
@@ -162,7 +162,9 @@ Visual Studio で作成される表形式モデル プロジェクトの場合�
 XMLA エンドポイントを介してデータセット ロールを使用する場合は、次の制限事項が適用されます。
 
 - Power BI データセットに対して設定できる "*ロール*" の唯一のアクセス許可は、読み取りアクセス許可です。 その他のアクセス許可は、Power BI セキュリティ モデルを使用して付与されます。
+- ワークスペースのメンバーまたは管理者のアクセス許可を必要とするサービス プリンシパルをロールに追加することはできません。
 - データセット ロールが存在するかどうかに関係なく、XMLA エンドポイントを介した読み取りアクセスには、データセットに対するビルド アクセス許可が必要です。
+- "Roles =" 接続文字列プロパティは、ロール メンバーの書き込みアクセス許可を読み取りアクセス許可へとダウングレードする際のテストに使用できます。 ただし、メンバー アカウントは、関連する RLS ロールのメンバーである必要があります。 これは、SQL Server Analysis Services や Azure Analysis Services での権限借用とは異なります (これらのケースでは、アカウントがサーバー管理者である場合、RLS ロールのメンバーシップであると見なされます)。 Power BI Premium のワークスペースでは、サーバー管理者がいないため、RLS を適用するには、アカウントがロールに属している必要があります。
 - Power BI では現在、オブジェクトレベルのセキュリティ (OLS) 規則はサポートされていません。
 
 詳細については、[表形式モデルのロール](/analysis-services/tabular-models/roles-ssas-tabular)に関するページをご覧ください。

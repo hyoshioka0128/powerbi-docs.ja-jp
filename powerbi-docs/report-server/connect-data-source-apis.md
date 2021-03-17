@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 10/26/2020
-ms.openlocfilehash: b7f431ba6b8f559380916c17689d0eab74a0c9a7
-ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.date: 03/09/2021
+ms.openlocfilehash: b59fc8debb71c579b00792169d8e8ce9fae23ed6
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99044312"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534483"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>PowerShell を使って Power BI レポートのデータ ソース接続文字列を変更する - Power BI Report Server
 
@@ -93,18 +93,25 @@ Power BI Report Server の 2020 年 10 月リリースから、DirectQuery お�
     $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
     ```
 
-4. 変更する必要がある値で、この変数を更新します。
-5. この呼び出しの結果を変数に保存します。
+4. ディクショナリにマップして、パラメーター値にアクセスします。
 
     ```powershell
-    $parameters[0].Value = 'myproductionserver'
-    $parameters[1].Value = 'myproductiondatabase'
+    $parameterdictionary = @{}
+    foreach ($parameter in $parameters) { $parameterdictionary.Add($parameter.Name, $parameter); }
+
+4. This variable is updated with the values that we need to change.
+5. Update the values of the desired parameters:
+
+    ```powershell
+    $parameterdictionary[“ServerName”].Value = 'myproductionserver'
+    $parameterdictionary[“Databasename”].Value = 'myproductiondatabase'
     ```
 
 6. 更新された値でコマンドレット `Set-RsRestItemDataModelParameters` を使用してサーバーの値を更新できます。
 
     ```powershell
     Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
+    $parameterdictionary.Values
     ```
 
 7. パラメーターが更新されると、そのパラメーターにバインドされているすべてのデータ ソースがサーバーによって更新されます。 **[データ ソースの編集]** ダイアログ ボックスに戻ると、更新されたサーバーとデータベースに対して資格情報を設定できるはずです。

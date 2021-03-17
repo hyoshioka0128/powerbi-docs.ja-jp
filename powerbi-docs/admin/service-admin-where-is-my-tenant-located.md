@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 632eca1fdcb1bed380ad699a36264bc0239baef5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a46754fdf2a77fd06aea6a9e0444b64d72a7ffef
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412393"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534575"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Power BI テナントの場所
 
@@ -34,7 +34,7 @@ Power BI テナントが配置される場所およびその場所を選択す�
 
 ## <a name="how-the-data-region-is-selected"></a>データ領域を選択する方法
 
-データ領域は、テナントを作成するときに選択した国/地域に基づきます。 この情報は共有されるので、その選択は Microsoft 365 と Power BI の両方のサインアップに適用されます。 新しいテナントである場合は、サインアップ時に、一覧から適切な国/地域を選択します。
+データ領域は、AAD テナントのサインアップ中にテナントを作成した際に選択した国や地域に基づきます。 テナントの場所は、ユーザーの場所と一致している必要はありません。 この情報は共有されるので、その選択は Microsoft 365 と Power BI の両方のサインアップに適用されます。 新しいテナントである場合は、サインアップ時に、一覧から適切な国/地域を選択します。
 
 ![国の選択](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 

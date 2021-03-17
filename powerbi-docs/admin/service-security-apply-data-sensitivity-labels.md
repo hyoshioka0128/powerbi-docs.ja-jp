@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 12/09/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: a50a8c8514a4316f16a6a38647804aabf878d5ad
-ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
+ms.openlocfilehash: 83e3a3bdac9720592026089a2c3365b0ae4cb236
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98925693"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195471"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Power BI で秘密度ラベルを適用する方法
 
@@ -70,17 +70,6 @@ Power BI Desktop で秘密度ラベルを使用するには:
 * 組織で秘密度ラベルが有効にされている必要があります。 それについて確認したい場合は、Power BI 管理者に問い合わせてください。
 * 「[Power BI で秘密度ラベルを有効にする](./service-security-enable-data-sensitivity-labels.md)」で説明されているように、ユーザーは秘密度ラベルを適用するためのアクセス許可を持つセキュリティ グループに属している必要があります。
 * すべての[ライセンスとその他の要件](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements)を満たしている必要があります。
-* Power BI Desktop で Information Protection プレビュー機能のスイッチをオンにする必要があります。 [ホーム] タブに [秘密度] ボタンが表示されている場合、プレビュー機能はオンになっています。 ボタンが表示されない場合は、 **[ファイル] > [オプションと設定] > [オプション] > [プレビュー機能]** に移動し、 **[Information Protection]** の横にあるチェック ボックスをオンにします。
-
-    ![Desktop のプレビュー機能ページのスクリーンショット。](media/service-security-apply-data-sensitivity-labels/desktop-preview-features-page.png)
-
-    >[!Important]
-    >Information Protection プレビュー機能を有効にした後、秘密度ラベルを使い始めるには、Desktop を再起動する必要があります。
-    >
-    >再起動時に Desktop がクラッシュした場合、必要なバージョンの Visual C++ 再頒布可能ランタイム ライブラリがマシンに存在しないことが原因である可能性があります。 このようなクラッシュが発生した場合は、更新プログラムをダウンロードしてインストールする方法について、[Microsoft Visual C++ 2015 再頒布可能パッケージの更新プログラム 3 のダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=53587)を参照してください。 更新プログラムをインストールした後、もう一度 Desktop を起動してみてください。
-
-    Information Protection のプレビュー オプションが表示されない場合は、Information Protection プレビュー機能が組織に対してブロックされている可能性があります。 この場合は、Power BI 管理者に問い合わせてください。
-
 * サインインしている必要があります。
 
 作業中のファイルに秘密度ラベルを適用するには、[ホーム] タブの [秘密度] ボタンをクリックし、表示されるメニューから目的のラベルを選択します。
@@ -88,7 +77,9 @@ Power BI Desktop で秘密度ラベルを使用するには:
 ![Desktop の秘密度ラベル メニューのスクリーンショット。](media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png)
 
 >[!NOTE]
-> プレビュー機能で秘密度ラベル機能をオンにしても、[秘密度] ボタンが表示されない場合は、適切なライセンスを持っていないこと、または秘密度ラベルを適用するためのアクセス許可を持つセキュリティ グループに属していないことを、示している可能性があります。「[Power BI で秘密度ラベルを有効にする](./service-security-enable-data-sensitivity-labels.md)」の説明を参照してください。
+> [秘密度] ボタンが淡色表示されている場合は、適切なライセンスを持っていないこと、または秘密度ラベルを適用するためのアクセス許可を持つセキュリティ グループに属していないことを、示している可能性があります。「[Power BI で秘密度ラベルを有効にする](./service-security-enable-data-sensitivity-labels.md)」の説明を参照してください。
+>
+>[秘密度] ボタンがまったく表示されない場合は、 **[ファイル] > [オプションと設定] > [オプション ]> [プレビュー機能]** に移動し、 **[Information Protection]** の横にあるチェックボックスがオンになっていることを確認してください。 Information Protection のプレビュー オプションが表示されない場合は、Information Protection プレビュー機能が組織に対してブロックされている可能性があります。 この場合は、Power BI 管理者に問い合わせてください。
 
 ラベルを適用すると、ステータス バーにそれが表示されます。
 

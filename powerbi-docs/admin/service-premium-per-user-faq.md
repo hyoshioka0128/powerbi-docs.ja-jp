@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 1/13/2021
+ms.date: 3/9/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: e5edcde0f367c573c86aaac1b7f14397614eeedf
-ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
+ms.openlocfilehash: a3783abfa8c17d90757731edef68cf88d5934f61
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191644"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534230"
 ---
 # <a name="power-bi-premium-per-user-faq-preview"></a>Power BI Premium Per User に関する FAQ (プレビュー)
 
@@ -37,11 +37,11 @@ Power BI **Premium Per User** を使用することで、組織はユーザー�
 
 2.  **いつ購入できるようになりますか?**
 
-    開発が続けられており、2021 年までに PPU が GA にリリースされることはないものと予想されます。 一般提供までは、すべての組織がパブリック プレビューを無料で利用できます。
+    Premium Per User は、2021 年 4 月 2 日に一般提供される予定です。 
 
 3.  **Power BI Pro と Premium Per User の両方のライセンスが必要ですか?**
 
-    いいえ、Premium Per User ライセンスで、Power BI Pro のすべての機能を利用できます。
+    スタンドアロンの Premium Per User ライセンスを $20 でご購入いただいた場合、Pro と PPU の両方の機能が提供されるため、個別の Pro ライセンスは必要ありません。  スタンドアロン購入または Office 365 E5 のいずれかを通じて既に Pro ライセンスをお持ちの場合は、お客様のアカウントに Premium Per User 機能を追加するだけの Premium Per User アドオン SKU を $10 でご購入いただけます。  
 
 4.  **試用版を入手するにはどうすればよいですか?**
 
@@ -133,7 +133,7 @@ Power BI **Premium Per User** を使用することで、組織はユーザー�
 
 7.  **エクスポート API を Premium Per User で使用できますか?**
 
-    現在、これはページ分割されたレポートで使用でき、5 分ごとに 1 回の呼び出しに制限されます。  Power BI レポートは現時点ではサポートされていません。  
+    現在、これはページ分割されたレポートで使用でき、ユーザーごとに 5 分あたり 1 回の呼び出しに制限されます。  Power BI レポートは現時点ではサポートされていません。  
 
 8.  **PPU では電子メール サブスクリプションはどのように機能しますか?**
 
@@ -161,7 +161,7 @@ Power BI **Premium Per User** を使用することで、組織はユーザー�
 
 14. **Premium Per User ワークスペースでデータフローを実行し、別のワークスペースの Power BI データセットにインポートして、Premium Per User ライセンスを持たないユーザーがそのコンテンツを使用できるようにすることはできますか?**
 
-    Power BI レポートの作成者が Premium Per User のライセンスを持っている限り、PPU のプレビュー期間中はこれが可能です。
+    いいえ、このアクションはサポートされていません。
 
 15. **Premium Per User で Power BI モバイル アプリを使用できますか?**
 

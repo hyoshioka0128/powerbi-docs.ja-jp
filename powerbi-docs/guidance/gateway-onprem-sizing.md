@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/30/2019
-ms.openlocfilehash: 35630891a66b9aed0b9e568d8e34180e3ee41544
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: d9021760cd8e6a324b3b5aff20357d6a7aca428a
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99088398"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843943"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>オンプレミス データ ゲートウェイのサイズ設定
 
@@ -91,7 +91,7 @@ Power BI サービスとゲートウェイ間と、ゲートウェイとデー�
 
 ### <a name="clustering"></a>クラスタリング
 
-大規模な展開では、クラスター インストールのゲートウェイを作成できます。 複数のクラスターによって単一障害点を回避し、ゲートウェイ全体でトラフィックを負荷分散することができます。 次の操作を実行できます。
+大規模な展開の場合は、複数のクラスター メンバーを持つゲートウェイを作成できます。 複数のクラスターによって単一障害点を回避し、ゲートウェイ全体でトラフィックを負荷分散することができます。 次の操作を実行できます。
 
 - クラスターに 1 つ以上のゲートウェイをインストールする
 - スタンドアロン ゲートウェイ、またはゲートウェイ サーバーのクラスターにワークロードを分離する

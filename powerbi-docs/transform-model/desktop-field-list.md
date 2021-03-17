@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 02/25/2021
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ced861f0d229153866c1d52616494f8b444220ae
-ms.sourcegitcommit: 8993400b32a44f4e7ce9a2db998ddebda18c7698
+ms.openlocfilehash: d5387cc83291206b99b9816dcf7f7920b0d91879
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96536486"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101841735"
 ---
 # <a name="using-the-field-list-in-power-bi-desktop-preview"></a>Power BI Desktop のフィールド一覧の使用 (プレビュー)
 
-2020 年 11 月の更新プログラム以降、Power BI Desktop のモデル ビュー、データ ビュー、レポート ビューのすべてで **フィールド** 一覧を統一する作業が行われています。 これらのビューを統一することで、ビュー全体の機能とユーザー インターフェイス (UI) が一貫したものになり、お客様からのフィードバックに対処されます。
+**フィールド** 一覧は、Power BI Desktop のモデル ビュー、データ ビュー、レポート ビュー間で統一されます。 これらのビューを統一することで、ビュー全体の機能とユーザー インターフェイス (UI) が一貫したものになり、お客様からのフィードバックに対処されます。
 
 ビューに関する変更点は次のとおりです。
 
@@ -33,7 +33,7 @@ ms.locfileid: "96536486"
 
 ## <a name="enabling-the-new-field-list-preview"></a>新しいフィールド一覧の有効化 (プレビュー)
 
-統合フィールド一覧は **[モデル]** ビューで開始し、その後、他のビューで有効になります。 統合フィールド ビューを有効にするには、Power BI Desktop で **[ファイル] > [オプションと設定] > [オプション]** に移動し、左側のペインで **[プレビュー機能]** を選択します。 [プレビュー機能] セクションで、 **[New field list]\(新しいフィールド一覧\)** の横にあるチェック ボックスをオンにします。
+統一されたフィールド一覧は、**モデル** ビュー、**レポート** ビュー、および **データ** ビューで使用できます。 統合フィールド ビューを有効にするには、Power BI Desktop で **[ファイル] > [オプションと設定] > [オプション]** に移動し、左側のペインで **[プレビュー機能]** を選択します。 [プレビュー機能] セクションで、 **[New field list]\(新しいフィールド一覧\)** の横にあるチェック ボックスをオンにします。
 
 ![新しいフィールド一覧を有効にする](media/desktop-field-list/field-list-01.png)
 

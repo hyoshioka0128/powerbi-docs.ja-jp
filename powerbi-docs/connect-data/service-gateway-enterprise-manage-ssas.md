@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8cc8149d7b143dc0f100a8d7718343b9f668a294
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5dbe8014767074d8e98d79c6fd7f837ac2b091c5
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410346"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101841666"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>データ ソースの管理 - Analysis Services
 
@@ -27,6 +27,9 @@ Analysis Services へのライブ接続を設定する方法の詳細につい�
 > [!NOTE]
 > Analysis Services データ ソースを持っている場合は、Analysis Services サーバーと同じフォレスト/ドメインに結合されているコンピューターにゲートウェイをインストールする必要があります。
 
+> [!NOTE]
+> ゲートウェイでは、Analysis Services 用の Windows 認証のみがサポートされています。
+
 ## <a name="add-a-data-source"></a>データ ソースの追加
 
 データ ソースを追加する方法の詳細については、「[Add a data source](service-gateway-data-sources.md#add-a-data-source)」(データソースの追加) を参照してください。 多次元サーバーまたは表形式サーバーに接続している場合は、 **[データ ソースの種類]** として **[Analysis Services]** を選択します。
@@ -37,6 +40,7 @@ Analysis Services へのライブ接続を設定する方法の詳細につい�
 
 > [!NOTE]
 > 入力する Windows アカウントは、接続先の Analysis Services インスタンスのサーバー管理者ロールのメンバーとする必要があります。 このアカウントのパスワードに有効期限が設定されている場合、データ ソースのパスワードが更新されないと、接続エラーになることがあります。 資格情報の格納方法の詳細については、「[暗号化された資格情報をクラウドに格納する](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud)」を参照してください。
+
 
 ![データ ソース設定の入力](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 

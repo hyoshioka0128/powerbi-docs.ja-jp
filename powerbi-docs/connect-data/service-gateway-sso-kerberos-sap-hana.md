@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 12/16/2020
+ms.date: 03/02/2021
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3f50b174e8293d75a0077e1799cb64ff4fdcd696
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: 1e71b57bbed43ca7b3412d615efb0c469ba0449d
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97675122"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842802"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>SAP HANA への シングル サインオン (SSO) に Kerberos を使用する
 
@@ -52,6 +52,113 @@ SAP HANA に対する SSO を有効にするには、次の手順のようにし
     ```
 
 次に、[Power BI レポートを実行します](service-gateway-sso-kerberos.md#run-a-power-bi-report)。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+このセクションでは、Power BI サービスで SAP HANA へのシングル サインオン (SSO) を利用するために Kerberos を使用する場合のトラブルシューティング手順について詳しく説明します。 これらのトラブルシューティング手順は、発生している可能性のある問題を自己診断し、修正するのに役立ちます。
+
+### <a name="verifying-and-troubleshooting-gateway-errors"></a>ゲートウェイ エラーの検証とトラブルシューティング
+
+このセクションの手順を実行するには、[ゲートウェイ ログを収集する](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app)必要があります。
+
+#### <a name="ssl-error-certificate"></a>SSL エラー (証明書)
+
+**エラーの症状:**
+
+この問題には複数の症状があります。 新しいデータ ソースを追加しようとする際には、次のようなエラーが表示される場合があります。
+
+```Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."```
+
+レポートを作成または更新しようとする際には、次のような内容が表示される場合があります。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="SSL エラーのトラブルシューティングを行うウィンドウ":::
+
+Mashup[date]*.log を調べると、次のエラーが見つかります。
+
+```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted.```
+
+**解決策:**
+
+この SSL エラーを解決するには、次の図のように、データ ソース接続にアクセスし、 **[サーバー証明書の検証]** を **[いいえ]** に設定します。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-02.png" alt-text="SSL エラーを解決するウィンドウ":::
+
+これを選択すると、エラーは表示されなくなります。
+
+#### <a name="impersonation"></a>権限借用
+
+権限借用のログ エントリには、次のようなエントリが含まれます: ```About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation).``` 
+
+このログ エントリの重要な要素は、*ImpersonationLevel:* エントリの後の情報です。 *Impersonation* 以外の値が指定されている場合は、権限借用が正しく行われていないということになります。
+
+**解決策:**
+
+「[ゲートウェイ コンピューターでゲートウェイ サービス アカウントのローカル ポリシー権限を付与する](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)」の手順に従うことで、ImpersonationLevel を適切に設定できます。
+
+構成ファイルが変更されたら、ゲートウェイ サービスを再起動して変更を有効にします。
+
+**検証:**
+
+レポートを更新または作成し、ゲートウェイ ログを収集します。 直近の *GatewayInfo* ファイルを開き、次の文字列を確認します: ```About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)```。 *ImpersonationLevel:* の設定が *Impersonation* になっていることを確認します。
+
+
+#### <a name="delegation"></a>委任
+通常、委任の問題は、Power BI サービスで一般的なエラーとして表示されます。 問題が委任の問題でないことを確認するには、Wireshark トレースを収集し、フィルターとして *Kerberos* を使用します。 Wireshark の詳細と、Kerberos エラーの詳細については、[ネットワーク キャプチャでの Kerberos エラーに関するブログ記事](https://docs.microsoft.com/archive/blogs/askds/kerberos-errors-in-network-captures)を参照してください。
+
+次の症状とトラブルシューティング手順は、いくつかの一般的な問題を解決するのに役立ちます。
+
+**サービス プリンシパル名 (SPN) に関する問題:** SPN の問題が発生した場合、Mashup[date]*.log を調べると、次のエラーが見つかります: ```The import [table] matches no exports. Did you miss a module reference?:```
+
+WireShark トレースを使用してさらに調査すると、**KRB4KDC_ERR_S_PRINCIPAL_UNKOWN** というエラーが確認できます。これは、サービス プリンシパル名 (SPN) が見つからなかったか、または存在しないことを意味します。 次に例を示します。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" alt-text="SPN エラー":::
+
+**解決策:**
+
+このようなサービス プリンシパル名 (SPN) の問題を解決するには、サービス アカウントに SPN を追加する必要があります。 詳細については、[こちらの SAP 記事](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html)に記載されている SAP ドキュメントを参照してください。
+
+それらの手順を実行することに加えて、次のセクションで説明されている解決手順も実行してください。また、次のセクションで説明するように、「**資格情報が見つからない問題**」セクションの症状にも対処する必要があります。
+
+**資格情報が見つからない問題:** この問題に関しては、明らかな症状が現れない可能性があります。 Mashup[date]*.log を調べると、次のエラーが見つかります。
+
+```29T20:21:34.6679184Z","Action":"RemoteDocumentEvaluator/RemoteEvaluation/HandleException","HostProcessId":"1396","identity":"DirectQueryPool","Exception":"Exception:\r\nExceptionType: Microsoft.Mashup.Engine1.Runtime.ValueException, Microsoft.MashupEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\r\nMessage:```
+
+同じファイルについてさらに詳しく調べると、次の (役に立たない) エラーが見つかります: ```No credentials are available in the security package```
+
+Wireshark トレースをキャプチャすると、次のエラーが見つかります: *KRB5KDC_ERR_BADOPTION*。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png" alt-text="資格情報が見つからないエラー":::
+
+通常、これらのエラーは、SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azure.com* が見つかるものの、ゲートウェイ サービス アカウントの **[委任]** タブにある **[このアカウントが委任された資格情報を提示できるサービス]** に含まれていないことを意味しています。
+
+**解決策:**
+
+*資格情報が見つからない* 問題を解決するには、「[標準の Kerberos の制約付き委任用にゲートウェイ サービス アカウントを構成する](service-gateway-sso-kerberos.md#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation)」で説明されている手順に従います。 正常に完了すると、ゲートウェイ サービス アカウントの [委任] タブで、 **[このアカウントが委任された資格情報を提示できるサービス]** の一覧に hdb/fqdn が反映されます。
+
+
+**検証:** 前の手順を実行すると、問題が解決されます。 それでも Kerberos の問題が発生する場合は、**Power BI ゲートウェイ** か、HANA サーバー自体で構成が間違っている可能性があります。 
+
+#### <a name="credentials-errors"></a>資格情報のエラー
+資格情報エラーが発生した場合は、ログまたはトレースのエラーで、"*資格情報が無効*" であることを示すエラーか、または類似のエラーが示されます。 これらのエラーは、接続のデータ ソース側 (SAP HANA など) では異なるかたちで示される場合があります。 次の画像は、エラーの例を示したものです。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-09.png" alt-text="無効な資格情報エラー":::
+
+**症状 1**: HANA 認証トレースに、次のようなエントリが見つかる場合があります。
+
+```[Authentication|manager.cpp:166] Kerberos: Using Service Principal Name johnny@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME [Authentication|methodgssinitiator.cpp:367] Got principal name: johnny@CONTOSO.COM```
+
+**解決方法**: 「[ゲートウェイ マシンでユーザー マッピングの構成パラメーターを設定する (必要な場合)](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine-if-necessary)」で説明されている手順を実行します (**Azure AD Connect** サービスが既に構成されている場合でも実行してください)。
+
+**検証**: 正常に完了すると、Power BI サービスでレポートを正常に読み込めるようになります。
+
+**症状 2**: HANA 認証トレースに、次のようなエントリが見つかる場合があります。
+
+```Authentication ManagerAcceptor.cpp(00233) : Extending list of expected external names by johnny@CONTOSO.COM (method: GSS) Authentication AuthenticationInfo.cpp(00168) : ENTER getAuthenticationInfo (externalName=johnny@CONTOSO.COM) Authentication AuthenticationInfo.cpp(00237) : Found no user with expected external name!```
+
+**解決方法**: **[HANA ユーザー]** で Kerberos 外部 ID をチェックして、それらが適切に一致しているかどうかを確認します。
+
+**検証**: 修正されると、Power BI サービスでレポートを作成または更新できるようになります。
+
 
 ## <a name="next-steps"></a>次の手順
 

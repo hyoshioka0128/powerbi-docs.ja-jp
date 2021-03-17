@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 12/08/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 661e50617094d396e8beb887ac0e4a27c28c2ca7
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: d240cacaa7aeb02e5ebe8dc05b4781fb104c27bc
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906992"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843414"
 ---
 # <a name="using-enhanced-dataset-metadata"></a>拡張データセット メタデータの使用
 
@@ -27,6 +27,9 @@ Power BI Desktop によってレポートが作成されると、対応する PB
 
 - Power BI データセットを管理するための [XMLA の読み取り/書き込み](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite)
 - 次世代の機能を活用するための、Analysis Services ワークロードから Power BI への移行。
+
+## <a name="upgrade"></a>アップグレード
+レポートは、最新バージョンの Power BI Desktop で開くと、拡張メタデータ形式へと自動的にアップグレードされます。 未適用のクエリ変更があるレポートを保存した場合や、自動アップグレード中にエラーが発生した場合は、アップグレードが必要であることを示す警告がレポート キャンバスに表示されます。 [レポートのアップグレード] をクリックすると、保留中の変更が適用され、データ モデルが新しい形式にアップグレードされます。 
 
 ## <a name="limitations"></a>制限事項
 SQL Server、Oracle、Teradata、従来の HANA の各接続に対して拡張メタデータをサポートする前に、Power BI Desktop によってデータ モデルがネイティブ クエリに追加されています。 このクエリは Power BI サービス データ モデルによって使用されます。 拡張メタデータ サポートを使用すると、Power BI サービス データ モデルによって実行時にネイティブ クエリが再生成されます。 Power BI Desktop によって作成されたクエリは使用されません。 ほとんどの場合、この取得は自動的に正しく解決されますが、一部の変換は、基になるデータを読み取らないと機能しません。 以前は機能していたレポートでも、いくつかのエラーが表示される場合があります。 たとえば、次のようなエラーが発生します。 

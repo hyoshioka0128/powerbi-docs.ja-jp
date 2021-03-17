@@ -8,19 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2021
-ms.openlocfilehash: fbd43600e67e4ac544df65bba6d9d2072293132d
-ms.sourcegitcommit: 7e0cc3b1ed9cf38da134ef7221648cb758ceea98
+ms.openlocfilehash: dd2cfda966efce86b302e32a24e0342c8c9532d4
+ms.sourcegitcommit: b4ebd259fc8676b8c535ae1c2bb9d19c08c463dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100100858"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102253005"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
 
 * [モバイル アプリ向けの Power BI チームのブログ](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [Power BI Desktop の新機能](../../fundamentals/desktop-latest-update.md)  
-* [Power BI サービスの新機能](../../fundamentals/service-whats-new.md)
+* [Power BI の新機能](../../fundamentals/desktop-latest-update.md)  
 
 >[!NOTE]
 >**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)

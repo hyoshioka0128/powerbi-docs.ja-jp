@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/30/2020
+ms.date: 03/3/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: 06cd73aa86fdef58ea77b54305af300b1adb62d7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c4ea9b764c52ecd5bceb1f4890a73b8f5a495d7e
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412761"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102196015"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Power BI Desktop での列による並べ替え
 Power BI Desktop と Power BI サービスでは、さまざまなデータ フィールドを並べ替えることで視覚効果を変更できます。 並べ替えで視覚化を変更することで、伝えたい情報を強調でき、その傾向 (あるいは強調したい点) を視覚化に反映させることができます。
@@ -69,24 +69,20 @@ Power BI Desktop と Power BI サービスでは、さまざまなデータ フ�
 ![SalesQuantity で並べ替え](media/desktop-sort-by-column/sortbycolumn_6.png)
 
 ## <a name="sort-using-the-sort-by-column-button"></a>[列で並べ替え] ボタンを使用して並び替える
-ご利用のデータの並べ替えには別の方法があります。 **[モデリング]** リボンの **[列で並べ替え]** ボタンを使用するというものです。
+データを並べ替える別の方法として、 **[列ツール]** タブの **[列で並べ替え]** を使用する方法があります。
 
-![[列で並べ替え] ボタン](media/desktop-sort-by-column/sortbycolumn_8.png)
+![[列で並べ替え] ボタン](media/desktop-sort-by-column/power-bi-column-tools.png)
 
-この並べ替えのアプローチでは、 **[フィールド]** ペインから、並べ替える列 (フィールド) をまず選択し、次に **[モデリング]**  >  **[列で並べ替え]** の順に選択することで、ご利用のビジュアルを並べ替える必要があります。 列を選択しない場合、 **[列で並べ替え]** ボタンは非アクティブになります。
+この並べ替えのアプローチでは、 **[フィールド]** ペインから、並べ替える列 (フィールド) をまず選択し、次に **[列ツール]**  >  **[列で並べ替え]** の順に選択することで、ご利用の視覚化を並べ替える必要があります。 最初に **[フィールド]** ペインから列を選択しなかった場合は、 **[列で並べ替え]** ボタンが非アクティブになります。
 
-一般的な例を見てみましょう。 年の各月のデータがあり、このデータを時系列に基づいて並べ替えるとします。 次の手順は、その方法を示しています。
+一般的な例を見てみましょう。 1 年間の月ごとのデータがあって、それらが現在、四半期を基準に並べられているとします。 これを、時系列の順序に並べ替えたいと思います。 次の手順は、その方法を示しています。
 
-1. ビジュアルは選択されているが、 **[フィールド]** ペインで列が選択されていない場合、 **[列で並べ替え]** ボタンが非アクティブ (灰色表示) になっていることに注目してください。
+1. **[フィールド]** ペインで、並べ替えの基準となる列を選択すると、 **[列で並べ替え]** ボタンがアクティブになります。 この例の場合、視覚化は **Month** フィールドの **四半期** 順で並べられています。
    
-   ![[列で並べ替え] ボタンが無効](media/desktop-sort-by-column/sortbycolumn_9.png)
-
-2. **[フィールド]** ウィンドウで、並べ替える列を選択すると、 **[列で並べ替え]** ボタンがアクティブになります。
+   ![[列で並べ替え] ボタンが有効](media/desktop-sort-by-column/power-bi-sort.png)    
+3. 次に、視覚化が選択された状態で **[MonthNo]** を選択すると、視覚化が目的の順序 (年の月順) に並べ替えられます。
    
-   ![[列で並べ替え] ボタンが有効](media/desktop-sort-by-column/sortbycolumn_10.png)
-3. 次に、ビジュアルが選択された状態で、既定値の **[MonthName]** ではなく、 **[MonthOfYear]** を選択します。これにより、ビジュアルは目的の順序 (年の月順) に並べ替えられます。
-   
-   ![[列で並べ替え] メニュー](media/desktop-sort-by-column/sortbycolumn_11.png)
+   ![[列で並べ替え] メニュー](media/desktop-sort-by-column/power-bi-new-sort.png)
 
 
 <!---

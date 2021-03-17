@@ -3,18 +3,18 @@ title: クラシック ワークスペースを新しいワークスペースに
 description: クラシック ワークスペースを新しいワークスペース エクスペリエンスにアップグレードする方法について説明します。 任意のワークスペースをアップグレードできますが、一部の変更については注意と計画が必要です。
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: lukaszp
+ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 02/24/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: f5a76783d91da610a447667a9ea648bbcebbdc8b
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: 4bfca6baa951116526d88f89bceeeefac8e1a842
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96577626"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843529"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Power BI でクラシック ワークスペースを新しいワークスペースにアップグレードする
 
@@ -214,6 +214,8 @@ Microsoft 365 グループにはワークスペースでロールが与えられ
 - "モデルを読み込めませんでした" という警告ダイアログが表示されることがあります。 このメッセージは誤表示であり、無視してかまいません。 
 - アップグレード後、一部のワークスペース名がアップグレード前と変わります。 この場合、ワークスペース名は以前のワークスペース名に戻ったか、空になります。 この問題は、ワークスペースの名前を希望の名前に変更することで解決します。
 - コンテンツ パックがインストールされたワークスペースに、アップグレード前には表示されていなかったダッシュボードが追加されていることがあります。 この場合、コンテンツ パックが最近更新されていない可能性があります。 そのようなダッシュボードは安全に削除できます。
+- ワークスペースの管理者が最近 (過去 14 日間) Power BI にアクセスしていない場合は、アップグレードが失敗する可能性があります。 アップグレードを試みる前に、ワークスペースの管理者に Power BI へアクセスしてもらうか、別の管理者に変更してください。
+- ワークスペースに関連付けられているグループに Azure Active Directory または Microsoft 365 のグループ所有者がいない場合は、アップグレードが失敗する可能性があります。 アップグレードする前に、Azure Active Directory または Microsoft 365 でグループ所有者を割り当ててください。
 
 ## <a name="next-steps"></a>次の手順
 

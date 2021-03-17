@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/01/2020
-ms.openlocfilehash: 1ca4db3ad43553521c55866fd16b2440e3b64a65
-ms.sourcegitcommit: 73ca86f7633317fe3831839c4dd14a333b2f514c
+ms.date: 03/08/2021
+ms.openlocfilehash: cb3720eb2a57cdf72485fa038d1f4b441d0556e4
+ms.sourcegitcommit: 0eaddc9b25535ae806023f4aa710b03fd344d1fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "97979955"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102490062"
 ---
 # <a name="power-bi-webinars"></a>Power BI ウェビナー
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) は Chauncy Freels と業務提携するベンダーであり、このウェビナー リストの維持を手伝っています"
@@ -21,6 +21,14 @@ ms.locfileid: "97979955"
 今後のウェビナーに登録するか、記録されたオンデマンド セッションをご覧ください。
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー
+
+**ウェビナー シリーズ: Power BI を使用したデータ モデリングの習得エピソード 1 - データ モデリング 101: Power BI の影響の拡大**  
+作成者: Jeroen ter Heerdt および Marc Lelijveld  
+[3 月 17 日 10AM-11AM PST に視聴できるように登録する](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html?LCID=EN-US)
+
+**Power BI を操作するためのクイックスタート ガイド**  
+作成者: Miguel Martinez  
+[3 月 24 日 10AM-11AM PST に視聴できるように登録する]( https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html?LCID=EN-US)  
 
 [Power BI コミュニティからの今後のウェビナー](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -38,7 +46,7 @@ ms.locfileid: "97979955"
 
 **Power BI と Microsoft Teams を使用してリモート データ カルチャを推進する**  
 作成者: Lukasz Pawlowski  
-[ビデオを見る](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html)
+[今すぐ見る](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html)
 
 **組み合わせて、もっと便利に:Excel ユーザーが Power BI を使用することで得られる 5 つのメリット**  
 作成者: Miguel Martinez、Carlos Otero  
@@ -57,7 +65,7 @@ ms.locfileid: "97979955"
 
 **BI コンテンツ管理のベスト プラクティスでユーザーの満足度を大幅に上げる**  
 作成者: Nimrod Shalit  
-[ビデオを見る](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html)
+[今すぐ見る](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html)
 
 **分析情報からアクションへ:Power BI を使用したデータ カルチャの推進**  
 作成者: Arun Ulagaratchagan、Amir Netz  
@@ -65,7 +73,7 @@ ms.locfileid: "97979955"
 
 **Power BI Embedded でより優れた分析を実現する**  
 作成者: Alon Baram  
-[ビデオを見る](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html)
+[今すぐ見る](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html)
 
 **マイアミ・ヒートが Power BI 使用してビジネス上の意思決定を推進した方法**  
 作成者: Edson Crevecoeur、Frank Mesa、Xinrou Tan  

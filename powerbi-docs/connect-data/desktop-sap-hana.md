@@ -10,12 +10,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 708a4439262111954012c944a464dd8e59db8068
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 82fe68fcc817a194fa124fe25183fd06b650da73
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404458"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195885"
 ---
 # <a name="connect-to-sap-hana-databases-in-power-bi"></a>Power BI で SAP HANA データベースに接続する
 
@@ -53,7 +53,10 @@ SAP HANA データベースに接続する場合、サーバー名を指定し�
   
     第 1 に、HDI コンテナー ベースの計算ビューの共有列に HANA 変数を適用することはできません。 この制限を解消するには、HANA 2 バージョン 37.02 以降または HANA 2 バージョン 42 以降にアップグレードします。 第 2 に、現在、変数およびパラメーターに対する複数エントリの既定値は、Power BI UI に表示されません。 この制限は SAP HANA のエラーによるものですが、SAP はまだ修正を発表していません。
 
-## <a name="limitations-of-sap-hana"></a>SAP HANA の制限
+## <a name="limitations-and-troubleshooting-of-sap-hana"></a>SAP HANA の制限事項とトラブルシューティング
+
+SAP HANA を Visual Studio と共に使用する場合は、互換性のあるバージョンがインストールされていることを確認してください。  たとえば、Visual Studio 32 ビットを使用する場合は、HANA クライアント 32 ビットもインストールされていることを確認してください。
+
 
 SAP HANA を使用する場合、次に示すいくつかの制限があります。
 

@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/08/2020
-ms.openlocfilehash: 5f337197655d41b830b237c04faa2642991c34ee
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.date: 02/08/2021
+ms.openlocfilehash: adf8ddf5621ec6d8e0c281cfc690d237d2cbd6b5
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969813"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101841436"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>認定済みの Power BI ビジュアルを取得する
 
@@ -151,33 +151,40 @@ Power BI ビジュアルは、認定されると、認定を受けたことを�
 
 ## <a name="publication-timeline"></a>パブリケーション タイムライン
 
-AppSource への配置は、時間がかかる可能性のあるプロセスです。 このプロセスが完了すると、Power BI ビジュアルが AppSource からダウンロードできるようになります。
+AppSource への配置は、時間がかかる可能性のあるプロセスです。
+このプロセスが完了すると、Power BI ビジュアルが AppSource からダウンロードできるようになります。
 
 ### <a name="when-will-users-be-able-to-download-my-visual"></a>ユーザーはいつビジュアルをダウンロードできますか。
 
 * 初めて Power BI ビジュアルを送信した場合、AppSource から電子メールを受信してから数時間後にユーザーがダウンロードできるようになります。
 
-* 既存の Power BI ビジュアルに更新を送信した場合、ユーザーは送信から 1 か月以内にダウンロードできるようになります。
+* 既存の Power BI 視覚エフェクトに更新を送信した場合、ユーザーは送信から 2 週間以内にダウンロードできるようになります。
 
     >[!NOTE]
-    > AppSource の *[バージョン]* フィールドは、Power BI が AppSource によって承認された日に更新されます。これは、ビジュアルの送信後約 1 週間です。 ユーザーは更新されたビジュアルをダウンロードできますが、更新された機能は有効になりません。 ビジュアルの新機能は、約 1 か月後にユーザーのレポートに影響を与えます。 
+    > AppSource の *[バージョン]* フィールドは、Power BI が AppSource によって承認された日に更新されます。これは、ビジュアルの送信後約 1 週間です。 ユーザーは更新されたビジュアルをダウンロードできますが、更新された機能は有効になりません。 視覚化の新機能は、約 2 週間後にユーザーのレポートに影響を与えます。
 
 ### <a name="when-will-my-power-bi-visual-display-a-certification-badge"></a>Power BI ビジュアルに証明書バッジが表示されるのはいつですか。
 
 * Power BI ビジュアルを初めて送信した場合は、AppSource から承認メールを受け取った日から 1 日以内に証明書バッジが表示されます。
 
-* 既存の Power BI ビジュアルの認定を要求している場合、証明書バッジは送信から 1 か月以内に表示されます。
+* 既存の Power BI 視覚エフェクトの認定を要求している場合、証明書バッジは送信から 2 週間以内に表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-* Power BI の独自の視覚化を作成して  [Microsoft AppSource](https://appsource.microsoft.com) に追加することに関心がある Web 開発者は、 [Power BI の円形カード視覚化の開発](develop-circle-card.md)に関するチュートリアルから始めてください。
+>[!div class="nextstepaction"]
+>[Power BI サークル カード視覚化の開発](develop-circle-card.md)のチュートリアル。
 
-* ビジュアルについて詳しくは、[認定済みのビジュアルに関してよく寄せられる質問](power-bi-custom-visuals-faq.md#certified-power-bi-visuals)に関する記事をご覧ください。
+>[!div class="nextstepaction"]
+>[認定済み視覚化に関してよく寄せられる質問](power-bi-custom-visuals-faq.md#certified-power-bi-visuals)。
 
-* [YouTube での Microsoft の Power BI ビジュアル プレイリスト](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
+>[!div class="nextstepaction"]
+>[YouTube での Microsoft の Power BI ビジュアル プレイリスト](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
-* [Power BI のビジュアル](power-bi-custom-visuals.md)
+>[!div class="nextstepaction"]
+[Power BI のビジュアル](power-bi-custom-visuals.md)
 
-* [Microsoft AppSource に Power BI ビジュアルを発行する](office-store.md)
+>[!div class="nextstepaction"]
+>[Microsoft AppSource に Power BI ビジュアルを発行する](office-store.md)
 
-* 他にわからないことがある場合は、 [Power BI コミュニティを利用してください](https://community.powerbi.com/)。
+>[!div class="nextstepaction"]
+>[Power BI コミュニティを利用してください](https://community.powerbi.com/)。

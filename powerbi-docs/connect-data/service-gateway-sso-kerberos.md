@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 02/20/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 598b41362cb510f8e5bbc60c7ca263c57fa0403e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 73b0e853d5aba0f7581e5efb9c8f6e2076f6c76c
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859798"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843920"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Power BI サービスからオンプレミス データ ソースへの Kerberos ベースの SSO を構成する
 
@@ -24,13 +24,17 @@ SSO を有効にすると、Power BI レポートおよびダッシュボード�
 
 Kerberos の制約付き委任が正しく機能するためには、"_サービス プリンシパル名 (SPN)_ " やサービス アカウントでの委任の設定など、いくつかの項目を構成する必要があります。
 
+> [!NOTE]
+> SSO での DNS エイリアスの使用はサポートされていません。
+
+
 ### <a name="install-and-configure-the-microsoft-on-premises-data-gateway"></a>Microsoft オンプレミス データ ゲートウェイをインストールして構成する
 
 オンプレミス データ ゲートウェイでは、インプレース アップグレードと、既存のゲートウェイの "_引き継ぎの設定_" がサポートされています。
 
 ### <a name="run-the-gateway-windows-service-as-a-domain-account"></a>ゲートウェイの Windows サービスをドメイン アカウントとして実行する
 
-標準のインストールでは、ゲートウェイは、マシンのローカル サービス アカウント **NT Service\PBIEgwService**として実行されます。
+標準のインストールでは、ゲートウェイは、マシンのローカル サービス アカウント **NT Service\PBIEgwService** として実行されます。
 
 ![マシンのローカル サービス アカウント](media/service-gateway-sso-kerberos/service-account.png)
 
@@ -53,9 +57,9 @@ SPN と Kerberos 委任の設定を構成するために、ドメイン管理者
 
 1. ドメイン管理者として、Microsoft 管理コンソール (MMC) スナップインの **[Active Directory ユーザーとコンピューター]** を起動します。
 
-2. 左側のペインでドメイン名を右クリックし、 **[検索]** を選択して、ゲートウェイ サービス アカウントのアカウント名を入力します。
+2. 左側のペインでドメイン名を右クリックし、**[検索]** を選択して、ゲートウェイ サービス アカウントのアカウント名を入力します。
 
-3. 検索結果で、ゲートウェイ サービス アカウントを右クリックし、 **[プロパティ]** を選択します。
+3. 検索結果で、ゲートウェイ サービス アカウントを右クリックし、**[プロパティ]** を選択します。
 
 4. **[委任]** タブが **[プロパティ]** ダイアログに表示される場合は、SPN は既に作成されているため、「[使用する Kerberos の制約付き委任の種類を決定する](#decide-on-the-type-of-kerberos-constrained-delegation-to-use)」に進むことができます。
 
@@ -65,7 +69,7 @@ SPN と Kerberos 委任の設定を構成するために、ドメイン管理者
 
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
-   また、 **[Active Directory ユーザーとコンピューター]** MMC スナップインを使用して、SPN を設定することもできます。
+   また、**[Active Directory ユーザーとコンピューター]** MMC スナップインを使用して、SPN を設定することもできます。
    
 ### <a name="add-gateway-service-account-to-windows-authorization-and-access-group-if-required"></a>必要に応じて Windows 認証およびアクセス グループにゲートウェイ サービス アカウントを追加する
 
@@ -76,9 +80,9 @@ SPN と Kerberos 委任の設定を構成するために、ドメイン管理者
 この構成手順を完了するには、ゲートウェイ サービス アカウントを偽装できるようにする Active Directory ユーザーが含まれるドメインごとに、次の手順を実行します。
 1. ドメイン内のコンピューターにサインインし、Active Directory ユーザーとコンピューター MMC スナップインを起動します。
 2. **[Windows Authorization and Access Group]\(Windows 認証およびアクセス グループ\)** グループを見つけます。これは、通常は、**Builtin** コンテナー内にあります。
-3. グループをダブルクリックし、 **[メンバー]** タブをクリックします。
+3. グループをダブルクリックし、**[メンバー]** タブをクリックします。
 4. **[追加]** をクリックし、ドメインの場所をゲートウェイ サービス アカウントが存在するドメインに変更します。
-5. ゲートウェイ サービス アカウント名を入力し、 **[名前の確認]** をクリックして、そのゲートウェイ サービス アカウントにアクセスできることを確認します。
+5. ゲートウェイ サービス アカウント名を入力し、**[名前の確認]** をクリックして、そのゲートウェイ サービス アカウントにアクセスできることを確認します。
 6. **[OK]** をクリックします。
 7. **[適用]** をクリックします。
 8. ゲートウェイ サービスを再起動します。
@@ -105,16 +109,16 @@ SPN と Kerberos 委任の設定を構成するために、ドメイン管理者
 次の手順では、同じドメイン内に次の 2 台のコンピューターがあるオンプレミス環境を想定しています: ゲートウェイ コンピューターと、Kerberos ベースの SSO に対して構成済みの SQL Server が実行されているデータベース サーバー。 この手順は、データ ソースが Kerberos ベースのシングルサインオン用に既に構成されている場合に限り、サポートされている他のデータ ソースの 1 つに対して使用できます。 この例では、次の設定を使用します。
 
 * Active Directory ドメイン (Netbios): **Contoso**
-* ゲートウェイ コンピューターの名前:**MyGatewayMachine**
-* ゲートウェイ サービス アカウント:**Contoso\GatewaySvc**
-* SQL Server データ ソースのコンピューター名:**TestSQLServer**
-* SQL Server データ ソースのサービス アカウント:**Contoso\SQLService**
+* ゲートウェイ コンピューター名: **MyGatewayMachine**
+* ゲートウェイ サービス アカウント: **Contoso\GatewaySvc**
+* SQL Server データ ソースのコンピューター名: **TestSQLServer**
+* SQL Server データ ソースのサービス アカウント: **Contoso\SQLService**
 
 委任設定を構成する方法を次に示します。
 
-1. ドメイン管理者権限で、 **[Active Directory ユーザーとコンピューター]** MMC スナップインを開きます。
+1. ドメイン管理者権限で、**[Active Directory ユーザーとコンピューター]** MMC スナップインを開きます。
 
-2. ゲートウェイのサービス アカウント (**Contoso\GatewaySvc**) を右クリックし、 **[プロパティ]** を選択します。
+2. ゲートウェイのサービス アカウント (**Contoso\GatewaySvc**) を右クリックし、**[プロパティ]** を選択します。
 
 3. **[委任]** タブを選びます。
 
@@ -122,9 +126,9 @@ SPN と Kerberos 委任の設定を構成するために、ドメイン管理者
 
 5. **[このアカウントが委任された資格情報を提示できるサービス]** で **[追加]** を選択します。
 
-6. 新しいダイアログ ボックスで、 **[ユーザーまたはコンピューター]** を選びます。
+6. 新しいダイアログ ボックスで、**[ユーザーまたはコンピューター]** を選びます。
 
-7. データ ソースのサービス アカウントを入力し、 **[OK]** を選択します。
+7. データ ソースのサービス アカウントを入力し、**[OK]** を選択します。
 
    たとえば、SQL Server データ ソースには、*Contoso\SQLService* のようなサービス アカウントを設定できます。 このアカウントには、データ ソース用に適切な SPN が既に設定されている必要があります。 
 
@@ -151,10 +155,10 @@ SPN と Kerberos 委任の設定を構成するために、ドメイン管理者
 
 * Active Directory フロントエンド ドメイン (Netbios): **ContosoFrontEnd**
 * Active Directory バックエンド ドメイン (Netbios): **ContosoBackEnd**
-* ゲートウェイ コンピューターの名前:**MyGatewayMachine**
-* ゲートウェイ サービス アカウント:**ContosoFrontEnd\GatewaySvc**
-* SQL Server データ ソースのコンピューター名:**TestSQLServer**
-* SQL Server データ ソースのサービス アカウント:**ContosoBackEnd\SQLService**
+* ゲートウェイ コンピューター名: **MyGatewayMachine**
+* ゲートウェイ サービス アカウント: **ContosoFrontEnd\GatewaySvc**
+* SQL Server データ ソースのコンピューター名: **TestSQLServer**
+* SQL Server データ ソースのサービス アカウント: **ContosoBackEnd\SQLService**
 
 次の構成手順を実行します。
 
@@ -197,7 +201,7 @@ SPN と Kerberos 委任の設定を構成するために、ドメイン管理者
 
     ![クライアント ポリシーの偽装](media/service-gateway-sso-kerberos/impersonate-client.png)
     
-4. ポリシーを右クリックし、 **[プロパティ]** を開いて、アカウントの一覧を表示します。 
+4. ポリシーを右クリックし、**[プロパティ]** を開いて、アカウントの一覧を表示します。 
 
     一覧には、ゲートウェイ サービス アカウント (制約付き委任の種類に応じて、**Contoso\GatewaySvc** または **ContosoFrontEnd\GatewaySvc**) が含まれている必要があります。
 
@@ -225,7 +229,7 @@ Azure AD Connect を構成していない場合は、次の手順に従って、
     
     1. ドメイン管理者として **[Active Directory ユーザーとコンピューター]** を起動します。
     
-    1. ドメイン名を右クリックし、 **[検索]** を選択して、マップするローカル Active Directory ユーザーのアカウント名を入力します。
+    1. ドメイン名を右クリックし、**[検索]** を選択して、マップするローカル Active Directory ユーザーのアカウント名を入力します。
     
     1. **[属性エディター]** タブを選びます。
     
@@ -235,7 +239,7 @@ Azure AD Connect を構成していない場合は、次の手順に従って、
     
         ![[文字列属性エディター] ウィンドウ](media/service-gateway-sso-kerberos/edit-attribute.png)
     
-    1. **[適用]** を選びます。 **[値]** 列に正しい値が設定されていることを確認します。
+    1. **[適用]** を選択します。 **[値]** 列に正しい値が設定されていることを確認します。
 
 ## <a name="complete-data-source-specific-configuration-steps"></a>データソース固有の構成手順を完了する
 
@@ -246,17 +250,21 @@ SAP HANA と SAP BW には、これらのデータ ソースへのゲートウ�
 
 ## <a name="run-a-power-bi-report"></a>Power BI レポートを実行する
 
-すべての構成手順が完了したら、Power BI の **[Manage Gateway]\(ゲートウェイの管理\)** ページを使って、SSO に使用するデータ ソースを構成します。 複数のゲートウェイがある場合は、Kerberos SSO 用に構成したゲートウェイを選択してください。 データ ソースの **[詳細設定]** で、DirectQuery ベースのレポートの場合は、 **[DirectQuery クエリには Kerberos 経由で SSO を使用します]** チェックボックスまたは **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** チェックボックスのいずれかをオンにし、更新ベースのレポートの場合は、 **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** チェックボックスをオンにします。
+すべての構成手順が完了したら、Power BI の **[Manage Gateway]\(ゲートウェイの管理\)** ページを使って、SSO に使用するデータ ソースを構成します。 複数のゲートウェイがある場合は、Kerberos SSO 用に構成したゲートウェイを選択してください。 データ ソースの **[詳細設定]** で、DirectQuery ベースのレポートの場合は、 **[DirectQuery クエリには Kerberos 経由で SSO を使用します]** チェックボックスまたは **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** チェックボックスのいずれかをオンにし、インポート ベースのレポートの場合は、 **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** チェックボックスをオンにします。
 
 ![[詳細設定] のオプション](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
-DirectQuery ベースのレポートを Power BI Desktop から発行し、それを、 **[DirectQuery クエリには Kerberos 経由で SSO を使用します]** チェックボックスまたは **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** チェックボックスをオンにしたデータ ソースにマップすると、そのレポートでは、Power BI サービスにサインインする (Azure) Active Directory ユーザーにマップされるユーザーがアクセス可能なデータが使用されます。
+**[DirectQuery クエリには Kerberos 経由で SSO を使用します]** と **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** の設定では、DirectQuery ベースのレポートとインポート ベースのクエリに対し、それぞれ異なる動作が実行されます。
 
-同様に、更新ベースのレポートを Power BI Desktop から発行し、それを、 **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** チェックボックスをオンにしたデータ ソースにマップする場合、資格情報を入力する必要はありません。 更新は、データセット所有者の Active Directory コンテキストに基づいて実行されます。
+**[DirectQuery クエリには Kerberos 経由で SSO を使用します]** :
+* DirectQuery ベースのレポートでは、ユーザーの SSO 資格情報が使用されます。
+* インポート ベースのレポートでは、SSO 資格情報は使用されず、データ ソース ページで入力した資格情報が使用されます。 
 
-ただし、 **[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** チェックボックスがオンになっていないデータ ソースにレポートをマップする場合は、データ ソースの作成時に **[ユーザー名]** フィールドと **[パスワード]** フィールドに入力した資格情報が使用されます。 言い換えると、Kerberos SSO は使用*されません*。 
+**[Kerberos を使用した SSO を DirectQuery とインポート クエリに使用する]** :
+* DirectQuery ベースのレポートでは、ユーザーの SSO 資格情報が使用されます。
+* インポート ベースのレポートでは、インポートをトリガーしたユーザーに関係なく、データセットの所有者の SSO 資格情報が使用されます。 
 
- 複数のゲートウェイがある場合は、発行時に、SSO 用に構成したゲートウェイを選択してください。 
+複数のゲートウェイがある場合は、発行時に、SSO 用に構成したゲートウェイを選択してください。 
 
 この構成は、ほとんどの場合に機能します。 ただし、Kerberos については、環境に応じて構成が異なる可能性があります。 レポートが読み込まれない場合は、ドメイン管理者に連絡してさらに詳しく調査してください。 データ ソースが SAP BW の場合は、選択した SNC ライブラリに応じて、[CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) および [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting) のデータ ソース固有の構成ページのトラブルシューティング セクションを参照してください。
 

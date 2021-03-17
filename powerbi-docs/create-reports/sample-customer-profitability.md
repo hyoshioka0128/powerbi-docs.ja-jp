@@ -1,6 +1,6 @@
 ---
-title: Power BI のお客様の収益性のサンプル:ツアーを開始する
-description: Power BI のお客様の収益性のサンプル:ツアーを開始する
+title: 'Power BI のお客様の収益性のサンプル: 使ってみる'
+description: 'Power BI のお客様の収益性のサンプル: 使ってみる'
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
@@ -9,14 +9,14 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/05/2019
 LocalizationGroup: Samples
-ms.openlocfilehash: adc642d5366949e547e0115badd5e800ffa04bb0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: afe01b29513c095919e17d50e1c7e08060f11150
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415107"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534174"
 ---
-# <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Power BI のお客様の収益性のサンプル:ツアーを開始する
+# <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Power BI のお客様の収益性のサンプル: 使ってみる
 
 "お客様の収益性のサンプル" コンテンツ パックには、マーケティング資料を製作する会社向けのダッシュボード、レポート、データセットが含まれています。 このダッシュボードは、5 つの事業部のマネージャー (役員)、製品、顧客、および粗利益 (GM) に関する主要なメトリックを確認するために、CFO によって作成されました。 これにより、収益性に影響する要因を一目で確認できます。
 
@@ -43,7 +43,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
    ![[データを取得] を選択](media/sample-datasets/power-bi-get-data.png)
 3. 表示された **[データを取得]** ページで、 **[サンプル]** を選びます。
 
-4. **[お客様の収益性のサンプル]** を選び、 **[接続]** を選びます。  
+4. **[お客様の収益性のサンプル]** を選び、**[接続]** を選びます。  
 
     ![サンプルに接続](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI によってコンテンツ パックがインポートされ、新しいダッシュボード、レポート、およびデータセットが現在のワークスペースに追加されます。
@@ -99,17 +99,20 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 ![Excel Online](media/sample-customer-profitability/power-bi-excel-online.png)
 
-1. Excel からピン留めされたこれらのタイルのいずれかを選択します。 Excel Online が Power BI サービス内で開きます。
-2. ブックにはタブ 3 つ分のデータがあることに注意してください。 **[収益]** を開きます。
-3. Carlos がまだ目標に達していない理由を見てみましょう。  
+1. **[Target vs Actual]** を選択します。 Excel Online が Power BI サービス内で開きます。
+2. ブックにはタブ 3 つ分のデータがあることに注意してください。 **[COGS]** を開きます。
 
-    a. **[役員]** スライダーから、 **[Carlos Grilo]** を選択します。   
+    ![選択された [COGS] レポート タブ。](media/sample-customer-profitability/power-bi-cogs.png)
 
-    b. 最初のピボットテーブルからは、Carlos がもっとも高い収益を上げている [製品] である [Primus] が、昨年と比べて 152% の減益となっていることがわかります。 **[YoY Revenue Variance]** グラフでは、Carlos はほとんどの月で予算を下回っています。  
+1. 合計収益がコストを大きく超えています。 合計収益の線の形とコストの列の高さは、似ています。  フィルター処理、スライス、ドリルなどを行って、データと対話します。  例として、1 つの Industry のみの **Revenue vs COGS** を見てみましょう。   
 
-    ![ピボット テーブル](media/sample-customer-profitability/power-bi-pivotchart.png)
+    a. **[Industry]** スライサーから、 **[Retail]** を選択します。   
+    
+    ![小売業界が選択されています。](media/sample-customer-profitability/power-bi-retails.png)
 
-    ![Carlos の結果](media/sample-customer-profitability/power-bi-carlos.png)
+    b. 小売業界を担当している地区マネージャーは、Andrew と Carlos の 2 人だけであることがわかります。  
+    
+    c. 2014 年第 3 四半期までは、合計収益がコストを大きく超えています。 その積み上げ縦棒を見ると、さらなる調査が必要な奇妙なデータがあります。 7 月は本当にコストがなかったのでしょうか。 サード パーティから払い戻しを受けたのでしょうか。 
 
 4. 調査を続けます。 興味のあるものが見つかったら右上隅にある **[ピン留め]** ![[ピン留め] アイコン](media/sample-customer-profitability/power-bi-excel-pin.png) を選択して、[ダッシュボードにピン留め](service-dashboard-pin-tile-from-excel.md)します。
 
@@ -151,7 +154,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
    * ツリー マップ内の **[North]\(北部\)** の四角形を選ぶと、北部地域での Valery の粗利益が全体的な利益と一貫性があることがわかります。
    * **[Total Revenue by Region]\(地域別合計収益\)** の他の四角形をそれぞれ選択すると、興味深いことがわかります。その GM% は 23% から 79% の範囲にあるのです。 Valery の収益の数値は、北部地域を除くすべての地域で、非常に季節性があります。
 
-3. なぜ Valery の領域で業績が良くないかを知るためにデータの詳しい調査を続けます。 複数の地域、他の事業部、レポートの次のページ **[Industry Margin Analysis]\(業界の利益分析\)** を調べます。
+3. なぜ Valery の領域で業績が良くないかを知るためにデータの詳しい調査を続けます。 複数の地域、他の事業部、レポートの次のページ「**業界の利益分析**」をご覧ください。
 
 ### <a name="industry-margin-analysis"></a>業界の利益分析
 このレポート ページでは、データの別のスライスを提供します。 これは、セグメントごとに分割した、業界全体の粗利益を考察します。 CFO はこのページを利用して、会社と事業部のメトリックを業界のメトリックと比較し、傾向と収益性の説明に役立てます。 **[Gross Margin % by Month and Executive]** グラフはチーム固有であるにもかかわらず、なぜこのページ上にあるのか不思議に思われるかもしれません。 ここに表示することで、事業部のマネージャー別にページをフィルター処理することができます。  
@@ -177,7 +180,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 1. **[レポートの編集]** を選んで、編集ビューでレポートを開きます。 編集ビューは、自分がレポートを所有している場合にのみ使用できます。 このビューは、*作成者* モードと呼ばれることがあります。 自分がレポートを共有しているだけの場合は、編集ビューで開くことはできません。
 
-2.  ダッシュボードの上部から、 **[質問する]** を選択して Q&A 質問ボックスを開きます。
+2.  ダッシュボードの上部から、**[質問する]** を選択して Q&A 質問ボックスを開きます。
 
     ![データについて質問する](media/sample-customer-profitability/power-bi-ask-question.png)
 
@@ -194,11 +197,11 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 2. レポート ページで視覚エフェクトが選択されていない状態で、(まだ展開されていない場合は) 右側のフィルター ウィンドウを展開します。 **フィルター** ペインには、**ページ レベル フィルター** のみが表示されます。  
 
    ![ページ レベル フィルター](media/sample-customer-profitability/power-bi-filters.png)
-3. **[Industry]** フィルターを選択し、矢印を選択して一覧を展開します。 流通業界のページ フィルターを追加してみましょう。 まず **[Select All]** チェックボックスをオフにして、すべての選択を解除します。 次に、 **[Distribution]** のみを選択します。  
+3. **[Industry]** フィルターを選択し、矢印を選択して一覧を展開します。 流通業界のページ フィルターを追加してみましょう。 まず **[Select All]** チェックボックスをオフにして、すべての選択を解除します。 次に、**[Distribution]** のみを選択します。  
 
    ![Distribution のフィルター](media/sample-customer-profitability/customer7.png)
 4. **[月と役員別の粗利益]** グラフから、この業種の顧客を担当しているのは Valery と Tina だけであり、Valery がこの業種を担当していたのは 6 月から 11 月までの間だけであることがわかります。   
-5. **[月と役員別の粗利益]** グラフの凡例で、 **[Tina]** 、 **[Valery]** の順に選びます。 **[製品別の合計売上]** グラフの Tina の部分は、Valery と比較して小さいことに注意してください。
+5. **[月と役員別の粗利益]** グラフの凡例で、**[Tina]**、**[Valery]** の順に選びます。 **[製品別の合計売上]** グラフの Tina の部分は、Valery と比較して小さいことに注意してください。
 6. 実売上を確認するには、ダッシュボードで Q&A ボックスを選択して、「*total revenue by executive for distribution by scenario*」と入力します。  
 
      ![Q&A ボックスへの質問の入力](media/sample-customer-profitability/power-bi-qna2.png)

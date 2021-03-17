@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/10/2021
+ms.date: 02/22/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: cf63c16822e04e160da2765ae0be20bd707e89da
-ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.openlocfilehash: 8107aaadc1072097c9a4665def034cd5f7cf11a0
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489950"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843966"
 ---
 # <a name="tutorial-from-excel-workbook-to-stunning-report-in-power-bi-desktop"></a>チュートリアル:Power BI Desktop で Excel ブックから魅力的なレポートを作成する
 
@@ -128,7 +128,9 @@ Power BI Desktop からこのチュートリアルに移動してきた場合は
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="DAX 式のスクリーンショット。":::
 
-1. 左側にある **[モデル ビュー]** を選択します。 
+1. 引き続きデータ ビューで、新しい Calendar テーブルを選択し、 **[テーブル ツール]** リボンで **[日付テーブルとしてマーク]** を選択します。
+2. **[日付列]** ボックスで、 **[日付]** 列を選択します。 
+3. 左側にある **[モデル ビュー]** を選択します。 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="[モデル ビュー] アイコンのスクリーンショット。":::
 
@@ -159,7 +161,9 @@ Power BI Desktop からこのチュートリアルに移動してきた場合は
 利益が最も多かった月と年がわかるように折れ線グラフを作成します。 
 
 1. [フィールド] ウィンドウの **[Profit]** フィールドをレポート キャンバスの空白領域にドラッグします。 Power BI では、既定により、縦棒が 1 つある縦棒グラフ (利益) が表示されます。 
-1. **[Date]** フィールドを同じビジュアルにドラッグします。 Power BI によって、縦棒グラフが更新され、2 年分の利益が年別に表示されます。
+1. **[Date]** フィールドを同じビジュアルにドラッグします。 この記事で前述した「[追加の手順: DAX でテーブルを作成する](#extra-credit-write-a-measure-in-dax)」で Calendar テーブルを作成した場合は、Calendar テーブルから **[Date]** フィールドをドラッグします。 
+
+    Power BI によって、縦棒グラフが更新され、2 年分の利益が年別に表示されます。
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="利益縦棒グラフのスクリーンショット。":::
 

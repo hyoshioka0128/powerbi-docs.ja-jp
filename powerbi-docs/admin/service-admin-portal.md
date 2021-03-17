@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 01/25/2021
+ms.date: 02/03/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8305d4662da9f4f7b8a5cce2b3badf5e70e88bc5
-ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.openlocfilehash: d6c37b8dfd5e7ca74ff4e1efaef4c5022ee1f86d
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98861309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102196138"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
@@ -290,7 +290,7 @@ Microsoft 365 グループに基づく従来のワークスペースについて
 
 ### <a name="invite-external-users-to-your-organization"></a>組織に外部ユーザーを招待する 
 
-**[Invite external users to your organization]\(組織に外部ユーザーを招待する\)** 設定により、組織が Power BI 共有とアクセス許可のエクスペリエンスを通じて、新しい外部ユーザーを組織に招待できるかどうかを選択できるようになります。 無効にした場合、まだ組織のゲスト ユーザーでない外部ユーザーは、Power BI を使用して組織に追加することができません。
+**[Invite external users to your organization]\(組織に外部ユーザーを招待する\)** 設定により、組織が Power BI 共有、アクセス許可、およびサブスクリプションのエクスペリエンスを通じて、新しい外部ユーザーを組織に招待できるかどうかを選択できるようになります。 無効にした場合、まだ組織のゲスト ユーザーでない外部ユーザーは、Power BI を使用して組織に追加することができません。
 
 ![組織に外部ユーザーを招待する](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
 
@@ -412,11 +412,9 @@ Power BI 管理者には、ユーザーが埋め込みコードを作成して�
 
 ### <a name="featured-content"></a>おすすめコンテンツ
 
-組織内の一部またはすべてのレポート作成者が、Power BI ホームのおすすめセクションに自分のコンテンツを表示できます。 新しいユーザーに対しては、おすすめのコンテンツが Power BI ホーム ページの先頭に表示されます。 ユーザーが **[お気に入り]** 、 **[頻繁に使用]** 、 **[最近使用]** を追加すると、おすすめコンテンツはホーム ページの下に移動します。 
+既定では、組織内のワークスペースの管理者、メンバー、または共同作成者の役割を持つすべてのユーザーが、Power BI ホームでコンテンツをおすすめに登録することができます。 新しいユーザーに対しては、それらのコンテンツが Power BI ホーム ページ上部の [おすすめ] セクションに表示されます。 ユーザーが **[お気に入り + 頻繁に使用]** と **[最近使用]** を追加すると、おすすめコンテンツはホーム ページの下に移動します。 詳細については、「[同僚の Power BI ホーム ページでコンテンツをおすすめに登録する](../collaborate-share/service-featured-content.md)」を参照してください。
 
-最初は少数の推奨者から始めることをお勧めします。 組織全体がホームでコンテンツをお勧めできるようにすると、推奨されたすべてのコンテンツを追跡することが困難になる場合があります。 
-
-おすすめコンテンツを有効にした後は、管理ポータルでそれを管理することもできます。 ドメインのおすすめコンテンツの制御については、この記事の「[おすすめコンテンツを管理する](#manage-featured-content)」を参照してください。
+コンテンツをおすすめに登録する機能を無効にして、管理ポータルで管理することもできます。 ドメインのおすすめコンテンツの制御については、この記事の「[おすすめコンテンツを管理する](#manage-featured-content)」を参照してください。
 
 ### <a name="allow-connections-to-featured-tables"></a>おすすめのテーブルへの接続を許可する
 
@@ -636,6 +634,10 @@ Power BI ビジュアルのテナント設定を含む Power BI ビジュアル�
 | **進行中** | ワークスペースはアップグレード中です。 アップグレードを取り消すことはできません。 |
 | **完了** | ワークスペースは、過去 30 日間に Power BI 管理者によってアップグレードされました。ワークスペース管理者は、ワークスペースがアップグレードされてから 30 日以内に、必要に応じてクラシック オプションに戻ることができます。 |
 
+> [!NOTE]
+> ワークスペースのアップグレードには、次のようないくつかの制限事項があります。 アップグレードを試行する前に、[ワークスペースをアップグレード](../collaborate-share/service-upgrade-workspaces.md)する方法について確認してください。
+> - ワークスペースの管理者が最近 (過去 14 日間) Power BI にアクセスしていない場合は、アップグレードが失敗する可能性があります。 アップグレードを試みる前に、ワークスペースの管理者に Power BI へアクセスしてもらうか、別の管理者に変更してください。
+> - ワークスペースに関連付けられているグループに Azure Active Directory または Microsoft 365 のグループ所有者がいない場合は、アップグレードが失敗する可能性があります。 アップグレードする前に、Azure Active Directory または Microsoft 365 でグループ所有者を割り当ててください。
 
 ## <a name="custom-branding"></a>カスタム ブランド
 

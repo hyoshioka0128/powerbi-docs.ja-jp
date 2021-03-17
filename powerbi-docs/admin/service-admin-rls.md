@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f1358cbafa08c0dbb3790322c414d7a746386f0f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 28fcaad9f6796d56303bd223b5d693e7dadc07de
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408575"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534345"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Power BI での行レベルのセキュリティ (RLS)
 
@@ -57,6 +57,14 @@ Power BI Desktop 内でのみ、役割を作成または変更できます。
 ### <a name="add-members"></a>メンバーの追加
 
 ロールにメンバーを追加するには、ユーザーまたはセキュリティ グループのメール アドレスまたは名前を入力します。 Power BI で作成されたグループを追加することはできません。 [組織外部の](../guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners)メンバーを追加できます。
+
+次のグループを使用して、行レベル セキュリティを設定できます。    
+- 配布グループ
+- メールが有効なグループ
+- セキュリティ グループ
+
+ただし、Office 365 グループはサポートされておらず、どのロールにも追加できないことに注意してください。
+
 
 ![メンバーの追加](media/service-admin-rls/rls-add-member.png)
 

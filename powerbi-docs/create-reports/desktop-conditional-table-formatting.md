@@ -9,18 +9,18 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9e0ec57b2b37c237db94cf5710d853cbbb2cd6ed
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 87fd16aa0c67aa05ff2eff8060a0ba75d49f6c8e
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492198"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534644"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>テーブルでの条件付き書式の使用 
 
 Power BI Desktop のテーブルで条件付き書式を使用すると、フィールド値に基づいて、色のグラデーションなど、カスタマイズしたセルの色を指定できます。 セル値は、データ バーや KPI アイコンを使用して、またはアクティブな Web リンクとして表すこともできます。 数値、色の名前や 16 進数コード、または Web URL の値が含まれるフィールドで書式設定を基準として使用していると、任意のテキストまたはデータ フィールドに条件付き書式を適用できます。 
 
-条件付き書式を適用するには、Power BI Desktop で **テーブル** または **マトリックス** の視覚化を選択します。 **[視覚化]** ペインの **[フィールド]** セクションで、書式設定する **[値]** ウェルのフィールドの横にある下向き矢印を右クリックまたは選択します。 **[条件付き書式]** を選択してから、適用する書式設定の種類を選択します。
+条件付き書式を適用するには、Power BI Desktop で **テーブル** または **マトリックス** の視覚化を選択します。 **[視覚化]** ペインで、書式設定する **[値]** ウェルのフィールドの横にある下向き矢印を右クリックまたは選択します。 **[条件付き書式]** を選択してから、適用する書式設定の種類を選択します。
 
 ![[条件付き書式設定] メニュー](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
@@ -179,7 +179,6 @@ Web サイト URL が含まれる列またはメジャーがある場合は、�
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 条件付きテーブルの書式設定を使用する場合は、留意すべき考慮事項がいくつかあります。
 
-- 条件付き書式は、テーブルまたはマトリックスのビジュアルの値にのみ適用され、小計、総計、**合計** 行には適用されません。 
 - グループ化されていないテーブルは、条件付き書式をサポートしていない単一行として表示されます。
 - データに *NaN* 値が含まれている場合は、自動最大値/最小値、または割合ルールを使用したルールベースの書式設定を使用してグラデーションの書式設定を適用することはできません。 NaN は "Not a number" (数値ではない) を意味し、通常は、ゼロ除算エラーで発生します。 このようなエラーを回避するには、[DIVIDE() DAX 関数](/dax/divide-function-dax)を使用できます。
 - 条件付き書式を使用するには、集計またはメジャーを値に適用する必要があります。 そのため、 **[値によって色分け]** の例に "第 1" または "最後" が表示されます。 Analysis Services 多次元キューブに対してレポートを作成する場合、キューブ所有者が値を提供するメジャーを構築していない限り、条件付き書式の属性を使用することはできません。

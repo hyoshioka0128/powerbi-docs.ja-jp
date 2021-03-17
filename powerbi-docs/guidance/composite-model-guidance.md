@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/24/2019
-ms.openlocfilehash: 5a88e22450b5ae9b8000f3c321d87a2349a9f960
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 8dab2829b9b59e065e241b9d28d2d66a9f050706
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99088605"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842655"
 ---
 # <a name="composite-model-guidance-in-power-bi-desktop"></a>Power BI Desktop の複合モデルのガイダンス
 
@@ -37,7 +37,7 @@ ms.locfileid: "99088605"
 - 複数の DirectQuery データ ソースを 1 つのモデルに結合する必要があります。
 
 > [!NOTE]
-> 複合モデルでは、ライブ接続ソースまたは DirectQuery 分析データベース ソースを結合することはできません。 ライブ接続ソースには、[外部ホスト モデル](../connect-data/service-datasets-understand.md#external-hosted-models)、Power BI データセットなどがあります。 DirectQuery 分析データベース ソースには、SAP Business Warehouse、SAP HANA などがあります。
+> 複合モデルでは、外部の分析データベースへの接続を組み合わせることはできません。 これに該当するものとしては、[外部でホストされるモデル](../connect-data/service-datasets-understand.md#external-hosted-models)、Power BI データセット、SAP Business Warehouse、および SAP HANA ([SAP HANA を多次元ソースとして扱う](../connect-data/desktop-directquery-sap-hana.md)場合) へのライブ接続があります。
 
 ## <a name="optimize-model-design"></a>モデルの設計を最適化する
 

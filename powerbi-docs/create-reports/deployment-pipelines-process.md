@@ -1,19 +1,19 @@
 ---
-title: 配置パイプラインのプロセス
-description: Power BI 配置パイプラインのプロセスについて理解する
+title: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) のプロセス
+description: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) のしくみについて学習します
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 12/28/2020
-ms.openlocfilehash: 4bb709e41698bc0dc32341f517593717f64f9b6d
-ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
+ms.date: 03/04/2021
+ms.openlocfilehash: 02b3eb3a9c3b7772ba2d756382f6174a32cfe383
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805213"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194896"
 ---
 # <a name="understand-the-deployment-process"></a>デプロイ プロセスを理解する
 

@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 009954c8496d5644f1dbe4b51372afca6a758f6e
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 0e55de9dc2bce34dfe6e14488d011b89f85dde89
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491899"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534182"
 ---
 # <a name="data-refresh-in-power-bi"></a>Power BI でのデータの更新
 
@@ -92,7 +92,11 @@ Power BI の更新操作は、データ更新、OneDrive の更新、クエリ �
 
 #### <a name="data-refresh"></a>データ更新
 
-Power BI ユーザーにとって、データ更新とは通常、更新スケジュールに基づくか、またはオンデマンドで、元のデータ ソースからデータセットへデータをインポートすることを意味します。 データセットの更新は 1 日に複数回実行でき、基になるソース データが頻繁に変更される場合には、その必要が生じる可能性があります。 Power BI では、共有された容量にあるデータセットに対して、1 日の更新を 8 回までに制限しています。 データセットが Premium 容量にある場合は、データセットの設定で、1 日に最大 48 回まで更新をスケジュールできます。 詳しくは、この記事で後述する「[スケジュールされた更新の構成](#configure-scheduled-refresh)」をご覧ください。 [XMLA エンドポイント](../admin/service-premium-connect-tools.md)で読み取り/書き込みが有効になっている Premium 容量のデータセットでは、TMSL または PowerShell を使用してプログラムによって構成した場合、無制限の更新操作がサポートされます。
+Power BI ユーザーにとって、データ更新とは通常、更新スケジュールに基づくか、またはオンデマンドで、元のデータ ソースからデータセットへデータをインポートすることを意味します。 データセットの更新は 1 日に複数回実行でき、基になるソース データが頻繁に変更される場合には、その必要が生じる可能性があります。 Power BI では、共有された容量にあるデータセットに対して、1 日の更新を 8 回までに制限しています。 8 つの時刻値は、バックエンド データベースに格納されます。 スケジューラにより、スケジュールを作成したユーザーのローカル時刻に基づいて、どのモデルを更新する必要があるかがチェックされます。  8 回の更新というクォータは、毎日午前 12:01 にリセットされます。 
+
+データセットが Premium 容量にある場合は、データセットの設定で、1 日に最大 48 回まで更新をスケジュールできます。 詳しくは、この記事で後述する「[スケジュールされた更新の構成](#configure-scheduled-refresh)」をご覧ください。 [XMLA エンドポイント](../admin/service-premium-connect-tools.md)で読み取り/書き込みが有効になっている Premium 容量のデータセットでは、TMSL または PowerShell を使用してプログラムによって構成した場合、無制限の更新操作がサポートされます。
+
+
 
 1 日あたりの更新に関する共有容量の制限は、スケジュールされた更新と API による更新の両方に適用されることを周知することも重要です。 次のスクリーンショットに示すように、データセット メニューにある **[今すぐ更新]** を選択して、オンデマンドの更新をトリガーすることもできます。 オンデマンドの更新は、更新の制限の対象外です。 また、Premium 容量上のデータセットには、API による更新の制限は課されません。 Power BI REST API を使用して独自の更新ソリューションを作成したい場合は、「[データセット - データセットの更新](/rest/api/power-bi/datasets/refreshdataset)」を参照してください。
 

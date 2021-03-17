@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: reference
 ms.date: 09/09/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7dc5554844bafac1f8877ef7e2e8627d8078e981
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: de41fc81371d19b68d81b47b2c80bf92975bfc39
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386814"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842333"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Power BI Desktop のプライバシー レベル
 **Power BI Desktop** では、プライバシー レベルにより、あるデータ ソースが他のデータ ソースから分離している程度を定義する分離レベルを指定します。 制限の厳しい分離レベルは、データ ソース間で交換される情報を妨げますが、機能性とパフォーマンスに与える影響を軽減できます。
@@ -56,7 +56,7 @@ ms.locfileid: "96386814"
 > 
 
 > [!CAUTION]
-> **[プライバシー レベルを無視すると、パフォーマンスが向上する場合があります]** は、Power BI サービスでは機能しません。 そのため、この設定を有効にした Power BI Desktop レポートを Power BI サービスに発行すると、サービスで使うときにこの動作は "*反映されません*"。
+> **[プライバシー レベルを無視すると、パフォーマンスが向上する場合があります]** は、Power BI サービスでは機能しません。 そのため、この設定を有効にした Power BI Desktop レポートを Power BI サービスに発行すると、サービスで使うときにこの動作は "*反映されません*"。 ただし、個人用ゲートウェイではプライバシー レベルを利用できます。
 > 
 
 **プライバシー レベルの構成**

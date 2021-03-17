@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/17/2020
+ms.date: 02/23/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6e674d115c08e19044cfd5d7fe746f630bbc544b
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: b38e00a5e02e76be58f915db3f3eafcfb71de081
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97674915"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102533172"
 ---
 # <a name="using-directquery-for-power-bi-datasets-and-azure-analysis-services-preview"></a>Power BI データセットおよび Azure Analysis Services 用の DirectQuery を使用する (プレビュー)
 
@@ -96,7 +96,7 @@ Analysis Services ソースにライブ接続している場合、ローカル �
 
     ![予期しない日付の階層の動作](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-07.png)
 
-    日付列と日付の階層の使用の詳細については、こちらの記事を参照してください。
+    日付列と日付の階層の使用の詳細については、[こちらの記事](../transform-model/desktop-auto-date-time.md)を参照してください。
 
 - Azure Analysis Services への DirectQuery 接続があるモデルで AI 機能を使用すると、役に立たないエラー メッセージが表示される場合があります。 
 
@@ -123,15 +123,11 @@ Analysis Services ソースにライブ接続している場合、ローカル �
 
 - "マイ ワークスペース" のデータセットに対して DirectQuery を使用することは現在サポートされていません。 
 
-- DirectQuery を使用するリモート ソースへの接続の削除は現在サポートされていません。
-
 - Power BI データセットまたは Azure Analysis Services モデルへの DirectQuery 接続を含むデータセットでの Power BI Embedded の使用は現在サポートされていません。
 
 - リモート ソースからの列およびメジャーの書式指定文字列は、複合モデルにはインポートされません。
 
 - リモート ソースの計算グループはサポートされておらず、クエリ結果は未定義になります。
-
-- 計算テーブルとリモート ソースのテーブルの間にリレーションシップがある場合、一部のクエリから間違った結果が返されることがあります。 リモート データセットに対する計算テーブルの作成はサポートされていませんが、現在インターフェイスでブロックされていません。
 
 - 現時点では、列による並べ替えはサポートされていません。
 

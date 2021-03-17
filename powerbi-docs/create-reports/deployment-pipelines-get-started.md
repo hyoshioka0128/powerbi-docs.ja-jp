@@ -1,19 +1,19 @@
 ---
-title: デプロイ パイプラインの使用を開始する
-description: Power BI のデプロイ パイプラインを使用する方法について説明します
+title: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) の使用を開始する
+description: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) の使用方法について説明します
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 02/09/2021
-ms.openlocfilehash: 53e6e7401caff5b4334af67f5de54a3669214851
-ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.date: 03/04/2021
+ms.openlocfilehash: 0da35738ce717995582bd26a2d02d8e37660d591
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489994"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194965"
 ---
 # <a name="get-started-with-deployment-pipelines"></a>デプロイ パイプラインの使用を開始する
 

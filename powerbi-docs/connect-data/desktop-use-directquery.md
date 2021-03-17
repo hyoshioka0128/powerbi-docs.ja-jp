@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 2/18/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 60805ba0977b3b603ace0d50f7b080bd62d54ec7
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 04e41c014bc09da5c61b820563eab02cdfe8e8f3
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600302"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843391"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Power BI Desktop の DirectQuery
 *Power BI Desktop* では、データ ソースに接続するときに、常にデータのコピーを Power BI Desktop にインポートすることができます。 データ ソースによっては、代替手法を利用できます。DirectQuery を使用して、データ ソースに直接接続します。
@@ -49,11 +49,9 @@ DirectQuery を使用する利点をいくつか以下に示します。
 
 - **クエリ エディター** のクエリが複雑すぎると、エラーが発生します。 エラーを解決するには、問題となるステップを **クエリ エディター** で削除するか、DirectQuery を使用する代わりにデータを "*インポート*" します。 SAP Business Warehouse のような多次元ソースの場合、**クエリ エディター** はありません。
 
-- タイム インテリジェンス機能は DirectQuery では利用できません。 たとえば、データ列 (年度、四半期、月、日など) の特殊な処理は、DirectQuery モードではサポートされていません。
-
 - 計算テーブルおよび計算列で、シングル サインオン (SSO) 認証を使用してデータ ソースから DirectQuery テーブルを参照することは、Power BI サービスではサポートされていません。
 
-- 基になるデータ ソースに送信されるクエリが許容範囲のパフォーマンスを確実に発揮できるよう、メジャー内で許可される DAX 式には制約があります。
+- 自動の日付/時刻は DirectQuery では使用できません。 たとえば、日付列の特殊な処理 (年度、四半期、月、または日を使用したドリル ダウン) は、DirectQuery モードではサポートされていません。
 
 - クラウド ソースには 100 万行の制限があり、オンプレミス ソースでは、定義されているペイロードが 1 行あたり約 4 MB (独自の圧縮アルゴリズムに依存)、またはビジュアル全体に対して 16MB データ サイズに制限されています。 Premium 容量を使用するとき、特定の制限が発生する場合があります。 この制限は、DirectQuery を使用して返されるデータセットの作成に使用される集計や計算には影響しません。 返される行にのみ影響します。 Premium 容量の場合、[こちらの投稿](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/)で説明されているように、最大行数の制限を設定できます。 
 

@@ -1,5 +1,5 @@
 ---
-title: Power BI Desktop で更新されたリボンを使用する
+title: Power BI Desktop のリボンを使用する
 description: Power BI Desktop の新しいリボンを使用して、メニューとコマンドを簡単に移動します
 author: davidiseminger
 ms.author: davidi
@@ -7,32 +7,36 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 02/24/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 517e1dcb84a9c716cdfc1f53febb743f4f59f5d2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: video-jkqdyv7POq0
+ms.openlocfilehash: 817dbffdd0c2c3e3a02be764b3a05201c4ffc849
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412830"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534368"
 ---
-# <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Power BI Desktop で更新されたリボンを使用する
+# <a name="use-the-ribbon-in-power-bi-desktop"></a>Power BI Desktop のリボンを使用する
 
 Power BI Desktop のリボンは、Microsoft Office などの他の Microsoft 製品と外観およびエクスペリエンスを合わせるように改良されました。
 
 ![Power BI Desktop の新しいリボン](media/desktop-ribbon/desktop-ribbon-02.png)
 
-## <a name="how-to-enable-the-updated-ribbon"></a>更新されたリボンを有効にする方法
 
-更新されたリボンは、Power BI Desktop の 2020 年 5 月リリース以降で一般提供されています。 2020 年 3 月の更新プログラム以降、更新されたリボンは既定でオンになっています。 
+## <a name="features-of-the-ribbon"></a>リボンの機能
 
-## <a name="features-of-the-updated-ribbon"></a>更新されたリボンの機能
-
-リボンの更新の利点は、Power BI Desktop のエクスペリエンスをその他の Microsoft 製品と同じように簡単で使いやすくするこを目的としています。 
-
-![Power B I Desktop のリボンを大写しに表示するスクリーンショット。](media/desktop-ribbon/desktop-ribbon-03.png)
+リボンの利点は、Power BI Desktop のエクスペリエンスをその他の Microsoft 製品と同じように簡単で使いやすくするこを目的としています。 
 
 これらの利点は、次のカテゴリに分類できます。
+
+* **検索バー** - 2021 年 2 月リリースから、他の Microsoft 製品で利用できる検索機能に似た検索エクスペリエンスがリボンに追加されました。 検索バーをクリックすると、Power BI によって、レポートの現在の状態に基づいたアクションが提案されます。 入力を行うと検索結果が更新されます。また、ヘルプを表示したり次の手順に進んだりするためのボタンが表示されます。 
+
+    ![新しい検索バー](media/desktop-ribbon/desktop-ribbon-03.png)
+
+    次のビデオで実際の動作をご確認ください。
+
+    > [!VIDEO <iframe width="560" height="315" src="https://www.youtube.com/embed/jkqdyv7POq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
 
 * **外観、操作感、および編成の向上** - Power BI Desktop の更新されたリボンのアイコンと機能は、Office アプリケーションのリボン項目の外観、操作感、および編成に合わせています。
 

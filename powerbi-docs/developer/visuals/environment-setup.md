@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 09/02/2020
-ms.openlocfilehash: 43c5a636a7e3d0396210370df4427e1e13494551
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 1049bf9b85b28c986514a2f88ff16e7627756591
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885892"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842598"
 ---
 # <a name="set-up-your-environment-for-developing-a-power-bi-visual"></a>Power BI の視覚化の開発用に環境をセットアップする
 
@@ -152,7 +152,7 @@ Power BI の視覚化を開発するには、Power BI サービスでカスタ�
 3. **[全般]** タブで、 **[開発者]** を選択します。 **[開発者向け設定]** で **[開発者向けビジュアルを使用して、カスタム ビジュアル デバッグを有効にします]** チェック ボックスをオンにして、 **[適用]** を選択します。
 
     >[!div class="mx-imgBorder"]
-    >![Power BI の [設定] の [全般] タブの [開発者向けビジュアルを使用して、カスタム ビジュアル デバッグを有効にします] オプションのスクリーンショット。](media/environment-setup/developer-settings.png)
+    >![Power BI 設定の [全般] タブにある [開発者モードを有効にする] のスクリーンショット。](media/environment-setup/developer-settings.png)
 
 ## <a name="install-development-libraries"></a>開発ライブラリをインストールする
 

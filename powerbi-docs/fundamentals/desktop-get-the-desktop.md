@@ -9,26 +9,26 @@ ms.subservice: pbi-fundamentals
 ms.topic: how-to
 ms.date: 10/12/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 3d233736c55ea736da1ecc561c2936a0a9f42a09
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 95208e83b328e46eeb960b043286c04b69f43788
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492175"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102533149"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktop の取得
-Power BI Desktop では、データを視覚化する高度なクエリ、モデル、レポートを作成できます。 Power BI Desktop を使うと、データ モデルを作成し、レポートを作成し、Power BI サービスに発行することで作業を共有することができます。 Power BI Desktop は無料でダウンロードできます。
+Power BI Desktop では、データを視覚化する高度なクエリ、モデル、レポートを作成できます。 また、データ モデルを作成し、レポートを作成し、Power BI サービスに発行することで作業を共有することもできます。 Power BI Desktop は無料でダウンロードできます。
 
-Power BI Desktop は 2 つの方法で取得でき、次のセクションではそれぞれについて説明します。
+Power BI Desktop を入手するには、次の 2 つの方法のいずれかを使用できます。
 
 * [Microsoft ストアからアプリとしてインストールする](#install-as-an-app-from-the-microsoft-store)。
 * [実行可能ファイルとして直接ダウンロードしてコンピューターにインストールする](#download-power-bi-desktop-directly)。
 
-どちらの方法でも最新バージョンの Power BI Desktop がコンピューターにインストールされますが、注目すべきいくつかの違いがあります。これについては以下のセクションで説明します。
+2 つの方法のどちらを使用しても、最新バージョンの Power BI Desktop がお使いのコンピューターにインストールされます。 ただし、以下のセクションで説明するように、注意すべきいくつかの違いがあります。
 
 
 > [!IMPORTANT]
-> Power BI Desktop は、お客様のフィードバックと新機能を組み込み、月単位で更新およびリリースされます。 サポート対象の Power BI Desktop は、最新バージョンのみです。お客様が Power BI Desktop に関してサポートに問い合わせた場合、最新バージョンにアップグレードするように求められます。 最新バージョンの Power BI Desktop は、[Windows ストア](https://aka.ms/pbidesktopstore)から入手するか、またはサポートされているすべての言語を含む 1 つの実行可能ファイルとして[ダウンロード](https://www.microsoft.com/download/details.aspx?id=58494)してお使いのコンピューターにインストールできます。
+> Power BI Desktop は、お客様のフィードバックと新機能を組み込み、月単位で更新およびリリースされます。 最新バージョンの Power BI Desktop のみがサポートされています。 Power BI Desktop のサポートにお問い合わせいただいた場合、アプリケーションを最新バージョンにアップグレードするように求められます。 最新バージョンの Power BI Desktop は、[Windows ストア](https://aka.ms/pbidesktopstore) から入手するか、サポート対象の全言語を含む 1 つの実行可能ファイルとしてお使いのコンピューターに[ダウンロード](https://www.microsoft.com/download/details.aspx?id=58494)してインストールすることができます。
 
 
 ## <a name="install-as-an-app-from-the-microsoft-store"></a>Microsoft ストアからアプリとしてインストールする
@@ -99,12 +99,12 @@ Power BI Desktop を初めて使用する (つまり、インストールがア�
 Power BI Desktop の実行に必要な最小要件は、次のとおりです。
 
 > [!IMPORTANT]
-> 2021 年 1 月 31 日以降、Power BI Desktop は、Windows 7 ではサポートされなくなります。 その後、Power BI Desktop の最新リリースの場合のみ、Power BI Desktop は Windows 8 以降のバージョンの Windows でサポートされます。 
+> 2021 年 1 月 31 日以降、Power BI Desktop は Windows 7 ではサポートされなくなりました。 
 
-* Windows 7 または Windows Server 2008 R2 以降
-* .NET 4.6.2
-* Internet Explorer 10 以上
-* メモリ (RAM):1 GB 以上使用可能、1.5 GB 以上を推奨します。
+* Windows 8.1 / Windows Server 2012 R2 以降
+* .NET 4.6.2 以降
+* Internet Explorer 11 以降
+* メモリ (RAM): 2 GB 以上使用可能、4 GB 以上を推奨します。
 * ディスプレイ: 1440 x 900 以上または 1600 x 900 (16:9) が必要です。 1024 x 768 または 1280 x 800 などの低い解像度はサポートされていません。これは、特定のコントロール (起動画面を閉じるなど) がこれらの解像度を超えて表示されるためです。
 * Windows の表示設定: 表示設定でテキスト、アプリ、その他の項目を 100% より大きいサイズに変更してある場合、Power BI Desktop を使い続けるために対話する必要がある特定のダイアログを表示できないことがあります。 この問題が発生した場合は、Windows で **[設定]**  >  **[システム]**  >  **[表示]** に移動して表示設定を確認し、スライダーを使って表示設定を 100% に戻します。
 * CPU: 1 GHz の 64 ビット (x64) プロセッサを推奨します。

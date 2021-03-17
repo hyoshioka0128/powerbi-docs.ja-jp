@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 02/12/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: f7c17b810070a79c9f4a9f4a0756cbcaa8831f18
-ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
+ms.openlocfilehash: 5f4a369c474bc3c9d251ffb34c2c85e5ffbd6495
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100531809"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534610"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Power BI でのレポートへのフィルターの追加
 
@@ -63,7 +63,7 @@ Power BI Desktop と Power BI サービスのどちらを使用しているか�
    
    ![ビジュアル レベル フィルターを選択](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
   
-1. [フィールド] ウィンドウで新しいビジュアル レベル フィルターとして追加するフィールドを選び、 **[ビジュアル レベル フィルター]** 領域までドラッグします。  この例では、 **[Category]** を、 **[Filters on this visual]\(この視覚エフェクトでのフィルター\)** の下の **[ここにデータ フィールドを追加してください]** にドラッグします。
+1. [フィールド] ペインから、新しい視覚化レベル フィルターとして追加するフィールドを選び、 **[このビジュアルでのフィルター]** 領域までドラッグします。  この例では、 **[Category]** を **[ここにデータ フィールドを追加してください]** にドラッグします。
      
     ![[フィルター] ウィンドウにフィールドを追加](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -89,8 +89,11 @@ Power BI Desktop と Power BI サービスのどちらを使用しているか�
 
 2. まだ開いていない場合は、[視覚化]、[フィルター]、および [フィールド] ペインを開きます。
 
-3. [フィールド] ウィンドウで新しいページ レベル フィルターとして追加するフィールドを選び、 **[ページ レベル フィルター]** 領域までドラッグします。  
-4. フィルターを適用する値を選び、フィルター処理コントロールとして **基本** または **高度** を設定します。
+3. [フィールド] ペインから、新しいページ レベル フィルターとして追加するフィールドを選び、 **[このページでフィルター]** 領域の下部にドラッグします。  
+
+   ![ページ フィルターの追加領域にフィールドをドラッグします。](media/power-bi-report-add-filter/power-bi-page-filter.png)
+
+1. フィルターを適用する値を選び、フィルター処理コントロールとして **基本** または **高度** を設定します。
    
    ページ上のすべての視覚化が、変更を反映するように再描画されます。
    

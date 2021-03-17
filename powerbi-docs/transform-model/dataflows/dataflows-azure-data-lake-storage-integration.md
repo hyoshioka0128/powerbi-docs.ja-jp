@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 44e8af257bc4b4e2a83747f79505caed8f3cc72a
-ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
+ms.openlocfilehash: d0acf680881b7524ab4a7d1630080359dc0aca88
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100655767"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534690"
 ---
 # <a name="configuring-dataflow-storage-to-use-azure-data-lake-gen-2"></a>Azure Data Lake Gen 2 を使用するようにデータフロー ストレージを構成する 
 
@@ -22,11 +22,13 @@ ms.locfileid: "100655767"
 
 使用する ADLS Gen 2 ストアを構成するには、2 つの方法があります。ADLS Gen 2 アカウントが割り当てられたテナントを使用する方法と、ワークスペース レベルで独自の ADLS Gen 2 ストアを使用する方法です。 
 
-## <a name="pre-requisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 
-独自の ADLS Gen 2 アカウントを使用するには、ストレージ アカウント、リソース グループ、サブスクリプションのいずれかの層で所有者のアクセス許可が必要です。 管理者であっても、自分自身に所有者のアクセス許可を割り当てる必要があります。  **現在、ファイアウォールの内側で ADLS Gen2 ストレージ アカウントをサポートしていません**
+独自の ADLS Gen 2 アカウントを使用するには、ストレージ アカウント、リソース グループ、サブスクリプションのいずれかの層で所有者のアクセス許可が必要です。 管理者であっても、自分自身に所有者のアクセス許可を割り当てる必要があります。  **現在、ファイアウォールの内側で ADLS Gen2 ストレージ アカウントをサポートしていません**。
 
 ストレージ アカウントは、[階層型名前空間 (HNS)](/azure/storage/blobs/create-data-lake-storage-account) が有効な状態で作成する必要があります。 
+
+エンドポイントをセキュリティで保護するには、TLS (トランスポート層セキュリティ) バージョン 1.2 (またはそれ以上) が必要です。 TLS 1.2 より前のバージョンの TLS を使用する Web ブラウザーやその他のクライアント アプリケーションでは、接続できません。
 
 さらに、ADLS Gen 2 アカウントを、Power BI テナントと同じリージョンにデプロイする必要があります。 リソースの場所が同じリージョンにない場合、エラーが発生します。
 

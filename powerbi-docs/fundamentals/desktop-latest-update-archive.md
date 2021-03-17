@@ -1,5 +1,5 @@
 ---
-title: Power BI Desktop に対する以前の毎月の更新
+title: Power BI Desktop と Power BI サービスに対する過去の月次更新
 description: 以前の Power BI Desktop リリースの機能更新
 author: davidiseminger
 ms.author: davidi
@@ -7,25 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 03/05/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 499caa9295acf97347541892e54ef4b2da6b3454
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 036f98f6ba76e27d57f9bfd716612d961f9f1559
+ms.sourcegitcommit: b4ebd259fc8676b8c535ae1c2bb9d19c08c463dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600636"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102252907"
 ---
-# <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktop に対する以前の毎月の更新
+# <a name="previous-monthly-updates-to-power-bi-desktop-and-the-power-bi-service"></a>Power BI Desktop と Power BI サービスに対する過去の月次更新
 
-この記事では、**Power BI Desktop** の以前の更新について説明します。 最新月のリリースについては、[**Power BI Desktop** の最新の更新](desktop-latest-update.md)を確認してください。
+この記事では、**Power BI Desktop** と **Power BI サービス** に対する、これまでの更新について説明します。 最新月のリリースについては、[**Power BI** の最新の更新](desktop-latest-update.md)を確認してください。
 
-[ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得します。 Windows 10 を実行している場合、Windows 10 の Microsoft Store から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
-
-
-> [!IMPORTANT]
-> Power BI Desktop は、お客様のフィードバックと新機能を組み込み、月単位で更新およびリリースされます。 サポート対象の Power BI Desktop は、最新バージョンのみです。お客様が Power BI Desktop に関してサポートに問い合わせた場合、最新バージョンにアップグレードするように求められます。 最新バージョンの Power BI Desktop は、[Windows ストア](https://aka.ms/pbidesktopstore)から入手するか、またはサポートされているすべての言語を含む 1 つの実行可能ファイルとして[ダウンロード](https://www.microsoft.com/download/details.aspx?id=58494)してお使いのコンピューターにインストールできます。
-
+Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの "新機能" の更新情報も含まれるようになりました。 各セクションで、Power BI Desktop または Power BI サービスのタブを選択してください。 モバイルの更新の詳細については、「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご覧ください。
 
 各更新の横にあるリンクには、次の意味があります。
 
@@ -36,18 +31,89 @@ ms.locfileid: "97600636"
 
 この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
-次のセクションでは、**Power BI Desktop** の以前の月の更新について説明します。
+次のセクションでは、**Power BI Desktop** と **Power BI サービス** の以前の月の更新について説明します。
+
+## <a name="december-2020-update-2883210"></a>2020 年 12 月の更新 (2.88.321.0)
+
+12 月の Power BI の更新プログラムを適用すると、雪明りに満ちた小道のように明るい気分になります。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
+
+Windows 10 を実行している場合は、Windows ストアから [Power BI Desktop](https://aka.ms/pbidesktopstore) の最新バージョンを取得できます。 この最新バージョンは、お使いのコンピューターにインストールできるすべてのサポート対象言語を含んだ単一の実行可能ファイルとして、[Windows Store](https://www.microsoft.com/download/details.aspx?id=58494) から入手することもできます。
+
+Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
+
+> [!IMPORTANT]
+> Power BI Desktop は、お客様のフィードバックと新機能を組み込み、月単位で更新およびリリースされます。 サポート対象の Power BI Desktop は、最新バージョンのみです。お客様が Power BI Desktop に関してサポートに問い合わせた場合、最新バージョンにアップグレードするように求められます。 
+
+以下の更新は、今月の Power BI Desktop の新しい機能です。
+
+### <a name="reporting"></a>レポート
+* DirectQuery for Power BI datasets and Azure Analysis Services (プレビュー) [[ビデオ]](https://youtu.be/68YvRs49VZM?t=33)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831296)   [[記事]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+* スモール マルチプル (プレビュー) [[ビデオ]](https://youtu.be/68YvRs49VZM?t=378)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831297)
+* Power BI Desktop (プレビュー) のデータ保護の秘密度ラベル [[ビデオ]](https://youtu.be/68YvRs49VZM?t=656)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831298) 
+* 四角形の選択データ ポイント制限の引き上げ [[ビデオ]](https://youtu.be/68YvRs49VZM?t=734)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831299) 
+* モバイル レイアウト ビューで使用できるようになった [選択] ペイン [[ビデオ]](https://youtu.be/68YvRs49VZM?t=757)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831300) 
+* Analysis Services ソースのページの自動更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=789)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831301) 
 
 
+### <a name="data-preparation"></a>データの準備
+* Power Query とデータフローの変更 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=851)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831302)
+
+### <a name="data-connectivity"></a>データ接続
+* Microsoft Dataverse コネクタ [[ビデオ]](https://youtu.be/68YvRs49VZM?t=886)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831566)
+* Azure Time Series Insights の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=919)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831305)
+* SurveyMonkey の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=926)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831568)
+* Cognite の更新 [[ビデオ]](https://youtu.be/68YvRs49VZM?t=933)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831307)
+
+
+### <a name="visuals"></a>視覚化
+* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/68YvRs49VZM?t=1330)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831588)
+
+これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/)に関するブログ投稿を参照してください。
+
+
+> [!NOTE]
+> [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
+次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
+
+> [!VIDEO https://www.youtube.com/embed/68YvRs49VZM]
+
+
+ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
+
+* 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
+* より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
+* 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
+* アーカイブされるのは英語版の Power BI Desktop のみです。
+
+次のリンクを選択して、この以前のバージョンをダウンロードします。 
+
+* [2020 年 12 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-12.exe)
+* [2020 年 12 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-12_x64.exe)
+
+
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+- Bing および Office の Microsoft Search での Power BI 検索の一般提供開始
+- ホーム リスト エクスペリエンス
+- カスタム公開メッセージ
+- Power BI 管理ポータルで使用できるようになった新しいエクスポート設定
+- Power BI Premium Per User のパブリック プレビュー
+- サービスでの迅速なレポート作成 (近日提供予定)
+
+---
 
 ## <a name="november-2020-update-2872610"></a>2020 年 11 月の更新 (2.87.261.0)
 
-11 月の Power BI Desktop の更新は、新機能や改善された機能がまとめて入った、盛りだくさんな内容となっています。 
+11 月の Power BI の更新は、新機能や改善された機能がまとめて入った、盛りだくさんな内容となっています。 
 
-Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルと Power BI サービスの更新プログラムの詳細については、それぞれの新機能に関する記事をご覧ください。
+Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 このセクションで、Power BI Desktop または Power BI サービスのタブを選択してください。 モバイルの更新の詳細については、「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご覧ください。
 
-* [Power BI サービスの新機能](service-whats-new.md)
-* [Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得してください。 Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
 
@@ -117,15 +183,18 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * [2020 年 11 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-11_x64.exe)
 
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+- 認定および昇格されたレポートとアプリ
+- Power BI サービスの "新しい外観"
+
+---
 
 ## <a name="october-2020-update-2863210"></a>2020 年 10 月の更新 (2.86.321.0)
 
-10 月の Power BI Desktop の更新には非常に優れた機能が多数含まれており、数週間にわたっていろいろお試しいただけます。 
+10 月の Power BI の更新には非常に優れた機能が多数含まれており、数週間にわたっていろいろお試しいただけます。 
 
-Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルと Power BI サービスの更新プログラムの詳細については、それぞれの新機能に関する記事をご覧ください。
-
-* [Power BI サービスの新機能](service-whats-new.md)
-* [Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop と Power BI サービスの更新について説明します。 モバイルの更新の詳細については、「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご覧ください。
 
 [ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得してください。 Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
 
@@ -217,10 +286,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 9 月の Power BI Desktop の更新プログラムは、秋の訪れや紅葉のようにクールで明快です。 
 
-今月新たに、Power BI Desktop の毎月のブログとビデオの更新プログラムに、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop の更新について説明します。 モバイルと Power BI サービスの更新プログラムの詳細については、それぞれの新機能に関する記事をご覧ください。
-
-* [Power BI サービスの新機能](service-whats-new.md)
-* [Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+今月新たに、Power BI Desktop の毎月のブログとビデオの更新プログラムに、Power BI モバイルと Power BI サービスの新機能の更新情報も含まれるようになりました。 この記事では、Power BI Desktop と Power BI サービスの更新について説明します。 モバイルの更新の詳細については、「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご覧ください。
 
 [ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得してください。 Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
 
@@ -358,7 +424,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/)に関するブログ投稿を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
@@ -437,7 +503,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/)に関するブログ投稿を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
@@ -520,7 +586,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/)に関するブログ投稿を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
@@ -530,21 +596,6 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
 
 > [!VIDEO https://www.youtube.com/embed/WUo8TnHNHYM]
-
-
-ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
-
-* 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
-* より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
-* 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
-* アーカイブされるのは英語版の Power BI Desktop のみです。
-
-次のリンクを選択して、この以前のバージョンをダウンロードします。 
-
-* [2020 年 6 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06.exe)
-* [2020 年 6 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06_x64.exe)
-
-
 
 
 ## <a name="may-2020-update-2815831621"></a>2020 年 5 月更新 (2.81.5831.621)
@@ -608,7 +659,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/)に関するブログ投稿を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
@@ -619,18 +670,12 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 > [!VIDEO https://www.youtube.com/embed/JtuHIslowxk]
 
-ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
-
-* 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
-* より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
-* 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
-* アーカイブされるのは英語版の Power BI Desktop のみです。
-
-
 
 ## <a name="april-2020-update-2805803282"></a>2020 年 4 月更新 (2.80.5803.282)
 
-4 月の Power BI Desktop を世界中のコミュニティのみなさんと共有できたことに感謝しています。 
+4 月の Power BI の更新を世界中のコミュニティのみなさんと共有できたことに感謝しています。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得してください。 Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
 
@@ -649,7 +694,6 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 以下の更新は、今月の Power BI Desktop の新しい機能です。
 
-
 ### <a name="reporting"></a>レポート
 * 視覚エフェクトのカスタマイズ (プレビュー) [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=54) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Personalize_visuals) 
 * ページの更新の変更検出 (プレビュー) [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=447) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Change_detection) 
@@ -659,55 +703,54 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * [テーマのカスタマイズ] ダイアログの一般提供開始 [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1250) [[記事]](../create-reports/desktop-report-themes.md#customize-report-themes) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
 * 条件付き書式の探索可能性の向上 [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1479) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Improved_discoverability) 
 
-
-
 ### <a name="analytics"></a>分析
 * AI 視覚エフェクトの DirectQuery サポート [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1498) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Direct_Query_AI) 
 * 分解ツリーでのツールヒントのサポート [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1550) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Decomp_tree_tooltips) 
 * Q&A の更新 [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1606)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_QA_updates) 
 
-
 ### <a name="visuals"></a>ビジュアル
 * 新しい視覚エフェクト アイコン [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1946) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_Visualization_icons) 
 * 新しい Power BI ビジュアル [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1833) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Visualizations)
-
 
 ### <a name="template-apps"></a>テンプレート アプリ
 * Power Platform センター オブ エクセレンス StartKit [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1969) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CoE_StartKit) 
 * Azure Cognitive Search: ログとメトリックの分析 [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1969) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Azure_Cognitive_Search)
 * COVID-19 アプリ [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=1969) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_COVID)
 
-
 ### <a name="data-preparation"></a>データ準備
 * クエリ診断の機能強化 [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=2011) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Enhancements_to_Query) 
-
 
 ### <a name="data-connectivity"></a>データ接続
 * Azure Data Lake Storage Gen2 の CDM フォルダー ビュー [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=2124) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CDM_Folder_view) 
 
-
 ### <a name="other-features"></a>その他の機能
 * 新しい講師による指導付きトレーニング [[ビデオ]](https://youtu.be/q2Hfn_Rhb3E?t=2147) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_instructor-led_training) 
 
-
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/)に関するブログ投稿を参照してください。
-
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
-
 
 ### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
 次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
 
 > [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
+
+* Power BI サービス内のワークスペースの "新しい外観" のパブリックプレビュー。
+* [Power BI アプリ](../collaborate-share/service-create-distribute-apps.md)向けカスタム ナビゲーションの設計の一般提供。
+
+---
 
 ## <a name="march-2020-update-2795768562"></a>2020 年 3 月の更新 (2.79.5768.562)
 
-3 月の Power BI Desktop を共有できることを嬉しく思います。 
+
+3 月の Power BI の更新を共有できることを嬉しく思います。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から最新バージョンの Power BI Desktop を取得してください。 Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
 
@@ -770,7 +813,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/)に関するブログ投稿を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
@@ -781,10 +824,22 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 > [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+Power BI サービスの更新は次のような内容でした。
+
+* Power BI REST API を使用して、PDF ファイル、PPTX ファイル、PNG ファイルにレポートをエクスポートします。
+* 新たに改良された Power BI サービスのグローバル検索エクスペリエンス。
+* [Multi-Geo Premium 容量](../admin/service-admin-premium-multi-geo.md)のパフォーマンス向上。
+* Power BI Premium での[読み取り/書き込み XMLA エンドポイント](../admin/service-premium-connect-tools.md)のパブリック プレビュー。
+
+---
 
 ## <a name="february-2020-update-2785740642"></a>2020 年 2 月の更新 (2.78.5740.642)
 
 素晴らしい新機能を含む、2 月の更新プログラムをご利用いただけます。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
 > 2019 年 9 月のリリース以降、Power BI Desktop は、サポートされているすべての言語を含む 1 つの .exe ファイルとしてのみリリースされています。 .msi バージョンはリリースされなくなります。
@@ -833,7 +888,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/)に関するブログ投稿を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
@@ -844,11 +899,24 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 > [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
+
+* Power BI ホームのダッシュボード、レポート、アプリの昇格機能。
+* Microsoft Teams でレポートを埋め込むための、新しくなった [Power BI タブ](../collaborate-share/service-collaborate-microsoft-teams.md)。
+* Power BI Pro ユーザーへのサポート付き[増分更新](../admin/service-premium-incremental-refresh.md)の一般提供。
+* 外部のメール アドレスに対する電子メール サブスクリプションのサポート。
+* Power BI Premium の [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md) の一般提供。
+* Power BI のワークスペース エクスペリエンスに関する、新たに改善された[使用状況メトリック](../collaborate-share/service-usage-metrics.md)。
+
+---
 
 ## <a name="december-2019-update-2765678661"></a>2019 年 12 月の更新 (2.76.5678.661)
 
 12 月の更新プログラムは、雪山をボブスレーで滑り降りるくらい楽しいものでした。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
 > 2019 年 9 月のリリース以降、Power BI Desktop は、サポートされているすべての言語を含む 1 つの .exe ファイルとしてのみリリースされています。 .msi バージョンはリリースされなくなります。
@@ -904,7 +972,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、「[2019 年 12 月の Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/)」を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 > [!NOTE]
 > [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
@@ -915,10 +983,19 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 > [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+Power BI サービスの更新は次のような内容でした。
+
+* Power BI サービス管理者がテナント内のユーザーと管理者のアクティビティを追跡できる、新しいアクティビティ ログ API。
+
+---
 
 ## <a name="november-2019-update-2755649341"></a>2019 年 11 月の更新 (2.75.5649.341)
 
 11 月の更新プログラムは、幸せな家族の集まりのように歓迎されました。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
 > 2019 年 9 月のリリース以降、Power BI Desktop は、サポートされているすべての言語を含む 1 つの .exe ファイルとしてのみリリースされています。 .msi バージョンはリリースされなくなります。
@@ -970,7 +1047,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 これらの新機能の詳細については、「[2019 年 11 月の Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/)」を参照してください。
 
-「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
+「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」をご確認ください。
 
 
 ### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
@@ -978,11 +1055,20 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 > [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
+
+* [Power BI Premium の大規模なモデル](../admin/service-premium-large-models.md)のパブリック プレビュー。
+* Power BI での Microsoft Cloud App Security の使用のパブリック プレビュー。
+
+---
 
 ## <a name="october-2019-update-2745619621"></a>2019 年 10 月の更新 (2.74.5619.621)
 
 10 月の更新プログラムは、ハロウィン用のかぼちゃマーケットよりも楽しく、お化け屋敷のミッドナイト ツアーよりも刺激的です。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [Power BI Desktop の最新バージョンをダウンロード](https://powerbi.microsoft.com/desktop)できるようになり、サポートされているすべての言語を含む 1 つの .exe ファイルとして配信されるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1053,14 +1139,22 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 > [!VIDEO https://www.youtube.com/embed/A8A9baUQsXQ]
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
 
+* Power BI データセットを更新するための新しい Power Automate アクション。
+* Power BI サービスのレポートとダッシュボードの[連絡先リスト](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/)。
+* [自動機械学習](../transform-model/dataflows/dataflows-machine-learning-integration.md)の一般提供
+* Power BI データ系列ビューのパブリック プレビュー。
+
+---
 
 ## <a name="september-2019-update-2735586561"></a>2019 年 9 月更新 (2.73.5586.561)
 
 9 月の更新プログラムは、学校の新学期のようなもので、新しく学習すること、夏の間会えなかった友人が変わったところ、将来のレポートに知識を適用する機会などがあります。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [Power BI Desktop の最新バージョンをダウンロード](https://powerbi.microsoft.com/desktop)できるようになり、サポートされているすべての言語を含む 1 つの .exe ファイルとして配信されるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1119,13 +1213,19 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
+
+* [テンプレート アプリ](../connect-data/service-template-apps-overview.md)の接続構成の更新。
+
+---
 
 ## <a name="august-2019-update-2725556801"></a>2019 年 8 月更新 (2.72.5556.801)
 
-8 月の更新プログラムは注目されており、Power BI Desktop で作成できるレポートを明るく際立たせます。 
+8 月の更新プログラムは注目されており、Power BI で作成できるレポートを明るく際立たせます。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [Power BI Desktop の最新バージョンをダウンロード](https://powerbi.microsoft.com/desktop)できるようになり、サポートされているすべての言語を含む 1 つの .exe ファイルとして配信されるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1176,9 +1276,6 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sf4n7VXoQHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
-
 ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
 
 * 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
@@ -1186,9 +1283,23 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
 * アーカイブされるのは英語版の Power BI Desktop のみです。
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+Power BI サービスの更新は次のような内容でした。
+
+* Power BI Premium の新しい容量設定。
+* 組織向けの[カスタム ブランディング](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/)。
+* ビルド アクセス許可を使用した集約されたデータのエクスポート。
+* [ページ分割されたレポート](../paginated-reports/paginated-reports-report-builder-power-bi.md)用の URL パラメーターのサポート。
+* 毎月の電子メール サブスクリプションのサポート。 
+
+---
+
 ## <a name="july-2019-update-2715523641"></a>2019 年 7 月更新プログラム (2.71.5523.641)
 
-7 月の更新プログラムには、ご利用の Power BI Desktop 用の新機能のカラフルなアイコンが一気に盛り込まれています。 
+7 月の更新プログラムには、ご利用の Power BI 用の新機能のカラフルなアイコンが一気に盛り込まれています。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [最新バージョンの Power BI Desktop をダウンロード](https://powerbi.microsoft.com/desktop)できるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1240,10 +1351,6 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l7OMRUF9UYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
-
-
 ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
 
 * 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
@@ -1251,9 +1358,25 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
 * アーカイブされるのは英語版の Power BI Desktop のみです。
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+Power BI サービスの更新は次のような内容でした。
+
+* [ページ分割されたレポート](../paginated-reports/paginated-reports-report-builder-power-bi.md)用の非プレミアム データセットのサポート。
+* Power BI [集計](../transform-model/desktop-aggregations.md)の一般提供。
+* 他ユーザーへの更新通知の送信。
+* Power BI Premium 容量向けの[テスト ツール](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/)。
+* [サービス可用性通知](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/)のパブリック プレビュー。
+* Power BI レポートの[新しい外観](https://powerbi.microsoft.com/blog/introducing-the-new-look-of-workspaces-in-the-power-bi-service/)のパブリック プレビュー。
+* 南アフリカの新しい Power BI リージョン。
+
+---
+
 ## <a name="june-2019-update-2705494561"></a>2019 年 6 月更新 (2.70.5494.561)
 
-6 月の更新プログラムでは、レポートに太陽の光と青空が広がります。Power BI Desktop 向けにさわやかな明るい新しい配色パターンが加わり、他にもさまざまな面が改善されました。 
+6 月の更新プログラムでは、レポートに太陽の光と青空が広がります。Power BI 向けにさわやかな明るい新しい配色パターンが加わり、他にもさまざまな面が改善されました。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [最新バージョンの Power BI Desktop をダウンロード](https://powerbi.microsoft.com/desktop)できるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1317,14 +1440,24 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+Power BI サービスの更新は次のような内容でした。
 
+* [共有データセットと認定済みデータセット](../connect-data/service-datasets-across-workspaces.md)のパブリック プレビュー。
+* [Premium 容量メトリック アプリ](../admin/service-admin-premium-monitor-capacity.md)で利用可能な AI メトリック。
+* Power BI [テンプレート アプリ](../connect-data/service-template-apps-overview.md)の一般提供。
+* Power BI での[ページ分割されたレポート](../paginated-reports/paginated-reports-report-builder-power-bi.md)の一般提供。
+* Power BI Premium の Bring Your Own Key ([BYOK](../admin/service-encryption-byok.md)) のパブリック プレビュー。
+* [新しいワークスペース エクスペリエンス](../collaborate-share/service-new-workspaces.md)のビューアー ロール。
+
+---
 
 ## <a name="may-2019-update-26954671251"></a>2019 年 5 月更新 (2.69.5467.1251)
 
 5 月の更新プログラムは、人を引き付ける新機能と、カラフルな美しいビジュアルがいっぱいに詰め込まれた植木鉢が使用された、あなたの優れたレポートの庭園で咲きました。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [最新バージョンの Power BI Desktop をダウンロード](https://powerbi.microsoft.com/desktop)できるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1384,12 +1517,21 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8GlHDz8xUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+Power BI サービスの更新は次のような内容でした。
+
+* Power BI アプリの[カスタム ナビゲーション](../collaborate-share/service-create-distribute-apps.md)。
+* ページ分割されたレポート内の電子メール サブスクリプションで使用できる追加の添付ファイルの種類 (PPTX、XLSX、DOCX、CSV、XML)。
+* サービスでの Power BI レポートの[コメント作成](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/)。
+
+---
 
 ## <a name="april-2019-update-2685432361"></a>2019 年 4 月更新 (2.68.5432.361)
 
 4 月の更新プログラムは、雨の日の足取りを軽やかにする更新プログラムが満載です。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [最新バージョンの Power BI Desktop をダウンロード](https://powerbi.microsoft.com/desktop)できるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1455,13 +1597,28 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vih35kSrEHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
+
+* Power BI [データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)の一般提供。
+* 新しいワークスペース エクスペリエンスの一般提供。
+* フランスと韓国の新しい Power BI リージョン。
+* ダッシュボードでの Q&A エクスペリエンスの更新。
+* [ページ分割されたレポート](../paginated-reports/paginated-reports-report-builder-power-bi.md)内の Azure Analysis Services のサポート。
+* Power BI アプリでサポートされるページ分割されたレポート。
+* ページ分割されたレポートに PDF 添付ファイルを使用した[電子メール サブスクリプション](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/)。
+* 管理ポータルでサポートされている Power BI Premium 集計とワークロード メトリック
+* Power BI Premium で使用できる[クエリ キャッシュ](../connect-data/power-bi-query-caching.md)。
+* [Power BI ホーム](https://powerbi.microsoft.com/blog/announcing-power-bi-home-general-availability-ga-roadmap/)の一般提供。
+
+---
 
 ## <a name="march-2019-update-2675404581"></a>2019 年 3 月の更新 (2.67.5404.581)
 
 3 月の更新プログラムには、魅力的かつ便利な更新が満載されています。四つ葉のクローバーを見つけたときと同じくらいラッキーな気持ちになっていただけることを願っています。 
+
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [最新バージョンの Power BI Desktop をダウンロード](https://powerbi.microsoft.com/desktop)できるようになりました。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1521,15 +1678,21 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rBPGH6eYlT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
 
+* Power BI Premium の Multi-Geo の一般提供。
+* Azure B2B に対する Power BI コンテンツの編集と管理のサポート。
+* 読み取り専用の [XMLA エンドポイント](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/)のパブリック プレビュー。
+
+---
 
 ## <a name="february-2019-update-26653761681"></a>2019 年 2 月更新 (2.66.5376.1681)
 
 2 月の更新では、新しいデータ コネクタ、機能、分析機能拡張をお客様に提供しました。 チョコレートの箱のように中身は開けるまでわかりませんが、この 2 月の更新における変更はすべて最高の内容でした。 
 
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
 
 [最新バージョンの Power BI Desktop をダウンロード](https://powerbi.microsoft.com/desktop)できます。 Windows 10 を実行している場合、Windows ストアから **Power BI Desktop** を取得することもできます。 バージョン番号が異なる場合でも、月次バージョン番号は **Power BI Desktop** のインストール方法に関係なく同じです。 詳細については、[この記事](desktop-get-the-desktop.md)を参照してください。 
 
@@ -1586,14 +1749,37 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
 
+Power BI サービスの更新は次のような内容でした。
+
+* [容量監視アプリ](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/)でのワークロードとアクティブなデータセットのサイズのメトリック。
+* Power BI レポートの PDF へのエクスポート。
+* [オンデマンドの電子メールのサブスクリプション](../collaborate-share/service-publish-to-web.md)。
+* 管理ポータルでの一括操作。
+* PPT および PDF 用のフィルター処理済みエクスポート。
+* 管理ポータルでの[ヘルプとサポートの設定](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/)。
+* [データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md)向けデータ系列エクスペリエンス。
+* 管理ポータルでの認定済み Power BI ビジュアル設定。
+
+---
 
 ## <a name="january-2019-update"></a>2019 年 1 月更新
 
+# <a name="power-bi-desktop"></a>[Power BI Desktop](#tab/powerbi-desktop)
+
 2019 年 1 月には Power BI Desktop のリリースはありませんでした - 全員が祝日を祝い、友人や家族と過ごしていました。 
 
+# <a name="power-bi-service"></a>[Power BI サービス](#tab/powerbi-service)
+
+Power BI サービスの更新は次のような内容でした。
+
+* 内部ポータルまたは Web サイトでの[セキュリティ保護された Power BI レポートの埋め込み](../collaborate-share/service-embed-report-spo.md)。
+* 新しいコネクタでの[データフロー](../transform-model/dataflows/dataflows-introduction-self-service.md) エディターへの更新と、ネイティブ SQL クエリおよび Power Query Online 変換のサポート。
+* Power BI サービスでの[個人用ブックマーク](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/)。
+* 電子メール サブスクリプションでの時間ベースのスケジュール。
+
+---
 
 ## <a name="december-2018-update-2655313621"></a>2018 年 12 月の更新 (2.65.5313.621)
 
@@ -1666,7 +1852,8 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AHNlkjRFdYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+
 
 
 ## <a name="november-2018-update-2645285582"></a>2018 年 11 月の更新 (2.64.5285.582)
@@ -1717,7 +1904,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1xsXXoyTxfk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="october-2018-update-263327240262"></a>2018 年 10 月更新 (2.63.3272.40262)
@@ -1776,7 +1963,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="september-2018-update-2625222582"></a>2018 年 9 月更新 (2.62.5222.582)
@@ -1823,7 +2010,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -1872,7 +2059,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dgv5HhHxxe8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -1931,7 +2118,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="june-2018-update-2595135101"></a>2018 年 6 月更新 (2.59.5135.101)
@@ -1979,7 +2166,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 ## <a name="may-2018-update-2585103281"></a>2018 年 5 月更新 (2.58.5103.281)
 
@@ -2033,7 +2220,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-_GMCE1TLvQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="april-2018-update-2575068501"></a>2018 年 4 月更新 (2.57.5068.501)
@@ -2079,7 +2266,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2125,7 +2312,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2189,7 +2376,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="january-2018-update-2544970761"></a>2018 年 1 月更新 (2.54.4970.761)
@@ -2238,7 +2425,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2294,7 +2481,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPU8B-1BxjI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="november-2017-update-2524921202"></a>2017 年 11 月の更新 (2.52.4921.202)
@@ -2350,7 +2537,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sI3yRjdnJ7w" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2408,7 +2595,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jksjtR8GnBE" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="september-2017-update-2504859502"></a>2017 年 9 月更新 (2.50.4859.502)
@@ -2448,7 +2635,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/moTQJlnClJw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="august-2017-update-2494831222"></a>2017 年 8 月更新 (2.49.4831.222)
@@ -2493,7 +2680,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ND8U0yXroaQ" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="july-2017-update-2484792321"></a>2017 年 7 月更新 (2.48.4792.321)
@@ -2543,7 +2730,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4X96ow7FnSY" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="june-2017-update-2474766542"></a>2017 年 6 月更新 (2.47.4766.542)
@@ -2588,7 +2775,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YlNVE5dgcSI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2635,7 +2822,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CKISVNHcHVA" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2680,7 +2867,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="march-2017-update-2444675422"></a>2017 年 3 月更新 (2.44.4675.422)
@@ -2723,7 +2910,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaRTON3lJqw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2771,7 +2958,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mn75-LOPxMA" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="january-2017-update-2424611482"></a>2017 年 1 月更新 (2.42.4611.482)
@@ -2807,7 +2994,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C1-f0T8vZ7M" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -2860,7 +3047,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kERJ_WOLuLk" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="october-2016-update-2404554361"></a>2016 年 10 月の更新 (2.40.4554.361)
@@ -2913,7 +3100,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXEYSvgvMaQ" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="september-2016-update-2394526362"></a>2016 年 9 月更新 (2.39.4526.362)
@@ -2971,7 +3158,7 @@ Microsoft の 9 月の更新プログラムは新しい使い方に慣れるた�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pcUr6E8g_KI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -3032,7 +3219,7 @@ Power BI Desktop の新機能を完全に利用できます。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0VvG7Eqoke8" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="july-2016-update-2374464321"></a>2016 年 7 月更新 (2.37.4464.321)
@@ -3075,7 +3262,7 @@ Power BI Desktop の新機能を完全に利用できます。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 ## <a name="june-2016-update-2364434362"></a>2016 年 6 月更新 (2.36.4434.362)
 
@@ -3129,7 +3316,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -3185,7 +3372,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 ## <a name="april-2016-update-2344372322"></a>2016 年 4 月更新 (2.34.4372.322)
 
@@ -3234,7 +3421,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="march-2016-update-2334337281"></a>2016 年 3 月更新 (2.33.4337.281)
@@ -3286,7 +3473,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 
@@ -3344,7 +3531,7 @@ Power BI Desktop の新機能を完全に利用できます。
 
 
 > [!NOTE]
-> 「[Power BI サービスの新機能](service-whats-new.md)」と「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
+> 「[Power BI 用モバイル アプリの新機能](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)」も参考に是非ご覧ください。
 
 
 ## <a name="january-2016-update-2314280361"></a>2016 年 1 月更新 (2.31.4280.361)

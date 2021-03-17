@@ -3,19 +3,19 @@ title: 米国政府顧客向け Power BI にサインアップする
 description: 政府向けコミュニティ クラウドで米国政府顧客向け Power BI にサインアップする方法を学習します。
 author: kfollis
 ms.author: kfollis
-ms.reviewer: ''
+ms.reviewer: jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/07/2020
+ms.date: 02/17/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 47fb45063a0ced5a655c073cc148e670a74a3ee8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f79431964beed80acace1590d402d55bd4b3edd0
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412370"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101843115"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Power BI サービスに米国政府機関を登録する
 
@@ -24,15 +24,17 @@ Power BI サービスには、[Microsoft 365 Government プラン](https://www.m
 米国政府向け Power BI サービスについて詳しくは、[米国政府顧客向け Power BI に関するページの「概要」](service-govus-overview.md)を参照してください。
 
 > [!NOTE]
-> この記事は、米国政府機関を Power BI にサインアップする権限を持つ管理者を対象としています。 エンドユーザーの場合は、米国政府向け Power BI へのサブスクリプションの取得について管理者に問い合わせてください。
-> 
-> 
+> この記事は、米国政府機関を Power BI にサインアップする権限を持つ管理者を対象としています。 ご自分が管理者でない場合は、米国政府向け Power BI へのサブスクリプションの取得について管理者に問い合わせてください。
+>
 
 ## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>米国政府機関に適したサインアップ プロセスを選択する
 
-米国政府機関は、政府向けクラウド コミュニティを初めて使用する場合と、既にサブスクリプションを持っている場合があります。 以下のセクションでは、Microsoft 365 Government プランと Power BI の使用状況に基づくサインアップ手順について詳しく説明します。 手順は現在の登録によって異なります。
+Microsoft 365 には、政府機関のさまざまなコンプライアンス要件を満たすための複数の環境が用意されています。 [Microsoft 365 Government Community Cloud (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) は、連邦政府、州政府、および地方自治体向けに設計されています。 お客様の組織が GCC である場合は、この記事の手順を使用して、サービスのサインアップと購入を行うことができます。
 
-米国政府向け Power BI にサインアップした後、アカウント チームと協力して、この記事で説明されている[許可リスト プロセス](#additional-signup-information)を開始します。 この手順は、政府向けコミュニティ クラウドで組織を完全に有効にするために必要です。
+>[!IMPORTANT]
+>[Microsoft 365 Government Community Cloud High (GCC High)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) と [Microsoft 365 DoD 環境](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod)をご利用のお客様は、次の手順には従わないでください。 GCC High または DoD 組織のお客様は、「[Microsoft 365 Government を購入するにはどうすればよいですか?](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)」プロセスを使用してサービスを購入する必要があります。 これらの環境では、新しいサービスがテナントに適切に関連付けられるように、リセラーと連携することが重要です。
+
+米国政府向け Power BI にサインアップした後、アカウント チームと協力して、この記事で説明されている[許可リスト プロセス](#more-signup-information)を開始します。 この手順は、政府向けコミュニティ クラウドで組織を完全に有効にするために必要です。
 
 ## <a name="sign-up-for-a-new-microsoft-365-government-plan"></a>新しい Microsoft 365 Government プランにサインアップする
 
@@ -56,23 +58,17 @@ Power BI サービスには、[Microsoft 365 Government プラン](https://www.m
 
 組織に既に Microsoft 365 Government プランがある場合は、これらの手順に従って Power BI サブスクリプションを追加します。
 
-> [!NOTE]
-> これらの手順は、グローバル管理者が行う必要があります。
-> 
-> 
-
 1. グローバル管理者または課金管理者の資格情報を使用して、Microsoft 365 管理センターにサインインします。
 2. **[請求]**  >  **[サービスを購入する]** を選択します。
 4. 検索またはスクロールして Power BI Pro Government プランを見つけ、 **[試す]** または **[今すぐ購入]** を選びます。
 5. 注文を完了します。
 6. ユーザー アカウントにライセンスを割り当てます。
 
-## <a name="additional-signup-information"></a>サインアップに関する追加情報
+## <a name="more-signup-information"></a>サインアップに関するその他の情報
 
-米国政府向け Power BI サービスを使用する前に、Microsoft アカウント チームと協力して、お客様の組織の許可リストへの追加を開始する必要があります。 許可リスト プロセスは、Power BI のエンジニアリング チームが商用クラウド環境から、セキュリティが強化された政府向けコミュニティ クラウドにお客様を移動するために使用します。 この手順により、確実に米国政府向けクラウドで使用可能な機能が期待どおりに動作するようになります。 
+米国政府機関向け Power BI を使用する前に、Microsoft アカウント チームと協力して、お客様の組織の許可リストへの追加を開始する必要があります。 許可リスト プロセスは、Power BI のエンジニアリング チームが商用クラウド環境から、セキュリティが強化された政府向けコミュニティ クラウドにお客様を移動するために使用します。 この手順により、確実に米国政府向けクラウドで使用可能な機能が期待どおりに動作するようになります。
 
 許可リスト プロセスを開始する場合は、Microsoft アカウント チームにお問い合わせください。 許可リストへの追加を要求できるのは管理者だけです。 このプロセスには約 3 週間かかります。 この間、確実にテナントが米国政府向けクラウドで正しく動作するように、Power BI のエンジニアリング チームが適切な変更を行います。
-
 
 ## <a name="next-steps"></a>次の手順
 

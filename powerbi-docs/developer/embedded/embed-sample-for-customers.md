@@ -7,14 +7,13 @@ ms.reviewer: ''
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: 28081342763ca297648f67f953a29b46d02bf478
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.openlocfilehash: ebd6cf15c05a5ed86179b438a94a2f84b770a106
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99494858"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102534506"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>チュートリアル:"*顧客向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
@@ -390,7 +389,7 @@ Power BI レポートを埋め込むには、これらの手順に従って、"*
 
     a. **[Package Explorer]\(パッケージ エクスプローラー\)** ペインで、 **[AppOwnsData]** を右クリックし、 **[プロパティ]** を選択します。
 
-    b. **AppOwnesData の [プロパティ]** ウィンドウで、 **[Targeted Runtimes]\(ターゲット ランタイム\)** を選択してから **[Apache Tomcat]** を選びます。 この選択には、使用する *Apache Tomcat* のバージョン (*Apache Tomcat v9.0* など) が含まれます。
+    b. **AppOwnsData の [プロパティ]** ウィンドウで、 **[Targeted Runtimes]\(ターゲット ランタイム\)** を選択してから **[Apache Tomcat]** を選びます。 この選択には、使用する *Apache Tomcat* のバージョン (*Apache Tomcat v9.0* など) が含まれます。
 
     c. **[Apply and Close]\(適用して閉じる\)** を選択します。
 

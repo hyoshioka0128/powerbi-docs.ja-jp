@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/22/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bff53ac0e230a91dd980b461340ae4109f551999
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: b200e10f34a776c542e59b338695d2e485e28bc3
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195862"
 ---
 # <a name="microsoft-sustainability-calculator-support-page"></a>Microsoft Sustainability Calculator のサポート ページ
 
@@ -116,6 +116,10 @@ Azure の登録番号が必要になります。 わからない場合は、組�
    ![登録番号を入力する](media/service-connect-to-microsoft-sustainability-calculator/enter-enrollment-number.png)
 
 4. アカウントを接続します。
+
+   > [!NOTE]
+   > お使いのアカウントへの接続に使用する Azure portal ペインは、次の例に示すのと同じ順序でない場合や、詳細の表示が同じでない場合があります。
+   
    - **[You are connecting to (1 of 2)]\(接続しています (1/2)\)** の **[認証方法]** で **[OAuth2]** を選択し、 **[このデータ ソースのプライバシー レベルの設定]** で **[組織]** を選択します。
 
       ![パラメーター認証の最初のダイアログのスクリーンショット。](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)

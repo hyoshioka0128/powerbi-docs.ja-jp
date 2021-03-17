@@ -1,19 +1,19 @@
 ---
-title: デプロイ パイプラインの概要
-description: Power BI のデプロイ パイプラインについて説明します
+title: Power BI のアプリケーション ライフサイクル管理 (ALM) に使用するデプロイ パイプラインの概要
+description: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) の概要を紹介します
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 10/21/2020
-ms.openlocfilehash: ba2aedd4d503d468ba47640dd29fcfe004825ba5
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.date: 03/04/2021
+ms.openlocfilehash: 4571c1fa807d7374b53a039968d3e87370a80aee
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621121"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194873"
 ---
 # <a name="introduction-to-deployment-pipelines"></a>デプロイ パイプラインの概要
 

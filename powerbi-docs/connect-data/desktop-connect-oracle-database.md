@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 32029ee1c5b19205fafe10c77babfe9bf764341d
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 95edbde738a52edc626992a431e3a8083b95421f
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99086466"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195287"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Power BI Desktop を使用して Oracle データベースに接続する
 Power BI Desktop を使用して Oracle データベースに接続するには、Power BI Desktop を実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、インストールした Power BI Desktop のバージョンによって異なります。32 ビットまたは 64 ビット。 また、お使いの Oracle サーバーのバージョンにもよります。
@@ -23,8 +23,11 @@ Power BI Desktop を使用して Oracle データベースに接続するには�
 - Oracle Server 9 以降
 - Oracle Data Access Client (ODAC) ソフトウェア 11.2 以降
 
-> [!NOTE]
-> Power BI Desktop、オンプレミス データ ゲートウェイ、または Power BI Report Server 用に Oracle データベースを構成する場合は、[Oracle の接続の種類](/sql/reporting-services/report-data/oracle-connection-type-ssrs)に関する記事を参照してください。 
+Power BI を使用して Oracle データベースに接続するには、コンピューターに Oracle クライアント ソフトウェア v8.1.7 以降をインストールする必要があります。 32 ビットの Oracle クライアント ソフトウェアをインストールするには、「[32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)」にアクセスしてください。 64 ビットの Oracle クライアントをインストールするには、「[64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)」アクセスしてください。
+
+
+
+Power BI Desktop、オンプレミス データ ゲートウェイ、または Power BI Report Server 用に Oracle データベースを構成する場合は、[Oracle の接続の種類](/sql/reporting-services/report-data/oracle-connection-type-ssrs)に関する記事を参照してください。 
 
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>インストールされている Power BI Desktop バージョンの特定
@@ -43,7 +46,18 @@ Power BI Desktop を使用して Oracle データベースに接続するには�
 > Oracle クライアントのセットアップ中に、セットアップ ウィザードの該当するチェック ボックスをオンにすることで、*コンピューター全体のレベルで ODP.NET および/または Oracle Providers for ASP.NET の構成* を有効にする必要があります。 Oracle クライアント ウィザードの一部のバージョンでは、既定でチェックボックスがオンになっていますが、他のバージョンではそうなっていません。 Power BI が Oracle データベースに接続できるように、チェックボックスがオンになっていることを確認してください。
 
 ## <a name="connect-to-an-oracle-database"></a>Oracle データベースへの接続
-一致する Oracle クライアント ドライバーをインストールした後、Oracle データベースに接続できます。 接続するには、次の手順を実行します。
+一致する Oracle クライアント ドライバーをインストールした後、Oracle データベースに接続できます。 [オンプレミス データ ゲートウェイ](https://docs.microsoft.com/data-integration/gateway/)を使用して Oracle データベースに接続するには、ゲートウェイを実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、Oracle サーバーのバージョンによって異なりますが、常に 64 ビットのゲートウェイと一致します。 詳細については、「[データ ソースの管理 - Oracle](https://docs.microsoft.com/power-bi/connect-data/service-gateway-onprem-manage-oracle)」を参照してください。
+
+## <a name="capabilities-supported"></a>サポートされる機能
+* インポート
+* DirectQuery
+* [詳細オプション]
+   * 分単位のコマンド タイムアウト
+   * SQL ステートメント
+   * リレーションシップ列を含める
+   * 階層全体を使ってナビゲートする
+
+接続するには、次の手順を実行します。
 
 1. **[ホーム]** タブで **[データを取得]** を選択します。 
 
@@ -58,13 +72,16 @@ Power BI Desktop を使用して Oracle データベースに接続するには�
    > [!NOTE]
    > ローカル データベースまたは自律データベース接続を使用しているとき、接続エラーを避けるため、サーバー名を引用符で囲む必要がある場合があります。 
       
-4. ネイティブ データベース クエリを使用してデータをインポートする場合、 **[Oracle Database]** ダイアログで **[詳細オプション]** セクションを展開すると表示される、 **[SQL ステートメント]** ボックスにクエリを入力します。  Power BI Desktop では、ストアド プロシージャを実行する Oracle ネイティブ クエリはサポートされていません。また、"begin ... end" ブロック内の Oracle ネイティブ クエリは結果セットを返しません。  
+4. *[インポート]* * または **[DirectQuery]** データ接続モードを選択します。 この例の残りの手順では、データ インポートの接続モードを使用します。 DirectQuery の詳細のついては、「[Power BI Desktop で DirectQuery を使用する](https://docs.microsoft.com/power-bi/connect-data/desktop-use-directquery)」にアクセスしてください。
+
+
+5. ネイティブ データベース クエリを使用してデータをインポートする場合、 **[Oracle Database]** ダイアログで **[詳細オプション]** セクションを展開すると表示される、 **[SQL ステートメント]** ボックスにクエリを入力します。  Power BI Desktop では、ストアド プロシージャを実行する Oracle ネイティブ クエリはサポートされていません。また、"begin ... end" ブロック内の Oracle ネイティブ クエリは結果セットを返しません。  
    
    ![[詳細オプション] の展開](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 
 
-5. **[Oracle Database]** ダイアログに Oracle データベース情報 (SID やネイティブ データベース クエリなどの省略可能な情報を含む) を入力した後、 **[OK]** を選択して接続します。
-5. Oracle データベースがデータベース ユーザー資格情報を必要とする場合、ダイアログで指示が表示されたら資格情報を入力します。
+6. **[Oracle Database]** ダイアログに Oracle データベース情報 (SID やネイティブ データベース クエリなどの省略可能な情報を含む) を入力した後、 **[OK]** を選択して接続します。  
+7. Oracle データベースがデータベース ユーザー資格情報を必要とする場合、ダイアログで指示が表示されたら資格情報を入力します。
 
 
 ## <a name="troubleshooting"></a>トラブルシューティング

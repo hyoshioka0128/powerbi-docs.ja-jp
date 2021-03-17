@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 12/16/2020
+ms.date: 02/23/2021
 LocalizationGroup: Gateways
-ms.openlocfilehash: 21371e931aa123aa6a339bfbcb939bde943b3f9f
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: 436cd8748a3f0729cd41f6c5d106981da42af7df
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97675513"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102195783"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Power BI からオンプレミス データ ソースへの SSO に Security Assertion Markup Language (SAML) を使用する
 
@@ -219,6 +219,10 @@ Power BI の **[Manage Gateway]\(ゲートウェイの管理\)** ページを使
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
+このセクションでは、SAP HANA へのシングル サインオン (SSO) のために SAML を使用する場合のトラブルシューティング手順について詳しく説明します。 これらのトラブルシューティング手順は、発生している可能性のある問題を自己診断し、修正するのに役立ちます。
+
+### <a name="rejected-credentials"></a>拒否された資格情報
+
 SAML ベースの SSO を構成した後、Power BI ポータルで次のエラーが表示される場合があります: "*指定された資格情報は SapHana のソースに使用できません*"。 このエラーは、SAML 資格情報が SAP HANA によって拒否されたことを示します。
 
 サーバー側の認証トレースを利用すれば、SAP HANA での資格情報の問題をトラブルシューティングするための詳細情報が得られます。 以下の手順に従って、ご利用の SAP HANA サーバーに対するトレースを構成します。
@@ -247,6 +251,140 @@ SAML ベースの SSO を構成した後、Power BI ポータルで次のエラ�
     ```
     ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') UNSET ('trace', 'authentication');
     ```
+
+### <a name="verifying-and-troubleshooting-gateway-errors"></a>ゲートウェイ エラーの検証とトラブルシューティング
+
+このセクションの手順を実行するには、[ゲートウェイ ログを収集する](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app)必要があります。
+
+#### <a name="ssl-error-certificate"></a>SSL エラー (証明書)
+
+**エラーの症状:**
+
+この問題には複数の症状があります。 新しいデータ ソースを追加しようとする際には、次のようなエラーが表示される場合があります。
+
+```Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."```
+
+レポートを作成または更新しようとする際には、次のような内容が表示される場合があります。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="SSL エラーのトラブルシューティングを行うウィンドウ":::
+
+Mashup[date]*.log を調べると、次のエラーが見つかります。
+
+```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted```
+
+**解決策:**
+
+この SSL エラーを解決するには、次の図のように、データ ソース接続にアクセスし、 **[サーバー証明書の検証]** を **[いいえ]** に設定します。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-02.png" alt-text="SSL エラーを解決するウィンドウ":::
+
+これを選択すると、エラーは表示されなくなります。
+
+#### <a name="gateway-signxml-error"></a>ゲートウェイ SignXML エラー
+
+ゲートウェイ SignXML エラーが発生する場合は、*SapHanaSAMLCertThumbprint* の設定が正しくないか、HANA サーバーに問題がある可能性があります。 ゲートウェイ ログのエントリを調べると、問題が発生している場所と、その解決方法を特定できます。 
+
+**エラーの症状:**
+
+```SignXML: Found the cert...``` のログ エントリ: GatewayInfo[*date*].log ファイルにこのエラーが含まれている場合、SignXML 証明書は見つかっています。トラブルシューティング作業では、この記事の後半にある「[HANA サーバー側の検証とトラブルシューティング](#verifying-and-troubleshooting-the-hana-server-side)」セクションの手順に重点を置いてください。
+
+```Couldn't find saml cert``` のログ エントリ: GatewayInfo[*date*].log ファイルにこのエラーが含まれている場合は、*SapHanaSAMLCertThumbprint* が正しく設定されていません。 次の解決方法セクションでは、この問題を解決する方法について説明します。
+
+**解決策:**
+
+*SapHanaSAMLCertThumbprint* を適切に設定するには、「[Power BI からオンプレミス データ ソースへの SSO に Security Assertion Markup Language (SAML) を使用する](service-gateway-sso-saml.md)」で説明されている手順に従います。具体的には、この記事の下の方にある、「*最後に、次の手順を実行して、証明書の拇印をゲートウェイ構成に追加します*」から始まるセクションの手順に従います。
+
+構成ファイルが変更されたら、ゲートウェイ サービスを再起動して変更を有効にします。
+
+**検証:**
+
+*SapHanaSAMLCertThumbprint* が適切に設定されると、ゲートウェイのログに、```SignXML: Found the cert...``` を含んだエントリが作成されます。 この時点で、[HANA サーバー側の検証とトラブルシューティング](#verifying-and-troubleshooting-the-hana-server-side)に進めるようになります。 
+
+ゲートウェイが証明書を使用して SAML アサーションに署名できない場合には、ログに次のようなエラーが記録されることがあります。 
+
+```GatewayPipelineErrorCode=DM_GWPipeline_UnknownError GatewayVersion= InnerType=CryptographicException InnerMessage=<pi>Signing key is not loaded.</pi> InnerToString=<pi>System.Security.Cryptography.CryptographicException: Signing key is not loaded.```
+
+このエラーを解決するには、この記事の「[ゲートウェイの構成](service-gateway-sso-saml.md#configure-the-gateway)」セクションの **手順 3** で説明されている手順に従います。
+
+構成を変更したら、ゲートウェイ サービスを再起動して変更を有効にします。
+
+#### <a name="verifying-and-troubleshooting-the-hana-server-side"></a>HANA サーバー側の検証とトラブルシューティング
+
+ゲートウェイが証明書を検索し、SAML アサーションに署名できる状態になっても、まだエラーが発生している場合は、このセクションのトラブルシューティング手順を使用してください。 このセクションの手順を実行するには、HANA 認証トレースを収集する必要があります (次の記事の「[トラブルシューティング](service-gateway-sso-saml.md#troubleshooting)」セクションで説明されています)。 
+
+**SAML ID プロバイダー**
+
+HANA 認証トレースに ```Found SAML provider``` という文字列がある場合、それは SAML ID プロバイダーが適切に構成されていることを示します。 この文字列がない場合は、構成が正しくありません。
+
+**解決策:**
+
+まず、組織で使用している sslcryptoprovider が **OpenSSL** なのか、それとも **commoncrypto** なのかを確認します。 どちらが使用されているかを確認するには、次の手順を実行します。
+
+1. HANA Studio を開きます
+2. 使用されているテナントの管理コンソールを開きます。
+3. 次の図に示すように、[構成] タブにアクセスし、フィルターとして sslcryptoprovider を使用します。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-03.png" alt-text="HANA Studio の sslcryptoprovider の情報":::
+
+次に、以下の手順に従って、暗号化ライブラリが正しく設定されていることを確認します。
+
+1. HANA Studio の [SAML ID プロバイダー] タブで、セキュリティ コンソールに移動します
+2. sslcryptoprovider が OpenSSL の場合は、 **[OpenSSL 暗号化ライブラリ]** ラジオ ボタンを選択します。 sslcryptoprovider が commonCrypto の場合は、 **[SAP 暗号化ライブラリ]** ラジオ ボタンを選択します。 次の図では、 **[SAP 暗号化ライブラリ]** が選択されています。
+
+    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-04.png" alt-text="HANA Studio での sslcryptoprovider の選択":::
+
+3. 次の図に示すように、ウィンドウの右上隅にある **[デプロイ]** ボタンを選択して、変更をデプロイします。
+
+    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-05.png" alt-text="ソリューション変更のデプロイ":::
+
+**検証:**
+
+適切に構成されている場合は、トレースで ```Found SAML provider``` が報告され、```SAML Provider not found``` は報告 "*されません*"。 この記事で後述する「[SAML アサーション署名のトラブルシューティング](#troubleshooting-the-saml-assertion-signature)」へ進むことができます。 
+
+
+暗号化サービス プロバイダーが設定されているにもかかわらず、まだ ```SAML Provider not found``` が報告されている場合は、トレースで次の文字列を検索します。
+
+```Search SAML provider for certificate with subject =```
+
+その文字列で、subject と発行者が、セキュリティ コンソールの [SAML ID プロバイダー] タブのものとまったく同じであるかどうかを確認します。 1 文字違うだけでも、問題が発生する可能性があります。 違いが見つかった場合は、SAP 暗号化ライブラリを変更することで、エントリを正確に一致させることができます。
+
+SAP 暗号化ライブラリを変更しても問題が解決しない場合は、 *[発行先]* フィールドと *[発行元]* フィールドを手動で編集することができます。 フィールドは、ダブルクリックするだけで編集できます。
+
+
+#### <a name="troubleshooting-the-saml-assertion-signature"></a>SAML アサーション署名のトラブルシューティング
+
+次のようなエントリを含む HANA 認証トレースが記録されることがあります。
+
+```[48163]{-1}[-1/-1] 2020-09-11 21:15:18.896165 i Authentication SAMLAuthenticator.cpp(00398) : Unable to verify XML signature```
+```[48163]{-1}[-1/-1] 2020-09-11 21:15:18.896168 i Authentication MethodSAML.cpp(00103) : unsuccessful login attempt with SAML ticket!```
+
+このようなエントリは、署名が信頼されていないことを意味します。
+
+**解決策:** sslcryptoprovider として **OpenSSL** を使用している場合は、trust.pem と key.pem が SSL ディレクトリにあるかどうかを確認します。 これらを確認する方法については、次のリンクから確認できます: [SAP の記事](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/)
+
+sslcryptoprovider として **commoncrypto** を使用している場合は、テナント内に証明書を含むコレクションがあるかどうかを確認します。
+
+**検証:**
+
+適切に構成されている場合は、トレースで ```Found valid XML signature``` が報告されます 
+
+
+#### <a name="troubleshooting-the-upn-mapping"></a>UPN マッピングのトラブルシューティング
+
+次のようなエントリを含む HANA トレースが記録されることがあります。
+
+```SAMLAuthenticator.cpp(00886) : Assertion Subject NameID: `johnny@contoso.com` SAMLAuthenticator.cpp(00398) : Database user does not exist```
+
+このエラーは、SAML アサーションに nameId `johnny@contoso.com` が見つかったもの、それが存在しないか、HANA サーバーで正しくマップされていないことを示しています。
+
+**解決策:**
+
+当該の HANA データベース ユーザーにアクセスし、チェックマークの付いた SAML ボックスの下にある *[構成]* リンクをクリックします。 次のウィンドウが表示されます。
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-06.png" alt-text="誤ったユーザー名":::
+
+エラー メッセージに示されているように、HANA が `johnny@contoso.com` を見つけようとしましたが、外部 ID は johnny のみとなっています。 これら 2 つの値は一致する必要があります。これを修正するには、*外部 ID* を `johnny@contoso.com` に変更します。 これらのエントリでは、大文字と小文字が区別されることに注意してください。
+
 
 ## <a name="next-steps"></a>次の手順
 

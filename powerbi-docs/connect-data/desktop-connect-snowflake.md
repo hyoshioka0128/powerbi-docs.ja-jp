@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 02/23/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 377ede2171a721a33aa0b70819ef511d721f2590
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: b2929b74bd5601ac652fadc5cea697fb8139e66a
+ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99494445"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101842057"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Power BI Desktop で Snowflake に接続する
 Power BI Desktop では、**Snowflake** Computing ウェアハウスに接続し、Power BI Desktop の他のデータ ソースの場合と同様に基になっているデータを使用できます。 
@@ -50,7 +50,7 @@ Microsoft アカウント オプションを使用する場合、Snowflake 側�
 
 ## <a name="custom-roles"></a>カスタム ロール
 
-現在のところ、Snowflake コネクタの "カスタム役割" は基本認証でのみ機能します。 これは近い将来、解決される予定です。
+Snowflake コネクタでは、Power BI Desktop の 2021 年 2 月リリース以降、*カスタム ロール* がサポートされています。
 
 ## <a name="next-steps"></a>次のステップ
 Power BI Desktop を使用して接続できるデータの種類は他にもあります。 データ ソースの詳細については、次のリソースを参照してください。

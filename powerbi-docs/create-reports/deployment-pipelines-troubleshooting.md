@@ -1,18 +1,18 @@
 ---
-title: 配置パイプラインのトラブルシューティング
-description: Power BI の配置パイプラインに関するトラブルシューティングを行います
+title: デプロイ パイプライン (Power BI のアプリケーション ライフサイクル管理 (ALM) ツール) のトラブルシューティング
+description: Power BI のアプリケーション ライフサイクル管理 (ALM) ツールである、デプロイ パイプラインのトラブルシューティングに関する質問への回答を紹介します
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 02/09/2021
-ms.openlocfilehash: f502649c08a71dc1cc602f0f69f4134a10a5a879
-ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.date: 03/04/2021
+ms.openlocfilehash: d221a7b48fefc7388ffe7a83bc28d558ab735d4e
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489902"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194850"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>配置パイプラインのトラブルシューティング
 

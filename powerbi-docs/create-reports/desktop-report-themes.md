@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 61b909ba5c90c7ecf801b4ce448e73353d2334c4
-ms.sourcegitcommit: 9a00abaca80d0cdb2bd0cd9270f99db62df8a2ce
+ms.openlocfilehash: 3dec8e90537ce29525b34596a688defced1a44a5
+ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100569632"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102196104"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Power BI Desktop でレポート テーマを使用する
 
@@ -79,7 +79,7 @@ Power BI Desktop の "*レポート テーマ*" を使うと、コーポレー�
     | Classic (クラシック) | ![Classic (クラシック)](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
     | 公園 | ![公園](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
     | 教室 | ![教室](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-    | 色の識別が困難な障碍を抱えるユーザーにとって安全 | ![色の識別が困難な障碍を抱えるユーザーにとって安全](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+    | 色の識別が困難なユーザー対応 | ![色の識別が困難なユーザー対応](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
     | エレクトリック | ![エレクトリック](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
     | ハイ コントラスト | ![ハイ コントラスト](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
     | 夕日 | ![夕日](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
@@ -269,13 +269,11 @@ Power BI では、動的なシリーズの色が追跡され、他のビジュ�
 
 現在適用されているテーマを Power BI Desktop からエクスポートするには:
 
-1. **[ファイル]**  >  **[オプションと設定]**  >  **[オプション]** の順に選択します。
+1. **[表示]** を選択し、 **[テーマ]** ドロップダウンを選択します。
 
-2. **[プレビュー機能]** セクションで、 **[現在のテーマのカスタマイズ]** を選択してから、 **[OK]** を選択します。
+   ![[テーマ] ドロップダウン メニューを選択します。](media/desktop-report-themes/report-themes-14.png)
 
-   プレビュー機能を有効にするために、Power BI Desktop を再起動するように求められる場合があります。 再起動したら、現在適用されているテーマのエクスポートを開始できます。
-
-3. **[ホーム]** リボンから、 **[テーマの切り替え]**  >  **[現在のテーマのエクスポート]** の順に選択します。
+2. ドロップダウン メニューの下部にある **[現在のテーマを保存]** を選択します。
 
 4. **[名前を付けて保存]** ダイアログ ボックスから JSON ファイルを保存するディレクトリを参照して、 **[保存]** を選択します。
 
@@ -4523,7 +4521,7 @@ Power BI では、動的なシリーズの色が追跡され、他のビジュ�
 * Classic (クラシック)
 * 公園
 * 教室
-* 色の識別が困難な障碍を抱えるユーザーにとって安全
+* 色の識別が困難なユーザー対応
 * エレクトリック
 * ハイ コントラスト
 * 夕日
