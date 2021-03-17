@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/02/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 766e015fb21f29d70e3eb35e2da77e0c1e210732
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: 2606e912290003c6a377c6a4dc9ce04e3b2809ee
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195931"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602385"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Power BI でのコネクタの機能拡張
 
@@ -50,4 +50,4 @@ Power BI Desktop のデータ拡張機能の既定のセキュリティ設定は
 
 認定されているサードパーティ製のコネクタは、Power BI Desktop では汎用および共通のコネクタと共に、**[データの取得]** ダイアログボックスに一覧表示されます。 それらの認定コネクタの使用には、セキュリティ設定を調整する必要はありません。
 
-カスタム コネクタに対する認定を受けたい場合は、[認定に関するドキュメント](https://docs.microsoft.com/power-query/connectorcertification)を参照してください。
+カスタム コネクタに対する認定を受けたい場合は、[認定に関するドキュメント](/power-query/connectorcertification)を参照してください。

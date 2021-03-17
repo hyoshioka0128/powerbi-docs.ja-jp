@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 10/28/2020
-ms.openlocfilehash: 65c3ccf13bb63248c123c5c494b91ca742c77715
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0999c8c41a7b6fc1399d455c9fd70762ffeb1c71
+ms.sourcegitcommit: a0ef8f57ff867b38af20a851ff7c65bbc6164397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96401422"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103486701"
 ---
 # <a name="template-apps-samples"></a>テンプレート アプリのサンプル
 
@@ -27,8 +27,6 @@ ms.locfileid: "96401422"
 ## <a name="downloadable-apps-template-samples"></a>ダウンロード可能なアプリ テンプレート サンプル
 
 * [テンプレート アプリ作成のテンプレートの例](https://templateapps.blob.core.windows.net/sampletemplateapps/TemplateforTemplateApps.zip)
-* [LinkedIn Sales Navigator Analytics Integration](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesNavigatorTemplate.pbix)
-* [GitHub](https://templateapps.blob.core.windows.net/sampletemplateapps/GitHub.pbix)
 * [Mailchimp](https://templateapps.blob.core.windows.net/sampletemplateapps/MailChimp.pbix)
 * [QuickBooks Online](https://templateapps.blob.core.windows.net/sampletemplateapps/QuickBooksOnline.pbix)
 * [Google アナリティクス](https://templateapps.blob.core.windows.net/sampletemplateapps/GoogleAnalytics.pbix)

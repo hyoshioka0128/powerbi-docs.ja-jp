@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 95edbde738a52edc626992a431e3a8083b95421f
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: 5fa22e987878646b78295c2280aad56eb8672a97
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195287"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602408"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Power BI Desktop を使用して Oracle データベースに接続する
 Power BI Desktop を使用して Oracle データベースに接続するには、Power BI Desktop を実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、インストールした Power BI Desktop のバージョンによって異なります。32 ビットまたは 64 ビット。 また、お使いの Oracle サーバーのバージョンにもよります。
@@ -46,7 +46,7 @@ Power BI Desktop、オンプレミス データ ゲートウェイ、または P
 > Oracle クライアントのセットアップ中に、セットアップ ウィザードの該当するチェック ボックスをオンにすることで、*コンピューター全体のレベルで ODP.NET および/または Oracle Providers for ASP.NET の構成* を有効にする必要があります。 Oracle クライアント ウィザードの一部のバージョンでは、既定でチェックボックスがオンになっていますが、他のバージョンではそうなっていません。 Power BI が Oracle データベースに接続できるように、チェックボックスがオンになっていることを確認してください。
 
 ## <a name="connect-to-an-oracle-database"></a>Oracle データベースへの接続
-一致する Oracle クライアント ドライバーをインストールした後、Oracle データベースに接続できます。 [オンプレミス データ ゲートウェイ](https://docs.microsoft.com/data-integration/gateway/)を使用して Oracle データベースに接続するには、ゲートウェイを実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、Oracle サーバーのバージョンによって異なりますが、常に 64 ビットのゲートウェイと一致します。 詳細については、「[データ ソースの管理 - Oracle](https://docs.microsoft.com/power-bi/connect-data/service-gateway-onprem-manage-oracle)」を参照してください。
+一致する Oracle クライアント ドライバーをインストールした後、Oracle データベースに接続できます。 [オンプレミス データ ゲートウェイ](/data-integration/gateway/)を使用して Oracle データベースに接続するには、ゲートウェイを実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、Oracle サーバーのバージョンによって異なりますが、常に 64 ビットのゲートウェイと一致します。 詳細については、「[データ ソースの管理 - Oracle](./service-gateway-onprem-manage-oracle.md)」を参照してください。
 
 ## <a name="capabilities-supported"></a>サポートされる機能
 * インポート
@@ -72,7 +72,7 @@ Power BI Desktop、オンプレミス データ ゲートウェイ、または P
    > [!NOTE]
    > ローカル データベースまたは自律データベース接続を使用しているとき、接続エラーを避けるため、サーバー名を引用符で囲む必要がある場合があります。 
       
-4. *[インポート]* * または **[DirectQuery]** データ接続モードを選択します。 この例の残りの手順では、データ インポートの接続モードを使用します。 DirectQuery の詳細のついては、「[Power BI Desktop で DirectQuery を使用する](https://docs.microsoft.com/power-bi/connect-data/desktop-use-directquery)」にアクセスしてください。
+4. *[インポート]* * または **[DirectQuery]** データ接続モードを選択します。 この例の残りの手順では、データ インポートの接続モードを使用します。 DirectQuery の詳細のついては、「[Power BI Desktop で DirectQuery を使用する](./desktop-use-directquery.md)」にアクセスしてください。
 
 
 5. ネイティブ データベース クエリを使用してデータをインポートする場合、 **[Oracle Database]** ダイアログで **[詳細オプション]** セクションを展開すると表示される、 **[SQL ステートメント]** ボックスにクエリを入力します。  Power BI Desktop では、ストアド プロシージャを実行する Oracle ネイティブ クエリはサポートされていません。また、"begin ... end" ブロック内の Oracle ネイティブ クエリは結果セットを返しません。  
@@ -107,4 +107,3 @@ Microsoft Store から Power BI Desktop をダウンロードした場合、Orac
 Oracle データベースへの接続時に Power BI Gateway に "*オブジェクト参照が設定されていません*" というエラー メッセージが表示される場合は、「[データ ソースの管理 - Oracle](service-gateway-onprem-manage-oracle.md)」に記載されている手順に従ってください。
 
 Power BI Report Server を使用している場合は、[Oracle の接続の種類](/sql/reporting-services/report-data/oracle-connection-type-ssrs)に関する記事のガイダンスを参照してください。
-

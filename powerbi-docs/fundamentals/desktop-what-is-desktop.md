@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview
-ms.date: 07/23/2020
+ms.date: 03/10/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 07dba29c57b533537513d84361b4b7b2b61f9221
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 08ce9b65dda137b237d960f7948226b36cc66787
+ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99088122"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102628546"
 ---
 # <a name="what-is-power-bi-desktop"></a>Power BI Desktop とは何ですか?
 
@@ -133,4 +133,5 @@ Power BI Desktop レポートを発行するには:
 Power BI Desktop の使用を開始するには、まず、アプリケーションをダウンロードしてインストールする必要があります。 Power BI Desktop の取得方法は 2 つあります。
 
 * [Windows ストアから Power BI Desktop を取得する](https://aka.ms/pbidesktopstore)
+* [Power BI Desktop の取得](desktop-get-the-desktop.md)
 * [Web から Power BI Desktop をダウンロードする](https://www.microsoft.com/download/details.aspx?id=58494)

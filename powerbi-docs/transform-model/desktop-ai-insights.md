@@ -9,12 +9,12 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f4128939bd90f0b6514a792a60d583b830bea0d2
-ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
+ms.openlocfilehash: dca1274b3342cf3122906d0673ccf66546ec148e
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97353452"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602638"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Power BI Desktop で AI 分析情報を使用する
 
@@ -87,7 +87,7 @@ Text Analytics では、機械学習分類アルゴリズムを使用して、0 
 
 イメージをアップロードするか、またはイメージの URL を指定すると、Computer Vision のアルゴリズムにより、そのイメージ内で識別されたオブジェクト、生物、およびアクションに基づいてタグが出力されます。 タグ付けの対象は、前景の人間などの主題だけではありません。セット (室内またはアウトドア)、家具、道具、植物、動物、アクセサリ、小物なども対象となります。
 
-この関数では、入力として画像の URL または base-64 のフィールドが必要です。 現時点でイメージのタグ付けでサポートされるのは、英語、スペイン語、日本語、ポルトガル語、および簡体中国語です。 詳細については、[サポートされる言語](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters)に関する記事を参照してください。
+この関数では、入力として画像の URL または base-64 のフィールドが必要です。 現時点でイメージのタグ付けでサポートされるのは、英語、スペイン語、日本語、ポルトガル語、および簡体中国語です。 詳細については、[サポートされる言語](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision.tagimage#azure-java-stable)に関する記事を参照してください。
 
 ### <a name="invoking-text-analytics-or-vision-functions-in-power-query"></a>Power Query で Text Analytics 関数または Vision 関数を呼び出す
 

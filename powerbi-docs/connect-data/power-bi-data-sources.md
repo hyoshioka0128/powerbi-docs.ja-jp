@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 03/01/2021
-ms.openlocfilehash: b4e8bf1212e5b712448f1b647b952a64d6beb5e2
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.date: 03/11/2021
+ms.openlocfilehash: 733ba0dfcff11cbe0391e7a99b0fc4d6e6f1623f
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195103"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191255"
 ---
 # <a name="power-bi-data-sources"></a>Power BI データ ソース
 
@@ -40,7 +40,7 @@ ms.locfileid: "102195103"
 | Azure HDInsight (HDFS) | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | Azure HDInsight Spark | はい | はい | はい | いいえ | いいえ | はい |
 | Azure SQL データベース | はい | はい | はい | はい  | はい | はい |
-| Azure Synapse | はい | はい | はい | はい  | いいえ | はい |
+| Azure Synapse Analytics | はい | はい | はい | はい  | いいえ | はい |
 | Azure Table Storage | はい | はい | いいえ | はい | いいえ | はい |
 | BI コネクタ | はい | はい | はい | はい | はい | いいえ |
 | BI360 - Budgeting & Financial Reporting | はい | はい | いいえ | いいえ | いいえ | いいえ |
@@ -80,6 +80,7 @@ ms.locfileid: "102195103"
 | JSON | はい | はい | いいえ | はい** | いいえ <sup>3</sup> | はい |
 | Kyligence Enterprise | はい | はい | はい | はい | はい | いいえ |
 | MailChimp | はい | はい | いいえ | いいえ | いいえ | いいえ |
+| MariaDB | はい | はい | はい | いいえ | はい | いいえ |
 | Marketo | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | MarkLogic ODBC | はい | はい | はい | はい | はい | いいえ |
 | Microsoft Azure Consumption Insights | はい | はい | いいえ | いいえ | いいえ | いいえ |

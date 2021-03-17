@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 2/18/2021
+ms.date: 3/10/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 04e41c014bc09da5c61b820563eab02cdfe8e8f3
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: 4e421ae4a7194a56a29f496c69ffde6bc2d26265
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101843391"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191025"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Power BI Desktop の DirectQuery
 *Power BI Desktop* では、データ ソースに接続するときに、常にデータのコピーを Power BI Desktop にインポートすることができます。 データ ソースによっては、代替手法を利用できます。DirectQuery を使用して、データ ソースに直接接続します。

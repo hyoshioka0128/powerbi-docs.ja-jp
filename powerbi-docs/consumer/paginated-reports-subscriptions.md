@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 03/08/2021
-ms.openlocfilehash: 69750c313e7f28d07c6ca6b29324fde9826420f2
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: f5e327492c0a2cb8ec9d4803b89aa5b8c4315173
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534552"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602569"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Power BI サービスのページ分割されたレポートを自分および他のユーザーがサブスクライブする 
 
@@ -25,7 +25,7 @@ Power BI サービスのページ分割されたレポートに対して自分�
 
 - ご自分のサブスクリプションを作成する場合は、ページ分割されたレポートに対する編集アクセス許可は必要ありませんが、組織内の他のユーザー用に作成する場合は、編集アクセス許可が必要です。 ページ分割されたレポートが存在するワークスペースで少なくとも共同作成者ロールがある場合は、組織内の他のユーザー用にサブスクリプションを作成できます。 詳細については、[ワークスペースのロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)に関する記事を参照してください。
 
-- 組織のメンバーではない外部ユーザーをサブスクライブする場合は、最初にその外部ユーザーが [B2B (企業間) を使用してオンボードする](https://docs.microsoft.com/power-platform/admin/invite-users-azure-active-directory-b2b-collaborationd)必要があります。 
+- 組織のメンバーではない外部ユーザーをサブスクライブする場合は、最初にその外部ユーザーが [B2B (企業間) を使用してオンボードする](/power-platform/admin/invite-users-azure-active-directory-b2b-collaborationd)必要があります。 
 
 - ダッシュボードまたは Power BI レポート用のサブスクリプションとは異なり、ご利用のサブスクリプションには、レポート出力全体の添付ファイルが含まれています。  次の添付ファイルの種類がサポートされています: PDF、PowerPoint プレゼンテーション (PPTX)、Excel ブック (XLSX)、Word 文書 (DOCX)、CSV ファイル、および XML。
 

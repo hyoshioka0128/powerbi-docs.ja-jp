@@ -10,12 +10,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 12/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 75ae915be2385c91de7b23e519f02f587d0fbace
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: 96127b871a09b1246917b765b4df2ba2bba16e43
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842747"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602523"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Power BI Desktop の概要
 Power BI Desktop の使用開始ガイドへようこそ。 このツアーでは、Power BI Desktop のしくみ、Power BI Desktop でできること、堅牢なデータ モデルと優れたレポートを作成してビジネス インテリジェンスを強化する方法について説明します。
@@ -63,7 +63,7 @@ Power BI Desktop を初めて起動すると、 **[ようこそ]** 画面が表�
 
 Power BI Desktop の左側には、3 つの Power BI Desktop ビューを表す、次のアイコンがあります: **[レポート]** 、 **[データ]** 、 **[リレーションシップ]** (上から下への順)。 現在のビューは、左側の黄色のバーで示されます。また、いずれかのアイコンを選択して、ビューを変更できます。 
 
-キーボード ナビゲーションを使用している場合は、Ctrl + F6 キーを押して、ウィンドウのボタンのセクションにフォーカスを移動します。  アクセシビリティと Power BI の詳細については、[アクセシビリティに関する記事](https://https://docs.microsoft.com/power-bi/create-reports/desktop-accessibility-creating-tools)をご覧ください。
+キーボード ナビゲーションを使用している場合は、Ctrl + F6 キーを押して、ウィンドウのボタンのセクションにフォーカスを移動します。  アクセシビリティと Power BI の詳細については、[アクセシビリティに関する記事](/power-bi/create-reports/desktop-accessibility-creating-tools)をご覧ください。
 
 ![[レポート]、[データ]、および [モデル] のアイコンを示す Power BI Desktop のスクリーンショット。](media/desktop-getting-started/designer_gsg_viewtypes.png)
 

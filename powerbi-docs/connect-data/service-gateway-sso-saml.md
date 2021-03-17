@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 02/23/2021
 LocalizationGroup: Gateways
-ms.openlocfilehash: 436cd8748a3f0729cd41f6c5d106981da42af7df
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: a95befbb11ef05f309feeca6602949834b6e4c12
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195783"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602615"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Power BI からオンプレミス データ ソースへの SSO に Security Assertion Markup Language (SAML) を使用する
 
@@ -254,7 +254,7 @@ SAML ベースの SSO を構成した後、Power BI ポータルで次のエラ�
 
 ### <a name="verifying-and-troubleshooting-gateway-errors"></a>ゲートウェイ エラーの検証とトラブルシューティング
 
-このセクションの手順を実行するには、[ゲートウェイ ログを収集する](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app)必要があります。
+このセクションの手順を実行するには、[ゲートウェイ ログを収集する](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app)必要があります。
 
 #### <a name="ssl-error-certificate"></a>SSL エラー (証明書)
 

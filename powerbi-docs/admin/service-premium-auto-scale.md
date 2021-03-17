@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: a07ce908a83fa9a620c453cd9990be098edc8b74
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: 8b78f640eb9a409d7b66c7d8854b8653dbb2f27a
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101873269"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602454"
 ---
 # <a name="using-autoscale-with-power-bi-premium"></a>Power BI Premium で自動スケーリングを使用する
 
@@ -64,7 +64,7 @@ Azure サブスクリプションを選択して自動スケーリングを使�
 
 ## <a name="enable-autoscale-in-the-power-bi-admin-portal"></a>Power BI 管理ポータルで自動スケーリングを有効にする
 
-自動スケーリングで使用する Azure サブスクリプションを選択し、前のセクションで説明したようにリソース グループを作成したら、自動スケーリングを有効にし、作成したリソース グループに関連付けることができます。 これらの手順を正常に完了するには、**自動スケーリング** を構成するユーザーが、少なくとも Azure サブスクリプションの "*共同作成者*" である必要があります。 詳細については、[Azure サブスクリプションの共同作成者ロールにユーザーを割り当てる方法](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)に関する記事を参照してください。 
+自動スケーリングで使用する Azure サブスクリプションを選択し、前のセクションで説明したようにリソース グループを作成したら、自動スケーリングを有効にし、作成したリソース グループに関連付けることができます。 これらの手順を正常に完了するには、**自動スケーリング** を構成するユーザーが、少なくとも Azure サブスクリプションの "*共同作成者*" である必要があります。 詳細については、[Azure サブスクリプションの共同作成者ロールにユーザーを割り当てる方法](/azure/cost-management-billing/manage/add-change-subscription-administrator)に関する記事を参照してください。 
 
 次の手順は、自動スケーリングを有効にし、それをリソース グループに関連付ける方法を示したものです。
 
@@ -100,4 +100,4 @@ Azure サブスクリプションを選択して自動スケーリングを使�
 * [Power BI Premium とは](service-premium-what-is.md)
 * [Power BI Premium のよく寄せられる質問](service-premium-faq.md)
 * [Power BI Premium Per User に関する FAQ (プレビュー)](service-premium-per-user-faq.md)
-* [Azure サブスクリプション管理者を追加または変更する](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)
+* [Azure サブスクリプション管理者を追加または変更する](/azure/cost-management-billing/manage/add-change-subscription-administrator)

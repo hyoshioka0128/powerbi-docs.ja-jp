@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 03/02/2021
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1e71b57bbed43ca7b3412d615efb0c469ba0449d
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: a8d5bbbb7a08629c65e4c26ba527c9fadf2b3e78
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842802"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602592"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>SAP HANA への シングル サインオン (SSO) に Kerberos を使用する
 
@@ -59,7 +59,7 @@ SAP HANA に対する SSO を有効にするには、次の手順のようにし
 
 ### <a name="verifying-and-troubleshooting-gateway-errors"></a>ゲートウェイ エラーの検証とトラブルシューティング
 
-このセクションの手順を実行するには、[ゲートウェイ ログを収集する](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app)必要があります。
+このセクションの手順を実行するには、[ゲートウェイ ログを収集する](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app)必要があります。
 
 #### <a name="ssl-error-certificate"></a>SSL エラー (証明書)
 
@@ -103,7 +103,7 @@ Mashup[date]*.log を調べると、次のエラーが見つかります。
 
 
 #### <a name="delegation"></a>委任
-通常、委任の問題は、Power BI サービスで一般的なエラーとして表示されます。 問題が委任の問題でないことを確認するには、Wireshark トレースを収集し、フィルターとして *Kerberos* を使用します。 Wireshark の詳細と、Kerberos エラーの詳細については、[ネットワーク キャプチャでの Kerberos エラーに関するブログ記事](https://docs.microsoft.com/archive/blogs/askds/kerberos-errors-in-network-captures)を参照してください。
+通常、委任の問題は、Power BI サービスで一般的なエラーとして表示されます。 問題が委任の問題でないことを確認するには、Wireshark トレースを収集し、フィルターとして *Kerberos* を使用します。 Wireshark の詳細と、Kerberos エラーの詳細については、[ネットワーク キャプチャでの Kerberos エラーに関するブログ記事](/archive/blogs/askds/kerberos-errors-in-network-captures)を参照してください。
 
 次の症状とトラブルシューティング手順は、いくつかの一般的な問題を解決するのに役立ちます。
 
