@@ -1,6 +1,6 @@
 ---
-title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析の条件付き書式設定
-description: Power BI の視覚化プロジェクトに条件付き書式を適用する方法について説明します。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
+title: Power BI 埋め込み分析の条件付き書式設定
+description: Power BI の視覚化プロジェクトに条件付き書式を適用する方法について説明します。
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 10/27/2020
-ms.openlocfilehash: 13f9dae542b8e0a340a880ab50b2f57c660e0ed9
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 03/15/2021
+ms.openlocfilehash: c319df4a3ad20fc417fb6997ffa6ea6c1f4165ff
+ms.sourcegitcommit: a0ef8f57ff867b38af20a851ff7c65bbc6164397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888767"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103486785"
 ---
 # <a name="add-conditional-formatting"></a>条件付き書式を追加する
 
@@ -124,6 +124,17 @@ case 'colorSelector':
 
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 
-「[DataViewUtils](utils-dataview.md)」の記事をご覧ください。
+条件付き書式は、次のビジュアルではサポートされていません。
+
+* テーブル ベースのビジュアル
+
+* マトリックス ベースのビジュアル
+
+系列では条件付き書式を使用しないことをお勧めします。 代わりに、顧客が各系列を個別に書式設定できるようにする必要があります。これにより、系列を視覚的に区別しやすくなります。 系列を使用した大多数のすぐに使用できるビジュアルで、この方法を共有しています。
+
+## <a name="next-steps"></a>次の手順
+
+>[!div class="nextstepaction"]
+>[DataViewUtils](utils-dataview.md)

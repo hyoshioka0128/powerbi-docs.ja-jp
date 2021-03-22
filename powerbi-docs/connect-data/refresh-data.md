@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 0e55de9dc2bce34dfe6e14488d011b89f85dde89
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: 865ccf2cf9d36d3c0ab8d6936a8fbbe0ff1c7e73
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534182"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191451"
 ---
 # <a name="data-refresh-in-power-bi"></a>Power BI でのデータの更新
 
@@ -92,7 +92,9 @@ Power BI の更新操作は、データ更新、OneDrive の更新、クエリ �
 
 #### <a name="data-refresh"></a>データ更新
 
-Power BI ユーザーにとって、データ更新とは通常、更新スケジュールに基づくか、またはオンデマンドで、元のデータ ソースからデータセットへデータをインポートすることを意味します。 データセットの更新は 1 日に複数回実行でき、基になるソース データが頻繁に変更される場合には、その必要が生じる可能性があります。 Power BI では、共有された容量にあるデータセットに対して、1 日の更新を 8 回までに制限しています。 8 つの時刻値は、バックエンド データベースに格納されます。 スケジューラにより、スケジュールを作成したユーザーのローカル時刻に基づいて、どのモデルを更新する必要があるかがチェックされます。  8 回の更新というクォータは、毎日午前 12:01 にリセットされます。 
+Power BI ユーザーにとって、データ更新とは通常、更新スケジュールに基づくか、またはオンデマンドで、元のデータ ソースからデータセットへデータをインポートすることを意味します。 データセットの更新は 1 日に複数回実行でき、基になるソース データが頻繁に変更される場合には、その必要が生じる可能性があります。 Power BI では、共有された容量にあるデータセットに対して、1 日のデータセット更新を 8 回までに制限しています。 この 8 回という値はバックエンド データベースに保存され、[データセットの設定] ページで選択された "*現地時間*" ゾーンを基準にします。 更新するモデルと更新のタイミングがスケジューラによって確認されます。  8 回の更新というクォータは、毎日午前 12:01 にリセットされます。 現地時間。 
+
+![データベース設定のデータ更新スケジュール。](media/refresh-data/power-bi-refresh-data.png)
 
 データセットが Premium 容量にある場合は、データセットの設定で、1 日に最大 48 回まで更新をスケジュールできます。 詳しくは、この記事で後述する「[スケジュールされた更新の構成](#configure-scheduled-refresh)」をご覧ください。 [XMLA エンドポイント](../admin/service-premium-connect-tools.md)で読み取り/書き込みが有効になっている Premium 容量のデータセットでは、TMSL または PowerShell を使用してプログラムによって構成した場合、無制限の更新操作がサポートされます。
 

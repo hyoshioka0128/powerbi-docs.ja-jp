@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/05/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c73406a60ddbfce9ae67f69f6986ee7a67e4e48
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: d8ffa99e1dcba5776aa5a6ac11c88de74010c52a
+ms.sourcegitcommit: 8cf6ff2e01646e8ab761291e3d86aded63951ed5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534253"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103460304"
 ---
 # <a name="what-is-power-bi-premium"></a>Power BI Premium とは
 
@@ -154,7 +154,7 @@ Power BI Premium では、"*予約容量*" が提供されます。 他の顧客
 
 ### <a name="capacity-nodes"></a>容量ノード
 
-「[サブスクリプションとライセンス](#subscriptions-and-licensing)」セクションで説明したように、Power BI Premium SKU ファミリには次の 2 つがあります: **EM** と **P**。Power BI Premium SKU はすべて、容量 "*ノード*" として利用でき、それぞれは、プロセッサ、メモリ、およびストレージから成る一定量のリソースを表しています。 リソースの他に、各 SKU には、1 秒あたりの DirectQuery 接続および Live Connection 接続の数と並列モデル更新の数についても運用上の制限があります。
+「[サブスクリプションとライセンス](#subscriptions-and-licensing)」セクションで説明したように、Power BI Premium SKU ファミリには次の 2 つがあります: **EM** と **P**。Power BI Premium SKU はすべて、容量 "*ノード*" として利用でき、それぞれは、プロセッサ、メモリ、およびストレージから成る一定量のリソースを表しています。  リソースの他に、各 SKU には、1 秒あたりの DirectQuery 接続および Live Connection 接続の数と並列モデル更新の数についても運用上の制限があります。 2 つの SKU ファミリの機能には多くの重複がありますが、無料ユーザーが Premium 容量でホストされているコンテンツを利用できるのは、P Premium SKU のみです。  EM SKU は、コンテンツを埋め込むために使用されます。
 
 処理は、バックエンドとフロントエンドの間で均等に分割された設定された数の仮想コアによって実現されます。
 
@@ -356,7 +356,7 @@ Power BI Premium に含まれている Power BI Report Server は Web ポータ�
 
 ## <a name="unlimited-content-sharing"></a>無制限のコンテンツの共有
 
-Premium を使用すれば、組織内外いずれのユーザーも、個別ライセンスを購入することなく、ページ分割されたレポートや対話式のレポートなど、お客様の Power BI コンテンツを表示できます。 
+P Premium SKU を使用すれば、組織内外いずれのユーザーも、個別ライセンスを購入することなく、ページ分割されたレポートや対話式のレポートなど、お客様の Power BI コンテンツを表示できます。 P SKU を使用すると、無料の Power BI ユーザーが Power BI アプリと共有コンテンツを Power BI サービスで使用できます。 EM Premium SKU では、アプリケーションへの埋め込みはサポートされていますが、無制限のコンテンツ共有はサポートされていません。
 
 ![コンテンツの共有](media/service-premium-what-is/premium-sharing.png)
 
@@ -369,6 +369,9 @@ Premium では、コンテンツを表示する受信者に Pro ライセンス�
 内部では、企業で実証済みの Microsoft **Analysis Services VertiPaq エンジン** によって Power BI Premium ワークスペースとデータセットが強化されます。 Analysis Services では、オープンスタンダードの XMLA プロトコルをサポートするクライアント ライブラリと API を介して、プログラミング機能やクライアント アプリケーションおよびツールがサポートされます。 既定では、Power BI Premium 容量データセット ワークロードでは、Microsoft およびサードパーティのクライアント アプリケーションおよびツールから **XMLA エンドポイント** を経由して行う "*読み取り専用*" 操作がサポートされています。 また、容量管理者は、エンドポイントを経由した "*読み取り/書き込み*" 操作を無効にすることも、許可することもできます。
 
 読み取り専用アクセスの場合、SQL Server Management Studio (SSMS) や SQL Server Profiler などの Microsoft のツール、および DAX Studio やデータ視覚化アプリケーションなどのサードパーティ アプリでは、XMLA、DAX、MDX、DMV、および Trace イベントを使用して Premium データセットに接続し、それに対してクエリを実行することができます。 読み取り/書き込みアクセスの場合、Visual Studio と Analysis Services プロジェクト拡張機能や、オープン ソースの表形式エディターなどのエンタープライズ データ モデリング ツールで、表形式モデルをデータセットとして Premium ワークスペースに配置できます。 また、SSMS などのツールを使用すると、管理者は表形式モデルのスクリプト言語 (TMSL) を使用して、メタデータの変更や高度なデータ更新のシナリオをスクリプト化することができます。 
+
+> [!CAUTION]
+> [XMLA エンドポイントとサード パーティ製ツール](troubleshoot-xmla-endpoint.md)を使用すると、組織でパースペクティブを作成できます。 ライブ接続モデルまたはレポートの上にレポートを作成する場合に、Power BI ではパースペクティブが考慮されません。 代わりに、メイン モデルが Power BI サービスに公開されたら、Power BI によって参照され、データ モデル内のすべての要素が表示されます。 Azure Analysis Services モデルでパースペクティブが使用されている場合は、それらのモデルを Power BI Premium に移動または移行しないでください。 
 
 詳細については、[XMLA エンドポイントを使用したデータセット接続](service-premium-connect-tools.md)に関するページを参照してください。
 

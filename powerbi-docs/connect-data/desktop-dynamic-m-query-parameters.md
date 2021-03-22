@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 03/10/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3d4ef7cff9cccd735eabcab4dc7c9e0e10566ffd
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: 5952f512b49b2c5feea73ffdbdd5fda507da5d24
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842103"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191370"
 ---
 # <a name="dynamic-m-query-parameters-in-power-bi-desktop-preview"></a>Power BI Desktop の動的 M クエリ パラメーター (プレビュー)
 
@@ -153,9 +153,9 @@ Products
 
 * 1 つのパラメーターを複数のフィールドにバインドすることはできず、その逆もできません。
 * この機能は M ベースのデータ ソースでのみサポートされています。 次の DirectQuery ソースはサポートされません。
-    * T-SQL ベースのデータ ソース: SQL Server、Azure SQL Database、Synapse SQL プール (別名: Azure SQL Data Warehouse)、Synapse SQL OnDemand プール
+    * T-SQL ベースのデータ ソース: SQL Server、Azure SQL Database、Synapse SQL プール (Azure SQL Data Warehouse など)、Synapse SQL OnDemand プール
     * ライブ接続データ ソース: Azure Analysis Services、SQL Server Analysis Services、Power BI Datasets
-    * サポートされていないその他のデータ ソース: Oracle、Teradata、Relational SAP Hana
+    * サポートされていないその他のデータ ソース: Oracle、Teradata、Relational SAP Hana、PostgreSQL
     * XMLA / TOM エンドポイントのプログラミングによって部分的にサポート: SAP BW と SAP Hana 
 * [集計](../transform-model/desktop-aggregations.md)は、この機能ではサポートされていません
 

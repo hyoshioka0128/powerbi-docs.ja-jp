@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/04/2020
+ms.date: 03/10/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: 29468ea50625b1d354bd431f77c5e89edf5a889d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5d1076ed5cb93fe8ae252f59737ac8e83aa61c50
+ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96402089"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102628479"
 ---
 # <a name="edit-parameter-settings-in-the-power-bi-service"></a>Power BI サービスのパラメーター設定を編集する
 レポートの作成者は Power BI Desktop でレポートにクエリ パラメーターを追加します。 パラメーターを使用すると、1 つまたは複数のパラメーターの *値* に基づいてレポートの各部分を作成できます。 たとえば、レポート作成者は、1 つの国または地域に対してデータを制限するパラメーターや日付、時刻、テキストなどのフィールドに使用できる形式を定義するパラメーターを作成できます。
@@ -35,8 +35,11 @@ ms.locfileid: "96402089"
 
     ![[パラメーター] が展開されている [設定] ウィンドウ](media/service-parameters/power-bi-settings.png)
 
-    必要に応じて、パラメーターの設定を確認し、変更します。 灰色表示のフィールドは編集できません。 
+    必要に応じて、パラメーターの設定を確認し、変更します。
 
+## <a name="considerations-and-limitations"></a>考慮事項と制限事項
+
+灰色表示のフィールドは編集できません。 "Any" 型と "Binary" 型のパラメーターは Power BI Desktop で動作しますが、現在のところ、セキュリティ上の理由からサービスではサポートされていません。
 
 ## <a name="next-steps"></a>次のステップ
 シンプルなパラメーターを追加する特別な方法として、[URL を変更します](../collaborate-share/service-url-filters.md)。

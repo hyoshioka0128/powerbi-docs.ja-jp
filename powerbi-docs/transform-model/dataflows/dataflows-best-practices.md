@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: fb688b20fd8b5ee1288f670fba9f7f45fc058680
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 0e45d21f9666c9b6866b954e4052f0f5f9e4b300
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565368"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191531"
 ---
 # <a name="dataflows-best-practices"></a>データフローのベスト プラクティス
 
@@ -33,7 +33,7 @@ Power BI **データフロー** はエンタープライズに重点を置いた
 |**トピック**  |**ガイダンス領域**  |**記事またはコンテンツへのリンク**  |
 |---------|---------|---------|
 |Power Query     | データ ラングリング経験を最大限に活用するためのヒントとテクニック        |[Power Query のベスト プラクティス](/power-query/best-practices)        |
-|計算されたエンティティを活用する     |計算されたエンティティをデータフローで使用することには、パフォーマンス上の利点があります。         |[計算されたエンティティのシナリオ](/power-query/dataflows/computed-entities-scenarios)         |
+|計算テーブルの活用     |計算テーブルをデータフローで使用することには、パフォーマンス上の利点があります         |[計算テーブルのシナリオ](/power-query/dataflows/computed-entities-scenarios)         |
 |複雑なデータフローの開発     |大規模でパフォーマンスの高いデータフローを開発するためのパターン         |[複雑なデータフロー](/power-query/dataflows/best-practices-developing-complex-dataflows)         |
 |データフローの再利用     |パターン、ガイダンス、ユースケース         |[データフローの再利用](/power-query/dataflows/best-practices-reusing-dataflows)         |
 |大規模な実装     |大規模な使用と、エンタープライズ アーキテクチャを補完するガイダンス         |[データフローを使用したデータ ウェアハウス](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows)         |
@@ -44,7 +44,7 @@ Power BI **データフロー** はエンタープライズに重点を置いた
 |データ プロファイルの使用     |列の品質、分布、プロファイルを理解する         |[データ プロファイリング ツール](/power-query/data-profiling-tools)         |
 |エラー処理の実装     |修正候補を提示し、更新エラーからの回復性がある堅牢なデータフローを開発する         |[一般的なエラーのパターン](/power-query/dealing-with-errors)  </br> [複雑なエラー処理](/power-query/error-handling)      |
 |スキーマ ビューの使用      |幅の広いテーブルを使用するとき、また、スキーマ レベル操作を行うとき、作成エクスペリエンスを向上する         |[スキーマ ビュー](/power-query/schema-view)         |
-|リンクされたエンティティ      |変換の再利用と参照         |[リンクされたエンティティ](/power-query/dataflows/linked-entities)         |
+|リンク テーブル      |変換の再利用と参照         |[リンク テーブル](/power-query/dataflows/linked-tables)         |
 |増分更新      |最新または変更されたデータの読み込み、および完全な再読み込み         |[増分更新](/power-query/dataflows/incremental-refresh)         |
 |||
 

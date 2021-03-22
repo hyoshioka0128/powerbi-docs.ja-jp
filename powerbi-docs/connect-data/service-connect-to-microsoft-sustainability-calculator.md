@@ -6,18 +6,18 @@ ms.author: rosode
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/22/2020
+ms.date: 03/15/2021
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b200e10f34a776c542e59b338695d2e485e28bc3
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: 63a5601a6a7bc36c27170f11ac9077315dffb4f2
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195862"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602286"
 ---
 # <a name="microsoft-sustainability-calculator-support-page"></a>Microsoft Sustainability Calculator のサポート ページ
 
-Microsoft Sustainability Calculator では、Azure サービスに関連する二酸化炭素排出データに関する新しい分析情報を提供します。 組織内で持続可能性に関するレポートと推進を担当するユーザーは、各 Azure サブスクリプションの炭素排出量を定量化し、Azure とオンプレミスのデータセンターでワークロードを実行した場合の二酸化炭素の推定削減量を比較することができます。 このデータは、スコープ 3 排出量の温室効果ガス レポートに使用できます。
+Microsoft Sustainability Calculator では、Azure サービスに関連する二酸化炭素排出データに関する新しい分析情報を提供します。 組織内で持続可能性に関するレポートと推進を担当するユーザーは、各 Azure サブスクリプションの炭素排出量を定量化し、Azure とオンプレミスのデータセンターでワークロードを実行した場合の二酸化炭素の推定削減量を比較することができます。 このデータは、スコープ 3 排出量の温室効果ガス レポートに使用できます。 
 
 > [!NOTE]
 > このコネクタ バージョンでサポートされるのは、[Azure Enterprise Portal](https://ea.azure.com) からの登録のみです。 現在、中国での登録はサポートされていません。
@@ -28,20 +28,34 @@ Microsoft Sustainability Calculator にアクセスするには、次の情報�
 
 - テナント ID
 - アクセス キー
-- 加入契約番号
-- Azure 管理者ロールのみが、Calculator を認証して会社のデータに接続できます。 (**2020 年 12 月プレビュー バージョンの場合のみ**)
+- Enterprise Agreement (EA) のお客様の登録番号または Microsoft 顧客契約 (MCA)/クラウド ソリューション プロバイダー (CSP) のお客様の請求先アカウント ID
 
-会社の登録番号を確認するには:
+> [!NOTE]
+> Sustainability Calculator を認証して会社のデータに接続できるのは、Azure 管理者ロールだけです。 この注記は、2020 年 12 月のプレビュー リリースに適用されます。
+
+### <a name="find-your-companys-access-key"></a>会社のアクセス キーを見つける
+
+1. [Azure Enterprise Portal](https://ea.azure.com) に管理者としてサインインします。
+2. **[レポート]** を選択し、 **[API アクセス キー]** を選択してプライマリ登録アカウント キーを取得します。
+
+### <a name="find-your-companys-enrollment-number"></a>会社の登録番号を見つける
+
+この手順は、EA のお客様にのみ適用されます。
 
 1. [Azure Enterprise Portal](https://ea.azure.com) に管理者としてサインインします。
 2. 左側のナビゲーション バーで **[Active Directory]** または **[管理]** を選択します。 会社の登録番号が表示されます。
 
    ![登録番号を調べる](media/service-connect-to-microsoft-sustainability-calculator/enrollment-number.png)
 
-会社のアクセス キーを確認するには:
+### <a name="find-your-companys-billing-account-id"></a>会社の請求先アカウント ID を見つける
 
-1. [Azure Enterprise Portal](https://ea.azure.com) に管理者としてサインインします。
-2. **[レポート]** を選択し、 **[API アクセス キー]** を選択してプライマリ登録アカウント キーを取得します。
+この手順は、MCA/CSP のお客様のみに適用されます。
+
+1. [Azure portal](https://portal.azure.com) で、 **[コストの管理と請求]** に移動します。
+2. ご自分の請求先アカウントを選択します。
+3. **[設定]** で **[プロパティ]** を選択します。 **[請求先アカウント]** の下に請求先アカウント ID が表示されます。
+
+   ![請求先アカウント ID を見つける](media/service-connect-to-microsoft-sustainability-calculator/billing-account-id.png)
 
 ## <a name="sustainability-calculator-release-january-2020"></a>Sustainability Calculator の 2020 年 1 月リリース
 
@@ -49,21 +63,21 @@ Microsoft Sustainability Calculator にアクセスするには、次の情報�
 
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
-3. **Microsoft Sustainability Calculator** を選択してから、 **[今すぐ入手する]** を選択します。
+1. **Microsoft Sustainability Calculator** を選択してから、 **[今すぐ入手する]** を選択します。
 
-4. **[この Power BI アプリをインストールしますか?]** で、 **[インストール]** を選択します。
+2. **[この Power BI アプリをインストールしますか?]** で、 **[インストール]** を選択します。
 
-5. **[アプリ]** ペインで、 **[Microsoft Sustainability Calculator]** タイルを選択します。
+3. **[アプリ]** ペインで、 **[Microsoft Sustainability Calculator]** タイルを選択します。
 
-6. **[新しいアプリを開始する]** で **[接続]** を選択します。
+4. **[新しいアプリを開始する]** で **[接続]** を選択します。
 
    ![新しいアプリを開始する](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
-7. **[Company name]\(会社名\)** 、 **[User enrollment number]\(ユーザー登録番号\)** 、 **[Number of months]\(月数\)** を入力します。 登録番号の取得については、「[前提条件](#prerequisites)」を参照してください。 **[次へ]** を選択します。
+5. **[Company name]\(会社名\)** 、 **[User enrollment number]\(ユーザー登録番号\)** 、 **[Number of months]\(月数\)** を入力します。 登録番号の取得の詳細については、「[会社の登録番号を見つける](#find-your-companys-enrollment-number)」を参照してください。 **[次へ]** を選択します。
 
    ![会社の登録](media/service-connect-to-microsoft-sustainability-calculator/company-enrollment.png)
 
-8. 次の情報を入力します。
+6. 次の情報を入力します。
 
    | フィールド | 値 |
    | --- | --- |
@@ -73,9 +87,9 @@ Microsoft Sustainability Calculator にアクセスするには、次の情報�
 
    ![アクセス キーの入力](media/service-connect-to-microsoft-sustainability-calculator/access-key-entry.png)
 
-9. **[サインイン]** を選択します。
+7. **[サインイン]** を選択します。
 
-10. インポート処理が自動的に開始します。 完了すると、**ナビゲーション ペイン** に、新しいダッシュボード、レポート、モデルが表示されます。 インポートされたデータを表示するレポートを選択します。
+8. インポート処理が自動的に開始します。 完了すると、**ナビゲーション ペイン** に、新しいダッシュボード、レポート、モデルが表示されます。 インポートされたデータを表示するレポートを選択します。
 
 ### <a name="using-the-app"></a>アプリの使用
 
@@ -111,27 +125,47 @@ Azure の登録番号が必要になります。 わからない場合は、組�
 
 2. アプリを開きます。
 
-3. 登録番号を入力します。 **[データを接続]** を選択して、登録番号を入力します。 登録番号の取得の詳細については、「[前提条件](#prerequisites)」を参照してください。
+3. **[データを接続]** を選択します。 **[Connect to Microsoft Sustainability Calculator (Preview)]\(Microsoft Sustainability Calculator に接続 (プレビュー)\)** ウィンドウで、EA と MCA/CSP のどちらのお客様であるかに応じて、次のいずれかの一連の手順を実行します。
 
-   ![登録番号を入力する](media/service-connect-to-microsoft-sustainability-calculator/enter-enrollment-number.png)
+   **EA のお客様**
+
+   1. **[EnrollmentIDorBillingAccountID]** に登録番号を入力します。 登録番号の取得の詳細については、「[会社の登録番号を見つける](#find-your-companys-enrollment-number)」を参照してください。
+
+   2. **[AgreementType]** で、 **[登録番号]** を選択します。
+
+      ![EA のお客様が Microsoft Sustainability Calculator に接続](media/service-connect-to-microsoft-sustainability-calculator/connect-enterprise-agreement.png)
+
+   **MCA/CSP のお客様**
+
+   1. **[EnrollmentIDorBillingAccountID]** で、次の形式で請求先アカウント ID を入力します。
+
+      /providers/Microsoft.Billing/billingAccounts/*BillingAccountID*
+
+      例: /providers/Microsoft.Billing/billingAccounts/\*\*\*\*\*\*\*:\*\*\*\*\*\*\*
+
+      請求先アカウント ID を取得する方法の詳細については、「[会社の請求先アカウント ID を見つける](#find-your-companys-billing-account-id)」を参照してください。
+
+   2. **[AgreementType]** で、 **[Manually Input Scope]\(手動入力のスコープ\)** を選択します。 
+
+      ![MCA/CSP のお客様が Microsoft Sustainability Calculator に接続](media/service-connect-to-microsoft-sustainability-calculator/connect-microsoft-customer-agreement.png)
 
 4. アカウントを接続します。
 
    > [!NOTE]
    > お使いのアカウントへの接続に使用する Azure portal ペインは、次の例に示すのと同じ順序でない場合や、詳細の表示が同じでない場合があります。
-   
+
    - **[You are connecting to (1 of 2)]\(接続しています (1/2)\)** の **[認証方法]** で **[OAuth2]** を選択し、 **[このデータ ソースのプライバシー レベルの設定]** で **[組織]** を選択します。
 
       ![パラメーター認証の最初のダイアログのスクリーンショット。](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
- 
+
    - ユーザー アカウントを選択します。
 
       ![アカウントを選択する](media/service-connect-to-microsoft-sustainability-calculator/pick-account.png)
-       
+
    - **[You are connecting to (2 of 2)]\(接続しています (2/2)\)** の **[認証方法]** で **[匿名]** を選択し、 **[このデータ ソースのプライバシー レベルの設定]** で、 **[組織]** を選択します。
 
      ![パラメーター認証の 2 番目のダイアログのスクリーンショット。](media/service-connect-to-microsoft-sustainability-calculator/connecting-2-of-2.png)
-    
+
 5. ビューが作成されるまで待ちます。これには最大で 24 時間かかることがあります。
 
 ### <a name="additional-resources"></a>その他のリソース

@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 3917ef64cfecd20e09be9b253ac05953cfe3d37a
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: c6b260b033ab4cb455df7cedc17b50935d972636
+ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969675"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102628504"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Power BI ビジュアル API の変更ログ
 このページには、API バージョンの簡単な概要が含まれています。 ここに記載されているバージョンは安定バージョンと見なされ、変更されません。
 
+## <a name="api-v360"></a>API v3.6.0
+  * **capabilities.json** で `"supportsLandingPage"` と新しく追加された `"supportsEmptyDataView"` を **"true"** 値に設定することで、データをバインドしなくても、ビジュアルでは Power BI から更新プログラムを受信できます。  
 
 ## <a name="api-v340"></a>API v3.4.0
   * `fetchMoreData` : 新しい `aggregateSegments` パラメーター (既定で true)、集計のない fetchMoreData をサポートするため

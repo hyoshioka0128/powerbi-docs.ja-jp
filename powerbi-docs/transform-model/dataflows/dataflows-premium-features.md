@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/13/2020
+ms.date: 03/11/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2c8a5646f4831c77ac0f8fabed0d74f2a2cfba1f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3f4985fd29d9d589ce8ae981a6f68c6f3471fbfe
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414072"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103190749"
 ---
 # <a name="premium-features-of-dataflows"></a>データフローの Premium 機能
 
@@ -48,7 +48,7 @@ Power BI の拡張コンピューティング エンジンにより、Power BI P
 > [!IMPORTANT]
 > 拡張コンピューティング エンジンは、A3 以上の Power BI 容量に対してのみ機能します。
 
-拡張コンピューティング エンジンをオンにしたら、**データフロー** に戻ります。複雑な演算 (同じ容量の既存のリンクされたエンティティから作成されたデータフローに対する *joins* や *group by* 演算など) を実行する計算対象エンティティのパフォーマンスが向上しているはずです。 
+拡張コンピューティング エンジンをオンにしたら、**データフロー** に戻ります。複雑な演算 (同じ容量の既存のリンクされたエンティティから作成されたデータフローに対する *joins* や *group by* 演算など) を実行する計算テーブルのパフォーマンスが向上しているはずです。 
 
 コンピューティング エンジンを最大限に活用するには、次のように ETL ステージを 2 つの異なるデータフローに分割します。
 
@@ -126,7 +126,7 @@ DirectQuery とデータフローには、いくつかの既知の制限事項�
 
 Power BI Premium サブスクリプションで **データフロー** を使用するときに、**ストレージ内計算** を実行できます。 これにより、既存のデータフローで計算を実行して、レポートの作成と分析に集中できる結果を返すことができます。
 
-![計算対象エンティティ](media/dataflows-premium-features/computed-entity.png)
+![計算テーブル](media/dataflows-premium-features/computed-entity.png)
 
 ストレージ内計算を実行するには、まず、データフローを作成して、その Power BI データフロー ストレージにデータを取り込む必要があります。 データを含むデータフローを作成した後は、ストレージ内計算を実行するエンティティである計算されたエンティティを作成できます。
 
@@ -152,7 +152,7 @@ Power BI Premium サブスクリプションで使用する場合は、既存の
 
 次の状況では、データフローの増分更新を設定しないでください。
 
-* リンクされたエンティティでデータフローが参照されている場合、それらでは増分更新を使用しないでください。 データフローを使用すると、クエリの折りたたみはサポートされません (エンティティで DirectQuery が有効にされている場合でも)。 
+* リンクされたエンティティでデータフローが参照されている場合、それらでは増分更新を使用しないでください。 データフローを使用すると、クエリの折りたたみはサポートされません (テーブルで DirectQuery が有効にされている場合でも)。 
 * データフローを参照するデータセットにおいては、増分更新を使用しないでください。 通常、データフローに対する更新は問題なく行われるはずです。 更新に予想より長い時間がかかる場合は、コンピューティング エンジンと DirectQuery モードの使用を検討してください。
 
 ## <a name="next-steps"></a>次のステップ

@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring
-ms.date: 02/16/2021
-ms.openlocfilehash: f31f4864cd0291681e0217136df1295b73c479fd
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.date: 03/04/2021
+ms.openlocfilehash: a0ea1b135de0cb2257d3d6f0477314fe26f54319
+ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842471"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102628463"
 ---
 # <a name="monitoring-power-bi-embedded-data-reference"></a>Power BI Embedded 監視データのリファレンス
 
@@ -35,9 +35,9 @@ Power BI Embedded の監視データの収集と分析について詳しくは�
 | 名前 | メトリック | ユニット | 説明 |
 |:---|:-------|:-----|:------------|
 |CPU (Gen2) |cpu_metric |Percent |CPU 使用率。 Power BI Embedded Generation 2 のリソースに対してのみサポートされます。 |
+|オーバーロード (Gen2) |overload_metric |0/1 |リソース オーバーロード。リソースがオーバーロードになっている場合は 1。それ以外の場合は 0。 Power BI Embedded Generation 2 のリソースに対してのみサポートされます。 |
 |メモリ (Gen1) |memory_metric               |バイト        |メモリ。 範囲: 0-3 GB (A1)、0-5 GB (A2)、0-10 GB (A3)、0-25 GB (A4)、0-50 GB (A5)、0-100 GB (A6)。 Power BI Embedded Generation 1 のリソースに対してのみサポートされます。 |
 |メモリ スラッシング (データセット) (Gen1) |memory_thrashing_metric     |Percent      |平均的なメモリ スラッシング。 Power BI Embedded Generation 1 のリソースに対してのみサポートされます。 |
-|オーバーロード (Gen2) |overload_metric |0/1 |リソース オーバーロード。リソースがオーバーロードになっている場合は 1。それ以外の場合は 0。 Power BI Embedded Generation 2 のリソースに対してのみサポートされます。 |
 |高い QPU 使用率 (Gen1) |qpu_high_utilization_metric |Count        |過去 1 分間の高い QPU 使用率。QPU 使用率が高い場合は 1、それ以外の場合は 0。 Power BI Embedded Generation 1 のリソースに対してのみサポートされます。 |
 |クエリ実行時間 (データセット) (Gen1) |QueryDuration               |ミリ秒 |最後の間隔での DAX クエリ実行時間。 Power BI Embedded Generation 1 のリソースに対してのみサポートされます。 |
 |クエリ プールのジョブ キューの長さ (データセット) (Gen1) |QueryPoolJobQueueLength     |Count        |クエリ スレッド プールのキューに登録されているジョブの数。 Power BI Embedded Generation 1 のリソースに対してのみサポートされます。 |
@@ -136,6 +136,14 @@ Power BI Embedded には、ディメンションを含むメトリックはあ�
 ## <a name="schemas"></a>スキーマ
 
 Power BI Embedded では、**Power BI 専用** スキーマが使用されます。
+
+## <a name="example-script-for-scaling-a-capacity"></a>容量スケーリングのスクリプト例
+
+容量リソース容量をスケーリングする目的で、[ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell Runbook スクリプトを使用できます。
+
+このスクリプトでは Power BI と ARM REST API が使用されます。Azure オートメーションで呼び出し、Azure アラートで始動させることができます。
+
+[PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) リポジトリの一環としてスクリプトをコピーしたり、ダウンロードしたりできます。その際、緑の *[ダウンロード]* ボタンを押し、ZIP をダウンロードしてください。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -7,14 +7,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 12/14/2020
+ms.date: 03/10/2021
 LocalizationGroup: Data refresh
-ms.openlocfilehash: eba044de4918ad3cc62ce8b47144eab25c34702a
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 3d6117878dee2f72a65a1754c94c067615a79978
+ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491807"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102628278"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>更新に関するトラブルシューティング シナリオ
 
@@ -91,6 +91,13 @@ Microsoft は、データの読み込みプロセスでトークンが更新さ�
 ## <a name="data-refresh-failure-because-of-password-change-or-expired-credentials"></a>パスワードが変更されたか、資格情報の有効期限が切れているため、データを更新できない
 
 キャッシュされた資格情報の有効期限が切れているため、データを更新できない可能性もあります。 Power BI にサインインし、 `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true` に移動して、インターネット ブラウザーのキャッシュをクリアしてください。 これで、資格情報が強制的に更新されます。
+
+## <a name="refresh-a-column-of-the-any-type-containing-truefalse-results-in-unexpected-values"></a>TRUE/FALSE が含まれる ANY 型の列を更新すると、予想外の値が返される
+
+ANY データ型列が含まれるレポートを Power BI Desktop で作成するとき、その列に TRUE/FALSE 値が含まれている場合、更新後、その列の値が Power BI Desktop と Power BI サービスの間で異なることがあります。 Power BI Desktop では、基盤となるエンジンによってブール値が文字列に変換され、TRUE または FALSE 値が保持されます。 Power BI サービスでは、基盤となるエンジンによって値がオブジェクトに変換され、続いて値が -1 または 0 に変換されます。
+
+このような列を利用して Power BI Desktop で作成されたビジュアルは、更新イベント前に設計されたように見えたり、振る舞ったりすることがありますが、更新イベント後に変更されるかもしれません (TRUE または FALSE が -1 または 0 に変換されるため)。
+
 
 ## <a name="next-steps"></a>次の手順
 

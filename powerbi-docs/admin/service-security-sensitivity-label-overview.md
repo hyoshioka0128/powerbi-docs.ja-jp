@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6af58c7768f8717b3cae3524a0d12458cb4f3446
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: 39ef1b8768a7874a2d2065e506dc3deb9987ad61
+ms.sourcegitcommit: 8cf6ff2e01646e8ab761291e3d86aded63951ed5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195333"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103460281"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Power BI における秘密度ラベル
 
@@ -104,6 +104,10 @@ Power BI サービスで新しいレポートとダッシュボードが作成�
 
 >[!NOTE]
 >何らかの理由で秘密度ラベルを新しいレポートまたはダッシュボードに適用できない場合、Power BI では新しい項目の作成はブロック **されません**。
+
+## <a name="sensitivity-label-inheritance-from-data-sources-preview"></a>データ ソースからの秘密度ラベルの継承 (プレビュー)
+
+サポートされているデータ ソース内の秘密度ラベル付きのデータに接続する Power BI のデータセットが、それらのラベルを継承できるようになります。これにより、そのデータは、分類されセキュリティで保護されたまま、Power BI に取り込まれます。 現時点では、Azure Synapse Analytics (旧称 SQL Data Warehouse) と Azure SQL Database がサポートされています。 データ ソースからの継承のしくみと、組織で有効にする方法については、「[データ ソースからの秘密度ラベルの継承](service-security-sensitivity-label-inheritance-from-data-sources.md)」を参照してください。
 
 ## <a name="sensitivity-labels-and-protection-on-exported-data"></a>エクスポートされたデータの秘密度ラベルと保護
 

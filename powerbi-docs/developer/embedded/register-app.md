@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: 624e0a2838a08d1cf68ae58223fe979a56312b48
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: aa3376d78c7714cc748e92b198700516b4e4d540
+ms.sourcegitcommit: a0ef8f57ff867b38af20a851ff7c65bbc6164397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565924"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103486724"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD アプリケーションを登録して Power BI とともに使用する
 
@@ -151,7 +151,9 @@ Azure Active Directory でアプリケーションを登録する方法の詳細
 アプリケーションを登録した後、そのアクセス許可を変更できます。 アクセス許可の変更は、プログラムまたは Azure portal で行うことができます。
 
 >[!NOTE]
->Azure AD アプリのアクセス許可は、"*マスター ユーザー*" 認証方法を使用した、"*顧客向けの埋め込み*" ソリューションにのみ適用されます。
+>Azure AD アプリのアクセス許可は、次のシナリオにのみ適用されます。
+>* *組織向けの埋め込み*
+>* "*マスター ユーザー*" の認証方法を使用した "*顧客向けの埋め込み*"
 
 # <a name="azure"></a>[Azure](#tab/Azure)
 

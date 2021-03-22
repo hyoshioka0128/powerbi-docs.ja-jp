@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/09/2021
-ms.openlocfilehash: 788f6cbd840b2c260b00033e27d39f56ed7ce964
-ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.date: 03/10/2021
+ms.openlocfilehash: 002dfdb6ff5aa20330cc657bae8f50828c87aecb
+ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489833"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102628368"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Power BI のページ分割されたレポート:FAQ 
 
@@ -67,7 +67,7 @@ Power BI レポートとページ分割されたレポートを区別するた�
 
 ### <a name="can-i-monitor-this-workload-through-the-premium-capacity-monitoring-app"></a>Premium 容量監視アプリを使ってこのワークロードを監視できますか。
 
-はい。Power BI データセットと同じ関連詳細が含まれる新しいタブで監視できます。
+はい。Power BI データセットと同じ関連詳細が含まれる新しいタブで監視できます。 このアプリは Power BI Premium Gen2 ではサポートされていません。
 
 ### <a name="do-i-need-a-pro-license-to-create-and-publish-paginated-reports"></a>ページ分割されたレポートを作成して発行するには、Pro ライセンスが必要ですか。
 
@@ -77,7 +77,7 @@ Pro ライセンスがなくても、お使いのマイ ワークスペースが
 
 エラー メッセージが表示され、ワークロードをオンに戻すまでレポートを表示することはできません。 それでも、ワークスペースからレポートを削除することはできます。
 
-### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-that-support-paginated-reports"></a>ページ分割されたレポートに対してサポートされる各 Premium SKU の既定のメモリは何ですか。
+### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-that-support-paginated-reports-in-premium-capacity"></a>Premium 容量の場合、ページ分割されたレポートに対してサポートされる各 Premium SKU の既定のメモリはどれぐらいですか。
 
 ページ分割されたレポートに対する各 Premium SKU の既定のメモリは次のとおりです。
 

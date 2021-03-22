@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/25/2021
-ms.openlocfilehash: bbe88b206c4c07e2e296b9c85d46be7901f5972a
-ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.date: 03/10/2021
+ms.openlocfilehash: 8bf846a00cfd0b94d63caa132bd8b64a3fc35412
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98861286"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191393"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>ページ分割されたレポートを Power BI サービスに発行する
 
@@ -21,7 +21,10 @@ ms.locfileid: "98861286"
 
 この記事では、ページ分割されたレポートをローカル コンピューターからアップロードすることによって Power BI サービスに発行することについて学びます。 ワークスペースが Premium 容量である限り、ページ分割されたレポートをマイ ワークスペースまたは他のワークスペースにアップロードできます。 ワークスペース名の横にあるダイヤモンド形のアイコン ![Power BI Premium 容量のダイヤモンド形のアイコン](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) を探します。 
 
-レポートのデータ ソースがオンプレミスの場合は、レポートをアップロードした後で、ゲートウェイを作成する必要があります。 この記事の後半の「[ゲートウェイを作成する](#create-a-gateway)」セクションを参照してください。
+## <a name="requirements"></a>要件
+
+- [Premium 容量](../admin/service-premium-what-is.md)内のワークスペースへのアクセス。
+- レポートのデータ ソースがオンプレミスの場合は、ゲートウェイをインストールする必要があります。 [オンプレミス ゲートウェイ](../connect-data/service-gateway-onprem.md)に関するページをご覧ください。 レポートのアップロード後、ゲートウェイを使用してオンプレミス データ ソースに接続します。
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Premium 容量にワークスペースを追加する
 
@@ -59,7 +62,7 @@ ms.locfileid: "98861286"
 
     ![パラメーターを選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
 
-6. レポートのデータ ソースがオンプレミスの場合は、この記事の[ゲートウェイを作成する](#create-a-gateway)方法を参照して、データ ソースにアクセスしてください。
+6. レポートのデータ ソースがオンプレミスの場合は、この記事の[ゲートウェイに接続する](#connect-to-a-gateway)方法を参照してデータ ソースにアクセスしてください。
 
 ## <a name="from-the-power-bi-service-upload-a-paginated-report"></a>Power BI サービスから、ページ分割されたレポートをアップロードする
 
@@ -97,19 +100,17 @@ Power BI サービスから開始し、ページ分割されたレポートを�
  
     ![パラメーターを選択する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
 
-6. レポートのデータ ソースがオンプレミスの場合は、この記事の[ゲートウェイを作成する](#create-a-gateway)方法を参照して、データ ソースにアクセスしてください。
+6. レポートのデータ ソースがオンプレミスの場合は、この記事の[ゲートウェイに接続する](#connect-to-a-gateway)方法を参照してデータ ソースにアクセスしてください。
 
-## <a name="create-a-gateway"></a>ゲートウェイを作成する
+## <a name="connect-to-a-gateway"></a>ゲートウェイに接続する
 
-他の Power BI レポートと同じように、レポートのデータ ソースがオンプレミスにある場合は、データにアクセスするために、ゲートウェイを作成するか、ゲートウェイに接続する必要があります。
+他の Power BI レポートと同じように、ページ分割されたレポートのデータ ソースがオンプレミスにある場合は、データにアクセスするために、ゲートウェイを作成するか、ゲートウェイに接続する必要があります。
 
 1. レポート名の横にある **[管理]** を選択します。
 
    ![ページ分割されたレポートを管理する](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
 1. 詳細と以降の手順については、Power BI サービスの記事「[オンプレミス データ ゲートウェイ](../connect-data/service-gateway-onprem.md)」をご覧ください。
-
-
 
 ## <a name="next-steps"></a>次のステップ
 

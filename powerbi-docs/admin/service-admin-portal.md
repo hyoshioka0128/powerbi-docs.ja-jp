@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/03/2021
+ms.date: 03/12/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d6c37b8dfd5e7ca74ff4e1efaef4c5022ee1f86d
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: 36d8f0d47b32d8b012dc4d559e3feecf3c08bc9e
+ms.sourcegitcommit: 8cf6ff2e01646e8ab761291e3d86aded63951ed5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102196138"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103460372"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
-管理ポータルを使用すると、組織の Power BI 設定を管理できます。 ポータルには、利用状況の指標、Microsoft 365 管理センターへのアクセス、すべてのユーザーの Power BI を管理する設定などの項目が含まれています。
+管理ポータルには、自分の組織内のすべてのユーザーの Power BI を管理する設定が含まれています。 たとえば、管理ポータルでは、使用状況メトリックを参照したり、Microsoft 365 管理センターにアクセスしたり、ユーザーが Power BI と通信する方法を制御できます。
 
-完全な管理ポータルには、グローバル管理者と、Power BI サービス管理者ロールを持つユーザーがアクセスできます。 これらの役割のいずれも割り当てられていない場合、表示できるのはポータルの **[容量の設定]** のみです。 Power BI サービス管理者の役割の詳細については、「[Power BI 管理者の役割について](service-admin-role.md)」を参照してください。
+完全な管理ポータルには、グローバル管理者と、Power BI の管理者ロールを持つユーザーがアクセスできます。 これらの役割のいずれも割り当てられていない場合、表示できるのはポータルの **[容量の設定]** のみです。 Power BI サービス管理者の役割の詳細については、「[Power BI 管理者の役割について](service-admin-role.md)」を参照してください。
 
 ## <a name="how-to-get-to-the-admin-portal"></a>管理ポータルにアクセスする方法
 
@@ -179,7 +179,7 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 ### <a name="publish-get-help-information"></a>[ヘルプを表示] の情報を公開する
 
-!["ヘルプの取得" に関する情報の発行](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+  :::image type="content" source="media/service-admin-portal/publish-get-help.png" alt-text="[ヘルプを表示] の情報の公開用のインターフェイスを示す画面キャプチャ。":::
 
 管理者は、内部 URL を指定して、Power BI ヘルプ メニューおよびライセンス アップグレードのリンク先をオーバーライドできます。 カスタム URL が設定されている場合、組織内のユーザーは、既定のリンク先ではなく内部ヘルプおよびサポート リソースに移動します。 次のリソースのリンク先をカスタマイズできます。
 
@@ -187,7 +187,7 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 * **コミュニティ**。 ヘルプ メニューから、[Power BI コミュニティ](https://community.powerbi.com/)ではなく、内部フォーラムにユーザーを移動させるには、**ディスカッション フォーラム** のカスタム URL を設定します。
 
-* **ライセンス アップグレード**。 Power BI Free ライセンスを持つユーザーには、サービスを使用している間にアカウントを Power BI Pro にアップグレードする機会が示される場合があります。 **ライセンスの要求** の内部 URL を指定した場合、ユーザーは内部要求および購買フローにリダイレクトされ、セルフサービス購入が防止されます。 ユーザーがライセンスを購入できないようにするが、Power BI Pro の試用版を開始できるようにする場合は、「[ユーザーが Power BI Pro を試せるようにする](#allow-users-to-try-power-bi-paid-features)」を参照して、購入体験と試用体験を分けます。
+* **ライセンス アップグレード**。 Power BI Free ライセンスを持つユーザーには、サービスを使用している間にアカウントを Power BI Pro にアップグレードする機会が示される場合があります。 Power BI Pro ライセンスを既に持っているユーザーは、Power BI Premium Per User にアップグレードするように求められる場合があります。 **ライセンスの要求** の内部 URL を指定した場合、ユーザーは内部要求および購買フローにリダイレクトされ、セルフサービス購入が防止されます。 ライセンスは購入できないようにし、Power BI Pro または Power BI Premium Per User の試用版の開始はユーザーに許可する場合、「[ユーザーが Power BI 有料機能を試せるようにする](#allow-users-to-try-power-bi-paid-features)」を参照して、購入と試用体験を分けます。
 
 * **ヘルプの表示**。 ヘルプ メニューから、[Power BI サポート](https://powerbi.microsoft.com/support/)ではなく、内部ヘルプ デスクにユーザーを移動させるには、**ヘルプ デスク** のカスタム URL を設定します。
 
@@ -197,19 +197,19 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 
 ### <a name="allow-users-to-try-power-bi-paid-features"></a>ユーザーが Power BI 有料機能を試せるようにする
 
-![ユーザーが Power BI Pro の設定 UI を試せるようにする](media/service-admin-portal/allow-pro-trial.png)
+   :::image type="content" source="media/service-admin-portal/allow-paid-features.png" alt-text="[Allow users to try Power BI paid features]\(ユーザーが Power BI 有料機能を試せるようにする\) インターフェイスの画面キャプチャ。":::
 
-**[Allow users to try Power BI paid features]\(ユーザーが Power BI 有料機能を試せるようにする\)** 設定は既定で有効になっています。 この設定を使用すると、ユーザーが Power BI Pro ライセンスを取得する方法をより細かく制御できます。 セルフサービス購入がブロックされているシナリオでは、この設定により、ユーザーは Power BI Pro の評価を開始できます。 エンドユーザー エクスペリエンスは、ライセンス設定の組み合わせ方によって異なります。 次の表は、Power BI Free から Power BI Pro へのアップグレード エクスペリエンスが、さまざまな設定の組み合わせによってどのような影響を受けるかを示しています。
+**[Allow users to try Power BI paid features]\(ユーザーが Power BI 有料機能を試せるようにする\)** 設定は既定で有効になっています。 この設定により、ユーザーがライセンスのアップグレードをどのように取得するかをより細かく制御できるようになります。 セルフサービス購入をブロックしたシナリオで、この設定は、ユーザーが 60 日間無料で追加機能を使用することを可能にします。 Power BI (無料) ライセンスを所有しているユーザーは、Power BI Pro の試用版を開始できます。 Power BI Pro のライセンスを持っているユーザーは、Power BI Premium Per User の試用版を開始できます。 ユーザーのライセンスのアップグレード エクスペリエンスは、ライセンス設定の組み合わせ方によって変わります。 次の表は、設定の組み合わせの違いにより、アップグレード エクスペリエンスがどのような影響を受けるかを示しています。
 
-| セルフサービスでの購入の設定 | ユーザーが Power BI Pro の設定を試せるようにする | エンド ユーザー エクスペリエンス |
+| セルフサービスでの購入の設定 | ユーザーが Power BI の有料機能を試せるようにする | エンド ユーザー エクスペリエンス |
 | ------ | ------ | ----- |
-| Enabled | 無効 | ユーザーは Pro ライセンスを購入できますが、試用版を開始することはできません |
-| Enabled | Enabled | ユーザーは、Pro の無料試用版を開始し、有料ライセンスにアップグレードすることができます |
+| Enabled | 無効 | ユーザーはアップグレード ライセンスを購入できますが、試用版は開始できません |
+| Enabled | Enabled | ユーザーは無料試用版を開始して、有料ライセンスにアップグレードできます |
 | 無効 | 無効 | ユーザーに、IT 管理者に連絡してライセンスを要求するように求めるメッセージが表示されます |
-| 無効 | Enabled | ユーザーは Pro 試用版を開始できますが、有料ライセンスを取得するには IT 管理者に問い合わせる必要があります |
+| 無効 | Enabled | ユーザーは試用版は開始できますが、有料ライセンスは IT 管理者に問い合わせて取得する必要があります |
 
 > [!NOTE]
-> ライセンス要求の内部 URL を追加するには、[ヘルプとサポートの設定](#help-and-support-settings)を使用します。 この URL を設定すると、既定のセルフサービス購入エクスペリエンスがオーバーライドされます。 Power BI Pro ライセンス試用版のサインアップはリダイレクトされません。 上の表で説明したシナリオでライセンスを購入できるユーザーは、内部 URL にリダイレクトされます。
+> ライセンス要求の内部 URL を追加するには、[ヘルプとサポートの設定](#help-and-support-settings)を使用します。 この URL を設定すると、既定のセルフサービス購入エクスペリエンスがオーバーライドされます。 サインアップしても試用版のライセンスにはリダイレクトされません。 上の表で説明したシナリオでライセンスを購入できるユーザーは、内部 URL にリダイレクトされます。
 
 詳細については、「[セルフサービスでのサインアップと購入を有効または無効にする](service-admin-disable-self-service.md)」を参照してください。
 
@@ -247,7 +247,7 @@ Before publishing the report to a workspace, be sure to validate that the approp
 
 ### <a name="create-the-new-workspaces"></a>新しいワークスペースを作成する
 
-ワークスペースは、ユーザーがダッシュボード、レポート、およびその他のコンテンツで共同作業を行う場所です。 管理者は、 **[ワークスペースの作成 (新しいワークスペース エクスペリエンス)]** 設定を使用して、ワークスペースを作成できる組織内のユーザーを指定します。 管理者は、組織内の全員が新しいワークスペース エクスペリエンスのワークスペースを作成することを許可することも、誰も作成できないようにすることもできます。 特定のセキュリティ グループのメンバーに作成を限定することもできます。 [ワークスペース](../collaborate-share/service-new-workspaces.md)の詳細を参照してください。
+ワークスペースは、ユーザーがダッシュボード、レポート、およびその他のコンテンツで共同作業を行う場所です。 管理者は、 **[ワークスペースの作成 (新しいワークスペース エクスペリエンス)]** 設定を使用して、ワークスペースを作成できる組織内のユーザーを指定します。 管理者は、組織内の全員が新しいワークスペース エクスペリエンスのワークスペースを作成することを許可することも、誰も作成できないようにすることもできます。 特定のセキュリティグ ループのメンバーに、ワークスペースの作成を制限することもできます。 [ワークスペース](../collaborate-share/service-new-workspaces.md)の詳細を参照してください。
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="新しいワークスペース エクスペリエンスを作成する":::
 
@@ -280,6 +280,16 @@ Microsoft 365 グループに基づく従来のワークスペースについて
 
 有効にすると、新しく作成された Office 365 グループは Power BI のワークスペースの一覧に表示されません。 既存のクラシック ワークスペースは引き続き一覧に表示されます。 この設定を無効にすると、ユーザーがメンバーになっているすべての Office 365 グループがワークスペースの一覧に表示されます。 新しいワークスペース エクスペリエンスのワークスペースの詳細については、[こちら](../collaborate-share/service-new-workspaces.md)を参照してください。
 
+## <a name="information-protection"></a>情報の保護
+
+### <a name="apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview"></a>Power BI のデータにデータ ソースの秘密度ラベルを適用する (プレビュー)
+
+この設定を有効にすると、サポートされているデータ ソース内の秘密度ラベル付きのデータに接続する Power BI のデータセットが、それらのラベルを継承できるようになります。これにより、そのデータは分類されセキュリティで保護されたまま、Power BI に取り込まれます。  データ ソースからの秘密度ラベルの継承の詳細については、「[データ ソースからの秘密度ラベルの継承 (プレビュー)](service-security-sensitivity-label-inheritance-from-data-sources.md)」を参照してください。
+
+データ ソースから秘密度ラベルを継承するには、[Power BI のテナント設定](service-admin-portal.md#tenant-settings)にアクセスして、 **[Information protection]、[Apply sensitivity labels from data sources to their data in Power BI (preview)]\(データ ソースの秘密度レベルをその Power BI のデータに適用する (プレビュー)\)** の下のトグルを有効にします。
+
+![[Apply sensitivity labels from data sources to their data in Power BI]\(データ ソースの秘密度レベルをその Power BI のデータに適用する\) テナント設定のスクリーンショット。](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
+
 ## <a name="export-and-sharing-settings"></a>エクスポートと共有の設定
 
 ### <a name="allow-azure-active-directory-guest-users-to-access-power-bi"></a>Azure Active Directory のゲスト ユーザーによる Power BI へのアクセスを許可する
@@ -292,7 +302,7 @@ Microsoft 365 グループに基づく従来のワークスペースについて
 
 **[Invite external users to your organization]\(組織に外部ユーザーを招待する\)** 設定により、組織が Power BI 共有、アクセス許可、およびサブスクリプションのエクスペリエンスを通じて、新しい外部ユーザーを組織に招待できるかどうかを選択できるようになります。 無効にした場合、まだ組織のゲスト ユーザーでない外部ユーザーは、Power BI を使用して組織に追加することができません。
 
-![組織に外部ユーザーを招待する](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
+![組織に外部ユーザーを招待する](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
 
 > [!IMPORTANT]
 > この設定は、以前は "外部ユーザーとコンテンツを共有する" と呼ばれていました。 変更後の名前は、設定の内容をより正確に反映しています。
@@ -595,7 +605,7 @@ Power BI ビジュアルのテナント設定を含む Power BI ビジュアル�
 
 ## <a name="workspaces"></a>Workspaces
 
-管理者は、 **[ワークスペース]** タブで自分のテナントに存在するワークスペースを表示できます。このタブで、次の操作を実行できます。
+管理者は、 **[ワークスペース]** タブから自分の組織に存在するワークスペースを表示できます。このタブで、次の操作を実行できます。
 
 - ワークスペースとその詳細の一覧を更新します。
 - ワークスペースに関するデータを .csv ファイルにエクスポートします。 
@@ -616,8 +626,8 @@ Power BI ビジュアルのテナント設定を含む Power BI ビジュアル�
 |---------|---------|
 | **アクティブ** | 通常のワークスペース。 使用状況や内部の状況について示すものではなく、単にワークスペース自体が "通常" であることを示します。 |
 | **無所属** | 管理者ユーザーのないワークスペース。 |
-| **削除済み** | 削除されたワークスペース。 Microsoft では、最大 90 日間、必要に応じてワークスペースを復元するために十分なメタデータが保持されます。 |
-| **削除中** | 削除中であるが、まだ完全に削除されていないワークスペース。 ユーザーは自分のワークスペースを削除できますが、そのとき、ワークスペースはまず "削除中" になり、最終的に "削除済み" になります。 |
+| **削除済み** | 削除されたワークスペース。 ワークスペースを復元する十分なメタデータは、最大 90 日間保持されます。 |
+| **削除中** | 削除はされてはいるものの、まだ完全に削除されていないワークスペース。 ユーザーは自分のワークスペースを削除できますが、そのとき、ワークスペースはまず "削除中" になり、最終的に "削除済み" になります。 |
 
 また、管理者は、管理ポータルまたは PowerShell コマンドレットのいずれかを使用して、ワークスペースの管理と回復を行うこともできます。 
 
@@ -632,7 +642,7 @@ Power BI ビジュアルのテナント設定を含む Power BI ビジュアル�
 | **(空白)** | Power BI 管理者によってワークスペースがアップグレードされていません。 |
 | **保留中** | ワークスペースは、アップグレードのためにキューに登録されています。 アップグレードを取り消すことができます。 |
 | **進行中** | ワークスペースはアップグレード中です。 アップグレードを取り消すことはできません。 |
-| **完了** | ワークスペースは、過去 30 日間に Power BI 管理者によってアップグレードされました。ワークスペース管理者は、ワークスペースがアップグレードされてから 30 日以内に、必要に応じてクラシック オプションに戻ることができます。 |
+| **完了** | ワークスペースは、過去 30 日間に Power BI 管理者によってアップグレードされました。ワークスペース管理者は、ワークスペースのアップグレード後、30 日以内はクラシック オプションに戻ることができます。 |
 
 > [!NOTE]
 > ワークスペースのアップグレードには、次のようないくつかの制限事項があります。 アップグレードを試行する前に、[ワークスペースをアップグレード](../collaborate-share/service-upgrade-workspaces.md)する方法について確認してください。

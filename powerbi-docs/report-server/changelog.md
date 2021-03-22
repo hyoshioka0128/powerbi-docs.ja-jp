@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/11/2021
-ms.openlocfilehash: 768e0e8a360c2434fdb66cf309d24857707b9d59
-ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
+ms.date: 03/12/2021
+ms.openlocfilehash: d130b43c3c6ba478a74c565d5b678ed034d7d79b
+ms.sourcegitcommit: a0ef8f57ff867b38af20a851ff7c65bbc6164397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100531587"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103486678"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -24,6 +24,9 @@ ms.locfileid: "100531587"
 
 ## <a name="january-2021"></a>2021 年 1 月
 - **Power BI Report Server**
+    - *バージョン 1.10.7737.32652 (ビルド 15.0.1105.230)、リリース日: 2021 年 3 月 12 日*
+        - バグの修正
+            - URL フィルターが原因で、.PBIX レポートが読み込まれない問題を修正しました。
     - *バージョン:1.10.7698.27886 (ビルド 15.0.1105.195)、リリース日:2021 年 1 月 28 日*
         - 特徴
             - 新しいアイコンが Power BI と Power BI のレポートに関連します。
@@ -40,6 +43,8 @@ ms.locfileid: "100531587"
    
 ## <a name="october-2020"></a>2020 年 10 月
 - **Power BI Report Server**
+    - *バージョン 1.9.7709.41358 (ビルド 15.0.1104.310)、リリース日: 2021 年 3 月 9 日*
+        - セキュリティ更新プログラム 
     - *バージョン:1.9.7675.15620 (ビルド 15.0.1104.300)、リリース日:2021 年 1 月 8 日*
         - バグの修正
             - 文字の大文字と小文字のみが異なる 2 つ以上のデータソースを含むレポートの更新に関する問題を修正しました。
@@ -69,6 +74,8 @@ ms.locfileid: "100531587"
             - 新しい HTML DOCTYPE を使用するように MHTML レンダラーを更新しました。
 
 - **Power BI Desktop (Power BI Report Server 用に最適化)**
+   - *バージョン: 2.86.2841.0 (2020 年 10 月)、リリース日: 2020 年 2 月 5 日*
+        - バグの修正
    - *バージョン:2.86.1321.0 (2020 年 10 月)、リリース日:2020 年 11 月 18 日*
         - バグ修正
    - *バージョン:2.86.961.0 (2020 年 10 月)、リリース日:2020 年 10 月 27 日* (新しいビルドと新しいバージョン)
@@ -76,6 +83,8 @@ ms.locfileid: "100531587"
    
 ## <a name="may-2020"></a>2020 年 5 月
 - **Power BI Report Server**
+    - *バージョン 1.8.7710.39564 (ビルド 15.0.1103.241)、リリース日: 2021 年 3 月 9 日*
+        - セキュリティ更新プログラム
     - *バージョン:1.8.7485.35104 (ビルド 15.0.1103.234)、リリース日:2020 年 6 月 30 日*
         - バグの修正
             - アップロード後のサーバーでレポートの編集がすぐに反映されなかった、スケールアウト シナリオの問題を修正しました。

@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/29/2020
+ms.date: 03/16/2021
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4e64121fdac63abe22d77818a0f91a860cac316f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: fc103789e7f460b803f85afc219fb989b19d16f3
+ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388151"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602431"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Power BI で Q&A のライブ接続を有効にする
 
@@ -58,7 +58,7 @@ Power BI Q&A は、データ ソースのテキスト値とスキーマ値を使
 
 * この機能は、最初は SQL Server 2016 Analysis Services の表形式のデータ ソースでのみ使用できます。 この機能は、表形式のデータで動作するように最適化されています。 Q&A はまだ多次元に対応していません。 オンプレミス データ ゲートウェイによってサポートされる他のデータ ソースは、徐々に追加される予定です。
 * SQL Server Analysis Services で定義される行レベルのセキュリティに対する完全サポートは、初期段階では使用できません。 Q&A で質問するときに、入力中の質問の "オート コンプリート" で、ユーザーがアクセスしたことがない文字列値が表示される可能性があります。 ただし、レポートとグラフのビジュアルではモデルに定義されている RLS が適用されるため、基になる数値データが開示されることはありません。 この動作を制御するためのオプションが、今後の更新でリリースされる予定です。
-* オブジェクト レベルのセキュリティ (OLS) はサポートされていません。 Q&A はオブジェクト レベルのセキュリティを優先しませんが、テーブルまたは列名へのアクセス権がないユーザーにそれらを表示することができます。 また、データ値が適切にセキュリティで保護されるようにするには、RLS を有効にする必要があります。 
+* Q&A は、オブジェクト レベルのセキュリティ (OLS) を使用するデータ モデルではサポートされていません。 詳細については、[Q&A の制限事項](../natural-language/q-and-a-limitations.md#data-sources-not-supported)に関するセクションを参照してください。  
 * ライブ接続は、オンプレミス データ ゲートウェイでのみサポートされています。 結果として、この機能をパーソナル ゲートウェイで使用することはできません。
 
 ## <a name="next-steps"></a>次の手順

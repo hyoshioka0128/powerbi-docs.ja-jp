@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 03/10/2021
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 3cf766b8f0ecf4a137a15bffcf02941f0b14ccad
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: 965d9387d603473661956d4ab724a32035665002
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195517"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103190956"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Power BI にアクセスするためのプライベート リンク
 
@@ -310,11 +310,16 @@ Power BI でプライベート リンクを使用する際に留意する必要�
 * Private Links が有効になっているとき、使用状況メトリックは機能 "*しません*"。
 * Power BI で **[パブリック インターネット アクセスのブロック]** を有効にすると、[Web に公開] は動作しません (淡色表示になります)。
 * [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) では、ネットワークの分離は現在サポートされていません。 つまり、分離されたネットワークで実行されている [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop-preview) では、[秘密度] ボタンが淡色表示され、ラベル情報は表示されず、 *.pbix* ファイルの暗号化解除は失敗します。
+* Power BI プライベート リンクが有効になっているゲートウェイは、Power BI 以外のシナリオでは正しく機能しません。 
 
 ## <a name="next-steps"></a>次の手順
 
 - [組織内の Power BI を管理する](service-admin-administering-power-bi-in-your-organization.md)  
 - [Power BI 管理者の役割について](service-admin-role.md)  
 - [組織内の Power BI を監査する](service-admin-auditing.md)  
+
+次の動画では、プライベート リンクを使用して Power BI にモバイル デバイスを接続する方法を紹介しています。
+
+> [!VIDEO https://www.youtube.com/embed/-3yFtlZBpqs]
 
 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

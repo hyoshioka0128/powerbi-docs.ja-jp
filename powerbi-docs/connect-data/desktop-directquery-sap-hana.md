@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/10/2019
+ms.date: 03/12/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 10a2a1ca6039de58212a0a3e45e80b396638623b
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: 8eaddf7156f06ae90266bb2f44c478b349ae5eb1
+ms.sourcegitcommit: 0e3afa7653c992b09702ed67dac79a967a9dac3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842034"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103413209"
 ---
 # <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Power BI で DirectQuery を使用して SAP HANA データ ソースに接続する
 **SAP HANA** データ ソースへは、**DirectQuery** を使用して直接接続することが可能です。 SAP HANA には 2 つの方法で接続できます。
@@ -77,10 +77,7 @@ DirectQuery を使用して SAP HANA に接続する (多次元ソースとし�
 
 ## <a name="treat-sap-hana-as-a-relational-source"></a>SAP HANA をリレーショナル ソースとして扱う 
 
-リレーショナル ソースとしての SAP HANA に接続することを選択すると、いくつかの点で柔軟性が強化されます。 たとえば、計算列を作成したり、複数の SAP HANA ビューからデータを含めたり、生成されたテーブル間で関係を構築したりできます。 ただし、SAP HANA をこのように使用するとき、次のような結果が得られるように、接続の扱われ方について特定の側面を理解することが大切です。 
-
-* SAP HANA ビューに非加算的な方法 (たとえば、単純な合計ではなく、個別のカウントまたは平均) が含まれている場合に、期待どおりの結果が得られる。
-* 結果のクエリが効率的です。
+リレーショナル ソースとしての SAP HANA に接続することを選択すると、いくつかの点で柔軟性が強化されます。 たとえば、計算列を作成したり、複数の SAP HANA ビューからデータを含めたり、生成されたテーブル間で関係を構築したりできます。 ただし、SAP HANA を多次元ソースとして扱う場合の動作との違いがあります。特に、SAP HANA ビューに非加法メジャー (たとえば、単純な合計ではなく、個別のカウントまたは平均) が含まれている場合や、SAP HANA に対して実行されるクエリの効率に関連する動作は異なります。
 
 **[データの取得]** または **[クエリ エディター]** で定義したクエリで集計を実行するとき、SQL Server など、リレーショナル ソースの動作を最初に確認することをお勧めします。 次の例では、 **[クエリ エディター]** で定義したクエリは、*ProductID* での平均価格を返しています。  
 

@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 03/10/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6d99e91657d0c5f0bbd1e9c665f00d16c34ba24f
-ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
+ms.openlocfilehash: 673566745826f18a7b7077ffed1d3aa4dde2beff
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97353245"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191158"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Power BI Desktop で Azure Cost Management コネクタを使用してビジュアルとレポートを作成する
 
@@ -45,18 +45,44 @@ Power BI Desktop で **Azure Cost Management コネクタ** を使用するに�
 
 ## <a name="connect-to-a-microsoft-customer-agreement-account"></a>Microsoft 顧客契約アカウントに接続する 
 
-**Microsoft 顧客契約アカウント** を使用して接続するには、Azure portal から **課金プロファイル ID** を取得できます。
+このセクションでは、Microsoft 顧客契約アカウントに接続するために必要な手順について説明します。
+
+### <a name="connect-to-a-billing-account"></a>請求先アカウントに接続する
+
+請求先アカウントに接続するには、Azure portal から **請求先アカウント ID** を取得する必要があります。
 
 1.  [Azure portal](https://portal.azure.com/) で、 **[コストの管理と請求]** に移動します。
 2.  ご自分の課金プロファイルを選択します。 
 3.  メニューの **[設定]** でサイドバーの **[プロパティ]** を選択します。
 4.  **[課金プロファイル]** で **[ID]** をコピーします。 
-5.  **[範囲の選択]** については **[課金プロファイル ID]** を選択し、前の手順の課金プロファイル ID を貼り付けます。 
+    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="コスト管理課金プロファイルのスクリーンショット":::
+5.  **[スコープの選択]** には **[Manually Input Scope]\(手動入力のスコープ\)** を選択し、下の例のように接続文字列を入力します。そのとき、前の手順でコピーしたデータで *{billingAccountId}* を置き換えます。 
+    ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
 6.  月数を入力し、**[OK]** を選択します。
 
-    ![Azure Cost Management プロパティのスクリーンショット。課金プロファイル ID のスコープを確認できます。](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
+    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Azure Cost Management のスクリーンショット。月数が入力されています":::
 
-7.  プロンプトが表示されたら、Azure ユーザー アカウントとパスワードを使用してサインインします。 正常にアクセスするには課金アカウント所有者を使用する必要があります。 
+7.  プロンプトが表示されたら、Azure ユーザー アカウントとパスワードを使用してサインインします。 課金データに正常にアクセスするには、課金アカウント スコープにアクセスできる必要があります。
+
+### <a name="connect-to-a-billing-profile"></a>課金プロファイルに接続する
+
+**課金プロファイル** に接続するには、Azure portal から **課金プロファイル ID** と **請求先アカウント ID** を取得する必要があります。
+
+1.  [Azure portal](https://portal.azure.com/) で、 **[コストの管理と請求]** に移動します。
+2.  ご自分の課金プロファイルを選択します。 
+3.  メニューの **[設定]** でサイドバーの **[プロパティ]** を選択します。
+4.  **[課金プロファイル]** で **[ID]** をコピーします。 
+5.  **[請求先アカウント]** から **ID** をコピーします。 
+
+    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-04.png" alt-text="Azure Cost Management の課金アカウント情報のスクリーンショット":::
+
+6.  **[スコープの選択]** には **[Manually Input Scope]\(手動入力のスコープ\)** を選択し、下の例のように接続文字列を入力します。そのとき、前の手順でコピーしたデータで *{billingAccountId}* と *{billingProfileId}* を置き換えます。 
+
+    ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}```
+
+7.  月数を入力し、**[OK]** を選択します。
+
+8.  プロンプトが表示されたら、Azure ユーザー アカウントとパスワードを使用してサインインします。 課金プロファイル データに正常にアクセスするには、課金プロファイルにアクセスできる必要があります。 
 
 
 ## <a name="connect-to-an-enterprise-agreement-account"></a>Enterprise Agreement アカウントに接続する

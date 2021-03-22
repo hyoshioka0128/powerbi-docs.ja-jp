@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 3/9/2021
+ms.date: 3/10/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: a3783abfa8c17d90757731edef68cf88d5934f61
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: 3594f864a536a24be5fb839004a2e1db43668b0d
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534230"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103190899"
 ---
 # <a name="power-bi-premium-per-user-faq-preview"></a>Power BI Premium Per User に関する FAQ (プレビュー)
 
@@ -151,7 +151,7 @@ Power BI **Premium Per User** を使用することで、組織はユーザー�
 
     いいえ。 データセットは Premium Per User ワークスペースに存在するので、非 PPU ワークスペースのレポートにアクセスできるユーザーであっても、ライセンスを持たない場合は表示できません。
 
-12. **複数の 10 GB データ モデルを同時に更新することはできますか?**
+12. **複数の 100 GB データ モデルを同時に更新することはできますか?**
 
     Premium Gen2 での並列更新に対するものと同じ制限が適用されます。
 

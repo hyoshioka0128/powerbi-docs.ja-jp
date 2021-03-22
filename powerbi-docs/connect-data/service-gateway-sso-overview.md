@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/10/2019
+ms.date: 03/10/2021
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4a4bb6ccb74ce08ea1ff63f44b1c2c5406c527ad
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 17f4c1fe638f51e31ff1b7f6a7ec8a29a7ebada4
+ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231307"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103191485"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Power BI のゲートウェイ用シングル サインオン (SSO) の概要
 
@@ -30,6 +30,11 @@ Power BI では、次のデータ ソースがサポートされています。
 * Teradata (Kerberos)
 * Spark (Kerberos)
 * Impala (Kerberos)
+* Denodo (Kerberos)
+
+
+> [!NOTE]
+> SQL Server Analysis Services では SSO もサポートされていますが、それには、Kerberos や SAML ではなく、[ライブ接続](service-gateway-enterprise-manage-ssas.md#authentication-to-a-live-analysis-services-data-source)が使用されています。
 
 現在、[M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md) の SSO はサポートされていません。
 
@@ -45,7 +50,7 @@ SSO を使ったクエリ実行は、次の図に示す 3 つのステップで�
 
 各手順の詳細を次に示します。
 
-1. 構成済みゲートウェイにクエリ要求が送信されるときに、クエリごとに Power BI サービスには "*ユーザー プリンシパル名 (UPN)* "、つまり現在 Power BI サービスにサインインしているユーザーの完全修飾ユーザー名が含まれます。
+1. 構成済みゲートウェイにクエリ要求が送信されるときに、クエリごとに Power BI サービスには "*ユーザー プリンシパル名 (UPN)*"、つまり現在 Power BI サービスにサインインしているユーザーの完全修飾ユーザー名が含まれます。
 
 2. ゲートウェイは、Azure Active Directory の UPN を Active Directory のローカル ID にマップする必要があります。
 
@@ -55,7 +60,7 @@ SSO を使ったクエリ実行は、次の図に示す 3 つのステップで�
 
 3. ゲートウェイ サービスのプロセスは、マップされたローカル ユーザーを偽装して、基になるデータベースへの接続を開いた後、クエリを送信します。 データベースと同じマシンにゲートウェイをインストールする必要はありません。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ゲートウェイ経由での SSO 実現に関する基礎を理解したところで、Kerberos と SAML に関する詳細をお読みください。
 
