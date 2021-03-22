@@ -197,8 +197,6 @@
               href: service-azure-sql-data-warehouse-with-direct-connect.md
             - name: Azure SQL Database と DirectQuery
               href: service-azure-sql-database-with-direct-connect.md
-            - name: Power BI の SQL Server Analysis Services ライブ データ
-              href: sql-server-analysis-services-tabular-data.md
         - name: データの更新
           items:
             - name: Power BI でのデータの更新
