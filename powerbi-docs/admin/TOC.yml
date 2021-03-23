@@ -11,6 +11,8 @@
           href: service-admin-where-is-my-tenant-located.md
         - name: Power BI Premium とは
           href: service-premium-what-is.md
+        - name: Power BI Premium Gen2 (プレビュー) について
+          href: service-premium-concepts.md
     - name: 概念
       expanded: true
       items:
