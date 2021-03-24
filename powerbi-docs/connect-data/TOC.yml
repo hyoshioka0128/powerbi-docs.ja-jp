@@ -57,7 +57,7 @@
             - name: データ ゲートウェイの展開に関するガイダンス
               href: service-gateway-deployment-guidance.md
             - name: オンプレミス データ ゲートウェイに関してよく寄せられる質問 (FAQ)
-              href: service-gateway-power-bi-faq.md
+              href: service-gateway-power-bi-faq.yml
     - name: 攻略ガイド
       expanded: true
       items:

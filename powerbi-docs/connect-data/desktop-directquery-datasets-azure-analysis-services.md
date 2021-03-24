@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/23/2021
+ms.date: 03/17/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b38e00a5e02e76be58f915db3f3eafcfb71de081
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: f47568e975425ff0d844f3164cbf5b29f86a66b0
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102533172"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724816"
 ---
 # <a name="using-directquery-for-power-bi-datasets-and-azure-analysis-services-preview"></a>Power BI データセットおよび Azure Analysis Services 用の DirectQuery を使用する (プレビュー)
 

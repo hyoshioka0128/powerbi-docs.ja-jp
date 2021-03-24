@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
 ms.date: 11/06/2018
-ms.openlocfilehash: 440bb6648dca1eaa85b697a10e9fd41180c66d7e
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 8f9049b494c5d8566a7862ae5b2f88ce5d7797c2
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888100"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007226"
 ---
 # <a name="troubleshoot-power-bi-visuals"></a>Power BI ビジュアルのトラブルシューティング
 
@@ -42,4 +42,4 @@ ms.locfileid: "97888100"
 
 ## <a name="next-steps"></a>次のステップ
 
-詳細については、「[Power BI ビジュアルに関してよく寄せられる質問](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)」を参照してください。
+詳細については、「[Power BI ビジュアルに関してよく寄せられる質問](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)」を参照してください。

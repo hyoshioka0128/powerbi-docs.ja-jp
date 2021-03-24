@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 62579a12588449e0119b96fb3a7c7da2ef7858e5
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.openlocfilehash: 1f0e07473387e234b54c761e412d0233652413e4
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99532914"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007548"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium 容量でワークロードを構成する
 
@@ -74,7 +74,6 @@ AI ワークロードを使用すると、Power BI で cognitive services と自
 | **Minimum refresh interval (最小更新間隔)** | ページの自動更新がオンの場合に、ページ更新間隔に許容される最小間隔。 既定値は 5 分であり、許容される最小値は 1 秒です。 |
 | **検出メジャーの変更** | Premium ワークスペースで変更の検出に基づくページの自動更新を含むレポートを作成する機能のオン/オフを切り替えます。 |
 | **最小実行間隔** | 変更の検出メジャーがオンになっている場合、データ変更のポーリングに使用できる最小実行間隔です。 既定値は 5 秒であり、許容される最小値は 1 秒です。 |
-|  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Max Intermediate Row Set Count (中間行セットの最大数)
 

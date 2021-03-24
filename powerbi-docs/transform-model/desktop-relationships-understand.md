@@ -7,13 +7,13 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/15/2019
-ms.openlocfilehash: 101207fe60f4e66344b936bdef2c4b18d9ab947f
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.date: 03/23/2021
+ms.openlocfilehash: 1320410750fba0c4a4c78a808682c9ffb86e18ac
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99088168"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007594"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Power BI Desktop でのモデル リレーションシップ
 
@@ -217,8 +217,8 @@ _[参照整合性を想定]_ プロパティは、同じデータ ソースに�
 次の一覧では、フィルター伝達のパフォーマンスが、最速からもっとも低速のパフォーマンスの順に並べられています。
 
 1. 一対多のソース グループ内リレーションシップ
-2. 多対多のカーディナリティのリレーションシップ
-3. 中間テーブルを使用して実現され、少なくとも 1 つの双方向リレーションシップが関係する、多対多のモデル リレーションシップ
+2. 中間テーブルを使用して実現され、少なくとも 1 つの双方向リレーションシップが関係する、多対多のモデル リレーションシップ
+3. 多対多のカーディナリティのリレーションシップ
 4. ソース グループ間リレーションシップ
 
 ## <a name="next-steps"></a>次の手順

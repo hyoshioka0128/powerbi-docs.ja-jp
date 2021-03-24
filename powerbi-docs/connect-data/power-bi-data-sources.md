@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 03/11/2021
-ms.openlocfilehash: 733ba0dfcff11cbe0391e7a99b0fc4d6e6f1623f
-ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
+ms.openlocfilehash: 7ed95c1ffb4156fa23f000ef1434623902443eb3
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103191255"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104725276"
 ---
 # <a name="power-bi-data-sources"></a>Power BI データ ソース
 
@@ -121,7 +121,7 @@ ms.locfileid: "103191255"
 | Spark | はい | はい | はい | はい | いいえ | はい |
 | SparkPost | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | SQL Server | はい | はい | はい | はい | はい | はい |
-| SQL Server Analysis Services | はい | はい | はい | はい | はい | いいえ |
+| SQL Server Analysis Services | はい | いいえ | はい | はい | はい | いいえ |
 | Stripe | はい | はい | いいえ | いいえ | いいえ | いいえ |
 | SurveyMonkey | はい | はい | いいえ | はい | いいえ | いいえ |
 | SweetIQ | はい | はい | いいえ | いいえ | いいえ | いいえ |
@@ -179,6 +179,5 @@ SSO オプションは、このデータ ソースを使うすべてのデータ
 
 [Power BI Desktop でデータに接続する](desktop-quickstart-connect-to-data.md)  
 [Power BI で DirectQuery を使用する](desktop-directquery-about.md)  
-[Power BI の SQL Server Analysis Services ライブ データ](sql-server-analysis-services-tabular-data.md)  
 [オンプレミス データ ゲートウェイとは](service-gateway-onprem.md)  
 [Power BI Report Server での Power BI レポート データ ソース](../report-server/data-sources.md)

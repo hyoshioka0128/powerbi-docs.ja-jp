@@ -5,14 +5,14 @@ services: powerbi
 author: mihart
 ms.author: mihart
 ms.topic: include
-ms.date: 06/15/2020
+ms.date: 02/02/2021
 ms.custom: include file
-ms.openlocfilehash: a8181ca15582024f3c4002028de1df048f695cf2
-ms.sourcegitcommit: 7d7bb755d5a5af30d2b0eab89fb56e4498514890
+ms.openlocfilehash: a9d87df699f81fe4018bbdb8bddf444d0bb743ab
+ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85836949"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102603274"
 ---
 **セルフサービス サインアップが無効になっている**    
 サインアップをしようとすると、次のようなメッセージを受信します。 

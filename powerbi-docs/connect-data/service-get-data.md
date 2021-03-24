@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 08/29/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 427fb322a9f9226bd85da2ae1fc0657c77ca1cf5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b852aab1df2b3b6b649ec77ccf34a384edfd4ce5
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96402227"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724724"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Power BI サービスのデータ ソース
 データは Power BI の中核です。 たとえば、データを探索しているとしましょう。 グラフとダッシュボードを作成するか、**Q&A** で質問をすることでこれを行えます。 表示される視覚化と回答は、データセットから基になるデータを取得しています。 しかし、そのデータセットはどこから得られるでしょうか。 それはデータ ソースから得られます。
@@ -65,8 +65,6 @@ XML テーブル ( *.xml*) やテキスト ( *.txt*) ファイルなど、その
 * Azure HDInsight 上の Spark
 
 Power BI からこれらのデータベースへの接続はライブです。 たとえば、Azure SQL Database に接続するとします。 次に Power BI でレポートを作成してそのデータの探索を開始します。 データをスライスしたり視覚化に別のフィールドを追加したりするたびに、Power BI によってデータベースに対して直接クエリが実行されます。 詳しくは、「[Azure と Power BI](service-azure-and-power-bi.md)」をご覧ください。
-
-**オンプレミスのデータベース** - Power BI サービスから、SQL Server Analysis Services Tabular モデル データベースに直接接続できます。 これを行うには、Power BI Enterprise Gateway が必要になります。 組織の表形式モデル データベースへの接続方法が不明な場合は、管理者または IT 部門に確認してください。 詳細については、「[Power BI の SQL Server Analysis Services ライブ データ](sql-server-analysis-services-tabular-data.md)」を参照してください。
 
 組織内の他のデータベースの種類の場合は、Power BI Desktop または Excel を使用してデータに接続し、データをクエリしてデータ モデルに読み込む必要があります。 その後、データセットが存在する Power BI にファイルをインポートできます。 スケジュールされた更新を構成すると、Power BI では、そのファイルから構成と接続の情報を使用してデータ ソースに直接接続し、更新のクエリが実行されます。 その後、Power BI によってこれらの更新がデータセットに読み込まれます。 詳しくは、「[Power BI Desktop におけるデータへの接続](desktop-connect-to-data.md)」をご覧ください。
 

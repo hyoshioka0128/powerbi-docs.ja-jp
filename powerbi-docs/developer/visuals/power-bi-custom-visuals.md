@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3d2e8f46605238a87eb23c32765f0a4ffaa02400
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 2e20d28d14788f15d8f654d3449ab3641626faf9
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888077"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007203"
 ---
 # <a name="visuals-in-power-bi"></a>Power BI のビジュアル
 
@@ -89,7 +89,7 @@ Power BI ビジュアルをインポートするには、 *[視覚化]* ペイ�
 >[Power BI ビジュアルのガイドライン](guidelines-powerbi-visuals.md)
 
 >[!div class="nextstepaction"]
->[よく寄せられる質問](power-bi-custom-visuals-faq.md)
+>[よく寄せられる質問](power-bi-custom-visuals-faq.yml)
 
 >[!div class="nextstepaction"]
 >[Power BI コミュニティ](https://community.powerbi.com/)

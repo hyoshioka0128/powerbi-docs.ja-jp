@@ -9,18 +9,18 @@ ms.subservice: pbi-fundamentals
 ms.topic: overview
 ms.date: 03/10/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 08ce9b65dda137b237d960f7948226b36cc66787
-ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
+ms.openlocfilehash: 6a5d2d914ce4ce2afa5d2e1705a01fe9514413bf
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102628546"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008272"
 ---
 # <a name="what-is-power-bi-desktop"></a>Power BI Desktop とは何ですか?
 
 *Power BI Desktop* はローカル コンピューターにインストールする無料のアプリケーションで、データへの接続、変換、および視覚化を行うことができます。 Power BI Desktop を使用すると、複数の異なるデータ ソースに接続し、それらを組み合わせて (多くの場合、"*モデリング*" と呼ばれます)、データ モデルに結合できます。 このデータ モデルを使用すると、ビジュアルおよびビジュアル コレクションを作成でき、レポートとして、組織内の他のユーザーと共有できます。 Business Intelligence プロジェクトに取り組んでいるほとんどのユーザーは、Power BI Desktop を使用してレポートを作成した後、"*Power BI サービス*" を使用して、レポートを他のユーザーと共有します。
 
-![サンプル データを表示している Power BI Desktop のスクリーンショット。](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![サンプル データを表示している Power BI Desktop のスクリーンショット。](media/desktop-what-is-desktop/what-is-desktop-01.png)
 
 Power BI Desktop の最も一般的な使い方を次に示します。
 
@@ -109,7 +109,7 @@ Power BI Desktop を使用すると、複数のソースのデータを使用し
 
 次の画面は、Power BI Desktop レポートの最初のページを示しています。画面の下部にあるタブからわかるように、 **[概要]** という名前です。 
 
-![[概要] タブを表示している Power BI Desktop のスクリーンショット。](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![[概要] タブを表示している Power BI Desktop のスクリーンショット。](media/desktop-what-is-desktop/what-is-desktop-01.png)
 
 ## <a name="share-reports"></a>レポートの共有
 

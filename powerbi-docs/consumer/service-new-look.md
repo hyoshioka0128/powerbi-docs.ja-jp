@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/25/2021
 LocalizationGroup: Get started
 ROBOTS: NOINDEX
-ms.openlocfilehash: 5de13f991e5439cf25bf8c00dc260fccc4918318
-ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+ms.openlocfilehash: 83a9f709a82432c002ca87a0884eb959a5c9501a
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98780775"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007617"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI サービスの "新しい外観"
 
@@ -26,8 +26,6 @@ Power BI サービス (app.powerbi.com) には、レポートの表示と操作�
 新しい外観の変更点の概要を次に示します。 詳細については、番号付きのセクションを参照してください。
 
 ![新しい外観の変更点の概要を示すスクリーンショット。](media/service-new-look/power-bi-new-look-changes-callouts.png)
-
-特定のアクションをお探しですか。 「["新しい外観": アクションの新しい場所](service-new-look-where-actions.md)」を参照してください。
 
 ## <a name="1-vertical-list-of-pages"></a>1. 縦長のページ リスト 
 読み取りビューには、レポート ページの名前が縦長のウィンドウに一覧表示されます。 これらは目立ち、見逃されることがなく、Word や PowerPoint のナビゲーションに似ています。 レポート領域の残りの部分は、拡大または縮小できます。縦長のウィンドウのサイズを変更するか、二重矢印を選択して完全に閉じます。
@@ -44,7 +42,7 @@ Power BI サービス (app.powerbi.com) には、レポートの表示と操作�
 
 ## <a name="3-where-are-the-report-commands"></a>3. レポート コマンドの場所
 
-以前の外観にあった機能はどれも削除されていません。 その他のより高度なコマンドについては、 **[その他のオプション] (...)** を選択してください。 「["新しい外観": アクションの新しい場所](service-new-look-where-actions.md)」で詳細を確認してください。
+以前の外観にあった機能はどれも削除されていません。 その他のより高度なコマンドについては、 **[その他のオプション] (...)** を選択してください。
 
 ## <a name="4-new-filter-experience"></a>4. 新しいフィルター エクスペリエンス
 

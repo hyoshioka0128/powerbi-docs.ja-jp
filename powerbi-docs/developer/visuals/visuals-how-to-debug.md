@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 0005fe6cfd14f0377cdd7ff648aaa3c5cc96a751
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 6ac845036ead6991295b539527e0db0b29d8285e
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888376"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008310"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Power BI のビジュアルをデバッグする方法
 
@@ -91,4 +91,4 @@ public update(options: VisualUpdateOptions) {
 
 ## <a name="next-steps"></a>次のステップ
 * [Power BI ビジュアルのトラブルシューティング](power-bi-custom-visuals-troubleshoot.md)
-* 詳細情報と質問の回答については、「[Power BI ビジュアルについてよく寄せられる質問](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)」を参照してください
+* 詳細情報と質問の回答については、「[Power BI ビジュアルについてよく寄せられる質問](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)」を参照してください

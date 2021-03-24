@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/10/2020
+ms.date: 03/17/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: e5ce7a274f1290e306b541d2d3e1fb6fdebb2310
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: 8aa8e16f80dcf3aa46d4b364fb07b7befbe2e864
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534667"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104723866"
 ---
 # <a name="use-the-analytics-pane-in-power-bi-desktop"></a>Power BI Desktop の [分析] ウィンドウを使用する
 
@@ -137,7 +137,7 @@ Power BI Desktop の 2018 年 2 月リリースより (バージョン 2.55.5010
 
 Power BI Desktop では、あらゆる種類の操作を実行できます。 そのような機能について詳しくは、次のリソースをご覧ください。
 
-* [Power BI Desktop の新機能](../fundamentals/desktop-latest-update.md)
+* [Power BI の新機能](../fundamentals/desktop-latest-update.md)
 * [Power BI Desktop の取得](../fundamentals/desktop-get-the-desktop.md)
 * [Power BI Desktop とは何ですか?](../fundamentals/desktop-what-is-desktop.md)
 * [Power BI Desktop でのクエリの概要](desktop-query-overview.md)

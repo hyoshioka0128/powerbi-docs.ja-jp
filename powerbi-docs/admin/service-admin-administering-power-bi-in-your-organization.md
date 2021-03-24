@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: overview
 ms.date: 09/25/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: 2a31c6f5a177a7760adc91c776e449304304a67a
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 5797ec3918d7a9c168fb4c13ce19fc8bbf113001
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621466"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007571"
 ---
 # <a name="what-is-power-bi-administration"></a>Power BI 管理とは
 
@@ -80,7 +80,7 @@ Power BI 管理に関連する事柄の基本については、次の記事で�
 - [Power BI 管理ポータルを使用する](service-admin-portal.md)
 - [テナント設定のガイダンス](../guidance/admin-tenant-settings.md)
 - [PowerShell コマンドレットを使用する](/powershell/power-bi/overview)
-- [Power BI 管理のよく寄せられる質問](service-admin-faq.md)
+- [Power BI 管理のよく寄せられる質問](service-admin-faq.yml)
 - [組織のユーザーに Power BI サービスのライセンスを与える](service-admin-licensing-organization.md)
 - わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
 - Power BI チームへのご提案は、 [Power BI を改善するためのアイデアをお寄せください](https://ideas.powerbi.com/)

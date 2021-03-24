@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/05/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: d8ffa99e1dcba5776aa5a6ac11c88de74010c52a
-ms.sourcegitcommit: 8cf6ff2e01646e8ab761291e3d86aded63951ed5
+ms.openlocfilehash: 215288bf274259a141f36436a711dc1b097eb4bd
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103460304"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724433"
 ---
 # <a name="what-is-power-bi-premium"></a>Power BI Premium とは
 
@@ -88,11 +88,11 @@ Premium Gen2 を有効にして、その更新を利用します。 Premium Gen2
 
 1.  Premium Gen2 の Analysis Services の機能は、最新のクライアント ライブラリでのみサポートされています。 この要件をサポートするための依存ツールのリリース予定日は次のとおりです。
 
-    |ツール|最小バージョンが必要|リリース予定日|
-    |---|---|---|
-    |SQL Server Management Studio (SSMS)|18.8|2020 年 12 月 8 日|
-    |SQL Server Data Tools (SSDT)|2.9.15|一般提供 2020 年 11 月 30 日|
-    | AS PowerShell| 21.1.18229 より後|2020 年 11 月 26 日|
+    |ツール|最小バージョンが必要|
+    |---|---|
+    |SQL Server Management Studio (SSMS)|18.8|
+    |SQL Server Data Tools (SSDT)|2.9.15|
+    | AS PowerShell| 21.1.18229 より後|
 
 4.  Premium Gen2 ではメモリ制限が異なります。 Premium の第 1 世代では、メモリは、同時に実行する全成果物によって使用される RAM の限られた容量に制限されていました。 Gen2 では、容量全体に対するメモリ制限はありません。 代わりに、個々の成果物 (データセット、データフロー、ページ分割されたレポートなど) に対して、次の RAM の制限が適用されます。
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: c6b260b033ab4cb455df7cedc17b50935d972636
-ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
+ms.openlocfilehash: 295231ac9739ff7362d990360b199ba9279f040e
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102628504"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724954"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Power BI ビジュアル API の変更ログ
 このページには、API バージョンの簡単な概要が含まれています。 ここに記載されているバージョンは安定バージョンと見なされ、変更されません。
@@ -94,7 +94,7 @@ ms.locfileid: "102628504"
 * オブジェクト プロパティの機能スキーマで **rule** プロパティをサポート
 
 ## <a name="api-v170"></a>API v1.7.0
-* **[RESJSON](./localization.md#resource-file)** をサポート
+* **[RESJSON](./localization.md#step-5---add-a-resources-file-for-each-language)** をサポート
 
 ## <a name="api-v162"></a>API v1.6.2
 * ビジュアルをビジュアル編集モードに移行する **[編集モード](./advanced-edit-mode.md)** をサポート

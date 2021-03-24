@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/14/2020
-ms.openlocfilehash: 4a7156259dbc1273ab14ce4e44d91b54794736e0
-ms.sourcegitcommit: bae5e9a37772360d0aae8624905d5f33951a187f
+ms.openlocfilehash: fc109dcd7fcf670aa42a37be3c703b12929ef31b
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100560981"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007410"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Power BI テンプレート アプリとは
 
@@ -53,12 +53,12 @@ Power BI テンプレート アプリを使用すると、Power BI Pro または
 テンプレート アプリを開発し送信する一般的なプロセスには、複数のステージが含まれます。 いくつかのステージには同時に複数のアクティビティが含まれることがあります。
 
 
-| 段階 | Power BI Desktop |  |Power BI サービス  |  |パートナー センター  |
-|---|--------|--|---------|---------|---------|
-| **1 つ** | データ モデルとレポートを .pbix ファイルで作成します |  | ワークスペースを作成します。 .pbix ファイルをインポートします。 補完的なダッシュ ボードを作成します  |  | パートナーとして登録します |
-| **2 つ** |  |  | テスト パッケージを作成し、内部的な検証を実行します        |  | |
-| **3** | |  | Power BI テナント外での検証のために運用前テスト パッケージをプロモートし、AppSource に送信します  |  | 運用前パッケージで、Power BI テンプレート アプリ オファーを作成し、検証プロセスを開始します |
-| **4** | |  | 運用前パッケージを運用環境にプロモートします |  | 公開 |
+| 段階 | Power BI Desktop |Power BI サービス |パートナー センター  |
+|---|--------|---------|---------|
+| **1 つ** | データ モデルとレポートを .pbix ファイルで作成します | ワークスペースを作成します。 .pbix ファイルをインポートします。 補完的なダッシュ ボードを作成します | パートナーとして登録します |
+| **2 つ** |  |テスト パッケージを作成し、内部的な検証を実行します        |
+| **3** |  |Power BI テナント外での検証のために運用前テスト パッケージをプロモートし、AppSource に送信します  | 運用前パッケージで、Power BI テンプレート アプリ オファーを作成し、検証プロセスを開始します |
+| **4** | |運用前パッケージを運用環境にプロモートします |  公開 |
 
 ## <a name="before-you-begin"></a>開始する前に
 

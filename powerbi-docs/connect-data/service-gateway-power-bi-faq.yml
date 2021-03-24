@@ -1,0 +1,70 @@
+### YamlMime:FAQ
+metadata:
+  title: オンプレミス データ ゲートウェイに関するよく寄せられる質問 (FAQ) - Power BI
+  description: この記事は、Power BI のオンプレミス データ ゲートウェイに関してよく寄せられる質問 (FAQ) です。 この記事では、Power BI で使用されるゲートウェイに関してよく寄せられる質問を 1 か所にまとめています。
+  author: arthiriyer
+  ms.author: arthii
+  ms.reviewer: ''
+  ms.service: powerbi
+  ms.subservice: powerbi-gateways
+  ms.topic: conceptual
+  ms.date: 07/15/2019
+  LocalizationGroup: Gateways
+  ms.openlocfilehash: 2774e758071927dd1396c7e492eba0e28d69890d
+  ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/24/2021
+  ms.locfileid: "105008984"
+title: オンプレミス データ ゲートウェイに関するよく寄せられる質問 (FAQ) - Power BI
+summary: >
+  [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
+
+  ## <a name="power-bi"></a>Power BI
+sections:
+- name: 無視
+  questions:
+  - question: >
+      オンプレミス データ ゲートウェイ (個人用モード) をアップグレードする必要はありますか。
+    answer: >
+      いいえ。Power BI ではゲートウェイ (個人用モード) を引き続き使用できます。
+  - question: >
+      ゲートウェイをインストールし、それを Power BI サービスで管理するために必要な特別なアクセス許可はありますか。
+    answer: >
+      特別なアクセス許可は必要ありません。
+  - question: "オンプレミスのデータ ソースに接続する Power Pivot データ モデルの入った Excel ブックをアップロードできますか。 このシナリオではゲートウェイは必要ですか。 \n"
+    answer: >
+      はい、そのようなブックをアップロードできます。 ゲートウェイは必要ありません。 データが Excel データ モデルに存在するため、Excel ブックに基づく Power BI でのレポートはライブではなくなります。 Power BI のレポートを更新するには、更新されたブックを毎回、再アップロードする必要があります。 あるいは、更新をスケジュールし、ゲートウェイを使用します。
+  - question: "ユーザーが DirectQuery 接続のあるダッシュボードを共有する場合、同じアクセス許可を持たない他のユーザーでもデータを表示できますか。 \n"
+    answer: >
+      Azure Analysis Services に接続されたダッシュボードの場合、ユーザーはアクセス権限を持つデータのみを表示できます。 ユーザーが同じアクセス許可を持たない場合、データを表示できません。 その他のデータ ソースの場合、すべてのユーザーはそのデータ ソースの管理者によって入力された資格情報を共有します。
+  - question: "Oracle サーバーに接続できないのはなぜですか。 \n"
+    answer: >
+      Oracle サーバーに接続するには、Oracle クライアントをインストールし、tnsnames.ora ファイルに適切なサーバー情報を構成することが必要な場合があります。 このインストールは、ゲートウェイとは別に行います。 詳細については、「[Oracle クライアントのインストール](service-gateway-onprem-manage-oracle.md#install-the-oracle-client)」をご覧ください。
+  - question: >
+      R スクリプトを使用しています。 これには対応していますか。
+    answer: >
+      R スクリプトは、個人用モードでのみサポートされています。
+
+
+      ## <a name="analysis-services-in-power-bi"></a>Power BI の Analysis Services
+  - question: "Analysis Services では、msmdpump.dll を使用してカスタムの有効なユーザー名マッピングを作成できますか。 \n"
+    answer: >
+      いいえ。 現時点ではサポートされていません。
+  - question: "ゲートウェイを使用し、多次元 (OLAP) インスタンスに接続できますか。 \n"
+    answer: >
+      はい。 オンプレミス データ ゲートウェイでは、Analysis Services の表形式と多次元モデルへのライブ接続をサポートしています。
+  - question: "Windows 認証を使用するオンプレミス サーバーとは異なるドメイン内のコンピューターにゲートウェイをインストールした場合、どうなりますか。 \n"
+    answer: >
+      結果は保証されません。 うまく機能するかどうかはすべて、2 つのドメイン間の信頼関係に応じて決まります。 2 つの異なるドメインが信頼されたドメイン モデルに含まれていれば、ゲートウェイは Analysis Services サーバーに接続し、有効なユーザー名を解決できる可能性があります。 含まれていない場合、ログインできないことがあります。
+  - question: "オンプレミスの Analysis Services サーバーにどの有効なユーザー名が渡されているかを調べる方法がありますか。 \n"
+    answer: >
+      この質問については[トラブルシューティング記事](service-gateway-onprem-tshoot.md)で回答します。
+additionalContent: >-
+  ## <a name="next-steps"></a>次のステップ
+
+  - [オンプレミス データ ゲートウェイのトラブルシューティング](/data-integration/gateway/service-gateway-tshoot)
+
+
+  他にわからないことがある場合は、 [Power BI コミュニティ](https://community.powerbi.com/)を利用してください。

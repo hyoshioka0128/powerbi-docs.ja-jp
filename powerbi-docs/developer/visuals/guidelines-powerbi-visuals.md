@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 08/12/2020
-ms.openlocfilehash: adb238b918d01bcdefe247a5452a0432b97d2e0c
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: 48b19713e39057efc4dc37832e13d3d2b071a827
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969514"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008238"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI ビジュアルのガイドライン
 他のユーザーが検出して使用できるようにご自分の Power BI ビジュアルを Microsoft AppSource に[発行](office-store.md)する前に、ユーザー向けに優れたエクスペリエンスを作成するためのガイドラインに従っていることを確認してください。
@@ -163,7 +163,7 @@ Power BI ビジュアルを発行する場合は、ユーザーに優れたエ�
 
 ## <a name="faq"></a>よく寄せられる質問
 
-Power BI ビジュアルの詳細については、[追加購入を含む Power BI ビジュアルについてよく寄せられる質問](power-bi-custom-visuals-faq.md#visuals-with-additional-purchases)に関する記事をご覧ください。
+Power BI ビジュアルの詳細については、[追加購入を含む Power BI ビジュアルについてよく寄せられる質問](./power-bi-custom-visuals-faq.yml#visuals-with-additional-purchases)に関する記事をご覧ください。
 
 ## <a name="next-steps"></a>次のステップ
 

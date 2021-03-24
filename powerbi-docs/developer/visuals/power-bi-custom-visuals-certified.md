@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/08/2021
-ms.openlocfilehash: adf8ddf5621ec6d8e0c281cfc690d237d2cbd6b5
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: 397ee32e5532e8b2be89362e9746b6106eff13f5
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101841436"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007274"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>認定済みの Power BI ビジュアルを取得する
 
@@ -175,7 +175,7 @@ AppSource への配置は、時間がかかる可能性のあるプロセスで�
 >[Power BI サークル カード視覚化の開発](develop-circle-card.md)のチュートリアル。
 
 >[!div class="nextstepaction"]
->[認定済み視覚化に関してよく寄せられる質問](power-bi-custom-visuals-faq.md#certified-power-bi-visuals)。
+>[認定済み視覚化に関してよく寄せられる質問](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals)。
 
 >[!div class="nextstepaction"]
 >[YouTube での Microsoft の Power BI ビジュアル プレイリスト](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)

@@ -35,7 +35,7 @@
         - name: パフォーマンスに関するヒント
           href: performance-tips.md
         - name: ビジュアルに関する FAQ
-          href: power-bi-custom-visuals-faq.md
+          href: power-bi-custom-visuals-faq.yml
         - name: 機能を使用する
           href: capabilities.md
         - name: データ ビューのマッピング

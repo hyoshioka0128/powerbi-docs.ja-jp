@@ -31,9 +31,9 @@
             - name: ローカルへの移動によりドイツ リージョンに移行する
               href: service-admin-migrate-data-germany.md
             - name: ドイツのクラウド ユーザーに関するよく寄せられる質問
-              href: service-govde-faq.md
+              href: service-govde-faq.yml
         - name: よく寄せられる質問 (FAQ)
-          href: service-admin-faq.md
+          href: service-admin-faq.yml
         - name: 高可用性とフェールオーバーの FAQ
           href: service-admin-failover.md
         - name: Power BI Premium

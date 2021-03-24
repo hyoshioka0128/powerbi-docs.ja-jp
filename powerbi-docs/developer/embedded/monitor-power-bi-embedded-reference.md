@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring
 ms.date: 03/04/2021
-ms.openlocfilehash: a0ea1b135de0cb2257d3d6f0477314fe26f54319
-ms.sourcegitcommit: 89c349500dd0737d80a753403714bceb3fd0a3ef
+ms.openlocfilehash: 9efdebbcd959460cd90c01df97a58bfa6c6a9934
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102628463"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008326"
 ---
 # <a name="monitoring-power-bi-embedded-data-reference"></a>Power BI Embedded 監視データのリファレンス
 
@@ -71,8 +71,8 @@ Power BI Embedded には、ディメンションを含むメトリックはあ�
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
 | テーブル |  説明 |
-|:---------|:-------------|------------------|
-| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Azure で発生したサブスクリプション レベルまたは管理グループ レベルのイベントに関する分析情報を提供する、Azure のアクティビティ ログからのエントリ。    |                             |                                                   | 
+|:---------|:-------------|
+| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Azure で発生したサブスクリプション レベルまたは管理グループ レベルのイベントに関する分析情報を提供する、Azure のアクティビティ ログからのエントリ。    |
 | [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)   | Azure Diagnostics モードを使用する Azure サービスのリソース ログが格納されます。 リソース ログには、Azure リソースの内部操作が記述されています。 |
 | [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics)   | Azure サービスによって生成される、その正常性とパフォーマンスを測定したメトリック データ。 |
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/08/2020
+ms.date: 03/17/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d240cacaa7aeb02e5ebe8dc05b4781fb104c27bc
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: bc7ad8018929a6a93e3c6c562cf7f6c375a47f52
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101843414"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724770"
 ---
 # <a name="using-enhanced-dataset-metadata"></a>拡張データセット メタデータの使用
 
@@ -49,7 +49,7 @@ SQL Server、Oracle、Teradata、従来の HANA の各接続に対して拡張�
 Power BI Desktop では、あらゆる種類の操作を実行できます。 そのような機能について詳しくは、次のリソースをご覧ください。
 
 * [Power BI Desktop とは何ですか?](../fundamentals/desktop-what-is-desktop.md)
-* [Power BI Desktop の新機能](../fundamentals/desktop-latest-update.md)
+* [Power BI の新機能](../fundamentals/desktop-latest-update.md)
 * [Power BI Desktop でのクエリの概要](../transform-model/desktop-query-overview.md)
 * [Power BI Desktop でのデータ型](desktop-data-types.md)
 * [Power BI Desktop でのデータの整形と結合](desktop-shape-and-combine-data.md)

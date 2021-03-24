@@ -12,12 +12,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: b2b7a23174b4790232139ae6137d518d8578d8d1
-  ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+  ms.openlocfilehash: 4ff79761f99af2df403b2f79c7d4b8081959fd39
+  ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/22/2021
-  ms.locfileid: "98687444"
+  ms.lasthandoff: 03/24/2021
+  ms.locfileid: "105007525"
 landingContent:
 - title: 作業開始
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
     - text: Power BI ビジュアル プロジェクトの構造
       url: visual-project-structure.md
     - text: よく寄せられる質問
-      url: power-bi-custom-visuals-faq.md
+      url: power-bi-custom-visuals-faq.yml
 - title: Power BI のビジュアルを開発する
   linkLists:
   - linkListType: tutorial
