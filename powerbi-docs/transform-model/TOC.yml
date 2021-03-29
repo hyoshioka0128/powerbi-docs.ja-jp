@@ -51,6 +51,8 @@
           href: dataflows/dataflows-machine-learning-integration.md
         - name: データフローのベスト プラクティス
           href: ./dataflows/dataflows-best-practices.md
+        - name: データフローの更新について理解し、最適化する
+          href: ./dataflows/dataflows-understand-optimize-refresh.md
         - name: データフローの制限事項と考慮事項
           href: dataflows/dataflows-features-limitations.md
     - name: 攻略ガイド
