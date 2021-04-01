@@ -53,8 +53,6 @@
       items:
         - name: Power BI レポート
           items:
-            - name: Power BI Desktop と外部ツール
-              href: desktop-external-tools.md
             - name: Power BI の最新のリボン
               href: desktop-ribbon.md
             - name: レポート ビューを操作する
