@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4e9d5783dd0c7d956f438358a5c20ad334a67aca
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: 34e64a87e4e2590f8807fd769f8e7552ac7e38f0
+ms.sourcegitcommit: 438eea031f1ed9e9dee510520e5c1039920c3a49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565957"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105099407"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Power BI でのページの自動更新
 
@@ -52,6 +52,8 @@ Power BI Desktop でページの自動更新を使用するには、ページの
 ### <a name="fixed-interval-setup"></a>固定間隔の設定
 
 更新の種類として **[ページの自動更新]** を選択した場合は、必要な更新間隔を指定する必要があります。 既定値は 30 分です。 (最小更新間隔は 1 秒です)。設定した間隔でレポートの更新が開始されます。
+
+管理者であり、更新間隔を変更する必要がある場合は、「[Premium 容量でワークロードを構成する](../admin/service-admin-premium-workloads.md)」を参照してください。
 
 [詳細の表示] をクリックすると、Power BI により次の情報が提供されます。
 
@@ -254,6 +256,7 @@ Power BI Desktop または Power BI サービスでページの自動更新を�
 * 容量管理者 UI で行われたページの自動更新設定の変更は、レポートに反映されるまでに最大 5 分かかります。
 * 容量のページの自動更新を有効にするだけでなく、有効にするレポートのページについても有効にする必要があります。
 * どちらの更新の種類も個別に管理されるため、有効にする更新の種類が有効になっていることを確認してください。
+* Premium 容量でのワークロードの有効化と構成の詳細については、「[Premium 容量でワークロードを構成する](../admin/service-admin-premium-workloads.md)」を参照してください。
 
 **個人用レポートが混合モードで動作しています。(混合モードとは、レポートに DirectQuery 接続とインポート データ ソースがあることを意味します)。一部の視覚化が更新されません。**
 

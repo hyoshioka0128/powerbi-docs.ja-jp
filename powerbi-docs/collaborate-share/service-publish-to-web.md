@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/14/2021
+ms.date: 03/26/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6b28537c9ea757fb43179196f9d7cb053955c5e0
-ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
+ms.openlocfilehash: 44dab078094089a20c0c508c8b45d403af46f3ed
+ms.sourcegitcommit: 7bd874ab2d7c4385f52cfdbb587fc463ff9d3872
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98227217"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105631528"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI から Web への公開
 
@@ -179,7 +179,7 @@ Power BI にサインアップしたより小規模の組織または個人の�
 - グローバル管理者
 - Azure Active Directory で Power BI サービス管理者ロールを持つユーザー
 
-組織内の[これらの担当者のいずれかを見つけて](/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business)、管理ポータルで[テナントの [Web に公開] 設定](../admin/service-admin-portal.md#publish-to-web)を更新するよう依頼する必要があります。
+組織内の[これらの担当者のいずれかを見つけて](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business)、管理ポータルで[テナントの [Web に公開] 設定](../admin/service-admin-portal.md#publish-to-web)を更新するよう依頼する必要があります。
 
 ## <a name="limitations"></a>制限事項
 
