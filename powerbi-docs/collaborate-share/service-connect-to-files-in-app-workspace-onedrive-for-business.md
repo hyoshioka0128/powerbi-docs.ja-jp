@@ -9,12 +9,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 01/28/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: f6544a137b8f656e938db4516de5e8c0685394b4
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 3656e4b66053e1c291db566b855a117f9172f60a
+ms.sourcegitcommit: 7bd874ab2d7c4385f52cfdbb587fc463ff9d3872
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99085813"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105631462"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-a-classic-workspace"></a>クラシック ワークスペースの OneDrive に保存されているファイルに接続する
 [Power BI で "*クラシック*" ワークスペースを作成する](service-create-workspaces.md)ときは、Microsoft 365 グループおよび関連付けられた OneDrive for Business も作成します。 この記事では、その OneDrive for Business に Excel、CSV、Power BI Desktop のファイルを格納して更新する方法について説明します。 これらの更新プログラムは、ファイルに基づいて Power BI レポートとダッシュボードに自動的に反映されます。

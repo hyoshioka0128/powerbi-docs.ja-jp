@@ -97,6 +97,12 @@
               href: desktop-import-and-display-kpis.md
             - name: 自動の日付/時刻を適用する
               href: desktop-auto-date-time.md
+    - name: 外部ツール
+      items:
+        - name: Power BI Desktop での外部ツール
+          href: desktop-external-tools.md
+        - name: 外部ツールを登録する
+          href: desktop-external-tools-register.md
     - name: リファレンス
       items:
         - name: Power BI Desktop のフィールド リストを使用する (プレビュー)

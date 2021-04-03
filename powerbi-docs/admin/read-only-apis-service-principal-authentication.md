@@ -10,12 +10,12 @@ ms.date: 02/04/2021
 ms.author: painbar
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: e255fbef8b29422ea7736e43adaa5e4197a6338f
-ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
+ms.openlocfilehash: 2a0cbaa1fb2b972a6aa4f17d9219d2c94d332b39
+ms.sourcegitcommit: 7bd874ab2d7c4385f52cfdbb587fc463ff9d3872
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99569947"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105631436"
 ---
 # <a name="enable-service-principal-authentication-for-read-only-admin-apis-preview"></a>読み取り専用の管理 API に対してサービス プリンシパル認証を有効にする (プレビュー)
 
@@ -39,7 +39,10 @@ Power BI 読み取り専用 API のサービス プリンシパル認証を有�
        * グローバル管理者、アプリケーション管理者、またはクラウド アプリケーション管理者として **Azure portal** にサインインします。 
         * **[Azure Active Directory]** を選択した後、 **[エンタープライズ アプリケーション ]** を選択します。 
         * Power BI へのアクセス権を付与するアプリケーションを選択します。 
-        * **[アクセス許可]** を選択します。 このアプリケーションには、Power BI 管理者の同意が必要なアクセス許可が設定されていないことを確認してください。 詳細については、「[アプリケーションの同意の管理と同意要求の評価](/azure/active-directory/manage-apps/manage-consent-requests)」を参照してください。 
+        * **[アクセス許可]** を選択します。 
+
+        > [!IMPORTANT]
+        > このアプリケーションには、Power BI 管理者の同意が必要なアクセス許可が設定されていないことを確認してください。 詳細については、「[アプリケーションの同意の管理と同意要求の評価](/azure/active-directory/manage-apps/manage-consent-requests)」を参照してください。 
 4. Power BI サービス管理者設定を有効にします。 手順は次のとおりです。
     1. Power BI 管理ポータルにログインします。 テナントの設定ページを表示するには、Power BI 管理者である必要があります。
     1. **[Admin API settings]\(管理 API 設定\)** に、 **[読み取り専用 Power BI 管理 API の使用をサービス プリンシパルに許可 (プレビュー)]** が表示されます。 次の図に示すように、切り替えを [有効] に設定し、 **[特定のセキュリティ グループ]** ラジオ ボタンをオンにして、その下に表示されるテキスト フィールドに手順 2 で作成したセキュリティ グループを追加します。

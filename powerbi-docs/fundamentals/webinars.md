@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/08/2021
-ms.openlocfilehash: cb3720eb2a57cdf72485fa038d1f4b441d0556e4
-ms.sourcegitcommit: 0eaddc9b25535ae806023f4aa710b03fd344d1fa
+ms.date: 03/24/2021
+ms.openlocfilehash: 898a3ec343a08c2850a89b8326ad810340b9bbfa
+ms.sourcegitcommit: 7bd874ab2d7c4385f52cfdbb587fc463ff9d3872
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102490062"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105631367"
 ---
 # <a name="power-bi-webinars"></a>Power BI ウェビナー
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) は Chauncy Freels と業務提携するベンダーであり、このウェビナー リストの維持を手伝っています"
@@ -22,19 +22,19 @@ ms.locfileid: "102490062"
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー
 
-**ウェビナー シリーズ: Power BI を使用したデータ モデリングの習得エピソード 1 - データ モデリング 101: Power BI の影響の拡大**  
-作成者: Jeroen ter Heerdt および Marc Lelijveld  
-[3 月 17 日 10AM-11AM PST に視聴できるように登録する](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html?LCID=EN-US)
-
-**Power BI を操作するためのクイックスタート ガイド**  
-作成者: Miguel Martinez  
-[3 月 24 日 10AM-11AM PST に視聴できるように登録する]( https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html?LCID=EN-US)  
-
 [Power BI コミュニティからの今後のウェビナー](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>おすすめのウェビナー
 
 最初に、次の人気のオンデマンド ウェビナーをご覧ください。
+
+**ウェビナー シリーズ: Power BI を使用したデータ モデリングの習得エピソード 1 - データ モデリング 101: Power BI の影響の拡大**  
+作成者: Jeroen ter Heerdt および Marc Lelijveld  
+[今すぐ見る](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
+
+**Power BI を操作するためのクイックスタート ガイド**  
+作成者: Miguel Martinez  
+[今すぐ見る](https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html)
 
 **リアルタイムの意思決定とより強力な顧客とのつながりのためのデータに基づく分析情報**  
 作成者: Shruti Shukla と Chandra Stevens  
