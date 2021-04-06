@@ -25,6 +25,8 @@
           items:
             - name: 新しいワークスペースを作成する
               href: service-create-the-new-workspaces.md
+            - name: 新しいワークスペースへのアクセス権を付与する
+              href: service-give-access-new-workspaces.md
             - name: クラシック ワークスペースをアップグレードする
               href: service-upgrade-workspaces.md
             - name: クラシック ワークスペースを作成する
