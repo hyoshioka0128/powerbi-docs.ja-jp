@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0e45d21f9666c9b6866b954e4052f0f5f9e4b300
-ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
+ms.openlocfilehash: e19776946b496b16f4dcf3557a9ea129834c46b1
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103191531"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106548369"
 ---
 # <a name="dataflows-best-practices"></a>データフローのベスト プラクティス
 
@@ -44,7 +44,7 @@ Power BI **データフロー** はエンタープライズに重点を置いた
 |データ プロファイルの使用     |列の品質、分布、プロファイルを理解する         |[データ プロファイリング ツール](/power-query/data-profiling-tools)         |
 |エラー処理の実装     |修正候補を提示し、更新エラーからの回復性がある堅牢なデータフローを開発する         |[一般的なエラーのパターン](/power-query/dealing-with-errors)  </br> [複雑なエラー処理](/power-query/error-handling)      |
 |スキーマ ビューの使用      |幅の広いテーブルを使用するとき、また、スキーマ レベル操作を行うとき、作成エクスペリエンスを向上する         |[スキーマ ビュー](/power-query/schema-view)         |
-|リンク テーブル      |変換の再利用と参照         |[リンク テーブル](/power-query/dataflows/linked-tables)         |
+|リンク テーブル      |変換の再利用と参照         |[リンク テーブル](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-linked-tables)         |
 |増分更新      |最新または変更されたデータの読み込み、および完全な再読み込み         |[増分更新](/power-query/dataflows/incremental-refresh)         |
 |||
 

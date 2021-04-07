@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/11/2020
-ms.openlocfilehash: c5b14cb4e979bcd0e69617e6ecf5949856dc9693
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bc15bf52bf49c413a3cdf0210a86c3dc3f8f491f
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409518"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106548644"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Power BI ビジュアルの管理設定を管理する
 
@@ -148,7 +148,7 @@ AppSource の Power BI ビジュアルは自動的に更新されます。 組�
 
 1. 追加するビジュアルの行で、 **[設定]** をクリックします。
 
-    ![組織のビジュアルが選択され、設定アイコンが呼び出されている管理者ポータルを示すスクリーンショット。](media/organizational-visuals/organizational-pane.png)organizational-pane
+    ![組織のビジュアルが選択され、設定アイコンが呼び出されている管理者ポータルを示すスクリーンショット。](media/organizational-visuals/organizational-pane.png)
 
 2. [視覚化] ペインの設定を有効にし、 **[更新]** をクリックします。
 

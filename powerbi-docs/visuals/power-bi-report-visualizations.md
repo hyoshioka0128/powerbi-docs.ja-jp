@@ -10,12 +10,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b6b4ebb7d07ec73f8b2c51b7b2fabb75b197d91f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 61c6bb1689f5608774e1cc9db3a14ce4c170412d
+ms.sourcegitcommit: 4a0ad7612281c187892912b1bfe8102a9fd23de7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96387438"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106441048"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Power BI レポートでの視覚エフェクト
 

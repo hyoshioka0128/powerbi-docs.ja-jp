@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
-ms.openlocfilehash: 97fe9d4371a52ce92da5e5a228c171363b0711ba
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.date: 03/31/2021
+ms.openlocfilehash: 8300a276bd3c1e9c21dedcbe911dca6566b15546
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621650"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229798"
 ---
 # <a name="get-a-power-bi-link-preview-in-microsoft-teams"></a>Microsoft Teams で Power BI リンク プレビューを入手する
 
 お客様のレポート、ダッシュボード、およびアプリへのリンクを Microsoft Teams のメッセージ ボックスに貼り付けると、リンクに関する情報がリンクのプレビューに表示されます。 リンク プレビューは、Power BI の次の項目に対して提供されます。
 
-- Reports
+- レポート
 - ダッシュボード
 - アプリケーション
 
@@ -55,7 +55,6 @@ Power BI サービスのコンテンツのリンク プレビューを取得す�
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
-- リンク プレビュー サービスでは、シングル サインオンはサポートされていません。
 - リンク プレビューは、チャットまたはプライベート チャネルでは機能しません。
 - その他の問題については、Microsoft Teams での共同作業に関する記事の「[既知の問題と制限事項](service-collaborate-microsoft-teams.md#known-issues-and-limitations)」セクションを参照してください。
 

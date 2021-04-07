@@ -6,14 +6,15 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
+ms.custom: contperf-fy21q3
 ms.topic: how-to
 ms.date: 08/10/2020
-ms.openlocfilehash: f3e3677e79c1b54a665f21095810163caa7576a2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9c1be88afba47cd18ea356d97e301c125f893cc4
+ms.sourcegitcommit: 48d8aa293669fa881d682d5279e2d51cba342bd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415521"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106104801"
 ---
 # <a name="view-dashboards-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリにおけるダッシュボードの表示
 適用対象:
