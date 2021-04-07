@@ -9,14 +9,14 @@ ms.custom: video-OgjX-pFGgfM, video-RE4IY3L
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 1/13/2021
+ms.date: 03/18/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8cfba48839f4055c7d48bf01a475cf2804053239
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.openlocfilehash: f657217f49ff704178e2cc636d976ff7dd4b6f78
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99422331"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724165"
 ---
 # <a name="customize-visualization-titles-backgrounds-labels-and-legends"></a>視覚エフェクトのタイトル、背景、ラベル、凡例をカスタマイズする
 
@@ -204,6 +204,7 @@ Rien が積み上げグラフに合計ラベルを追加するのを見てから
 | KPI | はい | はい | 該当なし |該当なし |
 | 折れ線 | はい | はい | はい |該当なし |
 | マップ | はい | はい | はい |該当なし |
+| マップ: [Azure Map](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context) | はい | はい | はい |該当なし |
 | Matrix | はい | はい | 該当なし |はい |
 | 円 | はい | はい | はい |該当なし |
 | Q&A | はい | はい | 該当なし |該当なし |

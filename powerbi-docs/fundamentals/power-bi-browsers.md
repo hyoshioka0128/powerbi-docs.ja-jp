@@ -9,12 +9,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 02/01/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: c7f5f5769c5d4f29ba67b64c0e0fa646aa5d4ddb
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: 0431a4f76f43c327bc4c6614c25879bcc101bd35
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99495089"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007801"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Power BI のサポートされているブラウザー
 
@@ -22,7 +22,8 @@ Power BI は、後述の任意のサポート対象ブラウザーで動作す�
 
 Power BI では、使用できるすべてのプラットフォームでこれらのブラウザーがサポートされます。
 
-- Microsoft Edge
+- Microsoft Edge クラシック
+- Microsoft Edge Chromium
 - Internet Explorer 11。 系列ビューなどの一部の高度な機能は、Internet Explorer ではサポートされていません。 詳細については、「[データ系列 (プレビュー)](../collaborate-share/service-data-lineage.md)」を参照してください。
 - Chrome デスクトップの最新バージョン
 - Safari Mac の最新バージョン

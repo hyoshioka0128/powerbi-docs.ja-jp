@@ -1,0 +1,134 @@
+### YamlMime:FAQ
+metadata:
+  title: 埋め込み BI 分析情報を向上させるための Power BI 埋め込み分析での Power BI ビジュアルに関してよく寄せられる質問
+  description: Power BI ビジュアルについてよく寄せられる質問とその回答の一覧です。 Power BI 埋め込み分析を使用して、より優れた埋め込み BI インサイトを有効にします。
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.reviewer: ''
+  ms.service: powerbi
+  ms.subservice: powerbi-custom-visuals
+  ms.topic: conceptual
+  ms.custom: ''
+  ms.date: 09/30/2020
+  ms.openlocfilehash: 1f834594e1175698f46d1e2a00bd0c3746bfd64c
+  ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/24/2021
+  ms.locfileid: "105008961"
+title: Power BI ビジュアルに関する FAQ
+summary: "\n## <a name=\"organizational-power-bi-visuals\"></a>組織の Power BI ビジュアル\n\n管理ポータルを使用すると、組織の Power BI ビジュアルを管理できます。\n"
+sections:
+- name: 無視
+  questions:
+  - question: >
+      管理者が組織の Power BI ビジュアルを管理するにはどうすればよいですか?
+    answer: "管理ポータルの *[組織のビジュアル]* タブから、管理者は [企業内のすべての組織の Power BI ビジュアルを管理](../../admin/organizational-visuals.md#organizational-visuals)および確認できます。 たとえば、Power BI ビジュアルの追加、無効化、有効化、削除などです。\n\n組織内のユーザーは、Power BI Desktop またはサービスから Power BI ビジュアルを簡単に見つけて直接レポートにインポートすることができます。\n\n管理者が新しいバージョンの組織の Power BI ビジュアルをアップロードすると、組織内のすべてのユーザーが同じ更新されたバージョンを取得できます。 更新された Power BI ビジュアルを使用するすべてのレポートは自動的に更新されます。\n\nユーザーは、組み込みの Power BI Desktop と Power BI サービス組織ストアの *[自分の所属組織]* タブで組織の Power BI ビジュアルを見つけることができます。 \n"
+  - question: >
+      管理者が "[視覚化の追加] > [AppSource から]" を使用して Power BI ビジュアルをパブリック マーケットプレースから組織のストアにアップロードする場合、ベンダーがパブリック マーケットプレースのビジュアルを更新したとき、それは自動的に更新されますか?
+    answer: >
+      はい、視覚化はパブリック マーケットプレースから自動的に更新されます。 視覚化が認定されている場合、PDF または PowerPoint へのエクスポートなどの追加機能を含め、認定が保持されます。
+  - question: >
+      組織のストアを無効にする方法はありますか?
+    answer: >
+      いいえ。Power BI Desktop と Power BI サービスには *[自分の所属組織]* タブが常に表示されます。 管理者が管理ポータルから組織の Power BI ビジュアルをすべて無効にした場合、または削除した場合、組織のストアは空になります。
+  - question: >
+      管理者が管理ポータルから Power BI ビジュアルを無効にした場合 (テナント設定)、ユーザーは引き続き組織の Power BI ビジュアルにアクセスできますか?
+    answer: "はい、管理者が管理ポータルから Power BI ビジュアルを無効にしても、組織のストアには影響しません。\n\n一部の組織は、Power BI ビジュアルを無効にし、Power BI 管理者によって組織のストアにインポートおよびアップロードされた、手動で選択されたビジュアルのみを有効にする場合があります。\n\n管理ポータルから Power BI ビジュアルを無効にしても、Power BI Desktop では適用されません。 デスクトップのユーザーは、引き続きパブリック マーケットプレースから Power BI ビジュアルを追加し、自分のレポートで使用することができます。 ただし、それらのパブリックな Power BI ビジュアルは、Power BI サービスに公開されるとレンダリングされなくなり、該当するエラーが発行されます。 \n\n管理ポータルで Power BI ビジュアル設定が適用されている場合、Power BI サービスのユーザーはパブリック マーケットプレースから Power BI ビジュアルをインポートできません。 組織ストアのビジュアルのみをインポートできます。\n"
+  - question: 組織ストアの Power BI ビジュアルの利点は何ですか?
+    answer: >
+      * すべてのユーザーが、Power BI 管理者によって制御される同じバージョンのビジュアルを取得できます。管理者が管理ポータルでビジュアルのバージョンを更新すると、組織内のすべてのユーザーが更新されたバージョンを自動的に取得できます。
+
+
+      * ビジュアルのファイルを電子メールや共有フォルダーで共有する必要はありません。 組織ストアのオファーは、ログインしているすべてのメンバーに表示されます。
+
+
+      * セキュリティとサポート性、新しいバージョンの組織の Power BI ビジュアルは、すべてのレポートで自動的に更新されます。
+
+
+      * 管理者は、組織全体で使用できる Power BI ビジュアルを制御できます。
+
+
+      * 管理者は、テスト用のビジュアルを管理ポータルから有効または無効にできます。
+
+
+      ## <a name="certified-power-bi-visuals"></a>認定済み Power BI ビジュアル
+  - question: >
+      認定済み Power BI ビジュアルとは何ですか?
+    answer: >
+      認定済み Power BI ビジュアルは、特定の[要件](power-bi-custom-visuals-certified.md)を満たし、Microsoft によって認定されている Power BI ビジュアルです。
+
+
+      [マーケットプレース](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)では、認定済み Power BI ビジュアルに認定済みであることを示す黄色いバッジが表示されます。
+
+
+      Microsoft は、サードパーティの Power BI ビジュアルの作成者ではありません。 サードパーティのビジュアルの機能については、作成者に直接お問い合わせいただくことをお客様にお勧めしています。
+  - question: "認定プロセス中はどのようなテストが行われますか? \n"
+    answer: "認定プロセスのテストには、次のようなものがあります (ただし、これらに限定されません)。 \n* コード レビュー\n* スタティック コード分析\n* データ漏えい\n* データのファジー化\n* 侵入テスト\n* アクセス XSS テスト\n* 悪意のあるデータ挿入\n* 入力の検証\n* 機能テスト\n \n"
+  - question: >
+      認定済み Power BI ビジュアルは新しい送信 (アップグレード) ごとにチェックを受けますか?
+    answer: >
+      はい。 認定済みビジュアルの新しいバージョンが Marketplace に送信されるたびに、ビジュアルのバージョン更新プログラムは、同じ認定チェックを受けます。
+
+
+      バージョン更新プログラムの認定は自動的に更新されます。 更新プログラムが拒否される違反が見つかった場合、必要な修正内容が記載されたメールが開発者に送信されます。
+  - question: >
+      更新プログラムのリリース後に認定済み Power BI ビジュアルに対して行われる認定を省略することはできますか?
+    answer: いいえ、それはできません。 更新プログラムのリリース後に認定済みビジュアルに対して行われる認定を省略することはできません。 更新プログラムは拒否されます。
+  - question: >
+      自作の Power BI ビジュアルを自分で認定している場合、パブリック リポジトリでコードを共有する必要がありますか?
+    answer: "いいえ、ご自分のコードをパブリックに共有する必要はありません。\n\nPower BI ビジュアルのコードを確認できるように読み取りアクセス許可を付与してください。 たとえば、GitHub でプライベート リポジトリを使用します。\n \n"
+  - question: >
+      認定済み Power BI ビジュアルはマーケットプレースに公開する必要がありますか?
+    answer: はい。 プライベート ビジュアルは認定されません。
+  - question: "ビジュアルの認定にはどれくらいの時間がかかりますか? \n"
+    answer: "新しい Power BI ビジュアル (初回認証) の認定には、最長で 4 週間かかることがあります。 \n\n更新されたバージョンの Power BI ビジュアルを認定するには、最長で 3 週間かかることがあります。 \n"
+  - question: >
+      認定プロセスでは、データ漏えいが発生しないことが保証されていますか?
+    answer: "実行されたテストは、ビジュアルが外部のサービスやリソースにアクセスしないことを確認するように作られています。 \n\nMicrosoft は、サードパーティの Power BI ビジュアルの作成者ではありません。 サードパーティの Power BI ビジュアルの機能については、作成者に直接お問い合わせいただくことをお客様にお勧めしています。\n \n"
+  - question: >
+      未認定 Power BI ビジュアルは使用しても安全ですか?
+    answer: >
+      未認定 Power BI ビジュアルは、安全ではないビジュアルを意味するわけではありません。
+
+
+      一部のビジュアルは 1 つまたは複数の[認定要件](power-bi-custom-visuals-certified.md#certification-requirements)を満たしていないために認定されていません。 たとえば、地図ビジュアルのような外部サービスや商用ライブラリを利用するビジュアルに接続する場合です。
+
+
+      ## <a name="visuals-with-additional-purchases"></a>ビジュアルの追加購入
+  - question: >
+      ビジュアルの追加購入とは何ですか?
+    answer: "ビジュアルの追加購入は、アプリ内購入 (IAP) アドインに似ています。 このようなアドインには、 **[追加購入が必要になる場合があります]** という値札が付けられています。\n\nIAP Power BI ビジュアルは無料のダウンロード可能な Power BI ビジュアルです。 マーケットプレースからこれらの Power BI ビジュアルをダウンロードするために料金はかかりません。\n\n高度な機能をアプリ内でオプション購入することもできます。  \n"
+  - question: >
+      送信プロセスの変更点は何ですか?
+    answer: >
+      IAP Power BI ビジュアルをマーケットプレースに送信するプロセスは無料の Power BI ビジュアルの場合と同じプロセスです。 認定を受ける Power BI ビジュアルの送信には、[パートナー センター](/partner-center/)を使用します。
+
+
+
+      Power BI ビジュアルを登録するときは、 *[Product setup]\(製品の設定\)* タブに移動し、 *[My product requires the purchase of a service]\(この製品にはサービスの購入が必要です\)* チェック ボックスをオンにします。
+  - question: >
+      IAP Power BI ビジュアルを提出する前に何をすればよいですか?
+    answer: "IAP Power BI ビジュアルを作成している場合は、[ガイドライン](guidelines-powerbi-visuals.md)に準拠していることを確認してください。  \n\n> [!NOTE]\n> IAP 機能が追加された無料の Power BI ビジュアルの場合、以前に提出したものと同じ無料機能を保持する必要があります。 古い無料機能の上に、オプションの高度な有料機能が追加されることがあります。 IAP Power BI ビジュアルは、古い無料のものを更新するのではなく、高度な機能を備える新しい Power BI ビジュアルとして提出することをお勧めします。\n"
+  - question: >
+      IAP Power BI ビジュアルは認定を受ける必要がありますか?
+    answer: >
+      [認定](power-bi-custom-visuals-certified.md)プロセスは任意です。 IAP Power BI ビジュアルの認定を受けるかどうかは、開発者が任意に判断できます。
+  - question: >
+      自作の IAP Power BI ビジュアルは認定を受けられますか?
+    answer: >
+      はい。AppSource チームによって IAP Power BI ビジュアルが承認されると、ご自分の Power BI ビジュアルを提出して[認定](power-bi-custom-visuals-certified.md)を受けることができます。
+
+
+      認定は任意のプロセスです。IAP ビジュアルの認定を受けるかどうかは、ご自身で判断してください。
+
+
+      ## <a name="additional-questions"></a>その他の質問
+  - question: >
+      サポートを受ける方法は?
+    answer: ご質問、ご意見、問題がございましたら、Power BI ビジュアルのサポート チームまでお気軽にお問い合わせください。アドレスは pbicvsupport@microsoft.com です。 
+additionalContent: >-
+  ## <a name="next-steps"></a>次の手順
+
+
+  詳細については、[Power BI ビジュアルのトラブルシューティング](power-bi-custom-visuals-troubleshoot.md)に関する記事を参照してください。

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/05/2021
+ms.date: 03/17/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 036f98f6ba76e27d57f9bfd716612d961f9f1559
-ms.sourcegitcommit: b4ebd259fc8676b8c535ae1c2bb9d19c08c463dc
+ms.openlocfilehash: dac03ffab066f25f80b280206a5abfbfbdf54a14
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102252907"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104725253"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop-and-the-power-bi-service"></a>Power BI Desktop と Power BI サービスに対する過去の月次更新
 
@@ -32,6 +32,99 @@ Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバ
 この記事にある **[最新の更新プログラム]** ビデオを最初から視聴することもできます。ビデオを見るには、更新一覧の下にあるビデオ画像の **再生** アイコンをクリックします。
 
 次のセクションでは、**Power BI Desktop** と **Power BI サービス** の以前の月の更新について説明します。
+
+
+## <a name="february-2021-update-2903030"></a>2021 年 2 月の更新 (2.90.303.0)
+
+Power BI の 2 月の更新は、バレンタインのチョコレートよりも嬉しい内容でした。 
+
+Windows 10 を実行している場合、[Microsoft Store](https://aka.ms/pbidesktopstore) から Power BI Desktop を取得することもできます。 Power BI Desktop のインストール方法に関係なくバージョン番号が異なる場合でも、月次バージョン番号は同じです。 Power BI Desktop のダウンロードとインストールの詳細については、「[Power BI Desktop の取得](desktop-get-the-desktop.md)」を参照してください。 
+
+> [!IMPORTANT]
+> Power BI Desktop は、お客様のフィードバックと新機能を組み込み、月単位で更新およびリリースされます。 サポート対象の Power BI Desktop は、最新バージョンのみです。お客様が Power BI Desktop に関してサポートに問い合わせた場合、最新バージョンにアップグレードするように求められます。 最新バージョンの Power BI Desktop は、[Windows ストア](https://aka.ms/pbidesktopstore)から入手するか、またはサポートされているすべての言語を含む 1 つの実行可能ファイルとして[ダウンロード](https://www.microsoft.com/download/details.aspx?id=58494)してお使いのコンピューターにインストールできます。
+
+Power BI Desktop 更新プログラムの一覧にある各機能の横のリンクは、次のように解釈されます。
+
+* \[ブログ\]:ほとんどの機能は、毎月更新されるブログ記事内のセクションで説明されています。
+* \[ビデオ\]:一部の機能には、機能について説明するビデオの抜粋が用意されています。これは新しいブラウザー タブで再生されます。
+* \[記事\]:一部の機能には、詳細を記載する記事が用意されています。
+* 残りの機能は説明を必要としないため、記事やビデオは用意されていません。
+
+[Power BI の毎月の更新プログラムのビデオ](#power-bi-desktop-monthly-update-video)全体を視聴することもできます。
+
+> [!IMPORTANT]
+> 2021 年 1 月 31 日以降、Power BI Desktop は、Windows 7 ではサポートされなくなります。 その後、Power BI Desktop の最新リリースの場合のみ、Power BI Desktop は Windows 8 以降のバージョンの Windows でサポートされます。 
+
+以下の更新は、今月の Power BI Desktop の新しい機能です。
+
+
+### <a name="reporting"></a>レポート
+* DirectQuery for Power BI datasets and Azure Analysis Services (プレビュー) [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=17)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074644)   [[記事]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+* 検索バー [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=72)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074792)   [[記事]](../create-reports/desktop-ribbon.md)
+* モデル ビューの更新 (プレビュー) [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=188)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074646)  [[記事]](../transform-model/desktop-relationship-view.md)
+* 新しいフィールド一覧 (プレビュー) [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=280)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074794) 
+* スモール マルチプル (プレビュー) - グリッド線と背景色 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=309)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074648) 
+* カラー ピッカー [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=340)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63024803) 
+* オブジェクトを整列するためのスマート ガイド - モバイル レイアウト ビュー [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=422)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074650) 
+* 新しいフィルター操作 - 値がない、値がある [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=441)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074798) 
+* Web 接続に関する証明書失効の確認 - きめ細かい制御 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=486)   [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074643) 
+
+
+### <a name="analytics"></a>分析
+* リボンでの異常検出 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=526)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074653)
+
+
+### <a name="modeling"></a>モデリング
+* 拡張データセット メタデータ形式 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=552)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074655)
+
+
+### <a name="data-connectivity"></a>データ接続
+* 新しい Teams Analytics コネクタ [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=588)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074657)
+* Snowflake - カスタム ロールのサポート [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=629)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074806)  [[記事]](../connect-data/desktop-connect-snowflake.md)
+* Parquet ファイル - Power BI Desktop で利用可能なコネクタ [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=654)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074659)  [[記事]](../connect-data/desktop-data-sources.md#file-data-sources)
+* Hive LLAP - Windows 認証のサポート [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=673)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074808)
+* Salesforce - API の更新 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=682)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074661)
+* SAP HANA と BW - 新しいドキュメント [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=723)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074662)
+
+
+### <a name="visuals"></a>視覚化
+* さまざまなプロバイダーからの新しい視覚エフェクト [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=837)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074670)
+
+### <a name="other"></a>その他
+* 新しいアイコンの更新 [[ビデオ]](https://youtu.be/h4JL2lITJ7U?t=1061)  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074832)
+
+これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/)に関するブログ投稿を参照してください。
+
+
+> [!NOTE]
+> [Power BI Desktop で利用できるデータ ソース](../connect-data/desktop-data-sources.md)をご覧ください。 リストは増え続けていますので、頻繁にご確認ください。
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktop の毎月の更新プログラムのビデオ
+次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
+
+> [!VIDEO https://www.youtube.com/embed/h4JL2lITJ7U]
+
+
+ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
+
+* 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
+* より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
+* 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
+* アーカイブされるのは英語版の Power BI Desktop のみです。
+
+次のリンクを選択して、この以前のバージョンをダウンロードします。 
+
+* [2020 年 12 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02.exe)
+* [2020 年 12 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02_x64.exe)
+
+
+
+
+
+
+
+
 
 ## <a name="december-2020-update-2883210"></a>2020 年 12 月の更新 (2.88.321.0)
 
@@ -514,17 +607,6 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 > [!VIDEO https://www.youtube.com/embed/BCNYMJKyjEo]
 
-ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
-
-* 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
-* より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
-* 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
-* アーカイブされるのは英語版の Power BI Desktop のみです。
-
-次のリンクを選択して、この以前のバージョンをダウンロードします。 
-
-* [2020 年 7 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-07.exe)
-* [2020 年 7 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-07_x64.exe)
 
 
 ## <a name="june-2020-update-2825858301"></a>2020 年 6 月更新 (2.82.5858.301)

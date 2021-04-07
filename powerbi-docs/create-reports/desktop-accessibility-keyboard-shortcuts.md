@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 12/04/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5b2439af22e32f1e0a8cbd3ce326252d6b28fab1
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: f055c4ce2c7d23f05d3eab7e19ffc80ccb5f7736
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613925"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104723843"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Power BI Desktop のキーボード ショートカット
 
@@ -88,18 +88,23 @@ Microsoft はアクセシビリティを改善する取り組みを続けてい�
 | オブジェクトの表示/非表示を切り替える | **Ctrl + Shift + S** |
 
 ## <a name="dax-editor"></a>DAX エディター
-| この操作を行うには          | 押すキー                |
+| この操作を行うには          | ショートカット キー                |
 | :------------------- | :------------------- |
+| 行番号に移動 | **Ctrl + G** |
 | 行を上/下に移動 | **Alt + ↑ キー** / **↓ キー** |
 | 行を上/下にコピー | **Shift + Alt + ↑ キー** / **↓ キー** |
 | 行を下に挿入 | **Shift + Enter** |
 | 行を上に挿入 | **Ctrl + Shift + Enter** |
+| 選択された単語を削除 | **Ctrl + Del**|
+| 選択された行をすべて削除 | **Ctrl + Shift + K**|
 | 対応するかっこにジャンプ | **Ctrl + Shift +**  \ |
 | 行のインデント/余白への行の拡張 | **Ctrl + ]**  /  **[** |
 | カーソルの挿入 | **Alt + Click** |
 | 現在の行の選択 | **Ctrl + I** |
 | 現在の選択範囲のすべての出現箇所を選択 | **Ctrl + Shift + L** |
 | 現在の単語のすべての出現箇所を選択 | **Ctrl + F2** |
+| 現在の選択の次の出現箇所を選択 | **Ctrl + D** |
+| 複数行のコードを上/下に入力 |**Ctrl + Alt + 上方向キー** / **下方向キー**|
 | 行にコメントを付ける | **Ctrl + /** または **Ctrl + K + C** |
 | 行のコメントを解除 | **Ctrl + /** または **Ctrl + K + U** |
 | フォント サイズを大きくします | **Ctrl + +** または **Scroll Up** |

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/20/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: cf10ac72f387438a60d3840c69ad1ee713c26708
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 38d3b1041c112ab01ec527d9c49ee33740a070eb
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99086214"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007640"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Power BI でユーザー アクティビティを追跡する
 
@@ -34,7 +34,7 @@ Power BI テナント内で、だれがどの項目にどのようなアクシ�
 ## <a name="use-the-activity-log"></a>アクティビティ ログの使用
 
 > [!NOTE]
-> Microsoft Cloud Deutschland の場合、アクティビティ ログはサポートされていません。 ドイツのクラウドに関するサービス制限については、「[ドイツのクラウド顧客向け Power BI についてよく寄せられる質問](service-govde-faq.md)」に詳細があります。
+> Microsoft Cloud Deutschland の場合、アクティビティ ログはサポートされていません。 ドイツのクラウドに関するサービス制限については、「[ドイツのクラウド顧客向け Power BI についてよく寄せられる質問](service-govde-faq.yml)」に詳細があります。
 
 
 Power BI サービス管理者は、Power BI アクティビティ ログに基づくカスタム レポートを使用して、テナント レベルですべての Power BI リソースの使用状況を分析できます。 アクティビティをダウンロードするには、REST API または PowerShell コマンドレットを使用します。 アクティビティ データは、日付の範囲、ユーザー、およびアクティビティの種類でフィルター処理することもできます。
@@ -82,6 +82,9 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Get-PowerBIActivityEvent コマンドレット
 
 PowerShell の Power BI 管理コマンドレットを使用して、アクティビティ イベントをダウンロードします。 **Get-PowerBIActivityEvent** コマンドレットを使用すると、継続トークンが自動的に処理されます。 **Get-PowerBIActivityEvent** コマンドレットでは、**ActivityEvents** REST API と同じ制限がある StartDateTime と EndDateTime パラメーターを受け取ります。 つまり、一度に取得できるアクティビティ データは 1 日分だけなので、開始日と終了日で同じ日付値を参照する必要があります。
+
+> [!NOTE]
+> Azure サービス プリンシパルとして Get-PowerBIActivityEvent を実行することはできません。 そのサービス プリンシパルに Power BI サービス管理者ロールが割り当てられている場合でも同じです。 
 
 次のスクリプトでは、すべての Power BI アクティビティをダウンロードする方法を示しています。 このコマンドでは、個々のアクティビティのプロパティに簡単にアクセスできるように、JSON の結果が .NET オブジェクトに変換されます。 これらの例は、イベントを見逃さないようにするための、1 日で可能な最小および最大のタイムスタンプを示しています。
 

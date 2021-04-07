@@ -11,12 +11,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/14/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: d61ed128827572198e24bb8f31e190f328e273ff
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.openlocfilehash: 043e6e99137119c61ca22a7df8521bda7ac0a4a5
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98687600"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104725000"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI サービスのデザイナー向けの基本的な概念
 
@@ -68,7 +68,7 @@ Power BI の 5 つの主要な構成要素は、"*ダッシュボード*"、"*�
 次に、5 つの Power BI の構成要素について説明します。
 
 ## <a name="dataflows"></a>データフロー
-"*データフロー*" を使用すると、組織はさまざまなソースからデータを統合できます。 これらは省略可能であり、プロジェクトが複雑な場合や大規模な場合によく使用されます。 これらは、データセットで使用するために準備およびステージングされたデータを表します。 しかし、レポートのソースとして直接使用することはできません。 オンプレミスとクラウドベースのデータ ソースからデータを取り込むことができるように、Microsoft のデータ コネクタの豊富なコレクションが利用されます。
+"*データフロー*" を使用すると、組織はさまざまなソースからデータを統合できます。 これらは省略可能であり、プロジェクトが複雑な場合や大規模な場合によく使用されます。 これらは、データセットで使用するために準備およびステージングされたデータを表します。 データフローは、レポート作成を有効にするための専用コネクタを使用して Power BI Desktop に表示されます。 データフローに接続すると、データセットでは、事前に準備されたデータとビジネス ロジックを使用して、信頼できる単一の情報源とデータの再利用を促進することができます。これらは、Microsoft データ コネクタの豊富なコレクションを利用して、オンプレミスおよびクラウド ベースのデータ ソースからのデータの取り込みを可能にします。
 
 データフローは、ワークスペース (しかし、"*マイ ワークスペース*" 以外) でのみ作成および管理され、Azure Data Lake Storage Gen2 の Common Data Model (CDM) にエンティティとして格納されます。 通常、これらは最新のデータを格納するために、定期的に更新するようにスケジュールされています。 データセットによって使用される (および再利用される可能性がある) データを準備するのに適しています。 詳細については、「[Power BI でのセルフサービスのデータ準備](../transform-model/dataflows/dataflows-introduction-self-service.md)」の記事を参照してください。
 

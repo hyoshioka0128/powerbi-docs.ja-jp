@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/10/2021
-ms.openlocfilehash: dd2cfda966efce86b302e32a24e0342c8c9532d4
-ms.sourcegitcommit: b4ebd259fc8676b8c535ae1c2bb9d19c08c463dc
+ms.date: 03/18/2021
+ms.openlocfilehash: 084ef99fde3eb96f12ad4f074f07be3753c7bb14
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102253005"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007902"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI 用モバイル アプリの新機能
 関連する最新情報については、次の資料を参照してください。
@@ -23,6 +23,12 @@ ms.locfileid: "102253005"
 
 >[!NOTE]
 >**Windows 10 Mobile を使用するスマートフォン** に対する Power BI モバイル アプリのサポートは、2021 年 3 月 16 日に廃止されます。 [詳細情報](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="march-2021"></a>2021 年 3 月
+### <a name="easily-find-content-by-type"></a>コンテンツを種類で簡単に検索する
+一覧表示されているコンテンツを種類でフィルター処理するには、[最近]、[お気に入り]、[ワークスペース] ページの上部にある新しいカテゴリ フィルターを試してみてください。
+
+![一覧表示のページにあるカテゴリ フィルターのスクリーンショット。](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-filter-by-type.png)
 
 ## <a name="february-2021"></a>2021 年 2 月
 ### <a name="support-for-power-bi-in-split-screens-android-tablets"></a>分割画面での Power BI のサポート (Android タブレット)

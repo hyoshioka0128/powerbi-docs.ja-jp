@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/09/2021
-ms.openlocfilehash: cbb1466ff0f9fdb0c2a8d86c3214a2f5ff0110c4
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.date: 03/18/2021
+ms.openlocfilehash: f63bcde61cde1abdc511dc6030100fd83590b0b0
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842632"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104725230"
 ---
 # <a name="export-paginated-report-to-file"></a>ページ分割されたレポートをファイルにエクスポートする
 
@@ -20,7 +20,7 @@ ms.locfileid: "101842632"
 * **.pptx** (PowerPoint)
 * **.pdf**
 * **.xlsx** (Excel)
-* **.dox** (Word)
+* **.docx** (Word)
 * **.csv**
 * **.xml**
 * **.mhtml**

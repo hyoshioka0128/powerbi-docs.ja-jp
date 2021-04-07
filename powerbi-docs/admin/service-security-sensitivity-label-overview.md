@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q2
-ms.date: 12/20/2020
+ms.date: 03/22/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: 39ef1b8768a7874a2d2065e506dc3deb9987ad61
-ms.sourcegitcommit: 8cf6ff2e01646e8ab761291e3d86aded63951ed5
+ms.openlocfilehash: 74d41c2881ec966ae496cac5e061c6c67fd1fc45
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103460281"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834363"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Power BI における秘密度ラベル
 
@@ -145,6 +145,10 @@ Power BI レポート、ダッシュボード、およびビジュアルは、Mi
 * [組織向けの埋め込み](../developer/embedded/embed-sample-for-your-organization.md)
 * Microsoft 365 アプリ (例: [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) や [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [セキュリティで保護された URL の埋め込み](../collaborate-share/service-embed-secure.md) (Power BI サービスからの埋め込み) 
+
+## <a name="sensitivity-labels-in-deployment-pipelines"></a>配置パイプラインでの秘密度ラベル
+配置パイプラインでは秘密度ラベルがサポートされています。 コンテンツがステージからステージに配置されるときに秘密度ラベルが処理される方法の詳細については、[配置パイプラインのドキュメント](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment)を参照してください。
+
 
 ## <a name="sensitivity-labels-in-the-power-bi-mobile-apps"></a>Power BI モバイル アプリの秘密度ラベル
 

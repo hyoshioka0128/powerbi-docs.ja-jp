@@ -7,15 +7,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 11/16/2020
+ms.date: 03/17/2021
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: e2bd6a752d94bd2a549d0149512707fbd7832319
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 861c20d0be16f41aeee024034178b242a55a07be
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613787"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724073"
 ---
 # <a name="power-bi-feature-list-for-business-users-and-others-with-free-licenses"></a>"*ビジネス ユーザー*" および無料ライセンスを持つその他のユーザー向けの Power BI 機能の一覧
 
@@ -45,18 +45,12 @@ ms.locfileid: "96613787"
 組織が Premium 容量サブスクリプションを持っている場合、管理者と Pro ユーザーは "*容量*" にワークスペースを割り当てることができます。 容量内のワークスペースは、Pro ユーザーが無料ユーザーと共有して共同作業を行うことができる場所であり、無料ユーザーが Pro ライセンスを持つ必要はありません。 これらのワークスペース内では、無料ユーザーに管理者特権のアクセス許可が与えられます (下記一覧を参照)。 
 
 ### <a name="licenses"></a>ライセンス 
-各 Power BI サービス ユーザーは、Free ライセンスまたは Pro ライセンスのいずれかを持っています。 "*ビジネス ユーザー*" は無料ライセンスを持っています。
 
-- **無料ライセンス** - 通常は、組織内の "*ビジネス ユーザー*" に割り当てられます (下の 1 つめの画像を参照)。 また、個人として Power BI サービスにサインアップし、[スタンドアロン モードの Power BI サービス](../fundamentals/service-self-service-signup-for-power-bi.md)を試すユーザーに割り当てられます (下の 2 つめの画像を参照)。 
+Power BI サービスの各ユーザーは、無料ライセンス、Power BI Pro ライセンス、または Premium Per User ライセンスを持っています。 組織内の "*ビジネス ユーザー*" には通常、無料ライセンスが割り当てられます。 個人として Power BI サービスにサインアップし、[スタンドアロン モードの Power BI サービス](../fundamentals/service-self-service-signup-for-power-bi.md)を試してみたいユーザーは常に、無料ライセンスから始めます。 無料ユーザーの場合、Premium 容量を持つ組織のメンバーになると、非常に大きな権限が与えられます。 同僚が Premium 容量のワークスペースを使用してコンテンツを共有している限り、無料ユーザーはそのコンテンツを表示したり、それを使用して共同作業したりできます。  こうすることで、無料ユーザーは他のユーザーが作成したコンテンツを使用できるようになります。 
 
-    ![Premium ユーザーを示す画面](media/end-user-features/power-bi-free-organization.png)
+自分のアカウントに割り当てられているライセンスの種類を見つけるには、[Power BI サービス](https://app.powerbi.com)のページ ヘッダーからプロファイル画像を選択します。 **[Pro アカウント]** または **[Premium Per User アカウント]** が表示されている場合は、他のユーザーとコンテンツを共有できます。 **[無料]** が表示されている場合は、[マイ ワークスペース] でコンテンツを作成したり、Premium ワークスペースで共有されているコンテンツを使用したりすることしかできません。 アカウントの詳細を表示するには、 **[アカウントを表示]** を選択します。
 
-    無料ユーザーの場合、Premium 容量を持つ組織のメンバーになると、非常に大きな権限が与えられます。 Pro の同僚が Premium 容量ワークスペースを使用してコンテンツを共有している限り、無料ユーザーは閲覧したり、これらの Pro の同僚と共同作業を行ったりすることができます。  こうすることで、無料ユーザーは他のユーザーが作成したコンテンツを使用できるようになります。 無料ユーザーは、Pro ユーザーを含む同僚と共に、レポートとアプリを受け取り、共有し、同じダッシュボードで共同作業し、ビジネス上の意思決定を行うことができます。 
- 
-    ![無料ユーザーを示す画面](media/end-user-features/power-bi-free-user.png)
-
-
-   
+   :::image type="content" source="media/end-user-features/license-type.png" alt-text="アカウント プロファイルで表示されているライセンスの種類を示す画面キャプチャ。":::
 
 ## <a name="power-bi-feature-list-for-business-users-and-free-users"></a>"*ビジネス ユーザー*" および無料ユーザー向けの Power BI 機能の一覧
 次の表には、Premium 容量のコンテンツを操作する "*ビジネス ユーザー*" が実行できるタスクが示されています。    

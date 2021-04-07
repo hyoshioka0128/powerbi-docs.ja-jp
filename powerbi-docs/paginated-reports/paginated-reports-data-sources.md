@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/27/2021
-ms.openlocfilehash: c544126132ce18d8093f8c07359418f2052e9c74
-ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.date: 03/15/2021
+ms.openlocfilehash: 824ce2c120b9791e5ba70339b7195e635aa0eb06
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99044404"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834386"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートでサポートされるデータ ソース
 
@@ -27,10 +27,10 @@ ms.locfileid: "99044404"
 
 | データ ソース | 認証 | ノート |
 | --- | --- | --- |
-| Azure SQL Database <br>Azure SQL Data Warehouse | 基本、シングル サインオン (SSO)、OAuth2 | Azure SQL Database でエンタープライズ ゲートウェイを使用できます。 ただし、このようなシナリオでは、SSO または oAuth2 を使用して認証を行うことはできません。   |
+| Azure SQL データベース <br>Azure SQL Data Warehouse | 基本、シングル サインオン (SSO)、OAuth2 | Azure SQL Database でエンタープライズ ゲートウェイを使用できます。 ただし、このようなシナリオでは、SSO または oAuth2 を使用して認証を行うことはできません。   |
 | Azure SQL Managed Instance | 基本 | パブリック エンドポイントまたはプライベート エンドポイント経由 (プライベート エンドポイントは、エンタープライズ ゲートウェイ経由でルーティングする必要があります)  |
 | Azure Analysis Services | SSO、OAuth2 | AAS ファイアウォールを無効にするか、BlackForest リージョンの IP 範囲をすべて許可するように構成する必要があります。 これは、BlackForest リージョンにのみ適用されます。  外部テナントからの SSO はサポートされていません。 |
-| Power BI データセット | SSO | Premium と Premium 以外の Power BI データセット。 読み取りのアクセス許可が必要です。 インポート モードと DirectQuery Power BI データセットのみがサポートされています。 |
+| Power BI データセット | SSO | Premium と Premium 以外の Power BI データセット。 読み取りのアクセス許可が必要です。 インポート モードと DirectQuery Power BI データセットのみがサポートされています。 DirectQuery Power BI データセットをデータ ソースとして使用するレポート クエリには、10 分という固定のタイムアウトがあります。10 分より長い時間がかかるレポート クエリの場合は、Power BI データセットの [XMLA 読み取り/書き込みエンドポイント](../admin/service-premium-connect-tools.md)をレポート データ ソースとして使用してください。 |
 | Premium Power BI データセット (XMLA) | SSO | "アプリ所有データ" のシナリオでは、Power BI データセットは埋め込みのページ分割されたレポートのデータ ソースとしてはサポートされません。  Power BI Report Builder で適切に接続できるようにするには、データ ソースを設定するときに **[資格情報を使用しない]** オプションが選択されていることを確認します。<br />XMLA を使用してアクセスすると、ワークスペースまたはアプリのレベルで設定されたセキュリティ グループ メンバーシップが優先されます。<br />少なくとも[ワークスペースの共同作成者ロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)を持つユーザーは、Premium Power BI データセットでページ分割されたレポートを表示できます。 その他のユーザーは、[基になるデータセットに対するビルド アクセス許可](../connect-data/service-datasets-build-permissions.md)が必要です。    |
 | データの入力 | 該当なし | データはレポートに埋め込まれます。 |
 | Dataverse | SSO、OAuth2 | 多要素認証 (MFA) がサポートされていないため、ゲートウェイは使用できません。

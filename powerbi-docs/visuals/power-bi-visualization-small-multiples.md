@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 02/05/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bc1f890e588227f9d0dc30202474a8f77f93fc38
-ms.sourcegitcommit: f17acb16018752c234db6bff1f51f5130be12c58
+ms.openlocfilehash: 8ecd5d5d7ad781383e93b276b28129aff551a840
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99628217"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834754"
 ---
 # <a name="create-small-multiples-in-power-bi-preview"></a>Power BI でスモール マルチプルを作成する (プレビュー)
 
@@ -33,6 +33,8 @@ ms.locfileid: "99628217"
 Power BI Desktop を再起動すると、スモール マルチプルを試す準備が整います。
 
 ## <a name="create-small-multiples"></a>スモール マルチプルを作成する
+
+ライブ接続されたデータ モデルの場合、この機能には、第 2 世代の DAX クエリ (別名 SuperDAX) をサポートする AS のバージョン (表形式モデルの場合は AS 2016 以降、多次元モデルの場合は AS 2019 以降) が必要です。
 
 現在、横棒グラフ、縦棒グラフ、折れ線グラフ、および面グラフでスモール マルチプルを作成できます。 
 

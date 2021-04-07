@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 02/05/2019
-ms.openlocfilehash: db2ae20436eddc4cb06287b6266488b65588dcb5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 03/18/2021
+ms.openlocfilehash: 7fe9270c05782223727874da35cd4acefd4d7ba3
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887203"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834654"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>埋め込みアプリケーションのトラブルシューティング
 
@@ -65,6 +65,39 @@ Azure Portal または Power BI アプリ登録ページ内のエラー メッ�
 
 少なくとも 1 名のユーザーを Power BI に登録する必要があります。 API 一覧に **Power BI サービス** が表示されない場合、Power BI にユーザーが登録されていません。
 
+### <a name="what-is-the-difference-between-application-object-id-and-principal-object-id"></a>アプリケーション オブジェクト ID とプリンシパル オブジェクト ID の違いは何ですか?
+
+Azure AD アプリを登録する場合は、"*オブジェクト ID*" と呼ばれる 2 つのパラメーターがあります。 このセクションでは、各パラメーターの目的と、それを取得する方法について説明します。
+
+:::row:::
+    :::column span="":::
+
+        #### <a name="application-object-id"></a>アプリケーション オブジェクト ID
+
+        [アプリケーション オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals#application-object) ID (単に "*オブジェクト ID*" とも呼ばれます) は、Azure AD アプリケーション オブジェクトの一意の ID です。
+
+        アプリケーション オブジェクト ID を取得するには、Azure AD アプリに移動し、 *[概要]* からコピーします。
+
+        :::image type="content" source="media/embedded-troubleshoot/object-id.png" alt-text="Azure AD アプリケーションの [概要] ブレードにあるオブジェクト ID を示すスクリーンショット":::
+
+    :::column-end:::
+    :::column span="":::
+
+        #### <a name="principal-object-id"></a>プリンシパル オブジェクト ID
+
+        プリンシパル オブジェクト ID (単に "*オブジェクト ID*" とも呼ばれます) は、Azure AD アプリケーションに関連付けられた[サービス プリンシパル オブジェクト](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) の一意の ID です。
+
+        プリンシパル オブジェクト ID を取得するには、Azure AD アプリに移動し、 *[概要]* の **[ローカル ディレクトリでのマネージド アプリケーション]** にあるアプリ リンクを選択します。
+        
+            :::image type="content" source="media/embedded-troubleshoot/azure-overview-blade.png" alt-text="Azure AD アプリケーションの [概要] ブレードにある [ローカル ディレクトリでのマネージド アプリケーション] オプションを示すスクリーンショット":::
+        
+        *[プロパティ]* セクションから、 **[オブジェクト ID]** をコピーします。
+        
+            :::image type="content" source="media/embedded-troubleshoot/principal-object-id.png" alt-text="Azure AD アプリケーションの [概要] ブレードの [プロパティ] セクションにあるプリンシパル オブジェクト ID を示すスクリーンショット":::
+
+    :::column-end:::
+:::row-end:::
+
 ## <a name="rest-api"></a>REST API
 
 ### <a name="api-call-returning-401"></a>API の呼び出しで 401 が返される
@@ -101,7 +134,7 @@ HTTP/1.1 403 Forbidden
 
 ### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>AADSTS90002 で認証が失敗しました:テナント 'authorize' が見つかりません
 
- "***error: invalid_request, error_description:AADSTS90002:テナント 'authorize' が見つかりません** _" などのログインに関するメッセージを受信している場合、ADAL 4.x が "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" を権限 URL としてサポートしていないことが原因です。
+ ***error: invalid_request, error_description:AADSTS90002:テナント 'authorize' が見つかりません*** などのログインに関するメッセージを受信している場合、ADAL 4.x で権限 URL として "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" がサポートされていないことが原因です。
  
 この問題を解決するには、権限 URL の末尾から "oauth2/authorize/" をトリミングする必要があります。[Power BI の開発者向けサンプル](https://github.com/Microsoft/PowerBI-Developer-Samples)に関するページを参照してください。
 
@@ -109,15 +142,15 @@ HTTP/1.1 403 Forbidden
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>AADSTS70002 または AADSTS50053 で認証が失敗しました
 
-_*_ (AADSTS70002:資格情報の検証エラー。 AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました)_**
+**_(AADSTS70002: 資格情報の検証エラー。AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました)_**
 
-Power BI Embedded を使用、および Azure AD Direct Authentication を利用している場合、次のようなログインに関するメッセージを受信する場合があります: "**_error:unauthorized_client, error_description:AADSTS70002:資格情報の検証エラー。AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました_* _"。これは、2018 年 6 月 14 日から直接認証が使われていないことが原因です。
+Power BI Embedded を使用、および Azure AD Direct Authentication を利用している場合、次のようなログインに関するメッセージを受信する場合があります: ***error:unauthorized_client,error_description:AADSTS70002: 資格情報の検証エラー。AADSTS50053: 正しくないユーザー ID またはパスワードでのサインインの試行回数が上限に達しました***。これは、2018 年 6 月 14 日から直接認証が使われていないことが原因です。
 
 組織または[サービス プリンシパル](/azure/active-directory/develop/active-directory-application-objects#service-principal-object)にスコープ設定された [Azure AD ポリシー](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications)を使用して、直接認証をオンに戻す方法があります。
 
 このポリシーは、アプリごとにのみ有効にすることをお勧めします。
 
-このポリシーを作成するには、ポリシーを作成して割り当てるディレクトリに対して_ *グローバル管理者**であることが必要です。 ポリシーを作成して、このアプリケーションの SP に割り当てるのためのサンプル スクリプトを次に示します。
+このポリシーを作成するには、ポリシーを作成して割り当てるディレクトリに対して **グローバル管理者** であることが必要です。 ポリシーを作成して、このアプリケーションの SP に割り当てるのためのサンプル スクリプトを次に示します。
 
 1. [Azure AD プレビュー PowerShell モジュール](/powershell/azure/active-directory/install-adv2)をインストールします。
 

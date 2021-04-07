@@ -10,12 +10,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/09/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: b144412ee322aa9bec0a35bb3876a949abcd3f13
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 5fbad605b53bf76e2cdfaa4c4ade72c560740766
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96998900"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724318"
 ---
 # <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Power BI Desktop での Access と Excel の .xls ファイルのインポートに関するトラブルシューティング
 
@@ -32,7 +32,7 @@ Power BI Desktop のエラー メッセージで Access データベース エ�
 
 ## <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>状況 2:Access データベース エンジンのビット版 (32 ビットまたは 64 ビット) がお使いの Power BI Desktop のビット版と異なる
 
-この状況は、多くの場合、インストールした Microsoft Office のバージョンが 32 ビットで、Power BI Desktop のバージョンが 64 ビットのときに発生します。 また、反対の場合もあります。ビット版の不一致はいずれの場合にも発生します。 Microsoft 365 サブスクリプションを使用している場合は、「[状況 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription)」で別の問題と解決策を参照してください。 次のどの解決策でも、このビット版不一致エラーを解決できます。
+この状況は、多くの場合、インストールした Microsoft Office のバージョンが 32 ビットで、Power BI Desktop のバージョンが 64 ビットのときに発生します。 また、反対の場合もあります。ビット版の不一致はいずれの場合にも発生します。 これらのソリューションを他の不一致 (たとえば、Visual Studio SSDT などの他の 32 ビット COM アプリケーションなど) に適用することもできます。 Microsoft 365 サブスクリプションを使用している場合は、「[状況 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription)」で別の問題と解決策を参照してください。 次のどの解決策でも、このビット版不一致エラーを解決できます。
 
 ### <a name="solution-1"></a>解決策 1
 

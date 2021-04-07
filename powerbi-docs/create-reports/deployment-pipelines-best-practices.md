@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.date: 03/04/2021
-ms.openlocfilehash: daf89f1354a44131791bd623a10b5fea1eb44e14
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: a54737599d91ce73964b3e50996e5f95bc4bad94
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102194919"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834777"
 ---
 # <a name="deployment-pipelines-best-practices"></a>デプロイ パイプラインのベスト プラクティス
 
@@ -83,7 +83,7 @@ Power BI サービスでデータセットのデータ ソースを編集する�
 
 デプロイ パイプラインでは、開発、テスト、および運用の各ステージに特定の値を設定するようにパラメーター ルールを構成できます。
 
-接続文字列にパラメーターを使用しない場合は、データ ソース ルールを定義して、特定のデータセットの接続文字列を指定できます。 ただし、これはデプロイ パイプラインのすべてのデータ ソースでサポートされているわけではありません。 データ ソースのルールを構成できることを確認するには、[データセット ルールの制限事項](deployment-pipelines-get-started.md#dataset-rule-limitations)に関するセクションを参照してください。
+接続文字列にパラメーターを使用しない場合は、データ ソース ルールを定義して、特定のデータセットの接続文字列を指定できます。 ただし、これはデプロイ パイプラインのすべてのデータ ソースでサポートされているわけではありません。 データ ソースのルールを構成できることを確認するには、「[配置ルールの制限事項](deployment-pipelines-get-started.md#deployment-rules-limitations)」を参照してください。
 
 パラメーターには、クエリ、フィルター、およびレポートに表示されるテキストを変更するなど、追加の用途があります。
 
@@ -142,9 +142,9 @@ XMLA の r/w 機能を使用して、外部ワークスペースで[共有デー
 
 ![運用環境をシミュレートするテスト環境を備えたデプロイ パイプラインを示す図。](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
-### <a name="use-dataset-rules-with-a-real-life-data-source"></a>データセット ルールを実際のデータ ソースで使用する
+### <a name="use-deployment-rules-with-a-real-life-data-source"></a>配置ルールを実際のデータ ソースで使用する
 
-テスト ステージを使用して実際のデータ使用状況をシミュレートしている場合は、開発データ ソースとテスト データ ソースを分離することをお勧めします。 開発データベースは比較的小さくする必要があるため、テスト データベースは運用データベースにできるだけ類似したものにする必要があります。 [データ ソース ルール](deployment-pipelines-get-started.md#step-4---create-dataset-rules)を使用すると、テスト ステージのデータ ソースを切り替えることができます。
+テスト ステージを使用して実際のデータ使用状況をシミュレートしている場合は、開発データ ソースとテスト データ ソースを分離することをお勧めします。 開発データベースは比較的小さくする必要があるため、テスト データベースは運用データベースにできるだけ類似したものにする必要があります。 [データ ソース ルール](deployment-pipelines-get-started.md#step-4---create-deployment-rules)を使用すると、テスト ステージのデータ ソースを切り替えることができます。
 
 データ ソースからインポートするデータの量を制御することは、テスト ステージで運用データ ソースを使用している場合に便利です。 これを行うには、Power BI Desktop でデータ ソース クエリにパラメーターを追加します。 パラメーター ルールを使用して、インポートされるデータの量を制御するか、パラメーターの値を編集します。
 容量を過負荷にしたくない場合は、この方法を使用することもできます。
@@ -185,9 +185,9 @@ XMLA の r/w 機能を使用して、外部ワークスペースで[共有デー
 
 ### <a name="set-rules-to-ensure-production-stage-availability"></a>運用ステージの可用性を保証するルールを設定する
 
-[データセット ルール](deployment-pipelines-get-started.md#step-4---create-dataset-rules)は、運用環境のデータが常に接続され、ユーザーが使用できるようにするための強力な方法です。 データセット ルールが適用されると、エンドユーザーが邪魔されることなく関連情報を見ることができることを保証しながら、デプロイを実行できます。
+[配置ルール](deployment-pipelines-get-started.md#step-4---create-deployment-rules)は、運用環境のデータが常に接続され、ユーザーが使用できるようにするための強力な方法です。 配置ルールが適用されると、配置を実行している間も、エンド ユーザーが妨害されることなく関連情報を表示できることが保証されます。
 
-データ ソースとデータセットで定義されているパラメーターに対して、運用データセット ルールが設定されていることを確認してください。
+データセットで定義されているデータ ソースとパラメーターに対して、確実に運用環境の配置ルールを設定するようにしてください。
 
 ### <a name="update-the-production-app"></a>運用アプリを更新する
 

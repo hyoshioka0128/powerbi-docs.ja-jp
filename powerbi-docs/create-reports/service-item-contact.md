@@ -9,18 +9,18 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/08/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4518ac8eff4b4f52ab2eeb715c0c460bb478678f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3fb5b42dfacd5ce90cd0b277554318d187676ced
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388335"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105007939"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Power BI サービスでレポートとダッシュボードの連絡先情報を設定する
 この記事では、Power BI サービスでダッシュボードまたはレポートに連絡先情報を設定する方法について説明します。
 
 > [!NOTE]
-> 連絡先情報は、旧式のワークスペースまたは新しいワークスペースの項目に対して設定できます。 マイ ワークスペースの項目に連絡先情報を設定することはできません。 [新しい外観](../consumer/service-new-look.md)でレポートまたはダッシュボードを表示すると、情報カードが表示されます。
+> 連絡先情報は、旧式のワークスペースまたは新しいワークスペースの項目に対して設定できます。 マイ ワークスペースの項目に連絡先情報を設定することはできません。 レポートまたはダッシュボードを表示すると、情報カードが表示されます。
 
 ある項目の連絡先に複数のユーザーまたはグループを追加できます。 連絡先として指定できるもの:
 * 人

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 07/02/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: 4831921ad7dff0264d606acfecf2434ddcaee882
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 696ad1485c9a317fcc5fb463e262fdf6f01dc8f1
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409265"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834478"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Azure AD B2B で外部ゲスト ユーザーに Power BI コンテンツを配布する
 
@@ -122,7 +122,7 @@ Azure portal で招待を送信するには、次の手順のようにします�
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 
-* 既定では、外部の Azure AD B2B によってゲストはコンテンツの使用のみに制限されます。 外部の Azure AD B2B ゲストは、アプリ、ダッシュボード、レポートの表示、データのエクスポート、ダッシュボードとレポートの電子メール サブスクリプションの作成ができます。 ワークスペースにアクセスしたり、独自のコンテンツを公開することはできません。 これらの制限を解除する場合は、[[外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する]](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) 機能を使用できます。
+* 既定では、外部の Azure AD B2B によってゲストはコンテンツの使用のみに制限されます。 外部の Azure AD B2B ゲストは、アプリ、ダッシュボード、レポートを表示したり、データをエクスポートしたりできます。 ワークスペースにアクセスしたり、独自のコンテンツを公開することはできません。 これらの制限を解除する場合は、[[外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する]](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) 機能を使用できます。
 
 * ゲスト ユーザーを招待するためには、Power BI Pro のライセンスが必要です。 Pro 試用版のユーザーが Power BI にゲスト ユーザーを招待することはできません。
 

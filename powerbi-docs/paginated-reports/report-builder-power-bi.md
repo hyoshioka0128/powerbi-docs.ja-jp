@@ -3,18 +3,18 @@ title: Power BI レポート ビルダー
 description: Power BI Report Builder は、ページ分割されたレポートを作成するためのツールです。
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 07/08/2020
+ms.date: 03/23/2021
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
-ms.openlocfilehash: ce45260c536733dde9dcfe7c654ed4f56c58c7ea
-ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
+ms.openlocfilehash: 6897b495c48b54ed1e3736060e586077d6fa97e8
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98925751"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008215"
 ---
 # <a name="power-bi-report-builder"></a>Power BI レポート ビルダー
 
@@ -30,11 +30,22 @@ Power BI Report Builder は、Power BI サービスに発行できるページ�
 
 ![Power BI サービスにおけるページ分割されたレポート](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-##  <a name="jump-start-report-creation"></a><a name="JumpStartReptCreation"></a> レポート作成のジャンプスタート  
- 
--   **テーブル、マトリックス、またはグラフ ウィザードから開始します**。 データ ソース接続を作成し、フィールドをドラッグ アンド ドロップしてデータセット クエリを作成し、レイアウトとスタイルを選択して、レポートをカスタマイズします。  
+## <a name="develop-reports-in-the-deployment-pipeline-tool"></a>配置パイプライン ツールでレポートを開発する
+
+Power BI サービスでは、配置パイプライン ツールを使用して、ページ分割されたレポートを開発できます。 配置パイプラインを使用すると、Power BI のページ分割されたレポートを、ユーザーにリリースする前に開発およびテストできます。 このツールは、次の 3 つのステージを含むパイプラインです。
+- 開発
+- テスト
+- Production
+
+Power BI サービスで[配置パイプラインの使用を開始する](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports)方法を参照してください。
+
+## <a name="start-with-the-table-matrix-or-chart-wizard"></a>テーブル、マトリックス、またはグラフ ウィザードから開始する
+
+データ ソース接続を作成し、フィールドをドラッグ アンド ドロップしてデータセット クエリを作成し、レイアウトとスタイルを選択して、レポートをカスタマイズします。  
   
--   **マップ ウィザードを使用して開始します**。地図や幾何図形を背景として集計データを表示するレポートを作成します。 マップ データには、Transact-SQL クエリまたは Environmental Systems Research Institute, Inc.(ESRI) シェープファイルの空間データを使用できます。 Microsoft Bing マップ タイルの背景を追加することもできます。  
+## <a name="start-with-the-map-wizard"></a>マップ ウィザードから開始する
+
+地図や幾何図形を背景として集計データを表示するレポートを作成します。 マップ データには、Transact-SQL クエリまたは Environmental Systems Research Institute, Inc.(ESRI) シェープファイルの空間データを使用できます。 Microsoft Bing マップ タイルの背景を追加することもできます。  
 
 ##  <a name="design-your-report"></a><a name="DesignRept"></a> レポートをデザインする  
   

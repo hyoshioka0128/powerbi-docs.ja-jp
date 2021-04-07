@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/12/2021
-ms.openlocfilehash: d130b43c3c6ba478a74c565d5b678ed034d7d79b
-ms.sourcegitcommit: a0ef8f57ff867b38af20a851ff7c65bbc6164397
+ms.date: 03/17/2021
+ms.openlocfilehash: c0fe8fc66ce494c75ada64311c93beb4642c71b0
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103486678"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834731"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -38,13 +38,15 @@ ms.locfileid: "103486678"
         - セキュリティ更新プログラム
 
 - **Power BI Desktop (Power BI Report Server 用に最適化)**
+   - *バージョン: 2.88.2361.0 (2021 年 1 月)、リリース日: 2021 年 3 月 12 日*
+        - バグの修正
    - *バージョン:2.88.1382.0 (2021 年 1 月)、リリース日:2021 年 1 月 28 日* (新しいビルドと新しいバージョン)
         - Power BI Report Server との接続に必要な変更が含まれます (2021 年 1 月)        
    
 ## <a name="october-2020"></a>2020 年 10 月
 - **Power BI Report Server**
     - *バージョン 1.9.7709.41358 (ビルド 15.0.1104.310)、リリース日: 2021 年 3 月 9 日*
-        - セキュリティ更新プログラム 
+        - セキュリティ更新プログラム [(KB 5001285)](https://support.microsoft.com/topic/description-of-the-security-update-for-power-bi-report-server-october-2020-march-9-2021-kb5001285-d2b664c1-5622-4d07-bb92-9543f95ec4de)
     - *バージョン:1.9.7675.15620 (ビルド 15.0.1104.300)、リリース日:2021 年 1 月 8 日*
         - バグの修正
             - 文字の大文字と小文字のみが異なる 2 つ以上のデータソースを含むレポートの更新に関する問題を修正しました。
@@ -84,7 +86,7 @@ ms.locfileid: "103486678"
 ## <a name="may-2020"></a>2020 年 5 月
 - **Power BI Report Server**
     - *バージョン 1.8.7710.39564 (ビルド 15.0.1103.241)、リリース日: 2021 年 3 月 9 日*
-        - セキュリティ更新プログラム
+        - セキュリティ更新プログラム [(KB 5001284)](https://prod.support.services.microsoft.com/topic/description-of-the-security-update-for-power-bi-report-server-may-2020-march-9-2021-kb5001284-578b456e-a4de-4ceb-b4f8-61455a74ca58)
     - *バージョン:1.8.7485.35104 (ビルド 15.0.1103.234)、リリース日:2020 年 6 月 30 日*
         - バグの修正
             - アップロード後のサーバーでレポートの編集がすぐに反映されなかった、スケールアウト シナリオの問題を修正しました。

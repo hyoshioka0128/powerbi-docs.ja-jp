@@ -1,47 +1,63 @@
 ---
-title: Power BI Desktop での証明書失効の確認
-description: Power BI Desktop で、UI とレジストリで証明書を失効させる方法
+title: 証明書失効の確認、Power BI Desktop
+description: Power BI Desktop の UI とレジストリで失効した証明書を使用しているかどうかを確認する方法
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 03/10/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: 482f0f8279de9818b631ff79e7b37a215e7397bd
-ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.openlocfilehash: 7962529bec11dc05d0abceecae41b9a10effcd36
+ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99056368"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008157"
 ---
-# <a name="certificate-revocation-in-power-bi-desktop"></a>Power BI Desktop での証明書失効
+# <a name="certificate-revocation-check-power-bi-desktop"></a>証明書失効の確認、Power BI Desktop
 
-Power BI で証明書の確認を有効または無効にする方法は、2 つあります。 2020 年 11 月に、Web 接続に関するシンプルなオン/オフの証明書失効の確認が Power BI Desktop に導入されました。 これで、証明書失効の確認をよりきめ細かく制御できるようになりました。
+証明書によって、オンライン データ ソースへの接続のセキュリティが確保されます。 接続する前に、証明書が失効しているかどうかを確認できます。 Power BI では、証明書の確認を有効または無効にする次の 2 つの方法を提供しています。 
 
-## <a name="simple-certificate-revocation"></a>シンプルな証明書失効
+- Power BI Desktop の [オプション] の使用。
+- レジストリの編集。
 
-Power BI Desktop のユーザー インターフェイスで、この機能を有効または無効にすることができます。
+## <a name="revocation-check-options"></a>失効確認のオプション
 
-- **[ファイル]** メニュー > **[オプションと設定]**  >  **[オプション]** で、 **[セキュリティ]** を選択し、その後 **[証明書失効の確認を有効にします]** を選択または選択解除します。
+どちらの方法にも、可能性のある設定として次の 3 つがあります。
 
-## <a name="more-fine-grained-control"></a>よりきめ細かな制御
+- **包括的な確認**: 失効している証明書と、失効情報のない証明書を拒否します。
+- **基本的な確認**: 失効している証明書のみを拒否します。 失効情報のない証明書は許可されます。 これは、企業のプロキシ サービスを使用している一部の組織にとって重要です。
+- **[なし]** または **[無効]** : Power BI では失効情報を確認しません。 有効な証明書はすべて許可されます。
 
-3 つめのオプションを使用すると証明書失効の確認をよりきめ細かく制御することができます。 
-
-- **基本** 基本的な確認の場合、証明書によって指定されていないなど、失効状態が不明な証明書が受け入れられます。 この確認は、企業のプロキシ サーバーを使用している組織にとって重要です。 これは Power BI Desktop でチェックボックスをオンにするのと同じです。
-- **無効** Power BI Desktop でチェックボックスをオフにした場合と同じです。
-- **包括的** "*包括的*" モードの場合、失効の確認を無効または有効にすることができます。失効状態が不明な証明書は受け入れられません。 
-
-
-|証明書失効の情報の状態 | 包括的な確認 | 基本的な確認 | なし |
+|証明書の失効情報の状態 | 包括的な確認 | 基本的な確認 | なし/無効 |
 |---------|---------|---------|---------|
 |取り消し     |  ❌  | ❌  | ✔   |
 |Unknown  |  ❌    |  ✔   |    ✔  |
 |失効していない  | ✔  |    ✔ |    ✔  |
 
-シンプルな [有効] または [無効] チェックボックスは、引き続き Power BI Desktop のユーザー インターフェイスに存在しています。 よりきめ細かい制御を使用するには、次の DWORD レジストリ値を設定します: `DisableCertificateRevocationCheck`。 この値は Power BI Desktop レジストリ キーに設定します。 ご使用のオペレーティング システムに応じて、次のいずれかになります。
+## <a name="in-power-bi-desktop"></a>Power BI Desktop の場合
+
+Power BI Desktop のユーザー インターフェイスで、確認を有効または無効にすることができます。 **[ファイル]** メニュー > **[オプションと設定]**  >  **[オプション]** で、 **[セキュリティ]** を選択してから、次の 3 つのオプションのいずれかを選択します。
+
+- **包括的な確認**
+- **基本的な確認**
+- **なし**
+
+**[基本的な確認]** が既定の選択です。
+
+:::image type="content" source="media/desktop-certificate-revocation/desktop-check-certificate-revocation.png" alt-text="証明書失効確認のダイアログ ボックス":::
+
+## <a name="in-registry-settings"></a>レジストリの設定の場合
+
+証明書失効の確認は、DWORD レジストリ値 `DisableCertificateRevocationCheck` を設定して制御することもできます。 また、管理者はこの方法を使用して、組織全体の設定を制御することもできます。
+
+- **Basic**
+- **[無効]** は、Power BI Desktop での **[なし]** と同じです。
+- **包括的**
+
+Power BI Desktop のレジストリ キーで DWORD レジストリ値 `DisableCertificateRevocationCheck` を設定します。 このキーは、オペレーティング システムに応じて、次のいずれかの形式になります。
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop
@@ -57,8 +73,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop
 
 |値  |モード  |構成  |
 |---------|---------|---------|
-|0     | Basic   | 失効状態が不明な証明書が受け入れられます。 Power BI Desktop でチェックボックスをオンにするのと同じです。 |
-|1     | 無効  | すべての失効確認が無視されます。 Power BI Desktop でチェックボックスをオフにするのと同じです。  |
-|2     | 包括的  |  証明書を失効させないことが必要となります。 失効状態が不明な証明書は受け入れられません。 |
-
-このレジストリ設定を構成することで、現在提供されているよりきめ細かな制御を活用できます。
+|0     | Basic   | 失効状態が不明な証明書が受け入れられます。 Power BI Desktop での [基本的な確認] に相当します。 |
+|1     | 無効  | すべての失効確認が無視されます。 Power BI Desktop での [なし] に相当します。  |
+|2     | 包括的  |  証明書を失効させないことが必要となります。 失効状態が不明な証明書は受け入れられません。 Power BI Desktop での [包括的な確認] に相当します。 |

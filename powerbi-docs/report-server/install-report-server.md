@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/16/2020
-ms.openlocfilehash: 3347bb18306497781ab5915225db8c3e071cfa3f
-ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.date: 03/14/2021
+ms.openlocfilehash: bd71981466eb44bc74a2b6a272b738885a7a18ab
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99044105"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834455"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI レポート サーバーのインストール
 
@@ -54,6 +54,9 @@ Power BI Premium を購入した場合は、Power BI 管理者ポータルの **
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
 
 SQL Server Enterprise SA 契約がある場合は、[ボリューム ライセンス サービス センター](https://www.microsoft.com/Licensing/servicecenter/)からプロダクト キーを取得できます。
+
+ > [!IMPORTANT]
+ > スケールアウト シナリオのために Power BI Report Server を複数のサーバーにインストールしている場合は、すべてのサーバーで同じ Power BI Premium プロダクト キーまたは SQL Server Enterprise ソフトウェア アシュアランス (SA) プロダクト キーを使用する必要があります。
 
 ## <a name="install-your-report-server"></a>レポート サーバーのインストール
 
@@ -123,11 +126,11 @@ Windows サービスは、インストールの一部として作成されます
 
 URL 予約は、プレフィックス、ホスト名、ポート、および仮想ディレクトリから構成されます。
 
-| パーツ | Description |
+| パーツ | 説明 |
 | --- | --- |
 | プレフィックス |既定のプレフィックスは HTTP です。 以前に SSL (Secure Sockets Layer) 証明書をインストールした場合は、HTTPS プレフィックスを使用する URL 予約がセットアップで作成されます。 |
 | ホスト名 |既定のホスト名は、厳密なワイルドカード (+) です。 これにより、コンピューターに対して解決されるあらゆるホスト名 (`https://<computername>/reportserver`、`https://localhost/reportserver`、`https://<IPAddress>/reportserver.`) の指定のポートで、レポート サーバーが HTTP 要求を受け付けるように指定されます。 |
-| ポート |既定のポートは 80 です。 ポート 80 以外のポートを使用する場合は、ブラウザー ウィンドウで Web ポータルを開くときに、それを URL に明示的に追加する必要があります。 |
+| Port |既定のポートは 80 です。 ポート 80 以外のポートを使用する場合は、ブラウザー ウィンドウで Web ポータルを開くときに、それを URL に明示的に追加する必要があります。 |
 | 仮想ディレクトリ |既定では、仮想ディレクトリは、レポート サーバー Web サービス用に ReportServer の形式で、Web ポータル用に Reports の形式で作成されます。 レポート サーバー Web サービスの場合、既定の仮想ディレクトリは **reportserver** です。 Web ポータルの場合、既定の仮想ディレクトリは **reports** です。 |
 
 完全な URL 文字列の例は次のようになることがあります。

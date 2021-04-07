@@ -8,14 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/27/2020
+ms.date: 03/22/2021
 LocalizationGroup: Administration
-ms.openlocfilehash: ccf9cc65cc5dc18d72ced490b18683a6a1af32ff
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 04b329e9b460fdf2599ae967a4598adefa9f824c
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408713"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834419"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Power BI ワークスペースでデータ ストレージを管理する
 
@@ -35,6 +35,10 @@ ms.locfileid: "96408713"
 Premium 容量のワークスペースの場合:
 - Premium 容量あたり 100 TB の制限があります。
 - ユーザーごとの記憶域の制限はありません。
+- ワークスペースが Premium 容量に割り当てられている場合、そのワークスペース ストレージの使用量は (次のスクリーンショットのように) 0 として示されます。 
+
+  ![Premium 容量でのワークスペース ストレージの使用量](media/service-admin-manage-your-data-storage-in-power-bi/workspace-storage-usage-premium.png)
+
 
 「[Power BI 料金モデル](https://powerbi.microsoft.com/pricing)」のその他の特徴もご覧ください。
 

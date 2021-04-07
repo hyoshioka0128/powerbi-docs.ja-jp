@@ -2,24 +2,24 @@
 title: Power BI サービスのライセンスの種類別機能
 description: Power BI サービスでは、ユーザーが利用できる機能は、各自が持つユーザーごとのライセンスの種類 (無料または Pro) と、各自が操作しているコンテンツが Power BI Premium 容量に割り当てられたワークスペース内にあるかどうかに基づいて定義されます。
 author: kfollis
-ms.author: kfollis
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 03/17/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 4c1b5256a411594521dcfe030af3490cd2e4780c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a4c0eb67dc36b51f6fb9579c4e7b1678d25a46be
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414164"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724793"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Power BI サービスのライセンスの種類別機能
 
-Power BI ユーザーごとのライセンスには、無料と Pro の 2 種類があります。 ユーザーに必要なライセンスの種類は、コンテンツの格納場所とそのコンテンツとのやり取り方法によって決まります。 コンテンツを格納できる場所は、組織の[ライセンスの種類](#licenses-and-license-types)によって決まります。
+Power BI のユーザーごとのライセンスには、無料、Pro、Premium Per User の 3 種類があります。 ユーザーに必要なライセンスの種類は、コンテンツの格納場所、そのコンテンツとのやりとりの方法、そのコンテンツに Premium 機能を使用するかどうかによって決まります。 コンテンツを格納できる場所は、組織の[ライセンスの種類](#licenses-and-license-types)によって決まります。
 
 ## <a name="licenses-and-license-types"></a>ライセンスとライセンスの種類
 
@@ -33,8 +33,21 @@ Power BI ユーザーごとのライセンスには、無料と Pro の 2 種類
 | --------- | ----------- | ----------- |
 | Power BI (無料) | マイ ワークスペースのコンテンツにアクセスする | 共有されているコンテンツを使用する |
 | Power BI Pro | 他のワークスペースへのコンテンツの発行、ダッシュボードの共有、ダッシュボードとレポートのサブスクライブ、Pro ライセンスを持つユーザーとの共有を行う | 無料ライセンスを持つユーザーにコンテンツを配布する |
+| Power BI Premium Per User | 他のワークスペースへのコンテンツの発行、ダッシュボードの共有、ダッシュボードとレポートのサブスクライブ、Premium Per User ライセンスを持つユーザーとの共有を行う | 無料および Pro ライセンスを持つユーザーにコンテンツを配布する |
 
 Power BI Pro と Power BI Premium の比較については、「[Power BI の価格](https://powerbi.microsoft.com/pricing/)」の「_Power BI 機能の比較_」セクションを参照してください。
+
+>[!NOTE]
+>Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
+>* パフォーマンス
+>* ユーザーごとのライセンス。 詳細については、[Premium Per User の FAQ](/admin/service-premium-per-user-faq.md) を参照してください。
+>* より大きなスケール
+>* メトリックの改善
+>* 自動スケール
+>* 管理オーバーヘッドの削減
+>
+>Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](/admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+>
 
 ライセンスに付属する機能の詳細については、「[無料ライセンスを持つユーザーが使用可能な機能](../consumer/end-user-features.md)」と「[Power BI コンシューマーのライセンスの種類](../consumer/end-user-license.md)」を参照してください。
 
@@ -42,14 +55,3 @@ Power BI Pro と Power BI Premium の比較については、「[Power BI の価
 
 * [個人として Power BI にサインアップする](service-self-service-signup-for-power-bi.md)
 * [Power BI Desktop と Power BI サービスの比較](service-service-vs-desktop.md)
-
-
-Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
-* パフォーマンス
-* ユーザーごとのライセンス
-* より大きなスケール
-* メトリックの改善
-* 自動スケール
-* 管理オーバーヘッドの削減
-
-Power BI Premium Gen2 の詳細については、[Power BI Premium Generation 2 (プレビュー)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。

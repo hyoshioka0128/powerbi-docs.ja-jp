@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/03/2020
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 55cdbfbe0572986de455ddb05c342af9e019de42
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: eb085f9ae38f79ac007594ae227c509638c4ac47
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96402848"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104725437"
 ---
 # <a name="add-or-remove-a-gateway-data-source"></a>ゲートウェイのデータ ソースの追加または削除
 
@@ -50,7 +50,9 @@ Power BI は、多数の[オンプレミス データ ソース](power-bi-data-s
    :::image type="content" source="media/service-gateway-data-sources/basic-auth.png" alt-text="基本認証の設定。":::
 
     > [!NOTE]
-    > 認証方法として OAuth が選択されている場合、OAuth トークンの有効期限ポリシーよりも長く実行されるクエリは失敗する場合があります。
+    > 選択されている認証方法が OAuth である場合:
+    > - OAuth トークンの有効期限ポリシーより長く実行されるクエリはすべて、失敗する可能性があります。
+    > - テナントにまたがる AAD アカウントはサポートされていません。 
 
 6. **[詳細設定]** で、データ ソースの [シングル サインオン (SSO)](service-gateway-sso-overview.md) を構成できます。 
 

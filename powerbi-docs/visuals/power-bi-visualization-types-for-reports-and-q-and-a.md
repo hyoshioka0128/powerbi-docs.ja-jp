@@ -7,22 +7,22 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 03/18/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9f97db83f8793f251dc1d0d5c5b4133d7228022b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 40cc7d8d9cbefda7a93fc83d3bcab9f23ce94d4d
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418787"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724211"
 ---
 # <a name="visualization-types-in-power-bi"></a>Power BI での視覚化の種類
-## <a name="power-bi-visualizations"></a>Power BI の視覚化
-新しい視覚化が追加されます。お待ちください。
+
+この記事では、Power BI で使用可能な視覚化の一覧を示します。 新しい視覚化が追加されます。お待ちください。
 
 また、[Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) を参照してください。このサイトには、[Power BI ビジュアル](../developer/visuals/power-bi-custom-visuals.md)が追加されており、ダウンロードしてダッシュボードやレポートに使用することができます。 自分でカスタマイズする場合は、 [独自の視覚エフェクトを作成する方法を学習し、このコミュニティ サイトに追加してみてください](../developer/visuals/office-store.md)。  
 
-## <a name="list-of-visualizations-available-in-power-bi"></a>Power BI で利用可能な視覚化の一覧
+## <a name="visualizations-in-power-bi"></a>Power BI での視覚化
 これらすべての視覚化は、Power BI レポートに追加し、Q&A で指定し、ダッシュボードにピン留めできます。
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>面グラフ:基本 (階層) と積み上げ
@@ -114,6 +114,15 @@ ms.locfileid: "96418787"
 ![ArcGIS マップ](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 詳しくは、[Power BI の ArcGIS マップ](power-bi-visualizations-arcgis.md)に関するページを参照してください。
+
+### <a name="maps-azure-maps"></a>マップ: Azure Maps
+
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/azure-maps-visual-hero.png" alt-text="Power BI の Azure Maps ビジュアルのスクリーンショット。":::
+
+>[!TIP]
+>空間的な場所におけるカテゴリと数量の両方の情報を関連付けるのに使用されます。
+
+詳細については、[Power BI の Azure Maps ビジュアル](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context)に関するページを参照してください。
 
 ### <a name="maps-filled-maps-choropleth"></a>マップ:塗り分け地図 (コロプレス)
 ![塗り分け地図](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)

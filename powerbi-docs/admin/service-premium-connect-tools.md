@@ -7,19 +7,19 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 3/1/2021
+ms.date: 3/19/2021
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 69a571d93b40b0b0e886be4d5fa2c1fbc7edcca2
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: d40de3e9b9b708ef7e4a55577d449f6bcf91ab75
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842977"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104724663"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>XMLA エンドポイントを使用したデータセット接続
 
-1,500 以上の互換性レベルの Power BI Premium ワークスペースとデータセットでは、"*XMLA エンドポイント*" を使用すると、Microsoft とサードパーティのクライアント アプリケーションおよびツールからのオープン プラットフォーム接続がサポートされます。
+Power BI Premium、Premium Per User、Power BI Embedded ワークスペースでは、"*XMLA エンドポイント*" を使用して、Microsoft とサードパーティのクライアント アプリケーションおよびツールからのオープン プラットフォーム接続がサポートされます。
 
 ## <a name="whats-an-xmla-endpoint"></a>XMLA エンドポイントとは
 

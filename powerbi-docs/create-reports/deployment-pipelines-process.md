@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/04/2021
-ms.openlocfilehash: 02b3eb3a9c3b7772ba2d756382f6174a32cfe383
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.date: 03/22/2021
+ms.openlocfilehash: 5e2dcdc167aad8a3f67b2718360630309ff7cda0
+ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102194896"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104834294"
 ---
 # <a name="understand-the-deployment-process"></a>デプロイ プロセスを理解する
 
 配置プロセスを使用すると、パイプライン内のあるステージのコンテンツを別のステージに (通常は開発からテスト、テストから運用に) クローンすることができます。
 
-配置中に、Power BI は現在のステージのコンテンツをターゲットのステージにコピーします。 コピーされた項目間の接続は、コピー プロセス中は保持されます。 また、Power BI は、構成済みのデータセット ルールをターゲット ステージの更新されたコンテンツに適用します。 配置する項目の数によっては、コンテンツの配置に時間がかかることがあります。 この間、Power BI ポータルで他のページに移動できますが、ターゲット ステージのコンテンツを使用することはできません。
+配置中に、Power BI は現在のステージのコンテンツをターゲットのステージにコピーします。 コピーされた項目間の接続は、コピー プロセス中は保持されます。 Power BI ではまた、構成されている配置ルールをターゲット ステージ内の更新されたコンテンツにも適用します。 配置する項目の数によっては、コンテンツの配置に時間がかかることがあります。 この間、Power BI ポータルで他のページに移動できますが、ターゲット ステージのコンテンツを使用することはできません。
 
 ## <a name="deploying-content-to-an-empty-stage"></a>空のステージへのコンテンツの配置
 
@@ -31,15 +31,15 @@ ms.locfileid: "102194896"
 
 配置が完了したら、新しくコピーしたコンテンツを使用できるように、データセットを更新します。 データはあるステージから別のステージにコピーされないため、データセットの更新が必要です。 配置プロセス中にどの項目のプロパティがコピーされ、どの項目のプロパティがコピーされないかを理解するには、「[配置中にコピーされる項目のプロパティ](#item-properties-copied-during-deployment)」のセクションを参照してください。
 
-### <a name="creating-a-premium-capacity-workspace"></a>Premium 容量ワークスペースの作成
+### <a name="creating-a-premium-workspace"></a>Premium ワークスペースの作成
 
-配置パイプラインによって、初回の配置時に、Premium 容量のアクセス許可があるかどうかが確認されます。  
+初回の配置中に、配置パイプラインによって Premium アクセス許可があるかどうかが確認されます。  
 
-容量のアクセス許可がある場合は、配置先のステージにワークスペースのコンテンツがコピーされ、そのステージの新しいワークスペースが Premium 容量に作成されます。
+Premium アクセス許可がある場合は、ワークスペースのコンテンツが配置先のステージにコピーされ、そのステージの新しいワークスペースが Premium 容量に作成されます。
 
-容量のアクセス許可を持っていない場合、ワークスペースは作成されますが、コンテンツはコピーされません。 容量管理者にワークスペースを容量に追加するように依頼するか、容量に対する割り当てアクセス許可を要求できます。 その後、ワークスペースが容量に割り当てられたら、このワークスペースにコンテンツを配置できます。
+Premium アクセス許可がない場合は、ワークスペースが作成されますが、コンテンツはコピーされません。 容量管理者にワークスペースを容量に追加するように依頼するか、容量に対する割り当てアクセス許可を要求できます。 その後、ワークスペースが容量に割り当てられたら、このワークスペースにコンテンツを配置できます。
 
-[Premium Per User (PPU)](../admin/service-premium-per-user-faq.md) を使用している場合は、PPU に関連付けられている容量でワークスペースが自動的に作成されます。 このような場合、容量のアクセス許可は必要ありません。 ただし、PPU ユーザーによって作成されたワークスペースにアクセスできるのは、他の PPU ユーザーだけです。 また、このようなワークスペースで作成されたコンテンツにアクセスできるのは、PPU ユーザーだけです。
+[Premium Per User (PPU)](../admin/service-premium-per-user-faq.md) を使用している場合は、ワークスペースがその PPU に自動的に関連付けられます。 このような場合、Premium アクセス許可は必要ありません。 ただし、PPU ユーザーによって作成されたワークスペースにアクセスできるのは、他の PPU ユーザーだけです。 また、このようなワークスペースで作成されたコンテンツにアクセスできるのは、PPU ユーザーだけです。
 
 ### <a name="workspace-and-content-ownership"></a>ワークスペースとコンテンツの所有権
 
@@ -85,21 +85,21 @@ ms.locfileid: "102194896"
 
 * ダッシュボード
 
+* ページ分割されたレポート
+
 ### <a name="unsupported-items"></a>サポートされていない項目
 
 配置パイプラインでは、以下の項目はサポートされていません。
 
 * PBIX 由来ではないデータセット
 
-* サポートされていないデータセットに基づくレポート
-
-* [テンプレート アプリ ワークスペース](../connect-data/service-template-apps-create.md#create-the-template-workspace)
-
-* ページ分割されたレポート
+* プッシュ データセット
 
 * データフロー
 
-* プッシュ データセット
+* サポートされていないデータセットに基づくレポート
+
+* [テンプレート アプリ ワークスペース](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * ブック
 
@@ -107,9 +107,9 @@ ms.locfileid: "102194896"
 
 配置時に、以下の項目のプロパティがコピーされ、ターゲット ステージで項目のプロパティが上書きされます。
 
-* データ ソース ([データセット ルール](deployment-pipelines-get-started.md#step-4---create-dataset-rules)はサポートされています)
+* データ ソース ([配置ルール](deployment-pipelines-get-started.md#step-4---create-deployment-rules)がサポートされます)
 
-* パラメーター ([データセット ルール](deployment-pipelines-get-started.md#step-4---create-dataset-rules)はサポートされています)
+* パラメーター ([配置ルール](deployment-pipelines-get-started.md#step-4---create-deployment-rules)がサポートされます)
 
 * レポート ビジュアル
 
@@ -120,6 +120,13 @@ ms.locfileid: "102194896"
 * モデルのメタデータ
 
 * 項目のリレーションシップ
+
+[秘密度ラベル](../admin/service-security-sensitivity-label-overview.md)は、下に示されている条件のいずれかが満たされた場合に "*のみ*" コピーされます。 これらの条件が満たされていない場合、配置中に秘密度ラベルはコピーされません。
+* 新しい項目が配置される。
+
+* 項目が空のステージに配置される。
+
+* ソース項目には保護付きのラベルがあるが、ターゲット項目にはない。 このような場合は、ターゲットの秘密度ラベルのオーバーライドへの同意を求めるポップアップ ウィンドウが表示されます。
 
 ### <a name="item-properties-that-are-not-copied"></a>コピーされない項目のプロパティ
 
@@ -280,7 +287,7 @@ ms.locfileid: "102194896"
 
 * ステージを比較する
 
-* レポートとダッシュボードを配置する
+* レポート、ダッシュボード、ページ分割されたレポートを配置する
 
 * ワークスペースを削除する
 
@@ -309,8 +316,6 @@ ms.locfileid: "102194896"
 
 * ワークスペースは、 [Premium 容量](../admin/service-premium-what-is.md)に存在する必要があります。
 
-* Power BI の[秘密度ラベル](../admin/service-security-sensitivity-label-overview.md)が付いているレポートやダッシュボードなどの Power BI 項目は、配置できません。
-
 * 1 回の配置で配置できる Power BI 項目の最大数は、300 個です。
 
 * 配置後の .PBIX ファイルのダウンロードはサポートされていません。
@@ -327,7 +332,7 @@ ms.locfileid: "102194896"
 
 * デプロイ後に (デプロイされているステージから) データセットをダウンロードすることはサポートされていません。
 
-* データセット ルールの制限事項の一覧については、「[データセット ルールの制限事項](deployment-pipelines-get-started.md#dataset-rule-limitations)」を参照してください。
+* 配置ルールの制限事項の一覧については、「[配置ルールの制限事項](deployment-pipelines-get-started.md#deployment-rules-limitations)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

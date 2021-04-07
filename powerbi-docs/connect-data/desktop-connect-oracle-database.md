@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5fa22e987878646b78295c2280aad56eb8672a97
-ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
+ms.openlocfilehash: 88876d35c148578c4b4b46211405eff88cda36ce
+ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103602408"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104723912"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Power BI Desktop を使用して Oracle データベースに接続する
 Power BI Desktop を使用して Oracle データベースに接続するには、Power BI Desktop を実行しているコンピューター上に適切な Oracle クライアント ソフトウェアをインストールする必要があります。 使用する Oracle クライアント ソフトウェアは、インストールした Power BI Desktop のバージョンによって異なります。32 ビットまたは 64 ビット。 また、お使いの Oracle サーバーのバージョンにもよります。
@@ -98,11 +98,9 @@ Power BI Desktop、オンプレミス データ ゲートウェイ、または P
 
 Oracle サーバーのバージョンと Oracle Data Access クライアントのバージョン間で互換性の問題が発生する場合もあります。 一部の組み合わせでは互換性がないため、通常はこれらのバージョンを合わせる必要があります。 たとえば、ODAC 12.x では、Oracle Server バージョン 9 をサポートしていません。
 
-Microsoft Store から Power BI Desktop をダウンロードした場合、Oracle ドライバーの問題により Oracle データベースに接続できない可能性があります。 この問題が発生した場合は、次のエラー メッセージが返されます: "*オブジェクト参照が設定されていません*"。 この問題に対処するには、次のいずれかの手順を行ってください。
+Microsoft Store から Power BI Desktop をダウンロードした場合、Oracle ドライバーの問題により Oracle データベースに接続できない可能性があります。 この問題が発生した場合は、次のエラー メッセージが返されます: "*オブジェクト参照が設定されていません*"。 これは、Windows UWP アプリでの Oracle ドライバーの動作に関する問題です。 この問題に対処するには、次の操作を行う必要があります。
 
 * Microsoft Store ではなく、[ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=58494)から Power BI Desktop をダウンロードします。
-
-* Microsoft Store から取得したバージョンを使用する場合は、ご利用のローカル コンピューター上で、_12.X.X\client_X_ から _12.X.X\client_X\bin_ に oraons.dll をコピーします。_X_ はバージョンまたはディレクトリ番号を表します。
 
 Oracle データベースへの接続時に Power BI Gateway に "*オブジェクト参照が設定されていません*" というエラー メッセージが表示される場合は、「[データ ソースの管理 - Oracle](service-gateway-onprem-manage-oracle.md)」に記載されている手順に従ってください。
 

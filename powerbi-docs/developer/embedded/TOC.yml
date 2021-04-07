@@ -24,6 +24,8 @@
           href: embed-paginated-reports-organization.md
         - name: 国内クラウド向けにコンテンツを埋め込む
           href: embed-sample-for-customers-national-clouds.md
+        - name: レポートを組織向けのアプリに埋め込む
+          href: embed-organization-app.md
     - name: 概念
       items:
         - name: Power BI Embedded の分析の容量と SKU
