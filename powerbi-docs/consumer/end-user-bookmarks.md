@@ -9,12 +9,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 12/03/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7aa199547f6cad0b7d4dbfc6b75e9d9e25b2b153
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: bcb6137b757b71e1e236605216dcd27e28121981
+ms.sourcegitcommit: 7bd874ab2d7c4385f52cfdbb587fc463ff9d3872
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578339"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105631574"
 ---
 # <a name="what-are-bookmarks"></a>ブックマークとは?
 
@@ -63,7 +63,7 @@ ms.locfileid: "96578339"
 
 ### <a name="personal-bookmarks"></a>個人用ブックマーク
 
-レポートを表示できる場合は、個人用ブックマークを追加することもできます。  ブックマークを作成すると、次の要素がブックマークと共に保存されます。
+レポートを表示できる場合は、個人用ブックマークを追加することもできます。 レポートあたりの個人用ブックマークの最大数は 20 個です。 ブックマークを作成すると、次の要素がブックマークと共に保存されます。
 
 * 現在のページ
 * フィルター

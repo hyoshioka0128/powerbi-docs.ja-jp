@@ -1,25 +1,25 @@
 ---
 title: Power BI での XMLA エンドポイント接続のトラブルシューティング
-description: Power BI Premium で XMLA エンドポイントを使用した接続のトラブルシューティングを行う方法について説明します。
+description: XMLA エンドポイントを使用した接続のトラブルシューティングを行う方法について説明します。
 author: Minewiskan
 ms.author: owend
 ms.reviewer: owend
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/02/2021
+ms.date: 03/24/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: db08a2845e8d4afeccbc733e2cefb6e4c1bdbcd9
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: 6f358711f0c582e0e11db1444659b4551ebee6dd
+ms.sourcegitcommit: 438eea031f1ed9e9dee510520e5c1039920c3a49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101842876"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105099108"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>XMLA エンドポイント接続のトラブルシューティング
 
-Power BI Premium の XMLA エンドポイントは、ネイティブの Analysis Services 通信プロトコルを使用して、Power BI データセットにアクセスします。 このため、XMLA エンドポイントのトラブルシューティングは、一般的な Analysis Services 接続のトラブルシューティングとほとんど同じです。 ただし、Power BI 固有の依存関係に関するいくつかの違いがあります。
+Power BI の XMLA エンドポイントは、ネイティブの Analysis Services 通信プロトコルを使用して、Power BI データセットにアクセスします。 このため、XMLA エンドポイントのトラブルシューティングは、一般的な Analysis Services 接続のトラブルシューティングとほとんど同じです。 ただし、Power BI 固有の依存関係に関するいくつかの違いがあります。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -27,7 +27,7 @@ XMLA エンドポイント シナリオのトラブルシューティングを�
 
 ## <a name="enabling-the-xmla-endpoint"></a>XMLA エンドポイントを有効にする
 
-XMLA エンドポイントは、Power BI Premium と Power BI Embedded どちらの容量でも有効にすることができます。 メモリが 2.5 GB のみの A1 容量など、容量が少ない場合には、XMLA エンドポイントを **[読み取り/書き込み]** に設定しようとして、 **[適用]** を選択したとき、容量設定でエラーが発生することがあります。 エラーには、"There was an issue with your workload settings. Try again in a little while." (ワークロードの設定で問題が発生しました。しばらくしてからもう一度お試しください。) と表示されます。
+XMLA エンドポイントは、Power BI Premium、Premium Per User、Power BI Embedded のいずれの容量でも有効にすることができます。 メモリが 2.5 GB のみの A1 容量など、容量が少ない場合には、XMLA エンドポイントを **[読み取り/書き込み]** に設定しようとして、 **[適用]** を選択したとき、容量設定でエラーが発生することがあります。 エラーには、"There was an issue with your workload settings. Try again in a little while." (ワークロードの設定で問題が発生しました。しばらくしてからもう一度お試しください。) と表示されます。
 
 次の 2 つの方法を試すことができます。
 
@@ -67,7 +67,7 @@ Azure Active Directory (Azure AD) 企業間 (B2B) は Power BI でサポート�
 
 ## <a name="deploying-a-dataset"></a>データセットを配置する
 
-Visual Studio (SSDT) での表形式モデル プロジェクトの Power BI Premium ワークスペースへの配置は、Azure Analysis Services への配置とほとんど同じです。 ただし、Power BI Premium ワークスペースに配置する際には、追加の考慮事項がいくつかあります。 「XMLA エンドポイントを使用したデータセット接続」の記事で「[Visual Studio からモデル プロジェクトを配置する (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt)」のセクションを確認してください。
+Azure Analysis Services のサーバー リソースへの配置とほとんど同じように、Visual Studio (SSDT) の表形式モデル プロジェクトを、Premium 容量に割り当てられているワークスペースに配置できます。 ただし、そこに配置する際には、追加の考慮事項がいくつかあります。 「XMLA エンドポイントを使用したデータセット接続」の記事で「[Visual Studio からモデル プロジェクトを配置する (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt)」のセクションを確認してください。
 
 ### <a name="deploying-a-new-model"></a>新しいモデルを配置する
 
@@ -77,13 +77,13 @@ Power BI が新しいデータセットをデータ ソースの資格情報に�
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/deploy-refresh-error.png" alt-text="モデル配置エラー":::
 
-処理のエラーを回避するには、次の図のように、 **[配置オプション]**  >  **[処理オプション]** を **[処理しない]** に設定します。 そうすると、Visual Studio はメタデータのみを配置します。 次に、データ ソースの資格情報を構成し、Power BI ユーザー インターフェイスでデータセットについて **[今すぐ更新]** をクリックします。 処理の問題のトラブルシューティングの詳細については、この記事の後半の「[データセットを更新する](#refreshing-a-dataset)」のセクションを参照してください。
+処理のエラーを回避するには、次の図のように、 **[配置オプション]**  >  **[処理オプション]** を **[処理しない]** に設定します。 そうすると、Visual Studio はメタデータのみを配置します。 次に、データ ソースの資格情報を構成し、Power BI ユーザー インターフェイスでデータセットについて **[今すぐ更新]** をクリックします。
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="[処理しない] オプション":::
 
 ### <a name="new-project-from-an-existing-dataset"></a>既存のデータセットから新しいプロジェクト
 
-Power BI Premium ワークスペースの既存のデータセットからメタデータをインポートして、Visual Studio の新しい表形式プロジェクトを作成することは、サポートされていません。 ただし、SQL Server Management Studio を使用してデータセットに接続し、メタデータをスクリプト化し、他の表形式プロジェクトで再利用することはできます。
+既存のデータセットからメタデータをインポートして、Visual Studio の新しい表形式プロジェクトを作成することは、サポートされていません。 ただし、SQL Server Management Studio を使用してデータセットに接続し、メタデータをスクリプト化し、他の表形式プロジェクトで再利用することはできます。
 
 ## <a name="migrating-a-dataset-to-power-bi"></a>データセットを Power BI に移行する
 
@@ -111,18 +111,13 @@ Power BI Premium ワークスペースの既存のデータセットからメタ
 
 複数の種類のデータ ソースがあるようにパーティション ソースにも複数の種類があり、表形式モデルに組み込んでデータをテーブルにインポートできます。 具体的には、パーティションは、クエリ パーティション ソースまたは M パーティション ソースを使用できます。 これらのパーティション ソースの種類は、プロバイダーのデータ ソースまたは構造化されたデータ ソースを参照できます。 Azure Analysis Services の表形式モデルでは、これらのさまざまなデータ ソースとパーティションの種類の相互参照がサポートされていますが、Power BI ではより厳密なリレーションシップが適用されます。 クエリ パーティション ソースはプロバイダー データ ソースを参照し、M パーティション ソースは構造化データ ソースを参照する必要があります。 その他の組み合わせは Power BI ではサポートされません。 相互参照データセットを移行する場合にサポートされている構成を次の表で説明します。  
 
-|データ ソースの   |パーティション ソース   |コメント   |XMLA エンドポイントを使用する Power BI Premium でのサポート   |
+|データ ソースの   |パーティション ソース   |コメント   |XMLA エンドポイントでのサポート   |
 |---------|---------|---------|---------|
 |プロバイダー データ ソース      |   クエリ パーティション ソース      |   AS エンジンは、カートリッジベースの接続スタックを使用してデータ ソースにアクセスします。       |     はい     |
 |プロバイダー データ ソース      |   M パーティション ソース       |   AS エンジンは、プロバイダー データ ソースを一般的な構造化データ ソースに変換し、マッシュアップ エンジンを使用してデータをインポートします。       |    いいえ     |
 |構造化データ ソース      |     クエリ パーティション ソース     |    AS エンジンは、パーティション ソースに対するネイティブのクエリを M 式にラップしてから、マッシュアップ エンジンを使用してデータをインポートします。      |    いいえ     |
 |構造化データ ソース      |    M パーティション ソース      |     AS エンジンは、マッシュアップ エンジンを使用してデータをインポートします。     |   はい      |
 
-## <a name="refreshing-a-dataset"></a>データセットを更新する
-
-XMLA エンドポイントを使用すると、表形式モデルおよび Power BI Desktop で作成されたデータセットに対して更新操作を実行できます。 後者をサポートするには、[Enhanced storage format]\(拡張ストレージ形式\)設定を必ず指定してください。 この設定は、XMLA エンドポイントを使用して、処理またはその他の読み取り/書き込み操作を実行する場合に必要です。 この設定は、Power BI Desktop のプレビュー機能の中にあります。 設定が完了したら、Power BI Premium ワークスペースに PBIX ソリューションを発行します。  
-
-拡張メタデータを含まないモデルに対して XMLA エンドポイントを使用して更新を実行すると、Power BI によって次のエラーが返されます。"この操作は、Power BI Premium でプロパティ 'DefaultPowerBIDataSourceVersion' が 'PowerBI_V3' に設定されているモデルでのみサポートされています。"
 
 ### <a name="data-sources-and-impersonation"></a>データ ソースと権限の借用
 
@@ -138,7 +133,7 @@ Power BI で、スケジュールされた更新またはオンデマンドの�
 
 ### <a name="overrides-in-refresh-tmsl-command"></a>Refresh TMSL コマンドでのオーバーライド
 
-[Refresh コマンド (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) でのオーバーライドを使用すると、ユーザーは更新操作のために別のパーティション クエリ定義またはデータ ソース定義を選択できます。 現時点では、Power BI Premium では **オーバーライドはサポートされていません**。 エラー "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." (不一致バインドは Power BI Premium では許可されていません。詳細については、製品ドキュメントの「XMLA の読み取りおよび書き込みのサポート」を参照してください。) が 返されます。
+[Refresh コマンド (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) でのオーバーライドを使用すると、ユーザーは更新操作のために別のパーティション クエリ定義またはデータ ソース定義を選択できます。 現在、**オーバーライドはサポートされていません**。 エラー "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." (不一致バインドは Power BI Premium では許可されていません。詳細については、製品ドキュメントの「XMLA の読み取りおよび書き込みのサポート」を参照してください。) が 返されます。
 
 ## <a name="errors-in-ssms---premium-gen-2"></a>SSMS のエラー - Premium Gen 2
 
@@ -216,7 +211,7 @@ Analysis Services コネクタを使用し、ライブ接続されたデータ�
 
 ## <a name="workspaceserver-alias"></a>ワークスペースまたはサーバーのエイリアス
 
-Azure Analysis Services とは異なり、Power BI Premium ワークスペースではサーバー名の [エイリアスは](/azure/analysis-services/analysis-services-server-alias)は **サポートされていません**。 
+Azure Analysis Services とは異なり、Premium ワークスペースではサーバー名の [エイリアス](/azure/analysis-services/analysis-services-server-alias)**はサポートされていません**。
 
 ## <a name="dataset-refresh-through-the-xmla-endpoint"></a>XMLA エンドポイントを介したデータセットの更新
 

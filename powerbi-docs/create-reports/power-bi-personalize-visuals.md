@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 11/13/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 453fdcf91829d0877adf10e48d0a1ac9236340b3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9e75b5d24b0a5c58af7eb8954a97c0064161f0c4
+ms.sourcegitcommit: 7bd874ab2d7c4385f52cfdbb587fc463ff9d3872
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418028"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105631643"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>ユーザーがレポート内のビジュアルをカスタマイズできるようにする
 
@@ -142,6 +142,7 @@ Power BI Desktop でこの機能を有効にするには、 **[ファイル]**  
 現在、この機能には注意すべきいくつかの制限事項があります。
 
 - Web に公開ではこの機能はサポートされていません。
+- PowerPoint および PDF へのエクスポートでは、パーソナライズされたビジュアルはキャプチャされません。
 - ユーザー探索は自動的に保持されません。 変更をキャプチャするには、個人用ブックマークとしてビューを保存する必要があります。
 - この機能は、iOS と Android タブレット用の Power BI モバイルアプリ、および Power BI Windows アプリでサポートされています。スマートフォン用の Power BI モバイル アプリではサポートされていません。 ただし、Power BI サービスの使用中に個人用ブックマークに保存した視覚エフェクトの変更は、すべての Power BI モバイル アプリに適用されます。
 

@@ -3,18 +3,18 @@ title: 異常検出のチュートリアル
 description: チュートリアル:Power BI で異常を検出します
 author: aphilip94
 ms.author: anphil
-ms.reviewer: aphilip94
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/10/2020
+ms.date: 03/25/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fdd93e0839f9eb0dd99586fb5ddcd07000de0dd7
-ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
+ms.openlocfilehash: d383ae4ebd606e3472b10302b60c5e40dc84d27e
+ms.sourcegitcommit: 7bd874ab2d7c4385f52cfdbb587fc463ff9d3872
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191914"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105631597"
 ---
 # <a name="anomaly-detection-preview"></a>異常検出 (プレビュー)
 
@@ -60,3 +60,6 @@ ms.locfileid: "98191914"
 - SAP データ ソースに対する直接クエリ、Power BI Report Server、Azure Analysis Services と SQL Server Analysis Services へのライブ接続は、サポートされていません。
 - 異常説明は、[値の表示方法] オプションでは機能しません。
 - 階層内の次のレベルへのドリルダウンは、サポートされていません。
+
+## <a name="next-steps"></a>次のステップ
+異常検出を実行するアルゴリズムの詳細については、[Azure Anomaly Detector の SR-CNN アルゴリズムに関する Tony Xing の投稿](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798)を参照してください
