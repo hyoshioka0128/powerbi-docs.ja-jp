@@ -5,18 +5,18 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 12/30/2020
+ms.date: 04/02/2021
 ms.custom: include file
-ms.openlocfilehash: 9e6701d33e55679d9a95546acb7d0082d840fde2
-ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+ms.openlocfilehash: 40e2a1969548b8ff196ee497004901815da81ae7
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "102533502"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229949"
 ---
 Power BI の独自の視覚化の開発を始める前に、このセクションに記載されているすべてのものがあることを確認してください。
 
-* **Power BI Pro** アカウントが必要です。 ない場合は、[無料試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してください。
+* **Power BI Pro** または **Premium Per User (PPU)** のアカウントが必要です。 ない場合は、[無料試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してください。
 
 * [Visual Studio Code (VS Code)](https://www.visualstudio.com/)。 VS Code は、JavaScript と TypeScript のアプリケーションを開発するための理想的な統合開発環境 (IDE) です。
 

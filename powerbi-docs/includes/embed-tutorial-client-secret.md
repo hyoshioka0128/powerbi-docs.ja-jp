@@ -7,12 +7,12 @@ ms.author: kesharab
 ms.topic: include
 ms.date: 12/09/2020
 ms.custom: include file
-ms.openlocfilehash: 875243aa890b80d21a73b20dec291329d256ba21
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.openlocfilehash: e1ccc592d7480befe6fb8c8b18b8b8c649312dfa
+ms.sourcegitcommit: 4a0ad7612281c187892912b1bfe8102a9fd23de7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99494615"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106450537"
 ---
 クライアント シークレットを取得するには、これらの手順に従います。
 
@@ -29,3 +29,6 @@ ms.locfileid: "99494615"
 6. **[クライアント シークレットの追加]** ポップアップ ウィンドウで、アプリケーション シークレットの説明を入力し、アプリケーション シークレットの有効期限を選択し、 **[追加]** を選択します。
 
 7. **[クライアント シークレット]** セクションで、新しく作成されたアプリケーション シークレットの **[値]** 列にある文字列をコピーします。 そのクライアント シークレットの値が "*クライアント ID*" です。
+
+>[!NOTE]
+>クライアント シークレットの値が最初に表示されときに、必ずそれをコピーしてください。 このページから移動すると、クライアント シークレットは表示されなくなり、その値を取得できなくなります。
