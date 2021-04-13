@@ -13,257 +13,251 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 02/03/2021
-  ms.openlocfilehash: 3324f631496a7ecd35ecf03210b508821f7b952d
-  ms.sourcegitcommit: 0eaddc9b25535ae806023f4aa710b03fd344d1fa
-  ms.translationtype: HT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/09/2021
-  ms.locfileid: "102490016"
 highlightedContent:
   items:
-  - title: Power BI Desktop の概要
-    itemType: get-started
-    url: fundamentals/desktop-getting-started.md
-  - title: Premium Gen2 での自動スケーリング
-    itemType: concept
-    url: admin/service-premium-auto-scale.md
-  - title: Power BI Embedded Gen2 (プレビュー)
-    itemType: overview
-    url: developer/embedded/power-bi-embedded-generation-2.md
-  - title: React を使用して Power BI 視覚エフェクトを作成する
-    itemType: tutorial
-    url: developer/visuals/create-react-visual.md
-  - title: Power BI アプリを Microsoft Teams に追加する
-    itemType: how-to-guide
-    url: collaborate-share/service-microsoft-teams-app.md
-  - title: Power BI 埋め込み分析のクライアント API
-    itemType: overview
-    url: /javascript/api/overview/powerbi/
-  - title: データセット ハブを使用したデータセットの検出 (プレビュー)
-    itemType: concept
-    url: connect-data/service-datasets-hub.md
-  - title: Microsoft Learn の Power BI
-    itemType: learn
-    url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+    - title: Power BI Desktop の概要
+      itemType: get-started
+      url: fundamentals/desktop-getting-started.md
+    - title: Premium Gen2 での自動スケーリング
+      itemType: concept
+      url: admin/service-premium-auto-scale.md
+    - title: Power BI Embedded Gen2 (プレビュー)
+      itemType: overview
+      url: developer/embedded/power-bi-embedded-generation-2.md
+    - title: React を使用して Power BI 視覚エフェクトを作成する
+      itemType: tutorial
+      url: developer/visuals/create-react-visual.md
+    - title: Power BI アプリを Microsoft Teams に追加する
+      itemType: how-to-guide
+      url: collaborate-share/service-microsoft-teams-app.md
+    - title: Power BI 埋め込み分析のクライアント API
+      itemType: overview
+      url: /javascript/api/overview/powerbi/
+    - title: データセット ハブを使用したデータセットの検出 (プレビュー)
+      itemType: concept
+      url: connect-data/service-datasets-hub.md
+    - title: Microsoft Learn の Power BI
+      itemType: learn
+      url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 conceptualContent:
   items:
-  - title: Power BI では、次のことが行われます。作業の開始
-    links:
-    - url: fundamentals/power-bi-overview.md
-      itemType: overview
-      text: Power BI とは?
-    - url: fundamentals/power-bi-overview.md
-      itemType: overview
-      text: Power BI サービスとは何ですか?
-    - url: fundamentals/service-self-service-signup-for-power-bi.md
-      itemType: overview
-      text: Power BI サービスにサインアップする
-    footerLink:
-      url: fundamentals/index.yml
-      text: 詳細情報
-  - title: 利用者向けの Power BI
-    links:
-    - url: consumer/end-user-consumer.md
-      itemType: get-started
-      text: Power BI のコンシューマーかどうかの確認
-    - url: consumer/end-user-experience.md
-      itemType: get-started
-      text: Power BI サービス内の移動
-    - url: consumer/end-user-dashboards.md
-      itemType: concept
-      text: ダッシュボードとは
-    footerLink:
-      url: consumer/index.yml
-      text: 詳細情報
-  - title: Power BI の管理
-    links:
-    - url: admin/service-admin-administering-power-bi-in-your-organization.md
-      itemType: overview
-      text: Power BI 管理とは
-    - url: admin/service-admin-licensing-organization.md
-      itemType: concept
-      text: 組織でのライセンス
-    - url: admin/service-premium-what-is.md
-      itemType: concept
-      text: Power BI Premium とは
-    footerLink:
-      url: admin/index.yml
-      text: 詳細情報
-  - title: Power BI での開発
-    links:
-    - url: developer/embedded/index.yml
-      itemType: overview
-      text: 埋め込み分析
-    - url: developer/visuals/index.yml
-      itemType: overview
-      text: Power BI ビジュアル
-    - url: developer/automation/index.yml
-      itemType: overview
-      text: オートメーション
-    footerLink:
-      url: developer/index.yml
-      text: 詳細情報
-  - title: データに接続する
-    links:
-    - url: connect-data/desktop-quickstart-connect-to-data.md
-      itemType: tutorial
-      text: データに接続する
-    - url: connect-data/service-gateway-onprem.md
-      itemType: concept
-      text: オンプレミス データ ゲートウェイ
-    - url: connect-data/service-datasets-hub.md
-      itemType: concept
-      text: データセット ハブでデータを検出する
-    footerLink:
-      url: connect-data/index.yml
-      text: 詳細情報
-  - title: データの変換と整形
-    links:
-    - url: transform-model/desktop-query-overview.md
-      itemType: overview
-      text: クエリ エディターの概要
-    - url: transform-model/desktop-common-query-tasks.md
-      itemType: concept
-      text: 一般的なクエリ タスク
-    - url: connect-data/desktop-shape-and-combine-data.md
-      itemType: tutorial
-      text: データの整形と結合
-    footerLink:
-      url: transform-model/index.yml
-      text: 詳細情報
-  - title: モデルのデータ
-    links:
-    - url: create-reports/desktop-add-custom-column.md
-      itemType: how-to-guide
-      text: カスタム列を追加する
-    - url: transform-model/desktop-tutorial-create-calculated-columns.md
-      itemType: tutorial
-      text: 計算列の作成
-    - url: transform-model/desktop-create-and-manage-relationships.md
-      itemType: how-to-guide
-      text: リレーションシップの作成と管理
-    footerLink:
-      url: transform-model/index.yml
-      text: 詳細情報
-  - title: レポートとダッシュボードの作成
-    links:
-    - url: create-reports/sample-covid-19-us.md
-      itemType: sample
-      text: 米国のデータを含む COVID-19 のレポートを作成する
-    - url: paginated-reports/paginated-reports-report-builder-power-bi.md
-      itemType: concept
-      text: ページ分割されたレポートとは
-    - url: create-reports/service-dashboard-create.md
-      itemType: how-to-guide
-      text: ダッシュボードを作成する
-    footerLink:
-      url: create-reports/index.yml
-      text: 詳細情報
-  - title: コラボレーションと共有
-    links:
-    - url: collaborate-share/service-share-dashboards.md
-      itemType: concept
-      text: ダッシュボードとレポートを共有する
-    - url: collaborate-share/service-create-the-new-workspaces.md
-      itemType: how-to-guide
-      text: 新しいワークスペースを作成する
-    - url: collaborate-share/service-collaborate-microsoft-teams.md
-      itemType: concept
-      text: Microsoft Teams で共同作業する
-    footerLink:
-      url: collaborate-share/index.yml
-      text: 詳細情報
-  - title: 製品の統合
-    links:
-    - url: connect-data/service-azure-and-power-bi.md
-      itemType: concept
-      text: Azure と Power BI
-    - url: collaborate-share/service-analyze-in-excel.md
-      itemType: concept
-      text: Excel で分析
-    - url: collaborate-share/service-automate-power-bi-report-export.md
-      itemType: concept
-      text: Power Automate でエクスポートしてメールで送信する
-    footerLink:
-      url: collaborate-share/index.yml
-      text: 詳細情報
-  - title: モバイル アプリの Power BI
-    links:
-    - url: consumer/mobile/mobile-apps-for-mobile-devices.md
-      itemType: get-started
-      text: モバイル アプリとは
-    - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
-      itemType: quickstart
-      text: ダッシュボードとレポートの探索
-    - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      itemType: how-to-guide
-      text: オンプレミスのレポートの表示
-    footerLink:
-      url: consumer/mobile/index.yml
-      text: 詳細情報
-  - title: エンタープライズ
-    links:
-    - url: admin/service-premium-what-is.md
-      itemType: overview
-      text: Power BI Premium とは
-    - url: admin/service-admin-power-bi-security.md
-      itemType: concept
-      text: セキュリティ
-    - url: admin/service-security-data-protection-overview.md
-      itemType: concept
-      text: データ保護
-    footerLink:
-      url: admin/index.yml
-      text: 詳細情報
-  - title: ベスト プラクティスのガイダンス
-    links:
-    - url: guidance/overview.md
-      itemType: overview
-      text: ガイダンスの概要
-    - url: guidance/star-schema.md
-      itemType: concept
-      text: スター スキーマ
-    - url: guidance/import-modeling-data-reduction.md
-      itemType: concept
-      text: データ モデル サイズの縮小
-    footerLink:
-      url: guidance/index.yml
-      text: 詳細情報
-  - title: ラーニング カタログ
-    links:
-    - url: learning-catalog/learning-catalog-bdm.md
-      itemType: learn
-      text: ビジネスの意思決定者
-    - url: /learn/paths/dax-power-bi/
-      itemType: learn
-      text: DAX の使用を開始する
-    - url: learning-catalog/learning-catalog-solution-architect.md
-      itemType: learn
-      text: ソリューション アーキテクト
-    footerLink:
-      url: learning-catalog/index.yml
-      text: 詳細情報
+    - title: Power BI では、次のことが行われます。作業の開始
+      links:
+        - url: fundamentals/power-bi-overview.md
+          itemType: overview
+          text: Power BI とは?
+        - url: fundamentals/power-bi-overview.md
+          itemType: overview
+          text: Power BI サービスとは何ですか?
+        - url: fundamentals/service-self-service-signup-for-power-bi.md
+          itemType: overview
+          text: Power BI サービスにサインアップする
+      footerLink:
+        url: fundamentals/index.yml
+        text: 詳細情報
+    - title: '"ビジネス ユーザー" 向けの Power BI'
+      links:
+        - url: consumer/end-user-consumer.md
+          itemType: get-started
+          text: Power BI "ビジネス ユーザー" とは
+        - url: consumer/end-user-experience.md
+          itemType: get-started
+          text: Power BI サービス内の移動
+        - url: consumer/end-user-dashboards.md
+          itemType: concept
+          text: ダッシュボードとは
+      footerLink:
+        url: consumer/index.yml
+        text: 詳細情報
+    - title: Power BI の管理
+      links:
+        - url: admin/service-admin-administering-power-bi-in-your-organization.md
+          itemType: overview
+          text: Power BI 管理とは
+        - url: admin/service-admin-licensing-organization.md
+          itemType: concept
+          text: 組織でのライセンス
+        - url: admin/service-premium-what-is.md
+          itemType: concept
+          text: Power BI Premium とは
+      footerLink:
+        url: admin/index.yml
+        text: 詳細情報
+    - title: Power BI での開発
+      links:
+        - url: developer/embedded/index.yml
+          itemType: overview
+          text: 埋め込み分析
+        - url: developer/visuals/index.yml
+          itemType: overview
+          text: Power BI ビジュアル
+        - url: developer/automation/index.yml
+          itemType: overview
+          text: オートメーション
+      footerLink:
+        url: developer/index.yml
+        text: 詳細情報
+    - title: データに接続する
+      links:
+        - url: connect-data/desktop-quickstart-connect-to-data.md
+          itemType: tutorial
+          text: データに接続する
+        - url: connect-data/service-gateway-onprem.md
+          itemType: concept
+          text: オンプレミス データ ゲートウェイ
+        - url: connect-data/service-datasets-hub.md
+          itemType: concept
+          text: データセット ハブでデータを検出する
+      footerLink:
+        url: connect-data/index.yml
+        text: 詳細情報
+    - title: データの変換と整形
+      links:
+        - url: transform-model/desktop-query-overview.md
+          itemType: overview
+          text: クエリ エディターの概要
+        - url: transform-model/desktop-common-query-tasks.md
+          itemType: concept
+          text: 一般的なクエリ タスク
+        - url: connect-data/desktop-shape-and-combine-data.md
+          itemType: tutorial
+          text: データの整形と結合
+      footerLink:
+        url: transform-model/index.yml
+        text: 詳細情報
+    - title: モデルのデータ
+      links:
+        - url: create-reports/desktop-add-custom-column.md
+          itemType: how-to-guide
+          text: カスタム列を追加する
+        - url: transform-model/desktop-tutorial-create-calculated-columns.md
+          itemType: tutorial
+          text: 計算列の作成
+        - url: transform-model/desktop-create-and-manage-relationships.md
+          itemType: how-to-guide
+          text: リレーションシップの作成と管理
+      footerLink:
+        url: transform-model/index.yml
+        text: 詳細情報
+    - title: レポートとダッシュボードの作成
+      links:
+        - url: create-reports/sample-covid-19-us.md
+          itemType: sample
+          text: 米国のデータを含む COVID-19 のレポートを作成する
+        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
+          itemType: concept
+          text: ページ分割されたレポートとは
+        - url: create-reports/service-dashboard-create.md
+          itemType: how-to-guide
+          text: ダッシュボードを作成する
+      footerLink:
+        url: create-reports/index.yml
+        text: 詳細情報
+    - title: コラボレーションと共有
+      links:
+        - url: collaborate-share/service-share-dashboards.md
+          itemType: concept
+          text: ダッシュボードとレポートを共有する
+        - url: collaborate-share/service-create-the-new-workspaces.md
+          itemType: how-to-guide
+          text: 新しいワークスペースを作成する
+        - url: collaborate-share/service-collaborate-microsoft-teams.md
+          itemType: concept
+          text: Microsoft Teams で共同作業する
+      footerLink:
+        url: collaborate-share/index.yml
+        text: 詳細情報
+    - title: 製品の統合
+      links:
+        - url: connect-data/service-azure-and-power-bi.md
+          itemType: concept
+          text: Azure と Power BI
+        - url: collaborate-share/service-analyze-in-excel.md
+          itemType: concept
+          text: Excel で分析
+        - url: collaborate-share/service-automate-power-bi-report-export.md
+          itemType: concept
+          text: Power Automate でエクスポートしてメールで送信する
+      footerLink:
+        url: collaborate-share/index.yml
+        text: 詳細情報
+    - title: モバイル アプリの Power BI
+      links:
+        - url: consumer/mobile/mobile-apps-for-mobile-devices.md
+          itemType: get-started
+          text: モバイル アプリとは
+        - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
+          itemType: quickstart
+          text: ダッシュボードとレポートの探索
+        - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+          itemType: how-to-guide
+          text: オンプレミスのレポートの表示
+      footerLink:
+        url: consumer/mobile/index.yml
+        text: 詳細情報
+    - title: エンタープライズ
+      links:
+        - url: admin/service-premium-what-is.md
+          itemType: overview
+          text: Power BI Premium とは
+        - url: admin/service-admin-power-bi-security.md
+          itemType: concept
+          text: セキュリティ
+        - url: admin/service-security-data-protection-overview.md
+          itemType: concept
+          text: データ保護
+      footerLink:
+        url: admin/index.yml
+        text: 詳細情報
+    - title: ベスト プラクティスのガイダンス
+      links:
+        - url: guidance/overview.md
+          itemType: overview
+          text: ガイダンスの概要
+        - url: guidance/star-schema.md
+          itemType: concept
+          text: スター スキーマ
+        - url: guidance/import-modeling-data-reduction.md
+          itemType: concept
+          text: データ モデル サイズの縮小
+      footerLink:
+        url: guidance/index.yml
+        text: 詳細情報
+    - title: ラーニング カタログ
+      links:
+        - url: learning-catalog/learning-catalog-bdm.md
+          itemType: learn
+          text: ビジネスの意思決定者
+        - url: /learn/paths/dax-power-bi/
+          itemType: learn
+          text: DAX の使用を開始する
+        - url: learning-catalog/learning-catalog-solution-architect.md
+          itemType: learn
+          text: ソリューション アーキテクト
+      footerLink:
+        url: learning-catalog/index.yml
+        text: 詳細情報
 additionalContent:
   sections:
-  - title: 関連するツール
-    items:
-    - title: Power BI Report Server
-      summary: Power BI のレポート、ページ分割されたレポートおよび KPI を表示および管理できる Web ポータルを持つオンプレミスのレポート サーバーである Power BI Report Server をご探索ください。
-      url: report-server/index.yml
-    - title: Power BI REST API
-      summary: Power BI の REST API には、埋め込み、管理およびユーザー リソース用のサービス エンドポイントがあります。
-      url: /rest/api/power-bi/
-    - title: Power BI 埋め込み分析のクライアント API
-      summary: JavaScript または TypeScript を使用して Power BI を埋め込むためのクライアント側ライブラリ。
-      url: /javascript/api/overview/powerbi/
-  - title: その他の Microsoft Power Platform 製品
-    items:
-    - title: Power Apps
-      summary: 組織のプロセスを最新化し、困難なビジネス上の課題を解決するアプリを、わずかなコードで迅速に構築します。
-      url: /powerapps/
-    - title: Power Automate
-      summary: お気に入りのアプリとサービスの間に自動化されたワークフローを作成して、ファイルの同期や通知の受信などを行います。
-      url: /power-automate/
-    - title: Power Virtual Agents
-      summary: コード不要のガイド付きグラフィカル インターフェイスを使用して、強力なボットを作成します。データ サイエンティストや開発者は必要ありません。
-      url: /power-virtual-agents/
+    - title: 関連するツール
+      items:
+        - title: Power BI Report Server
+          summary: Power BI のレポート、ページ分割されたレポートおよび KPI を表示および管理できる Web ポータルを持つオンプレミスのレポート サーバーである Power BI Report Server をご探索ください。
+          url: report-server/index.yml
+        - title: Power BI REST API
+          summary: Power BI の REST API には、埋め込み、管理およびユーザー リソース用のサービス エンドポイントがあります。
+          url: /rest/api/power-bi/
+        - title: Power BI 埋め込み分析のクライアント API
+          summary: JavaScript または TypeScript を使用して Power BI を埋め込むためのクライアント側ライブラリ。
+          url: /javascript/api/overview/powerbi/
+    - title: その他の Microsoft Power Platform 製品
+      items:
+        - title: Power Apps
+          summary: 組織のプロセスを最新化し、困難なビジネス上の課題を解決するアプリを、わずかなコードで迅速に構築します。
+          url: /powerapps/
+        - title: Power Automate
+          summary: お気に入りのアプリとサービスの間に自動化されたワークフローを作成して、ファイルの同期や通知の受信などを行います。
+          url: /power-automate/
+        - title: Power Virtual Agents
+          summary: コード不要のガイド付きグラフィカル インターフェイスを使用して、強力なボットを作成します。データ サイエンティストや開発者は必要ありません。
+          url: /power-virtual-agents/
