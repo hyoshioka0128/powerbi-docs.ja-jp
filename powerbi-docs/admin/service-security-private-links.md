@@ -1,5 +1,5 @@
 ---
-title: Power BI にアクセスするためのプライベート リンク
+title: Power BI にアクセスするためのプライベート エンドポイント
 description: Power BI を使用するためのプライベート リンクを構成する方法
 author: davidiseminger
 ms.author: davidi
@@ -10,28 +10,28 @@ ms.topic: how-to
 ms.date: 03/10/2021
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 965d9387d603473661956d4ab724a32035665002
-ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
+ms.openlocfilehash: 482977fa13f74b5b8e734e759ec3ec9712cda740
+ms.sourcegitcommit: adbbffc74521c76eb3ad8de92b803785b94c34ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103190956"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105931923"
 ---
-# <a name="private-links-for-accessing-power-bi"></a>Power BI にアクセスするためのプライベート リンク
+# <a name="private-endpoints-for-accessing-power-bi"></a>Power BI にアクセスするためのプライベート エンドポイント
 
-Azure ネットワークは Azure Private Links 機能を備えています。これは Power BI が Azure Networking Private エンドポイント経由で安全なアクセスを提供することを可能にします。 Azure Private Link およびプライベート エンドポイントを使用すると、Microsoft のバックボーン ネットワーク インフラストラクチャを使用してデータ トラフィックがプライベートに送信されるため、データはインターネットを経由しません。 
+Azure ネットワークは Azure Private Link 機能を備えています。これにより、Power BI で Azure Networking プライベート エンドポイントを経由して安全なアクセスを提供できるようになります。 Azure Private Link およびプライベート エンドポイントを使用すると、Microsoft のバックボーン ネットワーク インフラストラクチャを使用してデータ トラフィックがプライベートに送信されるため、データはインターネットを経由しません。 
 
-プライベート リンクを使用すると、Power BI ユーザーが Power BI サービス内のリソースにアクセスするとき、Microsoft プライベート ネットワーク バックボーンが使用されるようになります。
+プライベート エンドポイントを使用すると、Power BI ユーザーが Power BI サービス内のリソースにアクセスするとき、Microsoft プライベート ネットワーク バックボーンが使用されるようになります。
 
 [Azure Private Link](https://azure.microsoft.com/services/private-link/) に関するページで詳細をご確認ください。
 
-## <a name="understanding-private-links"></a>プライベート リンクについて
+## <a name="understanding-private-endpoints"></a>プライベート エンドポイントについて
 
-プライベート リンクを使用すると、組織の Power BI 成果物 (レポートやワークスペースなど) "*に*" 送信されるトラフィックが組織の構成済みのプライベート リンクのネットワーク パスを常に経由することが保証されます。 ご利用の Power BI 成果物へのユーザー トラフィックは、確立されたプライベート リンクからのものである必要があります。構成されたネットワーク パスからのものではないすべての要求を拒否するように Power BI を構成することができます。 
+プライベート エンドポイントを使用すると、組織の Power BI 成果物 (レポートやワークスペースなど) "*に*" 送信されるトラフィックが組織の構成済みのプライベート リンクのネットワーク パスを常に経由することが保証されます。 ご利用の Power BI 成果物へのユーザー トラフィックは、確立されたプライベート リンクからのものである必要があります。構成されたネットワーク パスからのものではないすべての要求を拒否するように Power BI を構成することができます。 
 
-クラウド内またはオンプレミスにかかわらず、Power BI から外部データ ソースへのトラフィックのセキュリティ保護は、プライベート リンクによって保証されるものでは "*ありません*"。 代わりに、ご利用のデータ ソースをさらにセキュリティで保護するためのファイアウォール規則と仮想ネットワークを構成する必要があります。 
+クラウド内またはオンプレミスにかかわらず、Power BI から外部データ ソースへのトラフィックのセキュリティ保護は、プライベート エンドポイントによって保証されるものでは "*ありません*"。 代わりに、ご利用のデータ ソースをさらにセキュリティで保護するためのファイアウォール規則と仮想ネットワークを構成する必要があります。 
 
-### <a name="power-bi-and-private-links-integration"></a>Power BI とプライベート リンクの統合
+### <a name="power-bi-and-private-endpoint-integration"></a>Power BI とプライベート エンドポイントの統合
 
 Power BI 用の Azure Private Endpoint は、Azure Private Link を利用して、Power BI サービスにプライベートにかつ安全に接続するためのネットワーク インターフェイスです。   
 
@@ -39,30 +39,28 @@ Power BI 用の Azure Private Endpoint は、Azure Private Link を利用して�
 
 Power BI サービスによって実装されるのは、サービス エンドポイントではなく、プライベート エンドポイントです。  
 
-Power BI でプライベート リンクを使用すると、次のような利点があります。
+Power BI でプライベート エンドポイントを使用すると、次のような利点があります。
 
-1. プライベート リンクを使用すると、トラフィックが Azure バックボーン経由で Azure クラウドベースのリソース用のプライベート エンドポイントに流れるようになります。 
+1. プライベート エンドポイントを使用すると、トラフィックが Azure バックボーン経由で Azure クラウドベースのリソース用のプライベート エンドポイントに流れるようになります。 
 
 2. オンプレミスのアクセスなど、Azure 以外をベースにしたインフラストラクチャからのネットワーク トラフィック分離の場合、顧客の ExpressRoute または仮想プライベート ネットワーク (VPN) が構成されている必要があります。  
 
-## <a name="using-secure-private-links-to-access-power-bi"></a>セキュリティで保護されたプライベート リンクを使用して Power BI にアクセスする
+## <a name="using-secure-private-endpoints-to-access-power-bi"></a>セキュリティで保護されたプライベート エンドポイントを使用して Power BI にアクセスする
 
-Power BI では、組織が Power BI にプライベート アクセスできるようにするエンドポイントを構成して使用することができます。 プライベート リンクを構成するには、Power BI 管理者であり、Azure で、Virtual Machines (VM) や Virtual Network (V-Net) などのリソースを作成して構成するためのアクセス許可を持っている必要があります。 
+Power BI では、組織が Power BI にプライベート アクセスできるようにするエンドポイントを構成して使用することができます。 プライベート エンドポイントを構成するには、Power BI 管理者であり、Azure で、Virtual Machines (VM) や Virtual Network (V-Net) などのリソースを作成して構成するためのアクセス許可を持っている必要があります。 
 
-プライベート リンクから Power BI に安全にアクセスできるようにする手順は、次のとおりです。
+プライベート エンドポイントから Power BI に安全にアクセスできるようにする手順は、次のとおりです。
 
-1. [Power BI のプライベート リンクを有効にする](#enable-private-links-for-power-bi)
+1. [Power BI のプライベート エンドポイントを有効にする](#enable-private-endpoints-for-power-bi)
 2. [Azure portal で Power BI リソースを作成する](#create-a-power-bi-resource-in-the-azure-portal)
 3. [仮想ネットワークの作成](#create-a-virtual-network)
 4. [仮想マシン (VM) の作成](#create-a-virtual-machine-vm)
 5. [プライベート エンドポイントを作成する](#create-a-private-endpoint)
 6. [リモート デスクトップ (RDP) を使用して VM に接続](#connect-to-a-vm-using-remote-desktop-rdp)
 7. [仮想マシンから Power BI にプライベート アクセスする](#access-power-bi-privately-from-the-vm)
-8. [Power BI のパブリック アクセスを無効にする](#disable-public-access-for-power-bi)
+8. [Power BI のパブリック アクセスを無効にする](#disable-public-access-for-power-bi) 次のセクションでは、各手順の詳細について説明します。
 
-以下のセクションでは、各手順について詳細に説明します。
-
-## <a name="enable-private-links-for-power-bi"></a>Power BI のプライベート リンクを有効にする
+## <a name="enable-private-endpoints-for-power-bi"></a>Power BI のプライベート エンドポイントを有効にする
 
 開始するには、app.powerbi.com で管理者として Power BI にログインし、管理ポータルに移動します。 **[テナント設定]** を選択して **[高度なネットワーク]** までスクロールし、次の図に示すように、ラジオ ボタンをトグルして **[Azure Private Link]** をオンにします。 
 
@@ -299,18 +297,18 @@ ARM テンプレートを作成する
 
 app.powerbi.com に管理者としてログインし、**管理ポータル** に移動します。 **[テナント設定]** を選択して **[高度なネットワーク]** セクションまでスクロールします。 次の図に示すように、 **[パブリック インターネット アクセスのブロック]** セクションでトグル ボタンを有効にします。 組織によるパブリック インターネットから Power BI へのアクセスがシステムによって無効にされるまで約 15 分かかります。
 
-以上で終了です。これらの手順に従うと、組織の Power BI は、プライベート リンクからのみアクセスでき、パブリック インターネットからアクセスすることはできません。 
+以上で終了です。これらの手順に従うと、組織の Power BI は、プライベート エンドポイントからのみアクセスでき、パブリック インターネットからアクセスすることはできません。 
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 
-Power BI でプライベート リンクを使用する際に留意する必要がある考慮事項がいくつかあります。
+Power BI でプライベート エンドポイントを使用する際に留意する必要がある考慮事項がいくつかあります。
 
 * プライベート リンク環境を使用する場合、外部の画像またはテーマを使用することはできません。
 * インターネット アクセスが無効になっていて、データセットまたはデータフローが Power BI データセットまたはデータフローにデータ ソースとして接続している場合、接続は失敗します。
-* Private Links が有効になっているとき、使用状況メトリックは機能 "*しません*"。
+* プライベート エンドポイントが有効になっている場合、使用状況メトリックは機能 "*しません*"。
 * Power BI で **[パブリック インターネット アクセスのブロック]** を有効にすると、[Web に公開] は動作しません (淡色表示になります)。
 * [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) では、ネットワークの分離は現在サポートされていません。 つまり、分離されたネットワークで実行されている [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop-preview) では、[秘密度] ボタンが淡色表示され、ラベル情報は表示されず、 *.pbix* ファイルの暗号化解除は失敗します。
-* Power BI プライベート リンクが有効になっているゲートウェイは、Power BI 以外のシナリオでは正しく機能しません。 
+* Power BI プライベート エンドポイントが有効になっているゲートウェイは、Power BI 以外のシナリオでは正しく機能しません。 
 
 ## <a name="next-steps"></a>次の手順
 
@@ -318,7 +316,7 @@ Power BI でプライベート リンクを使用する際に留意する必要�
 - [Power BI 管理者の役割について](service-admin-role.md)  
 - [組織内の Power BI を監査する](service-admin-auditing.md)  
 
-次の動画では、プライベート リンクを使用して Power BI にモバイル デバイスを接続する方法を紹介しています。
+次の動画では、プライベート エンドポイントを使用して Power BI にモバイル デバイスを接続する方法を紹介しています。
 
 > [!VIDEO https://www.youtube.com/embed/-3yFtlZBpqs]
 

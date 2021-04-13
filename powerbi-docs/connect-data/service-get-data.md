@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 04/02/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: b852aab1df2b3b6b649ec77ccf34a384edfd4ce5
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: 1b01325b4bbe72e319ea3cabcd89c37370ba89d2
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104724724"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230350"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Power BI サービスのデータ ソース
 データは Power BI の中核です。 たとえば、データを探索しているとしましょう。 グラフとダッシュボードを作成するか、**Q&A** で質問をすることでこれを行えます。 表示される視覚化と回答は、データセットから基になるデータを取得しています。 しかし、そのデータセットはどこから得られるでしょうか。 それはデータ ソースから得られます。
@@ -34,7 +34,7 @@ ms.locfileid: "104724724"
 
 **[コンテンツの検出]** セクションには、必要なすべてのデータとレポートが既に含まれています。 Power BI には、次の 2 種類のコンテンツ パックがあります。組織とサービスです。 
 
-**組織**:自分と組織内の他のユーザーが、Power BI Pro のアカウントを持っている場合、コンテンツ パックを作成、共有、使用できます。 詳しくは、[組織のコンテンツ パックの概要](../collaborate-share/service-organizational-content-pack-introduction.md)のページをご覧ください。
+**組織**:自分と組織内の他のユーザーが、Power BI Pro または Premium Per User (PPU) のアカウントを持っている場合、コンテンツ パックを作成、共有、使用できます。 詳しくは、[組織のコンテンツ パックの概要](../collaborate-share/service-organizational-content-pack-introduction.md)のページをご覧ください。
 
 **サービス**:Power BI のコンテンツ パックには文字どおり数十のサービスがあり、随時追加されています。 ほとんどのサービスではアカウントが必要です。 詳しくは、「[Connect to services you use with Power BI](service-connect-to-services.md)」 (Power BI で使用するサービスに接続する) をご覧ください。
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: b6f6b819b5c31f655d0c0dc43d8852cb34b5a7a2
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 30c97f2383a8e3bc64644ef6e9b4c07eabd43a7f
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512058"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106548875"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>管理ポータルで容量を監視する
 
@@ -29,6 +29,10 @@ ms.locfileid: "94512058"
 
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+
+> [!NOTE]
+> 管理ポータルを使用して、Premium Per User (PPU) アクティビティまたは容量を監視することはできません。
+
 
 ## <a name="system-metrics"></a>システム メトリック
 

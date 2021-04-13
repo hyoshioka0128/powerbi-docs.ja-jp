@@ -8,13 +8,13 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 01/14/2021
-ms.openlocfilehash: 78c7b97cd926f3f98469d6e52aab5889f4e3daa3
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.date: 04/02/2021
+ms.openlocfilehash: 715c78e012e49d73a0dd1013d532a92b8b5833e8
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99088743"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106225712"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Power BI でレポートのパフォーマンスを監視する
 
@@ -27,6 +27,10 @@ ms.locfileid: "99088743"
 - モデルの計算に時間がかかる。
 
 低速なクエリまたはレポート ビジュアルは、継続的な最適化の中心点にする必要があります。
+
+
+> [!NOTE]
+> パフォーマンス アナライザーを使用し、Premium Per User (PPU) アクティビティまたは容量を監視することはできません。
 
 ## <a name="use-query-diagnostics"></a>クエリ診断を使用する
 

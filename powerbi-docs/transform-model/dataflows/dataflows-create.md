@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: e20ff665cbde8b1031a53407b874af9a8ef39b14
-ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
+ms.openlocfilehash: 041fbc6aeaf37ec9cefc545ef4711637d584cd86
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103191554"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227291"
 ---
 # <a name="creating-a-dataflow"></a>データフローの作成
 **データフロー** とは、Power BI サービスのワークスペースで作成および管理される、テーブルのコレクションです。 **テーブル** とは、データベース内のテーブルと同様に、データの格納に使用される一連の列です。 自分のデータフロー内のテーブルの追加と編集や、データ更新スケジュールの管理は、自分データフローを作成したワークスペースから直接行うことができます。
@@ -30,6 +30,9 @@ ms.locfileid: "103191554"
 * [インポート/エクスポートを使用してデータフローを作成する](#create-a-dataflow-using-importexport)
 
 以下のセクションでは、これらのデータフロー作成の各方法について詳しく説明します。
+
+> [!NOTE]
+> データフローは、Premium ワークスペースのユーザー、Pro ライセンスを持つユーザー、Premium Per User (PPU) ライセンスを持つユーザーが作成できます。
 
 ## <a name="create-a-dataflow-using-define-new-tables"></a>定義済みの新しいテーブルを使用してデータフローを作成する
 

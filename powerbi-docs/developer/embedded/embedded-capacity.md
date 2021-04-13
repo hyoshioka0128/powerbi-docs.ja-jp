@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/15/2021
-ms.openlocfilehash: 0c6686b667f96e45fc1e21d4cb9512196053f288
-ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
+ms.date: 04/02/2021
+ms.openlocfilehash: 86d9e1eec7bde29abde1e305492cc60f87f52e00
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100531955"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230235"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Power BI Embedded の分析の容量と SKU
 
@@ -22,7 +22,7 @@ ms.locfileid: "100531955"
 容量とは、排他的使用のために予約されたリソースの専用セットです。 これにより、ユーザーごとのライセンスを購入しなくても、ユーザーに対してダッシュボード、レポート、データセットを公開できます。 また、コンテンツに対して信頼性の高い、一貫性のあるパフォーマンスも提供されます。
 
 >[!NOTE]
->公開するためには、1 つの Power BI Pro アカウントが必要です。
+>公開するためには、Power BI Pro または Premium Per User (PPU) のアカウントが 1 つ必要です。
 
 ## <a name="what-is-embedded-analytics"></a>Embedded 分析とは
 
@@ -82,7 +82,7 @@ Power BI Premium には、*P* および *EM* の 2 つの SKU が用意されて
 |[セキュリティで保護された URL の埋め込み](../../collaborate-share/service-embed-secure.md)</br>(Power BI サービスからの埋め込み)     |✖        |✔        |
 
 >[!NOTE]
->* コンテンツを Power BI アプリ ワークスペースに発行するには、[Power BI Pro ライセンス](../../admin/service-admin-purchasing-power-bi-pro.md)が必要です。
+>* コンテンツを Power BI アプリ ワークスペースに発行するには、[Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) または Premium Per User (PPU) のライセンスが必要です。
 >* **P SKU** の場合のみ、無料の Power BI ユーザーが Power BI アプリと共有コンテンツを Power BI サービスで使用できます。
 
 ### <a name="capacity-considerations"></a>容量に関する考慮事項

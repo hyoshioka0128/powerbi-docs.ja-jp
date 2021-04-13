@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/26/2021
+ms.date: 04/02/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2710143ddd0474e38e7c0c1e6f82ba9c3d1fbba3
-ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.openlocfilehash: ac860c91b5431f725c5d4fb71a75c59cdfe7fcc5
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98861240"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229706"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>クラシック ワークスペースで使用状況メトリックを監視する
 
@@ -36,7 +36,7 @@ ms.locfileid: "98861240"
 
 ## <a name="prerequisites"></a>前提条件
 
-- 利用状況の指標データにアクセスし、実行するには、Power BI Pro ライセンスが必要です。 ただし、利用状況の指標機能では、割り当てられているライセンスに関係なく、すべてのユーザーの利用状況情報が取得されます。
+- 利用状況の指標データにアクセスし、実行するには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 ただし、利用状況の指標機能では、割り当てられているライセンスに関係なく、すべてのユーザーの利用状況情報が取得されます。
 - 特定のダッシュボードまたはレポートの利用状況の指標にアクセスするには、そのダッシュボードまたはレポートに対する編集アクセス権が必要です。
 - Power BI 管理者が、コンテンツ作成者に対して利用状況の指標を有効にしている必要があります。 Power BI 管理者は、利用状況の指標内のユーザーごとのデータの収集を有効にしている場合もあります。 [管理ポータル内でこれらのオプションを有効にする](../admin/service-admin-portal.md#control-usage-metrics)方法をご覧ください。 
 

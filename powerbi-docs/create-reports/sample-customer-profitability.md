@@ -7,14 +7,14 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/05/2019
+ms.date: 04/02/2021
 LocalizationGroup: Samples
-ms.openlocfilehash: afe01b29513c095919e17d50e1c7e08060f11150
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: 289c5892c7206044a8486f62234c27f07368ee17
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534174"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230396"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Power BI のお客様の収益性のサンプル: 使ってみる
 
@@ -26,7 +26,7 @@ ms.locfileid: "102534174"
 
 このチュートリアルでは、Power BI サービス内のお客様の収益性のサンプル コンテンツ パックを調べます。 Power BI Desktop とサービスのレポート エクスペリエンスは似ているので、Power BI Desktop 内のサンプルの .pbix ファイルを使用して作業することもできます。 
 
-Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro ライセンスを持っていない場合は、Power BI サービス内で、マイ ワークスペースにサンプルを保存できます。 
+Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、Power BI サービスのマイ ワークスペースにサンプルを保存できます。 
 
 ## <a name="get-the-sample"></a>サンプルを入手する
 
@@ -36,7 +36,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 1. Power BI サービス (app.powerbi.com) を開いてサインインし、サンプルを保存するワークスペースを開きます。
 
-   Power BI Pro ライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
+   Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
 
 2. 左下隅にある **[データを取得]** を選びます。
 

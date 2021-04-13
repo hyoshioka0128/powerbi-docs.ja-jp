@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/05/2021
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 6d48226fceb1aa48c01c0486f90006687bb5fb65
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: ff532ab48d1cb2823f19908ba24a69713f163f1f
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102533356"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226838"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premium の Multi-Geo のサポートを構成する
 
@@ -29,6 +29,9 @@ Multi-Geo は、Power BI Embedded でも使用できるようになりました�
 
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+
+> [!NOTE]
+> Multi-Geo では、Power BI Premium Per User (PPU) はサポートされていません。
 
 ## <a name="enable-and-configure"></a>有効化と構成
 

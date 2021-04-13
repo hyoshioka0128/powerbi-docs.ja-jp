@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/21/2021
+ms.date: 04/02/2021
 ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 4fd953eac998e954579af83f2acec975f66e7436
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.openlocfilehash: 33b6260fdc47ee3f4cfb95eab929e3aaa731a016
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98687030"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106225957"
 ---
 # <a name="large-datasets-in-power-bi-premium"></a>Power BI Premium での大規模なデータセット
 
 Power BI データセットでは、クエリ パフォーマンスが最適化されるように、データを圧縮率の高い、メモリ内キャッシュに格納できます。これにより、ユーザー対話機能が高速になります。 Premium 容量に関しては、 **[Large dataset storage format]\(大規模なデータセットのストレージ形式\)** 設定を使用することで、既定の上限を超える大規模なデータセットを有効にすることができます。 有効にすると、データセットのサイズが Premium *容量* サイズか、管理者によって設定された最大サイズに制限されます。
 
-すべての Premium P SKU および Embedded A SKU に対して、大規模なデータセットを有効にすることができます。 Premium での大規模なデータセットのサイズ制限は、データ モデルのサイズ制限の観点から、Azure Analysis Services に相当します。
+すべての Premium P SKU、Embedded A SKU、Premium Per User (PPU) に対して、大規模なデータセットを有効にすることができます。 Premium での大規模なデータセットのサイズ制限は、データ モデルのサイズ制限の観点から、Azure Analysis Services に相当します。
 
 データセットを 10 GB を超えて拡張する必要がありますが、[Large dataset storage format]\(大規模なデータセットのストレージ形式\) 設定を有効にすれば、追加の利点が得られます。 データセットの書き込み操作に XMLA エンドポイントベースのツールを使用する予定がある場合は、"*大規模な*" データセットとして必ずしも特徴付けるとは限らないデータセットについても、当該設定を必ず有効にしてください。 有効にすると、大規模なデータセットのストレージ形式によって、XMLA 書き込み操作のパフォーマンスが向上します。
 

@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 04/02/2021
 ms.custom: licensing support
 LocalizationGroup: Consumers
-ms.openlocfilehash: bc8c3147efc9037fef7207f62856f3f9a0b1b5a8
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: b0039033110a6c5d027825d66ee5bb5787d3ac17
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97674938"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230442"
 ---
 # <a name="collaborate-in-workspaces"></a>ワークスペースで共同作業する
 
@@ -49,12 +49,12 @@ Power BI の "*ビジネス ユーザー*" は通常、**ビューアー** ロ�
 
 ### <a name="workspace-permissions-and-roles"></a>ワークスペースのアクセス許可とロール
 
-4 つのロールの機能は次のとおりです:管理者、メンバー、共同作成者、およびビューアー。 これらの機能のうち、*項目の表示と操作* を除くすべての機能には Power BI Pro ライセンスが必要です。
+4 つのロールの機能は次のとおりです:管理者、メンバー、共同作成者、およびビューアー。 これらの機能のうち、"*項目の表示と操作*" を除くすべての機能に Power BI Pro または Premium Per User (PPU) のライセンスが必要です。
 
 [!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 ## <a name="licensing-workspaces-and-capacity"></a>ライセンス、ワークスペース、容量
-また、ライセンスは、ワークスペースで実行できる操作と実行できない操作を決定する役割も果たします。 多くの機能を使用するには、ユーザーが Power BI *Pro* ライセンスを持っているか、またはワークスペースを Premium 容量に格納する必要があります。 
+また、ライセンスは、ワークスペースで実行できる操作と実行できない操作を決定する役割も果たします。 多くの機能を使用するには、ユーザーが Power BI *Pro* または *Premium Per User (PPU)* のライセンスを持っているか、またはワークスペースを Premium 容量に格納する必要があります。 
 
 多くの場合、"*ビジネス ユーザー*" は Free ライセンスを使用します。 [ライセンスの詳細についてはこちらを参照してください](end-user-license.md)。 コンテンツが Premium 容量に格納されていない場合、ビジネス ユーザーはアクセスできません。
 

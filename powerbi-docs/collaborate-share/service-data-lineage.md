@@ -9,12 +9,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
 LocalizationGroup: ''
-ms.openlocfilehash: 8b119f5134fdaf4e251f9a8da560a2a3f7f3a4eb
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 2f5bebe2e2ddfa8d7c9ad1d07ccb99399f29cb45
+ms.sourcegitcommit: 48d8aa293669fa881d682d5279e2d51cba342bd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492106"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106104401"
 ---
 # <a name="data-lineage"></a>データ系列
 最新のビジネス インテリジェンス (BI) プロジェクトでは、データ ソースから宛先へのデータ フローを理解することが課題となる可能性があります。 複数のデータ ソース、成果物、および依存関係にまたがる高度な分析プロジェクトを構築した場合、この課題はさらに大きくなります。 "このデータを変更すると、どうなりますか?"  または、"このレポートが最新の状態ではないのはなぜですか" などの質問に 答えるのは難しい場合があります。 そのような質問を理解するには、専門家のチームまたは詳細な調査が必要な場合があります。 私たちは、そのような質問への回答に役立つデータ系列ビューを設計しました。
@@ -31,7 +31,7 @@ Power BI には、ダッシュボード、レポート、データセット、�
 
 すべてのワークスペース (新規またはクラシックに関わらず) には、系列ビューが自動的に用意されます。 これをワークスペースで表示するには、少なくとも共同作成者ロールが必要です。 詳細については、この記事の「[アクセス許可](#permissions)」を参照してください。
 
-* 系列ビューにアクセスするには、ワークスペースのリスト ビューにアクセスします。 **[リスト ビュー]** の横にある矢印をタップし、 **[系列ビュー]** を選択します。
+* 系列ビューにアクセスするには、ワークスペースのリスト ビューにアクセスします。 **[リスト ビュー]** の横にある矢印をタップし、**[系列ビュー]** を選択します。
 
    ![系列ビューへの切り替え](media/service-data-lineage/service-data-lineage-view-select.png)
 
@@ -91,7 +91,8 @@ Power BI には、ダッシュボード、レポート、データセット、�
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 
-- 系列ビューは、Internet Explorer で使用することはできません。 詳細については、「[Supported browsers for Power BI](../fundamentals/power-bi-browsers.md)」 (Power BI 用にサポートされているブラウザー) を参照してください。
+- 系列ビューは、Internet Explorer で使用することはできません。 詳細については、「[Supported browsers for Power BI](../fundamentals/power-bi-browsers.md)」 (Power BI 用にサポートされているブラウザー) を参照してください。    
+- 現在のところ、データフローの系列ビュー スコープは、現行のワークスペースに存在するものに限られます。 詳細については、[データフロー機能の制限事項](../transform-model/dataflows/dataflows-features-limitations.md)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

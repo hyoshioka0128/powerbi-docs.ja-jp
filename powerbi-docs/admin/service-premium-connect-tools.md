@@ -1,21 +1,21 @@
 ---
 title: Power BI での XMLA エンドポイントを使用したデータセットの接続と管理
-description: クライアント アプリケーションとツールから Power BI Premium のデータセットに接続する方法について説明します。
+description: XMLA エンドポイントを使用したクライアント アプリケーションおよびツールからの Power BI Premium および Premium Per User データセット接続について説明します。
 author: Minewiskan
 ms.author: owend
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 3/19/2021
+ms.date: 03/24/2021
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: d40de3e9b9b708ef7e4a55577d449f6bcf91ab75
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: 397aeebe863bdcd434b896f0e2619a113b512db3
+ms.sourcegitcommit: 438eea031f1ed9e9dee510520e5c1039920c3a49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104724663"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105099269"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>XMLA エンドポイントを使用したデータセット接続
 
@@ -23,26 +23,26 @@ Power BI Premium、Premium Per User、Power BI Embedded ワークスペースで
 
 ## <a name="whats-an-xmla-endpoint"></a>XMLA エンドポイントとは
 
-Power BI Premium では、クライアント アプリケーションと、ワークスペースおよびデータセットを管理するエンジンとの間の通信に、[XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) プロトコルが使用されます。 これらの接続は、一般的に XMLA エンドポイントとして参照されるものを介しています。 XMLA は、内部にある Microsoft Analysis Services エンジンによって使用されるのと同じ通信プロトコルであり、Power BI のセマンティック モデル、ガバナンス、ライフサイクル、データ管理を実行します。 XMLA プロトコルを介して送信されるデータは完全に暗号化されます。
+ワークスペースでは、クライアント アプリケーションと、Power BI ワークスペースおよびデータセットを管理するエンジンとの間の通信に、[XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) プロトコルが使用されます。 これらの接続は、一般的に XMLA エンドポイントとして参照されるものを介しています。 XMLA は、内部にある Microsoft Analysis Services エンジンによって使用されるのと同じ通信プロトコルであり、Power BI のセマンティック モデル、ガバナンス、ライフサイクル、データ管理を実行します。 XMLA プロトコルを介して送信されるデータは完全に暗号化されます。
 
-既定では、エンドポイントを使用した "*読み取り専用*" の接続が、容量のうち **データセット ワークロード** に対して有効になります。 読み取り専用のデータ可視化アプリケーションとツールでは、データセット モデルのデータ、メタデータ、イベント、スキーマに対してクエリを実行できます。 エンドポイントを使用した "*読み取り/書き込み*" 操作を有効にすると、追加のデータセット管理、ガバナンス、高度なセマンティック モデリング、デバッグ、監視を実現できます。 読み取り/書き込みを有効にすると、Power BI Premium データセットでは、Azure Analysis Services と SQL Server Analysis Services のエンタープライズ レベルの表形式モデリング ツールおよびプロセスとのパリティが向上します。
+既定では、エンドポイントを使用した "*読み取り専用*" の接続が、容量のうち **データセット ワークロード** に対して有効になります。 読み取り専用のデータ可視化アプリケーションとツールでは、データセット モデルのデータ、メタデータ、イベント、スキーマに対してクエリを実行できます。 エンドポイントを使用した "*読み取り/書き込み*" 操作を有効にすると、追加のデータセット管理、ガバナンス、高度なセマンティック モデリング、デバッグ、監視を実現できます。 読み取り/書き込みを有効にすると、データセットでは、Azure Analysis Services と SQL Server Analysis Services のエンタープライズ レベルの表形式モデリング ツールおよびプロセスとのパリティが向上します。
 
 > [!NOTE]
 > 特に XMLA エンドポイントを使用してデータセットに接続する場合は、最新のワークスペース エクスペリエンスを使用することをお勧めします。 データセットの作成や削除などの操作は、クラシック ワークスペースではサポートされていません。 クラシック ワークスペースを最新のエクスペリエンスにアップグレードする方法については、[Power BI でのクラシック ワークスペースのアップグレード](../collaborate-share/service-upgrade-workspaces.md)に関するページをご覧ください。
 
 ## <a name="data-modeling-and-management-tools"></a>データ モデリングと管理のツール
 
-次に一覧表示するのは、Azure Analysis Services と SQL Server Analysis Services で使用される最も一般的なツールの一部です。これらが Power BI Premium データセットでサポートされるようになりました。
+次に一覧表示するのは、Azure Analysis Services と SQL Server Analysis Services で使用される最も一般的なツールの一部です。これらが Premium データセットでサポートされるようになりました。
 
-**Visual Studio と Analysis Services プロジェクト** – SQL Server Data Tools、または単に **SSDT** とも呼ばれる、Analysis Services 表形式モデル用のエンタープライズ レベル モデル作成ツールです。 Analysis Services プロジェクトの拡張機能は、Visual Studio 2017 以降のすべてのエディション (無料の Community Edition を含む) でサポートされています。 表形式モデルを Premium ワークスペースに配置するには、拡張機能バージョン 2.9.14 以降が必要です。 Premium ワークスペースに配置する場合、モデルは 1500 以上の互換性レベルである必要があります。 データセット ワークロードには、XMLA 読み取り/書き込みが必要です。 詳細については、「[Analysis Services 用のツール](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true)」を参照してください。
+**Visual Studio と Analysis Services プロジェクト** – SQL Server Data Tools、または単に **SSDT** とも呼ばれる、Analysis Services 表形式モデル用のエンタープライズ レベル モデル作成ツールです。 Analysis Services プロジェクトの拡張機能は、Visual Studio 2017 以降のすべてのエディション (無料の Community Edition を含む) でサポートされています。 表形式モデルを Premium ワークスペースに配置するには、拡張機能バージョン 2.9.14 以降が必要です。 配置する場合、モデルは 1500 以上の互換性レベルである必要があります。 データセット ワークロードには、XMLA 読み取り/書き込みが必要です。 詳細については、「[Analysis Services 用のツール](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true)」を参照してください。
 
 **SQL Server Management Studio (SSMS)**  - DAX、MDX、XMLA のクエリがサポートされます。 [表形式モデルのスクリプト言語](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL) を使用して、データセット メタデータに対する粒度の細かい更新操作とスクリプト作成を実行します。 クエリ操作には読み取り専用が必要です。 メタデータをスクリプト化するには、読み取り/書き込みが必要です。 SSMS バージョン **18.8** 以降が必要です。  [こちら](/sql/ssms/download-sql-server-management-studio-ssms)からダウンロードすることができます。
 
-**SQL Server Profiler** – SSMS と共にインストールされます。このツールによりサーバー イベントのトレースとデバッグが提供されます。 Profiler は、SQL Server では公式に非推奨になりましたが、引き続き SSMS に含まれており、Analysis Services と Power BI Premium で引き続きサポートされます。 SQL Server Profiler バージョン **18.8** 以降が必要で、また、XMLA 読み取り専用設定が Premium 容量で有効になっている必要があります。 XMLA エンドポイントに接続するときに、ユーザーはデータセット ([初期カタログ](#initial-catalog)) を指定する必要があります。 詳細については、 [Analysis Services 用の SQL Server Profiler](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true) に関するページを参照してください。
+**SQL Server Profiler** – SSMS と共にインストールされます。このツールによりサーバー イベントのトレースとデバッグが提供されます。 Profiler は、SQL Server では公式に非推奨になりましたが、引き続き SSMS に含まれており、Analysis Services と Power BI で引き続きサポートされます。 SQL Server Profiler バージョン **18.8** 以降が必要です。 XMLA エンドポイントに接続するときに、ユーザーはデータセット ([初期カタログ](#initial-catalog)) を指定する必要があります。 詳細については、 [Analysis Services 用の SQL Server Profiler](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true) に関するページを参照してください。
 
-**Analysis Services 配置ウィザード** – SSMS と共にインストールされます。このツールを使用すると、Visual Studio で作成した表形式モデル プロジェクトを Analysis Services および Power BI Premium のワークスペースに配置できます。 対話形式で実行することも、自動化するためにコマンド ラインから実行することもできます。 XMLA 読み取り/書き込みが必要です。 詳細については、[Analysis Services 配置ウィザード](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true)に関するページを参照してください。
+**Analysis Services 配置ウィザード** – SSMS と共にインストールされます。このツールを使用すると、Visual Studio で作成した表形式モデル プロジェクトを Analysis Services および Premium のワークスペースに配置できます。 対話形式で実行することも、自動化するためにコマンド ラインから実行することもできます。 XMLA 読み取り/書き込みが必要です。 詳細については、[Analysis Services 配置ウィザード](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true)に関するページを参照してください。
 
-**PowerShell コマンドレット** – Analysis Services コマンドレットを使用して、更新操作などのデータセット管理タスクを自動化できます。 XMLA 読み取り/書き込みが必要です。 [SqlServer PowerShell モジュール](https://www.powershellgallery.com/packages/SqlServer/)のバージョン **21.1.18221** 以降が必要です。 Az.AnalysisServices モジュールの Azure Analysis Services コマンドレットは、Power BI Premium 用にはサポートされていません。 詳細については、「[Analysis Services PowerShell リファレンス](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current&preserve-view=true)」を参照してください。
+**PowerShell コマンドレット** – Analysis Services コマンドレットを使用して、更新操作などのデータセット管理タスクを自動化できます。 XMLA 読み取り/書き込みが必要です。 [SqlServer PowerShell モジュール](https://www.powershellgallery.com/packages/SqlServer/)のバージョン **21.1.18221** 以降が必要です。 Az.AnalysisServices モジュールの Azure Analysis Services コマンドレットは、Power BI データセット用にはサポートされていません。 詳細については、「[Analysis Services PowerShell リファレンス](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current&preserve-view=true)」を参照してください。
 
 **Power BI Report Builder** - ページ分割されたレポートを作成するためのツールです。 取得するデータ、それを取得する場所、表示方法を指定したレポート定義を作成します。 Report Builder でレポートをプレビューしてから、Power BI サービスにレポート発行することができます。 XMLA 読み取り専用が必要です。 詳細については、「 [Power BI レポート ビルダー](../paginated-reports/report-builder-power-bi.md)」を参照してください。
 
@@ -54,7 +54,7 @@ Power BI Premium では、クライアント アプリケーションと、ワ�
 
 **Microsoft Excel** – Excel ピボットテーブルは、Power BI データセットの集計データを集計、分析、探索、表示するために使用される最も一般的なツールの 1 つです。 クエリ操作には読み取り専用が必要です。 クイック実行バージョンの Office 16.0.11326.10000 以降が必要です。
 
-**サード パーティ** - Power BI Premium のデータセットに接続してクエリを実行し、データセットを使用できる、クライアント データ視覚化アプリケーションとツールが含まれます。 ほとんどのツールで最新バージョンの MSOLAP クライアント ライブラリが必要ですが、一部のツールでは ADOMD が使用される可能性があります。 読み取り専用 XMLA エンドポイントか読み取り/書き込み XMLA エンドポイントかは、操作によって異なります。
+**サード パーティ** - Premium ワークスペースのデータセットに接続してクエリを実行し、データセットを使用できる、クライアント データ視覚化アプリケーションとツールが含まれます。 ほとんどのツールで最新バージョンの MSOLAP クライアント ライブラリが必要ですが、一部のツールでは ADOMD が使用される可能性があります。 読み取り専用 XMLA エンドポイントか読み取り/書き込み XMLA エンドポイントかは、操作によって異なります。
 
 ### <a name="client-libraries"></a>クライアント ライブラリ
 
@@ -131,7 +131,7 @@ Power BI の[新しいワークスペース](../collaborate-share/service-new-wo
 
 ### <a name="serverworkspace-alias"></a>サーバー/ワークスペースのエイリアス
 
-Azure Analysis Services でサポートされているサーバー名のエイリアスは、Power BI Premium ワークスペースではサポートされていません。
+Azure Analysis Services でサポートされているサーバー名のエイリアスは、Premium ワークスペースではサポートされていません。
 
 ## <a name="security"></a>セキュリティ
 
@@ -149,7 +149,7 @@ XMLA エンドポイントを使用してアクセスすると、ワークスペ
 
 ワークスペースの共同作成者以上である場合は、データセットへの書き込みアクセス権を持っているため、Analysis Services データベース管理者と同等です。 これらのユーザーは、Visual Studio から新しいデータセットを配置し、SSMS で TMSL スクリプトを実行することができます。
 
-サーバーレベルのトレースや、[EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) 接続文字列プロパティを使用したユーザーの偽装などの、Analysis Services サーバー管理者としてのアクセス許可を必要とする操作は、現時点で Power BI Premium ではサポートされていません。
+サーバーレベルのトレースや、[EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) 接続文字列プロパティを使用したユーザーの偽装などの、Analysis Services サーバー管理者としてのアクセス許可を必要とする操作は、現時点で Premium ワークスペースではサポートされていません。
 
 データセットに対して[ビルド](../connect-data/service-datasets-build-permissions.md) アクセス許可を持つ他のユーザーは、Analysis Services データベース閲覧者と同等です。 これらのユーザーは、データの使用と視覚化のためにデータセットに接続し、データセットを参照できます。 行レベル セキュリティ (RLS) 規則が適用され、内部データセットのメタデータを参照することはできません。
 
@@ -161,11 +161,10 @@ Visual Studio で作成される表形式モデル プロジェクトの場合�
 
 XMLA エンドポイントを介してデータセット ロールを使用する場合は、次の制限事項が適用されます。
 
-- Power BI データセットに対して設定できる "*ロール*" の唯一のアクセス許可は、読み取りアクセス許可です。 その他のアクセス許可は、Power BI セキュリティ モデルを使用して付与されます。
+- データセットに対して設定できる "*ロール*" の唯一のアクセス許可は、読み取りアクセス許可です。 その他のアクセス許可は、Power BI セキュリティ モデルを使用して付与されます。
 - ワークスペースのメンバーまたは管理者のアクセス許可を必要とするサービス プリンシパルをロールに追加することはできません。
 - データセット ロールが存在するかどうかに関係なく、XMLA エンドポイントを介した読み取りアクセスには、データセットに対するビルド アクセス許可が必要です。
-- "Roles =" 接続文字列プロパティは、ロール メンバーの書き込みアクセス許可を読み取りアクセス許可へとダウングレードする際のテストに使用できます。 ただし、メンバー アカウントは、関連する RLS ロールのメンバーである必要があります。 これは、SQL Server Analysis Services や Azure Analysis Services での権限借用とは異なります (これらのケースでは、アカウントがサーバー管理者である場合、RLS ロールのメンバーシップであると見なされます)。 Power BI Premium のワークスペースでは、サーバー管理者がいないため、RLS を適用するには、アカウントがロールに属している必要があります。
-- Power BI では現在、オブジェクトレベルのセキュリティ (OLS) 規則はサポートされていません。
+- "Roles =" 接続文字列プロパティは、ロール メンバーの書き込みアクセス許可を読み取りアクセス許可へとダウングレードする際のテストに使用できます。 ただし、メンバー アカウントは、関連する RLS ロールのメンバーである必要があります。 これは、SQL Server Analysis Services や Azure Analysis Services での権限借用とは異なります (これらのケースでは、アカウントがサーバー管理者である場合、RLS ロールのメンバーシップであると見なされます)。 Premium ワークスペースでは、サーバー管理者がいないため、RLS を適用するには、アカウントがロールに属している必要があります。
 
 詳細については、[表形式モデルのロール](/analysis-services/tabular-models/roles-ssas-tabular)に関するページをご覧ください。
 
@@ -177,7 +176,7 @@ XMLA エンドポイントで指定されたメタデータを使用してデー
 
 サービス プリンシパルは、リソースおよびサービス レベルの操作を自動で実行するためにテナント内に作成する Azure Active Directory の "アプリの登録" です。 これは一意の種類のユーザー ID で、アプリ名、アプリケーション ID、テナント ID、およびパスワード用の "クライアント シークレット" または証明書を含みます。 Power BI Premium では、Power BI Embedded と同じサービス プリンシパル機能が使用されています。
 
-Power BI Premium では、サービス プリンシパルを XMLA エンドポイントと共に使用して、以下でワークスペースのプロビジョニング、モデルのデプロイ、データセットの更新などのデータセット管理タスクを自動化することもできます。
+サービス プリンシパルを XMLA エンドポイントと共に使用して、以下でワークスペースのプロビジョニング、モデルのデプロイ、データセットの更新などのデータセット管理タスクを自動化することもできます。
 
 - PowerShell
 - Azure Automation
@@ -188,7 +187,7 @@ Power BI Premium では、サービス プリンシパルを XMLA エンドポ�
 
 ## <a name="deploy-model-projects-from-visual-studio-ssdt"></a>Visual Studio からモデル プロジェクトを配置する (SSDT)
 
-Visual Studio での表形式モデル プロジェクトの Power BI Premium ワークスペースへの配置は、Azure または SQL Server Analysis Services サーバーへの配置とほとんど同じです。 唯一の違いは、プロジェクトに対して指定されている配置サーバーのプロパティと、データ ソースの資格情報を指定して、処理操作でデータ ソースからワークスペース上の新しいデータセットにデータをインポートできるようにする方法です。
+Visual Studio での表形式モデル プロジェクトの Premium ワークスペースへの配置は、Azure または SQL Server Analysis Services サーバーへの配置とほとんど同じです。 唯一の違いは、プロジェクトに対して指定されている配置サーバーのプロパティと、データ ソースの資格情報を指定して、処理操作でデータ ソースからワークスペース上の新しいデータセットにデータをインポートできるようにする方法です。
 
 Visual Studio で作成された表形式モデル プロジェクトを配置するには、まず、プロジェクトの **[配置サーバー]** プロパティでワークスペースの接続 URL を設定する必要があります。 Visual Studio の **ソリューション エクスプローラー** で、プロジェクトを右クリックして **[プロパティ]** を選択します。 **[サーバー]** プロパティにワークスペースの接続 URL を貼り付けます。
 
@@ -238,14 +237,14 @@ Analysis Services の [DMV](/analysis-services/instances/use-dynamic-management-
 
 ### <a name="enhanced-metadata"></a>拡張メタデータ
 
-Power BI Desktop で作成され、Premium ワークスペースに発行されたデータセットに対する XMLA 書き込み操作のためには、拡張メタデータを有効にする必要があります。 詳細については、[拡張データセット メタデータ](../connect-data/desktop-enhanced-dataset-metadata.md)に関するページを参照してください。
+Power BI Desktop で作成され、Premium ワークスペースに発行されたデータセットに対する XMLA 書き込み操作には、拡張メタデータが必要です。 詳細については、[拡張データセット メタデータ](../connect-data/desktop-enhanced-dataset-metadata.md)に関するページを参照してください。
 
 > [!CAUTION]
 > 現時点では、Power BI Desktop で作成されたデータセットに対する書き込み操作によって、データセットを PBIX ファイルとしてダウンロードし直すことはできません。 必ず元の PBIX ファイルを残しておいてください。
 
 ### <a name="data-source-declaration"></a>データ ソース宣言
 
-データ ソースに接続してデータのクエリを実行する場合、Power BI Desktop では、Power Query M 式がインライン データ ソース宣言として使用されます。 Power Query M インライン データ ソース宣言は、Power BI Premium ワークスペースでサポートされていますが、Azure Analysis Services または SQL Server Analysis Services ではサポートされていません。 代わりに、Visual Studio のような Analysis Services データ モデリング ツールで、"*構造化*" データ ソース宣言または "*プロバイダー*" データ ソース宣言 (あるいはその両方) を使用してメタデータを作成します。 XMLA エンドポイントを使用することで、Power BI Premium で構造化データ ソースとプロバイダー データ ソースもサポートされますが、Power BI Desktop モデルの Power Query M インライン データ ソース宣言の一部としてはサポートされません。 詳細については、「[プロバイダーについて](/azure/analysis-services/analysis-services-datasource#understanding-providers)」を参照してください。
+データ ソースに接続してデータのクエリを実行する場合、Power BI Desktop では、Power Query M 式がインライン データ ソース宣言として使用されます。 Power Query M インライン データ ソース宣言は、Premium ワークスペースでサポートされていますが、Azure Analysis Services または SQL Server Analysis Services ではサポートされていません。 代わりに、Visual Studio のような Analysis Services データ モデリング ツールで、"*構造化*" データ ソース宣言または "*プロバイダー*" データ ソース宣言 (あるいはその両方) を使用してメタデータを作成します。 XMLA エンドポイントを使用することで、Premium で構造化データ ソースとプロバイダー データ ソースもサポートされますが、Power BI Desktop モデルの Power Query M インライン データ ソース宣言の一部としてはサポートされません。 詳細については、「[プロバイダーについて](/azure/analysis-services/analysis-services-datasource#understanding-providers)」を参照してください。
 
 ### <a name="power-bi-desktop-in-live-connect-mode"></a>ライブ接続モードの Power BI Desktop
 
@@ -259,7 +258,7 @@ Power BI Desktop は、ライブ接続を使用して Power BI Premium データ
 
 ![Analysis Services データセットにライブ接続する](media/service-premium-connect-tools/as-live-connect.png)
 
-Power BI Premium データセットへの移行が必要な Analysis Services データ モデルにライブ接続されている既存のレポートを持っている組織は、 **[データの変換]**  >  **[データ ソース設定]** でサーバー名の URL を変更するだけで済みます。
+Premium データセットへの移行が必要な Analysis Services データ モデルにライブ接続されている既存のレポートを持っている組織は、 **[データの変換]**  >  **[データ ソース設定]** でサーバー名の URL を変更するだけで済みます。
 
 ## <a name="audit-logs"></a>監査ログ
 

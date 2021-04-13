@@ -6,14 +6,14 @@ ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview
-ms.date: 09/23/2020
+ms.date: 03/29/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: acbd0761b481ec4884ab94d50de219a2d753b574
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 398272e6bcb08e8c456d6f32a03cd231173b153e
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416533"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106549542"
 ---
 # <a name="what-is-power-bi"></a>Power BI とは?
 **Power BI** はソフトウェア サービス、アプリ、コネクタのコレクションで、これらを組み合わせることで、関連性のないデータ ソースから、まとまりがあり、実体験的な対話型洞察を得ることができます。 Excel スプレッドシートや、クラウド ベースとオンプレミスのハイブリッド データ ウェアハウスのコレクションなど、さまざまなデータを使えます。 Power BI を使うと、ご利用のデータ ソースへの接続、重要事項の視覚化と検出、必要に応じた任意のユーザーまたはすべてのユーザーとの共有を、簡単に実行できます。
@@ -61,6 +61,10 @@ Power BI での一般的なワークフローは、Power BI Desktop でデータ
 このワークフローは一般的で、Power BI の 3 つの主な要素がお互いを補完するしくみを示しています。
 
 こちらに詳細な [Power BI Desktop と Power BI サービスの比較](../fundamentals/service-service-vs-desktop.md)があります。
+
+### <a name="use-the-deployment-pipeline-tool"></a>配置パイプライン ツールを使用する
+
+Power BI サービスでは、ユーザーにリリースする前に、[配置パイプライン ツール](../create-reports/deployment-pipelines-overview.md)を使用して内容をテストできます。 配置パイプライン ツールを使用すると、レポート、ダッシュボード、データセット、およびページ分割されたレポートの配置に役立ちます。 Power BI サービスで[配置パイプラインの使用を開始する](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports)方法を参照してください。
 
 ## <a name="paginated-reports-in-the-power-bi-service"></a>Power BI サービスでのページ分割されたレポート
 

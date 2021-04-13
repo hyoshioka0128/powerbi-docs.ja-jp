@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/22/2020
-ms.openlocfilehash: ebd6cf15c05a5ed86179b438a94a2f84b770a106
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.date: 04/02/2021
+ms.openlocfilehash: 015681aed1d3bb9a613c5d615a7ecb90cfc51565
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534506"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230258"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>チュートリアル:"*顧客向けの埋め込み*" サンプル アプリケーションを使用して Power BI コンテンツを埋め込む
 
@@ -148,7 +148,7 @@ ms.locfileid: "102534506"
 |セキュリティ     |"*サービス プリンシパル*" は Azure AD で推奨される承認方法です。 サービス プリンシパルを使用する場合は、"*アプリケーション シークレット*" または "*証明書*" を使用して認証できます。</br></br>このチュートリアルでは、"*サービス プリンシパル*" と "*アプリケーション シークレット*" の使用についてのみ説明します。 "*サービス プリンシパル*" と "*証明書*" を使用して埋め込む場合は、[サービス プリンシパルと証明書](embed-service-principal-certificate.md)に関する記事を参照してください。         |この認証方法は、"*サービス プリンシパル*" を使用する場合と同じように安全とは見なされません。 これは、"*マスター ユーザー*" の資格情報 (ユーザー名とパスワード) に注意する必要があるためです。 たとえば、それらは埋め込みアプリケーションで公開できず、パスワードを頻繁に変更する必要があります。         |
 |Azure AD のデリゲートされたアクセス許可 |必要なし。 |"*マスター ユーザー*" または管理者は、アプリから Power BI REST API への [アクセス許可](/azure/active-directory/develop/v2-permissions-and-consent) (スコープとも呼ばれます) に対する同意を付与する必要があります。 たとえば、*Report.ReadWrite.All* です。 |
 |Power BI サービスへのアクセス |"*サービス プリンシパル*" を使用して、Power BI サービスにアクセスすることはできません。|Power BI サービスには、"*マスター ユーザー*" の資格情報を使用してアクセスできます。|
-|ライセンス     |Pro ライセンスは必要ありません。 ご自分がメンバーまたは管理者であるすべてのワークスペースのコンテンツを使用できます。         |[Power BI Pro ライセンス](../../admin/service-admin-purchasing-power-bi-pro.md)が必要です。         |
+|ライセンス     |Pro ライセンスは必要ありません。 ご自分がメンバーまたは管理者であるすべてのワークスペースのコンテンツを使用できます。         |[Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) または Premium Per User (PPU) のライセンスが必要です。         |
 
 ## <a name="step-2---register-an-azure-ad-application"></a>手順 2 - Azure AD アプリケーションを登録する
 

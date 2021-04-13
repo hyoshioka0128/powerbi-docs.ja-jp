@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/22/2021
-ms.openlocfilehash: 5e2dcdc167aad8a3f67b2718360630309ff7cda0
-ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
+ms.date: 03/24/2021
+ms.openlocfilehash: 0e9393e7a5ec1c8ab07e372fc18c654b13823f6f
+ms.sourcegitcommit: 438eea031f1ed9e9dee510520e5c1039920c3a49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104834294"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105099292"
 ---
 # <a name="understand-the-deployment-process"></a>デプロイ プロセスを理解する
 
@@ -267,7 +267,7 @@ Premium アクセス許可がない場合は、ワークスペースが作成さ
 * コンテンツを使用する
 
 >[!NOTE]
->ワークスペース ビューアーは、データセットにアクセスしたり、ワークスペースのコンテンツを編集したりすることはできません。
+>**ビルド** 権限のないビューアー ロールが割り当てられたワークスペース メンバーは、データセットにアクセスできず、ワークスペース コンテンツを編集できません。
 
 ### <a name="workspace-contributor"></a>ワークスペースの共同作成者
 
@@ -291,6 +291,11 @@ Premium アクセス許可がない場合は、ワークスペースが作成さ
 
 * ワークスペースを削除する
 
+* データセットの更新
+
+>[!NOTE]
+>テナントの *[データセット セキュリティ]* セクションにある *[再公開をブロックし、パッケージの更新を無効にする]* 設定が有効になっている場合、データセットの所有者のみがデータセットを更新できます。
+
 ### <a name="workspace-admin"></a>ワークスペース管理者
 
 "*パイプライン アクセス権*" を持つワークスペース管理者は、"*ワークスペース メンバー*" アクションを行うことができ、以下の操作も実行できます。
@@ -302,8 +307,6 @@ Premium アクセス許可がない場合は、ワークスペースが作成さ
 ### <a name="dataset-owner"></a>データセット所有者
 
 ワークスペースのメンバーまたは管理者であるデータセット所有者は、次の操作も実行できます。
-
-* データセットの更新
 
 * ルールを構成する
 

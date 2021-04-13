@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 02/25/2020
-  ms.openlocfilehash: b1f5d2842bb65710cda9e83dc821b7a60117f756
-  ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+  ms.openlocfilehash: 485d23286d1bf7a8e31b8f89612affb469bf4244
+  ms.sourcegitcommit: 8cccc80f30ee5a4138ce48e44d3442a5ec6bce54
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2020
-  ms.locfileid: "83273870"
+  ms.lasthandoff: 04/08/2021
+  ms.locfileid: "107219754"
 landingContent:
 - title: Power BI におけるデータへの接続
   linkLists:
@@ -63,8 +63,8 @@ landingContent:
     links:
     - text: データ更新
       url: refresh-data.md
-    - text: Power BI Premium での増分更新
-      url: ../admin/service-premium-incremental-refresh.md
+    - text: データセットの増分更新
+      url: ../connect-data/incremental-refresh-overview.md
   - linkListType: how-to-guide
     links:
     - text: スケジュールされた更新の構成

@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/04/2021
-ms.openlocfilehash: e4d31a7bf83d4e94e2f3b71ca43924d468268f76
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 04/02/2021
+ms.openlocfilehash: 2b8e00acc3ae8688109a9785b75206862af11a22
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888411"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229338"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>SharePoint Online にレポート Web パーツを埋め込む
 
@@ -27,12 +27,12 @@ ms.locfileid: "97888411"
 
 **[SharePoint Online に埋め込む]** レポートが機能するためには、次が必要です。
 
-* Power BI Pro ライセンス、または Power BI ライセンスがある [Power BI Premium 容量 (EM または P SKU)](../admin/service-premium-what-is.md)。
+* Power BI Pro または Premium Per User (PPU) のライセンス、または Power BI ライセンスがある [Power BI Premium 容量 (EM または P SKU)](../admin/service-premium-what-is.md)。
 * SharePoint Online の Power BI Web パーツには、[最新式のページ](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)が必要です。
 * 埋め込みレポートを使用するには、ユーザーは Power BI サービスにサインインし、自分の Power BI ライセンスをアクティベートする必要があります。
 
 > [!Note]
-> Power BI 国内クラウドの組織については、無料ライセンスはありません。 この環境では、SharePoint の埋め込みレポートにアクセスするすべてのユーザーに、Power BI Pro ライセンスが必要です。
+> Power BI 国内クラウドの組織については、無料ライセンスはありません。 この環境では、SharePoint の埋め込みレポートにアクセスするすべてのユーザーに、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。
 
 ## <a name="embed-your-report"></a>レポートを埋め込む
 SharePoint Online にレポートを埋め込むには、レポートの URL を取得し、SharePoint Online の Power BI Web パーツでその URL を使う必要があります。
@@ -144,7 +144,7 @@ SharePoint Online 用の Power BI Web パーツに対して調整できる設定
 
 ## <a name="licensing"></a>ライセンス
 
-ユーザーが SharePoint 内でレポートを閲覧するには、**Power BI Pro ライセンス** を所有しているか、またはレポートのコンテンツが **[ Power BI Premium 容量 (EM または P SKU)](../admin/service-admin-premium-purchase.md)** 内のワークスペースに置かれている必要があります。
+ユーザーが SharePoint 内でレポートを閲覧するには、**Power BI Pro または Premium Per User (PPU) のライセンス** を所有しているか、またはレポートのコンテンツが **[Power BI Premium 容量 (EM または P SKU)](../admin/service-admin-premium-purchase.md)** 内のワークスペースに置かれている必要があります。
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 

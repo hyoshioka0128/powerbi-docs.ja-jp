@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: f99f40fd04154f2a934fb812dfc1a4683e64ceb9
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.openlocfilehash: 8d13df977dab51822272696949f459f81da17550
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99532983"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226992"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>アプリで Premium 容量を監視する
 
@@ -29,6 +29,9 @@ Premium 容量リソースを最適に利用するにはどうすればよいか
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 >
 >Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
+
+> [!NOTE]
+> メトリクス アプリを使用して、Premium Per User (PPU) アクティビティまたは容量を監視することはできません。
 
 ## <a name="install-the-app"></a>アプリをインストールする
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 03/31/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: dac03ffab066f25f80b280206a5abfbfbdf54a14
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: 96fe05a6e1e5673fd28977c7c3fdc577b167683c
+ms.sourcegitcommit: 48d8aa293669fa881d682d5279e2d51cba342bd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104725253"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106104852"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop-and-the-power-bi-service"></a>Power BI Desktop と Power BI サービスに対する過去の月次更新
 
@@ -34,7 +34,7 @@ Power BI Desktop の毎月のブログとビデオの更新に、Power BI モバ
 次のセクションでは、**Power BI Desktop** と **Power BI サービス** の以前の月の更新について説明します。
 
 
-## <a name="february-2021-update-2903030"></a>2021 年 2 月の更新 (2.90.303.0)
+## <a name="february-2021-update-2907020"></a>2021 年 2 月の更新 (2.90.702.0)
 
 Power BI の 2 月の更新は、バレンタインのチョコレートよりも嬉しい内容でした。 
 
@@ -115,8 +115,8 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 次のリンクを選択して、この以前のバージョンをダウンロードします。 
 
-* [2020 年 12 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02.exe)
-* [2020 年 12 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02_x64.exe)
+* [2021 年 2 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02.exe)
+* [2021 年 2 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02_x64.exe)
 
 
 
@@ -508,11 +508,11 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 * Text/CSF by Example (プレビュー) [[ビデオ]](https://youtu.be/TPsV7N4bZZg?t=1335) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_text_csv) 
 
 ### <a name="data-connectivity"></a>データ接続
-* Cherwell コネクタ [[ビデオ]](https://youtu.be/TPsV7N4bZZg?t=1392) [[記事]](../create-reports/desktop-external-tools.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Cherwell_connector) 
+* Cherwell コネクタ [[ビデオ]](https://youtu.be/TPsV7N4bZZg?t=1392) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Cherwell_connector) 
 
-* Automation Anywhere コネクタ [[ビデオ]](https://youtu.be/TPsV7N4bZZg?t=1414) [[記事]](../create-reports/desktop-external-tools.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Auto_connector) 
+* Automation Anywhere コネクタ [[ビデオ]](https://youtu.be/TPsV7N4bZZg?t=1414) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Auto_connector) 
 
-* Acterys コネクタ [[ビデオ]](https://youtu.be/TPsV7N4bZZg?t=1434) [[記事]](../create-reports/desktop-external-tools.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Acterys_connector) 
+* Acterys コネクタ [[ビデオ]](https://youtu.be/TPsV7N4bZZg?t=1434) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Acterys_connector) 
 
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/)に関するブログ投稿を参照してください。
@@ -527,18 +527,6 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 次のビデオでは、それぞれの更新について説明しています。 ブログの投稿からこのビデオを視聴することもできます。
 
 > [!VIDEO https://www.youtube.com/embed/TPsV7N4bZZg]
-
-ご自身の組織で必要な場合は、以前のバージョンの Power BI Desktop をダウンロードすることもできます。 以前のバージョンではなく、最新バージョンの Power BI Desktop を常に使うことをお勧めします。 以前のバージョンはすべて次の制限を持っています。
-
-* 以前のリリースの Power BI Desktop はサービス提供されていません - 最新の機能と更新プログラムのためには常に最新のリリースを使う必要があります。
-* より新しいリリースの Power BI Desktop で作成されたファイルは、以前のバージョンの Power BI Desktop では開けない場合があります。 
-* 新しいリリースの Power BI Desktop で保存したレポートを読み込むときに警告が発生する場合は、以前のバージョンでそのレポートを保存します。新機能に関連する情報はすべて失われます。
-* アーカイブされるのは英語版の Power BI Desktop のみです。
-
-次のリンクを選択して、この以前のバージョンをダウンロードします。 
-
-* [2020 年 8 月バージョンの Power BI Desktop - 32 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-08.exe)
-* [2020 年 8 月バージョンの Power BI Desktop - 64 ビット](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-08_x64.exe)
 
 
 ## <a name="july-2020-update-2835894661"></a>2020 年 7 月更新プログラム (2.83.5894.661)
@@ -591,7 +579,7 @@ Power BI Desktop 更新プログラムの一覧にある各機能の横のリン
 
 
 ### <a name="other-features"></a>その他の機能
-* Power BI Desktop からの外部ツールの起動 (プレビュー) [[ビデオ]](https://youtu.be/BCNYMJKyjEo?t=1066) [[記事]](../create-reports/desktop-external-tools.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Launch_external_tools) 
+* Power BI Desktop からの外部ツールの起動 (プレビュー) [[ビデオ]](https://youtu.be/BCNYMJKyjEo?t=1066) [[記事]](../transform-model/desktop-external-tools.md) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Launch_external_tools) 
 
 
 これらの新機能の詳細については、[Power BI Desktop 機能の概要](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/)に関するブログ投稿を参照してください。

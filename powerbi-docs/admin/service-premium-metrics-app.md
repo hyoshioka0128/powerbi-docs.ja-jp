@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 6b214aacaeff0cc939af60b97d0c4781e1e4d36b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7f18c0a85d6a5bf01d74e705ab6f9f1d47bc60a1
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413635"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226555"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Power BI Premium Metrics アプリ
 
@@ -34,6 +34,8 @@ ms.locfileid: "96413635"
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 特に、パフォーマンスとユーザーのエクスペリエンスを確保するために、管理者が監視する必要のあるメトリックを大幅に減らしています (CPU のみ)。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 
+> [!NOTE]
+> メトリクス アプリを使用して、Premium Per User (PPU) アクティビティまたは容量を監視することはできません。
 
 ## <a name="premium-capacity-health-center"></a>Premium の [Capacity health center]\(容量正常性センター\)
 

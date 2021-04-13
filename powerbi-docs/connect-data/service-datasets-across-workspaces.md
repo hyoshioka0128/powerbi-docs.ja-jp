@@ -7,14 +7,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0569bf40728f0c1300ded9c9656cca639105e981
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3027c6334e20b879cbe572989bebd8f937dbca56
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410438"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230281"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>ワークスペース全体のデータセットの概要
 
@@ -54,10 +54,10 @@ Power BI では、データセットの作成者は、[ビルド アクセス許
 共有データセット機能に基づいて構築された特定の機能とエクスペリエンスは、既存のシナリオに基づいてライセンス供与されます。 例:
 
 - 一般的に、共有データセットは誰でも検出し、それに接続できます。これは Premium に制限された機能ではありません。
-- Pro ライセンスを所有していないユーザーが、レポート作成のためにワークスペース全体でデータセットを使用できるのは、それらのデータセットがユーザー個人のマイ ワークスペースまたは Premium ベースのワークスペースに存在する場合のみです。 レポートを Power BI Desktop または Power BI サービスのどちらで作成しても、同じライセンスの制限が適用されます。
-- ワークスペース間でレポートをコピーするには、Pro ライセンスが必要です。
-- アプリからレポートをコピーするには、組織のコンテンツ パックに必要であった Pro ライセンスが必要です。
-- データセットの昇格と認定を行うには、Pro ライセンスが必要です。
+- Pro または Premium Per User (PPU) のライセンスを所有していないユーザーが、レポート作成のためにワークスペース全体でデータセットを使用できるのは、それらのデータセットがユーザー個人のマイ ワークスペースまたは Premium ベースのワークスペースに存在する場合のみです。 レポートを Power BI Desktop または Power BI サービスのどちらで作成しても、同じライセンスの制限が適用されます。
+- ワークスペース間でレポートをコピーするには、Pro または Premium Per User (PPU) のライセンスが必要です。
+- アプリからレポートをコピーするには、組織のコンテンツ パックに必要であった Pro または Premium Per User (PPU) のライセンスが必要です。
+- データセットの昇格と認定を行うには、Pro または Premium Per User (PPU) のライセンスが必要です。
 
 ## <a name="considerations-and-limitations"></a>考慮事項と制限事項
 

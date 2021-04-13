@@ -1,27 +1,27 @@
 ### YamlMime:Landing
-title: コンシューマー向けの Power BI のドキュメント
-summary: コンシューマーは、同僚からダッシュボードとレポートを受け取ります。 Power BI を使用して、このコンテンツを確認および操作し、ビジネス上の意思決定を行います。
+title: ビジネス ユーザー向けの Power BI ドキュメント
+summary: ビジネス ユーザーまたはコンシューマーは、同僚からダッシュボードとレポートを受け取ります。 Power BI を使用して、このコンテンツを確認および操作し、ビジネス上の意思決定を行います。
 metadata:
-  title: 利用者向けの Power BI
-  description: Power BI を初めて使いますか? Power BI サービスの機能を理解し、Power BI のコンシューマーまたはエンド ユーザーとしてそれらを利用してできることを確認してください。
+  title: "\"ビジネス ユーザー\" 向けの Power BI"
+  description: Power BI を初めて使いますか? Power BI サービスの機能を理解し、Power BI のビジネス ユーザーとしてそれらを利用してできることを確認してください。
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: landing-page
   author: mihart
   ms.author: mihart
-  ms.date: 03/22/2020
-  ms.openlocfilehash: 6799190e5256b275f10c85695c495689102d94b4
-  ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+  ms.date: 04/06/2021
+  ms.openlocfilehash: 88f5e85777a895a522e17a12c7c1c3619b469455
+  ms.sourcegitcommit: ebb35be3ffdfa127761181732175a080d8be3131
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "97621811"
+  ms.lasthandoff: 04/08/2021
+  ms.locfileid: "107074626"
 landingContent:
-- title: コンシューマー向けの Power BI について
+- title: ビジネス ユーザー向けの Power BI について
   linkLists:
   - linkListType: overview
     links:
-    - text: Power BI コンシューマーとは
+    - text: Power BI のビジネス ユーザーとは
       url: end-user-consumer.md
     - text: Power BI サービスのツアーを開始する
       url: end-user-reading-view.md

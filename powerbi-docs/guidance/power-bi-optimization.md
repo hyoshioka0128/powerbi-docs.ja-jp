@@ -7,13 +7,13 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 02/16/2020
-ms.openlocfilehash: a6fc823194d0f5ed35ea92d08f631a364cb63e28
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.date: 04/02/2021
+ms.openlocfilehash: 328e861f600722dc5e7874d5cd25286dc3cb1aca
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99087547"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230327"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Power BI の最適化ガイド
 
@@ -83,7 +83,7 @@ Power BI のページ分割されたレポートのデザインを最適化す�
 
 ### <a name="capacity-settings"></a>容量の設定
 
-容量 (Power BI Premium (P SKU) または Power BI Embedded (A SKU、A4-A6) で利用可能) を使用する場合は、容量の設定を管理できます。 詳細については、「[Premium 容量を管理する](../admin/service-premium-capacity-manage.md)」を参照してください。 容量を最適化する方法のガイダンスについては、「[Premium 容量を最適化する](../admin/service-premium-capacity-optimize.md)」をご覧ください。
+容量 (Power BI Premium (P SKU)、Premium Per User (PPU) ライセンス、または Power BI Embedded (A SKU、A4-A6) で利用可能) を使用する場合は、容量の設定を管理できます。 詳細については、「[Premium 容量を管理する](../admin/service-premium-capacity-manage.md)」を参照してください。 容量を最適化する方法のガイダンスについては、「[Premium 容量を最適化する](../admin/service-premium-capacity-optimize.md)」をご覧ください。
 
 ### <a name="gateway-sizing"></a>ゲートウェイのサイズ設定
 

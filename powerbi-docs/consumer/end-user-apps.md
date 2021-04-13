@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 04/02/2021
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: ed9e7f826c8b5e75e1192c16dc72315cf32c1b9a
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: 31c54f91038f31a27137c5ae4a83a6f738d19a49
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578316"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228326"
 ---
 # <a name="apps-in-power-bi"></a>Power BI のアプリ
 
@@ -29,7 +29,7 @@ ms.locfileid: "96578316"
 ## <a name="app-designers-and-app-users"></a>アプリ "*デザイナー*" とアプリ "*ユーザー*"
 自分の役割によっては、自分用または仕事仲間と共有するアプリの作成者 ("*デザイナー*") である場合があります。 または、他のユーザーが作成したアプリを受け取り、ダウンロードするユーザー ("*ビジネス ユーザー*") である場合があります。 この記事は、"*ビジネス ユーザー*" を対象としています。
 
-アプリを表示して開くには、特定のアクセス許可が必要です。 受信者は Power BI Pro ライセンスを持っているか、**Premium 容量** と呼ばれる特別な種類のクラウド ストレージでアプリを受信者と共有する必要があります。 ライセンスと Premium 容量の詳細については、[Power BI サービスのライセンス](end-user-license.md)に関する記事を参照してください。
+アプリを表示して開くには、特定のアクセス許可が必要です。 受信者は Power BI Pro または Premium Per User (PPU) のライセンスを持っているか、**Premium 容量** と呼ばれる特別な種類のクラウド ストレージでアプリを受信者と共有する必要があります。 ライセンスと Premium 容量の詳細については、[Power BI サービスのライセンス](end-user-license.md)に関する記事を参照してください。
 
 ## <a name="advantages-of-apps"></a>アプリの利点
 アプリは、"*デザイナー*" にとって、さまざまな種類のコンテンツを一度に共有するための簡単な方法です。 アプリの "*デザイナー*" は、ダッシュボードとレポートを作成し、それらをアプリにまとめます。 その後、"*デザイナー*" は、"*ビジネス ユーザー*" がアクセスできる場所にアプリを共有または発行します。 関連するダッシュボードとレポートはまとめられているため、Power BI サービス ([https://powerbi.com](https://powerbi.com)) とご利用のモバイル デバイスの両方でより簡単に検索してインストールできます。 アプリのインストール後は、さまざまなダッシュボードやレポートの名前を覚えておく必要がありません。ご利用のブラウザー内やモバイル デバイス上で 1 つのアプリにまとめて表示されるためです。

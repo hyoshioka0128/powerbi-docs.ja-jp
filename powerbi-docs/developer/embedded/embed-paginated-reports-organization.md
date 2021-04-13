@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 06/25/2020
-ms.openlocfilehash: b98e761a9ac2578a1af43bdb2c536f73fc3cc5af
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.date: 04/02/2021
+ms.openlocfilehash: 3bf0b9047b833c36796c33630a24041cfae11cfc
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565693"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230304"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -37,7 +37,7 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 ## <a name="prerequisites"></a>前提条件
 始めるにあたり、必要なもの:
 
-* [Power BI Pro アカウント](../../admin/service-admin-purchasing-power-bi-pro.md)。
+* [Power BI Pro ライセンス](../../admin/service-admin-purchasing-power-bi-pro.md)または Premium Per User (PPU) ライセンス。
 
 * 独自の [Azure Active Directory テナント](create-an-azure-active-directory-tenant.md)のセットアップが必要です。
 
@@ -112,7 +112,7 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 
 ### <a name="create-and-publish-your-power-bi-paginated-reports"></a>Power BI のページ分割されたレポートを作成して発行する
 
-[Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) を使用して、ページ分割されたレポートを作成できます。 その後、少なくとも P1 容量に割り当てられているアプリ ワークスペースに[レポートをアップロード](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service)し、[ページ分割されたレポートのワークロード](#enable-paginated-reports-workload)を有効にできます。 レポートをアップロードするエンド ユーザーは、アプリのワークスペースに発行するために Power BI Pro ライセンスを持っている必要があります。
+[Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) を使用して、ページ分割されたレポートを作成できます。 その後、少なくとも P1 容量に割り当てられているアプリ ワークスペースに[レポートをアップロード](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service)し、[ページ分割されたレポートのワークロード](#enable-paginated-reports-workload)を有効にできます。 レポートをアップロードするエンド ユーザーは、アプリのワークスペースに発行するために Power BI Pro または Premium Per User (PPU) のライセンスを持っている必要があります。
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>サンプル アプリケーションを使用してコンテンツを埋め込む
 

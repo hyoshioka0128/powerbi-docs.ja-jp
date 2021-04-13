@@ -8,14 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/22/2021
+ms.date: 04/02/2021
 LocalizationGroup: Administration
-ms.openlocfilehash: 04b329e9b460fdf2599ae967a4598adefa9f824c
-ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
+ms.openlocfilehash: 6a25cf9eb515bb4a2dacb615cb40cd758192a935
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104834419"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227148"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Power BI ワークスペースでデータ ストレージを管理する
 
@@ -29,7 +29,7 @@ ms.locfileid: "104834419"
 共有された容量のワークスペース 
 
 - ワークスペースごとに 10 GB のストレージ制限があります。
-- アプリ ワークスペースの場合、合計使用量は、テナントのストレージ上限 10 GB にテナント内の Pro ライセンスの数を掛けた値を超えることができません。
+- アプリ ワークスペースの場合、合計使用量は、テナントのストレージ上限 10 GB にテナント内の Pro または Premium Per User (PPU) のライセンスの数を掛けた値を超えることができません。
 
 ### <a name="premium-capacity-limits"></a>Premium 容量の制限
 Premium 容量のワークスペースの場合:

@@ -10,16 +10,16 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 28fcaad9f6796d56303bd223b5d693e7dadc07de
-ms.sourcegitcommit: f3669a5f68c9d646d86adcf77e589af4540042e3
+ms.openlocfilehash: 2c424d2946c9c410d4934fd801d0bf8bf3c3ff09
+ms.sourcegitcommit: 48d8aa293669fa881d682d5279e2d51cba342bd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102534345"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106104533"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Power BI での行レベルのセキュリティ (RLS)
 
-Power BI で行レベル セキュリティ (RLS) を使用すると、特定のユーザーのデータ アクセスを制限できます。 フィルターでは行レベルでデータ アクセスが制限され、ロール内でフィルターを定義することができます。 Power BI サービスでは、ワークスペースのメンバーがそのワークスペース内のデータセットにアクセスすることができます。 RLS では、このデータ アクセスは制限されません。
+Power BI で行レベル セキュリティ (RLS) を使用すると、特定のユーザーのデータ アクセスを制限できます。 フィルターでは行レベルでデータ アクセスが制限され、ロール内でフィルターを定義することができます。 Power BI サービスでは、ワークスペースのメンバーがそのワークスペース内のデータセットにアクセスすることができます。 RLS では、このデータ アクセスは制限されません。 
 
 Power BI Desktop で Power BI にインポートされたデータ モデルの RLS を構成できます。 SQL Server などの DirectQuery を使用しているデータセットに RLS を構成することもできます。 Analysis Services または Azure Analysis Services のライブ接続では、Power BI Desktop 内ではなく、モデル内の行レベルのセキュリティを構成します。 このセキュリティ オプションは、ライブ接続データセットには表示されません。
 
@@ -103,7 +103,7 @@ Power BI Desktop 内でのみ、役割を作成または変更できます。
 
 ## <a name="using-rls-with-workspaces-in-power-bi"></a>Power BI での RLS とワークスペースの使用
 
-Power BI サービス内のワークスペースに Power BI Desktop レポートを発行した場合、ロールは読み取り専用のメンバーに適用されます。 メンバーはワークスペース設定内の Power BI コンテンツだけを表示できることを示す必要があります。
+Power BI Desktop レポートを Power BI サービスのワークスペースに公開する場合、そのワークスペースの **ビューアー** アクセスが割り当てられている読み取り専用メンバーに RLS ロールが適用されます。 **ビューアー** にデータセットのビルド アクセス許可が与えられている場合でも、RLS が適用されます。 たとえば、ビルド アクセス許可が与えられているビューアーが [[Excel で分析]](../collaborate-share/service-analyze-in-excel.md) を使用する場合、データの表示は RLS によって保護されます。 **[管理者]** 、 **[メンバー]** 、 **[共同作成者]** が割り当てられているワークスペース メンバーには、データセットの編集アクセス許可が与えられます。そのため、RLS はこれらのメンバーに適用されません。 メンバーはワークスペース設定内の Power BI コンテンツだけを表示できることを示す必要があります。
 
 > [!WARNING]
 > メンバーが編集アクセス許可を持つようにワークスペースを構成している場合、RLS ロールは適用されません。 ユーザーはすべてのデータを表示できます。

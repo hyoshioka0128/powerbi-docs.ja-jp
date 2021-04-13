@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: e4a194fc8973e6c3e80cc77081a1564984b6de2a
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: 48cc98596542ac966fb645777d5a0b861ea45902
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104724525"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226463"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium のよく寄せられる質問
 
@@ -40,7 +40,7 @@ Power BI Premium は、以下を含む容量ベースのプランです。
 Power BI Premium は、各組織専用に割り当てられている Power BI サービスの容量で構成されます。 この容量は、Microsoft が完全に管理している専用ハードウェアでサポートされています。 組織は容量を幅広く適用するか、ユーザー数、ワークロードのニーズなどの要因に基づいて割り当てられたワークスペースに割り当てることができます。また、要件に変化に応じてスケールアップまたはスケールダウンすることができます。
 
 **Power BI Pro と Power BI Premium の違いは何ですか?**  
-Power BI Premium は容量ベースのライセンスですが、Power BI Pro はユーザーベースのライセンスです。 Power BI Pro は、レポートの公開や、ダッシュボードの共有のほか、ワークスペースで仕事仲間と共同作業したり、その他の関連アクティビティを行ったりするユーザーを対象としています。たとえば、次の作業を行うことができます。
+Power BI Premium は容量ベースのライセンスですが、Power BI Pro と Premium Per User (PPU) はユーザーベースのライセンスです。 Power BI Pro は、レポートの公開や、ダッシュボードの共有のほか、ワークスペースで仕事仲間と共同作業したり、その他の関連アクティビティを行ったりするユーザーを対象としています。たとえば、次の作業を行うことができます。
 
 * カスタマイズされたビューの編集と保存
 * 個人用ダッシュボードの作成 (新しいダッシュボードへのピン留め)
@@ -49,8 +49,10 @@ Power BI Premium は容量ベースのライセンスですが、Power BI Pro �
 * ダッシュボードの共有と、Microsoft 365 グループとのコラボレーション
 * Microsoft Teams とのコンテンツの統合
 
+Premium Per User (PPU) ライセンスには、Pro ユーザーのすべての機能が含まれ、さらに追加の機能があります。 
+
 **Power BI Premium を使用するには Power BI Pro が必要ですか?**  
-はい。 レポートの発行、ダッシュボードの共有、ワークスペースでの同僚とのコラボレーション、他の関連するアクティビティの実行には、Power BI Pro が必要です。 Power BI Pro は、Premium 容量内のコンテンツを使用する必要がありません。
+はい。 レポートの発行、ダッシュボードの共有、ワークスペースでの同僚とのコラボレーション、他の関連するアクティビティの実行には、Power BI Pro または Premium Per User (PPU) が必要です。 Power BI Pro は、Premium 容量内のコンテンツを使用する必要がありません。
 
 **Power BI Pro と Power BI Premium で最新の BI を導入する組織に対応するシナリオについて概要を教えてください。**  
 次の例は、Power BI Pro と Power BI Premium を組み合わせて BI のニーズを満たす方法を示しています。
@@ -159,6 +161,10 @@ Power BI サービスでは、90 日間の使用率データを格納します�
 使用率レポートの左側にある横棒グラフ ビジュアルには、レポートの期間中のワークスペース間の使用率情報が表示されます。 各ワークスペースが、チャージバックを適用できるさまざまな部署、コスト センター、またはその他のエンティティを表している場合は、この横棒グラフ ビジュアルをチャージバックに使用できます。
 
 
+## <a name="premium-per-user-ppu"></a>Premium Per User (PPU)
+
+Premium Per User (PPU) に関する詳細については、[Power BI Premium Per User](service-premium-per-user-faq.md) に関する記事を参照してください。
+
 ## <a name="next-steps"></a>次のステップ
 
 次の記事は、Power BI Premium に関するより詳細な情報を提供しています。
@@ -166,7 +172,7 @@ Power BI サービスでは、90 日間の使用率データを格納します�
 * [Power BI Premium とは何ですか?](service-premium-what-is.md)
 * [Power BI Premium で自動スケーリングを使用する](service-premium-auto-scale.md)
 * [Microsoft Power BI Premium ホワイト ペーパー](https://aka.ms/pbipremiumwhitepaper)
-* [Power BI のエンタープライズ展開の計画に関するホワイト ペーパー](https://aka.ms/pbienterprisedeploy)
+* [Power BI のエンタープライズ展開の計画に関するホワイト ペーパー](https://aka.ms/PBIEnterpriseDeploymentWP)
 * [Extended Pro Trial のアクティブ化](../fundamentals/service-self-service-signup-for-power-bi.md)
 * [Power BI Embedded のよくあるご質問](../developer/embedded/embedded-faq.md)
 

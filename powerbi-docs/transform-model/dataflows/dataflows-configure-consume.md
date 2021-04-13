@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: 99ca02a2a02a51b25f4f33409bbe84d60b4ad352
-ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
+ms.openlocfilehash: 2dc108d2f4388671608bec23df437aa5de0964fd
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103191577"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227199"
 ---
 # <a name="configure-and-consume-a-dataflow"></a>データフローの構成と使用
 
@@ -43,6 +43,9 @@ ms.locfileid: "103191577"
 * **[コンピューティング エンジンの拡張設定]:** ここでは、データフローをコンピューティング エンジン内に格納するかどうかを定義できます。 コンピューティング エンジンにより、このデータフローを参照する後続のデータフローで、マージ、結合、その他の変換を、それ以外の場合よりはるかに速く実行できます。 また、データフローに対して DirectQuery を実行することもできます。 **[オン]** を選択すると、データフローは常に DirectQuery モードでサポートされ、すべての参照でエンジンを利用できます。 **[最適化]** を選択すると、このデータフローへの参照がある場合にのみエンジンが使用されることを意味します。 **[オフ]** を選択すると、このデータフローに対してコンピューティング エンジンと DirectQuery 機能が無効になります。
 
 * **[Endorsements]\(承認\):** データフローを認定または昇格するかどうかを定義できます。 
+
+> [!NOTE]
+> データフローは、Premium ワークスペースのユーザー、Pro ライセンスを持つユーザー、Premium Per User (PPU) ライセンスを持つユーザーが作成できます。
 
 ## <a name="refreshing-a-dataflow"></a>データセットの更新
 データフローは、相互に重なる構成要素として機能します。 *Raw Data* という名前のデータフローと、*Raw Data* データフローへのリンク テーブルが含まれる *Transformed Data* という名前のリンク テーブルがあるとします。 データフロー *Raw Data* に対するスケジュールされた更新がトリガーされると、完了時にそれを参照するデータフローがトリガーされます。 この機能により、更新のチェーン効果が作成され、データフローを手動でスケジュールする必要がなくなります。 リンク テーブルの更新を処理する場合は、次の点に注意する必要があります。

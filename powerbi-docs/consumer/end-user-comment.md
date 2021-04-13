@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/08/2021
 LocalizationGroup: Consumer
-ms.openlocfilehash: a4a89fd9db3ea3d92012bdaffdcaf248f7546c86
-ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
+ms.openlocfilehash: dd680e107be3dea803620ff81e9ecc8b67e1cced
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98053468"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106549611"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>ダッシュボードまたはレポートにコメントを追加する
 
@@ -29,7 +29,7 @@ ms.locfileid: "98053468"
 > 共有レポートにコメントを追加するなど、他のユーザーと共同作業するには、Power BI Pro ライセンスを使用するか、Power BI Premium 容量でコンテンツをホストする必要があります。 [私のライセンスの種類は何ですか?](end-user-license.md)
 
 ## <a name="how-to-use-the-comments-feature"></a>コメント機能を使用する方法
-コメントは、ダッシュボード全体、ダッシュボード上の個々のビジュアル、レポート ページ、ページ分割されたレポート、レポート ページ上の個々のビジュアルに追加することができます。 一般的なコメントを追加するか、特定の同僚に宛てたコメントを追加します。  
+コメントは、ダッシュボード全体、ダッシュボード上の個々のビジュアル、レポート ページ、ページ分割されたレポート、レポート ページ上の個々のビジュアルに追加することができます。 一般的なコメントを追加するか、特定の同僚に宛てたコメントを追加します。 コメントには、他のユーザーの @mentions とスペースを含め、最大 500 文字を指定できます。
 
 レポートにコメントを追加すると、Power BI によって現在のフィルターとスライサーの値がキャプチャされ、[ブックマーク](end-user-bookmarks.md)が作成されます。 つまり、コメントを選択またはコメントに応答すると、レポート ページまたはレポートのビジュアルが変更されて、コメントが最初に追加されたときにアクティブだったフィルターとスライサーの選択が表示される場合があります。  
 
@@ -100,6 +100,7 @@ ms.locfileid: "98053468"
 
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
 
+- コメントには、他のユーザーの @mentions とスペースを含め、500 文字までに制限されています。
 - 会話に返信しても、ブックマークはキャプチャされません。 会話の最初のコメントのみがブックマークを作成します。
 - ページ分割されたレポートを使用している場合、レポートに関する一般的なコメントのみを残しておくことができます。  ページ番号が付けられた個々のレポート ビジュアルにコメントを残すことはできません。
 

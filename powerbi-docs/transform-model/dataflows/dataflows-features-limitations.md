@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/19/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: 714dfe1c16c39570e6f553b145a3f7f4b396ecdb
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: a2478b5c1ba4a9d78078734d39e27a5d96e1e701
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104724571"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227084"
 ---
 # <a name="dataflows-limitations-and-considerations"></a>データフローの制限事項と考慮事項
 
@@ -84,6 +84,10 @@ Premium に存在するデータフローには、次の制限事項と考慮事
 
 * データフローのスキーマを変更すると、すべてのデータが削除されます
 
+* データフローで Premium Per User (PPU) ライセンスを使用すると、PPU 環境からデータを移動するときにデータが消去されます
+
+* Premium Per User (PPU) コンテキストでデータフローが更新されると、PPU 以外のユーザーにデータが表示されなくなります
+
 **リンクおよび計算テーブル:**
 
 * リンク テーブルは、32 参照の深さにまですることができます
@@ -129,7 +133,42 @@ Premium に存在するデータフローには、次の制限事項と考慮事
     * 2 番目のアプローチ: 前のアプローチを実行できない場合は、データベース内のサブスクリプション ID を変更するためのサポート リクエストを送信します。
 * ADLS では、次の制限のために、ワークスペースの名前付けとデータフローの名前付けに関する記事の「[ディレクトリ名とファイル名](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata)」セクションの一覧にあるほとんどの要素がサポートされていません。
     * Power BI は役に立たないエラーを返すか、またはこのプロセスの実行を許可しますが、更新は失敗します。 
-* テナントにまたがる ADLS サブスクリプションはサポートされていません。 Power BI にアタッチされている ADLS は、Power BI が Azure Active Directory (AAD) に使用するのと同じ Azure テナントに属している必要があります。
+* テナントにまたがる ADLS サブスクリプションはサポートされていません。 Power BI にアタッチされている ADLS は、Power BI が Azure Active Directory (Azure AD) に使用するのと同じ Azure テナントに属している必要があります。
+
+## <a name="dataflow-data-types"></a>データフロー データ型
+
+データフローでサポートされているデータ型は次のとおりです。
+
+|マッシュアップ データ型   |データフロー データ型 |
+|---------|---------|
+|Time|Time|
+|Date|Date|
+|DateTime|DateTime|
+|DateTimeZone|DateTimeOffset|
+|論理|ブール型|
+|テキスト|String|
+|Any|String|
+|Currency|Decimal|
+|Int8   |Int64|
+|Int16  |Int64|
+|Int32  |Int64|
+|Int64  |Int64|
+|Double |Double|
+|パーセント |Double|
+|Single |Double|
+|Decimal    |Double|
+|数値 |Double|
+|Duration   |サポートされていません|
+|Binary |サポートされていません|
+|機能   |サポートされていません|
+|テーブル  |サポートされていません|
+|List   |サポートされていません|
+|Record |サポートされていません|
+|Type   |サポートされていません|
+|アクション |サポートされていません|
+|なし   |サポートされていません|
+|[Null]   |サポートされていません|
+
 
 ## <a name="next-steps"></a>次のステップ
 データフローと Power BI の詳細については、以下の記事を参照してください。

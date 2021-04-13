@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/14/2019
+ms.date: 04/02/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 60a4edac34e98170d0499f3480f01b366a512ddc
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 92e52fc362f97e119012f74c1e998e4067a246df
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415659"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106549588"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Power BI で R ビジュアルを作成して使用する
 
@@ -62,14 +62,14 @@ Power BI サービスには、ユーザーとサービスをセキュリティ�
 ## <a name="r-scripts-error-experience"></a>R スクリプトのエラー エクスペリエンス
 R スクリプトでエラーが発生した場合、R ビジュアルはプロットされず、エラー メッセージが表示されます。 エラーの詳細については、次の図に示すように、キャンバス上の R ビジュアル エラーから **[詳細を確認する]** を選択します。
 
-![エラー メッセージ](media/service-r-visuals/r-visuals-service-4.png)
+![error message](media/service-r-visuals/r-visuals-service-4.png)
 
 もう 1 つの例として、Azure に R パッケージがないために R スクリプトを正常に実行できなかった場合、次の図のようなエラー メッセージが表示されます。
 
 ![ランタイム エラーを示すスクリーンショット](media/service-r-visuals/r-visuals-service-5.png)
 
 ## <a name="licensing"></a>ライセンス
-R ビジュアルでは、レポートでの表示、更新、フィルター処理、およびクロスフィルター処理を行う場合、[Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) のライセンスが必要です。 Power BI Pro のライセンスの詳細および無料ライセンスとの違いについては、「[Power BI Pro コンテンツとは](../admin/service-admin-purchasing-power-bi-pro.md)」を参照してください。
+R ビジュアルの場合、レポートのレンダリング、更新、フィルター処理、およびクロスフィルター処理を行うために、[Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) または Premium Per User (PPU) のライセンスが必要です。 Power BI Pro のライセンスの詳細および無料ライセンスとの違いについては、「[Power BI Pro コンテンツとは](../admin/service-admin-purchasing-power-bi-pro.md)」を参照してください。
 
 Power BI 無料版のユーザーは、Premium ワークスペースで共有されたタイルのみを使用できます。 詳細については、「[Power BI Pro を購入する](../admin/service-admin-purchasing-power-bi-pro.md)」を参照してください。
 
@@ -81,7 +81,7 @@ Power BI 無料版のユーザーは、Premium ワークスペースで共有さ
 |**ゲスト** (Power BI embedded)     |  サポートされています|  サポートされていません      | Premium/Azure 容量のみでサポートされている  | Premium/Azure 容量のみでサポートされている |
 |**アンマネージド テナント** (未確認のドメイン) | サポートされています | サポートされていません |  サポートされていません |サポートされている (B2B のシナリオ) |
 |無料ライセンスの **マネージド テナント**    |  サポートされています       |  サポートされていません       |    Premium 容量のみでサポートされている    | サポートされています |
-Pro ライセンスを持つ **マネージド テナント**     |   サポートされています      | サポートされています      | サポートされています    |サポートされています|
+Pro または PPU ライセンスを使用した **マネージド テナント**     |   サポートされています      | サポートされています      | サポートされています    |サポートされています|
 
 
 
@@ -90,6 +90,7 @@ Power BI サービスの R ビジュアルには、一定の制限がありま�
 
 * R ビジュアルのサポートは、[サポート対象の R パッケージの確認](../connect-data/service-r-packages-support.md)に関するページで特定されているパッケージに限定されます。 現在のところ、カスタム パッケージはサポートされていません。
 * データ サイズの制限 – プロット作成で R ビジュアルが使用するデータは、150,000 行に制限されています。 150,000 を超える行が選択されている場合は、上位の 150,000 の行のみが使用され、メッセージがイメージに表示されます。 また、入力データには 250 MB の制限があります。
+* R ビジュアルの入力データセットに 32,766 文字を超える文字列値が含まれている列がある場合、その値は切り捨てられます。
 * 解像度 - R ビジュアルはすべて 72 DPI で表示されます。
 * デバイスのプロット - 既定のデバイスへのプロットのみがサポートされています。 
 * 計算時間の制限 – R ビジュアル計算で実行時間が 60 秒を超えると、エラーが発生します。
@@ -123,7 +124,7 @@ R パッケージは、適切に定義された形式で結合された R 関数
 
 **Power BI Desktop** では、どのような種類の R パッケージでも制限なく使うことができます。 **Power BI Desktop** で使う R パッケージをユーザー自身がインストールできます (たとえば、[RStudio IDE](https://www.rstudio.com/) を使って)。
 
-**Power BI サービス** の R ビジュアルは、**この記事** の「[サポートされるパッケージ](../connect-data/service-r-packages-support.md)」セクションで示されているパッケージによってサポートされます。 サポートされるパッケージの一覧に目的のパッケージがない場合は、パッケージのサポートを要求できます。 サポートを要求する方法については、「[Power BI サービスの R パッケージ](../connect-data/service-r-packages-support.md)」を参照してください。
+**Power BI サービス** の R ビジュアルは、[この記事](../connect-data/service-r-packages-support.md)の「**サポートされるパッケージ**」セクションで示されているパッケージによってサポートされます。 サポートされるパッケージの一覧に目的のパッケージがない場合は、パッケージのサポートを要求できます。 サポートを要求する方法については、「[Power BI サービスの R パッケージ](../connect-data/service-r-packages-support.md)」を参照してください。
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>R パッケージの要件と制限事項
 R パッケージにはいくつかの要件と制限があります。

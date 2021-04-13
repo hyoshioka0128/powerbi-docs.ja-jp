@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: cf056581c7c1f472e1e7ce20baf3d7afd8815bda
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 6574bf636a74c2a614fe9560b2ce526b43e9da6a
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886032"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229315"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>セキュリティで保護されたポータルまたは Web サイトにレポートを埋め込む
 
@@ -38,7 +38,7 @@ Power BI レポートの新しい **埋め込み** オプションを使うと�
 
     ![サインインしてこのレポートを表示する](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. ユーザーがサインインすると、レポートが開き、データが表示され、ページ ナビゲーションとフィルター設定が許可されます。 Power BI でレポートを表示できるのは、表示権限を持つユーザーだけです。 [行レベルのセキュリティ (RLS)](../admin/service-admin-rls.md) 規則もすべて適用されます。 最後に、ユーザーに正しいライセンスが与えられている必要があります – Power BI Pro ライセンスが必要であるか、またはレポートが Power BI Premium 容量内にあるワークスペースに置かれている必要があります。 ユーザーは、新しいブラウザー ウィンドウを開くたびにサインインする必要があります。 ただし、一度サインインすると、他のレポートは自動的に読み込まれます。
+4. ユーザーがサインインすると、レポートが開き、データが表示され、ページ ナビゲーションとフィルター設定が許可されます。 Power BI でレポートを表示できるのは、表示権限を持つユーザーだけです。 [行レベルのセキュリティ (RLS)](../admin/service-admin-rls.md) 規則もすべて適用されます。 最後に、ユーザーに正しいライセンスが与えられている必要があります – Power BI Pro または Premium Per User (PPU) のライセンスが必要であるか、またはレポートが Power BI Premium 容量内にあるワークスペースに置かれている必要があります。 ユーザーは、新しいブラウザー ウィンドウを開くたびにサインインする必要があります。 ただし、一度サインインすると、他のレポートは自動的に読み込まれます。
 
     ![レポートを埋め込む](media/service-embed-secure/secure-embed-report.png)
 
@@ -54,13 +54,13 @@ Power BI サービスでは、アクセスを必要とするユーザーと埋�
 
 ## <a name="licensing"></a>ライセンス
 
-埋め込まれたレポートをユーザーが表示するには、Power BI Pro ライセンスが必要です。あるいは、コンテンツを [Power BI Premium 容量 (EM または P SKU)](../admin/service-admin-premium-purchase.md) 内のワークスペースに置く必要があります。
+埋め込まれたレポートをユーザーが表示するには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。あるいは、コンテンツを [Power BI Premium 容量 (EM または P SKU)](../admin/service-admin-premium-purchase.md) 内のワークスペースに置く必要があります。
 
 ## <a name="customize-your-embed-experience-using-url-settings"></a>URL 設定を使って埋め込みエクスペリエンスをカスタマイズする
 
 埋め込み URL の入力設定を使用し、ユーザー エクスペリエンスをカスタマイズできます。 指定の iFrame では、URL の **src** 設定を更新できます。
 
-| プロパティ  | Description  |
+| プロパティ  | 説明  |
 |-----------|--------------|
 | pageName  | **pageName** クエリ文字列パラメーターを使用し、開くレポート ページを設定します。 次に示すように、この値は、Power BI サービスでレポートを表示するとき、レポートの URL の終わりにあります。 |
 | URL フィルター  | Power BI UI から受け取った埋め込み URL の [URL フィルター](service-url-filters.md)を使用し、埋め込みコンテンツをフィルター処理できます。 この方法では、基本的な HTML および JavaScript エクスペリエンスのみとのローコードの統合を構築できます。  |
@@ -115,7 +115,7 @@ report.src = newUrl;
 }
 ```
 
-![フィルター](media/service-embed-secure/secure-embed-filter.png)
+![Assert](media/service-embed-secure/secure-embed-filter.png)
 
 ボタンを好きなだけ追加して、ローコードのカスタム エクスペリエンスを作成できます。 
 

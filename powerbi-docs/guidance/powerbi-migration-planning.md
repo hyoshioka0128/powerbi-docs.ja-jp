@@ -7,13 +7,13 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 08/20/2020
-ms.openlocfilehash: f6b781d6b3f87587e7734d5f842a013fd6fb5c19
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.date: 04/02/2021
+ms.openlocfilehash: 4834bcf83b2a2b8fe0a322081c4fd6c42c68e4a6
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99086696"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230419"
 ---
 # <a name="plan-deployment-to-migrate-to-power-bi"></a>Power BI に移行するためのデプロイを計画する
 
@@ -81,7 +81,7 @@ ms.locfileid: "99086696"
 
 ワークスペースを [Premium 容量](../admin/service-premium-what-is.md)に格納すると、追加の機能を使用できます。 Premium 容量上のワークスペースが有利であるいくつかの理由を次に示します。
 
-- Power BI Pro ライセンスを持たないコンシューマーでも、コンテンツにアクセスできます。
+- Power BI Pro または Premium Per User (PPU) のライセンスを持たないコンシューマーでも、コンテンツにアクセスできます。
 - 大規模なデータセットのサポート。
 - より頻繁なデータ更新のサポート。
 - データフローの完全な機能セットの使用のサポート。
@@ -129,4 +129,4 @@ ms.locfileid: "99086696"
 - わからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。
 - Power BI チームへのご提案は、 [Power BI を改善するためのアイデアをお寄せください](https://ideas.powerbi.com/)
 
-熟練の Power BI パートナーを活用して、組織の移行プロセスを成功させることができます。 Power BI パートナーを手配するには、[Power BI パートナー ポータル](https://powerbi.microsoft.com/partners/)にアクセスしてください。
+経験豊富な Power BI パートナーを活用して、組織の移行プロセスを成功させることができます。 Power BI パートナーを手配するには、[Power BI パートナー ポータル](https://powerbi.microsoft.com/partners/)にアクセスしてください。

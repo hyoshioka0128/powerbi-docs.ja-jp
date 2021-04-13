@@ -1,22 +1,22 @@
 ---
-title: '人事のサンプル: ツアーを開始する'
-description: Power BI の人事のサンプル:ツアーを開始する
+title: '人事のサンプル: 使ってみる'
+description: 'Power BI の人事のサンプル: 使ってみる'
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/05/2019
+ms.date: 04/02/2021
 LocalizationGroup: Samples
-ms.openlocfilehash: 94cb0d7f5ac83220f3b37f878add4f5bfa2caaf6
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ec3cec71cecb9e349794abc42012b73f2817d01a
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395879"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228257"
 ---
-# <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI の人事のサンプル:ツアーを開始する
+# <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI の人事のサンプル: 使ってみる
 
 人事のサンプル コンテンツ パックには、人事部向けのダッシュボード、レポート、およびデータセットが含まれています。 このサンプルでは、業界や規模が違っても、人事部が使用するレポート モデルはどの企業でも変わりがありません。 このサンプルでは、新規採用者、在職者、退職者を調査します。 採用戦略の傾向を明らかにすることを試みます。 主な目的は次を理解することです。
 
@@ -30,7 +30,7 @@ ms.locfileid: "96395879"
 
 このチュートリアルでは、Power BI サービス内の人事のサンプル コンテンツ パックを調べます。 Power BI Desktop とサービスのレポート エクスペリエンスは似ているので、Power BI Desktop 内のサンプルの .pbix ファイルを使用して作業することもできます。 
 
-Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro ライセンスを持っていない場合は、Power BI サービス内で、マイ ワークスペースにサンプルを保存できます。 
+Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、Power BI サービスのマイ ワークスペースにサンプルを保存できます。 
 
 ## <a name="get-the-sample"></a>サンプルを入手する
 
@@ -40,14 +40,14 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 1. Power BI サービス (app.powerbi.com) を開いてサインインし、サンプルを保存するワークスペースを開きます。
 
-   Power BI Pro ライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
+   Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
 
 2. 左下隅にある **[データを取得]** を選びます。
    
    ![[データを取得] を選択](media/sample-datasets/power-bi-get-data.png)
 3. 表示された **[データを取得]** ページで、 **[サンプル]** を選びます。
    
-4. **[Human Resources Sample]** を選択し、 **[接続]** を選択します。  
+4. **[Human Resources Sample]** を選択し、**[接続]** を選択します。  
    
    ![サンプルに接続](media/sample-human-resources/pbi_hr_sample_connect.png)
 
@@ -66,12 +66,12 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="new-hires"></a>新規採用者
 まず、新規採用者を調べてみましょう。
 
-1. ワークスペースで、 **[ダッシュボード]** タブを選択し、 **[Human Resources Sample]** ダッシュボードを開きます。
-2. ダッシュボードで、 **[New Hire Count, New Hires Same Period Last Year, Actives YoY % Change By Month]** タイルを選びます。  
+1. ワークスペースで、**[ダッシュボード]** タブを選択し、**[Human Resources Sample]** ダッシュボードを開きます。
+2. ダッシュボードで、**[New Hire Count, New Hires Same Period Last Year, Actives YoY % Change By Month]** タイルを選びます。  
 
    ![[New Hire Count] タイル](media/sample-human-resources/hr2.png)  
 
-   [人事のサンプル] レポートで、 **[新規採用者]** ページが開きます。  
+   [人事のサンプル] レポートで、**[新規採用者]** ページが開きます。  
 
    ![[New Hires] ページ](media/sample-human-resources/hr3.png)
 
@@ -93,13 +93,13 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="compare-currently-active-and-former-employees"></a>現在の在職者と退職者を比較する
 現在の在職者と既に退職した従業員のデータについて調べましょう。
 
-1. ダッシュボードで、 **[年齢別の在職者数]** タイルを選びます。
+1. ダッシュボードで、**[年齢別の在職者数]** タイルを選びます。
 
    ![[Active Employee Count by Age Group] タイル](media/sample-human-resources/pbi_hr_sample_activepie.png)
 
-   [人事のサンプル] レポートで、 **[Active Employees vs.Separations]** (在職者対離職者) ページが開きます。  
+   [人事のサンプル] レポートで、 **[在職者対離職者]** ページが開きます。  
 
-   ![[Active Employees vs.Separations] ページ](media/sample-human-resources/hr5.png)
+   ![[在職者対離職者] ページ](media/sample-human-resources/hr5.png)
 
  2. 以下の関心のある項目を見ていきます。
 
@@ -114,11 +114,11 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 2. **[年齢別の在職者数]** 円グラフを選びます。
 
-3. **[フィールド]** で、 **[Employees]** を選択して **[Employees]** テーブルを展開します。 **[Active Employee Count]** をオフにして、そのフィールドを削除します。
+3. **[フィールド]** で、**[Employees]** を選択して **[Employees]** テーブルを展開します。 **[Active Employee Count]** をオフにして、そのフィールドを削除します。
 
-4. **[Employees]** テーブルで **[Separation Count]** を選択して、 **[フィールド]** 領域の **[値]** ボックスに追加します。
+4. **[Employees]** テーブルで **[Separation Count]** を選択して、**[フィールド]** 領域の **[値]** ボックスに追加します。
 
-5. レポート キャンバスで、 **[Separation Count by Separation Reason]** 横棒グラフの **[Voluntary]** バーを選びます。 
+5. レポート キャンバスで、**[Separation Count by Separation Reason]** 横棒グラフの **[Voluntary]** バーを選びます。 
 
    このバーにより、レポートの他のビジュアルで自主的に離職した従業員が強調表示されます。
 
@@ -140,11 +140,11 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 1. **[年齢グループ別の在職者の不適切な人材採用 %]** ダッシュボード タイルを選びます。 レポートで、3 番目のタブ **[Bad Hires]** が開きます。
 
    ![[Bad Hires as % of Actives by Age Group] タイル](media/sample-human-resources/hr7.png)  
-2. 左側にある **[Region]** スライサーの **[Northwest]** を選択し、 **[Bad Hire Count by Gender]** ドーナツ グラフの **[Male]** を選択します。 **[Bad Hires]** ページのその他のグラフを確認します。 不適切な人材採用は女性より男性の方が多く、グループ A の不適切な人材採用が多いことがわかります。
+2. 左側にある **[Region]** スライサーの **[Northwest]** を選択し、**[Bad Hire Count by Gender]** ドーナツ グラフの **[Male]** を選択します。 **[Bad Hires]** ページのその他のグラフを確認します。 不適切な人材採用は女性より男性の方が多く、グループ A の不適切な人材採用が多いことがわかります。
 
    ![北西部の不適切な人材採用](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
 
-3. **[Bad Hire Count by Gender]** ドーナツ グラフを表示して、 **[Region]** スライサーで異なるリージョンを選択すると、不適切な人材採用が男性よりも女性の方が多いのは東部リージョンのみであることがわかります。  
+3. **[Bad Hire Count by Gender]** ドーナツ グラフを表示して、**[Region]** スライサーで異なるリージョンを選択すると、不適切な人材採用が男性よりも女性の方が多いのは東部リージョンのみであることがわかります。  
 
 4. 上部のナビ ペインからダッシュボードの名前を選択して、ダッシュボードに戻ります。
 

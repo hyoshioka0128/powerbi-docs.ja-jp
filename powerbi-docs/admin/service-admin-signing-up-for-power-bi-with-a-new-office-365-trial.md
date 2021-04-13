@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/17/2020
+ms.date: 04/02/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 2ac2ed0a50c231aba4d4c849ef0544e126170d44
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 63ad16a05d27d1aa248495adb681bc7d8ccd4ac7
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412416"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226670"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>新しい Microsoft 365 試用版で Power BI にサインアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "96412416"
 
 ![[無料で試す] を選択する](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 
-**Office 365 E5** を選択する場合は、試用版に Power BI Pro が含まれます。 Power BI Pro 試用版は Office 365 E5 試用版と同時に有効期限が切れます。現時点では 30 日間です。 代わりに **Office 365 E3** を選択する場合は、"*無料*" ユーザーとして Power BI にサインアップし、60 日間の試用版を試すために **Pro** にアップグレードできます。 
+**Office 365 E5** を選択する場合は、試用版に Power BI Pro が含まれます。 Power BI Pro 試用版は Office 365 E5 試用版と同時に有効期限が切れます。現時点では 30 日間です。 代わりに **Office 365 E3** を選択する場合は、"*無料*" ユーザーとして Power BI にサインアップし、60 日間の試用版を試すために **Pro** にアップグレードできます。 Premium Per User (PPU) の試用版にサインアップすることもできます。 Premium Per User (PPU) の詳細については、「[Power BI Premium Per User](service-premium-per-user-faq.md)」を参照してください。
 
 1. 電子メール アドレスを入力します。 そのメール アドレスを Microsoft 365 で利用できるか、または新しいメール アドレスを作成する必要があるかどうかが Microsoft によって示されます。  ![ウェルカム ページ](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-setup.png)
 

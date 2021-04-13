@@ -10,12 +10,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/05/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bfcd684e4899edb5555a784c7148a7abc9b0f29c
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: fb4bb94af13db4a9b6d89d04aba0e3c43de1668c
+ms.sourcegitcommit: 48d8aa293669fa881d682d5279e2d51cba342bd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97675306"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106104735"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Power BI で塗り分け地図 (コロプレス地図) を作成して使用する
 
@@ -66,31 +66,31 @@ Bing に送信されているデータの詳細、およびジオコーディン
    ![[State] の横にある黄色のチェック マーク](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
 2. [グラフを変換](power-bi-report-change-visualization-type.md)して、塗り分け地図にします。 **[State]** も、 **[場所]** に含まれるようになったことに注目してください。 Bing 地図は、マップの作成に **[場所]** のフィールドも使用します。  場所には、正しい各種の場所 (国、都道府県、市区町村、郵便番号など) を指定できます。Bing 地図には、世界中の場所に対応する塗り分け地図の輪郭が用意されています。 正しいエントリが [場所] に指定されていないと、Power BI では塗り分け地図を作成できなくなります。  
 
-   ![塗り分け地図のアイコンが強調表示されたテンプレート](media/power-bi-visualization-filled-maps-choropleths/img003.png)
+   ![塗り分け地図のアイコンが強調表示されたテンプレート](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-icon.png)
 3. 地図にフィルターを適用して、米国本土のみが表示されるようにします。
 
    a.  [視覚化] ウィンドウの左側にある **[フィルター]** ウィンドウを確認します。 最小化されている場合は展開します
 
    b.  **[状態]** をポイントし、展開シェブロンを選択します。  
-   ![[State (All)] を示すビジュアル レベル フィルター](media/power-bi-visualization-filled-maps-choropleths/img004.png)
+   ![[State (All)] を示すビジュアル レベル フィルター](media/power-bi-visualization-filled-maps-choropleths/power-bi-state-hover.png)
 
-   c.  **[すべて]** の横にチェックマークを付けて、 **[AK]** の横のチェックマークを外します。
+   c.  **[すべて選択]** の横にチェックマークを付けて、 **[AK]** の横のチェックマークを外します。
 
-   ![[All] と [AK] が選択されていない [State] のドロップダウン](media/power-bi-visualization-filled-maps-choropleths/img005.png)
+   ![[All] と [AK] が選択されていない [State] のドロップダウン](media/power-bi-visualization-filled-maps-choropleths/power-bi-continental.png)
 4. ペイント ローラー アイコンを選択して [書式設定] ウィンドウを開きます。 **[データの色]** を選択します。
 
-    ![[データの色] オプションを表示している [書式設定] ウィンドウ](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors-data.png)
+    ![[データの色] オプションを表示している [書式設定] ウィンドウ](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors.png)
 
-5. 3 つの縦向きドットを選択して、 **[条件付き書式設定]** を選択します。
+5. **[既定の色]** という見出しの下で、 **[fx]** を選択します。
 
-    ![データの色の条件付き書式設定ボタン](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
+    ![データの色の条件付き書式設定ボタン](media/power-bi-visualization-filled-maps-choropleths/power-bi-fx.png)
 
 6. **[既定色 - データの色]** 画面を使用して、ご自分の塗り分け地図をどのように網掛け表示するかを決定します。 利用可能なオプションには、網掛けの基礎となるフィールド、および網掛けを適用する方法などがあります。 この例では、 **[SalesFact]**  >  **[センチメント]** の順に使用して、センチメントの最小値をオレンジ色、最大値を青色に設定します。 最大値と最小値の間にある値は、濃淡の異なるオレンジ色と青色になります。 画面の下部にある図は、使用する色の範囲を示しています。 
 
-    ![センチメントが選択されている [既定色] ウィンドウ](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
+    ![センチメントが選択されている [既定色] ウィンドウ](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
 
-7. 塗り分け地図は緑色と赤色で網掛け表示されます。赤色はセンチメント数が低いことを表し、緑色はより多くの肯定的なセンチメントを表します。  追加の詳細を表示するには、フィールドをツールヒントにドラッグします。  ここに **[SalesFact]**  >  **[Sentiment gap]** を追加しました。 アイダホ州 (ID) を強調表示すると、センチメント ギャップが低く、6 であることがわかります。
-   ![アイダホのツールヒントを表示している塗り分け地図](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
+7. 塗り分け地図は、オレンジ色と青色で網掛け表示されます。オレンジ色は、センチメント数が低いことを表します。また、青色は、より多くの肯定的なセンチメントを表します。  追加の詳細を表示するには、フィールドをツールヒントにドラッグします。  ここに **[SalesFact]**  >  **[Sentiment gap]** を追加しました。 アイダホ州 (ID) を強調表示すると、センチメント ギャップが低く、6 であることがわかります。
+   ![アイダホのツールヒントを表示している塗り分け地図](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho.png)
 
 10. [レポートを保存](../create-reports/service-report-save.md)します。
 

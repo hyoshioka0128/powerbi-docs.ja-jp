@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 03/18/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 40cc7d8d9cbefda7a93fc83d3bcab9f23ce94d4d
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: 0a4c872dc3430a17964d3b73ac73304a5d1fb7a7
+ms.sourcegitcommit: 4a0ad7612281c187892912b1bfe8102a9fd23de7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104724211"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106441071"
 ---
 # <a name="visualization-types-in-power-bi"></a>Power BI での視覚化の種類
 

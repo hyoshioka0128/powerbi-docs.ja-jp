@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/08/2020
+ms.date: 04/02/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 0184e549911afb784e06b1ee829bf113ff97e067
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 415f3fcac7b30699bb27ec861b042506e157adec
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99086305"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226624"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro のユーザー ライセンスを購入して割り当てる
 
 >[!IMPORTANT]
 >この記事は、管理者を対象としています。 Power BI Pro のライセンスにアップグレードする準備はできていますか? アカウントを設定するには、「[Power BI Pro を使ってみましょう](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro)」に直接移動します。
 
-Power BI Pro は、他のユーザーが Power BI サービスに発行したレポートやダッシュボードの読み取りと操作を行うことができるようにする個別のユーザー ライセンスです。 このライセンスの種類が割り当てられたユーザーは、他の Power BI Pro ユーザーとコンテンツを共有して共同作業を行うことができます。 コンテンツが Power BI Premium 容量でホストされている場合を除き、Power BI Pro ユーザーだけが、コンテンツを発行したり他のユーザーと共有したり、他のユーザーが作成したコンテンツを利用したりできます。 利用可能なライセンスとサブスクリプションの種類に関する詳細については、「[組織での Power BI のライセンス](service-admin-licensing-organization.md)」を参照してください。
+Power BI Pro は、他のユーザーが Power BI サービスに発行したレポートやダッシュボードの読み取りと操作を行うことができるようにする個別のユーザー ライセンスです。 このライセンスの種類が割り当てられたユーザーは、他の Power BI Pro ユーザーとコンテンツを共有して共同作業を行うことができます。 コンテンツが Power BI Premium 容量でホストされている場合を除き、Power BI Pro ユーザーだけが、コンテンツを発行したり他のユーザーと共有したり、他のユーザーが作成したコンテンツを利用したりできます。 Premium Per User (PPU) ライセンスなど、利用可能なライセンスとサブスクリプションの種類の詳細については、[組織での Power BI のライセンス](service-admin-licensing-organization.md)に関するページを参照してください。
 
 ## <a name="purchase-power-bi-pro-user-licenses"></a>Power BI Pro ユーザー ライセンスを購入する
 

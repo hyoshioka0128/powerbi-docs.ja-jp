@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 03/25/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 665b837547138d8377d0d4d00652c79182dca3bd
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: 1a2c1e8bdde6636623d8746e76c27d94552aa520
+ms.sourcegitcommit: adbbffc74521c76eb3ad8de92b803785b94c34ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104725115"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105932084"
 ---
 # <a name="whats-new-in-power-bi"></a>Power BI の新機能
 
-## <a name="march-2021-update-2913830"></a>2021 年 3 月の更新 (2.91.383.0)
+## <a name="march-2021-update-2917010"></a>2021 年 3 月の更新プログラム (2.91.701.0)
 
 これらの Power BI の 3 月の更新プログラムをコミュニティに提供できることを嬉しく思います。 
 
@@ -81,7 +81,7 @@ ms.locfileid: "104725115"
 ### <a name="other"></a>その他
 * Windows 7 の非推奨 [[ビデオ]](https://youtu.be/r88EE4IzZlE?t=697) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14033-_Toc65500423)
 * デスクトップ インターフェイスで使用できるようになった証明書失効確認の制御 [[ビデオ]](https://youtu.be/r88EE4IzZlE?t=718) [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14033-_Toc65500424)
-* 外部ツールの Power BI Desktop との統合の一般公開 [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#external_tools_ga)  [[記事]](../create-reports/desktop-external-tools.md)
+* 外部ツールの Power BI Desktop との統合の一般公開 [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#external_tools_ga)  [[記事]](../transform-model/desktop-external-tools.md)
 * Power BI の講師による指導付きトレーニング [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#instructorledtraining)
 * Power BI Desktop の変更ログ  [[ブログ]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#desktop_change_log)  [[記事]](desktop-change-log.md)
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/02/2020
+ms.date: 04/06/2021
 LocalizationGroup: Administration
-ms.openlocfilehash: 696ad1485c9a317fcc5fb463e262fdf6f01dc8f1
-ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
+ms.openlocfilehash: ae64b95083f9a15b9025cdc767d38c7138d3c131
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104834478"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106549080"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Azure AD B2B で外部ゲスト ユーザーに Power BI コンテンツを配布する
 
@@ -54,13 +54,15 @@ gmail.com、outlook.com、hotmail.com などの個人用メール アカウン�
 
 Azure portal で招待を送信するには、次の手順のようにします。
 
-1. [Azure portal](https://portal.azure.com) で、 **[Azure Active Directory]** を選択します。
+1. [Azure portal](https://portal.azure.com) で、[メニュー] ボタンを選択し、 **[Azure Active Directory]** を選択します。
+
+    ![[Azure Active Directory] オプションが強調された Azure portal のスクリーンショット。](media/service-admin-azure-ad-b2b/azure-active-directory-option.png)
 
 1. **[管理]** で、 **[ユーザー]**  >  **[すべてのユーザー]**  >  **[新しいゲスト ユーザー]** を選択します。
 
     ![[新しいゲスト ユーザー] オプションが強調された Azure portal のスクリーン ショット。](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
-1. **メール アドレス** と **個人的なメッセージ** を入力します。
+1. 下にスクロールし、**メール アドレス** と **個人的なメッセージ** を入力します。
 
     ![電子メールとメッセージ フィールドが強調表示されている [新しいゲスト ユーザー] ダイアログのスクリーンショット。](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
@@ -86,9 +88,9 @@ Azure portal で招待を送信するには、次の手順のようにします�
 
 ## <a name="licensing"></a>ライセンス
 
-ゲスト ユーザーは、共有されているコンテンツを表示するために、適切なライセンスが必要になります。 ユーザーが適切なライセンスを持っていることを確認するには、Power BI Premium の使用、Power BI Pro ライセンスの割り当て、ゲストの Power BI Pro ライセンスの使用の、3 つの方法があります。
+ゲスト ユーザーは、共有されているコンテンツを表示するために、適切なライセンスが必要になります。 ユーザーが適切なライセンスを持っていることを確認するには、いくつかの方法があります。Power BI Premium を使用する、Power BI Pro ライセンスを割り当てる、Premium Per User (PPU) ライセンスを取得する、ゲストの Power BI Pro ライセンスを使用するのいずれかです。
 
-[組織内のコンテンツを編集および管理できるゲスト ユーザー](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization)がワークスペースにコンテンツを投稿したり、他のユーザーとコンテンツを共有したりするには、Power BI Pro ライセンスが必要です。
+[組織内のコンテンツを編集および管理できるゲスト ユーザー](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization)がワークスペースにコンテンツを投稿したり、他のユーザーとコンテンツを共有したりするには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。
 
 ### <a name="use-power-bi-premium"></a>Power BI Premium を使用する
 
@@ -104,7 +106,7 @@ Azure portal で招待を送信するには、次の手順のようにします�
 
 ### <a name="guest-user-brings-their-own-power-bi-pro-license"></a>ゲスト ユーザーが独自の Power BI Pro ライセンスを使用する
 
-ゲスト ユーザーは、自分の組織を通じて割り当てられた Power BI Pro ライセンスを既に持っている可能性があります。
+ゲスト ユーザーは、自分の組織を通じて割り当てられた Power BI Pro または Premium Per User (PPU) のライセンスを既に持っている可能性があります。
 
 ![独自のライセンスを持ち込む場合のゲスト ユーザー エクスペリエンスのダイアグラム。](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
@@ -124,7 +126,7 @@ Azure portal で招待を送信するには、次の手順のようにします�
 
 * 既定では、外部の Azure AD B2B によってゲストはコンテンツの使用のみに制限されます。 外部の Azure AD B2B ゲストは、アプリ、ダッシュボード、レポートを表示したり、データをエクスポートしたりできます。 ワークスペースにアクセスしたり、独自のコンテンツを公開することはできません。 これらの制限を解除する場合は、[[外部のゲスト ユーザーによる組織内のコンテンツの編集および管理を許可する]](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) 機能を使用できます。
 
-* ゲスト ユーザーを招待するためには、Power BI Pro のライセンスが必要です。 Pro 試用版のユーザーが Power BI にゲスト ユーザーを招待することはできません。
+* ゲスト ユーザーを招待するためには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 Pro 試用版のユーザーが Power BI にゲスト ユーザーを招待することはできません。
 
 * [組織内のコンテンツを編集および管理できるゲスト ユーザー](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization)は、一部のエクスペリエンスを利用できません。 ゲスト ユーザーがレポートを更新または発行するには、[データの取得] などの Power BI サービスを使用して、Power BI Desktop ファイルをアップロードする必要があります。  次のエクスペリエンスはサポートされていません。
   * Power BI Desktop から Power BI サービスに直接発行することはできません。
@@ -139,7 +141,7 @@ Azure portal で招待を送信するには、次の手順のようにします�
   * ゲスト ユーザーは組織のコンテンツ パックを使用、作成、更新、またはインストールできません
   * ゲスト ユーザーは [Excel で分析] を使用できません
   * ゲスト ユーザーはコメント時に @mentioned の対象になりません
-  * ゲスト ユーザーはサブスクリプションを使用できません
+  * ゲスト ユーザーはサブスクリプションを作成できません
   * この機能を使用するゲスト ユーザーには、職場または学校のアカウントが必要です。
 
 * ソーシャル ID を使用するゲスト ユーザーの場合は、サインインの制限により、さらに多くの制限事項が発生します。

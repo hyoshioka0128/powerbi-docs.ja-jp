@@ -9,14 +9,14 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 04/02/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 043e6e99137119c61ca22a7df8521bda7ac0a4a5
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: 06bce78c1fdec9dd706964317811c405dd2dc4c1
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104725000"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227452"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI サービスのデザイナー向けの基本的な概念
 
@@ -59,9 +59,9 @@ Power BI の 5 つの主要な構成要素は、"*ダッシュボード*"、"*�
 
 - "*マイ ワークスペース*" は、自分のコンテンツを使う Power BI ユーザー向けの個人用ワークスペースです。 ユーザーは自分のマイ ワークスペースにのみアクセスできます。 マイ ワークスペースからダッシュボードとレポートを共有できます。 ダッシュボードとレポートで共同作業する場合や、アプリを作成する場合は、ワークスペースで作業できます。
 
--  "*ワークスペース*" は、同僚とコンテンツの共同作業および共有を行うために使われます。 ワークスペースに同僚を追加して、ダッシュボード、レポート、ブック、データセットの共同作業を行うことができます。 1 つの例外として、ワークスペース メンバーにはすべて Power BI Pro ライセンスが必要です。 新しいワークスペースの詳細については、[こちら](../collaborate-share/service-create-the-new-workspaces.md)を参照してください。 
+-  "*ワークスペース*" は、同僚とコンテンツの共同作業および共有を行うために使われます。 ワークスペースに同僚を追加して、ダッシュボード、レポート、ブック、データセットの共同作業を行うことができます。 1 つの例外を除き、各ワークスペース メンバーには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 新しいワークスペースの詳細については、[こちら](../collaborate-share/service-create-the-new-workspaces.md)を参照してください。 
 
-    ワークスペースは、組織向け "*アプリ*" を作成、公開、管理する場所でもあります。 ワークスペースは、Power BI アプリを構成するコンテンツ用のステージング領域およびコンテナーと考えることができます。 ところで、"*アプリ*" とは何でしょうか。 組織の Power BI のコンシューマーに主要なメトリックを提供するために作成された、ダッシュボードとレポートのコレクションです。 アプリは対話型ですが、コンシューマーがそれを編集することはできません。 アプリの使用者 (アプリへのアクセス権を持つ同僚) には必ずしも Pro ライセンスは必要ありません。  
+    ワークスペースは、組織向け "*アプリ*" を作成、公開、管理する場所でもあります。 ワークスペースは、Power BI アプリを構成するコンテンツ用のステージング領域およびコンテナーと考えることができます。 ところで、"*アプリ*" とは何でしょうか。 組織の Power BI のコンシューマーに主要なメトリックを提供するために作成された、ダッシュボードとレポートのコレクションです。 アプリは対話型ですが、コンシューマーがそれを編集することはできません。 アプリの使用者 (アプリへのアクセス権を持つ同僚) には必ずしも Pro または Premium Per User (PPU) のライセンスは必要ありません。  
 
 一般的な共有について学ぶ場合は、[作業のダッシュボードを共有する方法](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)に関する記事から始めてください。
 

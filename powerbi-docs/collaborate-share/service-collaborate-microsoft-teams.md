@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/14/2020
-ms.openlocfilehash: 7c8fa59521be1cfc8bb25fb04c3904f257fb62be
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.date: 04/02/2021
+ms.openlocfilehash: 7b1e22c52e2698b1be0349a6ea3bdda7142600f2
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926687"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229177"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Microsoft Teams と Power BI で共同作業する
 
@@ -32,7 +32,7 @@ ms.locfileid: "97926687"
 
 一般に、Microsoft Teams で Power BI を機能させるには、次の要素を確認します。
 
-- お客様のユーザーが Power BI Pro ライセンスを所有している。または、Power BI ライセンスのある [Power BI Premium 容量 (EM または P SKU)](../admin/service-premium-what-is.md) にレポートが含まれている。
+- お客様のユーザーが Power BI Pro または Premium Per User (PPU) のライセンスを所有している。または、Power BI ライセンスのある [Power BI Premium 容量 (EM または P SKU)](../admin/service-premium-what-is.md) にレポートが含まれている。
 - ユーザーが Power BI サービスにサインインし、自分の Power BI ライセンスをアクティブ化している。
 - Microsoft Teams の **[Power BI]** タブを使用するための要件をユーザーが満たしている。
 
@@ -51,7 +51,7 @@ Microsoft Teams にレポートを埋め込んだり、項目へのリンクを�
 
 1.  組織に外部ユーザーを招待し、そのユーザーが招待状を受け入れます。 詳細については、「[Azure Active Directory B2B を使用して外部ゲスト ユーザーに Power BI コンテンツを配布する](../guidance/whitepaper-azure-b2b-power-bi.md)」を参照してください。
 2.  レポートに対するアクセス許可を外部ユーザーに付与します。 個別にアクセス許可を割り当てるのが最適です。
-3.  外部ユーザーに Power BI ライセンスが割り当てられていることを確認します。 コンテンツが Premium 容量にある場合、ユーザーに必要なのは無料ライセンスのみです。 それ以外の場合、ユーザーは [Power BI Pro の個人向け試用版にサインアップ](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro)することができます。
+3.  外部ユーザーに Power BI ライセンスが割り当てられていることを確認します。 コンテンツが Premium 容量にある場合、ユーザーに必要なのは無料ライセンスのみです。 それ以外の場合、ユーザーは [Power BI Pro の個人向け試用版にサインアップ](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro)するか、Premium Per User (PPU) ライセンスを取得することができます。
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
@@ -62,7 +62,6 @@ Microsoft Teams にレポートを埋め込んだり、項目へのリンクを�
 - [URL フィルター](service-url-filters.md)は、Microsoft Teams の **[Power BI]** タブではサポートされていません。
 - 国内のクラウドでは、この新しい **[Power BI]** タブは使用できません。 Power BI アプリの新しいワークスペース エクスペリエンスやレポートがサポートされていない古いバージョンを使用できる可能性があります。
 - タブを保存したら、タブの設定からタブ名を変更することはできません。 変更するには、 **[名前変更]** オプションを使用します。
-- リンク プレビュー サービスでは、シングル サインオンはサポートされていません。
 - リンク プレビューは、チャットまたはプライベート チャネルでは機能しません。
 
 ## <a name="microsoft-power-platform-in-microsoft-teams"></a>Microsoft Teams の Microsoft Power Platform

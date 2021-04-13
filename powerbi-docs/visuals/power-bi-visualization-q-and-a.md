@@ -7,13 +7,13 @@ ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/05/2021
-ms.openlocfilehash: 1cf80593458c12a1bee07ed40202e3613fdcb5e9
-ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
+ms.date: 04/02/2021
+ms.openlocfilehash: 2beb3ac02884d9f08ca6051dd659e09e4ca0a953
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97961364"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228234"
 ---
 # <a name="create-a-qa-visual-in-power-bi"></a>Power BI で Q&A ビジュアルを作成する
 
@@ -49,7 +49,7 @@ Q&A ビジュアルは、4 つのコア コンポーネントで構成されて�
 Q&A ビジュアルの作成時にエラーが表示される場合は、[Q&A の制限事項](../natural-language/q-and-a-limitations.md)に関する記事を参照して、データソース構成がサポートされているかどうかを確認してください。    
 
 > [!NOTE]
-> Power BI を使用する同僚とレポートを共有するには、それぞれのユーザーが個別の Power BI Pro ライセンスを持っているか、レポートが Premium 容量のワークスペースに保存されている必要があります。 [レポートの共有](../collaborate-share/service-share-dashboards.md)に関するページをご覧ください。
+> Power BI を使用する同僚とレポートを共有するには、それぞれのユーザーが個別の Power BI Pro または Premium Per User (PPU) のライセンスを持っているか、レポートが Premium 容量のワークスペースに保存されている必要があります。 [レポートの共有](../collaborate-share/service-share-dashboards.md)に関するページをご覧ください。
 
 ## <a name="create-a-qa-visual-using-a-suggested-question"></a>提案された質問を使用して Q&A ビジュアルを作成する
 この演習では、提案された質問の 1 つを選択して、Q&A ビジュアルを作成します。 
@@ -129,7 +129,7 @@ Q&A ビジュアル、質問フィールド、候補の表示方法を書式設�
 
 このビジュアルは、もはや Q&A ビジュアルではなく、標準の縦棒グラフです。 これはダッシュボードにピン留めできます。 レポートでは、このビジュアルは他の標準ビジュアルと同様に動作します。 [Visualizations]\(視覚エフェクト\) ペインには、Q&A ビジュアル アイコンの代わりに選択された [縦棒グラフ] アイコンが表示されることに注意してください。
 
-"*_Power BI サービス_*" を使用している場合は、ここでピン アイコンを選択して、ビジュアルをダッシュボードにピン留めできます。 
+***Power BI サービス*** を使用している場合は、この段階で、ピン アイコンを選択して、ビジュアルをダッシュボードにピン留めできます。 
 
 
 ![ピン アイコンが枠で囲まれた Power BI サービス](media/power-bi-visualization-q-and-a/power-bi-pin.png)
@@ -151,5 +151,5 @@ Q&A ビジュアルは Office および Bing と統合され、認識されな�
 
 自然言語を統合するには、いくつかの方法があります。 詳細については、次の記事を参照してください。
 
-[Q&A ツール](../natural-language/q-and-a-tooling-intro.md)
+* [Q&A ツール](../natural-language/q-and-a-tooling-intro.md)
 * [Q&A ベスト プラクティス](../natural-language/q-and-a-best-practices.md)

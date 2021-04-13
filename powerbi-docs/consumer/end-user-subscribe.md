@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/13/2021
+ms.date: 04/02/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 50d43a7b92981fa69e19f221dd373471eaa9b004
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: 88c566516a0c2ebad4d6b868fa4ef9434f7b9203
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195563"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227613"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Power BI サービスでレポートまたはダッシュボードをサブスクライブする 
 
@@ -36,7 +36,7 @@ ms.locfileid: "102195563"
 ## <a name="requirements"></a>要件
 自分用のサブスクリプションを **作成する** には、*Power BI Pro* または *Premium Per User* の [ライセンス](end-user-license.md)が必要です。 また、レポートまたはダッシュボードが Premium ワークスペースに存在し、そのワークスペースへのアクセス権を持っている場合も、自分用のサブスクリプションを作成することができます。 サブスクリプションを作成できない場合は、Power BI 管理者または IT ヘルプ デスクに問い合わせてください。 
 
-**他のユーザーをサブスクライブ** する機能は、*Power BI Pro* ライセンスを持っているダッシュボードまたはレポートの所有者のみが使用できます。
+**他のユーザーをサブスクライブ** する機能は、*Power BI Pro* または *Premium Per User (PPU)* のライセンスを持っているダッシュボードまたはレポートの所有者のみが使用できます。
 
 **ページ分割されたレポートのサブスクライブ** の場合、若干異なります。 詳細については、[Power BI サービスのページ分割されたレポートのサブスクライブ](paginated-reports-subscriptions.md)に関する記事を参照してください。 
 
@@ -89,7 +89,7 @@ ms.locfileid: "102195563"
 
 ![マイ ワークスペース内のすべてのサブスクリプションの表示](./media/end-user-subscribe/power-bi-manage-subscription.png)
 
-Pro ライセンスの有効期限が切れた場合、所有者がダッシュボードまたはレポートを削除した場合、またはサブスクリプションの作成に使われたユーザー アカウントが削除された場合、サブスクリプションは終了します。
+Pro または Premium Per User (PPU) のライセンスの有効期限が切れた場合、所有者がダッシュボードまたはレポートを削除した場合、またはサブスクリプションの作成に使われたユーザー アカウントが削除された場合、サブスクリプションは終了します。
 
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
 * サブスクリプション メールが迷惑メール フォルダーに移動されないようにするには、Power BI の電子メール エイリアス (no-reply-powerbi@microsoft.com) を自分の連絡先に追加します。 Microsoft Outlook を使用している場合は、エイリアスを右クリックし、 **[Outlook の連絡先に追加]** を選択します。 

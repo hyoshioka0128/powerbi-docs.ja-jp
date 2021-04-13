@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3f4985fd29d9d589ce8ae981a6f68c6f3471fbfe
-ms.sourcegitcommit: 0dd9e5e646e5b3802eef03a2adeca42d085168cd
+ms.openlocfilehash: 4d8f02271b25ffa8be1c5cd0d82abac02f13a516
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103190749"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229384"
 ---
 # <a name="premium-features-of-dataflows"></a>データフローの Premium 機能
 
-データフローは、Power BI Pro および Power BI Premium のユーザーに対してサポートされています。 一部の機能は、Power BI Premium サブスクリプションでのみ使用できます。 この記事では、Premium のみの機能とその使用の詳細について説明します。 
+データフローは、Power BI Pro、Premium Per User (PPU)、Power BI Premium のユーザーに対してサポートされています。 一部の機能は、Power BI Premium サブスクリプションまたは Premium Per User (PPU) ライセンスでのみ使用できます。 この記事では、Premium Per User (PPU) と Premium のみの機能とその使用の詳細について説明します。 
 
 次の機能は、Power BI Premium でのみ使用できます。
 
@@ -37,11 +37,14 @@ Power BI の拡張コンピューティング エンジンにより、Power BI P
 * 計算対象エンティティに対する、実行時間の長い ETL ステップ (*joins*、*distinct*、*filters*、*group by* の実行など) に必要な更新時間の大幅な短縮
 * エンティティに対して DirectQuery クエリを実行する
 
+> [!NOTE]
+> 検証プロセスと更新プロセスにより、データフローにモデル スキーマが通知されます。 テーブルのスキーマを自分で設定するには、PowerQuery エディターを使用し、データ型を設定します。 
+
 既定では、拡張コンピューティング エンジンは **[オン]** になっています。 拡張コンピューティング エンジンがオンになっていない場合、拡張コンピューティング エンジンを有効にする方法については、一般的な質問に対する回答と共に、次のセクションで説明します。
 
 ### <a name="using-the-enhanced-compute-engine"></a>拡張コンピューティング エンジンの使用
 
-拡張コンピューティング エンジンは、Power BI サービスの **[容量の設定]** ページの **[データフロー]** セクションで有効にします。 既定では、拡張コンピューティング エンジンは **[オフ]** になっています。 拡張コンピューティング エンジンを有効にするには、次の図に示すようにトグルを **[オン]** に切り替えて、設定を保存します。 
+拡張コンピューティング エンジンは、Power BI サービスの **[容量の設定]** ページの **[データフロー]** セクションで有効にします。 既定では、拡張コンピューティング エンジンは **[オン]** になっています。 **[オフ]** に設定されている場合は、次の図に示すようにトグルを **[オン]** に切り替え、設定を保存して、拡張コンピューティング エンジンを有効にします。 
 
 ![拡張コンピューティング エンジンをオンにする](media/dataflows-premium-features/compute-engine-settings.png)
 

@@ -7,14 +7,14 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/02/2019
+ms.date: 04/02/2021
 LocalizationGroup: Samples
-ms.openlocfilehash: 73384f2f2021d949fcaca26c5b9e55cd7f0407af
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8c69673b009202fcaf57971d616cf27d57266513
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417545"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228412"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Power BI の調達の分析のサンプル: 使ってみる
 
@@ -30,7 +30,7 @@ ms.locfileid: "96417545"
 
 このチュートリアルでは、Power BI サービス内の調達の分析のサンプル コンテンツ パックを調べます。 Power BI Desktop とサービスのレポート エクスペリエンスは似ているので、Power BI Desktop 内のサンプルの .pbix ファイルを使用して作業することもできます。 
 
-Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro ライセンスを持っていない場合は、Power BI サービス内で、マイ ワークスペースにサンプルを保存できます。 
+Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、Power BI サービスのマイ ワークスペースにサンプルを保存できます。 
 
 ## <a name="get-the-sample"></a>サンプルを入手する
 
@@ -40,14 +40,14 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 1. Power BI サービス (app.powerbi.com) を開いてサインインし、サンプルを保存するワークスペースを開きます。 
 
-    Power BI Pro ライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
+    Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
 
 2. 左下隅にある **[データを取得]** を選びます。
 
     ![[データを取得] を選択](media/sample-datasets/power-bi-get-data.png)
 3. 表示された **[データを取得]** ページで、 **[サンプル]** を選びます。
 
-4. **[調達の分析のサンプル]** を選択し、 **[接続]** を選択します。  
+4. **[調達の分析のサンプル]** を選択し、**[接続]** を選択します。  
   
    ![サンプルに接続](media/sample-procurement/procurement1a.png)
    
@@ -67,14 +67,14 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="spending-trends"></a>支出傾向
 まず、カテゴリと場所ごとの支出の傾向を見てみましょう。  
 
-1. サンプルを保存したワークスペースで、 **[ダッシュボード]** タブを開き、 **[調達の分析のサンプル]** ダッシュボードを探してそれを選択します。 
-2. ダッシュボード タイル **[Total Invoice by Country/Region]\(国または地域別の合計請求\)** を選びます。これにより、 **[調達の分析のサンプル]** レポートの **[支出の概要]** ページが開きます。
+1. サンプルを保存したワークスペースで、**[ダッシュボード]** タブを開き、**[調達の分析のサンプル]** ダッシュボードを探してそれを選択します。 
+2. ダッシュボード タイル **[Total Invoice by Country/Region]\(国または地域別の合計請求\)** を選びます。これにより、**[調達の分析のサンプル]** レポートの **[支出の概要]** ページが開きます。
 
     ![[支出の概要] ページ](media/sample-procurement/procurement2.png)
 
 次の詳細に注意します。
 
-* **[Total Invoice by Month and Category]\(月およびカテゴリ別の合計請求\)** 折れ線グラフ内で、 **[直接]** カテゴリには安定した支出があり、 **[物流]** には 12 月にピーク、 **[その他]** には 2 月にスパイクがあります。
+* **[Total Invoice by Month and Category]\(月およびカテゴリ別の合計請求\)** 折れ線グラフ内で、**[直接]** カテゴリには安定した支出があり、**[物流]** には 12 月にピーク、**[その他]** には 2 月にスパイクがあります。
 * **[Total Invoice by Country/Region]\(国または地域別の合計請求\)** マップでは、支出のほとんどは米国内です。
 * **[サブ カテゴリ別の合計請求]** 縦棒グラフでは、 **[ハードウェア]** および **[間接的な商品およびサービス]** が最も大きな支出カテゴリです。
 * **[層別の請求額合計]** 横棒グラフでは、当社のビジネスのほとんどは、第 1 層 (上位 10 社) のベンダーと行われています。 そうすることで、より優れたベンダー リレーションシップを管理できます。
@@ -82,7 +82,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="spending-in-mexico"></a>メキシコでの支出
 メキシコでの支出分野を見てみましょう。
 
-1. **[Total Invoice by Country/Region]\(国または地域別の合計請求\)** マップ内で、 **[メキシコ]** バブルを選択します。 **[サブ カテゴリ別の合計請求]** 縦棒グラフで、ほとんどの支出は **[間接的な商品およびサービス]** サブ カテゴリに含まれることに注目してください。
+1. **[Total Invoice by Country/Region]\(国または地域別の合計請求\)** マップ内で、**[メキシコ]** バブルを選択します。 **[サブ カテゴリ別の合計請求]** 縦棒グラフで、ほとんどの支出は **[間接的な商品およびサービス]** サブ カテゴリに含まれることに注目してください。
 
    ![[支出の概要] ページで [メキシコ] を選択する](media/sample-procurement/pbi_procsample_spendmexico.png)
 2. **[Indirect Goods & Services]** (間接的な商品およびサービス) 列にドリルダウンします。
@@ -103,7 +103,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="evaluate-different-cities"></a>異なる複数の市区町村の評価
 強調表示を使用して、異なる複数の市区町村を評価することができます。
 
-1. ダッシュボード タイル **[Total Invoice, Discount % By Month]\(月別の合計請求、割引率\)** を選びます。これにより、 **[調達の分析のサンプル]** レポートの **[割引の分析]** ページが開きます。
+1. ダッシュボード タイル **[Total Invoice, Discount % By Month]\(月別の合計請求、割引率\)** を選びます。これにより、**[調達の分析のサンプル]** レポートの **[割引の分析]** ページが開きます。
 2. **[都市別の請求額合計]** ツリーマップで、各都市を順番に選んで比較します。 マイアミのほとんどすべての請求は、第 1 層のベンダーからであることに注目してください。
 
    ![都市と層別の割引率 %](media/sample-procurement/pbi_procsample_miamitreemap2.png)
@@ -138,7 +138,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 * グラフの視覚化の種類を変更します。たとえば、ツリーマップをドーナツ グラフに変更します。
 * グラフをダッシュボードにピン留めします。
 
-## <a name="next-steps-connect-to-your-data"></a>次の手順: データへの接続
+## <a name="next-steps-connect-to-your-data"></a>次の手順:データへの接続
 変更内容を保存しないことを選択できるため、この環境で試してみるのは安全です。 一方、それらを保存した場合は、 **[データを取得]** を選択して、常にこのサンプルの新しいコピーを取得できます。
 
 この記事から、Power BI ダッシュボード、Q&A、レポートからサンプル データの分析情報をどのように得られるかがご理解いただけたでしょうか。 次はあなたの番です。ご自分のデータに接続してみてください。 Power BI を使用すると、広範なデータ ソースに接続することができます。 詳細については、[Power BI サービスの概要](../fundamentals/service-get-started.md)に関するページを参照してください。

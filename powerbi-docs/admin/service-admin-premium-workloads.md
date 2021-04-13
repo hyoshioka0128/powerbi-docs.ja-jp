@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 1f0e07473387e234b54c761e412d0233652413e4
-ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
+ms.openlocfilehash: ede71c97fe5fafd38bb1d5a9ef5de634116d9aaf
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105007548"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226716"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium 容量でワークロードを構成する
 
@@ -24,6 +24,9 @@ ms.locfileid: "105007548"
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 >
 >Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
+
+> [!NOTE]
+> 個人向けの Premium Per User (PPU) ライセンスを取得することもできます。これにより、Premium 容量の多くの機能が提供されます。またこれには、Power BI Pro ライセンスに含まれるすべての機能が組み込まれています。 詳しくは、「[Power BI Premium Per User](service-premium-per-user-faq.md)」をご覧ください。
 
 ## <a name="default-memory-settings"></a>既定のメモリ設定
 

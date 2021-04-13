@@ -205,8 +205,16 @@
               href: refresh-scheduled-refresh.md
             - name: 概要の更新
               href: refresh-summaries.md
-            - name: 増分更新を構成する
-              href: ../admin/service-premium-incremental-refresh.md
+            - name: 増分更新
+              items:
+                - name: データセットの増分更新
+                  href: ../connect-data/incremental-refresh-overview.md
+                - name: 増分更新を構成する
+                  href: ../connect-data/incremental-refresh-configure.md
+                - name: XMLA エンドポイントを使用した高度な増分更新
+                  href: ../connect-data/incremental-refresh-xmla.md
+                - name: 増分更新のトラブルシューティング
+                  href: ../connect-data/incremental-refresh-troubleshoot.md
             - name: ローカル Power BI Desktop ファイルからのデータセットを更新する
               href: refresh-desktop-file-local-drive.md
             - name: クラウド Power BI Desktop ファイルからのデータセットを更新する

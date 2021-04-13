@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/14/2020
+ms.date: 04/02/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: f1e162e0002051853081898f548864e751c5b429
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ea448430f3280842efadf78bee1568266523dedf
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388381"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229241"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-the-power-bi-service"></a>Power BI サービスの編集ビューでレポートと対話する
 
@@ -22,7 +22,7 @@ ms.locfileid: "96388381"
 
 レポートの作成と編集は、Power BI サービスと Power BI Desktop の両方で行えます。 Power BI サービスでは、**編集ビュー** でレポートを作成および編集します。 そして Power BI Desktop では、[レポート ビュー](desktop-report-view.md)でレポートを作成および編集します。 この記事では、Power BI サービスの編集ビューについて説明します。 
 
-Power BI サービスには、レポートを操作するモードが 2 種類あります。レポートの "*ビジネス ユーザー*" のための [読み取りビュー](../consumer/end-user-reading-view.md)とレポートの所有者と作成者のための編集ビューです。  レポートを共有したり、他のユーザーが作成したレポートを編集したりするには、Power BI Pro ライセンスが必要です。 Pro ライセンスがなくても、マイ ワークスペースでレポートを作成できますが、[それを共有する](../collaborate-share/service-share-reports.md)ことはできません。
+Power BI サービスには、レポートを操作するモードが 2 種類あります。レポートの "*ビジネス ユーザー*" のための [読み取りビュー](../consumer/end-user-reading-view.md)とレポートの所有者と作成者のための編集ビューです。  レポートを共有したり、他のユーザーが作成したレポートを編集したりするには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 Pro または Premium Per User (PPU) のライセンスがなくても、マイ ワークスペースでレポートを作成できますが、[それを共有する](../collaborate-share/service-share-reports.md)ことはできません。
 
 レポートの編集ビューには、レポートの探索と設計の両方に関する高い柔軟性が備わっています。 [読み取りビュー](../consumer/end-user-reading-view.md)のすべての機能の他に、さらに多くの機能を使用できます。 編集ビューは、レポートを作成したユーザーか、レポートが格納されているワークスペースのメンバー、管理者、または共同作成者となっている同僚だけが利用できます。 アクセス許可の詳細については、「[新しいワークスペースのロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)」を参照してください。
 
@@ -42,7 +42,7 @@ Power BI サービスには、レポートを操作するモードが 2 種類�
 * [レポート設定を使用した](power-bi-report-settings.md)、閲覧者が行うレポート操作の制御。
 
 ## <a name="considerations-and-troubleshooting"></a>考慮事項とトラブルシューティング
-他のユーザーが作成したレポートを編集したり、自分のレポートを他のユーザーと共有するには、Power BI Pro ライセンスが必要です。  レポートは、Pro ライセンスをお持ちでない場合でも作成できますが、[共有](../collaborate-share/service-share-reports.md)することはできません。
+他のユーザーが作成したレポートを編集したり、自分のレポートを他のユーザーと共有するには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。  レポートは、Pro または Premium Per User (PPU) のライセンスをお持ちでない場合でも作成できますが、[共有](../collaborate-share/service-share-reports.md)することはできません。
 
 
 ## <a name="next-steps"></a>次のステップ

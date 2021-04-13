@@ -7,14 +7,14 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 04/02/2021
 LocalizationGroup: Samples
-ms.openlocfilehash: bf24a42e49585fb560fcddec316ab8f218878f86
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2c6f427d47d907b232edd716bc1130f7931603aa
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395695"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228027"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Power BI の売上およびマーケティングのサンプル:ツアーを開始する
 
@@ -28,7 +28,7 @@ VanArsdel 社には多くの競合他社が存在しますが、その業界に�
 
 このチュートリアルでは、Power BI サービス内の売上およびマーケティングのサンプルを調べます。 Power BI Desktop とサービスのレポート エクスペリエンスは似ているので、Power BI Desktop 内のサンプルの .pbix ファイルを使用して作業することもできます。 
 
-Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro ライセンスを持っていない場合は、Power BI サービス内で、マイ ワークスペースにサンプルを保存できます。 
+Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、Power BI サービスのマイ ワークスペースにサンプルを保存できます。 
 
 ## <a name="get-the-sample"></a>サンプルを入手する
 
@@ -38,7 +38,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 1. Power BI サービス (app.powerbi.com) を開いてサインインし、サンプルを保存するワークスペースを開きます。
 
-   Power BI Pro ライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
+   Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
 
 2. 左下隅にある **[データを取得]** を選びます。
    

@@ -15,13 +15,13 @@ helpviewer_keywords:
 - user owns data
 - Power BI APIs
 ms.custom: seodec18
-ms.date: 05/15/2019
-ms.openlocfilehash: c7278dee5957e2b63b6821decec0171ba6b628a0
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 04/02/2021
+ms.openlocfilehash: 1c25fa789236c6ea158b91749a594abdb68c2108
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887134"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229545"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Power BI を使用した埋め込み分析
 
@@ -35,6 +35,9 @@ Power BI サービス (SaaS) と Azure (PaaS) の Power BI Embedded サービス
 * [顧客向けの埋め込み](embedding.md#embedding-for-your-customers)では、Power BI アカウントがないユーザーのためにダッシュボードとレポートを埋め込むことができます。 これを行うには、[埋め込みセットアップ ツール](https://app.powerbi.com/embedsetup)で、"*顧客向けの埋め込み*" ソリューションを実装します。
 
 ![PBIE サンプル](media/embedding/what-can-you-do-02.png)
+
+> [!NOTE]
+> Premium Per User (PPU) ライセンスによる埋め込みは、SaaS 埋め込みでのみサポートされており、ユーザーごとにライセンスが必要です。
 
 ## <a name="use-apis"></a>API の使用
 

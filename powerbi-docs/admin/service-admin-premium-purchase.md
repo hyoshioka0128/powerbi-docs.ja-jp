@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: c4e50f7fa0c8f3313b3e7e58001ae33d8c327d85
-ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.openlocfilehash: 65fdf9dd8f9578f70b9a0fc18c11cb247b7d9e2d
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99043139"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226849"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Power BI Premium の購入方法
 
@@ -112,6 +112,10 @@ Premium サブスクリプションをキャンセルした場合、または容
 ## <a name="purchase-a-skus-for-testing-and-other-scenarios"></a>テストおよびその他のシナリオ用に A SKU を購入する
 
 また、テストおよびその他のシナリオのために A SKU を購入することもできます。これにより、Premium 容量が時間単位で提供されます。 詳細と手順については、「[テスト用の Power BI Premium を購入する](service-admin-premium-testing.md)」を参照してください。
+
+## <a name="purchase-premium-per-user-ppu-licenses"></a>Purchase Premium Per User (PPU) ライセンス
+
+Premium Per User (PPU) ライセンス モデルを使用し、個々のユーザーに Power BI Premium を購入できます。 Premium Per User の詳細については、「[Power BI Premium Per User](service-premium-per-user-faq.md)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

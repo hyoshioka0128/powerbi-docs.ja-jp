@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/25/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: 84d4b0ab295f003c34937084bd93dd6f27992c31
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 945cbb9439633417be9b84af67be560acafae7eb
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409288"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106548405"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>サインインした Power BI ユーザーを見つける
 
@@ -49,11 +49,11 @@ CSV ファイル形式または JSON ファイル形式で[サインイン レ�
 
 1. **[サインイン]** レポート用のコマンド バーで、 **[ダウンロード]** を選択してから、次のオプションのいずれかを選択します。
 
-   * **[CSV]** : 現在フィルター処理されているデータの CSV ファイルをダウンロードします。
+   * **[JSON をダウンロード]** : 現在フィルター処理されているデータの JSON ファイルをダウンロードします。
 
-   * **[JSON]** : 現在フィルター処理されているデータの JSON ファイルをダウンロードします。
+   * **[CSV をダウンロード]** : 現在フィルター処理されているデータの CSV ファイルをダウンロードします。
 
-2. ファイル名を入力して、 **[ダウンロード]** を選択します。
+2. エクスポートするサインインの種類を決定し、 **[ダウンロード]** を選択します。
 
 ![[ダウンロード] オプションが強調表示されているデータ エクスポートのスクリーンショット。](media/service-admin-access-usage/download-sign-in-data-csv.png)
 

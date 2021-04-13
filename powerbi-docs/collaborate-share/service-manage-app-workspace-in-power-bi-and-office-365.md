@@ -7,14 +7,14 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/02/2020
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: bd1a5b0aaf694f41fdbfe4764e77c1138a57b082
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 122543b11c2939ff124e130f139d98e49651d13c
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407034"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228970"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Power BI と Microsoft 365 でワークスペースを管理する
 
@@ -36,7 +36,7 @@ Microsoft 365 または [Power BI でのワークスペース](service-create-di
 * グループの電子メール アドレスを参照します。
 * グループを削除します。
 
-ワークスペースの管理者またはメンバーになるには、[Power BI Pro](../fundamentals/service-features-license-type.md) ライセンスが必要です。 ワークスペースが Power BI Premium 容量にない場合は、アプリ ユーザーにも Power BI Pro ライセンスが必要です。 詳しくは、[Power BI Premium](../admin/service-premium-what-is.md) に関するページをご覧ください。
+ワークスペースの管理者またはメンバーになるには、[Power BI Pro または Premium Per User (PPU) のライセンス](../fundamentals/service-features-license-type.md)が必要です。 ワークスペースが Power BI Premium 容量にない場合は、アプリ ユーザーにも Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 詳しくは、[Power BI Premium](../admin/service-premium-what-is.md) に関するページをご覧ください。
 
 ## <a name="edit-your-workspace-in-power-bi"></a>Power BI でワークスペースを編集する
 

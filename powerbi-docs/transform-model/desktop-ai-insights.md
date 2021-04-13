@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 06/10/2020
+ms.date: 04/02/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dca1274b3342cf3122906d0673ccf66546ec148e
-ms.sourcegitcommit: 818b4542925c927a0dfcb469dbbd8984b5810a21
+ms.openlocfilehash: f87841c3ba346d0c1cb143a884f6b510519426de
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103602638"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230189"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Power BI Desktop で AI 分析情報を使用する
 
@@ -53,7 +53,7 @@ Power BI で Text Analytics と Vision を使用すると、[Azure Cognitive Ser
 
 ### <a name="enabling-text-analytics-and-vision-on-premium-capacities"></a>Premium 容量で Text Analytics と Vision を有効にする
 
-Cognitive Services は、Premium 容量ノード EM2、A2、または P1 以降でサポートされます。 Cognitive Services を実行する際は、容量上の別個の AI ワークロードが使用されます。 これらの機能のパブリック プレビュー期間中 (2019 年 6 月より前) は、このワークロードは既定で無効になっていました。 Power BI で Cognitive Services を使用する前に、管理ポータルの **[容量の設定]** で AI ワークロードを有効にする必要があります。 **[ワークロード]** セクションで **[AI ワークロード]** を有効にし、このワークロードで消費する最大メモリ量を定義します。 推奨されるメモリ制限は、20% です。 この制限を超えると、クエリ速度が低下します。
+Cognitive Services は、Premium 容量ノード EM2、A2、または P1 以降でサポートされます。 Cognitive Services も Premium Per User (PPU) ライセンスで利用できます。 Cognitive Services を実行する際は、容量上の別個の AI ワークロードが使用されます。 これらの機能のパブリック プレビュー期間中 (2019 年 6 月より前) は、このワークロードは既定で無効になっていました。 Power BI で Cognitive Services を使用する前に、管理ポータルの **[容量の設定]** で AI ワークロードを有効にする必要があります。 **[ワークロード]** セクションで **[AI ワークロード]** を有効にし、このワークロードで消費する最大メモリ量を定義します。 推奨されるメモリ制限は、20% です。 この制限を超えると、クエリ速度が低下します。
 
 ### <a name="available-functions"></a>使用できる関数
 

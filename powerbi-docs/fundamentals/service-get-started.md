@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 01/13/2021
+ms.date: 04/02/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 04777ba93b6a4639b55406b3952a80de963cb540
-ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.openlocfilehash: 2cae68f2a3162454aee5518726c8f55d552a6439
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98861217"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227429"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>チュートリアル:Power BI サービスでの作成の概要
 このチュートリアルでは、*Power BI サービス* の一部の機能について説明します。 ここでは、データに接続し、レポートとダッシュボードを作成して、データに関する質問をします。 Power BI サービスでは、さらに多くのことを行うことができます。このチュートリアルは、単にみなさんの興味をかき立てることを目的としています。 Power BI サービスと他の Power BI 製品の関係を理解するため、「[Power BI とは?](power-bi-overview.md)」を読むことをお勧めします。
@@ -36,7 +36,7 @@ ms.locfileid: "98861217"
 > * データセット、レポート、ダッシュボードを削除してリソースをクリーンアップします。
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Power BI サービスにサインアップする
-Power BI でコンテンツを作成するには、Power BI Pro ライセンスが必要です。 Power BI アカウントがない場合は、始める前に[無料の Power BI Pro 試用版にサインアップ](https://app.powerbi.com/signupredirect?pbi_source=web)してください。
+Power BI でコンテンツを作成するには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 Power BI アカウントがない場合は、始める前に[無料の Power BI Pro 試用版または Premium Per User にサインアップ](https://app.powerbi.com/signupredirect?pbi_source=web)してください。
 
 ## <a name="step-1-get-data"></a>手順 1:データを取得
 

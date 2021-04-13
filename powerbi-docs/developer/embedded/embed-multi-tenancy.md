@@ -7,13 +7,13 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/11/2019
-ms.openlocfilehash: 39256b3b57a43804478371606ca7336c484c7813
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 04/02/2021
+ms.openlocfilehash: 15cba64fa18aadb7f11c4b9bf257bff76621d5ad
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97884835"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226026"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Power BI の埋め込み分析でマルチテナントを管理する
 
@@ -48,13 +48,13 @@ Power BI Embedded では、テナント間の分離を維持するための基�
 
 **[行レベルのセキュリティ (RLS)](embedded-row-level-security.md)** - テーブル内の各行のデータへのユーザー アクセスを制御する機能を提供します。 データ ソース レベルまたは Power BI のセマンティック モデルで、行レベルのセキュリティを実装することができます。
 
-**マスター ユーザー** - Power BI 内の SaaS アプリケーションを表す ID であり、SaaS アプリケーションで Power BI API を呼び出すときに使用されます。 Power BI Pro ライセンスを持つ AAD ユーザーである必要があります。
+**マスター ユーザー** - Power BI 内の SaaS アプリケーションを表す ID であり、SaaS アプリケーションで Power BI API を呼び出すときに使用されます。 Power BI Pro または Premium Per User (PPU) ライセンスを持つ AAD ユーザーである必要があります。
 
 **AAD アプリケーション ユーザー (サービス プリンシパル)** - Power BI 内の SaaS アプリケーションを表す ID であり、SaaS アプリケーションで Power BI API を呼び出すときに使用されます。 AAD Web アプリケーションである必要があります。 Power BI での認証のために、"*マスター*" ユーザーの代わりに使用できます。
 
 **容量** - Power BI サービス実行専用のリソースのセット。 [Power BI Premium 容量](../../admin/service-premium-what-is.md)は Power BI を社内で使用する企業を対象としたものですが、[Power BI Embedded 容量](azure-pbie-create-capacity.md)はサード パーティ向けの SaaS アプリケーションを開発するアプリケーション開発者を対象としています。
 
-**[Power BI Pro ライセンス](../../admin/service-admin-purchasing-power-bi-pro.md)** - ユーザーベースのライセンスであり、ワークスペースへのコンテンツの発行、Premium 容量なしでのアプリの利用、ダッシュボードの共有、ダッシュボードおよびレポートのサブスクライブを行う権限が付与されます。
+**[Power BI Pro または Premium Per User (PPU) ライセンス](../../admin/service-admin-purchasing-power-bi-pro.md)** - ユーザーベースのライセンスであり、ワークスペースへのコンテンツの発行、Premium 容量なしでのアプリの利用、ダッシュボードの共有、ダッシュボードおよびレポートのサブスクライブを行う権限が付与されます。
 
 **[データ接続モード](../../connect-data/desktop-directquery-about.md)** - 異なるモードで Power BI にデータ ソースを接続できます。
 

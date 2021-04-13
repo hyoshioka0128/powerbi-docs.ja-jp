@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 2eb1c5bd685cedabd96483867546c7578124af45
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.openlocfilehash: da4beb65ba346e516b2f5495490351a2ea264768
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99532845"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227107"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Power BI Premium で容量を構成および管理する
 
@@ -28,6 +28,10 @@ Power BI Premium および Power BI Embedded の容量を管理する方法に�
 
 > [!NOTE]
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
+
+
+> [!NOTE]
+> 個人向けの Premium Per User (PPU) ライセンスを取得することもできます。これにより、Premium 容量の多くの機能が提供されます。またこれには、Power BI Pro ライセンスに含まれるすべての機能が組み込まれています。 詳しくは、「[Power BI Premium Per User](service-premium-per-user-faq.md)」をご覧ください。
 
 ## <a name="manage-capacity"></a>容量の管理
 

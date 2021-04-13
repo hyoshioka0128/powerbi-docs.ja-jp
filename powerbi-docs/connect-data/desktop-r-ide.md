@@ -10,12 +10,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 21b46a0c7637509fa54c3d7ed2b5551cde05f784
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 03232ec277d8ed93c522063a636d867a55b6795d
+ms.sourcegitcommit: 48d8aa293669fa881d682d5279e2d51cba342bd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404872"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106104369"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Power BI で外部 R IDE を使用する
 **Power BI Desktop** では、外部の R IDE (統合開発環境) を使用して R スクリプトを作成および調整した後、Power BI でそのスクリプトを使用できます。
@@ -23,9 +23,7 @@ ms.locfileid: "96404872"
 ![[Detected R IDEs]\(R IDE が検出されました\) フィールドに [R Studio] が入力されていることを示す、[オプション] ダイアログのスクリーンショット。](media/desktop-r-ide/r-ide_1a.png)
 
 ## <a name="enable-an-external-r-ide"></a>外部の R IDE を有効にする
-これまで、R スクリプトを作成して実行するには、**Power BI Desktop** の R スクリプト エディターを使用する必要がありました。 このリリースでは、外部の R IDE を **Power BI Desktop** から起動し、R IDE にデータを自動的にインポートして表示できます。 その後は、その外部 R IDE でスクリプトを修正してから、**Power BI Desktop** にスクリプトを貼り付けて、Power BI のビジュアルとレポートを作成できます。
-
-**Power BI Desktop** の 2016年 9 月リリース (2.39.4526.362 バージョン) 以降、使用する R IDE を指定して、それを **Power BI Desktop** 内から自動的に起動させることができます。
+外部の R IDE を **Power BI Desktop** から起動すると、R IDE にデータが自動的にインポートされ、表示されます。 その後は、その外部 R IDE でスクリプトを修正してから、**Power BI Desktop** にスクリプトを貼り付けて、Power BI のビジュアルとレポートを作成できます。 使用する R IDE を指定し、それを **Power BI Desktop** 内から自動的に起動させます。
 
 ### <a name="requirements"></a>要件
 この機能を使用するには、ローカル コンピューターに **R IDE** をインストールする必要があります。 **Power BI Desktop** には R エンジンは含まれず、配置もインストールも行われないので、ローカル コンピューターに **R** を別途インストールする必要があります。 次のオプションで、使用する R IDE を選択できます。

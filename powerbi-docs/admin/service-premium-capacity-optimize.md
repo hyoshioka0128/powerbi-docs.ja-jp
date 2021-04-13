@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: f3bdf12106ffa15764719fe3146a1ed52adf5990
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.openlocfilehash: e263d39d05edece7e0190994a20686249c699012
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99532937"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226601"
 ---
 # <a name="optimizing-premium-capacities"></a>Premium 容量を最適化する
 
@@ -32,6 +32,10 @@ Premium 容量のパフォーマンスに関する問題が発生した場合、
 > Power BI Premium に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。
 >
 >Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。
+
+> [!NOTE]
+> 個人向けの Premium Per User (PPU) ライセンスを取得することもできます。これにより、Premium 容量の多くの機能が提供されます。またこれには、Power BI Pro ライセンスに含まれるすべての機能が組み込まれています。 詳しくは、「[Power BI Premium Per User](service-premium-per-user-faq.md)」をご覧ください。
+
 
 この記事で推奨されている推奨事項とベスト プラクティスを使用すると、各データセットの CPU 使用率とその他の Power BI の成果物が確実に最適化されます。
 

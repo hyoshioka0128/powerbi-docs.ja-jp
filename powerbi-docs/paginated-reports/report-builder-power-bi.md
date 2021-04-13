@@ -3,18 +3,18 @@ title: Power BI レポート ビルダー
 description: Power BI Report Builder は、ページ分割されたレポートを作成するためのツールです。
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/23/2021
+ms.date: 03/24/2021
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
-ms.openlocfilehash: 6897b495c48b54ed1e3736060e586077d6fa97e8
-ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
+ms.openlocfilehash: 913e6953b7754b1c37ed5f46afe0d983e82c6083
+ms.sourcegitcommit: 438eea031f1ed9e9dee510520e5c1039920c3a49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105008215"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105099361"
 ---
 # <a name="power-bi-report-builder"></a>Power BI レポート ビルダー
 
@@ -30,9 +30,9 @@ Power BI Report Builder は、Power BI サービスに発行できるページ�
 
 ![Power BI サービスにおけるページ分割されたレポート](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-## <a name="develop-reports-in-the-deployment-pipeline-tool"></a>配置パイプライン ツールでレポートを開発する
+## <a name="use-deployment-pipelines-with-paginated-reports"></a>ページ分割されたレポートでの配置パイプラインの使用
 
-Power BI サービスでは、配置パイプライン ツールを使用して、ページ分割されたレポートを開発できます。 配置パイプラインを使用すると、Power BI のページ分割されたレポートを、ユーザーにリリースする前に開発およびテストできます。 このツールは、次の 3 つのステージを含むパイプラインです。
+Power BI サービスでは、ページ分割されたレポートで配置パイプライン ツールを使用できます。 配置パイプラインを使用すると、Power BI のページ分割されたレポートを、ユーザーにリリースする前に開発およびテストできます。 このツールは、次の 3 つのステージを含むパイプラインです。
 - 開発
 - テスト
 - Production

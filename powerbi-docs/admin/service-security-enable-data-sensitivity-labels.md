@@ -6,14 +6,14 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1732c1b6b8b748c4f3a820b31c4e4fe050a66fcd
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: a084c5e209d33c8b1cad64511b7e6582a04cff4c
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600325"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106225796"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Power BI で秘密度ラベルを有効にする
 
@@ -36,7 +36,7 @@ ms.locfileid: "97600325"
     >[!NOTE]
     > 組織で Azure Information Protection 秘密度ラベルを使用している場合、ラベルを Power BI で使用するには、Microsoft Information Protection 統合ラベル付けプラットフォームに移行する必要があります。 [秘密度ラベルの移行の詳細を確認してください](/azure/information-protection/configure-policy-migrate-labels)。
 
-* Power BI のコンテンツとファイルにラベルを適用できるようにするには、ユーザーは前述のいずれかの Azure Information Protection ライセンスに加えて、Power BI Pro ライセンスも持っている必要があります。
+* Power BI のコンテンツとファイルにラベルを適用できるようにするには、ユーザーは前述のいずれかの Azure Information Protection ライセンスに加えて、Power BI Pro または Premium Per User (PPU) ライセンスも持っている必要があります。
 
 * Office アプリには[秘密度レベルの表示や適用を行う Office 独自のライセンス要件があります]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels )。
 

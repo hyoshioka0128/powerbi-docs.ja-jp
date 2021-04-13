@@ -8,14 +8,14 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1069a000daf3f46055f45118f4442e4b19037234
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 5c1e78a3923b75bcde46392efdab8d99551c2f89
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926722"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228096"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>同僚や他のユーザーと Power BI ダッシュボードやレポートを共有する
 "*共有*" は、Power BI サービス内の自分のダッシュボードやレポートに他のユーザーがアクセスできるようにする最も簡単な方法です。 組織内外のユーザーと共有できます。
@@ -28,7 +28,7 @@ Power BI サービスの多くの場所からダッシュボードとレポー�
 
 Power BI サービスでは、ダッシュボードでの共同作業を行ったり、ダッシュボードやレポートを配布したりする他の方法も提供されます。 「[Power BI で作業を共有する方法](service-how-to-collaborate-distribute-dashboards-reports.md)」を読んで、状況に最も適した方法を確認してください。 
 
-共有を行うには、コンテンツの共有先が組織内でも組織外でも、共有元に [Power BI Pro ライセンス](../fundamentals/service-features-license-type.md)が必要です。 コンテンツが [Premium 容量](../admin/service-premium-what-is.md)にない限り、受信者には Power BI Pro ライセンスも必要です。 
+共有を行うには、コンテンツの共有先が組織内でも組織外でも、共有元に [Power BI Pro または Premium Per User (PPU) のライセンス](../fundamentals/service-features-license-type.md)が必要です。 コンテンツが [Premium 容量](../admin/service-premium-what-is.md)にある場合を除き、受信者にも Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 
 
 Power BI Desktop から直接 "*共有*" することはできません。 Power BI サービスに、[Power BI Desktop からレポートを発行](../create-reports/desktop-upload-desktop-files.md)します。 しかし、[Power BI モバイル アプリからダッシュボードを共有](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md)できます。  
 
@@ -77,7 +77,7 @@ Power BI Desktop から直接 "*共有*" することはできません。 Power
     このビューでは、この記事に説明するように[共有アクセス許可を停止または変更](#stop-or-change-sharing)することができます。 
 
 ## <a name="share-a-dashboard-or-report-outside-your-organization"></a>組織外でダッシュボードまたはレポートを共有する
-組織外のユーザーと共有する場合、共有されたダッシュボードまたはレポートへのリンクを含む電子メールが、共有相手に届きます。 共有相手は、Power BI にサインインして、共有されている内容を確認する必要があります。 共有相手は、Power BI Pro ライセンスを持っていない場合、リンクをクリックしたときにライセンスにサインアップできます。
+組織外のユーザーと共有する場合、共有されたダッシュボードまたはレポートへのリンクを含む電子メールが、共有相手に届きます。 共有相手は、Power BI にサインインして、共有されている内容を確認する必要があります。 共有相手は、Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合、リンクをクリックしたときにライセンスにサインアップできます。
 
 共有相手がサインインすると、共有されたダッシュボードまたはレポートが、通常の Power BI ポータルではなく、共有相手の独自のブラウザー ウィンドウに表示されます。 後でこのダッシュボードまたはレポートにアクセスするには、リンクをブックマークする必要があります。
 

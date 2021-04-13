@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/17/2021
-ms.openlocfilehash: c0fe8fc66ce494c75ada64311c93beb4642c71b0
-ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
+ms.date: 04/04/2021
+ms.openlocfilehash: c68868c237e55750c8b69773f3acc19c9fb74454
+ms.sourcegitcommit: 4a0ad7612281c187892912b1bfe8102a9fd23de7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104834731"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106441025"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI Report Server の変更ログ
 
@@ -76,7 +76,9 @@ ms.locfileid: "104834731"
             - 新しい HTML DOCTYPE を使用するように MHTML レンダラーを更新しました。
 
 - **Power BI Desktop (Power BI Report Server 用に最適化)**
-   - *バージョン: 2.86.2841.0 (2020 年 10 月)、リリース日: 2020 年 2 月 5 日*
+   - *バージョン: 2.86.3481.0 (2020 年 10 月)、リリース: 2021 年 3 月 31 日*
+        - バグの修正
+   - *バージョン: 2.86.2841.0 (2020 年 10 月)、リリース日: 2021 年 2 月 5 日*
         - バグの修正
    - *バージョン:2.86.1321.0 (2020 年 10 月)、リリース日:2020 年 11 月 18 日*
         - バグ修正

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 04/02/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 569fd0b20573c0e8a5a6292f2c0d1df530282dc0
-ms.sourcegitcommit: 7727a56e54e2f50098106c6d7454b725ed6baa19
+ms.openlocfilehash: a2b0e2f2df2d6bd38e1019107121c2f1a246bb62
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104724295"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227061"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>組織のユーザーに Power BI サービスのライセンスを与える
 
@@ -92,7 +92,7 @@ Power BI Premium サブスクリプション ライセンスによって、組�
 >[!NOTE]
 >Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
 >* パフォーマンス
->* ユーザーごとのライセンス。 詳細については、[Premium Per User の FAQ](service-premium-per-user-faq.md) を参照してください。
+>* ユーザーごとのライセンス。 詳細については、[Premium Per User](service-premium-per-user-faq.md) に関するページを参照してください。
 >* より大きなスケール
 >* メトリックの改善
 >* 自動スケール

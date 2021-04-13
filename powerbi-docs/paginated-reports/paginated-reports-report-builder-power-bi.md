@@ -8,13 +8,13 @@ featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 03/23/2021
-ms.openlocfilehash: 64d873ffa1ac3914e7b37edf12df4794b2db8f8b
-ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
+ms.date: 04/02/2021
+ms.openlocfilehash: 0770c862bb9ad390263bd161e2cca5dc334fe1b0
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105007962"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228878"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Power BI Premium のページ分割されたレポートとは
 
@@ -33,7 +33,7 @@ ms.locfileid: "105007962"
 
 ![ページ分割された](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-レポート ビルダーでレポートをプレビューした後、Power BI サービス (app.powerbi.com) に発行することができます。 サービスにレポートを発行するには、Power BI Pro ライセンスが必要です。 ワークスペースが Power BI Premium 容量に存在する限り、マイ ワークスペースまたはワークスペースにページ分割されたレポートを発行して共有できます。 また、Power BI 管理者は、Power BI 管理ポータルの [Premium 容量セクション](../admin/service-admin-premium-workloads.md#paginated-reports)で、ページ分割されたレポートを有効にする必要があります。 
+レポート ビルダーでレポートをプレビューした後、Power BI サービス (app.powerbi.com) に発行することができます。 サービスにレポートを発行するには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 ワークスペースが Power BI Premium 容量に存在する限り、マイ ワークスペースまたはワークスペースにページ分割されたレポートを発行して共有できます。 また、Power BI 管理者は、Power BI 管理ポータルの [Premium 容量セクション](../admin/service-admin-premium-workloads.md#paginated-reports)で、ページ分割されたレポートを有効にする必要があります。 
 
 ## <a name="compare-power-bi-reports-and-paginated-reports"></a>Power BI レポートとページ分割されたレポートを比較する
 
@@ -51,9 +51,9 @@ ms.locfileid: "105007962"
 
 ページ分割されたレポートには、専用のデザイン ツールである Power BI レポート ビルダーがあります。 それは新しいツールで、Power BI Report Server または SQL Server Reporting Services (SSRS) のページ分割されたレポートの作成にこれまで使われていたツールと同じ基盤を共有します。 実際、SSRS 2016 や 2017 または Power BI Report Server オンプレミス用に作成したページ分割されたレポートは、Power BI サービスと互換性があります。 Power BI サービスは下位互換性が維持されているので、レポートを上位バージョンに移行でき、以前のバージョンのページ分割されたレポートをアップグレードすることができます。 起動時は一部のレポート機能が利用できません。 詳細については、この記事の「[制限事項と考慮事項](#limitations-and-considerations)」を参照してください。
 
-## <a name="develop-reports-in-the-deployment-pipeline-tool"></a>配置パイプライン ツールでレポートを開発する
+## <a name="use-deployment-pipelines-with-paginated-reports"></a>ページ分割されたレポートでの配置パイプラインの使用
 
-Power BI サービスでは、配置パイプライン ツールを使用して、ページ分割されたレポートを開発できます。 配置パイプラインを使用すると、Power BI のページ分割されたレポートを、ユーザーにリリースする前に開発およびテストできます。 このツールは、次の 3 つのステージを含むパイプラインです。
+Power BI サービスでは、ページ分割されたレポートで配置パイプライン ツールを使用できます。 配置パイプラインを使用すると、Power BI のページ分割されたレポートを、ユーザーにリリースする前に開発およびテストできます。 このツールは、次の 3 つのステージを含むパイプラインです。
 - 開発
 - テスト
 - Production

@@ -1,24 +1,24 @@
 ---
-title: Power BI の小売りの分析のサンプル:ツアーを開始する
-description: Power BI の小売りの分析のサンプル:ツアーを開始する
+title: 'Power BI の小売りの分析のサンプル: 使ってみる'
+description: 'Power BI の小売りの分析のサンプル: 使ってみる'
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/02/2019
+ms.date: 04/02/2021
 LocalizationGroup: Samples
-ms.openlocfilehash: 1a3a4bc467299f7baeb12ca68af1d2730d5839f0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5f977c19606ce2fbcafae76d1779cdb350da72f2
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395994"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106228441"
 ---
-# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Power BI の小売りの分析のサンプル:ツアーを開始する
+# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Power BI の小売りの分析のサンプル: 使ってみる
 
-小売りの分析のサンプル コンテンツ パックには、複数の店舗や地区で販売された品目の小売り売上データを分析するダッシュボード、レポート、データセットが含まれています。 メトリックでは、新店舗の分析以外に、売上、出荷単位、粗利、差異の分野の本年度の業績と昨年度の業績が比較されます。 
+小売りの分析のサンプル コンテンツ パックには、複数の店舗や地区で販売された品目の小売り売上データを分析するダッシュボード、レポート、データセットが含まれています。 このメトリックでは、新店舗の分析だけでなく、売上、単位、粗利、差異について、本年度と昨年度の業績を比較しています。 
 
 ![小売りの分析のサンプルのダッシュボード](media/sample-retail-analysis/retail1.png)
 
@@ -26,7 +26,7 @@ ms.locfileid: "96395994"
 
 このチュートリアルでは、Power BI サービス内の小売りの分析のサンプル コンテンツ パックを調べます。 Power BI Desktop とサービスのレポート エクスペリエンスは似ているので、Power BI Desktop 内のサンプルの .pbix ファイルを使用して作業することもできます。 
 
-Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro ライセンスを持っていない場合は、Power BI サービス内で、マイ ワークスペースにサンプルを保存できます。 
+Power BI Desktop 内でサンプルを調べるために Power BI ライセンスは不要です。 Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、Power BI サービスのマイ ワークスペースにサンプルを保存できます。 
 
 ## <a name="get-the-sample"></a>サンプルを入手する
 
@@ -36,14 +36,14 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 1. Power BI サービス (app.powerbi.com) を開いてサインインし、サンプルを保存するワークスペースを開きます。 
 
-    Power BI Pro ライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
+    Power BI Pro または Premium Per User (PPU) のライセンスを持っていない場合は、マイ ワークスペースにサンプルを保存できます。
 
 2. 左下隅にある **[データを取得]** を選びます。
 
     ![[データを取得] を選択](media/sample-datasets/power-bi-get-data.png)
 3. 表示された **[データを取得]** ページで、 **[サンプル]** を選びます。
    
-4. **[小売りの分析のサンプル]** を選び、 **[接続]** を選びます。  
+4. **[小売りの分析のサンプル]** を選び、**[接続]** を選びます。  
   
    ![サンプルに接続](media/sample-retail-analysis/retail16.png)
    
@@ -61,13 +61,13 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>ダッシュボードを起動し、レポートを開く
 
-1. サンプルを保存したワークスペースで、 **[ダッシュボード]** タブを開き、 **[小売りの分析のサンプル]** ダッシュボードを探してそれを選択します。 
-2. ダッシュボード上で、**Total Stores New & Existing Stores\(新規店舗と既存の店舗の合計\)** タイルを選び、小売りの分析のサンプル レポートの **店舗売上の概要** ページを開きます。 
+1. サンプルを保存したワークスペースで、**[ダッシュボード]** タブを開き、**[小売りの分析のサンプル]** ダッシュボードを探してそれを選択します。 
+2. ダッシュボード上で、**[Total Stores New & Existing Stores]\(新規店舗と既存の店舗の合計\)** タイルを選び、小売りの分析のサンプル] レポートの **[店舗売上の概要]** ページを開きます。 
 
    ![[Total Stores] タイル](media/sample-retail-analysis/retail-analysis-7.png)  
 
    このレポートのページには、合計で 104 店舗が表示され、そのうち 10 店舗は新規です。 2 つの店舗チェーン、Fashions Direct と Lindseys があります。 Fashions Direct 店舗は、平均的により大規模です。
-3. **[チェーン別の今年の売上]** 円グラフで、 **[Fashions Direct]** スライスを選択します。
+3. **[チェーン別の今年の売上]** 円グラフで、**[Fashions Direct]** スライスを選択します。
 
    ![[チェーン別の今年の売上] グラフ](media/sample-retail-analysis/retail3.png)  
 
@@ -91,10 +91,10 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Power BI の Q&A で作成されたタイルを確認する
 さらに詳細を取得しましょう。
 
-1. 質問を「_this year sales **by district**_ 」(地区別の今年の売上) に変更します。 結果を観察します。Q&A によって自動的に横棒グラフに結果が配置され、他の語句が提案されます。
+1. 質問を「_this year sales **by district**_」(地区別の今年の売上) に変更します。 結果を確認します。Q&A によって自動的に横棒グラフに結果が配置され、他の語句が提案されます。
 
    ![Q&A の地区別の今年の売上](media/sample-retail-analysis/retail8.png)
-2. ここで、質問を「_this year sales **by zip and chain**_ 」(郵便番号とチェーン別の今年の売上) に変更します。
+2. ここで、質問を「_this year sales **by zip and chain**_」(郵便番号とチェーン別の今年の売上) に変更します。
 
    入力した質問が Power BI によってどのように応答され、該当するグラフに表示されるかに注目してください。
 3. その他の質問を入力して、どのような結果が得られるかを実験してください。
@@ -103,7 +103,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
 ## <a name="dive-deeper-into-the-data"></a>データをさらに深く分析する
 ここで、より詳細なレベルで地域の業績を見てみましょう。
 
-1. ダッシュボード上で、 **[今年の売上、昨年の売上]** タイルを開きます。これにより、レポートの **[地区の毎月の売上]** ページが開きます。
+1. ダッシュボード上で、**[今年の売上、昨年の売上]** タイルを開きます。これにより、レポートの **[地区の毎月の売上]** ページが開きます。
 
    ![[今年の売上、昨年の売上] タイル](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
 
@@ -112,7 +112,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
    ![[会計月別の総売上差異 %] グラフ](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
 
    絞り込んで、どこに問題があるかを特定できるかどうかを見てみましょう。
-2. バブル チャートで、 **[020-紳士服]** バブルを選択します。
+2. バブル チャートで、**[020-紳士服]** バブルを選択します。
 
    ![[020-紳士服] の選択](media/sample-retail-analysis/retail11.png)  
 
@@ -153,7 +153,7 @@ Power BI Desktop 内でサンプルを調べるために Power BI ライセン�
    ![[名前別の平方フィート単位の売上] グラフ](media/sample-retail-analysis/retail14.png)
 
     平方フィートあたりの平均売上は、新店舗によって異なることに注目してください。
-3. 右上の **開店月別、チェーン別の開店店舗数** グラフで、**Fashions Direct** 凡例項目を選択します。 同じチェーン店でも、最も業績の高い店舗 (Winchester Fashions Direct) と最も業績の低い店舗 (Cincinnati 2 Fashions Direct) では、それぞれ 21.22 ドルと 12.86 ドルと、大きな違いがあります。
+3. 右上の **[開店月別、チェーン別の開店店舗数** グラフで、**[Fashions Direct]** 凡例項目を選択します。 同じチェーン店でも、最も業績の高い店舗 (Winchester Fashions Direct) と最も業績の低い店舗 (Cincinnati 2 Fashions Direct) では、それぞれ 21.22 ドルと 12.86 ドルと、大きな違いがあります。
 
    ![Fashions Direct を選択](media/sample-retail-analysis/power-bi-lindseys.png)
 4. **[名前]** スライサーで **[Winchester Fashions Direct]** を選択し、折れ線グラフに注目します。 最初の販売数は 2 月に報告されました。

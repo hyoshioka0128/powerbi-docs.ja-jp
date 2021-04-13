@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 03/31/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: e211aded069675c02e59004631ea2264be1e0dcc
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: da38e917c2382389c74134bb7d637429e83d7ff6
+ms.sourcegitcommit: 48d8aa293669fa881d682d5279e2d51cba342bd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578282"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106104449"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI レポートでのグラフの並べ替え方法の変更
 
@@ -78,11 +78,11 @@ Shift キーを押しながら同じ列をもう一度クリックすると、�
 ### <a name="sorting-using-other-criteria"></a>その他の条件を使用した並べ替え
 別のフィールド (ビジュアルには含まれません) またはその他の条件を使用して、ビジュアルを並べ替えたい場合があります。  たとえば、月をアルファベット順ではなく順番に並べ替えることや、数値を数字ではなく数値全体で (たとえば、0、1、20、9 ではなく、0、1、9、20 の順序で) 並べ替えることができます。  
 
-これらの変更は、レポートをデザインしたユーザーのみが行うことができます。 "*デザイナー*" の連絡先情報は、ヘッダー バーからレポート名を選択することで確認できます。
+- レポートを編集する権限が与えられているとき、データセットの別のフィールド別に並べ替える方法については、「[Power BI Desktop での列による並べ替え](../create-reports/desktop-sort-by-column.md)」を参照してください。    
+- あなたがレポート デザイナーであれば、データセットで新しい列を作成し、日付や番号などの値で問題を並べ替え問題に対処できます。 "*デザイナー*" の連絡先情報は、ヘッダー バーからレポート名を選択することで確認できます。
 
 ![連絡先情報を示すドロップダウン](media/end-user-change-sort/power-bi-heading.png)
 
-ご自分が "*デザイナー*" であり、コンテンツに対して編集アクセス許可を持っている場合は、「[Power BI Desktop での列による並べ替え](../create-reports/desktop-sort-by-column.md)」を読み、データセットを更新して、この種類の並べ替えを有効にする方法を確認してください。
 
 ## <a name="next-steps"></a>次の手順
 「[Power BI での視覚化](end-user-visualizations.md)」をご覧ください。

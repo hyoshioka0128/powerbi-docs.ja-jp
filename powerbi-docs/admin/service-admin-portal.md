@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/12/2021
+ms.date: 04/05/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 36d8f0d47b32d8b012dc4d559e3feecf3c08bc9e
-ms.sourcegitcommit: 8cf6ff2e01646e8ab761291e3d86aded63951ed5
+ms.openlocfilehash: 4c7bc9b4393a10fd11998e4607d77e01f06b30cc
+ms.sourcegitcommit: 4a0ad7612281c187892912b1bfe8102a9fd23de7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103460372"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106441012"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>管理ポータルでの Power BI の管理
 
@@ -220,7 +220,7 @@ Office 365 セキュリティ/コンプアライアンス センターで Power 
 ```markdown
 #### Important Disclaimer 
 
-Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. Learn about [giving access to the new workspaces](../collaborate-share/give-access-new-workspaces.md). 
 ```
 
 **[カスタム メッセージ]** テキスト領域ではスクロールがサポートされているため、5000 文字までのメッセージを指定できます。
@@ -444,6 +444,20 @@ Power BI 管理者には、ユーザーが埋め込みコードを作成して�
 ![Power BI 管理ポータルにある [Teams で共有] テナント設定のスクリーンショット。](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
 
 Teams での Power BI コンテンツの共有の詳細については、[こちら](../collaborate-share/service-share-report-teams.md)を参照してください。
+
+### <a name="allow-shareable-links-to-grant-access-to-all-people-in-your-organization"></a>共有可能リンクを許可して、組織内のすべてのユーザーにアクセス権を付与する
+管理者はこのテナント設定を使用して、**組織内のユーザー** への共有可能なリンクの作成を無効にすることができます。 このオプションは、管理ポータルの **[テナント設定]**  >  **[エクスポートと共有の設定]**  >  **[共有可能リンクを許可して、組織内のすべてのユーザーにアクセス権を付与する]** にあります。
+
+![[共有可能リンクを許可して、組織内のすべてのユーザーにアクセスを許可する] のスクリーンショット](media/service-admin-portal/admin-allow-shareable-links.png)
+
+他のテナント設定と同様に、次に対して **組織内のユーザー** へのリンクの共有を有効にできます。
+- **組織全体**
+- **特定のセキュリティ グループ**
+- または **特定のセキュリティ グループを除く**
+
+レポートに対する共有権限を持つユーザーに対してこの設定を無効にした場合、そのユーザーは、**特定のユーザー** または **既存のアクセス権を持つユーザー** へのリンクを介さないとレポートを共有できません。
+
+![共有オプションが無効になっているスクリーンショット](media/service-admin-portal/admin-share-option-disabled.png)
 
 ## <a name="content-pack-and-app-settings"></a>コンテンツ パックとアプリの設定
 

@@ -6,14 +6,14 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: 83e3a3bdac9720592026089a2c3365b0ae4cb236
-ms.sourcegitcommit: cf3469295a33acf729a913ec135b4c5484910d2f
+ms.openlocfilehash: a61e2877f20f84640777a7ab1d0a6014a709feb6
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102195471"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106226141"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Power BI で秘密度ラベルを適用する方法
 
@@ -26,7 +26,7 @@ ms.locfileid: "102195471"
 Power BI サービスでは、レポート、ダッシュボード、データセット、データフローに対して秘密度ラベルを適用できます。
 
 Power BI サービスで秘密度ラベルを適用できるようにするには:
-* ユーザーは、[Power BI Pro ライセンス](./service-admin-purchasing-power-bi-pro.md)と、ラベルを適用するコンテンツに対する編集アクセス許可を、持っている必要があります。
+* ユーザーは、[Power BI Pro または Premium Per User (PPU) ライセンス](./service-admin-purchasing-power-bi-pro.md)と、ラベルを適用するコンテンツに対する編集アクセス許可を持っている必要があります。
 * 組織で秘密度ラベルが有効にされている必要があります。 それについて確認したい場合は、Power BI 管理者に問い合わせてください。
 * 「[Power BI で秘密度ラベルを有効にする](./service-security-enable-data-sensitivity-labels.md)」で説明されているように、ユーザーは秘密度ラベルを適用するためのアクセス許可を持つセキュリティ グループに属している必要があります。
 * すべての[ライセンスとその他の要件](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements)を満たしている必要があります。
@@ -66,7 +66,7 @@ Power BI サービスで秘密度ラベルを適用できるようにするに�
 ## <a name="apply-sensitivity-labels-in-power-bi-desktop-preview"></a>Power BI Desktop で秘密度ラベルを適用する (プレビュー)
 
 Power BI Desktop で秘密度ラベルを使用するには:
-* [Power BI Pro ライセンス](./service-admin-purchasing-power-bi-pro.md)が必要です。
+* [Power BI Pro または Premium Per User (PPU) ライセンス](./service-admin-purchasing-power-bi-pro.md)を持っている必要があります。
 * 組織で秘密度ラベルが有効にされている必要があります。 それについて確認したい場合は、Power BI 管理者に問い合わせてください。
 * 「[Power BI で秘密度ラベルを有効にする](./service-security-enable-data-sensitivity-labels.md)」で説明されているように、ユーザーは秘密度ラベルを適用するためのアクセス許可を持つセキュリティ グループに属している必要があります。
 * すべての[ライセンスとその他の要件](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements)を満たしている必要があります。

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/19/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from databases
-ms.openlocfilehash: ec47968294e0fd905d1733bdb30ae1840069aed7
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
+ms.openlocfilehash: 99649c018c1e629493b14c5a7064d88569723c3d
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597473"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106229292"
 ---
 # <a name="power-bi-and-azure-egress"></a>Power BI と Azure エグレス
 
@@ -27,6 +27,10 @@ Power BI テナントがデータ ソースをデプロイしたリージョン�
 Power BI テナントの場所を見つける方法については、「[Power BI テナントの場所](../admin/service-admin-where-is-my-tenant-located.md)」という記事を参照してください。
 
 Power BI Premium Multi-Geo のお客様については、Power BI テナントが一部の Azure ベース データ ソースにとって最適な場所にない場合、目的の Azure リージョンに Power BI Premium Multi-Geo をデプロイし、Power BI テナントと Azure データ ソースを同じ Azure リージョンに置くことの利点を得ることができます。
+
+> [!NOTE]
+> Multi-Geo では、Power BI Premium Per User (PPU) はサポートされていません。
+
 
 ## <a name="next-steps"></a>次の手順
 

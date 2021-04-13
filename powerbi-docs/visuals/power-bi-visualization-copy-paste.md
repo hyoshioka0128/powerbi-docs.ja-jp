@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/18/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fda66910ac073421d4b17706dec70d6aa6e86499
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 740193f9aa1d73c600b2b3fe96773e0b9639d328
+ms.sourcegitcommit: 10dfa074558a78a82f44bdfa6228c07c7d860257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409886"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106549565"
 ---
 # <a name="copy-and-paste-a-report-visualization"></a>レポートの視覚エフェクトをコピーして貼り付ける
 
@@ -43,12 +43,12 @@ Power BI レポートのビジュアルをレポート内のあるページか�
 
 Power BI レポートまたはダッシュボードからイメージを共有したいと思ったことはありませんか。 これで、Power BI サービスまたはモバイルから視覚エフェクトをコピーし、貼り付けをサポートする他のアプリケーションに貼り付けることができます。 
 
-ビジュアルの静的なイメージをコピーするときに、メタデータと共にビジュアルのコピーを取得します。 これには、以下のことが含まれます。
+視覚エフェクトの静的画像をコピーすると、メタデータと共に、適用されたフィルターを含む視覚エフェクトのコピーを取得できます。 これには、以下のことが含まれます。
 * Power BI レポートまたはダッシュボードに戻るリンク
 * レポートまたはダッシュボードのタイトル
 * イメージに機密情報が含まれているかどうかの通知
 * 最終更新タイム スタンプ
-* ビジュアルに適用されるフィルター
+* 視覚エフェクトに適用されるフィルターのテキストの説明
 
 ### <a name="copy-from-a-dashboard-tile"></a>ダッシュボード タイルからコピーする
 

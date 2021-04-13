@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 03/29/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 0431a4f76f43c327bc4c6614c25879bcc101bd35
-ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
+ms.openlocfilehash: d2356a6380d17a10e7b3e6cbbd24d5e7224b0186
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105007801"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106227521"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Power BI のサポートされているブラウザー
 
@@ -22,9 +22,9 @@ Power BI は、後述の任意のサポート対象ブラウザーで動作す�
 
 Power BI では、使用できるすべてのプラットフォームでこれらのブラウザーがサポートされます。
 
-- Microsoft Edge クラシック
 - Microsoft Edge Chromium
 - Internet Explorer 11。 系列ビューなどの一部の高度な機能は、Internet Explorer ではサポートされていません。 詳細については、「[データ系列 (プレビュー)](../collaborate-share/service-data-lineage.md)」を参照してください。
+- **2021 年 8 月 17 日** 以降、Microsoft 365 アプリとサービス (Power BI を含む) で、Internet Explorer 11 (IE 11) がサポートされなくなります。 詳細については、[この Microsoft 365 のブログ記事](https://aka.ms/AA97tsw)を参照してください。
 - Chrome デスクトップの最新バージョン
 - Safari Mac の最新バージョン
 - Firefox デスクトップの最新バージョン。 Firefox では、Power BI で使用されるフォントが変更される場合があります。 

@@ -7,14 +7,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/30/2020
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3b635719fdce8f8b194593a2114808e08f34420f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f432d2010dc3130442de9db6dbabd513e0e6feab
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96402894"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230097"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>他のワークスペースからレポートをコピーする
 
@@ -22,7 +22,7 @@ ms.locfileid: "96402894"
 
 ## <a name="prerequisites"></a>前提条件
 
-- レポートをコピーするには、元のレポートが Premium 容量内のワークスペースにある場合でも、Pro ライセンスが必要です。
+- レポートをコピーするには、元のレポートが Premium 容量内のワークスペースにある場合でも、Pro または Premium Per User (PPU) のライセンスが必要です。
 - レポートをコピーするには、あるいは別のワークスペース内のデータセットに基づいてレポートを作成するには、そのデータセットに対するビルドのアクセス許可が必要です。 元のワークスペース内のデータセットについては、管理者、メンバー、共同作成者のロールを持つユーザーに対して、そのワークスペース ロールを通じてビルドのアクセス許可が自動的に付与されます。 詳細については、「[新しいワークスペースのロール](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)」を参照してください。
 
 ## <a name="save-a-copy-of-a-report-in-a-workspace"></a>レポートのコピーをワークスペースに保存する

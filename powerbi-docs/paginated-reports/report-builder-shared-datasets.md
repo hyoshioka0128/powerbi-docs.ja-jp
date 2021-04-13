@@ -3,16 +3,16 @@ title: Power BI 共有データセットを使用して改ページ調整され�
 description: Power BI 共有データセットに基づいて、Power BI Report Builder で改ページ調整されたレポートを作成します。
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 11/18/2020
+ms.date: 04/02/2021
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.openlocfilehash: 7e74a64aad33f310109b754bba09fd61043747ff
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bfdaa2a66cf833c9fdbf459b2163fc62c1a4a521
+ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415774"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106230005"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Power BI 共有データセットを基づいて改ページ調整されたレポートを作成する
 
@@ -22,7 +22,7 @@ Power BI Desktop で作成したデータセットは、Power BI レポート �
 
 ![Power BI Desktop からレポート ビルダーの改ページ調整されたレポートへの変換](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-データセットを Premium 容量のワークスペースに配置する必要はありません。また、そのワークスペースのメンバーである必要もありません。 必要なのは、対象のデータセットについて[ビルドのアクセス許可](../connect-data/service-datasets-build-permissions.md)があることだけです。 改ページ調整されたレポートを発行するには、Power BI Pro のライセンスが必要です。 また、ワークスペースが Premium 容量にある場合には、最低限その共同作成者ロールが必要です。
+データセットを Premium 容量のワークスペースに配置する必要はありません。また、そのワークスペースのメンバーである必要もありません。 必要なのは、対象のデータセットについて[ビルドのアクセス許可](../connect-data/service-datasets-build-permissions.md)があることだけです。 ページ分割されたレポートを発行するには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 また、ワークスペースが Premium 容量にある場合には、最低限その共同作成者ロールが必要です。
 
 ## <a name="what-you-need"></a>必要な操作
 
@@ -30,8 +30,8 @@ Power BI レポート ビルダーで共有データセットを使用するう�
 
 - Power BI レポート ビルダー。 [Power BI レポート ビルダーをダウンロードおよびインストール](https://aka.ms/pbireportbuilder)してください。
 - Power BI データセットにアクセスするには、そのデータセットについてビルドのアクセス許可が必要です。 [ビルドのアクセス許可](../connect-data/service-datasets-build-permissions.md)に関する記事を参照してください。
-- レポート ビルダーで改ページ調整されたレポートを作成する操作には、Power BI Pro のライセンスは必要ありません。 
-- 改ページ調整されたレポートの発行には、Power BI Pro のライセンスが必要です。 また、ワークスペースが Premium 容量にある場合には、最低限その共同作成者ロールが必要です。 
+- レポート ビルダーで改ページ調整されたレポートを作成するには、Power BI Pro または Premium Per User (PPU) のライセンスは必要ありません。 
+- ページ分割されたレポートを発行するには、Power BI Pro または Premium Per User (PPU) のライセンスが必要です。 また、ワークスペースが Premium 容量にある場合には、最低限その共同作成者ロールが必要です。 
 - 任意:この記事に従って作業を進める場合には、Power BI Desktop 用の [Retail Analysis sample.pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) ファイルをダウンロードし、Power BI Desktop で開いて、多数の列を含むテーブルを追加します。 **[形式]** ペインで、 **[合計]** をオフにします。 その後、Power BI サービス内のワークスペースに発行します。
 
     ![[合計] をオフにしたところ](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
