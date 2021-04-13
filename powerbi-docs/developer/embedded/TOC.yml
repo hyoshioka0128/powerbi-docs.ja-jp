@@ -49,7 +49,7 @@
         - name: Azure の Power BI Embedded の診断ログ
           href: ./monitor-power-bi-embedded.md
         - name: 埋め込みに関するよくあるご質問
-          href: embedded-faq.md
+          href: embedded-faq.yml
     - name: 操作方法
       items:
         - name: サービス プリンシパルを使用して埋め込む
