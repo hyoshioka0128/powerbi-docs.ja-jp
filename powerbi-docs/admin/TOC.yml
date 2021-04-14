@@ -56,6 +56,8 @@
           items:
             - name: データ ソースからの秘密度ラベルの継承 (プレビュー)
               href: service-security-sensitivity-label-inheritance-from-data-sources.md
+            - name: 秘密度ラベルの変更の強制
+              href: service-security-sensitivity-label-change-enforcement.md
     - name: 操作方法
       items:
         - name: ライセンスとサインアップ

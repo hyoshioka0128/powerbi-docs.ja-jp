@@ -211,7 +211,7 @@
                   href: ../connect-data/incremental-refresh-overview.md
                 - name: 増分更新を構成する
                   href: ../connect-data/incremental-refresh-configure.md
-                - name: XMLA エンドポイントを使用した高度な増分更新
+                - name: 詳細増分更新
                   href: ../connect-data/incremental-refresh-xmla.md
                 - name: 増分更新のトラブルシューティング
                   href: ../connect-data/incremental-refresh-troubleshoot.md

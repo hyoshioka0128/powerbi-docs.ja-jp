@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
 ms.date: 03/22/2021
-ms.openlocfilehash: 9edc93ae28ff65a39e327ca108d5a36f37dd4c02
-ms.sourcegitcommit: 9fd7fbcc819bee4a242cb786aad9e675ea83e83d
+ms.openlocfilehash: 4d299a0256d62cc365f956e10b8ee8e10519106c
+ms.sourcegitcommit: 9854310ade50cb4a6a77d37a343b84c56c119773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104834577"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107302502"
 ---
 # <a name="get-started-with-deployment-pipelines"></a>デプロイ パイプラインの使用を開始する
 
-この記事では、デプロイ パイプラインを使用するために必要な基本設定について説明します。
+この記事では、Power BI サービスでデプロイ パイプラインを使用するために必要な基本設定について説明します。 進める前に、[デプロイ パイプラインの概要](deployment-pipelines-overview.md)ページをお読みになることをお勧めします。
 
 ## <a name="accessing-deployment-pipelines"></a>デプロイ パイプラインへのアクセス
 
@@ -101,7 +101,7 @@ ms.locfileid: "104834577"
 ソース ワークスペースのメンバーまたは管理者である [Pro ユーザー](../admin/service-admin-purchasing-power-bi-pro.md)は、空のステージ (コンテンツが含まれていないステージ) にコンテンツをデプロイできます。 デプロイを完了するには、ワークスペースが容量に存在している必要があります。
 
 >[!NOTE]
->ページ分割されたレポートを配置するには、[ページ分割されたレポートをサポートする容量](./../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)が必要になります。
+>ページ分割されたレポートを配置するには、[ページ分割されたレポートをサポートする容量](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-)が必要になります。
 
 空のステージにコンテンツをデプロイする場合、アイテム間のリレーションシップは維持されます。 たとえば、ソース ステージのデータセットにバインドされているレポートは、そのデータセットと共に複製され、その複製はターゲット ワークスペースでも同様にバインドされます。
 
@@ -185,7 +185,7 @@ ms.locfileid: "104834577"
 
 # <a name="paginated-reports"></a>[ページ分割されたレポート](#tab/paginated-reports)
 
-3. ルールを作成するデータセットを選択します。
+3. ルールを作成する対象として、ページ分割されたレポートを選択します。
 
     >[!div class="mx-imgBorder"]
     >![配置ルールを作成するためのデータセットの選択を示すスクリーンショット。](media/deployment-pipelines-get-started/paginated-report-tab.png)
@@ -244,7 +244,7 @@ ms.locfileid: "104834577"
 
 * アイテムが削除されると、そのルールも削除されます。 これらのルールを復元することはできません。
 
-* ルールで定義されたデータ ソースまたはパラメーターがソース データセットから変更または削除された場合、ルールは無効になり、デプロイは失敗します。
+* ルールで定義されたデータ ソースがソース データセットから変更または削除された場合、ルールは無効になり、デプロイは失敗します。
 
 * ページ分割されたレポートでは、パラメーター ルールはサポートされていません。
 

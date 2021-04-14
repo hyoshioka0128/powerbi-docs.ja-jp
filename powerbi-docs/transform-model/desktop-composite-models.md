@@ -9,12 +9,12 @@ ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 01/19/2021
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0601760392b9bac549ff683f4460a3681da16119
-ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
+ms.openlocfilehash: 6f4c73bc63079c87c1b314d9b7f756ac4da1d78c
+ms.sourcegitcommit: 8cccc80f30ee5a4138ce48e44d3442a5ec6bce54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570016"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107220214"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Power BI Desktop で複合モデルを使用する
 
@@ -168,7 +168,7 @@ DirectQuery を使用する場合は、常にパフォーマンスを考慮す�
 
 このリリースの複合モデルには、いくつかの制限事項があります。
 
-現在、SQL、Oracle、Teradata データ ソースにのみ接続する複合モデルに対しては、[増分更新](../admin/service-premium-incremental-refresh.md)がサポートされています。
+現在、SQL、Oracle、Teradata データ ソースにのみ接続する複合モデルに対しては、[増分更新](../connect-data/incremental-refresh-overview.md)がサポートされています。
 
 次の Live Connect 多次元ソースは、複合モデルでは使用できません。
 

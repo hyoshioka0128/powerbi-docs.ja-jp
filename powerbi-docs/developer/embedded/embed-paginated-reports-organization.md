@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 04/02/2021
-ms.openlocfilehash: 3bf0b9047b833c36796c33630a24041cfae11cfc
-ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
+ms.openlocfilehash: affb605740263cc36eaba4567dccfc960572faeb
+ms.sourcegitcommit: 9854310ade50cb4a6a77d37a343b84c56c119773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106230304"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107301536"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>チュートリアル:組織向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -41,7 +41,7 @@ Power BI .NET SDK と Power BI JavaScript API を使用して、組織向けの�
 
 * 独自の [Azure Active Directory テナント](create-an-azure-active-directory-tenant.md)のセットアップが必要です。
 
-* P1 以上の容量。 「[ページ分割されたレポートに必要な Premium 容量のサイズはどれくらいですか。](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)」をご覧ください。
+* P1 以上の容量。 「[ページ分割されたレポートに必要な Premium 容量のサイズはどれくらいですか。](../../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-)」をご覧ください。
 
 **Power BI Pro** にサインアップしていない場合は、[無料の試用版にサインアップ](https://powerbi.microsoft.com/pricing/)してください。
 

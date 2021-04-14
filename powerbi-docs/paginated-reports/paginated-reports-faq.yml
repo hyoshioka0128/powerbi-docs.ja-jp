@@ -1,0 +1,201 @@
+### YamlMime:FAQ
+metadata:
+  title: Power BI のページ分割されたレポート
+  description: この記事では、ページ分割されたレポートについてよく寄せられる質問に答えます。 これらのレポートは、印刷や PDF 生成用に最適化されている、高度に書式設定されたピクセル単位で完璧な出力です。
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.reviewer: ''
+  ms.service: powerbi
+  ms.subservice: report-builder
+  ms.topic: conceptual
+  ms.date: 03/10/2021
+  ms.openlocfilehash: 943c0a5381f8c35088c0e5b08925077534cfc3b1
+  ms.sourcegitcommit: 9854310ade50cb4a6a77d37a343b84c56c119773
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 04/13/2021
+  ms.locfileid: "107315739"
+title: Power BI のページ分割されたレポート:FAQ
+summary: "[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] \n\nこの記事では、ページ分割されたレポートについてよく寄せられる質問に答えます。 これらのレポートは、印刷や PDF 生成用に最適化されている、高度に書式設定されたピクセル単位で完璧な出力です。 これらは、複数のページにちょうど収まるように設定されているため \"ページ分割された\" と呼ばれます。 ページ分割されたレポートは、SQL Server Reporting Services の RDL レポート テクノロジに基づいています。 \n\nこの記事では、Power BI Premium でのページ分割されたレポート、およびページ分割されたレポートを作成するためのスタンドアロン ツールであるレポート ビルダーに関する多くの一般的な質問に回答します。 サービスにレポートを発行するには、Power BI Pro ライセンスが必要です。 ワークスペースが Power BI Premium 容量に存在する限り、マイ ワークスペースまたはワークスペースにページ分割されたレポートを発行して共有できます。 \n"
+sections:
+- name: Administration
+  questions:
+  - question: >
+      ページ分割されたレポートに必要な Premium 容量のサイズはどれくらいですか。
+    answer: "ページ分割されたレポート ワークロードは P1 ～ P3 SKU で利用できます。  A4 から A6 SKU では、埋め込みまたはテスト/開発シナリオに使用することもできます。\n\n> [!NOTE]\n> Power BI に **Premium Gen2** という名前の新しいバージョンの Premium が最近リリースされました。現在はプレビュー段階です。 **Premium Gen2** では、ページ分割されたレポート ワークロードは EM1-EM3 SKU、P1-P3 SKU、および A1-A6 SKU で利用できます。  また、Premium Per User でユーザーごとに利用することもできます。これは Premium Gen2 に基づいており、これもパブリック プレビュー段階です。 \n>\n>Premium Gen2 を使用すると、Premium 容量の管理が簡素化され、管理オーバーヘッドが削減されます。 詳細については、[Power BI Premium Generation 2 (プレビュー)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) に関する記事を参照してください。\n>\n>Power BI Embedded Gen2 の機能強化を確認するには、[Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md) に関する記事を参照してください。\n"
+  - question: >
+      容量でページ分割されたレポートに対して設定できる最大メモリしきい値はどれくらいですか。
+    answer: >
+      このワークロードに対して最大でメモリの 100% を使用することができます。
+  - question: >
+      ユーザー アクセスはページ分割されたレポートに対してどのように動作しますか。
+    answer: "ページ分割されたレポートに対するユーザー アクセスは、Power BI サービスでの他のすべてのコンテンツに対するユーザー アクセスと同じです。 \n"
+  - question: >
+      ページ分割されたレポート ワークロードはどのようにしてオン/オフできますか。
+    answer: "容量管理者は、容量管理ポータル ページでページ分割されたレポート ワークロードを有効または無効にできます。  既定では、作成したすべての新しい容量に対してワークロードがオンになりますが、最初のページ分割されたレポートをアップロードするまでメモリは消費されません。  \n"
+  - question: >
+      テナントでのページ分割されたレポートの利用状況はどのようにして監視できますか。
+    answer: >
+      監査では、次のイベントでこのレポートの種類の詳細な使用状況がログに記録されます。
+
+
+      - Power BI レポートの表示
+
+      - Power BI レポートの削除
+
+      - Power BI レポートの作成
+
+      - Power BI レポートのダウンロード
+
+
+      Power BI レポートとページ分割されたレポートを区別するため、ReportType フィールドには "PaginatedReport" という値が設定されます。
+
+
+      また、監査ログでは、ページ分割されたレポートに対して次のイベントが提供されます。
+
+
+      - ゲートウェイに対するバインドされた Power BI データセット
+
+      - Power BI データソースの検出
+
+      - TakeOverDatasource
+  - question: >
+      Premium 容量監視アプリを使ってこのワークロードを監視できますか。
+    answer: >
+      はい。Power BI データセットと同じ関連詳細が含まれる新しいタブで監視できます。 このアプリは Power BI Premium Gen2 ではサポートされていません。
+  - question: >
+      ページ分割されたレポートを作成して発行するには、Pro ライセンスが必要ですか。
+    answer: "Pro ライセンスがなくても、お使いのマイ ワークスペースが Premium 容量にあれば、ページ分割されたレポートをそのワークスペースにアップロードできます。  他のワークスペースの場合、コンテンツをそのワークスペースに作成および公開するには Pro ライセンスが必要です。 Pro ライセンスがなくても Power BI レポート ビルダーをダウンロードして使用することをお勧めします。ただし、Pro ライセンスなしでページ分割されたレポートを作成する場合、そのレポートを公開することはできません。 \n"
+  - question: >
+      ワークスペースにページ分割されたレポートがある状態で、ページ分割されたレポート ワークロードをオフにするとどうなりますか。
+    answer: >
+      エラー メッセージが表示され、ワークロードをオンに戻すまでレポートを表示することはできません。 それでも、ワークスペースからレポートを削除することはできます。
+  - question: >
+      Premium 容量の場合、ページ分割されたレポートに対してサポートされる各 Premium SKU の既定のメモリはどれぐらいですか。
+    answer: >
+      ページ分割されたレポートに対する各 Premium SKU の既定のメモリは次のとおりです。
+
+
+      - **P1/A4**:20% (既定値)、10% (最小値)
+
+      - **P2/A5**:20% (既定値)、5% (最小値)
+
+      - **P3/A6**:20% (既定値)、2.5% (最小値)
+
+
+      Power BI 管理者は、管理ポータルで、既定の最大メモリの割合を変更できます。 **[容量の設定]** タブの **[Power BI Premium]** の下にある **[ページ分割されたレポート]** ワークロード セクションを参照してください。
+
+
+      :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="[ページ分割されたレポート] の [容量の設定] タブ":::
+
+
+      > [!NOTE]
+
+      > **Premium Gen2** (現在プレビュー段階) では、メモリ設定を変更する必要はありません。 基盤のシステムによって、Premium Gen2 のメモリは自動的に管理されます。 **Premium Gen2** では、ページ分割されたレポート ワークロードは P1-P3 SKU と A1-A6 SKU で利用できます。
+- name: 全般
+  questions:
+  - question: >
+      ページ分割されたレポートと Power BI レポートはそれぞれどのようなときに使用する必要がありますか。
+    answer: "ページ分割されたレポートは、印刷や PDF 生成用に最適化されている、高度に書式設定されたピクセル単位で完璧な出力が必要なシナリオに最適です。  損益計算書は、ページ分割されたレポートとして作成するのがおそらく望ましいレポートの種類のよい例です。  \n\nPower BI レポートは、探索と対話性に最適化されています。  異なる営業担当者が、同じレポートのデータを特定の地域/業界/顧客でスライスして業績の変化を見る売上レポートは、Power BI レポートで提供するのが最善です。\n\n詳細については、「[どのようなときに Power BI のページ分割されたレポートを使用するか](../guidance/report-paginated-or-power-bi.md)」を参照してください。\n"
+  - question: >
+      ドキュメントでは、Power BI レポート ビルダーが推奨される作成ツールになっています。 Power BI 用の SQL Server Data Tools でページ分割されたれたレポートを作成できますか。
+    answer: "はい。ただし、Power BI サービスでは一度に 1 つの項目しかアップロードできないので、作成者が SQL Server Data Tools (SSDT) で使用する多くのシナリオは、まだサポートされていません。 [サポートされていない機能の完全な一覧](#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-)は、この FAQ で後ほど示します。  \n"
+  - question: >
+      どのバージョンのレポート ビルダーがサポートされていますか。
+    answer: >
+      Power BI Report Builder は、Power BI サービスでページ分割されたレポートを作成するための主要なツールとしてリリースされました。 [Power BI レポート ビルダーは、Microsoft ダウンロード センターから](https://aka.ms/pbireportbuilder)インストールしてください。
+  - question: >
+      SQL Server Reporting Services に保存してある既存のレポートを Power BI に移動するにはどうすればよいですか。
+    answer: >
+      現在 GitHub のプロジェクトが、SQL Server Reporting Services から Power BI へのコンテンツの移行に対応しています。  こちら ([https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)) でツールの詳細を確認し、ダウンロードしてください。
+  - question: >
+      レポートを開いて、サービスに直接発行できますか。
+    answer: >
+      はい。 Power BI Report Builder からレポートを開き、サービスに直接公開するためのサポートが追加されています。
+  - question: >
+      SSRS でのページ分割されたレポートの機能のうち、Power BI でまだサポートされていないものは何ですか。
+    answer: >
+      現在、ページ分割されたレポートでは次のものがサポートされていません。
+
+
+      - 共有データ ソース
+
+      - 共有データセット
+
+      - 他のレポートへのドリルスルーとクリックスルー
+
+      - リンク レポート
+
+      - カスタム フォント
+
+
+      切り替え/並べ替え以外の Power BI サービスでサポートされていない機能を含むファイルをアップロードしようとすると、エラー メッセージが表示されます。
+  - question: >
+      ページ分割されたレポートに対して現在サポートされているデータ ソースは何ですか。
+    answer: "データ ソースの一覧については、「[Power BI のページ分割されたレポートでサポートされるデータ ソース](paginated-reports-data-sources.md)」の記事を参照してください。 \n"
+  - question: >
+      どのような認証方法がサポートされていますか。
+    answer: "Azure Analysis Services、Azure SQL Database、Power BI の各データ ソースに対する SSO がサポートされています。  また、Azure SQL Database と Azure Analysis Services に対する OAuth もサポートされています。  他のデータ ソースについては、現在、ポータルまたはゲートウェイでデータ ソースと共にユーザー名とパスワードを格納する必要があります。  \n"
+  - question: >
+      ページ分割されたレポートのデータ ソースとして、Power BI データセットを使用できますか。
+    answer: >
+      はい。Power BI データセットは、ページ分割されたレポートのデータ ソースとしてサポートされています。
+  - question: >
+      ゲートウェイを介してストアド プロシージャを使用できますか。
+    answer: >
+      はい。ゲートウェイを介したストアド プロシージャは、パラメーターを使用するものも含め、SQL Server データ ソースでサポートされています。
+  - question: >
+      Power BI サービスでレポートにはどのようなエクスポート形式を使用できますか。
+    answer: >
+      Microsoft Excel、Microsoft Word、Microsoft PowerPoint、PDF、.CSV、XML、MHTML にエクスポートできます。
+  - question: >
+      ページ分割されたレポートを印刷できますか。
+    answer: "はい。ページ分割されたレポートは印刷できます。印刷プレビュー機能が新しくなり、改善されています。 \n"
+  - question: >
+      ページ分割されたレポートでメール サブスクリプションを使用できますか。
+    answer: >
+      はい。メール サブスクリプションは、ページ分割されたレポートに対して完全にサポートされ、これには 6 つ異なるファイル形式とパラメーター値のサポートが含まれます。
+  - question: >
+      レポートでカスタム コードを実行できますか。
+    answer: >
+      はい、SSRS と同様に、レポートでもコードを実行する機能がサポートされています。
+  - question: >
+      Power BI Embedded を使用して、自分がホストしているアプリにページ分割されたレポートを埋め込むことはできますか。
+    answer: >
+      SaaS 埋め込み (Secure Embed のサポートを含む) は既に利用できます。 PaaS 埋め込みについては、「[顧客向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む](../developer/embedded/embed-paginated-reports-customers.md)」チュートリアルを参照してください。
+  - question: >
+      Power BI レポートからページ分割されたレポートにドリルスルーできますか。
+    answer: >
+      はい。ページ分割されたレポートで URL パラメーターを使用して、これを実現することができます。
+  - question: >
+      Power BI アプリを使って、ページ分割されたレポートの内容を共有できますか。
+    answer: "はい。ページ分割されたレポートは、v1 と v2 の両方のワークスペースのアプリでデプロイされるようにサポートされています。 \n"
+  - question: >
+      ダッシュボードへのレポート タイルのピン留めのような Power BI での他のレポート固有機能は、ページ分割されたレポートで動作しますか。
+    answer: >
+      可能な限り、サービスと同じ主要シナリオをレポートでもサポートする予定です。  作成ツールは異なっても、利用者の観点からはポータルのリストの他のレポートと同じであることが理想的です。 作成された方法を気にすることなく、必要なことを実現できます。  この機能パリティのよい例は、計画されているコメントのサポートです。 機能自体の動作は各レポートの種類で若干異なる場合がありますが、どちらでもコメントを使用することができます。
+  - question: >
+      Power BI サービスにはページ分割されたレポート用のレポート ビューアー コントロールがありますか。
+    answer: >
+      いいえ、現在は使用できるレポート ビューアー コントロールはありません。
+  - question: >
+      Power BI サービスの新しいホーム エクスペリエンスからページ分割されたレポートを検索できますか。
+    answer: >
+      はい。ホームから、ページ分割されたレポートを検索できるようになりました。  新しいホーム エクスペリエンスの他の部分にも表示されます。
+  - question: >
+      考慮事項とトラブルシューティング
+    answer: >
+      ここでは、ページ分割されたレポート内の DateTime フィールドを操作する場合に注意すべき事項について説明します。
+
+
+      - 現在、DateTime パラメーターに関連するグローバリゼーションの制限がいくつかあります。 Power BI サービス内のすべての DateTime パラメーターは、Power BI Report Builder での DataTime の設計方法に関係なく、米国形式 (MM/DD/YYYY) でフェッチされます。
+
+
+      Power BI サービスでページ分割されたレポートを表示すると、セッションがタイムアウトになり、次の通知がユーザーに表示されることがあります。
+
+
+      :::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="ページ分割されたレポート セッションの期限切れ通知":::
+
+
+      - セッションは、非アクティブな状態が 60 分続く場合、またはデバイスがロックされているか非アクティブである場合やレポートがブラウザーのアクティブなタブに表示されない場合はさらに早く、タイムアウトになります。
+additionalContent: "\n## <a name=\"next-steps\"></a>次の手順\n\n- [Microsoft ダウンロード センターから Power BI レポート ビルダーをインストールする](https://aka.ms/pbireportbuilder)\n- [チュートリアル: ページ分割されたレポートを作成する](paginated-reports-quickstart-aw.md)"

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/24/2021
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 397aeebe863bdcd434b896f0e2619a113b512db3
-ms.sourcegitcommit: 438eea031f1ed9e9dee510520e5c1039920c3a49
+ms.openlocfilehash: a48918be7aaaa512f5e94843ed1c3f2c4f9e133a
+ms.sourcegitcommit: 8cccc80f30ee5a4138ce48e44d3442a5ec6bce54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105099269"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107220007"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>XMLA エンドポイントを使用したデータセット接続
 
@@ -225,7 +225,7 @@ SSMS を使用してメタデータをスクリプト化する方法の詳細に
 
 ## <a name="dataset-refresh"></a>データセットの更新
 
-XMLA エンドポイントにより、SSMS、PowerShell による自動化、[Azure Automation](/azure/automation/automation-intro)、TOM を使用する [Azure Functions](/azure/azure-functions/functions-overview) を使用した、きめ細かい更新機能を実現するための広範なシナリオが可能になります。 たとえば、すべての履歴データを再読み込みしなくても、特定の[増分更新](service-premium-incremental-refresh.md)履歴パーティションを更新できます。
+XMLA エンドポイントにより、SSMS、PowerShell による自動化、[Azure Automation](/azure/automation/automation-intro)、TOM を使用する [Azure Functions](/azure/azure-functions/functions-overview) を使用した、きめ細かい更新機能を実現するための広範なシナリオが可能になります。 たとえば、すべての履歴データを再読み込みしなくても、特定の[増分更新](../connect-data/incremental-refresh-overview.md)履歴パーティションを更新できます。
 
 Power BI サービスで更新を構成するのと異なり、XMLA エンドポイントを介した更新操作は、1 日 48 回の更新に制限されず、[スケジュールされた更新のタイムアウト](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout)も課されません。
 

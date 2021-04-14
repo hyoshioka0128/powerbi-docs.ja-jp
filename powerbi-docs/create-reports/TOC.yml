@@ -112,7 +112,7 @@
             - name: レポートのプレビュー
               href: ../paginated-reports/report-builder-previewing-reports.md
             - name: ページ分割されたレポートに関する FAQ
-              href: ../paginated-reports/paginated-reports-faq.md
+              href: ../paginated-reports/paginated-reports-faq.yml
         - name: デプロイ パイプライン
           items:
             - name: デプロイ パイプラインの概要

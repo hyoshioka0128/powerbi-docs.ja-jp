@@ -9,12 +9,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/11/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2be1c325d876c944c31d62a67771308d80dca69d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 677194fd6899d9fbc715ef101669f37c49266dbf
+ms.sourcegitcommit: 9854310ade50cb4a6a77d37a343b84c56c119773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390512"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107302548"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Power BI サービスでのページ分割されたレポート
 
@@ -108,5 +108,5 @@ PDF、Word、XML、PowerPoint、Excel などのページ分割されたレポー
 
 ## <a name="next-steps"></a>次の手順
 - [Power BI レポート](end-user-reports.md)
-- [Power BI のページ分割されたレポート:FAQ](../paginated-reports/paginated-reports-faq.md)
+- [Power BI のページ分割されたレポート:FAQ](../paginated-reports/paginated-reports-faq.yml)
 - 他にわからないことがある場合は、 [Power BI コミュニティ](https://community.powerbi.com/)を利用してください。

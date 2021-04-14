@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/14/2021
-ms.openlocfilehash: 081c6c409a2aed7003952b30ff16dcb7f032ed40
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.openlocfilehash: 9209fd1a45e593bc2c13fdfaa92a8efce829a9c5
+ms.sourcegitcommit: 41ac8396037fe825259724ce9d45773edf6fff8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99533144"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107032200"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>チュートリアル:顧客向けのアプリケーションに Power BI のページ分割されたレポートを埋め込む
 
@@ -61,7 +61,7 @@ Azure サブスクリプションをお持ちでない場合は、始める前�
     >[!NOTE]
     >最近、Power BI Embedded では新しいバージョン **Embedded Gen2** がリリースされました。 Embedded Gen2 を使用すると、埋め込み容量の管理が簡素化され、Power BI Embedded エクスペリエンスが向上します。 詳細については、[Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) に関する記事を参照してください。
 
-次の表は、各 SKU のリソースと制限を示しています。 ニーズに最適な容量を判断するには、[シナリオに応じてどの SKU を購入すればよいか](./embedded-faq.md#which-solution-should-i-choose)をまとめた表を参照してください。
+次の表は、各 SKU のリソースと制限を示しています。 ニーズに最適な容量を判断するには、[シナリオに応じてどの SKU を購入すればよいか](./embedded-faq.yml#which-solution-should-i-choose-)をまとめた表を参照してください。
 
 | 容量ノード | 合計 v コア数 | バックエンド v コア数 | RAM (GB) | フロントエンド v コア数 | 
 | --- | --- | --- | --- | --- |

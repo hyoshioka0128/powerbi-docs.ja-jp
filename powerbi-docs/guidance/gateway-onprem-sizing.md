@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/30/2019
-ms.openlocfilehash: d9021760cd8e6a324b3b5aff20357d6a7aca428a
-ms.sourcegitcommit: 13a150d1aa810f309421bf603fa8581718a4b299
+ms.openlocfilehash: b7e7b12c3a445841aa6baef364caf182d73b20fb
+ms.sourcegitcommit: 8cccc80f30ee5a4138ce48e44d3442a5ec6bce54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101843943"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107220191"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>オンプレミス データ ゲートウェイのサイズ設定
 
@@ -105,7 +105,7 @@ Power BI サービスとゲートウェイ間と、ゲートウェイとデー�
 インポート データセットの場合:
 
 - データの更新頻度を低くします
-- 転送するデータの量を最小限に抑えるように[増分更新](../admin/service-premium-incremental-refresh.md)を構成します
+- 転送するデータの量を最小限に抑えるように[増分更新](../connect-data/incremental-refresh-overview.md)を構成します
 - 可能な場合は常に[クエリ フォールディング](power-query-folding.md)を実行します
 - 特に、大量のデータの場合や待機時間を短くする必要がある場合は、設計を DirectQuery または[複合](../connect-data/service-dataset-modes-understand.md#composite-mode)モデルに変換します
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 215c84b9af9d3b785c055d633a41b99bbea2bb2f
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: a2f41487f77956749718ae27e0b30a60274fee3f
+ms.sourcegitcommit: 8cccc80f30ee5a4138ce48e44d3442a5ec6bce54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512587"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107219869"
 ---
 # <a name="use-customer-managed-keys-in-power-bi"></a>Power BI でカスタマー マネージド キーを使用する
 
@@ -36,4 +36,3 @@ Power BI のカスタマー マネージド キーを選択するには、組織
 * [Power BI で独自の暗号化キーを使用する](service-encryption-byok.md)
 * [Power BI Premium の Multi-Geo のサポートを構成する](service-admin-premium-multi-geo.md)
 * [容量はどのように機能するのか](service-premium-what-is.md#how-capacities-function)
-* [増分更新](service-premium-incremental-refresh.md)。

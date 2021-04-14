@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: 792612c768c66e53c854f3923acf1cabaa764f65
-ms.sourcegitcommit: 644e5a3872f2a8e020fe44c4ec62a26ccc9a6a4e
+ms.openlocfilehash: dc20a801c366e8d2e8f8a62571fc5778482dfae9
+ms.sourcegitcommit: 41ac8396037fe825259724ce9d45773edf6fff8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105008353"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107032085"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>チュートリアル:Power BI コンテンツを国内クラウド向けアプリケーションに埋め込む
 
@@ -54,7 +54,7 @@ Power BI では[国内クラウド](/azure/active-directory/develop/authenticati
 * Government Community Cloud (GCC):
 
     > [!NOTE]
-    > Government Community Cloud (GCC) からの Power BI コンテンツの埋め込みは、Microsoft 365 SKU でのみ行うことができます。 その他の国内クラウドのお客様は、[Microsoft 365 または Azure SKU](embedded-faq.md) を使用できます。
+    > Government Community Cloud (GCC) からの Power BI コンテンツの埋め込みは、Microsoft 365 SKU でのみ行うことができます。 その他の国内クラウドのお客様は、[Microsoft 365 または Azure SKU](embedded-faq.yml) を使用できます。
 
 1. Cloud.config ファイルを GCCCloud.config コンテンツで上書きします。
 
@@ -241,7 +241,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 JavaScript API を使用して、埋め込みトークンを生成できます。 埋め込みトークンは、埋め込むアイテムに固有のものです。 Power BI コンテンツを埋め込むときは常に、そのための埋め込みトークンを新しく作成する必要があります。 使用する **accessLevel** など、詳しくは「[Embed Token](/rest/api/power-bi/embedtoken)」 (埋め込みトークン) をご覧ください。
 
 > [!IMPORTANT]
-> 埋め込みトークンは開発テストのためのものです。そのため、Power BI マスター アカウントで生成できる埋め込みトークンの数には限りがあります。 運用環境で埋め込む場合、[容量を購入する](./embedded-faq.md#technical)必要があります。 容量を購入する場合、埋め込みトークンの生成数には上限がありません。
+> 埋め込みトークンは開発テストのためのものです。そのため、Power BI マスター アカウントで生成できる埋め込みトークンの数には限りがあります。 運用環境で埋め込む場合、[容量を購入する](/embedded-faq.yml#technical)必要があります。 容量を購入する場合、埋め込みトークンの生成数には上限がありません。
 
 サンプルは、[組織向けの埋め込みのサンプル](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData)の **Controllers\HomeController.cs** にあります。
 

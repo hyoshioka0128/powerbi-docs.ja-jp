@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/31/2021
-ms.openlocfilehash: 8300a276bd3c1e9c21dedcbe911dca6566b15546
-ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
+ms.date: 04/06/2021
+ms.openlocfilehash: 6262e155f5fd85ab3011534addbf080898852b99
+ms.sourcegitcommit: 41ac8396037fe825259724ce9d45773edf6fff8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106229798"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107032108"
 ---
 # <a name="get-a-power-bi-link-preview-in-microsoft-teams"></a>Microsoft Teams で Power BI リンク プレビューを入手する
 
@@ -24,8 +24,6 @@ ms.locfileid: "106229798"
 - レポート
 - ダッシュボード
 - アプリケーション
-
-リンク プレビュー サービスでは、ユーザーのサインインが必要です。 サインアウトするには、メッセージ ボックスの下部にある **[Power BI]** アイコンを選択します。 その後、 **[サインアウト]** を選択します。
 
 Power BI と Microsoft Teams がどのように連携するかの背景と満たす必要がある要件については、「[Microsoft Teams での Power BI を使用した共同作業](service-collaborate-microsoft-teams.md)」を参照してください。
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 04/02/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 48cc98596542ac966fb645777d5a0b861ea45902
-ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
+ms.openlocfilehash: bb5c746282666f58d9e04cb124865f9a133edc63
+ms.sourcegitcommit: 41ac8396037fe825259724ce9d45773edf6fff8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106226463"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107032269"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium のよく寄せられる質問
 
@@ -174,6 +174,6 @@ Premium Per User (PPU) に関する詳細については、[Power BI Premium Per
 * [Microsoft Power BI Premium ホワイト ペーパー](https://aka.ms/pbipremiumwhitepaper)
 * [Power BI のエンタープライズ展開の計画に関するホワイト ペーパー](https://aka.ms/PBIEnterpriseDeploymentWP)
 * [Extended Pro Trial のアクティブ化](../fundamentals/service-self-service-signup-for-power-bi.md)
-* [Power BI Embedded のよくあるご質問](../developer/embedded/embedded-faq.md)
+* [Power BI Embedded のよくあるご質問](../developer/embedded/embedded-faq.yml)
 
 他にわからないことがある場合は、 [Power BI コミュニティで質問してみてください](https://community.powerbi.com/)。

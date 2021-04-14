@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/02/2021
 ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 33b6260fdc47ee3f4cfb95eab929e3aaa731a016
-ms.sourcegitcommit: a3b1ccdd18ef705de960625a9715ad5bbc21b1b6
+ms.openlocfilehash: 7ee1548e481f3e630149d02d207c1c979653e004
+ms.sourcegitcommit: 8cccc80f30ee5a4138ce48e44d3442a5ec6bce54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106225957"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107219800"
 ---
 # <a name="large-datasets-in-power-bi-premium"></a>Power BI Premium での大規模なデータセット
 
@@ -35,7 +35,7 @@ Power BI Desktop モデルのアップロード サイズは、このサービ�
 
 以下の手順では、サービスに発行される新しいモデルに対して大規模なデータセットを有効にする方法について説明します。 既存のデータセットの場合は、手順 3 のみが必要です。
 
-1. Power BI Desktop で、モデルを作成します。 データセットがより大きくなり、徐々により多くのメモリを消費する場合は、必ず[増分更新](service-premium-incremental-refresh.md)を構成してください。
+1. Power BI Desktop で、モデルを作成します。 データセットがより大きくなり、徐々により多くのメモリを消費する場合は、必ず[増分更新](../connect-data/incremental-refresh-overview.md)を構成してください。
 
 1. モデルをデータセットとしてサービスに発行します。
 
@@ -182,7 +182,7 @@ Power BI の大規模なデータセットは、[Azure Premium ファイル ス�
 * [Power BI Premium の Multi-Geo のサポートを構成する](service-admin-premium-multi-geo.md)
 * [Power BI で独自の暗号化キーを使用する](service-encryption-byok.md)
 * [容量はどのように機能するのか](service-premium-what-is.md#how-capacities-function)
-* [増分更新](service-premium-incremental-refresh.md)。
+* [データセットの増分更新](../connect-data/incremental-refresh-overview.md)
 
 Power BI に Power BI Premium Gen2 がプレビュー オファリングとして導入されました。次の改善によって Power BI Premium のエクスペリエンスが向上しています。
 * パフォーマンス

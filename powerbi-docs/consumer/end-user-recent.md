@@ -5,17 +5,17 @@ author: mihart
 ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 11/24/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: ca3ae0974c0ece1f20a104dbeef1be0d89d1b523
-ms.sourcegitcommit: 8993400b32a44f4e7ce9a2db998ddebda18c7698
+ms.openlocfilehash: cdd0c9589d8ea81e9070e122ce833e939e465118
+ms.sourcegitcommit: 41ac8396037fe825259724ce9d45773edf6fff8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96536394"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107033764"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>Power BI サービスの "**最近**" のコンテンツ
 

@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 03/25/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: dc43d57fc84e88dc82d24eec291f4eb93c101896
-ms.sourcegitcommit: 1a3d1058e53751c493ee52af6a0736e1a1aae64a
+ms.openlocfilehash: 8201c50c23ae396f794e82f963d7461cbf5a0ec9
+ms.sourcegitcommit: 8cccc80f30ee5a4138ce48e44d3442a5ec6bce54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105556927"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107220444"
 ---
 # <a name="understanding-and-optimizing-dataflows-refresh"></a>データフローの更新の理解および最適化
 
@@ -128,7 +128,7 @@ Power BI Pro データフローのタイムアウトしきい値は次のとお�
 
 次に、これは、増分更新を使用できるかどうかを評価するために役立てることができます。
 
-[増分更新](../../admin/service-premium-incremental-refresh.md)を使用すると、パフォーマンスを向上させることができます。 更新操作のためにクエリが送信されるときに、パーティション フィルターがソース システムにプッシュされることが重要です。 フィルタリングをプッシュ ダウンすることは、データ ソースでクエリ フォールディングがサポートされている必要があることを意味します。または、Power Query によるファイルまたはフォルダーの除外やフィルター処理に役立つビジネス ロジックを、関数またはその他の方法を使用して表現できます。 SQL クエリをサポートするほとんどのデータ ソースでは、クエリ フォールディングがサポートされており、一部の OData フィードではフィルタリングもサポートされています。 
+[増分更新](../../connect-data/incremental-refresh-overview.md)を使用すると、パフォーマンスを向上させることができます。 更新操作のためにクエリが送信されるときに、パーティション フィルターがソース システムにプッシュされることが重要です。 フィルタリングをプッシュ ダウンすることは、データ ソースでクエリ フォールディングがサポートされている必要があることを意味します。または、Power Query によるファイルまたはフォルダーの除外やフィルター処理に役立つビジネス ロジックを、関数またはその他の方法を使用して表現できます。 SQL クエリをサポートするほとんどのデータ ソースでは、クエリ フォールディングがサポートされており、一部の OData フィードではフィルタリングもサポートされています。 
 
 ただし、フラット ファイル、BLOB、API などのデータ ソースでは通常、フィルタリングはサポートされていません。 フィルターがデータ ソース バックエンドでサポートされていない場合は、プッシュ ダウンできません。 そのような場合、フィルターはマッシュアップ エンジンによってローカルで補正および適用されます。これには、データ ソースから完全なデータセットを取得することが必要な場合があります。 これにより、増分更新が非常に低速になり、Power BI サービスまたはオンプレミスのデータ ゲートウェイ (使用されている場合) でプロセスがリソース不足になる可能性があります。
 
@@ -169,7 +169,7 @@ Power Query では、設計時にクエリ フォールディングが表示さ�
 
 **NA** - この状態は、コンピューティング エンジンが使用されなかったことを意味します。その理由は次のいずれかです: Power BI Pro データフローを使用している。これを明示的にオフにしている。データ ソースでクエリ フォールディングを使用している。または、クエリの高速化に使用される SQL エンジンを使用できない複雑な変換を実行している。
 
-長い継続時間が発生していて、依然として状態が **[NA]** である場合は、これが[オンになっていて](dataflows-premium-workload-configuration.md)、誤ってオフになっていないことを確認してください。 推奨されるパターンの 1 つは、[ステージング データフローを使用して最初にデータを Power BI サービスに取リ込み、このデータがステージング データフロー内に入ったら、次にこの上にデータフローを構築することです](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows)。 このパターンにより、ソース システムの負荷が軽減され、コンピューティング エンジンと共に、変換の速度を上げ、パフォーマンスを向上させることができます。
+長い継続時間が発生していて、依然として状態が **[NA]** である場合は、これが [オンになっていて](dataflows-premium-workload-configuration.md)、誤ってオフになっていないことを確認してください。 推奨されるパターンの 1 つは、[ステージング データフローを使用して最初にデータを Power BI サービスに取リ込み、このデータがステージング データフロー内に入ったら、次にこの上にデータフローを構築することです](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows)。 このパターンにより、ソース システムの負荷が軽減され、コンピューティング エンジンと共に、変換の速度を上げ、パフォーマンスを向上させることができます。
 
 **キャッシュ済み** - **キャッシュ済み** の状態が表示される場合、データフロー データはコンピューティング エンジンに格納されたので、別のクエリの一部として参照できます。 これは、リンクされたエンティティとしてそれを使用している場合に最適です。そのデータが下流で使用するためにキャッシュされており、同じデータフローで複数回更新される必要がないためです。 これは、DirectQuery にそれを使用する場合にも最適である可能性があります。
 
@@ -210,7 +210,7 @@ Power BI Pro ライセンスを使用する場合、データフローの更新�
 ## <a name="next-steps"></a>次のステップ
 
 * [データフローでの増分更新の使用](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)
-* [Power BI での増分更新](../../admin/service-premium-incremental-refresh.md)
+* [データセットの増分更新](../../connect-data/incremental-refresh-overview.md)
 * [更新に関するトラブルシューティング シナリオ](../..//connect-data/refresh-troubleshooting-refresh-scenarios.md)
 * [データフローのベスト プラクティス](dataflows-best-practices.md)
 * [データフローの Premium 機能](dataflows-premium-features.md)

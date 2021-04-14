@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 71eff0f09c0e34ffd8789f1b56347d754b6589bc
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 24e63cd3f41bd0bf6ebec1ff260744b164c65577
+ms.sourcegitcommit: 41ac8396037fe825259724ce9d45773edf6fff8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886674"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031855"
 ---
 # <a name="move-your-embedded-app-to-production"></a>埋め込みアプリを運用環境に移行する
 
@@ -36,7 +36,7 @@ ms.locfileid: "97886674"
 
 ### <a name="capacity-specifications"></a>容量仕様
 
-次の表は、各 SKU のリソースと制限を示しています。 ニーズに最適な容量を判断するには、[シナリオに応じてどの SKU を購入すればよいか](./embedded-faq.md#which-solution-should-i-choose)をまとめた表を参照してください。
+次の表は、各 SKU のリソースと制限を示しています。 ニーズに最適な容量を判断するには、[シナリオに応じてどの SKU を購入すればよいか](./embedded-faq.yml#which-solution-should-i-choose-)をまとめた表を参照してください。
 
 | 容量ノード | 合計 v コア数 | バックエンド v コア数 | RAM (GB) | フロントエンド v コア数 | DirectQuery/ライブ接続 (秒あたり) | モデル更新並列処理 |
 | --- | --- | --- | --- | --- | --- | --- |
