@@ -23,7 +23,7 @@ ms.locfileid: "102510906"
 
 1. GitHub の [Power BI Desktop サンプル](https://github.com/microsoft/PowerBI-Desktop-Samples) フォルダーを開きます。
 
-2. **[コード]** を選んでから、 **[ZIP のダウンロード]** を選択します。
+2. **[Code]** を選んでから、 **[Download ZIP]** を選択します。
 
     :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="GitHub の Power BI Desktop サンプルの ZIP ダウンロード オプションを示すスクリーンショット":::
 
