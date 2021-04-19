@@ -16,7 +16,7 @@ ms.locfileid: "99494632"
 ---
 1. [Power BI の開発者向けサンプル](https://github.com/microsoft/PowerBI-Developer-Samples) フォルダーを開きます。
 
-2. **[コード]** を選んでから、 **[ZIP のダウンロード]** を選択します。
+2. **[Code]** を選んでから、 **[Download ZIP]** を選択します。
 
     :::image type="content" source="media/embed-sample-for-customers/developer-samples.png" alt-text="GitHub の Power BI 開発者向けサンプルの ZIP ダウンロード オプションを示すスクリーンショット":::
 
